@@ -21,7 +21,7 @@ var searchData=
   ['cliques_2ecc_18',['cliques.cc',['../cliques_8cc.html',1,'']]],
   ['cliques_2eh_19',['cliques.h',['../cliques_8h.html',1,'']]],
   ['clp_5finterface_2ecc_20',['clp_interface.cc',['../clp__interface_8cc.html',1,'']]],
-  ['cocktail_5fhour_2ecc_21',['cocktail_hour.cc',['../cocktail__hour_8cc.html',1,'']]],
+  ['cocktail_5fhour_5fmo_2ecc_21',['cocktail_hour_mo.cc',['../cocktail__hour__mo_8cc.html',1,'']]],
   ['commandlineflags_2ecc_22',['commandlineflags.cc',['../commandlineflags_8cc.html',1,'']]],
   ['commandlineflags_2eh_23',['commandlineflags.h',['../commandlineflags_8h.html',1,'']]],
   ['complete_5foptimizer_2ecc_24',['complete_optimizer.cc',['../complete__optimizer_8cc.html',1,'']]],
@@ -72,7 +72,7 @@ var searchData=
   ['cumulative_5fenergy_2eh_69',['cumulative_energy.h',['../cumulative__energy_8h.html',1,'']]],
   ['cuts_2ecc_70',['cuts.cc',['../cuts_8cc.html',1,'']]],
   ['cuts_2eh_71',['cuts.h',['../cuts_8h.html',1,'']]],
-  ['cutting_5fstock_2ecc_72',['cutting_stock.cc',['../cutting__stock_8cc.html',1,'']]],
+  ['cutting_5fstock_5fmo_2ecc_72',['cutting_stock_mo.cc',['../cutting__stock__mo_8cc.html',1,'']]],
   ['diffn_2ecc_73',['diffn.cc',['../constraint__solver_2diffn_8cc.html',1,'']]],
   ['table_2ecc_74',['table.cc',['../constraint__solver_2table_8cc.html',1,'']]]
 ];

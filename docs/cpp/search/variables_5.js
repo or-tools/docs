@@ -32,8 +32,10 @@ var searchData=
   ['float_5fvalue_29',['float_value',['../structoperations__research_1_1fz_1_1_var_ref_or_value.html#a8c3f6e1986251c9d362adf660eb98816',1,'operations_research::fz::VarRefOrValue']]],
   ['float_5fvalues_30',['float_values',['../structoperations__research_1_1fz_1_1_domain.html#a89f0141355daa528c3c105400da0a0dc',1,'operations_research::fz::Domain']]],
   ['floats_31',['floats',['../structoperations__research_1_1fz_1_1_argument.html#a1f4f1a0840982d499f18ed0b0a530a91',1,'operations_research::fz::Argument']]],
-  ['forbidden_5fintervals_32',['forbidden_intervals',['../structoperations__research_1_1_disjunctive_propagator_1_1_tasks.html#a425fd06d315549fdc6e6c482e3cdf774',1,'operations_research::DisjunctivePropagator::Tasks']]],
-  ['found_5finitial_5fsolution_5f_33',['found_initial_solution_',['../classoperations__research_1_1_optimize_var.html#a7bcea05dd62f2b212dd18322fd22b32e',1,'operations_research::OptimizeVar']]],
-  ['fullname_5f_34',['fullname_',['../structgoogle_1_1_log_message_1_1_log_message_data.html#afe46bfff74b48e9702894c87d8b00dcd',1,'google::LogMessage::LogMessageData']]],
-  ['fz_5fvar_5fto_5findex_35',['fz_var_to_index',['../cp__model__fz__solver_8cc.html#a8efc6911fd04d535fa62ddc53a179335',1,'cp_model_fz_solver.cc']]]
+  ['flow_5fexpr_32',['flow_expr',['../structoperations__research_1_1sat_1_1_flow_info.html#aa58b1a86e3eb4b8e67985ce4cd330361',1,'operations_research::sat::FlowInfo']]],
+  ['flow_5flp_5fvalue_33',['flow_lp_value',['../structoperations__research_1_1sat_1_1_flow_info.html#a91c02be310a126ec53a134c1a263baff',1,'operations_research::sat::FlowInfo']]],
+  ['forbidden_5fintervals_34',['forbidden_intervals',['../structoperations__research_1_1_disjunctive_propagator_1_1_tasks.html#a425fd06d315549fdc6e6c482e3cdf774',1,'operations_research::DisjunctivePropagator::Tasks']]],
+  ['found_5finitial_5fsolution_5f_35',['found_initial_solution_',['../classoperations__research_1_1_optimize_var.html#a7bcea05dd62f2b212dd18322fd22b32e',1,'operations_research::OptimizeVar']]],
+  ['fullname_5f_36',['fullname_',['../structgoogle_1_1_log_message_1_1_log_message_data.html#afe46bfff74b48e9702894c87d8b00dcd',1,'google::LogMessage::LogMessageData']]],
+  ['fz_5fvar_5fto_5findex_37',['fz_var_to_index',['../cp__model__fz__solver_8cc.html#a8efc6911fd04d535fa62ddc53a179335',1,'cp_model_fz_solver.cc']]]
 ];

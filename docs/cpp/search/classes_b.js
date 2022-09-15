@@ -8,7 +8,7 @@ var searchData=
   ['knapsackdivideandconquersolver_5',['KnapsackDivideAndConquerSolver',['../classoperations__research_1_1_knapsack_divide_and_conquer_solver.html',1,'operations_research']]],
   ['knapsackdynamicprogrammingsolver_6',['KnapsackDynamicProgrammingSolver',['../classoperations__research_1_1_knapsack_dynamic_programming_solver.html',1,'operations_research']]],
   ['knapsackgenericsolver_7',['KnapsackGenericSolver',['../classoperations__research_1_1_knapsack_generic_solver.html',1,'operations_research']]],
-  ['knapsackitem_8',['KnapsackItem',['../structoperations__research_1_1_knapsack_item.html',1,'KnapsackItem'],['../structoperations__research_1_1sat_1_1_knapsack_item.html',1,'KnapsackItem']]],
+  ['knapsackitem_8',['KnapsackItem',['../structoperations__research_1_1_knapsack_item.html',1,'operations_research']]],
   ['knapsackitemforcuts_9',['KnapsackItemForCuts',['../structoperations__research_1_1_knapsack_item_for_cuts.html',1,'operations_research']]],
   ['knapsackitemwithefficiency_10',['KnapsackItemWithEfficiency',['../structoperations__research_1_1_knapsack_item_with_efficiency.html',1,'operations_research']]],
   ['knapsackmipsolver_11',['KnapsackMIPSolver',['../classoperations__research_1_1_knapsack_m_i_p_solver.html',1,'operations_research']]],

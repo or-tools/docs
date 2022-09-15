@@ -9,10 +9,13 @@ var searchData=
   ['jobs_5fread_6',['JOBS_READ',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html#acf067a9f09c2b2135f1a80d61e5eb253a71055b8df7a1720e76ff99db37a64379',1,'operations_research::scheduling::jssp::JsspParser']]],
   ['jobshop_5fscheduling_5fparser_2ecc_7',['jobshop_scheduling_parser.cc',['../jobshop__scheduling__parser_8cc.html',1,'']]],
   ['jobshop_5fscheduling_5fparser_2eh_8',['jobshop_scheduling_parser.h',['../jobshop__scheduling__parser_8h.html',1,'']]],
-  ['joindebugstring_9',['JoinDebugString',['../namespaceoperations__research.html#af1e66b2f134ccc2e06344f1935bbc16a',1,'operations_research']]],
-  ['joindebugstringptr_10',['JoinDebugStringPtr',['../namespaceoperations__research.html#a9be76edcbd5ccb982d92c8d90421a73c',1,'operations_research']]],
-  ['joinnamefieldptr_11',['JoinNameFieldPtr',['../namespaceoperations__research.html#aed2d2f0a06417c1c636b412b1d8a2593',1,'operations_research']]],
-  ['joinnameptr_12',['JoinNamePtr',['../namespaceoperations__research.html#aea04391e4d85555ed4fde9b89e8139f2',1,'operations_research']]],
-  ['jssp_13',['JSSP',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html#a4c669cb1cb4d98dfea944e9ceec7d33ea1848b69cead138d82ed7374ce613fd05',1,'operations_research::scheduling::jssp::JsspParser']]],
-  ['jsspparser_14',['JsspParser',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html',1,'operations_research::scheduling::jssp']]]
+  ['joindebugstring_9',['JoinDebugString',['../namespaceoperations__research.html#a6f3500f8723daca06b11227f271646c7',1,'operations_research']]],
+  ['joindebugstringptr_10',['JoinDebugStringPtr',['../namespaceoperations__research.html#aaf3c3ae42a3d8e2dcf49b00340937f9d',1,'operations_research']]],
+  ['joinnamefieldptr_11',['JoinNameFieldPtr',['../namespaceoperations__research.html#adcfd1fbc8da971ef9490bba4242d1605',1,'operations_research']]],
+  ['joinnameptr_12',['JoinNamePtr',['../namespaceoperations__research.html#a169acccd48652ba2cb960b1718d88f8b',1,'operations_research']]],
+  ['joinpath_13',['JoinPath',['../namespacefile.html#aea7d5d2af0f0b465af9dd5d1b5c9366c',1,'file::JoinPath(absl::string_view path)'],['../namespacefile.html#ad59dcaa9774a8d0e7559caf782eb1781',1,'file::JoinPath()'],['../namespacefile.html#abbc84e1836134b39c485d54a194b68dc',1,'file::JoinPath(absl::string_view path1, absl::string_view path2)'],['../namespacefile.html#a1d318547b88ca0fc2f3a64569bd14463',1,'file::JoinPath(absl::string_view path1, absl::string_view path2, absl::string_view path3, const T &amp;... args)']]],
+  ['joinpathimpl_14',['JoinPathImpl',['../namespacefile_1_1internal.html#a581d780ce856229a0c54543199677309',1,'file::internal']]],
+  ['joinpathrespectabsolute_15',['JoinPathRespectAbsolute',['../namespacefile.html#ad8a3ca568aa061dc3a000ea57820e11d',1,'file']]],
+  ['jssp_16',['JSSP',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html#a4c669cb1cb4d98dfea944e9ceec7d33ea1848b69cead138d82ed7374ce613fd05',1,'operations_research::scheduling::jssp::JsspParser']]],
+  ['jsspparser_17',['JsspParser',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html',1,'operations_research::scheduling::jssp']]]
 ];
