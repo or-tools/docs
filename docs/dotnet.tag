@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.3">
+<tagfile doxygen_version="1.9.4">
   <compound kind="file">
     <name>IntArrayHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
     <filename>IntArrayHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::ConstraintSolver::IntArrayHelper</class>
     <namespace>Google</namespace>
@@ -11,7 +11,7 @@
   </compound>
   <compound kind="file">
     <name>IntervalVarArrayHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
     <filename>IntervalVarArrayHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::ConstraintSolver::IntervalVarArrayHelper</class>
     <namespace>Google</namespace>
@@ -20,7 +20,7 @@
   </compound>
   <compound kind="file">
     <name>IntVarArrayHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
     <filename>IntVarArrayHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::ConstraintSolver::IntVarArrayHelper</class>
     <class kind="class">Google::OrTools::ConstraintSolver::IntVarVector</class>
@@ -37,7 +37,7 @@
   </compound>
   <compound kind="file">
     <name>NetDecisionBuilder.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
     <filename>NetDecisionBuilder_8cs.html</filename>
     <class kind="class">Google::OrTools::ConstraintSolver::NetDecisionBuilder</class>
     <class kind="class">Google::OrTools::ConstraintSolver::NetDecision</class>
@@ -50,28 +50,8 @@
     <namespace>Google::OrTools::ConstraintSolver</namespace>
   </compound>
   <compound kind="file">
-    <name>constraint_solver/csharp/SolverHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
-    <filename>constraint__solver_2csharp_2SolverHelper_8cs.html</filename>
-    <class kind="class">Google::OrTools::ConstraintSolver::Solver</class>
-    <class kind="class">Google::OrTools::ConstraintSolver::IntExpr</class>
-    <class kind="class">Google::OrTools::ConstraintSolver::Constraint</class>
-    <namespace>Google</namespace>
-    <namespace>Google::OrTools</namespace>
-    <namespace>Google::OrTools::ConstraintSolver</namespace>
-  </compound>
-  <compound kind="file">
-    <name>linear_solver/csharp/SolverHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/linear_solver/csharp/</path>
-    <filename>linear__solver_2csharp_2SolverHelper_8cs.html</filename>
-    <class kind="class">Google::OrTools::LinearSolver::Solver</class>
-    <namespace>Google</namespace>
-    <namespace>Google::OrTools</namespace>
-    <namespace>Google::OrTools::LinearSolver</namespace>
-  </compound>
-  <compound kind="file">
     <name>ValCstPair.cs</name>
-    <path>/home/mizux/work/master/ortools/constraint_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
     <filename>ValCstPair_8cs.html</filename>
     <class kind="interface">Google::OrTools::ConstraintSolver::IConstraintWithStatus</class>
     <class kind="class">Google::OrTools::ConstraintSolver::BaseEquality</class>
@@ -84,14 +64,14 @@
   </compound>
   <compound kind="file">
     <name>Program.cs</name>
-    <path>/home/mizux/work/master/ortools/dotnet/CreateSigningKey/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/dotnet/CreateSigningKey/</path>
     <filename>Program_8cs.html</filename>
     <class kind="class">CreateSigningKey::Program</class>
     <namespace>CreateSigningKey</namespace>
   </compound>
   <compound kind="file">
     <name>LinearConstraint.cs</name>
-    <path>/home/mizux/work/master/ortools/linear_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/linear_solver/csharp/</path>
     <filename>LinearConstraint_8cs.html</filename>
     <class kind="class">Google::OrTools::LinearSolver::LinearConstraint</class>
     <class kind="class">Google::OrTools::LinearSolver::RangeConstraint</class>
@@ -104,7 +84,7 @@
   </compound>
   <compound kind="file">
     <name>LinearExpr.cs</name>
-    <path>/home/mizux/work/master/ortools/linear_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/linear_solver/csharp/</path>
     <filename>LinearExpr_8cs.html</filename>
     <class kind="class">Google::OrTools::LinearSolver::LinearExpr</class>
     <class kind="class">Google::OrTools::LinearSolver::LinearExprArrayHelper</class>
@@ -119,8 +99,28 @@
     <namespace>Google::OrTools::LinearSolver</namespace>
   </compound>
   <compound kind="file">
+    <name>constraint_solver/csharp/SolverHelper.cs</name>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/constraint_solver/csharp/</path>
+    <filename>constraint__solver_2csharp_2SolverHelper_8cs.html</filename>
+    <class kind="class">Google::OrTools::ConstraintSolver::Solver</class>
+    <class kind="class">Google::OrTools::ConstraintSolver::IntExpr</class>
+    <class kind="class">Google::OrTools::ConstraintSolver::Constraint</class>
+    <namespace>Google</namespace>
+    <namespace>Google::OrTools</namespace>
+    <namespace>Google::OrTools::ConstraintSolver</namespace>
+  </compound>
+  <compound kind="file">
+    <name>linear_solver/csharp/SolverHelper.cs</name>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/linear_solver/csharp/</path>
+    <filename>linear__solver_2csharp_2SolverHelper_8cs.html</filename>
+    <class kind="class">Google::OrTools::LinearSolver::Solver</class>
+    <namespace>Google</namespace>
+    <namespace>Google::OrTools</namespace>
+    <namespace>Google::OrTools::LinearSolver</namespace>
+  </compound>
+  <compound kind="file">
     <name>VariableHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/linear_solver/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/linear_solver/csharp/</path>
     <filename>VariableHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::LinearSolver::Variable</class>
     <class kind="class">Google::OrTools::LinearSolver::MPVariableVector</class>
@@ -130,7 +130,7 @@
   </compound>
   <compound kind="file">
     <name>Constraints.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>Constraints_8cs.html</filename>
     <class kind="class">Google::OrTools::Sat::Constraint</class>
     <class kind="class">Google::OrTools::Sat::CircuitConstraint</class>
@@ -146,7 +146,7 @@
   </compound>
   <compound kind="file">
     <name>CpModel.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>CpModel_8cs.html</filename>
     <class kind="class">Google::OrTools::Sat::CpModel</class>
     <namespace>Google</namespace>
@@ -155,7 +155,7 @@
   </compound>
   <compound kind="file">
     <name>CpSolver.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>CpSolver_8cs.html</filename>
     <class kind="class">Google::OrTools::Sat::CpSolver</class>
     <class kind="class">Google::OrTools::Sat::LogCallbackDelegate</class>
@@ -165,7 +165,7 @@
   </compound>
   <compound kind="file">
     <name>IntegerExpressions.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>IntegerExpressions_8cs.html</filename>
     <class kind="interface">Google::OrTools::Sat::ILiteral</class>
     <class kind="struct">Google::OrTools::Sat::Term</class>
@@ -181,7 +181,7 @@
   </compound>
   <compound kind="file">
     <name>IntervalVariables.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>IntervalVariables_8cs.html</filename>
     <class kind="class">Google::OrTools::Sat::IntervalVar</class>
     <namespace>Google</namespace>
@@ -190,7 +190,7 @@
   </compound>
   <compound kind="file">
     <name>SearchHelpers.cs</name>
-    <path>/home/mizux/work/master/ortools/sat/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/sat/csharp/</path>
     <filename>SearchHelpers_8cs.html</filename>
     <class kind="class">Google::OrTools::Sat::CpSolverSolutionCallback</class>
     <class kind="class">Google::OrTools::Sat::ObjectiveSolutionPrinter</class>
@@ -200,7 +200,7 @@
   </compound>
   <compound kind="file">
     <name>NestedArrayHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/util/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/util/csharp/</path>
     <filename>NestedArrayHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::NestedArrayHelper</class>
     <namespace>Google</namespace>
@@ -208,7 +208,7 @@
   </compound>
   <compound kind="file">
     <name>ProtoHelper.cs</name>
-    <path>/home/mizux/work/master/ortools/util/csharp/</path>
+    <path>/usr/local/google/home/corentinl/work/stable/ortools/util/csharp/</path>
     <filename>ProtoHelper_8cs.html</filename>
     <class kind="class">Google::OrTools::ProtoHelper</class>
     <namespace>Google</namespace>
