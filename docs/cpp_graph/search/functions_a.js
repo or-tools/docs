@@ -1,7 +1,7 @@
 var searchData=
 [
   ['makefeasible_0',['MakeFeasible',['../classoperations__research_1_1_generic_min_cost_flow.html#a3051a4b6d1a5a9fb5444f6d5a295a95c',1,'operations_research::GenericMinCostFlow']]],
-  ['makehamiltonianpathsolver_1',['MakeHamiltonianPathSolver',['../namespaceoperations__research.html#ae3fee0d3bb89e4913ad2269f8a1be421',1,'operations_research']]],
+  ['makehamiltonianpathsolver_1',['MakeHamiltonianPathSolver',['../namespaceoperations__research.html#a0d1b58b68fce276e216415c0d2d92cee',1,'operations_research']]],
   ['max_5fend_5farc_5findex_2',['max_end_arc_index',['../classoperations__research_1_1_star_graph_base.html#aad16076f9d10c90b9b9e0ccfddf878ed',1,'operations_research::StarGraphBase::max_end_arc_index()'],['../classutil_1_1_base_graph.html#aad16076f9d10c90b9b9e0ccfddf878ed',1,'util::BaseGraph::max_end_arc_index()']]],
   ['max_5fend_5fnode_5findex_3',['max_end_node_index',['../classoperations__research_1_1_star_graph_base.html#adb3250cf217e042d99de43a4e22a9360',1,'operations_research::StarGraphBase']]],
   ['max_5fnum_5farcs_4',['max_num_arcs',['../classoperations__research_1_1_star_graph_base.html#a6dea64dce5de0432befc47f85176ab19',1,'operations_research::StarGraphBase']]],

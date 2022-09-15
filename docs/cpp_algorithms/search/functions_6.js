@@ -5,7 +5,8 @@ var searchData=
   ['getname_2',['GetName',['../classoperations__research_1_1_knapsack_solver.html#a9a98946a64f3893b085f650932c9dfee',1,'operations_research::KnapsackSolver::GetName()'],['../classoperations__research_1_1_base_knapsack_solver.html#ae194e7bee4a383e5ee6c8ed341b49b7e',1,'operations_research::BaseKnapsackSolver::GetName()']]],
   ['getnextitemid_3',['GetNextItemId',['../classoperations__research_1_1_knapsack_propagator.html#a9aea5e61ac71dca1139fda445cc2dfee',1,'operations_research::KnapsackPropagator::GetNextItemId()'],['../classoperations__research_1_1_knapsack_capacity_propagator.html#afccfe4a5a27c2c805016d82886795da9',1,'operations_research::KnapsackCapacityPropagator::GetNextItemId()']]],
   ['getnumberofitems_4',['GetNumberOfItems',['../classoperations__research_1_1_knapsack_state.html#a5c677592ee5e7312c64475ebae949eab',1,'operations_research::KnapsackState::GetNumberOfItems()'],['../classoperations__research_1_1_knapsack_generic_solver.html#a5c677592ee5e7312c64475ebae949eab',1,'operations_research::KnapsackGenericSolver::GetNumberOfItems()']]],
-  ['getroot_5',['GetRoot',['../classoperations__research_1_1_merging_partition.html#ae3df79e84e453454062c2c3789b7828e',1,'operations_research::MergingPartition']]],
-  ['getrootandcompresspath_6',['GetRootAndCompressPath',['../classoperations__research_1_1_merging_partition.html#ac64dbed5d9196b941f3f53862f77309d',1,'operations_research::MergingPartition']]],
-  ['graphsymmetryfinder_7',['GraphSymmetryFinder',['../classoperations__research_1_1_graph_symmetry_finder.html#af0ae1a4d86cfcf11128fe60ea0f8d20b',1,'operations_research::GraphSymmetryFinder']]]
+  ['getparts_5',['GetParts',['../classoperations__research_1_1_simple_dynamic_partition.html#ad45cfd0e4a050aaf22554cc6850325d0',1,'operations_research::SimpleDynamicPartition']]],
+  ['getroot_6',['GetRoot',['../classoperations__research_1_1_merging_partition.html#ae3df79e84e453454062c2c3789b7828e',1,'operations_research::MergingPartition']]],
+  ['getrootandcompresspath_7',['GetRootAndCompressPath',['../classoperations__research_1_1_merging_partition.html#ac64dbed5d9196b941f3f53862f77309d',1,'operations_research::MergingPartition']]],
+  ['graphsymmetryfinder_8',['GraphSymmetryFinder',['../classoperations__research_1_1_graph_symmetry_finder.html#af0ae1a4d86cfcf11128fe60ea0f8d20b',1,'operations_research::GraphSymmetryFinder']]]
 ];

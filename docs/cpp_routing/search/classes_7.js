@@ -4,7 +4,7 @@ var searchData=
   ['indexpairswapactiveoperator_1',['IndexPairSwapActiveOperator',['../classoperations__research_1_1_index_pair_swap_active_operator.html',1,'operations_research']]],
   ['initandgetvalues_2',['InitAndGetValues',['../classoperations__research_1_1_init_and_get_values.html',1,'operations_research']]],
   ['integercastinfo_3',['IntegerCastInfo',['../structoperations__research_1_1_solver_1_1_integer_cast_info.html',1,'operations_research::Solver']]],
-  ['interval_4',['Interval',['../structoperations__research_1_1_unary_dimension_checker_1_1_interval.html',1,'operations_research::UnaryDimensionChecker']]],
+  ['interval_4',['Interval',['../structoperations__research_1_1_dimension_checker_1_1_interval.html',1,'operations_research::DimensionChecker']]],
   ['intervalvar_5',['IntervalVar',['../classoperations__research_1_1_interval_var.html',1,'operations_research']]],
   ['intervalvarelement_6',['IntervalVarElement',['../classoperations__research_1_1_interval_var_element.html',1,'operations_research']]],
   ['intexpr_7',['IntExpr',['../classoperations__research_1_1_int_expr.html',1,'operations_research']]],

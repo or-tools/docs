@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['readinstructioncounter_0',['ReadInstructionCounter',['../classoperations__research_1_1_time_limit.html#a4cb3517d59bf4642a85294267736af20',1,'operations_research::TimeLimit']]],
-  ['register_1',['Register',['../classoperations__research_1_1sat_1_1_model.html#a7fac5de5604ea8668bc414536e8aa7ee',1,'operations_research::sat::Model']]],
-  ['registerexternalbooleanaslimit_2',['RegisterExternalBooleanAsLimit',['../classoperations__research_1_1_time_limit.html#a5b6cf15a55615535aa54e71103de8d9f',1,'operations_research::TimeLimit']]],
-  ['relaxiftoocomplex_3',['RelaxIfTooComplex',['../classoperations__research_1_1_domain.html#abd2c59687cc53dda333d0f18c457389b',1,'operations_research::Domain']]],
-  ['resetlimitfromparameters_4',['ResetLimitFromParameters',['../classoperations__research_1_1_time_limit.html#a312550ebabce586fb77c49e813c610f8',1,'operations_research::TimeLimit']]]
+  ['positivedivisionbysuperset_0',['PositiveDivisionBySuperset',['../classoperations__research_1_1_domain.html#a93b23d6d33373e9a7067445d43389bad',1,'operations_research::Domain']]],
+  ['positivemodulobysuperset_1',['PositiveModuloBySuperset',['../classoperations__research_1_1_domain.html#ae4bddf829edf1817ecffe94dcc2c6260',1,'operations_research::Domain']]],
+  ['presenceboolvar_2',['PresenceBoolVar',['../classoperations__research_1_1sat_1_1_interval_var.html#a3e3b31a2b9e3c9799b0d4de7cce25157',1,'operations_research::sat::IntervalVar']]],
+  ['proto_3',['Proto',['../classoperations__research_1_1sat_1_1_constraint.html#afb2777b64e9107c27955860b33d03303',1,'operations_research::sat::Constraint::Proto()'],['../classoperations__research_1_1sat_1_1_cp_model_builder.html#af955e39b76a999185244e86ecd66d4bf',1,'operations_research::sat::CpModelBuilder::Proto()']]]
 ];
