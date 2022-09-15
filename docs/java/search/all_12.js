@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['walltime_0',['wallTime',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#a2eb2b2447bd59c1f00a9495e63d6b7e3',1,'com::google::ortools::sat::CpSolver']]],
-  ['weightedsum_1',['weightedSum',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpr.html#ab3841df3f130ac2f85958d2369815dfa',1,'com::google::ortools::sat::LinearExpr']]],
-  ['weightedsumexpression_2',['WeightedSumExpression',['../classcom_1_1google_1_1ortools_1_1sat_1_1WeightedSumExpression.html',1,'WeightedSumExpression'],['../classcom_1_1google_1_1ortools_1_1sat_1_1WeightedSumExpression.html#a3afa8f1db4d8b3a23181c513f012ca37',1,'com.google.ortools.sat.WeightedSumExpression.WeightedSumExpression()']]],
-  ['weightedsumexpression_2ejava_3',['WeightedSumExpression.java',['../WeightedSumExpression_8java.html',1,'']]],
-  ['wronglength_4',['WrongLength',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel_1_1WrongLength.html',1,'CpModel.WrongLength'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel_1_1WrongLength.html#afe98866415695aee3ce14f930055211b',1,'com.google.ortools.sat.CpModel.WrongLength.WrongLength()']]]
+  ['validate_0',['validate',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html#ad3864adf749011c7abcd03127679af5d',1,'com::google::ortools::sat::CpModel']]],
+  ['value_1',['value',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#a223d9fe8c0446517983a4cce6e8611ea',1,'com.google.ortools.sat.CpSolver.value()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverSolutionCallback.html#a223d9fe8c0446517983a4cce6e8611ea',1,'com.google.ortools.sat.CpSolverSolutionCallback.value()']]],
+  ['varbuilder_2',['varBuilder',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntVar.html#a5f6888d69504e8099bd034645538039d',1,'com::google::ortools::sat::IntVar']]],
+  ['varfromindex_3',['varFromIndex',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a684300f76bfb48c79c1f48b9743003ec',1,'com::google::ortools::modelbuilder::ModelBuilder']]],
+  ['variable_4',['Variable',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1Variable.html',1,'com::google::ortools::modelbuilder']]],
+  ['variable_2ejava_5',['Variable.java',['../Variable_8java.html',1,'']]],
+  ['variableindex_6',['variableIndex',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntVar.html#a8afcd8e608db204a6e008362f1f59355',1,'com::google::ortools::sat::IntVar']]]
 ];

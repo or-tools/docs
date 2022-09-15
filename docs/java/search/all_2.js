@@ -4,9 +4,9 @@ var searchData=
   ['circuitconstraint_2ejava_1',['CircuitConstraint.java',['../CircuitConstraint_8java.html',1,'']]],
   ['clearassumptions_2',['clearAssumptions',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html#a2295a3e26efe868c58ef9cbf16714ddc',1,'com::google::ortools::sat::CpModel']]],
   ['clearhints_3',['clearHints',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html#acfebe68026a8b01e9eba16f811d2fd8d',1,'com::google::ortools::sat::CpModel']]],
-  ['constant_4',['constant',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpr.html#aabd5eab5be1618da7812710dd2cdedd6',1,'com::google::ortools::sat::LinearExpr']]],
-  ['constantexpression_5',['ConstantExpression',['../classcom_1_1google_1_1ortools_1_1sat_1_1ConstantExpression.html',1,'ConstantExpression'],['../classcom_1_1google_1_1ortools_1_1sat_1_1ConstantExpression.html#a1c8429140d7c2596c9c099f27bbe7fa4',1,'com.google.ortools.sat.ConstantExpression.ConstantExpression()']]],
-  ['constantexpression_2ejava_6',['ConstantExpression.java',['../ConstantExpression_8java.html',1,'']]],
+  ['clearobjective_4',['clearObjective',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html#a6d7b87930ae7debf6ebeec8b0e8b621e',1,'com::google::ortools::sat::CpModel']]],
+  ['constant_5',['constant',['../interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExpr.html#a748496383d25968691e3ac61cc4c5bb5',1,'com.google.ortools.modelbuilder.LinearExpr.constant()'],['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpr.html#aabd5eab5be1618da7812710dd2cdedd6',1,'com.google.ortools.sat.LinearExpr.constant()']]],
+  ['constantexpression_6',['ConstantExpression',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ConstantExpression.html',1,'ConstantExpression'],['../classcom_1_1google_1_1ortools_1_1sat_1_1ConstantExpression.html',1,'ConstantExpression'],['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ConstantExpression.html#a288ea0177fb6901712c520ae68604304',1,'com.google.ortools.modelbuilder.ConstantExpression.ConstantExpression()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1ConstantExpression.html#a1c8429140d7c2596c9c099f27bbe7fa4',1,'com.google.ortools.sat.ConstantExpression.ConstantExpression()']]],
   ['constraint_7',['Constraint',['../classcom_1_1google_1_1ortools_1_1sat_1_1Constraint.html',1,'Constraint'],['../classcom_1_1google_1_1ortools_1_1sat_1_1Constraint.html#a601e550712da80f5cac45a0324859c1b',1,'com.google.ortools.sat.Constraint.Constraint()']]],
   ['constraint_2ejava_8',['Constraint.java',['../Constraint_8java.html',1,'']]],
   ['constraintsolver_9',['constraintsolver',['../namespacecom_1_1google_1_1ortools_1_1constraintsolver.html',1,'com::google::ortools']]],
@@ -18,6 +18,8 @@ var searchData=
   ['cpsolversolutioncallback_2ejava_15',['CpSolverSolutionCallback.java',['../CpSolverSolutionCallback_8java.html',1,'']]],
   ['cumulativeconstraint_16',['CumulativeConstraint',['../classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraint.html',1,'CumulativeConstraint'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraint.html#ae9ddd688486ad58ccb79ae7ba8a22a22',1,'com.google.ortools.sat.CumulativeConstraint.CumulativeConstraint()']]],
   ['cumulativeconstraint_2ejava_17',['CumulativeConstraint.java',['../CumulativeConstraint_8java.html',1,'']]],
-  ['ortools_18',['ortools',['../namespacecom_1_1google_1_1ortools.html',1,'com::google']]],
-  ['sat_19',['sat',['../namespacecom_1_1google_1_1ortools_1_1sat.html',1,'com::google::ortools']]]
+  ['modelbuilder_18',['modelbuilder',['../namespacecom_1_1google_1_1ortools_1_1modelbuilder.html',1,'com::google::ortools']]],
+  ['ortools_19',['ortools',['../namespacecom_1_1google_1_1ortools.html',1,'com::google']]],
+  ['samples_20',['samples',['../namespacecom_1_1google_1_1ortools_1_1modelbuilder_1_1samples.html',1,'com::google::ortools::modelbuilder']]],
+  ['sat_21',['sat',['../namespacecom_1_1google_1_1ortools_1_1sat.html',1,'com::google::ortools']]]
 ];

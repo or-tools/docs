@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['intervalvar_0',['IntervalVar',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntervalVar.html',1,'com::google::ortools::sat']]],
-  ['intervalvar_2ejava_1',['IntervalVar.java',['../IntervalVar_8java.html',1,'']]],
-  ['intinttolongfunction_2',['IntIntToLongFunction',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IntIntToLongFunction.html',1,'com::google::ortools::constraintsolver']]],
-  ['intinttolongfunction_2ejava_3',['IntIntToLongFunction.java',['../IntIntToLongFunction_8java.html',1,'']]],
-  ['intvar_4',['IntVar',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntVar.html',1,'com::google::ortools::sat']]],
-  ['intvar_2ejava_5',['IntVar.java',['../IntVar_8java.html',1,'']]]
+  ['hasobjective_0',['hasObjective',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html#a7d66cf109d9aa7288835c5f3097469c8',1,'com::google::ortools::sat::CpModel']]],
+  ['hasresponse_1',['hasResponse',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolver.html#a9928dc11a993ec0aec8e7b635e02c3f7',1,'com::google::ortools::modelbuilder::ModelSolver']]],
+  ['hassolution_2',['hasSolution',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolver.html#a6c95dfed5e887bc06b7fda934c48fbdf',1,'com::google::ortools::modelbuilder::ModelSolver']]],
+  ['helper_3',['helper',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1Variable.html#a2d4dc0f8398b5f951867814e6a2031a8',1,'com::google::ortools::modelbuilder::Variable']]]
 ];
