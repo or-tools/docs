@@ -20,6 +20,7 @@ function gen_cpp() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
+ --user ${ID_U}:${ID_G} \
  --name cpp_doc \
  ${IMAGE} \
  "cp -r build/docs/cpp /export/"
@@ -37,6 +38,7 @@ function gen_dotnet() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
+ --user ${ID_U}:${ID_G} \
  --name dotnet_doc \
  ${IMAGE} \
  "cp -r build/docs/dotnet /export/"
@@ -54,6 +56,7 @@ function gen_java() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
+ --user ${ID_U}:${ID_G} \
  --name java_doc \
  ${IMAGE} \
  "cp -r build/docs/java /export/"
@@ -61,6 +64,7 @@ function gen_java() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
+ --user ${ID_U}:${ID_G} \
  --name javadoc_doc \
  ${IMAGE} \
  "cp -r build/docs/javadoc /export/"
@@ -78,6 +82,7 @@ function gen_python() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
+ --user ${ID_U}:${ID_G} \
  --name python_doc \
  ${IMAGE} \
  "cp -r build/docs/python /export/"
@@ -122,6 +127,9 @@ function main() {
   # shellcheck disable=SC2155
   declare -r ROOT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
   declare -r OUTPUT_DIR="${ROOT_DIR}/docs"
+
+  declare -r ID_U="$(id -u)"
+  declare -r ID_G="$(id -g)"
 
   echo "Root dir: '${ROOT_DIR}'"
   echo "Output dir: '${OUTPUT_DIR}'"

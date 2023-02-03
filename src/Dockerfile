@@ -6,7 +6,10 @@ FROM alpine:edge AS env
 ##  SETUP  ##
 #############
 ENV PATH=/usr/local/bin:$PATH
-RUN apk add --no-cache git build-base linux-headers cmake xfce4-dev-tools
+RUN apk add --no-cache \
+ git \
+ linux-headers build-base xfce4-dev-tools cmake \
+ doxygen
 ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["/bin/sh"]
 
@@ -37,7 +40,7 @@ RUN apk add --no-cache openjdk8 maven
 RUN apk add --no-cache python3-dev py3-pip py3-wheel \
  py3-numpy py3-pandas py3-matplotlib py3-scipy
 RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED
-RUN python3 -m pip install absl-py mypy-protobuf
+RUN python3 -m pip install absl-py mypy-protobuf pdoc
 
 ################
 ##  OR-TOOLS  ##
@@ -79,4 +82,4 @@ FROM devel AS python
 RUN cmake -S. -Bbuild -DBUILD_DOC=ON \
  -DBUILD_PYTHON=ON -DVENV_USE_SYSTEM_SITE_PACKAGES=ON \
  -DBUILD_CXX_SAMPLES=OFF -DBUILD_CXX_EXAMPLES=OFF
-RUN cmake --build build --target ortools_java_doc -j8 -v
+RUN cmake --build build --target ortools_python_doc -j8 -v
