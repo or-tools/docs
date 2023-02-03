@@ -17,6 +17,7 @@ function gen_cpp() {
  -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
+  rm -rf "${OUTPUT_DIR}"/cpp
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
@@ -35,6 +36,7 @@ function gen_dotnet() {
  -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
+  rm -rf "${OUTPUT_DIR}"/dotnet
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
@@ -53,6 +55,7 @@ function gen_java() {
  -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
+  rm -rf "${OUTPUT_DIR}"/java
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
@@ -61,6 +64,7 @@ function gen_java() {
  ${IMAGE} \
  "cp -r build/docs/java /export/"
 
+  rm -rf "${OUTPUT_DIR}"/javadoc
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
@@ -79,6 +83,7 @@ function gen_python() {
  -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
+  rm -rf "${OUTPUT_DIR}"/python
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
@@ -134,7 +139,7 @@ function main() {
   echo "Root dir: '${ROOT_DIR}'"
   echo "Output dir: '${OUTPUT_DIR}'"
 
-  rm -rf "${OUTPUT_DIR}"
+  rm -rf "${OUTPUT_DIR}"/assets
   mkdir -pv "${OUTPUT_DIR}"/assets/img/
   cp src/logo.png "${OUTPUT_DIR}"/assets/img/
   cp src/_config.yml "${OUTPUT_DIR}"/
