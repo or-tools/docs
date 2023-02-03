@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+function assert_defined(){
+  if [[ -z "${!1}" ]]; then
+    >&2 echo "Variable '${1}' must be defined"
+    exit 1
+  fi
+}
+
+function gen_cpp() {
+  local -r IMAGE="or-tools/docs:cpp"
+
+  docker build \
+ --tag ${IMAGE} \
+ --target=cpp \
+ -f ${ROOT_DIR}/src/Doxyfile \
+ ${ROOT_DIR}/src
+
+  docker run --rm --init \
+ -v ${OUTPUT_DIR}/:/export \
+ -it \
+ --name docs_cpp \
+ ${IMAGE} \
+ "cp -r build/docs/cpp /export/"
+}
+
+function usage() {
+  local -r NAME=$(basename "$0")
+  echo -e "$NAME - Build docs using an Alpine Docker.
+
+SYNOPSIS
+\t$NAME [-h|--help] [cpp|dotnet|java|python|all]
+
+DESCRIPTION
+\tBuild Google OR-Tools reference documentation using an alpine distro.
+
+OPTIONS
+\t-h --help: show this help text
+\tcpp: Build the C++ doc only
+\tdotnet: Build the .Net doc only
+\tjava: Build the Java doc only
+\tpython: Build the Python doc only
+\tall: Build all docs (default)
+
+EXAMPLES
+$0 all"
+}
+
+# Main
+function main() {
+  case ${1} in
+    -h | --help)
+      usage; exit ;;
+  esac
+
+  # shellcheck disable=SC2155
+  declare -r ROOT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+  declare -r OUTPUT_DIR="${ROOT_DIR}/docs"
+
+  echo "Root dir: '${ROOT_DIR}'"
+  echo "Output dir: '${OUTPUT_DIR}'"
+
+  rm -rf "${OUTPUT_DIR}"
+  mkdir -pv "${OUTPUT_DIR}"/assets/img/
+  cp src/logo.png "${OUTPUT_DIR}"/assets/img/
+  cp src/_config.yml "${OUTPUT_DIR}"/
+  cp src/index.md "${OUTPUT_DIR}"/
+
+  case ${1} in
+    cpp)
+      gen_cpp
+      exit ;;
+    dotnet)
+      gen_dotnet;;
+    java)
+      gen_java ;;
+    python)
+      gen_python ;;
+    *)
+      gen_all ;;
+  esac
+}
+
+main "${1:-all}"
