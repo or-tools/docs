@@ -20,9 +20,74 @@ function gen_cpp() {
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
- --name docs_cpp \
+ --name cpp_doc \
  ${IMAGE} \
  "cp -r build/docs/cpp /export/"
+}
+
+function gen_dotnet() {
+  local -r IMAGE="or-tools/docs:dotnet"
+
+  docker build \
+ --tag ${IMAGE} \
+ --target=dotnet \
+ -f ${ROOT_DIR}/src/Doxyfile \
+ ${ROOT_DIR}/src
+
+  docker run --rm --init \
+ -v ${OUTPUT_DIR}/:/export \
+ -it \
+ --name dotnet_doc \
+ ${IMAGE} \
+ "cp -r build/docs/dotnet /export/"
+}
+
+function gen_java() {
+  local -r IMAGE="or-tools/docs:java"
+
+  docker build \
+ --tag ${IMAGE} \
+ --target=java \
+ -f ${ROOT_DIR}/src/Doxyfile \
+ ${ROOT_DIR}/src
+
+  docker run --rm --init \
+ -v ${OUTPUT_DIR}/:/export \
+ -it \
+ --name java_doc \
+ ${IMAGE} \
+ "cp -r build/docs/java /export/"
+
+  docker run --rm --init \
+ -v ${OUTPUT_DIR}/:/export \
+ -it \
+ --name javadoc_doc \
+ ${IMAGE} \
+ "cp -r build/docs/javadoc /export/"
+}
+
+function gen_python() {
+  local -r IMAGE="or-tools/docs:dotnet"
+
+  docker build \
+ --tag ${IMAGE} \
+ --target=python \
+ -f ${ROOT_DIR}/src/Doxyfile \
+ ${ROOT_DIR}/src
+
+  docker run --rm --init \
+ -v ${OUTPUT_DIR}/:/export \
+ -it \
+ --name python_doc \
+ ${IMAGE} \
+ "cp -r build/docs/python /export/"
+}
+
+function gen_all() {
+  gen_cpp
+  gen_dotnet
+  gen_java
+  gen_python
 }
 
 function usage() {
