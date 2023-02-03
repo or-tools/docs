@@ -14,7 +14,7 @@ function gen_cpp() {
   docker build \
  --tag ${IMAGE} \
  --target=cpp \
- -f ${ROOT_DIR}/src/Doxyfile \
+ -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
   docker run --rm --init \
@@ -31,7 +31,7 @@ function gen_dotnet() {
   docker build \
  --tag ${IMAGE} \
  --target=dotnet \
- -f ${ROOT_DIR}/src/Doxyfile \
+ -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
   docker run --rm --init \
@@ -48,7 +48,7 @@ function gen_java() {
   docker build \
  --tag ${IMAGE} \
  --target=java \
- -f ${ROOT_DIR}/src/Doxyfile \
+ -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
   docker run --rm --init \
@@ -72,7 +72,7 @@ function gen_python() {
   docker build \
  --tag ${IMAGE} \
  --target=python \
- -f ${ROOT_DIR}/src/Doxyfile \
+ -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
   docker run --rm --init \
