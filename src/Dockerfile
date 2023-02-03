@@ -36,6 +36,7 @@ RUN apk add --no-cache openjdk8 maven
 # Install Python
 RUN apk add --no-cache python3-dev py3-pip py3-wheel \
  py3-numpy py3-pandas py3-matplotlib py3-scipy
+RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED
 RUN python3 -m pip install absl-py mypy-protobuf
 
 ################
@@ -54,6 +55,7 @@ WORKDIR /root/or-tools
 # C++
 FROM devel AS cpp
 RUN cmake -S. -Bbuild -DBUILD_DOC=ON \
+ -DBUILD_DEPS=ON \
  -DBUILD_CXX_SAMPLES=OFF -DBUILD_CXX_EXAMPLES=OFF
 RUN cmake --build build --target ortools_cxx_doc -j8 -v
 
