@@ -1,0 +1,15 @@
+var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder =
+[
+    [ "getEpsOptimalDualResidualAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a675ba34346a087e8cd850fa1765c8466", null ],
+    [ "getEpsOptimalDualResidualRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#ac2e6817e0117e80cd472a2724697e257", null ],
+    [ "getEpsOptimalObjectiveGapAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a47ef5fd67cfea55b3c86a8c34520c582", null ],
+    [ "getEpsOptimalObjectiveGapRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a0c2b46b7f2c07d44b6d3b2e3aa033219", null ],
+    [ "getEpsOptimalPrimalResidualAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#afd515743eac310d21855dfc82a8df58c", null ],
+    [ "getEpsOptimalPrimalResidualRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a67592e5bf02b85f7f909d13c2c1145e2", null ],
+    [ "hasEpsOptimalDualResidualAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a3c6d06f9f57c987ffb477c5c02e598e8", null ],
+    [ "hasEpsOptimalDualResidualRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a698979ce89013955be00edeb312eba13", null ],
+    [ "hasEpsOptimalObjectiveGapAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a2eb1081bc9b7c0ec7c61fa9bfeed1ba0", null ],
+    [ "hasEpsOptimalObjectiveGapRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a54a9ac85f55839f4a13d38f183e5e606", null ],
+    [ "hasEpsOptimalPrimalResidualAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#aa0e0e9f3540fc218425ca96c61e7d02f", null ],
+    [ "hasEpsOptimalPrimalResidualRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a6636d5e89bfb61bfddc24283bf5d6ab1", null ]
+];

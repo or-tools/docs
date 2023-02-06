@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['markertype_0',['MarkerType',['../classoperations__research_1_1_solver.html#ade22213fff69cfb37d8238e8fd3073df',1,'operations_research::Solver']]],
-  ['matchingalgorithm_1',['MatchingAlgorithm',['../classoperations__research_1_1_christofides_path_solver.html#a1d4f082de5fc3eed348d65eb30b5f3e7',1,'operations_research::ChristofidesPathSolver']]],
-  ['mpcallbackevent_2',['MPCallbackEvent',['../namespaceoperations__research.html#a4f0b2adea9a4297f27df941fe3ed3831',1,'operations_research']]]
+  ['markertype_0',['MarkerType',['../classoperations__research_1_1Solver.html#ae6dee2b402434520635e66e9d58a6215',1,'operations_research::Solver']]],
+  ['matchingalgorithm_1',['MatchingAlgorithm',['../classoperations__research_1_1ChristofidesPathSolver.html#ad44822002f75a6f478a62e107d880018',1,'operations_research::ChristofidesPathSolver']]],
+  ['monitorevent_2',['MonitorEvent',['../classoperations__research_1_1Solver.html#aa916a59c868954e6ce914b469d5a0124',1,'operations_research::Solver']]],
+  ['mpcallbackevent_3',['MPCallbackEvent',['../namespaceoperations__research.html#a652d924f81b782435bbb416de8aa02da',1,'operations_research']]]
 ];

@@ -1,0 +1,28 @@
+var dir_7cc48880791e3dd695dbfc2349101d28 =
+[
+    [ "gtest_main.cc", "gtest__main_8cc.html", "gtest__main_8cc" ],
+    [ "iteration_stats.cc", "iteration__stats_8cc.html", "iteration__stats_8cc" ],
+    [ "iteration_stats.h", "iteration__stats_8h.html", "iteration__stats_8h" ],
+    [ "primal_dual_hybrid_gradient.cc", "primal__dual__hybrid__gradient_8cc.html", "primal__dual__hybrid__gradient_8cc" ],
+    [ "primal_dual_hybrid_gradient.h", "primal__dual__hybrid__gradient_8h.html", "primal__dual__hybrid__gradient_8h" ],
+    [ "quadratic_program.cc", "quadratic__program_8cc.html", "quadratic__program_8cc" ],
+    [ "quadratic_program.h", "quadratic__program_8h.html", "quadratic__program_8h" ],
+    [ "quadratic_program_io.cc", "quadratic__program__io_8cc.html", "quadratic__program__io_8cc" ],
+    [ "quadratic_program_io.h", "quadratic__program__io_8h.html", "quadratic__program__io_8h" ],
+    [ "sharded_optimization_utils.cc", "sharded__optimization__utils_8cc.html", "sharded__optimization__utils_8cc" ],
+    [ "sharded_optimization_utils.h", "sharded__optimization__utils_8h.html", "sharded__optimization__utils_8h" ],
+    [ "sharded_quadratic_program.cc", "sharded__quadratic__program_8cc.html", null ],
+    [ "sharded_quadratic_program.h", "sharded__quadratic__program_8h.html", "sharded__quadratic__program_8h" ],
+    [ "sharder.cc", "sharder_8cc.html", "sharder_8cc" ],
+    [ "sharder.h", "sharder_8h.html", "sharder_8h" ],
+    [ "solve_log.proto", "solve__log_8proto.html", null ],
+    [ "solvers.proto", "solvers_8proto.html", null ],
+    [ "solvers_proto_validation.cc", "solvers__proto__validation_8cc.html", "solvers__proto__validation_8cc" ],
+    [ "solvers_proto_validation.h", "solvers__proto__validation_8h.html", "solvers__proto__validation_8h" ],
+    [ "termination.cc", "termination_8cc.html", "termination_8cc" ],
+    [ "termination.h", "termination_8h.html", "termination_8h" ],
+    [ "test_util.cc", "test__util_8cc.html", "test__util_8cc" ],
+    [ "test_util.h", "test__util_8h.html", "test__util_8h" ],
+    [ "trust_region.cc", "trust__region_8cc.html", "trust__region_8cc" ],
+    [ "trust_region.h", "trust__region_8h.html", "trust__region_8h" ]
+];

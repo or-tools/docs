@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reservoirconstraint_2ejava_0',['ReservoirConstraint.java',['../ReservoirConstraint_8java.html',1,'']]]
+  ['knapsacksolver_2ejava_0',['KnapsackSolver.java',['../KnapsackSolver_8java.html',1,'']]]
 ];

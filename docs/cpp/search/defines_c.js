@@ -1,8 +1,20 @@
 var searchData=
 [
-  ['path_5fseparator_0',['PATH_SEPARATOR',['../base_2logging_8cc.html#a256a5721249aa3309437212cc21a9fe4',1,'logging.cc']]],
-  ['pcheck_1',['PCHECK',['../base_2logging_8h.html#acd390a47656c861c03f4f4cdf1dbfb81',1,'logging.h']]],
-  ['plog_2',['PLOG',['../base_2logging_8h.html#ab2a4f3825f639b85c460a0ecafab8f84',1,'logging.h']]],
-  ['plog_5fevery_5fn_3',['PLOG_EVERY_N',['../base_2logging_8h.html#a83655214d5ee3aecdb16cda62a6ee78f',1,'logging.h']]],
-  ['plog_5fif_4',['PLOG_IF',['../base_2logging_8h.html#a20a0cbd13ac9ede8ee7e41a82ab7c200',1,'logging.h']]]
+  ['realloccb_5fargs_0',['REALLOCCB_ARGS',['../environment_8h.html#acae510fad67df1a4e9eb1755f963fd76',1,'environment.h']]],
+  ['reject_1',['REJECT',['../parser_8yy_8cc.html#a835f10dd1ab4bf9a80c4cd80ee6e3058',1,'parser.yy.cc']]],
+  ['return_5fabnormal_5fif_5fbad_5fstatus_2',['RETURN_ABNORMAL_IF_BAD_STATUS',['../scip__interface_8cc.html#a8e8cab6c879dc456fe0096c02bce706e',1,'scip_interface.cc']]],
+  ['return_5fabnormal_5fif_5fscip_5ferror_3',['RETURN_ABNORMAL_IF_SCIP_ERROR',['../scip__interface_8cc.html#a2062b8242f9df918deea5453973753f4',1,'scip_interface.cc']]],
+  ['return_5fand_5fstore_5fif_5fscip_5ferror_4',['RETURN_AND_STORE_IF_SCIP_ERROR',['../scip__interface_8cc.html#a3bee93eab1478b18c16b877db7c3885f',1,'scip_interface.cc']]],
+  ['return_5ferror_5funless_5',['RETURN_ERROR_UNLESS',['../gscip_8cc.html#a02594bb5e5eff76ff72e5e97483ef439',1,'gscip.cc']]],
+  ['return_5fif_5falready_5fin_5ferror_5fstate_6',['RETURN_IF_ALREADY_IN_ERROR_STATE',['../scip__interface_8cc.html#a1ea9e351e9f26e38b029c3cb01f167cd',1,'scip_interface.cc']]],
+  ['return_5fif_5ferror_7',['RETURN_IF_ERROR',['../base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b',1,'status_macros.h']]],
+  ['return_5fif_5ffalse_8',['RETURN_IF_FALSE',['../sat__inprocessing_8cc.html#a73c06a952919ea45217c5a8ec59c4088',1,'RETURN_IF_FALSE():&#160;sat_inprocessing.cc'],['../sat_2diffn_8cc.html#a73c06a952919ea45217c5a8ec59c4088',1,'RETURN_IF_FALSE():&#160;diffn.cc']]],
+  ['return_5fif_5fgurobi_5ferror_9',['RETURN_IF_GUROBI_ERROR',['../gurobi__proto__solver_8cc.html#ac5f01f1e9f546b42965203c09364900f',1,'gurobi_proto_solver.cc']]],
+  ['return_5fif_5fnot_5fempty_10',['RETURN_IF_NOT_EMPTY',['../cp__model__checker_8cc.html#a3e1c76fd35f9e427dbdf7aac0f5df39c',1,'cp_model_checker.cc']]],
+  ['return_5fif_5fnull_11',['RETURN_IF_NULL',['../return__macros_8h.html#a6009315499028d98072d8f31834cf4f9',1,'return_macros.h']]],
+  ['return_5fif_5fscalar_12',['RETURN_IF_SCALAR',['../callback__validator_8cc.html#a5ae1b0f92815abfe2eb395308b269b0f',1,'callback_validator.cc']]],
+  ['return_5fif_5fscip_5ferror_13',['RETURN_IF_SCIP_ERROR',['../scip__helper__macros_8h.html#a0bfa86b99ad635aeb448799ddf03cb1c',1,'scip_helper_macros.h']]],
+  ['return_5fstringified_5fvector_14',['RETURN_STRINGIFIED_VECTOR',['../string__array_8h.html#a3531abff4b68da03b9740268e8ad8a91',1,'string_array.h']]],
+  ['return_5fvalue_5fif_5fnull_15',['RETURN_VALUE_IF_NULL',['../return__macros_8h.html#af7e921cd45afaad5e7a45af3b5bc42d1',1,'return_macros.h']]],
+  ['run_5fpreprocessor_16',['RUN_PREPROCESSOR',['../preprocessor_8cc.html#abe47a721d0dd1e0d7f060c1f4ae69167',1,'preprocessor.cc']]]
 ];

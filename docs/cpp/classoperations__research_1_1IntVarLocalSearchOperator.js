@@ -1,0 +1,27 @@
+var classoperations__research_1_1IntVarLocalSearchOperator =
+[
+    [ "IntVarLocalSearchOperator", "classoperations__research_1_1IntVarLocalSearchOperator.html#aaf0d7462f3a511cf0b5cbacedba32b4b", null ],
+    [ "~IntVarLocalSearchOperator", "classoperations__research_1_1IntVarLocalSearchOperator.html#aeb4e7fbf8ef821b20e481ae46fc5b5ac", null ],
+    [ "Activate", "classoperations__research_1_1IntVarLocalSearchOperator.html#ab03840aed4254cfc6bb7da568de0c419", null ],
+    [ "Activated", "classoperations__research_1_1IntVarLocalSearchOperator.html#a2ce21109d8ba37d5f5f0e4c04d813e2f", null ],
+    [ "AddToAssignment", "classoperations__research_1_1IntVarLocalSearchOperator.html#a0c586dba1610383fb0a4c36b7253b830", null ],
+    [ "AddVars", "classoperations__research_1_1IntVarLocalSearchOperator.html#a60817e22322b48359ccc329c2c670b4e", null ],
+    [ "ApplyChanges", "classoperations__research_1_1IntVarLocalSearchOperator.html#a804ee4fe7a598a4ef890dfec7d8331e8", null ],
+    [ "Deactivate", "classoperations__research_1_1IntVarLocalSearchOperator.html#a69c731198d375a846a6dd31af7378800", null ],
+    [ "HoldsDelta", "classoperations__research_1_1IntVarLocalSearchOperator.html#a963fbb44b99f9e22f8f269c311dc7882", null ],
+    [ "InverseValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#a7b9ce39ca1ea9b0cee22a20e9e23a7e4", null ],
+    [ "IsIncremental", "classoperations__research_1_1IntVarLocalSearchOperator.html#a17fc8b7a31bea392ee5d9b5aa65925da", null ],
+    [ "MakeNextNeighbor", "classoperations__research_1_1IntVarLocalSearchOperator.html#a5bc78fdde6b4e5a6ad9c3b00a6d47d65", null ],
+    [ "MakeOneNeighbor", "classoperations__research_1_1IntVarLocalSearchOperator.html#ac8bc688def85b27b6aa66e1f099050a4", null ],
+    [ "OldInverseValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#a0a6ad4127b7553425fb028c580cdad69", null ],
+    [ "OldValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#ab970539ac8cf8e71091bf576f22c1d03", null ],
+    [ "OnStart", "classoperations__research_1_1IntVarLocalSearchOperator.html#a279160bdb41d77ea714bcd5960685ff3", null ],
+    [ "PrevValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#a9134e910a3f4f31c0366c4d0307b9e89", null ],
+    [ "RevertChanges", "classoperations__research_1_1IntVarLocalSearchOperator.html#a593a6a345e6be2be8b3174f7af46f732", null ],
+    [ "SetValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#a4a9a373fa881f173a00be5e111b69251", null ],
+    [ "Size", "classoperations__research_1_1IntVarLocalSearchOperator.html#a1b453c3dc27fb0beea13b062b06f3a73", null ],
+    [ "SkipUnchanged", "classoperations__research_1_1IntVarLocalSearchOperator.html#a2154f378a4ba2697d824f5aa3cca8fa7", null ],
+    [ "Start", "classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0", null ],
+    [ "Value", "classoperations__research_1_1IntVarLocalSearchOperator.html#a6d13c8ea0d07e33c1bb07e4a0538d165", null ],
+    [ "Var", "classoperations__research_1_1IntVarLocalSearchOperator.html#a6c1a9922aeefbac551152a38f9667063", null ]
+];

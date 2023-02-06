@@ -1,0 +1,28 @@
+var classoperations__research_1_1Dimension =
+[
+    [ "Dimension", "classoperations__research_1_1Dimension.html#afd590074e21b0455233be9211f8dbfc0", null ],
+    [ "~Dimension", "classoperations__research_1_1Dimension.html#a677aa7845faa2734872362d79f29938b", null ],
+    [ "Accept", "classoperations__research_1_1Dimension.html#ae7e53ecd8a353f9492c9b8bf1ee23dd2", null ],
+    [ "Assign", "classoperations__research_1_1Dimension.html#ad6ce3b733d5244febe1a993dc3e1a0a2", null ],
+    [ "AssignAllPossibleToBin", "classoperations__research_1_1Dimension.html#a92860e5e555160e418decabb419555da", null ],
+    [ "AssignAllRemainingItems", "classoperations__research_1_1Dimension.html#a346aae4880c5862367b86718d84ecde7", null ],
+    [ "AssignFirstPossibleToBin", "classoperations__research_1_1Dimension.html#a6d480bbbd59309a5bddeeada0eb252ed", null ],
+    [ "AssignVar", "classoperations__research_1_1Dimension.html#ad4c0f2de4f488ecc29acd35810c19f01", null ],
+    [ "DebugString", "classoperations__research_1_1Dimension.html#aa9498bec4ae3f8c29fca147849ea28c0", null ],
+    [ "EndInitialPropagate", "classoperations__research_1_1Dimension.html#a41e9c38cd3d42f83f3e35cf8b54667c8", null ],
+    [ "EndPropagate", "classoperations__research_1_1Dimension.html#a63a9d4d0a372e47d4d5956412625a0c0", null ],
+    [ "InitialPropagate", "classoperations__research_1_1Dimension.html#ab6fcbfc8cbbe1dadf767a85cd6283ae2", null ],
+    [ "InitialPropagateUnassigned", "classoperations__research_1_1Dimension.html#af02c56da06def182b223f1e3346eefce", null ],
+    [ "IsAssignedStatusKnown", "classoperations__research_1_1Dimension.html#ae9292c937f1555ab00706c30f2479128", null ],
+    [ "IsPossible", "classoperations__research_1_1Dimension.html#a53e27496d71a219c2dbb2a93dd85a344", null ],
+    [ "IsUndecided", "classoperations__research_1_1Dimension.html#aa88a20e4a4a55ae41bb79e3eb55804ce", null ],
+    [ "Post", "classoperations__research_1_1Dimension.html#a57574f8173b392d343dc1d27c6ed241c", null ],
+    [ "Propagate", "classoperations__research_1_1Dimension.html#ab1335c87270fd28e0ad317ac51900588", null ],
+    [ "PropagateUnassigned", "classoperations__research_1_1Dimension.html#ab12b5cc0db74d39b5b87d647d7cdf996", null ],
+    [ "RemoveAllPossibleFromBin", "classoperations__research_1_1Dimension.html#abb85e52f134293de6bb7080d1e69c3b6", null ],
+    [ "SetAssigned", "classoperations__research_1_1Dimension.html#a3e76105e901f7979023a6a1dcd18ad2a", null ],
+    [ "SetImpossible", "classoperations__research_1_1Dimension.html#a8c4f634d967917789dcccef5500c0581", null ],
+    [ "SetUnassigned", "classoperations__research_1_1Dimension.html#a2171c7db87561aadbd611760fcbf8ee2", null ],
+    [ "solver", "classoperations__research_1_1Dimension.html#ae0b195034585f6298b2896d10d5ef2c2", null ],
+    [ "UnassignAllRemainingItems", "classoperations__research_1_1Dimension.html#a70a21a412f4662e10f041adac1d125fd", null ]
+];

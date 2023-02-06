@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['zero_0',['Zero',['../classoperations__research_1_1_set.html#ac2fa078fad730b08d36dc600a24e21a1',1,'operations_research::Set']]]
+  ['z_0',['z',['../structoperations__research_1_1Coordinates3.html#aa787b24bd2500fb44fa036d8e385b825',1,'operations_research::Coordinates3']]],
+  ['zero_1',['Zero',['../classoperations__research_1_1Set.html#aefb0e201200674e13de471b57bd73bf9',1,'operations_research::Set']]],
+  ['zip_5fbomb_5fmax_5fratio_2',['zip_bomb_max_ratio',['../structzipfile_1_1ZipFileOptions.html#a4bd7f00e211d39b4e5438b2349f1d4bb',1,'zipfile::ZipFileOptions']]],
+  ['zip_5fbomb_5fmax_5fsize_3',['zip_bomb_max_size',['../structzipfile_1_1ZipFileOptions.html#a7300ddcc5a7f0b83f5979e7a7c6b4730',1,'zipfile::ZipFileOptions']]]
 ];

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 12.1.0"/>
+    <meta name="generator" content="pdoc 12.3.1"/>
     <title>ortools.linear_solver.linear_solver_natural_api API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -22,16 +22,13 @@
   <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
 </svg>                &nbsp;ortools.linear_solver</a>
 
-            <img src="https://developers.google.com/optimization/images/orLogo.png" class="logo" alt="project logo"/>
+            <img src="/root/or-tools/tools/doc/orLogo.png" class="logo" alt="project logo"/>
 
 
 
 
         <h2>API Documentation</h2>
             <ul class="memberlist">
-            <li>
-                    <a class="variable" href="#OFFSET_KEY">OFFSET_KEY</a>
-            </li>
             <li>
                     <a class="function" href="#CastToLinExp">CastToLinExp</a>
             </li>
@@ -40,9 +37,6 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#LinearExpr.__init__">LinearExpr</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS">OVERRIDDEN_OPERATOR_METHODS</a>
                         </li>
                         <li>
                                 <a class="function" href="#LinearExpr.solution_value">solution_value</a>
@@ -125,7 +119,7 @@
     </ul>
 
 
-            <footer>OR-Tools 9.4</footer>
+            <footer>OR-Tools 9.5</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -141,15 +135,15 @@
 
                         <div class="docstring"><p>Patch to the python wrapper of ../linear_solver.h providing an algebraic API.</p>
 
-<p>This is directly imported, and use exclusively in ./linear_solver.swig. See that
+<p>This is directly imported, and use exclusively in ./linear_solver.i. See that
 file.
 For examples leveraging the code defined here, see ./pywraplp_test.py and
 ../../../python/linear_programming.py.</p>
 </div>
 
-                        <input id="linear_solver_natural_api-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                        <input id="mod-linear_solver_natural_api-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 
-                        <label class="view-source-button" for="linear_solver_natural_api-view-source"><span>View Source</span></label>
+                        <label class="view-source-button" for="mod-linear_solver_natural_api-view-source"><span>View Source</span></label>
 
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">  1</span></a><span class="c1"># Copyright 2010-2022 Google LLC</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
@@ -166,7 +160,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-13"><a href="#L-13"><span class="linenos"> 13</span></a>
 </span><span id="L-14"><a href="#L-14"><span class="linenos"> 14</span></a><span class="sd">&quot;&quot;&quot;Patch to the python wrapper of ../linear_solver.h providing an algebraic API.</span>
 </span><span id="L-15"><a href="#L-15"><span class="linenos"> 15</span></a>
-</span><span id="L-16"><a href="#L-16"><span class="linenos"> 16</span></a><span class="sd">This is directly imported, and use exclusively in ./linear_solver.swig. See that</span>
+</span><span id="L-16"><a href="#L-16"><span class="linenos"> 16</span></a><span class="sd">This is directly imported, and use exclusively in ./linear_solver.i. See that</span>
 </span><span id="L-17"><a href="#L-17"><span class="linenos"> 17</span></a><span class="sd">file.</span>
 </span><span id="L-18"><a href="#L-18"><span class="linenos"> 18</span></a><span class="sd">For examples leveraging the code defined here, see ./pywraplp_test.py and</span>
 </span><span id="L-19"><a href="#L-19"><span class="linenos"> 19</span></a><span class="sd">../../../python/linear_programming.py.</span>
@@ -184,7 +178,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-31"><a href="#L-31"><span class="linenos"> 31</span></a>
 </span><span id="L-32"><a href="#L-32"><span class="linenos"> 32</span></a>
 </span><span id="L-33"><a href="#L-33"><span class="linenos"> 33</span></a><span class="k">class</span> <span class="nc">_FakeMPVariableRepresentingTheConstantOffset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="L-34"><a href="#L-34"><span class="linenos"> 34</span></a>  <span class="sd">&quot;&quot;&quot;A dummy class for a singleton instance used to represent the constant.</span>
+</span><span id="L-34"><a href="#L-34"><span class="linenos"> 34</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;A dummy class for a singleton instance used to represent the constant.</span>
 </span><span id="L-35"><a href="#L-35"><span class="linenos"> 35</span></a>
 </span><span id="L-36"><a href="#L-36"><span class="linenos"> 36</span></a><span class="sd">  To represent linear expressions, we store a dictionary</span>
 </span><span id="L-37"><a href="#L-37"><span class="linenos"> 37</span></a><span class="sd">  MPVariable-&gt;coefficient. To represent the constant offset of the expression,</span>
@@ -210,7 +204,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-57"><a href="#L-57"><span class="linenos"> 57</span></a>
 </span><span id="L-58"><a href="#L-58"><span class="linenos"> 58</span></a>
 </span><span id="L-59"><a href="#L-59"><span class="linenos"> 59</span></a><span class="k">class</span> <span class="nc">LinearExpr</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="L-60"><a href="#L-60"><span class="linenos"> 60</span></a>  <span class="sd">&quot;&quot;&quot;Holds linear expressions.</span>
+</span><span id="L-60"><a href="#L-60"><span class="linenos"> 60</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Holds linear expressions.</span>
 </span><span id="L-61"><a href="#L-61"><span class="linenos"> 61</span></a>
 </span><span id="L-62"><a href="#L-62"><span class="linenos"> 62</span></a><span class="sd">  A linear expression is essentially an offset (floating-point value), and a</span>
 </span><span id="L-63"><a href="#L-63"><span class="linenos"> 63</span></a><span class="sd">  dictionary mapping MPVariable objects to their coefficient (which is also a</span>
@@ -224,12 +218,12 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-71"><a href="#L-71"><span class="linenos"> 71</span></a>  <span class="p">]</span>
 </span><span id="L-72"><a href="#L-72"><span class="linenos"> 72</span></a>
 </span><span id="L-73"><a href="#L-73"><span class="linenos"> 73</span></a>  <span class="k">def</span> <span class="nf">solution_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># pylint: disable=invalid-name</span>
-</span><span id="L-74"><a href="#L-74"><span class="linenos"> 74</span></a>    <span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
+</span><span id="L-74"><a href="#L-74"><span class="linenos"> 74</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
 </span><span id="L-75"><a href="#L-75"><span class="linenos"> 75</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="L-76"><a href="#L-76"><span class="linenos"> 76</span></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">solution_value</span><span class="p">()</span> <span class="o">*</span> <span class="n">coeff</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 </span><span id="L-77"><a href="#L-77"><span class="linenos"> 77</span></a>
 </span><span id="L-78"><a href="#L-78"><span class="linenos"> 78</span></a>  <span class="k">def</span> <span class="nf">AddSelfToCoeffMapOrStack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">,</span> <span class="n">multiplier</span><span class="p">,</span> <span class="n">stack</span><span class="p">):</span>
-</span><span id="L-79"><a href="#L-79"><span class="linenos"> 79</span></a>    <span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
+</span><span id="L-79"><a href="#L-79"><span class="linenos"> 79</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
 </span><span id="L-80"><a href="#L-80"><span class="linenos"> 80</span></a>
 </span><span id="L-81"><a href="#L-81"><span class="linenos"> 81</span></a><span class="sd">    Implementation must either update coeffs or push to the stack a</span>
 </span><span id="L-82"><a href="#L-82"><span class="linenos"> 82</span></a><span class="sd">    sub-expression and the accumulated multiplier that applies to it.</span>
@@ -312,7 +306,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-159"><a href="#L-159"><span class="linenos">159</span></a>
 </span><span id="L-160"><a href="#L-160"><span class="linenos">160</span></a>
 </span><span id="L-161"><a href="#L-161"><span class="linenos">161</span></a><span class="k">class</span> <span class="nc">VariableExpr</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="L-162"><a href="#L-162"><span class="linenos">162</span></a>  <span class="sd">&quot;&quot;&quot;Represents a LinearExpr containing only a single variable.&quot;&quot;&quot;</span>
+</span><span id="L-162"><a href="#L-162"><span class="linenos">162</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents a LinearExpr containing only a single variable.&quot;&quot;&quot;</span>
 </span><span id="L-163"><a href="#L-163"><span class="linenos">163</span></a>
 </span><span id="L-164"><a href="#L-164"><span class="linenos">164</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mpvar</span><span class="p">):</span>
 </span><span id="L-165"><a href="#L-165"><span class="linenos">165</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__var</span> <span class="o">=</span> <span class="n">mpvar</span>
@@ -322,7 +316,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-169"><a href="#L-169"><span class="linenos">169</span></a>
 </span><span id="L-170"><a href="#L-170"><span class="linenos">170</span></a>
 </span><span id="L-171"><a href="#L-171"><span class="linenos">171</span></a><span class="k">class</span> <span class="nc">ProductCst</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="L-172"><a href="#L-172"><span class="linenos">172</span></a>  <span class="sd">&quot;&quot;&quot;Represents the product of a LinearExpr by a constant.&quot;&quot;&quot;</span>
+</span><span id="L-172"><a href="#L-172"><span class="linenos">172</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents the product of a LinearExpr by a constant.&quot;&quot;&quot;</span>
 </span><span id="L-173"><a href="#L-173"><span class="linenos">173</span></a>
 </span><span id="L-174"><a href="#L-174"><span class="linenos">174</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">coef</span><span class="p">):</span>
 </span><span id="L-175"><a href="#L-175"><span class="linenos">175</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span> <span class="o">=</span> <span class="n">CastToLinExp</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
@@ -356,7 +350,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-203"><a href="#L-203"><span class="linenos">203</span></a>
 </span><span id="L-204"><a href="#L-204"><span class="linenos">204</span></a>
 </span><span id="L-205"><a href="#L-205"><span class="linenos">205</span></a><span class="k">class</span> <span class="nc">SumArray</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="L-206"><a href="#L-206"><span class="linenos">206</span></a>  <span class="sd">&quot;&quot;&quot;Represents the sum of a list of LinearExpr.&quot;&quot;&quot;</span>
+</span><span id="L-206"><a href="#L-206"><span class="linenos">206</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents the sum of a list of LinearExpr.&quot;&quot;&quot;</span>
 </span><span id="L-207"><a href="#L-207"><span class="linenos">207</span></a>
 </span><span id="L-208"><a href="#L-208"><span class="linenos">208</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
 </span><span id="L-209"><a href="#L-209"><span class="linenos">209</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="p">[</span><span class="n">CastToLinExp</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span> <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
@@ -380,7 +374,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-227"><a href="#L-227"><span class="linenos">227</span></a>
 </span><span id="L-228"><a href="#L-228"><span class="linenos">228</span></a>
 </span><span id="L-229"><a href="#L-229"><span class="linenos">229</span></a><span class="k">class</span> <span class="nc">LinearConstraint</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="L-230"><a href="#L-230"><span class="linenos">230</span></a>  <span class="sd">&quot;&quot;&quot;Represents a linear constraint: LowerBound &lt;= LinearExpr &lt;= UpperBound.&quot;&quot;&quot;</span>
+</span><span id="L-230"><a href="#L-230"><span class="linenos">230</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents a linear constraint: LowerBound &lt;= LinearExpr &lt;= UpperBound.&quot;&quot;&quot;</span>
 </span><span id="L-231"><a href="#L-231"><span class="linenos">231</span></a>
 </span><span id="L-232"><a href="#L-232"><span class="linenos">232</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">lb</span><span class="p">,</span> <span class="n">ub</span><span class="p">):</span>
 </span><span id="L-233"><a href="#L-233"><span class="linenos">233</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span> <span class="o">=</span> <span class="n">expr</span>
@@ -402,7 +396,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="L-249"><a href="#L-249"><span class="linenos">249</span></a>      <span class="k">return</span> <span class="s1">&#39;Trivial inequality (always true)&#39;</span>
 </span><span id="L-250"><a href="#L-250"><span class="linenos">250</span></a>
 </span><span id="L-251"><a href="#L-251"><span class="linenos">251</span></a>  <span class="k">def</span> <span class="nf">Extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">solver</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-</span><span id="L-252"><a href="#L-252"><span class="linenos">252</span></a>    <span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
+</span><span id="L-252"><a href="#L-252"><span class="linenos">252</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
 </span><span id="L-253"><a href="#L-253"><span class="linenos">253</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="L-254"><a href="#L-254"><span class="linenos">254</span></a>    <span class="n">constant</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">OFFSET_KEY</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 </span><span id="L-255"><a href="#L-255"><span class="linenos">255</span></a>    <span class="n">lb</span> <span class="o">=</span> <span class="o">-</span><span class="n">solver</span><span class="o">.</span><span class="n">infinity</span><span class="p">()</span>
@@ -420,17 +414,6 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 
 
             </section>
-                <section id="OFFSET_KEY">
-                    <div class="attr variable">
-            <span class="name">OFFSET_KEY</span><span class="default_value"> = OFFSET_KEY</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OFFSET_KEY"></a>
-    
-    
-
-                </section>
                 <section id="CastToLinExp">
                             <input id="CastToLinExp-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -465,7 +448,7 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
     </div>
     <a class="headerlink" href="#LinearExpr"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="LinearExpr-60"><a href="#LinearExpr-60"><span class="linenos"> 60</span></a><span class="k">class</span> <span class="nc">LinearExpr</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="LinearExpr-61"><a href="#LinearExpr-61"><span class="linenos"> 61</span></a>  <span class="sd">&quot;&quot;&quot;Holds linear expressions.</span>
+</span><span id="LinearExpr-61"><a href="#LinearExpr-61"><span class="linenos"> 61</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Holds linear expressions.</span>
 </span><span id="LinearExpr-62"><a href="#LinearExpr-62"><span class="linenos"> 62</span></a>
 </span><span id="LinearExpr-63"><a href="#LinearExpr-63"><span class="linenos"> 63</span></a><span class="sd">  A linear expression is essentially an offset (floating-point value), and a</span>
 </span><span id="LinearExpr-64"><a href="#LinearExpr-64"><span class="linenos"> 64</span></a><span class="sd">  dictionary mapping MPVariable objects to their coefficient (which is also a</span>
@@ -479,12 +462,12 @@ For examples leveraging the code defined here, see ./pywraplp_test.py and
 </span><span id="LinearExpr-72"><a href="#LinearExpr-72"><span class="linenos"> 72</span></a>  <span class="p">]</span>
 </span><span id="LinearExpr-73"><a href="#LinearExpr-73"><span class="linenos"> 73</span></a>
 </span><span id="LinearExpr-74"><a href="#LinearExpr-74"><span class="linenos"> 74</span></a>  <span class="k">def</span> <span class="nf">solution_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># pylint: disable=invalid-name</span>
-</span><span id="LinearExpr-75"><a href="#LinearExpr-75"><span class="linenos"> 75</span></a>    <span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
+</span><span id="LinearExpr-75"><a href="#LinearExpr-75"><span class="linenos"> 75</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
 </span><span id="LinearExpr-76"><a href="#LinearExpr-76"><span class="linenos"> 76</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="LinearExpr-77"><a href="#LinearExpr-77"><span class="linenos"> 77</span></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">solution_value</span><span class="p">()</span> <span class="o">*</span> <span class="n">coeff</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 </span><span id="LinearExpr-78"><a href="#LinearExpr-78"><span class="linenos"> 78</span></a>
 </span><span id="LinearExpr-79"><a href="#LinearExpr-79"><span class="linenos"> 79</span></a>  <span class="k">def</span> <span class="nf">AddSelfToCoeffMapOrStack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">,</span> <span class="n">multiplier</span><span class="p">,</span> <span class="n">stack</span><span class="p">):</span>
-</span><span id="LinearExpr-80"><a href="#LinearExpr-80"><span class="linenos"> 80</span></a>    <span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
+</span><span id="LinearExpr-80"><a href="#LinearExpr-80"><span class="linenos"> 80</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
 </span><span id="LinearExpr-81"><a href="#LinearExpr-81"><span class="linenos"> 81</span></a>
 </span><span id="LinearExpr-82"><a href="#LinearExpr-82"><span class="linenos"> 82</span></a><span class="sd">    Implementation must either update coeffs or push to the stack a</span>
 </span><span id="LinearExpr-83"><a href="#LinearExpr-83"><span class="linenos"> 83</span></a><span class="sd">    sub-expression and the accumulated multiplier that applies to it.</span>
@@ -587,17 +570,6 @@ floating-point value).</p>
     
 
                             </div>
-                            <div id="LinearExpr.OVERRIDDEN_OPERATOR_METHODS" class="classattr">
-                                <div class="attr variable">
-            <span class="name">OVERRIDDEN_OPERATOR_METHODS</span><span class="default_value"> = [&#39;__add__&#39;, &#39;__radd__&#39;, &#39;__sub__&#39;, &#39;__rsub__&#39;, &#39;__mul__&#39;, &#39;__rmul__&#39;, &#39;__div__&#39;, &#39;__truediv__&#39;, &#39;__neg__&#39;, &#39;__eq__&#39;, &#39;__ge__&#39;, &#39;__le__&#39;, &#39;__gt__&#39;, &#39;__lt__&#39;, &#39;__ne__&#39;]</span>
-
-        
-    </div>
-    <a class="headerlink" href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS"></a>
-    
-    
-
-                            </div>
                             <div id="LinearExpr.solution_value" class="classattr">
                                         <input id="LinearExpr.solution_value-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -610,7 +582,7 @@ floating-point value).</p>
     </div>
     <a class="headerlink" href="#LinearExpr.solution_value"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="LinearExpr.solution_value-74"><a href="#LinearExpr.solution_value-74"><span class="linenos">74</span></a>  <span class="k">def</span> <span class="nf">solution_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># pylint: disable=invalid-name</span>
-</span><span id="LinearExpr.solution_value-75"><a href="#LinearExpr.solution_value-75"><span class="linenos">75</span></a>    <span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
+</span><span id="LinearExpr.solution_value-75"><a href="#LinearExpr.solution_value-75"><span class="linenos">75</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Value of this linear expr, using the solution_value of its vars.&quot;&quot;&quot;</span>
 </span><span id="LinearExpr.solution_value-76"><a href="#LinearExpr.solution_value-76"><span class="linenos">76</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="LinearExpr.solution_value-77"><a href="#LinearExpr.solution_value-77"><span class="linenos">77</span></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">solution_value</span><span class="p">()</span> <span class="o">*</span> <span class="n">coeff</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 </span></pre></div>
@@ -633,7 +605,7 @@ floating-point value).</p>
     </div>
     <a class="headerlink" href="#LinearExpr.AddSelfToCoeffMapOrStack"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="LinearExpr.AddSelfToCoeffMapOrStack-79"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-79"><span class="linenos">79</span></a>  <span class="k">def</span> <span class="nf">AddSelfToCoeffMapOrStack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">,</span> <span class="n">multiplier</span><span class="p">,</span> <span class="n">stack</span><span class="p">):</span>
-</span><span id="LinearExpr.AddSelfToCoeffMapOrStack-80"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-80"><span class="linenos">80</span></a>    <span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
+</span><span id="LinearExpr.AddSelfToCoeffMapOrStack-80"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-80"><span class="linenos">80</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Private function used by GetCoeffs() to delegate processing.</span>
 </span><span id="LinearExpr.AddSelfToCoeffMapOrStack-81"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-81"><span class="linenos">81</span></a>
 </span><span id="LinearExpr.AddSelfToCoeffMapOrStack-82"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-82"><span class="linenos">82</span></a><span class="sd">    Implementation must either update coeffs or push to the stack a</span>
 </span><span id="LinearExpr.AddSelfToCoeffMapOrStack-83"><a href="#LinearExpr.AddSelfToCoeffMapOrStack-83"><span class="linenos">83</span></a><span class="sd">    sub-expression and the accumulated multiplier that applies to it.</span>
@@ -656,7 +628,7 @@ floating-point value).</p>
 <p>Implementation must either update coeffs or push to the stack a
 sub-expression and the accumulated multiplier that applies to it.</p>
 
-<h6 id="args">Args</h6>
+<h6 id="arguments">Arguments:</h6>
 
 <ul>
 <li><strong>coeffs:</strong>  A dictionary of variables' coefficients. It is a defaultdict that
@@ -709,7 +681,7 @@ sub-expressions. The elements of the stack are pair tuples
     </div>
     <a class="headerlink" href="#VariableExpr"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="VariableExpr-162"><a href="#VariableExpr-162"><span class="linenos">162</span></a><span class="k">class</span> <span class="nc">VariableExpr</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="VariableExpr-163"><a href="#VariableExpr-163"><span class="linenos">163</span></a>  <span class="sd">&quot;&quot;&quot;Represents a LinearExpr containing only a single variable.&quot;&quot;&quot;</span>
+</span><span id="VariableExpr-163"><a href="#VariableExpr-163"><span class="linenos">163</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents a LinearExpr containing only a single variable.&quot;&quot;&quot;</span>
 </span><span id="VariableExpr-164"><a href="#VariableExpr-164"><span class="linenos">164</span></a>
 </span><span id="VariableExpr-165"><a href="#VariableExpr-165"><span class="linenos">165</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mpvar</span><span class="p">):</span>
 </span><span id="VariableExpr-166"><a href="#VariableExpr-166"><span class="linenos">166</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__var</span> <span class="o">=</span> <span class="n">mpvar</span>
@@ -762,7 +734,7 @@ sub-expressions. The elements of the stack are pair tuples
 <p>Implementation must either update coeffs or push to the stack a
 sub-expression and the accumulated multiplier that applies to it.</p>
 
-<h6 id="args">Args</h6>
+<h6 id="arguments">Arguments:</h6>
 
 <ul>
 <li><strong>coeffs:</strong>  A dictionary of variables' coefficients. It is a defaultdict that
@@ -781,8 +753,7 @@ sub-expressions. The elements of the stack are pair tuples
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#LinearExpr">LinearExpr</a></dt>
-                                <dd id="VariableExpr.OVERRIDDEN_OPERATOR_METHODS" class="variable"><a href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS">OVERRIDDEN_OPERATOR_METHODS</a></dd>
-                <dd id="VariableExpr.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
+                                <dd id="VariableExpr.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
                 <dd id="VariableExpr.GetCoeffs" class="function"><a href="#LinearExpr.GetCoeffs">GetCoeffs</a></dd>
 
             </div>
@@ -801,7 +772,7 @@ sub-expressions. The elements of the stack are pair tuples
     </div>
     <a class="headerlink" href="#ProductCst"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="ProductCst-172"><a href="#ProductCst-172"><span class="linenos">172</span></a><span class="k">class</span> <span class="nc">ProductCst</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="ProductCst-173"><a href="#ProductCst-173"><span class="linenos">173</span></a>  <span class="sd">&quot;&quot;&quot;Represents the product of a LinearExpr by a constant.&quot;&quot;&quot;</span>
+</span><span id="ProductCst-173"><a href="#ProductCst-173"><span class="linenos">173</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents the product of a LinearExpr by a constant.&quot;&quot;&quot;</span>
 </span><span id="ProductCst-174"><a href="#ProductCst-174"><span class="linenos">174</span></a>
 </span><span id="ProductCst-175"><a href="#ProductCst-175"><span class="linenos">175</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">coef</span><span class="p">):</span>
 </span><span id="ProductCst-176"><a href="#ProductCst-176"><span class="linenos">176</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span> <span class="o">=</span> <span class="n">CastToLinExp</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
@@ -872,7 +843,7 @@ sub-expressions. The elements of the stack are pair tuples
 <p>Implementation must either update coeffs or push to the stack a
 sub-expression and the accumulated multiplier that applies to it.</p>
 
-<h6 id="args">Args</h6>
+<h6 id="arguments">Arguments:</h6>
 
 <ul>
 <li><strong>coeffs:</strong>  A dictionary of variables' coefficients. It is a defaultdict that
@@ -891,8 +862,7 @@ sub-expressions. The elements of the stack are pair tuples
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#LinearExpr">LinearExpr</a></dt>
-                                <dd id="ProductCst.OVERRIDDEN_OPERATOR_METHODS" class="variable"><a href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS">OVERRIDDEN_OPERATOR_METHODS</a></dd>
-                <dd id="ProductCst.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
+                                <dd id="ProductCst.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
                 <dd id="ProductCst.GetCoeffs" class="function"><a href="#LinearExpr.GetCoeffs">GetCoeffs</a></dd>
 
             </div>
@@ -970,7 +940,7 @@ floating-point value).</p>
 <p>Implementation must either update coeffs or push to the stack a
 sub-expression and the accumulated multiplier that applies to it.</p>
 
-<h6 id="args">Args</h6>
+<h6 id="arguments">Arguments:</h6>
 
 <ul>
 <li><strong>coeffs:</strong>  A dictionary of variables' coefficients. It is a defaultdict that
@@ -989,8 +959,7 @@ sub-expressions. The elements of the stack are pair tuples
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#LinearExpr">LinearExpr</a></dt>
-                                <dd id="Constant.OVERRIDDEN_OPERATOR_METHODS" class="variable"><a href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS">OVERRIDDEN_OPERATOR_METHODS</a></dd>
-                <dd id="Constant.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
+                                <dd id="Constant.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
                 <dd id="Constant.GetCoeffs" class="function"><a href="#LinearExpr.GetCoeffs">GetCoeffs</a></dd>
 
             </div>
@@ -1009,7 +978,7 @@ sub-expressions. The elements of the stack are pair tuples
     </div>
     <a class="headerlink" href="#SumArray"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="SumArray-206"><a href="#SumArray-206"><span class="linenos">206</span></a><span class="k">class</span> <span class="nc">SumArray</span><span class="p">(</span><span class="n">LinearExpr</span><span class="p">):</span>
-</span><span id="SumArray-207"><a href="#SumArray-207"><span class="linenos">207</span></a>  <span class="sd">&quot;&quot;&quot;Represents the sum of a list of LinearExpr.&quot;&quot;&quot;</span>
+</span><span id="SumArray-207"><a href="#SumArray-207"><span class="linenos">207</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents the sum of a list of LinearExpr.&quot;&quot;&quot;</span>
 </span><span id="SumArray-208"><a href="#SumArray-208"><span class="linenos">208</span></a>
 </span><span id="SumArray-209"><a href="#SumArray-209"><span class="linenos">209</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
 </span><span id="SumArray-210"><a href="#SumArray-210"><span class="linenos">210</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="p">[</span><span class="n">CastToLinExp</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span> <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
@@ -1075,7 +1044,7 @@ sub-expressions. The elements of the stack are pair tuples
 <p>Implementation must either update coeffs or push to the stack a
 sub-expression and the accumulated multiplier that applies to it.</p>
 
-<h6 id="args">Args</h6>
+<h6 id="arguments">Arguments:</h6>
 
 <ul>
 <li><strong>coeffs:</strong>  A dictionary of variables' coefficients. It is a defaultdict that
@@ -1094,8 +1063,7 @@ sub-expressions. The elements of the stack are pair tuples
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#LinearExpr">LinearExpr</a></dt>
-                                <dd id="SumArray.OVERRIDDEN_OPERATOR_METHODS" class="variable"><a href="#LinearExpr.OVERRIDDEN_OPERATOR_METHODS">OVERRIDDEN_OPERATOR_METHODS</a></dd>
-                <dd id="SumArray.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
+                                <dd id="SumArray.solution_value" class="function"><a href="#LinearExpr.solution_value">solution_value</a></dd>
                 <dd id="SumArray.GetCoeffs" class="function"><a href="#LinearExpr.GetCoeffs">GetCoeffs</a></dd>
 
             </div>
@@ -1152,7 +1120,7 @@ sub-expressions. The elements of the stack are pair tuples
     </div>
     <a class="headerlink" href="#LinearConstraint"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="LinearConstraint-230"><a href="#LinearConstraint-230"><span class="linenos">230</span></a><span class="k">class</span> <span class="nc">LinearConstraint</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-</span><span id="LinearConstraint-231"><a href="#LinearConstraint-231"><span class="linenos">231</span></a>  <span class="sd">&quot;&quot;&quot;Represents a linear constraint: LowerBound &lt;= LinearExpr &lt;= UpperBound.&quot;&quot;&quot;</span>
+</span><span id="LinearConstraint-231"><a href="#LinearConstraint-231"><span class="linenos">231</span></a><span class="w">  </span><span class="sd">&quot;&quot;&quot;Represents a linear constraint: LowerBound &lt;= LinearExpr &lt;= UpperBound.&quot;&quot;&quot;</span>
 </span><span id="LinearConstraint-232"><a href="#LinearConstraint-232"><span class="linenos">232</span></a>
 </span><span id="LinearConstraint-233"><a href="#LinearConstraint-233"><span class="linenos">233</span></a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">lb</span><span class="p">,</span> <span class="n">ub</span><span class="p">):</span>
 </span><span id="LinearConstraint-234"><a href="#LinearConstraint-234"><span class="linenos">234</span></a>    <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span> <span class="o">=</span> <span class="n">expr</span>
@@ -1174,7 +1142,7 @@ sub-expressions. The elements of the stack are pair tuples
 </span><span id="LinearConstraint-250"><a href="#LinearConstraint-250"><span class="linenos">250</span></a>      <span class="k">return</span> <span class="s1">&#39;Trivial inequality (always true)&#39;</span>
 </span><span id="LinearConstraint-251"><a href="#LinearConstraint-251"><span class="linenos">251</span></a>
 </span><span id="LinearConstraint-252"><a href="#LinearConstraint-252"><span class="linenos">252</span></a>  <span class="k">def</span> <span class="nf">Extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">solver</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-</span><span id="LinearConstraint-253"><a href="#LinearConstraint-253"><span class="linenos">253</span></a>    <span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
+</span><span id="LinearConstraint-253"><a href="#LinearConstraint-253"><span class="linenos">253</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
 </span><span id="LinearConstraint-254"><a href="#LinearConstraint-254"><span class="linenos">254</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="LinearConstraint-255"><a href="#LinearConstraint-255"><span class="linenos">255</span></a>    <span class="n">constant</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">OFFSET_KEY</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 </span><span id="LinearConstraint-256"><a href="#LinearConstraint-256"><span class="linenos">256</span></a>    <span class="n">lb</span> <span class="o">=</span> <span class="o">-</span><span class="n">solver</span><span class="o">.</span><span class="n">infinity</span><span class="p">()</span>
@@ -1227,7 +1195,7 @@ sub-expressions. The elements of the stack are pair tuples
     </div>
     <a class="headerlink" href="#LinearConstraint.Extract"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="LinearConstraint.Extract-252"><a href="#LinearConstraint.Extract-252"><span class="linenos">252</span></a>  <span class="k">def</span> <span class="nf">Extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">solver</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-</span><span id="LinearConstraint.Extract-253"><a href="#LinearConstraint.Extract-253"><span class="linenos">253</span></a>    <span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
+</span><span id="LinearConstraint.Extract-253"><a href="#LinearConstraint.Extract-253"><span class="linenos">253</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Performs the actual creation of the constraint object.&quot;&quot;&quot;</span>
 </span><span id="LinearConstraint.Extract-254"><a href="#LinearConstraint.Extract-254"><span class="linenos">254</span></a>    <span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__expr</span><span class="o">.</span><span class="n">GetCoeffs</span><span class="p">()</span>
 </span><span id="LinearConstraint.Extract-255"><a href="#LinearConstraint.Extract-255"><span class="linenos">255</span></a>    <span class="n">constant</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">OFFSET_KEY</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 </span><span id="LinearConstraint.Extract-256"><a href="#LinearConstraint.Extract-256"><span class="linenos">256</span></a>    <span class="n">lb</span> <span class="o">=</span> <span class="o">-</span><span class="n">solver</span><span class="o">.</span><span class="n">infinity</span><span class="p">()</span>

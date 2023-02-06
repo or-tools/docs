@@ -1,0 +1,11 @@
+var interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder =
+[
+    [ "getContext", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a51307d1e0952d80a692c838b2cf0a26f", null ],
+    [ "getContextBytes", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#ad36e04c19e74038dcf9ab8423293254e", null ],
+    [ "getDurationSeconds", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a5dd76ade6921bde8fcadaf68a108b5d7", null ],
+    [ "getLocalSearchFilter", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#afd30841435ebc0d750102e557bd68b0b", null ],
+    [ "getLocalSearchFilterBytes", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a24cba2b75c6f6b9d0fa0afa8bb4c1239", null ],
+    [ "getNumCalls", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a5d4d4e09a5e78f9c3fefbcfb384d8779", null ],
+    [ "getNumRejects", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a9014cf56ececc7b0f7d1fe991954397e", null ],
+    [ "getNumRejectsPerSecond", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatisticsOrBuilder.html#a26f17752269f3bcca86ffd1fab8b6a50", null ]
+];

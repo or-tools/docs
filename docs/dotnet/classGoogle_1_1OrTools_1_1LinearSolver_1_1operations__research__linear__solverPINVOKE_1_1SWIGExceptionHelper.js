@@ -1,0 +1,7 @@
+var classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGExceptionHelper =
+[
+    [ "ExceptionArgumentDelegate", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGExceptionHelper.html#a08b720f3497e12e730225350ec3c03fb", null ],
+    [ "ExceptionDelegate", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGExceptionHelper.html#a6fe3fe8ec747cc2a5f7ad945234c3e05", null ],
+    [ "SWIGRegisterExceptionCallbacks_operations_research_linear_solver", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGExceptionHelper.html#a54c4ea64a498f4724be94fd375081373", null ],
+    [ "SWIGRegisterExceptionCallbacksArgument_operations_research_linear_solver", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGExceptionHelper.html#a5938cfcceb3fe7bff6380abde0451574", null ]
+];

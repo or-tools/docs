@@ -1,12 +1,21 @@
 var searchData=
 [
-  ['affineexpression_2ejava_0',['AffineExpression.java',['../modelbuilder_2AffineExpression_8java.html',1,'']]],
-  ['constantexpression_2ejava_1',['ConstantExpression.java',['../modelbuilder_2ConstantExpression_8java.html',1,'']]],
-  ['linearargument_2ejava_2',['LinearArgument.java',['../modelbuilder_2LinearArgument_8java.html',1,'']]],
-  ['linearexpr_2ejava_3',['LinearExpr.java',['../modelbuilder_2LinearExpr_8java.html',1,'']]],
-  ['linearexprbuilder_2ejava_4',['LinearExprBuilder.java',['../modelbuilder_2LinearExprBuilder_8java.html',1,'']]],
-  ['modelbuilder_2ejava_5',['ModelBuilder.java',['../ModelBuilder_8java.html',1,'']]],
-  ['modelsolver_2ejava_6',['ModelSolver.java',['../ModelSolver_8java.html',1,'']]],
-  ['multiplecircuitconstraint_2ejava_7',['MultipleCircuitConstraint.java',['../MultipleCircuitConstraint_8java.html',1,'']]],
-  ['weightedsumexpression_2ejava_8',['WeightedSumExpression.java',['../modelbuilder_2WeightedSumExpression_8java.html',1,'']]]
+  ['improvementsearchlimit_2ejava_0',['ImprovementSearchLimit.java',['../ImprovementSearchLimit_8java.html',1,'']]],
+  ['intboolpair_2ejava_1',['IntBoolPair.java',['../IntBoolPair_8java.html',1,'']]],
+  ['integervariableproto_2ejava_2',['IntegerVariableProto.java',['../IntegerVariableProto_8java.html',1,'']]],
+  ['integervariableprotoorbuilder_2ejava_3',['IntegerVariableProtoOrBuilder.java',['../IntegerVariableProtoOrBuilder_8java.html',1,'']]],
+  ['intervalconstraintproto_2ejava_4',['IntervalConstraintProto.java',['../IntervalConstraintProto_8java.html',1,'']]],
+  ['intervalconstraintprotoorbuilder_2ejava_5',['IntervalConstraintProtoOrBuilder.java',['../IntervalConstraintProtoOrBuilder_8java.html',1,'']]],
+  ['intervalvar_2ejava_6',['IntervalVar.java',['../ortools_2java_2com_2google_2ortools_2sat_2IntervalVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2constraintsolver_2IntervalVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2IntervalVar_8java.html',1,'(Global Namespace)']]],
+  ['intervalvarelement_2ejava_7',['IntervalVarElement.java',['../IntervalVarElement_8java.html',1,'']]],
+  ['intexpr_2ejava_8',['IntExpr.java',['../IntExpr_8java.html',1,'']]],
+  ['intinttolongfunction_2ejava_9',['IntIntToLongFunction.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2constraintsolver_2IntIntToLongFunction_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2constraintsolver_2IntIntToLongFunction_8java.html',1,'(Global Namespace)']]],
+  ['inttupleset_2ejava_10',['IntTupleSet.java',['../IntTupleSet_8java.html',1,'']]],
+  ['intvar_2ejava_11',['IntVar.java',['../ortools_2java_2com_2google_2ortools_2sat_2IntVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2IntVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2constraintsolver_2IntVar_8java.html',1,'(Global Namespace)']]],
+  ['intvarelement_2ejava_12',['IntVarElement.java',['../IntVarElement_8java.html',1,'']]],
+  ['intvariterator_2ejava_13',['IntVarIterator.java',['../IntVarIterator_8java.html',1,'']]],
+  ['intvarlocalsearchfilter_2ejava_14',['IntVarLocalSearchFilter.java',['../IntVarLocalSearchFilter_8java.html',1,'']]],
+  ['intvarlocalsearchoperator_2ejava_15',['IntVarLocalSearchOperator.java',['../IntVarLocalSearchOperator_8java.html',1,'']]],
+  ['inverseconstraintproto_2ejava_16',['InverseConstraintProto.java',['../InverseConstraintProto_8java.html',1,'']]],
+  ['inverseconstraintprotoorbuilder_2ejava_17',['InverseConstraintProtoOrBuilder.java',['../InverseConstraintProtoOrBuilder_8java.html',1,'']]]
 ];

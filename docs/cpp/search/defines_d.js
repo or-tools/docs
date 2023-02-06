@@ -1,8 +1,24 @@
 var searchData=
 [
-  ['qcheck_0',['QCHECK',['../base_2logging_8h.html#aa2b530d7153c37f4caa70054c6452533',1,'logging.h']]],
-  ['qcheck_5feq_1',['QCHECK_EQ',['../base_2logging_8h.html#acdd435d10e595c91b6861a233b8e8432',1,'logging.h']]],
-  ['qcheck_5fge_2',['QCHECK_GE',['../base_2logging_8h.html#a1a87b6f1a145a099683098400cc40644',1,'logging.h']]],
-  ['qcheck_5fgt_3',['QCHECK_GT',['../base_2logging_8h.html#a24b595a0db6ebf69168cd820da83215b',1,'logging.h']]],
-  ['qcheck_5fok_4',['QCHECK_OK',['../base_2logging_8h.html#a91223707c1a1a44be1c1757f324eda47',1,'logging.h']]]
+  ['scip_5fto_5fstatus_0',['SCIP_TO_STATUS',['../scip__helper__macros_8h.html#a01a5597b6c8cb50ac465e5abebf00eec',1,'scip_helper_macros.h']]],
+  ['scoped_5finstruction_5fcount_1',['SCOPED_INSTRUCTION_COUNT',['../stats_8h.html#a778dda76cff1d491efd5888b0bf9b56e',1,'stats.h']]],
+  ['scoped_5ftime_5fstat_2',['SCOPED_TIME_STAT',['../stats_8h.html#a9995704aaaf45fc21e08c847551a8d04',1,'stats.h']]],
+  ['set_5fdebug_5fvariable_5fname_3',['SET_DEBUG_VARIABLE_NAME',['../routing__lp__scheduling_8cc.html#ac064b32697c0f182bdbc32405ad64b80',1,'routing_lp_scheduling.cc']]],
+  ['size_5fmax_4',['SIZE_MAX',['../parser_8yy_8cc.html#a3c75bb398badb69c7577b21486f9963f',1,'parser.yy.cc']]],
+  ['solver_5flog_5',['SOLVER_LOG',['../util_2logging_8h.html#a5f67b653dd99ddbe5e3367e3b4b7b532',1,'logging.h']]],
+  ['status_5fmacros_5fimpl_5fassign_5for_5freturn_5f_6',['STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_',['../base_2status__macros_8h.html#a6fe8b56b0e25c4fa0ff7e389c178eb7e',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5fconcat_5f_7',['STATUS_MACROS_IMPL_CONCAT_',['../base_2status__macros_8h.html#a551c0240dbdcbbc1e75d071e09dc1444',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5fconcat_5finner_5f_8',['STATUS_MACROS_IMPL_CONCAT_INNER_',['../base_2status__macros_8h.html#ac0d34ee78e672a9e1e522942e5f49524',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5funparenthesis_9',['STATUS_MACROS_IMPL_UNPARENTHESIS',['../base_2status__macros_8h.html#aaf05f8226bde8518988f9b413524ebe2',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5funparenthesis_5finner_10',['STATUS_MACROS_IMPL_UNPARENTHESIS_INNER',['../base_2status__macros_8h.html#a2c367d7e965434ba083d71c28ac1d0a3',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5funparenthesis_5finner_5f_11',['STATUS_MACROS_IMPL_UNPARENTHESIS_INNER_',['../base_2status__macros_8h.html#ac65eae8f36d1c92c31a9c1b965dd5478',1,'status_macros.h']]],
+  ['status_5fmacros_5fimpl_5fvanish_12',['STATUS_MACROS_IMPL_VANISH',['../base_2status__macros_8h.html#a06439d883293ebf4748fc5dca5d54108',1,'status_macros.h']]],
+  ['stringify_13',['STRINGIFY',['../xpress__interface_8cc.html#a43e1cad902b6477bec893cb6430bd6c8',1,'xpress_interface.cc']]],
+  ['stringify2_14',['STRINGIFY2',['../xpress__interface_8cc.html#aea267fbb69120cbb73956f92bcd165b7',1,'xpress_interface.cc']]],
+  ['strong_5fassignment_5fop_15',['STRONG_ASSIGNMENT_OP',['../strong__integers_8h.html#a59646276e38e29b818fe8892e2f3cb5f',1,'strong_integers.h']]],
+  ['strong_5fint_5ftype_5farithmetic_5fop_16',['STRONG_INT_TYPE_ARITHMETIC_OP',['../strong__int_8h.html#ab9cbfc83a4f33d12ef0aebc41f982322',1,'strong_int.h']]],
+  ['strong_5fint_5ftype_5fassignment_5fop_17',['STRONG_INT_TYPE_ASSIGNMENT_OP',['../strong__int_8h.html#a25327aa090469c1d220f44104a587360',1,'strong_int.h']]],
+  ['strong_5fint_5ftype_5fcomparison_5fop_18',['STRONG_INT_TYPE_COMPARISON_OP',['../strong__int_8h.html#a94e8edd112f420522b16f100780a4f13',1,'strong_int.h']]],
+  ['strong_5ftype_5farithmetic_5fop_19',['STRONG_TYPE_ARITHMETIC_OP',['../strong__integers_8h.html#a992c6fd039459b1d30aa5b25375f6abc',1,'strong_integers.h']]],
+  ['strong_5ftype_5fcomparison_5fop_20',['STRONG_TYPE_COMPARISON_OP',['../strong__integers_8h.html#a027f126c61c1713662d813159d384e8b',1,'strong_integers.h']]]
 ];
