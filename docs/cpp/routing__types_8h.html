@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/constraint_solver/routing_types.h File Reference</title>
+<title>OR-Tools: routing_types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,53 +100,50 @@ $(document).ready(function(){initNavTree('routing__types_8h.html',''); initResiz
   <div class="headertitle"><div class="title">routing_types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="int__type_8h_source.html">ortools/base/int_type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
-</div>
+
 <p><a href="routing__types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a8c51d4d075c05d903543490bd5751401"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8c51d4d075c05d903543490bd5751401">operations_research::RoutingTransitCallback1</a></td></tr>
-<tr class="separator:a8c51d4d075c05d903543490bd5751401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adace90a1cccf24f80ce7a5b52727503c"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(int64_t, int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#adace90a1cccf24f80ce7a5b52727503c">operations_research::RoutingTransitCallback2</a></td></tr>
-<tr class="separator:adace90a1cccf24f80ce7a5b52727503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a55ebbec673ca2cbba4aa8a13ea1c6a"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::vector&lt; int64_t &gt;, std::vector&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2a55ebbec673ca2cbba4aa8a13ea1c6a">operations_research::RoutingIndexPair</a></td></tr>
-<tr class="memdesc:a2a55ebbec673ca2cbba4aa8a13ea1c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTE(user): keep the "&gt; &gt;" for SWIG.  <br /></td></tr>
-<tr class="separator:a2a55ebbec673ca2cbba4aa8a13ea1c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114ea14886b902c9cf9b988c4ef12672"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; RoutingIndexPair &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a114ea14886b902c9cf9b988c4ef12672">operations_research::RoutingIndexPairs</a></td></tr>
-<tr class="separator:a114ea14886b902c9cf9b988c4ef12672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae02b84a58c3008fb747c0f6917bfe6c"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aae02b84a58c3008fb747c0f6917bfe6c">RoutingTransitCallback1</a></td></tr>
+<tr class="separator:aae02b84a58c3008fb747c0f6917bfe6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26868b9d744edcd8d59145e068678885"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(int64_t, int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a26868b9d744edcd8d59145e068678885">RoutingTransitCallback2</a></td></tr>
+<tr class="separator:a26868b9d744edcd8d59145e068678885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630fe793e232b361cd9fd99f18599df1"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::vector&lt; int64_t &gt;, std::vector&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a630fe793e232b361cd9fd99f18599df1">RoutingIndexPair</a></td></tr>
+<tr class="separator:a630fe793e232b361cd9fd99f18599df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7db0bee0a22d1791d040fd3853f3b7"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; RoutingIndexPair &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aef7db0bee0a22d1791d040fd3853f3b7">RoutingIndexPairs</a></td></tr>
+<tr class="separator:aef7db0bee0a22d1791d040fd3853f3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8fee47a5359613bc7f8df356595c7ff0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8fee47a5359613bc7f8df356595c7ff0">operations_research::DEFINE_INT_TYPE</a> (RoutingNodeIndex, int)</td></tr>
-<tr class="separator:a8fee47a5359613bc7f8df356595c7ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9196adb7aa76d8e60cd4c0c6687c0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afa9196adb7aa76d8e60cd4c0c6687c0d">operations_research::DEFINE_INT_TYPE</a> (RoutingCostClassIndex, int)</td></tr>
-<tr class="separator:afa9196adb7aa76d8e60cd4c0c6687c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d98b6fb94b9cdabfaca3d9f3c9632e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3d98b6fb94b9cdabfaca3d9f3c9632e9">operations_research::DEFINE_INT_TYPE</a> (RoutingDimensionIndex, int)</td></tr>
-<tr class="separator:a3d98b6fb94b9cdabfaca3d9f3c9632e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edd1d7c020633019991b13d14b4b15b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1edd1d7c020633019991b13d14b4b15b">operations_research::DEFINE_INT_TYPE</a> (RoutingDisjunctionIndex, int)</td></tr>
-<tr class="separator:a1edd1d7c020633019991b13d14b4b15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff19b78b3d56ff95c23727ca4ff64ea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aff19b78b3d56ff95c23727ca4ff64ea7">operations_research::DEFINE_INT_TYPE</a> (RoutingVehicleClassIndex, int)</td></tr>
-<tr class="separator:aff19b78b3d56ff95c23727ca4ff64ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744a950e36c53ba931d3df3b8b0dbd90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a744a950e36c53ba931d3df3b8b0dbd90">DEFINE_INT_TYPE</a> (RoutingNodeIndex, int)</td></tr>
+<tr class="memdesc:a744a950e36c53ba931d3df3b8b0dbd90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defining common types used in the routing library outside the main <a class="el" href="classoperations__research_1_1_routing_model.html">RoutingModel</a> class has several purposes: 1) It allows some small libraries to avoid a dependency on routing.  <br /></td></tr>
+<tr class="separator:a744a950e36c53ba931d3df3b8b0dbd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9780159f49f7c79d290bbbfd6c719cb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9780159f49f7c79d290bbbfd6c719cb1">DEFINE_INT_TYPE</a> (RoutingCostClassIndex, int)</td></tr>
+<tr class="separator:a9780159f49f7c79d290bbbfd6c719cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84d6030766b7b51262704bf478ceae2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac84d6030766b7b51262704bf478ceae2">DEFINE_INT_TYPE</a> (RoutingDimensionIndex, int)</td></tr>
+<tr class="separator:ac84d6030766b7b51262704bf478ceae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a66af985c85e23c8275558b502f1d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3a66af985c85e23c8275558b502f1d0c">DEFINE_INT_TYPE</a> (RoutingDisjunctionIndex, int)</td></tr>
+<tr class="separator:a3a66af985c85e23c8275558b502f1d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ec829918eeac0c17e2b83ef9fc0084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac1ec829918eeac0c17e2b83ef9fc0084">DEFINE_INT_TYPE</a> (RoutingVehicleClassIndex, int)</td></tr>
+<tr class="separator:ac1ec829918eeac0c17e2b83ef9fc0084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_afbb39f66221aac28bbdefd1dca2b2b0.html">constraint_solver</a></li><li class="navelem"><a class="el" href="routing__types_8h.html">routing_types.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

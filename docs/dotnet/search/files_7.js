@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knapsacksolver_2ecs_0',['KnapsackSolver.cs',['../KnapsackSolver_8cs.html',1,'']]]
+  ['routingsolvertests_2ecs_0',['RoutingSolverTests.cs',['../RoutingSolverTests_8cs.html',1,'']]]
 ];

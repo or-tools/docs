@@ -1,31 +1,4 @@
 var searchData=
 [
-  ['improvementsearchlimit_0',['ImprovementSearchLimit',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ImprovementSearchLimit.html',1,'com::google::ortools::constraintsolver']]],
-  ['improvementsearchlimitparameters_1',['ImprovementSearchLimitParameters',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
-  ['improvementsearchlimitparametersorbuilder_2',['ImprovementSearchLimitParametersOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParametersOrBuilder.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
-  ['incrementalityvalues_3',['IncrementalityValues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html',1,'com::google::ortools::linearsolver::MPSolverParameters']]],
-  ['infeasibilityinformation_4',['InfeasibilityInformation',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['infeasibilityinformationorbuilder_5',['InfeasibilityInformationOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformationOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['initialbasisheuristic_6',['InitialBasisHeuristic',['../enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html',1,'com::google::ortools::glop::GlopParameters']]],
-  ['intboolpair_7',['IntBoolPair',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html',1,'com::google::ortools::constraintsolver']]],
-  ['integercastinfo_8',['IntegerCastInfo',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html',1,'com::google::ortools::constraintsolver::Solver']]],
-  ['integerparam_9',['IntegerParam',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IntegerParam.html',1,'com::google::ortools::linearsolver::MPSolverParameters']]],
-  ['integervariableproto_10',['IntegerVariableProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html',1,'com::google::ortools::sat']]],
-  ['integervariableprotoorbuilder_11',['IntegerVariableProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProtoOrBuilder.html',1,'com::google::ortools::sat']]],
-  ['intervalconstraintproto_12',['IntervalConstraintProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntervalConstraintProto.html',1,'com::google::ortools::sat']]],
-  ['intervalconstraintprotoorbuilder_13',['IntervalConstraintProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1IntervalConstraintProtoOrBuilder.html',1,'com::google::ortools::sat']]],
-  ['intervalvar_14',['IntervalVar',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVar.html',1,'com.google.ortools.constraintsolver.IntervalVar'],['../classcom_1_1google_1_1ortools_1_1sat_1_1IntervalVar.html',1,'com.google.ortools.sat.IntervalVar']]],
-  ['intervalvarelement_15',['IntervalVarElement',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html',1,'com::google::ortools::constraintsolver']]],
-  ['intexpr_16',['IntExpr',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html',1,'com::google::ortools::constraintsolver']]],
-  ['intinttolongfunction_17',['IntIntToLongFunction',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IntIntToLongFunction.html',1,'com::google::ortools::constraintsolver']]],
-  ['inttupleset_18',['IntTupleSet',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html',1,'com::google::ortools::constraintsolver']]],
-  ['intvar_19',['IntVar',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html',1,'com.google.ortools.constraintsolver.IntVar'],['../classcom_1_1google_1_1ortools_1_1sat_1_1IntVar.html',1,'com.google.ortools.sat.IntVar']]],
-  ['intvarelement_20',['IntVarElement',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarElement.html',1,'com::google::ortools::constraintsolver']]],
-  ['intvariterator_21',['IntVarIterator',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html',1,'com::google::ortools::constraintsolver']]],
-  ['intvarlocalsearchfilter_22',['IntVarLocalSearchFilter',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchFilter.html',1,'com::google::ortools::constraintsolver']]],
-  ['intvarlocalsearchoperator_23',['IntVarLocalSearchOperator',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html',1,'com::google::ortools::constraintsolver']]],
-  ['inverseconstraintproto_24',['InverseConstraintProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1InverseConstraintProto.html',1,'com::google::ortools::sat']]],
-  ['inverseconstraintprotoorbuilder_25',['InverseConstraintProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1InverseConstraintProtoOrBuilder.html',1,'com::google::ortools::sat']]],
-  ['iterationstats_26',['IterationStats',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['iterationstatsorbuilder_27',['IterationStatsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStatsOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]]
+  ['knapsacksolvertest_0',['KnapsackSolverTest',['../classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolverTest.html',1,'com::google::ortools::algorithms']]]
 ];

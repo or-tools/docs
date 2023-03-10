@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: util::graph Namespace Reference</title>
+<title>OR-Tools: util::graph Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,23 +101,23 @@ $(document).ready(function(){initNavTree('namespaceutil_1_1graph.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0d7ab592842225bf80afd735048a0e0e"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
-<tr class="memitem:a0d7ab592842225bf80afd735048a0e0e"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e">FastTopologicalSort</a> (const AdjacencyLists &amp;adj)</td></tr>
-<tr class="separator:a0d7ab592842225bf80afd735048a0e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
-<tr class="memitem:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7">FindCycleInGraph</a> (const AdjacencyLists &amp;adj)</td></tr>
-<tr class="separator:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c544f7c7c323eb16a64389b95b79458"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a5c544f7c7c323eb16a64389b95b79458">DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a5c544f7c7c323eb16a64389b95b79458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b429182836eddf34189e5af39f1e886"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a1b429182836eddf34189e5af39f1e886">DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a1b429182836eddf34189e5af39f1e886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a4bcd58ffa60a8a68fb960ff41deba777">StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
+<tr class="memitem:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#ade6e5ba3989776e2e35deb2aa3e4cc01">FastTopologicalSort</a> (const AdjacencyLists &amp;adj)</td></tr>
+<tr class="separator:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6175f2587afb21928b166d245cd9175a"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
+<tr class="memitem:a6175f2587afb21928b166d245cd9175a"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a6175f2587afb21928b166d245cd9175a">FindCycleInGraph</a> (const AdjacencyLists &amp;adj)</td></tr>
+<tr class="separator:a6175f2587afb21928b166d245cd9175a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f60f83641a75dbbaaf3855541f2529e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a9f60f83641a75dbbaaf3855541f2529e">DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a9f60f83641a75dbbaaf3855541f2529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690ad981593a2fd2d70e93838a9e0caa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a690ad981593a2fd2d70e93838a9e0caa">DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a690ad981593a2fd2d70e93838a9e0caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#ad4cd4c6ef5dae86954f253e3911387ad">StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1b429182836eddf34189e5af39f1e886" name="a1b429182836eddf34189e5af39f1e886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b429182836eddf34189e5af39f1e886">&#9670;&#160;</a></span>DenseIntStableTopologicalSortOrDie()</h2>
+<a id="a690ad981593a2fd2d70e93838a9e0caa" name="a690ad981593a2fd2d70e93838a9e0caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a690ad981593a2fd2d70e93838a9e0caa">&#9670;&#160;</a></span>DenseIntStableTopologicalSortOrDie()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; util::graph::DenseIntStableTopologicalSortOrDie </td>
+          <td class="memname">std::vector&lt; int &gt; DenseIntStableTopologicalSortOrDie </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_nodes</em>, </td>
@@ -154,8 +154,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c544f7c7c323eb16a64389b95b79458" name="a5c544f7c7c323eb16a64389b95b79458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c544f7c7c323eb16a64389b95b79458">&#9670;&#160;</a></span>DenseIntTopologicalSortOrDie()</h2>
+<a id="a9f60f83641a75dbbaaf3855541f2529e" name="a9f60f83641a75dbbaaf3855541f2529e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f60f83641a75dbbaaf3855541f2529e">&#9670;&#160;</a></span>DenseIntTopologicalSortOrDie()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; util::graph::DenseIntTopologicalSortOrDie </td>
+          <td class="memname">std::vector&lt; int &gt; DenseIntTopologicalSortOrDie </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_nodes</em>, </td>
@@ -192,16 +192,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d7ab592842225bf80afd735048a0e0e" name="a0d7ab592842225bf80afd735048a0e0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7ab592842225bf80afd735048a0e0e">&#9670;&#160;</a></span>FastTopologicalSort()</h2>
+<a id="ade6e5ba3989776e2e35deb2aa3e4cc01" name="ade6e5ba3989776e2e35deb2aa3e4cc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6e5ba3989776e2e35deb2aa3e4cc01">&#9670;&#160;</a></span>FastTopologicalSort()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AdjacencyLists &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; std::vector&lt; int &gt; &gt; util::graph::FastTopologicalSort </td>
+          <td class="memname">absl::StatusOr&lt; std::vector&lt; int &gt; &gt; FastTopologicalSort </td>
           <td>(</td>
           <td class="paramtype">const AdjacencyLists &amp;&#160;</td>
           <td class="paramname"><em>adj</em></td><td>)</td>
@@ -209,32 +207,19 @@ template&lt;class AdjacencyLists &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is the recommended API when performance matters. It's also very simple. AdjacencyList is any type that lets you iterate over the neighbors of node with the [] operator, for example vector&lt;vector&lt;int&gt;&gt; or <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">util::Graph</a>.</p>
-<p>If you don't already have an adjacency list representation, build one using StaticGraph&lt;&gt; in ./graph.h: <a class="el" href="namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e">FastTopologicalSort()</a> can take any such graph as input.</p>
-<p>ERRORS: returns InvalidArgumentError if the input is broken (negative or out-of-bounds integers) or if the graph is cyclic. In the latter case, the error message will contain "cycle". Note that if cycles may occur in your input, you can probably assume that your input isn't broken, and thus rely on failures to detect that the graph is cyclic.</p>
-<p>TIE BREAKING: the returned topological order is deterministic and fixed, and corresponds to iterating on nodes in a LIFO (Breadth-first) order.</p>
-<p>Benchmark: gpaste/6147236302946304, 4-10x faster than util_graph::TopoSort().</p>
-<p>EXAMPLES: std::vector&lt;std::vector&lt;int&gt;&gt; adj = {{..}, {..}, ..}; <a class="el" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN(std::vector&lt;int&gt; topo_order, FastTopologicalSort(adj))</a>;</p>
-<p>or std::vector&lt;pair&lt;int, int&gt;&gt; arcs = {{.., ..}, ..., }; ASSIGN_OR_RETURN( std::vector&lt;int&gt; topo_order, FastTopologicalSort(util::StaticGraph&lt;&gt;::FromArcs(num_nodes, arcs))); </p>
-<p>We cast to unsigned int to test "head &lt; 0 || head ≥ num_nodes" with a single test. Microbenchmarks showed a ~1% overall performance gain.</p>
-<p>NOTE(user): We could detect self-arcs here (head == from) and exit early, but microbenchmarks show a 2 to 4% slow-down if we do it, so we simply rely on self-arcs being detected as cycles in the topo sort.</p>
-<p>We cast to unsigned int to test "head &lt; 0 || head ≥ num_nodes" with a single test. Microbenchmarks showed a ~1% overall performance gain.</p>
-<p>NOTE(user): We could detect self-arcs here (head == from) and exit early, but microbenchmarks show a 2 to 4% slow-down if we do it, so we simply rely on self-arcs being detected as cycles in the topo sort.</p>
 
 <p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00614">614</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
-<a id="a440afdf238e5a752bbe4e1bcc8878fe7" name="a440afdf238e5a752bbe4e1bcc8878fe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a440afdf238e5a752bbe4e1bcc8878fe7">&#9670;&#160;</a></span>FindCycleInGraph()</h2>
+<a id="a6175f2587afb21928b166d245cd9175a" name="a6175f2587afb21928b166d245cd9175a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6175f2587afb21928b166d245cd9175a">&#9670;&#160;</a></span>FindCycleInGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AdjacencyLists &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; std::vector&lt; int &gt; &gt; util::graph::FindCycleInGraph </td>
+          <td class="memname">absl::StatusOr&lt; std::vector&lt; int &gt; &gt; FindCycleInGraph </td>
           <td>(</td>
           <td class="paramtype">const AdjacencyLists &amp;&#160;</td>
           <td class="paramname"><em>adj</em></td><td>)</td>
@@ -242,40 +227,19 @@ template&lt;class AdjacencyLists &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Finds a cycle in the directed graph given as argument: nodes are dense integers in 0..num_nodes-1, and (directed) arcs are pairs of nodes {from, to}. The returned cycle is a list of nodes that form a cycle, eg. {1, 4, 3} if the cycle 1-&gt;4-&gt;3-&gt;1 exists. If the graph is acyclic, returns an empty vector. </p>
-<p>To find a cycle, we start a DFS from each yet-unvisited node and try to find a cycle, if we don't find it then we know for sure that no cycle is reachable from any of the explored nodes (so, we don't explore them in later DFSs).</p>
-<p>The DFS stack will contain a chain of nodes, from the root of the DFS to the current leaf.</p>
-<p>Points at the first child node that we did <em>not</em> yet look at.</p>
-<p>Start the DFS.</p>
-<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000659">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
-<p>We detected a cycle! It corresponds to the tail end of dfs_stack, in reverse order, until we find "child".</p>
-<p>Push the child onto the stack.</p>
-<p>Verify that its adjacency list seems valid.</p>
-<p>If we're here, then all the DFS stopped, and there is no cycle.</p>
-<p>To find a cycle, we start a DFS from each yet-unvisited node and try to find a cycle, if we don't find it then we know for sure that no cycle is reachable from any of the explored nodes (so, we don't explore them in later DFSs).</p>
-<p>The DFS stack will contain a chain of nodes, from the root of the DFS to the current leaf.</p>
-<p>Points at the first child node that we did <em>not</em> yet look at.</p>
-<p>Start the DFS.</p>
-<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000659">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
-<p>We detected a cycle! It corresponds to the tail end of dfs_stack, in reverse order, until we find "child".</p>
-<p>Push the child onto the stack.</p>
-<p>Verify that its adjacency list seems valid.</p>
-<p>If we're here, then all the DFS stopped, and there is no cycle.</p>
 
 <p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00655">655</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
-<a id="a4bcd58ffa60a8a68fb960ff41deba777" name="a4bcd58ffa60a8a68fb960ff41deba777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bcd58ffa60a8a68fb960ff41deba777">&#9670;&#160;</a></span>StableTopologicalSortOrDie()</h2>
+<a id="ad4cd4c6ef5dae86954f253e3911387ad" name="ad4cd4c6ef5dae86954f253e3911387ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cd4c6ef5dae86954f253e3911387ad">&#9670;&#160;</a></span>StableTopologicalSortOrDie()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; T &gt; util::graph::StableTopologicalSortOrDie </td>
+          <td class="memname">std::vector&lt; T &gt; StableTopologicalSortOrDie </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>nodes</em>, </td>
@@ -300,11 +264,14 @@ template&lt;typename T &gt; </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceutil.html">util</a></li><li class="navelem"><a class="el" href="namespaceutil_1_1graph.html">graph</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

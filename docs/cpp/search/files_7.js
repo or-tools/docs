@@ -8,5 +8,6 @@ var searchData=
   ['highs_5fproto_5fsolver_2ecc_5',['highs_proto_solver.cc',['../highs__proto__solver_8cc.html',1,'']]],
   ['highs_5fproto_5fsolver_2eh_6',['highs_proto_solver.h',['../highs__proto__solver_8h.html',1,'']]],
   ['hungarian_2ecc_7',['hungarian.cc',['../hungarian_8cc.html',1,'']]],
-  ['hungarian_2eh_8',['hungarian.h',['../hungarian_8h.html',1,'']]]
+  ['hungarian_2eh_8',['hungarian.h',['../hungarian_8h.html',1,'']]],
+  ['hungarian_5ftest_2ecc_9',['hungarian_test.cc',['../hungarian__test_8cc.html',1,'']]]
 ];

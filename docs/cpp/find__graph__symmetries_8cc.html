@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/algorithms/find_graph_symmetries.cc File Reference</title>
+<title>OR-Tools: find_graph_symmetries.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,48 +99,23 @@ $(document).ready(function(){initNavTree('find__graph__symmetries_8cc.html','');
   <div class="headertitle"><div class="title">find_graph_symmetries.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="find__graph__symmetries_8h_source.html">ortools/algorithms/find_graph_symmetries.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/algorithm/container.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/flags/flag.h&quot;</code><br />
-<code>#include &quot;absl/memory/memory.h&quot;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_join.h&quot;</code><br />
-<code>#include &quot;absl/time/clock.h&quot;</code><br />
-<code>#include &quot;absl/time/time.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="dense__doubly__linked__list_8h_source.html">ortools/algorithms/dense_doubly_linked_list.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dynamic__partition_8h_source.html">ortools/algorithms/dynamic_partition.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dynamic__permutation_8h_source.html">ortools/algorithms/dynamic_permutation.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sparse__permutation_8h_source.html">ortools/algorithms/sparse_permutation.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="graph_2iterators_8h_source.html">ortools/graph/iterators.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="graph_2util_8h_source.html">ortools/graph/util.h</a>&quot;</code><br />
-</div>
+
 <p><a href="find__graph__symmetries_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a319b3c460e91c76ad49c4589748e4f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="find__graph__symmetries_8cc.html#a319b3c460e91c76ad49c4589748e4f0c">ABSL_FLAG</a> (bool, minimize_permutation_support_size, false, &quot;Tweak the algorithm <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> try and minimize the support size&quot; &quot; of the generators produced. This may negatively impact the&quot; &quot; performance, but works great on the sat_holeXXX benchmarks&quot; &quot; to reduce the support size.&quot;)</td></tr>
+<tr class="memitem:a319b3c460e91c76ad49c4589748e4f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="find__graph__symmetries_8cc.html#a319b3c460e91c76ad49c4589748e4f0c">ABSL_FLAG</a> (bool, minimize_permutation_support_size, false, &quot;Tweak the algorithm to try and minimize the support size&quot; &quot; of the generators produced. This may negatively impact the&quot; &quot; performance, but works great on the sat_holeXXX benchmarks&quot; &quot; to reduce the support size.&quot;)</td></tr>
 <tr class="separator:a319b3c460e91c76ad49c4589748e4f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75bb58394f377824737092b3af1cb2cf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a75bb58394f377824737092b3af1cb2cf">operations_research::CountTriangles</a> (const <a class="el" href="classutil_1_1StaticGraph.html">::util::StaticGraph</a>&lt; int, int &gt; &amp;graph, int max_degree)</td></tr>
-<tr class="memdesc:a75bb58394f377824737092b3af1cb2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">HELPER FUNCTIONS: PUBLIC FOR UNIT TESTING ONLY.  <br /></td></tr>
-<tr class="separator:a75bb58394f377824737092b3af1cb2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e29c3134bad5ead9055040e75b61244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3e29c3134bad5ead9055040e75b61244">operations_research::LocalBfs</a> (const <a class="el" href="classutil_1_1StaticGraph.html">::util::StaticGraph</a>&lt; int, int &gt; &amp;graph, int source, int stop_after_num_nodes, std::vector&lt; int &gt; *visited, std::vector&lt; int &gt; *num_within_radius, std::vector&lt; bool &gt; *tmp_mask)</td></tr>
-<tr class="separator:a3e29c3134bad5ead9055040e75b61244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575b50e1dc325113e39303390b42fd6f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a575b50e1dc325113e39303390b42fd6f">CountTriangles</a> (const <a class="el" href="classutil_1_1_static_graph.html">::util::StaticGraph</a>&lt; int, int &gt; &amp;graph, int max_degree)</td></tr>
+<tr class="separator:a575b50e1dc325113e39303390b42fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffa98697ab64bdb1fbb903ebd291599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#adffa98697ab64bdb1fbb903ebd291599">LocalBfs</a> (const <a class="el" href="classutil_1_1_static_graph.html">::util::StaticGraph</a>&lt; int, int &gt; &amp;graph, int source, int stop_after_num_nodes, std::vector&lt; int &gt; *visited, std::vector&lt; int &gt; *num_within_radius, std::vector&lt; bool &gt; *tmp_mask)</td></tr>
+<tr class="separator:adffa98697ab64bdb1fbb903ebd291599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a319b3c460e91c76ad49c4589748e4f0c" name="a319b3c460e91c76ad49c4589748e4f0c"></a>
@@ -170,7 +145,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Tweak the algorithm <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> try and minimize the support size&quot; &quot; of the generators produced. This may negatively impact the&quot; &quot;&#160;</td>
+          <td class="paramtype">&quot;Tweak the algorithm to try and minimize the support size&quot; &quot; of the generators produced. This may negatively impact the&quot; &quot;&#160;</td>
           <td class="paramname"><em>performance</em>, </td>
         </tr>
         <tr>
@@ -186,18 +161,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_80dda7a75b0dfcf996988638a63eb03a.html">algorithms</a></li><li class="navelem"><a class="el" href="find__graph__symmetries_8cc.html">find_graph_symmetries.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

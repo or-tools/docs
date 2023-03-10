@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/base/bitmap.h File Reference</title>
+<title>OR-Tools: bitmap.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,50 +100,49 @@ $(document).ready(function(){initNavTree('bitmap_8h.html',''); initResizable(); 
   <div class="headertitle"><div class="title">bitmap.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
-<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
-</div>
+
 <p><a href="bitmap_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1Bitmap.html">operations_research::Bitmap</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_bitmap.html">Bitmap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html">operations_research::internal</a></td></tr>
-<tr class="memdesc:namespaceoperations__research_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details, here and below. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4276a61ac148b5e4009e2f515f1453ee"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a4276a61ac148b5e4009e2f515f1453ee">operations_research::internal::OneBit64</a> (int pos)</td></tr>
-<tr class="separator:a4276a61ac148b5e4009e2f515f1453ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642d0ef30f0099a44aef96c27d84b090"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a642d0ef30f0099a44aef96c27d84b090">operations_research::internal::BitPos64</a> (uint64_t pos)</td></tr>
-<tr class="separator:a642d0ef30f0099a44aef96c27d84b090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcce32287e5f9346df470cc3a0e6c169"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#afcce32287e5f9346df470cc3a0e6c169">operations_research::internal::BitOffset64</a> (uint64_t pos)</td></tr>
-<tr class="separator:afcce32287e5f9346df470cc3a0e6c169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b41253a72594759082e0c72eaa1e284"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a1b41253a72594759082e0c72eaa1e284">operations_research::internal::BitLength64</a> (uint64_t size)</td></tr>
-<tr class="separator:a1b41253a72594759082e0c72eaa1e284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8254b0157656b65e18e2db918d462e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a8254b0157656b65e18e2db918d462e5a">operations_research::internal::IsBitSet64</a> (const uint64_t *const bitset, uint64_t pos)</td></tr>
-<tr class="separator:a8254b0157656b65e18e2db918d462e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07743e286ce6ded2b13ed91d43158404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a07743e286ce6ded2b13ed91d43158404">operations_research::internal::SetBit64</a> (uint64_t *const bitset, uint64_t pos)</td></tr>
-<tr class="separator:a07743e286ce6ded2b13ed91d43158404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04bf52dc3de549e6ddc4c823bd5ab5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#aa04bf52dc3de549e6ddc4c823bd5ab5e">operations_research::internal::ClearBit64</a> (uint64_t *const bitset, uint64_t pos)</td></tr>
-<tr class="separator:aa04bf52dc3de549e6ddc4c823bd5ab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637afdb63be880caf990bd962bc1c8bf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a637afdb63be880caf990bd962bc1c8bf">OneBit64</a> (int pos)</td></tr>
+<tr class="separator:a637afdb63be880caf990bd962bc1c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cb09b8ebf7deae15c82a73a35488a1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a49cb09b8ebf7deae15c82a73a35488a1">BitPos64</a> (uint64_t pos)</td></tr>
+<tr class="separator:a49cb09b8ebf7deae15c82a73a35488a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288fadae32fc69d64c674c193c424041"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a288fadae32fc69d64c674c193c424041">BitOffset64</a> (uint64_t pos)</td></tr>
+<tr class="separator:a288fadae32fc69d64c674c193c424041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130b351655656afc92f7d9c2ca865ed2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a130b351655656afc92f7d9c2ca865ed2">BitLength64</a> (uint64_t size)</td></tr>
+<tr class="separator:a130b351655656afc92f7d9c2ca865ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfaaceadf30dac870794d79f8f404e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a3bfaaceadf30dac870794d79f8f404e1">IsBitSet64</a> (const uint64_t *const bitset, uint64_t pos)</td></tr>
+<tr class="separator:a3bfaaceadf30dac870794d79f8f404e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bfe16e3d21103bb190da070600aeb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#ab7bfe16e3d21103bb190da070600aeb4">SetBit64</a> (uint64_t *const bitset, uint64_t pos)</td></tr>
+<tr class="separator:ab7bfe16e3d21103bb190da070600aeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d120ffdd2fa658702d15d116f7f639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#ac3d120ffdd2fa658702d15d116f7f639">ClearBit64</a> (uint64_t *const bitset, uint64_t pos)</td></tr>
+<tr class="separator:ac3d120ffdd2fa658702d15d116f7f639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="bitmap_8h.html">bitmap.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

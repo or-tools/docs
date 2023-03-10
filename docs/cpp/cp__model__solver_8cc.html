@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/sat/cp_model_solver.cc File Reference</title>
+<title>OR-Tools: cp_model_solver.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,103 +100,18 @@ $(document).ready(function(){initNavTree('cp__model__solver_8cc.html',''); initR
   <div class="headertitle"><div class="title">cp_model_solver.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="cp__model__solver_8h_source.html">ortools/sat/cp_model_solver.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
-<code>#include &quot;google/protobuf/text_format.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2file_8h_source.html">ortools/base/file.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="helpers_8h_source.html">ortools/base/helpers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="options_8h_source.html">ortools/base/options.h</a>&quot;</code><br />
-<code>#include &quot;absl/base/thread_annotations.h&quot;</code><br />
-<code>#include &quot;absl/container/btree_map.h&quot;</code><br />
-<code>#include &quot;absl/container/btree_set.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/flags/flag.h&quot;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_join.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_split.h&quot;</code><br />
-<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
-<code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
-<code>#include &quot;absl/types/span.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="cleanup_8h_source.html">ortools/base/cleanup.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="connected__components_8h_source.html">ortools/graph/connected_components.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="clause_8h_source.html">ortools/sat/clause.h</a>&quot;</code><br />
-<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__checker_8h_source.html">ortools/sat/cp_model_checker.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__lns_8h_source.html">ortools/sat/cp_model_lns.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__loader_8h_source.html">ortools/sat/cp_model_loader.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__mapping_8h_source.html">ortools/sat/cp_model_mapping.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__postsolve_8h_source.html">ortools/sat/cp_model_postsolve.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__presolve_8h_source.html">ortools/sat/cp_model_presolve.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__search_8h_source.html">ortools/sat/cp_model_search.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__symmetries_8h_source.html">ortools/sat/cp_model_symmetries.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cuts_8h_source.html">ortools/sat/cuts.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drat__checker_8h_source.html">ortools/sat/drat_checker.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drat__proof__handler_8h_source.html">ortools/sat/drat_proof_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="feasibility__pump_8h_source.html">ortools/sat/feasibility_pump.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="implied__bounds_8h_source.html">ortools/sat/implied_bounds.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="integer__expr_8h_source.html">ortools/sat/integer_expr.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="integer__search_8h_source.html">ortools/sat/integer_search.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lb__tree__search_8h_source.html">ortools/sat/lb_tree_search.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2linear__constraint_8h_source.html">ortools/sat/linear_constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="linear__programming__constraint_8h_source.html">ortools/sat/linear_programming_constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="linear__relaxation_8h_source.html">ortools/sat/linear_relaxation.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2lp__utils_8h_source.html">ortools/sat/lp_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="max__hs_8h_source.html">ortools/sat/max_hs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optimization_8h_source.html">ortools/sat/optimization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2parameters__validation_8h_source.html">ortools/sat/parameters_validation.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="precedences_8h_source.html">ortools/sat/precedences.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="presolve__context_8h_source.html">ortools/sat/presolve_context.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="probing_8h_source.html">ortools/sat/probing.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rins_8h_source.html">ortools/sat/rins.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat__inprocessing_8h_source.html">ortools/sat/sat_inprocessing.h</a>&quot;</code><br />
-<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="simplification_8h_source.html">ortools/sat/simplification.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="subsolver_8h_source.html">ortools/sat/subsolver.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="synchronization_8h_source.html">ortools/sat/synchronization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="random__engine_8h_source.html">ortools/util/random_engine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sigint_8h_source.html">ortools/util/sigint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="version_8h_source.html">ortools/base/version.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
-</div>
+
 <p><a href="cp__model__solver_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1SolutionObservers.html">operations_research::sat::SolutionObservers</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by NewFeasibleSolutionObserver to register observers.  <a href="structoperations__research_1_1sat_1_1SolutionObservers.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_solution_observers.html">SolutionObservers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,58 +120,65 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa6b6aa5316ec3a7e0c3ca010c084a747"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#aa6b6aa5316ec3a7e0c3ca010c084a747">ABSL_FLAG</a> (std::string, cp_model_dump_prefix, &quot;/tmp/&quot;, &quot;Prefix filename for all dumped files&quot;)</td></tr>
 <tr class="separator:aa6b6aa5316ec3a7e0c3ca010c084a747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8591ac486d2906248081c3269852e59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a8591ac486d2906248081c3269852e59c">ABSL_FLAG</a> (bool, cp_model_dump_models, false, &quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> true, SolveCpModel() will dump its <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos (original <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, presolved <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, mapping <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>) in text &quot; &quot;format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'{<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>|presolved_model|&quot; &quot;mapping_model}.pb.txt.&quot;)</td></tr>
+<tr class="memitem:a8591ac486d2906248081c3269852e59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a8591ac486d2906248081c3269852e59c">ABSL_FLAG</a> (bool, cp_model_dump_models, false, &quot;DEBUG ONLY. When set to true, SolveCpModel() will dump its <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos (original <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, presolved <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, mapping <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>) in text &quot; &quot;format to 'FLAGS_cp_model_dump_prefix'{<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>|presolved_model|&quot; &quot;mapping_model}.pb.txt.&quot;)</td></tr>
 <tr class="separator:a8591ac486d2906248081c3269852e59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341a22ee5767046a84a942d72d80a80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a341a22ee5767046a84a942d72d80a80d">ABSL_FLAG</a> (bool, cp_model_dump_lns, false, &quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> true, solve will dump all &quot; &quot;lns models <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> in text format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> &quot; &quot;'FLAGS_cp_model_dump_prefix'lns_xxx.pb.txt.&quot;)</td></tr>
+<tr class="memitem:a294867abe6deecc3acd05497d95c0a97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a294867abe6deecc3acd05497d95c0a97">ABSL_FLAG</a> (bool, cp_model_dump_text_proto, true, &quot;DEBUG ONLY, dump models in text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> instead of binary proto.&quot;)</td></tr>
+<tr class="separator:a294867abe6deecc3acd05497d95c0a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341a22ee5767046a84a942d72d80a80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a341a22ee5767046a84a942d72d80a80d">ABSL_FLAG</a> (bool, cp_model_dump_lns, false, &quot;DEBUG ONLY. When set to true, solve will dump all &quot; &quot;lns models <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> in text format to &quot; &quot;'FLAGS_cp_model_dump_prefix'lns_xxx.pb.txt.&quot;)</td></tr>
 <tr class="separator:a341a22ee5767046a84a942d72d80a80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193cc3f652f9593d27a5ab732f3b78a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a193cc3f652f9593d27a5ab732f3b78a4">ABSL_FLAG</a> (bool, cp_model_dump_problematic_lns, false, &quot;DEBUG ONLY. Similar <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> --cp_model_dump_lns, but only dump fragment for &quot; &quot;which we got an issue while validating the postsolved solution. This &quot; &quot;allows <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> debug presolve issues without dumping all the models.&quot;)</td></tr>
+<tr class="memitem:a193cc3f652f9593d27a5ab732f3b78a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a193cc3f652f9593d27a5ab732f3b78a4">ABSL_FLAG</a> (bool, cp_model_dump_problematic_lns, false, &quot;DEBUG ONLY. Similar to --cp_model_dump_lns, but only dump fragment for &quot; &quot;which we got an issue while validating the postsolved solution. This &quot; &quot;allows to debug presolve issues without dumping all the models.&quot;)</td></tr>
 <tr class="separator:a193cc3f652f9593d27a5ab732f3b78a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23699b8683d3ebab70584a05a59bf098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a23699b8683d3ebab70584a05a59bf098">ABSL_FLAG</a> (bool, cp_model_dump_response, false, &quot;DEBUG ONLY. If true, the final <a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a> of each solve will be &quot; &quot;dumped <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'response.pb.txt&quot;)</td></tr>
+<tr class="memitem:a23699b8683d3ebab70584a05a59bf098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a23699b8683d3ebab70584a05a59bf098">ABSL_FLAG</a> (bool, cp_model_dump_response, false, &quot;DEBUG ONLY. If true, the final <a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a> of each solve will be &quot; &quot;dumped to 'FLAGS_cp_model_dump_prefix'response.pb.txt&quot;)</td></tr>
 <tr class="separator:a23699b8683d3ebab70584a05a59bf098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335160e182a5699147bb9514356c7eb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a335160e182a5699147bb9514356c7eb8">ABSL_FLAG</a> (std::string, cp_model_params, &quot;&quot;, &quot;This is interpreted as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> text SatParameters proto. The &quot; &quot;specified fields will override the normal ones for all solves.&quot;)</td></tr>
 <tr class="separator:a335160e182a5699147bb9514356c7eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c8968cf0877bf8947b93c2889c280a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a73c8968cf0877bf8947b93c2889c280a">ABSL_FLAG</a> (std::string, drat_output, &quot;&quot;, &quot;If non-empty, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be written <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> this file. &quot; &quot;This will only be used for pure-SAT problems.&quot;)</td></tr>
+<tr class="memitem:a73c8968cf0877bf8947b93c2889c280a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a73c8968cf0877bf8947b93c2889c280a">ABSL_FLAG</a> (std::string, drat_output, &quot;&quot;, &quot;If non-empty, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be written to this file. &quot; &quot;This will only be used for pure-SAT problems.&quot;)</td></tr>
 <tr class="separator:a73c8968cf0877bf8947b93c2889c280a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858fff11042fe8116cbe8d4247de69c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a858fff11042fe8116cbe8d4247de69c3">ABSL_FLAG</a> (bool, drat_check, false, &quot;If true, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be stored in memory and &quot; &quot;checked <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the problem is UNSAT. This will only be used for &quot; &quot;pure-SAT problems.&quot;)</td></tr>
 <tr class="separator:a858fff11042fe8116cbe8d4247de69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aab1846f5aa2cda3749adb20a0e7c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a9aab1846f5aa2cda3749adb20a0e7c7b">ABSL_FLAG</a> (double, max_drat_time_in_seconds, std::numeric_limits&lt; double &gt;::infinity(), &quot;Maximum <a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> in seconds <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> check the DRAT proof. This will only &quot; &quot;be used is the drat_check flag is enabled.&quot;)</td></tr>
+<tr class="memitem:a9aab1846f5aa2cda3749adb20a0e7c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a9aab1846f5aa2cda3749adb20a0e7c7b">ABSL_FLAG</a> (double, max_drat_time_in_seconds, std::numeric_limits&lt; double &gt;::infinity(), &quot;Maximum <a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> in seconds to check the DRAT proof. This will only &quot; &quot;be used is the drat_check flag is enabled.&quot;)</td></tr>
 <tr class="separator:a9aab1846f5aa2cda3749adb20a0e7c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d4011427b402d43eb77b73566ea4ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#ad7d4011427b402d43eb77b73566ea4ac">ABSL_FLAG</a> (bool, cp_model_check_intermediate_solutions, false, &quot;When true, all intermediate solutions found by the solver will be &quot; &quot;checked. This can be expensive, <a class="el" href="one__tree__lower__bound_8h.html#a6f353d8684dff1645f1601cd68b9a0be">therefore</a> it is off by default.&quot;)</td></tr>
+<tr class="memitem:ad7d4011427b402d43eb77b73566ea4ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#ad7d4011427b402d43eb77b73566ea4ac">ABSL_FLAG</a> (bool, cp_model_check_intermediate_solutions, false, &quot;When true, all intermediate solutions found by the solver will be &quot; &quot;checked. This can be expensive, therefore it is off by default.&quot;)</td></tr>
 <tr class="separator:ad7d4011427b402d43eb77b73566ea4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f95b433d1d98a54c5a3cc08a8ad4af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a75f95b433d1d98a54c5a3cc08a8ad4af">ABSL_FLAG</a> (std::string, cp_model_load_debug_solution, &quot;&quot;, &quot;DEBUG ONLY. When this is set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> non-empty file <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, &quot; &quot;we will interpret this as an internal solution which can be used for &quot; &quot;debugging. For instance we use it <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> identify wrong cuts/reasons.&quot;)</td></tr>
+<tr class="memitem:a75f95b433d1d98a54c5a3cc08a8ad4af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a75f95b433d1d98a54c5a3cc08a8ad4af">ABSL_FLAG</a> (std::string, cp_model_load_debug_solution, &quot;&quot;, &quot;DEBUG ONLY. When this is set to <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> non-empty file <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, &quot; &quot;we will interpret this as an internal solution which can be used for &quot; &quot;debugging. For instance we use it to identify wrong cuts/reasons.&quot;)</td></tr>
 <tr class="separator:a75f95b433d1d98a54c5a3cc08a8ad4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235d61d7468a37db6f8b3532b788683a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a235d61d7468a37db6f8b3532b788683a">ABSL_FLAG</a> (bool, cp_model_ignore_objective, false, &quot;If true, ignore the objective.&quot;)</td></tr>
 <tr class="separator:a235d61d7468a37db6f8b3532b788683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a904089e7dc6d0ff9fcf3dd12ab2c0dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a904089e7dc6d0ff9fcf3dd12ab2c0dcc">ABSL_FLAG</a> (bool, cp_model_fingerprint_model, true, &quot;Fingerprint the model.&quot;)</td></tr>
 <tr class="separator:a904089e7dc6d0ff9fcf3dd12ab2c0dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864c163d77d4ede1b9111a426493a497"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a864c163d77d4ede1b9111a426493a497">operations_research::sat::CpSatSolverVersion</a> ()</td></tr>
-<tr class="memdesc:a864c163d77d4ede1b9111a426493a497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that describes the version of the solver.  <br /></td></tr>
-<tr class="separator:a864c163d77d4ede1b9111a426493a497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287579e5f181fc7c89feccf1128faffb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a287579e5f181fc7c89feccf1128faffb">operations_research::sat::CpModelStats</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:a287579e5f181fc7c89feccf1128faffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the given CpModelProto.  <br /></td></tr>
-<tr class="separator:a287579e5f181fc7c89feccf1128faffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af443c47f14a044d69553b02337b5dc52"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af443c47f14a044d69553b02337b5dc52">operations_research::sat::CpSolverResponseStats</a> (const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>, bool has_objective)</td></tr>
-<tr class="separator:af443c47f14a044d69553b02337b5dc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0558490428f07c5db7b6ae292001375c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0558490428f07c5db7b6ae292001375c">operations_research::sat::NewFeasibleSolutionObserver</a> (const std::function&lt; void(const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)&gt; &amp;observer)</td></tr>
-<tr class="separator:a0558490428f07c5db7b6ae292001375c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10700832ca6bc420f2931eb707957b0b"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a10700832ca6bc420f2931eb707957b0b">operations_research::sat::NewSatParameters</a> (const std::string &amp;params)</td></tr>
-<tr class="separator:a10700832ca6bc420f2931eb707957b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd54ab16ebc1bd6fa80d1e23ab79adc"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4bd54ab16ebc1bd6fa80d1e23ab79adc">operations_research::sat::NewSatParameters</a> (const sat::SatParameters &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
-<tr class="separator:a4bd54ab16ebc1bd6fa80d1e23ab79adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d67b9c66f1cb9c1dcc3415cd5af11bf"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9d67b9c66f1cb9c1dcc3415cd5af11bf">operations_research::sat::SolveCpModel</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a9d67b9c66f1cb9c1dcc3415cd5af11bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a09d851f944ab4f305c3d9f8df99b7bf8">operations_research::sat::Solve</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>)</td></tr>
-<tr class="memdesc:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto and returns an instance of CpSolverResponse.  <br /></td></tr>
-<tr class="separator:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3062797aa0396abf37dbcc99a746f12"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa3062797aa0396abf37dbcc99a746f12">operations_research::sat::SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const SatParameters &amp;params)</td></tr>
-<tr class="memdesc:aa3062797aa0396abf37dbcc99a746f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given parameters.  <br /></td></tr>
-<tr class="separator:aa3062797aa0396abf37dbcc99a746f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52c27ecb43d6486c1a70e022b4aad39"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af52c27ecb43d6486c1a70e022b4aad39">operations_research::sat::SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const std::string &amp;params)</td></tr>
-<tr class="separator:af52c27ecb43d6486c1a70e022b4aad39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2cf14b4dcf5a0f05755ca48c5eddaf7b">CpSatSolverVersion</a> ()</td></tr>
+<tr class="memdesc:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that describes the version of the solver.  <br /></td></tr>
+<tr class="separator:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9d2f0d4258ace84d7ddf7e886c72b913">CpModelStats</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the given CpModelProto.  <br /></td></tr>
+<tr class="separator:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b192124133b53f1445f7f6d4708b332"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1b192124133b53f1445f7f6d4708b332">CpSolverResponseStats</a> (const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>, bool has_objective=true)</td></tr>
+<tr class="memdesc:a1b192124133b53f1445f7f6d4708b332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the solver response.  <br /></td></tr>
+<tr class="separator:a1b192124133b53f1445f7f6d4708b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9777d760241f28010442a2c01f45e0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0a9777d760241f28010442a2c01f45e0">NewFeasibleSolutionObserver</a> (const std::function&lt; void(const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)&gt; &amp;observer)</td></tr>
+<tr class="memdesc:a0a9777d760241f28010442a2c01f45e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a solution observer with the model with model.Add(NewFeasibleSolutionObserver([](response){...}));.  <br /></td></tr>
+<tr class="separator:a0a9777d760241f28010442a2c01f45e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1684fe34484d78336d3cdac55ec6de57"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1684fe34484d78336d3cdac55ec6de57">NewSatParameters</a> (const std::string &amp;params)</td></tr>
+<tr class="memdesc:a1684fe34484d78336d3cdac55ec6de57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates parameters for the solver, which you can add to the model with.  <br /></td></tr>
+<tr class="separator:a1684fe34484d78336d3cdac55ec6de57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b88678ea9aa3ae3e427e53c0d45c1e"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac2b88678ea9aa3ae3e427e53c0d45c1e">NewSatParameters</a> (const sat::SatParameters &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
+<tr class="separator:ac2b88678ea9aa3ae3e427e53c0d45c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9299de04255b99318446500127d79e1"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa9299de04255b99318446500127d79e1">SolveCpModel</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:aa9299de04255b99318446500127d79e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto.  <br /></td></tr>
+<tr class="separator:aa9299de04255b99318446500127d79e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af904018d9a1c9983624b1ce0331f2bf5"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af904018d9a1c9983624b1ce0331f2bf5">Solve</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>)</td></tr>
+<tr class="memdesc:af904018d9a1c9983624b1ce0331f2bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto and returns an instance of CpSolverResponse.  <br /></td></tr>
+<tr class="separator:af904018d9a1c9983624b1ce0331f2bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af614bdef2c50e3b9d5806e32ec7ef4b2">SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const SatParameters &amp;params)</td></tr>
+<tr class="memdesc:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given parameters.  <br /></td></tr>
+<tr class="separator:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a291dbf6ff50fbc06e1e8cd27b2cc1b23">SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const std::string &amp;params)</td></tr>
+<tr class="memdesc:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given sat parameters as string in JSon format, and returns an instance of CpSolverResponse.  <br /></td></tr>
+<tr class="separator:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad7d4011427b402d43eb77b73566ea4ac" name="ad7d4011427b402d43eb77b73566ea4ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7d4011427b402d43eb77b73566ea4ac">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d4011427b402d43eb77b73566ea4ac">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +216,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="one__tree__lower__bound_8h.html#a6f353d8684dff1645f1601cd68b9a0be">therefore</a> it is off by default.&quot;&#160;</td>
+          <td class="paramtype">therefore it is off by default.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -308,7 +230,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a341a22ee5767046a84a942d72d80a80d" name="a341a22ee5767046a84a942d72d80a80d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a341a22ee5767046a84a942d72d80a80d">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a341a22ee5767046a84a942d72d80a80d">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,13 +256,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>&#160;</td>
+          <td class="paramtype">&quot;DEBUG ONLY. When set to&#160;</td>
           <td class="paramname"><em>true</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">solve will dump all &quot; &quot;lns models <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> in text format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> &quot; &quot; 'FLAGS_cp_model_dump_prefix 'lns_xxx.pb.txt.&quot;&#160;</td>
+          <td class="paramtype">solve will dump all &quot; &quot;lns models <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> in text format to &quot; &quot; 'FLAGS_cp_model_dump_prefix 'lns_xxx.pb.txt.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -354,7 +276,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8591ac486d2906248081c3269852e59c" name="a8591ac486d2906248081c3269852e59c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8591ac486d2906248081c3269852e59c">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8591ac486d2906248081c3269852e59c">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,13 +302,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>&#160;</td>
+          <td class="paramtype">&quot;DEBUG ONLY. When set to&#160;</td>
           <td class="paramname"><em>true</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SolveCpModel() will dump its <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos(original <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, presolved <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, mapping <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>) in text &quot; &quot;format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'{<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>|presolved_model|&quot; &quot;mapping_model}.pb.txt.&quot;&#160;</td>
+          <td class="paramtype">SolveCpModel() will dump its <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos(original <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, presolved <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, mapping <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>) in text &quot; &quot;format to 'FLAGS_cp_model_dump_prefix'{<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>|presolved_model|&quot; &quot;mapping_model}.pb.txt.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -400,7 +322,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a193cc3f652f9593d27a5ab732f3b78a4" name="a193cc3f652f9593d27a5ab732f3b78a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a193cc3f652f9593d27a5ab732f3b78a4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a193cc3f652f9593d27a5ab732f3b78a4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,13 +348,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;DEBUG ONLY. Similar <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> --&#160;</td>
+          <td class="paramtype">&quot;DEBUG ONLY. Similar to --&#160;</td>
           <td class="paramname"><em>cp_model_dump_lns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">but only dump fragment for &quot; &quot;which we got an issue while validating the postsolved solution. This &quot; &quot;allows <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> debug presolve issues without dumping all the models.&quot;&#160;</td>
+          <td class="paramtype">but only dump fragment for &quot; &quot;which we got an issue while validating the postsolved solution. This &quot; &quot;allows to debug presolve issues without dumping all the models.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -446,7 +368,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23699b8683d3ebab70584a05a59bf098" name="a23699b8683d3ebab70584a05a59bf098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23699b8683d3ebab70584a05a59bf098">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23699b8683d3ebab70584a05a59bf098">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +400,53 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">the final <a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a> of each solve will be &quot; &quot;dumped <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix 'response.pb.txt&quot;&#160;</td>
+          <td class="paramtype">the final <a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a> of each solve will be &quot; &quot;dumped to 'FLAGS_cp_model_dump_prefix 'response.pb.txt&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a294867abe6deecc3acd05497d95c0a97" name="a294867abe6deecc3acd05497d95c0a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294867abe6deecc3acd05497d95c0a97">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cp_model_dump_text_proto&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;DEBUG&#160;</td>
+          <td class="paramname"><em>ONLY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dump models in text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> instead of binary proto.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -492,7 +460,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a904089e7dc6d0ff9fcf3dd12ab2c0dcc" name="a904089e7dc6d0ff9fcf3dd12ab2c0dcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904089e7dc6d0ff9fcf3dd12ab2c0dcc">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a904089e7dc6d0ff9fcf3dd12ab2c0dcc">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +500,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a235d61d7468a37db6f8b3532b788683a" name="a235d61d7468a37db6f8b3532b788683a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a235d61d7468a37db6f8b3532b788683a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a235d61d7468a37db6f8b3532b788683a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,7 +546,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a858fff11042fe8116cbe8d4247de69c3" name="a858fff11042fe8116cbe8d4247de69c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858fff11042fe8116cbe8d4247de69c3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a858fff11042fe8116cbe8d4247de69c3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,7 +592,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9aab1846f5aa2cda3749adb20a0e7c7b" name="a9aab1846f5aa2cda3749adb20a0e7c7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aab1846f5aa2cda3749adb20a0e7c7b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aab1846f5aa2cda3749adb20a0e7c7b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -650,7 +618,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Maximum <a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> in seconds <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> check the DRAT proof. This will only &quot; &quot;be used is the drat_check flag is enabled.&quot;&#160;</td>
+          <td class="paramtype">&quot;Maximum <a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> in seconds to check the DRAT proof. This will only &quot; &quot;be used is the drat_check flag is enabled.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -664,7 +632,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa6b6aa5316ec3a7e0c3ca010c084a747" name="aa6b6aa5316ec3a7e0c3ca010c084a747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6b6aa5316ec3a7e0c3ca010c084a747">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b6aa5316ec3a7e0c3ca010c084a747">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -700,13 +668,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
 <a id="a75f95b433d1d98a54c5a3cc08a8ad4af" name="a75f95b433d1d98a54c5a3cc08a8ad4af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f95b433d1d98a54c5a3cc08a8ad4af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f95b433d1d98a54c5a3cc08a8ad4af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,13 +698,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;DEBUG ONLY. When this is set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> non-empty file&#160;</td>
+          <td class="paramtype">&quot;DEBUG ONLY. When this is set to <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> non-empty file&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot; &quot;we will interpret this as an internal solution which can be used for &quot; &quot;debugging. For instance we use it <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> identify wrong cuts/reasons.&quot;&#160;</td>
+          <td class="paramtype">&quot; &quot;we will interpret this as an internal solution which can be used for &quot; &quot;debugging. For instance we use it to identify wrong cuts/reasons.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -752,7 +718,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a335160e182a5699147bb9514356c7eb8" name="a335160e182a5699147bb9514356c7eb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335160e182a5699147bb9514356c7eb8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a335160e182a5699147bb9514356c7eb8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -792,7 +758,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a73c8968cf0877bf8947b93c2889c280a" name="a73c8968cf0877bf8947b93c2889c280a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c8968cf0877bf8947b93c2889c280a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c8968cf0877bf8947b93c2889c280a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[14/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,7 +790,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be written <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> this file. &quot; &quot;This will only be used for pure-SAT problems.&quot;&#160;</td>
+          <td class="paramtype"><a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be written to this file. &quot; &quot;This will only be used for pure-SAT problems.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -850,7 +816,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02191">2191</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02344">2344</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -866,7 +832,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02196">2196</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02349">2349</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -882,7 +848,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02197">2197</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02350">2350</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -898,7 +864,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02195">2195</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02348">2348</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -914,7 +880,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02194">2194</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02347">2347</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -930,7 +896,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02188">2188</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02341">2341</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -946,7 +912,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02193">2193</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02346">2346</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -962,7 +928,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02192">2192</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02345">2345</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -978,7 +944,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02190">2190</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02343">2343</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -989,22 +955,25 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classWallTimer.html">WallTimer</a>* wall_timer</td>
+          <td class="memname"><a class="el" href="class_wall_timer.html">WallTimer</a>* wall_timer</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02189">2189</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02342">2342</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="cp__model__solver_8cc.html">cp_model_solver.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

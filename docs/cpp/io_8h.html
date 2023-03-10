@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/graph/io.h File Reference</title>
+<title>OR-Tools: io.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,56 +100,41 @@ $(document).ready(function(){initNavTree('io_8h.html',''); initResizable(); });
   <div class="headertitle"><div class="title">io.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;absl/strings/numbers.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_join.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_split.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="numbers_8h_source.html">ortools/base/numbers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="graph_8h_source.html">ortools/graph/graph.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="filelineiter_8h_source.html">ortools/util/filelineiter.h</a>&quot;</code><br />
-</div>
+
 <p><a href="io_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceutil"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html">util</a></td></tr>
-<tr class="memdesc:namespaceutil"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collections of i/o utilities for the Graph classes in ./graph.h. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ae705e1342dacc10a13fb3f11f91d0696"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696">util::GraphToStringFormat</a> { <a class="el" href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696acac9245da1bf36d1d9382dc579e1a4fd">util::PRINT_GRAPH_ARCS</a>
-, <a class="el" href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696aaed5759e3b6e3a8592c9a21e0048b565">util::PRINT_GRAPH_ADJACENCY_LISTS</a>
-, <a class="el" href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696a454bb1ede69e280a1e4959acb82748ef">util::PRINT_GRAPH_ADJACENCY_LISTS_SORTED</a>
+<tr class="memitem:a2d1e9c029dfaa2e8dfd58862836440b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a2d1e9c029dfaa2e8dfd58862836440b9">GraphToStringFormat</a> { <a class="el" href="namespaceutil.html#a2d1e9c029dfaa2e8dfd58862836440b9a59afa9bae775818b44690c5d14cdf8d0">PRINT_GRAPH_ARCS</a>
+, <a class="el" href="namespaceutil.html#a2d1e9c029dfaa2e8dfd58862836440b9ac932364714f74e3ca75990c8126019a1">PRINT_GRAPH_ADJACENCY_LISTS</a>
+, <a class="el" href="namespaceutil.html#a2d1e9c029dfaa2e8dfd58862836440b9ada36744a3f529ceb03e7c1faa842854d">PRINT_GRAPH_ADJACENCY_LISTS_SORTED</a>
  }</td></tr>
-<tr class="memdesc:ae705e1342dacc10a13fb3f11f91d0696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of a graph.  <a href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696">More...</a><br /></td></tr>
-<tr class="separator:ae705e1342dacc10a13fb3f11f91d0696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a2d1e9c029dfaa2e8dfd58862836440b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:affed79554a202aaa8bda5b5e98c3a6b2"><td class="memTemplParams" colspan="2">template&lt;class Graph &gt; </td></tr>
-<tr class="memitem:affed79554a202aaa8bda5b5e98c3a6b2"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#affed79554a202aaa8bda5b5e98c3a6b2">util::GraphToString</a> (const Graph &amp;graph, GraphToStringFormat format)</td></tr>
-<tr class="memdesc:affed79554a202aaa8bda5b5e98c3a6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of the templated methods.  <br /></td></tr>
-<tr class="separator:affed79554a202aaa8bda5b5e98c3a6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e255c1426a060140494d15add27c66"><td class="memTemplParams" colspan="2">template&lt;class Graph &gt; </td></tr>
-<tr class="memitem:a83e255c1426a060140494d15add27c66"><td class="memTemplItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a83e255c1426a060140494d15add27c66">util::WriteGraphToFile</a> (const Graph &amp;graph, const std::string &amp;filename, bool directed, const std::vector&lt; int &gt; &amp;num_nodes_with_color)</td></tr>
-<tr class="separator:a83e255c1426a060140494d15add27c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372b5c94ec5d30f923449516ebc2a963"><td class="memTemplParams" colspan="2">template&lt;class Graph &gt; </td></tr>
+<tr class="memitem:a372b5c94ec5d30f923449516ebc2a963"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a372b5c94ec5d30f923449516ebc2a963">GraphToString</a> (const Graph &amp;graph, GraphToStringFormat format)</td></tr>
+<tr class="separator:a372b5c94ec5d30f923449516ebc2a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45fca0c4762006176ad5622ec40dea9c"><td class="memTemplParams" colspan="2">template&lt;class Graph &gt; </td></tr>
+<tr class="memitem:a45fca0c4762006176ad5622ec40dea9c"><td class="memTemplItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a45fca0c4762006176ad5622ec40dea9c">WriteGraphToFile</a> (const Graph &amp;graph, const std::string &amp;filename, bool directed, const std::vector&lt; int &gt; &amp;num_nodes_with_color)</td></tr>
+<tr class="separator:a45fca0c4762006176ad5622ec40dea9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="io_8h.html">io.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

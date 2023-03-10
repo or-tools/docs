@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/solvers/glpk/rays.h Source File</title>
+<title>OR-Tools: rays.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -128,20 +128,20 @@ $(document).ready(function(){initNavTree('rays_8h_source.html',''); initResizabl
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a> {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// The type of the GlpkRay.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a">   33</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a">GlpkRayType</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7">   33</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7">GlpkRayType</a> {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// A primal ray.</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">//</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// If x (vector of variables) is a primal feasible solution to a primal</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// unbounded problem and r is the ray, then x&#39; = x + t r is also a primal</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="comment">// feasible solution for all t &gt;= 0.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa28d797965b2f5f051fc93220f175580c">   39</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa28d797965b2f5f051fc93220f175580c">kPrimal</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a168c8e12a7f30e09240e40ae392f3c1e">   39</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a168c8e12a7f30e09240e40ae392f3c1e">kPrimal</a>,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">// A dual ray.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="comment">//</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// If λ (vector of reduced costs) is a dual feasible solution to a dual</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// unbounded problem and r is the ray, then λ&#39; = λ + t r is also a dual</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// feasible solution for all t &gt;= 0.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa06610025c6e59c0051403e8fdf28407b">   46</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa06610025c6e59c0051403e8fdf28407b">kDual</a>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a853ead83f7e75b38bba794318254dc91">   46</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a853ead83f7e75b38bba794318254dc91">kDual</a>,</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// A primal or dual unbound ray for the model in computational form.</span></div>
@@ -150,13 +150,13 @@ $(document).ready(function(){initNavTree('rays_8h_source.html',''); initResizabl
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// understand that the computational form is. This structure uses the word</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// &quot;variable&quot; to mean a variable in the joint set of structural and auxiliary</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// variables.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1GlpkRay.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1GlpkRay.html">GlpkRay</a> {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a72763fcd3cf2e92ac0aa04825e1c73d7">   56</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a72763fcd3cf2e92ac0aa04825e1c73d7">SparseVector</a> = std::vector&lt;std::pair&lt;int, double&gt;&gt;;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html">GlpkRay</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ab6e7a7fab6fd3cfc7263644c7ede57bd">   56</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ab6e7a7fab6fd3cfc7263644c7ede57bd">SparseVector</a> = std::vector&lt;std::pair&lt;int, double&gt;&gt;;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1GlpkRay.html">GlpkRay</a>(<a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a">GlpkRayType</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a4e2ad97f6efd3a6e98e9f99953063a71">type</a>, <a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a72763fcd3cf2e92ac0aa04825e1c73d7">SparseVector</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#abbdbb84bb17243743d62a8daa3b37034">non_zero_components</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html">GlpkRay</a>(<a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7">GlpkRayType</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ae4d99fbf696707096e05ce6d9a6643d1">type</a>, <a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ab6e7a7fab6fd3cfc7263644c7ede57bd">SparseVector</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#a382af1531c239d3063ffcbcd2787368c">non_zero_components</a>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// The type of ray, primal or dual.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a4e2ad97f6efd3a6e98e9f99953063a71">   61</a></span>  <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a">GlpkRayType</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a4e2ad97f6efd3a6e98e9f99953063a71">type</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ae4d99fbf696707096e05ce6d9a6643d1">   61</a></span>  <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7">GlpkRayType</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ae4d99fbf696707096e05ce6d9a6643d1">type</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// The non zero components of the vector, in no particular order.</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">//</span></div>
@@ -171,32 +171,35 @@ $(document).ready(function(){initNavTree('rays_8h_source.html',''); initResizabl
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="comment">// - if m + 1 &lt;= k &lt;= m + n: k is the index of the (k-m)-th structural</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="comment">//   variable (a.k.a. column)</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="comment">// Note that the value k = 0 is not used.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#abbdbb84bb17243743d62a8daa3b37034">   76</a></span>  <a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a72763fcd3cf2e92ac0aa04825e1c73d7">SparseVector</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1GlpkRay.html#abbdbb84bb17243743d62a8daa3b37034">non_zero_components</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#a382af1531c239d3063ffcbcd2787368c">   76</a></span>  <a class="code hl_typedef" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ab6e7a7fab6fd3cfc7263644c7ede57bd">SparseVector</a> <a class="code hl_variable" href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#a382af1531c239d3063ffcbcd2787368c">non_zero_components</a>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// Returns the primal or dual ray if one is identified by</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// glp_get_unbnd_ray(). Returns an error status if an internal error occurs.</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>absl::StatusOr&lt;std::optional&lt;GlpkRay&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ae6a130de4099b24be79985918ae99fe3">GlpkComputeUnboundRay</a>(glp_prob* problem);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>absl::StatusOr&lt;std::optional&lt;GlpkRay&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#aa3bcd3f312f5746e50d53bd5a8dedd2a">GlpkComputeUnboundRay</a>(glp_prob* problem);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_SOLVERS_GLPK_RAYS_H_</span></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ae6a130de4099b24be79985918ae99fe3"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ae6a130de4099b24be79985918ae99fe3">operations_research::math_opt::GlpkComputeUnboundRay</a></div><div class="ttdeci">absl::StatusOr&lt; std::optional&lt; GlpkRay &gt; &gt; GlpkComputeUnboundRay(glp_prob *const problem)</div><div class="ttdef"><b>Definition:</b> <a href="rays_8cc_source.html#l00351">rays.cc:351</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_af8a3e009f8ece75838c3dbc70ce8857a"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a">operations_research::math_opt::GlpkRayType</a></div><div class="ttdeci">GlpkRayType</div><div class="ttdoc">The type of the GlpkRay.</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00033">rays.h:33</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_af8a3e009f8ece75838c3dbc70ce8857aa06610025c6e59c0051403e8fdf28407b"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa06610025c6e59c0051403e8fdf28407b">operations_research::math_opt::kDual</a></div><div class="ttdeci">@ kDual</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00046">rays.h:46</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_af8a3e009f8ece75838c3dbc70ce8857aa28d797965b2f5f051fc93220f175580c"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857aa28d797965b2f5f051fc93220f175580c">operations_research::math_opt::kPrimal</a></div><div class="ttdeci">@ kPrimal</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00039">rays.h:39</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1math__opt_1_1GlpkRay_html"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1GlpkRay.html">operations_research::math_opt::GlpkRay</a></div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00055">rays.h:55</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1math__opt_1_1GlpkRay_html_a4e2ad97f6efd3a6e98e9f99953063a71"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a4e2ad97f6efd3a6e98e9f99953063a71">operations_research::math_opt::GlpkRay::type</a></div><div class="ttdeci">GlpkRayType type</div><div class="ttdoc">The type of ray, primal or dual.</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00061">rays.h:61</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1math__opt_1_1GlpkRay_html_a72763fcd3cf2e92ac0aa04825e1c73d7"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1GlpkRay.html#a72763fcd3cf2e92ac0aa04825e1c73d7">operations_research::math_opt::GlpkRay::SparseVector</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, double &gt; &gt; SparseVector</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00056">rays.h:56</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1math__opt_1_1GlpkRay_html_abbdbb84bb17243743d62a8daa3b37034"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1GlpkRay.html#abbdbb84bb17243743d62a8daa3b37034">operations_research::math_opt::GlpkRay::non_zero_components</a></div><div class="ttdeci">SparseVector non_zero_components</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00076">rays.h:76</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_aa3bcd3f312f5746e50d53bd5a8dedd2a"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#aa3bcd3f312f5746e50d53bd5a8dedd2a">operations_research::math_opt::GlpkComputeUnboundRay</a></div><div class="ttdeci">absl::StatusOr&lt; std::optional&lt; GlpkRay &gt; &gt; GlpkComputeUnboundRay(glp_prob *const problem)</div><div class="ttdef"><b>Definition:</b> <a href="rays_8cc_source.html#l00351">rays.cc:351</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ad6ffe3747921431333fa443d04f0dcd7"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7">operations_research::math_opt::GlpkRayType</a></div><div class="ttdeci">GlpkRayType</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00033">rays.h:33</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ad6ffe3747921431333fa443d04f0dcd7a168c8e12a7f30e09240e40ae392f3c1e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a168c8e12a7f30e09240e40ae392f3c1e">operations_research::math_opt::kPrimal</a></div><div class="ttdeci">@ kPrimal</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00039">rays.h:39</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ad6ffe3747921431333fa443d04f0dcd7a853ead83f7e75b38bba794318254dc91"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ad6ffe3747921431333fa443d04f0dcd7a853ead83f7e75b38bba794318254dc91">operations_research::math_opt::kDual</a></div><div class="ttdeci">@ kDual</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00046">rays.h:46</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1math__opt_1_1_glpk_ray_html"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1_glpk_ray.html">operations_research::math_opt::GlpkRay</a></div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00055">rays.h:55</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1math__opt_1_1_glpk_ray_html_a382af1531c239d3063ffcbcd2787368c"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#a382af1531c239d3063ffcbcd2787368c">operations_research::math_opt::GlpkRay::non_zero_components</a></div><div class="ttdeci">SparseVector non_zero_components</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00076">rays.h:76</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1math__opt_1_1_glpk_ray_html_ab6e7a7fab6fd3cfc7263644c7ede57bd"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ab6e7a7fab6fd3cfc7263644c7ede57bd">operations_research::math_opt::GlpkRay::SparseVector</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, double &gt; &gt; SparseVector</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00056">rays.h:56</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1math__opt_1_1_glpk_ray_html_ae4d99fbf696707096e05ce6d9a6643d1"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1_glpk_ray.html#ae4d99fbf696707096e05ce6d9a6643d1">operations_research::math_opt::GlpkRay::type</a></div><div class="ttdeci">GlpkRayType type</div><div class="ttdef"><b>Definition:</b> <a href="rays_8h_source.html#l00061">rays.h:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd.html">solvers</a></li><li class="navelem"><a class="el" href="dir_d8a97bf120d490e03e94cbe3ff4f2652.html">glpk</a></li><li class="navelem"><a class="el" href="rays_8h.html">rays.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

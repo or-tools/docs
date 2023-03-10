@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/cpp/basis_status.h Source File</title>
+<title>OR-Tools: basis_status.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -125,44 +125,47 @@ $(document).ready(function(){initNavTree('basis__status_8h_source.html',''); ini
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a> {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Status of a variable/constraint in a LP basis.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">   30</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">BasisStatus</a> : int8_t {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684">   30</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684">BasisStatus</a> : int8_t {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="comment">// The variable/constraint is free (it has no finite bounds).</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a76c93a75b7476862edaf5f341c7f0aa6">kFree</a> = BASIS_STATUS_FREE,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a76c93a75b7476862edaf5f341c7f0aa6">kFree</a> = BASIS_STATUS_FREE,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// The variable/constraint is at its lower bound (which must be finite).</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a76e3c262bc5823ae6f807cf8670f4e4e">kAtLowerBound</a> = BASIS_STATUS_AT_LOWER_BOUND,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a76e3c262bc5823ae6f807cf8670f4e4e">kAtLowerBound</a> = BASIS_STATUS_AT_LOWER_BOUND,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// The variable/constraint is at its upper bound (which must be finite).</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5aa430e80aaabebd212623b7951d4fd376">kAtUpperBound</a> = BASIS_STATUS_AT_UPPER_BOUND,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684aa430e80aaabebd212623b7951d4fd376">kAtUpperBound</a> = BASIS_STATUS_AT_UPPER_BOUND,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="comment">// The variable/constraint has identical finite lower and upper bounds.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a054895717e450c549ffa5d887b32f674">kFixedValue</a> = BASIS_STATUS_FIXED_VALUE,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a054895717e450c549ffa5d887b32f674">kFixedValue</a> = BASIS_STATUS_FIXED_VALUE,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// The variable/constraint is basic.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a27296922b87cce1a26d3d54419a74599">kBasic</a> = BASIS_STATUS_BASIC,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a27296922b87cce1a26d3d54419a74599">kBasic</a> = BASIS_STATUS_BASIC,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#aeeaaf9001d3c076add90e44d5047a878">   47</a></span><a class="code hl_define" href="enums_8h.html#af602afafd0a177b2dcab54c32c999d81">MATH_OPT_DEFINE_ENUM</a>(<a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">BasisStatus</a>, BASIS_STATUS_UNSPECIFIED);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a06209ca821938c467b2852a736168c87">   47</a></span><a class="code hl_define" href="enums_8h.html#af602afafd0a177b2dcab54c32c999d81">MATH_OPT_DEFINE_ENUM</a>(<a class="code hl_enumeration" href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684">BasisStatus</a>, BASIS_STATUS_UNSPECIFIED);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_CPP_BASIS_STATUS_H_</span></div>
 <div class="ttc" id="aenums_8h_html"><div class="ttname"><a href="enums_8h.html">enums.h</a></div></div>
-<div class="ttc" id="aenums_8h_html_af602afafd0a177b2dcab54c32c999d81"><div class="ttname"><a href="enums_8h.html#af602afafd0a177b2dcab54c32c999d81">MATH_OPT_DEFINE_ENUM</a></div><div class="ttdeci">#define MATH_OPT_DEFINE_ENUM(CppEnum, proto_unspecified_value)</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00325">enums.h:325</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">operations_research::math_opt::BasisStatus</a></div><div class="ttdeci">BasisStatus</div><div class="ttdoc">Status of a variable/constraint in a LP basis.</div><div class="ttdef"><b>Definition:</b> <a href="basis__status_8h_source.html#l00030">basis_status.h:30</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5a054895717e450c549ffa5d887b32f674"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a054895717e450c549ffa5d887b32f674">operations_research::math_opt::BasisStatus::kFixedValue</a></div><div class="ttdeci">@ kFixedValue</div><div class="ttdoc">The variable/constraint has identical finite lower and upper bounds.</div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5a27296922b87cce1a26d3d54419a74599"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a27296922b87cce1a26d3d54419a74599">operations_research::math_opt::BasisStatus::kBasic</a></div><div class="ttdeci">@ kBasic</div><div class="ttdoc">The variable/constraint is basic.</div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5a76c93a75b7476862edaf5f341c7f0aa6"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a76c93a75b7476862edaf5f341c7f0aa6">operations_research::math_opt::BasisStatus::kFree</a></div><div class="ttdeci">@ kFree</div><div class="ttdoc">The variable/constraint is free (it has no finite bounds).</div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5a76e3c262bc5823ae6f807cf8670f4e4e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5a76e3c262bc5823ae6f807cf8670f4e4e">operations_research::math_opt::BasisStatus::kAtLowerBound</a></div><div class="ttdeci">@ kAtLowerBound</div><div class="ttdoc">The variable/constraint is at its lower bound (which must be finite).</div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a836d2a9c146fcff03cda7c88c0b3ffb5aa430e80aaabebd212623b7951d4fd376"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5aa430e80aaabebd212623b7951d4fd376">operations_research::math_opt::BasisStatus::kAtUpperBound</a></div><div class="ttdeci">@ kAtUpperBound</div><div class="ttdoc">The variable/constraint is at its upper bound (which must be finite).</div></div>
+<div class="ttc" id="aenums_8h_html_af602afafd0a177b2dcab54c32c999d81"><div class="ttname"><a href="enums_8h.html#af602afafd0a177b2dcab54c32c999d81">MATH_OPT_DEFINE_ENUM</a></div><div class="ttdeci">#define MATH_OPT_DEFINE_ENUM(CppEnum, proto_unspecified_value)</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00323">enums.h:323</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684">operations_research::math_opt::BasisStatus</a></div><div class="ttdeci">BasisStatus</div><div class="ttdef"><b>Definition:</b> <a href="basis__status_8h_source.html#l00030">basis_status.h:30</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684a054895717e450c549ffa5d887b32f674"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a054895717e450c549ffa5d887b32f674">operations_research::math_opt::BasisStatus::kFixedValue</a></div><div class="ttdeci">@ kFixedValue</div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684a27296922b87cce1a26d3d54419a74599"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a27296922b87cce1a26d3d54419a74599">operations_research::math_opt::BasisStatus::kBasic</a></div><div class="ttdeci">@ kBasic</div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684a76c93a75b7476862edaf5f341c7f0aa6"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a76c93a75b7476862edaf5f341c7f0aa6">operations_research::math_opt::BasisStatus::kFree</a></div><div class="ttdeci">@ kFree</div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684a76e3c262bc5823ae6f807cf8670f4e4e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684a76e3c262bc5823ae6f807cf8670f4e4e">operations_research::math_opt::BasisStatus::kAtLowerBound</a></div><div class="ttdeci">@ kAtLowerBound</div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5c12f31ca91b1412d51fd5fa6f82e684aa430e80aaabebd212623b7951d4fd376"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5c12f31ca91b1412d51fd5fa6f82e684aa430e80aaabebd212623b7951d4fd376">operations_research::math_opt::BasisStatus::kAtUpperBound</a></div><div class="ttdeci">@ kAtUpperBound</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="basis__status_8h.html">basis_status.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

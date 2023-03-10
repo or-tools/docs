@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/graph/one_tree_lower_bound.h File Reference</title>
+<title>OR-Tools: one_tree_lower_bound.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -95,327 +95,63 @@ $(document).ready(function(){initNavTree('one__tree__lower__bound_8h.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">one_tree_lower_bound.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="christofides_8h_source.html">ortools/graph/christofides.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="minimum__spanning__tree_8h_source.html">ortools/graph/minimum_spanning_tree.h</a>&quot;</code><br />
-</div>
+
 <p><a href="one__tree__lower__bound_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_volgenant_jonker_evaluator.html">VolgenantJonkerEvaluator&lt; CostType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_held_wolfe_crowder_evaluator.html">HeldWolfeCrowderEvaluator&lt; CostType, CostFunction &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_traveling_salesman_lower_bound_parameters.html">TravelingSalesmanLowerBoundParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adba1a0c02ca6636f5610de2337f3f697"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#adba1a0c02ca6636f5610de2337f3f697">step1_</a> (0)</td></tr>
-<tr class="separator:adba1a0c02ca6636f5610de2337f3f697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4c1555a52b411d0e25bae82066dcc4"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a6e4c1555a52b411d0e25bae82066dcc4">iteration_</a> (0)</td></tr>
-<tr class="separator:a6e4c1555a52b411d0e25bae82066dcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad15ce7e24cde3d28bc88c4a32bf3a834"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#ad15ce7e24cde3d28bc88c4a32bf3a834">max_iterations_</a> (<a class="el" href="one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325">max_iterations</a> &gt; 0 ? <a class="el" href="one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325">max_iterations</a> :MaxIterations(number_of_nodes))</td></tr>
-<tr class="separator:ad15ce7e24cde3d28bc88c4a32bf3a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01198f1b6b698fc8c033ef878977c27d"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a01198f1b6b698fc8c033ef878977c27d">number_of_nodes_</a> (number_of_nodes)</td></tr>
-<tr class="separator:a01198f1b6b698fc8c033ef878977c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3947d19ac087ef2cd68c2409920339c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next</a> ()</td></tr>
-<tr class="separator:a3947d19ac087ef2cd68c2409920339c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61aed6a943277e531b904cfdc3616890"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a61aed6a943277e531b904cfdc3616890">GetStep</a> () const</td></tr>
-<tr class="separator:a61aed6a943277e531b904cfdc3616890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c2c5b8d838c77c2701a538f7f30ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a33c2c5b8d838c77c2701a538f7f30ae4">OnOneTree</a> (CostType one_tree_cost, double <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a>, const std::vector&lt; int &gt; &amp;<a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a>)</td></tr>
-<tr class="separator:a33c2c5b8d838c77c2701a538f7f30ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad04ff9537d97fcabc58c86183890c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a2ad04ff9537d97fcabc58c86183890c3">OnNewWMax</a> (CostType one_tree_cost)</td></tr>
-<tr class="separator:a2ad04ff9537d97fcabc58c86183890c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a717d5dae07519577a5ed09ac24a4708b"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a></td></tr>
-<tr class="separator:a717d5dae07519577a5ed09ac24a4708b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f353d8684dff1645f1601cd68b9a0be"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a6f353d8684dff1645f1601cd68b9a0be">therefore</a></td></tr>
-<tr class="separator:a6f353d8684dff1645f1601cd68b9a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095b3978da7ad09782c0be1a6572e352"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal w the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a></td></tr>
-<tr class="separator:a095b3978da7ad09782c0be1a6572e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af86d4c4e6a18908cda194651a9ab7beb"><td class="memItemLeft" align="right" valign="top">trees with all degrees equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a></td></tr>
-<tr class="separator:af86d4c4e6a18908cda194651a9ab7beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85cb5d69bd041414717718f6a833325"><td class="memItemLeft" align="right" valign="top">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325">max_iterations</a></td></tr>
-<tr class="separator:af85cb5d69bd041414717718f6a833325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a6c6517fdffeaf842d79c3a78d6c8f"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction &gt; </td></tr>
+<tr class="memitem:ac0a6c6517fdffeaf842d79c3a78d6c8f"><td class="memTemplItemLeft" align="right" valign="top">std::set&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac0a6c6517fdffeaf842d79c3a78d6c8f">NearestNeighbors</a> (int number_of_nodes, int number_of_neighbors, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>)</td></tr>
+<tr class="separator:ac0a6c6517fdffeaf842d79c3a78d6c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158f98d93b9478ee1ed0f5d229f692d8"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction &gt; </td></tr>
+<tr class="memitem:a158f98d93b9478ee1ed0f5d229f692d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a158f98d93b9478ee1ed0f5d229f692d8">AddArcsFromMinimumSpanningTree</a> (int number_of_nodes, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>, std::set&lt; std::pair&lt; int, int &gt; &gt; *arcs)</td></tr>
+<tr class="separator:a158f98d93b9478ee1ed0f5d229f692d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572bc2416991e2cc32c8a4cd72e736fd"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction , typename GraphType , typename AcceptFunction &gt; </td></tr>
+<tr class="memitem:a572bc2416991e2cc32c8a4cd72e736fd"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a572bc2416991e2cc32c8a4cd72e736fd">GetNodeMinimizingEdgeCostToSource</a> (const GraphType &amp;graph, int source, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>, AcceptFunction accept)</td></tr>
+<tr class="separator:a572bc2416991e2cc32c8a4cd72e736fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9146065082e931f24d172e84c192cedb"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction , typename GraphType , typename CostType &gt; </td></tr>
+<tr class="memitem:a9146065082e931f24d172e84c192cedb"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9146065082e931f24d172e84c192cedb">ComputeOneTree</a> (const GraphType &amp;graph, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>, const std::vector&lt; double &gt; &amp;weights, const std::vector&lt; int &gt; &amp;sorted_arcs, CostType *one_tree_cost)</td></tr>
+<tr class="separator:a9146065082e931f24d172e84c192cedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30c23b4cf5a95f352518d3cfd151ac9"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction , typename Algorithm &gt; </td></tr>
+<tr class="memitem:af30c23b4cf5a95f352518d3cfd151ac9"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af30c23b4cf5a95f352518d3cfd151ac9">ComputeOneTreeLowerBoundWithAlgorithm</a> (int number_of_nodes, int nearest_neighbors, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>, Algorithm *algorithm)</td></tr>
+<tr class="separator:af30c23b4cf5a95f352518d3cfd151ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b2b7c1c7e6cae8e764388dd85a6f24"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction &gt; </td></tr>
+<tr class="memitem:a77b2b7c1c7e6cae8e764388dd85a6f24"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a77b2b7c1c7e6cae8e764388dd85a6f24">ComputeOneTreeLowerBoundWithParameters</a> (int number_of_nodes, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>, const TravelingSalesmanLowerBoundParameters &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
+<tr class="separator:a77b2b7c1c7e6cae8e764388dd85a6f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3684d01f599be82144bf85ebed01bf38"><td class="memTemplParams" colspan="2">template&lt;typename CostFunction &gt; </td></tr>
+<tr class="memitem:a3684d01f599be82144bf85ebed01bf38"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3684d01f599be82144bf85ebed01bf38">ComputeOneTreeLowerBound</a> (int number_of_nodes, const CostFunction &amp;<a class="el" href="routing__flow_8cc.html#a75d7b5e4cab1e156cc7a2c5eba1e16f1">cost</a>)</td></tr>
+<tr class="separator:a3684d01f599be82144bf85ebed01bf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a61aed6a943277e531b904cfdc3616890" name="a61aed6a943277e531b904cfdc3616890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61aed6a943277e531b904cfdc3616890">&#9670;&#160;</a></span>GetStep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double GetStep </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00169">169</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a6e4c1555a52b411d0e25bae82066dcc4" name="a6e4c1555a52b411d0e25bae82066dcc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e4c1555a52b411d0e25bae82066dcc4">&#9670;&#160;</a></span>iteration_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int iteration_ </td>
-          <td>(</td>
-          <td class="paramtype">0&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad15ce7e24cde3d28bc88c4a32bf3a834" name="ad15ce7e24cde3d28bc88c4a32bf3a834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad15ce7e24cde3d28bc88c4a32bf3a834">&#9670;&#160;</a></span>max_iterations_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int max_iterations_ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325">max_iterations</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">0 ? <a class="el" href="one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325">max_iterations</a> &#160;</td>
-          <td class="paramname"><em>:MaxIterations</em>number_of_nodes&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3947d19ac087ef2cd68c2409920339c4" name="a3947d19ac087ef2cd68c2409920339c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3947d19ac087ef2cd68c2409920339c4">&#9670;&#160;</a></span>Next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Next </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00167">167</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a01198f1b6b698fc8c033ef878977c27d" name="a01198f1b6b698fc8c033ef878977c27d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01198f1b6b698fc8c033ef878977c27d">&#9670;&#160;</a></span>number_of_nodes_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int number_of_nodes_ </td>
-          <td>(</td>
-          <td class="paramtype">number_of_nodes&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00165">165</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a2ad04ff9537d97fcabc58c86183890c3" name="a2ad04ff9537d97fcabc58c86183890c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad04ff9537d97fcabc58c86183890c3">&#9670;&#160;</a></span>OnNewWMax()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OnNewWMax </td>
-          <td>(</td>
-          <td class="paramtype">CostType&#160;</td>
-          <td class="paramname"><em>one_tree_cost</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00187">187</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a33c2c5b8d838c77c2701a538f7f30ae4" name="a33c2c5b8d838c77c2701a538f7f30ae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c2c5b8d838c77c2701a538f7f30ae4">&#9670;&#160;</a></span>OnOneTree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OnOneTree </td>
-          <td>(</td>
-          <td class="paramtype">CostType&#160;</td>
-          <td class="paramname"><em>one_tree_cost</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>degrees</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00179">179</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="adba1a0c02ca6636f5610de2337f3f697" name="adba1a0c02ca6636f5610de2337f3f697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adba1a0c02ca6636f5610de2337f3f697">&#9670;&#160;</a></span>step1_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int step1_ </td>
-          <td>(</td>
-          <td class="paramtype">0&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="af86d4c4e6a18908cda194651a9ab7beb" name="af86d4c4e6a18908cda194651a9ab7beb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af86d4c4e6a18908cda194651a9ab7beb">&#9670;&#160;</a></span>degrees</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all degrees equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of degrees</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00149">149</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="af85cb5d69bd041414717718f6a833325" name="af85cb5d69bd041414717718f6a833325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85cb5d69bd041414717718f6a833325">&#9670;&#160;</a></span>max_iterations</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal <a class="el" href="one__tree__lower__bound_8h.html#a095b3978da7ad09782c0be1a6572e352">w</a> the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of int max_iterations</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00159">159</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a6f353d8684dff1645f1601cd68b9a0be" name="a6f353d8684dff1645f1601cd68b9a0be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f353d8684dff1645f1601cd68b9a0be">&#9670;&#160;</a></span>therefore</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal therefore</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00034">34</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a717d5dae07519577a5ed09ac24a4708b" name="a717d5dae07519577a5ed09ac24a4708b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717d5dae07519577a5ed09ac24a4708b">&#9670;&#160;</a></span>to</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal to</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. An implementation of the Held-Karp symmetric Traveling Salesman (TSP) lower bound algorithm, inspired by "Estimating the Held-Karp lower bound for the
-geometric TSP" by Christine L. Valenzuela and Antonia J. Jones, European Journal of Operational Research, Volume 102, Issue 1, 1 October 1997, Pages 157-175.</p>
-<p>The idea is to compute minimum 1-trees to evaluate a lower bound to the corresponding TSP. A minimum 1-tree is a minimum spanning tree on all nodes but one, to which are added the two shortest edges from the left-out node to the nodes of the spanning tree. The sum of the cost of the edges of the minimum 1-tree is a lower bound to the cost of the TSP. In order to improve (increase) this lower bound, the idea is to add weights to each nodes, weights which are added to the cost function used when computing the 1-tree. If weight[i] is the weight of node i, the cost function therefore becomes weighed_cost(i,j) = cost(i,j) + weight[i] + weight[j]. One can see that w = weighed_cost(minimum 1-tree) - Sum(2 * weight[i]) = cost(minimum 1-tree) + Sum(weight[i] * (degree[i] - 2)) is a valid lower bound to the TSP: 1) let T be the set of 1-trees on the nodes; 2) let U be the set of tours on the nodes; U is a subset of T (tours are </p>
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00034">34</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
-<a id="a095b3978da7ad09782c0be1a6572e352" name="a095b3978da7ad09782c0be1a6572e352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095b3978da7ad09782c0be1a6572e352">&#9670;&#160;</a></span>w</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">trees with all <a class="el" href="one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb">degrees</a> equal w the current <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of w</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="one__tree__lower__bound_8h_source.html#l00148">148</a> of file <a class="el" href="one__tree__lower__bound_8h_source.html">one_tree_lower_bound.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="one__tree__lower__bound_8h.html">one_tree_lower_bound.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

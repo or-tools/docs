@@ -1,5 +1,0 @@
-var classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types =
-[
-    [ "DetailedOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria" ],
-    [ "SimpleOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria" ]
-];

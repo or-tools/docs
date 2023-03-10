@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['taillard_0',['TAILLARD',['../classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html#a5e4b1a1be52d8a58770ce2770c89b206af2b89aa08d8f7e527d7084a34987c9ef',1,'operations_research::scheduling::jssp::JsspParser']]],
+  ['taillard_0',['TAILLARD',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html#a4c669cb1cb4d98dfea944e9ceec7d33eab111a04ada22c98d11fdabc88bc07b20',1,'operations_research::scheduling::jssp::JsspParser']]],
   ['take_5fownership_1',['TAKE_OWNERSHIP',['../gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4a3c7e9648face0a376daeaf21d72ea4a1',1,'gzipfile.h']]],
-  ['tardiness_2',['TARDINESS',['../classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html#a5e4b1a1be52d8a58770ce2770c89b206a38f6e21b85790bf9ebfca0b51a298e05',1,'operations_research::scheduling::jssp::JsspParser']]],
-  ['token_5fbool_3',['TOKEN_BOOL',['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af33660babf67070998c4a81bfdc98e3b',1,'parser.tab.hh']]],
-  ['token_5ffloat_4',['TOKEN_FLOAT',['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69a1035420c8105e3a23dfa2adeba7b4490',1,'parser.tab.hh']]],
-  ['token_5fint_5',['TOKEN_INT',['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69a8f5182347f4a0efa0aa628f093aad2fa',1,'parser.tab.hh']]],
-  ['tour_6',['TOUR',['../classoperations__research_1_1TspLibParser.html#ae85742c923dc556430d2a5740456264fa5e37a071ae26a36e4d7fe87c4a26e5cd',1,'operations_research::TspLibParser']]],
-  ['trace_5fvar_7',['TRACE_VAR',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba93b00759c703fe20d9d8a5a75268a69d',1,'operations_research']]],
-  ['tsp_8',['TSP',['../classoperations__research_1_1TspLibParser.html#ae85742c923dc556430d2a5740456264fa8b955b13fa57c08d48422bcff882f99c',1,'operations_research::TspLibParser']]],
-  ['tsplns_9',['TSPLNS',['../classoperations__research_1_1Solver.html#ac1b3220ae80fb8430bc06310c5bea5f1a29c43618e41fc69d29d248c0031d5af1',1,'operations_research::Solver']]],
-  ['tspopt_10',['TSPOPT',['../classoperations__research_1_1Solver.html#ac1b3220ae80fb8430bc06310c5bea5f1ac712194c4e0edea857001e9cf2ed5811',1,'operations_research::Solver']]],
-  ['twoopt_11',['TWOOPT',['../classoperations__research_1_1Solver.html#ac3c5b22fad8060ca1a66bd928182d8a4a6954bf415a41a3e683060ce706cec2b6',1,'operations_research::Solver']]]
+  ['tardiness_2',['TARDINESS',['../classoperations__research_1_1scheduling_1_1jssp_1_1_jssp_parser.html#a4c669cb1cb4d98dfea944e9ceec7d33eac381e22723c03948e65aa044f852de10',1,'operations_research::scheduling::jssp::JsspParser']]],
+  ['tour_3',['TOUR',['../classoperations__research_1_1_tsp_lib_parser.html#a8aaeba5aed18516d10d61fe3139c9d32aa2dfed527224adf69187f8c8d75e7dcd',1,'operations_research::TspLibParser']]],
+  ['trace_5fvar_4',['TRACE_VAR',['../namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2af2d15b703802d6a1f8f402f90de90dc6',1,'operations_research']]],
+  ['tsp_5',['TSP',['../classoperations__research_1_1_tsp_lib_parser.html#a8aaeba5aed18516d10d61fe3139c9d32ad323cfa7366f7dba9c4af8249a14cff1',1,'operations_research::TspLibParser']]],
+  ['tsplns_6',['TSPLNS',['../classoperations__research_1_1_solver.html#afd2868244e1a645aaf41eb8a6a6c8bf4af23b5d9059cb973667272b793cfd37b1',1,'operations_research::Solver']]],
+  ['tspopt_7',['TSPOPT',['../classoperations__research_1_1_solver.html#afd2868244e1a645aaf41eb8a6a6c8bf4a092684b466c2d8f6dffcc4fcc45a4c87',1,'operations_research::Solver']]],
+  ['twoopt_8',['TWOOPT',['../classoperations__research_1_1_solver.html#a6fc60ae040ae35c83f09736d2e682a18a6235329fc45bc5a7612cc84342b2528e',1,'operations_research::Solver']]],
+  ['type_5fadded_5fto_5fvehicle_9',['TYPE_ADDED_TO_VEHICLE',['../classoperations__research_1_1_routing_model.html#a495b53b94a8c31a8f13755962d6c6059a0c6d4521dc67c6bc22dc917caef2286a',1,'operations_research::RoutingModel']]],
+  ['type_5fon_5fvehicle_5fup_5fto_5fvisit_10',['TYPE_ON_VEHICLE_UP_TO_VISIT',['../classoperations__research_1_1_routing_model.html#a495b53b94a8c31a8f13755962d6c6059a7fc0cab89681d70bbb68958ed70b85c1',1,'operations_research::RoutingModel']]],
+  ['type_5fsimultaneously_5fadded_5fand_5fremoved_11',['TYPE_SIMULTANEOUSLY_ADDED_AND_REMOVED',['../classoperations__research_1_1_routing_model.html#a495b53b94a8c31a8f13755962d6c6059ad86e8082b5636a532fe181b288a4dea7',1,'operations_research::RoutingModel']]]
 ];

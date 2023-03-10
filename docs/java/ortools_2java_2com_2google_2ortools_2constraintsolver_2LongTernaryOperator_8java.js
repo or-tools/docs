@@ -1,4 +1,0 @@
-var ortools_2java_2com_2google_2ortools_2constraintsolver_2LongTernaryOperator_8java =
-[
-    [ "com.google.ortools.constraintsolver.LongTernaryOperator", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LongTernaryOperator.html", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LongTernaryOperator" ]
-];

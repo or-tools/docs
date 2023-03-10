@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/base/status_macros.h File Reference</title>
+<title>OR-Tools: status_macros.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -95,13 +95,10 @@ $(document).ready(function(){initNavTree('base_2status__macros_8h.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
-  <div class="headertitle"><div class="title">status_macros.h File Reference</div></div>
+  <div class="headertitle"><div class="title">base/status_macros.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="status__builder_8h_source.html">ortools/base/status_builder.h</a>&quot;</code><br />
-</div>
+
 <p><a href="base_2status__macros_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -113,7 +110,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a6fe8b56b0e25c4fa0ff7e389c178eb7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#a6fe8b56b0e25c4fa0ff7e389c178eb7e">STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_</a>(statusor,  lhs,  rexpr)</td></tr>
 <tr class="separator:a6fe8b56b0e25c4fa0ff7e389c178eb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c367d7e965434ba083d71c28ac1d0a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#a2c367d7e965434ba083d71c28ac1d0a3">STATUS_MACROS_IMPL_UNPARENTHESIS_INNER</a>(...)&#160;&#160;&#160;  <a class="el" href="base_2status__macros_8h.html#ac65eae8f36d1c92c31a9c1b965dd5478">STATUS_MACROS_IMPL_UNPARENTHESIS_INNER_</a>(__VA_ARGS__)</td></tr>
-<tr class="memdesc:a2c367d7e965434ba083d71c28ac1d0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal helpers for macro expansion.  <br /></td></tr>
 <tr class="separator:a2c367d7e965434ba083d71c28ac1d0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65eae8f36d1c92c31a9c1b965dd5478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#ac65eae8f36d1c92c31a9c1b965dd5478">STATUS_MACROS_IMPL_UNPARENTHESIS_INNER_</a>(...)&#160;&#160;&#160;  STATUS_MACROS_IMPL_VAN##__VA_ARGS__</td></tr>
 <tr class="separator:ac65eae8f36d1c92c31a9c1b965dd5478"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +120,6 @@ Macros</h2></td></tr>
 <tr class="memitem:aaf05f8226bde8518988f9b413524ebe2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#aaf05f8226bde8518988f9b413524ebe2">STATUS_MACROS_IMPL_UNPARENTHESIS</a>(...)&#160;&#160;&#160;  <a class="el" href="base_2status__macros_8h.html#a2c367d7e965434ba083d71c28ac1d0a3">STATUS_MACROS_IMPL_UNPARENTHESIS_INNER</a>(<a class="el" href="base_2status__macros_8h.html#aeaebc1253db371e143adafb2ce6c5682">ISH</a> __VA_ARGS__)</td></tr>
 <tr class="separator:aaf05f8226bde8518988f9b413524ebe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0d34ee78e672a9e1e522942e5f49524"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#ac0d34ee78e672a9e1e522942e5f49524">STATUS_MACROS_IMPL_CONCAT_INNER_</a>(x,  y)&#160;&#160;&#160;x##y</td></tr>
-<tr class="memdesc:ac0d34ee78e672a9e1e522942e5f49524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal helper for concatenating macro values.  <br /></td></tr>
 <tr class="separator:ac0d34ee78e672a9e1e522942e5f49524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551c0240dbdcbbc1e75d071e09dc1444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2status__macros_8h.html#a551c0240dbdcbbc1e75d071e09dc1444">STATUS_MACROS_IMPL_CONCAT_</a>(x,  y)&#160;&#160;&#160;<a class="el" href="base_2status__macros_8h.html#ac0d34ee78e672a9e1e522942e5f49524">STATUS_MACROS_IMPL_CONCAT_INNER_</a>(x, y)</td></tr>
 <tr class="separator:a551c0240dbdcbbc1e75d071e09dc1444"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,13 +152,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="base_2status__macros_8h.html#a6fe8b56b0e25c4fa0ff7e389c178eb7e">STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_</a>( \</div>
 <div class="line">      <a class="code hl_define" href="base_2status__macros_8h.html#a551c0240dbdcbbc1e75d071e09dc1444">STATUS_MACROS_IMPL_CONCAT_</a>(_status_or_value, __COUNTER__), lhs, rexpr);</div>
-<div class="ttc" id="abase_2status__macros_8h_html_a551c0240dbdcbbc1e75d071e09dc1444"><div class="ttname"><a href="base_2status__macros_8h.html#a551c0240dbdcbbc1e75d071e09dc1444">STATUS_MACROS_IMPL_CONCAT_</a></div><div class="ttdeci">#define STATUS_MACROS_IMPL_CONCAT_(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00070">status_macros.h:70</a></div></div>
-<div class="ttc" id="abase_2status__macros_8h_html_a6fe8b56b0e25c4fa0ff7e389c178eb7e"><div class="ttname"><a href="base_2status__macros_8h.html#a6fe8b56b0e25c4fa0ff7e389c178eb7e">STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_</a></div><div class="ttdeci">#define STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_(statusor, lhs, rexpr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00050">status_macros.h:50</a></div></div>
-</div><!-- fragment --><p>Executes an expression that returns an absl::StatusOr, extracting its value into the variable defined by lhs (or returning on error).</p>
-<p>Example: Assigning to an existing value ValueType value; <a class="el" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN(value, MaybeGetValue(arg))</a>; ASSIGN_OR_RETURN((auto [key, val]), MaybeGetValue(arg));</p>
-<dl class="section warning"><dt>Warning</dt><dd>ASSIGN_OR_RETURN expands into multiple statements; it cannot be used in a single statement (e.g. as the body of an if statement without {})! </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00046">46</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<div class="ttc" id="abase_2status__macros_8h_html_a551c0240dbdcbbc1e75d071e09dc1444"><div class="ttname"><a href="base_2status__macros_8h.html#a551c0240dbdcbbc1e75d071e09dc1444">STATUS_MACROS_IMPL_CONCAT_</a></div><div class="ttdeci">#define STATUS_MACROS_IMPL_CONCAT_(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00070">base/status_macros.h:70</a></div></div>
+<div class="ttc" id="abase_2status__macros_8h_html_a6fe8b56b0e25c4fa0ff7e389c178eb7e"><div class="ttname"><a href="base_2status__macros_8h.html#a6fe8b56b0e25c4fa0ff7e389c178eb7e">STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_</a></div><div class="ttdeci">#define STATUS_MACROS_IMPL_ASSIGN_OR_RETURN_(statusor, lhs, rexpr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00050">base/status_macros.h:50</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00046">46</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +175,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00060">60</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00060">60</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -209,11 +201,8 @@ Macros</h2></td></tr>
 <div class="line">        status_macro_internal_adaptor.ok()) {                        \</div>
 <div class="line">    } <span class="keywordflow">else</span> <span class="comment">/* NOLINT */</span>                                              \</div>
 <div class="line">      return ::util::StatusBuilder(status_macro_internal_adaptor)</div>
-</div><!-- fragment --><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Run a command that returns a absl::Status. If the called code returns an error status, return that status up out of this method too.</p>
-<p>Example: <a class="el" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR(DoThings(4))</a>; <a class="el" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR(DoThings(5))</a> &lt;&lt; "Additional error context"; </p>
-
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00027">27</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00027">27</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +241,7 @@ Macros</h2></td></tr>
 <div class="line">  RETURN_IF_ERROR(statusor.status());                              \</div>
 <div class="line">  STATUS_MACROS_IMPL_UNPARENTHESIS(lhs) = std::move(statusor).value()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00050">50</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00050">50</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +271,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00070">70</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00070">70</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -312,9 +301,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Internal helper for concatenating macro values. </p>
-
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00069">69</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00069">69</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -333,9 +320,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If the input is parenthesized, removes the parentheses. Otherwise expands to the input unchanged. </p>
 
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00065">65</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00065">65</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -355,9 +341,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Internal helpers for macro expansion. </p>
-
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00056">56</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00056">56</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +361,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00058">58</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00058">58</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
@@ -393,17 +377,20 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00061">61</a> of file <a class="el" href="base_2status__macros_8h_source.html">status_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2status__macros_8h_source.html#l00061">61</a> of file <a class="el" href="base_2status__macros_8h_source.html">base/status_macros.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="base_2status__macros_8h.html">status_macros.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

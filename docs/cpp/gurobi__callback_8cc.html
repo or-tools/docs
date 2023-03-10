@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/solvers/gurobi_callback.cc File Reference</title>
+<title>OR-Tools: gurobi_callback.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,44 +100,15 @@ $(document).ready(function(){initNavTree('gurobi__callback_8cc.html',''); initRe
   <div class="headertitle"><div class="title">gurobi_callback.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="gurobi__callback_8h_source.html">ortools/math_opt/solvers/gurobi_callback.h</a>&quot;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;absl/time/clock.h&quot;</code><br />
-<code>#include &quot;absl/time/time.h&quot;</code><br />
-<code>#include &quot;absl/types/span.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="linked__hash__map_8h_source.html">ortools/base/linked_hash_map.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="protoutil_8h_source.html">ortools/base/protoutil.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="environment_8h_source.html">ortools/gurobi/environment.h</a>&quot;</code><br />
-<code>#include &quot;ortools/math_opt/callback.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="math__opt__proto__utils_8h_source.html">ortools/math_opt/core/math_opt_proto_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="solve__interrupter_8h_source.html">ortools/math_opt/core/solve_interrupter.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="solver__interface_8h_source.html">ortools/math_opt/core/solver_interface.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sparse__vector__view_8h_source.html">ortools/math_opt/core/sparse_vector_view.h</a>&quot;</code><br />
-<code>#include &quot;ortools/math_opt/solution.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="message__callback__data_8h_source.html">ortools/math_opt/solvers/message_callback_data.h</a>&quot;</code><br />
-<code>#include &quot;ortools/math_opt/sparse_containers.pb.h&quot;</code><br />
-</div>
+
 <p><a href="gurobi__callback_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
-<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -147,12 +118,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a08ee8d51b32a74dfb9c5f7e1c449b4fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a08ee8d51b32a74dfb9c5f7e1c449b4fd">operations_research::math_opt::EventToGurobiWhere</a> (const absl::flat_hash_set&lt; CallbackEventProto &gt; &amp;events)</td></tr>
-<tr class="separator:a08ee8d51b32a74dfb9c5f7e1c449b4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9f3c6eeac117a1480ccd05d8a35e38"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aaa9f3c6eeac117a1480ccd05d8a35e38">operations_research::math_opt::GurobiCallbackImpl</a> (const Gurobi::CallbackContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, const GurobiCallbackInput &amp;callback_input, MessageCallbackData &amp;message_callback_data, SolveInterrupter *const local_interrupter)</td></tr>
-<tr class="separator:aaa9f3c6eeac117a1480ccd05d8a35e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b828b4257d3b23138a263dfdd92988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a76b828b4257d3b23138a263dfdd92988">operations_research::math_opt::GurobiCallbackImplFlush</a> (const GurobiCallbackInput &amp;callback_input, MessageCallbackData &amp;message_callback_data)</td></tr>
-<tr class="separator:a76b828b4257d3b23138a263dfdd92988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90644d44a9987c14edfb1cd0d2605bc5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a90644d44a9987c14edfb1cd0d2605bc5">EventToGurobiWhere</a> (const absl::flat_hash_set&lt; CallbackEventProto &gt; &amp;events)</td></tr>
+<tr class="separator:a90644d44a9987c14edfb1cd0d2605bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641f09e40ce37a52ad4c285e77d66ded"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a641f09e40ce37a52ad4c285e77d66ded">GurobiCallbackImpl</a> (const Gurobi::CallbackContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, const GurobiCallbackInput &amp;callback_input, MessageCallbackData &amp;message_callback_data, SolveInterrupter *const local_interrupter)</td></tr>
+<tr class="separator:a641f09e40ce37a52ad4c285e77d66ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158a3cecea7ce7e824ae5eca3a365f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a158a3cecea7ce7e824ae5eca3a365f1d">GurobiCallbackImplFlush</a> (const GurobiCallbackInput &amp;callback_input, MessageCallbackData &amp;message_callback_data)</td></tr>
+<tr class="separator:a158a3cecea7ce7e824ae5eca3a365f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a58669ccd3eb88ecc437287459b6abeb9" name="a58669ccd3eb88ecc437287459b6abeb9"></a>
@@ -185,20 +156,21 @@ Functions</h2></td></tr>
 <div class="line">    RETURN_IF_ERROR(eval_status_or.status()) &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__; \</div>
 <div class="line">    setter(*std::move(eval_status_or));                                      \</div>
 <div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
-</div><!-- fragment --><p>Invokes setter on a non-error value in statusor or returns the error.</p>
-<p>Requires that statusor is a StatusOr&lt;T&gt; and setter(T) is a function. </p>
-
+</div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="gurobi__callback_8cc_source.html#l00124">124</a> of file <a class="el" href="gurobi__callback_8cc_source.html">gurobi_callback.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd.html">solvers</a></li><li class="navelem"><a class="el" href="gurobi__callback_8cc.html">gurobi_callback.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

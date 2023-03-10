@@ -1,28 +1,6 @@
 var searchData=
 [
-  ['linearargumentproto_0',['LinearArgumentProto',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearArgumentProto.html',1,'Google::OrTools::Sat']]],
-  ['linearbooleanconstraint_1',['LinearBooleanConstraint',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearBooleanConstraint.html',1,'Google::OrTools::Sat']]],
-  ['linearbooleanproblem_2',['LinearBooleanProblem',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearBooleanProblem.html',1,'Google::OrTools::Sat']]],
-  ['linearconstraintproto_3',['LinearConstraintProto',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearConstraintProto.html',1,'Google::OrTools::Sat']]],
-  ['linearexpressionproto_4',['LinearExpressionProto',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearExpressionProto.html',1,'Google::OrTools::Sat']]],
-  ['linearobjective_5',['LinearObjective',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearObjective.html',1,'Google::OrTools::Sat']]],
-  ['linearsolverreflection_6',['LinearSolverReflection',['../classOperationsResearch_1_1LinearSolverReflection.html',1,'OperationsResearch']]],
-  ['linearsumassignment_7',['LinearSumAssignment',['../classGoogle_1_1OrTools_1_1Graph_1_1LinearSumAssignment.html',1,'Google::OrTools::Graph']]],
-  ['listofvariablesproto_8',['ListOfVariablesProto',['../classGoogle_1_1OrTools_1_1Sat_1_1ListOfVariablesProto.html',1,'Google::OrTools::Sat']]],
-  ['localsearchfilter_9',['LocalSearchFilter',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilter.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchfiltermanager_10',['LocalSearchFilterManager',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterManager.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchfilterstatistics_11',['LocalSearchFilterStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html',1,'Google::OrTools::ConstraintSolver::LocalSearchStatistics::Types']]],
-  ['localsearchfiltervector_12',['LocalSearchFilterVector',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchfiltervectorenumerator_13',['LocalSearchFilterVectorEnumerator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector_1_1LocalSearchFilterVectorEnumerator.html',1,'Google::OrTools::ConstraintSolver::LocalSearchFilterVector']]],
-  ['localsearchmetaheuristic_14',['LocalSearchMetaheuristic',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchMetaheuristic.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchmonitor_15',['LocalSearchMonitor',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchMonitor.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchneighborhoodoperators_16',['LocalSearchNeighborhoodOperators',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1LocalSearchNeighborhoodOperators.html',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters::Types']]],
-  ['localsearchoperator_17',['LocalSearchOperator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperator.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchoperatorstate_18',['LocalSearchOperatorState',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorState.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchoperatorstatistics_19',['LocalSearchOperatorStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchOperatorStatistics.html',1,'Google::OrTools::ConstraintSolver::LocalSearchStatistics::Types']]],
-  ['localsearchoperatorvector_20',['LocalSearchOperatorVector',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchoperatorvectorenumerator_21',['LocalSearchOperatorVectorEnumerator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector_1_1LocalSearchOperatorVectorEnumerator.html',1,'Google::OrTools::ConstraintSolver::LocalSearchOperatorVector']]],
-  ['localsearchphaseparameters_22',['LocalSearchPhaseParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchPhaseParameters.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchstatistics_23',['LocalSearchStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['logcallback_24',['LogCallback',['../classGoogle_1_1OrTools_1_1Sat_1_1LogCallback.html',1,'Google::OrTools::Sat']]]
+  ['mpconstraintvector_0',['MPConstraintVector',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html',1,'Google::OrTools::LinearSolver']]],
+  ['mpvariablevector_1',['MPVariableVector',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html',1,'Google::OrTools::LinearSolver']]],
+  ['multiplecircuitconstraint_2',['MultipleCircuitConstraint',['../classGoogle_1_1OrTools_1_1Sat_1_1MultipleCircuitConstraint.html',1,'Google::OrTools::Sat']]]
 ];

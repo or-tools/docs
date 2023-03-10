@@ -1,6 +1,0 @@
-var interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder =
-[
-    [ "getDurationSeconds", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder.html#a18af21320a4bbda69d6583d753e4810c", null ],
-    [ "getStrategy", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder.html#ac74a3928b060dfa192f3454d37ae993a", null ],
-    [ "getStrategyBytes", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder.html#a0cca38346bef33c3707f165d87ee4257", null ]
-];

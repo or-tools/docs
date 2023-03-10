@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/base/source_location.h File Reference</title>
+<title>OR-Tools: source_location.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,14 +100,12 @@ $(document).ready(function(){initNavTree('source__location_8h.html',''); initRes
   <div class="headertitle"><div class="title">source_location.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
-<code>#include &quot;absl/base/config.h&quot;</code><br />
-</div>
+
 <p><a href="source__location_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabsl_1_1SourceLocation.html">absl::SourceLocation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabsl_1_1_source_location.html">SourceLocation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -117,7 +115,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a34adc271171bbafeb4f338259e79df88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="source__location_8h.html#a34adc271171bbafeb4f338259e79df88">ABSL_LOC</a>&#160;&#160;&#160;<a class="el" href="classabsl_1_1SourceLocation.html#a7847435b1e58733607d4fb94dce59ba8">::absl::SourceLocation::DoNotInvokeDirectly</a>(__LINE__, __FILE__)</td></tr>
+<tr class="memitem:a34adc271171bbafeb4f338259e79df88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="source__location_8h.html#a34adc271171bbafeb4f338259e79df88">ABSL_LOC</a>&#160;&#160;&#160;<a class="el" href="classabsl_1_1_source_location.html#a7c8f28daa7b1c3d7e98f74d978e7e18a">::absl::SourceLocation::DoNotInvokeDirectly</a>(__LINE__, __FILE__)</td></tr>
 <tr class="separator:a34adc271171bbafeb4f338259e79df88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb8e68325c865f9e94c9e3f065d5463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="source__location_8h.html#adeb8e68325c865f9e94c9e3f065d5463">ABSL_LOC_CURRENT_DEFAULT_ARG</a></td></tr>
 <tr class="separator:adeb8e68325c865f9e94c9e3f065d5463"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,11 +128,10 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ABSL_LOC&#160;&#160;&#160;<a class="el" href="classabsl_1_1SourceLocation.html#a7847435b1e58733607d4fb94dce59ba8">::absl::SourceLocation::DoNotInvokeDirectly</a>(__LINE__, __FILE__)</td>
+          <td class="memname">#define ABSL_LOC&#160;&#160;&#160;<a class="el" href="classabsl_1_1_source_location.html#a7c8f28daa7b1c3d7e98f74d978e7e18a">::absl::SourceLocation::DoNotInvokeDirectly</a>(__LINE__, __FILE__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If a function takes an <code><a class="el" href="classabsl_1_1SourceLocation.html">absl::SourceLocation</a></code> parameter, pass this as the argument. </p>
 
 <p class="definition">Definition at line <a class="el" href="source__location_8h_source.html#l00122">122</a> of file <a class="el" href="source__location_8h_source.html">source_location.h</a>.</p>
 
@@ -151,11 +148,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ABSL_LOC_CURRENT_DEFAULT_ARG</p>
-<p>Specifies that a function should use <code><a class="el" href="classabsl_1_1SourceLocation.html#afce1bba885a3014b0531058aa9dbdfb7">absl::SourceLocation::current()</a></code> on platforms where it will return useful information, but require explicitly passing <code>ABSL_LOC</code> on platforms where it would return dummy information.</p>
-<p>Usage:</p>
-<p>void MyLog(absl::string_view msg,
-             absl::SourceLocation loc ABSL_LOC_CURRENT_DEFAULT_ARG) { std::cout &lt;&lt; loc.file_name() &lt;&lt; "@" &lt;&lt; loc.line() &lt;&lt; ": " &lt;&lt; msg; } </p>
 
 <p class="definition">Definition at line <a class="el" href="source__location_8h_source.html#l00140">140</a> of file <a class="el" href="source__location_8h_source.html">source_location.h</a>.</p>
 
@@ -163,11 +155,14 @@ Macros</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="source__location_8h.html">source_location.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

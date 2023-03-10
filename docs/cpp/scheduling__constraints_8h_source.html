@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/sat/scheduling_constraints.h Source File</title>
+<title>OR-Tools: scheduling_constraints.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('scheduling__constraints_8h_source.html
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// true.</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// This constraint expects that enforcement_literal &lt;==&gt; bool_or(selectors).</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a54c46edad1029536152f65856179ae10">EqualMinOfSelectedVariables</a>(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#af92c9748b009e37cc6e5b2f14095b2c3">EqualMinOfSelectedVariables</a>(</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Literal enforcement_literal, AffineExpression target,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> std::vector&lt;AffineExpression&gt;&amp; exprs,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> std::vector&lt;Literal&gt;&amp; selectors);</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('scheduling__constraints_8h_source.html
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// true.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// This constraint expects that enforcement_literal &lt;==&gt; bool_or(selectors).u</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a5fe9f9231cbc35a8ce01cf3d1f8e9e49">EqualMaxOfSelectedVariables</a>(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a92ae1286e941ce8aef805a6d4a57f3ae">EqualMaxOfSelectedVariables</a>(</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    Literal enforcement_literal, AffineExpression target,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> std::vector&lt;AffineExpression&gt;&amp; exprs,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> std::vector&lt;Literal&gt;&amp; selectors);</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('scheduling__constraints_8h_source.html
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//     is present.</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//   - if the target interval is absent, all intervals are absent.</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//   - If one interval is present, the target interval is present too.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ab996930bc18f993f5e4921040ff20a13">SpanOfIntervals</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>std::function&lt;void(Model*)&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ab8a2ed985fe84324a04b05b0368f50b0">SpanOfIntervals</a>(</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    IntervalVariable span, <span class="keyword">const</span> std::vector&lt;IntervalVariable&gt;&amp; intervals);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace sat</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}  <span class="comment">// namespace operations_research</span></div>
@@ -171,21 +171,24 @@ $(document).ready(function(){initNavTree('scheduling__constraints_8h_source.html
 <div class="ttc" id="aintegral__types_8h_html"><div class="ttname"><a href="integral__types_8h.html">integral_types.h</a></div></div>
 <div class="ttc" id="aintervals_8h_html"><div class="ttname"><a href="intervals_8h.html">intervals.h</a></div></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="macros_8h.html">macros.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a54c46edad1029536152f65856179ae10"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a54c46edad1029536152f65856179ae10">operations_research::sat::EqualMinOfSelectedVariables</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; EqualMinOfSelectedVariables(Literal enforcement_literal, AffineExpression target, const std::vector&lt; AffineExpression &gt; &amp;exprs, const std::vector&lt; Literal &gt; &amp;selectors)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00279">scheduling_constraints.cc:279</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a5fe9f9231cbc35a8ce01cf3d1f8e9e49"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a5fe9f9231cbc35a8ce01cf3d1f8e9e49">operations_research::sat::EqualMaxOfSelectedVariables</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; EqualMaxOfSelectedVariables(Literal enforcement_literal, AffineExpression target, const std::vector&lt; AffineExpression &gt; &amp;exprs, const std::vector&lt; Literal &gt; &amp;selectors)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00303">scheduling_constraints.cc:303</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_ab996930bc18f993f5e4921040ff20a13"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ab996930bc18f993f5e4921040ff20a13">operations_research::sat::SpanOfIntervals</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; SpanOfIntervals(IntervalVariable span, const std::vector&lt; IntervalVariable &gt; &amp;intervals)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00318">scheduling_constraints.cc:318</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a92ae1286e941ce8aef805a6d4a57f3ae"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a92ae1286e941ce8aef805a6d4a57f3ae">operations_research::sat::EqualMaxOfSelectedVariables</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; EqualMaxOfSelectedVariables(Literal enforcement_literal, AffineExpression target, const std::vector&lt; AffineExpression &gt; &amp;exprs, const std::vector&lt; Literal &gt; &amp;selectors)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00303">scheduling_constraints.cc:303</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_ab8a2ed985fe84324a04b05b0368f50b0"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ab8a2ed985fe84324a04b05b0368f50b0">operations_research::sat::SpanOfIntervals</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; SpanOfIntervals(IntervalVariable span, const std::vector&lt; IntervalVariable &gt; &amp;intervals)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00318">scheduling_constraints.cc:318</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_af92c9748b009e37cc6e5b2f14095b2c3"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#af92c9748b009e37cc6e5b2f14095b2c3">operations_research::sat::EqualMinOfSelectedVariables</a></div><div class="ttdeci">std::function&lt; void(Model *)&gt; EqualMinOfSelectedVariables(Literal enforcement_literal, AffineExpression target, const std::vector&lt; AffineExpression &gt; &amp;exprs, const std::vector&lt; Literal &gt; &amp;selectors)</div><div class="ttdef"><b>Definition:</b> <a href="scheduling__constraints_8cc_source.html#l00279">scheduling_constraints.cc:279</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
 <div class="ttc" id="asat_2model_8h_html"><div class="ttname"><a href="sat_2model_8h.html">model.h</a></div></div>
 <div class="ttc" id="asat__base_8h_html"><div class="ttname"><a href="sat__base_8h.html">sat_base.h</a></div></div>
 <div class="ttc" id="asat__solver_8h_html"><div class="ttname"><a href="sat__solver_8h.html">sat_solver.h</a></div></div>
 <div class="ttc" id="astrong__integers_8h_html"><div class="ttname"><a href="strong__integers_8h.html">strong_integers.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="scheduling__constraints_8h.html">scheduling_constraints.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/cpp/sparse_containers.h File Reference</title>
+<title>OR-Tools: sparse_containers.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,64 +99,46 @@ $(document).ready(function(){initNavTree('sparse__containers_8h.html',''); initR
   <div class="headertitle"><div class="title">sparse_containers.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
-<code>#include &quot;absl/types/span.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="status__builder_8h_source.html">ortools/base/status_builder.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sparse__vector__view_8h_source.html">ortools/math_opt/core/sparse_vector_view.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="basis__status_8h_source.html">ortools/math_opt/cpp/basis_status.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">ortools/math_opt/cpp/linear_constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="variable__and__expressions_8h_source.html">ortools/math_opt/cpp/variable_and_expressions.h</a>&quot;</code><br />
-<code>#include &quot;ortools/math_opt/solution.pb.h&quot;</code><br />
-<code>#include &quot;ortools/math_opt/sparse_containers.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="model__storage_8h_source.html">ortools/math_opt/storage/model_storage.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ids__validator_8h_source.html">ortools/math_opt/validators/ids_validator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sparse__vector__validator_8h_source.html">ortools/math_opt/validators/sparse_vector_validator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="util_2status__macros_8h_source.html">ortools/util/status_macros.h</a>&quot;</code><br />
-</div>
+
 <p><a href="sparse__containers_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
-<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a62b0640d4793cf31886de2a8956254cf"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a62b0640d4793cf31886de2a8956254cf">operations_research::math_opt::VariableValuesFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseDoubleVectorProto &amp;vars_proto)</td></tr>
-<tr class="separator:a62b0640d4793cf31886de2a8956254cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d334f018cd64754f057b885ec81fab"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a96d334f018cd64754f057b885ec81fab">operations_research::math_opt::VariableValuesToProto</a> (const VariableMap&lt; double &gt; &amp;variable_values)</td></tr>
-<tr class="memdesc:a96d334f018cd64754f057b885ec81fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of variable_values.  <br /></td></tr>
-<tr class="separator:a96d334f018cd64754f057b885ec81fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c5a2411793d630d76351e83fa7f22a"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a41c5a2411793d630d76351e83fa7f22a">operations_research::math_opt::LinearConstraintValuesFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseDoubleVectorProto &amp;lin_cons_proto)</td></tr>
-<tr class="separator:a41c5a2411793d630d76351e83fa7f22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a36ff904fd1095b6c8588e2e7d25ccb2d">operations_research::math_opt::LinearConstraintValuesToProto</a> (const LinearConstraintMap&lt; double &gt; &amp;linear_constraint_values)</td></tr>
-<tr class="memdesc:a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of linear_constraint_values.  <br /></td></tr>
-<tr class="separator:a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e18dd898517136444a5f6ec986102f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; VariableMap&lt; BasisStatus &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac5e18dd898517136444a5f6ec986102f">operations_research::math_opt::VariableBasisFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseBasisStatusVector &amp;basis_proto)</td></tr>
-<tr class="separator:ac5e18dd898517136444a5f6ec986102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a72267ba3c5cb04de3bcdcff15014d"><td class="memItemLeft" align="right" valign="top">SparseBasisStatusVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a67a72267ba3c5cb04de3bcdcff15014d">operations_research::math_opt::VariableBasisToProto</a> (const VariableMap&lt; BasisStatus &gt; &amp;basis_values)</td></tr>
-<tr class="memdesc:a67a72267ba3c5cb04de3bcdcff15014d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of basis_values.  <br /></td></tr>
-<tr class="separator:a67a72267ba3c5cb04de3bcdcff15014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b93044ff7b447d4c3922dd48aa1b633"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; LinearConstraintMap&lt; BasisStatus &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3b93044ff7b447d4c3922dd48aa1b633">operations_research::math_opt::LinearConstraintBasisFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseBasisStatusVector &amp;basis_proto)</td></tr>
-<tr class="separator:a3b93044ff7b447d4c3922dd48aa1b633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abcb7751279d6be7777d6a95087c0f1"><td class="memItemLeft" align="right" valign="top">SparseBasisStatusVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a8abcb7751279d6be7777d6a95087c0f1">operations_research::math_opt::LinearConstraintBasisToProto</a> (const LinearConstraintMap&lt; BasisStatus &gt; &amp;basis_values)</td></tr>
-<tr class="memdesc:a8abcb7751279d6be7777d6a95087c0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of basis_values.  <br /></td></tr>
-<tr class="separator:a8abcb7751279d6be7777d6a95087c0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1d5463fd2ab7205f2c1e1efeaaa669"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a7e1d5463fd2ab7205f2c1e1efeaaa669">VariableValuesFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseDoubleVectorProto &amp;vars_proto)</td></tr>
+<tr class="separator:a7e1d5463fd2ab7205f2c1e1efeaaa669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbb8eeca83b40ce6a747a71d6f13482"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abcbb8eeca83b40ce6a747a71d6f13482">VariableValuesToProto</a> (const VariableMap&lt; double &gt; &amp;variable_values)</td></tr>
+<tr class="separator:abcbb8eeca83b40ce6a747a71d6f13482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2513fc2e498c8c6028bdd10ae29376"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3f2513fc2e498c8c6028bdd10ae29376">LinearConstraintValuesFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseDoubleVectorProto &amp;lin_cons_proto)</td></tr>
+<tr class="separator:a3f2513fc2e498c8c6028bdd10ae29376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5552e30bfd19f3f636a3d42c3c7194e4"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a5552e30bfd19f3f636a3d42c3c7194e4">LinearConstraintValuesToProto</a> (const LinearConstraintMap&lt; double &gt; &amp;linear_constraint_values)</td></tr>
+<tr class="separator:a5552e30bfd19f3f636a3d42c3c7194e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b31b1869d853b3e95df20ddeb0df117"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; VariableMap&lt; BasisStatus &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a7b31b1869d853b3e95df20ddeb0df117">VariableBasisFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseBasisStatusVector &amp;basis_proto)</td></tr>
+<tr class="separator:a7b31b1869d853b3e95df20ddeb0df117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10464f7c412c5804087ac32efdf1c693"><td class="memItemLeft" align="right" valign="top">SparseBasisStatusVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a10464f7c412c5804087ac32efdf1c693">VariableBasisToProto</a> (const VariableMap&lt; BasisStatus &gt; &amp;basis_values)</td></tr>
+<tr class="separator:a10464f7c412c5804087ac32efdf1c693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada50a1b97bfb930321a9df4dbee6a145"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; LinearConstraintMap&lt; BasisStatus &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ada50a1b97bfb930321a9df4dbee6a145">LinearConstraintBasisFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseBasisStatusVector &amp;basis_proto)</td></tr>
+<tr class="separator:ada50a1b97bfb930321a9df4dbee6a145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2038189736f63f074de8850b5fcf584e"><td class="memItemLeft" align="right" valign="top">SparseBasisStatusVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2038189736f63f074de8850b5fcf584e">LinearConstraintBasisToProto</a> (const LinearConstraintMap&lt; BasisStatus &gt; &amp;basis_values)</td></tr>
+<tr class="separator:a2038189736f63f074de8850b5fcf584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="sparse__containers_8h.html">sparse_containers.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: google::logging_internal Namespace Reference</title>
+<title>OR-Tools: google::logging_internal Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,19 +101,18 @@ $(document).ready(function(){initNavTree('namespacegoogle_1_1logging__internal.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6fd402bc0db8a9ac0d126b1775dec543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle_1_1logging__internal.html#a6fd402bc0db8a9ac0d126b1775dec543">SafeFNMatch_</a> (const char *pattern, size_t patt_len, const char *str, size_t str_len)</td></tr>
-<tr class="memdesc:a6fd402bc0db8a9ac0d126b1775dec543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by logging_unittests.cc so can't make it static here.  <br /></td></tr>
-<tr class="separator:a6fd402bc0db8a9ac0d126b1775dec543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bff69e0ee2b03aec996669b5b23f10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle_1_1logging__internal.html#a33bff69e0ee2b03aec996669b5b23f10">SafeFNMatch_</a> (const char *pattern, size_t patt_len, const char *str, size_t str_len)</td></tr>
+<tr class="separator:a33bff69e0ee2b03aec996669b5b23f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6fd402bc0db8a9ac0d126b1775dec543" name="a6fd402bc0db8a9ac0d126b1775dec543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd402bc0db8a9ac0d126b1775dec543">&#9670;&#160;</a></span>SafeFNMatch_()</h2>
+<a id="a33bff69e0ee2b03aec996669b5b23f10" name="a33bff69e0ee2b03aec996669b5b23f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bff69e0ee2b03aec996669b5b23f10">&#9670;&#160;</a></span>SafeFNMatch_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool google::logging_internal::SafeFNMatch_ </td>
+          <td class="memname">bool SafeFNMatch_ </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>pattern</em>, </td>
@@ -144,20 +143,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Used by logging_unittests.cc so can't make it static here. </p>
-<p>Implementation of fnmatch that does not need 0-termination of arguments and does not allocate any memory, but we only support "*" and "?" wildcards, not the "[...]" patterns. It's not a static function for the unittest. </p>
-
 <p class="definition">Definition at line <a class="el" href="vlog__is__on_8cc_source.html#l00049">49</a> of file <a class="el" href="vlog__is__on_8cc_source.html">vlog_is_on.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegoogle.html">google</a></li><li class="navelem"><a class="el" href="namespacegoogle_1_1logging__internal.html">logging_internal</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

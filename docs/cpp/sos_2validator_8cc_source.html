@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/constraints/sos/validator.cc Source File</title>
+<title>OR-Tools: validator.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('sos_2validator_8cc_source.html',''); i
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">validator.cc</div></div>
+  <div class="headertitle"><div class="title">sos/validator.cc</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="sos_2validator_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright 2010-2022 Google LLC</span></div>
@@ -123,25 +123,25 @@ $(document).ready(function(){initNavTree('sos_2validator_8cc_source.html',''); i
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a> {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a893baff129fe712ceb83fa9ae1a3be66">   28</a></span>absl::Status <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a8ef00405010251abc5307c99b738d7dc">ValidateConstraint</a>(<span class="keyword">const</span> SosConstraintProto&amp; constraint,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1IdNameBiMap.html">IdNameBiMap</a>&amp; variable_universe) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a22aabe84c84bd88a03ef45faeb57b3c6">   28</a></span>absl::Status <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a40a1e54dda1045a99cddcd3e7f694dd8">ValidateConstraint</a>(<span class="keyword">const</span> SosConstraintProto&amp; constraint,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1_id_name_bi_map.html">IdNameBiMap</a>&amp; variable_universe) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">if</span> (!constraint.weights().empty() &amp;&amp;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      constraint.weights_size() != constraint.expressions_size()) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutil.html#a58bf744abf59880bcd01d6ac555880ce">util::InvalidArgumentErrorBuilder</a>()</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>           &lt;&lt; <span class="stringliteral">&quot;Length mismatch between weights and expressions: &quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>           &lt;&lt; constraint.weights_size() &lt;&lt; <span class="stringliteral">&quot; vs. &quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>           &lt;&lt; constraint.expressions_size();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> LinearExpressionProto&amp; expression : constraint.expressions()) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#afe2c32d48cfdad2775a264aa3b72dca1">ValidateLinearExpression</a>(expression, variable_universe))</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#af68498be4238a42b03140d94274385ec">ValidateLinearExpression</a>(expression, variable_universe))</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        &lt;&lt; <span class="stringliteral">&quot;Invalid SOS expression&quot;</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">// Check weights for uniqueness.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  absl::flat_hash_set&lt;double&gt; weights;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a> : constraint.weights()) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#abf86a50e73baef523b848a22201e2dff">CheckScalarNoNanNoInf</a>(<a class="code hl_variable" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>)) &lt;&lt; <span class="stringliteral">&quot;Invalid SOS weight&quot;</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ad45d12cfd14f770f145f80788e5fe859">CheckScalarNoNanNoInf</a>(<a class="code hl_variable" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>)) &lt;&lt; <span class="stringliteral">&quot;Invalid SOS weight&quot;</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (!weights.insert(<a class="code hl_variable" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>).second) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a>()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutil.html#a58bf744abf59880bcd01d6ac555880ce">util::InvalidArgumentErrorBuilder</a>()</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>             &lt;&lt; <span class="stringliteral">&quot;SOS weights must be unique, but encountered duplicate weight: &quot;</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>             &lt;&lt; <a class="code hl_variable" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
@@ -151,26 +151,29 @@ $(document).ready(function(){initNavTree('sos_2validator_8cc_source.html',''); i
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="ttc" id="abase_2status__macros_8h_html"><div class="ttname"><a href="base_2status__macros_8h.html">status_macros.h</a></div></div>
-<div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00027">status_macros.h:27</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1IdNameBiMap_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1IdNameBiMap.html">operations_research::math_opt::IdNameBiMap</a></div><div class="ttdef"><b>Definition:</b> <a href="model__summary_8h_source.html#l00050">model_summary.h:50</a></div></div>
+<div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00027">base/status_macros.h:27</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_id_name_bi_map_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_id_name_bi_map.html">operations_research::math_opt::IdNameBiMap</a></div><div class="ttdef"><b>Definition:</b> <a href="model__summary_8h_source.html#l00050">model_summary.h:50</a></div></div>
 <div class="ttc" id="alinear__expression__validator_8h_html"><div class="ttname"><a href="linear__expression__validator_8h.html">linear_expression_validator.h</a></div></div>
 <div class="ttc" id="amodel__summary_8h_html"><div class="ttname"><a href="model__summary_8h.html">model_summary.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a8ef00405010251abc5307c99b738d7dc"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a8ef00405010251abc5307c99b738d7dc">operations_research::math_opt::ValidateConstraint</a></div><div class="ttdeci">absl::Status ValidateConstraint(const IndicatorConstraintProto &amp;constraint, const IdNameBiMap &amp;variable_universe)</div><div class="ttdef"><b>Definition:</b> <a href="indicator_2validator_8cc_source.html#l00027">validator.cc:27</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_abf86a50e73baef523b848a22201e2dff"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#abf86a50e73baef523b848a22201e2dff">operations_research::math_opt::CheckScalarNoNanNoInf</a></div><div class="ttdeci">absl::Status CheckScalarNoNanNoInf(const double d)</div><div class="ttdef"><b>Definition:</b> <a href="scalar__validator_8cc_source.html#l00029">scalar_validator.cc:29</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_afe2c32d48cfdad2775a264aa3b72dca1"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#afe2c32d48cfdad2775a264aa3b72dca1">operations_research::math_opt::ValidateLinearExpression</a></div><div class="ttdeci">absl::Status ValidateLinearExpression(const LinearExpressionProto &amp;expression, const IdNameBiMap &amp;variable_universe)</div><div class="ttdef"><b>Definition:</b> <a href="linear__expression__validator_8cc_source.html#l00028">linear_expression_validator.cc:28</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ad0c886e6b95bc531d4a39884a87c0101"><div class="ttname"><a href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="status__builder_8h_source.html#l00088">status_builder.h:88</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a40a1e54dda1045a99cddcd3e7f694dd8"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a40a1e54dda1045a99cddcd3e7f694dd8">operations_research::math_opt::ValidateConstraint</a></div><div class="ttdeci">absl::Status ValidateConstraint(const IndicatorConstraintProto &amp;constraint, const IdNameBiMap &amp;variable_universe)</div><div class="ttdef"><b>Definition:</b> <a href="indicator_2validator_8cc_source.html#l00027">indicator/validator.cc:27</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ad45d12cfd14f770f145f80788e5fe859"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ad45d12cfd14f770f145f80788e5fe859">operations_research::math_opt::CheckScalarNoNanNoInf</a></div><div class="ttdeci">absl::Status CheckScalarNoNanNoInf(const double d)</div><div class="ttdef"><b>Definition:</b> <a href="scalar__validator_8cc_source.html#l00029">scalar_validator.cc:29</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_af68498be4238a42b03140d94274385ec"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#af68498be4238a42b03140d94274385ec">operations_research::math_opt::ValidateLinearExpression</a></div><div class="ttdeci">absl::Status ValidateLinearExpression(const LinearExpressionProto &amp;expression, const IdNameBiMap &amp;variable_universe)</div><div class="ttdef"><b>Definition:</b> <a href="linear__expression__validator_8cc_source.html#l00028">linear_expression_validator.cc:28</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a58bf744abf59880bcd01d6ac555880ce"><div class="ttname"><a href="namespaceutil.html#a58bf744abf59880bcd01d6ac555880ce">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="status__builder_8h_source.html#l00088">status_builder.h:88</a></div></div>
 <div class="ttc" id="apack_8cc_html_a4255f714cea26cdd64f6a0ee72d34a8c"><div class="ttname"><a href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a></div><div class="ttdeci">int64_t weight</div><div class="ttdef"><b>Definition:</b> <a href="pack_8cc_source.html#l00510">pack.cc:510</a></div></div>
 <div class="ttc" id="ascalar__validator_8h_html"><div class="ttname"><a href="scalar__validator_8h.html">scalar_validator.h</a></div></div>
 <div class="ttc" id="asos_2validator_8h_html"><div class="ttname"><a href="sos_2validator_8h.html">validator.h</a></div></div>
 <div class="ttc" id="astatus__builder_8h_html"><div class="ttname"><a href="status__builder_8h.html">status_builder.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_0a5367693520ddd163b6ef6281edcb8d.html">constraints</a></li><li class="navelem"><a class="el" href="dir_bd4dfbb2744e98d32ea33cf382ea9e35.html">sos</a></li><li class="navelem"><a class="el" href="sos_2validator_8cc.html">validator.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

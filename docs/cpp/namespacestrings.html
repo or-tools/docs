@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: strings Namespace Reference</title>
+<title>OR-Tools: strings Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -96,128 +96,101 @@ $(document).ready(function(){initNavTree('namespacestrings.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">strings Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>#include "ortools/base/logging.h"  
-<a href="namespacestrings.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1AsciiCaseInsensitiveEq.html">AsciiCaseInsensitiveEq</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1_ascii_case_insensitive_eq.html">AsciiCaseInsensitiveEq</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1AsciiCaseInsensitiveHash.html">AsciiCaseInsensitiveHash</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1_ascii_case_insensitive_hash.html">AsciiCaseInsensitiveHash</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1AsciiCaseInsensitiveLess.html">AsciiCaseInsensitiveLess</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstrings_1_1_ascii_case_insensitive_less.html">AsciiCaseInsensitiveLess</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5c37dcda57489761add906e316f88644"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">AsciiCapitalizationType</a> { <br />
-&#160;&#160;<a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644a3c0539ce8799b67a3434374200981edb">kLower</a>
-, <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644a47ea365ae543cb59618f5940400548cf">kUpper</a>
-, <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644a9fda60ba14f0809e152bc08409aa2737">kFirst</a>
-, <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644afce56956341de0de0ec7359c1a84e390">kMixed</a>
+<tr class="memitem:a66ed6e0102ed7c17544b4b6e9c710e95"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a> { <br />
+&#160;&#160;<a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95a3c0539ce8799b67a3434374200981edb">kLower</a>
+, <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95a47ea365ae543cb59618f5940400548cf">kUpper</a>
+, <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95a9fda60ba14f0809e152bc08409aa2737">kFirst</a>
+, <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95afce56956341de0de0ec7359c1a84e390">kMixed</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644ad8829aab41d68ae8000ef8b263f519b1">kNoAlpha</a>
+&#160;&#160;<a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95ad8829aab41d68ae8000ef8b263f519b1">kNoAlpha</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a5c37dcda57489761add906e316f88644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum values returned by GetAsciiCapitalization().  <a href="namespacestrings.html#a5c37dcda57489761add906e316f88644">More...</a><br /></td></tr>
-<tr class="separator:a5c37dcda57489761add906e316f88644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a66ed6e0102ed7c17544b4b6e9c710e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0464ec2222a214754d2681b2408750fb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a0464ec2222a214754d2681b2408750fb">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">AsciiCapitalizationType</a> &amp;type)</td></tr>
-<tr class="memdesc:a0464ec2222a214754d2681b2408750fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the name of an enum value.  <br /></td></tr>
-<tr class="separator:a0464ec2222a214754d2681b2408750fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6a9ddde96095d1be8e8d2c724aca96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">AsciiCapitalizationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aab6a9ddde96095d1be8e8d2c724aca96">GetAsciiCapitalization</a> (const absl::string_view <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>)</td></tr>
-<tr class="separator:aab6a9ddde96095d1be8e8d2c724aca96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf93b049b8ede5929c4755283e397dad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#abf93b049b8ede5929c4755283e397dad">AsciiCaseInsensitiveCompare</a> (absl::string_view s1, absl::string_view s2)</td></tr>
-<tr class="separator:abf93b049b8ede5929c4755283e397dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a506b00ee955f3510bd9eebe4128ac278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a506b00ee955f3510bd9eebe4128ac278">MakeAsciiTitlecase</a> (std::string *s, absl::string_view delimiters)</td></tr>
-<tr class="separator:a506b00ee955f3510bd9eebe4128ac278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b181e8d43f997eea5875f93f6ad0fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a92b181e8d43f997eea5875f93f6ad0fb">MakeAsciiTitlecase</a> (absl::string_view s, absl::string_view delimiters)</td></tr>
-<tr class="memdesc:a92b181e8d43f997eea5875f93f6ad0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">As above but with string_view as input.  <br /></td></tr>
-<tr class="separator:a92b181e8d43f997eea5875f93f6ad0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebef195ac4115c249fd0a0df1cf2e45"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7ebef195ac4115c249fd0a0df1cf2e45">strtoint64</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:a7ebef195ac4115c249fd0a0df1cf2e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9011bd7a2852d53a446eb0c4307716"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aab9011bd7a2852d53a446eb0c4307716">strtouint64</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:aab9011bd7a2852d53a446eb0c4307716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69c250b8bad1d19d52c376c11fbceaa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ad69c250b8bad1d19d52c376c11fbceaa">strtoint32</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:ad69c250b8bad1d19d52c376c11fbceaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae75edb1f587d4ba8e2341755c295d43"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aae75edb1f587d4ba8e2341755c295d43">strtouint32</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:aae75edb1f587d4ba8e2341755c295d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab023bf44f3c07467e40ce003a5ca63e8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">ParseLeadingInt32Value</a> (const char *str, int32_t deflt)</td></tr>
-<tr class="separator:ab023bf44f3c07467e40ce003a5ca63e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c5fdeed9de50019372ae85cf79809d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#af2c5fdeed9de50019372ae85cf79809d">ParseLeadingUInt32Value</a> (const char *str, uint32_t deflt)</td></tr>
-<tr class="separator:af2c5fdeed9de50019372ae85cf79809d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67db3332f667dd604f8c16e8e57a5481"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a67db3332f667dd604f8c16e8e57a5481">ParseLeadingDec32Value</a> (const char *str, int32_t deflt)</td></tr>
-<tr class="separator:a67db3332f667dd604f8c16e8e57a5481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de428d9252c77581cddabfbef4af6b6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a9de428d9252c77581cddabfbef4af6b6">ParseLeadingUDec32Value</a> (const char *str, uint32_t deflt)</td></tr>
-<tr class="separator:a9de428d9252c77581cddabfbef4af6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392bdd45ec8d5c00187b15a971bc934b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a392bdd45ec8d5c00187b15a971bc934b">ParseLeadingUInt64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:a392bdd45ec8d5c00187b15a971bc934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb14c3bb2854a6bdba7a17a3e96725b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#affb14c3bb2854a6bdba7a17a3e96725b">ParseLeadingInt64Value</a> (const char *str, int64_t deflt)</td></tr>
-<tr class="separator:affb14c3bb2854a6bdba7a17a3e96725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9c2cb8462642f51408dd3f7e7949a35"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac9c2cb8462642f51408dd3f7e7949a35">ParseLeadingHex64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:ac9c2cb8462642f51408dd3f7e7949a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf4ad6bedcf148d9aa79a554136e675"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a6bf4ad6bedcf148d9aa79a554136e675">ParseLeadingDec64Value</a> (const char *str, int64_t deflt)</td></tr>
-<tr class="separator:a6bf4ad6bedcf148d9aa79a554136e675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532ba8517600f8e1db38e677e720a327"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a532ba8517600f8e1db38e677e720a327">ParseLeadingUDec64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:a532ba8517600f8e1db38e677e720a327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5693f3bdbcfa93f99b3cbb49d7f42150"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a5693f3bdbcfa93f99b3cbb49d7f42150">ParseLeadingDoubleValue</a> (const char *str, double deflt)</td></tr>
-<tr class="separator:a5693f3bdbcfa93f99b3cbb49d7f42150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac55ca5d40ce0a70fa7792fd9c226166e"><td class="memItemLeft" align="right" valign="top">false no n y bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac55ca5d40ce0a70fa7792fd9c226166e">ParseLeadingBoolValue</a> (const char *str, bool deflt)</td></tr>
-<tr class="separator:ac55ca5d40ce0a70fa7792fd9c226166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3c2858cbc4005d9f15d3c4928a4b1c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a1e3c2858cbc4005d9f15d3c4928a4b1c">ParseLeadingInt32Value</a> (std::string_view str, int32_t deflt)</td></tr>
-<tr class="separator:a1e3c2858cbc4005d9f15d3c4928a4b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae938b92f2763d518a23f7830ceb1a3c7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ae938b92f2763d518a23f7830ceb1a3c7">ParseLeadingUInt32Value</a> (std::string_view str, uint32_t deflt)</td></tr>
-<tr class="separator:ae938b92f2763d518a23f7830ceb1a3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47f25ec7cc37dd0e456410b003506d1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ab47f25ec7cc37dd0e456410b003506d1">ParseLeadingDec32Value</a> (std::string_view str, int32_t deflt)</td></tr>
-<tr class="separator:ab47f25ec7cc37dd0e456410b003506d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4646aeb6dd6a8b913f1d707508976068"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a4646aeb6dd6a8b913f1d707508976068">ParseLeadingUDec32Value</a> (std::string_view str, uint32_t deflt)</td></tr>
-<tr class="separator:a4646aeb6dd6a8b913f1d707508976068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a501dbb8eed12ed48b5fdf2d581bfd224"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a501dbb8eed12ed48b5fdf2d581bfd224">ParseLeadingUInt64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
-<tr class="separator:a501dbb8eed12ed48b5fdf2d581bfd224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f434f99a6749a03f5d724987ceeb56e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7f434f99a6749a03f5d724987ceeb56e">ParseLeadingInt64Value</a> (std::string_view str, int64_t deflt)</td></tr>
-<tr class="separator:a7f434f99a6749a03f5d724987ceeb56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac64bcde6019af051d040f8e1791736e9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac64bcde6019af051d040f8e1791736e9">ParseLeadingHex64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
-<tr class="separator:ac64bcde6019af051d040f8e1791736e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef07387d4f6e66342db24a1b27a840e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#acef07387d4f6e66342db24a1b27a840e">ParseLeadingDec64Value</a> (std::string_view str, int64_t deflt)</td></tr>
-<tr class="separator:acef07387d4f6e66342db24a1b27a840e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6beecba6f13065380edba65186b347"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a4c6beecba6f13065380edba65186b347">ParseLeadingUDec64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
-<tr class="separator:a4c6beecba6f13065380edba65186b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3749f004f8f339e63f237a83b8032970"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3749f004f8f339e63f237a83b8032970">ParseLeadingDoubleValue</a> (std::string_view str, double deflt)</td></tr>
-<tr class="separator:a3749f004f8f339e63f237a83b8032970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99a3403f697fb75a2cd7f1b2e921cfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#af99a3403f697fb75a2cd7f1b2e921cfb">ParseLeadingBoolValue</a> (std::string_view str, bool deflt)</td></tr>
-<tr class="separator:af99a3403f697fb75a2cd7f1b2e921cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa648ab8493cf9d2cec91af5e2546ed37"><td class="memItemLeft" align="right" valign="top">false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa648ab8493cf9d2cec91af5e2546ed37">true</a></td></tr>
-<tr class="separator:aa648ab8493cf9d2cec91af5e2546ed37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56e823d98097f248088782a38fe78c9"><td class="memItemLeft" align="right" valign="top">false no&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa56e823d98097f248088782a38fe78c9">yes</a></td></tr>
-<tr class="separator:aa56e823d98097f248088782a38fe78c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4add8f0f294e071a91db86fa56f332"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a6f4add8f0f294e071a91db86fa56f332">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a> &amp;type)</td></tr>
+<tr class="separator:a6f4add8f0f294e071a91db86fa56f332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c980565812fd01837a47a58bd1096c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a54c980565812fd01837a47a58bd1096c">GetAsciiCapitalization</a> (const absl::string_view <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>)</td></tr>
+<tr class="separator:a54c980565812fd01837a47a58bd1096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdc886767f8dcd94a9fc1f88502c768"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3bdc886767f8dcd94a9fc1f88502c768">AsciiCaseInsensitiveCompare</a> (absl::string_view s1, absl::string_view s2)</td></tr>
+<tr class="separator:a3bdc886767f8dcd94a9fc1f88502c768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09deedfdb5e5723eea46574ee229a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac09deedfdb5e5723eea46574ee229a01">MakeAsciiTitlecase</a> (std::string *s, absl::string_view delimiters)</td></tr>
+<tr class="separator:ac09deedfdb5e5723eea46574ee229a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26c1d646f4ae47bc5dd12419550435f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ae26c1d646f4ae47bc5dd12419550435f">MakeAsciiTitlecase</a> (absl::string_view s, absl::string_view delimiters)</td></tr>
+<tr class="separator:ae26c1d646f4ae47bc5dd12419550435f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b4eabda924613c2a6400cc2a2a1b44"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a39b4eabda924613c2a6400cc2a2a1b44">strtoint64</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:a39b4eabda924613c2a6400cc2a2a1b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ded1a7db72692d21aa4285ab103d66"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a24ded1a7db72692d21aa4285ab103d66">strtouint64</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:a24ded1a7db72692d21aa4285ab103d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dedb5932926cdf78a72fc294345ffb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa0dedb5932926cdf78a72fc294345ffb">strtoint32</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:aa0dedb5932926cdf78a72fc294345ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938f68c2c0c42f0f57814cf6d4b8c68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7938f68c2c0c42f0f57814cf6d4b8c68">strtouint32</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:a7938f68c2c0c42f0f57814cf6d4b8c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3add1e1c17392fe4fed778e1516a7611"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3add1e1c17392fe4fed778e1516a7611">ParseLeadingInt32Value</a> (const char *str, int32_t deflt)</td></tr>
+<tr class="separator:a3add1e1c17392fe4fed778e1516a7611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c47e6506da307afc2eef1548a787c9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a60c47e6506da307afc2eef1548a787c9">ParseLeadingUInt32Value</a> (const char *str, uint32_t deflt)</td></tr>
+<tr class="separator:a60c47e6506da307afc2eef1548a787c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5996b1b5f81179a8327137d05a1c246b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a5996b1b5f81179a8327137d05a1c246b">ParseLeadingDec32Value</a> (const char *str, int32_t deflt)</td></tr>
+<tr class="separator:a5996b1b5f81179a8327137d05a1c246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2842c477f26c4b3234c190511c6991"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a0b2842c477f26c4b3234c190511c6991">ParseLeadingUDec32Value</a> (const char *str, uint32_t deflt)</td></tr>
+<tr class="separator:a0b2842c477f26c4b3234c190511c6991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec74709ad099d2e9845a9ee1a0f3bb03"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aec74709ad099d2e9845a9ee1a0f3bb03">ParseLeadingUInt64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:aec74709ad099d2e9845a9ee1a0f3bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f256880dacb98892fdf9978381e1009"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a1f256880dacb98892fdf9978381e1009">ParseLeadingInt64Value</a> (const char *str, int64_t deflt)</td></tr>
+<tr class="separator:a1f256880dacb98892fdf9978381e1009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3abd042b4fb9a1f82f61e39dc46a7534"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3abd042b4fb9a1f82f61e39dc46a7534">ParseLeadingHex64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:a3abd042b4fb9a1f82f61e39dc46a7534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457e99634f75010e743e5ef7394c085e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a457e99634f75010e743e5ef7394c085e">ParseLeadingDec64Value</a> (const char *str, int64_t deflt)</td></tr>
+<tr class="separator:a457e99634f75010e743e5ef7394c085e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a0ff3a63fa3debd78982148733cb0b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a05a0ff3a63fa3debd78982148733cb0b">ParseLeadingUDec64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:a05a0ff3a63fa3debd78982148733cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8cc5f3394e5926274aea401ef0d9c7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#abb8cc5f3394e5926274aea401ef0d9c7">ParseLeadingDoubleValue</a> (const char *str, double deflt)</td></tr>
+<tr class="separator:abb8cc5f3394e5926274aea401ef0d9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fae7da1efc2e025028d8e45c205b99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a14fae7da1efc2e025028d8e45c205b99">ParseLeadingBoolValue</a> (const char *str, bool deflt)</td></tr>
+<tr class="separator:a14fae7da1efc2e025028d8e45c205b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878831e725eac2466a79b1aee70987ac"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a878831e725eac2466a79b1aee70987ac">ParseLeadingInt32Value</a> (std::string_view str, int32_t deflt)</td></tr>
+<tr class="separator:a878831e725eac2466a79b1aee70987ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b6e67bff6908d0aa93565b49be04a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a67b6e67bff6908d0aa93565b49be04a0">ParseLeadingUInt32Value</a> (std::string_view str, uint32_t deflt)</td></tr>
+<tr class="separator:a67b6e67bff6908d0aa93565b49be04a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db95020c4f02350a96bd95bff3eee7c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7db95020c4f02350a96bd95bff3eee7c">ParseLeadingDec32Value</a> (std::string_view str, int32_t deflt)</td></tr>
+<tr class="separator:a7db95020c4f02350a96bd95bff3eee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870a623521fd8b27190946a5f9e04fb1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a870a623521fd8b27190946a5f9e04fb1">ParseLeadingUDec32Value</a> (std::string_view str, uint32_t deflt)</td></tr>
+<tr class="separator:a870a623521fd8b27190946a5f9e04fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0394869d080da40886a1c0c216f9be41"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a0394869d080da40886a1c0c216f9be41">ParseLeadingUInt64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
+<tr class="separator:a0394869d080da40886a1c0c216f9be41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac309b4a347e0ed20f82837f8b338a6d5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac309b4a347e0ed20f82837f8b338a6d5">ParseLeadingInt64Value</a> (std::string_view str, int64_t deflt)</td></tr>
+<tr class="separator:ac309b4a347e0ed20f82837f8b338a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c37d8eefc937dfdcc3aafb7ae6278b7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3c37d8eefc937dfdcc3aafb7ae6278b7">ParseLeadingHex64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
+<tr class="separator:a3c37d8eefc937dfdcc3aafb7ae6278b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb19e7df54c7153036cdbb923c8bc085"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aeb19e7df54c7153036cdbb923c8bc085">ParseLeadingDec64Value</a> (std::string_view str, int64_t deflt)</td></tr>
+<tr class="separator:aeb19e7df54c7153036cdbb923c8bc085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277916911c7edd1a22b1a35f4a577507"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a277916911c7edd1a22b1a35f4a577507">ParseLeadingUDec64Value</a> (std::string_view str, uint64_t deflt)</td></tr>
+<tr class="separator:a277916911c7edd1a22b1a35f4a577507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1401d95835ebb2cb83a3efa59e601636"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a1401d95835ebb2cb83a3efa59e601636">ParseLeadingDoubleValue</a> (std::string_view str, double deflt)</td></tr>
+<tr class="separator:a1401d95835ebb2cb83a3efa59e601636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0842d687b078ca709b8fc5e954ebd78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#af0842d687b078ca709b8fc5e954ebd78">ParseLeadingBoolValue</a> (std::string_view str, bool deflt)</td></tr>
+<tr class="separator:af0842d687b078ca709b8fc5e954ebd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>#include "ortools/base/logging.h" </p>
-<p>Convert strings to numbers or numbers to strings.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file contains string processing functions related to uppercase, lowercase, etc.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This package contains character classification functions for evaluating the case state of strings, and converting strings to uppercase, lowercase, etc.</p>
-<p>Unlike &lt;ctype.h&gt; (or absl/strings/ascii.h), the functions in this file are designed to operate on strings, not single characters.</p>
-<p>Except for those marked as "using the C/POSIX locale", these functions are for ASCII strings only.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file contains std::string processing functions related to numeric values.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a5c37dcda57489761add906e316f88644" name="a5c37dcda57489761add906e316f88644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c37dcda57489761add906e316f88644">&#9670;&#160;</a></span>AsciiCapitalizationType</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a66ed6e0102ed7c17544b4b6e9c710e95" name="a66ed6e0102ed7c17544b4b6e9c710e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ed6e0102ed7c17544b4b6e9c710e95">&#9670;&#160;</a></span>AsciiCapitalizationType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +199,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">strings::AsciiCapitalizationType</a></td>
+          <td class="memname">enum class <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a></td>
         </tr>
       </table>
   </td>
@@ -235,14 +208,12 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Enum values returned by <a class="el" href="namespacestrings.html#aab6a9ddde96095d1be8e8d2c724aca96">GetAsciiCapitalization()</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5c37dcda57489761add906e316f88644a3c0539ce8799b67a3434374200981edb" name="a5c37dcda57489761add906e316f88644a3c0539ce8799b67a3434374200981edb"></a>kLower&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c37dcda57489761add906e316f88644a47ea365ae543cb59618f5940400548cf" name="a5c37dcda57489761add906e316f88644a47ea365ae543cb59618f5940400548cf"></a>kUpper&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c37dcda57489761add906e316f88644a9fda60ba14f0809e152bc08409aa2737" name="a5c37dcda57489761add906e316f88644a9fda60ba14f0809e152bc08409aa2737"></a>kFirst&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c37dcda57489761add906e316f88644afce56956341de0de0ec7359c1a84e390" name="a5c37dcda57489761add906e316f88644afce56956341de0de0ec7359c1a84e390"></a>kMixed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c37dcda57489761add906e316f88644ad8829aab41d68ae8000ef8b263f519b1" name="a5c37dcda57489761add906e316f88644ad8829aab41d68ae8000ef8b263f519b1"></a>kNoAlpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a66ed6e0102ed7c17544b4b6e9c710e95a3c0539ce8799b67a3434374200981edb" name="a66ed6e0102ed7c17544b4b6e9c710e95a3c0539ce8799b67a3434374200981edb"></a>kLower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a66ed6e0102ed7c17544b4b6e9c710e95a47ea365ae543cb59618f5940400548cf" name="a66ed6e0102ed7c17544b4b6e9c710e95a47ea365ae543cb59618f5940400548cf"></a>kUpper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a66ed6e0102ed7c17544b4b6e9c710e95a9fda60ba14f0809e152bc08409aa2737" name="a66ed6e0102ed7c17544b4b6e9c710e95a9fda60ba14f0809e152bc08409aa2737"></a>kFirst&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a66ed6e0102ed7c17544b4b6e9c710e95afce56956341de0de0ec7359c1a84e390" name="a66ed6e0102ed7c17544b4b6e9c710e95afce56956341de0de0ec7359c1a84e390"></a>kMixed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a66ed6e0102ed7c17544b4b6e9c710e95ad8829aab41d68ae8000ef8b263f519b1" name="a66ed6e0102ed7c17544b4b6e9c710e95ad8829aab41d68ae8000ef8b263f519b1"></a>kNoAlpha&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="case_8h_source.html#l00045">45</a> of file <a class="el" href="case_8h_source.html">case.h</a>.</p>
@@ -250,14 +221,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abf93b049b8ede5929c4755283e397dad" name="abf93b049b8ede5929c4755283e397dad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf93b049b8ede5929c4755283e397dad">&#9670;&#160;</a></span>AsciiCaseInsensitiveCompare()</h2>
+<a id="a3bdc886767f8dcd94a9fc1f88502c768" name="a3bdc886767f8dcd94a9fc1f88502c768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdc886767f8dcd94a9fc1f88502c768">&#9670;&#160;</a></span>AsciiCaseInsensitiveCompare()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int strings::AsciiCaseInsensitiveCompare </td>
+          <td class="memname">int AsciiCaseInsensitiveCompare </td>
           <td>(</td>
           <td class="paramtype">absl::string_view&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
@@ -275,45 +246,39 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacestrings.html#abf93b049b8ede5929c4755283e397dad">AsciiCaseInsensitiveCompare()</a></p>
-<p>Performs a case-insensitive absl::string_view comparison. Returns: less than 0: if s1 &lt; s2 equal to 0: if s1 == s2 greater than 0: if s1 &gt; s2 </p>
 
 <p class="definition">Definition at line <a class="el" href="case_8cc_source.html#l00090">90</a> of file <a class="el" href="case_8cc_source.html">case.cc</a>.</p>
 
 </div>
 </div>
-<a id="aab6a9ddde96095d1be8e8d2c724aca96" name="aab6a9ddde96095d1be8e8d2c724aca96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab6a9ddde96095d1be8e8d2c724aca96">&#9670;&#160;</a></span>GetAsciiCapitalization()</h2>
+<a id="a54c980565812fd01837a47a58bd1096c" name="a54c980565812fd01837a47a58bd1096c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c980565812fd01837a47a58bd1096c">&#9670;&#160;</a></span>GetAsciiCapitalization()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">AsciiCapitalizationType</a> strings::GetAsciiCapitalization </td>
+          <td class="memname"><a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a> GetAsciiCapitalization </td>
           <td>(</td>
-          <td class="paramtype">absl::string_view&#160;</td>
+          <td class="paramtype">const absl::string_view&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacestrings.html#aab6a9ddde96095d1be8e8d2c724aca96">GetAsciiCapitalization()</a></p>
-<p>Returns a value indicating whether an ASCII string is entirely lowercase, entirely uppercase, first letter uppercase, or mixed case, as returned by <code>absl::ascii_islower()</code> and <code>absl::ascii_isupper()</code>. </p>
-<p>find the caps type of the first alpha char</p>
-<p>skip ahead to the next alpha char</p>
 
 <p class="definition">Definition at line <a class="el" href="case_8cc_source.html#l00052">52</a> of file <a class="el" href="case_8cc_source.html">case.cc</a>.</p>
 
 </div>
 </div>
-<a id="a92b181e8d43f997eea5875f93f6ad0fb" name="a92b181e8d43f997eea5875f93f6ad0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92b181e8d43f997eea5875f93f6ad0fb">&#9670;&#160;</a></span>MakeAsciiTitlecase() <span class="overload">[1/2]</span></h2>
+<a id="ae26c1d646f4ae47bc5dd12419550435f" name="ae26c1d646f4ae47bc5dd12419550435f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26c1d646f4ae47bc5dd12419550435f">&#9670;&#160;</a></span>MakeAsciiTitlecase() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string strings::MakeAsciiTitlecase </td>
+          <td class="memname">std::string MakeAsciiTitlecase </td>
           <td>(</td>
           <td class="paramtype">absl::string_view&#160;</td>
           <td class="paramname"><em>s</em>, </td>
@@ -332,20 +297,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>As above but with string_view as input. </p>
-
 <p class="definition">Definition at line <a class="el" href="case_8cc_source.html#l00123">123</a> of file <a class="el" href="case_8cc_source.html">case.cc</a>.</p>
 
 </div>
 </div>
-<a id="a506b00ee955f3510bd9eebe4128ac278" name="a506b00ee955f3510bd9eebe4128ac278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a506b00ee955f3510bd9eebe4128ac278">&#9670;&#160;</a></span>MakeAsciiTitlecase() <span class="overload">[2/2]</span></h2>
+<a id="ac09deedfdb5e5723eea46574ee229a01" name="ac09deedfdb5e5723eea46574ee229a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09deedfdb5e5723eea46574ee229a01">&#9670;&#160;</a></span>MakeAsciiTitlecase() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void strings::MakeAsciiTitlecase </td>
+          <td class="memname">void MakeAsciiTitlecase </td>
           <td>(</td>
           <td class="paramtype">std::string *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
@@ -363,21 +326,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacestrings.html#a506b00ee955f3510bd9eebe4128ac278">MakeAsciiTitlecase()</a></p>
-<p>Capitalizes the first character of each word in a string, using the set of characters in <code>delimiters</code> to use as word boundaries. This function can be implemented using a regular expression, but this version should be more efficient. </p>
 
 <p class="definition">Definition at line <a class="el" href="case_8cc_source.html#l00113">113</a> of file <a class="el" href="case_8cc_source.html">case.cc</a>.</p>
 
 </div>
 </div>
-<a id="a0464ec2222a214754d2681b2408750fb" name="a0464ec2222a214754d2681b2408750fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0464ec2222a214754d2681b2408750fb">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+<a id="a6f4add8f0f294e071a91db86fa56f332" name="a6f4add8f0f294e071a91db86fa56f332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4add8f0f294e071a91db86fa56f332">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; strings::operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
@@ -385,7 +346,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacestrings.html#a5c37dcda57489761add906e316f88644">AsciiCapitalizationType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacestrings.html#a66ed6e0102ed7c17544b4b6e9c710e95">AsciiCapitalizationType</a> &amp;&#160;</td>
           <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
@@ -396,20 +357,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Prints the name of an enum value. </p>
-
 <p class="definition">Definition at line <a class="el" href="case_8cc_source.html#l00034">34</a> of file <a class="el" href="case_8cc_source.html">case.cc</a>.</p>
 
 </div>
 </div>
-<a id="ac55ca5d40ce0a70fa7792fd9c226166e" name="ac55ca5d40ce0a70fa7792fd9c226166e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac55ca5d40ce0a70fa7792fd9c226166e">&#9670;&#160;</a></span>ParseLeadingBoolValue() <span class="overload">[1/2]</span></h2>
+<a id="a14fae7da1efc2e025028d8e45c205b99" name="a14fae7da1efc2e025028d8e45c205b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fae7da1efc2e025028d8e45c205b99">&#9670;&#160;</a></span>ParseLeadingBoolValue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">false no n y bool strings::ParseLeadingBoolValue </td>
+          <td class="memname">bool ParseLeadingBoolValue </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -427,14 +386,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Skip whitespace</p>
 
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00231">231</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00219">219</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
 
 </div>
 </div>
-<a id="af99a3403f697fb75a2cd7f1b2e921cfb" name="af99a3403f697fb75a2cd7f1b2e921cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99a3403f697fb75a2cd7f1b2e921cfb">&#9670;&#160;</a></span>ParseLeadingBoolValue() <span class="overload">[2/2]</span></h2>
+<a id="af0842d687b078ca709b8fc5e954ebd78" name="af0842d687b078ca709b8fc5e954ebd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0842d687b078ca709b8fc5e954ebd78">&#9670;&#160;</a></span>ParseLeadingBoolValue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +401,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool strings::ParseLeadingBoolValue </td>
+          <td class="memname">bool ParseLeadingBoolValue </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -467,18 +425,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00141">141</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00129">129</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
 
 </div>
 </div>
-<a id="a67db3332f667dd604f8c16e8e57a5481" name="a67db3332f667dd604f8c16e8e57a5481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67db3332f667dd604f8c16e8e57a5481">&#9670;&#160;</a></span>ParseLeadingDec32Value() <span class="overload">[1/2]</span></h2>
+<a id="a5996b1b5f81179a8327137d05a1c246b" name="a5996b1b5f81179a8327137d05a1c246b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5996b1b5f81179a8327137d05a1c246b">&#9670;&#160;</a></span>ParseLeadingDec32Value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t strings::ParseLeadingDec32Value </td>
+          <td class="memname">int32_t ParseLeadingDec32Value </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -496,16 +454,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ParseLeadingDec32Value ParseLeadingUDec32Value A simple parser for [u]int32_t values. Returns the parsed value if a valid value is found; else returns deflt The std::string passed in is treated as <em>10 based</em>. This can handle strings with leading 0s.</p>
-<p>ParseLeadingDec32Value A simple parser for decimal int32_t values. Returns the parsed value if a valid integer is found; else returns deflt. It does not check if str is entirely consumed. The std::string passed in is treated as <em>10 based</em>. This can handle strings with leading 0s. See also: ParseLeadingDec64Value </p>
-<p>Limit long values to int32_t min/max. Needed for lp64; no-op on 32 bits.</p>
 
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00111">111</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00107">107</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
 
 </div>
 </div>
-<a id="ab47f25ec7cc37dd0e456410b003506d1" name="ab47f25ec7cc37dd0e456410b003506d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab47f25ec7cc37dd0e456410b003506d1">&#9670;&#160;</a></span>ParseLeadingDec32Value() <span class="overload">[2/2]</span></h2>
+<a id="a7db95020c4f02350a96bd95bff3eee7c" name="a7db95020c4f02350a96bd95bff3eee7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db95020c4f02350a96bd95bff3eee7c">&#9670;&#160;</a></span>ParseLeadingDec32Value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,285 +469,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t strings::ParseLeadingDec32Value </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00067">67</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="a6bf4ad6bedcf148d9aa79a554136e675" name="a6bf4ad6bedcf148d9aa79a554136e675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf4ad6bedcf148d9aa79a554136e675">&#9670;&#160;</a></span>ParseLeadingDec64Value() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t strings::ParseLeadingDec64Value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ParseLeadingDec64Value ParseLeadingUDec64Value A simple parser for [u]int64_t values. Returns the parsed value if a valid value is found; else returns deflt The std::string passed in is treated as <em>10 based</em>. This can handle strings with leading 0s. </p>
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00190">190</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="acef07387d4f6e66342db24a1b27a840e" name="acef07387d4f6e66342db24a1b27a840e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acef07387d4f6e66342db24a1b27a840e">&#9670;&#160;</a></span>ParseLeadingDec64Value() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t strings::ParseLeadingDec64Value </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00110">110</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="a5693f3bdbcfa93f99b3cbb49d7f42150" name="a5693f3bdbcfa93f99b3cbb49d7f42150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5693f3bdbcfa93f99b3cbb49d7f42150">&#9670;&#160;</a></span>ParseLeadingDoubleValue() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double strings::ParseLeadingDoubleValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="namespacestrings.html#a5693f3bdbcfa93f99b3cbb49d7f42150">ParseLeadingDoubleValue()</a> A simple parser for double values. Returns the parsed value if a valid value is found; else returns deflt</p>
-<p>ParseLeadingDoubleValue A simple parser for double values. Returns the parsed value if a valid double is found; else returns deflt. It does not check if str is entirely consumed. </p>
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00210">210</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="a3749f004f8f339e63f237a83b8032970" name="a3749f004f8f339e63f237a83b8032970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3749f004f8f339e63f237a83b8032970">&#9670;&#160;</a></span>ParseLeadingDoubleValue() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double strings::ParseLeadingDoubleValue </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00127">127</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="ac9c2cb8462642f51408dd3f7e7949a35" name="ac9c2cb8462642f51408dd3f7e7949a35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9c2cb8462642f51408dd3f7e7949a35">&#9670;&#160;</a></span>ParseLeadingHex64Value() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t strings::ParseLeadingHex64Value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00173">173</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="ac64bcde6019af051d040f8e1791736e9" name="ac64bcde6019af051d040f8e1791736e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac64bcde6019af051d040f8e1791736e9">&#9670;&#160;</a></span>ParseLeadingHex64Value() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t strings::ParseLeadingHex64Value </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00106">106</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="ab023bf44f3c07467e40ce003a5ca63e8" name="ab023bf44f3c07467e40ce003a5ca63e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab023bf44f3c07467e40ce003a5ca63e8">&#9670;&#160;</a></span>ParseLeadingInt32Value() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t strings::ParseLeadingInt32Value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">ParseLeadingInt32Value()</a> <a class="el" href="namespacestrings.html#af2c5fdeed9de50019372ae85cf79809d">ParseLeadingUInt32Value()</a> A simple parser for [u]int32_t values. Returns the parsed value if a valid value is found; else returns deflt This cannot handle decimal numbers with leading 0s.</p>
-<p>ParseLeadingInt32Value A simple parser for int32_t values. Returns the parsed value if a valid integer is found; else returns deflt. It does not check if str is entirely consumed. This cannot handle decimal numbers with leading 0s, since they will be treated as octal. If you know it's decimal, use ParseLeadingDec32Value. </p>
-<p>Limit long values to int32_t min/max. Needed for lp64; no-op on 32 bits.</p>
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00060">60</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="a1e3c2858cbc4005d9f15d3c4928a4b1c" name="a1e3c2858cbc4005d9f15d3c4928a4b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3c2858cbc4005d9f15d3c4928a4b1c">&#9670;&#160;</a></span>ParseLeadingInt32Value() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t strings::ParseLeadingInt32Value </td>
+          <td class="memname">int32_t ParseLeadingDec32Value </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -816,18 +493,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00038">38</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00062">62</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
 
 </div>
 </div>
-<a id="affb14c3bb2854a6bdba7a17a3e96725b" name="affb14c3bb2854a6bdba7a17a3e96725b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb14c3bb2854a6bdba7a17a3e96725b">&#9670;&#160;</a></span>ParseLeadingInt64Value() <span class="overload">[1/2]</span></h2>
+<a id="a457e99634f75010e743e5ef7394c085e" name="a457e99634f75010e743e5ef7394c085e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457e99634f75010e743e5ef7394c085e">&#9670;&#160;</a></span>ParseLeadingDec64Value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t strings::ParseLeadingInt64Value </td>
+          <td class="memname">int64_t ParseLeadingDec64Value </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -846,12 +523,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00167">167</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00182">182</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
 
 </div>
 </div>
-<a id="a7f434f99a6749a03f5d724987ceeb56e" name="a7f434f99a6749a03f5d724987ceeb56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f434f99a6749a03f5d724987ceeb56e">&#9670;&#160;</a></span>ParseLeadingInt64Value() <span class="overload">[2/2]</span></h2>
+<a id="aeb19e7df54c7153036cdbb923c8bc085" name="aeb19e7df54c7153036cdbb923c8bc085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb19e7df54c7153036cdbb923c8bc085">&#9670;&#160;</a></span>ParseLeadingDec64Value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -860,7 +537,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t strings::ParseLeadingInt64Value </td>
+          <td class="memname">int64_t ParseLeadingDec64Value </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -888,14 +565,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9de428d9252c77581cddabfbef4af6b6" name="a9de428d9252c77581cddabfbef4af6b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9de428d9252c77581cddabfbef4af6b6">&#9670;&#160;</a></span>ParseLeadingUDec32Value() <span class="overload">[1/2]</span></h2>
+<a id="abb8cc5f3394e5926274aea401ef0d9c7" name="abb8cc5f3394e5926274aea401ef0d9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8cc5f3394e5926274aea401ef0d9c7">&#9670;&#160;</a></span>ParseLeadingDoubleValue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t strings::ParseLeadingUDec32Value </td>
+          <td class="memname">double ParseLeadingDoubleValue </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -903,7 +580,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>deflt</em>&#160;</td>
         </tr>
         <tr>
@@ -913,17 +590,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ParseLeadingUDec32Value A simple parser for decimal uint32_t values. Returns the parsed value if a valid integer is found; else returns deflt. It does not check if str is entirely consumed. The std::string passed in is treated as <em>10 based</em>. This can handle strings with leading 0s. See also: ParseLeadingUDec64Value </p>
-<p>When long is 32 bits, we can use strtoul.</p>
-<p>When long is 64 bits, we must use strtoint64 and handle limits by hand. The reason we cannot use a 64-bit strtoul is that it would be impossible to differentiate "-2" (that should wrap around to the value UINT_MAX-1) from a std::string with ULONG_MAX-1 (that should be pegged to UINT_MAX due to overflow).</p>
-<p>Within these limits, truncation to 32 bits handles negatives correctly.</p>
 
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00125">125</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00200">200</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
 
 </div>
 </div>
-<a id="a4646aeb6dd6a8b913f1d707508976068" name="a4646aeb6dd6a8b913f1d707508976068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4646aeb6dd6a8b913f1d707508976068">&#9670;&#160;</a></span>ParseLeadingUDec32Value() <span class="overload">[2/2]</span></h2>
+<a id="a1401d95835ebb2cb83a3efa59e601636" name="a1401d95835ebb2cb83a3efa59e601636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1401d95835ebb2cb83a3efa59e601636">&#9670;&#160;</a></span>ParseLeadingDoubleValue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -932,7 +605,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t strings::ParseLeadingUDec32Value </td>
+          <td class="memname">double ParseLeadingDoubleValue </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -940,7 +613,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>deflt</em>&#160;</td>
         </tr>
         <tr>
@@ -956,18 +629,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00081">81</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00117">117</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
 
 </div>
 </div>
-<a id="a532ba8517600f8e1db38e677e720a327" name="a532ba8517600f8e1db38e677e720a327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a532ba8517600f8e1db38e677e720a327">&#9670;&#160;</a></span>ParseLeadingUDec64Value() <span class="overload">[1/2]</span></h2>
+<a id="a3abd042b4fb9a1f82f61e39dc46a7534" name="a3abd042b4fb9a1f82f61e39dc46a7534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3abd042b4fb9a1f82f61e39dc46a7534">&#9670;&#160;</a></span>ParseLeadingHex64Value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t strings::ParseLeadingUDec64Value </td>
+          <td class="memname">uint64_t ParseLeadingHex64Value </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -986,12 +659,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00196">196</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00167">167</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
 
 </div>
 </div>
-<a id="a4c6beecba6f13065380edba65186b347" name="a4c6beecba6f13065380edba65186b347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c6beecba6f13065380edba65186b347">&#9670;&#160;</a></span>ParseLeadingUDec64Value() <span class="overload">[2/2]</span></h2>
+<a id="a3c37d8eefc937dfdcc3aafb7ae6278b7" name="a3c37d8eefc937dfdcc3aafb7ae6278b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c37d8eefc937dfdcc3aafb7ae6278b7">&#9670;&#160;</a></span>ParseLeadingHex64Value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,149 +673,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t strings::ParseLeadingUDec64Value </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00114">114</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="af2c5fdeed9de50019372ae85cf79809d" name="af2c5fdeed9de50019372ae85cf79809d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c5fdeed9de50019372ae85cf79809d">&#9670;&#160;</a></span>ParseLeadingUInt32Value() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t strings::ParseLeadingUInt32Value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ParseLeadingUInt32Value A simple parser for uint32_t values. Returns the parsed value if a valid integer is found; else returns deflt. It does not check if str is entirely consumed. This cannot handle decimal numbers with leading 0s, since they will be treated as octal. If you know it's decimal, use ParseLeadingUDec32Value. </p>
-<p>When long is 32 bits, we can use strtoul.</p>
-<p>When long is 64 bits, we must use strtoint64 and handle limits by hand. The reason we cannot use a 64-bit strtoul is that it would be impossible to differentiate "-2" (that should wrap around to the value UINT_MAX-1) from a std::string with ULONG_MAX-1 (that should be pegged to UINT_MAX due to overflow).</p>
-<p>Within these limits, truncation to 32 bits handles negatives correctly.</p>
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00074">74</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="ae938b92f2763d518a23f7830ceb1a3c7" name="ae938b92f2763d518a23f7830ceb1a3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae938b92f2763d518a23f7830ceb1a3c7">&#9670;&#160;</a></span>ParseLeadingUInt32Value() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t strings::ParseLeadingUInt32Value </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00051">51</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
-
-</div>
-</div>
-<a id="a392bdd45ec8d5c00187b15a971bc934b" name="a392bdd45ec8d5c00187b15a971bc934b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a392bdd45ec8d5c00187b15a971bc934b">&#9670;&#160;</a></span>ParseLeadingUInt64Value() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t strings::ParseLeadingUInt64Value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>deflt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ParseLeadingUInt64Value ParseLeadingInt64Value ParseLeadingHex64Value A simple parser for 64-bit values. Returns the parsed value if a valid integer is found; else returns deflt Uint64_t and int64_t cannot handle decimal numbers with leading 0s.</p>
-<p>ParseLeadingUInt64Value ParseLeadingInt64Value ParseLeadingHex64Value ParseLeadingDec64Value ParseLeadingUDec64Value A simple parser for long long values. Returns the parsed value if a valid integer is found; else returns deflt </p>
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00161">161</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="a501dbb8eed12ed48b5fdf2d581bfd224" name="a501dbb8eed12ed48b5fdf2d581bfd224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a501dbb8eed12ed48b5fdf2d581bfd224">&#9670;&#160;</a></span>ParseLeadingUInt64Value() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t strings::ParseLeadingUInt64Value </td>
+          <td class="memname">uint64_t ParseLeadingHex64Value </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -1170,8 +701,38 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad69c250b8bad1d19d52c376c11fbceaa" name="ad69c250b8bad1d19d52c376c11fbceaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69c250b8bad1d19d52c376c11fbceaa">&#9670;&#160;</a></span>strtoint32()</h2>
+<a id="a3add1e1c17392fe4fed778e1516a7611" name="a3add1e1c17392fe4fed778e1516a7611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3add1e1c17392fe4fed778e1516a7611">&#9670;&#160;</a></span>ParseLeadingInt32Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ParseLeadingInt32Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00058">58</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="a878831e725eac2466a79b1aee70987ac" name="a878831e725eac2466a79b1aee70987ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878831e725eac2466a79b1aee70987ac">&#9670;&#160;</a></span>ParseLeadingInt32Value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1180,7 +741,385 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t strings::strtoint32 </td>
+          <td class="memname">int32_t ParseLeadingInt32Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00036">36</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="a1f256880dacb98892fdf9978381e1009" name="a1f256880dacb98892fdf9978381e1009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f256880dacb98892fdf9978381e1009">&#9670;&#160;</a></span>ParseLeadingInt64Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ParseLeadingInt64Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00161">161</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="ac309b4a347e0ed20f82837f8b338a6d5" name="ac309b4a347e0ed20f82837f8b338a6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac309b4a347e0ed20f82837f8b338a6d5">&#9670;&#160;</a></span>ParseLeadingInt64Value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ParseLeadingInt64Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00094">94</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="a0b2842c477f26c4b3234c190511c6991" name="a0b2842c477f26c4b3234c190511c6991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2842c477f26c4b3234c190511c6991">&#9670;&#160;</a></span>ParseLeadingUDec32Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ParseLeadingUDec32Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00121">121</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="a870a623521fd8b27190946a5f9e04fb1" name="a870a623521fd8b27190946a5f9e04fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870a623521fd8b27190946a5f9e04fb1">&#9670;&#160;</a></span>ParseLeadingUDec32Value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ParseLeadingUDec32Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00075">75</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="a05a0ff3a63fa3debd78982148733cb0b" name="a05a0ff3a63fa3debd78982148733cb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a0ff3a63fa3debd78982148733cb0b">&#9670;&#160;</a></span>ParseLeadingUDec64Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ParseLeadingUDec64Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00188">188</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="a277916911c7edd1a22b1a35f4a577507" name="a277916911c7edd1a22b1a35f4a577507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277916911c7edd1a22b1a35f4a577507">&#9670;&#160;</a></span>ParseLeadingUDec64Value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ParseLeadingUDec64Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00106">106</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="a60c47e6506da307afc2eef1548a787c9" name="a60c47e6506da307afc2eef1548a787c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c47e6506da307afc2eef1548a787c9">&#9670;&#160;</a></span>ParseLeadingUInt32Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ParseLeadingUInt32Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00072">72</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="a67b6e67bff6908d0aa93565b49be04a0" name="a67b6e67bff6908d0aa93565b49be04a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b6e67bff6908d0aa93565b49be04a0">&#9670;&#160;</a></span>ParseLeadingUInt32Value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ParseLeadingUInt32Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00048">48</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="aec74709ad099d2e9845a9ee1a0f3bb03" name="aec74709ad099d2e9845a9ee1a0f3bb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec74709ad099d2e9845a9ee1a0f3bb03">&#9670;&#160;</a></span>ParseLeadingUInt64Value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ParseLeadingUInt64Value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00155">155</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0394869d080da40886a1c0c216f9be41" name="a0394869d080da40886a1c0c216f9be41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0394869d080da40886a1c0c216f9be41">&#9670;&#160;</a></span>ParseLeadingUInt64Value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ParseLeadingUInt64Value </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>deflt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="numbers_8h_source.html#l00090">90</a> of file <a class="el" href="numbers_8h_source.html">numbers.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0dedb5932926cdf78a72fc294345ffb" name="aa0dedb5932926cdf78a72fc294345ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dedb5932926cdf78a72fc294345ffb">&#9670;&#160;</a></span>strtoint32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t strtoint32 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nptr</em>, </td>
@@ -1214,8 +1153,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ebef195ac4115c249fd0a0df1cf2e45" name="a7ebef195ac4115c249fd0a0df1cf2e45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ebef195ac4115c249fd0a0df1cf2e45">&#9670;&#160;</a></span>strtoint64()</h2>
+<a id="a39b4eabda924613c2a6400cc2a2a1b44" name="a39b4eabda924613c2a6400cc2a2a1b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b4eabda924613c2a6400cc2a2a1b44">&#9670;&#160;</a></span>strtoint64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1224,7 +1163,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t strings::strtoint64 </td>
+          <td class="memname">int64_t strtoint64 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nptr</em>, </td>
@@ -1258,8 +1197,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aae75edb1f587d4ba8e2341755c295d43" name="aae75edb1f587d4ba8e2341755c295d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae75edb1f587d4ba8e2341755c295d43">&#9670;&#160;</a></span>strtouint32()</h2>
+<a id="a7938f68c2c0c42f0f57814cf6d4b8c68" name="a7938f68c2c0c42f0f57814cf6d4b8c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7938f68c2c0c42f0f57814cf6d4b8c68">&#9670;&#160;</a></span>strtouint32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1268,7 +1207,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t strings::strtouint32 </td>
+          <td class="memname">uint32_t strtouint32 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nptr</em>, </td>
@@ -1302,8 +1241,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aab9011bd7a2852d53a446eb0c4307716" name="aab9011bd7a2852d53a446eb0c4307716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab9011bd7a2852d53a446eb0c4307716">&#9670;&#160;</a></span>strtouint64()</h2>
+<a id="a24ded1a7db72692d21aa4285ab103d66" name="a24ded1a7db72692d21aa4285ab103d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ded1a7db72692d21aa4285ab103d66">&#9670;&#160;</a></span>strtouint64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1312,7 +1251,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t strings::strtouint64 </td>
+          <td class="memname">uint64_t strtouint64 </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>nptr</em>, </td>
@@ -1346,46 +1285,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aa648ab8493cf9d2cec91af5e2546ed37" name="aa648ab8493cf9d2cec91af5e2546ed37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa648ab8493cf9d2cec91af5e2546ed37">&#9670;&#160;</a></span>true</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">false strings::true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00228">228</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
-<a id="aa56e823d98097f248088782a38fe78c9" name="aa56e823d98097f248088782a38fe78c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56e823d98097f248088782a38fe78c9">&#9670;&#160;</a></span>yes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">false no strings::yes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="numbers_8cc_source.html#l00228">228</a> of file <a class="el" href="numbers_8cc_source.html">numbers.cc</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestrings.html">strings</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

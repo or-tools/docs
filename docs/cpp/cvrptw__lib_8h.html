@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/routing/cvrptw_lib.h File Reference</title>
+<title>OR-Tools: cvrptw_lib.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,55 +101,48 @@ $(document).ready(function(){initNavTree('cvrptw__lib_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">cvrptw_lib.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="routing_8h_source.html">ortools/constraint_solver/routing.h</a>&quot;</code><br />
-</div>
+
 <p><a href="cvrptw__lib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocationContainer.html">operations_research::LocationContainer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_location_container.html">LocationContainer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RandomDemand.html">operations_research::RandomDemand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random demand.  <a href="classoperations__research_1_1RandomDemand.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_random_demand.html">RandomDemand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ServiceTimePlusTransition.html">operations_research::ServiceTimePlusTransition</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service time (proportional to demand) + transition time callback.  <a href="classoperations__research_1_1ServiceTimePlusTransition.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_service_time_plus_transition.html">ServiceTimePlusTransition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1StopServiceTimePlusTransition.html">operations_research::StopServiceTimePlusTransition</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop service time + transition time callback.  <a href="classoperations__research_1_1StopServiceTimePlusTransition.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_stop_service_time_plus_transition.html">StopServiceTimePlusTransition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af1c0a4bd37f3c3a7968e79fac87f0bba"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(RoutingNodeIndex, RoutingNodeIndex)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af1c0a4bd37f3c3a7968e79fac87f0bba">operations_research::RoutingNodeEvaluator2</a></td></tr>
-<tr class="separator:af1c0a4bd37f3c3a7968e79fac87f0bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08918896811f7da495c4d8d7f9864f0"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; int64_t(RoutingNodeIndex, RoutingNodeIndex)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab08918896811f7da495c4d8d7f9864f0">RoutingNodeEvaluator2</a></td></tr>
+<tr class="separator:ab08918896811f7da495c4d8d7f9864f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac3515cbb15b6d7459f79b4d8111c1787"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac3515cbb15b6d7459f79b4d8111c1787">operations_research::GetSeed</a> (bool deterministic)</td></tr>
-<tr class="memdesc:ac3515cbb15b6d7459f79b4d8111c1787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random seed generator.  <br /></td></tr>
-<tr class="separator:ac3515cbb15b6d7459f79b4d8111c1787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b44ed99c3501d7a797dfa6ac52714f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad0b44ed99c3501d7a797dfa6ac52714f">operations_research::DisplayPlan</a> (const <a class="el" href="classoperations__research_1_1RoutingIndexManager.html">operations_research::RoutingIndexManager</a> &amp;manager, const operations_research::RoutingModel &amp;routing, const <a class="el" href="classoperations__research_1_1Assignment.html">operations_research::Assignment</a> &amp;plan, bool use_same_vehicle_costs, int64_t max_nodes_per_group, int64_t same_vehicle_cost, const operations_research::RoutingDimension &amp;capacity_dimension, const operations_research::RoutingDimension &amp;time_dimension)</td></tr>
-<tr class="separator:ad0b44ed99c3501d7a797dfa6ac52714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a65146539a00514102e790e622f15a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa0a65146539a00514102e790e622f15a">GetSeed</a> (bool deterministic)</td></tr>
+<tr class="separator:aa0a65146539a00514102e790e622f15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560db30240e8d1af003f69fab459949a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a560db30240e8d1af003f69fab459949a">DisplayPlan</a> (const RoutingIndexManager &amp;manager, const RoutingModel &amp;routing, const <a class="el" href="classoperations__research_1_1_assignment.html">operations_research::Assignment</a> &amp;plan, bool use_same_vehicle_costs, int64_t max_nodes_per_group, int64_t same_vehicle_cost, const <a class="el" href="classoperations__research_1_1_routing_dimension.html">operations_research::RoutingDimension</a> &amp;capacity_dimension, const <a class="el" href="classoperations__research_1_1_routing_dimension.html">operations_research::RoutingDimension</a> &amp;time_dimension)</td></tr>
+<tr class="separator:a560db30240e8d1af003f69fab459949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_05e52241c995b3dbbeaa2e8a16965cc4.html">routing</a></li><li class="navelem"><a class="el" href="cvrptw__lib_8h.html">cvrptw_lib.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

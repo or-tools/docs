@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/constraint_solver/routing_search.cc File Reference</title>
+<title>OR-Tools: routing_search.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,61 +100,22 @@ $(document).ready(function(){initNavTree('routing__search_8cc.html',''); initRes
   <div class="headertitle"><div class="title">routing_search.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="routing__search_8h_source.html">ortools/constraint_solver/routing_search.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;iterator&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;queue&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/base/attributes.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/flags/flag.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="adjustable__priority__queue_8h_source.html">ortools/base/adjustable_priority_queue.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="constraint__solveri_8h_source.html">ortools/constraint_solver/constraint_solveri.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="routing_8h_source.html">ortools/constraint_solver/routing.h</a>&quot;</code><br />
-<code>#include &quot;ortools/constraint_solver/routing_parameters.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="routing__types_8h_source.html">ortools/constraint_solver/routing_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="christofides_8h_source.html">ortools/graph/christofides.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="range__query__function_8h_source.html">ortools/util/range_query_function.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
-</div>
+
 <p><a href="routing__search_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue.html">operations_research::GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_global_cheapest_insertion_filtered_heuristic_1_1_node_entry_queue.html">GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue_1_1Entry.html">operations_research::GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue::Entry</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_global_cheapest_insertion_filtered_heuristic_1_1_node_entry_queue_1_1_entry.html">GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue::Entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html">operations_research::SavingsFilteredHeuristic::SavingsContainer&lt; Saving &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_savings_filtered_heuristic_1_1_savings_container.html">SavingsFilteredHeuristic::SavingsContainer&lt; Saving &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -163,15 +124,16 @@ Functions</h2></td></tr>
 <tr class="separator:acc95d14bc59afe35d789e11bbacfab6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b2283cda558b516f2abd4f72d60161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routing__search_8cc.html#a15b2283cda558b516f2abd4f72d60161">ABSL_FLAG</a> (int64_t, sweep_sectors, 1, &quot;The number of sectors the space is divided into before it is sweeped&quot; &quot; by the ray.&quot;)</td></tr>
 <tr class="separator:a15b2283cda558b516f2abd4f72d60161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270548116df8ad74e03d376c40025566"><td class="memItemLeft" align="right" valign="top">FirstSolutionStrategy::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a270548116df8ad74e03d376c40025566">operations_research::AutomaticFirstSolutionStrategy</a> (bool has_pickup_deliveries, bool has_node_precedences, bool has_single_vehicle_node)</td></tr>
-<tr class="separator:a270548116df8ad74e03d376c40025566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3612f98ca854e853c3e232b9517c9701"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3612f98ca854e853c3e232b9517c9701">operations_research::ComputeVehicleEndChainStarts</a> (const RoutingModel &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a3612f98ca854e853c3e232b9517c9701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcfddf7e2bc62dbfcd1fd3f22a860f65"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abcfddf7e2bc62dbfcd1fd3f22a860f65">operations_research::MakeSweepDecisionBuilder</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool check_assignment)</td></tr>
-<tr class="separator:abcfddf7e2bc62dbfcd1fd3f22a860f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f93915e843433755b9ac673fbe78f7c"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0f93915e843433755b9ac673fbe78f7c">operations_research::MakeAllUnperformed</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:a0f93915e843433755b9ac673fbe78f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classoperations__research_1_1DecisionBuilder.html">DecisionBuilder</a> making all nodes unperformed.  <br /></td></tr>
-<tr class="separator:a0f93915e843433755b9ac673fbe78f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89152c6d7ca6a92ff106fe602c706816"><td class="memItemLeft" align="right" valign="top">FirstSolutionStrategy::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a89152c6d7ca6a92ff106fe602c706816">AutomaticFirstSolutionStrategy</a> (bool has_pickup_deliveries, bool has_node_precedences, bool has_single_vehicle_node)</td></tr>
+<tr class="memdesc:a89152c6d7ca6a92ff106fe602c706816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the best value for the automatic first solution strategy, based on the given model parameters.  <br /></td></tr>
+<tr class="separator:a89152c6d7ca6a92ff106fe602c706816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf676e53bf6a7aa3d7378c51286e30c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acf676e53bf6a7aa3d7378c51286e30c1">ComputeVehicleEndChainStarts</a> (const RoutingModel &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:acf676e53bf6a7aa3d7378c51286e30c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the first node in the end chain of each vehicle in the model, based on the current bound NextVar values.  <br /></td></tr>
+<tr class="separator:acf676e53bf6a7aa3d7378c51286e30c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b064a7895b1fc8084546441a57b46a"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab5b064a7895b1fc8084546441a57b46a">MakeSweepDecisionBuilder</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool check_assignment)</td></tr>
+<tr class="separator:ab5b064a7895b1fc8084546441a57b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a2d5d3c5887e436bf4da4c20a99a26"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a26a2d5d3c5887e436bf4da4c20a99a26">MakeAllUnperformed</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a26a2d5d3c5887e436bf4da4c20a99a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="acc95d14bc59afe35d789e11bbacfab6f" name="acc95d14bc59afe35d789e11bbacfab6f"></a>
@@ -282,6 +244,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="tsp_8cc-example.html#a1">tsp.cc</a>, and <a class="el" href="vrp_8cc-example.html#a1">vrp.cc</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03907">3907</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
@@ -433,11 +397,14 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_afbb39f66221aac28bbdefd1dca2b2b0.html">constraint_solver</a></li><li class="navelem"><a class="el" href="routing__search_8cc.html">routing_search.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

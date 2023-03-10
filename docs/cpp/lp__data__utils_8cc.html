@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/lp_data/lp_data_utils.cc File Reference</title>
+<title>OR-Tools: lp_data_utils.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,34 +99,36 @@ $(document).ready(function(){initNavTree('lp__data__utils_8cc.html',''); initRes
   <div class="headertitle"><div class="title">lp_data_utils.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="lp__data__utils_8h_source.html">ortools/lp_data/lp_data_utils.h</a>&quot;</code><br />
-</div>
+
 <p><a href="lp__data__utils_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1glop"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html">operations_research::glop</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a397ebdce7663234e9819e0272236fa4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a397ebdce7663234e9819e0272236fa4d">operations_research::glop::ComputeSlackVariablesValues</a> (const LinearProgram &amp;linear_program, DenseRow *values)</td></tr>
-<tr class="separator:a397ebdce7663234e9819e0272236fa4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf73e78c68aff5db3bd9e4b51b2fd269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#abf73e78c68aff5db3bd9e4b51b2fd269">operations_research::glop::Scale</a> (LinearProgram *lp, SparseMatrixScaler *scaler)</td></tr>
-<tr class="separator:abf73e78c68aff5db3bd9e4b51b2fd269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e961c4f4784089d3c1b0ee154d754c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a74e961c4f4784089d3c1b0ee154d754c">operations_research::glop::Scale</a> (LinearProgram *lp, SparseMatrixScaler *scaler, GlopParameters::ScalingAlgorithm scaling_method)</td></tr>
-<tr class="separator:a74e961c4f4784089d3c1b0ee154d754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4b14641c2dbc6319f036237a8c696c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#abd4b14641c2dbc6319f036237a8c696c">ComputeSlackVariablesValues</a> (const LinearProgram &amp;linear_program, DenseRow *values)</td></tr>
+<tr class="separator:abd4b14641c2dbc6319f036237a8c696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c215aa509854e985e62d8cdf0a33cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ac9c215aa509854e985e62d8cdf0a33cc">Scale</a> (LinearProgram *lp, SparseMatrixScaler *scaler)</td></tr>
+<tr class="separator:ac9c215aa509854e985e62d8cdf0a33cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a08072639a759f8cf7134407e4b0fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a1a08072639a759f8cf7134407e4b0fac">Scale</a> (LinearProgram *lp, SparseMatrixScaler *scaler, GlopParameters::ScalingAlgorithm scaling_method)</td></tr>
+<tr class="separator:a1a08072639a759f8cf7134407e4b0fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_903a7ff076ee7f01be86992fe717fc82.html">lp_data</a></li><li class="navelem"><a class="el" href="lp__data__utils_8cc.html">lp_data_utils.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

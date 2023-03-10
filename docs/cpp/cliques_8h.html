@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/graph/cliques.h File Reference</title>
+<title>OR-Tools: cliques.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,56 +101,48 @@ $(document).ready(function(){initNavTree('cliques_8h.html',''); initResizable();
   <div class="headertitle"><div class="title">cliques.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="int__type_8h_source.html">ortools/base/int_type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
-</div>
+
 <p><a href="cliques_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BronKerboschAlgorithm.html">operations_research::BronKerboschAlgorithm&lt; NodeIndex &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_bron_kerbosch_algorithm.html">BronKerboschAlgorithm&lt; NodeIndex &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:af2d89e69d073dc3036a6de24710b416f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af2d89e69d073dc3036a6de24710b416f">operations_research::CliqueResponse</a> { <a class="el" href="namespaceoperations__research.html#af2d89e69d073dc3036a6de24710b416fa2f453cfe638e57e27bb0c9512436111e">operations_research::CONTINUE</a>
-, <a class="el" href="namespaceoperations__research.html#af2d89e69d073dc3036a6de24710b416fa615a46af313786fc4e349f34118be111">operations_research::STOP</a>
+<tr class="memitem:ae6df4b4cb7c39ca06812199bbee9119c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae6df4b4cb7c39ca06812199bbee9119c">CliqueResponse</a> { <a class="el" href="namespaceoperations__research.html#ae6df4b4cb7c39ca06812199bbee9119ca2f453cfe638e57e27bb0c9512436111e">CONTINUE</a>
+, <a class="el" href="namespaceoperations__research.html#ae6df4b4cb7c39ca06812199bbee9119ca615a46af313786fc4e349f34118be111">STOP</a>
  }</td></tr>
-<tr class="separator:af2d89e69d073dc3036a6de24710b416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708cf34b342e7d2ed89a3b73dbec4eae"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a708cf34b342e7d2ed89a3b73dbec4eae">operations_research::BronKerboschAlgorithmStatus</a> { <a class="el" href="namespaceoperations__research.html#a708cf34b342e7d2ed89a3b73dbec4eaea8f7afecbc8fbc4cd0f50a57d1172482e">operations_research::COMPLETED</a>
-, <a class="el" href="namespaceoperations__research.html#a708cf34b342e7d2ed89a3b73dbec4eaea658f2cadfdf09b6046246e9314f7cd43">operations_research::INTERRUPTED</a>
+<tr class="separator:ae6df4b4cb7c39ca06812199bbee9119c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4e546b0e3afb0208c7a44ee6ab4ea8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abd4e546b0e3afb0208c7a44ee6ab4ea8">BronKerboschAlgorithmStatus</a> { <a class="el" href="namespaceoperations__research.html#abd4e546b0e3afb0208c7a44ee6ab4ea8a8f7afecbc8fbc4cd0f50a57d1172482e">COMPLETED</a>
+, <a class="el" href="namespaceoperations__research.html#abd4e546b0e3afb0208c7a44ee6ab4ea8a658f2cadfdf09b6046246e9314f7cd43">INTERRUPTED</a>
  }</td></tr>
-<tr class="separator:a708cf34b342e7d2ed89a3b73dbec4eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:abd4e546b0e3afb0208c7a44ee6ab4ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a509097448ff5705cf3e64d889362bdec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a509097448ff5705cf3e64d889362bdec">operations_research::FindCliques</a> (std::function&lt; bool(int, int)&gt; graph, int node_count, std::function&lt; bool(const std::vector&lt; int &gt; &amp;)&gt; <a class="el" href="gurobi__interface_8cc.html#a6627a3800ac768bb5528ef54c9cace36">callback</a>)</td></tr>
-<tr class="separator:a509097448ff5705cf3e64d889362bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4b5a6c0e4019314f288e3f4307c114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afe4b5a6c0e4019314f288e3f4307c114">operations_research::CoverArcsByCliques</a> (std::function&lt; bool(int, int)&gt; graph, int node_count, std::function&lt; bool(const std::vector&lt; int &gt; &amp;)&gt; <a class="el" href="gurobi__interface_8cc.html#a6627a3800ac768bb5528ef54c9cace36">callback</a>)</td></tr>
-<tr class="separator:afe4b5a6c0e4019314f288e3f4307c114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f3504c258b748227551a4d7b7bf036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af7f3504c258b748227551a4d7b7bf036">FindCliques</a> (std::function&lt; bool(int, int)&gt; graph, int node_count, std::function&lt; bool(const std::vector&lt; int &gt; &amp;)&gt; <a class="el" href="gurobi__interface_8cc.html#a6627a3800ac768bb5528ef54c9cace36">callback</a>)</td></tr>
+<tr class="separator:af7f3504c258b748227551a4d7b7bf036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5986867bcb6d1470fd6c27438d289fcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5986867bcb6d1470fd6c27438d289fcd">CoverArcsByCliques</a> (std::function&lt; bool(int, int)&gt; graph, int node_count, std::function&lt; bool(const std::vector&lt; int &gt; &amp;)&gt; <a class="el" href="gurobi__interface_8cc.html#a6627a3800ac768bb5528ef54c9cace36">callback</a>)</td></tr>
+<tr class="separator:a5986867bcb6d1470fd6c27438d289fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="cliques_8h.html">cliques.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

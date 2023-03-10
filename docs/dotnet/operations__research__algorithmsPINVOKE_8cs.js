@@ -1,7 +1,0 @@
-var operations__research__algorithmsPINVOKE_8cs =
-[
-    [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE" ],
-    [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE.SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper" ],
-    [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE.SWIGPendingException", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGPendingException.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGPendingException" ],
-    [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE.SWIGStringHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringHelper" ]
-];

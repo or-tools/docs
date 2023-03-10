@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 12.3.1"/>
+    <meta name="generator" content="pdoc 10.0.2"/>
     <title>ortools.linear_solver._pywraplp API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
     <style>/*! syntax-highlighting.css */pre{line-height:125%;}span.linenos{color:inherit; background-color:transparent; padding-left:5px; padding-right:20px;}.pdoc-code .hll{background-color:#ffffcc}.pdoc-code{background:#f8f8f8;}.pdoc-code .c{color:#3D7B7B; font-style:italic}.pdoc-code .err{border:1px solid #FF0000}.pdoc-code .k{color:#008000; font-weight:bold}.pdoc-code .o{color:#666666}.pdoc-code .ch{color:#3D7B7B; font-style:italic}.pdoc-code .cm{color:#3D7B7B; font-style:italic}.pdoc-code .cp{color:#9C6500}.pdoc-code .cpf{color:#3D7B7B; font-style:italic}.pdoc-code .c1{color:#3D7B7B; font-style:italic}.pdoc-code .cs{color:#3D7B7B; font-style:italic}.pdoc-code .gd{color:#A00000}.pdoc-code .ge{font-style:italic}.pdoc-code .gr{color:#E40000}.pdoc-code .gh{color:#000080; font-weight:bold}.pdoc-code .gi{color:#008400}.pdoc-code .go{color:#717171}.pdoc-code .gp{color:#000080; font-weight:bold}.pdoc-code .gs{font-weight:bold}.pdoc-code .gu{color:#800080; font-weight:bold}.pdoc-code .gt{color:#0044DD}.pdoc-code .kc{color:#008000; font-weight:bold}.pdoc-code .kd{color:#008000; font-weight:bold}.pdoc-code .kn{color:#008000; font-weight:bold}.pdoc-code .kp{color:#008000}.pdoc-code .kr{color:#008000; font-weight:bold}.pdoc-code .kt{color:#B00040}.pdoc-code .m{color:#666666}.pdoc-code .s{color:#BA2121}.pdoc-code .na{color:#687822}.pdoc-code .nb{color:#008000}.pdoc-code .nc{color:#0000FF; font-weight:bold}.pdoc-code .no{color:#880000}.pdoc-code .nd{color:#AA22FF}.pdoc-code .ni{color:#717171; font-weight:bold}.pdoc-code .ne{color:#CB3F38; font-weight:bold}.pdoc-code .nf{color:#0000FF}.pdoc-code .nl{color:#767600}.pdoc-code .nn{color:#0000FF; font-weight:bold}.pdoc-code .nt{color:#008000; font-weight:bold}.pdoc-code .nv{color:#19177C}.pdoc-code .ow{color:#AA22FF; font-weight:bold}.pdoc-code .w{color:#bbbbbb}.pdoc-code .mb{color:#666666}.pdoc-code .mf{color:#666666}.pdoc-code .mh{color:#666666}.pdoc-code .mi{color:#666666}.pdoc-code .mo{color:#666666}.pdoc-code .sa{color:#BA2121}.pdoc-code .sb{color:#BA2121}.pdoc-code .sc{color:#BA2121}.pdoc-code .dl{color:#BA2121}.pdoc-code .sd{color:#BA2121; font-style:italic}.pdoc-code .s2{color:#BA2121}.pdoc-code .se{color:#AA5D1F; font-weight:bold}.pdoc-code .sh{color:#BA2121}.pdoc-code .si{color:#A45A77; font-weight:bold}.pdoc-code .sx{color:#008000}.pdoc-code .sr{color:#A45A77}.pdoc-code .s1{color:#BA2121}.pdoc-code .ss{color:#19177C}.pdoc-code .bp{color:#008000}.pdoc-code .fm{color:#0000FF}.pdoc-code .vc{color:#19177C}.pdoc-code .vg{color:#19177C}.pdoc-code .vi{color:#19177C}.pdoc-code .vm{color:#19177C}.pdoc-code .il{color:#666666}</style>
     <style>/*! theme.css */:root{--pdoc-background:#fff;}.pdoc{--text:#212529;--muted:#6c757d;--link:#3660a5;--link-hover:#1659c5;--code:#f8f8f8;--active:#fff598;--accent:#eee;--accent2:#c1c1c1;--nav-hover:rgba(255, 255, 255, 0.5);--name:#0066BB;--def:#008800;--annotation:#007020;}</style>
-    <style>/*! layout.css */html, body{width:100%;height:100%;}html, main{scroll-behavior:smooth;}body{background-color:var(--pdoc-background);}@media (max-width:769px){#navtoggle{cursor:pointer;position:absolute;width:50px;height:40px;top:1rem;right:1rem;border-color:var(--text);color:var(--text);display:flex;opacity:0.8;}#navtoggle:hover{opacity:1;}#togglestate + div{display:none;}#togglestate:checked + div{display:inherit;}main, header{padding:2rem 3vw;}header + main{margin-top:-3rem;}.git-button{display:none !important;}nav input[type="search"]{max-width:77%;}nav input[type="search"]:first-child{margin-top:-6px;}nav input[type="search"]:valid ~ *{display:none !important;}}@media (min-width:770px){:root{--sidebar-width:clamp(12.5rem, 28vw, 22rem);}nav{position:fixed;overflow:auto;height:100vh;width:var(--sidebar-width);}main, header{padding:3rem 2rem 3rem calc(var(--sidebar-width) + 3rem);width:calc(54rem + var(--sidebar-width));max-width:100%;}header + main{margin-top:-4rem;}#navtoggle{display:none;}}#togglestate{position:absolute;height:0;opacity:0;}nav.pdoc{--pad:clamp(0.5rem, 2vw, 1.75rem);--indent:1.5rem;background-color:var(--accent);border-right:1px solid var(--accent2);box-shadow:0 0 20px rgba(50, 50, 50, .2) inset;padding:0 0 0 var(--pad);overflow-wrap:anywhere;scrollbar-width:thin; scrollbar-color:var(--accent2) transparent }nav.pdoc::-webkit-scrollbar{width:.4rem; }nav.pdoc::-webkit-scrollbar-thumb{background-color:var(--accent2); }nav.pdoc > div{padding:var(--pad) 0;}nav.pdoc .module-list-button{display:inline-flex;align-items:center;color:var(--text);border-color:var(--muted);margin-bottom:1rem;}nav.pdoc .module-list-button:hover{border-color:var(--text);}nav.pdoc input[type=search]{display:block;outline-offset:0;width:calc(100% - var(--pad));}nav.pdoc .logo{max-width:calc(100% - var(--pad));max-height:35vh;display:block;margin:0 auto 1rem;transform:translate(calc(-.5 * var(--pad)), 0);}nav.pdoc ul{list-style:none;padding-left:0;}nav.pdoc > div > ul{margin-left:calc(0px - var(--pad));}nav.pdoc li a{padding:.2rem 0 .2rem calc(var(--pad) + var(--indent));}nav.pdoc > div > ul > li > a{padding-left:var(--pad);}nav.pdoc li{transition:all 100ms;}nav.pdoc li:hover{background-color:var(--nav-hover);}nav.pdoc a, nav.pdoc a:hover{color:var(--text);}nav.pdoc a{display:block;}nav.pdoc > h2:first-of-type{margin-top:1.5rem;}nav.pdoc .class:before{content:"class ";color:var(--muted);}nav.pdoc .function:after{content:"()";color:var(--muted);}nav.pdoc footer:before{content:"";display:block;width:calc(100% - var(--pad));border-top:solid var(--accent2) 1px;margin-top:1.5rem;padding-top:.5rem;}nav.pdoc footer{font-size:small;}</style>
-    <style>/*! content.css */.pdoc{color:var(--text);box-sizing:border-box;line-height:1.5;background:none;}.pdoc .pdoc-button{display:inline-block;border:solid black 1px;border-radius:2px;font-size:.75rem;padding:calc(0.5em - 1px) 1em;transition:100ms all;}.pdoc .pdoc-alert{padding:1rem 1rem 1rem calc(1.5rem + 24px);border:1px solid transparent;border-radius:.25rem;background-repeat:no-repeat;background-position:1rem center;margin-bottom:1rem;}.pdoc .pdoc-alert > *:last-child{margin-bottom:0;}.pdoc .pdoc-alert-note {color:#084298;background-color:#cfe2ff;border-color:#b6d4fe;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23084298%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%2016A8%208%200%201%200%208%200a8%208%200%200%200%200%2016zm.93-9.412-1%204.705c-.07.34.029.533.304.533.194%200%20.487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703%200-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381%202.29-.287zM8%205.5a1%201%200%201%201%200-2%201%201%200%200%201%200%202z%22/%3E%3C/svg%3E");}.pdoc .pdoc-alert-warning{color:#664d03;background-color:#fff3cd;border-color:#ffecb5;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23664d03%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8.982%201.566a1.13%201.13%200%200%200-1.96%200L.165%2013.233c-.457.778.091%201.767.98%201.767h13.713c.889%200%201.438-.99.98-1.767L8.982%201.566zM8%205c.535%200%20.954.462.9.995l-.35%203.507a.552.552%200%200%201-1.1%200L7.1%205.995A.905.905%200%200%201%208%205zm.002%206a1%201%200%201%201%200%202%201%201%200%200%201%200-2z%22/%3E%3C/svg%3E");}.pdoc .pdoc-alert-danger{color:#842029;background-color:#f8d7da;border-color:#f5c2c7;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23842029%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5.52.359A.5.5%200%200%201%206%200h4a.5.5%200%200%201%20.474.658L8.694%206H12.5a.5.5%200%200%201%20.395.807l-7%209a.5.5%200%200%201-.873-.454L6.823%209.5H3.5a.5.5%200%200%201-.48-.641l2.5-8.5z%22/%3E%3C/svg%3E");}.pdoc .visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important;}.pdoc h1, .pdoc h2, .pdoc h3{font-weight:300;margin:.3em 0;padding:.2em 0;}.pdoc > section:not(.module-info) h1{font-size:1.5rem;font-weight:500;}.pdoc > section:not(.module-info) h2{font-size:1.4rem;font-weight:500;}.pdoc > section:not(.module-info) h3{font-size:1.3rem;font-weight:500;}.pdoc > section:not(.module-info) h4{font-size:1.2rem;}.pdoc > section:not(.module-info) h5{font-size:1.1rem;}.pdoc a{text-decoration:none;color:var(--link);}.pdoc a:hover{color:var(--link-hover);}.pdoc blockquote{margin-left:2rem;}.pdoc pre{border-top:1px solid var(--accent2);border-bottom:1px solid var(--accent2);margin-top:0;margin-bottom:1em;padding:.5rem 0 .5rem .5rem;overflow-x:auto;background-color:var(--code);}.pdoc code{color:var(--text);padding:.2em .4em;margin:0;font-size:85%;background-color:var(--code);border-radius:6px;}.pdoc a > code{color:inherit;}.pdoc pre > code{display:inline-block;font-size:inherit;background:none;border:none;padding:0;}.pdoc > section:not(.module-info){margin-bottom:1.5rem;}.pdoc .modulename{margin-top:0;font-weight:bold;}.pdoc .modulename a{color:var(--link);transition:100ms all;}.pdoc .git-button{float:right;border:solid var(--link) 1px;}.pdoc .git-button:hover{background-color:var(--link);color:var(--pdoc-background);}.view-source-toggle-state,.view-source-toggle-state ~ .pdoc-code{display:none;}.view-source-toggle-state:checked ~ .pdoc-code{display:block;}.view-source-button{display:inline-block;float:right;font-size:.75rem;line-height:1.5rem;color:var(--muted);padding:0 .4rem 0 1.3rem;cursor:pointer;text-indent:-2px;}.view-source-button > span{visibility:hidden;}.module-info .view-source-button{float:none;display:flex;justify-content:flex-end;margin:-1.2rem .4rem -.2rem 0;}.view-source-button::before{position:absolute;content:"View Source";display:list-item;list-style-type:disclosure-closed;}.view-source-toggle-state:checked ~ .attr .view-source-button::before,.view-source-toggle-state:checked ~ .view-source-button::before{list-style-type:disclosure-open;}.pdoc .docstring{margin-bottom:1.5rem;}.pdoc section:not(.module-info) .docstring{margin-left:clamp(0rem, 5vw - 2rem, 1rem);}.pdoc .docstring .pdoc-code{margin-left:1em;margin-right:1em;}.pdoc h1:target,.pdoc h2:target,.pdoc h3:target,.pdoc h4:target,.pdoc h5:target,.pdoc h6:target,.pdoc .pdoc-code > pre > span:target{background-color:var(--active);box-shadow:-1rem 0 0 0 var(--active);}.pdoc .pdoc-code > pre > span:target{display:block;}.pdoc div:target > .attr,.pdoc section:target > .attr,.pdoc dd:target > a{background-color:var(--active);}.pdoc *{scroll-margin:2rem;}.pdoc .pdoc-code .linenos{user-select:none;}.pdoc .attr:hover{filter:contrast(0.95);}.pdoc section, .pdoc .classattr{position:relative;}.pdoc .headerlink{--width:clamp(1rem, 3vw, 2rem);position:absolute;top:0;left:calc(0rem - var(--width));transition:all 100ms ease-in-out;opacity:0;}.pdoc .headerlink::before{content:"#";display:block;text-align:center;width:var(--width);height:2.3rem;line-height:2.3rem;font-size:1.5rem;}.pdoc .attr:hover ~ .headerlink,.pdoc *:target > .headerlink,.pdoc .headerlink:hover{opacity:1;}.pdoc .attr{display:block;margin:.5rem 0 .5rem;padding:.4rem .4rem .4rem 1rem;background-color:var(--accent);overflow-x:auto;}.pdoc .classattr{margin-left:2rem;}.pdoc .name{color:var(--name);font-weight:bold;}.pdoc .def{color:var(--def);font-weight:bold;}.pdoc .signature{background-color:transparent;}.pdoc .param, .pdoc .return-annotation{white-space:pre;}.pdoc .signature.multiline .param{display:block;}.pdoc .signature.condensed .param{display:inline-block;}.pdoc .annotation{color:var(--annotation);}.pdoc .inherited{margin-left:2rem;}.pdoc .inherited dt{font-weight:700;}.pdoc .inherited dt, .pdoc .inherited dd{display:inline;margin-left:0;margin-bottom:.5rem;}.pdoc .inherited dd:not(:last-child):after{content:", ";}.pdoc .inherited .class:before{content:"class ";}.pdoc .inherited .function a:after{content:"()";}.pdoc .search-result .docstring{overflow:auto;max-height:25vh;}.pdoc .search-result.focused > .attr{background-color:var(--active);}.pdoc .attribution{margin-top:2rem;display:block;opacity:0.5;transition:all 200ms;filter:grayscale(100%);}.pdoc .attribution:hover{opacity:1;filter:grayscale(0%);}.pdoc .attribution img{margin-left:5px;height:35px;vertical-align:middle;width:70px;transition:all 200ms;}.pdoc table{display:block;width:max-content;max-width:100%;overflow:auto;margin-bottom:1rem;}.pdoc table th{font-weight:600;}.pdoc table th, .pdoc table td{padding:6px 13px;border:1px solid var(--accent2);}</style>
+    <style>/*! layout.css */html, body{width:100%;height:100%;}html, main{scroll-behavior:smooth;}body{background-color:var(--pdoc-background);}@media (max-width:769px){#navtoggle{cursor:pointer;position:absolute;width:50px;height:40px;top:1rem;right:1rem;border-color:var(--text);color:var(--text);display:flex;opacity:0.8;}#navtoggle:hover{opacity:1;}#togglestate + div{display:none;}#togglestate:checked + div{display:inherit;}main, header{padding:2rem 3vw;}header + main{margin-top:-3rem;}.git-button{display:none !important;}nav input[type="search"]{max-width:77%;}nav input[type="search"]:first-child{margin-top:-6px;}nav input[type="search"]:valid ~ *{display:none !important;}}@media (min-width:770px){:root{--sidebar-width:clamp(12.5rem, 28vw, 22rem);}nav{position:fixed;overflow:auto;height:100vh;width:var(--sidebar-width);}main, header{padding:3rem 2rem 3rem calc(var(--sidebar-width) + 3rem);width:calc(54rem + var(--sidebar-width));max-width:100%;}header + main{margin-top:-4rem;}#navtoggle{display:none;}}#togglestate{position:absolute;height:0;}nav.pdoc{--pad:1.75rem;--indent:1.5rem;background-color:var(--accent);border-right:1px solid var(--accent2);box-shadow:0 0 20px rgba(50, 50, 50, .2) inset;padding:0 0 0 var(--pad);overflow-wrap:anywhere;scrollbar-width:thin; scrollbar-color:var(--accent2) transparent }nav.pdoc::-webkit-scrollbar{width:.4rem; }nav.pdoc::-webkit-scrollbar-thumb{background-color:var(--accent2); }nav.pdoc > div{padding:var(--pad) 0;}nav.pdoc .module-list-button{display:inline-flex;align-items:center;color:var(--text);border-color:var(--muted);margin-bottom:1rem;}nav.pdoc .module-list-button:hover{border-color:var(--text);}nav.pdoc input[type=search]{display:block;outline-offset:0;width:calc(100% - var(--pad));}nav.pdoc .logo{max-width:calc(100% - var(--pad));max-height:35vh;display:block;margin:0 auto 1rem;transform:translate(calc(-.5 * var(--pad)), 0);}nav.pdoc ul{list-style:none;padding-left:0;}nav.pdoc li{display:block;margin:0;padding:.2rem 0 .2rem var(--indent);transition:all 100ms;}nav.pdoc > div > ul > li{padding-left:0;}nav.pdoc li:hover{background-color:var(--nav-hover);}nav.pdoc a, nav.pdoc a:hover{color:var(--text);}nav.pdoc a{display:block;}nav.pdoc > h2:first-of-type{margin-top:1.5rem;}nav.pdoc .class:before{content:"class ";color:var(--muted);}nav.pdoc .function:after{content:"()";color:var(--muted);}nav.pdoc footer:before{content:"";display:block;width:calc(100% - var(--pad));border-top:solid var(--accent2) 1px;margin-top:1.5rem;padding-top:.5rem;}nav.pdoc footer{font-size:small;}</style>
+    <style>/*! content.css */.pdoc{color:var(--text);box-sizing:border-box;line-height:1.5;background:none;}.pdoc .pdoc-button{display:inline-block;border:solid black 1px;border-radius:2px;font-size:.75rem;padding:calc(0.5em - 1px) 1em;transition:100ms all;}.pdoc .visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important;}.pdoc h1, .pdoc h2, .pdoc h3{font-weight:300;margin:.3em 0;padding:.2em 0;}.pdoc a{text-decoration:none;color:var(--link);}.pdoc a:hover{color:var(--link-hover);}.pdoc blockquote{margin-left:2rem;}.pdoc pre{border-top:1px solid var(--accent2);border-bottom:1px solid var(--accent2);margin-top:0;margin-bottom:1em;padding:.5rem 0 .5rem .5rem;overflow-x:auto;background-color:var(--code);}.pdoc code{color:var(--text);padding:.2em .4em;margin:0;font-size:85%;background-color:var(--code);border-radius:6px;}.pdoc a > code{color:inherit;}.pdoc pre > code{display:inline-block;font-size:inherit;background:none;border:none;padding:0;}.pdoc .modulename{margin-top:0;font-weight:bold;}.pdoc .modulename a{color:var(--link);transition:100ms all;}.pdoc .git-button{float:right;border:solid var(--link) 1px;}.pdoc .git-button:hover{background-color:var(--link);color:var(--pdoc-background);}.pdoc details{filter:opacity(1);}.pdoc details:not([open]){height:0;}.pdoc details > summary{position:absolute;top:-35px;right:0;font-size:.75rem;color:var(--muted);padding:0 .7em;user-select:none;cursor:pointer;}.pdoc details > summary:focus{outline:0;}.pdoc .docstring{margin-bottom:1.5rem;}.pdoc > section:first-of-type > .docstring{margin-bottom:2.5rem;}.pdoc .docstring .pdoc-code{margin-left:1em;margin-right:1em;}.pdoc h1:target,.pdoc h2:target,.pdoc h3:target,.pdoc h4:target,.pdoc h5:target,.pdoc h6:target{background-color:var(--active);box-shadow:-1rem 0 0 0 var(--active);}.pdoc div:target > .attr,.pdoc section:target > .attr,.pdoc dd:target > a{background-color:var(--active);}.pdoc .attr:hover{filter:contrast(0.95);}.pdoc .headerlink{position:absolute;width:0;margin-left:-1.5rem;line-height:1.4rem;font-size:1.5rem;font-weight:normal;transition:all 100ms ease-in-out;opacity:0;user-select:none;}.pdoc .attr > .headerlink{margin-left:-2.5rem;}.pdoc *:hover > .headerlink,.pdoc *:target > .attr > .headerlink{opacity:1;}.pdoc .attr{display:block;color:var(--text);margin:.5rem 0 .5rem;padding:.4rem 5rem .4rem 1rem;background-color:var(--accent);}.pdoc .classattr{margin-left:2rem;}.pdoc .name{color:var(--name);font-weight:bold;}.pdoc .def{color:var(--def);font-weight:bold;}.pdoc .signature{white-space:pre-wrap;}.pdoc .annotation{color:var(--annotation);}.pdoc .inherited{margin-left:2rem;}.pdoc .inherited dt{font-weight:700;}.pdoc .inherited dt, .pdoc .inherited dd{display:inline;margin-left:0;margin-bottom:.5rem;}.pdoc .inherited dd:not(:last-child):after{content:", ";}.pdoc .inherited .class:before{content:"class ";}.pdoc .inherited .function a:after{content:"()";}.pdoc .search-result .docstring{overflow:auto;max-height:25vh;}.pdoc .search-result.focused > .attr{background-color:var(--active);}.pdoc .attribution{margin-top:2rem;display:block;opacity:0.5;transition:all 200ms;filter:grayscale(100%);}.pdoc .attribution:hover{opacity:1;filter:grayscale(0%);}.pdoc .attribution img{margin-left:5px;height:35px;vertical-align:middle;width:70px;transition:all 200ms;}.pdoc table{display:block;width:max-content;max-width:100%;overflow:auto;margin-bottom:1rem;}.pdoc table th{font-weight:600;}.pdoc table th, .pdoc table td{padding:6px 13px;border:1px solid var(--accent2);}</style>
     <style>/*! custom.css */</style></head>
 <body>
     <nav class="pdoc">
@@ -22,13 +22,16 @@
   <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
 </svg>                &nbsp;ortools.linear_solver</a>
 
-            <img src="/root/or-tools/tools/doc/orLogo.png" class="logo" alt="project logo"/>
+            <img src="https://developers.google.com/optimization/images/orLogo.png" class="logo" alt="project logo"/>
 
 
 
 
         <h2>API Documentation</h2>
             <ul class="memberlist">
+            <li>
+                    <a class="function" href="#SWIG_PyInstanceMethod_New">SWIG_PyInstanceMethod_New</a>
+            </li>
             <li>
                     <a class="function" href="#new_Solver">new_Solver</a>
             </li>
@@ -395,9 +398,9 @@
     </ul>
 
 
-            <footer>OR-Tools 9.5</footer>
+            <footer>OR-Tools 9.6</footer>
 
-        <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
+        <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev">
             built with <span class="visually-hidden">pdoc</span><img
                 alt="pdoc logo"
                 src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%20aria-label%3D%22pdoc%20logo%22%20width%3D%22300%22%20height%3D%22150%22%20viewBox%3D%22-1%200%2060%2030%22%3E%3Ctitle%3Epdoc%3C/title%3E%3Cpath%20d%3D%22M29.621%2021.293c-.011-.273-.214-.475-.511-.481a.5.5%200%200%200-.489.503l-.044%201.393c-.097.551-.695%201.215-1.566%201.704-.577.428-1.306.486-2.193.182-1.426-.617-2.467-1.654-3.304-2.487l-.173-.172a3.43%203.43%200%200%200-.365-.306.49.49%200%200%200-.286-.196c-1.718-1.06-4.931-1.47-7.353.191l-.219.15c-1.707%201.187-3.413%202.131-4.328%201.03-.02-.027-.49-.685-.141-1.763.233-.721.546-2.408.772-4.076.042-.09.067-.187.046-.288.166-1.347.277-2.625.241-3.351%201.378-1.008%202.271-2.586%202.271-4.362%200-.976-.272-1.935-.788-2.774-.057-.094-.122-.18-.184-.268.033-.167.052-.339.052-.516%200-1.477-1.202-2.679-2.679-2.679-.791%200-1.496.352-1.987.9a6.3%206.3%200%200%200-1.001.029c-.492-.564-1.207-.929-2.012-.929-1.477%200-2.679%201.202-2.679%202.679A2.65%202.65%200%200%200%20.97%206.554c-.383.747-.595%201.572-.595%202.41%200%202.311%201.507%204.29%203.635%205.107-.037.699-.147%202.27-.423%203.294l-.137.461c-.622%202.042-2.515%208.257%201.727%2010.643%201.614.908%203.06%201.248%204.317%201.248%202.665%200%204.492-1.524%205.322-2.401%201.476-1.559%202.886-1.854%206.491.82%201.877%201.393%203.514%201.753%204.861%201.068%202.223-1.713%202.811-3.867%203.399-6.374.077-.846.056-1.469.054-1.537zm-4.835%204.313c-.054.305-.156.586-.242.629-.034-.007-.131-.022-.307-.157-.145-.111-.314-.478-.456-.908.221.121.432.25.675.355.115.039.219.051.33.081zm-2.251-1.238c-.05.33-.158.648-.252.694-.022.001-.125-.018-.307-.157-.217-.166-.488-.906-.639-1.573.358.344.754.693%201.198%201.036zm-3.887-2.337c-.006-.116-.018-.231-.041-.342.635.145%201.189.368%201.599.625.097.231.166.481.174.642-.03.049-.055.101-.067.158-.046.013-.128.026-.298.004-.278-.037-.901-.57-1.367-1.087zm-1.127-.497c.116.306.176.625.12.71-.019.014-.117.045-.345.016-.206-.027-.604-.332-.986-.695.41-.051.816-.056%201.211-.031zm-4.535%201.535c.209.22.379.47.358.598-.006.041-.088.138-.351.234-.144.055-.539-.063-.979-.259a11.66%2011.66%200%200%200%20.972-.573zm.983-.664c.359-.237.738-.418%201.126-.554.25.237.479.548.457.694-.006.042-.087.138-.351.235-.174.064-.694-.105-1.232-.375zm-3.381%201.794c-.022.145-.061.29-.149.401-.133.166-.358.248-.69.251h-.002c-.133%200-.306-.26-.45-.621.417.091.854.07%201.291-.031zm-2.066-8.077a4.78%204.78%200%200%201-.775-.584c.172-.115.505-.254.88-.378l-.105.962zm-.331%202.302a10.32%2010.32%200%200%201-.828-.502c.202-.143.576-.328.984-.49l-.156.992zm-.45%202.157l-.701-.403c.214-.115.536-.249.891-.376a11.57%2011.57%200%200%201-.19.779zm-.181%201.716c.064.398.194.702.298.893-.194-.051-.435-.162-.736-.398.061-.119.224-.3.438-.495zM8.87%204.141c0%20.152-.123.276-.276.276s-.275-.124-.275-.276.123-.276.276-.276.275.124.275.276zm-.735-.389a1.15%201.15%200%200%200-.314.783%201.16%201.16%200%200%200%201.162%201.162c.457%200%20.842-.27%201.032-.653.026.117.042.238.042.362a1.68%201.68%200%200%201-1.679%201.679%201.68%201.68%200%200%201-1.679-1.679c0-.843.626-1.535%201.436-1.654zM5.059%205.406A1.68%201.68%200%200%201%203.38%207.085a1.68%201.68%200%200%201-1.679-1.679c0-.037.009-.072.011-.109.21.3.541.508.935.508a1.16%201.16%200%200%200%201.162-1.162%201.14%201.14%200%200%200-.474-.912c.015%200%20.03-.005.045-.005.926.001%201.679.754%201.679%201.68zM3.198%204.141c0%20.152-.123.276-.276.276s-.275-.124-.275-.276.123-.276.276-.276.275.124.275.276zM1.375%208.964c0-.52.103-1.035.288-1.52.466.394%201.06.64%201.717.64%201.144%200%202.116-.725%202.499-1.738.383%201.012%201.355%201.738%202.499%201.738.867%200%201.631-.421%202.121-1.062.307.605.478%201.267.478%201.942%200%202.486-2.153%204.51-4.801%204.51s-4.801-2.023-4.801-4.51zm24.342%2019.349c-.985.498-2.267.168-3.813-.979-3.073-2.281-5.453-3.199-7.813-.705-1.315%201.391-4.163%203.365-8.423.97-3.174-1.786-2.239-6.266-1.261-9.479l.146-.492c.276-1.02.395-2.457.444-3.268a6.11%206.11%200%200%200%201.18.115%206.01%206.01%200%200%200%202.536-.562l-.006.175c-.802.215-1.848.612-2.021%201.25-.079.295.021.601.274.837.219.203.415.364.598.501-.667.304-1.243.698-1.311%201.179-.02.144-.022.507.393.787.213.144.395.26.564.365-1.285.521-1.361.96-1.381%201.126-.018.142-.011.496.427.746l.854.489c-.473.389-.971.914-.999%201.429-.018.278.095.532.316.713.675.556%201.231.721%201.653.721.059%200%20.104-.014.158-.02.207.707.641%201.64%201.513%201.64h.013c.8-.008%201.236-.345%201.462-.626.173-.216.268-.457.325-.692.424.195.93.374%201.372.374.151%200%20.294-.021.423-.068.732-.27.944-.704.993-1.021.009-.061.003-.119.002-.179.266.086.538.147.789.147.15%200%20.294-.021.423-.069.542-.2.797-.489.914-.754.237.147.478.258.704.288.106.014.205.021.296.021.356%200%20.595-.101.767-.229.438.435%201.094.992%201.656%201.067.106.014.205.021.296.021a1.56%201.56%200%200%200%20.323-.035c.17.575.453%201.289.866%201.605.358.273.665.362.914.362a.99.99%200%200%200%20.421-.093%201.03%201.03%200%200%200%20.245-.164c.168.428.39.846.68%201.068.358.273.665.362.913.362a.99.99%200%200%200%20.421-.093c.317-.148.512-.448.639-.762.251.157.495.257.726.257.127%200%20.25-.024.37-.071.427-.17.706-.617.841-1.314.022-.015.047-.022.068-.038.067-.051.133-.104.196-.159-.443%201.486-1.107%202.761-2.086%203.257zM8.66%209.925a.5.5%200%201%200-1%200c0%20.653-.818%201.205-1.787%201.205s-1.787-.552-1.787-1.205a.5.5%200%201%200-1%200c0%201.216%201.25%202.205%202.787%202.205s2.787-.989%202.787-2.205zm4.4%2015.965l-.208.097c-2.661%201.258-4.708%201.436-6.086.527-1.542-1.017-1.88-3.19-1.844-4.198a.4.4%200%200%200-.385-.414c-.242-.029-.406.164-.414.385-.046%201.249.367%203.686%202.202%204.896.708.467%201.547.7%202.51.7%201.248%200%202.706-.392%204.362-1.174l.185-.086a.4.4%200%200%200%20.205-.527c-.089-.204-.326-.291-.527-.206zM9.547%202.292c.093.077.205.114.317.114a.5.5%200%200%200%20.318-.886L8.817.397a.5.5%200%200%200-.703.068.5.5%200%200%200%20.069.703l1.364%201.124zm-7.661-.065c.086%200%20.173-.022.253-.068l1.523-.893a.5.5%200%200%200-.506-.863l-1.523.892a.5.5%200%200%200-.179.685c.094.158.261.247.432.247z%22%20transform%3D%22matrix%28-1%200%200%201%2058%200%29%22%20fill%3D%22%233bb300%22/%3E%3Cpath%20d%3D%22M.3%2021.86V10.18q0-.46.02-.68.04-.22.18-.5.28-.54%201.34-.54%201.06%200%201.42.28.38.26.44.78.76-1.04%202.38-1.04%201.64%200%203.1%201.54%201.46%201.54%201.46%203.58%200%202.04-1.46%203.58-1.44%201.54-3.08%201.54-1.64%200-2.38-.92v4.04q0%20.46-.04.68-.02.22-.18.5-.14.3-.5.42-.36.12-.98.12-.62%200-1-.12-.36-.12-.52-.4-.14-.28-.18-.5-.02-.22-.02-.68zm3.96-9.42q-.46.54-.46%201.18%200%20.64.46%201.18.48.52%201.2.52.74%200%201.24-.52.52-.52.52-1.18%200-.66-.48-1.18-.48-.54-1.26-.54-.76%200-1.22.54zm14.741-8.36q.16-.3.54-.42.38-.12%201-.12.64%200%201.02.12.38.12.52.42.16.3.18.54.04.22.04.68v11.94q0%20.46-.04.7-.02.22-.18.5-.3.54-1.7.54-1.38%200-1.54-.98-.84.96-2.34.96-1.8%200-3.28-1.56-1.48-1.58-1.48-3.66%200-2.1%201.48-3.68%201.5-1.58%203.28-1.58%201.48%200%202.3%201v-4.2q0-.46.02-.68.04-.24.18-.52zm-3.24%2010.86q.52.54%201.26.54.74%200%201.22-.54.5-.54.5-1.18%200-.66-.48-1.22-.46-.56-1.26-.56-.8%200-1.28.56-.48.54-.48%201.2%200%20.66.52%201.2zm7.833-1.2q0-2.4%201.68-3.96%201.68-1.56%203.84-1.56%202.16%200%203.82%201.56%201.66%201.54%201.66%203.94%200%201.66-.86%202.96-.86%201.28-2.1%201.9-1.22.6-2.54.6-1.32%200-2.56-.64-1.24-.66-2.1-1.92-.84-1.28-.84-2.88zm4.18%201.44q.64.48%201.3.48.66%200%201.32-.5.66-.5.66-1.48%200-.98-.62-1.46-.62-.48-1.34-.48-.72%200-1.34.5-.62.5-.62%201.48%200%20.96.64%201.46zm11.412-1.44q0%20.84.56%201.32.56.46%201.18.46.64%200%201.18-.36.56-.38.9-.38.6%200%201.46%201.06.46.58.46%201.04%200%20.76-1.1%201.42-1.14.8-2.8.8-1.86%200-3.58-1.34-.82-.64-1.34-1.7-.52-1.08-.52-2.36%200-1.3.52-2.34.52-1.06%201.34-1.7%201.66-1.32%203.54-1.32.76%200%201.48.22.72.2%201.06.4l.32.2q.36.24.56.38.52.4.52.92%200%20.5-.42%201.14-.72%201.1-1.38%201.1-.38%200-1.08-.44-.36-.34-1.04-.34-.66%200-1.24.48-.58.48-.58%201.34z%22%20fill%3D%22green%22/%3E%3C/svg%3E"/>
@@ -405,24 +408,33 @@
 </div>
     </nav>
     <main class="pdoc">
-            <section class="module-info">
+            <section>
                     <h1 class="modulename">
 <a href="./../../ortools.html">ortools</a><wbr>.<a href="./../linear_solver.html">linear_solver</a><wbr>._pywraplp    </h1>
 
                 
                 
-                
-                
             </section>
-                <section id="new_Solver">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">new_Solver</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                <section id="SWIG_PyInstanceMethod_New">
+                            <div class="attr function"><a class="headerlink" href="#SWIG_PyInstanceMethod_New">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">SWIG_PyInstanceMethod_New</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#new_Solver"></a>
+
+    
+    
+
+                </section>
+                <section id="new_Solver">
+                            <div class="attr function"><a class="headerlink" href="#new_Solver">#&nbsp;&nbsp</a>
+
+        
+            <span class="def">def</span>
+            <span class="name">new_Solver</span><span class="signature">(unknown)</span>:
+    </div>
+
     
             <div class="docstring"><p>Create a solver with the given name and underlying solver backend.</p>
 </div>
@@ -430,27 +442,25 @@
 
                 </section>
                 <section id="delete_Solver">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_Solver</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_Solver">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_Solver</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_Solver"></a>
+
     
     
 
                 </section>
                 <section id="Solver_CreateSolver">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_CreateSolver</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_CreateSolver">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_CreateSolver</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_CreateSolver"></a>
+
     
             <div class="docstring"><p>Recommended factory method to create a MPSolver instance, especially in
 non C++ languages.</p>
@@ -486,14 +496,13 @@ well as a short version (i.e. "SCIP_MIXED_INTEGER_PROGRAMMING" or "SCIP").</p>
 
                 </section>
                 <section id="Solver_SupportsProblemType">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SupportsProblemType</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SupportsProblemType">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SupportsProblemType</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SupportsProblemType"></a>
+
     
             <div class="docstring"><p>Whether the given problem type is supported (this will depend on the
 targets that you linked).</p>
@@ -502,14 +511,13 @@ targets that you linked).</p>
 
                 </section>
                 <section id="Solver_Clear">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Clear</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Clear">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Clear</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Clear"></a>
+
     
             <div class="docstring"><p>Clears the objective (including the optimization direction), all variables
 and constraints. All the other properties of the MPSolver (like the time
@@ -519,14 +527,13 @@ limit) are kept untouched.</p>
 
                 </section>
                 <section id="Solver_NumVariables">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_NumVariables</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_NumVariables">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_NumVariables</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_NumVariables"></a>
+
     
             <div class="docstring"><p>Returns the number of variables.</p>
 </div>
@@ -534,14 +541,13 @@ limit) are kept untouched.</p>
 
                 </section>
                 <section id="Solver_variables">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_variables</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_variables">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_variables</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_variables"></a>
+
     
             <div class="docstring"><p>Returns the array of variables handled by the MPSolver. (They are listed in
 the order in which they were created.)</p>
@@ -550,14 +556,13 @@ the order in which they were created.)</p>
 
                 </section>
                 <section id="Solver_variable">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_variable</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_variable">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_variable</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_variable"></a>
+
     
             <div class="docstring"><p>Returns the variable at position index.</p>
 </div>
@@ -565,14 +570,13 @@ the order in which they were created.)</p>
 
                 </section>
                 <section id="Solver_LookupVariable">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_LookupVariable</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_LookupVariable">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_LookupVariable</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_LookupVariable"></a>
+
     
             <div class="docstring"><p>Looks up a variable by name, and returns nullptr if it does not exist. The
 first call has a O(n) complexity, as the variable name index is lazily
@@ -582,14 +586,13 @@ created upon first use. Will crash if variable names are not unique.</p>
 
                 </section>
                 <section id="Solver_Var">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Var</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Var">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Var</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Var"></a>
+
     
             <div class="docstring"><p>Creates a variable with the given bounds, integrality requirement and
 name. Bounds can be finite or +/- MPSolver::infinity(). The MPSolver owns
@@ -601,14 +604,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_NumVar">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_NumVar</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_NumVar">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_NumVar</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_NumVar"></a>
+
     
             <div class="docstring"><p>Creates a continuous variable.</p>
 </div>
@@ -616,14 +618,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_IntVar">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_IntVar</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_IntVar">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_IntVar</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_IntVar"></a>
+
     
             <div class="docstring"><p>Creates an integer variable.</p>
 </div>
@@ -631,14 +632,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_BoolVar">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_BoolVar</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_BoolVar">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_BoolVar</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_BoolVar"></a>
+
     
             <div class="docstring"><p>Creates a boolean variable.</p>
 </div>
@@ -646,14 +646,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_NumConstraints">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_NumConstraints</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_NumConstraints">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_NumConstraints</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_NumConstraints"></a>
+
     
             <div class="docstring"><p>Returns the number of constraints.</p>
 </div>
@@ -661,14 +660,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_constraints">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_constraints</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_constraints">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_constraints</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_constraints"></a>
+
     
             <div class="docstring"><p>Returns the array of constraints handled by the MPSolver.</p>
 
@@ -678,14 +676,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_constraint">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_constraint</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_constraint">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_constraint</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_constraint"></a>
+
     
             <div class="docstring"><p>Returns the constraint at the given index.</p>
 </div>
@@ -693,14 +690,13 @@ upon request.</p>
 
                 </section>
                 <section id="Solver_LookupConstraint">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_LookupConstraint</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_LookupConstraint">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_LookupConstraint</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_LookupConstraint"></a>
+
     
             <div class="docstring"><p>Looks up a constraint by name, and returns nullptr if it does not exist.</p>
 
@@ -712,14 +708,13 @@ unique.</p>
 
                 </section>
                 <section id="Solver_Constraint">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Constraint</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Constraint">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Constraint</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Constraint"></a>
+
     
             <div class="docstring"><p><em>Overload 1:</em></p>
 
@@ -728,11 +723,8 @@ unique.</p>
 <p>Bounds can be finite or +/- MPSolver::infinity(). The MPSolver class
 assumes ownership of the constraint.</p>
 
-<h6 id="returns">Returns</h6>
-
-<blockquote>
-  <p>a pointer to the newly created constraint.</p>
-</blockquote>
+<p>:rtype: <code>MPConstraint</code>
+:return: a pointer to the newly created constraint.</p>
 
 <p>|</p>
 
@@ -753,14 +745,13 @@ assumes ownership of the constraint.</p>
 
                 </section>
                 <section id="Solver_Objective">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Objective</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Objective">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Objective</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Objective"></a>
+
     
             <div class="docstring"><p>Returns the mutable objective object.</p>
 </div>
@@ -768,14 +759,13 @@ assumes ownership of the constraint.</p>
 
                 </section>
                 <section id="Solver_Solve">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Solve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Solve">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Solve</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Solve"></a>
+
     
             <div class="docstring"><p><em>Overload 1:</em>
 Solves the problem using the default parameter values.</p>
@@ -789,14 +779,13 @@ Solves the problem using the specified parameter values.</p>
 
                 </section>
                 <section id="Solver_ComputeConstraintActivities">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_ComputeConstraintActivities</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_ComputeConstraintActivities">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_ComputeConstraintActivities</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_ComputeConstraintActivities"></a>
+
     
             <div class="docstring"><p>Advanced usage: compute the "activities" of all constraints, which are the
 sums of their linear terms. The activities are returned in the same order
@@ -807,14 +796,13 @@ you can also use MPConstraint::index() to get a constraint's index.</p>
 
                 </section>
                 <section id="Solver_VerifySolution">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_VerifySolution</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_VerifySolution">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_VerifySolution</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_VerifySolution"></a>
+
     
             <div class="docstring"><p>Advanced usage: Verifies the <em>correctness</em> of the solution.</p>
 
@@ -840,14 +828,13 @@ this method directly.</p>
 
                 </section>
                 <section id="Solver_InterruptSolve">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_InterruptSolve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_InterruptSolve">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_InterruptSolve</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_InterruptSolve"></a>
+
     
             <div class="docstring"><p>Interrupts the Solve() execution to terminate processing if possible.</p>
 
@@ -862,14 +849,13 @@ interruption is supported for a given solver type.</p>
 
                 </section>
                 <section id="Solver_FillSolutionResponseProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_FillSolutionResponseProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_FillSolutionResponseProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_FillSolutionResponseProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_FillSolutionResponseProto"></a>
+
     
             <div class="docstring"><p>Encodes the current solution in a solution response protocol buffer.</p>
 </div>
@@ -877,14 +863,13 @@ interruption is supported for a given solver type.</p>
 
                 </section>
                 <section id="Solver_SolveWithProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SolveWithProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SolveWithProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SolveWithProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SolveWithProto"></a>
+
     
             <div class="docstring"><p>Solves the model encoded by a MPModelRequest protocol buffer and fills the
 solution encoded as a MPSolutionResponse. The solve is stopped prematurely
@@ -904,14 +889,13 @@ and the gap limit (as of 2020/02/11, to 1e-7 and 0.0001, respectively).</p>
 
                 </section>
                 <section id="Solver_ExportModelToProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_ExportModelToProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_ExportModelToProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_ExportModelToProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_ExportModelToProto"></a>
+
     
             <div class="docstring"><p>Exports model to protocol buffer.</p>
 </div>
@@ -919,14 +903,13 @@ and the gap limit (as of 2020/02/11, to 1e-7 and 0.0001, respectively).</p>
 
                 </section>
                 <section id="Solver_SetSolverSpecificParametersAsString">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SetSolverSpecificParametersAsString</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SetSolverSpecificParametersAsString">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SetSolverSpecificParametersAsString</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SetSolverSpecificParametersAsString"></a>
+
     
             <div class="docstring"><p>Advanced usage: pass solver specific parameters in text format.</p>
 
@@ -937,14 +920,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_infinity">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_infinity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_infinity">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_infinity</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_infinity"></a>
+
     
             <div class="docstring"><p>Infinity.</p>
 
@@ -954,14 +936,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_EnableOutput">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_EnableOutput</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_EnableOutput">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_EnableOutput</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_EnableOutput"></a>
+
     
             <div class="docstring"><p>Enables solver logging.</p>
 </div>
@@ -969,14 +950,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_SuppressOutput">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SuppressOutput</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SuppressOutput">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SuppressOutput</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SuppressOutput"></a>
+
     
             <div class="docstring"><p>Suppresses solver logging.</p>
 </div>
@@ -984,14 +964,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_iterations">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_iterations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_iterations">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_iterations</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_iterations"></a>
+
     
             <div class="docstring"><p>Returns the number of simplex iterations.</p>
 </div>
@@ -999,14 +978,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_nodes">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_nodes</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_nodes">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_nodes</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_nodes"></a>
+
     
             <div class="docstring"><p>Returns the number of branch-and-bound nodes evaluated during the solve.</p>
 
@@ -1016,14 +994,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_SolverVersion">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SolverVersion</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SolverVersion">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SolverVersion</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SolverVersion"></a>
+
     
             <div class="docstring"><p>Returns a string describing the underlying solver and its version.</p>
 </div>
@@ -1031,14 +1008,13 @@ configuration file format. Returns true if the operation was successful.</p>
 
                 </section>
                 <section id="Solver_ComputeExactConditionNumber">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_ComputeExactConditionNumber</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_ComputeExactConditionNumber">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_ComputeExactConditionNumber</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_ComputeExactConditionNumber"></a>
+
     
             <div class="docstring"><p>Advanced usage: computes the exact condition number of the current scaled
 basis: L1norm(B) * L1norm(inverse(B)), where B is the scaled basis.</p>
@@ -1053,7 +1029,7 @@ solve: the model is declared infeasible whereas it is feasible (or
 vice-versa), the solution obtained is not optimal or violates some
 constraints, the resolution is slow because of repeated singularities.</p>
 
-<h6 id="the-rule-of-thumb-to-interpret-the-condition-number-kappa-is">The rule of thumb to interpret the condition number kappa is:</h6>
+<h6 id="the-rule-of-thumb-to-interpret-the-condition-number-kappa-is">The rule of thumb to interpret the condition number kappa is</h6>
 
 <blockquote>
   <ul>
@@ -1072,14 +1048,13 @@ conditioned.</p>
 
                 </section>
                 <section id="Solver_NextSolution">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_NextSolution</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_NextSolution">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_NextSolution</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_NextSolution"></a>
+
     
             <div class="docstring"><p>Some solvers (MIP only, not LP) can produce multiple solutions to the
 problem. Returns true when another solution is available, and updates the
@@ -1098,105 +1073,97 @@ solvers for multiple solutions. Other solvers return false unconditionally.</p>
 
                 </section>
                 <section id="Solver_set_time_limit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_set_time_limit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_set_time_limit">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_set_time_limit</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_set_time_limit"></a>
+
     
     
 
                 </section>
                 <section id="Solver_wall_time">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_wall_time</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_wall_time">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_wall_time</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_wall_time"></a>
+
     
     
 
                 </section>
                 <section id="Solver_LoadModelFromProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_LoadModelFromProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_LoadModelFromProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_LoadModelFromProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_LoadModelFromProto"></a>
+
     
     
 
                 </section>
                 <section id="Solver_LoadModelFromProtoWithUniqueNamesOrDie">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_LoadModelFromProtoWithUniqueNamesOrDie</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_LoadModelFromProtoWithUniqueNamesOrDie">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_LoadModelFromProtoWithUniqueNamesOrDie</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_LoadModelFromProtoWithUniqueNamesOrDie"></a>
+
     
     
 
                 </section>
                 <section id="Solver_LoadSolutionFromProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_LoadSolutionFromProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_LoadSolutionFromProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_LoadSolutionFromProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_LoadSolutionFromProto"></a>
+
     
     
 
                 </section>
                 <section id="Solver_ExportModelAsLpFormat">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_ExportModelAsLpFormat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_ExportModelAsLpFormat">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_ExportModelAsLpFormat</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_ExportModelAsLpFormat"></a>
+
     
     
 
                 </section>
                 <section id="Solver_ExportModelAsMpsFormat">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_ExportModelAsMpsFormat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_ExportModelAsMpsFormat">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_ExportModelAsMpsFormat</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_ExportModelAsMpsFormat"></a>
+
     
     
 
                 </section>
                 <section id="Solver_SetHint">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SetHint</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SetHint">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SetHint</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SetHint"></a>
+
     
             <div class="docstring"><p>Set a hint for solution.</p>
 
@@ -1214,14 +1181,13 @@ optimal solutions.</p>
 
                 </section>
                 <section id="Solver_SetNumThreads">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SetNumThreads</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SetNumThreads">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SetNumThreads</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SetNumThreads"></a>
+
     
             <div class="docstring"><p>Sets the number of threads to be used by the solver.</p>
 </div>
@@ -1229,92 +1195,85 @@ optimal solutions.</p>
 
                 </section>
                 <section id="Solver_Infinity">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Infinity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Infinity">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Infinity</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Infinity"></a>
+
     
     
 
                 </section>
                 <section id="Solver_SetTimeLimit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_SetTimeLimit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_SetTimeLimit">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_SetTimeLimit</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_SetTimeLimit"></a>
+
     
     
 
                 </section>
                 <section id="Solver_WallTime">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_WallTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_WallTime">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_WallTime</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_WallTime"></a>
+
     
     
 
                 </section>
                 <section id="Solver_Iterations">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_Iterations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_Iterations">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_Iterations</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_Iterations"></a>
+
     
     
 
                 </section>
                 <section id="Solver_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="Solver_swiginit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Solver_swiginit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Solver_swiginit">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Solver_swiginit</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Solver_swiginit"></a>
+
     
     
 
                 </section>
                 <section id="Objective_Clear">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_Clear</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_Clear">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_Clear</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_Clear"></a>
+
     
             <div class="docstring"><p>Clears the offset, all variables and coefficients, and the optimization
 direction.</p>
@@ -1323,14 +1282,13 @@ direction.</p>
 
                 </section>
                 <section id="Objective_SetCoefficient">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_SetCoefficient</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_SetCoefficient">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_SetCoefficient</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_SetCoefficient"></a>
+
     
             <div class="docstring"><p>Sets the coefficient of the variable in the objective.</p>
 
@@ -1341,14 +1299,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_GetCoefficient">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_GetCoefficient</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_GetCoefficient">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_GetCoefficient</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_GetCoefficient"></a>
+
     
             <div class="docstring"><p>Gets the coefficient of a given variable in the objective</p>
 
@@ -1358,14 +1315,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_SetOffset">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_SetOffset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_SetOffset">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_SetOffset</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_SetOffset"></a>
+
     
             <div class="docstring"><p>Sets the constant term in the objective.</p>
 </div>
@@ -1373,14 +1329,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_offset">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_offset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_offset">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_offset</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_offset"></a>
+
     
             <div class="docstring"><p>Gets the constant term in the objective.</p>
 </div>
@@ -1388,14 +1343,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_SetOptimizationDirection">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_SetOptimizationDirection</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_SetOptimizationDirection">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_SetOptimizationDirection</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_SetOptimizationDirection"></a>
+
     
             <div class="docstring"><p>Sets the optimization direction (maximize: true or minimize: false).</p>
 </div>
@@ -1403,14 +1357,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_SetMinimization">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_SetMinimization</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_SetMinimization">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_SetMinimization</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_SetMinimization"></a>
+
     
             <div class="docstring"><p>Sets the optimization direction to minimize.</p>
 </div>
@@ -1418,14 +1371,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_SetMaximization">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_SetMaximization</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_SetMaximization">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_SetMaximization</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_SetMaximization"></a>
+
     
             <div class="docstring"><p>Sets the optimization direction to maximize.</p>
 </div>
@@ -1433,14 +1385,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_maximization">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_maximization</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_maximization">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_maximization</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_maximization"></a>
+
     
             <div class="docstring"><p>Is the optimization direction set to maximize?</p>
 </div>
@@ -1448,14 +1399,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_minimization">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_minimization</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_minimization">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_minimization</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_minimization"></a>
+
     
             <div class="docstring"><p>Is the optimization direction set to minimize?</p>
 </div>
@@ -1463,14 +1413,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Objective_Value">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_Value</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_Value">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_Value</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_Value"></a>
+
     
             <div class="docstring"><p>Returns the objective value of the best solution found so far.</p>
 
@@ -1486,14 +1435,13 @@ your solution.</p>
 
                 </section>
                 <section id="Objective_BestBound">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_BestBound</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_BestBound">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_BestBound</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_BestBound"></a>
+
     
             <div class="docstring"><p>Returns the best objective bound.</p>
 
@@ -1504,53 +1452,49 @@ optimal integer solution. Only available for discrete problems.</p>
 
                 </section>
                 <section id="Objective_Offset">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_Offset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_Offset">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_Offset</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_Offset"></a>
+
     
     
 
                 </section>
                 <section id="delete_Objective">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_Objective</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_Objective">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_Objective</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_Objective"></a>
+
     
     
 
                 </section>
                 <section id="Objective_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Objective_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Objective_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Objective_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Objective_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="Variable_name">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_name</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_name">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_name</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_name"></a>
+
     
             <div class="docstring"><p>Returns the name of the variable.</p>
 </div>
@@ -1558,14 +1502,13 @@ optimal integer solution. Only available for discrete problems.</p>
 
                 </section>
                 <section id="Variable_SetInteger">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SetInteger</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SetInteger">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SetInteger</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SetInteger"></a>
+
     
             <div class="docstring"><p>Sets the integrality requirement of the variable.</p>
 </div>
@@ -1573,14 +1516,13 @@ optimal integer solution. Only available for discrete problems.</p>
 
                 </section>
                 <section id="Variable_integer">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_integer</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_integer">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_integer</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_integer"></a>
+
     
             <div class="docstring"><p>Returns the integrality requirement of the variable.</p>
 </div>
@@ -1588,14 +1530,13 @@ optimal integer solution. Only available for discrete problems.</p>
 
                 </section>
                 <section id="Variable_solution_value">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_solution_value</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_solution_value">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_solution_value</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_solution_value"></a>
+
     
             <div class="docstring"><p>Returns the value of the variable in the current solution.</p>
 
@@ -1607,14 +1548,13 @@ automatically rounds it to the nearest integer; see: man 3 round).</p>
 
                 </section>
                 <section id="Variable_index">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_index</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_index">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_index</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_index"></a>
+
     
             <div class="docstring"><p>Returns the index of the variable in the MPSolver::variables_.</p>
 </div>
@@ -1622,14 +1562,13 @@ automatically rounds it to the nearest integer; see: man 3 round).</p>
 
                 </section>
                 <section id="Variable_lb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_lb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_lb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_lb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_lb"></a>
+
     
             <div class="docstring"><p>Returns the lower bound.</p>
 </div>
@@ -1637,14 +1576,13 @@ automatically rounds it to the nearest integer; see: man 3 round).</p>
 
                 </section>
                 <section id="Variable_ub">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_ub</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_ub">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_ub</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_ub"></a>
+
     
             <div class="docstring"><p>Returns the upper bound.</p>
 </div>
@@ -1652,14 +1590,13 @@ automatically rounds it to the nearest integer; see: man 3 round).</p>
 
                 </section>
                 <section id="Variable_SetBounds">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SetBounds</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SetBounds">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SetBounds</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SetBounds"></a>
+
     
             <div class="docstring"><p>Sets both the lower and upper bounds.</p>
 </div>
@@ -1667,14 +1604,13 @@ automatically rounds it to the nearest integer; see: man 3 round).</p>
 
                 </section>
                 <section id="Variable_reduced_cost">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_reduced_cost</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_reduced_cost">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_reduced_cost</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_reduced_cost"></a>
+
     
             <div class="docstring"><p>Advanced usage: returns the reduced cost of the variable in the current
 solution (only available for continuous problems).</p>
@@ -1683,14 +1619,13 @@ solution (only available for continuous problems).</p>
 
                 </section>
                 <section id="Variable_basis_status">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_basis_status</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_basis_status">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_basis_status</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_basis_status"></a>
+
     
             <div class="docstring"><p>Advanced usage: returns the basis status of the variable in the current
 solution (only available for continuous problems).</p>
@@ -1701,14 +1636,13 @@ solution (only available for continuous problems).</p>
 
                 </section>
                 <section id="Variable_branching_priority">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_branching_priority</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_branching_priority">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_branching_priority</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_branching_priority"></a>
+
     
             <div class="docstring"><p>Advanced usage: Certain MIP solvers (e.g. Gurobi or SCIP) allow you to set
 a per-variable priority for determining which variable to branch on.</p>
@@ -1723,170 +1657,157 @@ this annotation.</p>
 
                 </section>
                 <section id="Variable_SetBranchingPriority">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SetBranchingPriority</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SetBranchingPriority">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SetBranchingPriority</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SetBranchingPriority"></a>
+
     
     
 
                 </section>
                 <section id="Variable___str__">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable___str__</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable___str__">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable___str__</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable___str__"></a>
+
     
     
 
                 </section>
                 <section id="Variable___repr__">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable___repr__</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable___repr__">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable___repr__</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable___repr__"></a>
+
     
     
 
                 </section>
                 <section id="Variable_SolutionValue">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SolutionValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SolutionValue">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SolutionValue</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SolutionValue"></a>
+
     
     
 
                 </section>
                 <section id="Variable_Integer">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_Integer</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_Integer">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_Integer</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_Integer"></a>
+
     
     
 
                 </section>
                 <section id="Variable_Lb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_Lb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_Lb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_Lb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_Lb"></a>
+
     
     
 
                 </section>
                 <section id="Variable_Ub">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_Ub</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_Ub">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_Ub</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_Ub"></a>
+
     
     
 
                 </section>
                 <section id="Variable_SetLb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SetLb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SetLb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SetLb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SetLb"></a>
+
     
     
 
                 </section>
                 <section id="Variable_SetUb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_SetUb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_SetUb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_SetUb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_SetUb"></a>
+
     
     
 
                 </section>
                 <section id="Variable_ReducedCost">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_ReducedCost</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_ReducedCost">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_ReducedCost</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_ReducedCost"></a>
+
     
     
 
                 </section>
                 <section id="delete_Variable">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_Variable</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_Variable">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_Variable</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_Variable"></a>
+
     
     
 
                 </section>
                 <section id="Variable_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Variable_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Variable_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Variable_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Variable_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_name">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_name</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_name">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_name</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_name"></a>
+
     
             <div class="docstring"><p>Returns the name of the constraint.</p>
 </div>
@@ -1894,14 +1815,13 @@ this annotation.</p>
 
                 </section>
                 <section id="Constraint_Clear">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_Clear</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_Clear">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_Clear</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_Clear"></a>
+
     
             <div class="docstring"><p>Clears all variables and coefficients. Does not clear the bounds.</p>
 </div>
@@ -1909,14 +1829,13 @@ this annotation.</p>
 
                 </section>
                 <section id="Constraint_SetCoefficient">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_SetCoefficient</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_SetCoefficient">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_SetCoefficient</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_SetCoefficient"></a>
+
     
             <div class="docstring"><p>Sets the coefficient of the variable on the constraint.</p>
 
@@ -1927,14 +1846,13 @@ or crashes in non-opt mode.</p>
 
                 </section>
                 <section id="Constraint_GetCoefficient">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_GetCoefficient</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_GetCoefficient">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_GetCoefficient</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_GetCoefficient"></a>
+
     
             <div class="docstring"><p>Gets the coefficient of a given variable on the constraint (which is 0 if
 the variable does not appear in the constraint).</p>
@@ -1943,14 +1861,13 @@ the variable does not appear in the constraint).</p>
 
                 </section>
                 <section id="Constraint_lb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_lb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_lb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_lb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_lb"></a>
+
     
             <div class="docstring"><p>Returns the lower bound.</p>
 </div>
@@ -1958,14 +1875,13 @@ the variable does not appear in the constraint).</p>
 
                 </section>
                 <section id="Constraint_ub">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_ub</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_ub">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_ub</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_ub"></a>
+
     
             <div class="docstring"><p>Returns the upper bound.</p>
 </div>
@@ -1973,14 +1889,13 @@ the variable does not appear in the constraint).</p>
 
                 </section>
                 <section id="Constraint_SetBounds">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_SetBounds</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_SetBounds">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_SetBounds</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_SetBounds"></a>
+
     
             <div class="docstring"><p>Sets both the lower and upper bounds.</p>
 </div>
@@ -1988,14 +1903,13 @@ the variable does not appear in the constraint).</p>
 
                 </section>
                 <section id="Constraint_set_is_lazy">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_set_is_lazy</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_set_is_lazy">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_set_is_lazy</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_set_is_lazy"></a>
+
     
             <div class="docstring"><p>Advanced usage: sets the constraint "laziness".</p>
 
@@ -2007,20 +1921,19 @@ Programming solver if its current solution violates the constraint. In this
 case, the constraint is definitively added to the problem. This may be
 useful in some MIP problems, and may have a dramatic impact on performance.</p>
 
-<p>For more info see: <a href="http://tinyurl.com/lazy-constraints">http://tinyurl.com/lazy-constraints</a>.</p>
+<p>For more info see: http://tinyurl.com/lazy-constraints.</p>
 </div>
 
 
                 </section>
                 <section id="Constraint_index">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_index</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_index">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_index</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_index"></a>
+
     
             <div class="docstring"><p>Returns the index of the constraint in the MPSolver::constraints_.</p>
 </div>
@@ -2028,14 +1941,13 @@ useful in some MIP problems, and may have a dramatic impact on performance.</p>
 
                 </section>
                 <section id="Constraint_dual_value">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_dual_value</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_dual_value">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_dual_value</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_dual_value"></a>
+
     
             <div class="docstring"><p>Advanced usage: returns the dual value of the constraint in the current
 solution (only available for continuous problems).</p>
@@ -2044,14 +1956,13 @@ solution (only available for continuous problems).</p>
 
                 </section>
                 <section id="Constraint_basis_status">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_basis_status</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_basis_status">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_basis_status</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_basis_status"></a>
+
     
             <div class="docstring"><p>Advanced usage: returns the basis status of the constraint.</p>
 
@@ -2068,105 +1979,97 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="Constraint_Lb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_Lb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_Lb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_Lb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_Lb"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_Ub">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_Ub</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_Ub">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_Ub</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_Ub"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_SetLb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_SetLb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_SetLb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_SetLb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_SetLb"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_SetUb">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_SetUb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_SetUb">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_SetUb</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_SetUb"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_DualValue">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_DualValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_DualValue">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_DualValue</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_DualValue"></a>
+
     
     
 
                 </section>
                 <section id="delete_Constraint">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_Constraint</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_Constraint">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_Constraint</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_Constraint"></a>
+
     
     
 
                 </section>
                 <section id="Constraint_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Constraint_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#Constraint_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">Constraint_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#Constraint_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="new_MPSolverParameters">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">new_MPSolverParameters</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#new_MPSolverParameters">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">new_MPSolverParameters</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#new_MPSolverParameters"></a>
+
     
             <div class="docstring"><p>The constructor sets all parameters to their default value.</p>
 </div>
@@ -2174,14 +2077,13 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="MPSolverParameters_SetDoubleParam">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_SetDoubleParam</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_SetDoubleParam">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_SetDoubleParam</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_SetDoubleParam"></a>
+
     
             <div class="docstring"><p>Sets a double parameter to a specific value.</p>
 </div>
@@ -2189,14 +2091,13 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="MPSolverParameters_SetIntegerParam">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_SetIntegerParam</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_SetIntegerParam">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_SetIntegerParam</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_SetIntegerParam"></a>
+
     
             <div class="docstring"><p>Sets a integer parameter to a specific value.</p>
 </div>
@@ -2204,14 +2105,13 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="MPSolverParameters_GetDoubleParam">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_GetDoubleParam</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_GetDoubleParam">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_GetDoubleParam</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_GetDoubleParam"></a>
+
     
             <div class="docstring"><p>Returns the value of a double parameter.</p>
 </div>
@@ -2219,14 +2119,13 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="MPSolverParameters_GetIntegerParam">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_GetIntegerParam</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_GetIntegerParam">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_GetIntegerParam</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_GetIntegerParam"></a>
+
     
             <div class="docstring"><p>Returns the value of an integer parameter.</p>
 </div>
@@ -2234,131 +2133,121 @@ and AT_LOWER_BOUND swapped.</p>
 
                 </section>
                 <section id="delete_MPSolverParameters">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_MPSolverParameters</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_MPSolverParameters">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_MPSolverParameters</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_MPSolverParameters"></a>
+
     
     
 
                 </section>
                 <section id="MPSolverParameters_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="MPSolverParameters_swiginit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MPSolverParameters_swiginit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#MPSolverParameters_swiginit">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">MPSolverParameters_swiginit</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#MPSolverParameters_swiginit"></a>
+
     
     
 
                 </section>
                 <section id="new_ModelExportOptions">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">new_ModelExportOptions</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#new_ModelExportOptions">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">new_ModelExportOptions</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#new_ModelExportOptions"></a>
+
     
     
 
                 </section>
                 <section id="delete_ModelExportOptions">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">delete_ModelExportOptions</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#delete_ModelExportOptions">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">delete_ModelExportOptions</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#delete_ModelExportOptions"></a>
+
     
     
 
                 </section>
                 <section id="ModelExportOptions_swigregister">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ModelExportOptions_swigregister</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#ModelExportOptions_swigregister">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">ModelExportOptions_swigregister</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#ModelExportOptions_swigregister"></a>
+
     
     
 
                 </section>
                 <section id="ModelExportOptions_swiginit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ModelExportOptions_swiginit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#ModelExportOptions_swiginit">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">ModelExportOptions_swiginit</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#ModelExportOptions_swiginit"></a>
+
     
     
 
                 </section>
                 <section id="ExportModelAsLpFormat">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ExportModelAsLpFormat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#ExportModelAsLpFormat">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">ExportModelAsLpFormat</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#ExportModelAsLpFormat"></a>
+
     
     
 
                 </section>
                 <section id="ExportModelAsMpsFormat">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ExportModelAsMpsFormat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#ExportModelAsMpsFormat">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">ExportModelAsMpsFormat</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#ExportModelAsMpsFormat"></a>
+
     
     
 
                 </section>
                 <section id="FindErrorInModelProto">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">FindErrorInModelProto</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div class="attr function"><a class="headerlink" href="#FindErrorInModelProto">#&nbsp;&nbsp</a>
 
         
+            <span class="def">def</span>
+            <span class="name">FindErrorInModelProto</span><span class="signature">(unknown)</span>:
     </div>
-    <a class="headerlink" href="#FindErrorInModelProto"></a>
+
     
     
 

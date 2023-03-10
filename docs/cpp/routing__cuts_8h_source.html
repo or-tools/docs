@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/sat/routing_cuts.h Source File</title>
+<title>OR-Tools: routing_cuts.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('routing__cuts_8h_source.html',''); ini
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Note that this is mainly a &quot;symmetric&quot; case algo, but it does still work for</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// the asymmetric case.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a0f470362ff9a5d562aa8d3f74be07cee">GenerateInterestingSubsets</a>(<span class="keywordtype">int</span> num_nodes,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#aab1cecc4b5ebc2796c90bbb4f4f79b83">GenerateInterestingSubsets</a>(<span class="keywordtype">int</span> num_nodes,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                <span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt;&gt;&amp; arcs,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                <span class="keywordtype">int</span> min_subset_size, <span class="keywordtype">int</span> stop_at_num_components,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                std::vector&lt;int&gt;* subset_data,</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('routing__cuts_8h_source.html',''); ini
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// In more generality, this currently enforce the resulting graph to be strongly</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// connected. Note that we already assume basic constraint to be in the lp, so</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// we do not add any cuts for components of size 1.</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a584d91d81d0cc465be48d90c8e1f3149">CreateStronglyConnectedGraphCutGenerator</a>(</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a204bbc466e1c978e4a193b1861062dc0">CreateStronglyConnectedGraphCutGenerator</a>(</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span> num_nodes, std::vector&lt;int&gt; tails, std::vector&lt;int&gt; heads,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    std::vector&lt;Literal&gt; literals, Model* <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
@@ -166,11 +166,11 @@ $(document).ready(function(){initNavTree('routing__cuts_8h_source.html',''); ini
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// components, computes the demand needed to serves it, and depending on whether</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// it contains the depot (node zero) or not, compute the minimum number of</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// vehicle that needs to cross the component border.</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a208c509487cedf2972866eeb7bffd3f4">CreateCVRPCutGenerator</a>(<span class="keywordtype">int</span> num_nodes, std::vector&lt;int&gt; tails,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a45a12c8eddfa1e4d9556cf9835531207">CreateCVRPCutGenerator</a>(<span class="keywordtype">int</span> num_nodes, std::vector&lt;int&gt; tails,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                    std::vector&lt;int&gt; heads,</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                    std::vector&lt;Literal&gt; literals,</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                    std::vector&lt;int64_t&gt; demands,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                    int64_t capacity, Model* <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                    int64_t <a class="code hl_variable" href="routing__flow_8cc.html#a2acb49f4df5288066c43610bede123ec">capacity</a>, Model* <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Try to find a subset where the current LP capacity of the outgoing or</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// incoming arc is not enough to satisfy the demands.</span></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('routing__cuts_8h_source.html',''); ini
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// TODO(user): Support general linear expression for capacities.</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// TODO(user): Some model applies the same capacity to both an arc and its</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// reverse. Also support this case.</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a88677d1180474733727feff2bbca0d31">CreateFlowCutGenerator</a>(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>CutGenerator <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#af9fe0df28664ea547d21d49078f4232e">CreateFlowCutGenerator</a>(</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">int</span> num_nodes, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; tails, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; heads,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">const</span> std::vector&lt;AffineExpression&gt;&amp; arc_capacities,</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> std::vector&lt;bool&gt;&amp; in_subset,</div>
@@ -198,19 +198,23 @@ $(document).ready(function(){initNavTree('routing__cuts_8h_source.html',''); ini
 <div class="ttc" id="acuts_8h_html"><div class="ttname"><a href="cuts_8h.html">cuts.h</a></div></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition:</b> <a href="gurobi__interface_8cc_source.html#l00278">gurobi_interface.cc:278</a></div></div>
 <div class="ttc" id="ainteger_8h_html"><div class="ttname"><a href="integer_8h.html">integer.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a0f470362ff9a5d562aa8d3f74be07cee"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a0f470362ff9a5d562aa8d3f74be07cee">operations_research::sat::GenerateInterestingSubsets</a></div><div class="ttdeci">void GenerateInterestingSubsets(int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, int min_subset_size, int stop_at_num_components, std::vector&lt; int &gt; *subset_data, std::vector&lt; absl::Span&lt; const int &gt; &gt; *subsets)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00126">routing_cuts.cc:126</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a208c509487cedf2972866eeb7bffd3f4"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a208c509487cedf2972866eeb7bffd3f4">operations_research::sat::CreateCVRPCutGenerator</a></div><div class="ttdeci">CutGenerator CreateCVRPCutGenerator(int num_nodes, std::vector&lt; int &gt; tails, std::vector&lt; int &gt; heads, std::vector&lt; Literal &gt; literals, std::vector&lt; int64_t &gt; demands, int64_t capacity, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00440">routing_cuts.cc:440</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a584d91d81d0cc465be48d90c8e1f3149"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a584d91d81d0cc465be48d90c8e1f3149">operations_research::sat::CreateStronglyConnectedGraphCutGenerator</a></div><div class="ttdeci">CutGenerator CreateStronglyConnectedGraphCutGenerator(int num_nodes, std::vector&lt; int &gt; tails, std::vector&lt; int &gt; heads, std::vector&lt; Literal &gt; literals, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00422">routing_cuts.cc:422</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a88677d1180474733727feff2bbca0d31"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a88677d1180474733727feff2bbca0d31">operations_research::sat::CreateFlowCutGenerator</a></div><div class="ttdeci">CutGenerator CreateFlowCutGenerator(int num_nodes, const std::vector&lt; int &gt; &amp;tails, const std::vector&lt; int &gt; &amp;heads, const std::vector&lt; AffineExpression &gt; &amp;arc_capacities, std::function&lt; void(const std::vector&lt; bool &gt; &amp;in_subset, IntegerValue *min_incoming_flow, IntegerValue *min_outgoing_flow)&gt; get_flows, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00607">routing_cuts.cc:607</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a204bbc466e1c978e4a193b1861062dc0"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a204bbc466e1c978e4a193b1861062dc0">operations_research::sat::CreateStronglyConnectedGraphCutGenerator</a></div><div class="ttdeci">CutGenerator CreateStronglyConnectedGraphCutGenerator(int num_nodes, std::vector&lt; int &gt; tails, std::vector&lt; int &gt; heads, std::vector&lt; Literal &gt; literals, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00422">routing_cuts.cc:422</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a45a12c8eddfa1e4d9556cf9835531207"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a45a12c8eddfa1e4d9556cf9835531207">operations_research::sat::CreateCVRPCutGenerator</a></div><div class="ttdeci">CutGenerator CreateCVRPCutGenerator(int num_nodes, std::vector&lt; int &gt; tails, std::vector&lt; int &gt; heads, std::vector&lt; Literal &gt; literals, std::vector&lt; int64_t &gt; demands, int64_t capacity, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00440">routing_cuts.cc:440</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_aab1cecc4b5ebc2796c90bbb4f4f79b83"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#aab1cecc4b5ebc2796c90bbb4f4f79b83">operations_research::sat::GenerateInterestingSubsets</a></div><div class="ttdeci">void GenerateInterestingSubsets(int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, int min_subset_size, int stop_at_num_components, std::vector&lt; int &gt; *subset_data, std::vector&lt; absl::Span&lt; const int &gt; &gt; *subsets)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00126">routing_cuts.cc:126</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_af9fe0df28664ea547d21d49078f4232e"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#af9fe0df28664ea547d21d49078f4232e">operations_research::sat::CreateFlowCutGenerator</a></div><div class="ttdeci">CutGenerator CreateFlowCutGenerator(int num_nodes, const std::vector&lt; int &gt; &amp;tails, const std::vector&lt; int &gt; &amp;heads, const std::vector&lt; AffineExpression &gt; &amp;arc_capacities, std::function&lt; void(const std::vector&lt; bool &gt; &amp;in_subset, IntegerValue *min_incoming_flow, IntegerValue *min_outgoing_flow)&gt; get_flows, Model *model)</div><div class="ttdef"><b>Definition:</b> <a href="routing__cuts_8cc_source.html#l00607">routing_cuts.cc:607</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="arouting__flow_8cc_html_a2acb49f4df5288066c43610bede123ec"><div class="ttname"><a href="routing__flow_8cc.html#a2acb49f4df5288066c43610bede123ec">capacity</a></div><div class="ttdeci">int64_t capacity</div><div class="ttdef"><b>Definition:</b> <a href="routing__flow_8cc_source.html#l00151">routing_flow.cc:151</a></div></div>
 <div class="ttc" id="asat_2model_8h_html"><div class="ttname"><a href="sat_2model_8h.html">model.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="routing__cuts_8h.html">routing_cuts.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

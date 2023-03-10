@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/linear_solver/model_validator.h Source File</title>
+<title>OR-Tools: model_validator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('linear__solver_2model__validator_8h_so
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">model_validator.h</div></div>
+  <div class="headertitle"><div class="title">linear_solver/model_validator.h</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="linear__solver_2model__validator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright 2010-2022 Google LLC</span></div>
@@ -120,23 +120,23 @@ $(document).ready(function(){initNavTree('linear__solver_2model__validator_8h_so
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="lazy__mutable__copy_8h.html">ortools/util/lazy_mutable_copy.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research.html">operations_research</a> {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#aa792f9cf1ccd18b44bbab30916f06745">FindErrorInMPModelProto</a>(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#aa964b4fd4cba1119c722a85bea947d05">FindErrorInMPModelProto</a>(</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> MPModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <span class="keywordtype">double</span> abs_value_threshold = 0.0,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// If false, variable and constraint bounds like [lb=1.2, ub=0.7] yield an</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// error, and also integer variable bounds like [0.7, 0.8].</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> accept_trivially_infeasible_bounds = <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#a2506c50d4eb5505613003f685fd1af9f">FindErrorInMPModelDeltaProto</a>(<span class="keyword">const</span> MPModelDeltaProto&amp; <a class="code hl_variable" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#a1fe0ce1e27e08e817ec6f105976b729f">FindErrorInMPModelDeltaProto</a>(<span class="keyword">const</span> MPModelDeltaProto&amp; <a class="code hl_variable" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                         <span class="keyword">const</span> MPModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>std::optional&lt;LazyMutableCopy&lt;MPModelProto&gt;&gt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><a class="code hl_function" href="namespaceoperations__research.html#a18b0697babe569844931569546701b78">ExtractValidMPModelOrPopulateResponseStatus</a>(<span class="keyword">const</span> MPModelRequest&amp; request,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><a class="code hl_function" href="namespaceoperations__research.html#a95d453a1a521c2158049d1ade0e9ce52">ExtractValidMPModelOrPopulateResponseStatus</a>(<span class="keyword">const</span> MPModelRequest&amp; request,</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                            MPSolutionResponse* <a class="code hl_variable" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research.html#a518848a6b3e172d127121637ab5c608d">ExtractValidMPModelInPlaceOrPopulateResponseStatus</a>(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research.html#a028894df65f61e94b6a406ed76901abf">ExtractValidMPModelInPlaceOrPopulateResponseStatus</a>(</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    MPModelRequest* request, MPSolutionResponse* <a class="code hl_variable" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#ae4ee4d82cf625670cdc1f52197454654">FindFeasibilityErrorInSolutionHint</a>(<span class="keyword">const</span> MPModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#ad30505c27ac9dd7ded3396e750cbff5f">FindFeasibilityErrorInSolutionHint</a>(<span class="keyword">const</span> MPModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                               <span class="keywordtype">double</span> tolerance);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Partially merges a MPConstraintProto onto another, skipping only the</span></div>
@@ -144,38 +144,40 @@ $(document).ready(function(){initNavTree('linear__solver_2model__validator_8h_so
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// FindErrorInMPModelDeltaProto.</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// See the unit test MergeMPConstraintProtoExceptTermsTest that explains why we</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// need this.</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research.html#ae6841e1b78c89cf9139fc1b9ba1ae8cb">MergeMPConstraintProtoExceptTerms</a>(<span class="keyword">const</span> MPConstraintProto&amp; from,</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                       MPConstraintProto* <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research.html#af5d41884f3ad7b19224d25ba9bccd55a">MergeMPConstraintProtoExceptTerms</a>(<span class="keyword">const</span> MPConstraintProto&amp; from,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                       MPConstraintProto* to);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// Applies the given model_delta to &quot;model&quot;. Assumes that</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// FindErrorInMPModelDeltaProto() found no error. For full error checking,</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// please use ExtractValidMPModelOrPopulateResponseStatus() instead.</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research.html#a3ed9bad79131000a00e7f01a5f5b824c">ApplyVerifiedMPModelDelta</a>(<span class="keyword">const</span> MPModelDeltaProto&amp; <a class="code hl_variable" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceoperations__research.html#a5fa4ae40c78d7a248efb26fde93fb805">ApplyVerifiedMPModelDelta</a>(<span class="keyword">const</span> MPModelDeltaProto&amp; <a class="code hl_variable" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>,</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                               MPModelProto* <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_LINEAR_SOLVER_MODEL_VALIDATOR_H_</span></div>
-<div class="ttc" id="acp__model__solver_8cc_html_abcd33b18ce6d5a90a4ba5c37cfa58829"><div class="ttname"><a href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a></div><div class="ttdeci">SharedResponseManager * response</div><div class="ttdef"><b>Definition:</b> <a href="cp__model__solver_8cc_source.html#l02192">cp_model_solver.cc:2192</a></div></div>
+<div class="ttc" id="acp__model__solver_8cc_html_abcd33b18ce6d5a90a4ba5c37cfa58829"><div class="ttname"><a href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a></div><div class="ttdeci">SharedResponseManager * response</div><div class="ttdef"><b>Definition:</b> <a href="cp__model__solver_8cc_source.html#l02345">cp_model_solver.cc:2345</a></div></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition:</b> <a href="gurobi__interface_8cc_source.html#l00278">gurobi_interface.cc:278</a></div></div>
 <div class="ttc" id="alazy__mutable__copy_8h_html"><div class="ttname"><a href="lazy__mutable__copy_8h.html">lazy_mutable_copy.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_a18b0697babe569844931569546701b78"><div class="ttname"><a href="namespaceoperations__research.html#a18b0697babe569844931569546701b78">operations_research::ExtractValidMPModelOrPopulateResponseStatus</a></div><div class="ttdeci">std::optional&lt; LazyMutableCopy&lt; MPModelProto &gt; &gt; ExtractValidMPModelOrPopulateResponseStatus(const MPModelRequest &amp;request, MPSolutionResponse *response)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00685">model_validator.cc:685</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_a2506c50d4eb5505613003f685fd1af9f"><div class="ttname"><a href="namespaceoperations__research.html#a2506c50d4eb5505613003f685fd1af9f">operations_research::FindErrorInMPModelDeltaProto</a></div><div class="ttdeci">std::string FindErrorInMPModelDeltaProto(const MPModelDeltaProto &amp;delta, const MPModelProto &amp;model)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00836">model_validator.cc:836</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_a3ed9bad79131000a00e7f01a5f5b824c"><div class="ttname"><a href="namespaceoperations__research.html#a3ed9bad79131000a00e7f01a5f5b824c">operations_research::ApplyVerifiedMPModelDelta</a></div><div class="ttdeci">void ApplyVerifiedMPModelDelta(const MPModelDeltaProto &amp;delta, MPModelProto *model)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00977">model_validator.cc:977</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_a518848a6b3e172d127121637ab5c608d"><div class="ttname"><a href="namespaceoperations__research.html#a518848a6b3e172d127121637ab5c608d">operations_research::ExtractValidMPModelInPlaceOrPopulateResponseStatus</a></div><div class="ttdeci">bool ExtractValidMPModelInPlaceOrPopulateResponseStatus(MPModelRequest *request, MPSolutionResponse *response)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00762">model_validator.cc:762</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_aa792f9cf1ccd18b44bbab30916f06745"><div class="ttname"><a href="namespaceoperations__research.html#aa792f9cf1ccd18b44bbab30916f06745">operations_research::FindErrorInMPModelProto</a></div><div class="ttdeci">std::string FindErrorInMPModelProto(const MPModelProto &amp;model, double abs_value_threshold, const bool accept_trivially_infeasible_bounds)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00556">model_validator.cc:556</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_ae4ee4d82cf625670cdc1f52197454654"><div class="ttname"><a href="namespaceoperations__research.html#ae4ee4d82cf625670cdc1f52197454654">operations_research::FindFeasibilityErrorInSolutionHint</a></div><div class="ttdeci">std::string FindFeasibilityErrorInSolutionHint(const MPModelProto &amp;model, double tolerance)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00775">model_validator.cc:775</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_ae6841e1b78c89cf9139fc1b9ba1ae8cb"><div class="ttname"><a href="namespaceoperations__research.html#ae6841e1b78c89cf9139fc1b9ba1ae8cb">operations_research::MergeMPConstraintProtoExceptTerms</a></div><div class="ttdeci">void MergeMPConstraintProtoExceptTerms(const MPConstraintProto &amp;from, MPConstraintProto *to)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00934">model_validator.cc:934</a></div></div>
-<div class="ttc" id="aone__tree__lower__bound_8h_html_a717d5dae07519577a5ed09ac24a4708b"><div class="ttname"><a href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a></div><div class="ttdeci">trees with all degrees equal to</div><div class="ttdef"><b>Definition:</b> <a href="one__tree__lower__bound_8h_source.html#l00034">one_tree_lower_bound.h:34</a></div></div>
-<div class="ttc" id="aresource_8cc_html_af12056bc2a8e3ec563f0940d87abbd2e"><div class="ttname"><a href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a></div><div class="ttdeci">int64_t delta</div><div class="ttdef"><b>Definition:</b> <a href="resource_8cc_source.html#l01697">resource.cc:1697</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a028894df65f61e94b6a406ed76901abf"><div class="ttname"><a href="namespaceoperations__research.html#a028894df65f61e94b6a406ed76901abf">operations_research::ExtractValidMPModelInPlaceOrPopulateResponseStatus</a></div><div class="ttdeci">bool ExtractValidMPModelInPlaceOrPopulateResponseStatus(MPModelRequest *request, MPSolutionResponse *response)</div><div class="ttdoc">Like ExtractValidMPModelOrPopulateResponseStatus(), but works in-place: if the MPModel needed extract...</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00762">linear_solver/model_validator.cc:762</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a1fe0ce1e27e08e817ec6f105976b729f"><div class="ttname"><a href="namespaceoperations__research.html#a1fe0ce1e27e08e817ec6f105976b729f">operations_research::FindErrorInMPModelDeltaProto</a></div><div class="ttdeci">std::string FindErrorInMPModelDeltaProto(const MPModelDeltaProto &amp;delta, const MPModelProto &amp;model)</div><div class="ttdoc">Like FindErrorInMPModelProto, but for a MPModelDeltaProto applied to a given baseline model (assumed ...</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00836">linear_solver/model_validator.cc:836</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a5fa4ae40c78d7a248efb26fde93fb805"><div class="ttname"><a href="namespaceoperations__research.html#a5fa4ae40c78d7a248efb26fde93fb805">operations_research::ApplyVerifiedMPModelDelta</a></div><div class="ttdeci">void ApplyVerifiedMPModelDelta(const MPModelDeltaProto &amp;delta, MPModelProto *model)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00977">linear_solver/model_validator.cc:977</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a95d453a1a521c2158049d1ade0e9ce52"><div class="ttname"><a href="namespaceoperations__research.html#a95d453a1a521c2158049d1ade0e9ce52">operations_research::ExtractValidMPModelOrPopulateResponseStatus</a></div><div class="ttdeci">std::optional&lt; LazyMutableCopy&lt; MPModelProto &gt; &gt; ExtractValidMPModelOrPopulateResponseStatus(const MPModelRequest &amp;request, MPSolutionResponse *response)</div><div class="ttdoc">If the model is valid and non-empty, returns it (possibly after extracting the model_delta).</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00685">linear_solver/model_validator.cc:685</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_aa964b4fd4cba1119c722a85bea947d05"><div class="ttname"><a href="namespaceoperations__research.html#aa964b4fd4cba1119c722a85bea947d05">operations_research::FindErrorInMPModelProto</a></div><div class="ttdeci">std::string FindErrorInMPModelProto(const MPModelProto &amp;model, double abs_value_threshold, const bool accept_trivially_infeasible_bounds)</div><div class="ttdoc">Returns an empty string iff the model is valid and not trivially infeasible.</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00556">linear_solver/model_validator.cc:556</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_ad30505c27ac9dd7ded3396e750cbff5f"><div class="ttname"><a href="namespaceoperations__research.html#ad30505c27ac9dd7ded3396e750cbff5f">operations_research::FindFeasibilityErrorInSolutionHint</a></div><div class="ttdeci">std::string FindFeasibilityErrorInSolutionHint(const MPModelProto &amp;model, double tolerance)</div><div class="ttdoc">Returns an empty string if the solution hint given in the model is a feasible solution.</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00775">linear_solver/model_validator.cc:775</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_af5d41884f3ad7b19224d25ba9bccd55a"><div class="ttname"><a href="namespaceoperations__research.html#af5d41884f3ad7b19224d25ba9bccd55a">operations_research::MergeMPConstraintProtoExceptTerms</a></div><div class="ttdeci">void MergeMPConstraintProtoExceptTerms(const MPConstraintProto &amp;from, MPConstraintProto *to)</div><div class="ttdef"><b>Definition:</b> <a href="linear__solver_2model__validator_8cc_source.html#l00934">linear_solver/model_validator.cc:934</a></div></div>
+<div class="ttc" id="aresource_8cc_html_af12056bc2a8e3ec563f0940d87abbd2e"><div class="ttname"><a href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a></div><div class="ttdeci">int64_t delta</div><div class="ttdef"><b>Definition:</b> <a href="resource_8cc_source.html#l01695">resource.cc:1695</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="linear__solver_2model__validator_8h.html">model_validator.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

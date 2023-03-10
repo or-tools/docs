@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/sat/encoding.cc File Reference</title>
+<title>OR-Tools: encoding.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,66 +99,54 @@ $(document).ready(function(){initNavTree('encoding_8cc.html',''); initResizable(
   <div class="headertitle"><div class="title">encoding.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="encoding_8h_source.html">ortools/sat/encoding.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;queue&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;ortools/sat/boolean_problem.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="pb__constraint_8h_source.html">ortools/sat/pb_constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
-<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
-</div>
+
 <p><a href="encoding_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7b60373d086b4bfab3d7eef132513733"><td class="memItemLeft" align="right" valign="top">EncodingNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7b60373d086b4bfab3d7eef132513733">operations_research::sat::LazyMerge</a> (EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, SatSolver *solver)</td></tr>
-<tr class="separator:a7b60373d086b4bfab3d7eef132513733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad715c4b2444c3b6fb162bc2382a2248e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad715c4b2444c3b6fb162bc2382a2248e">operations_research::sat::IncreaseNodeSize</a> (EncodingNode *node, SatSolver *solver)</td></tr>
-<tr class="separator:ad715c4b2444c3b6fb162bc2382a2248e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2c3a42e94b355db103786dd526e2ea"><td class="memItemLeft" align="right" valign="top">EncodingNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7c2c3a42e94b355db103786dd526e2ea">operations_research::sat::FullMerge</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, SatSolver *solver)</td></tr>
-<tr class="separator:a7c2c3a42e94b355db103786dd526e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b03a3ba7d84e291889f64f0897c5518"><td class="memItemLeft" align="right" valign="top">EncodingNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0b03a3ba7d84e291889f64f0897c5518">operations_research::sat::MergeAllNodesWithDeque</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
-<tr class="separator:a0b03a3ba7d84e291889f64f0897c5518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a953eef5429c8eee49950f3f28f22ca09"><td class="memItemLeft" align="right" valign="top">EncodingNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a953eef5429c8eee49950f3f28f22ca09">operations_research::sat::LazyMergeAllNodeWithPQAndIncreaseLb</a> (Coefficient <a class="el" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>, const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
-<tr class="separator:a953eef5429c8eee49950f3f28f22ca09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4757e432922f20f4c09aaf94a9349afc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; EncodingNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4757e432922f20f4c09aaf94a9349afc">operations_research::sat::CreateInitialEncodingNodes</a> (const std::vector&lt; Literal &gt; &amp;literals, const std::vector&lt; Coefficient &gt; &amp;coeffs, Coefficient *offset, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
-<tr class="separator:a4757e432922f20f4c09aaf94a9349afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad49834569f4db2f0f08a71120fb087"><td class="memItemLeft" align="right" valign="top">std::vector&lt; EncodingNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adad49834569f4db2f0f08a71120fb087">operations_research::sat::CreateInitialEncodingNodes</a> (const LinearObjective &amp;objective_proto, Coefficient *offset, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
-<tr class="separator:adad49834569f4db2f0f08a71120fb087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca1dbc518cda34cea6dedda82f1577b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Literal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adca1dbc518cda34cea6dedda82f1577b">operations_research::sat::ReduceNodesAndExtractAssumptions</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, Coefficient stratified_lower_bound, Coefficient *<a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
-<tr class="separator:adca1dbc518cda34cea6dedda82f1577b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced131e00a149099928061e7647c86e5"><td class="memItemLeft" align="right" valign="top">Coefficient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aced131e00a149099928061e7647c86e5">operations_research::sat::ComputeCoreMinWeight</a> (const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; Literal &gt; &amp;core)</td></tr>
-<tr class="separator:aced131e00a149099928061e7647c86e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af483d3fee5a1d84f115a3797cddbd98c"><td class="memItemLeft" align="right" valign="top">Coefficient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af483d3fee5a1d84f115a3797cddbd98c">operations_research::sat::MaxNodeWeightSmallerThan</a> (const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
-<tr class="separator:af483d3fee5a1d84f115a3797cddbd98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af04223a15d34cd6f1999dbc9c63e928f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af04223a15d34cd6f1999dbc9c63e928f">operations_research::sat::ProcessCore</a> (const std::vector&lt; Literal &gt; &amp;core, Coefficient min_weight, std::deque&lt; EncodingNode &gt; *repository, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
-<tr class="separator:af04223a15d34cd6f1999dbc9c63e928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2248038ecf15b3faebf318df773ec8d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2248038ecf15b3faebf318df773ec8d8">operations_research::sat::ProcessCoreWithAlternativeEncoding</a> (const std::vector&lt; Literal &gt; &amp;core, Coefficient min_weight, std::deque&lt; EncodingNode &gt; *repository, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
-<tr class="separator:a2248038ecf15b3faebf318df773ec8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e372550892ddd117f7a23e4fd73518"><td class="memItemLeft" align="right" valign="top">EncodingNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a99e372550892ddd117f7a23e4fd73518">LazyMerge</a> (EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, SatSolver *solver)</td></tr>
+<tr class="separator:a99e372550892ddd117f7a23e4fd73518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af701ea48c91ef8a59a67b5b8d355c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6af701ea48c91ef8a59a67b5b8d355c2">IncreaseNodeSize</a> (EncodingNode *node, SatSolver *solver)</td></tr>
+<tr class="separator:a6af701ea48c91ef8a59a67b5b8d355c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa357501e62925d41514301a6fd211c3e"><td class="memItemLeft" align="right" valign="top">EncodingNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa357501e62925d41514301a6fd211c3e">FullMerge</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, EncodingNode *<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, SatSolver *solver)</td></tr>
+<tr class="separator:aa357501e62925d41514301a6fd211c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ff75f2188e0ac1c58fa4b0cf793a00"><td class="memItemLeft" align="right" valign="top">EncodingNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a29ff75f2188e0ac1c58fa4b0cf793a00">MergeAllNodesWithDeque</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
+<tr class="separator:a29ff75f2188e0ac1c58fa4b0cf793a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377e4b11a03d712029888c83b492c1cb"><td class="memItemLeft" align="right" valign="top">EncodingNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a377e4b11a03d712029888c83b492c1cb">LazyMergeAllNodeWithPQAndIncreaseLb</a> (Coefficient <a class="el" href="pack_8cc.html#a4255f714cea26cdd64f6a0ee72d34a8c">weight</a>, const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
+<tr class="separator:a377e4b11a03d712029888c83b492c1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea70549adb843d22d06bef763a0960c8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; EncodingNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aea70549adb843d22d06bef763a0960c8">CreateInitialEncodingNodes</a> (const std::vector&lt; Literal &gt; &amp;literals, const std::vector&lt; Coefficient &gt; &amp;coeffs, Coefficient *offset, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
+<tr class="separator:aea70549adb843d22d06bef763a0960c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49120b088df93ff6c25f3cf357fdab0e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; EncodingNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a49120b088df93ff6c25f3cf357fdab0e">CreateInitialEncodingNodes</a> (const LinearObjective &amp;objective_proto, Coefficient *offset, std::deque&lt; EncodingNode &gt; *repository)</td></tr>
+<tr class="separator:a49120b088df93ff6c25f3cf357fdab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7b9fb850d243d90ea59790db13a676"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Literal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3c7b9fb850d243d90ea59790db13a676">ReduceNodesAndExtractAssumptions</a> (Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, Coefficient stratified_lower_bound, Coefficient *<a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
+<tr class="separator:a3c7b9fb850d243d90ea59790db13a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9d74b9b207b6e5513334dd135a00a9"><td class="memItemLeft" align="right" valign="top">Coefficient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1c9d74b9b207b6e5513334dd135a00a9">ComputeCoreMinWeight</a> (const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; Literal &gt; &amp;core)</td></tr>
+<tr class="separator:a1c9d74b9b207b6e5513334dd135a00a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c9cfad7e2fa7ae1bbff31720394436"><td class="memItemLeft" align="right" valign="top">Coefficient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad6c9cfad7e2fa7ae1bbff31720394436">MaxNodeWeightSmallerThan</a> (const std::vector&lt; EncodingNode * &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, Coefficient <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
+<tr class="separator:ad6c9cfad7e2fa7ae1bbff31720394436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf33b62b1612d7a8abf3014a2df933c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#accf33b62b1612d7a8abf3014a2df933c">ProcessCore</a> (const std::vector&lt; Literal &gt; &amp;core, Coefficient min_weight, std::deque&lt; EncodingNode &gt; *repository, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
+<tr class="separator:accf33b62b1612d7a8abf3014a2df933c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a6bf1bcc04b9d64b9d9f4178e34333"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae6a6bf1bcc04b9d64b9d9f4178e34333">ProcessCoreWithAlternativeEncoding</a> (const std::vector&lt; Literal &gt; &amp;core, Coefficient min_weight, std::deque&lt; EncodingNode &gt; *repository, std::vector&lt; EncodingNode * &gt; *<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, SatSolver *solver)</td></tr>
+<tr class="separator:ae6a6bf1bcc04b9d64b9d9f4178e34333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="encoding_8cc.html">encoding.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

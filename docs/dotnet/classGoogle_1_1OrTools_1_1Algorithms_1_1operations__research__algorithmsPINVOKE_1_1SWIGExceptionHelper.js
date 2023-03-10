@@ -1,7 +1,0 @@
-var classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper =
-[
-    [ "ExceptionArgumentDelegate", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html#a464d98657acca38088ac7823d4606fad", null ],
-    [ "ExceptionDelegate", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html#a71ee7d46d2fea5a153798908f3c4300a", null ],
-    [ "SWIGRegisterExceptionCallbacks_operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html#a93e231cbae5eb0e50d26d712db20c9d8", null ],
-    [ "SWIGRegisterExceptionCallbacksArgument_operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html#adc6661f160677e91f62d9a54ccaba6bd", null ]
-];

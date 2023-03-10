@@ -1,5 +1,0 @@
-var DecisionBuilderVector_8cs =
-[
-    [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector" ],
-    [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector.DecisionBuilderVectorEnumerator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector_1_1DecisionBuilderVectorEnumerator.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector_1_1DecisionBuilderVectorEnumerator" ]
-];

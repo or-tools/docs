@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/io/proto_converter.h Source File</title>
+<title>OR-Tools: proto_converter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('proto__converter_8h_source.html',''); 
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// in a single repeated field, while ModelProto stores then in separate maps.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// The output constraint maps will each be populated with consecutive indices</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// starting from 0 (hence the indices may change).</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a08236e506a56f4978e904da900947135">   30</a></span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ab1de4bd3fc3c67de6f6a4eebbb28db5e">MPModelProtoToMathOptModel</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#aa6d82b8155f15abbc4957469ea3de547">   30</a></span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a9e2a71c5e9609cac6791082f11176b45">MPModelProtoToMathOptModel</a>(</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> MPModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Returns a linear_solver MPModelProto equivalent to the input math_opt Model.</span></div>
@@ -139,23 +139,26 @@ $(document).ready(function(){initNavTree('proto__converter_8h_source.html',''); 
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// in a single repeated field, while ModelProto stores then in separate maps.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Therefore neither the relative ordering, nor the raw IDs, of general</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// constraints are preserved in the resulting Model.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a6fd353c6fee94bd77eaba698817922ab">   44</a></span>absl::StatusOr&lt;MPModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a5d8c9048c51c1bc6685751a7cb8514fe">MathOptModelToMPModelProto</a>(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a9e8267fbcac61027beddac7716f410dc">   44</a></span>absl::StatusOr&lt;MPModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a349e18a8b5a1bfd4c97f9350851bd343">MathOptModelToMPModelProto</a>(</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_IO_PROTO_CONVERTER_H_</span></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition:</b> <a href="gurobi__interface_8cc_source.html#l00278">gurobi_interface.cc:278</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5d8c9048c51c1bc6685751a7cb8514fe"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5d8c9048c51c1bc6685751a7cb8514fe">operations_research::math_opt::MathOptModelToMPModelProto</a></div><div class="ttdeci">absl::StatusOr&lt;::operations_research::MPModelProto &gt; MathOptModelToMPModelProto(const ::operations_research::math_opt::ModelProto &amp;model)</div><div class="ttdef"><b>Definition:</b> <a href="proto__converter_8cc_source.html#l00371">proto_converter.cc:371</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ab1de4bd3fc3c67de6f6a4eebbb28db5e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ab1de4bd3fc3c67de6f6a4eebbb28db5e">operations_research::math_opt::MPModelProtoToMathOptModel</a></div><div class="ttdeci">absl::StatusOr&lt;::operations_research::math_opt::ModelProto &gt; MPModelProtoToMathOptModel(const ::operations_research::MPModelProto &amp;model)</div><div class="ttdef"><b>Definition:</b> <a href="proto__converter_8cc_source.html#l00219">proto_converter.cc:219</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a349e18a8b5a1bfd4c97f9350851bd343"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a349e18a8b5a1bfd4c97f9350851bd343">operations_research::math_opt::MathOptModelToMPModelProto</a></div><div class="ttdeci">absl::StatusOr&lt;::operations_research::MPModelProto &gt; MathOptModelToMPModelProto(const ::operations_research::math_opt::ModelProto &amp;model)</div><div class="ttdef"><b>Definition:</b> <a href="proto__converter_8cc_source.html#l00371">proto_converter.cc:371</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a9e2a71c5e9609cac6791082f11176b45"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a9e2a71c5e9609cac6791082f11176b45">operations_research::math_opt::MPModelProtoToMathOptModel</a></div><div class="ttdeci">absl::StatusOr&lt;::operations_research::math_opt::ModelProto &gt; MPModelProtoToMathOptModel(const ::operations_research::MPModelProto &amp;model)</div><div class="ttdef"><b>Definition:</b> <a href="proto__converter_8cc_source.html#l00219">proto_converter.cc:219</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_4d7c648e40ee0b5f305e13a998004c47.html">io</a></li><li class="navelem"><a class="el" href="proto__converter_8h.html">proto_converter.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

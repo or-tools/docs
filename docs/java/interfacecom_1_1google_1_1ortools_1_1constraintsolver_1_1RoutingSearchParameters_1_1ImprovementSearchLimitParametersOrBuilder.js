@@ -1,5 +1,0 @@
-var interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParametersOrBuilder =
-[
-    [ "getImprovementRateCoefficient", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParametersOrBuilder.html#adaa60c5620a57c11d949c9e024ed5644", null ],
-    [ "getImprovementRateSolutionsDistance", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParametersOrBuilder.html#a023a7fa97b27c53d215d7fac3a432744", null ]
-];

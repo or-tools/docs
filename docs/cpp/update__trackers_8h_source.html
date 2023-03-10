@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/storage/update_trackers.h Source File</title>
+<title>OR-Tools: update_trackers.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -139,10 +139,10 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// iterate. This enables adding or removing trackers concurrently from multiple</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// threads.</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html">UpdateTrackers</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classoperations__research_1_1math__opt_1_1_update_trackers.html">UpdateTrackers</a> {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// A pair (tracker_id, tracker_data).</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a0a507a618d71667e5c5fbdfff154ba79">   47</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a0a507a618d71667e5c5fbdfff154ba79">IdDataPair</a> = std::pair&lt;UpdateTrackerId, std::unique_ptr&lt;Data&gt;&gt;;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a7391ac58199ef56a3e41c872899dd824">   47</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a7391ac58199ef56a3e41c872899dd824">IdDataPair</a> = std::pair&lt;UpdateTrackerId, std::unique_ptr&lt;Data&gt;&gt;;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="comment">// Adds a new tracker. The args are forwarded to the constructor of the Data</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// type.</span></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// Thread-safety: this method is safe to be called from multiple threads at</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// the same time.</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#ab273044b03a9ec0af497967b9f35750b">   57</a></span>  UpdateTrackerId <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#ab273044b03a9ec0af497967b9f35750b">NewUpdateTracker</a>(T&amp;&amp;... args);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#ae3304ebc92ccf6b1123df73635c246a5">   57</a></span>  UpdateTrackerId <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#ae3304ebc92ccf6b1123df73635c246a5">NewUpdateTracker</a>(T&amp;&amp;... args);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// Removes an update tracker.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">//</span></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="comment">// Complexity: O(n), n is the number of trackers. The number of update</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">// trackers should be small, if it grows to a point where this is an issue</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="comment">// this class can easily be made more efficient (O(lg n) or better).</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#afe280ea9a83de3a44d9486cd666cefc2">DeleteUpdateTracker</a>(UpdateTrackerId update_tracker);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a59489761076782fbdc38b652f5a18e3b">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a59489761076782fbdc38b652f5a18e3b">DeleteUpdateTracker</a>(UpdateTrackerId update_tracker);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="comment">// Apply pending additions/deletions and return the trackers.</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="comment">//</span></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// other call. Note though that concurrent calls to NewUpdateTracker() and</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">// DeleteUpdateTracker() are fine since the changes will only be applied on</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// the next call to this function.</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">const</span> std::vector&lt;IdDataPair&gt;&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a4ec518b7b46236892f71c4c5c07b4a2b">GetUpdatedTrackers</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#aa38fccc33c0a4f8b70791fbeabd660f1">   84</a></span>  <span class="keyword">const</span> std::vector&lt;IdDataPair&gt;&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#aa38fccc33c0a4f8b70791fbeabd660f1">GetUpdatedTrackers</a>();</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">// Returns the data corresponding to the provided tracker. It CHECKs that the</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// tracker exists.</span></div>
@@ -194,8 +194,8 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// Complexity: O(n) where n is the number of trackers. The number of update</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// trackers should be small, if it grows to a point where this is an issue</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// this class can easily be made more efficient (O(lg n) or better).</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">GetData</a>(UpdateTrackerId update_tracker);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">const</span> Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">GetData</a>(UpdateTrackerId update_tracker) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">   99</a></span>  Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">GetData</a>(UpdateTrackerId update_tracker);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a734f8febeadddbadc9cfc9719bbcf821">  100</a></span>  <span class="keyword">const</span> Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a734f8febeadddbadc9cfc9719bbcf821">GetData</a>(UpdateTrackerId update_tracker) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">// Returns the iterator pointing to the provided tracker, or v.end() if not</span></div>
@@ -254,9 +254,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>UpdateTrackerId <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#ab273044b03a9ec0af497967b9f35750b">UpdateTrackers&lt;Data&gt;::NewUpdateTracker</a>(Args&amp;&amp;... args) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a7a3aaf9c9e9316c99559fda9ad5c8c91">  161</a></span>UpdateTrackerId <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#ae3304ebc92ccf6b1123df73635c246a5">UpdateTrackers&lt;Data&gt;::NewUpdateTracker</a>(Args&amp;&amp;... args) {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a237f7160384725c99be4fa1c0392f80c">  163</a></span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">const</span> UpdateTrackerId update_tracker = next_update_tracker_;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  ++next_update_tracker_;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">typename</span> std::vector&lt;typename UpdateTrackers&lt;Data&gt;::IdDataPair&gt;::iterator</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><a class="code hl_class" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html">UpdateTrackers&lt;Data&gt;::FindTracker</a>(std::vector&lt;IdDataPair&gt;&amp; v,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><a class="code hl_class" href="classoperations__research_1_1math__opt_1_1_update_trackers.html">UpdateTrackers&lt;Data&gt;::FindTracker</a>(std::vector&lt;IdDataPair&gt;&amp; v,</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                                  <span class="keyword">const</span> UpdateTrackerId update_tracker) {</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordflow">return</span> std::find_if(v.begin(), v.end(), [&amp;](<span class="keyword">const</span> IdDataPair&amp; pair) {</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    return pair.first == update_tracker;</div>
@@ -286,9 +286,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#afe280ea9a83de3a44d9486cd666cefc2">UpdateTrackers&lt;Data&gt;::DeleteUpdateTracker</a>(</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a59489761076782fbdc38b652f5a18e3b">  193</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a59489761076782fbdc38b652f5a18e3b">UpdateTrackers&lt;Data&gt;::DeleteUpdateTracker</a>(</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">const</span> UpdateTrackerId update_tracker) {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#afe280ea9a83de3a44d9486cd666cefc2">  195</a></span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="comment">// The delete trackers may still be in pending_new_trackers_. We have to</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="comment">// remove it from there.</span></div>
@@ -318,9 +318,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">const</span> std::vector&lt;typename UpdateTrackers&lt;Data&gt;::IdDataPair&gt;&amp;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a4ec518b7b46236892f71c4c5c07b4a2b">UpdateTrackers&lt;Data&gt;::GetUpdatedTrackers</a>() {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#aa38fccc33c0a4f8b70791fbeabd660f1">  225</a></span><a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#aa38fccc33c0a4f8b70791fbeabd660f1">UpdateTrackers&lt;Data&gt;::GetUpdatedTrackers</a>() {</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// Here we use the &quot;relaxed&quot; memory order since we don&#39;t want or need to</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a4ec518b7b46236892f71c4c5c07b4a2b">  227</a></span>  <span class="comment">// ensure proper ordering of memory accesses. We only want to make sure it is</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="comment">// ensure proper ordering of memory accesses. We only want to make sure it is</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="comment">// safe to delete a tracker from another thread while we read it</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="comment">// here. Temporarily modifying a deleted tracker has no downside effect; we</span></div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="comment">// only care that the tracker will eventually be deleted, not that it is</span></div>
@@ -332,9 +332,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// Flush removed trackers.</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_function" href="namespacegtl.html#a4afa1e83cd6407fa4b77d49b8c136806">gtl::STLEraseAllFromSequenceIf</a>(</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_function" href="namespacegtl.html#a9b71e7bc205f22b77dd244d744572968">gtl::STLEraseAllFromSequenceIf</a>(</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        &amp;trackers_,</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        [&amp;](<span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a0a507a618d71667e5c5fbdfff154ba79">IdDataPair</a>&amp; pair) ABSL_SHARED_LOCKS_REQUIRED(mutex_) {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        [&amp;](<span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a7391ac58199ef56a3e41c872899dd824">IdDataPair</a>&amp; pair) ABSL_SHARED_LOCKS_REQUIRED(mutex_) {</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>          <span class="keyword">const</span> <span class="keyword">auto</span> found = pending_removed_trackers_.find(pair.first);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          <a class="code hl_function" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (found == pending_removed_trackers_.end()) {</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            return false;</div>
@@ -357,9 +357,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">UpdateTrackers&lt;Data&gt;::GetData</a>(UpdateTrackerId update_tracker) {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">  264</a></span>Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">UpdateTrackers&lt;Data&gt;::GetData</a>(UpdateTrackerId update_tracker) {</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">  266</a></span>  <span class="comment">// Note that here we could apply the pending actions. We don&#39;t do so to keep</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="comment">// Note that here we could apply the pending actions. We don&#39;t do so to keep</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="comment">// the symmetry with the const overload below.</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="comment">// The tracker may still be in pending_new_trackers_.</span></div>
@@ -384,9 +384,9 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Data&gt;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keyword">const</span> Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">UpdateTrackers&lt;Data&gt;::GetData</a>(</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a734f8febeadddbadc9cfc9719bbcf821">  291</a></span><span class="keyword">const</span> Data&amp; <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">UpdateTrackers&lt;Data&gt;::GetData</a>(</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    UpdateTrackerId update_tracker)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a02ce8d8d1523cc88828c66094ed72db8">  293</a></span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  <span class="keyword">const</span> absl::MutexLock lock(&amp;mutex_);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <span class="comment">// The tracker may still be in pending_new_trackers_.</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keyword">const</span> <span class="keyword">auto</span> found_new = FindTracker(pending_new_trackers_, update_tracker);</div>
@@ -411,26 +411,30 @@ $(document).ready(function(){initNavTree('update__trackers_8h_source.html',''); 
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_STORAGE_UPDATE_TRACKERS_H_</span></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html">operations_research::math_opt::UpdateTrackers</a></div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00044">update_trackers.h:44</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html_a0a507a618d71667e5c5fbdfff154ba79"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a0a507a618d71667e5c5fbdfff154ba79">operations_research::math_opt::UpdateTrackers::IdDataPair</a></div><div class="ttdeci">std::pair&lt; UpdateTrackerId, std::unique_ptr&lt; Data &gt; &gt; IdDataPair</div><div class="ttdoc">A pair (tracker_id, tracker_data).</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00047">update_trackers.h:47</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html_a4ec518b7b46236892f71c4c5c07b4a2b"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a4ec518b7b46236892f71c4c5c07b4a2b">operations_research::math_opt::UpdateTrackers::GetUpdatedTrackers</a></div><div class="ttdeci">const std::vector&lt; IdDataPair &gt; &amp; GetUpdatedTrackers()</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00227">update_trackers.h:227</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html_a9ea0d314b0579d4ee245a450c7e51000"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#a9ea0d314b0579d4ee245a450c7e51000">operations_research::math_opt::UpdateTrackers::GetData</a></div><div class="ttdeci">Data &amp; GetData(UpdateTrackerId update_tracker)</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00266">update_trackers.h:266</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html_ab273044b03a9ec0af497967b9f35750b"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#ab273044b03a9ec0af497967b9f35750b">operations_research::math_opt::UpdateTrackers::NewUpdateTracker</a></div><div class="ttdeci">UpdateTrackerId NewUpdateTracker(T &amp;&amp;... args)</div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1UpdateTrackers_html_afe280ea9a83de3a44d9486cd666cefc2"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1UpdateTrackers.html#afe280ea9a83de3a44d9486cd666cefc2">operations_research::math_opt::UpdateTrackers::DeleteUpdateTracker</a></div><div class="ttdeci">void DeleteUpdateTracker(UpdateTrackerId update_tracker)</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00195">update_trackers.h:195</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html">operations_research::math_opt::UpdateTrackers</a></div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00044">update_trackers.h:44</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_a3a41493918d702d2804ed98b0e22b481"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a3a41493918d702d2804ed98b0e22b481">operations_research::math_opt::UpdateTrackers::GetData</a></div><div class="ttdeci">Data &amp; GetData(UpdateTrackerId update_tracker)</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00264">update_trackers.h:264</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_a59489761076782fbdc38b652f5a18e3b"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a59489761076782fbdc38b652f5a18e3b">operations_research::math_opt::UpdateTrackers::DeleteUpdateTracker</a></div><div class="ttdeci">void DeleteUpdateTracker(UpdateTrackerId update_tracker)</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00193">update_trackers.h:193</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_a734f8febeadddbadc9cfc9719bbcf821"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a734f8febeadddbadc9cfc9719bbcf821">operations_research::math_opt::UpdateTrackers::GetData</a></div><div class="ttdeci">const Data &amp; GetData(UpdateTrackerId update_tracker) const</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00291">update_trackers.h:291</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_a7391ac58199ef56a3e41c872899dd824"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#a7391ac58199ef56a3e41c872899dd824">operations_research::math_opt::UpdateTrackers::IdDataPair</a></div><div class="ttdeci">std::pair&lt; UpdateTrackerId, std::unique_ptr&lt; Data &gt; &gt; IdDataPair</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00047">update_trackers.h:47</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_aa38fccc33c0a4f8b70791fbeabd660f1"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#aa38fccc33c0a4f8b70791fbeabd660f1">operations_research::math_opt::UpdateTrackers::GetUpdatedTrackers</a></div><div class="ttdeci">const std::vector&lt; IdDataPair &gt; &amp; GetUpdatedTrackers()</div><div class="ttdef"><b>Definition:</b> <a href="update__trackers_8h_source.html#l00225">update_trackers.h:225</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1_update_trackers_html_ae3304ebc92ccf6b1123df73635c246a5"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1_update_trackers.html#ae3304ebc92ccf6b1123df73635c246a5">operations_research::math_opt::UpdateTrackers::NewUpdateTracker</a></div><div class="ttdeci">UpdateTrackerId NewUpdateTracker(T &amp;&amp;... args)</div></div>
 <div class="ttc" id="amodel__storage__types_8h_html"><div class="ttname"><a href="model__storage__types_8h.html">model_storage_types.h</a></div></div>
 <div class="ttc" id="anamespaceabsl_html"><div class="ttname"><a href="namespaceabsl.html">absl</a></div><div class="ttdef"><b>Definition:</b> <a href="cleanup_8h_source.html#l00022">cleanup.h:22</a></div></div>
-<div class="ttc" id="anamespacegtl_html_a4afa1e83cd6407fa4b77d49b8c136806"><div class="ttname"><a href="namespacegtl.html#a4afa1e83cd6407fa4b77d49b8c136806">gtl::STLEraseAllFromSequenceIf</a></div><div class="ttdeci">void STLEraseAllFromSequenceIf(T *v, P pred)</div><div class="ttdoc">Remove each element e in v satisfying pred(e).</div><div class="ttdef"><b>Definition:</b> <a href="stl__util_8h_source.html#l00107">stl_util.h:107</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespacegtl_html_a9b71e7bc205f22b77dd244d744572968"><div class="ttname"><a href="namespacegtl.html#a9b71e7bc205f22b77dd244d744572968">gtl::STLEraseAllFromSequenceIf</a></div><div class="ttdeci">void STLEraseAllFromSequenceIf(T *v, P pred)</div><div class="ttdef"><b>Definition:</b> <a href="stl__util_8h_source.html#l00107">stl_util.h:107</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
 <div class="ttc" id="aparser_8yy_8cc_html_a33e91cd0cef6786e9e3a27ac67707207"><div class="ttname"><a href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a></div><div class="ttdeci">if(!yyg-&gt;yy_init)</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00965">parser.yy.cc:965</a></div></div>
 <div class="ttc" id="astl__util_8h_html"><div class="ttname"><a href="stl__util_8h.html">stl_util.h</a></div></div>
 <div class="ttc" id="astrong__int_8h_html"><div class="ttname"><a href="strong__int_8h.html">strong_int.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_d7102cb9b8f7e43929a688c6d6951c0b.html">storage</a></li><li class="navelem"><a class="el" href="update__trackers_8h.html">update_trackers.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

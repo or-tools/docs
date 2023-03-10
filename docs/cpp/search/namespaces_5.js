@@ -16,8 +16,7 @@ var searchData=
   ['rcpsp_13',['rcpsp',['../namespaceoperations__research_1_1scheduling_1_1rcpsp.html',1,'operations_research::scheduling']]],
   ['sat_14',['sat',['../namespaceoperations__research_1_1sat.html',1,'operations_research']]],
   ['scheduling_15',['scheduling',['../namespaceoperations__research_1_1scheduling.html',1,'operations_research']]],
-  ['source_16',['Source',['../namespaceoperations__research_1_1Source.html',1,'operations_research']]],
-  ['sysinfo_17',['sysinfo',['../namespaceoperations__research_1_1sysinfo.html',1,'operations_research']]],
-  ['utf8_18',['utf8',['../namespaceoperations__research_1_1utf8.html',1,'operations_research']]],
-  ['vbp_19',['vbp',['../namespaceoperations__research_1_1packing_1_1vbp.html',1,'operations_research::packing']]]
+  ['sysinfo_16',['sysinfo',['../namespaceoperations__research_1_1sysinfo.html',1,'operations_research']]],
+  ['utf8_17',['utf8',['../namespaceoperations__research_1_1utf8.html',1,'operations_research']]],
+  ['vbp_18',['vbp',['../namespaceoperations__research_1_1packing_1_1vbp.html',1,'operations_research::packing']]]
 ];

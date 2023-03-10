@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/glop/parameters_validation.cc Source File</title>
+<title>OR-Tools: parameters_validation.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('glop_2parameters__validation_8cc_sourc
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">parameters_validation.cc</div></div>
+  <div class="headertitle"><div class="title">glop/parameters_validation.cc</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="glop_2parameters__validation_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright 2010-2022 Google LLC</span></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('glop_2parameters__validation_8cc_sourc
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    return absl::StrCat(&quot;parameter &#39;&quot;</span>, #name, &quot;&#39; is NaN&quot;); \</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1glop.html#a2f88410ff8ff6593acc7e3b685c3c54b">   51</a></span>std::string <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#a2f88410ff8ff6593acc7e3b685c3c54b">ValidateParameters</a>(<span class="keyword">const</span> GlopParameters&amp; params) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1glop.html#a4154394066834c388c60cbc7d7f59c15">   51</a></span>std::string <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#a4154394066834c388c60cbc7d7f59c15">ValidateParameters</a>(<span class="keyword">const</span> GlopParameters&amp; params) {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_define" href="glop_2parameters__validation_8cc.html#a28ea8ea9dfc9198f6007f5255f2d735b">TEST_FINITE_AND_NON_NEGATIVE</a>(degenerate_ministep_factor);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_define" href="glop_2parameters__validation_8cc.html#a28ea8ea9dfc9198f6007f5255f2d735b">TEST_FINITE_AND_NON_NEGATIVE</a>(drop_tolerance);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_define" href="glop_2parameters__validation_8cc.html#a28ea8ea9dfc9198f6007f5255f2d735b">TEST_FINITE_AND_NON_NEGATIVE</a>(dual_feasibility_tolerance);</div>
@@ -195,20 +195,23 @@ $(document).ready(function(){initNavTree('glop_2parameters__validation_8cc_sourc
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#undef TEST_FINITE_AND_NON_NEGATIVE</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}  <span class="comment">// namespace operations_research::glop</span></div>
-<div class="ttc" id="aglop_2parameters__validation_8cc_html_a28ea8ea9dfc9198f6007f5255f2d735b"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#a28ea8ea9dfc9198f6007f5255f2d735b">TEST_FINITE_AND_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_FINITE_AND_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00023">parameters_validation.cc:23</a></div></div>
-<div class="ttc" id="aglop_2parameters__validation_8cc_html_a92d45b4269a92db96be76b5fe7c725ab"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#a92d45b4269a92db96be76b5fe7c725ab">TEST_INTEGER_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_INTEGER_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00033">parameters_validation.cc:33</a></div></div>
-<div class="ttc" id="aglop_2parameters__validation_8cc_html_ae1de38ef8cb1bb080aebe1d3acd7f751"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#ae1de38ef8cb1bb080aebe1d3acd7f751">TEST_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00038">parameters_validation.cc:38</a></div></div>
-<div class="ttc" id="aglop_2parameters__validation_8cc_html_ae759f7f39e136673d3bbd265cb814619"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#ae759f7f39e136673d3bbd265cb814619">TEST_NOT_NAN</a></div><div class="ttdeci">#define TEST_NOT_NAN(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00046">parameters_validation.cc:46</a></div></div>
+<div class="ttc" id="aglop_2parameters__validation_8cc_html_a28ea8ea9dfc9198f6007f5255f2d735b"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#a28ea8ea9dfc9198f6007f5255f2d735b">TEST_FINITE_AND_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_FINITE_AND_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00023">glop/parameters_validation.cc:23</a></div></div>
+<div class="ttc" id="aglop_2parameters__validation_8cc_html_a92d45b4269a92db96be76b5fe7c725ab"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#a92d45b4269a92db96be76b5fe7c725ab">TEST_INTEGER_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_INTEGER_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00033">glop/parameters_validation.cc:33</a></div></div>
+<div class="ttc" id="aglop_2parameters__validation_8cc_html_ae1de38ef8cb1bb080aebe1d3acd7f751"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#ae1de38ef8cb1bb080aebe1d3acd7f751">TEST_NON_NEGATIVE</a></div><div class="ttdeci">#define TEST_NON_NEGATIVE(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00038">glop/parameters_validation.cc:38</a></div></div>
+<div class="ttc" id="aglop_2parameters__validation_8cc_html_ae759f7f39e136673d3bbd265cb814619"><div class="ttname"><a href="glop_2parameters__validation_8cc.html#ae759f7f39e136673d3bbd265cb814619">TEST_NOT_NAN</a></div><div class="ttdeci">#define TEST_NOT_NAN(name)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00046">glop/parameters_validation.cc:46</a></div></div>
 <div class="ttc" id="aglop_2parameters__validation_8h_html"><div class="ttname"><a href="glop_2parameters__validation_8h.html">parameters_validation.h</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1glop_html"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html">operations_research::glop</a></div><div class="ttdef"><b>Definition:</b> <a href="basis__representation_8cc_source.html#l00024">basis_representation.cc:24</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1glop_html_a2f88410ff8ff6593acc7e3b685c3c54b"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a2f88410ff8ff6593acc7e3b685c3c54b">operations_research::glop::ValidateParameters</a></div><div class="ttdeci">std::string ValidateParameters(const GlopParameters &amp;params)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00051">parameters_validation.cc:51</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1glop_html_a4154394066834c388c60cbc7d7f59c15"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a4154394066834c388c60cbc7d7f59c15">operations_research::glop::ValidateParameters</a></div><div class="ttdeci">std::string ValidateParameters(const GlopParameters &amp;params)</div><div class="ttdef"><b>Definition:</b> <a href="glop_2parameters__validation_8cc_source.html#l00051">glop/parameters_validation.cc:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_747248fa8ec2ebcb4d8ad85ced34db0b.html">glop</a></li><li class="navelem"><a class="el" href="glop_2parameters__validation_8cc.html">parameters_validation.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

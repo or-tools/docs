@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/gscip/gscip_ext.h File Reference</title>
+<title>OR-Tools: gscip_ext.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,60 +100,51 @@ $(document).ready(function(){initNavTree('gscip__ext_8h.html',''); initResizable
   <div class="headertitle"><div class="title">gscip_ext.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="gscip_8h_source.html">ortools/gscip/gscip.h</a>&quot;</code><br />
-<code>#include &quot;scip/scip.h&quot;</code><br />
-<code>#include &quot;scip/scip_prob.h&quot;</code><br />
-<code>#include &quot;scip/type_cons.h&quot;</code><br />
-<code>#include &quot;scip/type_scip.h&quot;</code><br />
-<code>#include &quot;scip/type_var.h&quot;</code><br />
-</div>
+
 <p><a href="gscip__ext_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1GScipLinearExpr.html">operations_research::GScipLinearExpr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_g_scip_linear_expr.html">GScipLinearExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1GScipIndicatorRangeConstraint.html">operations_research::GScipIndicatorRangeConstraint</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_g_scip_indicator_range_constraint.html">GScipIndicatorRangeConstraint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:accd2f1d8841a3fb453cbdfcf8cb4cb72"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#accd2f1d8841a3fb453cbdfcf8cb4cb72">operations_research::GScipCreateAbs</a> (GScip *gscip, SCIP_Var *x, SCIP_Var *abs_x, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:accd2f1d8841a3fb453cbdfcf8cb4cb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c40c9e393e3d0b99776c35077ae7a39"><td class="memItemLeft" align="right" valign="top">GScipLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0c40c9e393e3d0b99776c35077ae7a39">operations_research::GScipDifference</a> (GScipLinearExpr left, const GScipLinearExpr &amp;right)</td></tr>
-<tr class="memdesc:a0c40c9e393e3d0b99776c35077ae7a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns left - right.  <br /></td></tr>
-<tr class="separator:a0c40c9e393e3d0b99776c35077ae7a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0b24b4daa04752c128ce3fe8d75dc1"><td class="memItemLeft" align="right" valign="top">GScipLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3e0b24b4daa04752c128ce3fe8d75dc1">operations_research::GScipNegate</a> (GScipLinearExpr expr)</td></tr>
-<tr class="memdesc:a3e0b24b4daa04752c128ce3fe8d75dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns -expr.  <br /></td></tr>
-<tr class="separator:a3e0b24b4daa04752c128ce3fe8d75dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6680ee293abb82450daa52bbc7f5f272"><td class="memItemLeft" align="right" valign="top">GScipLinearRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6680ee293abb82450daa52bbc7f5f272">operations_research::GScipLe</a> (const GScipLinearExpr left, const GScipLinearExpr &amp;right)</td></tr>
-<tr class="separator:a6680ee293abb82450daa52bbc7f5f272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae4481bf6aa10bc1937cb0362116114"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2ae4481bf6aa10bc1937cb0362116114">operations_research::GScipCreateMaximum</a> (GScip *gscip, const GScipLinearExpr &amp;resultant, const std::vector&lt; GScipLinearExpr &gt; &amp;terms, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:a2ae4481bf6aa10bc1937cb0362116114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6f1e0e7d83398448eb9b12453c8eb6"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4d6f1e0e7d83398448eb9b12453c8eb6">operations_research::GScipCreateMinimum</a> (GScip *gscip, const GScipLinearExpr &amp;resultant, const std::vector&lt; GScipLinearExpr &gt; &amp;terms, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:a4d6f1e0e7d83398448eb9b12453c8eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd89dd4ada0c69d795e50f12f5d2ffb"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#affd89dd4ada0c69d795e50f12f5d2ffb">operations_research::GScipCreateIndicatorRange</a> (GScip *gscip, const GScipIndicatorRangeConstraint &amp;indicator_range, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>=&quot;&quot;, const GScipConstraintOptions &amp;options=GScipConstraintOptions())</td></tr>
-<tr class="memdesc:affd89dd4ada0c69d795e50f12f5d2ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports unbounded variables in indicator_range.range.variables.  <br /></td></tr>
-<tr class="separator:affd89dd4ada0c69d795e50f12f5d2ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065e3573400912c0a454051271d1f10e"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a065e3573400912c0a454051271d1f10e">operations_research::GScipAddQuadraticObjectiveTerm</a> (GScip *gscip, std::vector&lt; SCIP_Var * &gt; quadratic_variables1, std::vector&lt; SCIP_Var * &gt; quadratic_variables2, std::vector&lt; double &gt; quadratic_coefficients, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:a065e3573400912c0a454051271d1f10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876ba05b3ab41e7e9bf0425d47197e5f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a876ba05b3ab41e7e9bf0425d47197e5f">GScipCreateAbs</a> (GScip *gscip, SCIP_Var *x, SCIP_Var *abs_x, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:a876ba05b3ab41e7e9bf0425d47197e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f87c40d4bdf2c5a4a38f4b949d21f06"><td class="memItemLeft" align="right" valign="top">GScipLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2f87c40d4bdf2c5a4a38f4b949d21f06">GScipDifference</a> (GScipLinearExpr left, const GScipLinearExpr &amp;right)</td></tr>
+<tr class="separator:a2f87c40d4bdf2c5a4a38f4b949d21f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed9a24bde49a74960848a3d560274a3"><td class="memItemLeft" align="right" valign="top">GScipLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afed9a24bde49a74960848a3d560274a3">GScipNegate</a> (GScipLinearExpr expr)</td></tr>
+<tr class="separator:afed9a24bde49a74960848a3d560274a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297998830d7b9c480a499be99a90c7c0"><td class="memItemLeft" align="right" valign="top">GScipLinearRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a297998830d7b9c480a499be99a90c7c0">GScipLe</a> (const GScipLinearExpr left, const GScipLinearExpr &amp;right)</td></tr>
+<tr class="separator:a297998830d7b9c480a499be99a90c7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32116424b56445ea83eebdb47a21eb21"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a32116424b56445ea83eebdb47a21eb21">GScipCreateMaximum</a> (GScip *gscip, const GScipLinearExpr &amp;resultant, const std::vector&lt; GScipLinearExpr &gt; &amp;terms, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:a32116424b56445ea83eebdb47a21eb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb287f3f4d1bce6b4ec847c62a08a8ee"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abb287f3f4d1bce6b4ec847c62a08a8ee">GScipCreateMinimum</a> (GScip *gscip, const GScipLinearExpr &amp;resultant, const std::vector&lt; GScipLinearExpr &gt; &amp;terms, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:abb287f3f4d1bce6b4ec847c62a08a8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae203d18bb597e00e945b5e16de484731"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae203d18bb597e00e945b5e16de484731">GScipCreateIndicatorRange</a> (GScip *gscip, const GScipIndicatorRangeConstraint &amp;indicator_range, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, const GScipConstraintOptions &amp;options)</td></tr>
+<tr class="separator:ae203d18bb597e00e945b5e16de484731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986eab45ec513f2034562cae6e02b4c6"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a986eab45ec513f2034562cae6e02b4c6">GScipAddQuadraticObjectiveTerm</a> (GScip *gscip, std::vector&lt; SCIP_Var * &gt; quadratic_variables1, std::vector&lt; SCIP_Var * &gt; quadratic_variables2, std::vector&lt; double &gt; quadratic_coefficients, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:a986eab45ec513f2034562cae6e02b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_7ebe005d782fae78e581b12d74364053.html">gscip</a></li><li class="navelem"><a class="el" href="gscip__ext_8h.html">gscip_ext.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

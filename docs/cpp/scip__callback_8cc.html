@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/linear_solver/scip_callback.cc File Reference</title>
+<title>OR-Tools: scip_callback.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,78 +101,42 @@ $(document).ready(function(){initNavTree('scip__callback_8cc.html',''); initResi
   <div class="headertitle"><div class="title">scip_callback.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="scip__callback_8h_source.html">ortools/linear_solver/scip_callback.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;absl/types/span.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="scip__helper__macros_8h_source.html">ortools/linear_solver/scip_helper_macros.h</a>&quot;</code><br />
-<code>#include &quot;scip/cons_linear.h&quot;</code><br />
-<code>#include &quot;scip/def.h&quot;</code><br />
-<code>#include &quot;scip/pub_cons.h&quot;</code><br />
-<code>#include &quot;scip/scip.h&quot;</code><br />
-<code>#include &quot;scip/scip_cons.h&quot;</code><br />
-<code>#include &quot;scip/scip_cut.h&quot;</code><br />
-<code>#include &quot;scip/scip_general.h&quot;</code><br />
-<code>#include &quot;scip/scip_lp.h&quot;</code><br />
-<code>#include &quot;scip/scip_param.h&quot;</code><br />
-<code>#include &quot;scip/scip_prob.h&quot;</code><br />
-<code>#include &quot;scip/scip_sol.h&quot;</code><br />
-<code>#include &quot;scip/scip_solvingstats.h&quot;</code><br />
-<code>#include &quot;scip/scip_tree.h&quot;</code><br />
-<code>#include &quot;scip/scipdefplugins.h&quot;</code><br />
-<code>#include &quot;scip/struct_cons.h&quot;</code><br />
-<code>#include &quot;scip/struct_tree.h&quot;</code><br />
-<code>#include &quot;scip/struct_var.h&quot;</code><br />
-<code>#include &quot;scip/type_cons.h&quot;</code><br />
-<code>#include &quot;scip/type_lp.h&quot;</code><br />
-<code>#include &quot;scip/type_result.h&quot;</code><br />
-<code>#include &quot;scip/type_retcode.h&quot;</code><br />
-<code>#include &quot;scip/type_scip.h&quot;</code><br />
-<code>#include &quot;scip/type_sol.h&quot;</code><br />
-<code>#include &quot;scip/type_tree.h&quot;</code><br />
-<code>#include &quot;scip/type_var.h&quot;</code><br />
-</div>
+
 <p><a href="scip__callback_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSCIP__ConshdlrData.html">SCIP_ConshdlrData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_c_i_p___conshdlr_data.html">SCIP_ConshdlrData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSCIP__ConsData.html">SCIP_ConsData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_c_i_p___cons_data.html">SCIP_ConsData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CallbackSetup.html">operations_research::CallbackSetup</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_callback_setup.html">CallbackSetup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html">operations_research::internal</a></td></tr>
-<tr class="memdesc:namespaceoperations__research_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details, here and below. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:acb335e855d7f794ab66a05a4859a7a46"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acb335e855d7f794ab66a05a4859a7a46">operations_research::ScipSeparationResult</a> { <a class="el" href="namespaceoperations__research.html#acb335e855d7f794ab66a05a4859a7a46aa8e1b948c80fb564a5eac917da76a7e9">operations_research::kLazyConstraintAdded</a>
-, <a class="el" href="namespaceoperations__research.html#acb335e855d7f794ab66a05a4859a7a46ab22a2d6012d9a21952411a08dc99f3bd">operations_research::kCuttingPlaneAdded</a>
-, <a class="el" href="namespaceoperations__research.html#acb335e855d7f794ab66a05a4859a7a46ae715dc80b9a6bd66e25d740be4d67d8e">operations_research::kDidNotFind</a>
+<tr class="memitem:ac3c8ba8539ef21570d123e56c4ff12ee"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac3c8ba8539ef21570d123e56c4ff12ee">ScipSeparationResult</a> { <a class="el" href="namespaceoperations__research.html#ac3c8ba8539ef21570d123e56c4ff12eeaa8e1b948c80fb564a5eac917da76a7e9">kLazyConstraintAdded</a>
+, <a class="el" href="namespaceoperations__research.html#ac3c8ba8539ef21570d123e56c4ff12eeab22a2d6012d9a21952411a08dc99f3bd">kCuttingPlaneAdded</a>
+, <a class="el" href="namespaceoperations__research.html#ac3c8ba8539ef21570d123e56c4ff12eeae715dc80b9a6bd66e25d740be4d67d8e">kDidNotFind</a>
  }</td></tr>
-<tr class="separator:acb335e855d7f794ab66a05a4859a7a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac3c8ba8539ef21570d123e56c4ff12ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a16279e26b1c9fb24892ea66c6e29d546"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a16279e26b1c9fb24892ea66c6e29d546">operations_research::LinearConstraintIsViolated</a> (const ScipConstraintHandlerContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, const LinearRange &amp;constraint)</td></tr>
-<tr class="separator:a16279e26b1c9fb24892ea66c6e29d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac65f6cb5816150efa463314f16ee1cd"><td class="memItemLeft" align="right" valign="top">ScipSeparationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aac65f6cb5816150efa463314f16ee1cd">operations_research::RunSeparation</a> (internal::ScipCallbackRunner *runner, const ScipConstraintHandlerContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, absl::Span&lt; SCIP_CONS * &gt; constraints, bool is_integral)</td></tr>
-<tr class="separator:aac65f6cb5816150efa463314f16ee1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15b6064dd9183663de2165aa1fe799a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa15b6064dd9183663de2165aa1fe799a">LinearConstraintIsViolated</a> (const ScipConstraintHandlerContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, const LinearRange &amp;constraint)</td></tr>
+<tr class="separator:aa15b6064dd9183663de2165aa1fe799a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9ed21e5e24ce111214dcfb3d980756"><td class="memItemLeft" align="right" valign="top">ScipSeparationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6d9ed21e5e24ce111214dcfb3d980756">RunSeparation</a> (internal::ScipCallbackRunner *runner, const ScipConstraintHandlerContext &amp;<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, absl::Span&lt; SCIP_CONS * &gt; constraints, bool is_integral)</td></tr>
+<tr class="separator:a6d9ed21e5e24ce111214dcfb3d980756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376bca25c3ec7429992b12732b0baf7a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scip__callback_8cc.html#a376bca25c3ec7429992b12732b0baf7a">SCIP_DECL_CONSFREE</a> (ConstraintHandlerFreeC)</td></tr>
+<tr class="memdesc:a376bca25c3ec7429992b12732b0baf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor of constraint handler to free user data (called when SCIP is exiting)  <br /></td></tr>
 <tr class="separator:a376bca25c3ec7429992b12732b0baf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa1bf86271e906a52cfc93578151993"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scip__callback_8cc.html#abfa1bf86271e906a52cfc93578151993">SCIP_DECL_CONSDELETE</a> (ConstraintHandlerDeleteC)</td></tr>
 <tr class="separator:abfa1bf86271e906a52cfc93578151993"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,10 +152,10 @@ Functions</h2></td></tr>
 <tr class="separator:a55103a9413973772f122a9c3dfef5030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5ec3c32f1a6cde27f8a3538ea801bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scip__callback_8cc.html#a2e5ec3c32f1a6cde27f8a3538ea801bd">SCIP_DECL_CONSLOCK</a> (VariableRoundingLockC)</td></tr>
 <tr class="separator:a2e5ec3c32f1a6cde27f8a3538ea801bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac127174821e785a26be62bf70516ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a2ac127174821e785a26be62bf70516ff">operations_research::internal::AddConstraintHandlerImpl</a> (const ScipConstraintHandlerDescription &amp;description, std::unique_ptr&lt; ScipCallbackRunner &gt; runner, SCIP *scip)</td></tr>
-<tr class="separator:a2ac127174821e785a26be62bf70516ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cc50c603b218efbbaeeef5c7f98d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a90cc50c603b218efbbaeeef5c7f98d17">operations_research::internal::AddCallbackConstraintImpl</a> (SCIP *scip, const std::string &amp;handler_name, const std::string &amp;constraint_name, void *constraint_data, const ScipCallbackConstraintOptions &amp;options)</td></tr>
-<tr class="separator:a90cc50c603b218efbbaeeef5c7f98d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10baa8a53114ab362a572d8efe116194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a10baa8a53114ab362a572d8efe116194">AddConstraintHandlerImpl</a> (const ScipConstraintHandlerDescription &amp;description, std::unique_ptr&lt; ScipCallbackRunner &gt; runner, SCIP *scip)</td></tr>
+<tr class="separator:a10baa8a53114ab362a572d8efe116194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b664d7fac2a352aab8819d35f3f868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a20b664d7fac2a352aab8819d35f3f868">AddCallbackConstraintImpl</a> (SCIP *scip, const std::string &amp;handler_name, const std::string &amp;constraint_name, void *constraint_data, const ScipCallbackConstraintOptions &amp;options)</td></tr>
+<tr class="separator:a20b664d7fac2a352aab8819d35f3f868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae5cc41357bffc84dee6ba5e059a30ca5" name="ae5cc41357bffc84dee6ba5e059a30ca5"></a>
@@ -217,7 +181,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>All constraints are "useful" for this callback.</p>
 
 <p class="definition">Definition at line <a class="el" href="scip__callback_8cc_source.html#l00346">346</a> of file <a class="el" href="scip__callback_8cc_source.html">scip_callback.cc</a>.</p>
 
@@ -302,7 +265,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000738">Todo:</a></b></dt><dd>(user): are we sure the pseudo solution is LP feasible? It seems like it doesn't need to be. The code in RunSeparation might assume this? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scip__callback_8cc_source.html#l00363">363</a> of file <a class="el" href="scip__callback_8cc_source.html">scip_callback.cc</a>.</p>
 
@@ -331,6 +293,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>destructor of constraint handler to free user data (called when SCIP is exiting) </p>
 
 <p class="definition">Definition at line <a class="el" href="scip__callback_8cc_source.html#l00241">241</a> of file <a class="el" href="scip__callback_8cc_source.html">scip_callback.cc</a>.</p>
@@ -360,7 +323,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>In this callback, we need to say, for a constraint class and an instance of the constraint, for which variables could an {increase,decrease,either} affect feasibility. As a conservative overestimate, we say that any change in any variable could cause an infeasibility for any instance of any callback constraint. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000739">Todo:</a></b></dt><dd>(user): this could be a little better, but we would need to add another method to override on <a class="el" href="classoperations__research_1_1ScipConstraintHandler.html">ScipConstraintHandler&lt;ConstraintData&gt;</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scip__callback_8cc_source.html#l00394">394</a> of file <a class="el" href="scip__callback_8cc_source.html">scip_callback.cc</a>.</p>
 
@@ -424,11 +386,14 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="scip__callback_8cc.html">scip_callback.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

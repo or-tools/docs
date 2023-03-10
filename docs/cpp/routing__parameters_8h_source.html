@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/constraint_solver/routing_parameters.h Source File</title>
+<title>OR-Tools: routing_parameters.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -119,30 +119,33 @@ $(document).ready(function(){initNavTree('routing__parameters_8h_source.html',''
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research.html">operations_research</a> {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>RoutingModelParameters <a class="code hl_function" href="namespaceoperations__research.html#aa388c8707db255ae7742c04046bdd613">DefaultRoutingModelParameters</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>RoutingSearchParameters <a class="code hl_function" href="namespaceoperations__research.html#adcac4a11f1e4d36ceb47f7251461487d">DefaultRoutingSearchParameters</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>RoutingModelParameters <a class="code hl_function" href="namespaceoperations__research.html#a2fb66556abf59bfcf2fc1b87789d2a8e">DefaultRoutingModelParameters</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>RoutingSearchParameters <a class="code hl_function" href="namespaceoperations__research.html#ab59d4ce2b572e1ae576d2aa181433187">DefaultRoutingSearchParameters</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#ae2e060e8ee4ea901dc4df260b3385eac">FindErrorInRoutingSearchParameters</a>(</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>std::string <a class="code hl_function" href="namespaceoperations__research.html#a4955428bea2f2202769a58fdd47a126d">FindErrorInRoutingSearchParameters</a>(</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">const</span> RoutingSearchParameters&amp; search_parameters);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::vector&lt;std::string&gt; <a class="code hl_function" href="namespaceoperations__research.html#acb71fed7bae495cc1995e607b8a647b2">FindErrorsInRoutingSearchParameters</a>(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::vector&lt;std::string&gt; <a class="code hl_function" href="namespaceoperations__research.html#a1f170b3bf5907348fb270ce7445bbcd9">FindErrorsInRoutingSearchParameters</a>(</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> RoutingSearchParameters&amp; search_parameters);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_CONSTRAINT_SOLVER_ROUTING_PARAMETERS_H_</span></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_aa388c8707db255ae7742c04046bdd613"><div class="ttname"><a href="namespaceoperations__research.html#aa388c8707db255ae7742c04046bdd613">operations_research::DefaultRoutingModelParameters</a></div><div class="ttdeci">RoutingModelParameters DefaultRoutingModelParameters()</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00039">routing_parameters.cc:39</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_acb71fed7bae495cc1995e607b8a647b2"><div class="ttname"><a href="namespaceoperations__research.html#acb71fed7bae495cc1995e607b8a647b2">operations_research::FindErrorsInRoutingSearchParameters</a></div><div class="ttdeci">std::vector&lt; std::string &gt; FindErrorsInRoutingSearchParameters(const RoutingSearchParameters &amp;search_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00167">routing_parameters.cc:167</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_adcac4a11f1e4d36ceb47f7251461487d"><div class="ttname"><a href="namespaceoperations__research.html#adcac4a11f1e4d36ceb47f7251461487d">operations_research::DefaultRoutingSearchParameters</a></div><div class="ttdeci">RoutingSearchParameters DefaultRoutingSearchParameters()</div><div class="ttdoc">static</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00146">routing_parameters.cc:146</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_ae2e060e8ee4ea901dc4df260b3385eac"><div class="ttname"><a href="namespaceoperations__research.html#ae2e060e8ee4ea901dc4df260b3385eac">operations_research::FindErrorInRoutingSearchParameters</a></div><div class="ttdeci">std::string FindErrorInRoutingSearchParameters(const RoutingSearchParameters &amp;search_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00160">routing_parameters.cc:160</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a1f170b3bf5907348fb270ce7445bbcd9"><div class="ttname"><a href="namespaceoperations__research.html#a1f170b3bf5907348fb270ce7445bbcd9">operations_research::FindErrorsInRoutingSearchParameters</a></div><div class="ttdeci">std::vector&lt; std::string &gt; FindErrorsInRoutingSearchParameters(const RoutingSearchParameters &amp;search_parameters)</div><div class="ttdoc">Returns a list of std::string describing the errors in the routing search parameters.</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00167">routing_parameters.cc:167</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a2fb66556abf59bfcf2fc1b87789d2a8e"><div class="ttname"><a href="namespaceoperations__research.html#a2fb66556abf59bfcf2fc1b87789d2a8e">operations_research::DefaultRoutingModelParameters</a></div><div class="ttdeci">RoutingModelParameters DefaultRoutingModelParameters()</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00039">routing_parameters.cc:39</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a4955428bea2f2202769a58fdd47a126d"><div class="ttname"><a href="namespaceoperations__research.html#a4955428bea2f2202769a58fdd47a126d">operations_research::FindErrorInRoutingSearchParameters</a></div><div class="ttdeci">std::string FindErrorInRoutingSearchParameters(const RoutingSearchParameters &amp;search_parameters)</div><div class="ttdoc">Returns an empty std::string if the routing search parameters are valid, and a non-empty,...</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00160">routing_parameters.cc:160</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_ab59d4ce2b572e1ae576d2aa181433187"><div class="ttname"><a href="namespaceoperations__research.html#ab59d4ce2b572e1ae576d2aa181433187">operations_research::DefaultRoutingSearchParameters</a></div><div class="ttdeci">RoutingSearchParameters DefaultRoutingSearchParameters()</div><div class="ttdef"><b>Definition:</b> <a href="routing__parameters_8cc_source.html#l00146">routing_parameters.cc:146</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_afbb39f66221aac28bbdefd1dca2b2b0.html">constraint_solver</a></li><li class="navelem"><a class="el" href="routing__parameters_8h.html">routing_parameters.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

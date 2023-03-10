@@ -1,7 +1,0 @@
-var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGExceptionHelper =
-[
-    [ "ExceptionArgumentDelegate", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGExceptionHelper.html#a1f9204349d660cc9d77174365d644fbf", null ],
-    [ "ExceptionDelegate", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGExceptionHelper.html#a64ca02aa46f7d764371d6283b456a8bd", null ],
-    [ "SWIGRegisterExceptionCallbacks_operations_research_constraint_solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGExceptionHelper.html#aa11ba0b28218b9f8f7f637de00fb3b03", null ],
-    [ "SWIGRegisterExceptionCallbacksArgument_operations_research_constraint_solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGExceptionHelper.html#a35d0d5117e57eb207f643449d4647290", null ]
-];

@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/flatzinc/parser.yy.cc File Reference</title>
+<title>OR-Tools: parser.yy.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -102,16 +102,7 @@ $(document).ready(function(){initNavTree('parser_8yy_8cc.html',''); initResizabl
   <div class="headertitle"><div class="title">parser.yy.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;errno.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;absl/strings/numbers.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parser_8tab_8hh_source.html">ortools/flatzinc/parser.tab.hh</a>&quot;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-</div>
+
 <p><a href="parser_8yy_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -353,7 +344,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac0586b8b0b092d02f4ba7d45abe328f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7682c8d9cec0859408d2421fbe4a5570"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a7682c8d9cec0859408d2421fbe4a5570">YY_DECL_IS_OURS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a7682c8d9cec0859408d2421fbe4a5570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b01ac2fa5a6ad5fb97559638abe686"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ae5b01ac2fa5a6ad5fb97559638abe686">YY_DECL</a>&#160;&#160;&#160;int <a class="el" href="parser_8tab_8cc.html#a5611300548b2030d86b6ab9168132b88">yylex</a>(<a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a>* yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
+<tr class="memitem:ae5b01ac2fa5a6ad5fb97559638abe686"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ae5b01ac2fa5a6ad5fb97559638abe686">YY_DECL</a>&#160;&#160;&#160;int <a class="el" href="parser_8tab_8cc.html#a5611300548b2030d86b6ab9168132b88">yylex</a>(<a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a>* yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:ae5b01ac2fa5a6ad5fb97559638abe686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6198b2fcf96178b24ad4efff2a3debb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a6198b2fcf96178b24ad4efff2a3debb0">YY_USER_ACTION</a></td></tr>
 <tr class="separator:a6198b2fcf96178b24ad4efff2a3debb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,15 +462,15 @@ Functions</h2></td></tr>
 <tr class="separator:ae99214cb04ca948c5dde77ed7178a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92fd9d54517feb81d7a8182295384d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ae92fd9d54517feb81d7a8182295384d2">yyset_column</a> (int _column_no, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:ae92fd9d54517feb81d7a8182295384d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25052cc9328f216d776c9d255d3b7b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a25052cc9328f216d776c9d255d3b7b5b">yyget_lval</a> (<a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
+<tr class="memitem:a25052cc9328f216d776c9d255d3b7b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a25052cc9328f216d776c9d255d3b7b5b">yyget_lval</a> (<a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:a25052cc9328f216d776c9d255d3b7b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cd88647db3e1e240b43ec63cb8d868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ab0cd88647db3e1e240b43ec63cb8d868">yyset_lval</a> (<a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> *yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
+<tr class="memitem:ab0cd88647db3e1e240b43ec63cb8d868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ab0cd88647db3e1e240b43ec63cb8d868">yyset_lval</a> (<a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> *yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:ab0cd88647db3e1e240b43ec63cb8d868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803a5596e27386613e41006fa579a189"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a803a5596e27386613e41006fa579a189">yyunput</a> (int c, char *buf_ptr, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:a803a5596e27386613e41006fa579a189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a634cf4429798b1c921a81de8250051"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> (<a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:a5a634cf4429798b1c921a81de8250051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaeeff4d42ab7f57df3ad648082015d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#adaeeff4d42ab7f57df3ad648082015d4">yylex</a> (<a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> *yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
+<tr class="memitem:adaeeff4d42ab7f57df3ad648082015d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#adaeeff4d42ab7f57df3ad648082015d4">yylex</a> (<a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> *yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td></tr>
 <tr class="separator:adaeeff4d42ab7f57df3ad648082015d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e91cd0cef6786e9e3a27ac67707207"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (!<a class="el" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;yy_init)</td></tr>
 <tr class="separator:a33e91cd0cef6786e9e3a27ac67707207"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,6 +494,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ac57f2ca8420e961a5d2e65dcc59b7ac2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="parser_8yy_8cc.html#a838ce943cf44ef7769480714fc6c3ba9">flex_int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#ac57f2ca8420e961a5d2e65dcc59b7ac2">yy_rule_can_match_eol</a> [32]</td></tr>
 <tr class="separator:ac57f2ca8420e961a5d2e65dcc59b7ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcefb20c54ce0f92452cfbb9cf657670"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#abcefb20c54ce0f92452cfbb9cf657670">YY_DECL</a></td></tr>
+<tr class="memdesc:abcefb20c54ce0f92452cfbb9cf657670"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main scanner function which does all the work.  <br /></td></tr>
 <tr class="separator:abcefb20c54ce0f92452cfbb9cf657670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b01b6b236b05090b972f8fd95da539"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></td></tr>
 <tr class="separator:a61b01b6b236b05090b972f8fd95da539"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1021,7 +1013,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define YY_DECL&#160;&#160;&#160;int <a class="el" href="parser_8tab_8cc.html#a5611300548b2030d86b6ab9168132b88">yylex</a>(<a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a>* yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td>
+          <td class="memname">#define YY_DECL&#160;&#160;&#160;int <a class="el" href="parser_8tab_8cc.html#a5611300548b2030d86b6ab9168132b88">yylex</a>(<a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a>* yylval_param, <a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a> yyscanner)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1075,14 +1067,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;yytext_ptr = <a class="code hl_variable" href="parser_8yy_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a>;       \</div>
 <div class="line">  <a class="code hl_define" href="parser_8yy_8cc.html#afa07a629486cb790560bb95713ec7794">yyleng</a> = (int)(<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> - <a class="code hl_variable" href="parser_8yy_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a>); \</div>
-<div class="line">  <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#adde3f71374c223bbac47284824996e86">yy_hold_char</a> = *<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;    \</div>
+<div class="line">  <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#a13f78e763996d2d86c85b45cbe146282">yy_hold_char</a> = *<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;    \</div>
 <div class="line">  *<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <span class="charliteral">&#39;\0&#39;</span>;                 \</div>
-<div class="line">  <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ab1b9bcacb33aab1e02b625512bc0e221">yy_c_buf_p</a> = <a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;</div>
+<div class="line">  <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ade8fc57d3529bff56440a4f3e9c29586">yy_c_buf_p</a> = <a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;</div>
 <div class="ttc" id="aparser_8yy_8cc_html_a61b01b6b236b05090b972f8fd95da539"><div class="ttname"><a href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></div><div class="ttdeci">char * yy_cp</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00959">parser.yy.cc:959</a></div></div>
 <div class="ttc" id="aparser_8yy_8cc_html_a7507d83bcbf665441b28b684525ae59c"><div class="ttname"><a href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a></div><div class="ttdeci">struct yyguts_t * yyg</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00961">parser.yy.cc:961</a></div></div>
 <div class="ttc" id="aparser_8yy_8cc_html_aa749693ef7d0c10b137e887638fdc5b2"><div class="ttname"><a href="parser_8yy_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a></div><div class="ttdeci">char * yy_bp</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00959">parser.yy.cc:959</a></div></div>
-<div class="ttc" id="astructyyguts__t_html_ab1b9bcacb33aab1e02b625512bc0e221"><div class="ttname"><a href="structyyguts__t.html#ab1b9bcacb33aab1e02b625512bc0e221">yyguts_t::yy_c_buf_p</a></div><div class="ttdeci">char * yy_c_buf_p</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00756">parser.yy.cc:756</a></div></div>
-<div class="ttc" id="astructyyguts__t_html_adde3f71374c223bbac47284824996e86"><div class="ttname"><a href="structyyguts__t.html#adde3f71374c223bbac47284824996e86">yyguts_t::yy_hold_char</a></div><div class="ttdeci">char yy_hold_char</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00753">parser.yy.cc:753</a></div></div>
+<div class="ttc" id="astructyyguts__t_html_a13f78e763996d2d86c85b45cbe146282"><div class="ttname"><a href="structyyguts__t.html#a13f78e763996d2d86c85b45cbe146282">yyguts_t::yy_hold_char</a></div><div class="ttdeci">char yy_hold_char</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00753">parser.yy.cc:753</a></div></div>
+<div class="ttc" id="astructyyguts__t_html_ade8fc57d3529bff56440a4f3e9c29586"><div class="ttname"><a href="structyyguts__t.html#ade8fc57d3529bff56440a4f3e9c29586">yyguts_t::yy_c_buf_p</a></div><div class="ttdeci">char * yy_c_buf_p</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00756">parser.yy.cc:756</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="parser_8yy_8cc_source.html#l00585">585</a> of file <a class="el" href="parser_8yy_8cc_source.html">parser.yy.cc</a>.</p>
 
@@ -1356,8 +1348,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 <p class="definition">Definition at line <a class="el" href="parser_8yy_8cc_source.html#l00018">18</a> of file <a class="el" href="parser_8yy_8cc_source.html">parser.yy.cc</a>.</p>
 
@@ -2155,7 +2145,7 @@ Variables</h2></td></tr>
 <div class="line">    <span class="comment">/* Undo effects of setting up yytext. */</span>                          \</div>
 <div class="line">    <span class="keywordtype">int</span> yyless_macro_arg = (n);                                       \</div>
 <div class="line">    YY_LESS_LINENO(yyless_macro_arg);                                 \</div>
-<div class="line">    *<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#adde3f71374c223bbac47284824996e86">yy_hold_char</a>;                                       \</div>
+<div class="line">    *<a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#a13f78e763996d2d86c85b45cbe146282">yy_hold_char</a>;                                       \</div>
 <div class="line">    YY_RESTORE_YY_MORE_OFFSET                                         \</div>
 <div class="line">    yyg-&gt;yy_c_buf_p = <a class="code hl_variable" href="parser_8yy_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <a class="code hl_variable" href="parser_8yy_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a> + yyless_macro_arg - <a class="code hl_define" href="parser_8yy_8cc.html#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a>; \</div>
 <div class="line">    <a class="code hl_define" href="parser_8yy_8cc.html#acc3486d769af4e4b2820346a0093cc79">YY_DO_BEFORE_ACTION</a>; <span class="comment">/* set up yytext again */</span>                    \</div>
@@ -2186,10 +2176,10 @@ Variables</h2></td></tr>
 <div class="line">    <span class="comment">/* Undo effects of setting up yytext. */</span>     \</div>
 <div class="line">    <span class="keywordtype">int</span> yyless_macro_arg = (n);                  \</div>
 <div class="line">    YY_LESS_LINENO(yyless_macro_arg);            \</div>
-<div class="line">    <a class="code hl_define" href="parser_8yy_8cc.html#a0d71f919dbec1ffd74b2460fa7e5ac28">yytext</a>[<a class="code hl_define" href="parser_8yy_8cc.html#afa07a629486cb790560bb95713ec7794">yyleng</a>] = <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#adde3f71374c223bbac47284824996e86">yy_hold_char</a>;          \</div>
-<div class="line">    <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ab1b9bcacb33aab1e02b625512bc0e221">yy_c_buf_p</a> = <a class="code hl_define" href="parser_8yy_8cc.html#a0d71f919dbec1ffd74b2460fa7e5ac28">yytext</a> + yyless_macro_arg; \</div>
-<div class="line">    <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#adde3f71374c223bbac47284824996e86">yy_hold_char</a> = *<a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ab1b9bcacb33aab1e02b625512bc0e221">yy_c_buf_p</a>;        \</div>
-<div class="line">    *<a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ab1b9bcacb33aab1e02b625512bc0e221">yy_c_buf_p</a> = <span class="charliteral">&#39;\0&#39;</span>;                     \</div>
+<div class="line">    <a class="code hl_define" href="parser_8yy_8cc.html#a0d71f919dbec1ffd74b2460fa7e5ac28">yytext</a>[<a class="code hl_define" href="parser_8yy_8cc.html#afa07a629486cb790560bb95713ec7794">yyleng</a>] = <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#a13f78e763996d2d86c85b45cbe146282">yy_hold_char</a>;          \</div>
+<div class="line">    <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ade8fc57d3529bff56440a4f3e9c29586">yy_c_buf_p</a> = <a class="code hl_define" href="parser_8yy_8cc.html#a0d71f919dbec1ffd74b2460fa7e5ac28">yytext</a> + yyless_macro_arg; \</div>
+<div class="line">    <a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#a13f78e763996d2d86c85b45cbe146282">yy_hold_char</a> = *<a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ade8fc57d3529bff56440a4f3e9c29586">yy_c_buf_p</a>;        \</div>
+<div class="line">    *<a class="code hl_variable" href="parser_8yy_8cc.html#a7507d83bcbf665441b28b684525ae59c">yyg</a>-&gt;<a class="code hl_variable" href="structyyguts__t.html#ade8fc57d3529bff56440a4f3e9c29586">yy_c_buf_p</a> = <span class="charliteral">&#39;\0&#39;</span>;                     \</div>
 <div class="line">    <a class="code hl_define" href="parser_8yy_8cc.html#afa07a629486cb790560bb95713ec7794">yyleng</a> = yyless_macro_arg;                   \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
@@ -3470,7 +3460,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> * yyget_lval </td>
+          <td class="memname"><a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> * yyget_lval </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="parser_8yy_8cc.html#a157535ed0322a026cc197c8985c08d35">yyscan_t</a>&#160;</td>
           <td class="paramname"><em>yyscanner</em></td><td>)</td>
@@ -3526,7 +3516,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int yylex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> *&#160;</td>
           <td class="paramname"><em>yylval_param</em>, </td>
         </tr>
         <tr>
@@ -3866,7 +3856,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void yyset_lval </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd">YYSTYPE</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="parser_8tab_8cc.html#a2ceb5b985e149f18e018b142cfdd7264">YYSTYPE</a> *&#160;</td>
           <td class="paramname"><em>yylval_param</em>, </td>
         </tr>
         <tr>
@@ -4128,7 +4118,8 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">  <a class="code hl_typedef" href="parser_8yy_8cc.html#a9ba7c416f135b0f0c1f4addded4616b5">yy_state_type</a> yy_current_state</div>
 <div class="ttc" id="aparser_8yy_8cc_html_a9ba7c416f135b0f0c1f4addded4616b5"><div class="ttname"><a href="parser_8yy_8cc.html#a9ba7c416f135b0f0c1f4addded4616b5">yy_state_type</a></div><div class="ttdeci">int yy_state_type</div><div class="ttdef"><b>Definition:</b> <a href="parser_8yy_8cc_source.html#l00572">parser.yy.cc:572</a></div></div>
-</div><!-- fragment --><p>The main scanner function which does all the work. </p>
+</div><!-- fragment -->
+<p>The main scanner function which does all the work. </p>
 
 <p class="definition">Definition at line <a class="el" href="parser_8yy_8cc_source.html#l00957">957</a> of file <a class="el" href="parser_8yy_8cc_source.html">parser.yy.cc</a>.</p>
 
@@ -4342,11 +4333,14 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_92d538196d04323bb571488ea744da84.html">flatzinc</a></li><li class="navelem"><a class="el" href="parser_8yy_8cc.html">parser.yy.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

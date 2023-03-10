@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/math_opt/cpp/message_callback.h Source File</title>
+<title>OR-Tools: message_callback.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('message__callback_8h_source.html','');
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// Thread-safety: a callback may be called concurrently from multiple</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// threads. The users is expected to use proper synchronization primitives to</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// deal with that.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a1cd0e971d3675bc27aaa99233cdb211b">   38</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceoperations__research_1_1math__opt.html#a1cd0e971d3675bc27aaa99233cdb211b">MessageCallback</a> = std::function&lt;void(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp;)&gt;;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#aad3360b1947c772bebf3d3cfb2105a15">   38</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceoperations__research_1_1math__opt.html#aad3360b1947c772bebf3d3cfb2105a15">MessageCallback</a> = std::function&lt;void(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp;)&gt;;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Returns a message callback function that prints its output to the given</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// output stream, prefixing each line with the given prefix.</span></div>
@@ -144,23 +144,26 @@ $(document).ready(function(){initNavTree('message__callback_8h_source.html','');
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//   SolveArguments args;</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//   args.message_callback = PrinterMessageCallback(std::cerr, &quot;solver logs&gt; &quot;);</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_typedef" href="namespaceoperations__research_1_1math__opt.html#a1cd0e971d3675bc27aaa99233cdb211b">MessageCallback</a> <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a7fa3dab7cbb311e870fc2c7fc8170b69">PrinterMessageCallback</a>(std::ostream&amp; output_stream = std::cout,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_typedef" href="namespaceoperations__research_1_1math__opt.html#aad3360b1947c772bebf3d3cfb2105a15">MessageCallback</a> <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a615b4ffd9a3f4fdd150115a37f9da63b">PrinterMessageCallback</a>(std::ostream&amp; output_stream = std::cout,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                       absl::string_view prefix = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_CPP_MESSAGE_CALLBACK_H_</span></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a1cd0e971d3675bc27aaa99233cdb211b"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a1cd0e971d3675bc27aaa99233cdb211b">operations_research::math_opt::MessageCallback</a></div><div class="ttdeci">std::function&lt; void(const std::vector&lt; std::string &gt; &amp;)&gt; MessageCallback</div><div class="ttdef"><b>Definition:</b> <a href="message__callback_8h_source.html#l00038">message_callback.h:38</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a7fa3dab7cbb311e870fc2c7fc8170b69"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a7fa3dab7cbb311e870fc2c7fc8170b69">operations_research::math_opt::PrinterMessageCallback</a></div><div class="ttdeci">MessageCallback PrinterMessageCallback(std::ostream &amp;output_stream, const absl::string_view prefix)</div><div class="ttdef"><b>Definition:</b> <a href="message__callback_8cc_source.html#l00052">message_callback.cc:52</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a615b4ffd9a3f4fdd150115a37f9da63b"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a615b4ffd9a3f4fdd150115a37f9da63b">operations_research::math_opt::PrinterMessageCallback</a></div><div class="ttdeci">MessageCallback PrinterMessageCallback(std::ostream &amp;output_stream, const absl::string_view prefix)</div><div class="ttdef"><b>Definition:</b> <a href="message__callback_8cc_source.html#l00052">message_callback.cc:52</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_aad3360b1947c772bebf3d3cfb2105a15"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#aad3360b1947c772bebf3d3cfb2105a15">operations_research::math_opt::MessageCallback</a></div><div class="ttdeci">std::function&lt; void(const std::vector&lt; std::string &gt; &amp;)&gt; MessageCallback</div><div class="ttdef"><b>Definition:</b> <a href="message__callback_8h_source.html#l00038">message_callback.h:38</a></div></div>
 <div class="ttc" id="asource__location_8h_html"><div class="ttname"><a href="source__location_8h.html">source_location.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="message__callback_8h.html">message_callback.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

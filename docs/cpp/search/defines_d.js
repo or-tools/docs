@@ -13,12 +13,10 @@ var searchData=
   ['status_5fmacros_5fimpl_5funparenthesis_5finner_10',['STATUS_MACROS_IMPL_UNPARENTHESIS_INNER',['../base_2status__macros_8h.html#a2c367d7e965434ba083d71c28ac1d0a3',1,'status_macros.h']]],
   ['status_5fmacros_5fimpl_5funparenthesis_5finner_5f_11',['STATUS_MACROS_IMPL_UNPARENTHESIS_INNER_',['../base_2status__macros_8h.html#ac65eae8f36d1c92c31a9c1b965dd5478',1,'status_macros.h']]],
   ['status_5fmacros_5fimpl_5fvanish_12',['STATUS_MACROS_IMPL_VANISH',['../base_2status__macros_8h.html#a06439d883293ebf4748fc5dca5d54108',1,'status_macros.h']]],
-  ['stringify_13',['STRINGIFY',['../xpress__interface_8cc.html#a43e1cad902b6477bec893cb6430bd6c8',1,'xpress_interface.cc']]],
-  ['stringify2_14',['STRINGIFY2',['../xpress__interface_8cc.html#aea267fbb69120cbb73956f92bcd165b7',1,'xpress_interface.cc']]],
-  ['strong_5fassignment_5fop_15',['STRONG_ASSIGNMENT_OP',['../strong__integers_8h.html#a59646276e38e29b818fe8892e2f3cb5f',1,'strong_integers.h']]],
-  ['strong_5fint_5ftype_5farithmetic_5fop_16',['STRONG_INT_TYPE_ARITHMETIC_OP',['../strong__int_8h.html#ab9cbfc83a4f33d12ef0aebc41f982322',1,'strong_int.h']]],
-  ['strong_5fint_5ftype_5fassignment_5fop_17',['STRONG_INT_TYPE_ASSIGNMENT_OP',['../strong__int_8h.html#a25327aa090469c1d220f44104a587360',1,'strong_int.h']]],
-  ['strong_5fint_5ftype_5fcomparison_5fop_18',['STRONG_INT_TYPE_COMPARISON_OP',['../strong__int_8h.html#a94e8edd112f420522b16f100780a4f13',1,'strong_int.h']]],
-  ['strong_5ftype_5farithmetic_5fop_19',['STRONG_TYPE_ARITHMETIC_OP',['../strong__integers_8h.html#a992c6fd039459b1d30aa5b25375f6abc',1,'strong_integers.h']]],
-  ['strong_5ftype_5fcomparison_5fop_20',['STRONG_TYPE_COMPARISON_OP',['../strong__integers_8h.html#a027f126c61c1713662d813159d384e8b',1,'strong_integers.h']]]
+  ['strong_5fassignment_5fop_13',['STRONG_ASSIGNMENT_OP',['../strong__integers_8h.html#a59646276e38e29b818fe8892e2f3cb5f',1,'strong_integers.h']]],
+  ['strong_5fint_5ftype_5farithmetic_5fop_14',['STRONG_INT_TYPE_ARITHMETIC_OP',['../strong__int_8h.html#ab9cbfc83a4f33d12ef0aebc41f982322',1,'strong_int.h']]],
+  ['strong_5fint_5ftype_5fassignment_5fop_15',['STRONG_INT_TYPE_ASSIGNMENT_OP',['../strong__int_8h.html#a25327aa090469c1d220f44104a587360',1,'strong_int.h']]],
+  ['strong_5fint_5ftype_5fcomparison_5fop_16',['STRONG_INT_TYPE_COMPARISON_OP',['../strong__int_8h.html#a94e8edd112f420522b16f100780a4f13',1,'strong_int.h']]],
+  ['strong_5ftype_5farithmetic_5fop_17',['STRONG_TYPE_ARITHMETIC_OP',['../strong__integers_8h.html#a992c6fd039459b1d30aa5b25375f6abc',1,'strong_integers.h']]],
+  ['strong_5ftype_5fcomparison_5fop_18',['STRONG_TYPE_COMPARISON_OP',['../strong__integers_8h.html#a027f126c61c1713662d813159d384e8b',1,'strong_integers.h']]]
 ];

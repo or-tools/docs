@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/lp_data/model_reader.h Source File</title>
+<title>OR-Tools: model_reader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -122,9 +122,9 @@ $(document).ready(function(){initNavTree('model__reader_8h_source.html',''); ini
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Helper function to read data from model files into MPModelProto and</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// LinearProgram.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#abf1216373b28d2945c26112b4362ea3f">LoadMPModelProtoFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#a6ca3f43a5bb83d2b1ba5dec64017a734">LoadMPModelProtoFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                        MPModelProto* <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#adac5a3f5e342032488bd600c97cb0ee5">LoadLinearProgramFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#a83301f2e7d75ce6d81f384b43ac136f4">LoadLinearProgramFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                         LinearProgram* linear_program);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}  <span class="comment">// namespace glop</span></div>
@@ -133,16 +133,19 @@ $(document).ready(function(){initNavTree('model__reader_8h_source.html',''); ini
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_LP_DATA_MODEL_READER_H_</span></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition:</b> <a href="gurobi__interface_8cc_source.html#l00278">gurobi_interface.cc:278</a></div></div>
 <div class="ttc" id="alp__data_8h_html"><div class="ttname"><a href="lp__data_8h.html">lp_data.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1glop_html_abf1216373b28d2945c26112b4362ea3f"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#abf1216373b28d2945c26112b4362ea3f">operations_research::glop::LoadMPModelProtoFromModelOrRequest</a></div><div class="ttdeci">bool LoadMPModelProtoFromModelOrRequest(const std::string &amp;input_file_path, MPModelProto *model)</div><div class="ttdef"><b>Definition:</b> <a href="model__reader_8cc_source.html#l00028">model_reader.cc:28</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1glop_html_adac5a3f5e342032488bd600c97cb0ee5"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#adac5a3f5e342032488bd600c97cb0ee5">operations_research::glop::LoadLinearProgramFromModelOrRequest</a></div><div class="ttdeci">bool LoadLinearProgramFromModelOrRequest(const std::string &amp;input_file_path, LinearProgram *linear_program)</div><div class="ttdef"><b>Definition:</b> <a href="model__reader_8cc_source.html#l00060">model_reader.cc:60</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1glop_html_a6ca3f43a5bb83d2b1ba5dec64017a734"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a6ca3f43a5bb83d2b1ba5dec64017a734">operations_research::glop::LoadMPModelProtoFromModelOrRequest</a></div><div class="ttdeci">bool LoadMPModelProtoFromModelOrRequest(const std::string &amp;input_file_path, MPModelProto *model)</div><div class="ttdef"><b>Definition:</b> <a href="model__reader_8cc_source.html#l00028">model_reader.cc:28</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1glop_html_a83301f2e7d75ce6d81f384b43ac136f4"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a83301f2e7d75ce6d81f384b43ac136f4">operations_research::glop::LoadLinearProgramFromModelOrRequest</a></div><div class="ttdeci">bool LoadLinearProgramFromModelOrRequest(const std::string &amp;input_file_path, LinearProgram *linear_program)</div><div class="ttdef"><b>Definition:</b> <a href="model__reader_8cc_source.html#l00060">model_reader.cc:60</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_903a7ff076ee7f01be86992fe717fc82.html">lp_data</a></li><li class="navelem"><a class="el" href="model__reader_8h.html">model_reader.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

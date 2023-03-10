@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/pdlp/termination.h File Reference</title>
+<title>OR-Tools: termination.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,61 +100,57 @@ $(document).ready(function(){initNavTree('termination_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">termination.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &quot;ortools/pdlp/solve_log.pb.h&quot;</code><br />
-<code>#include &quot;ortools/pdlp/solvers.pb.h&quot;</code><br />
-</div>
+
 <p><a href="termination_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1TerminationReasonAndPointType.html">operations_research::pdlp::TerminationReasonAndPointType</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1_termination_reason_and_point_type.html">TerminationReasonAndPointType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html">operations_research::pdlp::QuadraticProgramBoundNorms</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1_quadratic_program_bound_norms.html">QuadraticProgramBoundNorms</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1RelativeConvergenceInformation.html">operations_research::pdlp::RelativeConvergenceInformation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1pdlp_1_1_relative_convergence_information.html">RelativeConvergenceInformation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1pdlp"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html">operations_research::pdlp</a></td></tr>
-<tr class="memdesc:namespaceoperations__research_1_1pdlp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validation utilities for <a class="el" href="solvers_8proto.html">solvers.proto</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3a5acb887ad53db5411c34545980f993"><td class="memItemLeft" align="right" valign="top">TerminationCriteria::DetailedOptimalityCriteria&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a3a5acb887ad53db5411c34545980f993">operations_research::pdlp::EffectiveOptimalityCriteria</a> (const TerminationCriteria &amp;termination_criteria)</td></tr>
-<tr class="memdesc:a3a5acb887ad53db5411c34545980f993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the effective optimality criteria for a TerminationCriteria.  <br /></td></tr>
-<tr class="separator:a3a5acb887ad53db5411c34545980f993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7254f8c83c3395526dcc958f19e3c14a"><td class="memItemLeft" align="right" valign="top">TerminationCriteria::DetailedOptimalityCriteria&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a7254f8c83c3395526dcc958f19e3c14a">operations_research::pdlp::EffectiveOptimalityCriteria</a> (const TerminationCriteria::SimpleOptimalityCriteria &amp;simple_criteria)</td></tr>
-<tr class="separator:a7254f8c83c3395526dcc958f19e3c14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02fd964babbc05f32fd088b1005215dc"><td class="memItemLeft" align="right" valign="top">std::optional&lt; TerminationReasonAndPointType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a02fd964babbc05f32fd088b1005215dc">operations_research::pdlp::CheckSimpleTerminationCriteria</a> (const TerminationCriteria &amp;criteria, const IterationStats &amp;stats, const std::atomic&lt; bool &gt; *interrupt_solve)</td></tr>
-<tr class="separator:a02fd964babbc05f32fd088b1005215dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915b4c9c60210eb50bbb836643aba393"><td class="memItemLeft" align="right" valign="top">std::optional&lt; TerminationReasonAndPointType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a915b4c9c60210eb50bbb836643aba393">operations_research::pdlp::CheckIterateTerminationCriteria</a> (const TerminationCriteria &amp;criteria, const IterationStats &amp;stats, const QuadraticProgramBoundNorms &amp;bound_norms, const bool force_numerical_termination)</td></tr>
-<tr class="separator:a915b4c9c60210eb50bbb836643aba393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c3bece6c277a26a34c825c2b4e4509"><td class="memItemLeft" align="right" valign="top">QuadraticProgramBoundNorms&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a58c3bece6c277a26a34c825c2b4e4509">operations_research::pdlp::BoundNormsFromProblemStats</a> (const QuadraticProgramStats &amp;stats)</td></tr>
-<tr class="separator:a58c3bece6c277a26a34c825c2b4e4509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7474762d0771b51e98686306ec7b4f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a5c7474762d0771b51e98686306ec7b4f">operations_research::pdlp::EpsilonRatio</a> (const double epsilon_absolute, const double epsilon_relative)</td></tr>
-<tr class="separator:a5c7474762d0771b51e98686306ec7b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afabaaef8b32ae92f1331599732ac99d1"><td class="memItemLeft" align="right" valign="top">RelativeConvergenceInformation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#afabaaef8b32ae92f1331599732ac99d1">operations_research::pdlp::ComputeRelativeResiduals</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats, const QuadraticProgramBoundNorms &amp;bound_norms)</td></tr>
-<tr class="separator:afabaaef8b32ae92f1331599732ac99d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05b31a796e1009f7087884df50815fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#ad05b31a796e1009f7087884df50815fc">operations_research::pdlp::ObjectiveGapMet</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats)</td></tr>
-<tr class="separator:ad05b31a796e1009f7087884df50815fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba79804abf8f9932eba7e98356c05ad5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#aba79804abf8f9932eba7e98356c05ad5">operations_research::pdlp::OptimalityCriteriaMet</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats, const OptimalityNorm optimality_norm, const QuadraticProgramBoundNorms &amp;bound_norms)</td></tr>
-<tr class="memdesc:aba79804abf8f9932eba7e98356c05ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the optimality criteria are met.  <br /></td></tr>
-<tr class="separator:aba79804abf8f9932eba7e98356c05ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7083f986893a448d23d053e8d91a99c7"><td class="memItemLeft" align="right" valign="top">TerminationCriteria::DetailedOptimalityCriteria&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a7083f986893a448d23d053e8d91a99c7">EffectiveOptimalityCriteria</a> (const TerminationCriteria &amp;termination_criteria)</td></tr>
+<tr class="separator:a7083f986893a448d23d053e8d91a99c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddf22cda24ac0cde689e417757fe08b"><td class="memItemLeft" align="right" valign="top">TerminationCriteria::DetailedOptimalityCriteria&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a5ddf22cda24ac0cde689e417757fe08b">EffectiveOptimalityCriteria</a> (const TerminationCriteria::SimpleOptimalityCriteria &amp;simple_criteria)</td></tr>
+<tr class="separator:a5ddf22cda24ac0cde689e417757fe08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c00528b9f0e6c4601b2d91a985cdb0"><td class="memItemLeft" align="right" valign="top">std::optional&lt; TerminationReasonAndPointType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a98c00528b9f0e6c4601b2d91a985cdb0">CheckSimpleTerminationCriteria</a> (const TerminationCriteria &amp;criteria, const IterationStats &amp;stats, const std::atomic&lt; bool &gt; *interrupt_solve)</td></tr>
+<tr class="separator:a98c00528b9f0e6c4601b2d91a985cdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8064e6267de6ed223c3ab1bbecd1a7e9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; TerminationReasonAndPointType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a8064e6267de6ed223c3ab1bbecd1a7e9">CheckIterateTerminationCriteria</a> (const TerminationCriteria &amp;criteria, const IterationStats &amp;stats, const QuadraticProgramBoundNorms &amp;bound_norms, const bool force_numerical_termination)</td></tr>
+<tr class="separator:a8064e6267de6ed223c3ab1bbecd1a7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69c2a44159905c520139def17af7e4f"><td class="memItemLeft" align="right" valign="top">QuadraticProgramBoundNorms&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#ac69c2a44159905c520139def17af7e4f">BoundNormsFromProblemStats</a> (const QuadraticProgramStats &amp;stats)</td></tr>
+<tr class="separator:ac69c2a44159905c520139def17af7e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0571ade9cd64d6382a11a5715ac32538"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a0571ade9cd64d6382a11a5715ac32538">EpsilonRatio</a> (const double epsilon_absolute, const double epsilon_relative)</td></tr>
+<tr class="separator:a0571ade9cd64d6382a11a5715ac32538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82979d44c92559492d4f8cf82e76f7b8"><td class="memItemLeft" align="right" valign="top">RelativeConvergenceInformation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a82979d44c92559492d4f8cf82e76f7b8">ComputeRelativeResiduals</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats, const QuadraticProgramBoundNorms &amp;bound_norms)</td></tr>
+<tr class="separator:a82979d44c92559492d4f8cf82e76f7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496697d97850fa214d066a18f81b5af0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a496697d97850fa214d066a18f81b5af0">ObjectiveGapMet</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats)</td></tr>
+<tr class="separator:a496697d97850fa214d066a18f81b5af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17381175e85f0324d410ab53cc5b8d4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a17381175e85f0324d410ab53cc5b8d4b">OptimalityCriteriaMet</a> (const TerminationCriteria::DetailedOptimalityCriteria &amp;optimality_criteria, const ConvergenceInformation &amp;stats, const OptimalityNorm optimality_norm, const QuadraticProgramBoundNorms &amp;bound_norms)</td></tr>
+<tr class="separator:a17381175e85f0324d410ab53cc5b8d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_7cc48880791e3dd695dbfc2349101d28.html">pdlp</a></li><li class="navelem"><a class="el" href="termination_8h.html">termination.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

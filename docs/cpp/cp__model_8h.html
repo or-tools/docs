@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/sat/cp_model.h File Reference</title>
+<title>OR-Tools: cp_model.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,151 +100,8 @@ $(document).ready(function(){initNavTree('cp__model_8h.html',''); initResizable(
   <div class="headertitle"><div class="title">cp_model.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;initializer_list&gt;</code><br />
-<code>#include &lt;iosfwd&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;ostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/types/span.h&quot;</code><br />
-<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__solver_8h_source.html">ortools/sat/cp_model_solver.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
-<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
-</div>
-<p><a href="cp__model_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">operations_research::sat::BoolVar</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntVar.html">operations_research::sat::IntVar</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearExpr.html">operations_research::sat::LinearExpr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1DoubleLinearExpr.html">operations_research::sat::DoubleLinearExpr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntervalVar.html">operations_research::sat::IntervalVar</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Constraint.html">operations_research::sat::Constraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CircuitConstraint.html">operations_research::sat::CircuitConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1MultipleCircuitConstraint.html">operations_research::sat::MultipleCircuitConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1TableConstraint.html">operations_research::sat::TableConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1ReservoirConstraint.html">operations_research::sat::ReservoirConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1AutomatonConstraint.html">operations_research::sat::AutomatonConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1NoOverlap2DConstraint.html">operations_research::sat::NoOverlap2DConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CumulativeConstraint.html">operations_research::sat::CumulativeConstraint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html">operations_research::sat::CpModelBuilder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a807d4ae4dc98ad0c05fa05c3f1dfabc9"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a807d4ae4dc98ad0c05fa05c3f1dfabc9">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const BoolVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:a807d4ae4dc98ad0c05fa05c3f1dfabc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3de118c1f8dd5a7ec21704e05684b9"><td class="memItemLeft" align="right" valign="top">BoolVar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5e3de118c1f8dd5a7ec21704e05684b9">operations_research::sat::Not</a> (BoolVar x)</td></tr>
-<tr class="separator:a5e3de118c1f8dd5a7ec21704e05684b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1b0a196a70f7edd0ff1bc0250e76ac"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0c1b0a196a70f7edd0ff1bc0250e76ac">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const IntVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:a0c1b0a196a70f7edd0ff1bc0250e76ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616a1843aa394d2d018e052050588bb2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a616a1843aa394d2d018e052050588bb2">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const LinearExpr &amp;e)</td></tr>
-<tr class="separator:a616a1843aa394d2d018e052050588bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1168782300a1c64e854ec6f1ead1ea"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4c1168782300a1c64e854ec6f1ead1ea">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const DoubleLinearExpr &amp;e)</td></tr>
-<tr class="separator:a4c1168782300a1c64e854ec6f1ead1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeefd0a183a2d1c9f09fec0aa52b200a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#afeefd0a183a2d1c9f09fec0aa52b200a">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const IntervalVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:afeefd0a183a2d1c9f09fec0aa52b200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadb67cecc84690abd0a358d0e2c9cd7c"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:aadb67cecc84690abd0a358d0e2c9cd7c"><td class="memTemplItemLeft" align="right" valign="top">H&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aadb67cecc84690abd0a358d0e2c9cd7c">operations_research::sat::AbslHashValue</a> (H h, const IntVar &amp;i)</td></tr>
-<tr class="memdesc:aadb67cecc84690abd0a358d0e2c9cd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&ndash; ABSL HASHING SUPPORT --------------------------------------------------&mdash;  <br /></td></tr>
-<tr class="separator:aadb67cecc84690abd0a358d0e2c9cd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa34d9202fc74c65575e29c573ee5900"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:aaa34d9202fc74c65575e29c573ee5900"><td class="memTemplItemLeft" align="right" valign="top">H&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aaa34d9202fc74c65575e29c573ee5900">operations_research::sat::AbslHashValue</a> (H h, const IntervalVar &amp;i)</td></tr>
-<tr class="separator:aaa34d9202fc74c65575e29c573ee5900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6fe86bc876c281163a053a9581346c3"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab6fe86bc876c281163a053a9581346c3">operations_research::sat::SolutionIntegerValue</a> (const CpSolverResponse &amp;r, const LinearExpr &amp;expr)</td></tr>
-<tr class="memdesc:ab6fe86bc876c281163a053a9581346c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the value of an linear expression in a solver response.  <br /></td></tr>
-<tr class="separator:ab6fe86bc876c281163a053a9581346c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa415e372a9d64eede869ed98666c29c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#afa415e372a9d64eede869ed98666c29c">operations_research::sat::SolutionBooleanValue</a> (const CpSolverResponse &amp;r, BoolVar x)</td></tr>
-<tr class="memdesc:afa415e372a9d64eede869ed98666c29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the value of a Boolean literal in a solver response.  <br /></td></tr>
-<tr class="separator:afa415e372a9d64eede869ed98666c29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007d129b4917935f84c9ae0823c2cb11"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a007d129b4917935f84c9ae0823c2cb11">operations_research::sat::VarDebugString</a> (const CpModelProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>)</td></tr>
-<tr class="separator:a007d129b4917935f84c9ae0823c2cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f6d80163fd6aa41fec7ebf8e27949a"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a49f6d80163fd6aa41fec7ebf8e27949a">operations_research::sat::operator-</a> (LinearExpr expr)</td></tr>
-<tr class="separator:a49f6d80163fd6aa41fec7ebf8e27949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d680e53b769b0bf60b6613d27994df"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a14d680e53b769b0bf60b6613d27994df">operations_research::sat::operator+</a> (const LinearExpr &amp;lhs, const LinearExpr &amp;rhs)</td></tr>
-<tr class="separator:a14d680e53b769b0bf60b6613d27994df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70c3650a2627f7072b46545ba712da1c"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a70c3650a2627f7072b46545ba712da1c">operations_research::sat::operator+</a> (LinearExpr &amp;&amp;lhs, const LinearExpr &amp;rhs)</td></tr>
-<tr class="separator:a70c3650a2627f7072b46545ba712da1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5d9b25ef5642c457636001e9393034e"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af5d9b25ef5642c457636001e9393034e">operations_research::sat::operator+</a> (const LinearExpr &amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:af5d9b25ef5642c457636001e9393034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a296a3b389239ce1ffef3527bfa1e3"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a12a296a3b389239ce1ffef3527bfa1e3">operations_research::sat::operator+</a> (LinearExpr &amp;&amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a12a296a3b389239ce1ffef3527bfa1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd485d7f6b2ccacff90294455d30ae5"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aedd485d7f6b2ccacff90294455d30ae5">operations_research::sat::operator-</a> (const LinearExpr &amp;lhs, const LinearExpr &amp;rhs)</td></tr>
-<tr class="separator:aedd485d7f6b2ccacff90294455d30ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d4cee395c01f64847f322fd74f3613"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a62d4cee395c01f64847f322fd74f3613">operations_research::sat::operator-</a> (LinearExpr &amp;&amp;lhs, const LinearExpr &amp;rhs)</td></tr>
-<tr class="separator:a62d4cee395c01f64847f322fd74f3613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1083f8028e54d27eec081e45d92da3da"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1083f8028e54d27eec081e45d92da3da">operations_research::sat::operator-</a> (const LinearExpr &amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a1083f8028e54d27eec081e45d92da3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab29f5117f4220225e73e5984196315a7"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab29f5117f4220225e73e5984196315a7">operations_research::sat::operator-</a> (LinearExpr &amp;&amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:ab29f5117f4220225e73e5984196315a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e220860af1fa89265bd640ab575c94"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae5e220860af1fa89265bd640ab575c94">operations_research::sat::operator*</a> (LinearExpr expr, int64_t factor)</td></tr>
-<tr class="separator:ae5e220860af1fa89265bd640ab575c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b127fca095a77a5c789d443f522fbbb"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1b127fca095a77a5c789d443f522fbbb">operations_research::sat::operator*</a> (int64_t factor, LinearExpr expr)</td></tr>
-<tr class="separator:a1b127fca095a77a5c789d443f522fbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ef55954ce104b703b05f5a926a55c52"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3ef55954ce104b703b05f5a926a55c52">operations_research::sat::operator-</a> (DoubleLinearExpr expr)</td></tr>
-<tr class="memdesc:a3ef55954ce104b703b05f5a926a55c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="classoperations__research_1_1sat_1_1DoubleLinearExpr.html">DoubleLinearExpr</a>.  <br /></td></tr>
-<tr class="separator:a3ef55954ce104b703b05f5a926a55c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adedef397b25c1cc6909adcae18a820e9"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adedef397b25c1cc6909adcae18a820e9">operations_research::sat::operator+</a> (const DoubleLinearExpr &amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
-<tr class="separator:adedef397b25c1cc6909adcae18a820e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23499bc93d6b2ab81e91ea946e2780c8"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a23499bc93d6b2ab81e91ea946e2780c8">operations_research::sat::operator+</a> (DoubleLinearExpr &amp;&amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
-<tr class="separator:a23499bc93d6b2ab81e91ea946e2780c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bdaf49a2294d9fd664ce3ad0360d501"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0bdaf49a2294d9fd664ce3ad0360d501">operations_research::sat::operator+</a> (const DoubleLinearExpr &amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a0bdaf49a2294d9fd664ce3ad0360d501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5317d7f37f16096d85dfc5a7f05bed77"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5317d7f37f16096d85dfc5a7f05bed77">operations_research::sat::operator+</a> (DoubleLinearExpr &amp;&amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a5317d7f37f16096d85dfc5a7f05bed77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60111592f54952fd8d14692750ac5617"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a60111592f54952fd8d14692750ac5617">operations_research::sat::operator+</a> (DoubleLinearExpr expr, double rhs)</td></tr>
-<tr class="separator:a60111592f54952fd8d14692750ac5617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8958bf1527cb994a0d7553282dd731f2"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8958bf1527cb994a0d7553282dd731f2">operations_research::sat::operator+</a> (double lhs, DoubleLinearExpr expr)</td></tr>
-<tr class="separator:a8958bf1527cb994a0d7553282dd731f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed1cd9aca1c45ff97111ebfe1d8c555"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1ed1cd9aca1c45ff97111ebfe1d8c555">operations_research::sat::operator-</a> (const DoubleLinearExpr &amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
-<tr class="separator:a1ed1cd9aca1c45ff97111ebfe1d8c555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade32b256f6277fd7a7e52c3a17128b96"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ade32b256f6277fd7a7e52c3a17128b96">operations_research::sat::operator-</a> (DoubleLinearExpr &amp;&amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
-<tr class="separator:ade32b256f6277fd7a7e52c3a17128b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a77b7fe5f2ae90130d7f9cf20a995a"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a37a77b7fe5f2ae90130d7f9cf20a995a">operations_research::sat::operator-</a> (const DoubleLinearExpr &amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a37a77b7fe5f2ae90130d7f9cf20a995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90add9340d2579eed96c65f248306982"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a90add9340d2579eed96c65f248306982">operations_research::sat::operator-</a> (DoubleLinearExpr &amp;&amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
-<tr class="separator:a90add9340d2579eed96c65f248306982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49cbabfb6c894b12ffb48181248c2c87"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a49cbabfb6c894b12ffb48181248c2c87">operations_research::sat::operator-</a> (DoubleLinearExpr epxr, double rhs)</td></tr>
-<tr class="separator:a49cbabfb6c894b12ffb48181248c2c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962810e4d6e648b9bdd8a6147e6ecd8c"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a962810e4d6e648b9bdd8a6147e6ecd8c">operations_research::sat::operator-</a> (double lhs, DoubleLinearExpr expr)</td></tr>
-<tr class="separator:a962810e4d6e648b9bdd8a6147e6ecd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad89939d32828716e2f01940e81ce4a"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8ad89939d32828716e2f01940e81ce4a">operations_research::sat::operator*</a> (DoubleLinearExpr expr, double factor)</td></tr>
-<tr class="separator:a8ad89939d32828716e2f01940e81ce4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5f88f13d009bea305340ad747262317"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac5f88f13d009bea305340ad747262317">operations_research::sat::operator*</a> (double factor, DoubleLinearExpr expr)</td></tr>
-<tr class="separator:ac5f88f13d009bea305340ad747262317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p>This file implements a wrapper around the CP-SAT model proto.</p>
+<div class="textblock"><p>This file implements a wrapper around the CP-SAT model proto. </p>
 <p>Here is a minimal example that shows how to create a model, solve it, and print out the solution. </p><div class="fragment"><div class="line">CpModelBuilder cp_model;</div>
 <div class="line"><span class="keyword">const</span> Domain all_animals(0, 20);</div>
 <div class="line"><span class="keyword">const</span> IntVar rabbits = cp_model.NewIntVar(all_animals).WithName(<span class="stringliteral">&quot;rabbits&quot;</span>);</div>
@@ -259,16 +116,157 @@ Functions</h2></td></tr>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot; rabbits, and &quot;</span> &lt;&lt; SolutionIntegerValue(<a class="code hl_variable" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>, pheasants)</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot; pheasants.&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="acp__model__solver_8cc_html_abcd33b18ce6d5a90a4ba5c37cfa58829"><div class="ttname"><a href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a></div><div class="ttdeci">SharedResponseManager * response</div><div class="ttdef"><b>Definition:</b> <a href="cp__model__solver_8cc_source.html#l02192">cp_model_solver.cc:2192</a></div></div>
+<div class="ttc" id="acp__model__solver_8cc_html_abcd33b18ce6d5a90a4ba5c37cfa58829"><div class="ttname"><a href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a></div><div class="ttdeci">SharedResponseManager * response</div><div class="ttdef"><b>Definition:</b> <a href="cp__model__solver_8cc_source.html#l02345">cp_model_solver.cc:2345</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition in file <a class="el" href="cp__model_8h_source.html">cp_model.h</a>.</p>
-</div></div><!-- contents -->
+</div>
+<p><a href="cp__model_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_bool_var.html">BoolVar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Boolean variable.  <a href="classoperations__research_1_1sat_1_1_bool_var.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_int_var.html">IntVar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer variable.  <a href="classoperations__research_1_1sat_1_1_int_var.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_linear_expr.html">LinearExpr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dedicated container for linear expressions.  <a href="classoperations__research_1_1sat_1_1_linear_expr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_double_linear_expr.html">DoubleLinearExpr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dedicated container for linear expressions with double coefficients.  <a href="classoperations__research_1_1sat_1_1_double_linear_expr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_interval_var.html">IntervalVar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a <a class="el" href="struct_interval.html">Interval</a> variable.  <a href="classoperations__research_1_1sat_1_1_interval_var.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_constraint.html">Constraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constraint.  <a href="classoperations__research_1_1sat_1_1_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_circuit_constraint.html">CircuitConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized circuit constraint.  <a href="classoperations__research_1_1sat_1_1_circuit_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_multiple_circuit_constraint.html">MultipleCircuitConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized circuit constraint.  <a href="classoperations__research_1_1sat_1_1_multiple_circuit_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_table_constraint.html">TableConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized assignment constraint.  <a href="classoperations__research_1_1sat_1_1_table_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_reservoir_constraint.html">ReservoirConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized reservoir constraint.  <a href="classoperations__research_1_1sat_1_1_reservoir_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_automaton_constraint.html">AutomatonConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized automaton constraint.  <a href="classoperations__research_1_1sat_1_1_automaton_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_no_overlap2_d_constraint.html">NoOverlap2DConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized no_overlap2D constraint.  <a href="classoperations__research_1_1sat_1_1_no_overlap2_d_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_cumulative_constraint.html">CumulativeConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized cumulative constraint.  <a href="classoperations__research_1_1sat_1_1_cumulative_constraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_cp_model_builder.html">CpModelBuilder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class around the cp_model proto.  <a href="classoperations__research_1_1sat_1_1_cp_model_builder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a15ca399ada8a279dc92f693ede7e4004"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a15ca399ada8a279dc92f693ede7e4004">operator&lt;&lt;</a> (std::ostream &amp;os, const BoolVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
+<tr class="separator:a15ca399ada8a279dc92f693ede7e4004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac491fd74967da4f340617ad11677ec"><td class="memItemLeft" align="right" valign="top">BoolVar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7ac491fd74967da4f340617ad11677ec">Not</a> (BoolVar x)</td></tr>
+<tr class="memdesc:a7ac491fd74967da4f340617ad11677ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenient wrapper so we can write Not(x) instead of x.Not() which is sometimes clearer.  <br /></td></tr>
+<tr class="separator:a7ac491fd74967da4f340617ad11677ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3611a7a8f77b0d387269129446af45"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6a3611a7a8f77b0d387269129446af45">operator&lt;&lt;</a> (std::ostream &amp;os, const IntVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
+<tr class="separator:a6a3611a7a8f77b0d387269129446af45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbef4e709106f914a0f0815655bbcfe"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4cbef4e709106f914a0f0815655bbcfe">operator&lt;&lt;</a> (std::ostream &amp;os, const LinearExpr &amp;e)</td></tr>
+<tr class="separator:a4cbef4e709106f914a0f0815655bbcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eb2f333d67c59300769228ba15846d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a96eb2f333d67c59300769228ba15846d">operator&lt;&lt;</a> (std::ostream &amp;os, const DoubleLinearExpr &amp;e)</td></tr>
+<tr class="separator:a96eb2f333d67c59300769228ba15846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3577375a878b5799dacab11aaa4c3d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#afc3577375a878b5799dacab11aaa4c3d">operator&lt;&lt;</a> (std::ostream &amp;os, const IntervalVar &amp;<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
+<tr class="separator:afc3577375a878b5799dacab11aaa4c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f20dfcd33e70f7f23a9e27853f0221"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:ad1f20dfcd33e70f7f23a9e27853f0221"><td class="memTemplItemLeft" align="right" valign="top">H&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad1f20dfcd33e70f7f23a9e27853f0221">AbslHashValue</a> (H h, const IntVar &amp;i)</td></tr>
+<tr class="separator:ad1f20dfcd33e70f7f23a9e27853f0221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469c96963c3bf2499b6037321c418ca4"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:a469c96963c3bf2499b6037321c418ca4"><td class="memTemplItemLeft" align="right" valign="top">H&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a469c96963c3bf2499b6037321c418ca4">AbslHashValue</a> (H h, const IntervalVar &amp;i)</td></tr>
+<tr class="separator:a469c96963c3bf2499b6037321c418ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2624925d8e44eb29065efd632d49e90"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac2624925d8e44eb29065efd632d49e90">SolutionIntegerValue</a> (const CpSolverResponse &amp;r, const LinearExpr &amp;expr)</td></tr>
+<tr class="memdesc:ac2624925d8e44eb29065efd632d49e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the value of an linear expression in a solver response.  <br /></td></tr>
+<tr class="separator:ac2624925d8e44eb29065efd632d49e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8391a20c25890ccbf3f5e3982afed236"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8391a20c25890ccbf3f5e3982afed236">SolutionBooleanValue</a> (const CpSolverResponse &amp;r, BoolVar x)</td></tr>
+<tr class="memdesc:a8391a20c25890ccbf3f5e3982afed236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the value of a Boolean literal in a solver response.  <br /></td></tr>
+<tr class="separator:a8391a20c25890ccbf3f5e3982afed236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9b0d38a85459cb4f9fbf29b4d42ade"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2b9b0d38a85459cb4f9fbf29b4d42ade">VarDebugString</a> (const CpModelProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>)</td></tr>
+<tr class="separator:a2b9b0d38a85459cb4f9fbf29b4d42ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc68cebfca6cb3bc53ef6bdf997316f"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adbc68cebfca6cb3bc53ef6bdf997316f">operator-</a> (LinearExpr expr)</td></tr>
+<tr class="separator:adbc68cebfca6cb3bc53ef6bdf997316f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fed4e943224c65e5d4ea3068ae1320"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a68fed4e943224c65e5d4ea3068ae1320">operator+</a> (const LinearExpr &amp;lhs, const LinearExpr &amp;rhs)</td></tr>
+<tr class="separator:a68fed4e943224c65e5d4ea3068ae1320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f14f6f466f4f18a0eabc123088b493a"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0f14f6f466f4f18a0eabc123088b493a">operator+</a> (LinearExpr &amp;&amp;lhs, const LinearExpr &amp;rhs)</td></tr>
+<tr class="separator:a0f14f6f466f4f18a0eabc123088b493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69591d050175721b9888ce584308adc"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af69591d050175721b9888ce584308adc">operator+</a> (const LinearExpr &amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:af69591d050175721b9888ce584308adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f981bca87e70d01d862d4b8046499a4"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0f981bca87e70d01d862d4b8046499a4">operator+</a> (LinearExpr &amp;&amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a0f981bca87e70d01d862d4b8046499a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad411a8b71aefeddd792d9c07c3841aaf"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad411a8b71aefeddd792d9c07c3841aaf">operator-</a> (const LinearExpr &amp;lhs, const LinearExpr &amp;rhs)</td></tr>
+<tr class="separator:ad411a8b71aefeddd792d9c07c3841aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfdc076dbd18c644141e4ce305f9ebb"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abbfdc076dbd18c644141e4ce305f9ebb">operator-</a> (LinearExpr &amp;&amp;lhs, const LinearExpr &amp;rhs)</td></tr>
+<tr class="separator:abbfdc076dbd18c644141e4ce305f9ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fb04e15c5760c4188814243c8ddd13"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa6fb04e15c5760c4188814243c8ddd13">operator-</a> (const LinearExpr &amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:aa6fb04e15c5760c4188814243c8ddd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e26e4b0abfcc42ec565c46a06c6a318"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3e26e4b0abfcc42ec565c46a06c6a318">operator-</a> (LinearExpr &amp;&amp;lhs, LinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a3e26e4b0abfcc42ec565c46a06c6a318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75d6c24565d3c5be2635a04ec2e62dc"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac75d6c24565d3c5be2635a04ec2e62dc">operator*</a> (LinearExpr expr, int64_t factor)</td></tr>
+<tr class="separator:ac75d6c24565d3c5be2635a04ec2e62dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3cb283ead936b1515ebf56aa60574dd"><td class="memItemLeft" align="right" valign="top">LinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad3cb283ead936b1515ebf56aa60574dd">operator*</a> (int64_t factor, LinearExpr expr)</td></tr>
+<tr class="separator:ad3cb283ead936b1515ebf56aa60574dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a69db6d355609bd3eeabb02b0b2b46d"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0a69db6d355609bd3eeabb02b0b2b46d">operator-</a> (DoubleLinearExpr expr)</td></tr>
+<tr class="separator:a0a69db6d355609bd3eeabb02b0b2b46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e8ddd47d3482787d5d8b3a8d125efc"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad9e8ddd47d3482787d5d8b3a8d125efc">operator+</a> (const DoubleLinearExpr &amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
+<tr class="separator:ad9e8ddd47d3482787d5d8b3a8d125efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c04bb293b9700f367a870d92e011114"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7c04bb293b9700f367a870d92e011114">operator+</a> (DoubleLinearExpr &amp;&amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
+<tr class="separator:a7c04bb293b9700f367a870d92e011114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1f2b4a40548dd6e46862fe110e3de2"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9d1f2b4a40548dd6e46862fe110e3de2">operator+</a> (const DoubleLinearExpr &amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a9d1f2b4a40548dd6e46862fe110e3de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53029297846f5e98d5a859347595926f"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a53029297846f5e98d5a859347595926f">operator+</a> (DoubleLinearExpr &amp;&amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a53029297846f5e98d5a859347595926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4668626c2ac6f37615d7353a27c7c6aa"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4668626c2ac6f37615d7353a27c7c6aa">operator+</a> (DoubleLinearExpr expr, double rhs)</td></tr>
+<tr class="separator:a4668626c2ac6f37615d7353a27c7c6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513508ac0ed2c4bd9d035a17e6344338"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a513508ac0ed2c4bd9d035a17e6344338">operator+</a> (double lhs, DoubleLinearExpr expr)</td></tr>
+<tr class="separator:a513508ac0ed2c4bd9d035a17e6344338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78b284064f1c23cca03bca4ed4f8e4"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8b78b284064f1c23cca03bca4ed4f8e4">operator-</a> (const DoubleLinearExpr &amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
+<tr class="separator:a8b78b284064f1c23cca03bca4ed4f8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22be7ed03fb3405f2e788c75b866c093"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a22be7ed03fb3405f2e788c75b866c093">operator-</a> (DoubleLinearExpr &amp;&amp;lhs, const DoubleLinearExpr &amp;rhs)</td></tr>
+<tr class="separator:a22be7ed03fb3405f2e788c75b866c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4329bf2c08578f96cf463bf49b9108"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9a4329bf2c08578f96cf463bf49b9108">operator-</a> (const DoubleLinearExpr &amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a9a4329bf2c08578f96cf463bf49b9108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e465ec609b6781cbae4eb27570f6ef"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a23e465ec609b6781cbae4eb27570f6ef">operator-</a> (DoubleLinearExpr &amp;&amp;lhs, DoubleLinearExpr &amp;&amp;rhs)</td></tr>
+<tr class="separator:a23e465ec609b6781cbae4eb27570f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0458a9776b540c43c6ac85d95d93b49"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad0458a9776b540c43c6ac85d95d93b49">operator-</a> (DoubleLinearExpr epxr, double rhs)</td></tr>
+<tr class="separator:ad0458a9776b540c43c6ac85d95d93b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e798e9e0accae87c9c2441023563795"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4e798e9e0accae87c9c2441023563795">operator-</a> (double lhs, DoubleLinearExpr expr)</td></tr>
+<tr class="separator:a4e798e9e0accae87c9c2441023563795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b0233a23fd6da4b3439aa1dca4790f"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a41b0233a23fd6da4b3439aa1dca4790f">operator*</a> (DoubleLinearExpr expr, double factor)</td></tr>
+<tr class="separator:a41b0233a23fd6da4b3439aa1dca4790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e00f177b869ce9e4d45838c8e48e158"><td class="memItemLeft" align="right" valign="top">DoubleLinearExpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6e00f177b869ce9e4d45838c8e48e158">operator*</a> (double factor, DoubleLinearExpr expr)</td></tr>
+<tr class="separator:a6e00f177b869ce9e4d45838c8e48e158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="cp__model_8h.html">cp_model.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

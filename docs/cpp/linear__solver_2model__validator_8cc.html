@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/linear_solver/model_validator.cc File Reference</title>
+<title>OR-Tools: model_validator.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -97,65 +97,46 @@ $(document).ready(function(){initNavTree('linear__solver_2model__validator_8cc.h
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">model_validator.cc File Reference</div></div>
+  <div class="headertitle"><div class="title">linear_solver/model_validator.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="linear__solver_2model__validator_8h_source.html">ortools/linear_solver/model_validator.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/status/status.h&quot;</code><br />
-<code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;absl/strings/match.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
-<code>#include &quot;absl/types/optional.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="accurate__sum_8h_source.html">ortools/base/accurate_sum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
-<code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="port_2file_8h_source.html">ortools/port/file.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fp__utils_8h_source.html">ortools/util/fp_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lazy__mutable__copy_8h_source.html">ortools/util/lazy_mutable_copy.h</a>&quot;</code><br />
-</div>
+
 <p><a href="linear__solver_2model__validator_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aff224abb81f10208eec52534c895aa07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2model__validator_8cc.html#aff224abb81f10208eec52534c895aa07">COPY_FIELD_IF_PRESENT</a>(field)&#160;&#160;&#160;  <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (from.has_##field()) <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>-&gt;set_##field(from.field())</td></tr>
+<tr class="memitem:aff224abb81f10208eec52534c895aa07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2model__validator_8cc.html#aff224abb81f10208eec52534c895aa07">COPY_FIELD_IF_PRESENT</a>(field)&#160;&#160;&#160;  <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (from.has_##field()) to-&gt;set_##field(from.field())</td></tr>
 <tr class="separator:aff224abb81f10208eec52534c895aa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f15a1b3b1e093ebe2375816984f938a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2model__validator_8cc.html#a3f15a1b3b1e093ebe2375816984f938a">ABSL_FLAG</a> (double, model_validator_infinity, 1e100, &quot;Anything above or equal <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> this magnitude will be considered infinity.&quot;)</td></tr>
+<tr class="memitem:a3f15a1b3b1e093ebe2375816984f938a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2model__validator_8cc.html#a3f15a1b3b1e093ebe2375816984f938a">ABSL_FLAG</a> (double, model_validator_infinity, 1e100, &quot;Anything above or equal to this magnitude will be considered infinity.&quot;)</td></tr>
 <tr class="separator:a3f15a1b3b1e093ebe2375816984f938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa792f9cf1ccd18b44bbab30916f06745"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa792f9cf1ccd18b44bbab30916f06745">operations_research::FindErrorInMPModelProto</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double abs_value_threshold, const bool accept_trivially_infeasible_bounds)</td></tr>
-<tr class="separator:aa792f9cf1ccd18b44bbab30916f06745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b0697babe569844931569546701b78"><td class="memItemLeft" align="right" valign="top">std::optional&lt; LazyMutableCopy&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a18b0697babe569844931569546701b78">operations_research::ExtractValidMPModelOrPopulateResponseStatus</a> (const MPModelRequest &amp;request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)</td></tr>
-<tr class="separator:a18b0697babe569844931569546701b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518848a6b3e172d127121637ab5c608d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a518848a6b3e172d127121637ab5c608d">operations_research::ExtractValidMPModelInPlaceOrPopulateResponseStatus</a> (MPModelRequest *request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)</td></tr>
-<tr class="separator:a518848a6b3e172d127121637ab5c608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ee4d82cf625670cdc1f52197454654"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae4ee4d82cf625670cdc1f52197454654">operations_research::FindFeasibilityErrorInSolutionHint</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double tolerance)</td></tr>
-<tr class="separator:ae4ee4d82cf625670cdc1f52197454654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2506c50d4eb5505613003f685fd1af9f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2506c50d4eb5505613003f685fd1af9f">operations_research::FindErrorInMPModelDeltaProto</a> (const MPModelDeltaProto &amp;<a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a2506c50d4eb5505613003f685fd1af9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6841e1b78c89cf9139fc1b9ba1ae8cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae6841e1b78c89cf9139fc1b9ba1ae8cb">operations_research::MergeMPConstraintProtoExceptTerms</a> (const MPConstraintProto &amp;from, MPConstraintProto *<a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>)</td></tr>
-<tr class="separator:ae6841e1b78c89cf9139fc1b9ba1ae8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed9bad79131000a00e7f01a5f5b824c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3ed9bad79131000a00e7f01a5f5b824c">operations_research::ApplyVerifiedMPModelDelta</a> (const MPModelDeltaProto &amp;<a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, MPModelProto *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a3ed9bad79131000a00e7f01a5f5b824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa964b4fd4cba1119c722a85bea947d05"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa964b4fd4cba1119c722a85bea947d05">FindErrorInMPModelProto</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double abs_value_threshold=0.0, bool accept_trivially_infeasible_bounds=false)</td></tr>
+<tr class="memdesc:aa964b4fd4cba1119c722a85bea947d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an empty string iff the model is valid and not trivially infeasible.  <br /></td></tr>
+<tr class="separator:aa964b4fd4cba1119c722a85bea947d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d453a1a521c2158049d1ade0e9ce52"><td class="memItemLeft" align="right" valign="top">std::optional&lt; LazyMutableCopy&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a95d453a1a521c2158049d1ade0e9ce52">ExtractValidMPModelOrPopulateResponseStatus</a> (const MPModelRequest &amp;request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)</td></tr>
+<tr class="memdesc:a95d453a1a521c2158049d1ade0e9ce52"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the model is valid and non-empty, returns it (possibly after extracting the model_delta).  <br /></td></tr>
+<tr class="separator:a95d453a1a521c2158049d1ade0e9ce52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028894df65f61e94b6a406ed76901abf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a028894df65f61e94b6a406ed76901abf">ExtractValidMPModelInPlaceOrPopulateResponseStatus</a> (MPModelRequest *request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)</td></tr>
+<tr class="memdesc:a028894df65f61e94b6a406ed76901abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="namespaceoperations__research.html#a95d453a1a521c2158049d1ade0e9ce52" title="If the model is valid and non-empty, returns it (possibly after extracting the model_delta).">ExtractValidMPModelOrPopulateResponseStatus()</a>, but works in-place: if the MPModel needed extraction, it will be populated in the request, and it returns the success boolean.  <br /></td></tr>
+<tr class="separator:a028894df65f61e94b6a406ed76901abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30505c27ac9dd7ded3396e750cbff5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad30505c27ac9dd7ded3396e750cbff5f">FindFeasibilityErrorInSolutionHint</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double tolerance)</td></tr>
+<tr class="memdesc:ad30505c27ac9dd7ded3396e750cbff5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an empty string if the solution hint given in the model is a feasible solution.  <br /></td></tr>
+<tr class="separator:ad30505c27ac9dd7ded3396e750cbff5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe0ce1e27e08e817ec6f105976b729f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1fe0ce1e27e08e817ec6f105976b729f">FindErrorInMPModelDeltaProto</a> (const MPModelDeltaProto &amp;<a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a1fe0ce1e27e08e817ec6f105976b729f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like FindErrorInMPModelProto, but for a MPModelDeltaProto applied to a given baseline model (assumed valid, eg.  <br /></td></tr>
+<tr class="separator:a1fe0ce1e27e08e817ec6f105976b729f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d41884f3ad7b19224d25ba9bccd55a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af5d41884f3ad7b19224d25ba9bccd55a">MergeMPConstraintProtoExceptTerms</a> (const MPConstraintProto &amp;from, MPConstraintProto *to)</td></tr>
+<tr class="separator:af5d41884f3ad7b19224d25ba9bccd55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa4ae40c78d7a248efb26fde93fb805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5fa4ae40c78d7a248efb26fde93fb805">ApplyVerifiedMPModelDelta</a> (const MPModelDeltaProto &amp;<a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, MPModelProto *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a5fa4ae40c78d7a248efb26fde93fb805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aff224abb81f10208eec52534c895aa07" name="aff224abb81f10208eec52534c895aa07"></a>
@@ -169,7 +150,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">field</td><td>)</td>
-          <td>&#160;&#160;&#160;  <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (from.has_##field()) <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>-&gt;set_##field(from.field())</td>
+          <td>&#160;&#160;&#160;  <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> (from.has_##field()) to-&gt;set_##field(from.field())</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +185,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Anything above or equal <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> this magnitude will be considered infinity.&quot;&#160;</td>
+          <td class="paramtype">&quot;Anything above or equal to this magnitude will be considered infinity.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -214,18 +195,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="linear__solver_2model__validator_8cc.html">model_validator.cc</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

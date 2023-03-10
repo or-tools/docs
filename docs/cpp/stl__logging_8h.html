@@ -1,11 +1,12 @@
+<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: ortools/base/stl_logging.h File Reference</title>
+<title>OR-Tools: stl_logging.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,20 +18,19 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
+ <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.5</span>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OR-Tools
+   &#160;<span id="projectnumber">9.6</span>
    </div>
-   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,24 +100,12 @@ $(document).ready(function(){initNavTree('stl__logging_8h.html',''); initResizab
   <div class="headertitle"><div class="title">stl_logging.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;list&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;ostream&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/container/node_hash_map.h&quot;</code><br />
-<code>#include &quot;absl/container/node_hash_set.h&quot;</code><br />
-</div>
+
 <p><a href="stl__logging_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegoogle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html">google</a></td></tr>
-<tr class="memdesc:namespacegoogle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for SCIP. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
 <tr class="memdesc:namespacestd"><td class="mdescLeft">&#160;</td><td class="mdescRight">STL namespace. <br /></td></tr>
@@ -139,9 +127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a682a8f845c69fb4338ae7da571464daf"><td class="memTemplParams" colspan="2">template&lt;class First , class Second &gt; </td></tr>
 <tr class="memitem:a682a8f845c69fb4338ae7da571464daf"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="stl__logging_8h.html#a682a8f845c69fb4338ae7da571464daf">operator&lt;&lt;</a> (std::ostream &amp;out, const std::pair&lt; First, Second &gt; &amp;p)</td></tr>
 <tr class="separator:a682a8f845c69fb4338ae7da571464daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a5342065be66465356f053adfba6fe"><td class="memTemplParams" colspan="2">template&lt;class Iter &gt; </td></tr>
-<tr class="memitem:ae5a5342065be66465356f053adfba6fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#ae5a5342065be66465356f053adfba6fe">google::PrintSequence</a> (std::ostream &amp;out, Iter <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, Iter <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
-<tr class="separator:ae5a5342065be66465356f053adfba6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae631154cd9cf09cd2b9087903915cddf"><td class="memTemplParams" colspan="2">template&lt;class Iter &gt; </td></tr>
+<tr class="memitem:ae631154cd9cf09cd2b9087903915cddf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#ae631154cd9cf09cd2b9087903915cddf">PrintSequence</a> (std::ostream &amp;out, Iter begin, Iter <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
+<tr class="separator:ae631154cd9cf09cd2b9087903915cddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aff2c9aeb85a64708d00f8d36cb2aac95" name="aff2c9aeb85a64708d00f8d36cb2aac95"></a>
@@ -255,8 +243,6 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class First , class Second &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -285,8 +271,6 @@ template&lt;class First , class Second &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Forward declare these two, and define them after all the container streams operators so that we can recurse from pair -&gt; container -&gt; container -&gt; pair properly. </p>
 
 <p class="definition">Definition at line <a class="el" href="stl__logging_8h_source.html#l00099">99</a> of file <a class="el" href="stl__logging_8h_source.html">stl_logging.h</a>.</p>
 
@@ -294,11 +278,14 @@ template&lt;class First , class Second &gt; </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="stl__logging_8h.html">stl_logging.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>
