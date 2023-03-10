@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: integer.h File Reference</title>
+<title>Google OR-Tools: ortools/sat/integer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,145 +101,185 @@ $(document).ready(function(){initNavTree('integer_8h.html',''); initResizable();
   <div class="headertitle"><div class="title">integer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/attributes.h&quot;</code><br />
+<code>#include &quot;absl/container/btree_map.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/container/inlined_vector.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="hash_8h_source.html">ortools/base/hash.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graph_2iterators_8h_source.html">ortools/graph/iterators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rev_8h_source.html">ortools/util/rev.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="integer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_integer_literal.html">IntegerLiteral</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">operations_research::sat::IntegerLiteral</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_affine_expression.html">AffineExpression</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1AffineExpression.html">operations_research::sat::AffineExpression</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_integer_domains.html">IntegerDomains</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1IntegerDomains.html">operations_research::sat::IntegerDomains</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_debug_solution.html">DebugSolution</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1DebugSolution.html">operations_research::sat::DebugSolution</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_value_literal_pair.html">ValueLiteralPair</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1ValueLiteralPair.html">operations_research::sat::ValueLiteralPair</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value and a literal.  <a href="structoperations__research_1_1sat_1_1ValueLiteralPair.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_value_literal_pair_1_1_compare_by_literal.html">ValueLiteralPair::CompareByLiteral</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByLiteral.html">operations_research::sat::ValueLiteralPair::CompareByLiteral</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_value_literal_pair_1_1_compare_by_value.html">ValueLiteralPair::CompareByValue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByValue.html">operations_research::sat::ValueLiteralPair::CompareByValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_literal_value_value.html">LiteralValueValue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1LiteralValueValue.html">operations_research::sat::LiteralValueValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_delayed_root_level_deduction.html">DelayedRootLevelDeduction</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1DelayedRootLevelDeduction.html">operations_research::sat::DelayedRootLevelDeduction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_integer_encoder.html">IntegerEncoder</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">operations_research::sat::IntegerEncoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_integer_trail.html">IntegerTrail</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">operations_research::sat::IntegerTrail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_propagator_interface.html">PropagatorInterface</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html">operations_research::sat::PropagatorInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for CP like propagators.  <a href="classoperations__research_1_1sat_1_1PropagatorInterface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_rev_int_repository.html">RevIntRepository</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1RevIntRepository.html">operations_research::sat::RevIntRepository</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_rev_integer_value_repository.html">RevIntegerValueRepository</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1RevIntegerValueRepository.html">operations_research::sat::RevIntegerValueRepository</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_generic_literal_watcher.html">GenericLiteralWatcher</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html">operations_research::sat::GenericLiteralWatcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a003e7b51f96dbc816348288532b04b21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a003e7b51f96dbc816348288532b04b21">InlinedIntegerLiteralVector</a> = absl::InlinedVector&lt; IntegerLiteral, 2 &gt;</td></tr>
-<tr class="separator:a003e7b51f96dbc816348288532b04b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ef0631b534fb5d67d7df65924faef8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a07ef0631b534fb5d67d7df65924faef8">InlinedIntegerValueVector</a> = absl::InlinedVector&lt; std::pair&lt; IntegerVariable, IntegerValue &gt;, 2 &gt;</td></tr>
-<tr class="separator:a07ef0631b534fb5d67d7df65924faef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539d666be21909480bba1626e9c55090"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a539d666be21909480bba1626e9c55090">operations_research::sat::InlinedIntegerLiteralVector</a> = absl::InlinedVector&lt; IntegerLiteral, 2 &gt;</td></tr>
+<tr class="separator:a539d666be21909480bba1626e9c55090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add26b71a74fa6e967e90594b50f4aa51"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#add26b71a74fa6e967e90594b50f4aa51">operations_research::sat::InlinedIntegerValueVector</a> = absl::InlinedVector&lt; std::pair&lt; IntegerVariable, IntegerValue &gt;, 2 &gt;</td></tr>
+<tr class="separator:add26b71a74fa6e967e90594b50f4aa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9aa0b267969c3bac9242433e7b4dd8c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9aa0b267969c3bac9242433e7b4dd8c0">DEFINE_STRONG_INT64_TYPE</a> (IntegerValue)</td></tr>
-<tr class="separator:a9aa0b267969c3bac9242433e7b4dd8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af028b946192e5acb3d3824e3373f1bd1"><td class="memItemLeft" align="right" valign="top">constexpr IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af028b946192e5acb3d3824e3373f1bd1">kMaxIntegerValue</a> (std::numeric_limits&lt; IntegerValue::ValueType &gt;<a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">::max</a>() - 1)</td></tr>
-<tr class="separator:af028b946192e5acb3d3824e3373f1bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72208ab785b14bd4915ec51d94de4765"><td class="memItemLeft" align="right" valign="top">constexpr IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a72208ab785b14bd4915ec51d94de4765">kMinIntegerValue</a> (-<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">kMaxIntegerValue.value</a>())</td></tr>
-<tr class="separator:a72208ab785b14bd4915ec51d94de4765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac55a89ea830f71084a8bbe89760f89d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aac55a89ea830f71084a8bbe89760f89d">ToDouble</a> (IntegerValue <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:aac55a89ea830f71084a8bbe89760f89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a970fc3c1dcebe0634ac27125c8bbb117"><td class="memTemplParams" colspan="2">template&lt;class IntType &gt; </td></tr>
-<tr class="memitem:a970fc3c1dcebe0634ac27125c8bbb117"><td class="memTemplItemLeft" align="right" valign="top">IntType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a970fc3c1dcebe0634ac27125c8bbb117">IntTypeAbs</a> (IntType t)</td></tr>
-<tr class="separator:a970fc3c1dcebe0634ac27125c8bbb117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe92c530468208b34c224d7fa9977579"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abe92c530468208b34c224d7fa9977579">CeilRatio</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
-<tr class="separator:abe92c530468208b34c224d7fa9977579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9484e21104ac7baaabc0cc3ff1bb8dfe"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9484e21104ac7baaabc0cc3ff1bb8dfe">FloorRatio</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
-<tr class="separator:a9484e21104ac7baaabc0cc3ff1bb8dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0329997918bca01a5b3998570566063"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa0329997918bca01a5b3998570566063">PositiveRemainder</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
-<tr class="separator:aa0329997918bca01a5b3998570566063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150dc282330feb84dd06ebbf3c0068fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a150dc282330feb84dd06ebbf3c0068fb">AddProductTo</a> (IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, IntegerValue *result)</td></tr>
-<tr class="separator:a150dc282330feb84dd06ebbf3c0068fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36535d728bfdfe9c00c638e459280c1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a36535d728bfdfe9c00c638e459280c1c">DEFINE_STRONG_INDEX_TYPE</a> (IntegerVariable)</td></tr>
-<tr class="separator:a36535d728bfdfe9c00c638e459280c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebbe8f5092166931423a55d2943163b"><td class="memItemLeft" align="right" valign="top">const IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5ebbe8f5092166931423a55d2943163b">kNoIntegerVariable</a> (-1)</td></tr>
-<tr class="separator:a5ebbe8f5092166931423a55d2943163b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a913e9872c5869f13ab4c4bf7e1a664e2"><td class="memItemLeft" align="right" valign="top">IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a913e9872c5869f13ab4c4bf7e1a664e2">NegationOf</a> (IntegerVariable i)</td></tr>
-<tr class="separator:a913e9872c5869f13ab4c4bf7e1a664e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1419e2101d9710fe8a479f93574ade7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1419e2101d9710fe8a479f93574ade7d">VariableIsPositive</a> (IntegerVariable i)</td></tr>
-<tr class="separator:a1419e2101d9710fe8a479f93574ade7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674aceb6449116986d4fc676c97efdc4"><td class="memItemLeft" align="right" valign="top">IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a674aceb6449116986d4fc676c97efdc4">PositiveVariable</a> (IntegerVariable i)</td></tr>
-<tr class="separator:a674aceb6449116986d4fc676c97efdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5469c9344485d0f6fc67de4fe21dcef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa5469c9344485d0f6fc67de4fe21dcef">DEFINE_STRONG_INDEX_TYPE</a> (PositiveOnlyIndex)</td></tr>
-<tr class="separator:aa5469c9344485d0f6fc67de4fe21dcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7625bf91306bb0e34d674011ded3149"><td class="memItemLeft" align="right" valign="top">PositiveOnlyIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac7625bf91306bb0e34d674011ded3149">GetPositiveOnlyIndex</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:ac7625bf91306bb0e34d674011ded3149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c6f38e82a7e3c7da38f2da9ad17f4f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a93c6f38e82a7e3c7da38f2da9ad17f4f">IntegerTermDebugString</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, IntegerValue coeff)</td></tr>
-<tr class="separator:a93c6f38e82a7e3c7da38f2da9ad17f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae43e784db06c0974ce59ebbe8dd2b22"><td class="memItemLeft" align="right" valign="top">std::vector&lt; IntegerVariable &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aae43e784db06c0974ce59ebbe8dd2b22">NegationOf</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
-<tr class="separator:aae43e784db06c0974ce59ebbe8dd2b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a062452c17495c82735d8b728f6a20"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a78a062452c17495c82735d8b728f6a20">operator&lt;&lt;</a> (std::ostream &amp;os, IntegerLiteral i_lit)</td></tr>
-<tr class="separator:a78a062452c17495c82735d8b728f6a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae750d275a9b357d63c50301698441ac5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae750d275a9b357d63c50301698441ac5">operator&lt;&lt;</a> (std::ostream &amp;os, absl::Span&lt; const IntegerLiteral &gt; literals)</td></tr>
-<tr class="separator:ae750d275a9b357d63c50301698441ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3ed8a15027b96a110bbe6e17f6a4c4"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#add3ed8a15027b96a110bbe6e17f6a4c4">operator&lt;&lt;</a> (std::ostream &amp;os, const ValueLiteralPair &amp;p)</td></tr>
-<tr class="separator:add3ed8a15027b96a110bbe6e17f6a4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7fde405ca38aa74f16e86f2e55937eb"><td class="memItemLeft" align="right" valign="top">std::function&lt; BooleanVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af7fde405ca38aa74f16e86f2e55937eb">NewBooleanVariable</a> ()</td></tr>
-<tr class="separator:af7fde405ca38aa74f16e86f2e55937eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e5d91de3bb85d00a6978cf74035112"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad6e5d91de3bb85d00a6978cf74035112">ConstantIntegerVariable</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:ad6e5d91de3bb85d00a6978cf74035112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41a6124a0cc2ef97c68af146bf201da0"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a41a6124a0cc2ef97c68af146bf201da0">NewIntegerVariable</a> (int64_t lb, int64_t ub)</td></tr>
-<tr class="separator:a41a6124a0cc2ef97c68af146bf201da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7996407b4ca2785cc311d71178308ed"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad7996407b4ca2785cc311d71178308ed">NewIntegerVariable</a> (const Domain &amp;domain)</td></tr>
-<tr class="separator:ad7996407b4ca2785cc311d71178308ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a6b6ab2c800de49c45917d462b6214"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a54a6b6ab2c800de49c45917d462b6214">NewIntegerVariableFromLiteral</a> (Literal lit)</td></tr>
-<tr class="separator:a54a6b6ab2c800de49c45917d462b6214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5bff8b06b15fb7af3bf08f4d0fcbd5d"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af5bff8b06b15fb7af3bf08f4d0fcbd5d">LowerBound</a> (IntegerVariable v)</td></tr>
-<tr class="separator:af5bff8b06b15fb7af3bf08f4d0fcbd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9047b65352be439f7a7c7c3632ee69b9"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9047b65352be439f7a7c7c3632ee69b9">UpperBound</a> (IntegerVariable v)</td></tr>
-<tr class="separator:a9047b65352be439f7a7c7c3632ee69b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9526002c5b06de5b1765ac7d8fc3f22e"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9526002c5b06de5b1765ac7d8fc3f22e">IsFixed</a> (IntegerVariable v)</td></tr>
-<tr class="separator:a9526002c5b06de5b1765ac7d8fc3f22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c1569c6a36247e9521ab9cb3c520dee"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9c1569c6a36247e9521ab9cb3c520dee">Value</a> (IntegerVariable v)</td></tr>
-<tr class="separator:a9c1569c6a36247e9521ab9cb3c520dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1924665f5422ba005fcec9d8c8dd6ebb"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1924665f5422ba005fcec9d8c8dd6ebb">GreaterOrEqual</a> (IntegerVariable v, int64_t lb)</td></tr>
-<tr class="separator:a1924665f5422ba005fcec9d8c8dd6ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe31061ee454d939d53a0a8078ad0751"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abe31061ee454d939d53a0a8078ad0751">LowerOrEqual</a> (IntegerVariable v, int64_t ub)</td></tr>
-<tr class="separator:abe31061ee454d939d53a0a8078ad0751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c45fe79d00117276e94f793a6385c4f"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0c45fe79d00117276e94f793a6385c4f">Equality</a> (IntegerVariable v, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a0c45fe79d00117276e94f793a6385c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeccac83b2cce8f5e4a2ae0d3b29ecc3c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aeccac83b2cce8f5e4a2ae0d3b29ecc3c">Implication</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, IntegerLiteral i)</td></tr>
-<tr class="separator:aeccac83b2cce8f5e4a2ae0d3b29ecc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a990a2261963aa0b4fefd05f5c05ad1c7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a990a2261963aa0b4fefd05f5c05ad1c7">ImpliesInInterval</a> (Literal in_interval, IntegerVariable v, int64_t lb, int64_t ub)</td></tr>
-<tr class="separator:a990a2261963aa0b4fefd05f5c05ad1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51aca5f620fce5b4a754757d31d0aaa"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::vector&lt; ValueLiteralPair &gt;(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac51aca5f620fce5b4a754757d31d0aaa">FullyEncodeVariable</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:ac51aca5f620fce5b4a754757d31d0aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab052eee1f91ef47d1e5a162c2dfdd355"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab052eee1f91ef47d1e5a162c2dfdd355">ExcludeCurrentSolutionWithoutIgnoredVariableAndBacktrack</a> ()</td></tr>
-<tr class="separator:ab052eee1f91ef47d1e5a162c2dfdd355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abf8d5e7d838d6348a6b5b7101a0b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2abf8d5e7d838d6348a6b5b7101a0b04">operations_research::sat::DEFINE_STRONG_INT64_TYPE</a> (IntegerValue)</td></tr>
+<tr class="separator:a2abf8d5e7d838d6348a6b5b7101a0b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1227e67513602591fb959e35c9de66e8"><td class="memItemLeft" align="right" valign="top">constexpr IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1227e67513602591fb959e35c9de66e8">operations_research::sat::kMaxIntegerValue</a> (std::numeric_limits&lt; IntegerValue::ValueType &gt;<a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">::max</a>() - 1)</td></tr>
+<tr class="separator:a1227e67513602591fb959e35c9de66e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5316808a2d5007c3b489e844801385e5"><td class="memItemLeft" align="right" valign="top">constexpr IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5316808a2d5007c3b489e844801385e5">operations_research::sat::kMinIntegerValue</a> (-<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">kMaxIntegerValue.value</a>())</td></tr>
+<tr class="separator:a5316808a2d5007c3b489e844801385e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed77a1a7675c2f8568529a5a16247ec1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aed77a1a7675c2f8568529a5a16247ec1">operations_research::sat::ToDouble</a> (IntegerValue <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:aed77a1a7675c2f8568529a5a16247ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e30e51173c7e43a8c0b4668d5e3f050"><td class="memTemplParams" colspan="2">template&lt;class IntType &gt; </td></tr>
+<tr class="memitem:a1e30e51173c7e43a8c0b4668d5e3f050"><td class="memTemplItemLeft" align="right" valign="top">IntType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1e30e51173c7e43a8c0b4668d5e3f050">operations_research::sat::IntTypeAbs</a> (IntType t)</td></tr>
+<tr class="separator:a1e30e51173c7e43a8c0b4668d5e3f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b96869d2a821cf1d2e6099e7a0f51b"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a29b96869d2a821cf1d2e6099e7a0f51b">operations_research::sat::CeilRatio</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
+<tr class="separator:a29b96869d2a821cf1d2e6099e7a0f51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07823d046b027c81155f8a2f322cf813"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a07823d046b027c81155f8a2f322cf813">operations_research::sat::FloorRatio</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
+<tr class="separator:a07823d046b027c81155f8a2f322cf813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f714c395df7a814ed067125f567a0d"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a83f714c395df7a814ed067125f567a0d">operations_research::sat::PositiveRemainder</a> (IntegerValue dividend, IntegerValue positive_divisor)</td></tr>
+<tr class="separator:a83f714c395df7a814ed067125f567a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9e8fab437ba44c91b0493a74cde263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0c9e8fab437ba44c91b0493a74cde263">operations_research::sat::AddProductTo</a> (IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, IntegerValue *result)</td></tr>
+<tr class="memdesc:a0c9e8fab437ba44c91b0493a74cde263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes result += a * b, and return false iff there is an overflow.  <br /></td></tr>
+<tr class="separator:a0c9e8fab437ba44c91b0493a74cde263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda1319282a2ed2307e06999f1e8e1f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adda1319282a2ed2307e06999f1e8e1f8">operations_research::sat::DEFINE_STRONG_INDEX_TYPE</a> (IntegerVariable)</td></tr>
+<tr class="separator:adda1319282a2ed2307e06999f1e8e1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd8c44473618b7eafd33ba978db2f06"><td class="memItemLeft" align="right" valign="top">const IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5bd8c44473618b7eafd33ba978db2f06">operations_research::sat::kNoIntegerVariable</a> (-1)</td></tr>
+<tr class="separator:a5bd8c44473618b7eafd33ba978db2f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829dfffce41f532b7ca32665750a1ec2"><td class="memItemLeft" align="right" valign="top">IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a829dfffce41f532b7ca32665750a1ec2">operations_research::sat::NegationOf</a> (IntegerVariable i)</td></tr>
+<tr class="separator:a829dfffce41f532b7ca32665750a1ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2544d2a3a5ef4c78f8e5891f104ab41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae2544d2a3a5ef4c78f8e5891f104ab41">operations_research::sat::VariableIsPositive</a> (IntegerVariable i)</td></tr>
+<tr class="separator:ae2544d2a3a5ef4c78f8e5891f104ab41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ac774d4646a83631f8117f4ea03f5"><td class="memItemLeft" align="right" valign="top">IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7f1ac774d4646a83631f8117f4ea03f5">operations_research::sat::PositiveVariable</a> (IntegerVariable i)</td></tr>
+<tr class="separator:a7f1ac774d4646a83631f8117f4ea03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ab2033e6dfb7bc18d684852cccc8fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a57ab2033e6dfb7bc18d684852cccc8fa">operations_research::sat::DEFINE_STRONG_INDEX_TYPE</a> (PositiveOnlyIndex)</td></tr>
+<tr class="memdesc:a57ab2033e6dfb7bc18d684852cccc8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special type for storing only one thing for var and NegationOf(var).  <br /></td></tr>
+<tr class="separator:a57ab2033e6dfb7bc18d684852cccc8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf09b937c4d7439804c0fc61afcb7008"><td class="memItemLeft" align="right" valign="top">PositiveOnlyIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#acf09b937c4d7439804c0fc61afcb7008">operations_research::sat::GetPositiveOnlyIndex</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
+<tr class="separator:acf09b937c4d7439804c0fc61afcb7008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429d1fd54b5becc39e4cfbc608d7d70a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a429d1fd54b5becc39e4cfbc608d7d70a">operations_research::sat::IntegerTermDebugString</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, IntegerValue coeff)</td></tr>
+<tr class="separator:a429d1fd54b5becc39e4cfbc608d7d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc13a38d3e6a002d912b72eac52dcd1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; IntegerVariable &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3cc13a38d3e6a002d912b72eac52dcd1">operations_research::sat::NegationOf</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
+<tr class="memdesc:a3cc13a38d3e6a002d912b72eac52dcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vector of the negated variables.  <br /></td></tr>
+<tr class="separator:a3cc13a38d3e6a002d912b72eac52dcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af861617ac8f6ef74fe77c789248b86"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0af861617ac8f6ef74fe77c789248b86">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, IntegerLiteral i_lit)</td></tr>
+<tr class="separator:a0af861617ac8f6ef74fe77c789248b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646ee3cd14af2a14066c6cd56f7f242b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a646ee3cd14af2a14066c6cd56f7f242b">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, absl::Span&lt; const IntegerLiteral &gt; literals)</td></tr>
+<tr class="separator:a646ee3cd14af2a14066c6cd56f7f242b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f0092047d7e82e9fdb7f6b1235947c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad4f0092047d7e82e9fdb7f6b1235947c">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, const ValueLiteralPair &amp;p)</td></tr>
+<tr class="separator:ad4f0092047d7e82e9fdb7f6b1235947c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb95842130bc03177260ad20464bdbf"><td class="memItemLeft" align="right" valign="top">std::function&lt; BooleanVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3cb95842130bc03177260ad20464bdbf">operations_research::sat::NewBooleanVariable</a> ()</td></tr>
+<tr class="separator:a3cb95842130bc03177260ad20464bdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64664019450638ab96732f0b59ea015b"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a64664019450638ab96732f0b59ea015b">operations_research::sat::ConstantIntegerVariable</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a64664019450638ab96732f0b59ea015b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab186c7ad5f0930615f096f56e1499d30"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab186c7ad5f0930615f096f56e1499d30">operations_research::sat::NewIntegerVariable</a> (int64_t lb, int64_t ub)</td></tr>
+<tr class="separator:ab186c7ad5f0930615f096f56e1499d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7052daba281884bb077df08cb581cb31"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7052daba281884bb077df08cb581cb31">operations_research::sat::NewIntegerVariable</a> (const Domain &amp;domain)</td></tr>
+<tr class="separator:a7052daba281884bb077df08cb581cb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050c9f843d5f82c4cf6e958a4062e5a7"><td class="memItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a050c9f843d5f82c4cf6e958a4062e5a7">operations_research::sat::NewIntegerVariableFromLiteral</a> (Literal lit)</td></tr>
+<tr class="separator:a050c9f843d5f82c4cf6e958a4062e5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad49ae9019c528851f6fd084479a567"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3ad49ae9019c528851f6fd084479a567">operations_research::sat::LowerBound</a> (IntegerVariable v)</td></tr>
+<tr class="separator:a3ad49ae9019c528851f6fd084479a567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e815eb2193f1bb6903274c7f0859cd7"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9e815eb2193f1bb6903274c7f0859cd7">operations_research::sat::UpperBound</a> (IntegerVariable v)</td></tr>
+<tr class="separator:a9e815eb2193f1bb6903274c7f0859cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3c6ea5e2b95e4d7e45d6146c61c2ce"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4d3c6ea5e2b95e4d7e45d6146c61c2ce">operations_research::sat::IsFixed</a> (IntegerVariable v)</td></tr>
+<tr class="separator:a4d3c6ea5e2b95e4d7e45d6146c61c2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eab70b5ead3894afac4d4fff0fd984"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a96eab70b5ead3894afac4d4fff0fd984">operations_research::sat::Value</a> (IntegerVariable v)</td></tr>
+<tr class="memdesc:a96eab70b5ead3894afac4d4fff0fd984"><td class="mdescLeft">&#160;</td><td class="mdescRight">This checks that the variable is fixed.  <br /></td></tr>
+<tr class="separator:a96eab70b5ead3894afac4d4fff0fd984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ba1ab2a4a6cdc0ea4324d409ddbe7e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab3ba1ab2a4a6cdc0ea4324d409ddbe7e">operations_research::sat::GreaterOrEqual</a> (IntegerVariable v, int64_t lb)</td></tr>
+<tr class="separator:ab3ba1ab2a4a6cdc0ea4324d409ddbe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f35d207f7fbd9abc30ced851352b069"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3f35d207f7fbd9abc30ced851352b069">operations_research::sat::LowerOrEqual</a> (IntegerVariable v, int64_t ub)</td></tr>
+<tr class="separator:a3f35d207f7fbd9abc30ced851352b069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134ba4c37e543cb80c698555b6ae89f8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a134ba4c37e543cb80c698555b6ae89f8">operations_research::sat::Equality</a> (IntegerVariable v, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="memdesc:a134ba4c37e543cb80c698555b6ae89f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix v to a given value.  <br /></td></tr>
+<tr class="separator:a134ba4c37e543cb80c698555b6ae89f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e056f4efb99b080ae5bdb7267339f59"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6e056f4efb99b080ae5bdb7267339f59">operations_research::sat::Implication</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, IntegerLiteral i)</td></tr>
+<tr class="separator:a6e056f4efb99b080ae5bdb7267339f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39ed3f215af8b2d35da4d2a52254c42"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad39ed3f215af8b2d35da4d2a52254c42">operations_research::sat::ImpliesInInterval</a> (Literal in_interval, IntegerVariable v, int64_t lb, int64_t ub)</td></tr>
+<tr class="memdesc:ad39ed3f215af8b2d35da4d2a52254c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">in_interval =&gt; v in [lb, ub].  <br /></td></tr>
+<tr class="separator:ad39ed3f215af8b2d35da4d2a52254c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0185d084af6ad784edced90f45174133"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::vector&lt; ValueLiteralPair &gt;(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0185d084af6ad784edced90f45174133">operations_research::sat::FullyEncodeVariable</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
+<tr class="separator:a0185d084af6ad784edced90f45174133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ae5e343510e9d90d6c19ec12e5f6b9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a68ae5e343510e9d90d6c19ec12e5f6b9">operations_research::sat::ExcludeCurrentSolutionWithoutIgnoredVariableAndBacktrack</a> ()</td></tr>
+<tr class="memdesc:a68ae5e343510e9d90d6c19ec12e5f6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is really close to <a class="el" href="namespaceoperations__research_1_1sat.html#ae5713162a0aa0aa8ce18c442afc26254">ExcludeCurrentSolutionAndBacktrack()</a>.  <br /></td></tr>
+<tr class="separator:a68ae5e343510e9d90d6c19ec12e5f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="integer_8h.html">integer.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

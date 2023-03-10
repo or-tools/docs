@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: util.cc File Reference</title>
+<title>Google OR-Tools: ortools/sat/util.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -96,59 +96,86 @@ $(document).ready(function(){initNavTree('sat_2util_8cc.html',''); initResizable
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">sat/util.cc File Reference</div></div>
+  <div class="headertitle"><div class="title">util.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;google/protobuf/descriptor.h&quot;</code><br />
+<code>#include &quot;absl/container/btree_set.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/numeric/int128.h&quot;</code><br />
+<code>#include &quot;absl/random/bit_gen_ref.h&quot;</code><br />
+<code>#include &quot;absl/random/distributions.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="mathutil_8h_source.html">ortools/base/mathutil.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+</div>
 <p><a href="sat_2util_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b02244cdf6729a8cd5ef831c6d153b2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9b02244cdf6729a8cd5ef831c6d153b2">FormatCounter</a> (int64_t num)</td></tr>
-<tr class="separator:a9b02244cdf6729a8cd5ef831c6d153b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0441e1a54fe203c0707131e587de8fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0441e1a54fe203c0707131e587de8fae">RandomizeDecisionHeuristic</a> (absl::BitGenRef random, SatParameters *<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
-<tr class="separator:a0441e1a54fe203c0707131e587de8fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbb4c91f9a3d6eb290709745f5b661c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abbbb4c91f9a3d6eb290709745f5b661c">ModularInverse</a> (int64_t x, int64_t m)</td></tr>
-<tr class="separator:abbbb4c91f9a3d6eb290709745f5b661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629c989df2521428c30722f175874774"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a629c989df2521428c30722f175874774">PositiveMod</a> (int64_t x, int64_t m)</td></tr>
-<tr class="separator:a629c989df2521428c30722f175874774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac015d81b88379719f680eadc2aad1508"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac015d81b88379719f680eadc2aad1508">ProductWithModularInverse</a> (int64_t coeff, int64_t mod, int64_t rhs)</td></tr>
-<tr class="separator:ac015d81b88379719f680eadc2aad1508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852a51b53f6217d6bfd1aef455f53f8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a852a51b53f6217d6bfd1aef455f53f8c">SolveDiophantineEquationOfSizeTwo</a> (int64_t &amp;<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, int64_t &amp;<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, int64_t &amp;cte, int64_t &amp;x0, int64_t &amp;y0)</td></tr>
-<tr class="separator:a852a51b53f6217d6bfd1aef455f53f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7497b495a7fbfddaea40d45861680c5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa7497b495a7fbfddaea40d45861680c5">FloorSquareRoot</a> (int64_t <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>)</td></tr>
-<tr class="separator:aa7497b495a7fbfddaea40d45861680c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e9fb9c1d4b0649782f8696e85cbbaa"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a72e9fb9c1d4b0649782f8696e85cbbaa">CeilSquareRoot</a> (int64_t <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>)</td></tr>
-<tr class="separator:a72e9fb9c1d4b0649782f8696e85cbbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2269a7a6f3b17cbd10a8d8a3914d8b51"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2269a7a6f3b17cbd10a8d8a3914d8b51">ClosestMultiple</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t base)</td></tr>
-<tr class="separator:a2269a7a6f3b17cbd10a8d8a3914d8b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20de3e143682d110b863c2e9435f050"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af20de3e143682d110b863c2e9435f050">LinearInequalityCanBeReducedWithClosestMultiple</a> (int64_t base, const std::vector&lt; int64_t &gt; &amp;coeffs, const std::vector&lt; int64_t &gt; &amp;lbs, const std::vector&lt; int64_t &gt; &amp;ubs, int64_t rhs, int64_t *new_rhs)</td></tr>
-<tr class="separator:af20de3e143682d110b863c2e9435f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1ffd76bca69ccb2e7b65dfe2cf76f2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae1ffd76bca69ccb2e7b65dfe2cf76f2e">MoveOneUnprocessedLiteralLast</a> (const absl::btree_set&lt; LiteralIndex &gt; &amp;processed, int relevant_prefix_size, std::vector&lt; Literal &gt; *literals)</td></tr>
-<tr class="separator:ae1ffd76bca69ccb2e7b65dfe2cf76f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd5db78b1e004c4c9fc10f5d51ae719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0fd5db78b1e004c4c9fc10f5d51ae719">CompressTuples</a> (absl::Span&lt; const int64_t &gt; domain_sizes, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *tuples)</td></tr>
-<tr class="separator:a0fd5db78b1e004c4c9fc10f5d51ae719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac547859c555744521dd74f0a23c797bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; absl::InlinedVector&lt; int64_t, 2 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac547859c555744521dd74f0a23c797bd">FullyCompressTuples</a> (absl::Span&lt; const int64_t &gt; domain_sizes, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *tuples)</td></tr>
-<tr class="separator:ac547859c555744521dd74f0a23c797bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a7a53b2e474d3d5c602030c5c449e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a88a7a53b2e474d3d5c602030c5c449e9">operations_research::sat::FormatCounter</a> (int64_t num)</td></tr>
+<tr class="memdesc:a88a7a53b2e474d3d5c602030c5c449e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a positive number with separators for easier reading (ex: 1'348'065).  <br /></td></tr>
+<tr class="separator:a88a7a53b2e474d3d5c602030c5c449e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2421e921ab494e0c666f6d7ed2a7e432"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2421e921ab494e0c666f6d7ed2a7e432">operations_research::sat::RandomizeDecisionHeuristic</a> (absl::BitGenRef random, SatParameters *<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
+<tr class="memdesc:a2421e921ab494e0c666f6d7ed2a7e432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomizes the decision heuristic of the given SatParameters.  <br /></td></tr>
+<tr class="separator:a2421e921ab494e0c666f6d7ed2a7e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a998a24858a532c80b11c1d015e76db"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4a998a24858a532c80b11c1d015e76db">operations_research::sat::ModularInverse</a> (int64_t x, int64_t m)</td></tr>
+<tr class="separator:a4a998a24858a532c80b11c1d015e76db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac435c5e5536231b2542ba53f100c3936"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac435c5e5536231b2542ba53f100c3936">operations_research::sat::PositiveMod</a> (int64_t x, int64_t m)</td></tr>
+<tr class="memdesc:ac435c5e5536231b2542ba53f100c3936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just returns x % m but with a result always in [0, m).  <br /></td></tr>
+<tr class="separator:ac435c5e5536231b2542ba53f100c3936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345bada8924ba2bf94e22f85916b23ad"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a345bada8924ba2bf94e22f85916b23ad">operations_research::sat::ProductWithModularInverse</a> (int64_t coeff, int64_t mod, int64_t rhs)</td></tr>
+<tr class="separator:a345bada8924ba2bf94e22f85916b23ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34eb7909877704c304f50d65dd5c0052"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a34eb7909877704c304f50d65dd5c0052">operations_research::sat::SolveDiophantineEquationOfSizeTwo</a> (int64_t &amp;<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, int64_t &amp;<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, int64_t &amp;cte, int64_t &amp;x0, int64_t &amp;y0)</td></tr>
+<tr class="separator:a34eb7909877704c304f50d65dd5c0052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392d70cc768a13de271f87123513acf2"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a392d70cc768a13de271f87123513acf2">operations_research::sat::FloorSquareRoot</a> (int64_t <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>)</td></tr>
+<tr class="memdesc:a392d70cc768a13de271f87123513acf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The argument must be non-negative.  <br /></td></tr>
+<tr class="separator:a392d70cc768a13de271f87123513acf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5064fe335d0bd2f67a8c9e3e132b4f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3f5064fe335d0bd2f67a8c9e3e132b4f">operations_research::sat::CeilSquareRoot</a> (int64_t <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>)</td></tr>
+<tr class="separator:a3f5064fe335d0bd2f67a8c9e3e132b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45b9df04a0d18b7a12d062c2e7982c6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab45b9df04a0d18b7a12d062c2e7982c6">operations_research::sat::ClosestMultiple</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t base)</td></tr>
+<tr class="separator:ab45b9df04a0d18b7a12d062c2e7982c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2eb117de96cd02d6a15049c43cf114f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad2eb117de96cd02d6a15049c43cf114f">operations_research::sat::LinearInequalityCanBeReducedWithClosestMultiple</a> (int64_t base, const std::vector&lt; int64_t &gt; &amp;coeffs, const std::vector&lt; int64_t &gt; &amp;lbs, const std::vector&lt; int64_t &gt; &amp;ubs, int64_t rhs, int64_t *new_rhs)</td></tr>
+<tr class="separator:ad2eb117de96cd02d6a15049c43cf114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40dd9970adbe462e75e6074f8896e76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad40dd9970adbe462e75e6074f8896e76">operations_research::sat::MoveOneUnprocessedLiteralLast</a> (const absl::btree_set&lt; LiteralIndex &gt; &amp;processed, int relevant_prefix_size, std::vector&lt; Literal &gt; *literals)</td></tr>
+<tr class="separator:ad40dd9970adbe462e75e6074f8896e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a88950631a19f96084df07209e43d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1a88950631a19f96084df07209e43d30">operations_research::sat::CompressTuples</a> (absl::Span&lt; const int64_t &gt; domain_sizes, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *tuples)</td></tr>
+<tr class="separator:a1a88950631a19f96084df07209e43d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bf1351ffa74960b3040a96ddc37468"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; absl::InlinedVector&lt; int64_t, 2 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a36bf1351ffa74960b3040a96ddc37468">operations_research::sat::FullyCompressTuples</a> (absl::Span&lt; const int64_t &gt; domain_sizes, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *tuples)</td></tr>
+<tr class="separator:a36bf1351ffa74960b3040a96ddc37468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="sat_2util_8cc.html">util.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

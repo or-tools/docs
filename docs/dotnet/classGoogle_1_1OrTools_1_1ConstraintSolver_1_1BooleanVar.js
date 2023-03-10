@@ -1,0 +1,28 @@
+var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar =
+[
+    [ "BaseName", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a3865025bea81e1273e715f5fbc56a8dc", null ],
+    [ "Bound", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ae33be5c10a01766bcd6251f5b721c695", null ],
+    [ "Contains", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a7d124f55797de89bbf8a6fc3ba7b0ea9", null ],
+    [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a587cf195b32cbaaee162d7c82e33c168", null ],
+    [ "IsDifferent", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a26f29aa2a879855cb41a3dc8ac290a8a", null ],
+    [ "IsEqual", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ab01d5a4746c4bbd442a861a356d33bc1", null ],
+    [ "IsGreaterOrEqual", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#aaa23954551eb6a8e989cf17210e464d8", null ],
+    [ "IsLessOrEqual", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ab189ded7cc523f8016ca05996da8b980", null ],
+    [ "Max", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a500bbb887034b54330a10c217f130cbb", null ],
+    [ "Min", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a17cd718fd5f36802ebe5f5104314743d", null ],
+    [ "RawValue", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ad21efe20f261340e60dd063547080e50", null ],
+    [ "RemoveInterval", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a1d3f3e1c883317f4756ceb71f60dd88b", null ],
+    [ "RemoveValue", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ade8f0757c9e698e3dbf202e9139659e0", null ],
+    [ "RestoreValue", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a9b5523d58f007f65d7945fe4fdecd97f", null ],
+    [ "SetMax", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a4af1f34d8c4722038a031917aadcae15", null ],
+    [ "SetMin", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a1d24cc00439c00fd169f53635462ae4d", null ],
+    [ "SetRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a463841fb4d430814dc510327b086dbe8", null ],
+    [ "Size", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ae7824bc8851af91073a64f53bbf0a24d", null ],
+    [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a3a159d40d6bef0d970015ce5d007f9a8", null ],
+    [ "Value", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#abd18cb955fb85f4c1816cbbabf9f4304", null ],
+    [ "VarType", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#aacf71965456fcc2b5a677f5c57279192", null ],
+    [ "WhenBound", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#ac7e9e957172f0853bbaa9e3a6446376f", null ],
+    [ "WhenDomain", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a02da2a6f691abf1070ea65a2f1929d14", null ],
+    [ "WhenRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#a4ca51d67d34f139ab210cccf56d7709e", null ],
+    [ "kUnboundBooleanVarValue", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html#aa8542e4354cb19ec5a0e2c660a524359", null ]
+];

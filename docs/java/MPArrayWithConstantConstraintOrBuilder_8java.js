@@ -1,0 +1,4 @@
+var MPArrayWithConstantConstraintOrBuilder_8java =
+[
+    [ "com.google.ortools.linearsolver.MPArrayWithConstantConstraintOrBuilder", "interfacecom_1_1google_1_1ortools_1_1linearsolver_1_1MPArrayWithConstantConstraintOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1linearsolver_1_1MPArrayWithConstantConstraintOrBuilder" ]
+];

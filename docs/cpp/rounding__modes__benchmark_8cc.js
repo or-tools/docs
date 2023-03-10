@@ -1,0 +1,27 @@
+var rounding__modes__benchmark_8cc =
+[
+    [ "RoundToNearestEven", "structRoundToNearestEven.html", "structRoundToNearestEven" ],
+    [ "StdRoundingScope", "classStdRoundingScope.html", "classStdRoundingScope" ],
+    [ "StdRounding", "structStdRounding.html", "structStdRounding" ],
+    [ "LowLevelRoundingScope", "classLowLevelRoundingScope.html", "classLowLevelRoundingScope" ],
+    [ "LowLevelRounding", "structLowLevelRounding.html", "structLowLevelRounding" ],
+    [ "Avx512Rounding", "structAvx512Rounding.html", "structAvx512Rounding" ],
+    [ "Interval", "structInterval.html", "structInterval" ],
+    [ "BENCHMARK", "rounding__modes__benchmark_8cc.html#a2c38489249c46c7aa4e1330103941dea", null ],
+    [ "IntervalFunction", "rounding__modes__benchmark_8cc.html#a9eaa71e9558dfe275c54529d3832d475", null ],
+    [ "GetFloatingPointControlRegister", "rounding__modes__benchmark_8cc.html#ab050a9a2102dedebc6fe56b739cb32ab", null ],
+    [ "main", "rounding__modes__benchmark_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "Runner", "rounding__modes__benchmark_8cc.html#a1ccc4630cdc11bb80c414e2be3dbd6fd", null ],
+    [ "SetFloatingPointControlRegister", "rounding__modes__benchmark_8cc.html#addf1b111393d7aebfe75488bcfd30ad3", null ],
+    [ "SetRoundingMode", "rounding__modes__benchmark_8cc.html#ab3a5396642b5ae8b461da896bf691b4e", null ],
+    [ "SumOfIntegers", "rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34", null ],
+    [ "SumOfIntegers< Avx512Rounding >", "rounding__modes__benchmark_8cc.html#a0cf97c0102da1df4a4feae2a2f86bacd", null ],
+    [ "SumOfIntegers< LowLevelRounding >", "rounding__modes__benchmark_8cc.html#a2254a9389785ae97db098785ab576f73", null ],
+    [ "SumOfIntegers< RoundToNearestEven >", "rounding__modes__benchmark_8cc.html#a228d3e0b84e420301140384ef1b68ff0", null ],
+    [ "SumOfIntegers< StdRounding >", "rounding__modes__benchmark_8cc.html#aa46ba35193423d6f0954a2d7620eabd8", null ],
+    [ "SumOfSquareRoots", "rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083", null ],
+    [ "SumOfSquareRoots< Avx512Rounding >", "rounding__modes__benchmark_8cc.html#a9c6b0ea0725edc20cead3ad7fd1a5b5a", null ],
+    [ "SumOfSquareRoots< LowLevelRounding >", "rounding__modes__benchmark_8cc.html#acd9f78046565de2f33d4f70be4cd048e", null ],
+    [ "SumOfSquareRoots< RoundToNearestEven >", "rounding__modes__benchmark_8cc.html#a00f2828c509f97a3ea901c196d6501b8", null ],
+    [ "SumOfSquareRoots< StdRounding >", "rounding__modes__benchmark_8cc.html#a99d8a92a5c55c2068f4dd9c810cc5a6a", null ]
+];

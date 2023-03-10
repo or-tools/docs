@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sat_solver.h File Reference</title>
+<title>Google OR-Tools: ortools/sat/sat_solver.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,76 +101,111 @@ $(document).ready(function(){initNavTree('sat__solver_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">sat_solver.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="hash_8h_source.html">ortools/base/hash.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="clause_8h_source.html">ortools/sat/clause.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="drat__proof__handler_8h_source.html">ortools/sat/drat_proof_handler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pb__constraint_8h_source.html">ortools/sat/pb_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="restart_8h_source.html">ortools/sat/restart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__decision_8h_source.html">ortools/sat/sat_decision.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stats_8h_source.html">ortools/util/stats.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="sat__solver_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_sat_solver.html">SatSolver</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">operations_research::sat::SatSolver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_sat_solver_1_1_decision.html">SatSolver::Decision</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1SatSolver_1_1Decision.html">operations_research::sat::SatSolver::Decision</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6fb8349259fa849de0789a4ec58a8492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6fb8349259fa849de0789a4ec58a8492">MinimizeCore</a> (SatSolver *solver, std::vector&lt; Literal &gt; *core)</td></tr>
-<tr class="separator:a6fb8349259fa849de0789a4ec58a8492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826e3570e4b13efd8e73f1e1b7f3b155"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a826e3570e4b13efd8e73f1e1b7f3b155">BooleanLinearConstraint</a> (int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, std::vector&lt; LiteralWithCoeff &gt; *cst)</td></tr>
-<tr class="separator:a826e3570e4b13efd8e73f1e1b7f3b155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121c3b6b64bf370f313eb7282f9841b7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a121c3b6b64bf370f313eb7282f9841b7">CardinalityConstraint</a> (int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
-<tr class="separator:a121c3b6b64bf370f313eb7282f9841b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb72888c67c55228c82427c74c7fd8e8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#acb72888c67c55228c82427c74c7fd8e8">ExactlyOneConstraint</a> (const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
-<tr class="separator:acb72888c67c55228c82427c74c7fd8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632201343bef7a2becc666f496384cbc"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a632201343bef7a2becc666f496384cbc">AtMostOneConstraint</a> (const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
-<tr class="separator:a632201343bef7a2becc666f496384cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b7d3ab598ebdd6a603d2504243a838"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a74b7d3ab598ebdd6a603d2504243a838">ClauseConstraint</a> (absl::Span&lt; const Literal &gt; literals)</td></tr>
-<tr class="separator:a74b7d3ab598ebdd6a603d2504243a838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa601e9cbc5b621ebb6bb634b5da4ccf7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa601e9cbc5b621ebb6bb634b5da4ccf7">Implication</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
-<tr class="separator:aa601e9cbc5b621ebb6bb634b5da4ccf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519ad1379c2eb3905d22a1af3cfe87f6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a519ad1379c2eb3905d22a1af3cfe87f6">Equality</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
-<tr class="separator:a519ad1379c2eb3905d22a1af3cfe87f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be6a23b3f7152b5bb8f81834a2164a9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3be6a23b3f7152b5bb8f81834a2164a9">ReifiedBoolOr</a> (const std::vector&lt; Literal &gt; &amp;literals, Literal r)</td></tr>
-<tr class="separator:a3be6a23b3f7152b5bb8f81834a2164a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50fcd2c6fcec4773a5fbebddf5fa997"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af50fcd2c6fcec4773a5fbebddf5fa997">EnforcedClause</a> (absl::Span&lt; const Literal &gt; enforcement_literals, absl::Span&lt; const Literal &gt; clause)</td></tr>
-<tr class="separator:af50fcd2c6fcec4773a5fbebddf5fa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad535b3e4a02359af5835b19237b37da5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad535b3e4a02359af5835b19237b37da5">ReifiedBoolAnd</a> (const std::vector&lt; Literal &gt; &amp;literals, Literal r)</td></tr>
-<tr class="separator:ad535b3e4a02359af5835b19237b37da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870706eba7dc95619f101c714acb780e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a870706eba7dc95619f101c714acb780e">ReifiedBoolLe</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, Literal r)</td></tr>
-<tr class="separator:a870706eba7dc95619f101c714acb780e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399e0cb870fdad2fff3c79283c59a39f"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a399e0cb870fdad2fff3c79283c59a39f">Value</a> (Literal l)</td></tr>
-<tr class="separator:a399e0cb870fdad2fff3c79283c59a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf89d60637b6479699cce1bbdc7bfe8d"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abf89d60637b6479699cce1bbdc7bfe8d">Value</a> (BooleanVariable <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
-<tr class="separator:abf89d60637b6479699cce1bbdc7bfe8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5677bfe56492804fcfbfa7953a7f1027"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5677bfe56492804fcfbfa7953a7f1027">ExcludeCurrentSolutionAndBacktrack</a> ()</td></tr>
-<tr class="separator:a5677bfe56492804fcfbfa7953a7f1027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762ee6abbb57f9f730df6033aafdf4fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a762ee6abbb57f9f730df6033aafdf4fc">SatStatusString</a> (SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a762ee6abbb57f9f730df6033aafdf4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18256be51d0586df4f3f72d224893570"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a18256be51d0586df4f3f72d224893570">operator&lt;&lt;</a> (std::ostream &amp;os, SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a18256be51d0586df4f3f72d224893570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af004193a12bf9ed78b295e7f7cb51e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af004193a12bf9ed78b295e7f7cb51e6f">operations_research::sat::MinimizeCore</a> (SatSolver *solver, std::vector&lt; Literal &gt; *core)</td></tr>
+<tr class="separator:af004193a12bf9ed78b295e7f7cb51e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac341ac6090ff0bed8ad2231c94cd3bfc"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac341ac6090ff0bed8ad2231c94cd3bfc">operations_research::sat::BooleanLinearConstraint</a> (int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, std::vector&lt; LiteralWithCoeff &gt; *cst)</td></tr>
+<tr class="separator:ac341ac6090ff0bed8ad2231c94cd3bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0c48f07cc78c2880c84f37601f44ed"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abe0c48f07cc78c2880c84f37601f44ed">operations_research::sat::CardinalityConstraint</a> (int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>, const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
+<tr class="separator:abe0c48f07cc78c2880c84f37601f44ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfda9e32067da0a88da8e325cf39c7c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#accfda9e32067da0a88da8e325cf39c7c">operations_research::sat::ExactlyOneConstraint</a> (const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
+<tr class="separator:accfda9e32067da0a88da8e325cf39c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a759583ee01f89ea955f23368976482"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8a759583ee01f89ea955f23368976482">operations_research::sat::AtMostOneConstraint</a> (const std::vector&lt; Literal &gt; &amp;literals)</td></tr>
+<tr class="separator:a8a759583ee01f89ea955f23368976482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37093a0df3cca500d5f58b1d5482bdc6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a37093a0df3cca500d5f58b1d5482bdc6">operations_research::sat::ClauseConstraint</a> (absl::Span&lt; const Literal &gt; literals)</td></tr>
+<tr class="separator:a37093a0df3cca500d5f58b1d5482bdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641e39cef45870bebda662477a8d6771"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a641e39cef45870bebda662477a8d6771">operations_research::sat::Implication</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
+<tr class="memdesc:a641e39cef45870bebda662477a8d6771"><td class="mdescLeft">&#160;</td><td class="mdescRight">a =&gt; b.  <br /></td></tr>
+<tr class="separator:a641e39cef45870bebda662477a8d6771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe51896137f1dc2c0e707695a04183a"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1fe51896137f1dc2c0e707695a04183a">operations_research::sat::Equality</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
+<tr class="memdesc:a1fe51896137f1dc2c0e707695a04183a"><td class="mdescLeft">&#160;</td><td class="mdescRight">a == b.  <br /></td></tr>
+<tr class="separator:a1fe51896137f1dc2c0e707695a04183a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b162d025d26ae56571f2250620c266"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a17b162d025d26ae56571f2250620c266">operations_research::sat::ReifiedBoolOr</a> (const std::vector&lt; Literal &gt; &amp;literals, Literal r)</td></tr>
+<tr class="memdesc:a17b162d025d26ae56571f2250620c266"><td class="mdescLeft">&#160;</td><td class="mdescRight">r &lt;=&gt; (at least one literal is true). This is a reified clause.  <br /></td></tr>
+<tr class="separator:a17b162d025d26ae56571f2250620c266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393ff6c6adb9d243cd4b7b7e445a3c23"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a393ff6c6adb9d243cd4b7b7e445a3c23">operations_research::sat::EnforcedClause</a> (absl::Span&lt; const Literal &gt; enforcement_literals, absl::Span&lt; const Literal &gt; clause)</td></tr>
+<tr class="memdesc:a393ff6c6adb9d243cd4b7b7e445a3c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">enforcement_literals =&gt; clause.  <br /></td></tr>
+<tr class="separator:a393ff6c6adb9d243cd4b7b7e445a3c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d55689d1854993da4a2e31c5539905"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa6d55689d1854993da4a2e31c5539905">operations_research::sat::ReifiedBoolAnd</a> (const std::vector&lt; Literal &gt; &amp;literals, Literal r)</td></tr>
+<tr class="separator:aa6d55689d1854993da4a2e31c5539905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e7ea663f64c733766811e8f20a6a13"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a52e7ea663f64c733766811e8f20a6a13">operations_research::sat::ReifiedBoolLe</a> (Literal <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, Literal r)</td></tr>
+<tr class="memdesc:a52e7ea663f64c733766811e8f20a6a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">r &lt;=&gt; (a &lt;= b).  <br /></td></tr>
+<tr class="separator:a52e7ea663f64c733766811e8f20a6a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa275108375324277e2d6399f6119513"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aaa275108375324277e2d6399f6119513">operations_research::sat::Value</a> (Literal l)</td></tr>
+<tr class="memdesc:aaa275108375324277e2d6399f6119513"><td class="mdescLeft">&#160;</td><td class="mdescRight">This checks that the variable is fixed.  <br /></td></tr>
+<tr class="separator:aaa275108375324277e2d6399f6119513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3318619f57025ab3d6474542d64994"><td class="memItemLeft" align="right" valign="top">std::function&lt; int64_t(const Model &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1a3318619f57025ab3d6474542d64994">operations_research::sat::Value</a> (BooleanVariable <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>)</td></tr>
+<tr class="memdesc:a1a3318619f57025ab3d6474542d64994"><td class="mdescLeft">&#160;</td><td class="mdescRight">This checks that the variable is fixed.  <br /></td></tr>
+<tr class="separator:a1a3318619f57025ab3d6474542d64994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5713162a0aa0aa8ce18c442afc26254"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae5713162a0aa0aa8ce18c442afc26254">operations_research::sat::ExcludeCurrentSolutionAndBacktrack</a> ()</td></tr>
+<tr class="separator:ae5713162a0aa0aa8ce18c442afc26254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215d34ee33b3afef47b10eef03beb7e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a215d34ee33b3afef47b10eef03beb7e1">operations_research::sat::SatStatusString</a> (SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:a215d34ee33b3afef47b10eef03beb7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of a <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>.  <br /></td></tr>
+<tr class="separator:a215d34ee33b3afef47b10eef03beb7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba4fb23e5a8ee32e9a2c807ee82b4c4"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9ba4fb23e5a8ee32e9a2c807ee82b4c4">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:a9ba4fb23e5a8ee32e9a2c807ee82b4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aed3a7826cb80e5dfe7cadb141fde73f2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aed3a7826cb80e5dfe7cadb141fde73f2">kUnsatTrailIndex</a> = -1</td></tr>
-<tr class="separator:aed3a7826cb80e5dfe7cadb141fde73f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc68c12bf322c82aee0e2ccb202945d9"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#acc68c12bf322c82aee0e2ccb202945d9">operations_research::sat::kUnsatTrailIndex</a> = -1</td></tr>
+<tr class="memdesc:acc68c12bf322c82aee0e2ccb202945d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant used by the EnqueueDecision*() API.  <br /></td></tr>
+<tr class="separator:acc68c12bf322c82aee0e2ccb202945d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="sat__solver_8h.html">sat_solver.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

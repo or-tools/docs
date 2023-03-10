@@ -1,7 +1,20 @@
 var searchData=
 [
-  ['inittest_0',['InitTest',['../classcom_1_1google_1_1ortools_1_1init_1_1InitTest.html',1,'com::google::ortools::init']]],
-  ['intervalvar_1',['IntervalVar',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntervalVar.html',1,'com::google::ortools::sat']]],
-  ['intinttolongfunction_2',['IntIntToLongFunction',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IntIntToLongFunction.html',1,'com::google::ortools::constraintsolver']]],
-  ['intvar_3',['IntVar',['../classcom_1_1google_1_1ortools_1_1sat_1_1IntVar.html',1,'com::google::ortools::sat']]]
+  ['failexception_0',['FailException',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1FailException.html',1,'com::google::ortools::constraintsolver::Solver']]],
+  ['filterevent_1',['FilterEvent',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html',1,'com::google::ortools::constraintsolver::LocalSearchFilterManager']]],
+  ['firstsolutionstatistics_2',['FirstSolutionStatistics',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html',1,'com::google::ortools::constraintsolver::LocalSearchStatistics']]],
+  ['firstsolutionstatisticsorbuilder_3',['FirstSolutionStatisticsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder.html',1,'com::google::ortools::constraintsolver::LocalSearchStatistics']]],
+  ['firstsolutionstrategy_4',['FirstSolutionStrategy',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html',1,'com::google::ortools::constraintsolver']]],
+  ['firstsolutionstrategyorbuilder_5',['FirstSolutionStrategyOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategyOrBuilder.html',1,'com::google::ortools::constraintsolver']]],
+  ['floatobjectiveproto_6',['FloatObjectiveProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1FloatObjectiveProto.html',1,'com::google::ortools::sat']]],
+  ['floatobjectiveprotoorbuilder_7',['FloatObjectiveProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1FloatObjectiveProtoOrBuilder.html',1,'com::google::ortools::sat']]],
+  ['flowarcproto_8',['FlowArcProto',['../classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html',1,'com::google::ortools::graph']]],
+  ['flowarcprotoorbuilder_9',['FlowArcProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1graph_1_1FlowArcProtoOrBuilder.html',1,'com::google::ortools::graph']]],
+  ['flowexample_10',['FlowExample',['../classcom_1_1google_1_1ortools_1_1java_1_1FlowExample.html',1,'com::google::ortools::java']]],
+  ['flowmodelproto_11',['FlowModelProto',['../classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html',1,'com::google::ortools::graph']]],
+  ['flowmodelprotoorbuilder_12',['FlowModelProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1graph_1_1FlowModelProtoOrBuilder.html',1,'com::google::ortools::graph']]],
+  ['flownodeproto_13',['FlowNodeProto',['../classcom_1_1google_1_1ortools_1_1graph_1_1FlowNodeProto.html',1,'com::google::ortools::graph']]],
+  ['flownodeprotoorbuilder_14',['FlowNodeProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1graph_1_1FlowNodeProtoOrBuilder.html',1,'com::google::ortools::graph']]],
+  ['flowproblem_15',['FlowProblem',['../classcom_1_1google_1_1ortools_1_1graph_1_1FlowProblem.html',1,'com::google::ortools::graph']]],
+  ['fproundingmethod_16',['FPRoundingMethod',['../enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html',1,'com::google::ortools::sat::SatParameters']]]
 ];

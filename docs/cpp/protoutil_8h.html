@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: protoutil.h File Reference</title>
+<title>Google OR-Tools: ortools/base/protoutil.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,13 @@ $(document).ready(function(){initNavTree('protoutil_8h.html',''); initResizable(
   <div class="headertitle"><div class="title">protoutil.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/time/clock.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;google/protobuf/duration.pb.h&quot;</code><br />
+</div>
 <p><a href="protoutil_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -109,23 +115,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a16eab353d727cf22654a30171bf6cc46"><td class="memItemLeft" align="right" valign="top">inline ::absl::StatusOr&lt; google::protobuf::Duration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#a16eab353d727cf22654a30171bf6cc46">EncodeGoogleApiProto</a> (absl::Duration d)</td></tr>
-<tr class="separator:a16eab353d727cf22654a30171bf6cc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd3de1e54c895ae5a81f949c1e82d00a"><td class="memItemLeft" align="right" valign="top">inline ::absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#afd3de1e54c895ae5a81f949c1e82d00a">EncodeGoogleApiProto</a> (absl::Duration d, google::protobuf::Duration *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
-<tr class="separator:afd3de1e54c895ae5a81f949c1e82d00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9229ecbc2ad84553001ea9cb33918c9"><td class="memItemLeft" align="right" valign="top">inline ::absl::StatusOr&lt; absl::Duration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#ad9229ecbc2ad84553001ea9cb33918c9">DecodeGoogleApiProto</a> (const google::protobuf::Duration &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
-<tr class="separator:ad9229ecbc2ad84553001ea9cb33918c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b705fc0063004954faa62e54450d4fc"><td class="memItemLeft" align="right" valign="top">inline ::absl::StatusOr&lt; google::protobuf::Duration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#a9b705fc0063004954faa62e54450d4fc">util_time::EncodeGoogleApiProto</a> (absl::Duration d)</td></tr>
+<tr class="separator:a9b705fc0063004954faa62e54450d4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2094ac1f30099495f91ab74006c492"><td class="memItemLeft" align="right" valign="top">inline ::absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#aaa2094ac1f30099495f91ab74006c492">util_time::EncodeGoogleApiProto</a> (absl::Duration d, google::protobuf::Duration *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
+<tr class="separator:aaa2094ac1f30099495f91ab74006c492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801584734c5b3898f94cf932202b2eb7"><td class="memItemLeft" align="right" valign="top">inline ::absl::StatusOr&lt; absl::Duration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__time.html#a801584734c5b3898f94cf932202b2eb7">util_time::DecodeGoogleApiProto</a> (const google::protobuf::Duration &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
+<tr class="separator:a801584734c5b3898f94cf932202b2eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="protoutil_8h.html">protoutil.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

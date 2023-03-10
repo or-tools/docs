@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: zipfile.h Source File</title>
+<title>Google OR-Tools: ortools/base/zipfile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -175,15 +175,15 @@ $(document).ready(function(){initNavTree('zipfile_8h_source.html',''); initResiz
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// Performance hint: Specify what order you expect to visit the data</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// in the file.</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516">   80</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516">AccessPattern</a> {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687">   80</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687">AccessPattern</a> {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// Keep whatever is default for your system (typically same as NORMAL).</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a7b9b44b7a04e7d5cfe9b42b9466ea0c6">ACCESS_NONE</a> = 0,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a7b9b44b7a04e7d5cfe9b42b9466ea0c6">ACCESS_NONE</a> = 0,</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// Moderate prefetching as the file gets accessed.</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a78286b51112c36737129ceb077d2ae16">ACCESS_NORMAL</a> = 1,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a78286b51112c36737129ceb077d2ae16">ACCESS_NORMAL</a> = 1,</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="comment">// No prefetching to be done, use this for random access.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a5f59bc09952a50c3ca9fdcf5f2111d34">ACCESS_RANDOM</a> = 2,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a5f59bc09952a50c3ca9fdcf5f2111d34">ACCESS_RANDOM</a> = 2,</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Aggressive prefetching on reads.</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a571505a2f500c0a502bae0771811f4df">ACCESS_SEQUENTIAL</a> = 3,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_enumvalue" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a571505a2f500c0a502bae0771811f4df">ACCESS_SEQUENTIAL</a> = 3,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">class </span>ZipArchive;</div>
@@ -206,10 +206,10 @@ $(document).ready(function(){initNavTree('zipfile_8h_source.html',''); initResiz
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// decompressed file size that is allowed on any file in the zip archive. This</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// is an additional layer of protection against zip bombs in addition to the</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// zip_bomb_max_ratio</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structzipfile_1_1_zip_file_options.html">  111</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structzipfile_1_1_zip_file_options.html">ZipFileOptions</a> {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structzipfile_1_1_zip_file_options.html#a93d469ea0d7d5d40bb00d7621077955f">  112</a></span>  <a class="code hl_enumeration" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516">AccessPattern</a> <a class="code hl_variable" href="structzipfile_1_1_zip_file_options.html#a93d469ea0d7d5d40bb00d7621077955f">access_pattern</a> = <a class="code hl_enumvalue" href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a7b9b44b7a04e7d5cfe9b42b9466ea0c6">AccessPattern::ACCESS_NONE</a>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="structzipfile_1_1_zip_file_options.html#a7336c6faf7b210a6a250410fd7094dc7">  113</a></span>  std::optional&lt;size_t&gt; <a class="code hl_variable" href="structzipfile_1_1_zip_file_options.html#a7336c6faf7b210a6a250410fd7094dc7">zip_bomb_max_ratio</a> = std::nullopt;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structzipfile_1_1_zip_file_options.html#a16f0db389a23bb7fad9d767f93e89ebb">  114</a></span>  std::optional&lt;size_t&gt; <a class="code hl_variable" href="structzipfile_1_1_zip_file_options.html#a16f0db389a23bb7fad9d767f93e89ebb">zip_bomb_max_size</a> = std::nullopt;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structzipfile_1_1ZipFileOptions.html">  111</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structzipfile_1_1ZipFileOptions.html">ZipFileOptions</a> {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structzipfile_1_1ZipFileOptions.html#a4de656ae05faac6b8f121d8bc32fc061">  112</a></span>  <a class="code hl_enumeration" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687">AccessPattern</a> <a class="code hl_variable" href="structzipfile_1_1ZipFileOptions.html#a4de656ae05faac6b8f121d8bc32fc061">access_pattern</a> = <a class="code hl_enumvalue" href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a7b9b44b7a04e7d5cfe9b42b9466ea0c6">AccessPattern::ACCESS_NONE</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="structzipfile_1_1ZipFileOptions.html#a4bd7f00e211d39b4e5438b2349f1d4bb">  113</a></span>  std::optional&lt;size_t&gt; <a class="code hl_variable" href="structzipfile_1_1ZipFileOptions.html#a4bd7f00e211d39b4e5438b2349f1d4bb">zip_bomb_max_ratio</a> = std::nullopt;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structzipfile_1_1ZipFileOptions.html#a7300ddcc5a7f0b83f5979e7a7c6b4730">  114</a></span>  std::optional&lt;size_t&gt; <a class="code hl_variable" href="structzipfile_1_1ZipFileOptions.html#a7300ddcc5a7f0b83f5979e7a7c6b4730">zip_bomb_max_size</a> = std::nullopt;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Open and return a ZipArchive.  This maps the files in PATH into the /zip/</span></div>
@@ -230,12 +230,12 @@ $(document).ready(function(){initNavTree('zipfile_8h_source.html',''); initResiz
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">// ways.  You have been warned.</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// The input options argument provides controls over zip bombs as well as</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">// access pattern controls</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>std::shared_ptr&lt;ZipArchive&gt; <a class="code hl_function" href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">OpenZipArchive</a>(absl::string_view path,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                           <span class="keyword">const</span> <a class="code hl_struct" href="structzipfile_1_1_zip_file_options.html">ZipFileOptions</a>&amp; options);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>std::shared_ptr&lt;ZipArchive&gt; <a class="code hl_function" href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">OpenZipArchive</a>(absl::string_view path,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                           <span class="keyword">const</span> <a class="code hl_struct" href="structzipfile_1_1ZipFileOptions.html">ZipFileOptions</a>&amp; options);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="namespacezipfile.html#abbcee1db4c8a3053c33ce454c2e59d70">  138</a></span><span class="keyword">inline</span> std::shared_ptr&lt;ZipArchive&gt; <a class="code hl_function" href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">OpenZipArchive</a>(absl::string_view path) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_struct" href="structzipfile_1_1_zip_file_options.html">ZipFileOptions</a> options;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">OpenZipArchive</a>(path, options);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="namespacezipfile.html#aff9b425ac5d3efc7418f1f98f1c827e0">  138</a></span><span class="keyword">inline</span> std::shared_ptr&lt;ZipArchive&gt; <a class="code hl_function" href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">OpenZipArchive</a>(absl::string_view path) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_struct" href="structzipfile_1_1ZipFileOptions.html">ZipFileOptions</a> options;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">OpenZipArchive</a>(path, options);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// A zip archive, which may contain files that can be read through the /zip</span></div>
@@ -243,56 +243,53 @@ $(document).ready(function(){initNavTree('zipfile_8h_source.html',''); initResiz
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">//</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// Do not instantiate this class directly.  Use the OpenZipArchive factory</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// methods instead.</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classzipfile_1_1_zip_archive.html">  148</a></span><span class="keyword">class </span><a class="code hl_class" href="classzipfile_1_1_zip_archive.html">ZipArchive</a> {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classzipfile_1_1ZipArchive.html">  148</a></span><span class="keyword">class </span><a class="code hl_class" href="classzipfile_1_1ZipArchive.html">ZipArchive</a> {</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <a class="code hl_class" href="classzipfile_1_1_zip_archive.html">ZipArchive</a>(absl::string_view path, <span class="keyword">const</span> <a class="code hl_struct" href="structzipfile_1_1_zip_file_options.html">ZipFileOptions</a>&amp; options);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <a class="code hl_class" href="classzipfile_1_1ZipArchive.html">ZipArchive</a>(absl::string_view path, <span class="keyword">const</span> <a class="code hl_struct" href="structzipfile_1_1ZipFileOptions.html">ZipFileOptions</a>&amp; options);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classzipfile_1_1_zip_archive.html#aa51978c2c4b5c13fa6c0344d87c75229">  152</a></span>  <a class="code hl_function" href="classzipfile_1_1_zip_archive.html#aa51978c2c4b5c13fa6c0344d87c75229">ZipArchive</a>(<span class="keyword">const</span> <a class="code hl_class" href="classzipfile_1_1_zip_archive.html">ZipArchive</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classzipfile_1_1_zip_archive.html#ac0d387c86cfff616e7b886e6fe6b3bb4">  153</a></span>  <a class="code hl_class" href="classzipfile_1_1_zip_archive.html">ZipArchive</a>&amp; <a class="code hl_function" href="classzipfile_1_1_zip_archive.html#ac0d387c86cfff616e7b886e6fe6b3bb4">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classzipfile_1_1_zip_archive.html">ZipArchive</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classzipfile_1_1ZipArchive.html#af11a66dbd846db08ab6f5f083f98b4ed">  152</a></span>  <a class="code hl_function" href="classzipfile_1_1ZipArchive.html#af11a66dbd846db08ab6f5f083f98b4ed">ZipArchive</a>(<span class="keyword">const</span> <a class="code hl_class" href="classzipfile_1_1ZipArchive.html">ZipArchive</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classzipfile_1_1ZipArchive.html#afc3410305ebc33041c29c2543d339099">  153</a></span>  <a class="code hl_class" href="classzipfile_1_1ZipArchive.html">ZipArchive</a>&amp; <a class="code hl_function" href="classzipfile_1_1ZipArchive.html#afc3410305ebc33041c29c2543d339099">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classzipfile_1_1ZipArchive.html">ZipArchive</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="comment">// Returns the filename at which this archive was first opened.  Since all</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// equivalent zip archive paths share the same archive, this name will not</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="comment">// necessarily match the name at which the archive was opened.  For example,</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="comment">// we provide no guarantees about whether the filename will begin with &quot;/zip&quot;,</span></div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="comment">// since the &quot;/zip&quot; prefix is optional for opening zip archives.</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classzipfile_1_1_zip_archive.html#a45b6172157bc90e433f51aa6ebf82069">  160</a></span>  <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classzipfile_1_1_zip_archive.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> filename_; }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classzipfile_1_1ZipArchive.html#ac6b2b86dd2a37ad7dd52fe7c17e24175">  160</a></span>  <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classzipfile_1_1ZipArchive.html#ac6b2b86dd2a37ad7dd52fe7c17e24175">filename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> filename_; }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <a class="code hl_function" href="classzipfile_1_1_zip_archive.html#a94cb6de7a56491107bf59afbc0a26d62">~ZipArchive</a>();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <a class="code hl_function" href="classzipfile_1_1ZipArchive.html#a7d2ff431171f072c946c437d399c85ce">~ZipArchive</a>();</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  std::string filename_;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_struct" href="structzipfile_1_1_zip_file_options.html">ZipFileOptions</a> options_;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_struct" href="structzipfile_1_1ZipFileOptions.html">ZipFileOptions</a> options_;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>};</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>};  <span class="comment">// namespace zipfile</span></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_BASE_ZIPFILE_H_</span></div>
-<div class="ttc" id="aclasszipfile_1_1_zip_archive_html"><div class="ttname"><a href="classzipfile_1_1_zip_archive.html">zipfile::ZipArchive</a></div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00148">zipfile.h:148</a></div></div>
-<div class="ttc" id="aclasszipfile_1_1_zip_archive_html_a45b6172157bc90e433f51aa6ebf82069"><div class="ttname"><a href="classzipfile_1_1_zip_archive.html#a45b6172157bc90e433f51aa6ebf82069">zipfile::ZipArchive::filename</a></div><div class="ttdeci">const std::string &amp; filename() const</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00160">zipfile.h:160</a></div></div>
-<div class="ttc" id="aclasszipfile_1_1_zip_archive_html_a94cb6de7a56491107bf59afbc0a26d62"><div class="ttname"><a href="classzipfile_1_1_zip_archive.html#a94cb6de7a56491107bf59afbc0a26d62">zipfile::ZipArchive::~ZipArchive</a></div><div class="ttdeci">~ZipArchive()</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00042">zipfile.cc:42</a></div></div>
-<div class="ttc" id="aclasszipfile_1_1_zip_archive_html_aa51978c2c4b5c13fa6c0344d87c75229"><div class="ttname"><a href="classzipfile_1_1_zip_archive.html#aa51978c2c4b5c13fa6c0344d87c75229">zipfile::ZipArchive::ZipArchive</a></div><div class="ttdeci">ZipArchive(const ZipArchive &amp;)=delete</div></div>
-<div class="ttc" id="aclasszipfile_1_1_zip_archive_html_ac0d387c86cfff616e7b886e6fe6b3bb4"><div class="ttname"><a href="classzipfile_1_1_zip_archive.html#ac0d387c86cfff616e7b886e6fe6b3bb4">zipfile::ZipArchive::operator=</a></div><div class="ttdeci">ZipArchive &amp; operator=(const ZipArchive &amp;)=delete</div></div>
+<div class="ttc" id="aclasszipfile_1_1ZipArchive_html"><div class="ttname"><a href="classzipfile_1_1ZipArchive.html">zipfile::ZipArchive</a></div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00148">zipfile.h:148</a></div></div>
+<div class="ttc" id="aclasszipfile_1_1ZipArchive_html_a7d2ff431171f072c946c437d399c85ce"><div class="ttname"><a href="classzipfile_1_1ZipArchive.html#a7d2ff431171f072c946c437d399c85ce">zipfile::ZipArchive::~ZipArchive</a></div><div class="ttdeci">~ZipArchive()</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00042">zipfile.cc:42</a></div></div>
+<div class="ttc" id="aclasszipfile_1_1ZipArchive_html_ac6b2b86dd2a37ad7dd52fe7c17e24175"><div class="ttname"><a href="classzipfile_1_1ZipArchive.html#ac6b2b86dd2a37ad7dd52fe7c17e24175">zipfile::ZipArchive::filename</a></div><div class="ttdeci">const std::string &amp; filename() const</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00160">zipfile.h:160</a></div></div>
+<div class="ttc" id="aclasszipfile_1_1ZipArchive_html_af11a66dbd846db08ab6f5f083f98b4ed"><div class="ttname"><a href="classzipfile_1_1ZipArchive.html#af11a66dbd846db08ab6f5f083f98b4ed">zipfile::ZipArchive::ZipArchive</a></div><div class="ttdeci">ZipArchive(const ZipArchive &amp;)=delete</div></div>
+<div class="ttc" id="aclasszipfile_1_1ZipArchive_html_afc3410305ebc33041c29c2543d339099"><div class="ttname"><a href="classzipfile_1_1ZipArchive.html#afc3410305ebc33041c29c2543d339099">zipfile::ZipArchive::operator=</a></div><div class="ttdeci">ZipArchive &amp; operator=(const ZipArchive &amp;)=delete</div></div>
 <div class="ttc" id="anamespacezipfile_html"><div class="ttname"><a href="namespacezipfile.html">zipfile</a></div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00027">zipfile.cc:27</a></div></div>
-<div class="ttc" id="anamespacezipfile_html_a25688cf6a8ffa6dde93d526eb8971516"><div class="ttname"><a href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516">zipfile::AccessPattern</a></div><div class="ttdeci">AccessPattern</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00080">zipfile.h:80</a></div></div>
-<div class="ttc" id="anamespacezipfile_html_a25688cf6a8ffa6dde93d526eb8971516a571505a2f500c0a502bae0771811f4df"><div class="ttname"><a href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a571505a2f500c0a502bae0771811f4df">zipfile::AccessPattern::ACCESS_SEQUENTIAL</a></div><div class="ttdeci">@ ACCESS_SEQUENTIAL</div></div>
-<div class="ttc" id="anamespacezipfile_html_a25688cf6a8ffa6dde93d526eb8971516a5f59bc09952a50c3ca9fdcf5f2111d34"><div class="ttname"><a href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a5f59bc09952a50c3ca9fdcf5f2111d34">zipfile::AccessPattern::ACCESS_RANDOM</a></div><div class="ttdeci">@ ACCESS_RANDOM</div></div>
-<div class="ttc" id="anamespacezipfile_html_a25688cf6a8ffa6dde93d526eb8971516a78286b51112c36737129ceb077d2ae16"><div class="ttname"><a href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a78286b51112c36737129ceb077d2ae16">zipfile::AccessPattern::ACCESS_NORMAL</a></div><div class="ttdeci">@ ACCESS_NORMAL</div></div>
-<div class="ttc" id="anamespacezipfile_html_a25688cf6a8ffa6dde93d526eb8971516a7b9b44b7a04e7d5cfe9b42b9466ea0c6"><div class="ttname"><a href="namespacezipfile.html#a25688cf6a8ffa6dde93d526eb8971516a7b9b44b7a04e7d5cfe9b42b9466ea0c6">zipfile::AccessPattern::ACCESS_NONE</a></div><div class="ttdeci">@ ACCESS_NONE</div></div>
-<div class="ttc" id="anamespacezipfile_html_a53ac6b5acfede54b7d3534882307b402"><div class="ttname"><a href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">zipfile::OpenZipArchive</a></div><div class="ttdeci">std::shared_ptr&lt; ZipArchive &gt; OpenZipArchive(absl::string_view path, const ZipFileOptions &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00032">zipfile.cc:32</a></div></div>
-<div class="ttc" id="astructzipfile_1_1_zip_file_options_html"><div class="ttname"><a href="structzipfile_1_1_zip_file_options.html">zipfile::ZipFileOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00111">zipfile.h:111</a></div></div>
-<div class="ttc" id="astructzipfile_1_1_zip_file_options_html_a16f0db389a23bb7fad9d767f93e89ebb"><div class="ttname"><a href="structzipfile_1_1_zip_file_options.html#a16f0db389a23bb7fad9d767f93e89ebb">zipfile::ZipFileOptions::zip_bomb_max_size</a></div><div class="ttdeci">std::optional&lt; size_t &gt; zip_bomb_max_size</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00114">zipfile.h:114</a></div></div>
-<div class="ttc" id="astructzipfile_1_1_zip_file_options_html_a7336c6faf7b210a6a250410fd7094dc7"><div class="ttname"><a href="structzipfile_1_1_zip_file_options.html#a7336c6faf7b210a6a250410fd7094dc7">zipfile::ZipFileOptions::zip_bomb_max_ratio</a></div><div class="ttdeci">std::optional&lt; size_t &gt; zip_bomb_max_ratio</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00113">zipfile.h:113</a></div></div>
-<div class="ttc" id="astructzipfile_1_1_zip_file_options_html_a93d469ea0d7d5d40bb00d7621077955f"><div class="ttname"><a href="structzipfile_1_1_zip_file_options.html#a93d469ea0d7d5d40bb00d7621077955f">zipfile::ZipFileOptions::access_pattern</a></div><div class="ttdeci">AccessPattern access_pattern</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00112">zipfile.h:112</a></div></div>
+<div class="ttc" id="anamespacezipfile_html_abec6531c2109a9890877ca9bc2914407"><div class="ttname"><a href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">zipfile::OpenZipArchive</a></div><div class="ttdeci">std::shared_ptr&lt; ZipArchive &gt; OpenZipArchive(absl::string_view path, const ZipFileOptions &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00032">zipfile.cc:32</a></div></div>
+<div class="ttc" id="anamespacezipfile_html_ae8ba0d8603805da50cc7f1c320166687"><div class="ttname"><a href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687">zipfile::AccessPattern</a></div><div class="ttdeci">AccessPattern</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00080">zipfile.h:80</a></div></div>
+<div class="ttc" id="anamespacezipfile_html_ae8ba0d8603805da50cc7f1c320166687a571505a2f500c0a502bae0771811f4df"><div class="ttname"><a href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a571505a2f500c0a502bae0771811f4df">zipfile::AccessPattern::ACCESS_SEQUENTIAL</a></div><div class="ttdeci">@ ACCESS_SEQUENTIAL</div><div class="ttdoc">Aggressive prefetching on reads.</div></div>
+<div class="ttc" id="anamespacezipfile_html_ae8ba0d8603805da50cc7f1c320166687a5f59bc09952a50c3ca9fdcf5f2111d34"><div class="ttname"><a href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a5f59bc09952a50c3ca9fdcf5f2111d34">zipfile::AccessPattern::ACCESS_RANDOM</a></div><div class="ttdeci">@ ACCESS_RANDOM</div><div class="ttdoc">No prefetching to be done, use this for random access.</div></div>
+<div class="ttc" id="anamespacezipfile_html_ae8ba0d8603805da50cc7f1c320166687a78286b51112c36737129ceb077d2ae16"><div class="ttname"><a href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a78286b51112c36737129ceb077d2ae16">zipfile::AccessPattern::ACCESS_NORMAL</a></div><div class="ttdeci">@ ACCESS_NORMAL</div><div class="ttdoc">Moderate prefetching as the file gets accessed.</div></div>
+<div class="ttc" id="anamespacezipfile_html_ae8ba0d8603805da50cc7f1c320166687a7b9b44b7a04e7d5cfe9b42b9466ea0c6"><div class="ttname"><a href="namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a7b9b44b7a04e7d5cfe9b42b9466ea0c6">zipfile::AccessPattern::ACCESS_NONE</a></div><div class="ttdeci">@ ACCESS_NONE</div><div class="ttdoc">Keep whatever is default for your system (typically same as NORMAL).</div></div>
+<div class="ttc" id="astructzipfile_1_1ZipFileOptions_html"><div class="ttname"><a href="structzipfile_1_1ZipFileOptions.html">zipfile::ZipFileOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00111">zipfile.h:111</a></div></div>
+<div class="ttc" id="astructzipfile_1_1ZipFileOptions_html_a4bd7f00e211d39b4e5438b2349f1d4bb"><div class="ttname"><a href="structzipfile_1_1ZipFileOptions.html#a4bd7f00e211d39b4e5438b2349f1d4bb">zipfile::ZipFileOptions::zip_bomb_max_ratio</a></div><div class="ttdeci">std::optional&lt; size_t &gt; zip_bomb_max_ratio</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00113">zipfile.h:113</a></div></div>
+<div class="ttc" id="astructzipfile_1_1ZipFileOptions_html_a4de656ae05faac6b8f121d8bc32fc061"><div class="ttname"><a href="structzipfile_1_1ZipFileOptions.html#a4de656ae05faac6b8f121d8bc32fc061">zipfile::ZipFileOptions::access_pattern</a></div><div class="ttdeci">AccessPattern access_pattern</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00112">zipfile.h:112</a></div></div>
+<div class="ttc" id="astructzipfile_1_1ZipFileOptions_html_a7300ddcc5a7f0b83f5979e7a7c6b4730"><div class="ttname"><a href="structzipfile_1_1ZipFileOptions.html#a7300ddcc5a7f0b83f5979e7a7c6b4730">zipfile::ZipFileOptions::zip_bomb_max_size</a></div><div class="ttdeci">std::optional&lt; size_t &gt; zip_bomb_max_size</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8h_source.html#l00114">zipfile.h:114</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="zipfile_8h.html">zipfile.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

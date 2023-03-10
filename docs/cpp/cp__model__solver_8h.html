@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: cp_model_solver.h File Reference</title>
+<title>Google OR-Tools: ortools/sat/cp_model_solver.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,59 +99,58 @@ $(document).ready(function(){initNavTree('cp__model__solver_8h.html',''); initRe
   <div class="headertitle"><div class="title">cp_model_solver.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+</div>
 <p><a href="cp__model__solver_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2cf14b4dcf5a0f05755ca48c5eddaf7b">CpSatSolverVersion</a> ()</td></tr>
-<tr class="memdesc:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that describes the version of the solver.  <br /></td></tr>
-<tr class="separator:a2cf14b4dcf5a0f05755ca48c5eddaf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af904018d9a1c9983624b1ce0331f2bf5"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af904018d9a1c9983624b1ce0331f2bf5">Solve</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>)</td></tr>
-<tr class="memdesc:af904018d9a1c9983624b1ce0331f2bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto and returns an instance of CpSolverResponse.  <br /></td></tr>
-<tr class="separator:af904018d9a1c9983624b1ce0331f2bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af614bdef2c50e3b9d5806e32ec7ef4b2">SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const SatParameters &amp;params)</td></tr>
-<tr class="memdesc:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given parameters.  <br /></td></tr>
-<tr class="separator:af614bdef2c50e3b9d5806e32ec7ef4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9d2f0d4258ace84d7ddf7e886c72b913">CpModelStats</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the given CpModelProto.  <br /></td></tr>
-<tr class="separator:a9d2f0d4258ace84d7ddf7e886c72b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b192124133b53f1445f7f6d4708b332"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1b192124133b53f1445f7f6d4708b332">CpSolverResponseStats</a> (const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>, bool has_objective=true)</td></tr>
-<tr class="memdesc:a1b192124133b53f1445f7f6d4708b332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the solver response.  <br /></td></tr>
-<tr class="separator:a1b192124133b53f1445f7f6d4708b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9299de04255b99318446500127d79e1"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa9299de04255b99318446500127d79e1">SolveCpModel</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:aa9299de04255b99318446500127d79e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto.  <br /></td></tr>
-<tr class="separator:aa9299de04255b99318446500127d79e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a291dbf6ff50fbc06e1e8cd27b2cc1b23">SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const std::string &amp;params)</td></tr>
-<tr class="memdesc:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given sat parameters as string in JSon format, and returns an instance of CpSolverResponse.  <br /></td></tr>
-<tr class="separator:a291dbf6ff50fbc06e1e8cd27b2cc1b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9777d760241f28010442a2c01f45e0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0a9777d760241f28010442a2c01f45e0">NewFeasibleSolutionObserver</a> (const std::function&lt; void(const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)&gt; &amp;observer)</td></tr>
-<tr class="memdesc:a0a9777d760241f28010442a2c01f45e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a solution observer with the model with model.Add(NewFeasibleSolutionObserver([](response){...}));.  <br /></td></tr>
-<tr class="separator:a0a9777d760241f28010442a2c01f45e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1684fe34484d78336d3cdac55ec6de57"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1684fe34484d78336d3cdac55ec6de57">NewSatParameters</a> (const std::string &amp;params)</td></tr>
-<tr class="memdesc:a1684fe34484d78336d3cdac55ec6de57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates parameters for the solver, which you can add to the model with.  <br /></td></tr>
-<tr class="separator:a1684fe34484d78336d3cdac55ec6de57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a46cc643d9978ed7dd1495986958bdf"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0a46cc643d9978ed7dd1495986958bdf">NewSatParameters</a> (const SatParameters &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
-<tr class="separator:a0a46cc643d9978ed7dd1495986958bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864c163d77d4ede1b9111a426493a497"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a864c163d77d4ede1b9111a426493a497">operations_research::sat::CpSatSolverVersion</a> ()</td></tr>
+<tr class="memdesc:a864c163d77d4ede1b9111a426493a497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that describes the version of the solver.  <br /></td></tr>
+<tr class="separator:a864c163d77d4ede1b9111a426493a497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a09d851f944ab4f305c3d9f8df99b7bf8">operations_research::sat::Solve</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>)</td></tr>
+<tr class="memdesc:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto and returns an instance of CpSolverResponse.  <br /></td></tr>
+<tr class="separator:a09d851f944ab4f305c3d9f8df99b7bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3062797aa0396abf37dbcc99a746f12"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa3062797aa0396abf37dbcc99a746f12">operations_research::sat::SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const SatParameters &amp;params)</td></tr>
+<tr class="memdesc:aa3062797aa0396abf37dbcc99a746f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the given CpModelProto with the given parameters.  <br /></td></tr>
+<tr class="separator:aa3062797aa0396abf37dbcc99a746f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287579e5f181fc7c89feccf1128faffb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a287579e5f181fc7c89feccf1128faffb">operations_research::sat::CpModelStats</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a287579e5f181fc7c89feccf1128faffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with some statistics on the given CpModelProto.  <br /></td></tr>
+<tr class="separator:a287579e5f181fc7c89feccf1128faffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af443c47f14a044d69553b02337b5dc52"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af443c47f14a044d69553b02337b5dc52">operations_research::sat::CpSolverResponseStats</a> (const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>, bool has_objective)</td></tr>
+<tr class="separator:af443c47f14a044d69553b02337b5dc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d67b9c66f1cb9c1dcc3415cd5af11bf"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9d67b9c66f1cb9c1dcc3415cd5af11bf">operations_research::sat::SolveCpModel</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a9d67b9c66f1cb9c1dcc3415cd5af11bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52c27ecb43d6486c1a70e022b4aad39"><td class="memItemLeft" align="right" valign="top">CpSolverResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af52c27ecb43d6486c1a70e022b4aad39">operations_research::sat::SolveWithParameters</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#a6ac76d8a372013f67c4973012948ec84">model_proto</a>, const std::string &amp;params)</td></tr>
+<tr class="separator:af52c27ecb43d6486c1a70e022b4aad39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0558490428f07c5db7b6ae292001375c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0558490428f07c5db7b6ae292001375c">operations_research::sat::NewFeasibleSolutionObserver</a> (const std::function&lt; void(const CpSolverResponse &amp;<a class="el" href="cp__model__solver_8cc.html#abcd33b18ce6d5a90a4ba5c37cfa58829">response</a>)&gt; &amp;observer)</td></tr>
+<tr class="separator:a0558490428f07c5db7b6ae292001375c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10700832ca6bc420f2931eb707957b0b"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a10700832ca6bc420f2931eb707957b0b">operations_research::sat::NewSatParameters</a> (const std::string &amp;params)</td></tr>
+<tr class="separator:a10700832ca6bc420f2931eb707957b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf4fa68898b3aaa2e6de2b5d3064580"><td class="memItemLeft" align="right" valign="top">std::function&lt; SatParameters(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adbf4fa68898b3aaa2e6de2b5d3064580">operations_research::sat::NewSatParameters</a> (const SatParameters &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
+<tr class="separator:adbf4fa68898b3aaa2e6de2b5d3064580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="cp__model__solver_8h.html">cp_model_solver.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

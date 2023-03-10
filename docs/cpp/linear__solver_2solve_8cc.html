@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: solve.cc File Reference</title>
+<title>Google OR-Tools: ortools/linear_solver/solve.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -97,39 +97,64 @@ $(document).ready(function(){initNavTree('linear__solver_2solve_8cc.html',''); i
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">linear_solver/solve.cc File Reference</div></div>
+  <div class="headertitle"><div class="title">solve.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/strings/match.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2file_8h_source.html">ortools/base/file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="helpers_8h_source.html">ortools/base/helpers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="init__google_8h_source.html">ortools/base/init_google.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="options_8h_source.html">ortools/base/options.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__solver_8h_source.html">ortools/linear_solver/linear_solver.h</a>&quot;</code><br />
+<code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="lp__parser_8h_source.html">ortools/lp_data/lp_parser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mps__reader_8h_source.html">ortools/lp_data/mps_reader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sol__reader_8h_source.html">ortools/lp_data/sol_reader.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cp__model__solver_8h_source.html">ortools/sat/cp_model_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="file__util_8h_source.html">ortools/util/file_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sigint_8h_source.html">ortools/util/sigint.h</a>&quot;</code><br />
+</div>
 <p><a href="linear__solver_2solve_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afe3fdcc2cb515bdefb70ad86c053eae2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#afe3fdcc2cb515bdefb70ad86c053eae2">ABSL_FLAG</a> (std::string, <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, &quot;&quot;, &quot;REQUIRED: Input file name.&quot;)</td></tr>
-<tr class="separator:afe3fdcc2cb515bdefb70ad86c053eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352d09a7a2b872ac94084b3d6f9f239f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a352d09a7a2b872ac94084b3d6f9f239f">ABSL_FLAG</a> (std::string, sol_hint, &quot;&quot;, &quot;Input file <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a> with solution in .sol format.&quot;)</td></tr>
 <tr class="separator:a352d09a7a2b872ac94084b3d6f9f239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb18bb1e4b9ba84c3532e899aa425b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#acbb18bb1e4b9ba84c3532e899aa425b3">ABSL_FLAG</a> (std::string, solver, &quot;glop&quot;, &quot;The solver to use: bop, cbc, clp, glop, glpk_lp, glpk_mip, &quot; &quot;gurobi_lp, gurobi_mip, pdlp, scip, knapsack, sat.&quot;)</td></tr>
+<tr class="memitem:acbb18bb1e4b9ba84c3532e899aa425b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#acbb18bb1e4b9ba84c3532e899aa425b3">ABSL_FLAG</a> (std::string, solver, &quot;glop&quot;, &quot;The solver <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> use: bop, cbc, clp, glop, glpk_lp, glpk_mip, &quot; &quot;gurobi_lp, gurobi_mip, pdlp, scip, knapsack, sat.&quot;)</td></tr>
 <tr class="separator:acbb18bb1e4b9ba84c3532e899aa425b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f254156929d9f5bb78887e7e419196"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a23f254156929d9f5bb78887e7e419196">ABSL_FLAG</a> (int, num_threads, 1, &quot;Number of threads to use by the underlying solver.&quot;)</td></tr>
+<tr class="memitem:a23f254156929d9f5bb78887e7e419196"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a23f254156929d9f5bb78887e7e419196">ABSL_FLAG</a> (int, num_threads, 1, &quot;Number of threads <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> use by the underlying solver.&quot;)</td></tr>
 <tr class="separator:a23f254156929d9f5bb78887e7e419196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7603cd565de6afb9e3fa2e8702e0e772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a7603cd565de6afb9e3fa2e8702e0e772">ABSL_FLAG</a> (std::string, params_file, &quot;&quot;, &quot;Solver specific <a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a> file. &quot; &quot;If this flag is set, the --params flag is ignored.&quot;)</td></tr>
 <tr class="separator:a7603cd565de6afb9e3fa2e8702e0e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac095771d002bf658d032ec1ef381ce8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#ac095771d002bf658d032ec1ef381ce8e">ABSL_FLAG</a> (std::string, params, &quot;&quot;, &quot;Solver specific parameters&quot;)</td></tr>
 <tr class="separator:ac095771d002bf658d032ec1ef381ce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f0699d94047fe31639bc440f6e5dea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a5f0699d94047fe31639bc440f6e5dea8">ABSL_FLAG</a> (absl::Duration, <a class="el" href="cp__model__solver_8cc.html#aec8af5c1be4e1b6d4330e1161028de21">time_limit</a>, absl::InfiniteDuration(), &quot;It specifies <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> limit on the solving time. The duration must be must &quot; &quot;be positive. It default to an infinite duration meaning that no &quot; &quot;<a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> limit will be imposed.&quot;)</td></tr>
+<tr class="memitem:a5f0699d94047fe31639bc440f6e5dea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a5f0699d94047fe31639bc440f6e5dea8">ABSL_FLAG</a> (absl::Duration, <a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>, absl::InfiniteDuration(), &quot;It specifies <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> limit on the solving time. The duration must be must &quot; &quot;be positive. It default <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> an infinite duration meaning that no &quot; &quot;<a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> limit will be imposed.&quot;)</td></tr>
 <tr class="separator:a5f0699d94047fe31639bc440f6e5dea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fe6472666d181bc3f4df8475777412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#aa0fe6472666d181bc3f4df8475777412">ABSL_FLAG</a> (std::string, output_csv, &quot;&quot;, &quot;If non-empty, write the returned solution in csv format with &quot; &quot;each <a class="el" href="parse__proto_8cc.html#a41ebd28ef1d7c6ade45642cb6acc1039">line</a> formed by <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> variable <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a> and its value.&quot;)</td></tr>
 <tr class="separator:aa0fe6472666d181bc3f4df8475777412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6091dc5430b99e651295a1f0a08cc3af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a6091dc5430b99e651295a1f0a08cc3af">ABSL_FLAG</a> (std::string, dump_format, &quot;text&quot;, &quot;Format in which to dump protos (<a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> flags --dump_model, &quot; &quot;--dump_request, or --dump_response are used). Possible values: &quot; &quot;'text', 'binary', 'json' which correspond to text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format &quot; &quot;binary <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format, and json. If 'binary' or 'json' are used, &quot; &quot;we append '.bin' and '.json' to file names.&quot;)</td></tr>
+<tr class="memitem:a6091dc5430b99e651295a1f0a08cc3af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a6091dc5430b99e651295a1f0a08cc3af">ABSL_FLAG</a> (std::string, dump_format, &quot;text&quot;, &quot;Format in which <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> dump protos (<a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> flags --dump_model, &quot; &quot;--dump_request, or --dump_response are used). Possible values: &quot; &quot;'text', 'binary', 'json' which correspond <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format &quot; &quot;binary <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format, and json. If 'binary' or 'json' are used, &quot; &quot;we append '.bin' and '.json' <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> file names.&quot;)</td></tr>
 <tr class="separator:a6091dc5430b99e651295a1f0a08cc3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8bc68ae6b71f6a950b0c1acf1e18e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#abb8bc68ae6b71f6a950b0c1acf1e18e5">ABSL_FLAG</a> (bool, dump_gzip, false, &quot;Whether to gzip dumped protos. Appends .gz to their name.&quot;)</td></tr>
+<tr class="memitem:abb8bc68ae6b71f6a950b0c1acf1e18e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#abb8bc68ae6b71f6a950b0c1acf1e18e5">ABSL_FLAG</a> (bool, dump_gzip, false, &quot;Whether <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> gzip dumped protos. Appends .gz <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> their name.&quot;)</td></tr>
 <tr class="separator:abb8bc68ae6b71f6a950b0c1acf1e18e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b56cd1ffc63f38ab5b72ffe18830427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a7b56cd1ffc63f38ab5b72ffe18830427">ABSL_FLAG</a> (std::string, dump_model, &quot;&quot;, &quot;If non-empty, dumps MPModelProto there.&quot;)</td></tr>
 <tr class="separator:a7b56cd1ffc63f38ab5b72ffe18830427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +173,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a5924b2104bcf836d8c82d6d5b6bf4b36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a></td></tr>
+<tr class="separator:a5924b2104bcf836d8c82d6d5b6bf4b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68ea1d1edafdb1a3f404852d5186464c"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_2solve_8cc.html#a68ea1d1edafdb1a3f404852d5186464c">kUsageStr</a> []</td></tr>
 <tr class="separator:a68ea1d1edafdb1a3f404852d5186464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -209,7 +236,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5f0699d94047fe31639bc440f6e5dea8" name="a5f0699d94047fe31639bc440f6e5dea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f0699d94047fe31639bc440f6e5dea8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0699d94047fe31639bc440f6e5dea8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +250,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cp__model__solver_8cc.html#aec8af5c1be4e1b6d4330e1161028de21">time_limit</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -235,7 +262,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;It specifies <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> limit on the solving time. The duration must be must &quot; &quot;be positive. It default to an infinite duration meaning that no &quot; &quot;<a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> limit will be imposed.&quot;&#160;</td>
+          <td class="paramtype">&quot;It specifies <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> limit on the solving time. The duration must be must &quot; &quot;be positive. It default <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> an infinite duration meaning that no &quot; &quot;<a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> limit will be imposed.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -249,7 +276,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="abb8bc68ae6b71f6a950b0c1acf1e18e5" name="abb8bc68ae6b71f6a950b0c1acf1e18e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb8bc68ae6b71f6a950b0c1acf1e18e5">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8bc68ae6b71f6a950b0c1acf1e18e5">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +302,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Whether to gzip dumped protos. Appends .gz to their name.&quot;&#160;</td>
+          <td class="paramtype">&quot;Whether <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> gzip dumped protos. Appends .gz <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> their name.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -289,7 +316,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a23f254156929d9f5bb78887e7e419196" name="a23f254156929d9f5bb78887e7e419196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f254156929d9f5bb78887e7e419196">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f254156929d9f5bb78887e7e419196">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +342,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Number of threads to use by the underlying solver.&quot;&#160;</td>
+          <td class="paramtype">&quot;Number of threads <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> use by the underlying solver.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -329,7 +356,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a6091dc5430b99e651295a1f0a08cc3af" name="a6091dc5430b99e651295a1f0a08cc3af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6091dc5430b99e651295a1f0a08cc3af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6091dc5430b99e651295a1f0a08cc3af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +382,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Format in which to dump protos (<a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> flags --dump_model, &quot; &quot;--dump_request, or --dump_response are used). Possible values: &quot; &quot;'text'&#160;</td>
+          <td class="paramtype">&quot;Format in which <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> dump protos (<a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> flags --dump_model, &quot; &quot;--dump_request, or --dump_response are used). Possible values: &quot; &quot;'text'&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -367,7 +394,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">'json' which correspond to text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format &quot; &quot;binary <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>&#160;</td>
+          <td class="paramtype">'json' which correspond <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> format &quot; &quot;binary <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>&#160;</td>
           <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
@@ -379,7 +406,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot; &quot;we append '.bin' and '.json' to file names.&quot;&#160;</td>
+          <td class="paramtype">&quot; &quot;we append '.bin' and '.json' <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> file names.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -393,7 +420,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a7b56cd1ffc63f38ab5b72ffe18830427" name="a7b56cd1ffc63f38ab5b72ffe18830427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b56cd1ffc63f38ab5b72ffe18830427">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b56cd1ffc63f38ab5b72ffe18830427">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +466,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="acbb22ee89a335e38ad8b1a84f987da78" name="acbb22ee89a335e38ad8b1a84f987da78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb22ee89a335e38ad8b1a84f987da78">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb22ee89a335e38ad8b1a84f987da78">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,7 +512,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a025b42dd0b8acd58ce3757786867f317" name="a025b42dd0b8acd58ce3757786867f317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a025b42dd0b8acd58ce3757786867f317">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a025b42dd0b8acd58ce3757786867f317">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,48 +557,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe3fdcc2cb515bdefb70ad86c053eae2" name="afe3fdcc2cb515bdefb70ad86c053eae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe3fdcc2cb515bdefb70ad86c053eae2">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/14]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ABSL_FLAG </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;&quot;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;REQUIRED: Input file name.&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa0fe6472666d181bc3f4df8475777412" name="aa0fe6472666d181bc3f4df8475777412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0fe6472666d181bc3f4df8475777412">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fe6472666d181bc3f4df8475777412">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,7 +604,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ac095771d002bf658d032ec1ef381ce8e" name="ac095771d002bf658d032ec1ef381ce8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac095771d002bf658d032ec1ef381ce8e">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac095771d002bf658d032ec1ef381ce8e">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +644,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a7603cd565de6afb9e3fa2e8702e0e772" name="a7603cd565de6afb9e3fa2e8702e0e772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7603cd565de6afb9e3fa2e8702e0e772">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7603cd565de6afb9e3fa2e8702e0e772">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -703,7 +690,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ac4aba44c512cb96950965dfb856930e9" name="ac4aba44c512cb96950965dfb856930e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4aba44c512cb96950965dfb856930e9">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4aba44c512cb96950965dfb856930e9">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +736,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a352d09a7a2b872ac94084b3d6f9f239f" name="a352d09a7a2b872ac94084b3d6f9f239f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352d09a7a2b872ac94084b3d6f9f239f">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a352d09a7a2b872ac94084b3d6f9f239f">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -789,7 +776,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="acbb18bb1e4b9ba84c3532e899aa425b3" name="acbb18bb1e4b9ba84c3532e899aa425b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb18bb1e4b9ba84c3532e899aa425b3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[14/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb18bb1e4b9ba84c3532e899aa425b3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,7 +802,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;The solver to use:&#160;</td>
+          <td class="paramtype">&quot;The solver <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> use:&#160;</td>
           <td class="paramname"><em>bop</em>, </td>
         </tr>
         <tr>
@@ -920,7 +907,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00393">393</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">linear_solver/solve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00393">393</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
 
 </div>
 </div>
@@ -950,20 +937,40 @@ Variables</h2></td></tr>
 <div class="line">    <span class="stringliteral">&quot;  - an MPModelProto (binary or text, possibly gzipped),\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;  - an MPModelRequest (binary or text, possibly gzipped).&quot;</span></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00123">123</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">linear_solver/solve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00123">123</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5924b2104bcf836d8c82d6d5b6bf4b36" name="a5924b2104bcf836d8c82d6d5b6bf4b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5924b2104bcf836d8c82d6d5b6bf4b36">&#9670;&#160;</a></span>time_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_limit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Command line interface to the MPSolver class. See <a class="el" href="linear__solver_8h.html">linear_solver.h</a> and kUsageStr below.</p>
+<p>Examples.</p>
+<ol type="1">
+<li>To run SCIP for 90 seconds, dumping available information use:</li>
+</ol>
+<p>solve &ndash;solver=scip \ </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00022">22</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="linear__solver_2solve_8cc.html">solve.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

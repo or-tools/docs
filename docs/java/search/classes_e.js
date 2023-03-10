@@ -1,5 +1,25 @@
 var searchData=
 [
-  ['weightedsumexpression_0',['WeightedSumExpression',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1WeightedSumExpression.html',1,'WeightedSumExpression'],['../classcom_1_1google_1_1ortools_1_1sat_1_1WeightedSumExpression.html',1,'WeightedSumExpression']]],
-  ['wronglength_1',['WrongLength',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder_1_1WrongLength.html',1,'ModelBuilder.WrongLength'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CpModel_1_1WrongLength.html',1,'CpModel.WrongLength']]]
+  ['pack_0',['Pack',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html',1,'com::google::ortools::constraintsolver']]],
+  ['pairinsertionstrategy_1',['PairInsertionStrategy',['../enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
+  ['parameters_2',['Parameters',['../classcom_1_1google_1_1ortools_1_1glop_1_1Parameters.html',1,'com::google::ortools::glop']]],
+  ['partialvariableassignment_3',['PartialVariableAssignment',['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html',1,'com.google.ortools.linearsolver.PartialVariableAssignment'],['../classcom_1_1google_1_1ortools_1_1sat_1_1PartialVariableAssignment.html',1,'com.google.ortools.sat.PartialVariableAssignment']]],
+  ['partialvariableassignmentorbuilder_4',['PartialVariableAssignmentOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignmentOrBuilder.html',1,'com.google.ortools.linearsolver.PartialVariableAssignmentOrBuilder'],['../interfacecom_1_1google_1_1ortools_1_1sat_1_1PartialVariableAssignmentOrBuilder.html',1,'com.google.ortools.sat.PartialVariableAssignmentOrBuilder']]],
+  ['partition_5',['Partition',['../classcom_1_1google_1_1ortools_1_1contrib_1_1Partition.html',1,'com::google::ortools::contrib']]],
+  ['pathoperator_6',['PathOperator',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html',1,'com::google::ortools::constraintsolver']]],
+  ['pathsmetadata_7',['PathsMetadata',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathsMetadata.html',1,'com::google::ortools::constraintsolver']]],
+  ['piecewiselinearformulation_8',['PiecewiseLinearFormulation',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_430f65925cb053fa6a366a692039efa5.html',1,'com::google::ortools::constraintsolver::RoutingModel::RouteDimensionTravelInfo::TransitionInfo']]],
+  ['pointmetadata_9',['PointMetadata',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
+  ['pointmetadataorbuilder_10',['PointMetadataOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadataOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
+  ['pointtype_11',['PointType',['../enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
+  ['polarity_12',['Polarity',['../enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity.html',1,'com::google::ortools::sat::SatParameters']]],
+  ['presolveoptions_13',['PresolveOptions',['../classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html',1,'operations_research::pdlp::Solvers::PrimalDualHybridGradientParams']]],
+  ['presolveoptionsorbuilder_14',['PresolveOptionsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html',1,'operations_research::pdlp::Solvers::PrimalDualHybridGradientParams']]],
+  ['presolvevalues_15',['PresolveValues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1PresolveValues.html',1,'com::google::ortools::linearsolver::MPSolverParameters']]],
+  ['pricingrule_16',['PricingRule',['../enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1PricingRule.html',1,'com::google::ortools::glop::GlopParameters']]],
+  ['primaldualhybridgradientparams_17',['PrimalDualHybridGradientParams',['../classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams.html',1,'operations_research::pdlp::Solvers']]],
+  ['primaldualhybridgradientparamsorbuilder_18',['PrimalDualHybridGradientParamsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html',1,'operations_research::pdlp::Solvers']]],
+  ['problemtype_19',['ProblemType',['../enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html',1,'com::google::ortools::graph::FlowModelProto']]],
+  ['propagationbaseobject_20',['PropagationBaseObject',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html',1,'com::google::ortools::constraintsolver']]],
+  ['propagationmonitor_21',['PropagationMonitor',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html',1,'com::google::ortools::constraintsolver']]]
 ];

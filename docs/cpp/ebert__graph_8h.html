@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: ebert_graph.h File Reference</title>
+<title>Google OR-Tools: ortools/graph/ebert_graph.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,111 +101,126 @@ $(document).ready(function(){initNavTree('ebert__graph_8h.html',''); initResizab
   <div class="headertitle"><div class="title">ebert_graph.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2permutation_8h_source.html">ortools/util/permutation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="zvector_8h_source.html">ortools/util/zvector.h</a>&quot;</code><br />
+</div>
 <p><a href="ebert__graph_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_star_graph_base.html">StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1StarGraphBase.html">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_star_graph_base_1_1_node_iterator.html">StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::NodeIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1StarGraphBase_1_1NodeIterator.html">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::NodeIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator class for traversing all the nodes in the graph.  <a href="classoperations__research_1_1StarGraphBase_1_1NodeIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_star_graph_base_1_1_arc_iterator.html">StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::ArcIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1StarGraphBase_1_1ArcIterator.html">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::ArcIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator class for traversing the arcs in the graph.  <a href="classoperations__research_1_1StarGraphBase_1_1ArcIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_star_graph_base_1_1_outgoing_arc_iterator.html">StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::OutgoingArcIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1StarGraphBase_1_1OutgoingArcIterator.html">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::OutgoingArcIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator class for traversing the outgoing arcs associated to a given node.  <a href="classoperations__research_1_1StarGraphBase_1_1OutgoingArcIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_permutation_index_comparison_by_arc_head.html">PermutationIndexComparisonByArcHead&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PermutationIndexComparisonByArcHead.html">operations_research::PermutationIndexComparisonByArcHead&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_forward_static_graph.html">ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ForwardStaticGraph.html">operations_research::ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_forward_static_graph_1_1_cycle_handler_for_annotated_arcs.html">ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt;::CycleHandlerForAnnotatedArcs</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ForwardStaticGraph_1_1CycleHandlerForAnnotatedArcs.html">operations_research::ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt;::CycleHandlerForAnnotatedArcs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_ebert_graph_base.html">EbertGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EbertGraphBase.html">operations_research::EbertGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_ebert_graph_base_1_1_cycle_handler_for_annotated_arcs.html">EbertGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::CycleHandlerForAnnotatedArcs</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EbertGraphBase_1_1CycleHandlerForAnnotatedArcs.html">operations_research::EbertGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;::CycleHandlerForAnnotatedArcs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_ebert_graph.html">EbertGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EbertGraph.html">operations_research::EbertGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations.  <a href="classoperations__research_1_1EbertGraph.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_ebert_graph_1_1_outgoing_or_opposite_incoming_arc_iterator.html">EbertGraph&lt; NodeIndexType, ArcIndexType &gt;::OutgoingOrOppositeIncomingArcIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EbertGraph_1_1OutgoingOrOppositeIncomingArcIterator.html">operations_research::EbertGraph&lt; NodeIndexType, ArcIndexType &gt;::OutgoingOrOppositeIncomingArcIterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_ebert_graph_1_1_incoming_arc_iterator.html">EbertGraph&lt; NodeIndexType, ArcIndexType &gt;::IncomingArcIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EbertGraph_1_1IncomingArcIterator.html">operations_research::EbertGraph&lt; NodeIndexType, ArcIndexType &gt;::IncomingArcIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator class for traversing the incoming arcs associated to a given node.  <a href="classoperations__research_1_1EbertGraph_1_1IncomingArcIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_forward_ebert_graph.html">ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ForwardEbertGraph.html">operations_research::ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits.html">graph_traits&lt; GraphType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits.html">operations_research::graph_traits&lt; GraphType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits_3_01_forward_ebert_graph_3_01_node_index_type_00_01_arc_index_type_01_4_01_4.html">graph_traits&lt; ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits_3_01ForwardEbertGraph_3_01NodeIndexType_00_01ArcIndexType_01_4_01_4.html">operations_research::graph_traits&lt; ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits_3_01_forward_static_graph_3_01_node_index_type_00_01_arc_index_type_01_4_01_4.html">graph_traits&lt; ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1graph__traits_3_01ForwardStaticGraph_3_01NodeIndexType_00_01ArcIndexType_01_4_01_4.html">operations_research::graph_traits&lt; ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1_tail_array_builder.html">TailArrayBuilder&lt; GraphType, has_reverse_arcs &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1TailArrayBuilder.html">operations_research::or_internal::TailArrayBuilder&lt; GraphType, has_reverse_arcs &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1_tail_array_builder_3_01_graph_type_00_01false_01_4.html">TailArrayBuilder&lt; GraphType, false &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1TailArrayBuilder_3_01GraphType_00_01false_01_4.html">operations_research::or_internal::TailArrayBuilder&lt; GraphType, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1_tail_array_releaser.html">TailArrayReleaser&lt; GraphType, has_reverse_arcs &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1TailArrayReleaser.html">operations_research::or_internal::TailArrayReleaser&lt; GraphType, has_reverse_arcs &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1_tail_array_releaser_3_01_graph_type_00_01false_01_4.html">TailArrayReleaser&lt; GraphType, false &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1or__internal_1_1TailArrayReleaser_3_01GraphType_00_01false_01_4.html">operations_research::or_internal::TailArrayReleaser&lt; GraphType, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_tail_array_manager.html">TailArrayManager&lt; GraphType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1TailArrayManager.html">operations_research::TailArrayManager&lt; GraphType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_arc_functor_ordering_by_tail_and_head.html">ArcFunctorOrderingByTailAndHead&lt; GraphType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ArcFunctorOrderingByTailAndHead.html">operations_research::ArcFunctorOrderingByTailAndHead&lt; GraphType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1or__internal_1_1_graph_builder_from_arcs.html">GraphBuilderFromArcs&lt; GraphType, is_dynamic &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs.html">operations_research::or_internal::GraphBuilderFromArcs&lt; GraphType, is_dynamic &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1or__internal_1_1_graph_builder_from_arcs_3_01_graph_type_00_01true_01_4.html">GraphBuilderFromArcs&lt; GraphType, true &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs_3_01GraphType_00_01true_01_4.html">operations_research::or_internal::GraphBuilderFromArcs&lt; GraphType, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_annotated_graph_build_manager.html">AnnotatedGraphBuildManager&lt; GraphType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1AnnotatedGraphBuildManager.html">operations_research::AnnotatedGraphBuildManager&lt; GraphType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1or__internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1or__internal.html">operations_research::or_internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aff281ac56966ea19a9e9ded0578f85ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aff281ac56966ea19a9e9ded0578f85ea">NodeIndex</a> = int32_t</td></tr>
-<tr class="separator:aff281ac56966ea19a9e9ded0578f85ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf320bda6e95d1edaf3a546673e3e6b"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aecf320bda6e95d1edaf3a546673e3e6b">ArcIndex</a></td></tr>
-<tr class="separator:aecf320bda6e95d1edaf3a546673e3e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259d58fc853dd928f2148dbcf1ef25cd"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a259d58fc853dd928f2148dbcf1ef25cd">FlowQuantity</a></td></tr>
-<tr class="separator:a259d58fc853dd928f2148dbcf1ef25cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee97ac67f280d35acdef2c5d461a85c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aee97ac67f280d35acdef2c5d461a85c3">CostValue</a> = int64_t</td></tr>
-<tr class="separator:aee97ac67f280d35acdef2c5d461a85c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24b13c27331f67db15d6c2a3f3507e3"><td class="memItemLeft" align="right" valign="top">typedef EbertGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af24b13c27331f67db15d6c2a3f3507e3">StarGraph</a></td></tr>
-<tr class="separator:af24b13c27331f67db15d6c2a3f3507e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49bc230c31b15a51efb44be25b30472"><td class="memItemLeft" align="right" valign="top">typedef ForwardEbertGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab49bc230c31b15a51efb44be25b30472">ForwardStarGraph</a></td></tr>
-<tr class="separator:ab49bc230c31b15a51efb44be25b30472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2ba507587a78ec3b72a0d62c024bc7e"><td class="memItemLeft" align="right" valign="top">typedef ForwardStaticGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab2ba507587a78ec3b72a0d62c024bc7e">ForwardStarStaticGraph</a></td></tr>
-<tr class="separator:ab2ba507587a78ec3b72a0d62c024bc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48bfd7172b9a8af435198c373a8cf5e4"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; NodeIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a48bfd7172b9a8af435198c373a8cf5e4">NodeIndexArray</a></td></tr>
-<tr class="separator:a48bfd7172b9a8af435198c373a8cf5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ab85b2912dbf12804d3d1ddea9ec15"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad2ab85b2912dbf12804d3d1ddea9ec15">ArcIndexArray</a></td></tr>
-<tr class="separator:ad2ab85b2912dbf12804d3d1ddea9ec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03fc0981d2d99da114ccd8b3abc0c6e1"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; FlowQuantity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a03fc0981d2d99da114ccd8b3abc0c6e1">QuantityArray</a></td></tr>
-<tr class="separator:a03fc0981d2d99da114ccd8b3abc0c6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbdd6fd1484828a3d5e809c551ba8cf7"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; CostValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acbdd6fd1484828a3d5e809c551ba8cf7">CostArray</a></td></tr>
-<tr class="separator:acbdd6fd1484828a3d5e809c551ba8cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fe8694afdc6408a8071a09253acfbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a92fe8694afdc6408a8071a09253acfbe">operations_research::NodeIndex</a> = int32_t</td></tr>
+<tr class="separator:a92fe8694afdc6408a8071a09253acfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c8d2e534fb97df3d169ebc7feb0cf5"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac5c8d2e534fb97df3d169ebc7feb0cf5">operations_research::ArcIndex</a></td></tr>
+<tr class="separator:ac5c8d2e534fb97df3d169ebc7feb0cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253f862cc2d07cf5328f2de23cfcf1dd"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a253f862cc2d07cf5328f2de23cfcf1dd">operations_research::FlowQuantity</a></td></tr>
+<tr class="separator:a253f862cc2d07cf5328f2de23cfcf1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d81e5fcc34045183dc8a5ed115e415b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4d81e5fcc34045183dc8a5ed115e415b">operations_research::CostValue</a> = int64_t</td></tr>
+<tr class="separator:a4d81e5fcc34045183dc8a5ed115e415b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39f15b318a3cba17b1e60e6da51c0d4"><td class="memItemLeft" align="right" valign="top">typedef EbertGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae39f15b318a3cba17b1e60e6da51c0d4">operations_research::StarGraph</a></td></tr>
+<tr class="separator:ae39f15b318a3cba17b1e60e6da51c0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652af62fa5f211aa0c54d7994ca1c504"><td class="memItemLeft" align="right" valign="top">typedef ForwardEbertGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a652af62fa5f211aa0c54d7994ca1c504">operations_research::ForwardStarGraph</a></td></tr>
+<tr class="separator:a652af62fa5f211aa0c54d7994ca1c504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7440a08c859325694df19d4d4aee95c"><td class="memItemLeft" align="right" valign="top">typedef ForwardStaticGraph&lt; NodeIndex, ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac7440a08c859325694df19d4d4aee95c">operations_research::ForwardStarStaticGraph</a></td></tr>
+<tr class="separator:ac7440a08c859325694df19d4d4aee95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389e5320fb5bcd0fb99d894488f9820b"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; NodeIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a389e5320fb5bcd0fb99d894488f9820b">operations_research::NodeIndexArray</a></td></tr>
+<tr class="separator:a389e5320fb5bcd0fb99d894488f9820b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79bf252fa6483cd33cbf95170353fb0"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; ArcIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa79bf252fa6483cd33cbf95170353fb0">operations_research::ArcIndexArray</a></td></tr>
+<tr class="separator:aa79bf252fa6483cd33cbf95170353fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4fc0319cb4e28ec175fc9163775a6e"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; FlowQuantity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7d4fc0319cb4e28ec175fc9163775a6e">operations_research::QuantityArray</a></td></tr>
+<tr class="separator:a7d4fc0319cb4e28ec175fc9163775a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdee62ecefa0520e530c18a55b083e6d"><td class="memItemLeft" align="right" valign="top">typedef ZVector&lt; CostValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afdee62ecefa0520e530c18a55b083e6d">operations_research::CostArray</a></td></tr>
+<tr class="separator:afdee62ecefa0520e530c18a55b083e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a62047a9cf5939eb44b14fc8f54914d10"><td class="memTemplParams" colspan="2">template&lt;typename GraphType &gt; </td></tr>
-<tr class="memitem:a62047a9cf5939eb44b14fc8f54914d10"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a62047a9cf5939eb44b14fc8f54914d10">BuildLineGraph</a> (const GraphType &amp;graph, GraphType *const line_graph)</td></tr>
-<tr class="separator:a62047a9cf5939eb44b14fc8f54914d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb53c505b8fd29ceb3abdcc7dfd809ce"><td class="memTemplParams" colspan="2">template&lt;typename GraphType &gt; </td></tr>
+<tr class="memitem:acb53c505b8fd29ceb3abdcc7dfd809ce"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acb53c505b8fd29ceb3abdcc7dfd809ce">operations_research::BuildLineGraph</a> (const GraphType &amp;graph, GraphType *const line_graph)</td></tr>
+<tr class="separator:acb53c505b8fd29ceb3abdcc7dfd809ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="ebert__graph_8h.html">ebert_graph.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

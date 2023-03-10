@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sat_runner.cc File Reference</title>
+<title>Google OR-Tools: ortools/sat/sat_runner.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,24 +100,68 @@ $(document).ready(function(){initNavTree('sat__runner_8cc.html',''); initResizab
   <div class="headertitle"><div class="title">sat_runner.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/flags/usage.h&quot;</code><br />
+<code>#include &quot;absl/log/flags.h&quot;</code><br />
+<code>#include &quot;absl/log/initialize.h&quot;</code><br />
+<code>#include &quot;absl/random/random.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/strings/match.h&quot;</code><br />
+<code>#include &quot;absl/strings/numbers.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sparse__permutation_8h_source.html">ortools/algorithms/sparse_permutation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="helpers_8h_source.html">ortools/base/helpers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="options_8h_source.html">ortools/base/options.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
+<code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="lp__data_8h_source.html">ortools/lp_data/lp_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mps__reader_8h_source.html">ortools/lp_data/mps_reader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lp__data_2proto__utils_8h_source.html">ortools/lp_data/proto_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="boolean__problem_8h_source.html">ortools/sat/boolean_problem.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/boolean_problem.pb.h&quot;</code><br />
+<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cp__model__solver_8h_source.html">ortools/sat/cp_model_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2lp__utils_8h_source.html">ortools/sat/lp_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="opb__reader_8h_source.html">ortools/sat/opb_reader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="optimization_8h_source.html">ortools/sat/optimization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pb__constraint_8h_source.html">ortools/sat/pb_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__cnf__reader_8h_source.html">ortools/sat/sat_cnf_reader.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="simplification_8h_source.html">ortools/sat/simplification.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="symmetry_8h_source.html">ortools/sat/symmetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="file__util_8h_source.html">ortools/util/file_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="sat__runner_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a01cad8aad0df305c7d0e22d9c6559493"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a01cad8aad0df305c7d0e22d9c6559493">ABSL_FLAG</a> (std::string, <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, &quot;&quot;, &quot;Required: <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> file of the problem to solve. Many format are supported:&quot; &quot;.cnf (sat, <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max</a>-sat, weighted <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max</a>-sat), .opb (pseudo-boolean sat/optim) &quot; &quot;and by default the LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> (binary or text).&quot;)</td></tr>
+<tr class="memitem:a01cad8aad0df305c7d0e22d9c6559493"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a01cad8aad0df305c7d0e22d9c6559493">ABSL_FLAG</a> (std::string, <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, &quot;&quot;, &quot;Required: <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> file of the problem <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> solve. Many format are supported:&quot; &quot;.cnf (sat, <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max</a>-sat, weighted <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max</a>-sat), .opb (pseudo-boolean sat/optim) &quot; &quot;and by default the LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> (binary or text).&quot;)</td></tr>
 <tr class="separator:a01cad8aad0df305c7d0e22d9c6559493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5039ecef7f289d73b2a0b77d515c316b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a5039ecef7f289d73b2a0b77d515c316b">ABSL_FLAG</a> (std::string, output, &quot;&quot;, &quot;If non-empty, write the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> problem as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> to &quot; &quot;this file. By default it uses the binary format except <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the file &quot; &quot;extension is '.txt'. If the problem is SAT, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> satisfiable assignment is &quot; &quot;also written to the file.&quot;)</td></tr>
+<tr class="memitem:a5039ecef7f289d73b2a0b77d515c316b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a5039ecef7f289d73b2a0b77d515c316b">ABSL_FLAG</a> (std::string, output, &quot;&quot;, &quot;If non-empty, write the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> problem as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> &quot; &quot;this file. By default it uses the binary format except <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the file &quot; &quot;extension is '.txt'. If the problem is SAT, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> satisfiable assignment is &quot; &quot;also written <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> the file.&quot;)</td></tr>
 <tr class="separator:a5039ecef7f289d73b2a0b77d515c316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de0ec7f5f40b7e2b824d538cb178c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a5de0ec7f5f40b7e2b824d538cb178c4e">ABSL_FLAG</a> (bool, output_cnf_solution, false, &quot;If true and the problem was solved to optimality, this output &quot; &quot;the solution to stdout in cnf form.\n&quot;)</td></tr>
+<tr class="memitem:a5de0ec7f5f40b7e2b824d538cb178c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a5de0ec7f5f40b7e2b824d538cb178c4e">ABSL_FLAG</a> (bool, output_cnf_solution, false, &quot;If true and the problem was solved <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> optimality, this output &quot; &quot;the solution <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout in cnf form.\n&quot;)</td></tr>
 <tr class="separator:a5de0ec7f5f40b7e2b824d538cb178c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeba5ed9b5e0d27661b2d5a75c7494aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#abeba5ed9b5e0d27661b2d5a75c7494aa">ABSL_FLAG</a> (std::string, params, &quot;&quot;, &quot;Parameters for the sat solver in <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> text format of the &quot; &quot;SatParameters <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, example: --params=use_conflicts:true.&quot;)</td></tr>
 <tr class="separator:abeba5ed9b5e0d27661b2d5a75c7494aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +181,7 @@ Functions</h2></td></tr>
 <tr class="separator:a54d6284db3ed3e4dd06d2916ed00569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a554bb66cc1847c39b5ba8e342c3b86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a1a554bb66cc1847c39b5ba8e342c3b86">ABSL_FLAG</a> (bool, linear_scan, false, &quot;If true, search the optimal solution with the linear scan algo.&quot;)</td></tr>
 <tr class="separator:a1a554bb66cc1847c39b5ba8e342c3b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45f665ae74e1bc4882105b81ebcbe7ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a45f665ae74e1bc4882105b81ebcbe7ea">ABSL_FLAG</a> (int, randomize, 500, &quot;If positive, solve that many times the problem with <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> random &quot; &quot;decision heuristic before trying to optimize it.&quot;)</td></tr>
+<tr class="memitem:a45f665ae74e1bc4882105b81ebcbe7ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a45f665ae74e1bc4882105b81ebcbe7ea">ABSL_FLAG</a> (int, randomize, 500, &quot;If positive, solve that many times the problem with <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> random &quot; &quot;decision heuristic before trying <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> optimize it.&quot;)</td></tr>
 <tr class="separator:a45f665ae74e1bc4882105b81ebcbe7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ce874e5d167f2a3c5c8ee1f3cd8020a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a2ce874e5d167f2a3c5c8ee1f3cd8020a">ABSL_FLAG</a> (bool, use_symmetry, false, &quot;If true, find and exploit the eventual symmetries &quot; &quot;of the problem.&quot;)</td></tr>
 <tr class="separator:a2ce874e5d167f2a3c5c8ee1f3cd8020a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +189,7 @@ Functions</h2></td></tr>
 <tr class="separator:afcecff9bb806f3327e5aed5ebfaf2cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420c9e4c7080f3bcd311deeeefee8cc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a420c9e4c7080f3bcd311deeeefee8cc2">ABSL_FLAG</a> (bool, probing, false, &quot;If true, presolve the problem using probing.&quot;)</td></tr>
 <tr class="separator:a420c9e4c7080f3bcd311deeeefee8cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007165cc1eca25ad9fa3f0fc775ccb7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a007165cc1eca25ad9fa3f0fc775ccb7e">ABSL_FLAG</a> (bool, use_cp_model, true, &quot;Whether to interpret everything as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto or &quot; &quot;to read by default <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto.&quot;)</td></tr>
+<tr class="memitem:a007165cc1eca25ad9fa3f0fc775ccb7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a007165cc1eca25ad9fa3f0fc775ccb7e">ABSL_FLAG</a> (bool, use_cp_model, true, &quot;Whether <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> interpret everything as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto or &quot; &quot;<a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> read by default <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto.&quot;)</td></tr>
 <tr class="separator:a007165cc1eca25ad9fa3f0fc775ccb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28713c45fa87175a724fe427d97c6b9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sat__runner_8cc.html#a28713c45fa87175a724fe427d97c6b9f">ABSL_FLAG</a> (bool, reduce_memory_usage, false, &quot;If true, do not keep <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> copy of the original problem in memory.&quot; &quot;This reduce the memory usage, but disable the solution cheking at &quot; &quot;the end.&quot;)</td></tr>
 <tr class="separator:a28713c45fa87175a724fe427d97c6b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,13 +367,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;If true and the problem was solved to&#160;</td>
+          <td class="paramtype">&quot;If true and the problem was solved <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>&#160;</td>
           <td class="paramname"><em>optimality</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">this output &quot; &quot;the solution to stdout in cnf form.\n&quot;&#160;</td>
+          <td class="paramtype">this output &quot; &quot;the solution <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout in cnf form.\n&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -605,7 +649,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Whether to interpret everything as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto or &quot; &quot;to read by default <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto.&quot;&#160;</td>
+          <td class="paramtype">&quot;Whether <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> interpret everything as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto or &quot; &quot;<a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> read by default <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> CpModelProto.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -743,7 +787,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">solve that many times the problem with <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> random &quot; &quot;decision heuristic before trying to optimize it.&quot;&#160;</td>
+          <td class="paramtype">solve that many times the problem with <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> random &quot; &quot;decision heuristic before trying <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> optimize it.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -783,7 +827,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Required: <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> file of the problem to solve. Many format are supported:&quot; &quot;.cnf &#160;</td>
+          <td class="paramtype">&quot;Required: <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> file of the problem <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> solve. Many format are supported:&quot; &quot;.cnf &#160;</td>
           <td class="paramname">sat, max-sat, weighted max-sat, </td>
         </tr>
         <tr>
@@ -799,6 +843,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
@@ -881,13 +927,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">write the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> problem as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> to &quot; &quot;this file. By default it uses the binary format except <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the file &quot; &quot;extension is '.txt'. If the problem is&#160;</td>
+          <td class="paramtype">write the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> problem as <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> LinearBooleanProblem <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> &quot; &quot;this file. By default it uses the binary format except <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the file &quot; &quot;extension is '.txt'. If the problem is&#160;</td>
           <td class="paramname"><em>SAT</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> satisfiable assignment is &quot; &quot;also written to the file.&quot;&#160;</td>
+          <td class="paramtype"><a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> satisfiable assignment is &quot; &quot;also written <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> the file.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1046,14 +1092,11 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="sat__runner_8cc.html">sat_runner.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

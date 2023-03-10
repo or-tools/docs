@@ -6,5 +6,6 @@ var searchData=
   ['opb_5freader_2eh_3',['opb_reader.h',['../opb__reader_8h.html',1,'']]],
   ['optimization_2ecc_4',['optimization.cc',['../optimization_8cc.html',1,'']]],
   ['optimization_2eh_5',['optimization.h',['../optimization_8h.html',1,'']]],
-  ['options_2eh_6',['options.h',['../options_8h.html',1,'']]]
+  ['optional_5fboolean_2eproto_6',['optional_boolean.proto',['../optional__boolean_8proto.html',1,'']]],
+  ['options_2eh_7',['options.h',['../options_8h.html',1,'']]]
 ];

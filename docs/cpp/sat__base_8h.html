@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sat_base.h File Reference</title>
+<title>Google OR-Tools: ortools/sat/sat_base.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,61 +100,82 @@ $(document).ready(function(){initNavTree('sat__base_8h.html',''); initResizable(
   <div class="headertitle"><div class="title">sat_base.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/attributes.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+</div>
 <p><a href="sat__base_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_literal.html">Literal</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html">operations_research::sat::Literal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_variables_assignment.html">VariablesAssignment</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1VariablesAssignment.html">operations_research::sat::VariablesAssignment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_assignment_info.html">AssignmentInfo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1AssignmentInfo.html">operations_research::sat::AssignmentInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a variable assignment.  <a href="structoperations__research_1_1sat_1_1AssignmentInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1_assignment_type.html">AssignmentType</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1AssignmentType.html">operations_research::sat::AssignmentType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_trail.html">Trail</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Trail.html">operations_research::sat::Trail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_sat_propagator.html">SatPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html">operations_research::sat::SatPropagator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all the SAT constraints.  <a href="classoperations__research_1_1sat_1_1SatPropagator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adbd0bb2024ebc78a990e8f82d5df0a6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adbd0bb2024ebc78a990e8f82d5df0a6f">DEFINE_STRONG_INDEX_TYPE</a> (BooleanVariable)</td></tr>
-<tr class="separator:adbd0bb2024ebc78a990e8f82d5df0a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a725fbbbd21fd532c6423b74cac453620"><td class="memItemLeft" align="right" valign="top">const BooleanVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a725fbbbd21fd532c6423b74cac453620">kNoBooleanVariable</a> (-1)</td></tr>
-<tr class="separator:a725fbbbd21fd532c6423b74cac453620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf384c46ac2e2bf57b21f4bbb9ac55a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1bf384c46ac2e2bf57b21f4bbb9ac55a">DEFINE_STRONG_INDEX_TYPE</a> (LiteralIndex)</td></tr>
-<tr class="separator:a1bf384c46ac2e2bf57b21f4bbb9ac55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379d3faa275185a54f6dd3b9c08fbc2f"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a379d3faa275185a54f6dd3b9c08fbc2f">kNoLiteralIndex</a> (-1)</td></tr>
-<tr class="separator:a379d3faa275185a54f6dd3b9c08fbc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a199a456065c860d9e2a9f9b7161b5"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae9a199a456065c860d9e2a9f9b7161b5">kTrueLiteralIndex</a> (-2)</td></tr>
-<tr class="separator:ae9a199a456065c860d9e2a9f9b7161b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066b1166afcdcdddf253f711631b31ae"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a066b1166afcdcdddf253f711631b31ae">kFalseLiteralIndex</a> (-3)</td></tr>
-<tr class="separator:a066b1166afcdcdddf253f711631b31ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202b4ad107f60b7c86b8abfb3ba59fbc"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a202b4ad107f60b7c86b8abfb3ba59fbc">operator&lt;&lt;</a> (std::ostream &amp;os, Literal <a class="el" href="optimization_8cc.html#af63dcc00f2023fdf498e0829e6fb8a6b">literal</a>)</td></tr>
-<tr class="separator:a202b4ad107f60b7c86b8abfb3ba59fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2721b102862a8b0120ec08a5910875f6"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2721b102862a8b0120ec08a5910875f6">operator&lt;&lt;</a> (std::ostream &amp;os, absl::Span&lt; const Literal &gt; literals)</td></tr>
-<tr class="separator:a2721b102862a8b0120ec08a5910875f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee6af9b585a14fcbbbedee050b6c934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5ee6af9b585a14fcbbbedee050b6c934">operations_research::sat::DEFINE_STRONG_INDEX_TYPE</a> (BooleanVariable)</td></tr>
+<tr class="memdesc:a5ee6af9b585a14fcbbbedee050b6c934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of a variable (&gt;= 0).  <br /></td></tr>
+<tr class="separator:a5ee6af9b585a14fcbbbedee050b6c934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add67896a84f6372a648154c5770a0ae0"><td class="memItemLeft" align="right" valign="top">const BooleanVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">operations_research::sat::kNoBooleanVariable</a> (-1)</td></tr>
+<tr class="separator:add67896a84f6372a648154c5770a0ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eac46edfbe4bab27e13aebe3805a558"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2eac46edfbe4bab27e13aebe3805a558">operations_research::sat::DEFINE_STRONG_INDEX_TYPE</a> (LiteralIndex)</td></tr>
+<tr class="memdesc:a2eac46edfbe4bab27e13aebe3805a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of a literal (&gt;= 0), see <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> below.  <br /></td></tr>
+<tr class="separator:a2eac46edfbe4bab27e13aebe3805a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbcb7017d468a17bdb30252af5c6c31"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2dbcb7017d468a17bdb30252af5c6c31">operations_research::sat::kNoLiteralIndex</a> (-1)</td></tr>
+<tr class="separator:a2dbcb7017d468a17bdb30252af5c6c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab45c5256e605ee3da3bf3abd1df2e1"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7ab45c5256e605ee3da3bf3abd1df2e1">operations_research::sat::kTrueLiteralIndex</a> (-2)</td></tr>
+<tr class="separator:a7ab45c5256e605ee3da3bf3abd1df2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969b5056550d96847f8c35f19fd17f50"><td class="memItemLeft" align="right" valign="top">const LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a969b5056550d96847f8c35f19fd17f50">operations_research::sat::kFalseLiteralIndex</a> (-3)</td></tr>
+<tr class="separator:a969b5056550d96847f8c35f19fd17f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac642826c64ada206ceeec3c813a803a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aac642826c64ada206ceeec3c813a803a">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, Literal <a class="el" href="optimization_8cc.html#af63dcc00f2023fdf498e0829e6fb8a6b">literal</a>)</td></tr>
+<tr class="separator:aac642826c64ada206ceeec3c813a803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ddf9ebf6ced32e8fef8475caa357c2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a38ddf9ebf6ced32e8fef8475caa357c2">operations_research::sat::operator&lt;&lt;</a> (std::ostream &amp;os, absl::Span&lt; const Literal &gt; literals)</td></tr>
+<tr class="separator:a38ddf9ebf6ced32e8fef8475caa357c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="sat__base_8h.html">sat_base.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

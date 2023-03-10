@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: topologicalsorter.h File Reference</title>
+<title>Google OR-Tools: ortools/graph/topologicalsorter.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,21 +101,41 @@ $(document).ready(function(){initNavTree('topologicalsorter_8h.html',''); initRe
   <div class="headertitle"><div class="title">topologicalsorter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/attributes.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/container/inlined_vector.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="container__logging_8h_source.html">ortools/base/container_logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="status__builder_8h_source.html">ortools/base/status_builder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graph_8h_source.html">ortools/graph/graph.h</a>&quot;</code><br />
+</div>
 <p><a href="topologicalsorter_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1internal_1_1_dense_int_topological_sorter_tpl.html">DenseIntTopologicalSorterTpl&lt; stable_sort &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html">util::internal::DenseIntTopologicalSorterTpl&lt; stable_sort &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1_topological_sorter.html">TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1TopologicalSorter.html">util::TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_topological_sorter.html">TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTopologicalSorter.html">TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceutil"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html">util</a></td></tr>
+<tr class="memdesc:namespaceutil"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collections of i/o utilities for the Graph classes in ./graph.h. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceutil_1_1graph"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html">util::graph</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,91 +144,101 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a74fc6e241bfc96048a5612a62fa34d11"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil_1_1internal_1_1_dense_int_topological_sorter_tpl.html">::util::internal::DenseIntTopologicalSorterTpl</a>&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a74fc6e241bfc96048a5612a62fa34d11">DenseIntStableTopologicalSorter</a></td></tr>
-<tr class="separator:a74fc6e241bfc96048a5612a62fa34d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e0eacbfb0b5de3f7453de0f9a48201"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil_1_1internal_1_1_dense_int_topological_sorter_tpl.html">::util::internal::DenseIntTopologicalSorterTpl</a>&lt; false &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#af1e0eacbfb0b5de3f7453de0f9a48201">DenseIntTopologicalSorter</a></td></tr>
-<tr class="separator:af1e0eacbfb0b5de3f7453de0f9a48201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8f665393baf8da98b841fd2d35f4c6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceutil.html#a74fc6e241bfc96048a5612a62fa34d11">::util::DenseIntStableTopologicalSorter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="topologicalsorter_8h.html#a1f8f665393baf8da98b841fd2d35f4c6">DenseIntStableTopologicalSorter</a></td></tr>
+<tr class="memitem:ab8ee3a3e236b0c89bb6e89d7f0a069f0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html">::util::internal::DenseIntTopologicalSorterTpl</a>&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ab8ee3a3e236b0c89bb6e89d7f0a069f0">util::DenseIntStableTopologicalSorter</a></td></tr>
+<tr class="separator:ab8ee3a3e236b0c89bb6e89d7f0a069f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9be35eb706de2777ef8b80262a293a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html">::util::internal::DenseIntTopologicalSorterTpl</a>&lt; false &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a0e9be35eb706de2777ef8b80262a293a">util::DenseIntTopologicalSorter</a></td></tr>
+<tr class="separator:a0e9be35eb706de2777ef8b80262a293a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8f665393baf8da98b841fd2d35f4c6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceutil.html#ab8ee3a3e236b0c89bb6e89d7f0a069f0">::util::DenseIntStableTopologicalSorter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="topologicalsorter_8h.html#a1f8f665393baf8da98b841fd2d35f4c6">DenseIntStableTopologicalSorter</a></td></tr>
 <tr class="separator:a1f8f665393baf8da98b841fd2d35f4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6138051f1b749d68632e232dae034f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceutil.html#af1e0eacbfb0b5de3f7453de0f9a48201">::util::DenseIntTopologicalSorter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="topologicalsorter_8h.html#a8b6138051f1b749d68632e232dae034f">DenseIntTopologicalSorter</a></td></tr>
+<tr class="memitem:a8b6138051f1b749d68632e232dae034f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceutil.html#a0e9be35eb706de2777ef8b80262a293a">::util::DenseIntTopologicalSorter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="topologicalsorter_8h.html#a8b6138051f1b749d68632e232dae034f">DenseIntTopologicalSorter</a></td></tr>
 <tr class="separator:a8b6138051f1b749d68632e232dae034f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
-<tr class="memitem:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#ade6e5ba3989776e2e35deb2aa3e4cc01">FastTopologicalSort</a> (const AdjacencyLists &amp;adj)</td></tr>
-<tr class="separator:ade6e5ba3989776e2e35deb2aa3e4cc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6175f2587afb21928b166d245cd9175a"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
-<tr class="memitem:a6175f2587afb21928b166d245cd9175a"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a6175f2587afb21928b166d245cd9175a">FindCycleInGraph</a> (const AdjacencyLists &amp;adj)</td></tr>
-<tr class="separator:a6175f2587afb21928b166d245cd9175a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9d5088326599366419a23423123e11"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1d9d5088326599366419a23423123e11"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a1d9d5088326599366419a23423123e11">TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
-<tr class="separator:a1d9d5088326599366419a23423123e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949e84af0a83f7b8d44aeaa4ff6f2e3f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a949e84af0a83f7b8d44aeaa4ff6f2e3f"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a949e84af0a83f7b8d44aeaa4ff6f2e3f">TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:a949e84af0a83f7b8d44aeaa4ff6f2e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ecd35497e41c245dd91b83a6b2c63c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a10ecd35497e41c245dd91b83a6b2c63c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a10ecd35497e41c245dd91b83a6b2c63c">TopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a10ecd35497e41c245dd91b83a6b2c63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacc14279e3b6153e2c0970976f92475"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aeacc14279e3b6153e2c0970976f92475"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#aeacc14279e3b6153e2c0970976f92475">StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
-<tr class="separator:aeacc14279e3b6153e2c0970976f92475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8cc3656cb4a263d2e613ee066cfb9b5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac8cc3656cb4a263d2e613ee066cfb9b5"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ac8cc3656cb4a263d2e613ee066cfb9b5">StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:ac8cc3656cb4a263d2e613ee066cfb9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ad4cd4c6ef5dae86954f253e3911387ad">StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fc51a824ebf81a2c4653f8f53ddd45"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a79fc51a824ebf81a2c4653f8f53ddd45">FindCycleInDenseIntGraph</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a79fc51a824ebf81a2c4653f8f53ddd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c9089cade9c569feaf5a6a08125fd95"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a2c9089cade9c569feaf5a6a08125fd95">DenseIntTopologicalSort</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
-<tr class="separator:a2c9089cade9c569feaf5a6a08125fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690ad981593a2fd2d70e93838a9e0caa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a690ad981593a2fd2d70e93838a9e0caa">DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a690ad981593a2fd2d70e93838a9e0caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3584140482c04f67affe2242acf868d"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#af3584140482c04f67affe2242acf868d">DenseIntStableTopologicalSort</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
-<tr class="separator:af3584140482c04f67affe2242acf868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f60f83641a75dbbaaf3855541f2529e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a9f60f83641a75dbbaaf3855541f2529e">DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a9f60f83641a75dbbaaf3855541f2529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a510db4091d059c7ff8350c7735501ede"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
-<tr class="memitem:a510db4091d059c7ff8350c7735501ede"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a510db4091d059c7ff8350c7735501ede">RunTopologicalSorter</a> (Sorter *sorter, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order_or_cycle)</td></tr>
-<tr class="separator:a510db4091d059c7ff8350c7735501ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33655a2d1d2de11e0fc1c9ac6e51fa82"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
-<tr class="memitem:a33655a2d1d2de11e0fc1c9ac6e51fa82"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a33655a2d1d2de11e0fc1c9ac6e51fa82">RunTopologicalSorter</a> (Sorter *sorter, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:a33655a2d1d2de11e0fc1c9ac6e51fa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5d0f019a6526fb330f28df049f51ef"><td class="memTemplParams" colspan="2">template&lt;bool stable_sort = false&gt; </td></tr>
-<tr class="memitem:a1e5d0f019a6526fb330f28df049f51ef"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a1e5d0f019a6526fb330f28df049f51ef">DenseIntTopologicalSortImpl</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
-<tr class="separator:a1e5d0f019a6526fb330f28df049f51ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a93321b8d24302b8023eb887fc55b00"><td class="memTemplParams" colspan="2">template&lt;typename T , bool stable_sort = false&gt; </td></tr>
-<tr class="memitem:a0a93321b8d24302b8023eb887fc55b00"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a0a93321b8d24302b8023eb887fc55b00">TopologicalSortImpl</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:a0a93321b8d24302b8023eb887fc55b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba267bd428fe7fc050ef4c0b32ed0ef7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
-<tr class="memitem:aba267bd428fe7fc050ef4c0b32ed0ef7"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#aba267bd428fe7fc050ef4c0b32ed0ef7">RunTopologicalSorterOrDie</a> (Sorter *sorter, int num_nodes, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:aba267bd428fe7fc050ef4c0b32ed0ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4216e4506860ef3ae6626bab612eb4d5"><td class="memTemplParams" colspan="2">template&lt;bool stable_sort = false&gt; </td></tr>
-<tr class="memitem:a4216e4506860ef3ae6626bab612eb4d5"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a4216e4506860ef3ae6626bab612eb4d5">DenseIntTopologicalSortOrDieImpl</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a4216e4506860ef3ae6626bab612eb4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40437e9756629493e2e9fd2d754a749"><td class="memTemplParams" colspan="2">template&lt;typename T , bool stable_sort = false&gt; </td></tr>
-<tr class="memitem:af40437e9756629493e2e9fd2d754a749"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#af40437e9756629493e2e9fd2d754a749">TopologicalSortOrDieImpl</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:af40437e9756629493e2e9fd2d754a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d8d73fd39ca4eed978e3c7e9600e4d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad8d8d73fd39ca4eed978e3c7e9600e4d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ad8d8d73fd39ca4eed978e3c7e9600e4d">TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
-<tr class="separator:ad8d8d73fd39ca4eed978e3c7e9600e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997c6792661a9674f611b4b7df045a80"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a997c6792661a9674f611b4b7df045a80"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a997c6792661a9674f611b4b7df045a80">TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:a997c6792661a9674f611b4b7df045a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5481fb724fd9445e889dca9fe2fb394"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab5481fb724fd9445e889dca9fe2fb394"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ab5481fb724fd9445e889dca9fe2fb394">StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
-<tr class="separator:ab5481fb724fd9445e889dca9fe2fb394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff97e106e774cd8715939482fda5c65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0ff97e106e774cd8715939482fda5c65"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a0ff97e106e774cd8715939482fda5c65">StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
-<tr class="separator:a0ff97e106e774cd8715939482fda5c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f60f83641a75dbbaaf3855541f2529e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a9f60f83641a75dbbaaf3855541f2529e">DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a9f60f83641a75dbbaaf3855541f2529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690ad981593a2fd2d70e93838a9e0caa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a690ad981593a2fd2d70e93838a9e0caa">DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:a690ad981593a2fd2d70e93838a9e0caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#ad4cd4c6ef5dae86954f253e3911387ad">StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
-<tr class="separator:ad4cd4c6ef5dae86954f253e3911387ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7ab592842225bf80afd735048a0e0e"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
+<tr class="memitem:a0d7ab592842225bf80afd735048a0e0e"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e">util::graph::FastTopologicalSort</a> (const AdjacencyLists &amp;adj)</td></tr>
+<tr class="separator:a0d7ab592842225bf80afd735048a0e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memTemplParams" colspan="2">template&lt;class AdjacencyLists &gt; </td></tr>
+<tr class="memitem:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7">util::graph::FindCycleInGraph</a> (const AdjacencyLists &amp;adj)</td></tr>
+<tr class="separator:a440afdf238e5a752bbe4e1bcc8878fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49200d01f1aec6ee7837ad3e09b0d880"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a49200d01f1aec6ee7837ad3e09b0d880"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a49200d01f1aec6ee7837ad3e09b0d880">util::TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
+<tr class="separator:a49200d01f1aec6ee7837ad3e09b0d880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adc100d0fc2606414e4cdf062a80c97"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3adc100d0fc2606414e4cdf062a80c97"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a3adc100d0fc2606414e4cdf062a80c97">util::TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="memdesc:a3adc100d0fc2606414e4cdf062a80c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override of the above that outputs the detected cycle.  <br /></td></tr>
+<tr class="separator:a3adc100d0fc2606414e4cdf062a80c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75288075e89561fd1564e40123cd7dd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab75288075e89561fd1564e40123cd7dd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ab75288075e89561fd1564e40123cd7dd">util::TopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="memdesc:ab75288075e89561fd1564e40123cd7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">OrDie() variant of the above.  <br /></td></tr>
+<tr class="separator:ab75288075e89561fd1564e40123cd7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8f58bd1b46837f8305d316bb84d0e1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9f8f58bd1b46837f8305d316bb84d0e1"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a9f8f58bd1b46837f8305d316bb84d0e1">util::StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
+<tr class="separator:a9f8f58bd1b46837f8305d316bb84d0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac974be3bae074c99c0d7d7a5aedbc757"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac974be3bae074c99c0d7d7a5aedbc757"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ac974be3bae074c99c0d7d7a5aedbc757">util::StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="memdesc:ac974be3bae074c99c0d7d7a5aedbc757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override of the above that outputs the detected cycle.  <br /></td></tr>
+<tr class="separator:ac974be3bae074c99c0d7d7a5aedbc757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b0775ffcab4f306414763e156b97e5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae8b0775ffcab4f306414763e156b97e5"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ae8b0775ffcab4f306414763e156b97e5">util::StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="memdesc:ae8b0775ffcab4f306414763e156b97e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OrDie() variant of the above.  <br /></td></tr>
+<tr class="separator:ae8b0775ffcab4f306414763e156b97e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8fe0e94677e886c26ba2f3bade9a7f"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#afa8fe0e94677e886c26ba2f3bade9a7f">util::FindCycleInDenseIntGraph</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="memdesc:afa8fe0e94677e886c26ba2f3bade9a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">______________________ END OF THE RECOMMENDED API ___________________________  <br /></td></tr>
+<tr class="separator:afa8fe0e94677e886c26ba2f3bade9a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88ca9916b6307f51dd4983ffd2896ca"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#af88ca9916b6307f51dd4983ffd2896ca">util::DenseIntTopologicalSort</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
+<tr class="memdesc:af88ca9916b6307f51dd4983ffd2896ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations of the "simple API" functions declared at the top.  <br /></td></tr>
+<tr class="separator:af88ca9916b6307f51dd4983ffd2896ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cda68f8ed2a159f060cfaafe2017e6f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a5cda68f8ed2a159f060cfaafe2017e6f">util::DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a5cda68f8ed2a159f060cfaafe2017e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f7a974e2fa9b8cde91cbcab0242c2e"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a48f7a974e2fa9b8cde91cbcab0242c2e">util::DenseIntStableTopologicalSort</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
+<tr class="separator:a48f7a974e2fa9b8cde91cbcab0242c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0578f3afba5eb142e0dcca8063f6e66a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a0578f3afba5eb142e0dcca8063f6e66a">util::DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a0578f3afba5eb142e0dcca8063f6e66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf082bf3cbe93faed643f584546fb59d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
+<tr class="memitem:aaf082bf3cbe93faed643f584546fb59d"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#aaf082bf3cbe93faed643f584546fb59d">util::internal::RunTopologicalSorter</a> (Sorter *sorter, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order_or_cycle)</td></tr>
+<tr class="memdesc:aaf082bf3cbe93faed643f584546fb59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal wrapper around the *TopologicalSort classes.  <br /></td></tr>
+<tr class="separator:aaf082bf3cbe93faed643f584546fb59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660c45f4f171096f4286c64ae64905d6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
+<tr class="memitem:a660c45f4f171096f4286c64ae64905d6"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a660c45f4f171096f4286c64ae64905d6">util::internal::RunTopologicalSorter</a> (Sorter *sorter, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="separator:a660c45f4f171096f4286c64ae64905d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ebf3e6418a4e82ddf0dac3a0b0c488"><td class="memTemplParams" colspan="2">template&lt;bool stable_sort = false&gt; </td></tr>
+<tr class="memitem:a84ebf3e6418a4e82ddf0dac3a0b0c488"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a84ebf3e6418a4e82ddf0dac3a0b0c488">util::internal::DenseIntTopologicalSortImpl</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs, std::vector&lt; int &gt; *topological_order)</td></tr>
+<tr class="separator:a84ebf3e6418a4e82ddf0dac3a0b0c488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edcc50ac96e5a9778a18dc33969e1a4"><td class="memTemplParams" colspan="2">template&lt;typename T , bool stable_sort = false&gt; </td></tr>
+<tr class="memitem:a8edcc50ac96e5a9778a18dc33969e1a4"><td class="memTemplItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a8edcc50ac96e5a9778a18dc33969e1a4">util::internal::TopologicalSortImpl</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="separator:a8edcc50ac96e5a9778a18dc33969e1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d06732bcc23c21e0ba2f87eab6834d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Sorter &gt; </td></tr>
+<tr class="memitem:a9d06732bcc23c21e0ba2f87eab6834d9"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a9d06732bcc23c21e0ba2f87eab6834d9">util::internal::RunTopologicalSorterOrDie</a> (Sorter *sorter, int num_nodes, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="memdesc:a9d06732bcc23c21e0ba2f87eab6834d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Now, the OrDie() versions, which directly return the topological order.  <br /></td></tr>
+<tr class="separator:a9d06732bcc23c21e0ba2f87eab6834d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ed204bd7ff7f88ae27d73bf4ae1458"><td class="memTemplParams" colspan="2">template&lt;bool stable_sort = false&gt; </td></tr>
+<tr class="memitem:a98ed204bd7ff7f88ae27d73bf4ae1458"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a98ed204bd7ff7f88ae27d73bf4ae1458">util::internal::DenseIntTopologicalSortOrDieImpl</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a98ed204bd7ff7f88ae27d73bf4ae1458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6905ced10dd4647225a7bff423ab95f5"><td class="memTemplParams" colspan="2">template&lt;typename T , bool stable_sort = false&gt; </td></tr>
+<tr class="memitem:a6905ced10dd4647225a7bff423ab95f5"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1internal.html#a6905ced10dd4647225a7bff423ab95f5">util::internal::TopologicalSortOrDieImpl</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a6905ced10dd4647225a7bff423ab95f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ae803e2d0270a720f294269b30fc10"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad2ae803e2d0270a720f294269b30fc10"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ad2ae803e2d0270a720f294269b30fc10">util::TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
+<tr class="separator:ad2ae803e2d0270a720f294269b30fc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da65a9795112f2e6b57c9cfe950f4a3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6da65a9795112f2e6b57c9cfe950f4a3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a6da65a9795112f2e6b57c9cfe950f4a3">util::TopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="memdesc:a6da65a9795112f2e6b57c9cfe950f4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override of the above that outputs the detected cycle.  <br /></td></tr>
+<tr class="separator:a6da65a9795112f2e6b57c9cfe950f4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed25a07b58c38bbfba6e2912024e541"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4ed25a07b58c38bbfba6e2912024e541"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a4ed25a07b58c38bbfba6e2912024e541">util::StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order)</td></tr>
+<tr class="separator:a4ed25a07b58c38bbfba6e2912024e541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f37ea5a316975b7039dc07929a5b65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a37f37ea5a316975b7039dc07929a5b65"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a37f37ea5a316975b7039dc07929a5b65">util::StableTopologicalSort</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs, std::vector&lt; T &gt; *topological_order, std::vector&lt; T &gt; *cycle)</td></tr>
+<tr class="memdesc:a37f37ea5a316975b7039dc07929a5b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override of the above that outputs the detected cycle.  <br /></td></tr>
+<tr class="separator:a37f37ea5a316975b7039dc07929a5b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c544f7c7c323eb16a64389b95b79458"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a5c544f7c7c323eb16a64389b95b79458">util::graph::DenseIntTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a5c544f7c7c323eb16a64389b95b79458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b429182836eddf34189e5af39f1e886"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a1b429182836eddf34189e5af39f1e886">util::graph::DenseIntStableTopologicalSortOrDie</a> (int num_nodes, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a1b429182836eddf34189e5af39f1e886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html#a4bcd58ffa60a8a68fb960ff41deba777">util::graph::StableTopologicalSortOrDie</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>, const std::vector&lt; std::pair&lt; T, T &gt; &gt; &amp;arcs)</td></tr>
+<tr class="separator:a4bcd58ffa60a8a68fb960ff41deba777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a1f8f665393baf8da98b841fd2d35f4c6" name="a1f8f665393baf8da98b841fd2d35f4c6"></a>
@@ -218,10 +248,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespaceutil.html#a74fc6e241bfc96048a5612a62fa34d11">::util::DenseIntStableTopologicalSorter</a> <a class="el" href="topologicalsorter_8h.html#a1f8f665393baf8da98b841fd2d35f4c6">DenseIntStableTopologicalSorter</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceutil.html#ab8ee3a3e236b0c89bb6e89d7f0a069f0">::util::DenseIntStableTopologicalSorter</a> <a class="el" href="topologicalsorter_8h.html#a1f8f665393baf8da98b841fd2d35f4c6">DenseIntStableTopologicalSorter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>BACKWARDS COMPATIBILITY Some of the classes or functions have been exposed under the global namespace or the <a class="el" href="namespaceutil_1_1graph.html">util::graph</a>:: namespace. Until all clients are fixed to use the util:: namespace, we keep those versions around. </p>
 
 <p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00588">588</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
@@ -234,7 +265,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespaceutil.html#af1e0eacbfb0b5de3f7453de0f9a48201">::util::DenseIntTopologicalSorter</a> <a class="el" href="topologicalsorter_8h.html#a8b6138051f1b749d68632e232dae034f">DenseIntTopologicalSorter</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceutil.html#a0e9be35eb706de2777ef8b80262a293a">::util::DenseIntTopologicalSorter</a> <a class="el" href="topologicalsorter_8h.html#a8b6138051f1b749d68632e232dae034f">DenseIntTopologicalSorter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,14 +276,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="topologicalsorter_8h.html">topologicalsorter.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

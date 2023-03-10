@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: qap_reader.h Source File</title>
+<title>Google OR-Tools: ortools/util/qap_reader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('qap__reader_8h_source.html',''); initR
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// between the two facilities). The problem is to assign all facilities to</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// different locations with the goal of minimizing the sum of the distances</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// multiplied by the corresponding flows.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structoperations__research_1_1_qap_problem.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structoperations__research_1_1_qap_problem.html">QapProblem</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structoperations__research_1_1QapProblem.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structoperations__research_1_1QapProblem.html">QapProblem</a> {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="comment">// `weights[i][j]` is the amount of flow from facility i to facility j.</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structoperations__research_1_1_qap_problem.html#a23d83c1be42f45b6fba2e1bfd333dd5a">   32</a></span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; <a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a23d83c1be42f45b6fba2e1bfd333dd5a">weights</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structoperations__research_1_1QapProblem.html#a9506fee02eb56aa0afcf65463f1e01c4">   32</a></span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; <a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a9506fee02eb56aa0afcf65463f1e01c4">weights</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// `distances[i][j]` is the distance from location i to location j.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structoperations__research_1_1_qap_problem.html#a97390ed47e37ca7ce2aece0d73b5c274">   35</a></span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; <a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a97390ed47e37ca7ce2aece0d73b5c274">distances</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structoperations__research_1_1QapProblem.html#a47402047ca43f8a451384a13e29a7a9d">   35</a></span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; <a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a47402047ca43f8a451384a13e29a7a9d">distances</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// Best known solution (-1 if not defined).</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structoperations__research_1_1_qap_problem.html#acf932a3d09a4d51e90fd85ef92b0e3aa">   38</a></span>  int64_t <a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#acf932a3d09a4d51e90fd85ef92b0e3aa">best_known_solution</a> = -1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structoperations__research_1_1QapProblem.html#a54af82c5712efabc1ad38dcaa0964c4d">   38</a></span>  int64_t <a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a54af82c5712efabc1ad38dcaa0964c4d">best_known_solution</a> = -1;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="comment">// For testing.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structoperations__research_1_1_qap_problem.html#a686464829b9dfb6e16c3db2702f06b41">   41</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structoperations__research_1_1_qap_problem.html#a686464829b9dfb6e16c3db2702f06b41">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1_qap_problem.html">QapProblem</a>&amp; q)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a23d83c1be42f45b6fba2e1bfd333dd5a">weights</a> == q.<a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a23d83c1be42f45b6fba2e1bfd333dd5a">weights</a> &amp;&amp; <a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a97390ed47e37ca7ce2aece0d73b5c274">distances</a> == q.<a class="code hl_variable" href="structoperations__research_1_1_qap_problem.html#a97390ed47e37ca7ce2aece0d73b5c274">distances</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structoperations__research_1_1QapProblem.html#ad5d704aa96f2cdc1ed43725e0fb34b80">   41</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structoperations__research_1_1QapProblem.html#ad5d704aa96f2cdc1ed43725e0fb34b80">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1QapProblem.html">QapProblem</a>&amp; q)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a9506fee02eb56aa0afcf65463f1e01c4">weights</a> == q.<a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a9506fee02eb56aa0afcf65463f1e01c4">weights</a> &amp;&amp; <a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a47402047ca43f8a451384a13e29a7a9d">distances</a> == q.<a class="code hl_variable" href="structoperations__research_1_1QapProblem.html#a47402047ca43f8a451384a13e29a7a9d">distances</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -160,28 +160,25 @@ $(document).ready(function(){initNavTree('qap__reader_8h_source.html',''); initR
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// supply flowing from factory 0 to factory 1, and 3 units of supply flowing</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// from factory 1 to 0. The distance from location 0 to location 1 is equal</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// to 2, and the distance from location 1 to 0 is equal to 1.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>QapProblem <a class="code hl_function" href="namespaceoperations__research.html#a2e225327cfbee9fedef08bd20c0f9b74">ReadQapProblemOrDie</a>(<span class="keyword">const</span> std::string&amp; filepath);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>QapProblem <a class="code hl_function" href="namespaceoperations__research.html#a69a780b033f05ccd016fa3ce547f90f5">ReadQapProblemOrDie</a>(<span class="keyword">const</span> std::string&amp; filepath);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_UTIL_QAP_READER_H_</span></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html_a2e225327cfbee9fedef08bd20c0f9b74"><div class="ttname"><a href="namespaceoperations__research.html#a2e225327cfbee9fedef08bd20c0f9b74">operations_research::ReadQapProblemOrDie</a></div><div class="ttdeci">QapProblem ReadQapProblemOrDie(const std::string &amp;filepath)</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8cc_source.html#l00029">qap_reader.cc:29</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1_qap_problem_html"><div class="ttname"><a href="structoperations__research_1_1_qap_problem.html">operations_research::QapProblem</a></div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00030">qap_reader.h:30</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1_qap_problem_html_a23d83c1be42f45b6fba2e1bfd333dd5a"><div class="ttname"><a href="structoperations__research_1_1_qap_problem.html#a23d83c1be42f45b6fba2e1bfd333dd5a">operations_research::QapProblem::weights</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; weights</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00032">qap_reader.h:32</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1_qap_problem_html_a686464829b9dfb6e16c3db2702f06b41"><div class="ttname"><a href="structoperations__research_1_1_qap_problem.html#a686464829b9dfb6e16c3db2702f06b41">operations_research::QapProblem::operator==</a></div><div class="ttdeci">bool operator==(const QapProblem &amp;q) const</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00041">qap_reader.h:41</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1_qap_problem_html_a97390ed47e37ca7ce2aece0d73b5c274"><div class="ttname"><a href="structoperations__research_1_1_qap_problem.html#a97390ed47e37ca7ce2aece0d73b5c274">operations_research::QapProblem::distances</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; distances</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00035">qap_reader.h:35</a></div></div>
-<div class="ttc" id="astructoperations__research_1_1_qap_problem_html_acf932a3d09a4d51e90fd85ef92b0e3aa"><div class="ttname"><a href="structoperations__research_1_1_qap_problem.html#acf932a3d09a4d51e90fd85ef92b0e3aa">operations_research::QapProblem::best_known_solution</a></div><div class="ttdeci">int64_t best_known_solution</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00038">qap_reader.h:38</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a69a780b033f05ccd016fa3ce547f90f5"><div class="ttname"><a href="namespaceoperations__research.html#a69a780b033f05ccd016fa3ce547f90f5">operations_research::ReadQapProblemOrDie</a></div><div class="ttdeci">QapProblem ReadQapProblemOrDie(const std::string &amp;filepath)</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8cc_source.html#l00029">qap_reader.cc:29</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1QapProblem_html"><div class="ttname"><a href="structoperations__research_1_1QapProblem.html">operations_research::QapProblem</a></div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00030">qap_reader.h:30</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1QapProblem_html_a47402047ca43f8a451384a13e29a7a9d"><div class="ttname"><a href="structoperations__research_1_1QapProblem.html#a47402047ca43f8a451384a13e29a7a9d">operations_research::QapProblem::distances</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; distances</div><div class="ttdoc">distances[i][j] is the distance from location i to location j.</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00035">qap_reader.h:35</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1QapProblem_html_a54af82c5712efabc1ad38dcaa0964c4d"><div class="ttname"><a href="structoperations__research_1_1QapProblem.html#a54af82c5712efabc1ad38dcaa0964c4d">operations_research::QapProblem::best_known_solution</a></div><div class="ttdeci">int64_t best_known_solution</div><div class="ttdoc">Best known solution (-1 if not defined).</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00038">qap_reader.h:38</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1QapProblem_html_a9506fee02eb56aa0afcf65463f1e01c4"><div class="ttname"><a href="structoperations__research_1_1QapProblem.html#a9506fee02eb56aa0afcf65463f1e01c4">operations_research::QapProblem::weights</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int64_t &gt; &gt; weights</div><div class="ttdoc">weights[i][j] is the amount of flow from facility i to facility j.</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00032">qap_reader.h:32</a></div></div>
+<div class="ttc" id="astructoperations__research_1_1QapProblem_html_ad5d704aa96f2cdc1ed43725e0fb34b80"><div class="ttname"><a href="structoperations__research_1_1QapProblem.html#ad5d704aa96f2cdc1ed43725e0fb34b80">operations_research::QapProblem::operator==</a></div><div class="ttdeci">bool operator==(const QapProblem &amp;q) const</div><div class="ttdoc">For testing.</div><div class="ttdef"><b>Definition:</b> <a href="qap__reader_8h_source.html#l00041">qap_reader.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html">util</a></li><li class="navelem"><a class="el" href="qap__reader_8h.html">qap_reader.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

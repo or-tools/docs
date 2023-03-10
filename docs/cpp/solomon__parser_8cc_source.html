@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: solomon_parser.cc Source File</title>
+<title>Google OR-Tools: ortools/routing/solomon_parser.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -128,17 +128,17 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research.html">operations_research</a> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classoperations__research_1_1_solomon_parser.html#ab9ff8608bf08e7104f714fdc7c053c7a">   33</a></span><a class="code hl_function" href="classoperations__research_1_1_solomon_parser.html#ab9ff8608bf08e7104f714fdc7c053c7a">SolomonParser::SolomonParser</a>()</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classoperations__research_1_1SolomonParser.html#af0169687ead958e2e39e556b1d8412f4">   33</a></span><a class="code hl_function" href="classoperations__research_1_1SolomonParser.html#af0169687ead958e2e39e556b1d8412f4">SolomonParser::SolomonParser</a>()</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    : sections_({{<span class="stringliteral">&quot;VEHICLE&quot;</span>, VEHICLE}, {<span class="stringliteral">&quot;CUSTOMER&quot;</span>, CUSTOMER}}) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  Initialize();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classoperations__research_1_1_solomon_parser.html#a68ab11b8424f051410b19f562ca6dcad">   38</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classoperations__research_1_1_solomon_parser.html#a68ab11b8424f051410b19f562ca6dcad">SolomonParser::LoadFile</a>(<span class="keyword">const</span> std::string&amp; file_name) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classoperations__research_1_1SolomonParser.html#ababf50a437b82bcd59207ecd575b2d48">   38</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classoperations__research_1_1SolomonParser.html#ababf50a437b82bcd59207ecd575b2d48">SolomonParser::LoadFile</a>(<span class="keyword">const</span> std::string&amp; file_name) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  Initialize();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> ParseFile(file_name);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classoperations__research_1_1_solomon_parser.html#aa3a15bc36c955c721ea39ada1ce675be">   43</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classoperations__research_1_1_solomon_parser.html#a68ab11b8424f051410b19f562ca6dcad">SolomonParser::LoadFile</a>(<span class="keyword">const</span> std::string&amp; file_name,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classoperations__research_1_1SolomonParser.html#a92ca35b8574f57442b656594d8d8e8bf">   43</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classoperations__research_1_1SolomonParser.html#ababf50a437b82bcd59207ecd575b2d48">SolomonParser::LoadFile</a>(<span class="keyword">const</span> std::string&amp; file_name,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                             <span class="keyword">const</span> std::string&amp; archive_name) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  Initialize();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">if</span> (!absl::StartsWith(archive_name, <span class="stringliteral">&quot;/&quot;</span>)) {</div>
@@ -146,9 +146,9 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">const</span> std::string fake_zip_path = <span class="stringliteral">&quot;/zip&quot;</span> + archive_name;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  std::shared_ptr&lt;zipfile::ZipArchive&gt; fake_zip_closer(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <a class="code hl_function" href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">zipfile::OpenZipArchive</a>(archive_name));</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <a class="code hl_function" href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">zipfile::OpenZipArchive</a>(archive_name));</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == fake_zip_closer) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> std::string zip_filename = <a class="code hl_function" href="namespacefile.html#ad59dcaa9774a8d0e7559caf782eb1781">file::JoinPath</a>(fake_zip_path, file_name);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> std::string zip_filename = <a class="code hl_function" href="namespacefile.html#a5b299e16001ed45a61bcbc3383dd3400">file::JoinPath</a>(fake_zip_path, file_name);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> ParseFile(zip_filename);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">bool</span> SolomonParser::ParseFile(<span class="keyword">const</span> std::string&amp; file_name) {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="parse__proto_8cc.html#a41ebd28ef1d7c6ade45642cb6acc1039">line</a> :</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>       <a class="code hl_class" href="class_file_lines.html">FileLines</a>(file_name, <a class="code hl_enumvalue" href="class_file_line_iterator.html#abc6126af1d45847bc59afa0aa3216b04ab221b5a5b30e0c727ce21768362b5a78">FileLineIterator::REMOVE_INLINE_CR</a>)) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>       <a class="code hl_class" href="classFileLines.html">FileLines</a>(file_name, <a class="code hl_enumvalue" href="classFileLineIterator.html#a29cb4b1d423e8bea0d4968e9d3d5aa4fae2bf70dc0e342c73f212ceabbc34721f">FileLineIterator::REMOVE_INLINE_CR</a>)) {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">const</span> std::vector&lt;std::string&gt; words =</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        absl::StrSplit(<a class="code hl_variable" href="parse__proto_8cc.html#a41ebd28ef1d7c6ade45642cb6acc1039">line</a>, absl::ByAnyChar(<span class="stringliteral">&quot; :\t&quot;</span>), absl::SkipEmpty());</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// Skip blank lines</span></div>
@@ -180,9 +180,9 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">case</span> VEHICLE: {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          <span class="keywordflow">if</span> (to_read_ == 1) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span> (words.size() != 2) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            vehicles_ = <a class="code hl_function" href="namespacestrings.html#a3add1e1c17392fe4fed778e1516a7611">strings::ParseLeadingInt32Value</a>(words[0], -1);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            vehicles_ = <a class="code hl_function" href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">strings::ParseLeadingInt32Value</a>(words[0], -1);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">if</span> (vehicles_ &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            capacity_ = <a class="code hl_function" href="namespacestrings.html#a3add1e1c17392fe4fed778e1516a7611">strings::ParseLeadingInt32Value</a>(words[1], -1);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            capacity_ = <a class="code hl_function" href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">strings::ParseLeadingInt32Value</a>(words[1], -1);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (capacity_ &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>          }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>          <span class="keywordflow">break</span>;</div>
@@ -190,9 +190,9 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">case</span> CUSTOMER: {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="keywordflow">if</span> (to_read_ &lt; 2) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            std::vector&lt;int64_t&gt; values;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; words.size(); ++i) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> &lt; words.size(); ++<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>) {</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>              <span class="keyword">const</span> int64_t <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> =</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                  <a class="code hl_function" href="namespacestrings.html#a1f256880dacb98892fdf9978381e1009">strings::ParseLeadingInt64Value</a>(words[i], -1);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                  <a class="code hl_function" href="namespacestrings.html#affb14c3bb2854a6bdba7a17a3e96725b">strings::ParseLeadingInt64Value</a>(words[i], -1);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>              <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>              values.push_back(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      --to_read_;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    } <span class="keywordflow">else</span> {  <span class="comment">// New section</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      section_ = <a class="code hl_function" href="namespacegtl.html#aac6ef13f0910a32e7e7c67cbe2eba2e5">gtl::FindWithDefault</a>(sections_, words[0], UNKNOWN);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      section_ = <a class="code hl_function" href="namespacegtl.html#a795ebdb62731938c8c31b221f0f074b4">gtl::FindWithDefault</a>(sections_, words[0], UNKNOWN);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      <span class="keywordflow">switch</span> (section_) {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">case</span> VEHICLE: {</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          <span class="comment">// Two rows: header and data.</span></div>
@@ -234,20 +234,21 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
-<div class="ttc" id="aclass_file_line_iterator_html_abc6126af1d45847bc59afa0aa3216b04ab221b5a5b30e0c727ce21768362b5a78"><div class="ttname"><a href="class_file_line_iterator.html#abc6126af1d45847bc59afa0aa3216b04ab221b5a5b30e0c727ce21768362b5a78">FileLineIterator::REMOVE_INLINE_CR</a></div><div class="ttdeci">@ REMOVE_INLINE_CR</div><div class="ttdef"><b>Definition:</b> <a href="filelineiter_8h_source.html#l00045">filelineiter.h:45</a></div></div>
-<div class="ttc" id="aclass_file_lines_html"><div class="ttname"><a href="class_file_lines.html">FileLines</a></div><div class="ttdef"><b>Definition:</b> <a href="filelineiter_8h_source.html#l00121">filelineiter.h:121</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1_solomon_parser_html_a68ab11b8424f051410b19f562ca6dcad"><div class="ttname"><a href="classoperations__research_1_1_solomon_parser.html#a68ab11b8424f051410b19f562ca6dcad">operations_research::SolomonParser::LoadFile</a></div><div class="ttdeci">bool LoadFile(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> <a href="solomon__parser_8cc_source.html#l00038">solomon_parser.cc:38</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1_solomon_parser_html_ab9ff8608bf08e7104f714fdc7c053c7a"><div class="ttname"><a href="classoperations__research_1_1_solomon_parser.html#ab9ff8608bf08e7104f714fdc7c053c7a">operations_research::SolomonParser::SolomonParser</a></div><div class="ttdeci">SolomonParser()</div><div class="ttdef"><b>Definition:</b> <a href="solomon__parser_8cc_source.html#l00033">solomon_parser.cc:33</a></div></div>
+<div class="ttc" id="aclassFileLineIterator_html_a29cb4b1d423e8bea0d4968e9d3d5aa4fae2bf70dc0e342c73f212ceabbc34721f"><div class="ttname"><a href="classFileLineIterator.html#a29cb4b1d423e8bea0d4968e9d3d5aa4fae2bf70dc0e342c73f212ceabbc34721f">FileLineIterator::REMOVE_INLINE_CR</a></div><div class="ttdeci">@ REMOVE_INLINE_CR</div><div class="ttdef"><b>Definition:</b> <a href="filelineiter_8h_source.html#l00045">filelineiter.h:45</a></div></div>
+<div class="ttc" id="aclassFileLines_html"><div class="ttname"><a href="classFileLines.html">FileLines</a></div><div class="ttdef"><b>Definition:</b> <a href="filelineiter_8h_source.html#l00121">filelineiter.h:121</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1SolomonParser_html_ababf50a437b82bcd59207ecd575b2d48"><div class="ttname"><a href="classoperations__research_1_1SolomonParser.html#ababf50a437b82bcd59207ecd575b2d48">operations_research::SolomonParser::LoadFile</a></div><div class="ttdeci">bool LoadFile(const std::string &amp;file_name)</div><div class="ttdoc">Loads instance from a file.</div><div class="ttdef"><b>Definition:</b> <a href="solomon__parser_8cc_source.html#l00038">solomon_parser.cc:38</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1SolomonParser_html_af0169687ead958e2e39e556b1d8412f4"><div class="ttname"><a href="classoperations__research_1_1SolomonParser.html#af0169687ead958e2e39e556b1d8412f4">operations_research::SolomonParser::SolomonParser</a></div><div class="ttdeci">SolomonParser()</div><div class="ttdef"><b>Definition:</b> <a href="solomon__parser_8cc_source.html#l00033">solomon_parser.cc:33</a></div></div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition:</b> <a href="demon__profiler_8cc_source.html#l00045">demon_profiler.cc:45</a></div></div>
 <div class="ttc" id="afilelineiter_8h_html"><div class="ttname"><a href="filelineiter_8h.html">filelineiter.h</a></div></div>
 <div class="ttc" id="aintegral__types_8h_html"><div class="ttname"><a href="integral__types_8h.html">integral_types.h</a></div></div>
 <div class="ttc" id="amap__util_8h_html"><div class="ttname"><a href="map__util_8h.html">map_util.h</a></div></div>
-<div class="ttc" id="anamespacefile_html_ad59dcaa9774a8d0e7559caf782eb1781"><div class="ttname"><a href="namespacefile.html#ad59dcaa9774a8d0e7559caf782eb1781">file::JoinPath</a></div><div class="ttdeci">std::string JoinPath()</div><div class="ttdef"><b>Definition:</b> <a href="path_8h_source.html#l00082">path.h:82</a></div></div>
-<div class="ttc" id="anamespacegtl_html_aac6ef13f0910a32e7e7c67cbe2eba2e5"><div class="ttname"><a href="namespacegtl.html#aac6ef13f0910a32e7e7c67cbe2eba2e5">gtl::FindWithDefault</a></div><div class="ttdeci">const Collection::value_type::second_type &amp; FindWithDefault(const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="map__util_8h_source.html#l00029">map_util.h:29</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">Collection of objects used to extend the Constraint Solver library.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
-<div class="ttc" id="anamespacestrings_html_a1f256880dacb98892fdf9978381e1009"><div class="ttname"><a href="namespacestrings.html#a1f256880dacb98892fdf9978381e1009">strings::ParseLeadingInt64Value</a></div><div class="ttdeci">int64_t ParseLeadingInt64Value(const char *str, int64_t deflt)</div><div class="ttdef"><b>Definition:</b> <a href="numbers_8cc_source.html#l00161">numbers.cc:161</a></div></div>
-<div class="ttc" id="anamespacestrings_html_a3add1e1c17392fe4fed778e1516a7611"><div class="ttname"><a href="namespacestrings.html#a3add1e1c17392fe4fed778e1516a7611">strings::ParseLeadingInt32Value</a></div><div class="ttdeci">int32_t ParseLeadingInt32Value(const char *str, int32_t deflt)</div><div class="ttdef"><b>Definition:</b> <a href="numbers_8cc_source.html#l00058">numbers.cc:58</a></div></div>
-<div class="ttc" id="anamespacezipfile_html_a53ac6b5acfede54b7d3534882307b402"><div class="ttname"><a href="namespacezipfile.html#a53ac6b5acfede54b7d3534882307b402">zipfile::OpenZipArchive</a></div><div class="ttdeci">std::shared_ptr&lt; ZipArchive &gt; OpenZipArchive(absl::string_view path, const ZipFileOptions &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00032">zipfile.cc:32</a></div></div>
+<div class="ttc" id="anamespacefile_html_a5b299e16001ed45a61bcbc3383dd3400"><div class="ttname"><a href="namespacefile.html#a5b299e16001ed45a61bcbc3383dd3400">file::JoinPath</a></div><div class="ttdeci">std::string JoinPath()</div><div class="ttdef"><b>Definition:</b> <a href="path_8h_source.html#l00082">path.h:82</a></div></div>
+<div class="ttc" id="anamespacegtl_html_a795ebdb62731938c8c31b221f0f074b4"><div class="ttname"><a href="namespacegtl.html#a795ebdb62731938c8c31b221f0f074b4">gtl::FindWithDefault</a></div><div class="ttdeci">const Collection::value_type::second_type &amp; FindWithDefault(const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="map__util_8h_source.html#l00029">map_util.h:29</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_ab0c36038a18f65060a8232934b26cb7e"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">operations_research::sat::i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="diophantine_8h_source.html#l00101">diophantine.h:101</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html"><div class="ttname"><a href="namespaceoperations__research.html">operations_research</a></div><div class="ttdoc">In SWIG mode, we don't want anything besides these top-level includes.</div><div class="ttdef"><b>Definition:</b> <a href="dense__doubly__linked__list_8h_source.html#l00021">dense_doubly_linked_list.h:21</a></div></div>
+<div class="ttc" id="anamespacestrings_html_ab023bf44f3c07467e40ce003a5ca63e8"><div class="ttname"><a href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">strings::ParseLeadingInt32Value</a></div><div class="ttdeci">int32_t ParseLeadingInt32Value(const char *str, int32_t deflt)</div><div class="ttdef"><b>Definition:</b> <a href="numbers_8cc_source.html#l00060">numbers.cc:60</a></div></div>
+<div class="ttc" id="anamespacestrings_html_affb14c3bb2854a6bdba7a17a3e96725b"><div class="ttname"><a href="namespacestrings.html#affb14c3bb2854a6bdba7a17a3e96725b">strings::ParseLeadingInt64Value</a></div><div class="ttdeci">int64_t ParseLeadingInt64Value(const char *str, int64_t deflt)</div><div class="ttdef"><b>Definition:</b> <a href="numbers_8cc_source.html#l00167">numbers.cc:167</a></div></div>
+<div class="ttc" id="anamespacezipfile_html_abec6531c2109a9890877ca9bc2914407"><div class="ttname"><a href="namespacezipfile.html#abec6531c2109a9890877ca9bc2914407">zipfile::OpenZipArchive</a></div><div class="ttdeci">std::shared_ptr&lt; ZipArchive &gt; OpenZipArchive(absl::string_view path, const ZipFileOptions &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="zipfile_8cc_source.html#l00032">zipfile.cc:32</a></div></div>
 <div class="ttc" id="anumbers_8h_html"><div class="ttname"><a href="numbers_8h.html">numbers.h</a></div></div>
 <div class="ttc" id="aparse__proto_8cc_html_a41ebd28ef1d7c6ade45642cb6acc1039"><div class="ttname"><a href="parse__proto_8cc.html#a41ebd28ef1d7c6ade45642cb6acc1039">line</a></div><div class="ttdeci">int line</div><div class="ttdef"><b>Definition:</b> <a href="parse__proto_8cc_source.html#l00031">parse_proto.cc:31</a></div></div>
 <div class="ttc" id="apath_8h_html"><div class="ttname"><a href="path_8h.html">path.h</a></div></div>
@@ -255,14 +256,11 @@ $(document).ready(function(){initNavTree('solomon__parser_8cc_source.html',''); 
 <div class="ttc" id="azipfile_8h_html"><div class="ttname"><a href="zipfile_8h.html">zipfile.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_05e52241c995b3dbbeaa2e8a16965cc4.html">routing</a></li><li class="navelem"><a class="el" href="solomon__parser_8cc.html">solomon_parser.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

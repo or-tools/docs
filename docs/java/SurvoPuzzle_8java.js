@@ -1,0 +1,4 @@
+var SurvoPuzzle_8java =
+[
+    [ "com.google.ortools.contrib.SurvoPuzzle", "classcom_1_1google_1_1ortools_1_1contrib_1_1SurvoPuzzle.html", "classcom_1_1google_1_1ortools_1_1contrib_1_1SurvoPuzzle" ]
+];

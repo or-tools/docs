@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: strong_int.h File Reference</title>
+<title>Google OR-Tools: ortools/base/strong_int.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -102,20 +102,29 @@ $(document).ready(function(){initNavTree('strong__int_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">strong_int.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iosfwd&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;absl/base/port.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+</div>
 <p><a href="strong__int_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1_strong_int.html">StrongInt&lt; StrongIntName, _ValueType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1StrongInt.html">util_intops::StrongInt&lt; StrongIntName, _ValueType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutil__intops_1_1_strong_int_1_1_hasher.html">StrongInt&lt; StrongIntName, _ValueType &gt;::Hasher</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structutil__intops_1_1StrongInt_1_1Hasher.html">util_intops::StrongInt&lt; StrongIntName, _ValueType &gt;::Hasher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1_strong_int_range.html">StrongIntRange&lt; IntType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1StrongIntRange.html">util_intops::StrongIntRange&lt; IntType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1_strong_int_range_1_1_strong_int_range_iterator.html">StrongIntRange&lt; IntType &gt;::StrongIntRangeIterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator.html">util_intops::StrongIntRange&lt; IntType &gt;::StrongIntRangeIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator over the indices.  <a href="classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01util__intops_1_1_strong_int_3_01_strong_int_name_00_01_value_type_01_4_01_4.html">hash&lt; util_intops::StrongInt&lt; StrongIntName, ValueType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01util__intops_1_1StrongInt_3_01StrongIntName_00_01ValueType_01_4_01_4.html">std::hash&lt; util_intops::StrongInt&lt; StrongIntName, ValueType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -139,38 +148,38 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a484ae588408b483ad0892977cb6a9ec8"><td class="memTemplParams" colspan="2">template&lt;typename StrongIntName , typename ValueType &gt; </td></tr>
-<tr class="memitem:a484ae588408b483ad0892977cb6a9ec8"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a484ae588408b483ad0892977cb6a9ec8">operator&lt;&lt;</a> (std::ostream &amp;os, StrongInt&lt; StrongIntName, ValueType &gt; arg)</td></tr>
-<tr class="separator:a484ae588408b483ad0892977cb6a9ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c33ff8d3bc5ef031214730451aff04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#ae8c33ff8d3bc5ef031214730451aff04">STRONG_INT_TYPE_ARITHMETIC_OP</a> (+)</td></tr>
-<tr class="separator:ae8c33ff8d3bc5ef031214730451aff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75c147b5ec9eebf9b762d27436e8ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#aa75c147b5ec9eebf9b762d27436e8ca2">STRONG_INT_TYPE_ARITHMETIC_OP</a> (-)</td></tr>
-<tr class="separator:aa75c147b5ec9eebf9b762d27436e8ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ede3c31774c60f5771758e30aaff71"><td class="memItemLeft" align="right" valign="top">STRONG_INT_TYPE_ARITHMETIC_OP *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#af2ede3c31774c60f5771758e30aaff71">STRONG_INT_TYPE_ARITHMETIC_OP</a> (/);STRONG_INT_TYPE_ARITHMETIC_OP(&lt;&lt;</td></tr>
-<tr class="separator:af2ede3c31774c60f5771758e30aaff71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7a101fec0e28443b41cf759a3de837"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a8b7a101fec0e28443b41cf759a3de837">STRONG_INT_TYPE_ARITHMETIC_OP</a> (&gt; &gt;)</td></tr>
-<tr class="separator:a8b7a101fec0e28443b41cf759a3de837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affca839f83410e38767275035174fac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#affca839f83410e38767275035174fac8">STRONG_INT_TYPE_ARITHMETIC_OP</a> (%)</td></tr>
-<tr class="separator:affca839f83410e38767275035174fac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfe10c29791bee63e9e9d7b6c1e8985"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a8cfe10c29791bee63e9e9d7b6c1e8985">STRONG_INT_TYPE_COMPARISON_OP</a> (==)</td></tr>
-<tr class="separator:a8cfe10c29791bee63e9e9d7b6c1e8985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af83d430f442758751cd701009d1f3570"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#af83d430f442758751cd701009d1f3570">STRONG_INT_TYPE_COMPARISON_OP</a> (!=)</td></tr>
-<tr class="separator:af83d430f442758751cd701009d1f3570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c49c3e53b1a6c2190d329559aeab6f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a1c49c3e53b1a6c2190d329559aeab6f3">STRONG_INT_TYPE_COMPARISON_OP</a> (&lt;=)</td></tr>
-<tr class="separator:a1c49c3e53b1a6c2190d329559aeab6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0625fa04126f98909da778c079763809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a0625fa04126f98909da778c079763809">STRONG_INT_TYPE_COMPARISON_OP</a> (&gt;=)</td></tr>
-<tr class="separator:a0625fa04126f98909da778c079763809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831b8fa050d4c2f51f5d9e22c7d43857"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
-<tr class="memitem:a831b8fa050d4c2f51f5d9e22c7d43857"><td class="memTemplItemLeft" align="right" valign="top">StrongIntRange&lt; IntType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a831b8fa050d4c2f51f5d9e22c7d43857">MakeStrongIntRange</a> (IntType <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
-<tr class="separator:a831b8fa050d4c2f51f5d9e22c7d43857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ed5db9329295f8477aa8b6de04cb42"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
-<tr class="memitem:a02ed5db9329295f8477aa8b6de04cb42"><td class="memTemplItemLeft" align="right" valign="top">StrongIntRange&lt; IntType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a02ed5db9329295f8477aa8b6de04cb42">MakeStrongIntRange</a> (IntType begin, IntType <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
-<tr class="separator:a02ed5db9329295f8477aa8b6de04cb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95593bc7c1b8e0a1bf5e7b017a732fd9"><td class="memTemplParams" colspan="2">template&lt;typename StrongIntName , typename ValueType &gt; </td></tr>
+<tr class="memitem:a95593bc7c1b8e0a1bf5e7b017a732fd9"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a95593bc7c1b8e0a1bf5e7b017a732fd9">util_intops::operator&lt;&lt;</a> (std::ostream &amp;os, StrongInt&lt; StrongIntName, ValueType &gt; arg)</td></tr>
+<tr class="separator:a95593bc7c1b8e0a1bf5e7b017a732fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c52d77b438769172c6903e31f73db74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a4c52d77b438769172c6903e31f73db74">util_intops::STRONG_INT_TYPE_ARITHMETIC_OP</a> (+)</td></tr>
+<tr class="separator:a4c52d77b438769172c6903e31f73db74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefeaeef49cf198a9c882ea15918be7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#abefeaeef49cf198a9c882ea15918be7d">util_intops::STRONG_INT_TYPE_ARITHMETIC_OP</a> (-)</td></tr>
+<tr class="separator:abefeaeef49cf198a9c882ea15918be7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565de6df5cca3901657193e0500ae5dc"><td class="memItemLeft" align="right" valign="top">STRONG_INT_TYPE_ARITHMETIC_OP *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a565de6df5cca3901657193e0500ae5dc">util_intops::STRONG_INT_TYPE_ARITHMETIC_OP</a> (/);STRONG_INT_TYPE_ARITHMETIC_OP(&lt;&lt;</td></tr>
+<tr class="separator:a565de6df5cca3901657193e0500ae5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66b360e3719b1df268366d65a92f245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#ae66b360e3719b1df268366d65a92f245">util_intops::STRONG_INT_TYPE_ARITHMETIC_OP</a> (&gt; &gt;)</td></tr>
+<tr class="separator:ae66b360e3719b1df268366d65a92f245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae221a3860ff81cef894cdb5ecc205a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a1ae221a3860ff81cef894cdb5ecc205a">util_intops::STRONG_INT_TYPE_ARITHMETIC_OP</a> (%)</td></tr>
+<tr class="separator:a1ae221a3860ff81cef894cdb5ecc205a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f485a6b70e397cb983c86d56897a0a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a3f485a6b70e397cb983c86d56897a0a9">util_intops::STRONG_INT_TYPE_COMPARISON_OP</a> (==)</td></tr>
+<tr class="separator:a3f485a6b70e397cb983c86d56897a0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda037478f741d02bef5e3db3473c0e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#afda037478f741d02bef5e3db3473c0e6">util_intops::STRONG_INT_TYPE_COMPARISON_OP</a> (!=)</td></tr>
+<tr class="separator:afda037478f741d02bef5e3db3473c0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af2799a78dacf8b27618fe54da7848b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a6af2799a78dacf8b27618fe54da7848b">util_intops::STRONG_INT_TYPE_COMPARISON_OP</a> (&lt;=)</td></tr>
+<tr class="separator:a6af2799a78dacf8b27618fe54da7848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f05912f3569730a32864c7992dfc5ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a5f05912f3569730a32864c7992dfc5ea">util_intops::STRONG_INT_TYPE_COMPARISON_OP</a> (&gt;=)</td></tr>
+<tr class="separator:a5f05912f3569730a32864c7992dfc5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bb673edc756211f0a5318473d9754e"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a62bb673edc756211f0a5318473d9754e"><td class="memTemplItemLeft" align="right" valign="top">StrongIntRange&lt; IntType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a62bb673edc756211f0a5318473d9754e">util_intops::MakeStrongIntRange</a> (IntType <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
+<tr class="separator:a62bb673edc756211f0a5318473d9754e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0851b91d7906bc4f19d02f7ba26af68"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:ab0851b91d7906bc4f19d02f7ba26af68"><td class="memTemplItemLeft" align="right" valign="top">StrongIntRange&lt; IntType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#ab0851b91d7906bc4f19d02f7ba26af68">util_intops::MakeStrongIntRange</a> (IntType <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, IntType <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
+<tr class="separator:ab0851b91d7906bc4f19d02f7ba26af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a62c12e9e17ce4e03e027e09267500cc7"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classutil__intops_1_1_strong_int.html">util_intops::StrongInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#a62c12e9e17ce4e03e027e09267500cc7">ABSL_ATTRIBUTE_PACKED</a></td></tr>
-<tr class="separator:a62c12e9e17ce4e03e027e09267500cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4b386c849431b2129c8b0a4d70b3d7"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classutil__intops_1_1StrongInt.html">util_intops::StrongInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html#aed4b386c849431b2129c8b0a4d70b3d7">util_intops::ABSL_ATTRIBUTE_PACKED</a></td></tr>
+<tr class="separator:aed4b386c849431b2129c8b0a4d70b3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a382737ba620573d644e36820b1e2f33b" name="a382737ba620573d644e36820b1e2f33b"></a>
@@ -203,7 +212,8 @@ Variables</h2></td></tr>
 <div class="line">  };                                                                         \</div>
 <div class="line">  typedef ::util_intops::StrongInt&lt;int_type_name##_tag_, value_type&gt;         \</div>
 <div class="line">      int_type_name;</div>
-</div><!-- fragment -->
+</div><!-- fragment --><p>Defines the StrongInt using value_type and typedefs it to int_type_name. The struct int_type_name ## <em>tag</em> trickery is needed to ensure that a new type is created per int_type_name. </p>
+
 <p class="definition">Definition at line <a class="el" href="strong__int_8h_source.html#l00167">167</a> of file <a class="el" href="strong__int_8h_source.html">strong_int.h</a>.</p>
 
 </div>
@@ -242,7 +252,9 @@ Variables</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> StrongInt&lt;StrongIntName, ValueType&gt;(arg_val op <span class="keywordtype">id</span>.<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>());        \</div>
 <div class="line">  }</div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition:</b> <a href="demon__profiler_8cc_source.html#l00045">demon_profiler.cc:45</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><p>&ndash; NON-MEMBER ARITHMETIC OPERATORS ---------------------------------------&mdash; We support only the +, -, *, and / operators with the same StrongInt and ValueType types. The reason is to allow simple manipulation on these IDs when used as indices in vectors and arrays.</p>
+<p>NB: Although it is possible to do StrongInt * StrongInt and StrongInt / StrongInt, it is probably non-sensical from a dimensionality analysis perspective. </p>
+
 <p class="definition">Definition at line <a class="el" href="strong__int_8h_source.html#l00299">299</a> of file <a class="el" href="strong__int_8h_source.html">strong_int.h</a>.</p>
 
 </div>
@@ -270,7 +282,8 @@ Variables</h2></td></tr>
 <div class="line">    value_ op arg_value;                             \</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;                                    \</div>
 <div class="line">  }</div>
-</div><!-- fragment -->
+</div><!-- fragment --><p>&ndash; ASSIGNMENT OPERATORS ------------------------------------------------&mdash; We support the following assignment operators: =, +=, -=, *=, /=, &lt;&lt;=, &gt;&gt;= and %= for both ThisType and ValueType. </p>
+
 <p class="definition">Definition at line <a class="el" href="strong__int_8h_source.html#l00251">251</a> of file <a class="el" href="strong__int_8h_source.html">strong_int.h</a>.</p>
 
 </div>
@@ -308,21 +321,19 @@ Variables</h2></td></tr>
 <div class="line">      StrongInt&lt;StrongIntName, ValueType&gt; <span class="keywordtype">id</span>) {                      \</div>
 <div class="line">    <span class="keywordflow">return</span> val op <span class="keywordtype">id</span>.value();                                        \</div>
 <div class="line">  }</div>
-</div><!-- fragment -->
+</div><!-- fragment --><p>&ndash; NON-MEMBER COMPARISON OPERATORS ---------------------------------------&mdash; Static inline comparison operators. We allow all comparison operators among the following types (OP \in [==, !=, &lt;, &lt;=, &gt;, &gt;=]: StrongInt&lt;StrongIntName, ValueType&gt; OP StrongInt&lt;StrongIntName, ValueType&gt; StrongInt&lt;StrongIntName, ValueType&gt; OP ValueType ValueType OP StrongInt&lt;StrongIntName, ValueType&gt; </p>
+
 <p class="definition">Definition at line <a class="el" href="strong__int_8h_source.html#l00333">333</a> of file <a class="el" href="strong__int_8h_source.html">strong_int.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="strong__int_8h.html">strong_int.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

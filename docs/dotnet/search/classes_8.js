@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['linearconstraint_0',['LinearConstraint',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearConstraint.html',1,'Google::OrTools::LinearSolver']]],
-  ['linearexpr_1',['LinearExpr',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html',1,'LinearExpr'],['../classGoogle_1_1OrTools_1_1Sat_1_1LinearExpr.html',1,'LinearExpr']]],
-  ['linearexprarrayhelper_2',['LinearExprArrayHelper',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExprArrayHelper.html',1,'Google::OrTools::LinearSolver']]],
-  ['linearexprbuilder_3',['LinearExprBuilder',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearExprBuilder.html',1,'Google::OrTools::Sat']]],
-  ['linearsolvertest_4',['LinearSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1LinearSolverTest.html',1,'Google::OrTools::Tests']]],
-  ['localsearchfiltervector_5',['LocalSearchFilterVector',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['localsearchoperatorvector_6',['LocalSearchOperatorVector',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['logcallbackdelegate_7',['LogCallbackDelegate',['../classGoogle_1_1OrTools_1_1Sat_1_1LogCallbackDelegate.html',1,'Google::OrTools::Sat']]]
+  ['knapsacksolver_0',['KnapsackSolver',['../classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html',1,'Google::OrTools::Algorithms']]],
+  ['knapsaksolvertest_1',['KnapsakSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1KnapsakSolverTest.html',1,'Google::OrTools::Tests']]]
 ];

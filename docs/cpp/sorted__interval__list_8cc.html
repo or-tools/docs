@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sorted_interval_list.cc File Reference</title>
+<title>Google OR-Tools: ortools/util/sorted_interval_list.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,45 +99,58 @@ $(document).ready(function(){initNavTree('sorted__interval__list_8cc.html',''); 
   <div class="headertitle"><div class="title">sorted_interval_list.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/inlined_vector.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
+</div>
 <p><a href="sorted__interval__list_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af3e279a32a1a414e450e663a683d2365"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af3e279a32a1a414e450e663a683d2365">IntervalsAreSortedAndNonAdjacent</a> (absl::Span&lt; const ClosedInterval &gt; intervals)</td></tr>
-<tr class="memdesc:af3e279a32a1a414e450e663a683d2365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff we have:  <br /></td></tr>
-<tr class="separator:af3e279a32a1a414e450e663a683d2365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaae2e0ca85cc6626e38715251b894d9"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abaae2e0ca85cc6626e38715251b894d9">CeilRatio</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t positive_coeff)</td></tr>
-<tr class="separator:abaae2e0ca85cc6626e38715251b894d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71793bb75fa19d96ab68c7c900cd56ce"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a71793bb75fa19d96ab68c7c900cd56ce">FloorRatio</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t positive_coeff)</td></tr>
-<tr class="separator:a71793bb75fa19d96ab68c7c900cd56ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13c9fb247706841180cc230417006c9"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa13c9fb247706841180cc230417006c9">operator&lt;&lt;</a> (std::ostream &amp;out, const ClosedInterval &amp;<a class="el" href="resource_8cc.html#af92a8383a05fdf586a52263d358f5ada">interval</a>)</td></tr>
-<tr class="separator:aa13c9fb247706841180cc230417006c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53384307ee95846874ccf490f4f78cc2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a53384307ee95846874ccf490f4f78cc2">operator&lt;&lt;</a> (std::ostream &amp;out, const std::vector&lt; ClosedInterval &gt; &amp;intervals)</td></tr>
-<tr class="separator:a53384307ee95846874ccf490f4f78cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162b8c096786af7504e51ee2353b8eed"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a162b8c096786af7504e51ee2353b8eed">operator&lt;&lt;</a> (std::ostream &amp;out, const Domain &amp;domain)</td></tr>
-<tr class="separator:a162b8c096786af7504e51ee2353b8eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ae210be5b66d61cdc83361e4c478a8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a07ae210be5b66d61cdc83361e4c478a8">SumOfKMinValueInDomain</a> (const Domain &amp;domain, int k)</td></tr>
-<tr class="separator:a07ae210be5b66d61cdc83361e4c478a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b2032743808743ca19f9d9bdaba644e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6b2032743808743ca19f9d9bdaba644e">SumOfKMaxValueInDomain</a> (const Domain &amp;domain, int k)</td></tr>
-<tr class="separator:a6b2032743808743ca19f9d9bdaba644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c23924c4b61ed5c531424a6f18bde1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab8c23924c4b61ed5c531424a6f18bde1">operations_research::IntervalsAreSortedAndNonAdjacent</a> (absl::Span&lt; const ClosedInterval &gt; intervals)</td></tr>
+<tr class="separator:ab8c23924c4b61ed5c531424a6f18bde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5db12c8eb55529c5717db21d40f856"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6a5db12c8eb55529c5717db21d40f856">operations_research::CeilRatio</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t positive_coeff)</td></tr>
+<tr class="separator:a6a5db12c8eb55529c5717db21d40f856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2ec837105d112356116f6308b73fca"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1e2ec837105d112356116f6308b73fca">operations_research::FloorRatio</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, int64_t positive_coeff)</td></tr>
+<tr class="separator:a1e2ec837105d112356116f6308b73fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a912cba095e3c41bffc8d447be109c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa0a912cba095e3c41bffc8d447be109c">operations_research::operator&lt;&lt;</a> (std::ostream &amp;out, const ClosedInterval &amp;<a class="el" href="resource_8cc.html#af92a8383a05fdf586a52263d358f5ada">interval</a>)</td></tr>
+<tr class="separator:aa0a912cba095e3c41bffc8d447be109c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915518d4960abbd5e49852e0e00614a3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a915518d4960abbd5e49852e0e00614a3">operations_research::operator&lt;&lt;</a> (std::ostream &amp;out, const std::vector&lt; ClosedInterval &gt; &amp;intervals)</td></tr>
+<tr class="separator:a915518d4960abbd5e49852e0e00614a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63c644a083ff23befa7a5bf51758afb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae63c644a083ff23befa7a5bf51758afb">operations_research::operator&lt;&lt;</a> (std::ostream &amp;out, const Domain &amp;domain)</td></tr>
+<tr class="separator:ae63c644a083ff23befa7a5bf51758afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb2cc3382534da86167bf6644e057e7"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6fb2cc3382534da86167bf6644e057e7">operations_research::SumOfKMinValueInDomain</a> (const Domain &amp;domain, int k)</td></tr>
+<tr class="memdesc:a6fb2cc3382534da86167bf6644e057e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of smallest k values in the domain.  <br /></td></tr>
+<tr class="separator:a6fb2cc3382534da86167bf6644e057e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab50e8a6cadc29a421918a966df360f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aeab50e8a6cadc29a421918a966df360f">operations_research::SumOfKMaxValueInDomain</a> (const Domain &amp;domain, int k)</td></tr>
+<tr class="memdesc:aeab50e8a6cadc29a421918a966df360f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of largest k values in the domain.  <br /></td></tr>
+<tr class="separator:aeab50e8a6cadc29a421918a966df360f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html">util</a></li><li class="navelem"><a class="el" href="sorted__interval__list_8cc.html">sorted_interval_list.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

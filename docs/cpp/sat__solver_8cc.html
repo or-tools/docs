@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sat_solver.cc File Reference</title>
+<title>Google OR-Tools: ortools/sat/sat_solver.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,23 +99,61 @@ $(document).ready(function(){initNavTree('sat__solver_8cc.html',''); initResizab
   <div class="headertitle"><div class="title">sat_solver.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/attributes.h&quot;</code><br />
+<code>#include &quot;absl/container/btree_set.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/meta/type_traits.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="port_2sysinfo_8h_source.html">ortools/port/sysinfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="clause_8h_source.html">ortools/sat/clause.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="drat__proof__handler_8h_source.html">ortools/sat/drat_proof_handler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pb__constraint_8h_source.html">ortools/sat/pb_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="restart_8h_source.html">ortools/sat/restart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__decision_8h_source.html">ortools/sat/sat_decision.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stats_8h_source.html">ortools/util/stats.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="sat__solver_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a762ee6abbb57f9f730df6033aafdf4fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a762ee6abbb57f9f730df6033aafdf4fc">SatStatusString</a> (SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a762ee6abbb57f9f730df6033aafdf4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb8349259fa849de0789a4ec58a8492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6fb8349259fa849de0789a4ec58a8492">MinimizeCore</a> (SatSolver *solver, std::vector&lt; Literal &gt; *core)</td></tr>
-<tr class="separator:a6fb8349259fa849de0789a4ec58a8492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215d34ee33b3afef47b10eef03beb7e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a215d34ee33b3afef47b10eef03beb7e1">operations_research::sat::SatStatusString</a> (SatSolver::Status <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:a215d34ee33b3afef47b10eef03beb7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of a <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>.  <br /></td></tr>
+<tr class="separator:a215d34ee33b3afef47b10eef03beb7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af004193a12bf9ed78b295e7f7cb51e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af004193a12bf9ed78b295e7f7cb51e6f">operations_research::sat::MinimizeCore</a> (SatSolver *solver, std::vector&lt; Literal &gt; *core)</td></tr>
+<tr class="separator:af004193a12bf9ed78b295e7f7cb51e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a8392bdc4ed570e6a95c7fca35b09f83f" name="a8392bdc4ed570e6a95c7fca35b09f83f"></a>
@@ -152,14 +190,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="sat__solver_8cc.html">sat_solver.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

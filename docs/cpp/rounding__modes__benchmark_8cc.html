@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: rounding_modes_benchmark.cc File Reference</title>
+<title>Google OR-Tools: ortools/util/rounding_modes_benchmark.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,24 +101,31 @@ $(document).ready(function(){initNavTree('rounding__modes__benchmark_8cc.html','
   <div class="headertitle"><div class="title">rounding_modes_benchmark.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cfenv&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+</div>
 <p><a href="rounding__modes__benchmark_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_round_to_nearest_even.html">RoundToNearestEven</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRoundToNearestEven.html">RoundToNearestEven</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this really necessary? g++ does not like it.  <a href="structRoundToNearestEven.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_std_rounding_scope.html">StdRoundingScope</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStdRoundingScope.html">StdRoundingScope</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_std_rounding.html">StdRounding</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStdRounding.html">StdRounding</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_low_level_rounding_scope.html">LowLevelRoundingScope</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLowLevelRoundingScope.html">LowLevelRoundingScope</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_low_level_rounding.html">LowLevelRounding</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLowLevelRounding.html">LowLevelRounding</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_avx512_rounding.html">Avx512Rounding</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAvx512Rounding.html">Avx512Rounding</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_interval.html">Interval</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInterval.html">Interval</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -128,40 +135,43 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a9eaa71e9558dfe275c54529d3832d475"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_interval.html">Interval</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a9eaa71e9558dfe275c54529d3832d475">IntervalFunction</a>) (int n)</td></tr>
+<tr class="memitem:a9eaa71e9558dfe275c54529d3832d475"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structInterval.html">Interval</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a9eaa71e9558dfe275c54529d3832d475">IntervalFunction</a>) (int n)</td></tr>
 <tr class="separator:a9eaa71e9558dfe275c54529d3832d475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab050a9a2102dedebc6fe56b739cb32ab"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#ab050a9a2102dedebc6fe56b739cb32ab">GetFloatingPointControlRegister</a> ()</td></tr>
+<tr class="memdesc:ab050a9a2102dedebc6fe56b739cb32ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the contents of the floating-point control register.  <br /></td></tr>
 <tr class="separator:ab050a9a2102dedebc6fe56b739cb32ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf1b111393d7aebfe75488bcfd30ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#addf1b111393d7aebfe75488bcfd30ad3">SetFloatingPointControlRegister</a> (unsigned int <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:addf1b111393d7aebfe75488bcfd30ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the contents of the floating-point control register.  <br /></td></tr>
 <tr class="separator:addf1b111393d7aebfe75488bcfd30ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a5396642b5ae8b461da896bf691b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#ab3a5396642b5ae8b461da896bf691b4e">SetRoundingMode</a> (int <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, int mode)</td></tr>
+<tr class="memdesc:ab3a5396642b5ae8b461da896bf691b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rounding mode, using the constants as defined in &lt;cfenv&gt;.  <br /></td></tr>
 <tr class="separator:ab3a5396642b5ae8b461da896bf691b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ccc4630cdc11bb80c414e2be3dbd6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a1ccc4630cdc11bb80c414e2be3dbd6fd">Runner</a> (<a class="el" href="rounding__modes__benchmark_8cc.html#a9eaa71e9558dfe275c54529d3832d475">IntervalFunction</a> f, int n)</td></tr>
 <tr class="separator:a1ccc4630cdc11bb80c414e2be3dbd6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9a888c2ee76cb4a2fb838bcf066c34"><td class="memTemplParams" colspan="2">template&lt;typename Impl &gt; </td></tr>
-<tr class="memitem:a1c9a888c2ee76cb4a2fb838bcf066c34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a> (int n)</td></tr>
+<tr class="memitem:a1c9a888c2ee76cb4a2fb838bcf066c34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a> (int n)</td></tr>
 <tr class="separator:a1c9a888c2ee76cb4a2fb838bcf066c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228d3e0b84e420301140384ef1b68ff0"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a228d3e0b84e420301140384ef1b68ff0">SumOfIntegers&lt; RoundToNearestEven &gt;</a> (int)</td></tr>
+<tr class="memitem:a228d3e0b84e420301140384ef1b68ff0"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a228d3e0b84e420301140384ef1b68ff0">SumOfIntegers&lt; RoundToNearestEven &gt;</a> (int)</td></tr>
 <tr class="separator:a228d3e0b84e420301140384ef1b68ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46ba35193423d6f0954a2d7620eabd8"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#aa46ba35193423d6f0954a2d7620eabd8">SumOfIntegers&lt; StdRounding &gt;</a> (int)</td></tr>
+<tr class="memitem:aa46ba35193423d6f0954a2d7620eabd8"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#aa46ba35193423d6f0954a2d7620eabd8">SumOfIntegers&lt; StdRounding &gt;</a> (int)</td></tr>
 <tr class="separator:aa46ba35193423d6f0954a2d7620eabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2254a9389785ae97db098785ab576f73"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a2254a9389785ae97db098785ab576f73">SumOfIntegers&lt; LowLevelRounding &gt;</a> (int)</td></tr>
+<tr class="memitem:a2254a9389785ae97db098785ab576f73"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a2254a9389785ae97db098785ab576f73">SumOfIntegers&lt; LowLevelRounding &gt;</a> (int)</td></tr>
 <tr class="separator:a2254a9389785ae97db098785ab576f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf97c0102da1df4a4feae2a2f86bacd"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a0cf97c0102da1df4a4feae2a2f86bacd">SumOfIntegers&lt; Avx512Rounding &gt;</a> (int)</td></tr>
+<tr class="memitem:a0cf97c0102da1df4a4feae2a2f86bacd"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a0cf97c0102da1df4a4feae2a2f86bacd">SumOfIntegers&lt; Avx512Rounding &gt;</a> (int)</td></tr>
 <tr class="separator:a0cf97c0102da1df4a4feae2a2f86bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa636c24a80f53c591814e6f02ef08083"><td class="memTemplParams" colspan="2">template&lt;typename Impl &gt; </td></tr>
-<tr class="memitem:aa636c24a80f53c591814e6f02ef08083"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a> (int n)</td></tr>
+<tr class="memitem:aa636c24a80f53c591814e6f02ef08083"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a> (int n)</td></tr>
 <tr class="separator:aa636c24a80f53c591814e6f02ef08083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f2828c509f97a3ea901c196d6501b8"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a00f2828c509f97a3ea901c196d6501b8">SumOfSquareRoots&lt; RoundToNearestEven &gt;</a> (int)</td></tr>
+<tr class="memitem:a00f2828c509f97a3ea901c196d6501b8"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a00f2828c509f97a3ea901c196d6501b8">SumOfSquareRoots&lt; RoundToNearestEven &gt;</a> (int)</td></tr>
 <tr class="separator:a00f2828c509f97a3ea901c196d6501b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d8a92a5c55c2068f4dd9c810cc5a6a"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a99d8a92a5c55c2068f4dd9c810cc5a6a">SumOfSquareRoots&lt; StdRounding &gt;</a> (int)</td></tr>
+<tr class="memitem:a99d8a92a5c55c2068f4dd9c810cc5a6a"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a99d8a92a5c55c2068f4dd9c810cc5a6a">SumOfSquareRoots&lt; StdRounding &gt;</a> (int)</td></tr>
 <tr class="separator:a99d8a92a5c55c2068f4dd9c810cc5a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd9f78046565de2f33d4f70be4cd048e"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#acd9f78046565de2f33d4f70be4cd048e">SumOfSquareRoots&lt; LowLevelRounding &gt;</a> (int)</td></tr>
+<tr class="memitem:acd9f78046565de2f33d4f70be4cd048e"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#acd9f78046565de2f33d4f70be4cd048e">SumOfSquareRoots&lt; LowLevelRounding &gt;</a> (int)</td></tr>
 <tr class="separator:acd9f78046565de2f33d4f70be4cd048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c6b0ea0725edc20cead3ad7fd1a5b5a"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="struct_interval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a9c6b0ea0725edc20cead3ad7fd1a5b5a">SumOfSquareRoots&lt; Avx512Rounding &gt;</a> (int)</td></tr>
+<tr class="memitem:a9c6b0ea0725edc20cead3ad7fd1a5b5a"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="structInterval.html">Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#a9c6b0ea0725edc20cead3ad7fd1a5b5a">SumOfSquareRoots&lt; Avx512Rounding &gt;</a> (int)</td></tr>
 <tr class="separator:a9c6b0ea0725edc20cead3ad7fd1a5b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rounding__modes__benchmark_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,10 +219,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="struct_interval.html">Interval</a>(* IntervalFunction) (int n)</td>
+          <td class="memname">typedef <a class="el" href="structInterval.html">Interval</a>(* IntervalFunction) (int n)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The functions that we are considering return an interval, in which the correct answer is guaranteed to be. </p>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00249">249</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -242,6 +253,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the contents of the floating-point control register. </p>
+<p>Making it a little bit faster. Supported only on x86-64 for now. We use intrinsics to only touch the non-x87 FP rounding modes. Contrary to fesetround, it does nothing about x87 rounding mode. This is safe because we reset the status to what it was right after performing the operation. Also, we store the previous status, and therefore minimize the number of reads from the status register. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002152">Todo:</a></b></dt><dd>(user): implement for other architectures. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00154">154</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
 </div>
@@ -260,8 +275,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="nurses_cp_8cc-example.html#a3">nurses_cp.cc</a>, <a class="el" href="tsp_8cc-example.html#a4">tsp.cc</a>, and <a class="el" href="vrp_8cc-example.html#a4">vrp.cc</a>.</dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00326">326</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -292,6 +305,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is a small runner that calls an IntervalFunction, counts the nanoseconds in a portable way, counts the cycles, and reports various stats. We're not concerned with timing the instructions independently. Just reporting the number of cycles per iteration is good enough. </p>
+<p>We don't use __rdtsc() because it's not portable, and it is influenced by throttling. I can't be used to give the true frequency of the CPU.</p>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00255">255</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -320,6 +335,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sets the contents of the floating-point control register. </p>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00165">165</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -359,6 +376,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the rounding mode, using the constants as defined in &lt;cfenv&gt;. </p>
+
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00173">173</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
 </div>
@@ -368,9 +387,11 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Impl &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_interval.html">Interval</a> SumOfIntegers </td>
+          <td class="memname"><a class="el" href="structInterval.html">Interval</a> SumOfIntegers </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -378,6 +399,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Compute the sum of the first natural numbers up to and including n. The result is n * (n + 1) / 2. For n = 1'000'000'000, it is 500'000'000'500'000'000 or 5.000000005e+17. </p>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00272">272</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -390,7 +412,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="struct_avx512_rounding.html">Avx512Rounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="structAvx512Rounding.html">Avx512Rounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -408,7 +430,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="struct_low_level_rounding.html">LowLevelRounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="structLowLevelRounding.html">LowLevelRounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -426,7 +448,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="struct_round_to_nearest_even.html">RoundToNearestEven</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="structRoundToNearestEven.html">RoundToNearestEven</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -434,6 +456,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>For 1'000'000'000, the default round-to-nearest rounding mode returns 500'000'000'067'108'992 with clang on an x86_64 PC running Linux, far from the actual result. </p>
 
 </div>
 </div>
@@ -444,7 +467,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="struct_std_rounding.html">StdRounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#a1c9a888c2ee76cb4a2fb838bcf066c34">SumOfIntegers</a>&lt; <a class="el" href="structStdRounding.html">StdRounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -460,9 +483,11 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Impl &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_interval.html">Interval</a> SumOfSquareRoots </td>
+          <td class="memname"><a class="el" href="structInterval.html">Interval</a> SumOfSquareRoots </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -470,6 +495,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Compute the sum of the square roots of the first natural numbers up to and including n. It's a well-known case explained in "Floating-Point Computating: A Comedy
+of Errors?" by Gregory Tarzy and Neil Toda from Sun Microsytems on 2004-01-20 on the now-defunct site developers.sun.com. The standard rounding mode returns 21081851083600.55859375000000 while the correct answer computed using Maxima is 21081851083600.37596259382529338. Interestingly, a Pentium II at 400MHz took more than 6 hours to complete. Different pairs of (OS, CPU) produced quite different results. Always wrong. </p>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00303">303</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 
@@ -482,7 +509,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="struct_avx512_rounding.html">Avx512Rounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="structAvx512Rounding.html">Avx512Rounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -500,7 +527,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="struct_low_level_rounding.html">LowLevelRounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="structLowLevelRounding.html">LowLevelRounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -518,7 +545,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="struct_round_to_nearest_even.html">RoundToNearestEven</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="structRoundToNearestEven.html">RoundToNearestEven</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -536,7 +563,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template <a class="el" href="struct_interval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="struct_std_rounding.html">StdRounding</a> &gt; </td>
+          <td class="memname">template <a class="el" href="structInterval.html">Interval</a> <a class="el" href="rounding__modes__benchmark_8cc.html#aa636c24a80f53c591814e6f02ef08083">SumOfSquareRoots</a>&lt; <a class="el" href="structStdRounding.html">StdRounding</a> &gt; </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -549,14 +576,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html">util</a></li><li class="navelem"><a class="el" href="rounding__modes__benchmark_8cc.html">rounding_modes_benchmark.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

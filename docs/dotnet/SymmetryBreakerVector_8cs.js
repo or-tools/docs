@@ -1,0 +1,5 @@
+var SymmetryBreakerVector_8cs =
+[
+    [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector" ],
+    [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector.SymmetryBreakerVectorEnumerator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector_1_1SymmetryBreakerVectorEnumerator.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector_1_1SymmetryBreakerVectorEnumerator" ]
+];

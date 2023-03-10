@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: file.h File Reference</title>
+<title>Google OR-Tools: ortools/base/file.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -98,15 +98,27 @@ $(document).ready(function(){initNavTree('base_2file_8h.html',''); initResizable
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">base/file.h File Reference</div></div>
+  <div class="headertitle"><div class="title">file.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;google/protobuf/descriptor.h&quot;</code><br />
+<code>#include &quot;google/protobuf/io/tokenizer.h&quot;</code><br />
+<code>#include &quot;google/protobuf/message.h&quot;</code><br />
+<code>#include &quot;google/protobuf/text_format.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+</div>
 <p><a href="base_2file_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file.html">File</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFile.html">File</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -116,68 +128,66 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a45fab8ad572652ab90c8f37b08e52c1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a45fab8ad572652ab90c8f37b08e52c1b">Options</a> = int</td></tr>
-<tr class="separator:a45fab8ad572652ab90c8f37b08e52c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad895d5b0053a889e5760aa1918c7d899"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ad895d5b0053a889e5760aa1918c7d899">file::Options</a> = int</td></tr>
+<tr class="separator:ad895d5b0053a889e5760aa1918c7d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0f02e2eae8e6ad63d175850203597b73"><td class="memItemLeft" align="right" valign="top">Options&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a0f02e2eae8e6ad63d175850203597b73">Defaults</a> ()</td></tr>
-<tr class="separator:a0f02e2eae8e6ad63d175850203597b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba1e524f6f44768144843be45405223"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#acba1e524f6f44768144843be45405223">Open</a> (const absl::string_view &amp;filename, const absl::string_view &amp;mode, <a class="el" href="class_file.html">File</a> **f, int flags)</td></tr>
-<tr class="separator:acba1e524f6f44768144843be45405223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38270c9b9606599c428aad7d942ba033"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a38270c9b9606599c428aad7d942ba033">OpenOrDie</a> (const absl::string_view &amp;filename, const absl::string_view &amp;mode, int flags)</td></tr>
-<tr class="separator:a38270c9b9606599c428aad7d942ba033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb1dcdd93aee8846abedf0f5905ba65"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a5cb1dcdd93aee8846abedf0f5905ba65">GetTextProto</a> (const absl::string_view &amp;filename, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
-<tr class="separator:a5cb1dcdd93aee8846abedf0f5905ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5bf1183f893f9f5a8531b8822587946"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac5bf1183f893f9f5a8531b8822587946"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac5bf1183f893f9f5a8531b8822587946">GetTextProto</a> (absl::string_view filename, int flags)</td></tr>
-<tr class="separator:ac5bf1183f893f9f5a8531b8822587946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af024752012188b3269e30b0d9021c4"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a9af024752012188b3269e30b0d9021c4">SetTextProto</a> (const absl::string_view &amp;filename, const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
-<tr class="separator:a9af024752012188b3269e30b0d9021c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31309b397b99f387c78027e5bfd83980"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a31309b397b99f387c78027e5bfd83980">GetBinaryProto</a> (const absl::string_view filename, google::protobuf::Message *const <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const int flags)</td></tr>
-<tr class="separator:a31309b397b99f387c78027e5bfd83980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcff7e56e94d8940721bc19e77bf0f3a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afcff7e56e94d8940721bc19e77bf0f3a"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefile.html#afcff7e56e94d8940721bc19e77bf0f3a">GetBinaryProto</a> (absl::string_view filename, int flags)</td></tr>
-<tr class="separator:afcff7e56e94d8940721bc19e77bf0f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac100e60bbcbcf6c844ed551c96207cbb"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac100e60bbcbcf6c844ed551c96207cbb">SetBinaryProto</a> (const absl::string_view &amp;filename, const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
-<tr class="separator:ac100e60bbcbcf6c844ed551c96207cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae612ac5fffd37d180718bfe45d8ee445"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ae612ac5fffd37d180718bfe45d8ee445">SetContents</a> (const absl::string_view &amp;filename, const absl::string_view &amp;contents, int flags)</td></tr>
-<tr class="separator:ae612ac5fffd37d180718bfe45d8ee445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5c85404c75c45579847f873589737f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a0d5c85404c75c45579847f873589737f">GetContents</a> (const absl::string_view &amp;filename, std::string *output, int flags)</td></tr>
-<tr class="separator:a0d5c85404c75c45579847f873589737f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076b0cad1794671953aa9a8b8f9cf943"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a076b0cad1794671953aa9a8b8f9cf943">WriteString</a> (<a class="el" href="class_file.html">File</a> *file, const absl::string_view &amp;contents, int flags)</td></tr>
-<tr class="separator:a076b0cad1794671953aa9a8b8f9cf943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33739b3287e0ffd720323a9a99c8e235"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a33739b3287e0ffd720323a9a99c8e235">ReadFileToString</a> (const absl::string_view &amp;file_name, std::string *output)</td></tr>
-<tr class="separator:a33739b3287e0ffd720323a9a99c8e235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac035c14b17f64b38c0c6124f417c8c57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac035c14b17f64b38c0c6124f417c8c57">WriteStringToFile</a> (const std::string &amp;data, const absl::string_view &amp;file_name)</td></tr>
-<tr class="separator:ac035c14b17f64b38c0c6124f417c8c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac369616003cf0a5bed26bd8eb11427d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac369616003cf0a5bed26bd8eb11427d8">ReadFileToProto</a> (const absl::string_view &amp;file_name, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
-<tr class="separator:ac369616003cf0a5bed26bd8eb11427d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa73957620c5eba75032a3628a43189e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#afa73957620c5eba75032a3628a43189e">ReadFileToProtoOrDie</a> (const absl::string_view &amp;file_name, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
-<tr class="separator:afa73957620c5eba75032a3628a43189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9726209c9773d66337e02a77d0ea0f73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a9726209c9773d66337e02a77d0ea0f73">WriteProtoToASCIIFile</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
-<tr class="separator:a9726209c9773d66337e02a77d0ea0f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c5fb3349d294040c8ff4860214839e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a56c5fb3349d294040c8ff4860214839e">WriteProtoToASCIIFileOrDie</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
-<tr class="separator:a56c5fb3349d294040c8ff4860214839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8746aab2d48a36da6cebae1244368f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a5a8746aab2d48a36da6cebae1244368f">WriteProtoToFile</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
-<tr class="separator:a5a8746aab2d48a36da6cebae1244368f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876db8481c75505c70f7f4b529529bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a876db8481c75505c70f7f4b529529bd5">WriteProtoToFileOrDie</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
-<tr class="separator:a876db8481c75505c70f7f4b529529bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f188de33adc1532e7d866bc9f1f184"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a34f188de33adc1532e7d866bc9f1f184">Delete</a> (const absl::string_view &amp;path, int flags)</td></tr>
-<tr class="separator:a34f188de33adc1532e7d866bc9f1f184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6f3c229785a7dec92977b4f3bc4a5bc"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac6f3c229785a7dec92977b4f3bc4a5bc">Exists</a> (const absl::string_view &amp;path, int flags)</td></tr>
-<tr class="separator:ac6f3c229785a7dec92977b4f3bc4a5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf07fefe8ff31f769e921f195b5db868"><td class="memItemLeft" align="right" valign="top">Options&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#abf07fefe8ff31f769e921f195b5db868">file::Defaults</a> ()</td></tr>
+<tr class="separator:abf07fefe8ff31f769e921f195b5db868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3371f7735522a011e4d16c5ed7ccbb99"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a3371f7735522a011e4d16c5ed7ccbb99">file::Open</a> (const absl::string_view &amp;filename, const absl::string_view &amp;mode, <a class="el" href="classFile.html">File</a> **f, int flags)</td></tr>
+<tr class="memdesc:a3371f7735522a011e4d16c5ed7ccbb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">As of 2016-01, these methods can only be used with flags = <a href="file::Defaults()">file::Defaults()</a>.  <br /></td></tr>
+<tr class="separator:a3371f7735522a011e4d16c5ed7ccbb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69d57c53922caa1bff8a394bf1eff69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ad69d57c53922caa1bff8a394bf1eff69">file::OpenOrDie</a> (const absl::string_view &amp;filename, const absl::string_view &amp;mode, int flags)</td></tr>
+<tr class="separator:ad69d57c53922caa1bff8a394bf1eff69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc2f42784780251fb0579bf4d72a837"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a4dc2f42784780251fb0579bf4d72a837">file::GetTextProto</a> (const absl::string_view &amp;filename, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
+<tr class="separator:a4dc2f42784780251fb0579bf4d72a837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df411be133420a342fc1a7e6c306149"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6df411be133420a342fc1a7e6c306149"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefile.html#a6df411be133420a342fc1a7e6c306149">file::GetTextProto</a> (absl::string_view filename, int flags)</td></tr>
+<tr class="separator:a6df411be133420a342fc1a7e6c306149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84eb1989f549fca708ad08bf3a55d64b"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a84eb1989f549fca708ad08bf3a55d64b">file::SetTextProto</a> (const absl::string_view &amp;filename, const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
+<tr class="separator:a84eb1989f549fca708ad08bf3a55d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123822a738b57ebecbd8ebfc838958fb"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a123822a738b57ebecbd8ebfc838958fb">file::GetBinaryProto</a> (const absl::string_view filename, google::protobuf::Message *const <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const int flags)</td></tr>
+<tr class="separator:a123822a738b57ebecbd8ebfc838958fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa315a4e71fc338d2ba80f83b8b706a6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaa315a4e71fc338d2ba80f83b8b706a6"><td class="memTemplItemLeft" align="right" valign="top">absl::StatusOr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefile.html#aaa315a4e71fc338d2ba80f83b8b706a6">file::GetBinaryProto</a> (absl::string_view filename, int flags)</td></tr>
+<tr class="separator:aaa315a4e71fc338d2ba80f83b8b706a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4e4c49cccbfee16454c9c37f2004ee"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a4b4e4c49cccbfee16454c9c37f2004ee">file::SetBinaryProto</a> (const absl::string_view &amp;filename, const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, int flags)</td></tr>
+<tr class="separator:a4b4e4c49cccbfee16454c9c37f2004ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae40aac5133d6398f3e1f9df490e36a"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#afae40aac5133d6398f3e1f9df490e36a">file::SetContents</a> (const absl::string_view &amp;filename, const absl::string_view &amp;contents, int flags)</td></tr>
+<tr class="separator:afae40aac5133d6398f3e1f9df490e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10454f58ae9af93061723f1df1ccc721"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a10454f58ae9af93061723f1df1ccc721">file::GetContents</a> (const absl::string_view &amp;filename, std::string *output, int flags)</td></tr>
+<tr class="separator:a10454f58ae9af93061723f1df1ccc721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17d2908cd1372c8e20adfda95e42b48"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ad17d2908cd1372c8e20adfda95e42b48">file::WriteString</a> (<a class="el" href="classFile.html">File</a> *file, const absl::string_view &amp;contents, int flags)</td></tr>
+<tr class="separator:ad17d2908cd1372c8e20adfda95e42b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d889fef7c6a6f881a017cb13c0de211"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a3d889fef7c6a6f881a017cb13c0de211">file::ReadFileToString</a> (const absl::string_view &amp;file_name, std::string *output)</td></tr>
+<tr class="separator:a3d889fef7c6a6f881a017cb13c0de211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7bee894a51298eff85b30efaec0890"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#acc7bee894a51298eff85b30efaec0890">file::WriteStringToFile</a> (const std::string &amp;data, const absl::string_view &amp;file_name)</td></tr>
+<tr class="separator:acc7bee894a51298eff85b30efaec0890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110600f6db6bdbdd74080a6c2bb94783"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a110600f6db6bdbdd74080a6c2bb94783">file::ReadFileToProto</a> (const absl::string_view &amp;file_name, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
+<tr class="separator:a110600f6db6bdbdd74080a6c2bb94783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5684acd2f1c1405f3b46f0056df1595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ab5684acd2f1c1405f3b46f0056df1595">file::ReadFileToProtoOrDie</a> (const absl::string_view &amp;file_name, google::protobuf::Message *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
+<tr class="separator:ab5684acd2f1c1405f3b46f0056df1595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bcf7875ad7b747551c57ebe2d180c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a60bcf7875ad7b747551c57ebe2d180c8">file::WriteProtoToASCIIFile</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
+<tr class="separator:a60bcf7875ad7b747551c57ebe2d180c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab201a46923bc330b7cd85018f0be1f01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ab201a46923bc330b7cd85018f0be1f01">file::WriteProtoToASCIIFileOrDie</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
+<tr class="separator:ab201a46923bc330b7cd85018f0be1f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5798e3733381d91ee6b5894d1db6151d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a5798e3733381d91ee6b5894d1db6151d">file::WriteProtoToFile</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
+<tr class="separator:a5798e3733381d91ee6b5894d1db6151d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088d21e6297868c0c77c9f2431899f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a088d21e6297868c0c77c9f2431899f16">file::WriteProtoToFileOrDie</a> (const google::protobuf::Message &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, const absl::string_view &amp;file_name)</td></tr>
+<tr class="separator:a088d21e6297868c0c77c9f2431899f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6e96e732691b52bfcfc33299a61c66"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a2b6e96e732691b52bfcfc33299a61c66">file::Delete</a> (const absl::string_view &amp;path, int flags)</td></tr>
+<tr class="separator:a2b6e96e732691b52bfcfc33299a61c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa01c15bd82268892549b1651c4ddb3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#affa01c15bd82268892549b1651c4ddb3">file::Exists</a> (const absl::string_view &amp;path, int flags)</td></tr>
+<tr class="separator:affa01c15bd82268892549b1651c4ddb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="base_2file_8h.html">file.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

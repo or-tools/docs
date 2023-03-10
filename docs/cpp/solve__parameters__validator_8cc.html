@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: solve_parameters_validator.cc File Reference</title>
+<title>Google OR-Tools: ortools/math_opt/validators/solve_parameters_validator.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,15 +100,28 @@ $(document).ready(function(){initNavTree('solve__parameters__validator_8cc.html'
   <div class="headertitle"><div class="title">solve_parameters_validator.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="solve__parameters__validator_8h_source.html">ortools/math_opt/validators/solve_parameters_validator.h</a>&quot;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="protoutil_8h_source.html">ortools/base/protoutil.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+<code>#include &quot;ortools/math_opt/parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2status__macros_8h_source.html">ortools/util/status_macros.h</a>&quot;</code><br />
+</div>
 <p><a href="solve__parameters__validator_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -118,8 +131,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3395397680be1ef1ee1b2433d8636e15"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3395397680be1ef1ee1b2433d8636e15">ValidateSolveParameters</a> (const SolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
-<tr class="separator:a3395397680be1ef1ee1b2433d8636e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af099801286ce760f79dda3ce9b7be78d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af099801286ce760f79dda3ce9b7be78d">operations_research::math_opt::ValidateSolveParameters</a> (const SolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
+<tr class="separator:af099801286ce760f79dda3ce9b7be78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2a76a027076311c081a3ea7acba958d0" name="a2a76a027076311c081a3ea7acba958d0"></a>
@@ -139,21 +152,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(                  \</div>
 <div class="line">      ValidateEmphasisProtoParameter(<a class="code hl_variable" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>.property(), #property))</div>
-<div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00027">base/status_macros.h:27</a></div></div>
+<div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition:</b> <a href="base_2status__macros_8h_source.html#l00027">status_macros.h:27</a></div></div>
 <div class="ttc" id="acp__model__fz__solver_8cc_html_a10a1eab179b472c030bdc2a2efef7219"><div class="ttname"><a href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a></div><div class="ttdeci">SatParameters parameters</div><div class="ttdef"><b>Definition:</b> <a href="cp__model__fz__solver_8cc_source.html#l00124">cp_model_fz_solver.cc:124</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_2298c6cf5b60fbeba088c3582d3d0ae0.html">validators</a></li><li class="navelem"><a class="el" href="solve__parameters__validator_8cc.html">solve_parameters_validator.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

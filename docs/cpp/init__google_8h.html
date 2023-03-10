@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: init_google.h File Reference</title>
+<title>Google OR-Tools: ortools/base/init_google.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,22 +99,28 @@ $(document).ready(function(){initNavTree('init__google_8h.html',''); initResizab
   <div class="headertitle"><div class="title">init_google.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;absl/flags/declare.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/flags/parse.h&quot;</code><br />
+<code>#include &quot;absl/flags/usage.h&quot;</code><br />
+<code>#include &quot;absl/log/initialize.h&quot;</code><br />
+</div>
 <p><a href="init__google_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegoogle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html">google</a></td></tr>
+<tr class="memdesc:namespacegoogle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for SCIP. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a16af2bccb0196e1a9bb628559c95b7cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init__google_8h.html#a16af2bccb0196e1a9bb628559c95b7cb">InitGoogle</a> (const char *usage, int *argc, char ***argv, bool deprecated)</td></tr>
 <tr class="separator:a16af2bccb0196e1a9bb628559c95b7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a147c9d832e55fbbfe8f09cad730c3453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#a147c9d832e55fbbfe8f09cad730c3453">InitGoogleLogging</a> (const std::string &amp;usage)</td></tr>
-<tr class="separator:a147c9d832e55fbbfe8f09cad730c3453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5090e8c57223eb6a008661aff7d841"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#abb5090e8c57223eb6a008661aff7d841">ShutdownGoogleLogging</a> ()</td></tr>
-<tr class="separator:abb5090e8c57223eb6a008661aff7d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaae9d0e92d7eb0bcd166d1196509873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#abaae9d0e92d7eb0bcd166d1196509873">google::InitGoogleLogging</a> (const std::string &amp;usage)</td></tr>
+<tr class="separator:abaae9d0e92d7eb0bcd166d1196509873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576fc175cb0f05f91f7ee47deac3c75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#a576fc175cb0f05f91f7ee47deac3c75d">google::ShutdownGoogleLogging</a> ()</td></tr>
+<tr class="separator:a576fc175cb0f05f91f7ee47deac3c75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a16af2bccb0196e1a9bb628559c95b7cb" name="a16af2bccb0196e1a9bb628559c95b7cb"></a>
@@ -162,8 +168,10 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="nurses_cp_8cc-example.html#a4">nurses_cp.cc</a>.</dd>
-</dl>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Initializes misc google-related things in the binary.</p>
+<p>Typically called early on in <a class="el" href="rounding__modes__benchmark_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> and must be called before other threads start using functions from this file.</p>
+<p>'usage' provides a short usage message passed to absl::SetProgramUsageMessage(). Most callers provide the name of the app as 'usage' ?! 'argc' and 'argv' are the command line flags to parse. There is no requirement for an element (*argv)[*argc] to exist or to have any particular value, unlike the similar array that is passed to the <code>main</code> function. </p>
 
 <p class="definition">Definition at line <a class="el" href="init__google_8h_source.html#l00034">34</a> of file <a class="el" href="init__google_8h_source.html">init_google.h</a>.</p>
 
@@ -171,14 +179,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="init__google_8h.html">init_google.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

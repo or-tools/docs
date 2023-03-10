@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: logging.h File Reference</title>
+<title>Google OR-Tools: ortools/base/logging.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -98,18 +98,30 @@ $(document).ready(function(){initNavTree('base_2logging_8h.html',''); initResiza
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">base/logging.h File Reference</div></div>
+  <div class="headertitle"><div class="title">logging.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;absl/base/log_severity.h&quot;</code><br />
+<code>#include &quot;absl/flags/declare.h&quot;</code><br />
+<code>#include &quot;absl/log/die_if_null.h&quot;</code><br />
+<code>#include &quot;absl/log/log.h&quot;</code><br />
+<code>#include &quot;absl/memory/memory.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;google/protobuf/message.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vlog_8h_source.html">ortools/base/vlog.h</a>&quot;</code><br />
+</div>
 <p><a href="base_2logging_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegoogle"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html">google</a></td></tr>
+<tr class="memdesc:namespacegoogle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for SCIP. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegoogle_1_1protobuf"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle_1_1protobuf.html">google::protobuf</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,24 +137,26 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a93a3ba385cad27c4774e5fe64c025d3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#a93a3ba385cad27c4774e5fe64c025d3d">LogSeverity</a> { <a class="el" href="namespacegoogle.html#a93a3ba385cad27c4774e5fe64c025d3dac4089cbc974c3e2682758963ee8b0e8a">GLOG_INFO</a> = static_cast&lt;int&gt;(absl::LogSeverity::kInfo)
-, <a class="el" href="namespacegoogle.html#a93a3ba385cad27c4774e5fe64c025d3dae79f539b07eff5cd4d293b8849176721">GLOG_WARNING</a> = static_cast&lt;int&gt;(absl::LogSeverity::kWarning)
-, <a class="el" href="namespacegoogle.html#a93a3ba385cad27c4774e5fe64c025d3dab3f308bdd33dfe05cb1993d3742605c8">GLOG_ERROR</a> = static_cast&lt;int&gt;(absl::LogSeverity::kError)
-, <a class="el" href="namespacegoogle.html#a93a3ba385cad27c4774e5fe64c025d3da4dd00894ddf795a00fb2d52e599405eb">GLOG_FATAL</a> = static_cast&lt;int&gt;(absl::LogSeverity::kFatal)
+<tr class="memitem:ae78a1dfb4ceb78abb8fbf4f35208cf98"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegoogle.html#ae78a1dfb4ceb78abb8fbf4f35208cf98">google::LogSeverity</a> { <a class="el" href="namespacegoogle.html#ae78a1dfb4ceb78abb8fbf4f35208cf98a3b6f869c9dc9831f4a0e4ea9de670240">google::GLOG_INFO</a> = static_cast&lt;int&gt;(absl::LogSeverity::kInfo)
+, <a class="el" href="namespacegoogle.html#ae78a1dfb4ceb78abb8fbf4f35208cf98affacfd15157d60614d52bc06fdb9aa48">google::GLOG_WARNING</a> = static_cast&lt;int&gt;(absl::LogSeverity::kWarning)
+, <a class="el" href="namespacegoogle.html#ae78a1dfb4ceb78abb8fbf4f35208cf98a743687292b34f5418fc8fb2bcb57297c">google::GLOG_ERROR</a> = static_cast&lt;int&gt;(absl::LogSeverity::kError)
+, <a class="el" href="namespacegoogle.html#ae78a1dfb4ceb78abb8fbf4f35208cf98af1aebcd5d4603a9ddd0eb991238e31ec">google::GLOG_FATAL</a> = static_cast&lt;int&gt;(absl::LogSeverity::kFatal)
  }</td></tr>
-<tr class="separator:a93a3ba385cad27c4774e5fe64c025d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae78a1dfb4ceb78abb8fbf4f35208cf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a91d8109fffffbada5fcaba8d25e322b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2logging_8h.html#a91d8109fffffbada5fcaba8d25e322b7">ABSL_DECLARE_FLAG</a> (bool, logtostderr)</td></tr>
+<tr class="memdesc:a91d8109fffffbada5fcaba8d25e322b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for glog/previous logging code.  <br /></td></tr>
 <tr class="separator:a91d8109fffffbada5fcaba8d25e322b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f35a18546cd809891d437e15ba3ab5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_2logging_8h.html#a9f35a18546cd809891d437e15ba3ab5a">ABSL_DECLARE_FLAG</a> (int, stderrthreshold)</td></tr>
+<tr class="memdesc:a9f35a18546cd809891d437e15ba3ab5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward the new flag.  <br /></td></tr>
 <tr class="separator:a9f35a18546cd809891d437e15ba3ab5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc29f16e0cd8a868b42ac92d5fc437b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#adc29f16e0cd8a868b42ac92d5fc437b9">FixFlagsAndEnvironmentForSwig</a> ()</td></tr>
-<tr class="separator:adc29f16e0cd8a868b42ac92d5fc437b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cd78c67936d655f652d0dffe4d9351"><td class="memTemplParams" colspan="2">template&lt;typename Sink &gt; </td></tr>
-<tr class="memitem:a14cd78c67936d655f652d0dffe4d9351"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegoogle_1_1protobuf.html#a14cd78c67936d655f652d0dffe4d9351">AbslStringify</a> (Sink &amp;sink, const Message &amp;msg)</td></tr>
-<tr class="separator:a14cd78c67936d655f652d0dffe4d9351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f17591d7e3c4727661da6399ffc1ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af8f17591d7e3c4727661da6399ffc1ef">operations_research::FixFlagsAndEnvironmentForSwig</a> ()</td></tr>
+<tr class="separator:af8f17591d7e3c4727661da6399ffc1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5c273b3f2deac8b9509032a6df0a00"><td class="memTemplParams" colspan="2">template&lt;typename Sink &gt; </td></tr>
+<tr class="memitem:a4f5c273b3f2deac8b9509032a6df0a00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegoogle_1_1protobuf.html#a4f5c273b3f2deac8b9509032a6df0a00">google::protobuf::AbslStringify</a> (Sink &amp;sink, const Message &amp;msg)</td></tr>
+<tr class="separator:a4f5c273b3f2deac8b9509032a6df0a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5a2327332854a6fb86b9326394b5dbd7" name="a5a2327332854a6fb86b9326394b5dbd7"></a>
@@ -156,8 +170,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
-<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00017">17</a> of file <a class="el" href="base_2logging_8h_source.html">base/logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00017">17</a> of file <a class="el" href="base_2logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -173,7 +189,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00019">19</a> of file <a class="el" href="base_2logging_8h_source.html">base/logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00019">19</a> of file <a class="el" href="base_2logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +205,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00018">18</a> of file <a class="el" href="base_2logging_8h_source.html">base/logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="base_2logging_8h_source.html#l00018">18</a> of file <a class="el" href="base_2logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -220,6 +236,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Compatibility layer for glog/previous logging code. </p>
+
 </div>
 </div>
 <a id="a9f35a18546cd809891d437e15ba3ab5a" name="a9f35a18546cd809891d437e15ba3ab5a"></a>
@@ -248,18 +266,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Forward the new flag. </p>
+
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="base_2logging_8h.html">logging.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

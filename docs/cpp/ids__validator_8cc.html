@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: ids_validator.cc File Reference</title>
+<title>Google OR-Tools: ortools/math_opt/validators/ids_validator.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,38 +99,53 @@ $(document).ready(function(){initNavTree('ids__validator_8cc.html',''); initResi
   <div class="headertitle"><div class="title">ids_validator.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="ids__validator_8h_source.html">ortools/math_opt/validators/ids_validator.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="status__builder_8h_source.html">ortools/base/status_builder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="model__summary_8h_source.html">ortools/math_opt/core/model_summary.h</a>&quot;</code><br />
+</div>
 <p><a href="ids__validator_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5a0359a52a89d997030c56f32105bc07"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a5a0359a52a89d997030c56f32105bc07">CheckIdsRangeAndStrictlyIncreasing</a> (absl::Span&lt; const int64_t &gt; ids)</td></tr>
-<tr class="separator:a5a0359a52a89d997030c56f32105bc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62942263ba9795f3a44cb6542d4ca0dc"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a62942263ba9795f3a44cb6542d4ca0dc">CheckIdsSubset</a> (absl::Span&lt; const int64_t &gt; ids, const IdNameBiMap &amp;universe, std::optional&lt; int64_t &gt; <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
-<tr class="separator:a62942263ba9795f3a44cb6542d4ca0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa680631976be354abbcd28e2ec941ca7"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa680631976be354abbcd28e2ec941ca7">CheckIdsSubset</a> (absl::Span&lt; const int64_t &gt; ids, const IdNameBiMap &amp;universe, absl::string_view ids_description, absl::string_view universe_description)</td></tr>
-<tr class="separator:aa680631976be354abbcd28e2ec941ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afecf2131c4ddbd801120447bc2d4f02d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#afecf2131c4ddbd801120447bc2d4f02d">CheckIdsIdentical</a> (absl::Span&lt; const int64_t &gt; first_ids, const IdNameBiMap &amp;second_ids, absl::string_view first_description, absl::string_view second_description)</td></tr>
-<tr class="separator:afecf2131c4ddbd801120447bc2d4f02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad447ebdddc38d924f886c97433d998d6"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ad447ebdddc38d924f886c97433d998d6">operations_research::math_opt::CheckIdsRangeAndStrictlyIncreasing</a> (absl::Span&lt; const int64_t &gt; ids)</td></tr>
+<tr class="separator:ad447ebdddc38d924f886c97433d998d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2e26542d0c64cb9bdb653e943cd892"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abd2e26542d0c64cb9bdb653e943cd892">operations_research::math_opt::CheckIdsSubset</a> (absl::Span&lt; const int64_t &gt; ids, const IdNameBiMap &amp;universe, std::optional&lt; int64_t &gt; <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
+<tr class="separator:abd2e26542d0c64cb9bdb653e943cd892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9c41cabd33741940953d992a2c4b4c"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a6d9c41cabd33741940953d992a2c4b4c">operations_research::math_opt::CheckIdsSubset</a> (absl::Span&lt; const int64_t &gt; ids, const IdNameBiMap &amp;universe, absl::string_view ids_description, absl::string_view universe_description)</td></tr>
+<tr class="separator:a6d9c41cabd33741940953d992a2c4b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeecfcf80c49271a0be5cfc03979d5f0"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abeecfcf80c49271a0be5cfc03979d5f0">operations_research::math_opt::CheckIdsIdentical</a> (absl::Span&lt; const int64_t &gt; first_ids, const IdNameBiMap &amp;second_ids, absl::string_view first_description, absl::string_view second_description)</td></tr>
+<tr class="memdesc:abeecfcf80c49271a0be5cfc03979d5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">first_ids and second_ids must include distinct ids.  <br /></td></tr>
+<tr class="separator:abeecfcf80c49271a0be5cfc03979d5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_2298c6cf5b60fbeba088c3582d3d0ae0.html">validators</a></li><li class="navelem"><a class="el" href="ids__validator_8cc.html">ids_validator.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

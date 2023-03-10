@@ -1,0 +1,28 @@
+var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics =
+[
+    [ "LocalSearchFilterStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a9506122fdb77ff6d873f63442e5b9909", null ],
+    [ "LocalSearchFilterStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#af6a27ce5f7c02ef452c88271eb4bca74", null ],
+    [ "CalculateSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aabd73e04bb25cba1965e2adff6cd9b3c", null ],
+    [ "Clone", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ad6663a24f09b72baaeeebcbdc648084b", null ],
+    [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a1f2b81b39029ba1e9f49b2c6dd3baad9", null ],
+    [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aba855e428178e08a321eb2dd7e984b8e", null ],
+    [ "GetHashCode", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a1d19617cb1b8db729a5e8ec837280e2e", null ],
+    [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ab3678864219a3b6dd777d707f361aef6", null ],
+    [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a81a8e2ad8412943c765de09dbbf6f58f", null ],
+    [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ac5839576ab580d4f1b4a515b725f84e4", null ],
+    [ "WriteTo", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ad486df299debb266fa7189bfd99d7e77", null ],
+    [ "ContextFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aea1022cdd394c176f7b1201eaa0e12e6", null ],
+    [ "DurationSecondsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a478a55da101c97b4ef64bf219eb67eb1", null ],
+    [ "LocalSearchFilterFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a5fcc4774013ff867ee284c970a7a8d4a", null ],
+    [ "NumCallsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ad72d30f9b9302a9a80209e24ead21c0f", null ],
+    [ "NumRejectsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a647149d370076540efb56aeb33ddf7b1", null ],
+    [ "NumRejectsPerSecondFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a551d08afd3ed05ca8a428ab6c1bb1e52", null ],
+    [ "Context", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ac730bc01a6c82303b7b35edcf3cd438b", null ],
+    [ "Descriptor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aaa8233845dc2af065fc870ccc51f5cdc", null ],
+    [ "DurationSeconds", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ac9d5263097946e00859db13b2b8f5635", null ],
+    [ "LocalSearchFilter", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a6390ecf7f1913ec12effeccd7e05dddf", null ],
+    [ "NumCalls", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aa1b9e64d47992dde6d3d88a52a820716", null ],
+    [ "NumRejects", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#aa0e506d0bb78ca98ae5314abd931e08a", null ],
+    [ "NumRejectsPerSecond", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#ae5bbc12a30fec74eea4f849675c1c082", null ],
+    [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html#a3bf67c90b3657d0e74c9cbfb288dbf9b", null ]
+];

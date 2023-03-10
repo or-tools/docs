@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: lp_types.h File Reference</title>
+<title>Google OR-Tools: ortools/lp_data/lp_types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -103,180 +103,215 @@ $(document).ready(function(){initNavTree('lp__types_8h.html',''); initResizable(
   <div class="headertitle"><div class="title">lp_types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+</div>
 <p><a href="lp__types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1_strict_i_t_i_span.html">StrictITISpan&lt; IntType, T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1StrictITISpan.html">operations_research::glop::StrictITISpan&lt; IntType, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1_strict_i_t_i_vector.html">StrictITIVector&lt; IntType, T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">operations_research::glop::StrictITIVector&lt; IntType, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1_vector_iterator.html">VectorIterator&lt; EntryType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1VectorIterator.html">operations_research::glop::VectorIterator&lt; EntryType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1glop"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html">operations_research::glop</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ac89c7b45754e9a6bdabc08bea586fc4e"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ac89c7b45754e9a6bdabc08bea586fc4e">Index</a></td></tr>
-<tr class="separator:ac89c7b45754e9a6bdabc08bea586fc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733947145e3e1631165b618b05c9ccb7"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a733947145e3e1631165b618b05c9ccb7">Fractional</a></td></tr>
-<tr class="separator:a733947145e3e1631165b618b05c9ccb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc8ae0f97c4110f3cc770715b2bbd12"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, Fractional &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a4dc8ae0f97c4110f3cc770715b2bbd12">DenseRow</a></td></tr>
-<tr class="separator:a4dc8ae0f97c4110f3cc770715b2bbd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac053cc327ce11b0008e2030fcdc467f9"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ac053cc327ce11b0008e2030fcdc467f9">DenseBooleanRow</a></td></tr>
-<tr class="separator:ac053cc327ce11b0008e2030fcdc467f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7534bb8eff64b643c6079dc82e5e3c"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#afa7534bb8eff64b643c6079dc82e5e3c">ColMapping</a></td></tr>
-<tr class="separator:afa7534bb8eff64b643c6079dc82e5e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b83a25cb4fd203c57a7155699fab246"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a2b83a25cb4fd203c57a7155699fab246">ColIndexVector</a></td></tr>
-<tr class="separator:a2b83a25cb4fd203c57a7155699fab246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac014de658aabf122011e8fb07b6f4612"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ac014de658aabf122011e8fb07b6f4612">RowIndexVector</a></td></tr>
-<tr class="separator:ac014de658aabf122011e8fb07b6f4612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad648fd5e3d6a6a271996f535a4f4af0d"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ad648fd5e3d6a6a271996f535a4f4af0d">ColToRowMapping</a></td></tr>
-<tr class="separator:ad648fd5e3d6a6a271996f535a4f4af0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe3250e630f7fc5b37f2340ab79c566"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, VariableType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a3fe3250e630f7fc5b37f2340ab79c566">VariableTypeRow</a></td></tr>
-<tr class="separator:a3fe3250e630f7fc5b37f2340ab79c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d0540e510c4225b196d87b16f2721a8"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, VariableStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a6d0540e510c4225b196d87b16f2721a8">VariableStatusRow</a></td></tr>
-<tr class="separator:a6d0540e510c4225b196d87b16f2721a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf3efa52c50a245bf2fc964386a15d49"><td class="memItemLeft" align="right" valign="top">typedef Bitset64&lt; ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aaf3efa52c50a245bf2fc964386a15d49">DenseBitRow</a></td></tr>
-<tr class="separator:aaf3efa52c50a245bf2fc964386a15d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5fa9e57c2d31b294195ed8a9e17bfac"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, Fractional &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ae5fa9e57c2d31b294195ed8a9e17bfac">DenseColumn</a></td></tr>
-<tr class="separator:ae5fa9e57c2d31b294195ed8a9e17bfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec7177dd4fab33ada14a7689223fe89f"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aec7177dd4fab33ada14a7689223fe89f">DenseBooleanColumn</a></td></tr>
-<tr class="separator:aec7177dd4fab33ada14a7689223fe89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e289525f7e45776226887bf5429dbd8"><td class="memItemLeft" align="right" valign="top">typedef Bitset64&lt; RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a0e289525f7e45776226887bf5429dbd8">DenseBitColumn</a></td></tr>
-<tr class="separator:a0e289525f7e45776226887bf5429dbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee8efc6ea08841cb3e32e78c6ba5709"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a7ee8efc6ea08841cb3e32e78c6ba5709">RowMapping</a></td></tr>
-<tr class="separator:a7ee8efc6ea08841cb3e32e78c6ba5709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73165f71f932e8ccc240d4db5097803"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ad73165f71f932e8ccc240d4db5097803">RowToColMapping</a></td></tr>
-<tr class="separator:ad73165f71f932e8ccc240d4db5097803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6435e3138db1e45c3ff2b00cb999aa"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, ConstraintStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a7f6435e3138db1e45c3ff2b00cb999aa">ConstraintStatusColumn</a></td></tr>
-<tr class="separator:a7f6435e3138db1e45c3ff2b00cb999aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ceda22b5fe5815dbdf343665c093e57"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">operations_research::glop::Index</a></td></tr>
+<tr class="separator:a6ceda22b5fe5815dbdf343665c093e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cac235bd48eb39d15cc101516dc1e90"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">operations_research::glop::Fractional</a></td></tr>
+<tr class="separator:a0cac235bd48eb39d15cc101516dc1e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5d5cfd458bdd48f90015baf1f280d4"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, Fractional &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">operations_research::glop::DenseRow</a></td></tr>
+<tr class="memdesc:ada5d5cfd458bdd48f90015baf1f280d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row-vector types. Row-vector types are indexed by a column index.  <br /></td></tr>
+<tr class="separator:ada5d5cfd458bdd48f90015baf1f280d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add597a8161172a82aa841b346e4193df"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#add597a8161172a82aa841b346e4193df">operations_research::glop::DenseBooleanRow</a></td></tr>
+<tr class="memdesc:add597a8161172a82aa841b346e4193df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row of booleans.  <br /></td></tr>
+<tr class="separator:add597a8161172a82aa841b346e4193df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314e1ea9ba4b7c999b4ab2dd4fd1f69c"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a314e1ea9ba4b7c999b4ab2dd4fd1f69c">operations_research::glop::ColMapping</a></td></tr>
+<tr class="memdesc:a314e1ea9ba4b7c999b4ab2dd4fd1f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row of column indices. Used to represent mappings between columns.  <br /></td></tr>
+<tr class="separator:a314e1ea9ba4b7c999b4ab2dd4fd1f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295e4600b9b815bc4896861615a94766"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a295e4600b9b815bc4896861615a94766">operations_research::glop::ColIndexVector</a></td></tr>
+<tr class="memdesc:a295e4600b9b815bc4896861615a94766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of row or column indices. Useful to list the non-zero positions.  <br /></td></tr>
+<tr class="separator:a295e4600b9b815bc4896861615a94766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b434d754a6be925d1115a07fae158f"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a14b434d754a6be925d1115a07fae158f">operations_research::glop::RowIndexVector</a></td></tr>
+<tr class="separator:a14b434d754a6be925d1115a07fae158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6c6ee1eb1934f3e42b96c0f3442b30"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a1d6c6ee1eb1934f3e42b96c0f3442b30">operations_research::glop::ColToRowMapping</a></td></tr>
+<tr class="separator:a1d6c6ee1eb1934f3e42b96c0f3442b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb56b780daf2e7a0859ecd3a9b4b053"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, VariableType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aadb56b780daf2e7a0859ecd3a9b4b053">operations_research::glop::VariableTypeRow</a></td></tr>
+<tr class="memdesc:aadb56b780daf2e7a0859ecd3a9b4b053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row of variable types.  <br /></td></tr>
+<tr class="separator:aadb56b780daf2e7a0859ecd3a9b4b053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb549d7d9cb4f07b0afc9707cfb2d768"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; ColIndex, VariableStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#abb549d7d9cb4f07b0afc9707cfb2d768">operations_research::glop::VariableStatusRow</a></td></tr>
+<tr class="memdesc:abb549d7d9cb4f07b0afc9707cfb2d768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row of variable statuses.  <br /></td></tr>
+<tr class="separator:abb549d7d9cb4f07b0afc9707cfb2d768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da9f5a50f787c5ca6064af6c841ee1a"><td class="memItemLeft" align="right" valign="top">typedef Bitset64&lt; ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a4da9f5a50f787c5ca6064af6c841ee1a">operations_research::glop::DenseBitRow</a></td></tr>
+<tr class="memdesc:a4da9f5a50f787c5ca6064af6c841ee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row of bits.  <br /></td></tr>
+<tr class="separator:a4da9f5a50f787c5ca6064af6c841ee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f352599e06269079e571bdc63eb636"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, Fractional &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">operations_research::glop::DenseColumn</a></td></tr>
+<tr class="memdesc:ad2f352599e06269079e571bdc63eb636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column-vector types. Column-vector types are indexed by a row index.  <br /></td></tr>
+<tr class="separator:ad2f352599e06269079e571bdc63eb636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242f0a52ff31e4a3f79bac49522ca724"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a242f0a52ff31e4a3f79bac49522ca724">operations_research::glop::DenseBooleanColumn</a></td></tr>
+<tr class="memdesc:a242f0a52ff31e4a3f79bac49522ca724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column of booleans.  <br /></td></tr>
+<tr class="separator:a242f0a52ff31e4a3f79bac49522ca724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72aa16c810570b4ad37f60763cbac2ff"><td class="memItemLeft" align="right" valign="top">typedef Bitset64&lt; RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a72aa16c810570b4ad37f60763cbac2ff">operations_research::glop::DenseBitColumn</a></td></tr>
+<tr class="memdesc:a72aa16c810570b4ad37f60763cbac2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column of bits.  <br /></td></tr>
+<tr class="separator:a72aa16c810570b4ad37f60763cbac2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa676a28a993a41d8b68479df24cd03ad"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aa676a28a993a41d8b68479df24cd03ad">operations_research::glop::RowMapping</a></td></tr>
+<tr class="memdesc:aa676a28a993a41d8b68479df24cd03ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column of row indices. Used to represent mappings between rows.  <br /></td></tr>
+<tr class="separator:aa676a28a993a41d8b68479df24cd03ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e49ecefcdcb381bc968c7c9941028b3"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, ColIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a0e49ecefcdcb381bc968c7c9941028b3">operations_research::glop::RowToColMapping</a></td></tr>
+<tr class="separator:a0e49ecefcdcb381bc968c7c9941028b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393624ec585b588bc1f4d453c05196d4"><td class="memItemLeft" align="right" valign="top">typedef StrictITIVector&lt; RowIndex, ConstraintStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a393624ec585b588bc1f4d453c05196d4">operations_research::glop::ConstraintStatusColumn</a></td></tr>
+<tr class="memdesc:a393624ec585b588bc1f4d453c05196d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column of constraints (slack variables) statuses.  <br /></td></tr>
+<tr class="separator:a393624ec585b588bc1f4d453c05196d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a884f3b645d22471e5ed3320e182cd493"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493">ProblemStatus</a> : int8_t { <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493af00c8dbdd6e1f11bdae06be94277d293">OPTIMAL</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a7850fcfea005b86b2a3fa0d4293c5ee0">PRIMAL_INFEASIBLE</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a1583be76ac58a4ac4c024f73b3d85811">DUAL_INFEASIBLE</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a53ef0c1aa260e08f9010ddcc28d5a4a6">INFEASIBLE_OR_UNBOUNDED</a>
+<tr class="memitem:ae55e31423130ea1cddfe1fc1e592e004"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">operations_research::glop::ProblemStatus</a> : int8_t { <br />
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004af00c8dbdd6e1f11bdae06be94277d293">operations_research::glop::OPTIMAL</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a7850fcfea005b86b2a3fa0d4293c5ee0">operations_research::glop::PRIMAL_INFEASIBLE</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a1583be76ac58a4ac4c024f73b3d85811">operations_research::glop::DUAL_INFEASIBLE</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a53ef0c1aa260e08f9010ddcc28d5a4a6">operations_research::glop::INFEASIBLE_OR_UNBOUNDED</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a8351cc0ea544c393b3e26fdf42520844">PRIMAL_UNBOUNDED</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a8ada5da7749eac0d9fe1782ad9bab585">DUAL_UNBOUNDED</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493afaee4ca3c30ee18148ce3ada37466498">INIT</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a2dcc8f5d91cb2aa2065b8305bf2d5cbd">PRIMAL_FEASIBLE</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a8351cc0ea544c393b3e26fdf42520844">operations_research::glop::PRIMAL_UNBOUNDED</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a8ada5da7749eac0d9fe1782ad9bab585">operations_research::glop::DUAL_UNBOUNDED</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004afaee4ca3c30ee18148ce3ada37466498">operations_research::glop::INIT</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a2dcc8f5d91cb2aa2065b8305bf2d5cbd">operations_research::glop::PRIMAL_FEASIBLE</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a57ad14e7a035f33c8ba6c0ea9ea23caa">DUAL_FEASIBLE</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a88ec4386a3c49b50819358a579fb9adb">ABNORMAL</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493add8d8537e1472a5e432749c5abf45c82">INVALID_PROBLEM</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a884f3b645d22471e5ed3320e182cd493a0beacd9ca195de65e685252f1b46b954">IMPRECISE</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a57ad14e7a035f33c8ba6c0ea9ea23caa">operations_research::glop::DUAL_FEASIBLE</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a88ec4386a3c49b50819358a579fb9adb">operations_research::glop::ABNORMAL</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004add8d8537e1472a5e432749c5abf45c82">operations_research::glop::INVALID_PROBLEM</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a0beacd9ca195de65e685252f1b46b954">operations_research::glop::IMPRECISE</a>
 <br />
  }</td></tr>
-<tr class="separator:a884f3b645d22471e5ed3320e182cd493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4452e21ffb34da40470f1e0791800027"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027">VariableType</a> : int8_t { <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027a2882f30bbca588e5d0e88be217ce75c1">UNCONSTRAINED</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027a9972b9c8a6068625d6cf1f789f3fd872">LOWER_BOUNDED</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027ae7243c883ff6508ee41b3b1339a7e8f1">UPPER_BOUNDED</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027a62e32b9a6efb029208f576ee123b459f">UPPER_AND_LOWER_BOUNDED</a>
+<tr class="memdesc:ae55e31423130ea1cddfe1fc1e592e004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different statuses for a given problem.  <a href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">More...</a><br /></td></tr>
+<tr class="separator:ae55e31423130ea1cddfe1fc1e592e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d931570faed03245426d721087777e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777e">operations_research::glop::VariableType</a> : int8_t { <br />
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777ea2882f30bbca588e5d0e88be217ce75c1">operations_research::glop::UNCONSTRAINED</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777ea9972b9c8a6068625d6cf1f789f3fd872">operations_research::glop::LOWER_BOUNDED</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777eae7243c883ff6508ee41b3b1339a7e8f1">operations_research::glop::UPPER_BOUNDED</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777ea62e32b9a6efb029208f576ee123b459f">operations_research::glop::UPPER_AND_LOWER_BOUNDED</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a4452e21ffb34da40470f1e0791800027aaa56837dd3f2917e1e13f3173b596103">FIXED_VARIABLE</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777eaaa56837dd3f2917e1e13f3173b596103">operations_research::glop::FIXED_VARIABLE</a>
 <br />
  }</td></tr>
-<tr class="separator:a4452e21ffb34da40470f1e0791800027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaddc7ccf1acc75842c2129ee4590d358"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358">VariableStatus</a> : int8_t { <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358ae4ac03f6c9f00665644e868dd1fb9f1e">BASIC</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358ae91836db656214f9797e10c15928e501">FIXED_VALUE</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358a74c506bd3d744fb5c2862229c8f2b6ce">AT_LOWER_BOUND</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358a14dc61f52267ea9b476f64c1d4d975b1">AT_UPPER_BOUND</a>
+<tr class="memdesc:aa6d931570faed03245426d721087777e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different types of variables.  <a href="namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777e">More...</a><br /></td></tr>
+<tr class="separator:aa6d931570faed03245426d721087777e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d7f8b78757ed2996056cd79c5603ee"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603ee">operations_research::glop::VariableStatus</a> : int8_t { <br />
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eeae4ac03f6c9f00665644e868dd1fb9f1e">operations_research::glop::BASIC</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eeae91836db656214f9797e10c15928e501">operations_research::glop::FIXED_VALUE</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea74c506bd3d744fb5c2862229c8f2b6ce">operations_research::glop::AT_LOWER_BOUND</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea14dc61f52267ea9b476f64c1d4d975b1">operations_research::glop::AT_UPPER_BOUND</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#aaddc7ccf1acc75842c2129ee4590d358a88c189a42c87aa49d667fc8ab76bc323">FREE</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea88c189a42c87aa49d667fc8ab76bc323">operations_research::glop::FREE</a>
 <br />
  }</td></tr>
-<tr class="separator:aaddc7ccf1acc75842c2129ee4590d358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f6bd47b8956b59589718bd40b1cf8bc"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bc">ConstraintStatus</a> : int8_t { <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bcae4ac03f6c9f00665644e868dd1fb9f1e">BASIC</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bcae91836db656214f9797e10c15928e501">FIXED_VALUE</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bca74c506bd3d744fb5c2862229c8f2b6ce">AT_LOWER_BOUND</a>
-, <a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bca14dc61f52267ea9b476f64c1d4d975b1">AT_UPPER_BOUND</a>
+<tr class="separator:a07d7f8b78757ed2996056cd79c5603ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f55066a2cd55290e5cc385fbc363205"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205">operations_research::glop::ConstraintStatus</a> : int8_t { <br />
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205ae4ac03f6c9f00665644e868dd1fb9f1e">operations_research::glop::BASIC</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205ae91836db656214f9797e10c15928e501">operations_research::glop::FIXED_VALUE</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205a74c506bd3d744fb5c2862229c8f2b6ce">operations_research::glop::AT_LOWER_BOUND</a>
+, <a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205a14dc61f52267ea9b476f64c1d4d975b1">operations_research::glop::AT_UPPER_BOUND</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a0f6bd47b8956b59589718bd40b1cf8bca88c189a42c87aa49d667fc8ab76bc323">FREE</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205a88c189a42c87aa49d667fc8ab76bc323">operations_research::glop::FREE</a>
 <br />
  }</td></tr>
-<tr class="separator:a0f6bd47b8956b59589718bd40b1cf8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1f55066a2cd55290e5cc385fbc363205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f4dd7648599c2b916463d62bdb0d9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a8f4dd7648599c2b916463d62bdb0d9ac">DEFINE_STRONG_INDEX_TYPE</a> (ColIndex)</td></tr>
-<tr class="separator:a8f4dd7648599c2b916463d62bdb0d9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab50bbaca415bb60c5b94d7c351badb2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ab50bbaca415bb60c5b94d7c351badb2b">DEFINE_STRONG_INDEX_TYPE</a> (RowIndex)</td></tr>
-<tr class="separator:ab50bbaca415bb60c5b94d7c351badb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88df45f432b567efb66ef92794e74b89"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a88df45f432b567efb66ef92794e74b89">RowToColIndex</a> (RowIndex <a class="el" href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>)</td></tr>
-<tr class="separator:a88df45f432b567efb66ef92794e74b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00e1c4b07918d4c210826391d85f4caf"><td class="memItemLeft" align="right" valign="top">RowIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a00e1c4b07918d4c210826391d85f4caf">ColToRowIndex</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>)</td></tr>
-<tr class="separator:a00e1c4b07918d4c210826391d85f4caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81d966b7fc36683e466546140f9bcda5"><td class="memItemLeft" align="right" valign="top">Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a81d966b7fc36683e466546140f9bcda5">ColToIntIndex</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>)</td></tr>
-<tr class="separator:a81d966b7fc36683e466546140f9bcda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b0c89d052a58a465fed2d3ef8a72a5"><td class="memItemLeft" align="right" valign="top">Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a70b0c89d052a58a465fed2d3ef8a72a5">RowToIntIndex</a> (RowIndex <a class="el" href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>)</td></tr>
-<tr class="separator:a70b0c89d052a58a465fed2d3ef8a72a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2e5d69661a76770f18ff2bdeb12d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a7d2e5d69661a76770f18ff2bdeb12d8c">DEFINE_STRONG_INT64_TYPE</a> (EntryIndex)</td></tr>
-<tr class="separator:a7d2e5d69661a76770f18ff2bdeb12d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758d527d88aded51a24b8fc28900f989"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a758d527d88aded51a24b8fc28900f989">ToDouble</a> (double f)</td></tr>
-<tr class="separator:a758d527d88aded51a24b8fc28900f989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad06c2c58537e647f3b31e4c2b453fdbf"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ad06c2c58537e647f3b31e4c2b453fdbf">ToDouble</a> (long double f)</td></tr>
-<tr class="separator:ad06c2c58537e647f3b31e4c2b453fdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11cd2d3038594a0e7b60154ae5c63cc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a11cd2d3038594a0e7b60154ae5c63cc4">IsFinite</a> (Fractional <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a11cd2d3038594a0e7b60154ae5c63cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9d24b535d63f7339cf7f12ea9afd29"><td class="memItemLeft" align="right" valign="top">constexpr RowIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aac9d24b535d63f7339cf7f12ea9afd29">kInvalidRow</a> (-1)</td></tr>
-<tr class="separator:aac9d24b535d63f7339cf7f12ea9afd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af869ee67ff1ca55160e33fef85c51dd2"><td class="memItemLeft" align="right" valign="top">constexpr ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#af869ee67ff1ca55160e33fef85c51dd2">kInvalidCol</a> (-1)</td></tr>
-<tr class="separator:af869ee67ff1ca55160e33fef85c51dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509c4e359e6f7041eddfac3f1c46a92f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a509c4e359e6f7041eddfac3f1c46a92f">GetProblemStatusString</a> (ProblemStatus problem_status)</td></tr>
-<tr class="separator:a509c4e359e6f7041eddfac3f1c46a92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7936f47cd78eaece1f48e8b2642ceefb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a7936f47cd78eaece1f48e8b2642ceefb">operator&lt;&lt;</a> (std::ostream &amp;os, ProblemStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a7936f47cd78eaece1f48e8b2642ceefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae073fb72ea53b6d0f3d7f73cfd6c6ed9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ae073fb72ea53b6d0f3d7f73cfd6c6ed9">GetVariableTypeString</a> (VariableType variable_type)</td></tr>
-<tr class="separator:ae073fb72ea53b6d0f3d7f73cfd6c6ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81b7c713c18b4b35384274bf7a0bcc8"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ae81b7c713c18b4b35384274bf7a0bcc8">operator&lt;&lt;</a> (std::ostream &amp;os, VariableType type)</td></tr>
-<tr class="separator:ae81b7c713c18b4b35384274bf7a0bcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee749790021783ccc83b2d6abe70c1c0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aee749790021783ccc83b2d6abe70c1c0">GetVariableStatusString</a> (VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:aee749790021783ccc83b2d6abe70c1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b6849f223cb94b78147bf20932dce6"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a79b6849f223cb94b78147bf20932dce6">operator&lt;&lt;</a> (std::ostream &amp;os, VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a79b6849f223cb94b78147bf20932dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652ba89cea606e3c3071a288e2d60bba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a652ba89cea606e3c3071a288e2d60bba">GetConstraintStatusString</a> (ConstraintStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a652ba89cea606e3c3071a288e2d60bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a35644e8451aaa1d98ae12cd692e324"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a2a35644e8451aaa1d98ae12cd692e324">operator&lt;&lt;</a> (std::ostream &amp;os, ConstraintStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a2a35644e8451aaa1d98ae12cd692e324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a106449441d3fd61aa70916a147a7d"><td class="memItemLeft" align="right" valign="top">ConstraintStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ab7a106449441d3fd61aa70916a147a7d">VariableToConstraintStatus</a> (VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:ab7a106449441d3fd61aa70916a147a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc75795ba8a3343b1d272c48cf62ba5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#accc75795ba8a3343b1d272c48cf62ba5">DeterministicTimeForFpOperations</a> (int64_t n)</td></tr>
-<tr class="separator:accc75795ba8a3343b1d272c48cf62ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f07f357235e7352998c41f23dfaa4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a56f07f357235e7352998c41f23dfaa4c">operations_research::glop::DEFINE_STRONG_INDEX_TYPE</a> (ColIndex)</td></tr>
+<tr class="separator:a56f07f357235e7352998c41f23dfaa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c6260bc3f163c8df2aeedaf72b7f50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a23c6260bc3f163c8df2aeedaf72b7f50">operations_research::glop::DEFINE_STRONG_INDEX_TYPE</a> (RowIndex)</td></tr>
+<tr class="separator:a23c6260bc3f163c8df2aeedaf72b7f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbc9efd86a3cc862a9079d86ab8b524"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a8fbc9efd86a3cc862a9079d86ab8b524">operations_research::glop::RowToColIndex</a> (RowIndex <a class="el" href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>)</td></tr>
+<tr class="memdesc:a8fbc9efd86a3cc862a9079d86ab8b524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ColIndex corresponding to the column # row.  <br /></td></tr>
+<tr class="separator:a8fbc9efd86a3cc862a9079d86ab8b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65a327cfc2a74c15fa26b91f19acc64"><td class="memItemLeft" align="right" valign="top">RowIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ab65a327cfc2a74c15fa26b91f19acc64">operations_research::glop::ColToRowIndex</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>)</td></tr>
+<tr class="memdesc:ab65a327cfc2a74c15fa26b91f19acc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RowIndex corresponding to the row # col.  <br /></td></tr>
+<tr class="separator:ab65a327cfc2a74c15fa26b91f19acc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b2a1c80c429da3975f1d948f7c27df"><td class="memItemLeft" align="right" valign="top">Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a62b2a1c80c429da3975f1d948f7c27df">operations_research::glop::ColToIntIndex</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>)</td></tr>
+<tr class="memdesc:a62b2a1c80c429da3975f1d948f7c27df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the integer index corresponding to the col.  <br /></td></tr>
+<tr class="separator:a62b2a1c80c429da3975f1d948f7c27df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ae3ca10438618ca2fc81f38dcb80e1"><td class="memItemLeft" align="right" valign="top">Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#af2ae3ca10438618ca2fc81f38dcb80e1">operations_research::glop::RowToIntIndex</a> (RowIndex <a class="el" href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>)</td></tr>
+<tr class="memdesc:af2ae3ca10438618ca2fc81f38dcb80e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the integer index corresponding to the row.  <br /></td></tr>
+<tr class="separator:af2ae3ca10438618ca2fc81f38dcb80e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572fe0a2e3756736dc1729ebaf87636a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a572fe0a2e3756736dc1729ebaf87636a">operations_research::glop::DEFINE_STRONG_INT64_TYPE</a> (EntryIndex)</td></tr>
+<tr class="separator:a572fe0a2e3756736dc1729ebaf87636a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6d278f9d061a91716c6770f2d723e8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#afd6d278f9d061a91716c6770f2d723e8">operations_research::glop::ToDouble</a> (double f)</td></tr>
+<tr class="separator:afd6d278f9d061a91716c6770f2d723e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dd005ef108ecc719f4410fe86a28fe"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a26dd005ef108ecc719f4410fe86a28fe">operations_research::glop::ToDouble</a> (long double f)</td></tr>
+<tr class="separator:a26dd005ef108ecc719f4410fe86a28fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95879916d90daeba91c40399ae5ddcc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a95879916d90daeba91c40399ae5ddcc6">operations_research::glop::IsFinite</a> (Fractional <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a95879916d90daeba91c40399ae5ddcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25f9b16125ee3243c251e703f4fc906"><td class="memItemLeft" align="right" valign="top">constexpr RowIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aa25f9b16125ee3243c251e703f4fc906">operations_research::glop::kInvalidRow</a> (-1)</td></tr>
+<tr class="separator:aa25f9b16125ee3243c251e703f4fc906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018beb56ddb42c633f339aeb4c3939cd"><td class="memItemLeft" align="right" valign="top">constexpr ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a018beb56ddb42c633f339aeb4c3939cd">operations_research::glop::kInvalidCol</a> (-1)</td></tr>
+<tr class="separator:a018beb56ddb42c633f339aeb4c3939cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2acb7bc831ca45f2be2d47bc1c281a9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#af2acb7bc831ca45f2be2d47bc1c281a9">operations_research::glop::GetProblemStatusString</a> (ProblemStatus problem_status)</td></tr>
+<tr class="memdesc:af2acb7bc831ca45f2be2d47bc1c281a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string representation of the ProblemStatus enum.  <br /></td></tr>
+<tr class="separator:af2acb7bc831ca45f2be2d47bc1c281a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addda381da89d90f0b0efb7b4036ee76e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#addda381da89d90f0b0efb7b4036ee76e">operations_research::glop::operator&lt;&lt;</a> (std::ostream &amp;os, ProblemStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:addda381da89d90f0b0efb7b4036ee76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1f223d472f1900339dbe062891f5d0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a0b1f223d472f1900339dbe062891f5d0">operations_research::glop::GetVariableTypeString</a> (VariableType variable_type)</td></tr>
+<tr class="memdesc:a0b1f223d472f1900339dbe062891f5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string representation of the VariableType enum.  <br /></td></tr>
+<tr class="separator:a0b1f223d472f1900339dbe062891f5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf3deb4ede6cfe7f5bb48faa28caf3d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aecf3deb4ede6cfe7f5bb48faa28caf3d">operations_research::glop::operator&lt;&lt;</a> (std::ostream &amp;os, VariableType type)</td></tr>
+<tr class="separator:aecf3deb4ede6cfe7f5bb48faa28caf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591639c73169c1e4bd45b73e56c8aef9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a591639c73169c1e4bd45b73e56c8aef9">operations_research::glop::GetVariableStatusString</a> (VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:a591639c73169c1e4bd45b73e56c8aef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string representation of the VariableStatus enum.  <br /></td></tr>
+<tr class="separator:a591639c73169c1e4bd45b73e56c8aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c295be1c2eb37b74c966598f03e4aea"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a5c295be1c2eb37b74c966598f03e4aea">operations_research::glop::operator&lt;&lt;</a> (std::ostream &amp;os, VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:a5c295be1c2eb37b74c966598f03e4aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b79655f1d343b760704d9a34fdda8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ab8b79655f1d343b760704d9a34fdda8a">operations_research::glop::GetConstraintStatusString</a> (ConstraintStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:ab8b79655f1d343b760704d9a34fdda8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string representation of the ConstraintStatus enum.  <br /></td></tr>
+<tr class="separator:ab8b79655f1d343b760704d9a34fdda8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f5ca9984be8be8c3d5a1d1cad43d9c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ab7f5ca9984be8be8c3d5a1d1cad43d9c">operations_research::glop::operator&lt;&lt;</a> (std::ostream &amp;os, ConstraintStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:ab7f5ca9984be8be8c3d5a1d1cad43d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae705f98e76f1fc4564880c29c8f4631f"><td class="memItemLeft" align="right" valign="top">ConstraintStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#ae705f98e76f1fc4564880c29c8f4631f">operations_research::glop::VariableToConstraintStatus</a> (VariableStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="memdesc:ae705f98e76f1fc4564880c29c8f4631f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ConstraintStatus corresponding to a given VariableStatus.  <br /></td></tr>
+<tr class="separator:ae705f98e76f1fc4564880c29c8f4631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb714d776d86539dbb9f42ae5d7d923"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#aedb714d776d86539dbb9f42ae5d7d923">operations_research::glop::DeterministicTimeForFpOperations</a> (int64_t n)</td></tr>
+<tr class="separator:aedb714d776d86539dbb9f42ae5d7d923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6f97c6a57a94f6f38729ca809689d395"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a6f97c6a57a94f6f38729ca809689d395">kRangeMax</a> = std::numeric_limits&lt;double&gt;<a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">::max</a>()</td></tr>
-<tr class="separator:a6f97c6a57a94f6f38729ca809689d395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a649a0e24412692f36d1d6c1301caf1d1"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a649a0e24412692f36d1d6c1301caf1d1">kInfinity</a> = std::numeric_limits&lt;double&gt;::infinity()</td></tr>
-<tr class="separator:a649a0e24412692f36d1d6c1301caf1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df379b283a801aa08771af3f657b7f5"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a2df379b283a801aa08771af3f657b7f5">kEpsilon</a> = std::numeric_limits&lt;double&gt;::epsilon()</td></tr>
-<tr class="separator:a2df379b283a801aa08771af3f657b7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4e367d4a9e34c40612fcd3cf439270"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a7e4e367d4a9e34c40612fcd3cf439270">operations_research::glop::kRangeMax</a> = std::numeric_limits&lt;double&gt;<a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">::max</a>()</td></tr>
+<tr class="memdesc:a7e4e367d4a9e34c40612fcd3cf439270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range max for type Fractional. DBL_MAX for double for example.  <br /></td></tr>
+<tr class="separator:a7e4e367d4a9e34c40612fcd3cf439270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073868a91ec87d04bc963609af7806b6"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#a073868a91ec87d04bc963609af7806b6">operations_research::glop::kInfinity</a> = std::numeric_limits&lt;double&gt;::infinity()</td></tr>
+<tr class="memdesc:a073868a91ec87d04bc963609af7806b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infinity for type Fractional.  <br /></td></tr>
+<tr class="separator:a073868a91ec87d04bc963609af7806b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbafbe0d29ec4744f0a01d846597889"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1glop.html#acfbafbe0d29ec4744f0a01d846597889">operations_research::glop::kEpsilon</a> = std::numeric_limits&lt;double&gt;::epsilon()</td></tr>
+<tr class="memdesc:acfbafbe0d29ec4744f0a01d846597889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon for type Fractional, i.e. the smallest e such that 1.0 + e != 1.0 .  <br /></td></tr>
+<tr class="separator:acfbafbe0d29ec4744f0a01d846597889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_903a7ff076ee7f01be86992fe717fc82.html">lp_data</a></li><li class="navelem"><a class="el" href="lp__types_8h.html">lp_types.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

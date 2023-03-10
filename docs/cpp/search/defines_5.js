@@ -2,6 +2,5 @@ var searchData=
 [
   ['flex_5fscanner_0',['FLEX_SCANNER',['../parser_8yy_8cc.html#a3c3d1ef92e93b0bc81d7760a73d5c3b6',1,'parser.yy.cc']]],
   ['flexint_5fh_1',['FLEXINT_H',['../parser_8yy_8cc.html#aec980b5a71bbe6d67931df20f0ebaec4',1,'parser.yy.cc']]],
-  ['forty_5ftwo_2',['FORTY_TWO',['../dump__vars__test_8cc.html#aec055c488d186bdab1d8d558ffff4b46',1,'dump_vars_test.cc']]],
-  ['freecb_5fargs_3',['FREECB_ARGS',['../environment_8h.html#a44e6093be90f69d1250ec6e95efe21e2',1,'environment.h']]]
+  ['freecb_5fargs_2',['FREECB_ARGS',['../environment_8h.html#a44e6093be90f69d1250ec6e95efe21e2',1,'environment.h']]]
 ];

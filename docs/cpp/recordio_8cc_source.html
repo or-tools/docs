@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: recordio.cc Source File</title>
+<title>Google OR-Tools: ortools/base/recordio.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -119,14 +119,14 @@ $(document).ready(function(){initNavTree('recordio_8cc_source.html',''); initRes
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="base_2logging_8h.html">ortools/base/logging.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacerecordio.html">   23</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerecordio.html">recordio</a> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classrecordio_1_1_record_writer.html#a02e12506b860e66bf8706eb414fa165e">RecordWriter::kMagicNumber</a> = 0x3ed7230a;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classrecordio_1_1RecordWriter.html#a82a7dfbe342194684eb3d27566dfd611">RecordWriter::kMagicNumber</a> = 0x3ed7230a;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classrecordio_1_1_record_writer.html#a3bb1bd5f31cd743b4992e21ec837c3d5">   26</a></span><a class="code hl_function" href="classrecordio_1_1_record_writer.html#a3bb1bd5f31cd743b4992e21ec837c3d5">RecordWriter::RecordWriter</a>(<a class="code hl_class" href="class_file.html">File</a>* <span class="keyword">const</span> <a class="code hl_namespace" href="namespacefile.html">file</a>)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classrecordio_1_1RecordWriter.html#aabd83ea1bd1b335747ec34381b5a1c85">   26</a></span><a class="code hl_function" href="classrecordio_1_1RecordWriter.html#aabd83ea1bd1b335747ec34381b5a1c85">RecordWriter::RecordWriter</a>(<a class="code hl_class" href="classFile.html">File</a>* <span class="keyword">const</span> <a class="code hl_namespace" href="namespacefile.html">file</a>)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    : file_(<a class="code hl_namespace" href="namespacefile.html">file</a>), use_compression_(true) {}</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classrecordio_1_1_record_writer.html#aef7e3d18ef267f23f64ad397fa359cc1">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classrecordio_1_1_record_writer.html#aef7e3d18ef267f23f64ad397fa359cc1">RecordWriter::Close</a>() { <span class="keywordflow">return</span> file_-&gt;<a class="code hl_function" href="class_file.html#aef7e3d18ef267f23f64ad397fa359cc1">Close</a>(); }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classrecordio_1_1RecordWriter.html#a311824c9cb7dbccd874c335d134d891f">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classrecordio_1_1RecordWriter.html#a311824c9cb7dbccd874c335d134d891f">RecordWriter::Close</a>() { <span class="keywordflow">return</span> file_-&gt;<a class="code hl_function" href="classFile.html#ad7ab440b2fba02aa291ecf5a00de8b8d">Close</a>(); }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classrecordio_1_1_record_writer.html#ac9dbc3fc3f2746caeebf5d372bfc8ebc">   31</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classrecordio_1_1_record_writer.html#ac9dbc3fc3f2746caeebf5d372bfc8ebc">RecordWriter::set_use_compression</a>(<span class="keywordtype">bool</span> use_compression) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classrecordio_1_1RecordWriter.html#a180866ef6c9e4364a5121f85bd78d397">   31</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classrecordio_1_1RecordWriter.html#a180866ef6c9e4364a5121f85bd78d397">RecordWriter::set_use_compression</a>(<span class="keywordtype">bool</span> use_compression) {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  use_compression_ = use_compression;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
@@ -147,9 +147,9 @@ $(document).ready(function(){initNavTree('recordio_8cc_source.html',''); initRes
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">return</span> std::string(destination.get(), dsize);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classrecordio_1_1_record_reader.html#a2e00cf22bc775cb3941575287e3d28d6">   52</a></span><a class="code hl_function" href="classrecordio_1_1_record_reader.html#a2e00cf22bc775cb3941575287e3d28d6">RecordReader::RecordReader</a>(<a class="code hl_class" href="class_file.html">File</a>* <span class="keyword">const</span> <a class="code hl_namespace" href="namespacefile.html">file</a>) : file_(<a class="code hl_namespace" href="namespacefile.html">file</a>) {}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classrecordio_1_1RecordReader.html#a3a2feb07695faca6c15a191889d52618">   52</a></span><a class="code hl_function" href="classrecordio_1_1RecordReader.html#a3a2feb07695faca6c15a191889d52618">RecordReader::RecordReader</a>(<a class="code hl_class" href="classFile.html">File</a>* <span class="keyword">const</span> <a class="code hl_namespace" href="namespacefile.html">file</a>) : file_(<a class="code hl_namespace" href="namespacefile.html">file</a>) {}</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classrecordio_1_1_record_reader.html#aef7e3d18ef267f23f64ad397fa359cc1">   54</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classrecordio_1_1_record_reader.html#aef7e3d18ef267f23f64ad397fa359cc1">RecordReader::Close</a>() { <span class="keywordflow">return</span> file_-&gt;<a class="code hl_function" href="class_file.html#aef7e3d18ef267f23f64ad397fa359cc1">Close</a>(); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classrecordio_1_1RecordReader.html#a421c8ec91fad5c76306c83dd57bde04e">   54</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classrecordio_1_1RecordReader.html#a421c8ec91fad5c76306c83dd57bde04e">RecordReader::Close</a>() { <span class="keywordflow">return</span> file_-&gt;<a class="code hl_function" href="classFile.html#ad7ab440b2fba02aa291ecf5a00de8b8d">Close</a>(); }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> RecordReader::Uncompress(<span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> source, uint64_t source_size,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                              <span class="keywordtype">char</span>* <span class="keyword">const</span> output_buffer,</div>
@@ -166,27 +166,24 @@ $(document).ready(function(){initNavTree('recordio_8cc_source.html',''); initRes
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace recordio</span></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
-<div class="ttc" id="aclass_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8h_source.html#l00033">base/file.h:33</a></div></div>
-<div class="ttc" id="aclass_file_html_aef7e3d18ef267f23f64ad397fa359cc1"><div class="ttname"><a href="class_file.html#aef7e3d18ef267f23f64ad397fa359cc1">File::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8cc_source.html#l00049">base/file.cc:49</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_reader_html_a2e00cf22bc775cb3941575287e3d28d6"><div class="ttname"><a href="classrecordio_1_1_record_reader.html#a2e00cf22bc775cb3941575287e3d28d6">recordio::RecordReader::RecordReader</a></div><div class="ttdeci">RecordReader(File *const file)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00052">recordio.cc:52</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_reader_html_aef7e3d18ef267f23f64ad397fa359cc1"><div class="ttname"><a href="classrecordio_1_1_record_reader.html#aef7e3d18ef267f23f64ad397fa359cc1">recordio::RecordReader::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00054">recordio.cc:54</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_writer_html_a02e12506b860e66bf8706eb414fa165e"><div class="ttname"><a href="classrecordio_1_1_record_writer.html#a02e12506b860e66bf8706eb414fa165e">recordio::RecordWriter::kMagicNumber</a></div><div class="ttdeci">static const int kMagicNumber</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8h_source.html#l00036">recordio.h:36</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_writer_html_a3bb1bd5f31cd743b4992e21ec837c3d5"><div class="ttname"><a href="classrecordio_1_1_record_writer.html#a3bb1bd5f31cd743b4992e21ec837c3d5">recordio::RecordWriter::RecordWriter</a></div><div class="ttdeci">RecordWriter(File *const file)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00026">recordio.cc:26</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_writer_html_ac9dbc3fc3f2746caeebf5d372bfc8ebc"><div class="ttname"><a href="classrecordio_1_1_record_writer.html#ac9dbc3fc3f2746caeebf5d372bfc8ebc">recordio::RecordWriter::set_use_compression</a></div><div class="ttdeci">void set_use_compression(bool use_compression)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00031">recordio.cc:31</a></div></div>
-<div class="ttc" id="aclassrecordio_1_1_record_writer_html_aef7e3d18ef267f23f64ad397fa359cc1"><div class="ttname"><a href="classrecordio_1_1_record_writer.html#aef7e3d18ef267f23f64ad397fa359cc1">recordio::RecordWriter::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00029">recordio.cc:29</a></div></div>
-<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8cc_source.html#l00142">base/file.cc:142</a></div></div>
+<div class="ttc" id="aclassFile_html"><div class="ttname"><a href="classFile.html">File</a></div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8h_source.html#l00033">file.h:33</a></div></div>
+<div class="ttc" id="aclassFile_html_ad7ab440b2fba02aa291ecf5a00de8b8d"><div class="ttname"><a href="classFile.html#ad7ab440b2fba02aa291ecf5a00de8b8d">File::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdoc">Closes the file.</div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8cc_source.html#l00049">file.cc:49</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordReader_html_a3a2feb07695faca6c15a191889d52618"><div class="ttname"><a href="classrecordio_1_1RecordReader.html#a3a2feb07695faca6c15a191889d52618">recordio::RecordReader::RecordReader</a></div><div class="ttdeci">RecordReader(File *const file)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00052">recordio.cc:52</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordReader_html_a421c8ec91fad5c76306c83dd57bde04e"><div class="ttname"><a href="classrecordio_1_1RecordReader.html#a421c8ec91fad5c76306c83dd57bde04e">recordio::RecordReader::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdoc">Closes the underlying file.</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00054">recordio.cc:54</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordWriter_html_a180866ef6c9e4364a5121f85bd78d397"><div class="ttname"><a href="classrecordio_1_1RecordWriter.html#a180866ef6c9e4364a5121f85bd78d397">recordio::RecordWriter::set_use_compression</a></div><div class="ttdeci">void set_use_compression(bool use_compression)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00031">recordio.cc:31</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordWriter_html_a311824c9cb7dbccd874c335d134d891f"><div class="ttname"><a href="classrecordio_1_1RecordWriter.html#a311824c9cb7dbccd874c335d134d891f">recordio::RecordWriter::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdoc">Closes the underlying file.</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00029">recordio.cc:29</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordWriter_html_a82a7dfbe342194684eb3d27566dfd611"><div class="ttname"><a href="classrecordio_1_1RecordWriter.html#a82a7dfbe342194684eb3d27566dfd611">recordio::RecordWriter::kMagicNumber</a></div><div class="ttdeci">static const int kMagicNumber</div><div class="ttdoc">Magic number when reading and writing protocol buffers.</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8h_source.html#l00036">recordio.h:36</a></div></div>
+<div class="ttc" id="aclassrecordio_1_1RecordWriter_html_aabd83ea1bd1b335747ec34381b5a1c85"><div class="ttname"><a href="classrecordio_1_1RecordWriter.html#aabd83ea1bd1b335747ec34381b5a1c85">recordio::RecordWriter::RecordWriter</a></div><div class="ttdeci">RecordWriter(File *const file)</div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00026">recordio.cc:26</a></div></div>
+<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition:</b> <a href="base_2file_8cc_source.html#l00142">file.cc:142</a></div></div>
 <div class="ttc" id="anamespacerecordio_html"><div class="ttname"><a href="namespacerecordio.html">recordio</a></div><div class="ttdef"><b>Definition:</b> <a href="recordio_8cc_source.html#l00023">recordio.cc:23</a></div></div>
 <div class="ttc" id="arecordio_8h_html"><div class="ttname"><a href="recordio_8h.html">recordio.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="recordio_8cc.html">recordio.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

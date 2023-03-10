@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: scip_proto_solver.cc File Reference</title>
+<title>Google OR-Tools: ortools/linear_solver/proto_solver/scip_proto_solver.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,23 +99,64 @@ $(document).ready(function(){initNavTree('scip__proto__solver_8cc.html',''); ini
   <div class="headertitle"><div class="title">scip_proto_solver.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="scip__proto__solver_8h_source.html">ortools/linear_solver/proto_solver/scip_proto_solver.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/strings/ascii.h&quot;</code><br />
+<code>#include &quot;absl/strings/numbers.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_split.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cleanup_8h_source.html">ortools/base/cleanup.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="legacy__scip__params_8h_source.html">ortools/gscip/legacy_scip_params.h</a>&quot;</code><br />
+<code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__solver_2model__validator_8h_source.html">ortools/linear_solver/model_validator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="scip__helper__macros_8h_source.html">ortools/linear_solver/scip_helper_macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lazy__mutable__copy_8h_source.html">ortools/util/lazy_mutable_copy.h</a>&quot;</code><br />
+<code>#include &quot;scip/cons_disjunction.h&quot;</code><br />
+<code>#include &quot;scip/cons_linear.h&quot;</code><br />
+<code>#include &quot;scip/cons_quadratic.h&quot;</code><br />
+<code>#include &quot;scip/pub_var.h&quot;</code><br />
+<code>#include &quot;scip/scip.h&quot;</code><br />
+<code>#include &quot;scip/scip_param.h&quot;</code><br />
+<code>#include &quot;scip/scip_prob.h&quot;</code><br />
+<code>#include &quot;scip/scip_var.h&quot;</code><br />
+<code>#include &quot;scip/scipdefplugins.h&quot;</code><br />
+<code>#include &quot;scip/set.h&quot;</code><br />
+<code>#include &quot;scip/struct_paramset.h&quot;</code><br />
+<code>#include &quot;scip/type_cons.h&quot;</code><br />
+<code>#include &quot;scip/type_paramset.h&quot;</code><br />
+<code>#include &quot;scip/type_var.h&quot;</code><br />
+</div>
 <p><a href="scip__proto__solver_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abd48e1f129a1b82575d25e61c1568b3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scip__proto__solver_8cc.html#abd48e1f129a1b82575d25e61c1568b3d">ABSL_FLAG</a> (std::string, scip_proto_solver_output_cip_file, &quot;&quot;, &quot;If given, saves the generated CIP file here. Useful for &quot; &quot;reporting bugs to SCIP.&quot;)</td></tr>
+<tr class="memitem:abd48e1f129a1b82575d25e61c1568b3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scip__proto__solver_8cc.html#abd48e1f129a1b82575d25e61c1568b3d">ABSL_FLAG</a> (std::string, scip_proto_solver_output_cip_file, &quot;&quot;, &quot;If given, saves the generated CIP file here. Useful for &quot; &quot;reporting bugs <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> SCIP.&quot;)</td></tr>
 <tr class="separator:abd48e1f129a1b82575d25e61c1568b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af5034c3ae4d9e97bd8753ec6cf8c8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1af5034c3ae4d9e97bd8753ec6cf8c8c">FindErrorInMPModelForScip</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, SCIP *scip)</td></tr>
-<tr class="separator:a1af5034c3ae4d9e97bd8753ec6cf8c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b332c199c0cef58c53a677fdfa4996d"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSolutionResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2b332c199c0cef58c53a677fdfa4996d">ScipSolveProto</a> (const MPModelRequest &amp;request)</td></tr>
-<tr class="separator:a2b332c199c0cef58c53a677fdfa4996d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e9281c1171464ebe338ecf0cfd82d0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a65e9281c1171464ebe338ecf0cfd82d0">operations_research::FindErrorInMPModelForScip</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, SCIP *scip)</td></tr>
+<tr class="separator:a65e9281c1171464ebe338ecf0cfd82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d8f5240dd61e247cf8bb891d03132f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSolutionResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a15d8f5240dd61e247cf8bb891d03132f">operations_research::ScipSolveProto</a> (const MPModelRequest &amp;request)</td></tr>
+<tr class="separator:a15d8f5240dd61e247cf8bb891d03132f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abd48e1f129a1b82575d25e61c1568b3d" name="abd48e1f129a1b82575d25e61c1568b3d"></a>
@@ -151,7 +192,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">saves the generated CIP file here. Useful for &quot; &quot;reporting bugs to SCIP.&quot;&#160;</td>
+          <td class="paramtype">saves the generated CIP file here. Useful for &quot; &quot;reporting bugs <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> SCIP.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -161,19 +202,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="dir_6dae5460979ea2b3257730a5461476fb.html">proto_solver</a></li><li class="navelem"><a class="el" href="scip__proto__solver_8cc.html">scip_proto_solver.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: eulerian_path.h File Reference</title>
+<title>Google OR-Tools: ortools/graph/eulerian_path.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,51 +99,52 @@ $(document).ready(function(){initNavTree('eulerian__path_8h.html',''); initResiz
   <div class="headertitle"><div class="title">eulerian_path.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+</div>
 <p><a href="eulerian__path_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html">operations_research::internal</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details, here and below. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d531ea05c9da4905f319b9ae090e901"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
-<tr class="memitem:a6d531ea05c9da4905f319b9ae090e901"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a6d531ea05c9da4905f319b9ae090e901">GraphIsConnected</a> (const Graph &amp;graph)</td></tr>
-<tr class="separator:a6d531ea05c9da4905f319b9ae090e901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3aad5d14d936eddf94f74714e8a09ca"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
-<tr class="memitem:aa3aad5d14d936eddf94f74714e8a09ca"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa3aad5d14d936eddf94f74714e8a09ca">IsEulerianGraph</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
-<tr class="separator:aa3aad5d14d936eddf94f74714e8a09ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c8db2cb596dcae879a81aa49fb3826"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
-<tr class="memitem:ad9c8db2cb596dcae879a81aa49fb3826"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad9c8db2cb596dcae879a81aa49fb3826">IsSemiEulerianGraph</a> (const Graph &amp;graph, std::vector&lt; NodeIndex &gt; *odd_nodes, bool assume_connectivity=true)</td></tr>
-<tr class="separator:ad9c8db2cb596dcae879a81aa49fb3826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97c6302e3c1fa5092d2eb47fa75f771b"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
-<tr class="memitem:a97c6302e3c1fa5092d2eb47fa75f771b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a97c6302e3c1fa5092d2eb47fa75f771b">BuildEulerianPathFromNode</a> (const Graph &amp;graph, NodeIndex root)</td></tr>
-<tr class="separator:a97c6302e3c1fa5092d2eb47fa75f771b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb2b0539f362e5ac281445c2fb693bd6"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
-<tr class="memitem:acb2b0539f362e5ac281445c2fb693bd6"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acb2b0539f362e5ac281445c2fb693bd6">BuildEulerianTourFromNode</a> (const Graph &amp;graph, NodeIndex root, bool assume_connectivity=true)</td></tr>
-<tr class="separator:acb2b0539f362e5ac281445c2fb693bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6ff0d3b3141beaa9bb0d62810e6164"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
-<tr class="memitem:afd6ff0d3b3141beaa9bb0d62810e6164"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; typename Graph::NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afd6ff0d3b3141beaa9bb0d62810e6164">BuildEulerianTour</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
-<tr class="separator:afd6ff0d3b3141beaa9bb0d62810e6164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fa578ff8cc7778df97a94d32a3e07b"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
-<tr class="memitem:a90fa578ff8cc7778df97a94d32a3e07b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; typename Graph::NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a90fa578ff8cc7778df97a94d32a3e07b">BuildEulerianPath</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
-<tr class="separator:a90fa578ff8cc7778df97a94d32a3e07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
+<tr class="memitem:adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#adeaf341ffaa35e9a3478aeb95f2c580a">operations_research::internal::GraphIsConnected</a> (const Graph &amp;graph)</td></tr>
+<tr class="separator:adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094e0053b356fcf8aabb01a43b6ef607"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
+<tr class="memitem:a094e0053b356fcf8aabb01a43b6ef607"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a094e0053b356fcf8aabb01a43b6ef607">operations_research::IsEulerianGraph</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
+<tr class="memdesc:a094e0053b356fcf8aabb01a43b6ef607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a graph is Eulerian, aka all its nodes are of even degree.  <br /></td></tr>
+<tr class="separator:a094e0053b356fcf8aabb01a43b6ef607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ca53991280f221a8606fe5d9626b3b"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
+<tr class="memitem:ae7ca53991280f221a8606fe5d9626b3b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae7ca53991280f221a8606fe5d9626b3b">operations_research::IsSemiEulerianGraph</a> (const Graph &amp;graph, std::vector&lt; NodeIndex &gt; *odd_nodes, bool assume_connectivity=true)</td></tr>
+<tr class="separator:ae7ca53991280f221a8606fe5d9626b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea46f8caebe966fcd0739c713011693e"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
+<tr class="memitem:aea46f8caebe966fcd0739c713011693e"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aea46f8caebe966fcd0739c713011693e">operations_research::BuildEulerianPathFromNode</a> (const Graph &amp;graph, NodeIndex root)</td></tr>
+<tr class="separator:aea46f8caebe966fcd0739c713011693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642f74ae34ab3dd5c0e159f7123d631e"><td class="memTemplParams" colspan="2">template&lt;typename NodeIndex , typename Graph &gt; </td></tr>
+<tr class="memitem:a642f74ae34ab3dd5c0e159f7123d631e"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a642f74ae34ab3dd5c0e159f7123d631e">operations_research::BuildEulerianTourFromNode</a> (const Graph &amp;graph, NodeIndex root, bool assume_connectivity=true)</td></tr>
+<tr class="separator:a642f74ae34ab3dd5c0e159f7123d631e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63ed602a50a27a0e1d4c23b30c0644a"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
+<tr class="memitem:ae63ed602a50a27a0e1d4c23b30c0644a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; typename Graph::NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae63ed602a50a27a0e1d4c23b30c0644a">operations_research::BuildEulerianTour</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
+<tr class="separator:ae63ed602a50a27a0e1d4c23b30c0644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103de97f739452016a7fd9ed9fa9d6cc"><td class="memTemplParams" colspan="2">template&lt;typename Graph &gt; </td></tr>
+<tr class="memitem:a103de97f739452016a7fd9ed9fa9d6cc"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; typename Graph::NodeIndex &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a103de97f739452016a7fd9ed9fa9d6cc">operations_research::BuildEulerianPath</a> (const Graph &amp;graph, bool assume_connectivity=true)</td></tr>
+<tr class="separator:a103de97f739452016a7fd9ed9fa9d6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_725f3a5915051842f84e3ea508be2a62.html">graph</a></li><li class="navelem"><a class="el" href="eulerian__path_8h.html">eulerian_path.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: cp_model_checker.cc File Reference</title>
+<title>Google OR-Tools: ortools/sat/cp_model_checker.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,13 +100,34 @@ $(document).ready(function(){initNavTree('cp__model__checker_8cc.html',''); init
   <div class="headertitle"><div class="title">cp_model_checker.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="cp__model__checker_8h_source.html">ortools/sat/cp_model_checker.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/btree_map.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/meta/type_traits.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
+</div>
 <p><a href="cp__model__checker_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,18 +135,19 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a3e1c76fd35f9e427dbdf7aac0f5df39c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__checker_8cc.html#a3e1c76fd35f9e427dbdf7aac0f5df39c">RETURN_IF_NOT_EMPTY</a>(statement)</td></tr>
+<tr class="memdesc:a3e1c76fd35f9e427dbdf7aac0f5df39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the string returned by "statement" is not empty, returns it.  <br /></td></tr>
 <tr class="separator:a3e1c76fd35f9e427dbdf7aac0f5df39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa9c7aca5ce73e92a33dda7cf613d9703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa9c7aca5ce73e92a33dda7cf613d9703">PossibleIntegerOverflow</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, absl::Span&lt; const int &gt; vars, absl::Span&lt; const int64_t &gt; coeffs, int64_t offset)</td></tr>
-<tr class="separator:aa9c7aca5ce73e92a33dda7cf613d9703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c80376e10149bbba4019a88c934d67b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7c80376e10149bbba4019a88c934d67b">ValidateCpModel</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool after_presolve)</td></tr>
-<tr class="separator:a7c80376e10149bbba4019a88c934d67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d21677eccfe4c93af71c0892235237e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2d21677eccfe4c93af71c0892235237e">ValidateInputCpModel</a> (const SatParameters &amp;params, const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a2d21677eccfe4c93af71c0892235237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae27aa978d3e2cea46f639ea227305b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3ae27aa978d3e2cea46f639ea227305b">SolutionIsFeasible</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, absl::Span&lt; const int64_t &gt; variable_values, const CpModelProto *mapping_proto, const std::vector&lt; int &gt; *postsolve_mapping)</td></tr>
-<tr class="separator:a3ae27aa978d3e2cea46f639ea227305b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b1038b63ced09f0c7239a726dbe790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a94b1038b63ced09f0c7239a726dbe790">operations_research::sat::PossibleIntegerOverflow</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, absl::Span&lt; const int &gt; vars, absl::Span&lt; const int64_t &gt; coeffs, int64_t offset)</td></tr>
+<tr class="separator:a94b1038b63ced09f0c7239a726dbe790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eec7d4958da587ee893e334ab7756cc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2eec7d4958da587ee893e334ab7756cc">operations_research::sat::ValidateCpModel</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool after_presolve)</td></tr>
+<tr class="separator:a2eec7d4958da587ee893e334ab7756cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2073b9c892ac56b197b31cb583e25f3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2073b9c892ac56b197b31cb583e25f3d">operations_research::sat::ValidateInputCpModel</a> (const SatParameters &amp;params, const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a2073b9c892ac56b197b31cb583e25f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336d2faa10d80d646232f5e6d91891d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a336d2faa10d80d646232f5e6d91891d4">operations_research::sat::SolutionIsFeasible</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, absl::Span&lt; const int64_t &gt; variable_values, const CpModelProto *mapping_proto, const std::vector&lt; int &gt; *postsolve_mapping)</td></tr>
+<tr class="separator:a336d2faa10d80d646232f5e6d91891d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3e1c76fd35f9e427dbdf7aac0f5df39c" name="a3e1c76fd35f9e427dbdf7aac0f5df39c"></a>
@@ -148,20 +170,20 @@ Functions</h2></td></tr>
 <div class="line">    if (!error_message.empty()) return error_message; \</div>
 <div class="line">  } while (false)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="cp__model__checker_8cc_source.html#l00047">47</a> of file <a class="el" href="cp__model__checker_8cc_source.html">cp_model_checker.cc</a>.</p>
+<p>If the string returned by "statement" is not empty, returns it. </p>
+<p>CpModelProto validation. </p>
+
+<p class="definition">Definition at line <a class="el" href="cp__model__checker_8cc_source.html#l00049">49</a> of file <a class="el" href="cp__model__checker_8cc_source.html">cp_model_checker.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="cp__model__checker_8cc.html">cp_model_checker.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

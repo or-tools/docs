@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['reservoirconstraint_0',['ReservoirConstraint',['../classoperations__research_1_1sat_1_1_bool_var.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::BoolVar::ReservoirConstraint()'],['../classoperations__research_1_1sat_1_1_int_var.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::IntVar::ReservoirConstraint()'],['../classoperations__research_1_1sat_1_1_cp_model_builder.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::CpModelBuilder::ReservoirConstraint()']]],
-  ['resource_1',['Resource',['../classoperations__research_1_1_routing_model.html#a9c159d11affae2391f2faa151037e098',1,'operations_research::RoutingModel']]],
-  ['resourcegroup_2',['ResourceGroup',['../classoperations__research_1_1_routing_model_1_1_resource_group_1_1_resource.html#a3b7404d3da605d5cd9e5e6187983ca20',1,'operations_research::RoutingModel::ResourceGroup::Resource']]],
-  ['revbitmatrix_3',['RevBitMatrix',['../classoperations__research_1_1_rev_bit_set.html#ac9da3e5301f8c4c0ed8a261d0a0b2cbd',1,'operations_research::RevBitSet']]],
-  ['revimmutablemultimap_4',['RevImmutableMultiMap',['../classoperations__research_1_1_solver.html#a523b4c1786dd34b9d1fa2579b91b4c0d',1,'operations_research::Solver']]],
-  ['routingdimension_5',['RoutingDimension',['../classoperations__research_1_1_routing_model.html#a50ba9dd11704e0be7edaa9e9f24142ff',1,'operations_research::RoutingModel']]],
-  ['routingmodel_6',['RoutingModel',['../classoperations__research_1_1_solver.html#ab7aef297f0c654af26dc7108c9ee6c69',1,'operations_research::Solver::RoutingModel()'],['../classoperations__research_1_1_routing_dimension.html#ab7aef297f0c654af26dc7108c9ee6c69',1,'operations_research::RoutingDimension::RoutingModel()']]],
-  ['routingmodelinspector_7',['RoutingModelInspector',['../classoperations__research_1_1_routing_model.html#a00141bd90e555aea59a9e98cfbcda6eb',1,'operations_research::RoutingModel::RoutingModelInspector()'],['../classoperations__research_1_1_routing_dimension.html#a00141bd90e555aea59a9e98cfbcda6eb',1,'operations_research::RoutingDimension::RoutingModelInspector()']]]
+  ['reservoirconstraint_0',['ReservoirConstraint',['../classoperations__research_1_1sat_1_1BoolVar.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::BoolVar::ReservoirConstraint()'],['../classoperations__research_1_1sat_1_1IntVar.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::IntVar::ReservoirConstraint()'],['../classoperations__research_1_1sat_1_1CpModelBuilder.html#ae0ff478f6506cb705bbc1737598276f4',1,'operations_research::sat::CpModelBuilder::ReservoirConstraint()']]],
+  ['revbitmatrix_1',['RevBitMatrix',['../classoperations__research_1_1RevBitSet.html#ac9da3e5301f8c4c0ed8a261d0a0b2cbd',1,'operations_research::RevBitSet']]],
+  ['revimmutablemultimap_2',['RevImmutableMultiMap',['../classoperations__research_1_1Solver.html#a523b4c1786dd34b9d1fa2579b91b4c0d',1,'operations_research::Solver']]],
+  ['routingmodel_3',['RoutingModel',['../classoperations__research_1_1Solver.html#ab7aef297f0c654af26dc7108c9ee6c69',1,'operations_research::Solver']]]
 ];

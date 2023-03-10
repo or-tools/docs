@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: numbers.cc File Reference</title>
+<title>Google OR-Tools: ortools/base/numbers.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -95,61 +95,77 @@ $(document).ready(function(){initNavTree('numbers_8cc.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">numbers.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="numbers_8h_source.html">ortools/base/numbers.h</a>&quot;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;cfloat&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;absl/strings/ascii.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="strtoint_8h_source.html">ortools/base/strtoint.h</a>&quot;</code><br />
+</div>
 <p><a href="numbers_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacestrings"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html">strings</a></td></tr>
+<tr class="memdesc:namespacestrings"><td class="mdescLeft">&#160;</td><td class="mdescRight">#include "ortools/base/logging.h" <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a39b4eabda924613c2a6400cc2a2a1b44"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a39b4eabda924613c2a6400cc2a2a1b44">strtoint64</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:a39b4eabda924613c2a6400cc2a2a1b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ded1a7db72692d21aa4285ab103d66"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a24ded1a7db72692d21aa4285ab103d66">strtouint64</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:a24ded1a7db72692d21aa4285ab103d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0dedb5932926cdf78a72fc294345ffb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa0dedb5932926cdf78a72fc294345ffb">strtoint32</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:aa0dedb5932926cdf78a72fc294345ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7938f68c2c0c42f0f57814cf6d4b8c68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7938f68c2c0c42f0f57814cf6d4b8c68">strtouint32</a> (const char *nptr, char **endptr, int base)</td></tr>
-<tr class="separator:a7938f68c2c0c42f0f57814cf6d4b8c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3add1e1c17392fe4fed778e1516a7611"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3add1e1c17392fe4fed778e1516a7611">ParseLeadingInt32Value</a> (const char *str, int32_t deflt)</td></tr>
-<tr class="separator:a3add1e1c17392fe4fed778e1516a7611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c47e6506da307afc2eef1548a787c9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a60c47e6506da307afc2eef1548a787c9">ParseLeadingUInt32Value</a> (const char *str, uint32_t deflt)</td></tr>
-<tr class="separator:a60c47e6506da307afc2eef1548a787c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5996b1b5f81179a8327137d05a1c246b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a5996b1b5f81179a8327137d05a1c246b">ParseLeadingDec32Value</a> (const char *str, int32_t deflt)</td></tr>
-<tr class="separator:a5996b1b5f81179a8327137d05a1c246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2842c477f26c4b3234c190511c6991"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a0b2842c477f26c4b3234c190511c6991">ParseLeadingUDec32Value</a> (const char *str, uint32_t deflt)</td></tr>
-<tr class="separator:a0b2842c477f26c4b3234c190511c6991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec74709ad099d2e9845a9ee1a0f3bb03"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aec74709ad099d2e9845a9ee1a0f3bb03">ParseLeadingUInt64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:aec74709ad099d2e9845a9ee1a0f3bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f256880dacb98892fdf9978381e1009"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a1f256880dacb98892fdf9978381e1009">ParseLeadingInt64Value</a> (const char *str, int64_t deflt)</td></tr>
-<tr class="separator:a1f256880dacb98892fdf9978381e1009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3abd042b4fb9a1f82f61e39dc46a7534"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a3abd042b4fb9a1f82f61e39dc46a7534">ParseLeadingHex64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:a3abd042b4fb9a1f82f61e39dc46a7534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457e99634f75010e743e5ef7394c085e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a457e99634f75010e743e5ef7394c085e">ParseLeadingDec64Value</a> (const char *str, int64_t deflt)</td></tr>
-<tr class="separator:a457e99634f75010e743e5ef7394c085e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a0ff3a63fa3debd78982148733cb0b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a05a0ff3a63fa3debd78982148733cb0b">ParseLeadingUDec64Value</a> (const char *str, uint64_t deflt)</td></tr>
-<tr class="separator:a05a0ff3a63fa3debd78982148733cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8cc5f3394e5926274aea401ef0d9c7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#abb8cc5f3394e5926274aea401ef0d9c7">ParseLeadingDoubleValue</a> (const char *str, double deflt)</td></tr>
-<tr class="separator:abb8cc5f3394e5926274aea401ef0d9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14fae7da1efc2e025028d8e45c205b99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a14fae7da1efc2e025028d8e45c205b99">ParseLeadingBoolValue</a> (const char *str, bool deflt)</td></tr>
-<tr class="separator:a14fae7da1efc2e025028d8e45c205b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebef195ac4115c249fd0a0df1cf2e45"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a7ebef195ac4115c249fd0a0df1cf2e45">strings::strtoint64</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:a7ebef195ac4115c249fd0a0df1cf2e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9011bd7a2852d53a446eb0c4307716"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aab9011bd7a2852d53a446eb0c4307716">strings::strtouint64</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:aab9011bd7a2852d53a446eb0c4307716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69c250b8bad1d19d52c376c11fbceaa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ad69c250b8bad1d19d52c376c11fbceaa">strings::strtoint32</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:ad69c250b8bad1d19d52c376c11fbceaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae75edb1f587d4ba8e2341755c295d43"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aae75edb1f587d4ba8e2341755c295d43">strings::strtouint32</a> (const char *nptr, char **endptr, int base)</td></tr>
+<tr class="separator:aae75edb1f587d4ba8e2341755c295d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab023bf44f3c07467e40ce003a5ca63e8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ab023bf44f3c07467e40ce003a5ca63e8">strings::ParseLeadingInt32Value</a> (const char *str, int32_t deflt)</td></tr>
+<tr class="separator:ab023bf44f3c07467e40ce003a5ca63e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c5fdeed9de50019372ae85cf79809d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#af2c5fdeed9de50019372ae85cf79809d">strings::ParseLeadingUInt32Value</a> (const char *str, uint32_t deflt)</td></tr>
+<tr class="separator:af2c5fdeed9de50019372ae85cf79809d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67db3332f667dd604f8c16e8e57a5481"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a67db3332f667dd604f8c16e8e57a5481">strings::ParseLeadingDec32Value</a> (const char *str, int32_t deflt)</td></tr>
+<tr class="separator:a67db3332f667dd604f8c16e8e57a5481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de428d9252c77581cddabfbef4af6b6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a9de428d9252c77581cddabfbef4af6b6">strings::ParseLeadingUDec32Value</a> (const char *str, uint32_t deflt)</td></tr>
+<tr class="separator:a9de428d9252c77581cddabfbef4af6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392bdd45ec8d5c00187b15a971bc934b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a392bdd45ec8d5c00187b15a971bc934b">strings::ParseLeadingUInt64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:a392bdd45ec8d5c00187b15a971bc934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb14c3bb2854a6bdba7a17a3e96725b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#affb14c3bb2854a6bdba7a17a3e96725b">strings::ParseLeadingInt64Value</a> (const char *str, int64_t deflt)</td></tr>
+<tr class="separator:affb14c3bb2854a6bdba7a17a3e96725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c2cb8462642f51408dd3f7e7949a35"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac9c2cb8462642f51408dd3f7e7949a35">strings::ParseLeadingHex64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:ac9c2cb8462642f51408dd3f7e7949a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf4ad6bedcf148d9aa79a554136e675"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a6bf4ad6bedcf148d9aa79a554136e675">strings::ParseLeadingDec64Value</a> (const char *str, int64_t deflt)</td></tr>
+<tr class="separator:a6bf4ad6bedcf148d9aa79a554136e675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532ba8517600f8e1db38e677e720a327"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a532ba8517600f8e1db38e677e720a327">strings::ParseLeadingUDec64Value</a> (const char *str, uint64_t deflt)</td></tr>
+<tr class="separator:a532ba8517600f8e1db38e677e720a327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5693f3bdbcfa93f99b3cbb49d7f42150"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#a5693f3bdbcfa93f99b3cbb49d7f42150">strings::ParseLeadingDoubleValue</a> (const char *str, double deflt)</td></tr>
+<tr class="separator:a5693f3bdbcfa93f99b3cbb49d7f42150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55ca5d40ce0a70fa7792fd9c226166e"><td class="memItemLeft" align="right" valign="top">false no n y bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#ac55ca5d40ce0a70fa7792fd9c226166e">strings::ParseLeadingBoolValue</a> (const char *str, bool deflt)</td></tr>
+<tr class="separator:ac55ca5d40ce0a70fa7792fd9c226166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa648ab8493cf9d2cec91af5e2546ed37"><td class="memItemLeft" align="right" valign="top">false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa648ab8493cf9d2cec91af5e2546ed37">strings::true</a></td></tr>
+<tr class="separator:aa648ab8493cf9d2cec91af5e2546ed37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56e823d98097f248088782a38fe78c9"><td class="memItemLeft" align="right" valign="top">false no&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestrings.html#aa56e823d98097f248088782a38fe78c9">strings::yes</a></td></tr>
+<tr class="separator:aa56e823d98097f248088782a38fe78c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="numbers_8cc.html">numbers.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

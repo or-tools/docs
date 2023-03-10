@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: linear_solver.cc File Reference</title>
+<title>Google OR-Tools: ortools/linear_solver/linear_solver.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,18 +100,53 @@ $(document).ready(function(){initNavTree('linear__solver_8cc.html',''); initResi
   <div class="headertitle"><div class="title">linear_solver.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="linear__solver_8h_source.html">ortools/linear_solver/linear_solver.h</a>&quot;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/strings/ascii.h&quot;</code><br />
+<code>#include &quot;absl/strings/match.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_replace.h&quot;</code><br />
+<code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
+<code>#include &quot;absl/synchronization/notification.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="accurate__sum_8h_source.html">ortools/base/accurate_sum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="threadpool_8h_source.html">ortools/base/threadpool.h</a>&quot;</code><br />
+<code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="model__exporter_8h_source.html">ortools/linear_solver/model_exporter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__solver_2model__validator_8h_source.html">ortools/linear_solver/model_validator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="port_2file_8h_source.html">ortools/port/file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fp__utils_8h_source.html">ortools/util/fp_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="linear__solver_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5be9926d9754d7c813277a5fe759589"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_8cc.html#ac5be9926d9754d7c813277a5fe759589">ABSL_FLAG</a> (bool, verify_solution, false, &quot;Systematically verify the solution when calling Solve()&quot; &quot;, and change the return <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of Solve() to ABNORMAL if&quot; &quot; an error was detected.&quot;)</td></tr>
+<tr class="memitem:ac5be9926d9754d7c813277a5fe759589"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_8cc.html#ac5be9926d9754d7c813277a5fe759589">ABSL_FLAG</a> (bool, verify_solution, false, &quot;Systematically verify the solution when calling Solve()&quot; &quot;, and change the return <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of Solve() <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> ABNORMAL if&quot; &quot; an error was detected.&quot;)</td></tr>
 <tr class="separator:ac5be9926d9754d7c813277a5fe759589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1744bd4628776ce533d29d6f9e7625e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_8cc.html#a1744bd4628776ce533d29d6f9e7625e0">ABSL_FLAG</a> (bool, log_verification_errors, true, &quot;If --verify_solution is set: LOG(ERROR) all errors detected&quot; &quot; during the verification of the solution.&quot;)</td></tr>
 <tr class="separator:a1744bd4628776ce533d29d6f9e7625e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,37 +154,49 @@ Functions</h2></td></tr>
 <tr class="separator:a2ec8b8749245949a1f1e76dbcb5e3994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3e5195882a915e9c47ac535b0d2005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linear__solver_8cc.html#a1d3e5195882a915e9c47ac535b0d2005">ABSL_FLAG</a> (bool, mpsolver_bypass_model_validation, false, &quot;If set, the user-provided Model won't be verified before Solve().&quot; &quot; Invalid models will typically trigger various error responses&quot; &quot; from the underlying solvers; sometimes crashes.&quot;)</td></tr>
 <tr class="separator:a1d3e5195882a915e9c47ac535b0d2005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318aeb9572247dd1ee5391ab4699664d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a318aeb9572247dd1ee5391ab4699664d">SolverTypeIsMip</a> (MPModelRequest::SolverType solver_type)</td></tr>
-<tr class="separator:a318aeb9572247dd1ee5391ab4699664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ff99a01a4a9c5d8a65a5f5ea37d342"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa9ff99a01a4a9c5d8a65a5f5ea37d342">BuildCLPInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:aa9ff99a01a4a9c5d8a65a5f5ea37d342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cde3225ed4ac75f81b1ee768a41aa4b"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3cde3225ed4ac75f81b1ee768a41aa4b">BuildCBCInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:a3cde3225ed4ac75f81b1ee768a41aa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cda4034d09c9fa2f0641992116830f0"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1cda4034d09c9fa2f0641992116830f0">BuildBopInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:a1cda4034d09c9fa2f0641992116830f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf644bfef595ca374bb1bb5da5f2c1f2"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aaf644bfef595ca374bb1bb5da5f2c1f2">BuildGLOPInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:aaf644bfef595ca374bb1bb5da5f2c1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd536d7bdb8bb410e085d23255ea655"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aacd536d7bdb8bb410e085d23255ea655">BuildPdlpInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:aacd536d7bdb8bb410e085d23255ea655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9bd6ab049e29558fe2e8af85db61722"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa9bd6ab049e29558fe2e8af85db61722">BuildSatInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:aa9bd6ab049e29558fe2e8af85db61722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bdf7de568fd36934caf67b1bfd20455"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1bdf7de568fd36934caf67b1bfd20455">BuildSCIPInterface</a> (MPSolver *const solver)</td></tr>
-<tr class="separator:a1bdf7de568fd36934caf67b1bfd20455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d8d3f0cd329880580efdb01db139be"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a15d8d3f0cd329880580efdb01db139be">BuildGurobiInterface</a> (bool mip, MPSolver *const solver)</td></tr>
-<tr class="separator:a15d8d3f0cd329880580efdb01db139be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79aad20cb4baeeb6be9336730973514"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac79aad20cb4baeeb6be9336730973514">GurobiIsCorrectlyInstalled</a> ()</td></tr>
-<tr class="separator:ac79aad20cb4baeeb6be9336730973514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23fc0ff92a3f47fe0bd2ad3eac3c9b57"><td class="memItemLeft" align="right" valign="top">const absl::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a23fc0ff92a3f47fe0bd2ad3eac3c9b57">ToString</a> (MPSolver::OptimizationProblemType optimization_problem_type)</td></tr>
-<tr class="separator:a23fc0ff92a3f47fe0bd2ad3eac3c9b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f018fb86890eaa4057b0db41f32145c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8f018fb86890eaa4057b0db41f32145c">AbslParseFlag</a> (const absl::string_view text, MPSolver::OptimizationProblemType *solver_type, std::string *error)</td></tr>
-<tr class="separator:a8f018fb86890eaa4057b0db41f32145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af871c71d6ad60c9af3ae9348c59ab830"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af871c71d6ad60c9af3ae9348c59ab830">MPSolverResponseStatusIsRpcError</a> (MPSolverResponseStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:af871c71d6ad60c9af3ae9348c59ab830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653e11eef608bfb88f21325e7fa12f2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a653e11eef608bfb88f21325e7fa12f2b">operations_research::SolverTypeIsMip</a> (MPModelRequest::SolverType solver_type)</td></tr>
+<tr class="memdesc:a653e11eef608bfb88f21325e7fa12f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">There is a homonymous version taking a <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2">MPSolver::OptimizationProblemType</a>.  <br /></td></tr>
+<tr class="separator:a653e11eef608bfb88f21325e7fa12f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17becfef6b061398f2952f18099d8b0f"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a17becfef6b061398f2952f18099d8b0f">operations_research::BuildCLPInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="memdesc:a17becfef6b061398f2952f18099d8b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> --&mdash;  <br /></td></tr>
+<tr class="separator:a17becfef6b061398f2952f18099d8b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a54477a9504ef54554dbf39693e3a4"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a35a54477a9504ef54554dbf39693e3a4">operations_research::BuildCBCInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="separator:a35a54477a9504ef54554dbf39693e3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8a715becc113c018fc749a5e324603"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8a8a715becc113c018fc749a5e324603">operations_research::BuildGLPKInterface</a> (bool mip, MPSolver *const solver)</td></tr>
+<tr class="separator:a8a8a715becc113c018fc749a5e324603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868a8ccae7265b8ca63c003f371e5903"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a868a8ccae7265b8ca63c003f371e5903">operations_research::BuildBopInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="memdesc:a868a8ccae7265b8ca63c003f371e5903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register BOP in the global linear solver factory.  <br /></td></tr>
+<tr class="separator:a868a8ccae7265b8ca63c003f371e5903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef48ff7dadb56c03ec35d486f960367"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afef48ff7dadb56c03ec35d486f960367">operations_research::BuildGLOPInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="memdesc:afef48ff7dadb56c03ec35d486f960367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register GLOP in the global linear solver factory.  <br /></td></tr>
+<tr class="separator:afef48ff7dadb56c03ec35d486f960367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a2ff9da5269baadb05e17b354b0b56"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a58a2ff9da5269baadb05e17b354b0b56">operations_research::BuildPdlpInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="memdesc:a58a2ff9da5269baadb05e17b354b0b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register PDLP in the global linear solver factory.  <br /></td></tr>
+<tr class="separator:a58a2ff9da5269baadb05e17b354b0b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a9e90adc7d83b251011e740f9db08b"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a92a9e90adc7d83b251011e740f9db08b">operations_research::BuildSatInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="memdesc:a92a9e90adc7d83b251011e740f9db08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register Sat in the global linear solver factory.  <br /></td></tr>
+<tr class="separator:a92a9e90adc7d83b251011e740f9db08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7120b1fa1f2e24f3a389b79cb1dc17"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aed7120b1fa1f2e24f3a389b79cb1dc17">operations_research::BuildSCIPInterface</a> (MPSolver *const solver)</td></tr>
+<tr class="separator:aed7120b1fa1f2e24f3a389b79cb1dc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9425d6679801b535601730b529ce6ce"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae9425d6679801b535601730b529ce6ce">operations_research::BuildGurobiInterface</a> (bool mip, MPSolver *const solver)</td></tr>
+<tr class="separator:ae9425d6679801b535601730b529ce6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8381523e21bce3bb26a618aaedb017"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aee8381523e21bce3bb26a618aaedb017">operations_research::BuildCplexInterface</a> (bool mip, MPSolver *const solver)</td></tr>
+<tr class="separator:aee8381523e21bce3bb26a618aaedb017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939b48207f60a6bf3fc3f37ab9ffd481"><td class="memItemLeft" align="right" valign="top">MPSolverInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a939b48207f60a6bf3fc3f37ab9ffd481">operations_research::BuildXpressInterface</a> (bool mip, MPSolver *const solver)</td></tr>
+<tr class="separator:a939b48207f60a6bf3fc3f37ab9ffd481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4a6b9d1e57ed3500a6446b87bf4e6b46">operations_research::GurobiIsCorrectlyInstalled</a> ()</td></tr>
+<tr class="separator:a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3e3b80841b587c6fbfd9e9f3ec9c59"><td class="memItemLeft" align="right" valign="top">const absl::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afc3e3b80841b587c6fbfd9e9f3ec9c59">operations_research::ToString</a> (MPSolver::OptimizationProblemType optimization_problem_type)</td></tr>
+<tr class="separator:afc3e3b80841b587c6fbfd9e9f3ec9c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13948d20a1f3c1a1bac05821a52316e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac13948d20a1f3c1a1bac05821a52316e">operations_research::AbslParseFlag</a> (const absl::string_view text, MPSolver::OptimizationProblemType *solver_type, std::string *error)</td></tr>
+<tr class="separator:ac13948d20a1f3c1a1bac05821a52316e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d451963bca16889b3f1e23450a8f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a52d451963bca16889b3f1e23450a8f2d">operations_research::MPSolverResponseStatusIsRpcError</a> (MPSolverResponseStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:a52d451963bca16889b3f1e23450a8f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aaea3ba6ee1ccdbf82cfcbb4e8fc5815e"><td class="memItemLeft" align="right" valign="top">constexpr NamedOptimizationProblemType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aaea3ba6ee1ccdbf82cfcbb4e8fc5815e">kOptimizationProblemTypeNames</a> []</td></tr>
-<tr class="separator:aaea3ba6ee1ccdbf82cfcbb4e8fc5815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a23ad44b4de4025ad85dc0ae0476570"><td class="memItemLeft" align="right" valign="top">constexpr NamedOptimizationProblemType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7a23ad44b4de4025ad85dc0ae0476570">operations_research::kOptimizationProblemTypeNames</a> []</td></tr>
+<tr class="separator:a7a23ad44b4de4025ad85dc0ae0476570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2ec8b8749245949a1f1e76dbcb5e3994" name="a2ec8b8749245949a1f1e76dbcb5e3994"></a>
@@ -317,7 +364,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">and change the return <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of Solve() to ABNORMAL if&quot; &quot; an error was detected.&quot;&#160;</td>
+          <td class="paramtype">and change the return <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> of Solve() <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> ABNORMAL if&quot; &quot; an error was detected.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -327,6 +374,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 </div>
 </div>
@@ -365,14 +414,11 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="linear__solver_8cc.html">linear_solver.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: matchers.h File Reference</title>
+<title>Google OR-Tools: ortools/math_opt/cpp/matchers.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,131 +101,150 @@ $(document).ready(function(){initNavTree('matchers_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">matchers.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">ortools/math_opt/cpp/linear_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="math__opt_8h_source.html">ortools/math_opt/cpp/math_opt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="variable__and__expressions_8h_source.html">ortools/math_opt/cpp/variable_and_expressions.h</a>&quot;</code><br />
+</div>
 <p><a href="matchers_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1_solution_matcher_options.html">SolutionMatcherOptions</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1SolutionMatcherOptions.html">operations_research::math_opt::SolutionMatcherOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for IsNear(Solution).  <a href="structoperations__research_1_1math__opt_1_1SolutionMatcherOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1_solve_result_matcher_options.html">SolveResultMatcherOptions</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html">operations_research::math_opt::SolveResultMatcherOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures <a class="el" href="structoperations__research_1_1math__opt_1_1SolveResult.html" title="The result of solving an optimization problem with Solve().">SolveResult</a> matcher <a class="el" href="namespaceoperations__research_1_1math__opt.html#a5bbd7f9bb03a4a2d0e78733f86affc00">IsConsistentWith()</a> below.  <a href="structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae14b89d8e50d6c412c1c01a923f1f833"><td class="memItemLeft" align="right" valign="top">Matcher&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae14b89d8e50d6c412c1c01a923f1f833">IsNear</a> (VariableMap&lt; double &gt; expected, const double tolerance)</td></tr>
-<tr class="separator:ae14b89d8e50d6c412c1c01a923f1f833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85552ac583ef762e916ebce19803a123"><td class="memItemLeft" align="right" valign="top">Matcher&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a85552ac583ef762e916ebce19803a123">IsNearlySubsetOf</a> (VariableMap&lt; double &gt; expected, double tolerance)</td></tr>
-<tr class="separator:a85552ac583ef762e916ebce19803a123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea7e87c12168cf3e9bdd2b0a7e85d76"><td class="memItemLeft" align="right" valign="top">Matcher&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3ea7e87c12168cf3e9bdd2b0a7e85d76">IsNear</a> (LinearConstraintMap&lt; double &gt; expected, const double tolerance)</td></tr>
-<tr class="separator:a3ea7e87c12168cf3e9bdd2b0a7e85d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a7a38ca818d0e1fa7f1a41cebe4046"><td class="memItemLeft" align="right" valign="top">Matcher&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a03a7a38ca818d0e1fa7f1a41cebe4046">IsNearlySubsetOf</a> (LinearConstraintMap&lt; double &gt; expected, double tolerance)</td></tr>
-<tr class="separator:a03a7a38ca818d0e1fa7f1a41cebe4046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8680e49612ac2f7c8de15e09cdb2d10"><td class="memTemplParams" colspan="2">template&lt;typename K &gt; </td></tr>
-<tr class="memitem:ac8680e49612ac2f7c8de15e09cdb2d10"><td class="memTemplItemLeft" align="right" valign="top">testing::Matcher&lt; IdMap&lt; K, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac8680e49612ac2f7c8de15e09cdb2d10">IsNear</a> (IdMap&lt; K, double &gt; expected, const double tolerance=kMatcherDefaultTolerance)</td></tr>
-<tr class="separator:ac8680e49612ac2f7c8de15e09cdb2d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ef819108b5f01c417a3c91b737ee5b"><td class="memTemplParams" colspan="2">template&lt;typename K &gt; </td></tr>
-<tr class="memitem:af7ef819108b5f01c417a3c91b737ee5b"><td class="memTemplItemLeft" align="right" valign="top">testing::Matcher&lt; IdMap&lt; K, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af7ef819108b5f01c417a3c91b737ee5b">IsNearlySubsetOf</a> (IdMap&lt; K, double &gt; expected, const double tolerance=kMatcherDefaultTolerance)</td></tr>
-<tr class="separator:af7ef819108b5f01c417a3c91b737ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231985004351c63e0ca544e6880c6d43"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; LinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a231985004351c63e0ca544e6880c6d43">IsIdentical</a> (LinearExpression expected)</td></tr>
-<tr class="separator:a231985004351c63e0ca544e6880c6d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e8654a370c3d42b6626a2fc074a97d"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; LinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a83e8654a370c3d42b6626a2fc074a97d">LinearExpressionIsNear</a> (const LinearExpression expected, const double tolerance)</td></tr>
-<tr class="separator:a83e8654a370c3d42b6626a2fc074a97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb489aab3af827a162ecf2b929096736"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; BoundedLinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abb489aab3af827a162ecf2b929096736">IsNearlyEquivalent</a> (const BoundedLinearExpression &amp;expected, const double tolerance)</td></tr>
-<tr class="separator:abb489aab3af827a162ecf2b929096736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab810744a7abacbdff6476bcb5d527a"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; QuadraticExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a8ab810744a7abacbdff6476bcb5d527a">IsIdentical</a> (QuadraticExpression expected)</td></tr>
-<tr class="separator:a8ab810744a7abacbdff6476bcb5d527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9189df26726d8449d7953da2328d231"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Solution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae9189df26726d8449d7953da2328d231">IsNear</a> (Solution expected, const SolutionMatcherOptions options)</td></tr>
-<tr class="separator:ae9189df26726d8449d7953da2328d231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09eedebc6371785befe6b058310c8802"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalSolution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a09eedebc6371785befe6b058310c8802">IsNear</a> (PrimalSolution expected, const double tolerance)</td></tr>
-<tr class="separator:a09eedebc6371785befe6b058310c8802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790b2735dedb7c04cade4e6f8d1a5447"><td class="memItemLeft" align="right" valign="top">Matcher&lt; DualSolution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a790b2735dedb7c04cade4e6f8d1a5447">IsNear</a> (DualSolution expected, const double tolerance)</td></tr>
-<tr class="separator:a790b2735dedb7c04cade4e6f8d1a5447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a3cf61141697e05dc0c102ee61f035"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Basis &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae8a3cf61141697e05dc0c102ee61f035">BasisIs</a> (const Basis &amp;expected)</td></tr>
-<tr class="separator:ae8a3cf61141697e05dc0c102ee61f035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eb63a86e52577d5eff8a31e6190ef1"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a75eb63a86e52577d5eff8a31e6190ef1">IsNear</a> (PrimalRay expected, const double tolerance)</td></tr>
-<tr class="separator:a75eb63a86e52577d5eff8a31e6190ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb3386047b267e7d49072deff41667d"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aedb3386047b267e7d49072deff41667d">PrimalRayIsNear</a> (VariableMap&lt; double &gt; expected_var_values, const double tolerance)</td></tr>
-<tr class="separator:aedb3386047b267e7d49072deff41667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeae79fb71199aa8f60bc186ac106a7c"><td class="memItemLeft" align="right" valign="top">Matcher&lt; DualRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aaeae79fb71199aa8f60bc186ac106a7c">IsNear</a> (DualRay expected, const double tolerance)</td></tr>
-<tr class="separator:aaeae79fb71199aa8f60bc186ac106a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821dbce6fad37cfb003e61a4527f07ff"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Termination &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a821dbce6fad37cfb003e61a4527f07ff">ReasonIs</a> (TerminationReason reason)</td></tr>
-<tr class="separator:a821dbce6fad37cfb003e61a4527f07ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a156bb430ac2d887066b8651e36381b44"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Termination &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a156bb430ac2d887066b8651e36381b44">ReasonIsOptimal</a> ()</td></tr>
-<tr class="separator:a156bb430ac2d887066b8651e36381b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ff37e352764ce2dc62e1bf09ba9d85"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a10ff37e352764ce2dc62e1bf09ba9d85">IsOptimal</a> (const std::optional&lt; double &gt; expected_objective, const double tolerance)</td></tr>
-<tr class="separator:a10ff37e352764ce2dc62e1bf09ba9d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64defe6e679e5b83c35c9f260756e0b7"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a64defe6e679e5b83c35c9f260756e0b7">IsOptimalWithSolution</a> (const double expected_objective, const VariableMap&lt; double &gt; expected_variable_values, const double tolerance)</td></tr>
-<tr class="separator:a64defe6e679e5b83c35c9f260756e0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ddd6de5890a5f3d0f02ed36fb08b10"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa7ddd6de5890a5f3d0f02ed36fb08b10">IsOptimalWithDualSolution</a> (const double expected_objective, const LinearConstraintMap&lt; double &gt; expected_dual_values, const VariableMap&lt; double &gt; expected_reduced_costs, const double tolerance)</td></tr>
-<tr class="separator:aa7ddd6de5890a5f3d0f02ed36fb08b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83daba180fbf2300d15cf1a2486d156"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac83daba180fbf2300d15cf1a2486d156">TerminatesWith</a> (const TerminationReason expected)</td></tr>
-<tr class="separator:ac83daba180fbf2300d15cf1a2486d156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68952e6afc192b91b30e2fc5b8a7c442"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a68952e6afc192b91b30e2fc5b8a7c442">TerminatesWithOneOf</a> (const std::vector&lt; TerminationReason &gt; &amp;allowed)</td></tr>
-<tr class="separator:a68952e6afc192b91b30e2fc5b8a7c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99358f906300d21a83e905da11576ed9"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a99358f906300d21a83e905da11576ed9">TerminatesWithLimit</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
-<tr class="separator:a99358f906300d21a83e905da11576ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a179b77f04b618d5db29e4d806ab10"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a80a179b77f04b618d5db29e4d806ab10">TerminatesWithReasonFeasible</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
-<tr class="separator:a80a179b77f04b618d5db29e4d806ab10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d8a3b04a6faf760b10689b238d58c14"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d8a3b04a6faf760b10689b238d58c14">TerminatesWithReasonNoSolutionFound</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
-<tr class="separator:a0d8a3b04a6faf760b10689b238d58c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0864c72de8e6c988de2f22f800a8877b"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0864c72de8e6c988de2f22f800a8877b">HasSolution</a> (PrimalSolution expected, const double tolerance)</td></tr>
-<tr class="separator:a0864c72de8e6c988de2f22f800a8877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06debf261498b3feecaa6e8ff1ad1d4e"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a06debf261498b3feecaa6e8ff1ad1d4e">HasDualSolution</a> (DualSolution expected, const double tolerance)</td></tr>
-<tr class="separator:a06debf261498b3feecaa6e8ff1ad1d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4bc5ae58e5255389a9c2524d1075f3"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#acd4bc5ae58e5255389a9c2524d1075f3">HasPrimalRay</a> (PrimalRay expected, const double tolerance)</td></tr>
-<tr class="separator:acd4bc5ae58e5255389a9c2524d1075f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a713da636544512f690aca81c0a8f688a"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a713da636544512f690aca81c0a8f688a">HasPrimalRay</a> (VariableMap&lt; double &gt; expected_vars, const double tolerance)</td></tr>
-<tr class="separator:a713da636544512f690aca81c0a8f688a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa749cf8b42b52a7f51fddbbb4a6be66c"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa749cf8b42b52a7f51fddbbb4a6be66c">HasDualRay</a> (DualRay expected, const double tolerance)</td></tr>
-<tr class="separator:aa749cf8b42b52a7f51fddbbb4a6be66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a697496dd056995c7725bca4a35ceb638"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a697496dd056995c7725bca4a35ceb638">IsConsistentWith</a> (const SolveResult &amp;expected, const SolveResultMatcherOptions &amp;options)</td></tr>
-<tr class="separator:a697496dd056995c7725bca4a35ceb638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86bcb87b3ca5a7fae424af1f4da3aa46"><td class="memItemLeft" align="right" valign="top">Matcher&lt; UpdateResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a86bcb87b3ca5a7fae424af1f4da3aa46">DidUpdate</a> ()</td></tr>
-<tr class="separator:a86bcb87b3ca5a7fae424af1f4da3aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1126ef509ade3c9de8e4c663b6b701da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1126ef509ade3c9de8e4c663b6b701da">PrintTo</a> (const Termination &amp;termination, std::ostream *os)</td></tr>
-<tr class="separator:a1126ef509ade3c9de8e4c663b6b701da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da1d1c4950429c6448bb70a36e8db92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0da1d1c4950429c6448bb70a36e8db92">PrintTo</a> (const PrimalSolution &amp;primal_solution, std::ostream *const os)</td></tr>
-<tr class="separator:a0da1d1c4950429c6448bb70a36e8db92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1979e8a7d93a3ebc81b52b6fc9280fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1979e8a7d93a3ebc81b52b6fc9280fc3">PrintTo</a> (const DualSolution &amp;dual_solution, std::ostream *const os)</td></tr>
-<tr class="separator:a1979e8a7d93a3ebc81b52b6fc9280fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d24872f6f62bce65e045bf98bab8194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a9d24872f6f62bce65e045bf98bab8194">PrintTo</a> (const PrimalRay &amp;primal_ray, std::ostream *const os)</td></tr>
-<tr class="separator:a9d24872f6f62bce65e045bf98bab8194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4643380b6fa64de08ac5b25b6f0cbf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a4643380b6fa64de08ac5b25b6f0cbf56">PrintTo</a> (const DualRay &amp;dual_ray, std::ostream *const os)</td></tr>
-<tr class="separator:a4643380b6fa64de08ac5b25b6f0cbf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbd26f43a8b97155c75cf320d4889c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0fbd26f43a8b97155c75cf320d4889c1">PrintTo</a> (const Basis &amp;basis, std::ostream *const os)</td></tr>
-<tr class="separator:a0fbd26f43a8b97155c75cf320d4889c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69125a3d625f0038e3f098eab7565bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af69125a3d625f0038e3f098eab7565bc">PrintTo</a> (const Solution &amp;solution, std::ostream *const os)</td></tr>
-<tr class="separator:af69125a3d625f0038e3f098eab7565bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbe7b723a954ca524874028d33ee33c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aacbe7b723a954ca524874028d33ee33c">PrintTo</a> (const SolveResult &amp;result, std::ostream *const os)</td></tr>
-<tr class="separator:aacbe7b723a954ca524874028d33ee33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3633615b2a23d02da9d560a91a762c24"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
-<tr class="memitem:a3633615b2a23d02da9d560a91a762c24"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3633615b2a23d02da9d560a91a762c24">PrintTo</a> (const IdMap&lt; K, V &gt; &amp;id_map, std::ostream *const os)</td></tr>
-<tr class="separator:a3633615b2a23d02da9d560a91a762c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6dacb7b46f7a6aaee8f1c9331c6980e"><td class="memItemLeft" align="right" valign="top">Matcher&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa6dacb7b46f7a6aaee8f1c9331c6980e">operations_research::math_opt::IsNear</a> (VariableMap&lt; double &gt; expected, const double tolerance)</td></tr>
+<tr class="separator:aa6dacb7b46f7a6aaee8f1c9331c6980e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0cc4e633f7f2876f9ba5903ab3c60c"><td class="memItemLeft" align="right" valign="top">Matcher&lt; VariableMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aae0cc4e633f7f2876f9ba5903ab3c60c">operations_research::math_opt::IsNearlySubsetOf</a> (VariableMap&lt; double &gt; expected, double tolerance)</td></tr>
+<tr class="separator:aae0cc4e633f7f2876f9ba5903ab3c60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa095165e642db369e875d94352491ad"><td class="memItemLeft" align="right" valign="top">Matcher&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aaa095165e642db369e875d94352491ad">operations_research::math_opt::IsNear</a> (LinearConstraintMap&lt; double &gt; expected, const double tolerance)</td></tr>
+<tr class="separator:aaa095165e642db369e875d94352491ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494e4d79d22ed0855076ff6ee6eb2aba"><td class="memItemLeft" align="right" valign="top">Matcher&lt; LinearConstraintMap&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a494e4d79d22ed0855076ff6ee6eb2aba">operations_research::math_opt::IsNearlySubsetOf</a> (LinearConstraintMap&lt; double &gt; expected, double tolerance)</td></tr>
+<tr class="separator:a494e4d79d22ed0855076ff6ee6eb2aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b5ca14f063d1a25708f69ff7de43fa"><td class="memTemplParams" colspan="2">template&lt;typename K &gt; </td></tr>
+<tr class="memitem:ac3b5ca14f063d1a25708f69ff7de43fa"><td class="memTemplItemLeft" align="right" valign="top">testing::Matcher&lt; IdMap&lt; K, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac3b5ca14f063d1a25708f69ff7de43fa">operations_research::math_opt::IsNear</a> (IdMap&lt; K, double &gt; expected, const double tolerance=kMatcherDefaultTolerance)</td></tr>
+<tr class="separator:ac3b5ca14f063d1a25708f69ff7de43fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8177d989483b01b8750606b9558d8d0"><td class="memTemplParams" colspan="2">template&lt;typename K &gt; </td></tr>
+<tr class="memitem:ab8177d989483b01b8750606b9558d8d0"><td class="memTemplItemLeft" align="right" valign="top">testing::Matcher&lt; IdMap&lt; K, double &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab8177d989483b01b8750606b9558d8d0">operations_research::math_opt::IsNearlySubsetOf</a> (IdMap&lt; K, double &gt; expected, const double tolerance=kMatcherDefaultTolerance)</td></tr>
+<tr class="separator:ab8177d989483b01b8750606b9558d8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ddd62a4a196546076ca9718b2e75b2"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; LinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa4ddd62a4a196546076ca9718b2e75b2">operations_research::math_opt::IsIdentical</a> (LinearExpression expected)</td></tr>
+<tr class="separator:aa4ddd62a4a196546076ca9718b2e75b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf072919a33d591d4647bf2db4891cc7"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; LinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abf072919a33d591d4647bf2db4891cc7">operations_research::math_opt::LinearExpressionIsNear</a> (const LinearExpression expected, const double tolerance)</td></tr>
+<tr class="separator:abf072919a33d591d4647bf2db4891cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abebaf97a1b6104044426bf1f84bbfc"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; BoundedLinearExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a4abebaf97a1b6104044426bf1f84bbfc">operations_research::math_opt::IsNearlyEquivalent</a> (const BoundedLinearExpression &amp;expected, const double tolerance)</td></tr>
+<tr class="separator:a4abebaf97a1b6104044426bf1f84bbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd254537f93a1139596809f67e98818"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; QuadraticExpression &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2dd254537f93a1139596809f67e98818">operations_research::math_opt::IsIdentical</a> (QuadraticExpression expected)</td></tr>
+<tr class="separator:a2dd254537f93a1139596809f67e98818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1139b1b851780ee2f9f04fc5a698e408"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Solution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1139b1b851780ee2f9f04fc5a698e408">operations_research::math_opt::IsNear</a> (Solution expected, const SolutionMatcherOptions options)</td></tr>
+<tr class="separator:a1139b1b851780ee2f9f04fc5a698e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ef9d44c34a8b1458902a0a5f40e13e"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalSolution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae3ef9d44c34a8b1458902a0a5f40e13e">operations_research::math_opt::IsNear</a> (PrimalSolution expected, const double tolerance)</td></tr>
+<tr class="separator:ae3ef9d44c34a8b1458902a0a5f40e13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7031e50c6be2adbecf5550477d446c78"><td class="memItemLeft" align="right" valign="top">Matcher&lt; DualSolution &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a7031e50c6be2adbecf5550477d446c78">operations_research::math_opt::IsNear</a> (DualSolution expected, const double tolerance)</td></tr>
+<tr class="separator:a7031e50c6be2adbecf5550477d446c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07140f39f749edee22b43fe3c152acf"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Basis &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ad07140f39f749edee22b43fe3c152acf">operations_research::math_opt::BasisIs</a> (const Basis &amp;expected)</td></tr>
+<tr class="separator:ad07140f39f749edee22b43fe3c152acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab613f2efbd4409f71bb681b439e8898d"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab613f2efbd4409f71bb681b439e8898d">operations_research::math_opt::IsNear</a> (PrimalRay expected, const double tolerance)</td></tr>
+<tr class="separator:ab613f2efbd4409f71bb681b439e8898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d7a5d3d26b560f8a0feb3ecc8312ae"><td class="memItemLeft" align="right" valign="top">Matcher&lt; PrimalRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a87d7a5d3d26b560f8a0feb3ecc8312ae">operations_research::math_opt::PrimalRayIsNear</a> (VariableMap&lt; double &gt; expected_var_values, const double tolerance)</td></tr>
+<tr class="separator:a87d7a5d3d26b560f8a0feb3ecc8312ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76f5a7668ad6e757a3b294603273851"><td class="memItemLeft" align="right" valign="top">Matcher&lt; DualRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa76f5a7668ad6e757a3b294603273851">operations_research::math_opt::IsNear</a> (DualRay expected, const double tolerance)</td></tr>
+<tr class="separator:aa76f5a7668ad6e757a3b294603273851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351defe3a5e964136b3a6955e1a49fb6"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Termination &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a351defe3a5e964136b3a6955e1a49fb6">operations_research::math_opt::ReasonIs</a> (TerminationReason reason)</td></tr>
+<tr class="separator:a351defe3a5e964136b3a6955e1a49fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d20957adee749d266ae348721861d31"><td class="memItemLeft" align="right" valign="top">Matcher&lt; Termination &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d20957adee749d266ae348721861d31">operations_research::math_opt::ReasonIsOptimal</a> ()</td></tr>
+<tr class="separator:a0d20957adee749d266ae348721861d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0d0d1355298a20331f3a1bba2aeab6"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ace0d0d1355298a20331f3a1bba2aeab6">operations_research::math_opt::IsOptimal</a> (const std::optional&lt; double &gt; expected_objective, const double tolerance)</td></tr>
+<tr class="separator:ace0d0d1355298a20331f3a1bba2aeab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002cb1c2bf8f6f11a99ca05113a169fd"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a002cb1c2bf8f6f11a99ca05113a169fd">operations_research::math_opt::IsOptimalWithSolution</a> (const double expected_objective, const VariableMap&lt; double &gt; expected_variable_values, const double tolerance)</td></tr>
+<tr class="separator:a002cb1c2bf8f6f11a99ca05113a169fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07c655a672408284a938ea21fc24857"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac07c655a672408284a938ea21fc24857">operations_research::math_opt::IsOptimalWithDualSolution</a> (const double expected_objective, const LinearConstraintMap&lt; double &gt; expected_dual_values, const VariableMap&lt; double &gt; expected_reduced_costs, const double tolerance)</td></tr>
+<tr class="separator:ac07c655a672408284a938ea21fc24857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71da352eb05c79c09cf5a2f5a397d506"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a71da352eb05c79c09cf5a2f5a397d506">operations_research::math_opt::TerminatesWith</a> (const TerminationReason expected)</td></tr>
+<tr class="separator:a71da352eb05c79c09cf5a2f5a397d506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3658509a909ad65bf81e3d9a84e749b4"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3658509a909ad65bf81e3d9a84e749b4">operations_research::math_opt::TerminatesWithOneOf</a> (const std::vector&lt; TerminationReason &gt; &amp;allowed)</td></tr>
+<tr class="memdesc:a3658509a909ad65bf81e3d9a84e749b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the result has one of the allowed termination reasons.  <br /></td></tr>
+<tr class="separator:a3658509a909ad65bf81e3d9a84e749b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84139f68357a24dc2bdc06a31b30c475"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a84139f68357a24dc2bdc06a31b30c475">operations_research::math_opt::TerminatesWithLimit</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
+<tr class="separator:a84139f68357a24dc2bdc06a31b30c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6695424f67a30e577a53d20811bc4cb1"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a6695424f67a30e577a53d20811bc4cb1">operations_research::math_opt::TerminatesWithReasonFeasible</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
+<tr class="separator:a6695424f67a30e577a53d20811bc4cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc45ad929c26a9e9f767ca7e32a3cff3"><td class="memItemLeft" align="right" valign="top">testing::Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#afc45ad929c26a9e9f767ca7e32a3cff3">operations_research::math_opt::TerminatesWithReasonNoSolutionFound</a> (const Limit expected, const bool allow_limit_undetermined)</td></tr>
+<tr class="separator:afc45ad929c26a9e9f767ca7e32a3cff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62cac7d4b0eb55a7a8b483ef26f4eb09"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a62cac7d4b0eb55a7a8b483ef26f4eb09">operations_research::math_opt::HasSolution</a> (PrimalSolution expected, double tolerance=kMatcherDefaultTolerance)</td></tr>
+<tr class="memdesc:a62cac7d4b0eb55a7a8b483ef26f4eb09"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structoperations__research_1_1math__opt_1_1SolveResult.html" title="The result of solving an optimization problem with Solve().">SolveResult</a> has a primal solution matching expected within tolerance.  <br /></td></tr>
+<tr class="separator:a62cac7d4b0eb55a7a8b483ef26f4eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac668848dace68a5e2a6376b495304c95"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac668848dace68a5e2a6376b495304c95">operations_research::math_opt::HasDualSolution</a> (DualSolution expected, const double tolerance)</td></tr>
+<tr class="separator:ac668848dace68a5e2a6376b495304c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b53be9a25ad80869f48add6704a125"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a02b53be9a25ad80869f48add6704a125">operations_research::math_opt::HasPrimalRay</a> (PrimalRay expected, const double tolerance)</td></tr>
+<tr class="separator:a02b53be9a25ad80869f48add6704a125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a511a8155a64b25ddc164bb8e00d34"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a88a511a8155a64b25ddc164bb8e00d34">operations_research::math_opt::HasPrimalRay</a> (VariableMap&lt; double &gt; expected_vars, const double tolerance)</td></tr>
+<tr class="separator:a88a511a8155a64b25ddc164bb8e00d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660bfd120c30fa878d44f449f32e8d15"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a660bfd120c30fa878d44f449f32e8d15">operations_research::math_opt::HasDualRay</a> (DualRay expected, const double tolerance)</td></tr>
+<tr class="separator:a660bfd120c30fa878d44f449f32e8d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbd7f9bb03a4a2d0e78733f86affc00"><td class="memItemLeft" align="right" valign="top">Matcher&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a5bbd7f9bb03a4a2d0e78733f86affc00">operations_research::math_opt::IsConsistentWith</a> (const SolveResult &amp;expected, const SolveResultMatcherOptions &amp;options)</td></tr>
+<tr class="separator:a5bbd7f9bb03a4a2d0e78733f86affc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15a672af2e37c93a192ab78d412732f"><td class="memItemLeft" align="right" valign="top">Matcher&lt; UpdateResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab15a672af2e37c93a192ab78d412732f">operations_research::math_opt::DidUpdate</a> ()</td></tr>
+<tr class="memdesc:ab15a672af2e37c93a192ab78d412732f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual <a class="el" href="structoperations__research_1_1math__opt_1_1UpdateResult.html#a8f926c42972ecc01db25e10fd1e6ce66">UpdateResult.did_update</a> is true.  <br /></td></tr>
+<tr class="separator:ab15a672af2e37c93a192ab78d412732f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f93e74fa1aa47b2dd62ed67f9ca4c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0f93e74fa1aa47b2dd62ed67f9ca4c1a">operations_research::math_opt::PrintTo</a> (const Termination &amp;termination, std::ostream *os)</td></tr>
+<tr class="separator:a0f93e74fa1aa47b2dd62ed67f9ca4c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab888998f4a36951207108d4b09162495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab888998f4a36951207108d4b09162495">operations_research::math_opt::PrintTo</a> (const PrimalSolution &amp;primal_solution, std::ostream *const os)</td></tr>
+<tr class="separator:ab888998f4a36951207108d4b09162495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50600c4e69206e2c52ee6094f07276ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a50600c4e69206e2c52ee6094f07276ea">operations_research::math_opt::PrintTo</a> (const DualSolution &amp;dual_solution, std::ostream *const os)</td></tr>
+<tr class="separator:a50600c4e69206e2c52ee6094f07276ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbcfba48358355b769fde5927bca009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2dbcfba48358355b769fde5927bca009">operations_research::math_opt::PrintTo</a> (const PrimalRay &amp;primal_ray, std::ostream *const os)</td></tr>
+<tr class="separator:a2dbcfba48358355b769fde5927bca009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008e4b9a800ed138df8e93ba54639502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a008e4b9a800ed138df8e93ba54639502">operations_research::math_opt::PrintTo</a> (const DualRay &amp;dual_ray, std::ostream *const os)</td></tr>
+<tr class="separator:a008e4b9a800ed138df8e93ba54639502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50ce610fc801cafaca0d6a99c02b1d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac50ce610fc801cafaca0d6a99c02b1d2">operations_research::math_opt::PrintTo</a> (const Basis &amp;basis, std::ostream *const os)</td></tr>
+<tr class="separator:ac50ce610fc801cafaca0d6a99c02b1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0145794d9c1a04b8e75618e334b9844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af0145794d9c1a04b8e75618e334b9844">operations_research::math_opt::PrintTo</a> (const Solution &amp;solution, std::ostream *const os)</td></tr>
+<tr class="separator:af0145794d9c1a04b8e75618e334b9844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24787e5168f7b4cab324bf67794131a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a24787e5168f7b4cab324bf67794131a4">operations_research::math_opt::PrintTo</a> (const SolveResult &amp;result, std::ostream *const os)</td></tr>
+<tr class="separator:a24787e5168f7b4cab324bf67794131a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3738a0261866d60889c614bdd616f1fc"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
+<tr class="memitem:a3738a0261866d60889c614bdd616f1fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3738a0261866d60889c614bdd616f1fc">operations_research::math_opt::PrintTo</a> (const IdMap&lt; K, V &gt; &amp;id_map, std::ostream *const os)</td></tr>
+<tr class="separator:a3738a0261866d60889c614bdd616f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a44f88ad144a5dc6e11c57cda996c4170"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a44f88ad144a5dc6e11c57cda996c4170">kMatcherDefaultTolerance</a> = 1e-5</td></tr>
-<tr class="separator:a44f88ad144a5dc6e11c57cda996c4170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af78ad1815f65a9a89082590a30eeba"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2af78ad1815f65a9a89082590a30eeba">operations_research::math_opt::kMatcherDefaultTolerance</a> = 1e-5</td></tr>
+<tr class="separator:a2af78ad1815f65a9a89082590a30eeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d26c6e52dc1c266e355e09743be24c"><td class="memItemLeft" align="right" valign="top">For infeasible and unbounded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af6d26c6e52dc1c266e355e09743be24c">operations_research::math_opt::problems</a></td></tr>
+<tr class="separator:af6d26c6e52dc1c266e355e09743be24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205a4eeabeae0d2c1701527fce48485d"><td class="memItemLeft" align="right" valign="top">For infeasible and unbounded see Not checked <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> options check_solutions_if_inf_or_unbounded and the If options first_solution_only is&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">operations_research::math_opt::false</a></td></tr>
+<tr class="memdesc:a205a4eeabeae0d2c1701527fce48485d"><td class="mdescLeft">&#160;</td><td class="mdescRight">problem is infeasible or unbounded (default).  <br /></td></tr>
+<tr class="separator:a205a4eeabeae0d2c1701527fce48485d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaae284879e60e673d19119e49775710"><td class="memItemLeft" align="right" valign="top">For infeasible and unbounded see Not checked <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> options check_solutions_if_inf_or_unbounded and the If options first_solution_only is check the entire list of Dual solution is not checked <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> options&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aaaae284879e60e673d19119e49775710">operations_research::math_opt::check_dual</a></td></tr>
+<tr class="memdesc:aaaae284879e60e673d19119e49775710"><td class="mdescLeft">&#160;</td><td class="mdescRight">solutions matches in the same order.  <br /></td></tr>
+<tr class="separator:aaaae284879e60e673d19119e49775710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="matchers_8h.html">matchers.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

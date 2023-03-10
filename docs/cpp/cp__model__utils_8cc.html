@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: cp_model_utils.cc File Reference</title>
+<title>Google OR-Tools: ortools/sat/cp_model_utils.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,13 +100,24 @@ $(document).ready(function(){initNavTree('cp__model__utils_8cc.html',''); initRe
   <div class="headertitle"><div class="title">cp_model_utils.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
+</div>
 <p><a href="cp__model__utils_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,40 +131,47 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a22efb1995471e34caa35927a9032f5f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a22efb1995471e34caa35927a9032f5f3">SetToNegatedLinearExpression</a> (const LinearExpressionProto &amp;input_expr, LinearExpressionProto *output_negated_expr)</td></tr>
-<tr class="separator:a22efb1995471e34caa35927a9032f5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8e3465fc58d3b287e05451d5230bae"><td class="memItemLeft" align="right" valign="top">IndexReferences&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aba8e3465fc58d3b287e05451d5230bae">GetReferencesUsedByConstraint</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:aba8e3465fc58d3b287e05451d5230bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4dc38d28f20c0c1bbbe71fff0803e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6d4dc38d28f20c0c1bbbe71fff0803e7">ApplyToAllLiteralIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:a6d4dc38d28f20c0c1bbbe71fff0803e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f94367fbf4ab2c03bd6bef412c41f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab5f94367fbf4ab2c03bd6bef412c41f7">ApplyToAllVariableIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:ab5f94367fbf4ab2c03bd6bef412c41f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81b6165b5a5412969f351d0d343166b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a81b6165b5a5412969f351d0d343166b9">ApplyToAllIntervalIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:a81b6165b5a5412969f351d0d343166b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf5b1cbffc494f14e8b87c672d5dda5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#acf5b1cbffc494f14e8b87c672d5dda5f">ConstraintCaseName</a> (ConstraintProto::ConstraintCase constraint_case)</td></tr>
-<tr class="separator:acf5b1cbffc494f14e8b87c672d5dda5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d467595ed8fe5b85dc95328ee1c2770"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1d467595ed8fe5b85dc95328ee1c2770">UsedVariables</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:a1d467595ed8fe5b85dc95328ee1c2770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217ba4c51953c701a68d6572d79801f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a217ba4c51953c701a68d6572d79801f1">UsedIntervals</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:a217ba4c51953c701a68d6572d79801f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6eb964ecacbc65fd25da0271b1a8170"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab6eb964ecacbc65fd25da0271b1a8170">ComputeInnerObjective</a> (const CpObjectiveProto &amp;objective, absl::Span&lt; const int64_t &gt; solution)</td></tr>
-<tr class="separator:ab6eb964ecacbc65fd25da0271b1a8170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c79e5c254e1e69d4ca7f52ba9cdc8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae1c79e5c254e1e69d4ca7f52ba9cdc8b">ExpressionContainsSingleRef</a> (const LinearExpressionProto &amp;expr)</td></tr>
-<tr class="separator:ae1c79e5c254e1e69d4ca7f52ba9cdc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9fc6e23064f7f2aff53c4f5059f493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aab9fc6e23064f7f2aff53c4f5059f493">ExpressionIsAffine</a> (const LinearExpressionProto &amp;expr)</td></tr>
-<tr class="separator:aab9fc6e23064f7f2aff53c4f5059f493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1745a206c1ed3667e9de782d8a8c13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#adc1745a206c1ed3667e9de782d8a8c13">GetSingleRefFromExpression</a> (const LinearExpressionProto &amp;expr)</td></tr>
-<tr class="separator:adc1745a206c1ed3667e9de782d8a8c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced7df5982ab26894efec32543e459f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aced7df5982ab26894efec32543e459f7">AddLinearExpressionToLinearConstraint</a> (const LinearExpressionProto &amp;expr, int64_t <a class="el" href="routing__filters_8cc.html#a8e4ee19dee0e00541dbe9bbc83d806ba">coefficient</a>, LinearConstraintProto *linear)</td></tr>
-<tr class="separator:aced7df5982ab26894efec32543e459f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763f6514921f30b326a1582569b60ddb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a763f6514921f30b326a1582569b60ddb">LinearExpressionProtosAreEqual</a> (const LinearExpressionProto &amp;<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, const LinearExpressionProto &amp;<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, int64_t b_scaling)</td></tr>
-<tr class="separator:a763f6514921f30b326a1582569b60ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939cfd1c42cae9cc5821db8e78b84e1a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a939cfd1c42cae9cc5821db8e78b84e1a">FingerprintExpression</a> (const LinearExpressionProto &amp;lin, uint64_t seed)</td></tr>
-<tr class="separator:a939cfd1c42cae9cc5821db8e78b84e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d1e3334aafdead6d2af5ec768c36ab"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae8d1e3334aafdead6d2af5ec768c36ab">FingerprintModel</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, uint64_t seed)</td></tr>
-<tr class="separator:ae8d1e3334aafdead6d2af5ec768c36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95e802e2d651c0a9daf578fea2bf564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab95e802e2d651c0a9daf578fea2bf564">SetupTextFormatPrinter</a> (google::protobuf::TextFormat::Printer *printer)</td></tr>
-<tr class="separator:ab95e802e2d651c0a9daf578fea2bf564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02df75a9e906f53495a7f7f56c782361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a02df75a9e906f53495a7f7f56c782361">operations_research::sat::SetToNegatedLinearExpression</a> (const LinearExpressionProto &amp;input_expr, LinearExpressionProto *output_negated_expr)</td></tr>
+<tr class="memdesc:a02df75a9e906f53495a7f7f56c782361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the target as negated ref.  <br /></td></tr>
+<tr class="separator:a02df75a9e906f53495a7f7f56c782361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafd68a229d8e8b0893f2f0720e08332"><td class="memItemLeft" align="right" valign="top">IndexReferences&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aeafd68a229d8e8b0893f2f0720e08332">operations_research::sat::GetReferencesUsedByConstraint</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:aeafd68a229d8e8b0893f2f0720e08332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac103fdbdb9184cf86d2cfadf95b0dd67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac103fdbdb9184cf86d2cfadf95b0dd67">operations_research::sat::ApplyToAllLiteralIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:ac103fdbdb9184cf86d2cfadf95b0dd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af703c0ffe9861cc773696e46ccff0a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af703c0ffe9861cc773696e46ccff0a5f">operations_research::sat::ApplyToAllVariableIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:af703c0ffe9861cc773696e46ccff0a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4659306bddf893dc09c5cd493f9a1fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4659306bddf893dc09c5cd493f9a1fd4">operations_research::sat::ApplyToAllIntervalIndices</a> (const std::function&lt; void(int *)&gt; &amp;f, ConstraintProto *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:a4659306bddf893dc09c5cd493f9a1fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76e38d9c8f1751413ec50c98dbce93d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae76e38d9c8f1751413ec50c98dbce93d">operations_research::sat::ConstraintCaseName</a> (ConstraintProto::ConstraintCase constraint_case)</td></tr>
+<tr class="separator:ae76e38d9c8f1751413ec50c98dbce93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82863d7b3a08b5b2267b69b737034076"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a82863d7b3a08b5b2267b69b737034076">operations_research::sat::UsedVariables</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:a82863d7b3a08b5b2267b69b737034076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869d0ba93c0a19641fc4d0cdaf5b7233"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a869d0ba93c0a19641fc4d0cdaf5b7233">operations_research::sat::UsedIntervals</a> (const ConstraintProto &amp;<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="memdesc:a869d0ba93c0a19641fc4d0cdaf5b7233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sorted list of interval used by a constraint.  <br /></td></tr>
+<tr class="separator:a869d0ba93c0a19641fc4d0cdaf5b7233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2979162c101d957e47f1ad97155a023e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2979162c101d957e47f1ad97155a023e">operations_research::sat::ComputeInnerObjective</a> (const CpObjectiveProto &amp;objective, absl::Span&lt; const int64_t &gt; solution)</td></tr>
+<tr class="separator:a2979162c101d957e47f1ad97155a023e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc34dbcdae318ae9788e4448a65acecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abc34dbcdae318ae9788e4448a65acecc">operations_research::sat::ExpressionContainsSingleRef</a> (const LinearExpressionProto &amp;expr)</td></tr>
+<tr class="memdesc:abc34dbcdae318ae9788e4448a65acecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a linear expression can be reduced to a single ref.  <br /></td></tr>
+<tr class="separator:abc34dbcdae318ae9788e4448a65acecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cf12df936171c3abd17cf962264dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a75cf12df936171c3abd17cf962264dcb">operations_research::sat::ExpressionIsAffine</a> (const LinearExpressionProto &amp;expr)</td></tr>
+<tr class="memdesc:a75cf12df936171c3abd17cf962264dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the expression is affine or constant.  <br /></td></tr>
+<tr class="separator:a75cf12df936171c3abd17cf962264dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06c22b7b182ddb7070f175bb325162c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad06c22b7b182ddb7070f175bb325162c">operations_research::sat::GetSingleRefFromExpression</a> (const LinearExpressionProto &amp;expr)</td></tr>
+<tr class="separator:ad06c22b7b182ddb7070f175bb325162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0555e63b6d9d9bd5f3d04b7657bffbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad0555e63b6d9d9bd5f3d04b7657bffbf">operations_research::sat::AddLinearExpressionToLinearConstraint</a> (const LinearExpressionProto &amp;expr, int64_t <a class="el" href="routing__filters_8cc.html#a8e4ee19dee0e00541dbe9bbc83d806ba">coefficient</a>, LinearConstraintProto *linear)</td></tr>
+<tr class="separator:ad0555e63b6d9d9bd5f3d04b7657bffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae704c82581dd897d1fe09e8a3435077a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae704c82581dd897d1fe09e8a3435077a">operations_research::sat::LinearExpressionProtosAreEqual</a> (const LinearExpressionProto &amp;<a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, const LinearExpressionProto &amp;<a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, int64_t b_scaling=1)</td></tr>
+<tr class="memdesc:ae704c82581dd897d1fe09e8a3435077a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff a == b * b_scaling.  <br /></td></tr>
+<tr class="separator:ae704c82581dd897d1fe09e8a3435077a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f1774c343aaebb5a3d9686e12e7f7e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a70f1774c343aaebb5a3d9686e12e7f7e">operations_research::sat::FingerprintExpression</a> (const LinearExpressionProto &amp;lin, uint64_t seed)</td></tr>
+<tr class="memdesc:a70f1774c343aaebb5a3d9686e12e7f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a stable fingerprint of a linear expression.  <br /></td></tr>
+<tr class="separator:a70f1774c343aaebb5a3d9686e12e7f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7492392221bdfcc832cce2d93c9b681c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a7492392221bdfcc832cce2d93c9b681c">operations_research::sat::FingerprintModel</a> (const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, uint64_t seed=kDefaultFingerprintSeed)</td></tr>
+<tr class="memdesc:a7492392221bdfcc832cce2d93c9b681c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a stable fingerprint of a model.  <br /></td></tr>
+<tr class="separator:a7492392221bdfcc832cce2d93c9b681c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fb16cf2994009c7ab17facafbb2760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab4fb16cf2994009c7ab17facafbb2760">operations_research::sat::SetupTextFormatPrinter</a> (google::protobuf::TextFormat::Printer *printer)</td></tr>
+<tr class="separator:ab4fb16cf2994009c7ab17facafbb2760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a970e04df3f6acfdbf5bfb4e2335e15eb" name="a970e04df3f6acfdbf5bfb4e2335e15eb"></a>
@@ -227,14 +245,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="cp__model__utils_8cc.html">cp_model_utils.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

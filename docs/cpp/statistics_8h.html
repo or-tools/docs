@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: statistics.h File Reference</title>
+<title>Google OR-Tools: ortools/math_opt/cpp/statistics.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,44 +101,49 @@ $(document).ready(function(){initNavTree('statistics_8h.html',''); initResizable
   <div class="headertitle"><div class="title">statistics.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="math__opt_2cpp_2model_8h_source.html">ortools/math_opt/cpp/model.h</a>&quot;</code><br />
+</div>
 <p><a href="statistics_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1_model_ranges.html">ModelRanges</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1ModelRanges.html">operations_research::math_opt::ModelRanges</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1math__opt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1math__opt"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object oriented wrapper for quadratic constraints in ModelStorage. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab21f9ab41290640e6fb4076def0da083"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab21f9ab41290640e6fb4076def0da083">Range</a> = std::pair&lt; double, double &gt;</td></tr>
-<tr class="separator:ab21f9ab41290640e6fb4076def0da083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafec7cb609cd4ebd27083ab54c7629f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aafec7cb609cd4ebd27083ab54c7629f6">operations_research::math_opt::Range</a> = std::pair&lt; double, double &gt;</td></tr>
+<tr class="memdesc:aafec7cb609cd4ebd27083ab54c7629f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A range of values, first is the minimum, second is the maximum.  <br /></td></tr>
+<tr class="separator:aafec7cb609cd4ebd27083ab54c7629f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a94a6162a48e2c28a50fbca472947f1fb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a94a6162a48e2c28a50fbca472947f1fb">operator&lt;&lt;</a> (std::ostream &amp;out, const ModelRanges &amp;ranges)</td></tr>
-<tr class="separator:a94a6162a48e2c28a50fbca472947f1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b3fb1f62b233a2223cb925a08d4154"><td class="memItemLeft" align="right" valign="top">ModelRanges&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a90b3fb1f62b233a2223cb925a08d4154">ComputeModelRanges</a> (const Model &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a90b3fb1f62b233a2223cb925a08d4154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e94898490f7f9dc53c552bc9e4ac6bc"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0e94898490f7f9dc53c552bc9e4ac6bc">operations_research::math_opt::operator&lt;&lt;</a> (std::ostream &amp;out, const ModelRanges &amp;ranges)</td></tr>
+<tr class="separator:a0e94898490f7f9dc53c552bc9e4ac6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6749a1fe98eecd0e12bd3d26155d538b"><td class="memItemLeft" align="right" valign="top">ModelRanges&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a6749a1fe98eecd0e12bd3d26155d538b">operations_research::math_opt::ComputeModelRanges</a> (const Model &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a6749a1fe98eecd0e12bd3d26155d538b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ranges of the finite non-zero values in the given model.  <br /></td></tr>
+<tr class="separator:a6749a1fe98eecd0e12bd3d26155d538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="statistics_8h.html">statistics.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

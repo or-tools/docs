@@ -1,0 +1,6 @@
+var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGPendingException =
+[
+    [ "Retrieve", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGPendingException.html#a35bddaaf713a717d9910d860cada253a", null ],
+    [ "Set", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGPendingException.html#afd3f0cc62a15becec1ad8d03ae50943f", null ],
+    [ "Pending", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGPendingException.html#ab9399753d24c4af4b75475c71ea006de", null ]
+];

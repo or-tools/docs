@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: environment.h File Reference</title>
+<title>Google OR-Tools: ortools/gurobi/environment.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -102,18 +102,24 @@ $(document).ready(function(){initNavTree('environment_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">environment.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;absl/flags/declare.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="dynamic__library_8h_source.html">ortools/base/dynamic_library.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+</div>
 <p><a href="environment_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___g_r_bsvec.html">_GRBsvec</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GRBsvec.html">_GRBsvec</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -1313,17 +1319,17 @@ Typedefs</h2></td></tr>
 <tr class="separator:a865e461c79c88bc5c0d5f56087ae4876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2963ba0c46b86ac4680fb3bb4ca8b2f3"><td class="memItemLeft" align="right" valign="top">typedef struct _GRBenv&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3">GRBenv</a></td></tr>
 <tr class="separator:a2963ba0c46b86ac4680fb3bb4ca8b2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4693c3de94ce296b16879ff4dc71c0fa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___g_r_bsvec.html">_GRBsvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa">GRBsvec</a></td></tr>
+<tr class="memitem:a4693c3de94ce296b16879ff4dc71c0fa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__GRBsvec.html">_GRBsvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa">GRBsvec</a></td></tr>
 <tr class="separator:a4693c3de94ce296b16879ff4dc71c0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6fb0c68e3b93033a6161597239899e38"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3">GRBenv</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6fb0c68e3b93033a6161597239899e38">GetGurobiEnv</a> ()</td></tr>
-<tr class="separator:a6fb0c68e3b93033a6161597239899e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79aad20cb4baeeb6be9336730973514"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac79aad20cb4baeeb6be9336730973514">GurobiIsCorrectlyInstalled</a> ()</td></tr>
-<tr class="separator:ac79aad20cb4baeeb6be9336730973514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c6ca37ce0f44ef738366070fe992a4"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad6c6ca37ce0f44ef738366070fe992a4">LoadGurobiDynamicLibrary</a> (std::vector&lt; std::string &gt; potential_paths)</td></tr>
-<tr class="separator:ad6c6ca37ce0f44ef738366070fe992a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac440f77ffb776982f70553abfd042d38"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3">GRBenv</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac440f77ffb776982f70553abfd042d38">operations_research::GetGurobiEnv</a> ()</td></tr>
+<tr class="separator:ac440f77ffb776982f70553abfd042d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4a6b9d1e57ed3500a6446b87bf4e6b46">operations_research::GurobiIsCorrectlyInstalled</a> ()</td></tr>
+<tr class="separator:a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c14625c2c0ced9455b630179cab55f0"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3c14625c2c0ced9455b630179cab55f0">operations_research::LoadGurobiDynamicLibrary</a> (std::vector&lt; std::string &gt; potential_paths)</td></tr>
+<tr class="separator:a3c14625c2c0ced9455b630179cab55f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4029272666dfcff1fa54cf75875757b0" name="a4029272666dfcff1fa54cf75875757b0"></a>
@@ -10665,6 +10671,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The list of #define and extern std::function&lt;&gt; below is generated directly from gurobi_c.h via parse_header.py See the top comment on the parse_header.py file. This is the header section </p>
 
 <p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00062">62</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
@@ -10729,6 +10736,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
 <p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00027">27</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
@@ -10870,7 +10879,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct___g_r_bsvec.html">_GRBsvec</a> <a class="el" href="environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa">GRBsvec</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct__GRBsvec.html">_GRBsvec</a> <a class="el" href="environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa">GRBsvec</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10879,14 +10888,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_ca966d537abd5424901cf1273891b331.html">gurobi</a></li><li class="navelem"><a class="el" href="environment_8h.html">environment.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

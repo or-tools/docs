@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: routing_search.h File Reference</title>
+<title>Google OR-Tools: ortools/constraint_solver/routing_search.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,95 +100,108 @@ $(document).ready(function(){initNavTree('routing__search_8h.html',''); initResi
   <div class="headertitle"><div class="title">routing_search.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="adjustable__priority__queue_8h_source.html">ortools/base/adjustable_priority_queue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mathutil_8h_source.html">ortools/base/mathutil.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constraint__solveri_8h_source.html">ortools/constraint_solver/constraint_solveri.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="routing_8h_source.html">ortools/constraint_solver/routing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="routing__index__manager_8h_source.html">ortools/constraint_solver/routing_index_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+</div>
 <p><a href="routing__search_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_vehicle_type_curator.html">VehicleTypeCurator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that manages vehicles.  <a href="classoperations__research_1_1_vehicle_type_curator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1VehicleTypeCurator.html">operations_research::VehicleTypeCurator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_int_var_filtered_decision_builder.html">IntVarFilteredDecisionBuilder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_decision.html" title="A Decision represents a choice point in the search tree.">Decision</a> builder building a solution using heuristics with local search filters to evaluate its feasibility.  <a href="classoperations__research_1_1_int_var_filtered_decision_builder.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarFilteredDecisionBuilder.html">operations_research::IntVarFilteredDecisionBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_int_var_filtered_heuristic.html">IntVarFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic filter-based heuristic applied to IntVars.  <a href="classoperations__research_1_1_int_var_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html">operations_research::IntVarFilteredHeuristic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic filter-based heuristic applied to IntVars.  <a href="classoperations__research_1_1IntVarFilteredHeuristic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_routing_filtered_heuristic.html">RoutingFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter-based heuristic dedicated to routing.  <a href="classoperations__research_1_1_routing_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RoutingFilteredHeuristic.html">operations_research::RoutingFilteredHeuristic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter-based heuristic dedicated to routing.  <a href="classoperations__research_1_1RoutingFilteredHeuristic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_cheapest_insertion_filtered_heuristic.html">CheapestInsertionFilteredHeuristic</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html">operations_research::CheapestInsertionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_cheapest_insertion_filtered_heuristic_1_1_node_insertion.html">CheapestInsertionFilteredHeuristic::NodeInsertion</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html">operations_research::CheapestInsertionFilteredHeuristic::NodeInsertion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_cheapest_insertion_filtered_heuristic_1_1_start_end_value.html">CheapestInsertionFilteredHeuristic::StartEndValue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">operations_research::CheapestInsertionFilteredHeuristic::StartEndValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_global_cheapest_insertion_filtered_heuristic.html">GlobalCheapestInsertionFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter-based decision builder which builds a solution by inserting nodes at their cheapest position on any route; potentially several routes can be built in parallel.  <a href="classoperations__research_1_1_global_cheapest_insertion_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic.html">operations_research::GlobalCheapestInsertionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_global_cheapest_insertion_filtered_heuristic_1_1_global_cheapest_insertion_parameters.html">GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1GlobalCheapestInsertionParameters.html">operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_insertion_generator.html">InsertionGenerator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1InsertionGenerator.html">operations_research::InsertionGenerator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates insertion positions respecting structural constraints.  <a href="classoperations__research_1_1InsertionGenerator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_insertion_generator_1_1_pickup_delivery_insertion.html">InsertionGenerator::PickupDeliveryInsertion</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1InsertionGenerator_1_1PickupDeliveryInsertion.html">operations_research::InsertionGenerator::PickupDeliveryInsertion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_cheapest_insertion_filtered_heuristic.html">LocalCheapestInsertionFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter-base decision builder which builds a solution by inserting nodes at their cheapest position.  <a href="classoperations__research_1_1_local_cheapest_insertion_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalCheapestInsertionFilteredHeuristic.html">operations_research::LocalCheapestInsertionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_cheapest_addition_filtered_heuristic.html">CheapestAdditionFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtered-base decision builder based on the addition heuristic, extending a path from its start node with the cheapest arc.  <a href="classoperations__research_1_1_cheapest_addition_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestAdditionFilteredHeuristic.html">operations_research::CheapestAdditionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_evaluator_cheapest_addition_filtered_heuristic.html">EvaluatorCheapestAdditionFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classoperations__research_1_1_cheapest_addition_filtered_heuristic.html" title="Filtered-base decision builder based on the addition heuristic, extending a path from its start node ...">CheapestAdditionFilteredHeuristic</a> where the notion of 'cheapest arc' comes from an arc evaluator.  <a href="classoperations__research_1_1_evaluator_cheapest_addition_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EvaluatorCheapestAdditionFilteredHeuristic.html">operations_research::EvaluatorCheapestAdditionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_comparator_cheapest_addition_filtered_heuristic.html">ComparatorCheapestAdditionFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classoperations__research_1_1_cheapest_addition_filtered_heuristic.html" title="Filtered-base decision builder based on the addition heuristic, extending a path from its start node ...">CheapestAdditionFilteredHeuristic</a> where the notion of 'cheapest arc' comes from an arc comparator.  <a href="classoperations__research_1_1_comparator_cheapest_addition_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ComparatorCheapestAdditionFilteredHeuristic.html">operations_research::ComparatorCheapestAdditionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_savings_filtered_heuristic.html">SavingsFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter-based decision builder which builds a solution by using Clarke &amp; Wright's Savings heuristic.  <a href="classoperations__research_1_1_savings_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic.html">operations_research::SavingsFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_savings_filtered_heuristic_1_1_savings_parameters.html">SavingsFilteredHeuristic::SavingsParameters</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters.html">operations_research::SavingsFilteredHeuristic::SavingsParameters</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_sequential_savings_filtered_heuristic.html">SequentialSavingsFilteredHeuristic</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SequentialSavingsFilteredHeuristic.html">operations_research::SequentialSavingsFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_parallel_savings_filtered_heuristic.html">ParallelSavingsFilteredHeuristic</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ParallelSavingsFilteredHeuristic.html">operations_research::ParallelSavingsFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_christofides_filtered_heuristic.html">ChristofidesFilteredHeuristic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Christofides addition heuristic.  <a href="classoperations__research_1_1_christofides_filtered_heuristic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ChristofidesFilteredHeuristic.html">operations_research::ChristofidesFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_sweep_arranger.html">SweepArranger</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to arrange indices by their distance and their angle from the depot.  <a href="classoperations__research_1_1_sweep_arranger.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html">operations_research::SweepArranger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a89152c6d7ca6a92ff106fe602c706816"><td class="memItemLeft" align="right" valign="top">FirstSolutionStrategy::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a89152c6d7ca6a92ff106fe602c706816">AutomaticFirstSolutionStrategy</a> (bool has_pickup_deliveries, bool has_node_precedences, bool has_single_vehicle_node)</td></tr>
-<tr class="memdesc:a89152c6d7ca6a92ff106fe602c706816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the best value for the automatic first solution strategy, based on the given model parameters.  <br /></td></tr>
-<tr class="separator:a89152c6d7ca6a92ff106fe602c706816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf676e53bf6a7aa3d7378c51286e30c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acf676e53bf6a7aa3d7378c51286e30c1">ComputeVehicleEndChainStarts</a> (const RoutingModel &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:acf676e53bf6a7aa3d7378c51286e30c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the first node in the end chain of each vehicle in the model, based on the current bound NextVar values.  <br /></td></tr>
-<tr class="separator:acf676e53bf6a7aa3d7378c51286e30c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5b064a7895b1fc8084546441a57b46a"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab5b064a7895b1fc8084546441a57b46a">MakeSweepDecisionBuilder</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool check_assignment)</td></tr>
-<tr class="separator:ab5b064a7895b1fc8084546441a57b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a2d5d3c5887e436bf4da4c20a99a26"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a26a2d5d3c5887e436bf4da4c20a99a26">MakeAllUnperformed</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a26a2d5d3c5887e436bf4da4c20a99a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270548116df8ad74e03d376c40025566"><td class="memItemLeft" align="right" valign="top">FirstSolutionStrategy::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a270548116df8ad74e03d376c40025566">operations_research::AutomaticFirstSolutionStrategy</a> (bool has_pickup_deliveries, bool has_node_precedences, bool has_single_vehicle_node)</td></tr>
+<tr class="separator:a270548116df8ad74e03d376c40025566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3612f98ca854e853c3e232b9517c9701"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3612f98ca854e853c3e232b9517c9701">operations_research::ComputeVehicleEndChainStarts</a> (const RoutingModel &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a3612f98ca854e853c3e232b9517c9701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfddf7e2bc62dbfcd1fd3f22a860f65"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abcfddf7e2bc62dbfcd1fd3f22a860f65">operations_research::MakeSweepDecisionBuilder</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool check_assignment)</td></tr>
+<tr class="separator:abcfddf7e2bc62dbfcd1fd3f22a860f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f93915e843433755b9ac673fbe78f7c"><td class="memItemLeft" align="right" valign="top">DecisionBuilder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0f93915e843433755b9ac673fbe78f7c">operations_research::MakeAllUnperformed</a> (RoutingModel *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a0f93915e843433755b9ac673fbe78f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classoperations__research_1_1DecisionBuilder.html">DecisionBuilder</a> making all nodes unperformed.  <br /></td></tr>
+<tr class="separator:a0f93915e843433755b9ac673fbe78f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_afbb39f66221aac28bbdefd1dca2b2b0.html">constraint_solver</a></li><li class="navelem"><a class="el" href="routing__search_8h.html">routing_search.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: sparse_containers.h Source File</title>
+<title>Google OR-Tools: ortools/math_opt/cpp/sparse_containers.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -143,11 +143,11 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//  * vars_proto.ids has elements that are variables in `model`.</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Note that the values of vars_proto.values are not checked (it may have NaNs).</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>absl::StatusOr&lt;VariableMap&lt;double&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a7e1d5463fd2ab7205f2c1e1efeaaa669">VariableValuesFromProto</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>absl::StatusOr&lt;VariableMap&lt;double&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a62b0640d4793cf31886de2a8956254cf">VariableValuesFromProto</a>(</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> ModelStorage* <span class="keyword">const</span> <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <span class="keyword">const</span> SparseDoubleVectorProto&amp; vars_proto);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Returns the proto equivalent of variable_values.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>SparseDoubleVectorProto <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#abcbb8eeca83b40ce6a747a71d6f13482">VariableValuesToProto</a>(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>SparseDoubleVectorProto <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a96d334f018cd64754f057b885ec81fab">VariableValuesToProto</a>(</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> VariableMap&lt;double&gt;&amp; variable_values);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Returns the LinearConstraintMap&lt;double&gt; equivalent to `lin_cons_proto`.</span></div>
@@ -160,12 +160,12 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Note that the values of lin_cons_proto.values are not checked (it may have</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// NaNs).</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>absl::StatusOr&lt;LinearConstraintMap&lt;double&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a3f2513fc2e498c8c6028bdd10ae29376">LinearConstraintValuesFromProto</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>absl::StatusOr&lt;LinearConstraintMap&lt;double&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a41c5a2411793d630d76351e83fa7f22a">LinearConstraintValuesFromProto</a>(</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">const</span> ModelStorage* <span class="keyword">const</span> <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">const</span> SparseDoubleVectorProto&amp; lin_cons_proto);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// Returns the proto equivalent of linear_constraint_values.</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>SparseDoubleVectorProto <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a5552e30bfd19f3f636a3d42c3c7194e4">LinearConstraintValuesToProto</a>(</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>SparseDoubleVectorProto <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a36ff904fd1095b6c8588e2e7d25ccb2d">LinearConstraintValuesToProto</a>(</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">const</span> LinearConstraintMap&lt;double&gt;&amp; linear_constraint_values);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Returns the VariableMap&lt;BasisStatus&gt; equivalent to `basis_proto`.</span></div>
@@ -176,12 +176,12 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//  * basis_proto.ids has elements in [0, max(int64_t)).</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//  * basis_proto.ids has elements that are variables in `model`.</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//  * basis_proto.values does not contain UNSPECIFIED and has valid enum values.</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>absl::StatusOr&lt;VariableMap&lt;BasisStatus&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a7b31b1869d853b3e95df20ddeb0df117">VariableBasisFromProto</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>absl::StatusOr&lt;VariableMap&lt;BasisStatus&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ac5e18dd898517136444a5f6ec986102f">VariableBasisFromProto</a>(</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> ModelStorage* <span class="keyword">const</span> <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">const</span> SparseBasisStatusVector&amp; basis_proto);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// Returns the proto equivalent of basis_values.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>SparseBasisStatusVector <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a10464f7c412c5804087ac32efdf1c693">VariableBasisToProto</a>(</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>SparseBasisStatusVector <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a67a72267ba3c5cb04de3bcdcff15014d">VariableBasisToProto</a>(</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">const</span> VariableMap&lt;BasisStatus&gt;&amp; basis_values);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Returns the LinearConstraintMap&lt;BasisStatus&gt; equivalent to `basis_proto`.</span></div>
@@ -192,12 +192,12 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//  * basis_proto.ids has elements in [0, max(int64_t)).</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//  * basis_proto.ids has elements that are linear constraints in `model`.</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//  * basis_proto.values does not contain UNSPECIFIED and has valid enum values.</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>absl::StatusOr&lt;LinearConstraintMap&lt;BasisStatus&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ada50a1b97bfb930321a9df4dbee6a145">LinearConstraintBasisFromProto</a>(</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>absl::StatusOr&lt;LinearConstraintMap&lt;BasisStatus&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a3b93044ff7b447d4c3922dd48aa1b633">LinearConstraintBasisFromProto</a>(</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">const</span> ModelStorage* <span class="keyword">const</span> <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> SparseBasisStatusVector&amp; basis_proto);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// Returns the proto equivalent of basis_values.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>SparseBasisStatusVector <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a2038189736f63f074de8850b5fcf584e">LinearConstraintBasisToProto</a>(</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>SparseBasisStatusVector <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a8abcb7751279d6be7777d6a95087c0f1">LinearConstraintBasisToProto</a>(</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">const</span> LinearConstraintMap&lt;BasisStatus&gt;&amp; basis_values);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
@@ -210,15 +210,15 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="ttc" id="aids__validator_8h_html"><div class="ttname"><a href="ids__validator_8h.html">ids_validator.h</a></div></div>
 <div class="ttc" id="amath__opt_2cpp_2linear__constraint_8h_html"><div class="ttname"><a href="math__opt_2cpp_2linear__constraint_8h.html">linear_constraint.h</a></div></div>
 <div class="ttc" id="amodel__storage_8h_html"><div class="ttname"><a href="model__storage_8h.html">model_storage.h</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a10464f7c412c5804087ac32efdf1c693"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a10464f7c412c5804087ac32efdf1c693">operations_research::math_opt::VariableBasisToProto</a></div><div class="ttdeci">SparseBasisStatusVector VariableBasisToProto(const VariableMap&lt; BasisStatus &gt; &amp;basis_values)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00138">sparse_containers.cc:138</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a2038189736f63f074de8850b5fcf584e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a2038189736f63f074de8850b5fcf584e">operations_research::math_opt::LinearConstraintBasisToProto</a></div><div class="ttdeci">SparseBasisStatusVector LinearConstraintBasisToProto(const LinearConstraintMap&lt; BasisStatus &gt; &amp;basis_values)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00151">sparse_containers.cc:151</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a3f2513fc2e498c8c6028bdd10ae29376"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a3f2513fc2e498c8c6028bdd10ae29376">operations_research::math_opt::LinearConstraintValuesFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; LinearConstraintMap&lt; double &gt; &gt; LinearConstraintValuesFromProto(const ModelStorage *const model, const SparseDoubleVectorProto &amp;lin_cons_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00116">sparse_containers.cc:116</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a5552e30bfd19f3f636a3d42c3c7194e4"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a5552e30bfd19f3f636a3d42c3c7194e4">operations_research::math_opt::LinearConstraintValuesToProto</a></div><div class="ttdeci">SparseDoubleVectorProto LinearConstraintValuesToProto(const LinearConstraintMap&lt; double &gt; &amp;linear_constraint_values)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00125">sparse_containers.cc:125</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a7b31b1869d853b3e95df20ddeb0df117"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a7b31b1869d853b3e95df20ddeb0df117">operations_research::math_opt::VariableBasisFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; VariableMap&lt; BasisStatus &gt; &gt; VariableBasisFromProto(const ModelStorage *const model, const SparseBasisStatusVector &amp;basis_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00130">sparse_containers.cc:130</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a7e1d5463fd2ab7205f2c1e1efeaaa669"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a7e1d5463fd2ab7205f2c1e1efeaaa669">operations_research::math_opt::VariableValuesFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; VariableMap&lt; double &gt; &gt; VariableValuesFromProto(const ModelStorage *const model, const SparseDoubleVectorProto &amp;vars_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00103">sparse_containers.cc:103</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_abcbb8eeca83b40ce6a747a71d6f13482"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#abcbb8eeca83b40ce6a747a71d6f13482">operations_research::math_opt::VariableValuesToProto</a></div><div class="ttdeci">SparseDoubleVectorProto VariableValuesToProto(const VariableMap&lt; double &gt; &amp;variable_values)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00111">sparse_containers.cc:111</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ada50a1b97bfb930321a9df4dbee6a145"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ada50a1b97bfb930321a9df4dbee6a145">operations_research::math_opt::LinearConstraintBasisFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; LinearConstraintMap&lt; BasisStatus &gt; &gt; LinearConstraintBasisFromProto(const ModelStorage *const model, const SparseBasisStatusVector &amp;basis_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00143">sparse_containers.cc:143</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition:</b> <a href="indicator__constraint_8cc_source.html#l00026">indicator_constraint.cc:26</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a36ff904fd1095b6c8588e2e7d25ccb2d"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a36ff904fd1095b6c8588e2e7d25ccb2d">operations_research::math_opt::LinearConstraintValuesToProto</a></div><div class="ttdeci">SparseDoubleVectorProto LinearConstraintValuesToProto(const LinearConstraintMap&lt; double &gt; &amp;linear_constraint_values)</div><div class="ttdoc">Returns the proto equivalent of linear_constraint_values.</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00125">sparse_containers.cc:125</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a3b93044ff7b447d4c3922dd48aa1b633"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a3b93044ff7b447d4c3922dd48aa1b633">operations_research::math_opt::LinearConstraintBasisFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; LinearConstraintMap&lt; BasisStatus &gt; &gt; LinearConstraintBasisFromProto(const ModelStorage *const model, const SparseBasisStatusVector &amp;basis_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00143">sparse_containers.cc:143</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a41c5a2411793d630d76351e83fa7f22a"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a41c5a2411793d630d76351e83fa7f22a">operations_research::math_opt::LinearConstraintValuesFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; LinearConstraintMap&lt; double &gt; &gt; LinearConstraintValuesFromProto(const ModelStorage *const model, const SparseDoubleVectorProto &amp;lin_cons_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00116">sparse_containers.cc:116</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a62b0640d4793cf31886de2a8956254cf"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a62b0640d4793cf31886de2a8956254cf">operations_research::math_opt::VariableValuesFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; VariableMap&lt; double &gt; &gt; VariableValuesFromProto(const ModelStorage *const model, const SparseDoubleVectorProto &amp;vars_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00103">sparse_containers.cc:103</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a67a72267ba3c5cb04de3bcdcff15014d"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a67a72267ba3c5cb04de3bcdcff15014d">operations_research::math_opt::VariableBasisToProto</a></div><div class="ttdeci">SparseBasisStatusVector VariableBasisToProto(const VariableMap&lt; BasisStatus &gt; &amp;basis_values)</div><div class="ttdoc">Returns the proto equivalent of basis_values.</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00138">sparse_containers.cc:138</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a8abcb7751279d6be7777d6a95087c0f1"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a8abcb7751279d6be7777d6a95087c0f1">operations_research::math_opt::LinearConstraintBasisToProto</a></div><div class="ttdeci">SparseBasisStatusVector LinearConstraintBasisToProto(const LinearConstraintMap&lt; BasisStatus &gt; &amp;basis_values)</div><div class="ttdoc">Returns the proto equivalent of basis_values.</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00151">sparse_containers.cc:151</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a96d334f018cd64754f057b885ec81fab"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a96d334f018cd64754f057b885ec81fab">operations_research::math_opt::VariableValuesToProto</a></div><div class="ttdeci">SparseDoubleVectorProto VariableValuesToProto(const VariableMap&lt; double &gt; &amp;variable_values)</div><div class="ttdoc">Returns the proto equivalent of variable_values.</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00111">sparse_containers.cc:111</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_ac5e18dd898517136444a5f6ec986102f"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#ac5e18dd898517136444a5f6ec986102f">operations_research::math_opt::VariableBasisFromProto</a></div><div class="ttdeci">absl::StatusOr&lt; VariableMap&lt; BasisStatus &gt; &gt; VariableBasisFromProto(const ModelStorage *const model, const SparseBasisStatusVector &amp;basis_proto)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__containers_8cc_source.html#l00130">sparse_containers.cc:130</a></div></div>
 <div class="ttc" id="asparse__vector__validator_8h_html"><div class="ttname"><a href="sparse__vector__validator_8h.html">sparse_vector_validator.h</a></div></div>
 <div class="ttc" id="asparse__vector__view_8h_html"><div class="ttname"><a href="sparse__vector__view_8h.html">sparse_vector_view.h</a></div></div>
 <div class="ttc" id="astatus__builder_8h_html"><div class="ttname"><a href="status__builder_8h.html">status_builder.h</a></div></div>
@@ -226,14 +226,11 @@ $(document).ready(function(){initNavTree('sparse__containers_8h_source.html','')
 <div class="ttc" id="avariable__and__expressions_8h_html"><div class="ttname"><a href="variable__and__expressions_8h.html">variable_and_expressions.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_1defc00030ff81d309105e053121082f.html">math_opt</a></li><li class="navelem"><a class="el" href="dir_dd5645fbbabcdccb47d1d6db92f0f35b.html">cpp</a></li><li class="navelem"><a class="el" href="sparse__containers_8h.html">sparse_containers.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

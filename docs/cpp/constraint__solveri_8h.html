@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: constraint_solveri.h File Reference</title>
+<title>Google OR-Tools: ortools/constraint_solver/constraint_solveri.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -101,305 +101,304 @@ $(document).ready(function(){initNavTree('constraint__solveri_8h.html',''); init
   <div class="headertitle"><div class="title">constraint_solveri.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;initializer_list&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tuple__set_8h_source.html">ortools/util/tuple_set.h</a>&quot;</code><br />
+</div>
 <p><a href="constraint__solveri_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_base_int_expr.html">BaseIntExpr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseIntExpr.html">operations_research::BaseIntExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_simple_rev_f_i_f_o.html">SimpleRevFIFO&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represent a reversible FIFO structure.  <a href="classoperations__research_1_1_simple_rev_f_i_f_o.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SimpleRevFIFO.html">operations_research::SimpleRevFIFO&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_simple_rev_f_i_f_o_1_1_iterator.html">SimpleRevFIFO&lt; T &gt;::Iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This iterator is not stable with respect to deletion.  <a href="classoperations__research_1_1_simple_rev_f_i_f_o_1_1_iterator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SimpleRevFIFO_1_1Iterator.html">operations_research::SimpleRevFIFO&lt; T &gt;::Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This iterator is not stable with respect to deletion.  <a href="classoperations__research_1_1SimpleRevFIFO_1_1Iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_immutable_multi_map.html">RevImmutableMultiMap&lt; K, V &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reversible Immutable MultiMap class.  <a href="classoperations__research_1_1_rev_immutable_multi_map.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevImmutableMultiMap.html">operations_research::RevImmutableMultiMap&lt; K, V &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_switch.html">RevSwitch</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reversible switch that can switch once from false to true.  <a href="classoperations__research_1_1_rev_switch.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevSwitch.html">operations_research::RevSwitch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reversible switch that can switch once from false to true.  <a href="classoperations__research_1_1RevSwitch.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_small_rev_bit_set.html">SmallRevBitSet</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a small reversible bitset (size &lt;= 64).  <a href="classoperations__research_1_1_small_rev_bit_set.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SmallRevBitSet.html">operations_research::SmallRevBitSet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_bit_set.html">RevBitSet</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a reversible bitset.  <a href="classoperations__research_1_1_rev_bit_set.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevBitSet.html">operations_research::RevBitSet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_bit_matrix.html">RevBitMatrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix version of the <a class="el" href="classoperations__research_1_1_rev_bit_set.html" title="This class represents a reversible bitset.">RevBitSet</a> class.  <a href="classoperations__research_1_1_rev_bit_matrix.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevBitMatrix.html">operations_research::RevBitMatrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix version of the <a class="el" href="classoperations__research_1_1RevBitSet.html">RevBitSet</a> class.  <a href="classoperations__research_1_1RevBitMatrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_call_method0.html">CallMethod0&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_demon.html" title="A Demon is the base element of a propagation queue.">Demon</a> proxy to a method on the constraint with no arguments.  <a href="classoperations__research_1_1_call_method0.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CallMethod0.html">operations_research::CallMethod0&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Demon.html">Demon</a> proxy to a method on the constraint with no arguments.  <a href="classoperations__research_1_1CallMethod0.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_call_method1.html">CallMethod1&lt; T, P &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_demon.html" title="A Demon is the base element of a propagation queue.">Demon</a> proxy to a method on the constraint with one argument.  <a href="classoperations__research_1_1_call_method1.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CallMethod1.html">operations_research::CallMethod1&lt; T, P &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Demon.html">Demon</a> proxy to a method on the constraint with one argument.  <a href="classoperations__research_1_1CallMethod1.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_call_method2.html">CallMethod2&lt; T, P, Q &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_demon.html" title="A Demon is the base element of a propagation queue.">Demon</a> proxy to a method on the constraint with two arguments.  <a href="classoperations__research_1_1_call_method2.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CallMethod2.html">operations_research::CallMethod2&lt; T, P, Q &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Demon.html">Demon</a> proxy to a method on the constraint with two arguments.  <a href="classoperations__research_1_1CallMethod2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_call_method3.html">CallMethod3&lt; T, P, Q, R &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_demon.html" title="A Demon is the base element of a propagation queue.">Demon</a> proxy to a method on the constraint with three arguments.  <a href="classoperations__research_1_1_call_method3.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CallMethod3.html">operations_research::CallMethod3&lt; T, P, Q, R &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Demon.html">Demon</a> proxy to a method on the constraint with three arguments.  <a href="classoperations__research_1_1CallMethod3.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_delayed_call_method0.html">DelayedCallMethod0&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with no arguments.  <a href="classoperations__research_1_1_delayed_call_method0.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DelayedCallMethod0.html">operations_research::DelayedCallMethod0&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with no arguments.  <a href="classoperations__research_1_1DelayedCallMethod0.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_delayed_call_method1.html">DelayedCallMethod1&lt; T, P &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with one argument.  <a href="classoperations__research_1_1_delayed_call_method1.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DelayedCallMethod1.html">operations_research::DelayedCallMethod1&lt; T, P &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with one argument.  <a href="classoperations__research_1_1DelayedCallMethod1.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_delayed_call_method2.html">DelayedCallMethod2&lt; T, P, Q &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with two arguments.  <a href="classoperations__research_1_1_delayed_call_method2.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DelayedCallMethod2.html">operations_research::DelayedCallMethod2&lt; T, P, Q &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low-priority demon proxy to a method on the constraint with two arguments.  <a href="classoperations__research_1_1DelayedCallMethod2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_light_int_function_element_ct.html">LightIntFunctionElementCt&lt; F &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LightIntFunctionElementCt.html">operations_research::LightIntFunctionElementCt&lt; F &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1LightIntFunctionElementCt.html" title="--— LightIntFunctionElementCt --—">LightIntFunctionElementCt</a> --&mdash;  <a href="classoperations__research_1_1LightIntFunctionElementCt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_light_int_int_function_element_ct.html">LightIntIntFunctionElementCt&lt; F &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LightIntIntFunctionElementCt.html">operations_research::LightIntIntFunctionElementCt&lt; F &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1LightIntIntFunctionElementCt.html" title="--— LightIntIntFunctionElementCt --—">LightIntIntFunctionElementCt</a> --&mdash;  <a href="classoperations__research_1_1LightIntIntFunctionElementCt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_operator.html">LocalSearchOperator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for all local search operators.  <a href="classoperations__research_1_1_local_search_operator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchOperator.html">operations_research::LocalSearchOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_operator_state.html">LocalSearchOperatorState</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchOperatorState.html">operations_research::LocalSearchOperatorState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_int_var_local_search_operator.html">IntVarLocalSearchOperator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classoperations__research_1_1_local_search_operator.html" title="The base class for all local search operators.">LocalSearchOperator</a> built from an array of IntVars which specifies the scope of the operator.  <a href="classoperations__research_1_1_int_var_local_search_operator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html">operations_research::IntVarLocalSearchOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_base_lns.html">BaseLns</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the base class for building an Lns operator.  <a href="classoperations__research_1_1_base_lns.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseLns.html">operations_research::BaseLns</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_change_value.html">ChangeValue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines operators which change the value of variables; each neighbor corresponds to <em>one</em> modified variable.  <a href="classoperations__research_1_1_change_value.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ChangeValue.html">operations_research::ChangeValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_operator.html">PathOperator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class of the local search operators dedicated to path modifications (a path is a set of nodes linked together by arcs).  <a href="classoperations__research_1_1_path_operator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathOperator.html">operations_research::PathOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_path_operator_1_1_iteration_parameters.html">PathOperator::IterationParameters</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1_set.html">Set</a> of parameters used to configure how the neighnorhood is traversed.  <a href="structoperations__research_1_1_path_operator_1_1_iteration_parameters.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1PathOperator_1_1IterationParameters.html">operations_research::PathOperator::IterationParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Set.html">Set</a> of parameters used to configure how the neighnorhood is traversed.  <a href="structoperations__research_1_1PathOperator_1_1IterationParameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_state.html">LocalSearchState</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html">operations_research::LocalSearchState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_variable.html">LocalSearchVariable</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchVariable.html">operations_research::LocalSearchVariable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_filter.html">LocalSearchFilter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local <a class="el" href="classoperations__research_1_1_search.html">Search</a> Filters are used for fast neighbor pruning.  <a href="classoperations__research_1_1_local_search_filter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchFilter.html">operations_research::LocalSearchFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_filter_manager.html">LocalSearchFilterManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter manager: when a move is made, filters are executed to decide whether the solution is feasible and compute parts of the new cost.  <a href="classoperations__research_1_1_local_search_filter_manager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchFilterManager.html">operations_research::LocalSearchFilterManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_local_search_filter_manager_1_1_filter_event.html">LocalSearchFilterManager::FilterEvent</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1LocalSearchFilterManager_1_1FilterEvent.html">operations_research::LocalSearchFilterManager::FilterEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_int_var_local_search_filter.html">IntVarLocalSearchFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarLocalSearchFilter.html">operations_research::IntVarLocalSearchFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_propagation_monitor.html">PropagationMonitor</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PropagationMonitor.html">operations_research::PropagationMonitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_local_search_monitor.html">LocalSearchMonitor</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchMonitor.html">operations_research::LocalSearchMonitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_boolean_var.html">BooleanVar</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BooleanVar.html">operations_research::BooleanVar</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_symmetry_breaker.html">SymmetryBreaker</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A symmetry breaker is an object that will visit a decision and create the 'symmetrical' decision in return.  <a href="classoperations__research_1_1_symmetry_breaker.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SymmetryBreaker.html">operations_research::SymmetryBreaker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_search_log.html">SearchLog</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class of all search logs that periodically outputs information when the search is running.  <a href="classoperations__research_1_1_search_log.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SearchLog.html">operations_research::SearchLog</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_model_cache.html">ModelCache</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a complete cache for model elements: expressions and constraints.  <a href="classoperations__research_1_1_model_cache.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ModelCache.html">operations_research::ModelCache</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_argument_holder.html">ArgumentHolder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument Holder: useful when visiting a model.  <a href="classoperations__research_1_1_argument_holder.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ArgumentHolder.html">operations_research::ArgumentHolder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument Holder: useful when visiting a model.  <a href="classoperations__research_1_1ArgumentHolder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_model_parser.html">ModelParser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Parser.  <a href="classoperations__research_1_1_model_parser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ModelParser.html">operations_research::ModelParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Parser.  <a href="classoperations__research_1_1ModelParser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_array_with_offset.html">ArrayWithOffset&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ArrayWithOffset.html">operations_research::ArrayWithOffset&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_growing_array.html">RevGrowingArray&lt; T, C &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is a reversible growing array.  <a href="classoperations__research_1_1_rev_growing_array.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevGrowingArray.html">operations_research::RevGrowingArray&lt; T, C &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_int_set.html">RevIntSet&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a special class to represent a 'residual' set of T.  <a href="classoperations__research_1_1_rev_int_set.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevIntSet.html">operations_research::RevIntSet&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_rev_partial_sequence.html">RevPartialSequence</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1_rev_partial_sequence.html" title="--— RevPartialSequence --—">RevPartialSequence</a> --&mdash;  <a href="classoperations__research_1_1_rev_partial_sequence.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RevPartialSequence.html">operations_research::RevPartialSequence</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1RevPartialSequence.html" title="--— RevPartialSequence --—">RevPartialSequence</a> --&mdash;  <a href="classoperations__research_1_1RevPartialSequence.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_unsorted_nullable_rev_bitset.html">UnsortedNullableRevBitset</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a reversible bitset.  <a href="classoperations__research_1_1_unsorted_nullable_rev_bitset.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1UnsortedNullableRevBitset.html">operations_research::UnsortedNullableRevBitset</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state.html">PathState</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState.html">operations_research::PathState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_path_state_1_1_chain_bounds.html">PathState::ChainBounds</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1PathState_1_1ChainBounds.html">operations_research::PathState::ChainBounds</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_chain.html">PathState::Chain</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1Chain.html">operations_research::PathState::Chain</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classoperations__research_1_1PathState_1_1Chain.html" title="A Chain is a range of committed nodes.">Chain</a> is a range of committed nodes.  <a href="classoperations__research_1_1PathState_1_1Chain.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_chain_1_1_iterator.html">PathState::Chain::Iterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1Chain_1_1Iterator.html">operations_research::PathState::Chain::Iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_chain_range.html">PathState::ChainRange</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1ChainRange.html">operations_research::PathState::ChainRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classoperations__research_1_1PathState_1_1ChainRange.html" title="A ChainRange is a range of Chains, committed or not.">ChainRange</a> is a range of Chains, committed or not.  <a href="classoperations__research_1_1PathState_1_1ChainRange.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_chain_range_1_1_iterator.html">PathState::ChainRange::Iterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1ChainRange_1_1Iterator.html">operations_research::PathState::ChainRange::Iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_node_range.html">PathState::NodeRange</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1NodeRange.html">operations_research::PathState::NodeRange</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_path_state_1_1_node_range_1_1_iterator.html">PathState::NodeRange::Iterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathState_1_1NodeRange_1_1Iterator.html">operations_research::PathState::NodeRange::Iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1_dimension_checker.html">DimensionChecker</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionChecker.html">operations_research::DimensionChecker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_dimension_checker_1_1_interval.html">DimensionChecker::Interval</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1DimensionChecker_1_1Interval.html">operations_research::DimensionChecker::Interval</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1_dimension_checker_1_1_extended_interval.html">DimensionChecker::ExtendedInterval</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1DimensionChecker_1_1ExtendedInterval.html">operations_research::DimensionChecker::ExtendedInterval</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a403e52e933033645c3388146d5e2edd2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a> { <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2aa876f4fb4e5f7f0c5c48fcf66c9ce7ce">UNSPECIFIED</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2afd9ce19c75c8a2e8ff4c7307eff08e38">DOMAIN_INT_VAR</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2a00e6c449ab034942ac313f8b48643f4b">BOOLEAN_VAR</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2ac84956f1086e3f828921e0b3d51d806b">CONST_VAR</a>
+<tr class="memitem:a744e7cc90d56b2c503520ee1f97fc1db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1db">operations_research::VarTypes</a> { <br />
+&#160;&#160;<a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dbab4f91414920a046da6b20cd63a2796e6">operations_research::UNSPECIFIED</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba035478726d2dcd2fb9ac77afb5c759cc">operations_research::DOMAIN_INT_VAR</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba79122eee2a14a98d575b0b9ac73b0e42">operations_research::BOOLEAN_VAR</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dbad9de5a1ac157ce63c698777275b17787">operations_research::CONST_VAR</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2a16071208281c29136c1be022b7d170f0">VAR_ADD_CST</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2a0ae20d0967db3441a2b885e5074c4b36">VAR_TIMES_CST</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2a89a5a9b8c00be595eb52b4d464613d30">CST_SUB_VAR</a>
-, <a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2ae8e4c6f3e5a6d22d24204ec432f57860">OPP_VAR</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba0cc8439ff5d71bb0c4c981cd04b73d55">operations_research::VAR_ADD_CST</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dbaa77c2e49834d223253421d9e3d69c51c">operations_research::VAR_TIMES_CST</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba93697c551d06ce8d37be776116f23f66">operations_research::CST_SUB_VAR</a>
+, <a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba9558ccbf57e24d3ddde9bfbf2835e4fe">operations_research::OPP_VAR</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2af2d15b703802d6a1f8f402f90de90dc6">TRACE_VAR</a>
+&#160;&#160;<a class="el" href="namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba93b00759c703fe20d9d8a5a75268a69d">operations_research::TRACE_VAR</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a403e52e933033645c3388146d5e2edd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum is used internally to do dynamic typing on subclasses of integer variables.  <a href="namespaceoperations__research.html#a403e52e933033645c3388146d5e2edd2">More...</a><br /></td></tr>
-<tr class="separator:a403e52e933033645c3388146d5e2edd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a744e7cc90d56b2c503520ee1f97fc1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9f86a5616c4964ad78052fee01dc6d40"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9f86a5616c4964ad78052fee01dc6d40">Hash1</a> (uint64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="memdesc:a9f86a5616c4964ad78052fee01dc6d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash functions.  <br /></td></tr>
-<tr class="separator:a9f86a5616c4964ad78052fee01dc6d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38b9e705a951a86a8b17287d4f97b3c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab38b9e705a951a86a8b17287d4f97b3c">Hash1</a> (uint32_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:ab38b9e705a951a86a8b17287d4f97b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e76a399b57f76fc331443e38b758df"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a06e76a399b57f76fc331443e38b758df">Hash1</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a06e76a399b57f76fc331443e38b758df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5651efc71e9dd1505277e9e4103492"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7c5651efc71e9dd1505277e9e4103492">Hash1</a> (int <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a7c5651efc71e9dd1505277e9e4103492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55afa9db1b04504b05d779ce667a0e83"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a55afa9db1b04504b05d779ce667a0e83">Hash1</a> (void *const ptr)</td></tr>
-<tr class="separator:a55afa9db1b04504b05d779ce667a0e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef610f7720e63fb050e3fa15fdbd3bd3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aef610f7720e63fb050e3fa15fdbd3bd3"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aef610f7720e63fb050e3fa15fdbd3bd3">Hash1</a> (const std::vector&lt; T * &gt; &amp;ptrs)</td></tr>
-<tr class="separator:aef610f7720e63fb050e3fa15fdbd3bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d97fe24c426d46b1a0938dc172c2c9b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5d97fe24c426d46b1a0938dc172c2c9b">Hash1</a> (const std::vector&lt; int64_t &gt; &amp;ptrs)</td></tr>
-<tr class="separator:a5d97fe24c426d46b1a0938dc172c2c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1988908f406c46ceaed7911f83aef59c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1988908f406c46ceaed7911f83aef59c"><td class="memTemplItemLeft" align="right" valign="top">LocalSearchOperator *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1988908f406c46ceaed7911f83aef59c">MakeLocalSearchOperator</a> (Solver *solver, const std::vector&lt; IntVar * &gt; &amp;vars, const std::vector&lt; IntVar * &gt; &amp;secondary_vars, std::function&lt; int(int64_t)&gt; start_empty_path_class)</td></tr>
-<tr class="memdesc:a1988908f406c46ceaed7911f83aef59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator Factories.  <br /></td></tr>
-<tr class="separator:a1988908f406c46ceaed7911f83aef59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71ca0155a47a87389c01c634f6fc9e68"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a71ca0155a47a87389c01c634f6fc9e68"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a71ca0155a47a87389c01c634f6fc9e68">IsArrayConstant</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a71ca0155a47a87389c01c634f6fc9e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c85258bf0b797759b3d85891fface5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae2c85258bf0b797759b3d85891fface5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae2c85258bf0b797759b3d85891fface5">IsArrayBoolean</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:ae2c85258bf0b797759b3d85891fface5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89f5b1f81cf90a080f8e8493cc05146"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad89f5b1f81cf90a080f8e8493cc05146"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad89f5b1f81cf90a080f8e8493cc05146">AreAllOnes</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:ad89f5b1f81cf90a080f8e8493cc05146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2beda849f583af0c8940390cd0b8b7a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac2beda849f583af0c8940390cd0b8b7a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac2beda849f583af0c8940390cd0b8b7a">AreAllNull</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:ac2beda849f583af0c8940390cd0b8b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae00e72165d38d0a6df523ff1c29eb2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aeae00e72165d38d0a6df523ff1c29eb2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aeae00e72165d38d0a6df523ff1c29eb2">AreAllGreaterOrEqual</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:aeae00e72165d38d0a6df523ff1c29eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504d5b6dc98a899b2f4097949ad88c7d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a504d5b6dc98a899b2f4097949ad88c7d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a504d5b6dc98a899b2f4097949ad88c7d">AreAllLessOrEqual</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a504d5b6dc98a899b2f4097949ad88c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aa822e0b8b7c48f31f424746d4f115b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3aa822e0b8b7c48f31f424746d4f115b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3aa822e0b8b7c48f31f424746d4f115b">AreAllPositive</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:a3aa822e0b8b7c48f31f424746d4f115b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4baee82ab9634bea78f8ff8cf63053"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1a4baee82ab9634bea78f8ff8cf63053"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1a4baee82ab9634bea78f8ff8cf63053">AreAllNegative</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:a1a4baee82ab9634bea78f8ff8cf63053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3c88b7f8f9293e27560a2a6f59e650"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9e3c88b7f8f9293e27560a2a6f59e650"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9e3c88b7f8f9293e27560a2a6f59e650">AreAllStrictlyPositive</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:a9e3c88b7f8f9293e27560a2a6f59e650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00aa7c5dd946b98a7cd7dedb2c2e5af9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a00aa7c5dd946b98a7cd7dedb2c2e5af9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a00aa7c5dd946b98a7cd7dedb2c2e5af9">AreAllStrictlyNegative</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:a00aa7c5dd946b98a7cd7dedb2c2e5af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9694b944e5a2d9342da9e6ba6b8f79e8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9694b944e5a2d9342da9e6ba6b8f79e8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9694b944e5a2d9342da9e6ba6b8f79e8">IsIncreasingContiguous</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:a9694b944e5a2d9342da9e6ba6b8f79e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dc06275df37ad4d7165f4e186f88dd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad9dc06275df37ad4d7165f4e186f88dd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad9dc06275df37ad4d7165f4e186f88dd">IsIncreasing</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="separator:ad9dc06275df37ad4d7165f4e186f88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d7b4e48fbe90fd00f5a93785c28d83"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a04d7b4e48fbe90fd00f5a93785c28d83"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a04d7b4e48fbe90fd00f5a93785c28d83">IsArrayInRange</a> (const std::vector&lt; IntVar * &gt; &amp;vars, T range_min, T range_max)</td></tr>
-<tr class="separator:a04d7b4e48fbe90fd00f5a93785c28d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a4ca2d0c4a27ba4d87ec0685a0574c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a19a4ca2d0c4a27ba4d87ec0685a0574c">AreAllBound</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
-<tr class="separator:a19a4ca2d0c4a27ba4d87ec0685a0574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd8614e9bce9c273c413121d2ec8090"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4bd8614e9bce9c273c413121d2ec8090">AreAllBooleans</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
-<tr class="separator:a4bd8614e9bce9c273c413121d2ec8090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59200267cf2d8e9da8d40bba20c44a2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af59200267cf2d8e9da8d40bba20c44a2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af59200267cf2d8e9da8d40bba20c44a2">AreAllBoundOrNull</a> (const std::vector&lt; IntVar * &gt; &amp;vars, const std::vector&lt; T &gt; &amp;values)</td></tr>
-<tr class="memdesc:af59200267cf2d8e9da8d40bba20c44a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all the variables are assigned to a single value, or if their corresponding value is null.  <br /></td></tr>
-<tr class="separator:af59200267cf2d8e9da8d40bba20c44a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7b1f1dbabd2fca04bab085c83557fd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab7b1f1dbabd2fca04bab085c83557fd1">AreAllBoundTo</a> (const std::vector&lt; IntVar * &gt; &amp;vars, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="memdesc:ab7b1f1dbabd2fca04bab085c83557fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all variables are assigned to 'value'.  <br /></td></tr>
-<tr class="separator:ab7b1f1dbabd2fca04bab085c83557fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7082b74f427f6a4626810032c637e22"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af7082b74f427f6a4626810032c637e22">MaxVarArray</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
-<tr class="separator:af7082b74f427f6a4626810032c637e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac206454368eff4836eb555ed73cc49"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aeac206454368eff4836eb555ed73cc49">MinVarArray</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
-<tr class="separator:aeac206454368eff4836eb555ed73cc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39241cd09c410586b0bc35bae2b39ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a39241cd09c410586b0bc35bae2b39ac1">FillValues</a> (const std::vector&lt; IntVar * &gt; &amp;vars, std::vector&lt; int64_t &gt; *const values)</td></tr>
-<tr class="separator:a39241cd09c410586b0bc35bae2b39ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf69969fdef86b60e78a64e49763036"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7cf69969fdef86b60e78a64e49763036">PosIntDivUp</a> (int64_t e, int64_t v)</td></tr>
-<tr class="separator:a7cf69969fdef86b60e78a64e49763036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4116cc9820db4746ba645c45331f59cd"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4116cc9820db4746ba645c45331f59cd">PosIntDivDown</a> (int64_t e, int64_t v)</td></tr>
-<tr class="separator:a4116cc9820db4746ba645c45331f59cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeac98dfd5ab1335f6d21a8d71bdfd51"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abeac98dfd5ab1335f6d21a8d71bdfd51">ToInt64Vector</a> (const std::vector&lt; int &gt; &amp;<a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>)</td></tr>
-<tr class="separator:abeac98dfd5ab1335f6d21a8d71bdfd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1de0a1f7cf121d53ee230f794ce51f5"><td class="memItemLeft" align="right" valign="top">LocalSearchFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae1de0a1f7cf121d53ee230f794ce51f5">MakePathStateFilter</a> (Solver *solver, std::unique_ptr&lt; PathState &gt; path_state, const std::vector&lt; IntVar * &gt; &amp;nexts)</td></tr>
-<tr class="separator:ae1de0a1f7cf121d53ee230f794ce51f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99bf06ef04f619448998a5ac107edaa7"><td class="memItemLeft" align="right" valign="top">LocalSearchFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a99bf06ef04f619448998a5ac107edaa7">MakeDimensionFilter</a> (Solver *solver, std::unique_ptr&lt; DimensionChecker &gt; checker, const std::string &amp;dimension_name)</td></tr>
-<tr class="separator:a99bf06ef04f619448998a5ac107edaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1401375b23909949cce272a3b787db"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aee1401375b23909949cce272a3b787db">operations_research::Hash1</a> (uint64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:aee1401375b23909949cce272a3b787db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c150546a98dce59439f838f68493d84"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5c150546a98dce59439f838f68493d84">operations_research::Hash1</a> (uint32_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a5c150546a98dce59439f838f68493d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e95e16a711ae93395f3735e07708708"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8e95e16a711ae93395f3735e07708708">operations_research::Hash1</a> (int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a8e95e16a711ae93395f3735e07708708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a6358ea0e13e600820df98156f132d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a53a6358ea0e13e600820df98156f132d">operations_research::Hash1</a> (int <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a53a6358ea0e13e600820df98156f132d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d85d1e77f31f346dba6bdc02067473"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a24d85d1e77f31f346dba6bdc02067473">operations_research::Hash1</a> (void *const ptr)</td></tr>
+<tr class="separator:a24d85d1e77f31f346dba6bdc02067473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14927dac339bd5be7348433e5ae46551"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a14927dac339bd5be7348433e5ae46551"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a14927dac339bd5be7348433e5ae46551">operations_research::Hash1</a> (const std::vector&lt; T * &gt; &amp;ptrs)</td></tr>
+<tr class="separator:a14927dac339bd5be7348433e5ae46551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597f70b9007402fadc265ccb27687966"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a597f70b9007402fadc265ccb27687966">operations_research::Hash1</a> (const std::vector&lt; int64_t &gt; &amp;ptrs)</td></tr>
+<tr class="separator:a597f70b9007402fadc265ccb27687966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2c92a28ee59ab17dfb5885ab3e20c8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5a2c92a28ee59ab17dfb5885ab3e20c8"><td class="memTemplItemLeft" align="right" valign="top">LocalSearchOperator *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5a2c92a28ee59ab17dfb5885ab3e20c8">operations_research::MakeLocalSearchOperator</a> (Solver *solver, const std::vector&lt; IntVar * &gt; &amp;vars, const std::vector&lt; IntVar * &gt; &amp;secondary_vars, std::function&lt; int(int64_t)&gt; start_empty_path_class)</td></tr>
+<tr class="memdesc:a5a2c92a28ee59ab17dfb5885ab3e20c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator Factories.  <br /></td></tr>
+<tr class="separator:a5a2c92a28ee59ab17dfb5885ab3e20c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12527c82ffc8b31c5d8dc836c366d624"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a12527c82ffc8b31c5d8dc836c366d624"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a12527c82ffc8b31c5d8dc836c366d624">operations_research::IsArrayConstant</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a12527c82ffc8b31c5d8dc836c366d624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4525e71a6b05d97c868f0832750a60"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3f4525e71a6b05d97c868f0832750a60"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3f4525e71a6b05d97c868f0832750a60">operations_research::IsArrayBoolean</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a3f4525e71a6b05d97c868f0832750a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e4f71c4c79e0b4ec00c4e715a7c298"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae3e4f71c4c79e0b4ec00c4e715a7c298"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae3e4f71c4c79e0b4ec00c4e715a7c298">operations_research::AreAllOnes</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:ae3e4f71c4c79e0b4ec00c4e715a7c298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae787392a8dd8a499eb55ac0916aa4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab0ae787392a8dd8a499eb55ac0916aa4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab0ae787392a8dd8a499eb55ac0916aa4">operations_research::AreAllNull</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:ab0ae787392a8dd8a499eb55ac0916aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aea406979285a28c91fd1ee8115af74"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3aea406979285a28c91fd1ee8115af74"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3aea406979285a28c91fd1ee8115af74">operations_research::AreAllGreaterOrEqual</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a3aea406979285a28c91fd1ee8115af74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f08cfbb35e2b8b1eb76f79caea924a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a15f08cfbb35e2b8b1eb76f79caea924a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a15f08cfbb35e2b8b1eb76f79caea924a">operations_research::AreAllLessOrEqual</a> (const std::vector&lt; T &gt; &amp;values, const T &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a15f08cfbb35e2b8b1eb76f79caea924a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62b402f767cda48eb67ef8b50397f8f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab62b402f767cda48eb67ef8b50397f8f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab62b402f767cda48eb67ef8b50397f8f">operations_research::AreAllPositive</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:ab62b402f767cda48eb67ef8b50397f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38972723946490ea4df4e34298d8805d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a38972723946490ea4df4e34298d8805d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a38972723946490ea4df4e34298d8805d">operations_research::AreAllNegative</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a38972723946490ea4df4e34298d8805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de09f9134b976e5ba64751ac0f4440b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3de09f9134b976e5ba64751ac0f4440b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3de09f9134b976e5ba64751ac0f4440b">operations_research::AreAllStrictlyPositive</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a3de09f9134b976e5ba64751ac0f4440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8351829c324863ddda52e201df4f9f84"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8351829c324863ddda52e201df4f9f84"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8351829c324863ddda52e201df4f9f84">operations_research::AreAllStrictlyNegative</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a8351829c324863ddda52e201df4f9f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafac7375c23337f25821aa6f86ca627c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aafac7375c23337f25821aa6f86ca627c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aafac7375c23337f25821aa6f86ca627c">operations_research::IsIncreasingContiguous</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:aafac7375c23337f25821aa6f86ca627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d434774c07815a25ffaa7adb343c19e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3d434774c07815a25ffaa7adb343c19e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3d434774c07815a25ffaa7adb343c19e">operations_research::IsIncreasing</a> (const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a3d434774c07815a25ffaa7adb343c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2aea6c68fe502389c9264b971b2f85"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:adf2aea6c68fe502389c9264b971b2f85"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#adf2aea6c68fe502389c9264b971b2f85">operations_research::IsArrayInRange</a> (const std::vector&lt; IntVar * &gt; &amp;vars, T range_min, T range_max)</td></tr>
+<tr class="separator:adf2aea6c68fe502389c9264b971b2f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c7a8bfc6877606e512d3279549f44d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae4c7a8bfc6877606e512d3279549f44d">operations_research::AreAllBound</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
+<tr class="separator:ae4c7a8bfc6877606e512d3279549f44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abde7313cef64d25202a18f07481fc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7abde7313cef64d25202a18f07481fc3">operations_research::AreAllBooleans</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
+<tr class="separator:a7abde7313cef64d25202a18f07481fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54470bffc3ea32cc37d0222e5dbb62a6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a54470bffc3ea32cc37d0222e5dbb62a6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a54470bffc3ea32cc37d0222e5dbb62a6">operations_research::AreAllBoundOrNull</a> (const std::vector&lt; IntVar * &gt; &amp;vars, const std::vector&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a54470bffc3ea32cc37d0222e5dbb62a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ff06a9b302c6c96d8d917da235b749"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a78ff06a9b302c6c96d8d917da235b749">operations_research::AreAllBoundTo</a> (const std::vector&lt; IntVar * &gt; &amp;vars, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="memdesc:a78ff06a9b302c6c96d8d917da235b749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all variables are assigned to 'value'.  <br /></td></tr>
+<tr class="separator:a78ff06a9b302c6c96d8d917da235b749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587a6a73cbcb4e4a4c7d3b596fa407aa"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a587a6a73cbcb4e4a4c7d3b596fa407aa">operations_research::MaxVarArray</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
+<tr class="separator:a587a6a73cbcb4e4a4c7d3b596fa407aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8f645f06f9749b562b6625cd822daa"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8e8f645f06f9749b562b6625cd822daa">operations_research::MinVarArray</a> (const std::vector&lt; IntVar * &gt; &amp;vars)</td></tr>
+<tr class="separator:a8e8f645f06f9749b562b6625cd822daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79edaa5bfddfcd382d36a2ae25df798c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a79edaa5bfddfcd382d36a2ae25df798c">operations_research::FillValues</a> (const std::vector&lt; IntVar * &gt; &amp;vars, std::vector&lt; int64_t &gt; *const values)</td></tr>
+<tr class="separator:a79edaa5bfddfcd382d36a2ae25df798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0903025d265c67199f5f09cee57ed0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afb0903025d265c67199f5f09cee57ed0">operations_research::PosIntDivUp</a> (int64_t e, int64_t v)</td></tr>
+<tr class="separator:afb0903025d265c67199f5f09cee57ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1945fe75ec08245775fc4df20153d6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ade1945fe75ec08245775fc4df20153d6">operations_research::PosIntDivDown</a> (int64_t e, int64_t v)</td></tr>
+<tr class="separator:ade1945fe75ec08245775fc4df20153d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ef36940950625d5a6745caf0000a78"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa9ef36940950625d5a6745caf0000a78">operations_research::ToInt64Vector</a> (const std::vector&lt; int &gt; &amp;<a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>)</td></tr>
+<tr class="memdesc:aa9ef36940950625d5a6745caf0000a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; Vector manipulations --&mdash;  <br /></td></tr>
+<tr class="separator:aa9ef36940950625d5a6745caf0000a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdc2ad7aac33203a04919652bd0a916"><td class="memItemLeft" align="right" valign="top">LocalSearchFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6cdc2ad7aac33203a04919652bd0a916">operations_research::MakePathStateFilter</a> (Solver *solver, std::unique_ptr&lt; PathState &gt; path_state, const std::vector&lt; IntVar * &gt; &amp;nexts)</td></tr>
+<tr class="separator:a6cdc2ad7aac33203a04919652bd0a916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef137c649c846a799566eeabe5153bcc"><td class="memItemLeft" align="right" valign="top">LocalSearchFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aef137c649c846a799566eeabe5153bcc">operations_research::MakeDimensionFilter</a> (Solver *solver, std::unique_ptr&lt; DimensionChecker &gt; checker, const std::string &amp;dimension_name)</td></tr>
+<tr class="separator:aef137c649c846a799566eeabe5153bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aa62c0e0e0b8b883e173f869ae070e857"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa62c0e0e0b8b883e173f869ae070e857"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa62c0e0e0b8b883e173f869ae070e857">MakeConstraintDemon0</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:aa62c0e0e0b8b883e173f869ae070e857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ded3970b47db738dc03894d78ccfdf"><td class="memTemplParams" colspan="2">template&lt;class P &gt; </td></tr>
-<tr class="memitem:ac8ded3970b47db738dc03894d78ccfdf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac8ded3970b47db738dc03894d78ccfdf">ParameterDebugString</a> (P param)</td></tr>
-<tr class="separator:ac8ded3970b47db738dc03894d78ccfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac03032b631b8e108629e9946b7a0e558"><td class="memTemplParams" colspan="2">template&lt;class P &gt; </td></tr>
-<tr class="memitem:ac03032b631b8e108629e9946b7a0e558"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac03032b631b8e108629e9946b7a0e558">ParameterDebugString</a> (P *param)</td></tr>
-<tr class="memdesc:ac03032b631b8e108629e9946b7a0e558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support limited to pointers to classes which define DebugString().  <br /></td></tr>
-<tr class="separator:ac03032b631b8e108629e9946b7a0e558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bd40cbf46e30b4a66b0802c1048669"><td class="memTemplParams" colspan="2">template&lt;class T , class P &gt; </td></tr>
-<tr class="memitem:a73bd40cbf46e30b4a66b0802c1048669"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a73bd40cbf46e30b4a66b0802c1048669">MakeConstraintDemon1</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1)</td></tr>
-<tr class="separator:a73bd40cbf46e30b4a66b0802c1048669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4b6337731ff75263e422b7a35bfea5"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q &gt; </td></tr>
-<tr class="memitem:a2d4b6337731ff75263e422b7a35bfea5"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2d4b6337731ff75263e422b7a35bfea5">MakeConstraintDemon2</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2)</td></tr>
-<tr class="separator:a2d4b6337731ff75263e422b7a35bfea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0594bc5e0a5c4aea25dd06ab61d85bb6"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q , class R &gt; </td></tr>
-<tr class="memitem:a0594bc5e0a5c4aea25dd06ab61d85bb6"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0594bc5e0a5c4aea25dd06ab61d85bb6">MakeConstraintDemon3</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q, R), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2, R param3)</td></tr>
-<tr class="separator:a0594bc5e0a5c4aea25dd06ab61d85bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa213d8f884283e0d72712243cbbefa7c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa213d8f884283e0d72712243cbbefa7c"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa213d8f884283e0d72712243cbbefa7c">operations_research::MakeConstraintDemon0</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:aa213d8f884283e0d72712243cbbefa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0953b50b08320d1109c678555137f1db"><td class="memTemplParams" colspan="2">template&lt;class P &gt; </td></tr>
+<tr class="memitem:a0953b50b08320d1109c678555137f1db"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0953b50b08320d1109c678555137f1db">operations_research::ParameterDebugString</a> (P param)</td></tr>
+<tr class="separator:a0953b50b08320d1109c678555137f1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2f93547af434566184b7dee7039c93"><td class="memTemplParams" colspan="2">template&lt;class P &gt; </td></tr>
+<tr class="memitem:a3c2f93547af434566184b7dee7039c93"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3c2f93547af434566184b7dee7039c93">operations_research::ParameterDebugString</a> (P *param)</td></tr>
+<tr class="memdesc:a3c2f93547af434566184b7dee7039c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support limited to pointers to classes which define DebugString().  <br /></td></tr>
+<tr class="separator:a3c2f93547af434566184b7dee7039c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0190f4a9c848c207d0bff97f625fcd1"><td class="memTemplParams" colspan="2">template&lt;class T , class P &gt; </td></tr>
+<tr class="memitem:ae0190f4a9c848c207d0bff97f625fcd1"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae0190f4a9c848c207d0bff97f625fcd1">operations_research::MakeConstraintDemon1</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1)</td></tr>
+<tr class="separator:ae0190f4a9c848c207d0bff97f625fcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68441e43b6c0228145d1101db5f3c4de"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q &gt; </td></tr>
+<tr class="memitem:a68441e43b6c0228145d1101db5f3c4de"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a68441e43b6c0228145d1101db5f3c4de">operations_research::MakeConstraintDemon2</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2)</td></tr>
+<tr class="separator:a68441e43b6c0228145d1101db5f3c4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362b5a75841c543eec770b731d6e6865"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q , class R &gt; </td></tr>
+<tr class="memitem:a362b5a75841c543eec770b731d6e6865"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a362b5a75841c543eec770b731d6e6865">operations_research::MakeConstraintDemon3</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q, R), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2, R param3)</td></tr>
+<tr class="separator:a362b5a75841c543eec770b731d6e6865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a1728c5b7a72a03d6ececfd31e87dbfb2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1728c5b7a72a03d6ececfd31e87dbfb2"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1728c5b7a72a03d6ececfd31e87dbfb2">MakeDelayedConstraintDemon0</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
-<tr class="separator:a1728c5b7a72a03d6ececfd31e87dbfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8665842c4ce811e4bfa50ec8330c93c1"><td class="memTemplParams" colspan="2">template&lt;class T , class P &gt; </td></tr>
-<tr class="memitem:a8665842c4ce811e4bfa50ec8330c93c1"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8665842c4ce811e4bfa50ec8330c93c1">MakeDelayedConstraintDemon1</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1)</td></tr>
-<tr class="separator:a8665842c4ce811e4bfa50ec8330c93c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e035057b40de066e18e848b5329e14"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q &gt; </td></tr>
-<tr class="memitem:ad3e035057b40de066e18e848b5329e14"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad3e035057b40de066e18e848b5329e14">MakeDelayedConstraintDemon2</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2)</td></tr>
-<tr class="separator:ad3e035057b40de066e18e848b5329e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a001b36b291a4afe7dffdbb9194bc45"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6a001b36b291a4afe7dffdbb9194bc45"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6a001b36b291a4afe7dffdbb9194bc45">operations_research::MakeDelayedConstraintDemon0</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
+<tr class="separator:a6a001b36b291a4afe7dffdbb9194bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac316c82f31293db18e25c809592908dd"><td class="memTemplParams" colspan="2">template&lt;class T , class P &gt; </td></tr>
+<tr class="memitem:ac316c82f31293db18e25c809592908dd"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac316c82f31293db18e25c809592908dd">operations_research::MakeDelayedConstraintDemon1</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1)</td></tr>
+<tr class="separator:ac316c82f31293db18e25c809592908dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0bc84812eed9d626b00bc8fb5b9ae1"><td class="memTemplParams" colspan="2">template&lt;class T , class P , class Q &gt; </td></tr>
+<tr class="memitem:a6c0bc84812eed9d626b00bc8fb5b9ae1"><td class="memTemplItemLeft" align="right" valign="top">Demon *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6c0bc84812eed9d626b00bc8fb5b9ae1">operations_research::MakeDelayedConstraintDemon2</a> (Solver *const s, T *const <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, void(T::*method)(P, Q), const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, P param1, Q param2)</td></tr>
+<tr class="separator:a6c0bc84812eed9d626b00bc8fb5b9ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_afbb39f66221aac28bbdefd1dca2b2b0.html">constraint_solver</a></li><li class="navelem"><a class="el" href="constraint__solveri_8h.html">constraint_solveri.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,7 @@
+var operations__research__initPINVOKE_8cs =
+[
+    [ "Google.OrTools.Init.operations_research_initPINVOKE", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE" ],
+    [ "Google.OrTools.Init.operations_research_initPINVOKE.SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGExceptionHelper.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGExceptionHelper" ],
+    [ "Google.OrTools.Init.operations_research_initPINVOKE.SWIGPendingException", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGPendingException.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGPendingException" ],
+    [ "Google.OrTools.Init.operations_research_initPINVOKE.SWIGStringHelper", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringHelper" ]
+];

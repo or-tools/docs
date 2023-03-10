@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: scip_helper_macros.h File Reference</title>
+<title>Google OR-Tools: ortools/linear_solver/scip_helper_macros.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,15 +100,19 @@ $(document).ready(function(){initNavTree('scip__helper__macros_8h.html',''); ini
   <div class="headertitle"><div class="title">scip_helper_macros.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+</div>
 <p><a href="scip__helper__macros_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html">operations_research::internal</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details, here and below. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -120,8 +124,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac1f5d248b26440cc403f457b9f7e3f19"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#ac1f5d248b26440cc403f457b9f7e3f19">ScipCodeToUtilStatus</a> (int retcode, const char *source_file, int source_line, const char *scip_statement)</td></tr>
-<tr class="separator:ac1f5d248b26440cc403f457b9f7e3f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c0d85ffd530d0fe9dcffbe5c5f4038"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#aa1c0d85ffd530d0fe9dcffbe5c5f4038">operations_research::internal::ScipCodeToUtilStatus</a> (int retcode, const char *source_file, int source_line, const char *scip_statement)</td></tr>
+<tr class="memdesc:aa1c0d85ffd530d0fe9dcffbe5c5f4038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our own version of SCIP_CALL to do error management.  <br /></td></tr>
+<tr class="separator:aa1c0d85ffd530d0fe9dcffbe5c5f4038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0bfa86b99ad635aeb448799ddf03cb1c" name="a0bfa86b99ad635aeb448799ddf03cb1c"></a>
@@ -159,9 +164,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespaceoperations__research_1_1internal.html#ac1f5d248b26440cc403f457b9f7e3f19">::operations_research::internal::ScipCodeToUtilStatus</a>(x, __FILE__, __LINE__, \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespaceoperations__research_1_1internal.html#aa1c0d85ffd530d0fe9dcffbe5c5f4038">::operations_research::internal::ScipCodeToUtilStatus</a>(x, __FILE__, __LINE__, \</div>
 <div class="line">                                                        #x)</div>
-<div class="ttc" id="anamespaceoperations__research_1_1internal_html_ac1f5d248b26440cc403f457b9f7e3f19"><div class="ttname"><a href="namespaceoperations__research_1_1internal.html#ac1f5d248b26440cc403f457b9f7e3f19">operations_research::internal::ScipCodeToUtilStatus</a></div><div class="ttdeci">absl::Status ScipCodeToUtilStatus(int retcode, const char *source_file, int source_line, const char *scip_statement)</div><div class="ttdef"><b>Definition:</b> <a href="scip__helper__macros_8h_source.html#l00024">scip_helper_macros.h:24</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1internal_html_aa1c0d85ffd530d0fe9dcffbe5c5f4038"><div class="ttname"><a href="namespaceoperations__research_1_1internal.html#aa1c0d85ffd530d0fe9dcffbe5c5f4038">operations_research::internal::ScipCodeToUtilStatus</a></div><div class="ttdeci">absl::Status ScipCodeToUtilStatus(int retcode, const char *source_file, int source_line, const char *scip_statement)</div><div class="ttdoc">Our own version of SCIP_CALL to do error management.</div><div class="ttdef"><b>Definition:</b> <a href="scip__helper__macros_8h_source.html#l00024">scip_helper_macros.h:24</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="scip__helper__macros_8h_source.html#l00035">35</a> of file <a class="el" href="scip__helper__macros_8h_source.html">scip_helper_macros.h</a>.</p>
 
@@ -169,14 +174,11 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html">linear_solver</a></li><li class="navelem"><a class="el" href="scip__helper__macros_8h.html">scip_helper_macros.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

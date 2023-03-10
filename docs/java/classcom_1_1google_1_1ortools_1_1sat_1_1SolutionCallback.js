@@ -1,0 +1,25 @@
+var classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback =
+[
+    [ "SolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a107985bef34889bb975471cbb4d619b1", null ],
+    [ "SolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a057daa9a7f975180a4973c8509bfdc9c", null ],
+    [ "bestObjectiveBound", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ab6d7471435c8101b9eaf30087d50218f", null ],
+    [ "delete", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#afdc265e4d1a59f10e646983635928d7d", null ],
+    [ "finalize", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a1f5586feedd9ecb75cea151aeefed4ad", null ],
+    [ "getCPtr", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a56358a0b0ac4d54964acdc367e841f09", null ],
+    [ "numBinaryPropagations", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a1018d67667adb4192ec7fbf3962f708a", null ],
+    [ "numBooleans", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a7dc364113afabe1c3bf01cefaa246485", null ],
+    [ "numBranches", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a54908b345b7cd5122656f764493a9d19", null ],
+    [ "numConflicts", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a246c9bcec0970dafdbea3dff07f69489", null ],
+    [ "numIntegerPropagations", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a1e66ee8ee733fc2239021c9829c46e80", null ],
+    [ "objectiveValue", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a40ec23d45e78ed8727088e74efd0dcd0", null ],
+    [ "onSolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ac3e096fee43335303c9e06b98d24fbdf", null ],
+    [ "solutionBooleanValue", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a658676d83fa802d587c4eece3182a5ec", null ],
+    [ "solutionIntegerValue", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a18f4cbeca86ff7d2c8a15874c7bafbea", null ],
+    [ "stopSearch", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a637881b88e24b2939f89ccf51d5ec72f", null ],
+    [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ae5f58d09a9f920413ac3e8705a4fb09e", null ],
+    [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#adce8a620de1d6ab2af0779970a4a6f0f", null ],
+    [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a552bb2bc3ae166b6d0f7ddc5e7cc3e4c", null ],
+    [ "userTime", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a3ae7a23955eabf848b2370f4a31bd56a", null ],
+    [ "wallTime", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ae7bc6d5ee29eeaad6384f722e0948dea", null ],
+    [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ab59f2fb130ea4a2c94e90d79d71c9199", null ]
+];

@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: gzipfile.h File Reference</title>
+<title>Google OR-Tools: ortools/base/gzipfile.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,10 @@ $(document).ready(function(){initNavTree('gzipfile_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">gzipfile.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="basictypes_8h_source.html">ortools/base/basictypes.h</a>&quot;</code><br />
+<code>#include &quot;zlib.h&quot;</code><br />
+</div>
 <p><a href="gzipfile_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -115,9 +118,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9f75ab0e5f94be7301e4e843484eda44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gzipfile_8h.html#a9f75ab0e5f94be7301e4e843484eda44">GZipFileReader</a> (absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, <a class="el" href="class_file.html">File</a> *compressed_file, <a class="el" href="gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> ownership, <a class="el" href="gzipfile_8h.html#a45ad56fa6eeb2147ac53bfd8ced625ce">AppendedStreams</a> appended_streams)</td></tr>
+<tr class="memitem:a9f75ab0e5f94be7301e4e843484eda44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gzipfile_8h.html#a9f75ab0e5f94be7301e4e843484eda44">GZipFileReader</a> (absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, <a class="el" href="classFile.html">File</a> *compressed_file, <a class="el" href="gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> ownership, <a class="el" href="gzipfile_8h.html#a45ad56fa6eeb2147ac53bfd8ced625ce">AppendedStreams</a> appended_streams)</td></tr>
+<tr class="memdesc:a9f75ab0e5f94be7301e4e843484eda44"><td class="mdescLeft">&#160;</td><td class="mdescRight">public entry points  <br /></td></tr>
 <tr class="separator:a9f75ab0e5f94be7301e4e843484eda44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8659f093e7e5779cdb7a5274f673d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gzipfile_8h.html#a3f8659f093e7e5779cdb7a5274f673d9">GZipFileReader</a> (absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, <a class="el" href="class_file.html">File</a> *compressed_file, <a class="el" href="gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> ownership)</td></tr>
+<tr class="memitem:a3f8659f093e7e5779cdb7a5274f673d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFile.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gzipfile_8h.html#a3f8659f093e7e5779cdb7a5274f673d9">GZipFileReader</a> (absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, <a class="el" href="classFile.html">File</a> *compressed_file, <a class="el" href="gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> ownership)</td></tr>
+<tr class="memdesc:a3f8659f093e7e5779cdb7a5274f673d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">appended_streams defaults to kConcatenateStreams if not specified.  <br /></td></tr>
 <tr class="separator:a3f8659f093e7e5779cdb7a5274f673d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -140,6 +145,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Argument type used in interfaces that can optionally accept appended compressed streams. If kConcatenateStreams is passed, the output will include all streams. Otherwise only the first stream is output. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a45ad56fa6eeb2147ac53bfd8ced625ceaca612b332f4108930b3802ffef4fff77" name="a45ad56fa6eeb2147ac53bfd8ced625ceaca612b332f4108930b3802ffef4fff77"></a>kConcatenateStreams&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a45ad56fa6eeb2147ac53bfd8ced625cea0115af5987481a949e7b5367a6cbb7c8" name="a45ad56fa6eeb2147ac53bfd8ced625cea0115af5987481a949e7b5367a6cbb7c8"></a>kIgnoreAppendedData&#160;</td><td class="fielddoc"></td></tr>
@@ -160,6 +166,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Argument type used in interfaces that can optionally take ownership of a passed in argument. If TAKE_OWNERSHIP is passed, the called object takes ownership of the argument. Otherwise it does not. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7fc5ad23d8bdbc2ef84b60aa5b90d0e4afe65a9a508c8329a882946ddf1d057e4" name="a7fc5ad23d8bdbc2ef84b60aa5b90d0e4afe65a9a508c8329a882946ddf1d057e4"></a>DO_NOT_TAKE_OWNERSHIP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7fc5ad23d8bdbc2ef84b60aa5b90d0e4a3c7e9648face0a376daeaf21d72ea4a1" name="a7fc5ad23d8bdbc2ef84b60aa5b90d0e4a3c7e9648face0a376daeaf21d72ea4a1"></a>TAKE_OWNERSHIP&#160;</td><td class="fielddoc"></td></tr>
@@ -180,7 +187,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_file.html">File</a> * GZipFileReader </td>
+          <td class="memname"><a class="el" href="classFile.html">File</a> * GZipFileReader </td>
           <td>(</td>
           <td class="paramtype">absl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -188,7 +195,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_file.html">File</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classFile.html">File</a> *&#160;</td>
           <td class="paramname"><em>compressed_file</em>, </td>
         </tr>
         <tr>
@@ -210,6 +217,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>appended_streams defaults to kConcatenateStreams if not specified. </p>
+
 <p class="definition">Definition at line <a class="el" href="gzipfile_8h_source.html#l00067">67</a> of file <a class="el" href="gzipfile_8h_source.html">gzipfile.h</a>.</p>
 
 </div>
@@ -221,16 +230,16 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_file.html">File</a> * GZipFileReader </td>
+          <td class="memname"><a class="el" href="classFile.html">File</a> * GZipFileReader </td>
           <td>(</td>
-          <td class="paramtype">absl::string_view&#160;</td>
+          <td class="paramtype">const absl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_file.html">File</a> *&#160;</td>
-          <td class="paramname"><em>compressed_file</em>, </td>
+          <td class="paramtype"><a class="el" href="classFile.html">File</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -252,20 +261,52 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>public entry points </p>
+<p>Return a readonly file that contains a uncompressed version of another <a class="el" href="classFile.html">File</a>.</p>
+<p>If "ownership == TAKE_OWNERSHIP", the file takes ownership of "compressed_file". "compressed_file" will be deleted when the file is closed.</p>
+<p>If "ownership == "DO_NOT_TAKE_OWNERSHIP", the file does not take
+ownership of "compressed_file".  The client must guarantee that
+"compressed_file" remains live while the file is being accessed and
+that operations on "compressed_file" do not interfere (e.g., move
+the read pointer) with the file.
+
+If "appended_streams" == "kConcatenateStreams" decompression will process
+and output each compressed stream present in the input.
+
+If "appended_streams" == "kIgnoreAppendedData" decompression will stop
+after the first stream.
+
+The compressed file may be either a gzip format file, a zlib compressed
+file, or a unix compress format file.  The only difference between gzip
+and zlib is whether the file has a gzip header and trailer.  If the file
+consists of multiple gzip files concatenated together, then we will
+decompress them into a single concatenated output.  This may seem weird
+but that's what the gzip commandline tool does.  If we didn't do this
+we would silently truncate some input files upon decompression.
+Otherwise we signal an error for any invalid data after the compressed
+stream. 
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+@icode 
+    http://www.apache.org/licenses/LICENSE-2.0
+@endicode
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Files which read from and write to a gzip'ed files. This could be optimized, most notably by eliminating copies in many common cases. </p>
+<p>unimplemented</p>
+
 <p class="definition">Definition at line <a class="el" href="gzipfile_8cc_source.html#l00025">25</a> of file <a class="el" href="gzipfile_8cc_source.html">gzipfile.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a.html">base</a></li><li class="navelem"><a class="el" href="gzipfile_8h.html">gzipfile.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

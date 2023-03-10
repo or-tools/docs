@@ -1,12 +1,11 @@
-<!-- HTML header for doxygen 1.8.18-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OR-Tools: integer_expr.h File Reference</title>
+<title>Google OR-Tools: ortools/sat/integer_expr.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,19 +17,20 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="styleSheet.tmp.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">OR-Tools
-   &#160;<span id="projectnumber">9.6</span>
+  <td id="projectalign">
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.6</span>
    </div>
+   <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
  </tr>
  </tbody>
@@ -100,106 +100,137 @@ $(document).ready(function(){initNavTree('integer__expr_8h.html',''); initResiza
   <div class="headertitle"><div class="title">integer_expr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="integral__types_8h_source.html">ortools/base/integral_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mathutil_8h_source.html">ortools/base/mathutil.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2linear__constraint_8h_source.html">ortools/sat/linear_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__propagation_8h_source.html">ortools/sat/linear_propagation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="precedences_8h_source.html">ortools/sat/precedences.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rev_8h_source.html">ortools/util/rev.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
+</div>
 <p><a href="integer__expr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_integer_sum_l_e.html">IntegerSumLE</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSumLE.html">operations_research::sat::IntegerSumLE</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_level_zero_equality.html">LevelZeroEquality</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LevelZeroEquality.html">operations_research::sat::LevelZeroEquality</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_min_propagator.html">MinPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1MinPropagator.html">operations_research::sat::MinPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_lin_min_propagator.html">LinMinPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinMinPropagator.html">operations_research::sat::LinMinPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_product_propagator.html">ProductPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1ProductPropagator.html">operations_research::sat::ProductPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_division_propagator.html">DivisionPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1DivisionPropagator.html">operations_research::sat::DivisionPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_fixed_division_propagator.html">FixedDivisionPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1FixedDivisionPropagator.html">operations_research::sat::FixedDivisionPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_fixed_modulo_propagator.html">FixedModuloPropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1FixedModuloPropagator.html">operations_research::sat::FixedModuloPropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1_square_propagator.html">SquarePropagator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SquarePropagator.html">operations_research::sat::SquarePropagator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceoperations__research"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
-<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of objects used to extend the <a class="el" href="classoperations__research_1_1_constraint.html" title="A constraint is the main modeling object.">Constraint</a> <a class="el" href="classoperations__research_1_1_solver.html" title="Solver Class.">Solver</a> library. <br /></td></tr>
+<tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceoperations__research_1_1sat"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad5c874703b780b3594e2e4ac0cb064da"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:ad5c874703b780b3594e2e4ac0cb064da"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad5c874703b780b3594e2e4ac0cb064da">WeightedSumLowerOrEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
-<tr class="separator:ad5c874703b780b3594e2e4ac0cb064da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0652506b4a06a9c52d89968b178432a4"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:a0652506b4a06a9c52d89968b178432a4"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0652506b4a06a9c52d89968b178432a4">WeightedSumGreaterOrEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
-<tr class="separator:a0652506b4a06a9c52d89968b178432a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4e6a0840cacc514c61f72312589c17"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:aaf4e6a0840cacc514c61f72312589c17"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aaf4e6a0840cacc514c61f72312589c17">FixedWeightedSum</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:aaf4e6a0840cacc514c61f72312589c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28352680a85e823028a94bc9012959e"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:ad28352680a85e823028a94bc9012959e"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad28352680a85e823028a94bc9012959e">ConditionalWeightedSumLowerOrEqual</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
-<tr class="separator:ad28352680a85e823028a94bc9012959e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38d9b90e77dcafea5bda83b3b5d4ca6"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:ac38d9b90e77dcafea5bda83b3b5d4ca6"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac38d9b90e77dcafea5bda83b3b5d4ca6">ConditionalWeightedSumGreaterOrEqual</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
-<tr class="separator:ac38d9b90e77dcafea5bda83b3b5d4ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eac3d8520933890c01c5301e23f665f"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:a0eac3d8520933890c01c5301e23f665f"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0eac3d8520933890c01c5301e23f665f">WeightedSumLowerOrEqualReif</a> (Literal is_le, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
-<tr class="separator:a0eac3d8520933890c01c5301e23f665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05d78f65e75a48db3adad81cb440b58"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:ae05d78f65e75a48db3adad81cb440b58"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae05d78f65e75a48db3adad81cb440b58">WeightedSumGreaterOrEqualReif</a> (Literal is_ge, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
-<tr class="separator:ae05d78f65e75a48db3adad81cb440b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a79d0034c08253b6f7a2fa3ad2a6d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a49a79d0034c08253b6f7a2fa3ad2a6d1">LoadLinearConstraint</a> (const LinearConstraint &amp;cst, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a49a79d0034c08253b6f7a2fa3ad2a6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3798413f4a067a75ad1646319145db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa3798413f4a067a75ad1646319145db8">LoadConditionalLinearConstraint</a> (const absl::Span&lt; const Literal &gt; enforcement_literals, const LinearConstraint &amp;cst, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:aa3798413f4a067a75ad1646319145db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01808ff5ec9f08704076c25399463222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a01808ff5ec9f08704076c25399463222">AddConditionalAffinePrecedence</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, AffineExpression left, AffineExpression right, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a01808ff5ec9f08704076c25399463222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2673682167c29c82616903acafe1156f"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:a2673682167c29c82616903acafe1156f"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2673682167c29c82616903acafe1156f">FixedWeightedSumReif</a> (Literal is_eq, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a2673682167c29c82616903acafe1156f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42db64c8bdc8958fcc110665b3c2ab76"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:a42db64c8bdc8958fcc110665b3c2ab76"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a42db64c8bdc8958fcc110665b3c2ab76">WeightedSumNotEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a42db64c8bdc8958fcc110665b3c2ab76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd6e430efc544a1e189e9acada0f3d5"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
-<tr class="memitem:a3cd6e430efc544a1e189e9acada0f3d5"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3cd6e430efc544a1e189e9acada0f3d5">NewWeightedSum</a> (const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
-<tr class="separator:a3cd6e430efc544a1e189e9acada0f3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bfa468ee9a1a26ee6b0050258f98438"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6bfa468ee9a1a26ee6b0050258f98438">IsEqualToMinOf</a> (IntegerVariable min_var, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
-<tr class="separator:a6bfa468ee9a1a26ee6b0050258f98438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0403cdfc1664011e0487e04021b96e3f"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0403cdfc1664011e0487e04021b96e3f">IsEqualToMinOf</a> (const LinearExpression &amp;min_expr, const std::vector&lt; LinearExpression &gt; &amp;exprs)</td></tr>
-<tr class="separator:a0403cdfc1664011e0487e04021b96e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af033736942d343ed843a8a19638816f5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af033736942d343ed843a8a19638816f5">IsEqualToMaxOf</a> (IntegerVariable max_var, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
-<tr class="separator:af033736942d343ed843a8a19638816f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4ae0e8f4326c316681a472e623e5d6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3b4ae0e8f4326c316681a472e623e5d6">IsOneOf</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, const std::vector&lt; Literal &gt; &amp;selectors, const std::vector&lt; IntegerValue &gt; &amp;values)</td></tr>
-<tr class="separator:a3b4ae0e8f4326c316681a472e623e5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66f4896202eaf6c6803ceec158162593"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a66f4896202eaf6c6803ceec158162593"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a66f4896202eaf6c6803ceec158162593">RegisterAndTransferOwnership</a> (Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, T *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
-<tr class="separator:a66f4896202eaf6c6803ceec158162593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931136b43dbc1b819ca639f1e95bea21"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a931136b43dbc1b819ca639f1e95bea21">ProductConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression p)</td></tr>
-<tr class="separator:a931136b43dbc1b819ca639f1e95bea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b98a61a2546a1c73b3060498076a43"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a01b98a61a2546a1c73b3060498076a43">DivisionConstraint</a> (AffineExpression num, AffineExpression denom, AffineExpression div)</td></tr>
-<tr class="separator:a01b98a61a2546a1c73b3060498076a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5480e1dd7ef15b3bdffa88072b0ea3fa"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5480e1dd7ef15b3bdffa88072b0ea3fa">FixedDivisionConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression c)</td></tr>
-<tr class="separator:a5480e1dd7ef15b3bdffa88072b0ea3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef39b9b11531d3820a6860ec243fb1a6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aef39b9b11531d3820a6860ec243fb1a6">FixedModuloConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression c)</td></tr>
-<tr class="separator:aef39b9b11531d3820a6860ec243fb1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7fdf5a1e3a1a9f3c4b893227f2f523"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a2d7fdf5a1e3a1a9f3c4b893227f2f523"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2d7fdf5a1e3a1a9f3c4b893227f2f523">operations_research::sat::WeightedSumLowerOrEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
+<tr class="memdesc:a2d7fdf5a1e3a1a9f3c4b893227f2f523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighted sum &lt;= constant.  <br /></td></tr>
+<tr class="separator:a2d7fdf5a1e3a1a9f3c4b893227f2f523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081a97fea7610aefc53d71d4f331e184"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a081a97fea7610aefc53d71d4f331e184"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a081a97fea7610aefc53d71d4f331e184">operations_research::sat::WeightedSumGreaterOrEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
+<tr class="memdesc:a081a97fea7610aefc53d71d4f331e184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighted sum &gt;= constant.  <br /></td></tr>
+<tr class="separator:a081a97fea7610aefc53d71d4f331e184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91c58df34008df2b7a01feb10eefd5a"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:af91c58df34008df2b7a01feb10eefd5a"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af91c58df34008df2b7a01feb10eefd5a">operations_research::sat::FixedWeightedSum</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="memdesc:af91c58df34008df2b7a01feb10eefd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighted sum == constant.  <br /></td></tr>
+<tr class="separator:af91c58df34008df2b7a01feb10eefd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5dfcfb781eb96e92b08d0f7f983a07"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a5f5dfcfb781eb96e92b08d0f7f983a07"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5f5dfcfb781eb96e92b08d0f7f983a07">operations_research::sat::ConditionalWeightedSumLowerOrEqual</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
+<tr class="memdesc:a5f5dfcfb781eb96e92b08d0f7f983a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">enforcement_literals =&gt; sum &lt;= upper_bound  <br /></td></tr>
+<tr class="separator:a5f5dfcfb781eb96e92b08d0f7f983a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9a9e3ac315ee1254246c0fb2dfa3de"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a4e9a9e3ac315ee1254246c0fb2dfa3de"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4e9a9e3ac315ee1254246c0fb2dfa3de">operations_research::sat::ConditionalWeightedSumGreaterOrEqual</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
+<tr class="memdesc:a4e9a9e3ac315ee1254246c0fb2dfa3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">enforcement_literals =&gt; sum &gt;= lower_bound  <br /></td></tr>
+<tr class="separator:a4e9a9e3ac315ee1254246c0fb2dfa3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f2de76e7bdf7e1589a0ffe448c54f1"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a76f2de76e7bdf7e1589a0ffe448c54f1"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a76f2de76e7bdf7e1589a0ffe448c54f1">operations_research::sat::WeightedSumLowerOrEqualReif</a> (Literal is_le, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a070da095a863e1b6c860e29e59e6db1b">upper_bound</a>)</td></tr>
+<tr class="memdesc:a76f2de76e7bdf7e1589a0ffe448c54f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighted sum &lt;= constant reified.  <br /></td></tr>
+<tr class="separator:a76f2de76e7bdf7e1589a0ffe448c54f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52366f3294c0536326672bd30035b0fe"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a52366f3294c0536326672bd30035b0fe"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a52366f3294c0536326672bd30035b0fe">operations_research::sat::WeightedSumGreaterOrEqualReif</a> (Literal is_ge, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="routing_8cc.html#a50aafce50706f66d29b8588fa463442c">lower_bound</a>)</td></tr>
+<tr class="memdesc:a52366f3294c0536326672bd30035b0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighted sum &gt;= constant reified.  <br /></td></tr>
+<tr class="separator:a52366f3294c0536326672bd30035b0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899896953b6215b01cb0b85caa96bebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a899896953b6215b01cb0b85caa96bebe">operations_research::sat::LoadLinearConstraint</a> (const LinearConstraint &amp;cst, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memdesc:a899896953b6215b01cb0b85caa96bebe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> version.  <br /></td></tr>
+<tr class="separator:a899896953b6215b01cb0b85caa96bebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4da650bfcb86c00bee1df0ab0cc953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4b4da650bfcb86c00bee1df0ab0cc953">operations_research::sat::LoadConditionalLinearConstraint</a> (const absl::Span&lt; const Literal &gt; enforcement_literals, const LinearConstraint &amp;cst, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a4b4da650bfcb86c00bee1df0ab0cc953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539aa637a5a7240288224251d343b905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a539aa637a5a7240288224251d343b905">operations_research::sat::AddConditionalAffinePrecedence</a> (const std::vector&lt; Literal &gt; &amp;enforcement_literals, AffineExpression left, AffineExpression right, Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a539aa637a5a7240288224251d343b905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad857ec34d719b9094b332f3fcdaf8c5"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:aad857ec34d719b9094b332f3fcdaf8c5"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aad857ec34d719b9094b332f3fcdaf8c5">operations_research::sat::FixedWeightedSumReif</a> (Literal is_eq, const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:aad857ec34d719b9094b332f3fcdaf8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64577e0206830814a452b8e9903c050b"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:a64577e0206830814a452b8e9903c050b"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a64577e0206830814a452b8e9903c050b">operations_research::sat::WeightedSumNotEqual</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:a64577e0206830814a452b8e9903c050b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8af8f787d40f2ccb96beb5306c913c5"><td class="memTemplParams" colspan="2">template&lt;typename VectorInt &gt; </td></tr>
+<tr class="memitem:ad8af8f787d40f2ccb96beb5306c913c5"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; IntegerVariable(Model *)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad8af8f787d40f2ccb96beb5306c913c5">operations_research::sat::NewWeightedSum</a> (const VectorInt &amp;<a class="el" href="gscip__solver_8cc.html#aa59e74cc299dbf75fa6e2234dd0849a2">coefficients</a>, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
+<tr class="separator:ad8af8f787d40f2ccb96beb5306c913c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b72a1346795e18cd789a15a0d3e1fc"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab0b72a1346795e18cd789a15a0d3e1fc">operations_research::sat::IsEqualToMinOf</a> (IntegerVariable min_var, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
+<tr class="separator:ab0b72a1346795e18cd789a15a0d3e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7b280638f4df989a78aa0774e48160"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4d7b280638f4df989a78aa0774e48160">operations_research::sat::IsEqualToMinOf</a> (const LinearExpression &amp;min_expr, const std::vector&lt; LinearExpression &gt; &amp;exprs)</td></tr>
+<tr class="separator:a4d7b280638f4df989a78aa0774e48160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68411f1ba2fe4b8f25d8dd9a549cb5a1"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a68411f1ba2fe4b8f25d8dd9a549cb5a1">operations_research::sat::IsEqualToMaxOf</a> (IntegerVariable max_var, const std::vector&lt; IntegerVariable &gt; &amp;vars)</td></tr>
+<tr class="separator:a68411f1ba2fe4b8f25d8dd9a549cb5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de5a9f06cd62e12588301d60ed3d68c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a0de5a9f06cd62e12588301d60ed3d68c">operations_research::sat::IsOneOf</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, const std::vector&lt; Literal &gt; &amp;selectors, const std::vector&lt; IntegerValue &gt; &amp;values)</td></tr>
+<tr class="separator:a0de5a9f06cd62e12588301d60ed3d68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838ae1c98a62762620ef82e362c4ad8c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a838ae1c98a62762620ef82e362c4ad8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a838ae1c98a62762620ef82e362c4ad8c">operations_research::sat::RegisterAndTransferOwnership</a> (Model *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, T *<a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>)</td></tr>
+<tr class="separator:a838ae1c98a62762620ef82e362c4ad8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee7c83ad06fb9a710a64f3ff79b4289"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2ee7c83ad06fb9a710a64f3ff79b4289">operations_research::sat::ProductConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression p)</td></tr>
+<tr class="memdesc:a2ee7c83ad06fb9a710a64f3ff79b4289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint: a * b = p.  <br /></td></tr>
+<tr class="separator:a2ee7c83ad06fb9a710a64f3ff79b4289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8e3999c6efdf2b47d4379b3eb9c85e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6d8e3999c6efdf2b47d4379b3eb9c85e">operations_research::sat::DivisionConstraint</a> (AffineExpression num, AffineExpression denom, AffineExpression div)</td></tr>
+<tr class="memdesc:a6d8e3999c6efdf2b47d4379b3eb9c85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint: num / denom = div. (denom &gt; 0).  <br /></td></tr>
+<tr class="separator:a6d8e3999c6efdf2b47d4379b3eb9c85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ea57d3df7b63f7be86a96eca1d0cf8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a41ea57d3df7b63f7be86a96eca1d0cf8">operations_research::sat::FixedDivisionConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression c)</td></tr>
+<tr class="memdesc:a41ea57d3df7b63f7be86a96eca1d0cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint: a / b = c where b is a constant.  <br /></td></tr>
+<tr class="separator:a41ea57d3df7b63f7be86a96eca1d0cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f0785106a02e030ddee919ff33bd0d"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(Model *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad9f0785106a02e030ddee919ff33bd0d">operations_research::sat::FixedModuloConstraint</a> (AffineExpression <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerValue <a class="el" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, AffineExpression c)</td></tr>
+<tr class="memdesc:ad9f0785106a02e030ddee919ff33bd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the constraint: a % b = c where b is a constant.  <br /></td></tr>
+<tr class="separator:ad9f0785106a02e030ddee919ff33bd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.8.18-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a7cc1eeded8f693d0da6c729bc88c45a.html">ortools</a></li><li class="navelem"><a class="el" href="dir_dddac007a45022d9da6ea1dee012c3b9.html">sat</a></li><li class="navelem"><a class="el" href="integer__expr_8h.html">integer_expr.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>
