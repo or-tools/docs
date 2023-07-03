@@ -7,7 +7,7 @@ FROM alpine:edge AS env
 #############
 ENV PATH=/usr/local/bin:$PATH
 RUN apk add --no-cache \
- git \
+ wget git \
  linux-headers build-base xfce4-dev-tools cmake \
  doxygen
 ENTRYPOINT ["/bin/sh", "-c"]
@@ -17,18 +17,8 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache swig
 
 # Install .Net
-RUN apk add --no-cache wget icu-libs libintl \
-&& mkdir -p /usr/share/dotnet \
-&& ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
-## .Net 6.0
-## see: https://dotnet.microsoft.com/download/dotnet-core/6.0
-RUN dotnet_sdk_version=6.0.405 \
-&& wget -qO dotnet.tar.gz \
-"https://dotnetcli.azureedge.net/dotnet/Sdk/$dotnet_sdk_version/dotnet-sdk-${dotnet_sdk_version}-linux-musl-x64.tar.gz" \
-&& dotnet_sha512='ca98ebc5858339c5ce4164f5f5932a5bf8aae9f13d54adf382a41f5e6d1302df278bd7e218ecc2f651dcf67e705c40c43347cd33956732c6bd88d3b3d2881b84' \
-&& echo "$dotnet_sha512  dotnet.tar.gz" | sha512sum -c - \
-&& tar -C /usr/share/dotnet -oxzf dotnet.tar.gz \
-&& rm dotnet.tar.gz
+# ref: https://learn.microsoft.com/en-us/dotnet/core/install/linux-alpine#install-net-6
+RUN apk add --no-cache dotnet6-sdk
 # Trigger first run experience by running arbitrary cmd
 RUN dotnet --info
 
@@ -52,7 +42,9 @@ ENV DISTRIBUTION=alpine-edge
 # Download sources
 # use SRC_GIT_SHA1 to modify the command
 # i.e. avoid docker reusing the cache when new commit is pushed
-RUN git clone -b main --single-branch --depth=1 https://github.com/google/or-tools
+ARG ORTOOLS_GIT_BRANCH
+ENV ORTOOLS_GIT_BRANCH ${ORTOOLS_GIT_BRANCH:-main}
+RUN git clone -b "${ORTOOLS_GIT_BRANCH}" --single-branch --depth=1 https://github.com/google/or-tools
 WORKDIR /root/or-tools
 
 # C++
