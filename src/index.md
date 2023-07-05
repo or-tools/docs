@@ -20,4 +20,6 @@
 
 ## Python documentation
 
-- [ortools module](python/index.html)
+### Pdoc
+
+- [ortools module](pdoc/index.html)
