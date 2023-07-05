@@ -83,14 +83,14 @@ function gen_python() {
  -f ${ROOT_DIR}/src/Dockerfile \
  ${ROOT_DIR}/src
 
-  rm -rf "${OUTPUT_DIR}"/python
+  rm -rf "${OUTPUT_DIR}"/pdoc
   docker run --rm --init \
  -v ${OUTPUT_DIR}/:/export \
  -it \
  --user ${ID_U}:${ID_G} \
- --name python_doc \
+ --name pdoc_doc \
  ${IMAGE} \
- "cp -r build/docs/python /export/"
+ "cp -r build/docs/pdoc /export/"
 }
 
 function gen_all() {
