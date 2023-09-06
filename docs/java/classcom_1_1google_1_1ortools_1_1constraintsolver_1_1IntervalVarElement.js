@@ -40,6 +40,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement =
     [ "startMin", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#a5e92d52902e781a036a2de5a7e5c9ce4", null ],
     [ "startValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#a7d76db777eedc29013b0c193f238b19d", null ],
     [ "store", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#a1f51990a23bb83b9da6e9f60730d7830", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#ac551054aea8efb1a4e714a5ffd6042ef", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#ab1fe8cba655181d25959aab77c47ed12", null ],
     [ "var", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntervalVarElement.html#a16e16bedd0b8792e2841df604d8e4c32", null ]
 ];

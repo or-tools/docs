@@ -15,6 +15,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject =
     [ "set_variable_to_clean_on_fail", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#a96eb479b849b90f4ded2f1c7bb115e56", null ],
     [ "setName", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#ad269f64dd2ef6188be6d825c0305130a", null ],
     [ "solver", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#a0609fded543e5ca1cf20d2caa6084597", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#a4ecf15618ea67f1f50a3f8c4e0b0fe93", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#ae29a3d9d5c398484fa78ace37585d09d", null ],
     [ "unfreezeQueue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#a1fb862d7d176653fbc54834ac861023b", null ]
 ];

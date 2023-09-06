@@ -7,6 +7,8 @@ var linear__solver_8h =
     [ "operations_research::MPSolverParameters", "classoperations__research_1_1MPSolverParameters.html", "classoperations__research_1_1MPSolverParameters" ],
     [ "operations_research::MPSolverInterface", "classoperations__research_1_1MPSolverInterface.html", "classoperations__research_1_1MPSolverInterface" ],
     [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#a9a91eed380982c769d7ca85b5736f91c", null ],
+    [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#a85d0d5aecc4c21263782ddcb0acd6ad5", null ],
+    [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#a7ab186ca69e49c059b83292894fbc870", null ],
     [ "AbslParseFlag", "linear__solver_8h.html#ac13948d20a1f3c1a1bac05821a52316e", null ],
     [ "AbslUnparseFlag", "linear__solver_8h.html#af04d1dfc591c35038a974202e50e541f", null ],
     [ "MPSolverResponseStatusIsRpcError", "linear__solver_8h.html#a52d451963bca16889b3f1e23450a8f2d", null ],

@@ -24,6 +24,7 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "Ends", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a085bc04bc9d0337527fc6611f11070db", null ],
     [ "GetEnergyProfile", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a648ff007cfc81bd0a4369701a7048a27", null ],
     [ "GetMinOverlap", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#acd02f1cda8b4493923a7ab371ef8332b", null ],
+    [ "HasOtherHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#abf860234269c7f0178b213112b481d40", null ],
     [ "ImportOtherReasons", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ac715433d9fec139352b9fd470e170994", null ],
     [ "IncreaseEndMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a250c9252607ddcea3fb3f396b3cff5cc", null ],
     [ "IncreaseStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a90133d39ef2d7a0a80e25505b1d8c348", null ],

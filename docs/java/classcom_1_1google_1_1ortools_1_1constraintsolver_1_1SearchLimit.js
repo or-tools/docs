@@ -16,5 +16,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit =
     [ "makeClone", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit.html#a93f45d923336ccce7a21949a379aa5b4", null ],
     [ "periodicCheck", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit.html#aed117320a60bf849637ca5f08f20d040", null ],
     [ "refuteDecision", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit.html#a5cfb236da80fea8894abad898e7378b5", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit.html#a95d2fec3c22da88ac4a9264eca325e18", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimit.html#a6ffe02f3c315a66c022270b53eed1e9a", null ]
 ];

@@ -42,7 +42,6 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters =
     [ "getSolverOptimizerSetsOrBuilderList", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a6f8b8dfa5848fd95568db304eadb8a0f", null ],
     [ "getSortConstraintsByNumTerms", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a1f4762ecf33a5c11773441987abdab50", null ],
     [ "getSynchronizationType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#ac0abade65b8ab9208d4f53cdd9f4493f", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a8812a5696b73b5ca03b43a9693bc612a", null ],
     [ "getUseLearnedBinaryClausesInLp", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a6d7faa53618e0c08fdbdb9ce0f46442c", null ],
     [ "getUseLpLns", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a33f08b4daaca6612c42fc5258d09fd1b", null ],
     [ "getUseLpStrongBranching", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a44387b1e233012dcd3b56498e90faf2f", null ],

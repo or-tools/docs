@@ -85,6 +85,7 @@ var hierarchy =
       [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
       [ "OperationsResearch.Pdlp.AdaptiveLinesearchParams", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams.html", null ],
       [ "OperationsResearch.Pdlp.ConvergenceInformation", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation.html", null ],
+      [ "OperationsResearch.Pdlp.FeasibilityPolishingDetails", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html", null ],
       [ "OperationsResearch.Pdlp.InfeasibilityInformation", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation.html", null ],
       [ "OperationsResearch.Pdlp.IterationStats", "classOperationsResearch_1_1Pdlp_1_1IterationStats.html", null ],
       [ "OperationsResearch.Pdlp.MalitskyPockParams", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams.html", null ],
@@ -307,6 +308,7 @@ var hierarchy =
       [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
       [ "OperationsResearch.Pdlp.AdaptiveLinesearchParams", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams.html", null ],
       [ "OperationsResearch.Pdlp.ConvergenceInformation", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation.html", null ],
+      [ "OperationsResearch.Pdlp.FeasibilityPolishingDetails", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html", null ],
       [ "OperationsResearch.Pdlp.InfeasibilityInformation", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation.html", null ],
       [ "OperationsResearch.Pdlp.IterationStats", "classOperationsResearch_1_1Pdlp_1_1IterationStats.html", null ],
       [ "OperationsResearch.Pdlp.MalitskyPockParams", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams.html", null ],
@@ -319,7 +321,6 @@ var hierarchy =
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.DetailedOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", null ],
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.SimpleOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", null ]
     ] ],
-    [ "Google.OrTools.Tests.KnapsakSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1KnapsakSolverTest.html", null ],
     [ "OperationsResearch.LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", null ],
     [ "Google.OrTools.Algorithms.operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithms.html", null ],
     [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html", null ],
@@ -416,7 +417,9 @@ var hierarchy =
         [ "Google.OrTools.ConstraintSolver.RoutingModelVisitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModelVisitor.html", null ],
         [ "Google.OrTools.ConstraintSolver.SearchMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitor.html", [
           [ "Google.OrTools.ConstraintSolver.LocalSearchMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchMonitor.html", null ],
-          [ "Google.OrTools.ConstraintSolver.OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html", null ],
+          [ "Google.OrTools.ConstraintSolver.ObjectiveMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html", [
+            [ "Google.OrTools.ConstraintSolver.OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html", null ]
+          ] ],
           [ "Google.OrTools.ConstraintSolver.PropagationMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationMonitor.html", null ],
           [ "Google.OrTools.ConstraintSolver.SearchLimit", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchLimit.html", [
             [ "Google.OrTools.ConstraintSolver.ImprovementSearchLimit", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ImprovementSearchLimit.html", null ],

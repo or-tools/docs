@@ -1,8 +1,9 @@
 var classoperations__research_1_1glop_1_1CompactSparseMatrix =
 [
     [ "ConstView", "classoperations__research_1_1glop_1_1CompactSparseMatrix_1_1ConstView.html", "classoperations__research_1_1glop_1_1CompactSparseMatrix_1_1ConstView" ],
-    [ "CompactSparseMatrix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a6b48362b8f25d4949d85e9bee4f58cda", null ],
+    [ "CompactSparseMatrix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a28d29a8481b6e9b5fc41eedc1fc60e84", null ],
     [ "CompactSparseMatrix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#aa5613aefbe167b3a7060c47adbc18257", null ],
+    [ "CompactSparseMatrix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ae2f140aa343de339f2e285236501eb67", null ],
     [ "AddAndClearColumnWithNonZeros", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a68984a579051362fc97153bbc5ec8841", null ],
     [ "AddDenseColumn", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a4cfb37c92fd3b030abd7c4937b1835b7", null ],
     [ "AddDenseColumnPrefix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#aff5d2175f3b5b2e6809102da52200b93", null ],
@@ -21,6 +22,7 @@ var classoperations__research_1_1glop_1_1CompactSparseMatrix =
     [ "num_cols", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a9e78218042cfaf18c2691c37d5c807d2", null ],
     [ "num_entries", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a5a52d442a79d9b593a064a25974ad256", null ],
     [ "num_rows", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a7bfc6b4eb1e0bbb4ae855e0ceafae2cd", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a239a611a4fc6681de4a620adb54e765e", null ],
     [ "PopulateFromMatrixView", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a1e0bbe954eec094da534cdcb0fd00b1b", null ],
     [ "PopulateFromSparseMatrixAndAddSlacks", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a4f4c1d525e84f78b8a020b1c663532bc", null ],
     [ "PopulateFromTranspose", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ad7a55d35aca309a76f7ddd83614cca3e", null ],

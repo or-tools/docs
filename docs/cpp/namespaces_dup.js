@@ -10,7 +10,7 @@ var namespaces_dup =
     [ "file", "namespacefile.html", "namespacefile" ],
     [ "google", "namespacegoogle.html", "namespacegoogle" ],
     [ "gtl", "namespacegtl.html", "namespacegtl" ],
-    [ "internal", "namespaceinternal.html", "namespaceinternal" ],
+    [ "internal", "namespaceinternal.html", null ],
     [ "operations_research", "namespaceoperations__research.html", "namespaceoperations__research" ],
     [ "recordio", "namespacerecordio.html", "namespacerecordio" ],
     [ "std", "namespacestd.html", "namespacestd" ],

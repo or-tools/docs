@@ -20,7 +20,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem =
     [ "getOriginalNumVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a5aecf86b9135d31ced43f7b2bac078b2", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#aa6ada8c2bc14c996642a62fc7146db00", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a607f048427e3b567f5d08a0638639f9f", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#afba9f1e2a82b972e35ec1c5ecd06cec2", null ],
     [ "getVarNames", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#aeb7552ef26cdd8b6d061e48a1d06c327", null ],
     [ "getVarNamesBytes", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#acbc704315e731f8a4eece614ecf48c67", null ],
     [ "getVarNamesCount", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a099b879c20091b9851503589e4b988a6", null ],

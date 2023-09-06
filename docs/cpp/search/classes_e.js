@@ -3,7 +3,7 @@ var searchData=
   ['nearestneighbors_0',['NearestNeighbors',['../classoperations__research_1_1NearestNeighbors.html',1,'operations_research']]],
   ['nearpparser_1',['NearpParser',['../classoperations__research_1_1NearpParser.html',1,'operations_research']]],
   ['neighborhood_2',['Neighborhood',['../structoperations__research_1_1sat_1_1Neighborhood.html',1,'operations_research::sat']]],
-  ['neighborhoodgenerator_3',['NeighborhoodGenerator',['../classoperations__research_1_1bop_1_1NeighborhoodGenerator.html',1,'operations_research::bop::NeighborhoodGenerator'],['../classoperations__research_1_1sat_1_1NeighborhoodGenerator.html',1,'operations_research::sat::NeighborhoodGenerator']]],
+  ['neighborhoodgenerator_3',['neighborhoodgenerator',['../classoperations__research_1_1bop_1_1NeighborhoodGenerator.html',1,'operations_research::bop::NeighborhoodGenerator'],['../classoperations__research_1_1sat_1_1NeighborhoodGenerator.html',1,'operations_research::sat::NeighborhoodGenerator']]],
   ['neighborhoodgeneratorhelper_4',['NeighborhoodGeneratorHelper',['../classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html',1,'operations_research::sat']]],
   ['neighborhoodlimit_5',['NeighborhoodLimit',['../classoperations__research_1_1NeighborhoodLimit.html',1,'operations_research']]],
   ['nestedtimelimit_6',['NestedTimeLimit',['../classoperations__research_1_1NestedTimeLimit.html',1,'operations_research']]],
@@ -20,8 +20,9 @@ var searchData=
   ['nonstreamablesolverinitarguments_17',['NonStreamableSolverInitArguments',['../structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArguments.html',1,'operations_research::math_opt']]],
   ['nonstreamablesolverinitargumentshelper_18',['NonStreamableSolverInitArgumentsHelper',['../structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsHelper.html',1,'operations_research::math_opt']]],
   ['nonstreamablesolverinitargumentshelper_3c_20nonstreamablegurobiinitarguments_2c_20solver_5ftype_5fgurobi_20_3e_19',['NonStreamableSolverInitArgumentsHelper&lt; NonStreamableGurobiInitArguments, SOLVER_TYPE_GUROBI &gt;',['../structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsHelper.html',1,'operations_research::math_opt']]],
-  ['nooverlap2dconstraint_20',['NoOverlap2DConstraint',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraint.html',1,'operations_research::sat']]],
-  ['numericalrev_21',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrev_3c_20int_20_3e_22',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrevarray_23',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
+  ['nonstreamablesolverinitargumentsvalue_20',['NonStreamableSolverInitArgumentsValue',['../classoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsValue.html',1,'operations_research::math_opt']]],
+  ['nooverlap2dconstraint_21',['NoOverlap2DConstraint',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraint.html',1,'operations_research::sat']]],
+  ['numericalrev_22',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrev_3c_20int_20_3e_23',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrevarray_24',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
 ];

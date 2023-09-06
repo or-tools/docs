@@ -7,5 +7,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor =
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#a406904375aca2137ddb346ac5ad7790d", null ],
     [ "getKLightElement", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#aa6f73905a9e1e471d83948be8c46d5ac", null ],
     [ "getKLightElement2", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#a1a37e25263dcbcdc665e9e0e10f15cec", null ],
-    [ "getKRemoveValues", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#a5cc4e58c0c095c769e176272f1dbfc35", null ]
+    [ "getKRemoveValues", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#a5cc4e58c0c095c769e176272f1dbfc35", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelVisitor.html#ac8e5dff5ef00ee0287f80db0dc9daaf6", null ]
 ];

@@ -18,6 +18,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit =
     [ "MakeIdenticalClone", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#ae54112dd1506e8ce16dde22d9b54f32b", null ],
     [ "progressPercent", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#ab900e35e0e05c06481b71b9c9958fe79", null ],
     [ "solutions", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#a326178e22eaf75e1e446238407c67ad4", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#a6ecff5277e41b055b56551c4c3ab8337", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#a776d2c4f86d4d89d078a0ab346f0b962", null ],
     [ "UpdateLimits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#a76a02447771d46fc3ee45f28bc457736", null ],
     [ "wall_time", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimit.html#a640e161e79e9c13ac9ab28cd1fb1c5cc", null ]

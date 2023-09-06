@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['validator_2ecc_0',['validator.cc',['../sos_2validator_8cc.html',1,'(Global Namespace)'],['../indicator_2validator_8cc.html',1,'(Global Namespace)'],['../quadratic_2validator_8cc.html',1,'(Global Namespace)']]],
-  ['validator_2eh_1',['validator.h',['../sos_2validator_8h.html',1,'(Global Namespace)'],['../quadratic_2validator_8h.html',1,'(Global Namespace)'],['../indicator_2validator_8h.html',1,'(Global Namespace)']]],
+  ['validator_2ecc_0',['validator.cc',['../sos_2validator_8cc.html',1,'(Global Namespace)'],['../indicator_2validator_8cc.html',1,'(Global Namespace)'],['../quadratic_2validator_8cc.html',1,'(Global Namespace)'],['../second__order__cone_2validator_8cc.html',1,'(Global Namespace)']]],
+  ['validator_2eh_1',['validator.h',['../sos_2validator_8h.html',1,'(Global Namespace)'],['../second__order__cone_2validator_8h.html',1,'(Global Namespace)'],['../quadratic_2validator_8h.html',1,'(Global Namespace)'],['../indicator_2validator_8h.html',1,'(Global Namespace)']]],
   ['var_5fdomination_2ecc_2',['var_domination.cc',['../var__domination_8cc.html',1,'']]],
   ['var_5fdomination_2eh_3',['var_domination.h',['../var__domination_8h.html',1,'']]],
   ['variable_5fand_5fexpressions_2ecc_4',['variable_and_expressions.cc',['../variable__and__expressions_8cc.html',1,'']]],
@@ -17,10 +17,12 @@ var searchData=
   ['vector_5fbin_5fpacking_5fparser_2eh_14',['vector_bin_packing_parser.h',['../vector__bin__packing__parser_8h.html',1,'']]],
   ['vector_5fmap_2eh_15',['vector_map.h',['../vector__map_8h.html',1,'']]],
   ['vector_5for_5ffunction_2eh_16',['vector_or_function.h',['../vector__or__function_8h.html',1,'']]],
-  ['version_2ecc_17',['version.cc',['../version_8cc.html',1,'']]],
-  ['version_2eh_18',['version.h',['../version_8h.html',1,'']]],
-  ['visitor_2ecc_19',['visitor.cc',['../visitor_8cc.html',1,'']]],
-  ['vlog_2eh_20',['vlog.h',['../vlog_8h.html',1,'']]],
-  ['vlog_5fis_5fon_2ecc_21',['vlog_is_on.cc',['../vlog__is__on_8cc.html',1,'']]],
-  ['vlog_5fis_5fon_2eh_22',['vlog_is_on.h',['../vlog__is__on_8h.html',1,'']]]
+  ['vector_5fsum_2eh_17',['vector_sum.h',['../vector__sum_8h.html',1,'']]],
+  ['vector_5fsum_5finternal_2eh_18',['vector_sum_internal.h',['../vector__sum__internal_8h.html',1,'']]],
+  ['version_2ecc_19',['version.cc',['../version_8cc.html',1,'']]],
+  ['version_2eh_20',['version.h',['../version_8h.html',1,'']]],
+  ['visitor_2ecc_21',['visitor.cc',['../visitor_8cc.html',1,'']]],
+  ['vlog_2eh_22',['vlog.h',['../vlog_8h.html',1,'']]],
+  ['vlog_5fis_5fon_2ecc_23',['vlog_is_on.cc',['../vlog__is__on_8cc.html',1,'']]],
+  ['vlog_5fis_5fon_2eh_24',['vlog_is_on.h',['../vlog__is__on_8h.html',1,'']]]
 ];

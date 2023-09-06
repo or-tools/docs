@@ -4,6 +4,7 @@ var dir_d7102cb9b8f7e43929a688c6d6951c0b =
     [ "iterators.h", "math__opt_2storage_2iterators_8h.html", "math__opt_2storage_2iterators_8h" ],
     [ "linear_constraint_storage.cc", "linear__constraint__storage_8cc.html", null ],
     [ "linear_constraint_storage.h", "linear__constraint__storage_8h.html", "linear__constraint__storage_8h" ],
+    [ "linear_expression_data.h", "linear__expression__data_8h.html", "linear__expression__data_8h" ],
     [ "model_storage.cc", "model__storage_8cc.html", null ],
     [ "model_storage.h", "model__storage_8h.html", null ],
     [ "model_storage_types.h", "model__storage__types_8h.html", "model__storage__types_8h" ],

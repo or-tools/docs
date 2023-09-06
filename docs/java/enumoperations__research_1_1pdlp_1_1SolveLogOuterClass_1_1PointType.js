@@ -12,6 +12,8 @@ var enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType =
     [ "POINT_TYPE_AVERAGE_ITERATE_VALUE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#a3a22513b8c94203be77feca969b6f8c5", null ],
     [ "POINT_TYPE_CURRENT_ITERATE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#a0e316a8b6b912b45b56a059bc89fb0f4", null ],
     [ "POINT_TYPE_CURRENT_ITERATE_VALUE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#afc455d97057e39f31a4059d120b9d9b0", null ],
+    [ "POINT_TYPE_FEASIBILITY_POLISHING_SOLUTION", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#a76607e6bf11764124fbcea53e1c4dc82", null ],
+    [ "POINT_TYPE_FEASIBILITY_POLISHING_SOLUTION_VALUE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#a75ddd7b79037a5a84b480a7e0e35005c", null ],
     [ "POINT_TYPE_ITERATE_DIFFERENCE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#aedfaa9a46496c9c539c89d8bc2bd0429", null ],
     [ "POINT_TYPE_ITERATE_DIFFERENCE_VALUE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#ab5179905795c3898fd015e9338ccd223", null ],
     [ "POINT_TYPE_NONE", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html#a916f2f7bb22330c07db07a2d43da6d07", null ],

@@ -12,7 +12,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto =
     [ "getNameBytes", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#ac7c5cfd1b73ddd63656bf1ef4352b90d", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#a86cee5c46e56ce1ec410547d80adc919", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#afa4cacbe647c2073ff9d573c097fd92c", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#aed5ccd849bcab2c08f7fd0a4d8a1bd42", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#ab790f18dbddef362512273e245582aea", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#a38096c228115ea085a5e390a6224024b", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1IntegerVariableProto.html#ab55e6b8d3c397a66f768182182812fae", null ],

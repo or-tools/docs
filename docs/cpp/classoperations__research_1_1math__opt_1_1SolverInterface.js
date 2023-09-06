@@ -7,6 +7,7 @@ var classoperations__research_1_1math__opt_1_1SolverInterface =
     [ "SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a4def5d17d29ae03fd574a1bebc67cfdf", null ],
     [ "SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a25dd4a3815ffdaf3232f4fdaa9305f6c", null ],
     [ "~SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a9053d6c748ba7ede61b018d2da202417", null ],
+    [ "ComputeInfeasibleSubsystem", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a229d3600074174a31d5e515d6c0d965e", null ],
     [ "operator=", "classoperations__research_1_1math__opt_1_1SolverInterface.html#ac57a8f1b841ac381356a7069cfb5336f", null ],
     [ "Solve", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a685761a4d3d241a3246d09605c8e3a50", null ],
     [ "Update", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a6de754c2e507136a902230670f574c85", null ]

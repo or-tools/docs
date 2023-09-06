@@ -31,6 +31,7 @@ var classoperations__research_1_1CplexInterface =
     [ "SetPrimalTolerance", "classoperations__research_1_1CplexInterface.html#afe63638110a8484bfe4fe478a37b86dc", null ],
     [ "SetRelativeMipGap", "classoperations__research_1_1CplexInterface.html#af302a9a8cbb03eb267b9dcde0b075939", null ],
     [ "SetScalingMode", "classoperations__research_1_1CplexInterface.html#ade9838d567be0055711f0d0246878123", null ],
+    [ "SetSolverSpecificParametersAsString", "classoperations__research_1_1CplexInterface.html#a3a707de51b4b7c04edad4f532da668be", null ],
     [ "SetVariableBounds", "classoperations__research_1_1CplexInterface.html#a406883c965fc105b6996d4f681c7d512", null ],
     [ "SetVariableInteger", "classoperations__research_1_1CplexInterface.html#a6f29640b71cf1b2be18d08c4888d654f", null ],
     [ "Solve", "classoperations__research_1_1CplexInterface.html#a76b501a8b74890e8e7da6cb053085db2", null ],

@@ -18,7 +18,6 @@ var linear__relaxation_8cc =
     [ "AppendCumulativeRelaxationAndCutGenerator", "linear__relaxation_8cc.html#a0a55eff323f285ad2bc39449ca4623ae", null ],
     [ "AppendElementEncodingRelaxation", "linear__relaxation_8cc.html#a99c02b5f23ff755783f84c851f8dcbb2", null ],
     [ "AppendExactlyOneRelaxation", "linear__relaxation_8cc.html#a12d9be5c1f94fcd416e5f582a8581789", null ],
-    [ "AppendFullEncodingRelaxation", "linear__relaxation_8cc.html#a1d2e012cbcaa63d84ac6dd637d0e1238", null ],
     [ "AppendLinearConstraintRelaxation", "linear__relaxation_8cc.html#a42d3ac4927f1adbca821091239fc06c7", null ],
     [ "AppendLinMaxRelaxationPart1", "linear__relaxation_8cc.html#a87160f650c0f35013f055fb81b3dfd30", null ],
     [ "AppendLinMaxRelaxationPart2", "linear__relaxation_8cc.html#aab775ea3151335d5d07e4071e38a4687", null ],
@@ -31,7 +30,7 @@ var linear__relaxation_8cc =
     [ "AppendSquareRelaxation", "linear__relaxation_8cc.html#abd42a035a99f910066d0a0356eff9ed6", null ],
     [ "ComputeLinearRelaxation", "linear__relaxation_8cc.html#a34cc8829256ea003a3f538b06d3a3a74", null ],
     [ "CreateAlternativeLiteralsWithView", "linear__relaxation_8cc.html#ae3fd4466b012022bab0c5c1839c77890", null ],
-    [ "DetectMakespan", "linear__relaxation_8cc.html#a6f986d4796867adff24dc87248bc249d", null ],
+    [ "DetectMakespan", "linear__relaxation_8cc.html#a825c5b32096a00edc3e2e3fd78c7d541", null ],
     [ "IntervalIsVariable", "linear__relaxation_8cc.html#abc92e600d7a70f5525d8c2998008a136", null ],
     [ "TryToLinearizeConstraint", "linear__relaxation_8cc.html#a7e710c5266505c51982912036c840755", null ]
 ];

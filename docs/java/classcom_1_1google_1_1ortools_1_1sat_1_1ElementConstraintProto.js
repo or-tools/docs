@@ -9,7 +9,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a25b6d16423c995e4ab4b0faf9faf762b", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a7899a35de82fc22cef7ba962c2348554", null ],
     [ "getTarget", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a081b5c11c63682bc52becdaf94cd3788", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a46183c7419c82759cf7111f4a2dd9ee2", null ],
     [ "getVars", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#ab931e33c3fdbc592d38324e3342d8d0d", null ],
     [ "getVarsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a90a6bb6cf467d08eaf8cc7a2e84ad1b3", null ],
     [ "getVarsList", "classcom_1_1google_1_1ortools_1_1sat_1_1ElementConstraintProto.html#a817165fb3216f0f4a7eb7e8fdba84b83", null ],

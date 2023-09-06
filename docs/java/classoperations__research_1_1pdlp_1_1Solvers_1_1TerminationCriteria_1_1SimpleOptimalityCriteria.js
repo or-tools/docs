@@ -9,7 +9,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1Simpl
     [ "getEpsOptimalRelative", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#ab72eea8f730c6a910305c42303a92682", null ],
     [ "getParserForType", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#adcc10017f3574c0922c2a689bd78cdea", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#afb7d92dc50559f68fe20bdfca25e483d", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a42f6bb496e9913ab2a5746f540dc9460", null ],
     [ "hasEpsOptimalAbsolute", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#ae3eaa7d3b8f1109469f0086549ed888c", null ],
     [ "hasEpsOptimalRelative", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a540abd4f3d251f95cc23611b491cd486", null ],
     [ "hashCode", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a0eeac947dad370330ec12c7bd85f5709", null ],

@@ -10,7 +10,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTrans
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#a9e531f6a131630b2fca9600c522be85c", null ],
     [ "getPositiveCoeff", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#a3bbfbd187747fcfbace3c2dea26496c8", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#a1bbe0dd2cab24123b9c7d9cae5077a40", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#afaedfa32dc789a7108b514b5380a5595", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#ab6f57c7d562698adbdb18e28da27360c", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#ac6ab4abd660271f106c97a9f9c52ec62", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html#affc7948aba96faa7c03ed41fb55469fa", null ],

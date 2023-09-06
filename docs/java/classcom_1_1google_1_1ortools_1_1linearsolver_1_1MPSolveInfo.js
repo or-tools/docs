@@ -9,7 +9,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo =
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a47d3031e512e7303b3f8f0b26a883674", null ],
     [ "getSolveUserTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a488bd2c886230959d281c16d819674d5", null ],
     [ "getSolveWallTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a4a043500190f364593b9c3febfa997b3", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a6b6a4993abe4ed8b41c22946ace61b14", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a8d029fee872042170a45e786d01996d1", null ],
     [ "hasSolveUserTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a857a62d83df6a5468d08cd1252111a7e", null ],
     [ "hasSolveWallTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a945299ff0480ef21e24351f8f9d54ffd", null ],

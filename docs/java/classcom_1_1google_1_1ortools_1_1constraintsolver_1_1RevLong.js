@@ -6,6 +6,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong =
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#aa26daef2ade59906a181ed0856e365a1", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#a66d8d953ea1fbe3c28b01b0ef12f706e", null ],
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#a4a62f816f886e33ad10e577e7e303a5e", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#a1cb56d8da07d0d3fa9981b743b9bf559", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#a4f42ec7996e909558802af1307cd2351", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html#a5750cc079d7f86ec8c27ff973cd376ad", null ]
 ];

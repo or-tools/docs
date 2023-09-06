@@ -54,6 +54,7 @@ var namespaceGoogle_1_1OrTools_1_1ConstraintSolver =
     [ "LocalSearchStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics" ],
     [ "ModelCache", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelCache.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelCache" ],
     [ "ModelVisitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor" ],
+    [ "ObjectiveMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor" ],
     [ "operations_research_constraint_solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solver.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solver" ],
     [ "operations_research_constraint_solverPINVOKE", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE" ],
     [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar" ],

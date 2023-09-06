@@ -2,7 +2,6 @@ var synchronization_8h =
 [
     [ "operations_research::sat::SharedSolutionRepository< ValueType >", "classoperations__research_1_1sat_1_1SharedSolutionRepository.html", "classoperations__research_1_1sat_1_1SharedSolutionRepository" ],
     [ "operations_research::sat::SharedSolutionRepository< ValueType >::Solution", "structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html", "structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution" ],
-    [ "operations_research::sat::SharedRelaxationSolutionRepository", "classoperations__research_1_1sat_1_1SharedRelaxationSolutionRepository.html", "classoperations__research_1_1sat_1_1SharedRelaxationSolutionRepository" ],
     [ "operations_research::sat::SharedLPSolutionRepository", "classoperations__research_1_1sat_1_1SharedLPSolutionRepository.html", "classoperations__research_1_1sat_1_1SharedLPSolutionRepository" ],
     [ "operations_research::sat::SharedIncompleteSolutionManager", "classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html", "classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager" ],
     [ "operations_research::sat::CpSolverResponseStatisticCallbacks", "structoperations__research_1_1sat_1_1CpSolverResponseStatisticCallbacks.html", "structoperations__research_1_1sat_1_1CpSolverResponseStatisticCallbacks" ],

@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1LuFactorization =
 [
     [ "LuFactorization", "classoperations__research_1_1glop_1_1LuFactorization.html#a8c96cfd916a64375810da2e008f9869d", null ],
+    [ "LuFactorization", "classoperations__research_1_1glop_1_1LuFactorization.html#a85b8340fe27c7a40bbe01cc71fb4cf61", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1LuFactorization.html#a9e08cb94e8521b02fe70dbde8df0a2e6", null ],
     [ "ComputeDeterminant", "classoperations__research_1_1glop_1_1LuFactorization.html#aee2e58cd61e78bf4118c519efcb49119", null ],
     [ "ComputeFactorization", "classoperations__research_1_1glop_1_1LuFactorization.html#a49b75cbc85a9f75a34f33ea1d0a52c57", null ],
@@ -24,6 +25,7 @@ var classoperations__research_1_1glop_1_1LuFactorization =
     [ "LeftSolveUForUnitRow", "classoperations__research_1_1glop_1_1LuFactorization.html#a179e5c1930bcac2ff5cc43cf33fb726b", null ],
     [ "LeftSolveUWithNonZeros", "classoperations__research_1_1glop_1_1LuFactorization.html#ad35f8a261df50e5c744da844ccb861da", null ],
     [ "NumberOfEntries", "classoperations__research_1_1glop_1_1LuFactorization.html#a5c1b5f0f818c1495d2740178232344db", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1LuFactorization.html#ae73bfe9c3a3a2600e383ad700d3336c8", null ],
     [ "RightSolve", "classoperations__research_1_1glop_1_1LuFactorization.html#a0e4573e7feaf7cedb7db9167f6c2a6a6", null ],
     [ "RightSolveLForColumnView", "classoperations__research_1_1glop_1_1LuFactorization.html#a049eb8faee4251e1dba82d9840fd46c2", null ],
     [ "RightSolveLForScatteredColumn", "classoperations__research_1_1glop_1_1LuFactorization.html#a2e579ff210b0103367861a3b281d4dd4", null ],

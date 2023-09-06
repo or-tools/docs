@@ -17,7 +17,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto =
     [ "getPermutationsOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#a49f3b45f3f792b7deb91ecef1fe0378e", null ],
     [ "getPermutationsOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#a34600a34bada05360c3d280a627eea2b", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#ad0cfba1dd3afb02335cca36387f5f61c", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#a4498fe57a546a74ab6219bcef20d6262", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#af9464c22a566f8e164c64058a3e8ffe6", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#aab558fc291388393d625d76964d42294", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html#af9927ef5a7b79467a14808dc5fd0fd70", null ],

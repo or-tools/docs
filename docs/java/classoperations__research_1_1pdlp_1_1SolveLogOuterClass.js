@@ -2,6 +2,8 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass =
 [
     [ "ConvergenceInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation" ],
     [ "ConvergenceInformationOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformationOrBuilder.html", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformationOrBuilder" ],
+    [ "FeasibilityPolishingDetails", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails" ],
+    [ "FeasibilityPolishingDetailsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetailsOrBuilder.html", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetailsOrBuilder" ],
     [ "InfeasibilityInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation" ],
     [ "InfeasibilityInformationOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformationOrBuilder.html", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformationOrBuilder" ],
     [ "IterationStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats" ],
@@ -9,6 +11,7 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass =
     [ "PointMetadata", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata" ],
     [ "PointMetadataOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadataOrBuilder.html", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadataOrBuilder" ],
     [ "PointType", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType" ],
+    [ "PolishingPhaseType", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PolishingPhaseType.html", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PolishingPhaseType" ],
     [ "QuadraticProgramStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats" ],
     [ "QuadraticProgramStatsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStatsOrBuilder.html", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStatsOrBuilder" ],
     [ "RestartChoice", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1RestartChoice.html", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1RestartChoice" ],

@@ -12,7 +12,6 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet =
     [ "getMethodsOrBuilderList", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a7cf79d986d8f2cf0d52c91881c4c3cb5", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a0fe086afaa5eb3b66948989c54aa9151", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#adf8ac8c21c09233942d9badc0ac64b27", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#ac413f7aaabfac9d1e229a9a62cb14995", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a9892ce308b2f2429844f857985932517", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a9d14ad496a1f760518cca8459f436008", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a76a0269db60220df29e43197819269eb", null ],

@@ -10,7 +10,7 @@ var classoperations__research_1_1sat_1_1DoubleLinearExpr =
     [ "coefficients", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#a04d06ec9e53bbe91ac943e59b21c92ea", null ],
     [ "constant", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#a64e8ff5fef049a003611d8c4a17a9d8e", null ],
     [ "DebugString", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#afe73836a7f4f44ee6b9df43b2b1690f1", null ],
-    [ "IsConstant", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#af2a882dbab5c5617a3ad1415d7cfc8ea", null ],
+    [ "IsConstant", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#a6c62e2aeacbfda674ec6857539d130b0", null ],
     [ "operator*=", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#a4d4fb61b7e18d7cd815abf3bcba58599", null ],
     [ "operator+=", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#af75656485e2d8a02a26a472722d600c0", null ],
     [ "operator+=", "classoperations__research_1_1sat_1_1DoubleLinearExpr.html#ad2740660c414d7582fbdae8ff487dfc2", null ],

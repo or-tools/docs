@@ -16,7 +16,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint =
     [ "getNameBytes", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a3273ab8cf80bb5cbae80139958d4e28b", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a2e8a4127e3e724505f32c3e42ddf3ac1", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a7a79fd87efa7e28cf8d6a29a058f2a8b", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a01465d3902600494e9825f5f6a0d182d", null ],
     [ "getUpperBound", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a03ffb38a0a6e6b42a0b8d8022e79ac39", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#abd09fa150e0980651af168d1d4fb2a59", null ],
     [ "hasLowerBound", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html#a9d419cd72d86d733ac4caf0ebf08ee83", null ],

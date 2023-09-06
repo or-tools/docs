@@ -1,12 +1,12 @@
 var classoperations__research_1_1RegularLimit =
 [
-    [ "RegularLimit", "classoperations__research_1_1RegularLimit.html#a6c3288a5d6d51749a9d82d280fae2397", null ],
+    [ "RegularLimit", "classoperations__research_1_1RegularLimit.html#ad1e37c3a239bea6063e0e494536bdd5a", null ],
     [ "~RegularLimit", "classoperations__research_1_1RegularLimit.html#a549c9e71214a87f6a4ab59b113933721", null ],
     [ "AbsoluteSolverDeadline", "classoperations__research_1_1RegularLimit.html#ab78472fc60e6e9f3a7920cba49f6cc72", null ],
-    [ "Accept", "classoperations__research_1_1RegularLimit.html#a5971e2a299e94cd43e5aaf6675cf9dc7", null ],
+    [ "Accept", "classoperations__research_1_1RegularLimit.html#a7ee759972460b206fa2b8a0bae9495f2", null ],
     [ "branches", "classoperations__research_1_1RegularLimit.html#a1c6f2d20743f02a280db4d1cedb3d0b5", null ],
     [ "CheckWithOffset", "classoperations__research_1_1RegularLimit.html#a46fd1319be56940fd68e2059a3c87c0e", null ],
-    [ "Copy", "classoperations__research_1_1RegularLimit.html#a255302e173fe3765a12bdac8cc893d89", null ],
+    [ "Copy", "classoperations__research_1_1RegularLimit.html#add943c69d465db9859eb1f6bd8ad5e50", null ],
     [ "DebugString", "classoperations__research_1_1RegularLimit.html#a7a6e185350eade19733138b3d054bba9", null ],
     [ "duration_limit", "classoperations__research_1_1RegularLimit.html#a034b9632ef4574d05aa150cd7a0c613c", null ],
     [ "ExitSearch", "classoperations__research_1_1RegularLimit.html#a895d84c05da5c98c72e3662bf83ecc86", null ],

@@ -51,6 +51,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension =
     [ "shortestTransitionSlack", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#a5b50971b84ec4080c4fd46261bca25e6", null ],
     [ "slacks", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#ad8e5b2f223c48b0e3a4ddb487afa578d", null ],
     [ "slackVar", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#a22aacc3ee3c70507a2a45a38d203532b", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#ac6f87e59b6fde6e30892ebf3ad96fdbb", null ],
     [ "transits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#a7c7146b8a88aa3b5d55c69ff9b82d51d", null ],
     [ "transitVar", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#a38e55c9f4caf0eff7794142bb78aad4a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html#ad7f7774bd5cc96b2948ce6243ef953dd", null ]

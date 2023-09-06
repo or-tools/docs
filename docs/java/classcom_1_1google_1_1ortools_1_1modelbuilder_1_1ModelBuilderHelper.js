@@ -41,6 +41,7 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper =
     [ "setVarName", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#ac1d01816a0bbb6a8a7bc4eb7dd315405", null ],
     [ "setVarObjectiveCoefficient", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a2ab129f854d4f5aaa5ddbca6e99f450d", null ],
     [ "setVarUpperBound", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#ae488020e010e7a94f51d01c8b421c7aa", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a4e5016d5d91ecb9fa4c060ccefc7d3d1", null ],
     [ "writeModelToFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#aa9b1c70f270972236d48f440f4ff48de", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a3bf99b68afc961afc05d15284e8da1ca", null ]
 ];

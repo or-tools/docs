@@ -10,5 +10,7 @@ var cuts_8cc =
     [ "CreatePositiveMultiplicationCutGenerator", "cuts_8cc.html#a28abd2fe9199829f0c98ade48cfe459c", null ],
     [ "CreateSquareCutGenerator", "cuts_8cc.html#a79af46d14a4530c0bf34132ff038b181", null ],
     [ "GetFactorT", "cuts_8cc.html#a1ab085f4bfc568341a61b1a178fb718d", null ],
-    [ "GetSuperAdditiveRoundingFunction", "cuts_8cc.html#afa1020b89b12f653b1ea0dd0d595557e", null ]
+    [ "GetSuperAdditiveRoundingFunction", "cuts_8cc.html#afa1020b89b12f653b1ea0dd0d595557e", null ],
+    [ "GetSuperAdditiveStrengtheningFunction", "cuts_8cc.html#a7876cef7b031a084f24b5c5898c9710c", null ],
+    [ "GetSuperAdditiveStrengtheningMirFunction", "cuts_8cc.html#adadc8829018c149d88271978270bf822", null ]
 ];

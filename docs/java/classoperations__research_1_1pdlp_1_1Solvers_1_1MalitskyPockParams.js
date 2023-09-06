@@ -10,7 +10,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams =
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#a1df85c11bc45dcdd32312ed2c09d0202", null ],
     [ "getStepSizeDownscalingFactor", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#a5453bb582f0fd74f764b5386a807a62a", null ],
     [ "getStepSizeInterpolation", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#aac2b440e100551572fa78003c0c317de", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#aa197336ebc36107d983eac0e07f3b0d3", null ],
     [ "hashCode", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#aa6d5cfae344782cfbfd094fd6ed7ad86", null ],
     [ "hasLinesearchContractionFactor", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#a1afa51c80b5ef8dab7d158d901bf5d4a", null ],
     [ "hasStepSizeDownscalingFactor", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html#a02d4e36f7fa82d1637356d0966821772", null ],

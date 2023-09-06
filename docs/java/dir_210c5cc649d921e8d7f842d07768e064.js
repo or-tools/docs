@@ -1,4 +1,0 @@
-var dir_210c5cc649d921e8d7f842d07768e064 =
-[
-    [ "google", "dir_d5c191cb2d8041d2e7933a50d8335778.html", "dir_d5c191cb2d8041d2e7933a50d8335778" ]
-];

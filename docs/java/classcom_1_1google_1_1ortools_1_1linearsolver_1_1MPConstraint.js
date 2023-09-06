@@ -16,6 +16,7 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint =
     [ "setIsLazy", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#afc81d369d94d405df3c6b63a207b5bed", null ],
     [ "setLb", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#ae2415596e11e86d0a08a68d4207e568e", null ],
     [ "setUb", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#ac2bdf0d37be6b685385192b46a07e04f", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#a10a6b50e5ad1bfbae87ba275cdedbcb7", null ],
     [ "ub", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#a71e2a5848b6791b9ffe2948ad9d17e5a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#a39a35c8d9b115bbba96ba35181e066e8", null ]
 ];

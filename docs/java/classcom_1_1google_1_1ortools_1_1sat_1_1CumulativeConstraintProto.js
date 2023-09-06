@@ -17,7 +17,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto =
     [ "getIntervalsList", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#a4d12519a5561c42de624bf3d45f6a577", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#aebfd5cc6197cd46e36d1d8288167e1d3", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#aca46ee3f17f79697e83365a1ec2b7957", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#a928001be3361a99f6d9999a134ba19fe", null ],
     [ "hasCapacity", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#af6b036269604b7c3049828e2afe07ae9", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#aa2368d6dd90fc862550fe42a0bba45f6", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto.html#a3614ad7e2a972b8c269804b11975df3f", null ],

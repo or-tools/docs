@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1IntegerTrail =
 [
     [ "LazyReasonFunction", "classoperations__research_1_1sat_1_1IntegerTrail.html#a9219863562067e46d634efac0ca7014c", null ],
     [ "IntegerTrail", "classoperations__research_1_1sat_1_1IntegerTrail.html#a78066df21a20a46eff4bc4c8f9c8ed42", null ],
+    [ "IntegerTrail", "classoperations__research_1_1sat_1_1IntegerTrail.html#a7acea0c0c0e8c14aa5bb4433d7fba05f", null ],
     [ "~IntegerTrail", "classoperations__research_1_1sat_1_1IntegerTrail.html#a9508c20a8a224902bf8bbc9f633976e8", null ],
     [ "AddIntegerVariable", "classoperations__research_1_1sat_1_1IntegerTrail.html#a6bd05d19e276120cc061cd16151fba7d", null ],
     [ "AddIntegerVariable", "classoperations__research_1_1sat_1_1IntegerTrail.html#a0979a7027ada907ff46cf852eac66fa3", null ],
@@ -50,6 +51,7 @@ var classoperations__research_1_1sat_1_1IntegerTrail =
     [ "num_level_zero_enqueues", "classoperations__research_1_1sat_1_1IntegerTrail.html#aae355fe55d1dbb006cac7cf8260d97b0", null ],
     [ "NumConstantVariables", "classoperations__research_1_1sat_1_1IntegerTrail.html#a1ff3feafd28f46006559ad6f5eebbf91", null ],
     [ "NumIntegerVariables", "classoperations__research_1_1sat_1_1IntegerTrail.html#a8ce9339e32d63fa818656755fa51c373", null ],
+    [ "operator=", "classoperations__research_1_1sat_1_1IntegerTrail.html#a16980d1e840f686778ee0d1d70f4d716", null ],
     [ "OptionalLiteralIndex", "classoperations__research_1_1sat_1_1IntegerTrail.html#a9a7e256775fd80c9676e5b815a1e6ed4", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1IntegerTrail.html#ae3ea8da78f7a6ec038887174bbad6ceb", null ],
     [ "Reason", "classoperations__research_1_1sat_1_1IntegerTrail.html#a090881ffd3442b49e6e858dd6cc9f433", null ],

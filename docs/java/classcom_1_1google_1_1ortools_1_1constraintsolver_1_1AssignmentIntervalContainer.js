@@ -22,5 +22,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalConta
     [ "restore", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalContainer.html#ac52166855cf8a111c4f155b8ae74c108", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalContainer.html#a40929baf0d5e3819c614910168d14905", null ],
     [ "store", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalContainer.html#afadca6952150d6b087e851780189d5e1", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalContainer.html#a73ead8ed4337e32cee9873a26cd8562a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntervalContainer.html#a1c67d4cdea9b0b09ef377a37e8180512", null ]
 ];

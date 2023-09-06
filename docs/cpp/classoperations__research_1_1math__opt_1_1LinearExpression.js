@@ -1,6 +1,8 @@
 var classoperations__research_1_1math__opt_1_1LinearExpression =
 [
     [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#ab40bda31432b9d93edbb11d74ad3be61", null ],
+    [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#ae895ac93ecddccb181a2d3ef5ff87dab", null ],
+    [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a853c56e847e908acda960b55d7d2da90", null ],
     [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a38fbf95dcdf8cdbf6bc0cc122e727601", null ],
     [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#accc69aea6d1eec7e10c043e3bf92870c", null ],
     [ "LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html#aca22be5e8c942bfc85981399d43dd62d", null ],
@@ -21,7 +23,8 @@ var classoperations__research_1_1math__opt_1_1LinearExpression =
     [ "operator-=", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a3de40ef601246bb5a438b31e28bce7f2", null ],
     [ "operator-=", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a774636b7a43e53b7a3a504f505a8e8fc", null ],
     [ "operator/=", "classoperations__research_1_1math__opt_1_1LinearExpression.html#afe18dfdfc8c1d955071ee09ea5233b5b", null ],
-    [ "raw_terms", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a6d59b52f5aab2154bce838f96473dc9d", null ],
+    [ "operator=", "classoperations__research_1_1math__opt_1_1LinearExpression.html#ad818a5beff3b51506ba7b3803ae3f7bb", null ],
+    [ "operator=", "classoperations__research_1_1math__opt_1_1LinearExpression.html#abdf7b95d8a5c2bd787ac10352c1457f0", null ],
     [ "storage", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a130c4a071ef7240c6b48408f30f4db36", null ],
     [ "Sum", "classoperations__research_1_1math__opt_1_1LinearExpression.html#af5544e7520419483e48a2e295fe1fed7", null ],
     [ "terms", "classoperations__research_1_1math__opt_1_1LinearExpression.html#a6f87080e3a3f832ce71c95d33864252f", null ],

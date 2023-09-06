@@ -13,7 +13,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1Detai
     [ "getEpsOptimalPrimalResidualRelative", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#a26c2e397ab9c18bcbaf1ab6a20b6107b", null ],
     [ "getParserForType", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#aa760c1d2f30c5f87c2349b81a487fb6f", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#a05c3d804ab59cea9c8531b0cf6c5c510", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#a0206f652bd25ba7a8529b24f80b9ccbf", null ],
     [ "hasEpsOptimalDualResidualAbsolute", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#a8955dd782db6027fc97df5b06912871b", null ],
     [ "hasEpsOptimalDualResidualRelative", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#ad4cccc4b9ab0ff2a580f8cb1aec7bc76", null ],
     [ "hasEpsOptimalObjectiveGapAbsolute", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html#a2ab0c7d277e35a5173fdcb1b43265e5a", null ],

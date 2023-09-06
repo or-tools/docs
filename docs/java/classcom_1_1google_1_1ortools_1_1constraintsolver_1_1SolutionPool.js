@@ -7,5 +7,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool =
     [ "getNextSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html#a916f07d35eec6654cf7cfcffdd7ffb20", null ],
     [ "initialize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html#ac26e9b7e1aa336ac6307102a6491e6d8", null ],
     [ "registerNewSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html#a832a7bc6b8411ea49522407ba45e0987", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html#a0ce475bf7170ee9042e3de7c141783f0", null ],
     [ "syncNeeded", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html#a6a3a0af4fae66d29ced18b6a6e53aa2c", null ]
 ];

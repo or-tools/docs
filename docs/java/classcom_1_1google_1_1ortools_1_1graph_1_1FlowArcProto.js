@@ -11,7 +11,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto =
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ac7f712a3aa4f8b854efe6324314c08b5", null ],
     [ "getTail", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#aa3b72df3f4c03fca95081f34ab48e74a", null ],
     [ "getUnitCost", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a11a70d4f0b0437a76fc7421205e0b7bc", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a9d4ad96c20954a32ac271817a8312b3d", null ],
     [ "hasCapacity", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#aea4c8184e99c1e030025e1d1afa5d092", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a76fe648446488e17fdb1641eb97d254b", null ],
     [ "hasHead", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a8a11f59e8e7fa473186bc914a68dc0ec", null ],

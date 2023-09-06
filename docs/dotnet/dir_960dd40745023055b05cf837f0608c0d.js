@@ -49,6 +49,7 @@ var dir_960dd40745023055b05cf837f0608c0d =
     [ "LocalSearchPhaseParameters.cs", "LocalSearchPhaseParameters_8cs.html", "LocalSearchPhaseParameters_8cs" ],
     [ "ModelCache.cs", "ModelCache_8cs.html", "ModelCache_8cs" ],
     [ "ModelVisitor.cs", "ModelVisitor_8cs.html", "ModelVisitor_8cs" ],
+    [ "ObjectiveMonitor.cs", "ObjectiveMonitor_8cs.html", "ObjectiveMonitor_8cs" ],
     [ "operations_research_constraint_solver.cs", "operations__research__constraint__solver_8cs.html", "operations__research__constraint__solver_8cs" ],
     [ "operations_research_constraint_solverPINVOKE.cs", "operations__research__constraint__solverPINVOKE_8cs.html", "operations__research__constraint__solverPINVOKE_8cs" ],
     [ "OptimizeVar.cs", "OptimizeVar_8cs.html", "OptimizeVar_8cs" ],

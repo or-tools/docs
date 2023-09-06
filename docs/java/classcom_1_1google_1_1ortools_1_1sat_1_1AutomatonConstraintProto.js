@@ -20,7 +20,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto =
     [ "getTransitionTail", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#ad9ab956d0d8c28e45af46bbf8495157a", null ],
     [ "getTransitionTailCount", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#acaf356c5942360c48dc4db6a34a51f73", null ],
     [ "getTransitionTailList", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#a7f39cb5ce602ddaffdf6b3ea74f98e70", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#ae19190d982bba02df1d39be3617b5848", null ],
     [ "getVars", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#a1cbcf5bf9857aadd3e2310dd5291bfd5", null ],
     [ "getVarsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#a014c7fb3b3b9b383599a91a0fd97e19a", null ],
     [ "getVarsList", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#a25b9b08803c075d4e420d21fcae2d5e0", null ],

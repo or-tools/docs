@@ -21,6 +21,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet =
     [ "numTuples", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#ad073f0c363f5672b395402dbfbd30a91", null ],
     [ "sortedByColumn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#a51497785d029ad2ee8776bfdc1b42243", null ],
     [ "sortedLexicographically", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#a82d32aa1c84ac8630ed70a232cd25b3c", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#a1666308529e37770b69806e08acc98bd", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#a192b07877ea13db7ca7221ea66ed3e32", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntTupleSet.html#a328369584c7b064c6233a75608f707d9", null ]
 ];

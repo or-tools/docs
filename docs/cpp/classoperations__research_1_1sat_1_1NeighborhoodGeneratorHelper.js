@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
 [
     [ "NeighborhoodGeneratorHelper", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a886e79589e8730685213bd910b60a309", null ],
     [ "ActiveObjectiveVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#af32c1c41f47d0403b5f3e70e43bb9c79", null ],
+    [ "ActiveObjectiveVariablesWhileHoldingLock", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#ab7b9f19f645f40e907192529652377a9", null ],
     [ "ActiveVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a88b2df5e975fddd01a6857409cc94365", null ],
     [ "ActiveVariablesWhileHoldingLock", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a5c529357133797c422f355dfd9532f76", null ],
     [ "AddSolutionHinting", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aaa1668db65bd5fb9793cc0d59b600112", null ],
@@ -12,6 +13,7 @@ var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
     [ "FullNeighborhood", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a0dabbaa1308cf471c6605fd6e415d3aa", null ],
     [ "GenerateTask", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#abe2306fcdd142900312b26803df321dc", null ],
     [ "GetActiveIntervals", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#ac4875cb7de4df887656c293d55056b87", null ],
+    [ "GetActiveRectangles", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a75114426e35ccd5061fcd1a928eb12a7", null ],
     [ "GetRoutingPaths", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aabba6722b6813c20341924c6d108ae84", null ],
     [ "GetSchedulingPrecedences", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aca0952c56878d9ecc6a8557bd42d170e", null ],
     [ "GetUniqueIntervalSets", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a95e747811a348dcd5c8e0419b4156af2", null ],
@@ -25,7 +27,8 @@ var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
     [ "shared_response", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a7564f3ed00b90ed70c1fe1e434ad6f9d", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a83668c50ed54cfcd6b559374579eeca7", null ],
     [ "TaskIsAvailable", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aeb4a3ff472c4d07e673cc9bd221a1801", null ],
-    [ "TypeToConstraints", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a9bbb9e9377f195cea13074072916538a", null ],
+    [ "TypeToConstraints", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#ae0c992f1bc983fc9c19048b4d24fb689", null ],
+    [ "UpdatedModelProtoCopy", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a1f4c4eca3061dd18e1cfd202ec4884eb", null ],
     [ "VarToConstraint", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a59dfa9c72a448dc4ba4937b1c02d4bbe", null ],
     [ "graph_mutex_", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aebc02302feafecf7907a5fcc097b7486", null ]
 ];

@@ -16,7 +16,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation 
     [ "getTargetName", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#ada6c3798008fa8e62abc825e4cd6c310", null ],
     [ "getTargetNameBytes", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#ab54dae3b43e9abbeb149a26a96991535", null ],
     [ "getTargetType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#a495da124701697e672e441b043c262e2", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#abe7b4dbc7deac61a1b2364d8c8fc2c8f", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#a4e82cc43328a3c90eac26df67b8cbca8", null ],
     [ "hasPayloadKey", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#aef50318125669411bfb315dbe487b9e3", null ],
     [ "hasPayloadValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html#a0acd8b013c6e7f46529b862581129482", null ],

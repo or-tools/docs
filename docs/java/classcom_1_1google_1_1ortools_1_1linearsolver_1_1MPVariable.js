@@ -14,6 +14,7 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable =
     [ "setLb", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#ab091ee09e26b1628f2836cf5889f1a8f", null ],
     [ "setUb", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#ab0c516392721a19d6b3713adc55a843b", null ],
     [ "solutionValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#abd406be5e65f37771effe20d9203e6f8", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#a97326ee247334f8ec58195a9cd900af1", null ],
     [ "ub", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#a2c3a8277b887c85254c93e0b24b8f9ff", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#a7d8ec4c2af12d9dc1d9d58c5644d720e", null ]
 ];

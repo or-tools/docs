@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog =
 [
     [ "SearchLog", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a4ea03b720ebd181ad241ec5640775f3c", null ],
-    [ "SearchLog", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a276e60e7026b83a1abea659b380f0241", null ],
+    [ "SearchLog", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a02fb2967671cf3dd9ef8c1180918e5ff", null ],
     [ "AcceptUncheckedNeighbor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#ac36c349123e0de6e78f35dfbe227aae6", null ],
     [ "applyDecision", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a6461ce1d1e6cb9474c7db5cf688e4a34", null ],
     [ "atSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#ace7558a15c797354ed7ceab86f8aebdd", null ],
@@ -17,5 +17,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog =
     [ "noMoreSolutions", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a20cbb09a1c830ee46067d3a9d90a07c2", null ],
     [ "outputDecision", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a47f313c9c1cd09d23cd5b4378b7e6b90", null ],
     [ "refuteDecision", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a72aa96931e7293f00ff2b507392079c6", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#ad923b7e8fd202bafe410d8c46167a367", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLog.html#a9045ee1cc95ee19f2af0ade3aa684c64", null ]
 ];

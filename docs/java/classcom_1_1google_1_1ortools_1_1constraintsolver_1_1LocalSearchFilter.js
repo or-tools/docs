@@ -14,6 +14,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter =
     [ "Reset", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#a32b8fc943ce0ac2dbf23fb663efbdb7b", null ],
     [ "Revert", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#a8be9b437ee3fc55aac7ddfa9b56e0060", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#ae95c70be0228ed67bf543badd810902a", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#ae2a368455d640aa8e512db1fe221a705", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#a2b540c47f33a2edf63527379cbc528de", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#ada54c59c724cc00f6f4e3ff1d83c5873", null ],
     [ "synchronize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilter.html#a8d6ffced40e15d19ef3b6d676e383da6", null ]

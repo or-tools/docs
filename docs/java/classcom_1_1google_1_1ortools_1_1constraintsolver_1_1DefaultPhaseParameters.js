@@ -28,6 +28,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters 
     [ "setUseLastConflict", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#a7b918670967b88d49c847723ca362169", null ],
     [ "setValueSelectionSchema", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#a206da8c265ad48a62b64e872db1ee24e", null ],
     [ "setVarSelectionSchema", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#a42a8be81bbc3a40132014962a3e72441", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#a24860a7fdb9c135a74f26a243bfae295", null ],
     [ "CHOOSE_MAX_AVERAGE_IMPACT", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#aac876f5f1edf0fafafbc41e55a89c80d", null ],
     [ "CHOOSE_MAX_SUM_IMPACT", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#afda545dfabade24b5077e5a0871f1df8", null ],
     [ "CHOOSE_MAX_VALUE_IMPACT", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DefaultPhaseParameters.html#adf3a128696aebc83b04781a3bc997b91", null ],

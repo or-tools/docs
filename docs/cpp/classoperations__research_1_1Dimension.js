@@ -2,7 +2,7 @@ var classoperations__research_1_1Dimension =
 [
     [ "Dimension", "classoperations__research_1_1Dimension.html#afd590074e21b0455233be9211f8dbfc0", null ],
     [ "~Dimension", "classoperations__research_1_1Dimension.html#a677aa7845faa2734872362d79f29938b", null ],
-    [ "Accept", "classoperations__research_1_1Dimension.html#ae7e53ecd8a353f9492c9b8bf1ee23dd2", null ],
+    [ "Accept", "classoperations__research_1_1Dimension.html#add347b7e7f79ca0ac59f3732b82ff0c2", null ],
     [ "Assign", "classoperations__research_1_1Dimension.html#ad6ce3b733d5244febe1a993dc3e1a0a2", null ],
     [ "AssignAllPossibleToBin", "classoperations__research_1_1Dimension.html#a92860e5e555160e418decabb419555da", null ],
     [ "AssignAllRemainingItems", "classoperations__research_1_1Dimension.html#a346aae4880c5862367b86718d84ecde7", null ],

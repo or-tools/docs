@@ -20,5 +20,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorStat
     [ "SetCandidateActive", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html#a44ae0438e22026001f98ec80a59226da", null ],
     [ "SetCandidateValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html#a7b73f4206f5d2526e6429eafb51c6ce7", null ],
     [ "SetCurrentDomainInjectiveAndKeepInverseValues", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html#ada986aeb3eeb7fc1c2fb482328886b92", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html#a7e2e3589de34867dec67d3e0657c65ec", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html#a343f4a3c769a87f1451711b427909e4f", null ]
 ];

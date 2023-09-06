@@ -1,11 +1,8 @@
 var namespaceutil =
 [
     [ "graph", "namespaceutil_1_1graph.html", [
-      [ "DenseIntStableTopologicalSortOrDie", "namespaceutil_1_1graph.html#a1b429182836eddf34189e5af39f1e886", null ],
-      [ "DenseIntTopologicalSortOrDie", "namespaceutil_1_1graph.html#a5c544f7c7c323eb16a64389b95b79458", null ],
       [ "FastTopologicalSort", "namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e", null ],
-      [ "FindCycleInGraph", "namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7", null ],
-      [ "StableTopologicalSortOrDie", "namespaceutil_1_1graph.html#a4bcd58ffa60a8a68fb960ff41deba777", null ]
+      [ "FindCycleInGraph", "namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7", null ]
     ] ],
     [ "internal", "namespaceutil_1_1internal.html", "namespaceutil_1_1internal" ],
     [ "BaseGraph", "classutil_1_1BaseGraph.html", "classutil_1_1BaseGraph" ],

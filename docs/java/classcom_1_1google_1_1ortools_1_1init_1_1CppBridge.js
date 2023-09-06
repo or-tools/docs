@@ -9,5 +9,6 @@ var classcom_1_1google_1_1ortools_1_1init_1_1CppBridge =
     [ "logGurobiSharedLibrary", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html#a4adaf8b0e3b5d6dd65ce54b6c63496bc", null ],
     [ "setFlags", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html#a6149d3d179dd308106d465df715d5431", null ],
     [ "shutdownLogging", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html#a13af401389948c9d59603f516b2e81d6", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html#a3ba6db2c3e8db65b9f3d7d7f349dad30", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html#acaa5b90fcc30247b4a119cb31c6ef749", null ]
 ];

@@ -5,6 +5,6 @@ var classoperations__research_1_1SmallRevBitSet =
     [ "GetFirstOne", "classoperations__research_1_1SmallRevBitSet.html#ab7613e75a80b39cb7621270ab9ffd416", null ],
     [ "IsCardinalityOne", "classoperations__research_1_1SmallRevBitSet.html#ad7bc8a8c7fae5202eb61c2e5c9964108", null ],
     [ "IsCardinalityZero", "classoperations__research_1_1SmallRevBitSet.html#a42ea531fee4409ffb3be7b17cdb434ba", null ],
-    [ "SetToOne", "classoperations__research_1_1SmallRevBitSet.html#a8b748cc073729e997595b62586bc2e27", null ],
-    [ "SetToZero", "classoperations__research_1_1SmallRevBitSet.html#adc066168085ed3c726654d6abbb42863", null ]
+    [ "SetToOne", "classoperations__research_1_1SmallRevBitSet.html#a384c07b036b83b9a6dd353bea4e7312c", null ],
+    [ "SetToZero", "classoperations__research_1_1SmallRevBitSet.html#a09c8e00ef0a0fdbdb36e09eb8a2e4fba", null ]
 ];

@@ -14,6 +14,7 @@ var classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver =
     [ "setTimeLimit", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a5b08123bb36b0d7294f2630cbfeb9121", null ],
     [ "setUseReduction", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a807708964205a04f7fd5252341200daf", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a86b9400f19838acc60411703ece777c6", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a292d9dff8b2272b6b261e7b10f7ead10", null ],
     [ "useReduction", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a9397051479da2ba13997e21ce9b02493", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a90008253c561a5b93cd61dd4ee6f98cc", null ]
 ];

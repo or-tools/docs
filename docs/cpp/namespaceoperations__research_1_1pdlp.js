@@ -18,6 +18,14 @@ var namespaceoperations__research_1_1pdlp =
     [ "SolverResult", "structoperations__research_1_1pdlp_1_1SolverResult.html", "structoperations__research_1_1pdlp_1_1SolverResult" ],
     [ "TerminationReasonAndPointType", "structoperations__research_1_1pdlp_1_1TerminationReasonAndPointType.html", "structoperations__research_1_1pdlp_1_1TerminationReasonAndPointType" ],
     [ "TrustRegionResult", "structoperations__research_1_1pdlp_1_1TrustRegionResult.html", "structoperations__research_1_1pdlp_1_1TrustRegionResult" ],
+    [ "IterationType", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caea", [
+      [ "kNormal", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaa07fa7a19aa722c635a15e94cb7f50416", null ],
+      [ "kPrimalFeasibility", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaa3107a306d88a13c04181ef2ea88b75a6", null ],
+      [ "kDualFeasibility", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaae80733093bd583d1de0c376ade72293d", null ],
+      [ "kPresolveTermination", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaadff2ce8d72bb215fd32902d63bfae0bb", null ],
+      [ "kNormalTermination", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaaff958e043681d83083ed771112b11d1b", null ],
+      [ "kFeasibilityPolishingTermination", "namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caeaa5daa2a77074cdd5071382b576c7ff07b", null ]
+    ] ],
     [ "PrimalDualNorm", "namespaceoperations__research_1_1pdlp.html#a8b49502c323652c8d4e9a3fd3dd5cda7", [
       [ "kMaxNorm", "namespaceoperations__research_1_1pdlp.html#a8b49502c323652c8d4e9a3fd3dd5cda7a974f1270f89b99d15b58a4d35c26aedc", null ],
       [ "kEuclideanNorm", "namespaceoperations__research_1_1pdlp.html#a8b49502c323652c8d4e9a3fd3dd5cda7aaafbdb17e2f1da89be62331fa0cf5503", null ]
@@ -50,7 +58,7 @@ var namespaceoperations__research_1_1pdlp =
     [ "ComputeRelativeResiduals", "namespaceoperations__research_1_1pdlp.html#afabaaef8b32ae92f1331599732ac99d1", null ],
     [ "ComputeScaledConvergenceInformation", "namespaceoperations__research_1_1pdlp.html#a67cba1e0f05d2dd4e3efb2587802f022", null ],
     [ "ComputeScaledConvergenceInformation", "namespaceoperations__research_1_1pdlp.html#a91e1750531d2a33362a8b9b9158f5192", null ],
-    [ "ComputeStats", "namespaceoperations__research_1_1pdlp.html#aa9c351ac6432daa4ea00cef61ced76c8", null ],
+    [ "ComputeStats", "namespaceoperations__research_1_1pdlp.html#a0f96ba4fae041845072b4e960bb42d13", null ],
     [ "CorrelationClusteringLp", "namespaceoperations__research_1_1pdlp.html#adacc8fc59edce54401bcdee2cf277c4e", null ],
     [ "CorrelationClusteringStarLp", "namespaceoperations__research_1_1pdlp.html#a23678bb7c561c0ebbc4c3e2a941fbd9d", null ],
     [ "Distance", "namespaceoperations__research_1_1pdlp.html#a09826daec0fbcdf6594b1ada846dbb3a", null ],
@@ -97,6 +105,7 @@ var namespaceoperations__research_1_1pdlp =
     [ "QpFromMpModelProto", "namespaceoperations__research_1_1pdlp.html#a70f90c55cdcb499205898fd7f90da6f3", null ],
     [ "QpToMpModelProto", "namespaceoperations__research_1_1pdlp.html#a03fc89d57cdfcdd70d122ffc32fb015d", null ],
     [ "ReadMPModelProtoFileOrDie", "namespaceoperations__research_1_1pdlp.html#a40bff54df141c92a98fb14a56a06417c", null ],
+    [ "ReadMpsLinearProgram", "namespaceoperations__research_1_1pdlp.html#af49e60cdec3f8a1e616da88dc4761c9a", null ],
     [ "ReadMpsLinearProgramOrDie", "namespaceoperations__research_1_1pdlp.html#aae83b2a0a223071e9c8a20cc2d8c0664", null ],
     [ "ReadQuadraticProgramOrDie", "namespaceoperations__research_1_1pdlp.html#a80b7dc41ed788020cbaf942674f623d9", null ],
     [ "ReducedCosts", "namespaceoperations__research_1_1pdlp.html#a6e56bcb1dbb063aac138bfaaeaca695a", null ],
@@ -151,7 +160,9 @@ var namespaceoperations__research_1_1pdlp =
     [ "WriteLinearProgramToMps", "namespaceoperations__research_1_1pdlp.html#a9efbc8bad87c896ca3c29f6ab4f969e5", null ],
     [ "WriteQuadraticProgramToMPModelProto", "namespaceoperations__research_1_1pdlp.html#ac69097fbe470f9bdb4110f2c54455926", null ],
     [ "ZeroVector", "namespaceoperations__research_1_1pdlp.html#a9385d74b2577097ab755dbf9c4f7c2ff", null ],
+    [ "kHugeDouble", "namespaceoperations__research_1_1pdlp.html#a29bde348ab02e750d7423c8e551daedf", null ],
     [ "kInfinity", "namespaceoperations__research_1_1pdlp.html#a7b49a0361e8201ffd1515e0067b9fd30", null ],
+    [ "kTinyDouble", "namespaceoperations__research_1_1pdlp.html#a46a438627fa7471011a97cf5bd367aa0", null ],
     [ "primal_solution", "namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020", null ],
     [ "x_3", "namespaceoperations__research_1_1pdlp.html#a19f1afcc777ad3dbf7090595ce6fe803", null ]
 ];

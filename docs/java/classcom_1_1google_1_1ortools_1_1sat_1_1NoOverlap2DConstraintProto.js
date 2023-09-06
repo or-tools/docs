@@ -2,13 +2,11 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto =
 [
     [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#af903cedde5d76fe2ac1ee9c1c45a18a7", null ],
-    [ "getBoxesWithNullAreaCanOverlap", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a30813ae0032a93644df719782ec8016f", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#acb8490ed8bbca0435883addb8fbff207", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a0f2924fb252180f5a4b051c28170e796", null ],
     [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a707237492a3c83c9c928283bcf088e01", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a7037bc9add6badb1bc23c97e0c4066b2", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#ad5287e3985b571ea4cc6f9987fb138ac", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a5be6039046629544b72bc2a5ffc46d52", null ],
     [ "getXIntervals", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a9fe77bd0339e0ff2421de41bcab81b62", null ],
     [ "getXIntervalsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a0fd9e0ab26517a688707dca06302d007", null ],
     [ "getXIntervalsList", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a5a155bc8aa0e0d3d4ef6739ef524b032", null ],
@@ -38,7 +36,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto =
     [ "parser", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a1f9ff9e7b6f9f2611f14aaa8595bd497", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#aaa251b770b375cdda5df4afcbdb95a21", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a55001b5d1b5b9d11dc32ef624d817b96", null ],
-    [ "BOXES_WITH_NULL_AREA_CAN_OVERLAP_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#ab396904c61b35869d197b89d6b4c6e7a", null ],
     [ "X_INTERVALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#a3265b833245ddc91aacd66911c50c5aa", null ],
     [ "Y_INTERVALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProto.html#ab8244d9bd602b8cea94618c6ccc6b701", null ]
 ];

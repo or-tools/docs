@@ -1,8 +1,11 @@
 var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
 [
+    [ "c_api", "dir_05b2702534200c244e429e320de15c27.html", "dir_05b2702534200c244e429e320de15c27" ],
     [ "arrow_operator_proxy.h", "arrow__operator__proxy_8h.html", "arrow__operator__proxy_8h" ],
     [ "concurrent_calls_guard.cc", "concurrent__calls__guard_8cc.html", null ],
     [ "concurrent_calls_guard.h", "concurrent__calls__guard_8h.html", "concurrent__calls__guard_8h" ],
+    [ "empty_bounds.cc", "empty__bounds_8cc.html", "empty__bounds_8cc" ],
+    [ "empty_bounds.h", "empty__bounds_8h.html", "empty__bounds_8h" ],
     [ "invalid_indicators.cc", "invalid__indicators_8cc.html", null ],
     [ "invalid_indicators.h", "invalid__indicators_8h.html", "invalid__indicators_8h" ],
     [ "inverted_bounds.cc", "inverted__bounds_8cc.html", null ],
@@ -11,6 +14,7 @@ var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
     [ "math_opt_proto_utils.h", "math__opt__proto__utils_8h.html", "math__opt__proto__utils_8h" ],
     [ "model_summary.cc", "model__summary_8cc.html", "model__summary_8cc" ],
     [ "model_summary.h", "model__summary_8h.html", "model__summary_8h" ],
+    [ "non_streamable_solver_init_arguments.cc", "non__streamable__solver__init__arguments_8cc.html", null ],
     [ "non_streamable_solver_init_arguments.h", "non__streamable__solver__init__arguments_8h.html", "non__streamable__solver__init__arguments_8h" ],
     [ "solve_interrupter.cc", "solve__interrupter_8cc.html", null ],
     [ "solve_interrupter.h", "solve__interrupter_8h.html", "solve__interrupter_8h" ],
@@ -20,8 +24,6 @@ var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
     [ "solver_debug.h", "solver__debug_8h.html", null ],
     [ "solver_interface.cc", "solver__interface_8cc.html", null ],
     [ "solver_interface.h", "solver__interface_8h.html", "solver__interface_8h" ],
-    [ "sparse_collection_matchers.cc", "sparse__collection__matchers_8cc.html", "sparse__collection__matchers_8cc" ],
-    [ "sparse_collection_matchers.h", "sparse__collection__matchers_8h.html", "sparse__collection__matchers_8h" ],
     [ "sparse_submatrix.cc", "sparse__submatrix_8cc.html", "sparse__submatrix_8cc" ],
     [ "sparse_submatrix.h", "sparse__submatrix_8h.html", "sparse__submatrix_8h" ],
     [ "sparse_vector.h", "math__opt_2core_2sparse__vector_8h.html", "math__opt_2core_2sparse__vector_8h" ],

@@ -1,6 +1,6 @@
 var classoperations__research_1_1bop_1_1BacktrackableIntegerSet =
 [
-    [ "BacktrackableIntegerSet", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html#a3997ca9a0bad64d685709a70ecd9def3", null ],
+    [ "BacktrackableIntegerSet", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html#a300b97087949e6d3174a030e301cbe24", null ],
     [ "AddBacktrackingLevel", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html#a30eeb2b9a8562de9d1129c5e98bb35d9", null ],
     [ "BacktrackAll", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html#a135b00695ce776d915db8a5b05e48f14", null ],
     [ "BacktrackOneLevel", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html#a77c20d9b0307e1e405a293f61e7349a0", null ],

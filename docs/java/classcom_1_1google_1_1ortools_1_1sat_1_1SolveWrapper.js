@@ -11,5 +11,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper =
     [ "setParameters", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html#a8d9c419b0c109878567ea64822652295", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html#aac84dce86dd1ab1d165695b056853ab6", null ],
     [ "stopSearch", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html#a5c493d518dd21b1d561cb774fc13f0a0", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html#aa5a0799aaa30a09e1780549781e24828", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html#a1c277b525565629686a0b3d8e2294614", null ]
 ];

@@ -6,6 +6,6 @@ var classoperations__research_1_1PairNodeSwapActiveOperator =
     [ "GetBaseNodeRestartPosition", "classoperations__research_1_1PairNodeSwapActiveOperator.html#a23a9a87c535c32e0b6594f86f5f366f3", null ],
     [ "MakeNeighbor", "classoperations__research_1_1PairNodeSwapActiveOperator.html#aa1d1ae60a42228a1ed1363362006f05e", null ],
     [ "MakeNextNeighbor", "classoperations__research_1_1PairNodeSwapActiveOperator.html#a0980c455528f5b1ba4ecd1137d412403", null ],
-    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1PairNodeSwapActiveOperator.html#a57d0f280b1f7c12a3cd6fcfe71410560", null ],
+    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1PairNodeSwapActiveOperator.html#a65a6976495dc9ddcf679d7fa84e48c28", null ],
     [ "RestartAtPathStartOnSynchronize", "classoperations__research_1_1PairNodeSwapActiveOperator.html#a0501b7d5bc01026d24c1e942432593ad", null ]
 ];

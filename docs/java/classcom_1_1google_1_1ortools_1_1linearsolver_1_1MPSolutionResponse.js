@@ -26,7 +26,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse =
     [ "getStatus", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#abf07935c9090fac5fd3ce8b69a56814e", null ],
     [ "getStatusStr", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a0429fd5c3606f5d83e211e919bacc9c9", null ],
     [ "getStatusStrBytes", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a3c7a45bee9b3bc3136618e76599e22b9", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a53cb8f50b489e8f27a73a3dd016a43fc", null ],
     [ "getVariableValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a9c2ca86cd4b9b59e4b2ef45a5df49276", null ],
     [ "getVariableValueCount", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a72be860a1b3de5ae0cf3858f8ea7f2ae", null ],
     [ "getVariableValueList", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolutionResponse.html#a3e5a8514fec4848eec879ac87b5eae8e", null ],

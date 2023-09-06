@@ -60,7 +60,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto =
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a17e05cadd09b836b076ea577b07a165e", null ],
     [ "getTable", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a4e8bd7e76de7162bd0281d19a11eca4f", null ],
     [ "getTableOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a9fa72a423f83420361bd95d632165711", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a8c504193ae643de40aa2ed5d187e9f8e", null ],
     [ "hasAllDiff", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a978aaf0a003249cf4a7ae97da6a303d2", null ],
     [ "hasAtMostOne", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a6010c5168d7411e492cc3373eae7ec07", null ],
     [ "hasAutomaton", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#ab459568881588b64e63d1bd3c1ef74bf", null ],

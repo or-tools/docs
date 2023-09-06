@@ -1,4 +1,0 @@
-var CapacitatedVehicleRoutingProblemWithTimeWindows_8java =
-[
-    [ "com.google.ortools.java.CapacitatedVehicleRoutingProblemWithTimeWindows", "classcom_1_1google_1_1ortools_1_1java_1_1CapacitatedVehicleRoutingProblemWithTimeWindows.html", "classcom_1_1google_1_1ortools_1_1java_1_1CapacitatedVehicleRoutingProblemWithTimeWindows" ]
-];

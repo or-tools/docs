@@ -22,5 +22,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer 
     [ "restore", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer.html#a6aa178530696b0316a0054b49ef0b981", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer.html#abb32992efcaf5027942eb048ec50d675", null ],
     [ "store", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer.html#a99b8b568f4dd78c996452e414ad17bed", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer.html#a5f56fdbf97008fceca1c50173ae23a6f", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentIntContainer.html#a831579c7c6833a950838aada411f4463", null ]
 ];

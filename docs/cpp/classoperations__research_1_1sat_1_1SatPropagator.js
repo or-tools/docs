@@ -1,8 +1,10 @@
 var classoperations__research_1_1sat_1_1SatPropagator =
 [
     [ "SatPropagator", "classoperations__research_1_1sat_1_1SatPropagator.html#a338bfb8cc78f5ac5dd1f69d87a4f57f3", null ],
-    [ "~SatPropagator", "classoperations__research_1_1sat_1_1SatPropagator.html#ae1c0d293b9e2530dcd849bbbece3b5ab", null ],
+    [ "SatPropagator", "classoperations__research_1_1sat_1_1SatPropagator.html#aef45a5f6716cda23320e8f6e738aa950", null ],
+    [ "~SatPropagator", "classoperations__research_1_1sat_1_1SatPropagator.html#afc1840f1dece6d0b89fa5fe9340660c0", null ],
     [ "IsEmpty", "classoperations__research_1_1sat_1_1SatPropagator.html#ab639102372f03758b18523b613ae69e1", null ],
+    [ "operator=", "classoperations__research_1_1sat_1_1SatPropagator.html#afb7d7f0ab73e800e6119c225408795d8", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1SatPropagator.html#a8417cfbc49d425aac62ce622b058b018", null ],
     [ "PropagatePreconditionsAreSatisfied", "classoperations__research_1_1sat_1_1SatPropagator.html#a2bde4f8c3d7c6326050ac164391bf2a7", null ],
     [ "PropagationIsDone", "classoperations__research_1_1sat_1_1SatPropagator.html#ad1c40cad4e160b493cb16c9f4373275e", null ],

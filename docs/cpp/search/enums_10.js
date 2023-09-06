@@ -10,7 +10,7 @@ var searchData=
   ['varconstantconstrainttype_7',['VarConstantConstraintType',['../classoperations__research_1_1ModelCache.html#a3ee5925e5b7f8d35a24c9586784b7436',1,'operations_research::ModelCache']]],
   ['variableselection_8',['VariableSelection',['../structoperations__research_1_1DefaultPhaseParameters.html#aa1ee3388a187cc5465d43d25ac9ab1f1',1,'operations_research::DefaultPhaseParameters']]],
   ['variablestatus_9',['VariableStatus',['../namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603ee',1,'operations_research::glop']]],
-  ['variabletype_10',['VariableType',['../classoperations__research_1_1glop_1_1LinearProgram.html#a1b7f8d443a204721d1f73d944aba7ee0',1,'operations_research::glop::LinearProgram::VariableType()'],['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777e',1,'operations_research::glop::VariableType()']]],
+  ['variabletype_10',['variabletype',['../classoperations__research_1_1glop_1_1LinearProgram.html#a1b7f8d443a204721d1f73d944aba7ee0',1,'operations_research::glop::LinearProgram::VariableType'],['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777e',1,'operations_research::glop::VariableType']]],
   ['vartypes_11',['VarTypes',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1db',1,'operations_research']]],
   ['voidconstrainttype_12',['VoidConstraintType',['../classoperations__research_1_1ModelCache.html#a0a1063da2274711663b4fabdd552553e',1,'operations_research::ModelCache']]]
 ];

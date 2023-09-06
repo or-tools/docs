@@ -42,5 +42,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor =
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html#a1960790556f25a2a64e18ecc50528647", null ],
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html#ab827e4f84bc400e644f61785911860c1", null ],
     [ "startProcessingIntegerVariable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html#a009f4e4dd8d4da39bf8182ffce49a0a3", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html#aed45a0558ba6526364ba64d5019d775b", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationMonitor.html#a216e82a0008baee94fdc13b8d0e9ad41", null ]
 ];

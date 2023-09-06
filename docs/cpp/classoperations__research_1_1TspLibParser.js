@@ -17,7 +17,7 @@ var classoperations__research_1_1TspLibParser =
     [ "demands", "classoperations__research_1_1TspLibParser.html#a186540651251434ca0bc6c19af9b209b", null ],
     [ "depot", "classoperations__research_1_1TspLibParser.html#a2473ea07cc98ac59b33bba0749d6709d", null ],
     [ "edges", "classoperations__research_1_1TspLibParser.html#ad5a700028773d93c05578b782b94e0af", null ],
-    [ "fixed_edges", "classoperations__research_1_1TspLibParser.html#aeb29745122dcd92c64ab56efb4979ed2", null ],
+    [ "fixed_edges", "classoperations__research_1_1TspLibParser.html#a344f9e941a748ccfb0c50004f82e1cca", null ],
     [ "GetEdgeWeights", "classoperations__research_1_1TspLibParser.html#a0159ec7bedc6c7333ce4411acc522e3f", null ],
     [ "LoadFile", "classoperations__research_1_1TspLibParser.html#a5c97284dd93a2cbd2c514a2f3930d928", null ],
     [ "max_distance", "classoperations__research_1_1TspLibParser.html#a653f4e432ae890f790030b9e46882af7", null ],

@@ -1,10 +1,12 @@
 var sat_2util_8cc =
 [
+    [ "AtMostOneDecomposition", "sat_2util_8cc.html#adce32567c40d90f074ff693fa483ba9c", null ],
     [ "CeilSquareRoot", "sat_2util_8cc.html#a3f5064fe335d0bd2f67a8c9e3e132b4f", null ],
     [ "ClosestMultiple", "sat_2util_8cc.html#ab45b9df04a0d18b7a12d062c2e7982c6", null ],
     [ "CompressTuples", "sat_2util_8cc.html#a1a88950631a19f96084df07209e43d30", null ],
     [ "FloorSquareRoot", "sat_2util_8cc.html#a392d70cc768a13de271f87123513acf2", null ],
     [ "FormatCounter", "sat_2util_8cc.html#a88a7a53b2e474d3d5c602030c5c449e9", null ],
+    [ "FormatTable", "sat_2util_8cc.html#ac683c5a8d9d1032a34230bdc075dced6", null ],
     [ "FullyCompressTuples", "sat_2util_8cc.html#a36bf1351ffa74960b3040a96ddc37468", null ],
     [ "LinearInequalityCanBeReducedWithClosestMultiple", "sat_2util_8cc.html#ad2eb117de96cd02d6a15049c43cf114f", null ],
     [ "ModularInverse", "sat_2util_8cc.html#a4a998a24858a532c80b11c1d015e76db", null ],

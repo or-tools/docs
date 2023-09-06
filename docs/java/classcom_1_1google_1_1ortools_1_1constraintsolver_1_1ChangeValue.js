@@ -8,6 +8,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue =
     [ "modifyValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#aa601493bf4d8d3248b50071a12cec095", null ],
     [ "oneNeighbor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#ab804629a992effb9e6be4416bd6a380e", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#a66298c61e4041c20cb4644291935a5db", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#ae3b07ca0652f3a2910b4008397fd966b", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#afadf5fb3ce372ea36005435ef5dfc232", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ChangeValue.html#a56974353d22ceb91f026b887f168dd7a", null ]
 ];

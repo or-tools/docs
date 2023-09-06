@@ -1,7 +1,7 @@
 var classoperations__research_1_1sat_1_1Literal =
 [
     [ "Literal", "classoperations__research_1_1sat_1_1Literal.html#aa842a90858444dd15826f35085e22a99", null ],
-    [ "Literal", "classoperations__research_1_1sat_1_1Literal.html#a17c3be4be379298d3cdfd7589698b8a7", null ],
+    [ "Literal", "classoperations__research_1_1sat_1_1Literal.html#a909654547a2ca1a342482f830eaff70d", null ],
     [ "Literal", "classoperations__research_1_1sat_1_1Literal.html#a8f9ffa7352bf95a81890bb4259575ee4", null ],
     [ "Literal", "classoperations__research_1_1sat_1_1Literal.html#aa7b2f3a9ae011c08a5d19cb6dea15369", null ],
     [ "DebugString", "classoperations__research_1_1sat_1_1Literal.html#a1537bd96b1d82a369bd9f23d04db3a7d", null ],

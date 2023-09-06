@@ -9,6 +9,7 @@ var routing__filters_8cc =
     [ "MakeMaxActiveVehiclesFilter", "routing__filters_8cc.html#a2d9f69e7192e41c858da1ea159f7f729", null ],
     [ "MakeNodeDisjunctionFilter", "routing__filters_8cc.html#a4040cc17b56514e14ebb5c84705801c7", null ],
     [ "MakePathCumulFilter", "routing__filters_8cc.html#a95c7e4e8d244f6793625c48488140e69", null ],
+    [ "MakePathEnergyCostFilter", "routing__filters_8cc.html#ab78692fbae996fa0faf0ce27835b845a", null ],
     [ "MakePickupDeliveryFilter", "routing__filters_8cc.html#a7496660a8567db66b386f142037a54ed", null ],
     [ "MakeResourceAssignmentFilter", "routing__filters_8cc.html#ac296090ca74b7395379bfbe385e367ac", null ],
     [ "MakeTypeRegulationsFilter", "routing__filters_8cc.html#ad38d41357b37dcf1cfdb9e083afd6d47", null ],

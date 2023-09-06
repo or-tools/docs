@@ -16,7 +16,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto =
     [ "getTails", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#ad54d4a615f1146b0eb4e92b179b2849e", null ],
     [ "getTailsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#abf7e04b5aaee8db981a00e5f588d6ba5", null ],
     [ "getTailsList", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#a0599c9738b4a17e1dc0ae6b233c4b3b1", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#a9e7ea35023a6d3e529ca81abac5ac74e", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#a7bf950df263b1dcf250ff7466fc126d7", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#a26f3f67b65f0b42c31e3f22c56093977", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1CircuitConstraintProto.html#a02c4977af97098fb00660e776dbddda9", null ],

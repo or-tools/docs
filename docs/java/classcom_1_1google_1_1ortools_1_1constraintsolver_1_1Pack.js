@@ -33,6 +33,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack =
     [ "setAssigned", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#af6d5d3c9bc216ae7a7393699bd2ec0df", null ],
     [ "setImpossible", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#a17d5756aa3f20b7758a57e5a1e45818e", null ],
     [ "setUnassigned", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#a52c3a0fa5c317545013bff28b1ff5729", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#a12a9548a48da720232d459e519f2df99", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#aad404a1e51dddbf36dfb82753449ad88", null ],
     [ "unassignAllRemainingItems", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#a59c60c3b80e39d330db4f0c3bfce0f24", null ]
 ];

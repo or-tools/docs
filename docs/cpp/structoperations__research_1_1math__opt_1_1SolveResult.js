@@ -2,6 +2,7 @@ var structoperations__research_1_1math__opt_1_1SolveResult =
 [
     [ "SolveResult", "structoperations__research_1_1math__opt_1_1SolveResult.html#aae370455d41a2064153ebd9a5b1b289e", null ],
     [ "best_objective_bound", "structoperations__research_1_1math__opt_1_1SolveResult.html#a4224077c62f298733f10290af11cf6d7", null ],
+    [ "best_primal_solution", "structoperations__research_1_1math__opt_1_1SolveResult.html#afa7778dc8f241cea8c8c62713abb1c24", null ],
     [ "bounded", "structoperations__research_1_1math__opt_1_1SolveResult.html#ae1b3deadaae202748ea0bd290b075702", null ],
     [ "constraint_status", "structoperations__research_1_1math__opt_1_1SolveResult.html#a6174a29d1230faf39a33d11918844dce", null ],
     [ "dual_values", "structoperations__research_1_1math__opt_1_1SolveResult.html#a89ed9531e32a5d11e95db2cc574b8975", null ],
@@ -12,6 +13,7 @@ var structoperations__research_1_1math__opt_1_1SolveResult =
     [ "has_primal_feasible_solution", "structoperations__research_1_1math__opt_1_1SolveResult.html#accc0adbfa3c52c4c05d87cdd6ef4dc30", null ],
     [ "has_ray", "structoperations__research_1_1math__opt_1_1SolveResult.html#abbe996e4fa544dcb085218cb3dfa59c7", null ],
     [ "objective_value", "structoperations__research_1_1math__opt_1_1SolveResult.html#a14b3b9e6a2b19d3337803f17fd2ffb67", null ],
+    [ "objective_value", "structoperations__research_1_1math__opt_1_1SolveResult.html#aaf49c197f8606ed758dfe67881d164b0", null ],
     [ "Proto", "structoperations__research_1_1math__opt_1_1SolveResult.html#af140dea39dec0ce602200f2d2b0cc2e9", null ],
     [ "ray_dual_values", "structoperations__research_1_1math__opt_1_1SolveResult.html#a0609f55ed32ef189d9184bf7eedfb732", null ],
     [ "ray_reduced_costs", "structoperations__research_1_1math__opt_1_1SolveResult.html#a007ce143dddd7e0d40a9c6549b9d07e2", null ],
@@ -22,6 +24,7 @@ var structoperations__research_1_1math__opt_1_1SolveResult =
     [ "variable_values", "structoperations__research_1_1math__opt_1_1SolveResult.html#a25a03fd7b10f0da611d50eb9f235b5c7", null ],
     [ "dual_rays", "structoperations__research_1_1math__opt_1_1SolveResult.html#a9f9fc16bd6bd1ac7ca4bf39a7981e333", null ],
     [ "gscip_solver_specific_output", "structoperations__research_1_1math__opt_1_1SolveResult.html#a4dec60e58da5f31d3278487178968f6f", null ],
+    [ "pdlp_solver_specific_output", "structoperations__research_1_1math__opt_1_1SolveResult.html#a42b8d26bf87e86fd901f16e57a7cb6e6", null ],
     [ "primal_rays", "structoperations__research_1_1math__opt_1_1SolveResult.html#af83979da27604fa4ebb3d757079b8e5e", null ],
     [ "solve_stats", "structoperations__research_1_1math__opt_1_1SolveResult.html#a68af2d444f2a8bea88a2c26dfcd16adc", null ],
     [ "termination", "structoperations__research_1_1math__opt_1_1SolveResult.html#ac4df703b79199da8848c5a6f58d3ecd1", null ]

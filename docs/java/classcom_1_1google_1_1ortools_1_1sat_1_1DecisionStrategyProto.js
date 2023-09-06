@@ -18,7 +18,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto =
     [ "getTransformationsList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a275bbf9fb74877cccd4b429c1e36dbe9", null ],
     [ "getTransformationsOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a92f65fec0ea4d77f5175b2bd7ac1c600", null ],
     [ "getTransformationsOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a4ead448cf0307fa65d0e407a1eea04bf", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a24f18b62ed64a6dcb2af2e7fe632eded", null ],
     [ "getVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ad345eb3eb0a51a462a6e48983ca3ef1a", null ],
     [ "getVariablesCount", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ab84b8189ffaefe8c86f89f6b346dcdee", null ],
     [ "getVariableSelectionStrategy", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#af51871693e644c02a8fbd84ef49e6e87", null ],

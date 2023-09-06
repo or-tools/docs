@@ -1,8 +1,8 @@
 var classoperations__research_1_1IntVarFilteredHeuristic =
 [
     [ "IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1f629e6e098bd249a06971d8dd432aaa", null ],
-    [ "~IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#a4cf67ac2eef096974bcd9474bfcd49ad", null ],
-    [ "BuildSolution", "classoperations__research_1_1IntVarFilteredHeuristic.html#adc246a0622fc32dd6e4bd24dbdd1a840", null ],
+    [ "~IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#ae69611d92c98665d83a57b5cb3955bc1", null ],
+    [ "BuildSolution", "classoperations__research_1_1IntVarFilteredHeuristic.html#a8dd4e5ae74b5e0b2a6d63ef4eb7cd2c5", null ],
     [ "BuildSolutionInternal", "classoperations__research_1_1IntVarFilteredHeuristic.html#a2bb6eaa2c29bcf1894e96e9cae332ff7", null ],
     [ "Contains", "classoperations__research_1_1IntVarFilteredHeuristic.html#a5dd521044231a1083849c076db73fa65", null ],
     [ "DebugString", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1ce9faf8459bb3be7918cbc3d6327404", null ],
@@ -16,7 +16,6 @@ var classoperations__research_1_1IntVarFilteredHeuristic =
     [ "ResetSolution", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1e25866497b9f81b5d7c7a5896a409e8", null ],
     [ "SecondaryVarIndex", "classoperations__research_1_1IntVarFilteredHeuristic.html#aa10ae6ca2f6dabc70249a718ce8f226c", null ],
     [ "SetValue", "classoperations__research_1_1IntVarFilteredHeuristic.html#ab7949670a7b6af99fdd24460615eab38", null ],
-    [ "Size", "classoperations__research_1_1IntVarFilteredHeuristic.html#a3aa8973ca80637f05f242ca12666a253", null ],
     [ "StopSearch", "classoperations__research_1_1IntVarFilteredHeuristic.html#a71e96039a5a931159f7b2be27c19dd78", null ],
     [ "SynchronizeFilters", "classoperations__research_1_1IntVarFilteredHeuristic.html#af736229c85e5b16dba8cbc3468576641", null ],
     [ "Value", "classoperations__research_1_1IntVarFilteredHeuristic.html#aa726222431e73af23b2b573a0550dd32", null ],

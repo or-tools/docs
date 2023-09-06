@@ -22,6 +22,9 @@ var cuts_8h =
     [ "CreateMaxAffineCutGenerator", "cuts_8h.html#a8f489d29b6f16fd7ee68f7435bfffa59", null ],
     [ "CreatePositiveMultiplicationCutGenerator", "cuts_8h.html#a28abd2fe9199829f0c98ade48cfe459c", null ],
     [ "CreateSquareCutGenerator", "cuts_8h.html#a79af46d14a4530c0bf34132ff038b181", null ],
+    [ "ExtendNegativeFunction", "cuts_8h.html#ad6957a99e6ed65e43b44bf86a846822c", null ],
     [ "GetFactorT", "cuts_8h.html#a1ab085f4bfc568341a61b1a178fb718d", null ],
-    [ "GetSuperAdditiveRoundingFunction", "cuts_8h.html#afa1020b89b12f653b1ea0dd0d595557e", null ]
+    [ "GetSuperAdditiveRoundingFunction", "cuts_8h.html#afa1020b89b12f653b1ea0dd0d595557e", null ],
+    [ "GetSuperAdditiveStrengtheningFunction", "cuts_8h.html#a7876cef7b031a084f24b5c5898c9710c", null ],
+    [ "GetSuperAdditiveStrengtheningMirFunction", "cuts_8h.html#adadc8829018c149d88271978270bf822", null ]
 ];

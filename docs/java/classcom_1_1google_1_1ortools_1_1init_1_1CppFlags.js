@@ -17,5 +17,6 @@ var classcom_1_1google_1_1ortools_1_1init_1_1CppFlags =
     [ "setCp_model_dump_response", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html#a4d7526fd4bdb78fcf7303eec1df5b888", null ],
     [ "setLog_prefix", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html#a9dedc7cc3932ff5a9185c348557f3530", null ],
     [ "setStderrthreshold", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html#a9cf4d824d7e0618f0611fb85ac29197f", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html#a974490298a1875185592ceaf9b6778bc", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html#a5066e095bbd016eeffe143f7c54c356a", null ]
 ];

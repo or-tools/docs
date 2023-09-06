@@ -1,6 +1,7 @@
 var classoperations__research_1_1sat_1_1IntegerEncoder =
 [
     [ "IntegerEncoder", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a56acaedd036489098fb1a9fffbf56299", null ],
+    [ "IntegerEncoder", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a491edfd4777c3269fdaa5384d106986e", null ],
     [ "~IntegerEncoder", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a949fce00ad5651c2b2d1fa948b00bab3", null ],
     [ "AddAllImplicationsBetweenAssociatedLiterals", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a42e6e7891342273c5e080447a0d11d81", null ],
     [ "AssociateToIntegerEqualValue", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a9bf605bfbb224230f6c65067fdd26c34", null ],
@@ -15,11 +16,13 @@ var classoperations__research_1_1sat_1_1IntegerEncoder =
     [ "GetEqualityLiterals", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a3facae69021dc097a83055e5d307a6d1", null ],
     [ "GetFalseLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a435301889907352870b1ba8f2f013a21", null ],
     [ "GetIntegerLiterals", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a76cca994f8853c8db660f4e7a21fb8c5", null ],
-    [ "GetLiteralView", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a67429ccec189e8be975f9c1956540ea9", null ],
+    [ "GetLiteralView", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a41ee6625cc77f06ede1a167e581d6b5d", null ],
     [ "GetOrCreateAssociatedLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a86897b73c47086f4bc261f9424b47de7", null ],
     [ "GetOrCreateLiteralAssociatedToEquality", "classoperations__research_1_1sat_1_1IntegerEncoder.html#af0a2aeea649e70334c5b44dca14a5ae2", null ],
     [ "GetTrueLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a575c98a8e638de20b5a3a5861263c732", null ],
+    [ "IsFixedOrHasAssociatedLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a6225ad79b815b7c047a1ac7cae7f9d5f", null ],
     [ "LiteralOrNegationHasView", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a9fcdafc23f9a3bd469e4f1fa175c0c81", null ],
+    [ "operator=", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a06d11b1d74955e3a43f40b3413f9eb05", null ],
     [ "PartialDomainEncoding", "classoperations__research_1_1sat_1_1IntegerEncoder.html#aad17dae9d7ebf7bd70f4d3053a890d56", null ],
     [ "PartialGreaterThanEncoding", "classoperations__research_1_1sat_1_1IntegerEncoder.html#ab231c14715e9a2fc56ca0d12a0f3df5e", null ],
     [ "ReserveSpaceForNumVariables", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a7c648e8ec1bcd260e3d4ed64b293bb28", null ],

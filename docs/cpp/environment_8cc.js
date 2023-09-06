@@ -24,6 +24,7 @@ var environment_8cc =
     [ "GRBcblazy", "environment_8cc.html#a76b322ae169fda07063e651149421ae6", null ],
     [ "GRBcbsolution", "environment_8cc.html#aea93a283796db1e4c1c3e9984fef27c1", null ],
     [ "GRBchgcoeffs", "environment_8cc.html#a2238f9341369c5f3f83cf934b80cf4ce", null ],
+    [ "GRBcomputeIIS", "environment_8cc.html#a7a6a119ef36487ef165a515e39de7b65", null ],
     [ "GRBcopyparams", "environment_8cc.html#a1961a1d05db805466da33be591f5673c", null ],
     [ "GRBdelconstrs", "environment_8cc.html#aab3071e9d030f709a9e391d593068982", null ],
     [ "GRBdelgenconstrs", "environment_8cc.html#ab9c05da894d7b16366030da75275f2e9", null ],

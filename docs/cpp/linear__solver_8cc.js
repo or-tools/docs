@@ -12,6 +12,7 @@ var linear__solver_8cc =
     [ "BuildGLOPInterface", "linear__solver_8cc.html#afef48ff7dadb56c03ec35d486f960367", null ],
     [ "BuildGLPKInterface", "linear__solver_8cc.html#a8a8a715becc113c018fc749a5e324603", null ],
     [ "BuildGurobiInterface", "linear__solver_8cc.html#ae9425d6679801b535601730b529ce6ce", null ],
+    [ "BuildHighsInterface", "linear__solver_8cc.html#a666b6834bae1b54ec4dad1f443701a2c", null ],
     [ "BuildPdlpInterface", "linear__solver_8cc.html#a58a2ff9da5269baadb05e17b354b0b56", null ],
     [ "BuildSatInterface", "linear__solver_8cc.html#a92a9e90adc7d83b251011e740f9db08b", null ],
     [ "BuildSCIPInterface", "linear__solver_8cc.html#aed7120b1fa1f2e24f3a389b79cb1dc17", null ],

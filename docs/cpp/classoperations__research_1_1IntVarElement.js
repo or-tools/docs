@@ -1,7 +1,7 @@
 var classoperations__research_1_1IntVarElement =
 [
     [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#a7c4b5dea7c81f6ffeeab2d8144a1c7db", null ],
-    [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#a2371c903204dc30259c9d4ba1fe728dc", null ],
+    [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#ab23cf5118e5f24088d6e4f6d0a267a7c", null ],
     [ "Bound", "classoperations__research_1_1IntVarElement.html#a4205abd38e203b570f9ff6b49d351a06", null ],
     [ "Clone", "classoperations__research_1_1IntVarElement.html#a67c4b2c17bda6ee6716d0dd1f09e6cd9", null ],
     [ "Copy", "classoperations__research_1_1IntVarElement.html#ab75541e5c6fe6f193f5cf94d8b12f5a4", null ],
@@ -11,7 +11,7 @@ var classoperations__research_1_1IntVarElement =
     [ "Min", "classoperations__research_1_1IntVarElement.html#a9e65ff7fa82c114bae23ede3d0e5016e", null ],
     [ "operator!=", "classoperations__research_1_1IntVarElement.html#a65504db21d71ae343eeb6371555a15fa", null ],
     [ "operator==", "classoperations__research_1_1IntVarElement.html#a3dd7107f6d77ddb44ebf38053b72137e", null ],
-    [ "Reset", "classoperations__research_1_1IntVarElement.html#aee7b64f549193b551ca2cdcc5230e37d", null ],
+    [ "Reset", "classoperations__research_1_1IntVarElement.html#a2b0b204420d115370df041eca8215a2f", null ],
     [ "Restore", "classoperations__research_1_1IntVarElement.html#a11ad56c03b156e52ac092191a81d278e", null ],
     [ "SetMax", "classoperations__research_1_1IntVarElement.html#ae1ef3a4f46db73d0c3bf88a0e255704d", null ],
     [ "SetMin", "classoperations__research_1_1IntVarElement.html#a722547d90a5a2a0e9ef6d726502ad795", null ],

@@ -1,7 +1,8 @@
 var classoperations__research_1_1bop_1_1ProblemState =
 [
     [ "ProblemState", "classoperations__research_1_1bop_1_1ProblemState.html#aaf3f17f2ef9a1ef1982d5d78fd71e23c", null ],
-    [ "assignment_preference", "classoperations__research_1_1bop_1_1ProblemState.html#a42853f195aa6413afbdc4c3ddc712ff2", null ],
+    [ "ProblemState", "classoperations__research_1_1bop_1_1ProblemState.html#a7f49498666bbe8490aa8c2228dca2add", null ],
+    [ "assignment_preference", "classoperations__research_1_1bop_1_1ProblemState.html#a5d7ef8a70fea6f54e2a5c9e3178f6470", null ],
     [ "fixed_values", "classoperations__research_1_1bop_1_1ProblemState.html#ad528d65abcb2f7cabdaaa00c2f1a4d1a", null ],
     [ "GetLearnedInfo", "classoperations__research_1_1bop_1_1ProblemState.html#a559199c417440cd27d38fc73ce4eb3f0", null ],
     [ "GetParameters", "classoperations__research_1_1bop_1_1ProblemState.html#abe99f19df197ed9a3f401511a5409a57", null ],
@@ -17,6 +18,7 @@ var classoperations__research_1_1bop_1_1ProblemState =
     [ "MarkAsOptimal", "classoperations__research_1_1bop_1_1ProblemState.html#aa896f3a9b72e3f23cd262c140452d524", null ],
     [ "MergeLearnedInfo", "classoperations__research_1_1bop_1_1ProblemState.html#a66e1a0e14cfd6b3310237e4243df1295", null ],
     [ "NewlyAddedBinaryClauses", "classoperations__research_1_1bop_1_1ProblemState.html#a4f7338187853c80678d909840fb0cbf1", null ],
+    [ "operator=", "classoperations__research_1_1bop_1_1ProblemState.html#abd94b66012775ef46a25ebb2c6fa83d6", null ],
     [ "original_problem", "classoperations__research_1_1bop_1_1ProblemState.html#aed95d6ebc1a1fd128693064f0bb70454", null ],
     [ "set_assignment_preference", "classoperations__research_1_1bop_1_1ProblemState.html#a086bf02972aa42654ab86b81ce0a375d", null ],
     [ "SetParameters", "classoperations__research_1_1bop_1_1ProblemState.html#a442df7bc09015fc2a248c1b7ec18ac05", null ],

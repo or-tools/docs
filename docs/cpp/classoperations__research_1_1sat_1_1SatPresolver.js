@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1SatPresolver =
 [
     [ "ClauseIndex", "classoperations__research_1_1sat_1_1SatPresolver.html#a48d43c858e789a63bf76da7414b55a5f", null ],
     [ "SatPresolver", "classoperations__research_1_1sat_1_1SatPresolver.html#a4bd42b077470a42bff94fdad0013f350", null ],
+    [ "SatPresolver", "classoperations__research_1_1sat_1_1SatPresolver.html#afb368ff54e2cbb123fdd26d29b25f83c", null ],
     [ "AddBinaryClause", "classoperations__research_1_1sat_1_1SatPresolver.html#a0410962dbc999d742afe91f1f87aee93", null ],
     [ "AddClause", "classoperations__research_1_1sat_1_1SatPresolver.html#aa75a28e18bdb5b7bce0fd0612ad3ded3", null ],
     [ "Clause", "classoperations__research_1_1sat_1_1SatPresolver.html#a365488acb5674c123da7f38b83667cc1", null ],
@@ -9,6 +10,7 @@ var classoperations__research_1_1sat_1_1SatPresolver =
     [ "LoadProblemIntoSatSolver", "classoperations__research_1_1sat_1_1SatPresolver.html#aa8033bd42234bc245795bd8c33bf9525", null ],
     [ "NumClauses", "classoperations__research_1_1sat_1_1SatPresolver.html#a11f4dc01ef441da73c13afb52fa23392", null ],
     [ "NumVariables", "classoperations__research_1_1sat_1_1SatPresolver.html#a911c965412695d1ceff867e54c3f9b44", null ],
+    [ "operator=", "classoperations__research_1_1sat_1_1SatPresolver.html#a502a989609aa975107b387200bfdf0d9", null ],
     [ "Presolve", "classoperations__research_1_1sat_1_1SatPresolver.html#a32df98e6426d1e7a18247a18207717f1", null ],
     [ "Presolve", "classoperations__research_1_1sat_1_1SatPresolver.html#adb7846ae7bbe4ca2e07a1dba94fe686e", null ],
     [ "PresolveWithBva", "classoperations__research_1_1sat_1_1SatPresolver.html#af7e0881274e8e8cec31c85429900b42a", null ],

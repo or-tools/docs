@@ -1,6 +1,6 @@
 var classAdjustablePriorityQueue =
 [
-    [ "AdjustablePriorityQueue", "classAdjustablePriorityQueue.html#a6cd8fdb32c83678c503bf59489b26462", null ],
+    [ "AdjustablePriorityQueue", "classAdjustablePriorityQueue.html#ad8e0f386000470bcd160e09166dce1be", null ],
     [ "AdjustablePriorityQueue", "classAdjustablePriorityQueue.html#abbd101481f10a8282748b8ebb91104e6", null ],
     [ "AdjustablePriorityQueue", "classAdjustablePriorityQueue.html#ad69d41cefdb3b3acfe6eccc37f02ee7f", null ],
     [ "AdjustablePriorityQueue", "classAdjustablePriorityQueue.html#a06249935f9bf419a3631d2b080bd7db8", null ],

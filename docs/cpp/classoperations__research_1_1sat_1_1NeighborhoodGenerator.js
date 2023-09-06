@@ -1,8 +1,8 @@
 var classoperations__research_1_1sat_1_1NeighborhoodGenerator =
 [
     [ "SolveData", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData" ],
-    [ "NeighborhoodGenerator", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a0ac92975462da4d12dd88c24fbd624d8", null ],
-    [ "~NeighborhoodGenerator", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#af378191e75a0cd5d69e1aa6c44f4dfb1", null ],
+    [ "NeighborhoodGenerator", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#af493c7e5a33b41b07d34d880a342d0a9", null ],
+    [ "~NeighborhoodGenerator", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a479bf7de8aa53b8e5c4d52f612fb44b2", null ],
     [ "AddSolveData", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a3cc3c4dee4fc640a11ca5fbd40bafcb0", null ],
     [ "deterministic_limit", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a2dc9e1a086a404e6d5c7d711a7450fd8", null ],
     [ "deterministic_time", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a8379a37bfb138eb34523b8d73489cd1d", null ],
@@ -11,7 +11,9 @@ var classoperations__research_1_1sat_1_1NeighborhoodGenerator =
     [ "GetUCBScore", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a6c64afae227dd3e51469fedabb764dc5", null ],
     [ "name", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a44c29a622542cfd748afd64cdd3bed3b", null ],
     [ "num_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a980f369a6fcf45fced66d6b44f0535e4", null ],
+    [ "num_consecutive_non_improving_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#ac9a51a9a6f9056a8af231bd70fbd09e2", null ],
     [ "num_fully_solved_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#ac19b89ccd5e11c32dff36d42f42a758b", null ],
+    [ "num_improving_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a34c5c94a2e81585503c140609fd0b065", null ],
     [ "ReadyToGenerate", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a1cd3bd852b21a083f0aca48c6acaa87f", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a4855f651eceaa493b36eec2524b05794", null ],
     [ "generator_mutex_", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a5e4b5d1b4d12d3b92f1b91ecc279b8cb", null ],

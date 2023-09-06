@@ -99,6 +99,7 @@ var constraint__solveri_8h =
     [ "MakeDelayedConstraintDemon2", "constraint__solveri_8h.html#a6c0bc84812eed9d626b00bc8fb5b9ae1", null ],
     [ "MakeDimensionFilter", "constraint__solveri_8h.html#aef137c649c846a799566eeabe5153bcc", null ],
     [ "MakeLocalSearchOperator", "constraint__solveri_8h.html#a5a2c92a28ee59ab17dfb5885ab3e20c8", null ],
+    [ "MakeLocalSearchOperatorWithNeighbors", "constraint__solveri_8h.html#a9d077055de6a6063456c6f346a414061", null ],
     [ "MakePathStateFilter", "constraint__solveri_8h.html#a6cdc2ad7aac33203a04919652bd0a916", null ],
     [ "MaxVarArray", "constraint__solveri_8h.html#a587a6a73cbcb4e4a4c7d3b596fa407aa", null ],
     [ "MinVarArray", "constraint__solveri_8h.html#a8e8f645f06f9749b562b6625cd822daa", null ],

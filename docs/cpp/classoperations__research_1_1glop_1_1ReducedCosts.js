@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1ReducedCosts =
 [
     [ "ReducedCosts", "classoperations__research_1_1glop_1_1ReducedCosts.html#a8a673fb44fcba28f3a74d31e4c428611", null ],
+    [ "ReducedCosts", "classoperations__research_1_1glop_1_1ReducedCosts.html#a3d32b7d8c415cee8d2e15732d4f410c0", null ],
     [ "AddRecomputationWatcher", "classoperations__research_1_1glop_1_1ReducedCosts.html#aac19f09b1a4997c49011f0cc4cbdd015", null ],
     [ "AreReducedCostsPrecise", "classoperations__research_1_1glop_1_1ReducedCosts.html#a89b1126c7e7185a8b6819b35b65b9636", null ],
     [ "AreReducedCostsRecomputed", "classoperations__research_1_1glop_1_1ReducedCosts.html#ab57085734a1dc5a3f1e2e73f38ff5e9a", null ],
@@ -19,6 +20,7 @@ var classoperations__research_1_1glop_1_1ReducedCosts =
     [ "IsValidPrimalEnteringCandidate", "classoperations__research_1_1glop_1_1ReducedCosts.html#a7f2fd3e50877a6bec8b8ddf2d50007ad", null ],
     [ "MakeReducedCostsPrecise", "classoperations__research_1_1glop_1_1ReducedCosts.html#add9f37f3905384a5f861fd46d940b2c3", null ],
     [ "NeedsBasisRefactorization", "classoperations__research_1_1glop_1_1ReducedCosts.html#a64db446e252122de8c39ca6ee9efe52d", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1ReducedCosts.html#a40b140a8f811e21c228fff33d6095aa7", null ],
     [ "PerturbCosts", "classoperations__research_1_1glop_1_1ReducedCosts.html#aa20623ab6e85ae9a3ce52cc8cb04dfa8", null ],
     [ "ResetForNewObjective", "classoperations__research_1_1glop_1_1ReducedCosts.html#aff28f5583010fa97cc7b50a8c0c5644f", null ],
     [ "SetNonBasicVariableCostToZero", "classoperations__research_1_1glop_1_1ReducedCosts.html#a481334671b65826c6994e0b36774e042", null ],

@@ -7,6 +7,7 @@ var classoperations__research_1_1SimpleMaxFlow =
       [ "BAD_RESULT", "classoperations__research_1_1SimpleMaxFlow.html#a8a7acde49c4d55f2eb42e2b6869cdb3da11ce6c709e3b39a368358f2ee79942d6", null ]
     ] ],
     [ "SimpleMaxFlow", "classoperations__research_1_1SimpleMaxFlow.html#ada0b88e232c739108184deb35dd54b3f", null ],
+    [ "SimpleMaxFlow", "classoperations__research_1_1SimpleMaxFlow.html#a48469025cad9e3c199fa01abd625d5e1", null ],
     [ "AddArcWithCapacity", "classoperations__research_1_1SimpleMaxFlow.html#a64c1cc700d51eca9eac6bec6542d0bfb", null ],
     [ "Capacity", "classoperations__research_1_1SimpleMaxFlow.html#a86dad6a200cad46b7d53305e2837cfb3", null ],
     [ "CreateFlowModelProto", "classoperations__research_1_1SimpleMaxFlow.html#a23612105b6ed1c5d5df3313692433f80", null ],
@@ -16,6 +17,7 @@ var classoperations__research_1_1SimpleMaxFlow =
     [ "Head", "classoperations__research_1_1SimpleMaxFlow.html#ab239080405c843687c20d1533b5512be", null ],
     [ "NumArcs", "classoperations__research_1_1SimpleMaxFlow.html#a10899eb2ae1b242c4737e4c9e7ecdae5", null ],
     [ "NumNodes", "classoperations__research_1_1SimpleMaxFlow.html#a200b4dbff9102ee1232e05f569fc2427", null ],
+    [ "operator=", "classoperations__research_1_1SimpleMaxFlow.html#a0b5f0ab2a2c890eb08f143ca1e788315", null ],
     [ "OptimalFlow", "classoperations__research_1_1SimpleMaxFlow.html#a553204b2dccf205ff9c00c3c589d309b", null ],
     [ "SetArcCapacity", "classoperations__research_1_1SimpleMaxFlow.html#a57296b653813abdd8d711048e87d1212", null ],
     [ "Solve", "classoperations__research_1_1SimpleMaxFlow.html#a9ab115ebcfcc1281523de56099bf6bed", null ],

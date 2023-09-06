@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['graph_0',['Graph',['../classoperations__research_1_1GraphSymmetryFinder.html#aeabd870fd44ae7ee75a3341b86e140a6',1,'operations_research::GraphSymmetryFinder::Graph()'],['../structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#ac66e0eebbeabd9a4a3b24cfb734a589b',1,'operations_research::Graphs&lt; operations_research::StarGraph &gt;::Graph()'],['../namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda',1,'util::Graph()']]],
+  ['graph_0',['graph',['../classoperations__research_1_1GraphSymmetryFinder.html#aeabd870fd44ae7ee75a3341b86e140a6',1,'operations_research::GraphSymmetryFinder::Graph'],['../structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#ac66e0eebbeabd9a4a3b24cfb734a589b',1,'operations_research::Graphs&lt; operations_research::StarGraph &gt;::Graph'],['../namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda',1,'util::Graph'],['../namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220',1,'operations_research::Graph']]],
   ['grbenv_1',['GRBenv',['../environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3',1,'environment.h']]],
   ['grbenvuniqueptr_2',['GRBenvUniquePtr',['../namespaceoperations__research_1_1math__opt.html#a451c24e0acdd3029f74e09c59703ba3f',1,'operations_research::math_opt']]],
   ['grbmodel_3',['GRBmodel',['../environment_8h.html#a865e461c79c88bc5c0d5f56087ae4876',1,'environment.h']]],

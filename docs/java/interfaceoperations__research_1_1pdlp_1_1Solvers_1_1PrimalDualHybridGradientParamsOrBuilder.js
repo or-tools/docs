@@ -10,6 +10,7 @@ var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradient
     [ "getL2NormRescaling", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a3ab9d177b1016b9212a0d036a56ba858", null ],
     [ "getLinesearchRule", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a4174326170b90a281b319333e29da7a7", null ],
     [ "getLInfRuizIterations", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#aeaf56fc2c9cc2e3228d38fc13501c339", null ],
+    [ "getLogIntervalSeconds", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#af187567702f7b87bcc1482d466dd89b9", null ],
     [ "getMajorIterationFrequency", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a4ae743e91a2fc1e38803c5c8fafef06d", null ],
     [ "getMalitskyPockParameters", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a63398623b75e6e0386e826bae4a3c028", null ],
     [ "getMalitskyPockParametersOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#ae0e1f0db4b56102801e000b8d515fa1d", null ],
@@ -29,6 +30,7 @@ var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradient
     [ "getTerminationCriteria", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#aab2705b120503a2ebaba361917fa9b2d", null ],
     [ "getTerminationCriteriaOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a70533e9458aba56e6b3149e173bb21bd", null ],
     [ "getUseDiagonalQpTrustRegionSolver", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a08ebf4bc39df84daeebdef4e47e65cc1", null ],
+    [ "getUseFeasibilityPolishing", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#aad7f9ce09a9d94783932acf73088fb6e", null ],
     [ "getVerbosityLevel", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a25c0923e6080b8374a74c144da0bdb65", null ],
     [ "hasAdaptiveLinesearchParameters", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a0effba2370b750e2be7bbaf8d5b04c15", null ],
     [ "hasDiagonalQpTrustRegionSolverTolerance", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a97d4923ccf64580801941f19787850a1", null ],
@@ -39,6 +41,7 @@ var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradient
     [ "hasL2NormRescaling", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a5c8d002330a94bc47a57d601ba37871b", null ],
     [ "hasLinesearchRule", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a4abf94a20b8af1d189f98697d50eaa9f", null ],
     [ "hasLInfRuizIterations", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#aea0143d453f3ce4cd82d82063b52ef70", null ],
+    [ "hasLogIntervalSeconds", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a57e51341034b842c6842529bc8eb26a8", null ],
     [ "hasMajorIterationFrequency", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a0d30d002c86e6023a6ecd75ffbc2d9de", null ],
     [ "hasMalitskyPockParameters", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a4760c5a9d63a90c22bc16fcf5224b308", null ],
     [ "hasNecessaryReductionForRestart", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a0bee7fe3dbfdfc3932e50c8f9e5ab722", null ],
@@ -52,5 +55,6 @@ var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradient
     [ "hasTerminationCheckFrequency", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a4a3f779f52c40027737b6d2ab76e46bb", null ],
     [ "hasTerminationCriteria", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a6030b2f213d156f2bcc5875da3d66120", null ],
     [ "hasUseDiagonalQpTrustRegionSolver", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#ab9039a1ca0a4f80ac4d9a0ab651b8301", null ],
+    [ "hasUseFeasibilityPolishing", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#a77ff5a1d3e2e612db43dcb39e2fe73fb", null ],
     [ "hasVerbosityLevel", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html#ac74768be1c93efefe9531a4cee29a244", null ]
 ];

@@ -1,6 +1,6 @@
 var classoperations__research_1_1sat_1_1VarDomination =
 [
-    [ "VarDomination", "classoperations__research_1_1sat_1_1VarDomination.html#a7bb80b97f80f5e9db319011e17d4bcba", null ],
+    [ "VarDomination", "classoperations__research_1_1sat_1_1VarDomination.html#aa288c004dd2ca32f7312d7cac8f7c0bc", null ],
     [ "ActivityShouldNotChange", "classoperations__research_1_1sat_1_1VarDomination.html#ae473ae1114ce48cf3addfb771f276b38", null ],
     [ "ActivityShouldNotDecrease", "classoperations__research_1_1sat_1_1VarDomination.html#aeac9827a72865e95037801d56db841b1", null ],
     [ "ActivityShouldNotIncrease", "classoperations__research_1_1sat_1_1VarDomination.html#a916b708397a6873c225eebae2d033241", null ],

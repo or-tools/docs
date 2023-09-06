@@ -14,6 +14,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1Resourc
     [ "GetVehiclesRequiringAResource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ae697aff08cb3a838e248a80a1261adc2", null ],
     [ "NotifyVehicleRequiresAResource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a9d1d44299afab8ae7914a07b3dc003c4", null ],
     [ "Size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a828fd635ef3ba76ef98f73f6bfab6ba4", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#abfe91c874c57b3c104401bf8b83c03b0", null ],
     [ "VehicleRequiresAResource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ab350a06a2133846c8629849e8c5c12c2", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#aa83d1ef0da3b746b3635890541aaccba", null ]
 ];

@@ -20,5 +20,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow =
     [ "getUnitCost", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a0d36983c7cb8288cdfeb40183fc2c9f6", null ],
     [ "setNodeSupply", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a9e1183c7be8da35a772b826548740b66", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#afe8e3af7fd7cd59374eb5357176f777e", null ],
-    [ "solveMaxFlowWithMinCost", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#abffcd0f8f5749092b5687b0a16ad6d6e", null ]
+    [ "solveMaxFlowWithMinCost", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#abffcd0f8f5749092b5687b0a16ad6d6e", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a5021843e4327b1e7663cf1b0fe7fbbf0", null ]
 ];

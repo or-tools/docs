@@ -29,7 +29,6 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats =
     [ "getRestartUsed", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#a0f58eb9f12d85e1c4e0653bc02b304cd", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#a514af2d38e307399472a549ed3a91114", null ],
     [ "getStepSize", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#a2e94ed24d0bdfd6e5386738e9d0fdb18", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#a766632bbfb039bf8cb01afbbd84eb439", null ],
     [ "hasCumulativeKktMatrixPasses", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#ac5f3eb95d7e06f83185bd5492007f2d8", null ],
     [ "hasCumulativeRejectedSteps", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#ab79fe85c9d66d1222f39286d1a2db192", null ],
     [ "hasCumulativeTimeSec", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html#a3cff3682fe0a4abbef8731c3162e9e2f", null ],

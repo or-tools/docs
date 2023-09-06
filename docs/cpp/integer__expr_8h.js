@@ -1,6 +1,6 @@
 var integer__expr_8h =
 [
-    [ "operations_research::sat::IntegerSumLE", "classoperations__research_1_1sat_1_1IntegerSumLE.html", "classoperations__research_1_1sat_1_1IntegerSumLE" ],
+    [ "operations_research::sat::LinearConstraintPropagator< use_int128 >", "classoperations__research_1_1sat_1_1LinearConstraintPropagator.html", "classoperations__research_1_1sat_1_1LinearConstraintPropagator" ],
     [ "operations_research::sat::LevelZeroEquality", "classoperations__research_1_1sat_1_1LevelZeroEquality.html", "classoperations__research_1_1sat_1_1LevelZeroEquality" ],
     [ "operations_research::sat::MinPropagator", "classoperations__research_1_1sat_1_1MinPropagator.html", "classoperations__research_1_1sat_1_1MinPropagator" ],
     [ "operations_research::sat::LinMinPropagator", "classoperations__research_1_1sat_1_1LinMinPropagator.html", "classoperations__research_1_1sat_1_1LinMinPropagator" ],
@@ -9,6 +9,8 @@ var integer__expr_8h =
     [ "operations_research::sat::FixedDivisionPropagator", "classoperations__research_1_1sat_1_1FixedDivisionPropagator.html", "classoperations__research_1_1sat_1_1FixedDivisionPropagator" ],
     [ "operations_research::sat::FixedModuloPropagator", "classoperations__research_1_1sat_1_1FixedModuloPropagator.html", "classoperations__research_1_1sat_1_1FixedModuloPropagator" ],
     [ "operations_research::sat::SquarePropagator", "classoperations__research_1_1sat_1_1SquarePropagator.html", "classoperations__research_1_1sat_1_1SquarePropagator" ],
+    [ "IntegerSumLE", "integer__expr_8h.html#a9ba5562e0d9baf5290b5a9bda02fdf1f", null ],
+    [ "IntegerSumLE128", "integer__expr_8h.html#ab350c39f728869021cfd74bb312a6c32", null ],
     [ "AddConditionalAffinePrecedence", "integer__expr_8h.html#a539aa637a5a7240288224251d343b905", null ],
     [ "ConditionalWeightedSumGreaterOrEqual", "integer__expr_8h.html#a4e9a9e3ac315ee1254246c0fb2dfa3de", null ],
     [ "ConditionalWeightedSumLowerOrEqual", "integer__expr_8h.html#a5f5dfcfb781eb96e92b08d0f7f983a07", null ],

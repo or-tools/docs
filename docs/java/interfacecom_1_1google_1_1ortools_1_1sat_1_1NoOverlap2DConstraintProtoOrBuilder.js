@@ -1,6 +1,5 @@
 var interfacecom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProtoOrBuilder =
 [
-    [ "getBoxesWithNullAreaCanOverlap", "interfacecom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProtoOrBuilder.html#a3abf46abccab63f64402faa719ca10f6", null ],
     [ "getXIntervals", "interfacecom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProtoOrBuilder.html#a34bdfe0499b493dadda1256435adb113", null ],
     [ "getXIntervalsCount", "interfacecom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProtoOrBuilder.html#af577e5ba8e74f35ad64dc3f37ee7f562", null ],
     [ "getXIntervalsList", "interfacecom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DConstraintProtoOrBuilder.html#a2c12e23e2455fe872ad4a51563b4bbe7", null ],

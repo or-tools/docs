@@ -1,7 +1,7 @@
 var classoperations__research_1_1IntervalVarElement =
 [
     [ "IntervalVarElement", "classoperations__research_1_1IntervalVarElement.html#a9d7357754c1a7c8bfa9cc1af03a3909d", null ],
-    [ "IntervalVarElement", "classoperations__research_1_1IntervalVarElement.html#a8ba0b1ec02e7c147d68ebeedd6adff5b", null ],
+    [ "IntervalVarElement", "classoperations__research_1_1IntervalVarElement.html#a0d0b315be74a2c9eaf044f49d0a3a2b8", null ],
     [ "Bound", "classoperations__research_1_1IntervalVarElement.html#a20ff4a7e8f872abc11d9c0a619f8c671", null ],
     [ "Clone", "classoperations__research_1_1IntervalVarElement.html#a2f5500201ba18ee916f39b12c160915c", null ],
     [ "Copy", "classoperations__research_1_1IntervalVarElement.html#a85c8f2f11b9c5c13eefcc20778340555", null ],
@@ -18,7 +18,7 @@ var classoperations__research_1_1IntervalVarElement =
     [ "PerformedMax", "classoperations__research_1_1IntervalVarElement.html#acd22fcabf6bcb9004e71353c3e6fe71f", null ],
     [ "PerformedMin", "classoperations__research_1_1IntervalVarElement.html#aa6eee861f788a3a18a8e07b60b862d9f", null ],
     [ "PerformedValue", "classoperations__research_1_1IntervalVarElement.html#a18522da9193e7264b89b137603240b23", null ],
-    [ "Reset", "classoperations__research_1_1IntervalVarElement.html#a3bfef48731f4ef14fead2f6c34f26aa0", null ],
+    [ "Reset", "classoperations__research_1_1IntervalVarElement.html#a81da99587aed4f42ca19058dd6df932b", null ],
     [ "Restore", "classoperations__research_1_1IntervalVarElement.html#ae749b38bd428fb00435ada66bd0b13de", null ],
     [ "SetDurationMax", "classoperations__research_1_1IntervalVarElement.html#a9b9cca1a432c730950edf4dd830a7c8d", null ],
     [ "SetDurationMin", "classoperations__research_1_1IntervalVarElement.html#ae8f677b03d118d5c99b82e884a2847f8", null ],

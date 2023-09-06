@@ -10,6 +10,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDi
     [ "getTravel_cost_coefficient", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#ab0e1d79b13a366be35ae40c00af189d0", null ],
     [ "setTransition_info", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#a9df21e501a1d51c1cb5b4e79501b616d", null ],
     [ "setTravel_cost_coefficient", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#a0d3499a63f06f37f37b3b323e7a1e2c2", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#a3618385a88a80b294395c640e623942e", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#aae292f7a547a748325bfeb036f4d4c2b", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#a1c461b92da7e827b5c535ab8be235685", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo.html#a5b33a80a69123b9c60bb2b88904c60d8", null ]

@@ -1,8 +1,9 @@
 var precedences_8h =
 [
+    [ "operations_research::sat::FullIntegerPrecedence", "structoperations__research_1_1sat_1_1FullIntegerPrecedence.html", "structoperations__research_1_1sat_1_1FullIntegerPrecedence" ],
+    [ "operations_research::sat::PrecedenceRelations", "classoperations__research_1_1sat_1_1PrecedenceRelations.html", "classoperations__research_1_1sat_1_1PrecedenceRelations" ],
     [ "operations_research::sat::PrecedencesPropagator", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html", "classoperations__research_1_1sat_1_1PrecedencesPropagator" ],
     [ "operations_research::sat::PrecedencesPropagator::IntegerPrecedences", "structoperations__research_1_1sat_1_1PrecedencesPropagator_1_1IntegerPrecedences.html", "structoperations__research_1_1sat_1_1PrecedencesPropagator_1_1IntegerPrecedences" ],
-    [ "operations_research::sat::PrecedencesPropagator::FullIntegerPrecedence", "structoperations__research_1_1sat_1_1PrecedencesPropagator_1_1FullIntegerPrecedence.html", "structoperations__research_1_1sat_1_1PrecedencesPropagator_1_1FullIntegerPrecedence" ],
     [ "ConditionalLowerOrEqualWithOffset", "precedences_8h.html#af9deb88b5fd44c96982ebf16eee8ddd2", null ],
     [ "ConditionalSum2LowerOrEqual", "precedences_8h.html#ab5fec19d34c28d2540489385eb94bb8b", null ],
     [ "ConditionalSum3LowerOrEqual", "precedences_8h.html#af36dac1903d501c345320387fd9a5961", null ],

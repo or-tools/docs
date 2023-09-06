@@ -21,6 +21,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar =
     [ "removeValues", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#a9f0336d1c67be2a1548bc243e652793e", null ],
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#ade349e4bf6464933b832ad1844f3c767", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#a31eac6650bb431bc2b85ffe0d6387952", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#ab73a3a6c68f27aefe1c998c2eb18be51", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#a9459923fa7b15183813abca5e32d06ed", null ],
     [ "var", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#a72b4949297eca1a7001c21974b2e07f4", null ],
     [ "varType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVar.html#a4e2b7a06a032422be5d8940cf1ede201", null ],

@@ -1,5 +1,7 @@
 var sparse__containers_8cc =
 [
+    [ "AuxiliaryObjectiveValuesFromProto", "sparse__containers_8cc.html#a07b3da07b7a80e63708081835a252096", null ],
+    [ "AuxiliaryObjectiveValuesToProto", "sparse__containers_8cc.html#a06bb306a2b043f00926473f31a4427be", null ],
     [ "LinearConstraintBasisFromProto", "sparse__containers_8cc.html#a3b93044ff7b447d4c3922dd48aa1b633", null ],
     [ "LinearConstraintBasisToProto", "sparse__containers_8cc.html#a8abcb7751279d6be7777d6a95087c0f1", null ],
     [ "LinearConstraintValuesFromProto", "sparse__containers_8cc.html#a41c5a2411793d630d76351e83fa7f22a", null ],

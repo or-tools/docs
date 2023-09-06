@@ -9,7 +9,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters
     [ "getImprovementRateSolutionsDistance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#a6d2cb3613118ccf31dbd080210433028", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#aa7ce8fea151d944bd09feff1a90a6b2b", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#ae2fd1e8ebc40292b5d09e74871a7e403", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#a9b85504b42943fde6746e01fd57d3bfe", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#a365f52b33f21cb40d6ab38cb812e625f", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#aa586816bfcdfbd7b8bf9d3681fca7073", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html#a7cce7199c39769e369140b28f9b6082e", null ],

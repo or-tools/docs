@@ -7,7 +7,7 @@ var classoperations__research_1_1KnapsackSearchNodeForCuts =
     [ "depth", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#afefb443063647ac30ed9c878f7e82679", null ],
     [ "next_item_id", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a3bd7b0a86638d5e174754e3fa192e660", null ],
     [ "operator=", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a7c4c097b70373593dcf7f3230bd49ca1", null ],
-    [ "parent", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a3f43ca2c5fb7685329486e3a11d3a194", null ],
+    [ "parent", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a020fccd1601186441083d006036ffa67", null ],
     [ "profit_upper_bound", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a5a92ee049b03d39626079fd514032c22", null ],
     [ "set_current_profit", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#a931bfab4ed697de2635f04e74788ab8d", null ],
     [ "set_next_item_id", "classoperations__research_1_1KnapsackSearchNodeForCuts.html#ac617a5b3d8a4a0593e07b62a8e52d6c8", null ],

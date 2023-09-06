@@ -32,6 +32,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache =
     [ "insertVarConstantConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#acb832f28e33c8664a8f12fb789185eac", null ],
     [ "insertVoidConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#a2c4e02e409b0ba75425e78fcf89e25c7", null ],
     [ "solver", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#a895aa657ed72a56de47f4bff949f7d9d", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#ac9b644f9922b28cdd6cd53b6d6cdac96", null ],
     [ "EXPR_ABS", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#a1a3344c94d5b4191130d29be1d78fcce", null ],
     [ "EXPR_CONSTANT_DIFFERENCE", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#a8f6fc391a531265a3852568bb802be0b", null ],
     [ "EXPR_CONSTANT_DIVIDE", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelCache.html#a59f09478fabacb10828ef27c24a76898", null ],

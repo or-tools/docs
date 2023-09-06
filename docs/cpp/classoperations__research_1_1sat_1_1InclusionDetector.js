@@ -6,7 +6,7 @@ var classoperations__research_1_1sat_1_1InclusionDetector =
     [ "AddPotentialSuperset", "classoperations__research_1_1sat_1_1InclusionDetector.html#ae8493acffc128ef882f8e5462c4dba12", null ],
     [ "DetectInclusions", "classoperations__research_1_1sat_1_1InclusionDetector.html#ac5767e6b32e020c4e95dd254ab768620", null ],
     [ "IncreaseWorkDone", "classoperations__research_1_1sat_1_1InclusionDetector.html#a17b075d001fc139c0df7967b1942e654", null ],
-    [ "IsInSuperset", "classoperations__research_1_1sat_1_1InclusionDetector.html#ac690b96d8c59c00f1a58c73cf22c72b8", null ],
+    [ "IsInSuperset", "classoperations__research_1_1sat_1_1InclusionDetector.html#aab0478cda55b9d5673db68071880b403", null ],
     [ "num_potential_subsets", "classoperations__research_1_1sat_1_1InclusionDetector.html#a0dfd97f0ed80991a2ea89bb6a1594dcd", null ],
     [ "num_potential_supersets", "classoperations__research_1_1sat_1_1InclusionDetector.html#a5891625576602175c9f10119fcd88614", null ],
     [ "Reset", "classoperations__research_1_1sat_1_1InclusionDetector.html#a322163821a7f9843f54c772a484463bd", null ],

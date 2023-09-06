@@ -1,6 +1,6 @@
 var classoperations__research_1_1glop_1_1ColumnDeletionHelper =
 [
-    [ "ColumnDeletionHelper", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html#a0410177e53c335efac4966a6c0e91ac8", null ],
+    [ "ColumnDeletionHelper", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html#aea87f5d8a8743ad36aa42ddac4c917bb", null ],
     [ "ColumnDeletionHelper", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html#a5e2c0da716ef31c3e8912db561de9791", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html#a3cfef95c1001337978e625ada0950fca", null ],
     [ "GetMarkedColumns", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html#a845801e193dacea6a85fdacd5ea736ef", null ],

@@ -13,7 +13,6 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInfo
     [ "getPrimalRayLinearObjective", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a4dbc31cc3e950e3d404797b2457f1dd7", null ],
     [ "getPrimalRayQuadraticNorm", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a1625743ea21bc90c6b7cd1e233efb231", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#acae1bf479145353d8561145c2665829c", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a1f652a8d4e495bc99c3247f340cb55dc", null ],
     [ "hasCandidateType", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a07aa775fe0b1fa2a247b00628cbad1f3", null ],
     [ "hasDualRayObjective", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a634d548a861309e923ca15c7524a4615", null ],
     [ "hashCode", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html#a3e135b703d6f117405b0e6be47231e15", null ],

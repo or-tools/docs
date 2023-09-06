@@ -25,5 +25,6 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper =
     [ "setTimeLimitInSeconds", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper.html#a032e83db4397cd678a8a97d149d6fd14", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper.html#aaccad08b14e1655af8e1a7843bf8e3e9", null ],
     [ "solverIsSupported", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper.html#a398e637e2d8208111012caabfcdf0b63", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper.html#a079a582604db0af6d564fb0c5a74ad39", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelSolverHelper.html#a490f153ebcff49da21ffc9bc52ae34ce", null ]
 ];

@@ -12,5 +12,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastIn
     [ "setExpression", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html#a9ff05ba0e3165e4c5be75849807f32e5", null ],
     [ "setMaintainer", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html#ad2cecd3f16de94d5c0fcf3ab54019e76", null ],
     [ "setVariable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html#a4226be47329a89603c929f859848a5b5", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html#a3128244923547ee914337c071087a75a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html#a2a8c653dcf2947de439922be3c9e16d4", null ]
 ];

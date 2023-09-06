@@ -9,6 +9,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker =
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#a6d724de70445d474381c4ed05822d0c2", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#a4e13591df984bdf117acad6b8832e0e0", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#a3a0168993c1581f30cf7f7ca1714284b", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#ad2611bbd013b601b1a830f050861b6b1", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#a95a83555283be4e3cb05d604f1948bcc", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SymmetryBreaker.html#a9d5bce91d849107edbb20b92d397c1e1", null ]
 ];

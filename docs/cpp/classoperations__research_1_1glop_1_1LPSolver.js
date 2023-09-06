@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1LPSolver =
 [
     [ "LPSolver", "classoperations__research_1_1glop_1_1LPSolver.html#a1b465772808e796e6bdc55b88fbfeecd", null ],
+    [ "LPSolver", "classoperations__research_1_1glop_1_1LPSolver.html#a2bf965be85e8bc2ad3b23112766e2a2f", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1LPSolver.html#ab0fb7be0666a1d6cf88518085387cd3b", null ],
     [ "constraint_activities", "classoperations__research_1_1glop_1_1LPSolver.html#a0b92a263367da4a68f6c166b678b7e68", null ],
     [ "constraint_statuses", "classoperations__research_1_1glop_1_1LPSolver.html#aa80b81a1013cca9958e1ab223d64d9ae", null ],
@@ -17,6 +18,7 @@ var classoperations__research_1_1glop_1_1LPSolver =
     [ "GlopVersion", "classoperations__research_1_1glop_1_1LPSolver.html#a1e7e668a96818e2b2f05dfd59bf2def8", null ],
     [ "LoadAndVerifySolution", "classoperations__research_1_1glop_1_1LPSolver.html#ae525d5598b932514635be5f0329610a4", null ],
     [ "MayHaveMultipleOptimalSolutions", "classoperations__research_1_1glop_1_1LPSolver.html#adb7f0e515ab9d9503a454e05904c0376", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1LPSolver.html#acd4c0a10dfce65dac95f3019c2a4669d", null ],
     [ "primal_ray", "classoperations__research_1_1glop_1_1LPSolver.html#aec795609aca4fe99631b01734a2401ae", null ],
     [ "reduced_costs", "classoperations__research_1_1glop_1_1LPSolver.html#a30ff79db6b533209a06b3426a4a5a8b0", null ],
     [ "SetInitialBasis", "classoperations__research_1_1glop_1_1LPSolver.html#a421152c83bea94b7ca33d699063ab7c3", null ],

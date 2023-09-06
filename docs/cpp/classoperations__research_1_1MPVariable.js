@@ -1,5 +1,6 @@
 var classoperations__research_1_1MPVariable =
 [
+    [ "MPVariable", "classoperations__research_1_1MPVariable.html#a28ada565c2b27b5a69b2267971de44c3", null ],
     [ "MPVariable", "classoperations__research_1_1MPVariable.html#abba28daa7e558932c40cf1a8ecb30194", null ],
     [ "basis_status", "classoperations__research_1_1MPVariable.html#abb491e237ace37cb5240cde3c3ff2958", null ],
     [ "branching_priority", "classoperations__research_1_1MPVariable.html#a6d0e4798441493244b31f29ee5ac26ad", null ],
@@ -7,6 +8,7 @@ var classoperations__research_1_1MPVariable =
     [ "integer", "classoperations__research_1_1MPVariable.html#a044841d06c6de76db6f4978bf57898ec", null ],
     [ "lb", "classoperations__research_1_1MPVariable.html#a0d581a8129e4fc9779ee0b1172967563", null ],
     [ "name", "classoperations__research_1_1MPVariable.html#a5bdbb49284db4f6742737c4bee3c573b", null ],
+    [ "operator=", "classoperations__research_1_1MPVariable.html#a6909b81c442da66816f01b38644a67f0", null ],
     [ "reduced_cost", "classoperations__research_1_1MPVariable.html#a0001ce8a3240bd00b49557594a809cdb", null ],
     [ "set_reduced_cost", "classoperations__research_1_1MPVariable.html#a73eaa62d668195e9d894548d84f75fdb", null ],
     [ "set_solution_value", "classoperations__research_1_1MPVariable.html#a8f6294a83ae2d4bb0e6000981f8651a5", null ],

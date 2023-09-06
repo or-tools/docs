@@ -23,6 +23,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperat
     [ "SkipUnchanged", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a99c2dc7341abe7539218c72641ab43cc", null ],
     [ "start", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a6752667211d303a8527ff7bf9b13edd4", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a051cb591b8fa6038020c07df01ff86c9", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a288d8ef07b4d76e9dfe2de72fa7fe573", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a415ad6b74e83fce5e795721a184d70a8", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#acbc3016221fa931ccc64897834d92b65", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#aa521b55daa85996d1062181a12406270", null ],

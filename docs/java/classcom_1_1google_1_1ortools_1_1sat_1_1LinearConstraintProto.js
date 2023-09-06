@@ -13,7 +13,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto =
     [ "getDomainList", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#ac121573dd66f0b540333935b14a11f12", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#a239e3d6a041f3d21a7e29d035d5e36dc", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#a80f652aa49204dc319823432374203bf", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#a2d361e85511f8be4d4226e2fe170db2f", null ],
     [ "getVars", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#a427ea42bd71f650bbb83ebac829bda79", null ],
     [ "getVarsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#a12e81e798846ba7f07bd7500064a91a8", null ],
     [ "getVarsList", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html#aca5f595ee232bf7cf60869ad59e7f7c7", null ],

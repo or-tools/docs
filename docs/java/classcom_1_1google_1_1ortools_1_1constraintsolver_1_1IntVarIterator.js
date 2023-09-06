@@ -7,6 +7,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator =
     [ "init", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#a62c4215fdb57c1720ba902dbae24de7b", null ],
     [ "next", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#a6bfd5649b8a97a2c439fe6edb037824e", null ],
     [ "ok", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#af622c8dde6efe7195872449c001e523d", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#ac42e337d3dd5fd9eb4bb1cb1571cc001", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#a26081de517f09c06ba7ee09e4cc658d3", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarIterator.html#a8361b598cc043d8a07343c9579329ab4", null ]
 ];

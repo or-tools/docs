@@ -7,7 +7,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble =
     [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a9ab84b84056c4079e541b7940183136a", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a8861a88f751f04159cb70f362b87de4d", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a3d58b23d51d621e80936297244a6dd04", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#ab577d223774abf473e74b80acaf7e68c", null ],
     [ "getValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#af3c47f5e331f8043bdbbd8fd215bedf8", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a74ba1c921f579028386967b38a19ed6d", null ],
     [ "hasValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a5e2d51319db2cbd4aeb65090a4f34f14", null ],

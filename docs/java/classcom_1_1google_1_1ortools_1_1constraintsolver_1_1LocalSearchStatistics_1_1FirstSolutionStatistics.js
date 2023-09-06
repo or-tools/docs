@@ -10,7 +10,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#aad656f467890e48f41f326a64a05f608", null ],
     [ "getStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#a61b9fae7b57a82dea80c22a601b0eaac", null ],
     [ "getStrategyBytes", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#a1c348ccbd3c0e2fed9e1a84718981cef", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#a403dabed87d95ed0eac46a6afb0e4234", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#a34a40756d6cf5f66c825109777a5bf49", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#ab1afb1368fd979e690405c8a433a871d", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html#a357dd63ee65bbff101b44332851a5ce4", null ],

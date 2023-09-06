@@ -177,6 +177,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor =
     [ "getKVarsArgument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#adaa32dbdc0ccc284ad2c245c364dd710", null ],
     [ "getKVarValueWatcher", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a1e2392e9e9d2a5913bb1ea10cebf6392", null ],
     [ "getKWeightedSumOfAssignedEqualVariableExtension", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a9c8b3b4d50a283841d21279e9b3dc979", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#ada91b0c8e68dc171f15eafd4e11e0edb", null ],
     [ "visitIntegerArgument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a8da6df82e6469d723570726b7306a7e7", null ],
     [ "visitIntegerArrayArgument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a05576e22be7f2f721240cd3741a42b84", null ],
     [ "visitIntegerExpressionArgument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a8b57360ceb5539449a68486d33023830", null ],

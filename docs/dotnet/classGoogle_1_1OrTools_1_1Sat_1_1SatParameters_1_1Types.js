@@ -62,6 +62,13 @@ var classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types =
       [ "HintSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67ae8708c323f02f30cb10e52cd9a4781e5", null ],
       [ "PartialFixedSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67ab8983b809aff6e7550a41004cc64713e", null ]
     ] ],
+    [ "SharedTreeSplitStrategy", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13", [
+      [ "SplitStrategyAuto", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a288245383e545c6b31e337000b243574", null ],
+      [ "SplitStrategyDiscrepancy", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a15a5d558a80fe62b93cec936aafe3677", null ],
+      [ "SplitStrategyObjectiveLb", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a8ad2239869bd454848ebe15103496fa5", null ],
+      [ "SplitStrategyBalancedTree", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a25a443c248367c02aa2accfa4762ea40", null ],
+      [ "SplitStrategyFirstProposal", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a3de45ff4f2684223b37e6ac914d5b3df", null ]
+    ] ],
     [ "VariableOrder", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a7e73fb856acf9cc4011696e314884ad1", [
       [ "InOrder", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a7e73fb856acf9cc4011696e314884ad1a2f9caadba8212d14539bdc6aeae89fae", null ],
       [ "InReverseOrder", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a7e73fb856acf9cc4011696e314884ad1af1d19b71cf65e23a45bef491005cd65d", null ],

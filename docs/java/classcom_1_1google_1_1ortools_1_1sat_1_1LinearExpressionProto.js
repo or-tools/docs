@@ -11,7 +11,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto =
     [ "getOffset", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#aca29722514137b18be74e3414c60d78e", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#ab1199c396936163056562a40f73dd191", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#a3f6b8744537a876b4a1659bdd9113ac5", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#a996e0a99c087107e5278dfd117edbe6b", null ],
     [ "getVars", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#ad3ad04ee3f0e5cc2baa1ae4b5e229ed7", null ],
     [ "getVarsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#a601e35e4abf65f5e88ef55218168774f", null ],
     [ "getVarsList", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html#a38219a450e55f04af9171fe8e81da526", null ],

@@ -2,6 +2,8 @@ var dir_a3328a0ea67a2aaa160c2783ffbaa5dc =
 [
     [ "adaptative_parameter_value.h", "adaptative__parameter__value_8h.html", "adaptative__parameter__value_8h" ],
     [ "affine_relation.h", "affine__relation_8h.html", "affine__relation_8h" ],
+    [ "aligned_memory.h", "aligned__memory_8h.html", "aligned__memory_8h" ],
+    [ "aligned_memory_internal.h", "aligned__memory__internal_8h.html", "aligned__memory__internal_8h" ],
     [ "bitset.cc", "bitset_8cc.html", "bitset_8cc" ],
     [ "bitset.h", "bitset_8h.html", "bitset_8h" ],
     [ "cached_log.cc", "cached__log_8cc.html", null ],
@@ -60,5 +62,7 @@ var dir_a3328a0ea67a2aaa160c2783ffbaa5dc =
     [ "tuple_set.h", "tuple__set_8h.html", "tuple__set_8h" ],
     [ "vector_map.h", "vector__map_8h.html", "vector__map_8h" ],
     [ "vector_or_function.h", "vector__or__function_8h.html", "vector__or__function_8h" ],
+    [ "vector_sum.h", "vector__sum_8h.html", "vector__sum_8h" ],
+    [ "vector_sum_internal.h", "vector__sum__internal_8h.html", "vector__sum__internal_8h" ],
     [ "zvector.h", "zvector_8h.html", "zvector_8h" ]
 ];

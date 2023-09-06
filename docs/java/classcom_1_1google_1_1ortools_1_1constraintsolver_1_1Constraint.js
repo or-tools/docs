@@ -9,6 +9,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint =
     [ "isCastConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a13504f0978409abcacd77d4fef36da71", null ],
     [ "post", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a0483ba947bb049f9f590ee38b65335f2", null ],
     [ "postAndPropagate", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a5dd1a62aca7edf07cf6cf10cb91e9c32", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a16e4bcf9e2067bf30339f6820ea650b2", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a500b1af2949f9f4ec1a9969c65ea7c98", null ],
     [ "var", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html#a2dfadaf95d73bca0690c90101183d57b", null ]
 ];

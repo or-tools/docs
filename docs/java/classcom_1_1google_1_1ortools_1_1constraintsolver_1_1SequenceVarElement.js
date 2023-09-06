@@ -18,6 +18,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement =
     [ "setSequence", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#acbb8d20ea8267624b0929ecd57cfb3c9", null ],
     [ "setUnperformed", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#ab8d40863559b2a937eb70d8feda0a99e", null ],
     [ "store", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#a7d9ba8f2b73e433daec12e2ccca0fddc", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#a52b3c4c5f6475e31e8411452d43f1196", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#a81a0b961b244897d7dd00eb670c8aae5", null ],
     [ "unperformed", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#a4c43f162151b1d71a7df0bfd3bc19beb", null ],
     [ "var", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVarElement.html#a78d3c52a604734554c326e0cf10815f1", null ]

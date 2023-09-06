@@ -1,5 +1,6 @@
 var classoperations__research_1_1GroupPairAndRelocateOperator =
 [
+    [ "GroupPairAndRelocateOperator", "classoperations__research_1_1GroupPairAndRelocateOperator.html#a34758fd3d8f62fd369e36738b4deff84", null ],
     [ "GroupPairAndRelocateOperator", "classoperations__research_1_1GroupPairAndRelocateOperator.html#ab713ef5b8515dd0024589ea34e3ee1d7", null ],
     [ "~GroupPairAndRelocateOperator", "classoperations__research_1_1GroupPairAndRelocateOperator.html#ac2f27f727a77107acfbe2cc174a7a2eb", null ],
     [ "DebugString", "classoperations__research_1_1GroupPairAndRelocateOperator.html#a3fc2ee653a64af7210b6dfad73972871", null ],

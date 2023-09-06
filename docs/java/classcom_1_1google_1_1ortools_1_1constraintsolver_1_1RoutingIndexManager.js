@@ -14,5 +14,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager =
     [ "indexToNode", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html#af943d115205ced5b3495a722330c709b", null ],
     [ "nodesToIndices", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html#a8d38d30f3c7747e7dc2f7a50b501f576", null ],
     [ "nodeToIndex", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html#a55462383dd37f196dc4ecc383f07b13b", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html#a87cc9b4a16734f3fc314e06d34832bf8", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html#a8dd61986c26e0d6e0e2cf67a2120b8f9", null ]
 ];

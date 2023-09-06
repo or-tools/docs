@@ -30,7 +30,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto =
     [ "getSolutionHintOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#a5bad6a48a5016f3cc89760cab95d5edc", null ],
     [ "getSymmetry", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#a03e0630ab93bef7c098189612af3663b", null ],
     [ "getSymmetryOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#a9a12b4bc6501f8af9216c20147708711", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#afadb2e51ac5876848261c710947cb1b5", null ],
     [ "getVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#a8bf343c0e587798a1eb98a2b1b5879d7", null ],
     [ "getVariablesCount", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#ad746cb71bab946702142b016d3a11a3c", null ],
     [ "getVariablesList", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProto.html#a81717dd6a653bb73bc2c95bc84a2125a", null ],

@@ -2,7 +2,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator =
 [
     [ "PathOperator", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a5b5cb84c58900fbcd2bda3290ba44942", null ],
     [ "PathOperator", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a7d5e7afc8e7421797df8313c33baa085", null ],
-    [ "PathOperator", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#aff51095b38e98e1a6c23b41cc6e696cb", null ],
+    [ "PathOperator", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a8ce1ddb9606a23b7347cc46cb226b57d", null ],
     [ "ConsiderAlternatives", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a2f9e5c84239a6d497d826302c5307253", null ],
     [ "delete", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#abde19b6f8e4ae7e3dbb72773baea0e63", null ],
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#ae18ac0509cbfdf9742bc5ae2d90d90b2", null ],
@@ -18,6 +18,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator =
     [ "restartAtPathStartOnSynchronize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a98c597ef7157f99d7dcee24fcc5018fb", null ],
     [ "setNextBaseToIncrement", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#ac1ec7db0e7e33532c3a04073d39b623b", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#ae4606a3bec9be834d377173b9e4caf27", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#aa1f096284d7e7462b561996dbdca2e47", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a8beb2e440b5606579a4f3c6ac2974e9e", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathOperator.html#a61d0a335664a0dc5427bc6791eb0b93b", null ]
 ];

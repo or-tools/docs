@@ -23,7 +23,7 @@ var structoperations__research_1_1fz_1_1Annotation =
     [ "Interval", "structoperations__research_1_1fz_1_1Annotation.html#aabc5a937f563a795ea5e18a4ceb10de4", null ],
     [ "IsFunctionCallWithIdentifier", "structoperations__research_1_1fz_1_1Annotation.html#a92994326afba2385a6389e5016e1aa81", null ],
     [ "String", "structoperations__research_1_1fz_1_1Annotation.html#a07b992b36b277c271724cc9fb2ac5c61", null ],
-    [ "VarRef", "structoperations__research_1_1fz_1_1Annotation.html#ae86faa0900e8e422fe2ff0bcc6f77296", null ],
+    [ "VarRef", "structoperations__research_1_1fz_1_1Annotation.html#a9ad77b2a59a88d6a7056006f48e5cdba", null ],
     [ "VarRefArray", "structoperations__research_1_1fz_1_1Annotation.html#a7e7cec7d10a8c3c38edea938db6af18a", null ],
     [ "annotations", "structoperations__research_1_1fz_1_1Annotation.html#aaff05fcfa7e022aae2b0def18b22c595", null ],
     [ "id", "structoperations__research_1_1fz_1_1Annotation.html#a4392e3c39ca549673dcec6c894c3f656", null ],

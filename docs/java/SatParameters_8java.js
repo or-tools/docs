@@ -11,6 +11,7 @@ var SatParameters_8java =
     [ "com.google.ortools.sat.SatParameters.MaxSatAssumptionOrder", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder" ],
     [ "com.google.ortools.sat.SatParameters.MaxSatStratificationAlgorithm", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm" ],
     [ "com.google.ortools.sat.SatParameters.SearchBranching", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching" ],
+    [ "com.google.ortools.sat.SatParameters.SharedTreeSplitStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy" ],
     [ "com.google.ortools.sat.SatParameters.FPRoundingMethod", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod" ],
     [ "com.google.ortools.sat.SatParameters.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Builder" ]
 ];

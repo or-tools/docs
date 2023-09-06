@@ -1,9 +1,9 @@
 var classoperations__research_1_1IntVar =
 [
-    [ "IntVar", "classoperations__research_1_1IntVar.html#a119cae716dbbdaa31b476ef904c99776", null ],
-    [ "IntVar", "classoperations__research_1_1IntVar.html#a3800e8fb44e2b416b52a770d2bc74f31", null ],
+    [ "IntVar", "classoperations__research_1_1IntVar.html#a4d265d37c8a275ce241845a7423a207d", null ],
+    [ "IntVar", "classoperations__research_1_1IntVar.html#ad9b1500cd23aad6b1bfffb3aa7c49710", null ],
     [ "~IntVar", "classoperations__research_1_1IntVar.html#ab6acebb20eb1a885ca1313d759db0bdb", null ],
-    [ "Accept", "classoperations__research_1_1IntVar.html#a6d8841341ab21ef119c0b7df02785a48", null ],
+    [ "Accept", "classoperations__research_1_1IntVar.html#a3d1dc06f1568cc21d312a57c065daea9", null ],
     [ "Contains", "classoperations__research_1_1IntVar.html#a900c588e7640a95efc1a210b8d45bb3e", null ],
     [ "index", "classoperations__research_1_1IntVar.html#a49fb18ac443f329969336d1d685269ed", null ],
     [ "IsDifferent", "classoperations__research_1_1IntVar.html#a3d343a0619cbd26c9405891bfe1aad0f", null ],

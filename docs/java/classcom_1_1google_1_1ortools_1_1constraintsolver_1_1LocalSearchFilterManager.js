@@ -12,6 +12,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManage
     [ "GetSynchronizedObjectiveValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#a84c62f889aa23db9b5b6da2037d66af0", null ],
     [ "Revert", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#acd40a156d619609b81843abc9e24110e", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#a5eace059b2014fbc6129c1f037716bfb", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#a9f872e02bdcc03cede1b426c8561b2a0", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#a6b6b36c983e9a28057392f96fee5ff80", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#a8fa3f2d620cf357671759f4d12684149", null ],
     [ "synchronize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager.html#af2dc3caa00789ffa168be100333c1b40", null ],

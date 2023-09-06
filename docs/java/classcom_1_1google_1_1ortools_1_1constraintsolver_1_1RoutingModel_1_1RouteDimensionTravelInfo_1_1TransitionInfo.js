@@ -18,6 +18,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDi
     [ "setTravel_compression_cost", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#ad6080baa9abb0e97055860495bb00d22", null ],
     [ "setTravel_start_dependent_travel", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#a1a6a0794b0c82b7921abc02938972813", null ],
     [ "setTravel_value_upper_bound", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#af96c62b05178b861d31cf0b75e3204b0", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#ad036eb5e656db780c03e8f6045010cb3", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#a4e148bfc93d65db7920453d0b1611635", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#a590430fec8e536259fdebc8a5e91b78a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1TransitionInfo.html#a40aac425bd96b6b1dcea108cfbd5594c", null ]

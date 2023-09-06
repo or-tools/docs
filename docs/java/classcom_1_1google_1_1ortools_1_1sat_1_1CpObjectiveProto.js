@@ -19,7 +19,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto =
     [ "getScalingFactor", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#ac0289277797b90b36843a10030047604", null ],
     [ "getScalingWasExact", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#aaf5f1b0f2a55d5613db73a20eba5d4d8", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#af2484914b7f631bfa4a23d1300744b34", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#ad4107f54e186e065bbe4ae6a8173b36e", null ],
     [ "getVars", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#abf1dbf48e724d5e123e7b7793ee6b2f2", null ],
     [ "getVarsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#adf9ecb7f31270cace06540eaa361a421", null ],
     [ "getVarsList", "classcom_1_1google_1_1ortools_1_1sat_1_1CpObjectiveProto.html#a78cab3639aee8173b4a8eb2136b33bb9", null ],

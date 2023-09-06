@@ -27,7 +27,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto =
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a70d1a248b8fc143b72429e22c1ff93b4", null ],
     [ "getSosConstraint", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a28ce32805152fd4bc7d169b9ce22e24f", null ],
     [ "getSosConstraintOrBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a1803f8791cafb11f66a784961cc5abb5", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a157f6eaa4bfbd95c60f8708120904b39", null ],
     [ "hasAbsConstraint", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a321f7caef9053567915e3d6d547dff95", null ],
     [ "hasAndConstraint", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#a6b8f74f36728797af5f3910511e0a621", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#aa283009473b928040b7890fe9e136992", null ],

@@ -15,7 +15,7 @@ var searchData=
   ['solutioncollector_2ecs_12',['SolutionCollector.cs',['../SolutionCollector_8cs.html',1,'']]],
   ['solutionpool_2ecs_13',['SolutionPool.cs',['../SolutionPool_8cs.html',1,'']]],
   ['solvelog_2epb_2ecs_14',['SolveLog.pb.cs',['../SolveLog_8pb_8cs.html',1,'']]],
-  ['solver_2ecs_15',['Solver.cs',['../linear__solver_2Solver_8cs.html',1,'(Global Namespace)'],['../constraint__solver_2Solver_8cs.html',1,'(Global Namespace)']]],
+  ['solver_2ecs_15',['solver.cs',['../constraint__solver_2Solver_8cs.html',1,'(Global Namespace)'],['../linear__solver_2Solver_8cs.html',1,'(Global Namespace)']]],
   ['solverparameters_2epb_2ecs_16',['SolverParameters.pb.cs',['../SolverParameters_8pb_8cs.html',1,'']]],
   ['solvers_2epb_2ecs_17',['Solvers.pb.cs',['../Solvers_8pb_8cs.html',1,'']]],
   ['solvewrapper_2ecs_18',['SolveWrapper.cs',['../SolveWrapper_8cs.html',1,'']]],

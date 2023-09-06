@@ -4,7 +4,7 @@ var classoperations__research_1_1sat_1_1SatDecisionPolicy =
     [ "Activity", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a67a23b474b3322d64f85882b50f17318", null ],
     [ "AllPreferences", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a39f12c518e1f163afda3ef357cc11f27", null ],
     [ "BeforeConflict", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#afe09fa24c5f7959575635e7e90ab4282", null ],
-    [ "BumpVariableActivities", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#ada84e70333e4c7cc3139b2e743712df8", null ],
+    [ "BumpVariableActivities", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a0f5e8234151b6409b1bf416ccaf36701", null ],
     [ "IncreaseNumVariables", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#ab1521683f6aafdbf9b2ce63b1a49d296", null ],
     [ "InStablePhase", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a2fe392f64c32808477cd973d1ae87f4d", null ],
     [ "MaybeEnablePhaseSaving", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#adb5bccaa393dfb2a7de6d8e954940e9e", null ],

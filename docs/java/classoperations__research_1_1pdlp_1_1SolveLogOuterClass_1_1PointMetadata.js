@@ -18,7 +18,6 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata =
     [ "getRandomPrimalProjectionsCount", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#ac3811b2bcd7e0144c97febd3ed794b45", null ],
     [ "getRandomPrimalProjectionsList", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#abc87139dda0ff2685b27ffe7c7befd75", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#a668975533250820c41d2a29ba66e51c6", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#a2bf5a53af203f16e9b92fc58e1b3d347", null ],
     [ "hasActiveDualVariableChange", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#a4d62edd5ae2c2b4c4e0f66f1cd432204", null ],
     [ "hasActiveDualVariableCount", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#ab14710ae82217f7d39cf3aac7e3de945", null ],
     [ "hasActivePrimalVariableChange", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html#a1abfac9e26cc7b028479c9e0fc86cdc5", null ],

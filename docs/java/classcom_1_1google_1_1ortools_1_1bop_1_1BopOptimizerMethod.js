@@ -9,7 +9,6 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a28b57f34e9b39799bfb03b0c8469cfd1", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#abbb5711e9659b4bf6684a3553b6a7068", null ],
     [ "getType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ac9444020f09b9dec0cc6ee2bac54d4be", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ad4b9ae4c5705d183432ba7b3749b09e7", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a0a06597cefd9f7a023eea9afcd2f89b7", null ],
     [ "hasType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ada1e7f83623628336d8d008736e2acbd", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ab6de13b16c5d0bd4090ba578168b7b5a", null ],

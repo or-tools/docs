@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1VariablesInfo =
 [
     [ "VariablesInfo", "classoperations__research_1_1glop_1_1VariablesInfo.html#af7564550a3c3b572ae6c65611aecd625", null ],
+    [ "VariablesInfo", "classoperations__research_1_1glop_1_1VariablesInfo.html#aab345c7b4821a7c049e3d00a7b1fd088", null ],
     [ "ChangeUnusedBasicVariablesToFree", "classoperations__research_1_1glop_1_1VariablesInfo.html#aa41f6d9ccfb0882ac1ccc5d77b54397b", null ],
     [ "EndDualPhaseI", "classoperations__research_1_1glop_1_1VariablesInfo.html#a29fdd427dcae4052217c2977b7a11868", null ],
     [ "GetBoundDifference", "classoperations__research_1_1glop_1_1VariablesInfo.html#a90bf6e290eeffa11bc16225807ca20be", null ],
@@ -10,7 +11,7 @@ var classoperations__research_1_1glop_1_1VariablesInfo =
     [ "GetIsRelevantBitRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#aa0318a8644e39502b63a1e65b08467b5", null ],
     [ "GetNonBasicBoxedVariables", "classoperations__research_1_1glop_1_1VariablesInfo.html#ab5d1a6ac085eb6132ac204aaa2ec5bf8", null ],
     [ "GetNotBasicBitRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#a8e061e4b40240bc35e75cff637755250", null ],
-    [ "GetNumberOfColumns", "classoperations__research_1_1glop_1_1VariablesInfo.html#ac8e90bd426c51812352217b371769534", null ],
+    [ "GetNumberOfColumns", "classoperations__research_1_1glop_1_1VariablesInfo.html#a4aedb773a1e213c283909af05da0e9e0", null ],
     [ "GetNumEntriesInRelevantColumns", "classoperations__research_1_1glop_1_1VariablesInfo.html#a60ce73803bc479b7e11bc56c96e9c4d3", null ],
     [ "GetStatusRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#a3cf957e9eb4981453fdc76ce51308b29", null ],
     [ "GetTypeRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#a5ecae9cd54f132aa00b8c724ed5f6cde", null ],
@@ -21,6 +22,7 @@ var classoperations__research_1_1glop_1_1VariablesInfo =
     [ "LoadBoundsAndReturnTrueIfUnchanged", "classoperations__research_1_1glop_1_1VariablesInfo.html#ae1a9aca5938dcc288efc135044f6f2a2", null ],
     [ "LoadBoundsAndReturnTrueIfUnchanged", "classoperations__research_1_1glop_1_1VariablesInfo.html#a140e7c639df80d6e0e991b523c500c04", null ],
     [ "MakeBoxedVariableRelevant", "classoperations__research_1_1glop_1_1VariablesInfo.html#a7600482ad30d031010691456c924100d", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1VariablesInfo.html#a406151f603f5f29089c2a828bb5bd731", null ],
     [ "SnapFreeVariablesToBound", "classoperations__research_1_1glop_1_1VariablesInfo.html#af48ca511d769d18c082829c3cae13320", null ],
     [ "TransformToDualPhaseIProblem", "classoperations__research_1_1glop_1_1VariablesInfo.html#a3e74d6566e11d92438687f6dbb48daf1", null ],
     [ "UpdateToBasicStatus", "classoperations__research_1_1glop_1_1VariablesInfo.html#aa6ae2139d9427d7dc458a93e2f8b5588", null ],

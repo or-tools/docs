@@ -1,6 +1,6 @@
 var classoperations__research_1_1sat_1_1CustomFifoQueue =
 [
-    [ "CustomFifoQueue", "classoperations__research_1_1sat_1_1CustomFifoQueue.html#a85d9efeff229b4a3dfe64c5e1cd6eb14", null ],
+    [ "CustomFifoQueue", "classoperations__research_1_1sat_1_1CustomFifoQueue.html#a6ef687711df4dc2b827cddf8bf155955", null ],
     [ "Contains", "classoperations__research_1_1sat_1_1CustomFifoQueue.html#a689e6e58c2592c4167b7cbfe51605890", null ],
     [ "empty", "classoperations__research_1_1sat_1_1CustomFifoQueue.html#a92ad38216b0f16fcf87236b2b782e119", null ],
     [ "IncreaseSize", "classoperations__research_1_1sat_1_1CustomFifoQueue.html#a32b6d6808df4f5c4f4919c4f7b16f889", null ],

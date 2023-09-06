@@ -1,6 +1,6 @@
 var classoperations__research_1_1glop_1_1MatrixNonZeroPattern =
 [
-    [ "MatrixNonZeroPattern", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a332f91357924020ca59cb4fe70943fc5", null ],
+    [ "MatrixNonZeroPattern", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a0ad511f14ca4d0145e1d77a36f982d53", null ],
     [ "AddEntry", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a040cbed44a4aa06f148d93e253681bbc", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#afdb5aaf373d4301ab9c9645ecc2a301e", null ],
     [ "ColDegree", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a0fa9e7af6a7dddd7a1ea9327d34972b4", null ],

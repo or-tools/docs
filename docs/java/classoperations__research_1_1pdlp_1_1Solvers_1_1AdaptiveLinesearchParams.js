@@ -9,7 +9,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams =
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#af8988e0475bcb284b88c270b2107ca4c", null ],
     [ "getStepSizeGrowthExponent", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#a7a795b420570d7ecd86f5f7b77545ab1", null ],
     [ "getStepSizeReductionExponent", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#ab63ce93104f8a5826eff47dfdbe0c87b", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#a16ba225b6ef9ce27d037dd6bbf542f1d", null ],
     [ "hashCode", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#ac47d9011b5452a2c6385af26d3132735", null ],
     [ "hasStepSizeGrowthExponent", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#abdde131814a66870b74666b3537c8359", null ],
     [ "hasStepSizeReductionExponent", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html#a172863ffe811a87c7e6071209828b36f", null ],

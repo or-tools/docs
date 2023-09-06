@@ -2,6 +2,7 @@ var classoperations__research_1_1glop_1_1SparseMatrix =
 [
     [ "SparseMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html#abe48356616e82aada9e37212d3696975", null ],
     [ "SparseMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html#a3ae3ec2cd842310f272480eccf09be8e", null ],
+    [ "SparseMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html#a06a2e8421171be6bcd17a23d546b197b", null ],
     [ "AppendEmptyColumn", "classoperations__research_1_1glop_1_1SparseMatrix.html#aeaf42635ef2992557313737c7796bbd5", null ],
     [ "AppendRowsFromSparseMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html#ab7c414b9ebe39aa653fc00a823905880", null ],
     [ "AppendUnitVector", "classoperations__research_1_1glop_1_1SparseMatrix.html#a74d79560210c667f992f4c1e92bdc1e9", null ],
@@ -24,6 +25,7 @@ var classoperations__research_1_1glop_1_1SparseMatrix =
     [ "num_cols", "classoperations__research_1_1glop_1_1SparseMatrix.html#ae693663cd75bdd089af2d5d0b456424c", null ],
     [ "num_entries", "classoperations__research_1_1glop_1_1SparseMatrix.html#af234def92ac48afb3495fc213624a293", null ],
     [ "num_rows", "classoperations__research_1_1glop_1_1SparseMatrix.html#aad1ca52f82477c9da84fadbb666cc53b", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1SparseMatrix.html#a32767e85d530edc95d822ca199e89531", null ],
     [ "PopulateFromIdentity", "classoperations__research_1_1glop_1_1SparseMatrix.html#aa9922fd301a836ef3d44c7242f651d7d", null ],
     [ "PopulateFromLinearCombination", "classoperations__research_1_1glop_1_1SparseMatrix.html#a48a6c253bed920bdcfc8fe111f86ef63", null ],
     [ "PopulateFromPermutedMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html#a2457a1e8d0700fa18e73947e90ebe490", null ],

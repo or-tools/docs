@@ -44,7 +44,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse =
     [ "getTightenedVariablesList", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a1005b24c4ee48c0f82400cfe59cbb4b7", null ],
     [ "getTightenedVariablesOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a0f47c3894bdfb9c7949e160842487bef", null ],
     [ "getTightenedVariablesOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a73aa88861948be44fab732b8ce25eb60", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a4926514df165dccb49399a6232601db5", null ],
     [ "getUserTime", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a4b611ea5553a6d38beaa1be7d7da581b", null ],
     [ "getWallTime", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a58aa554c3d099d57170f44fec1bcb145", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a036d283323f7b91722ecebe40e96dba4", null ],

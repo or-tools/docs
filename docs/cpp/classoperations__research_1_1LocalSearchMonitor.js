@@ -1,6 +1,6 @@
 var classoperations__research_1_1LocalSearchMonitor =
 [
-    [ "LocalSearchMonitor", "classoperations__research_1_1LocalSearchMonitor.html#aa69f2ddc0e76eecc333aa6505f7d6a8e", null ],
+    [ "LocalSearchMonitor", "classoperations__research_1_1LocalSearchMonitor.html#a0c4974eabff96027f2732bd11aa6acb8", null ],
     [ "~LocalSearchMonitor", "classoperations__research_1_1LocalSearchMonitor.html#a5db8616ae9665eedb10dcb10ce6398ed", null ],
     [ "BeginAcceptNeighbor", "classoperations__research_1_1LocalSearchMonitor.html#a3436dabc0ea229c479f937ecb5ec2743", null ],
     [ "BeginFiltering", "classoperations__research_1_1LocalSearchMonitor.html#a7bf1defae00f7c23df28ebb20bf90252", null ],

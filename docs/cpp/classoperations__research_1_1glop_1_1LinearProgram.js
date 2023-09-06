@@ -6,6 +6,7 @@ var classoperations__research_1_1glop_1_1LinearProgram =
       [ "IMPLIED_INTEGER", "classoperations__research_1_1glop_1_1LinearProgram.html#a1b7f8d443a204721d1f73d944aba7ee0ab79968c5beff3baa0791198293518e14", null ]
     ] ],
     [ "LinearProgram", "classoperations__research_1_1glop_1_1LinearProgram.html#a1a3801958c87232d2b85da0340b77d77", null ],
+    [ "LinearProgram", "classoperations__research_1_1glop_1_1LinearProgram.html#aa7ccb9d5f092766762ed143379ec8389", null ],
     [ "AddConstraints", "classoperations__research_1_1glop_1_1LinearProgram.html#aaa3ddaef57571006b928171a519430c4", null ],
     [ "AddConstraintsWithSlackVariables", "classoperations__research_1_1glop_1_1LinearProgram.html#a887058fe150a849321bc9b25bd52e66e", null ],
     [ "AddSlackVariablesWhereNecessary", "classoperations__research_1_1glop_1_1LinearProgram.html#a65b22be15b4caa784b8d7c690e2418ae", null ],
@@ -65,6 +66,7 @@ var classoperations__research_1_1glop_1_1LinearProgram =
     [ "objective_coefficients", "classoperations__research_1_1glop_1_1LinearProgram.html#a065e3c8f186516c9e78078f850d6fe01", null ],
     [ "objective_offset", "classoperations__research_1_1glop_1_1LinearProgram.html#af4b24f040335718ed51c219e8462cd08", null ],
     [ "objective_scaling_factor", "classoperations__research_1_1glop_1_1LinearProgram.html#ad007274fe2d94f55a00bf936772d7abc", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1LinearProgram.html#aca25db478400d1b45a9c4a14cae864d9", null ],
     [ "PopulateFromDual", "classoperations__research_1_1glop_1_1LinearProgram.html#afdef8d3fad551379c138ea96f9b695d3", null ],
     [ "PopulateFromLinearProgram", "classoperations__research_1_1glop_1_1LinearProgram.html#ac31b1d310321a4aa1d005cbead64f490", null ],
     [ "PopulateFromLinearProgramVariables", "classoperations__research_1_1glop_1_1LinearProgram.html#a3c674f27a16debe4d522104d942bf070", null ],
@@ -93,7 +95,7 @@ var classoperations__research_1_1glop_1_1LinearProgram =
     [ "UpdateVariableBoundsToIntersection", "classoperations__research_1_1glop_1_1LinearProgram.html#ac606a4eb6f00b683ee15f9d19338bcf3", null ],
     [ "UseTransposeMatrixAsReference", "classoperations__research_1_1glop_1_1LinearProgram.html#a9a843ba967f7715d2c9980d62a4cca73", null ],
     [ "variable_lower_bounds", "classoperations__research_1_1glop_1_1LinearProgram.html#a6ee3b428c0cb77237e3c3f3f576fc300", null ],
-    [ "variable_types", "classoperations__research_1_1glop_1_1LinearProgram.html#a86f7c5a9a5985cdb0e8180f6fc39b615", null ],
+    [ "variable_types", "classoperations__research_1_1glop_1_1LinearProgram.html#a1c137b58e10604694ee7fdcc7db1e507", null ],
     [ "variable_upper_bounds", "classoperations__research_1_1glop_1_1LinearProgram.html#aa8d53799fe99d704e16c26d9b918f000", null ],
     [ "Scale", "classoperations__research_1_1glop_1_1LinearProgram.html#a1a08072639a759f8cf7134407e4b0fac", null ]
 ];

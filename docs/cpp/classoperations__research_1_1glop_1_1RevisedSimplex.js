@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1RevisedSimplex =
 [
     [ "RevisedSimplex", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a6b0d1c2fd988e5709c99053998cf27dc", null ],
+    [ "RevisedSimplex", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a89b9d1c475902ac45c50ef1574d57b0f", null ],
     [ "ClearIntegralityScales", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a50cd75663101e37b6bbbf987e55b6f56", null ],
     [ "ClearStateForNextSolve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a5e353ae79c536da8360fc29132b8e145", null ],
     [ "ComputeBasicVariablesForState", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a79148b176583b2615e845e41e51f53bc", null ],
@@ -31,6 +32,7 @@ var classoperations__research_1_1glop_1_1RevisedSimplex =
     [ "NotifyThatMatrixIsChangedForNextSolve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#aff9c8cbf6d886db4a73985d098730e2d", null ],
     [ "NotifyThatMatrixIsUnchangedForNextSolve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a26fec72c423223b25923d12f7d579564", null ],
     [ "objective_limit_reached", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac9cb8f9d58f98c3379cee2c927b89e7a", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1RevisedSimplex.html#af1fa34bd763de6833c4048d473d7fa0d", null ],
     [ "SetIntegralityScale", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a0a067456421796bf9d92cfb485e1bdbf", null ],
     [ "SetLogger", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac2d81ff6f6c035f6cd5ba5e1ae93823b", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac03a15f3bedf70df3203d2ecafac4f3d", null ],

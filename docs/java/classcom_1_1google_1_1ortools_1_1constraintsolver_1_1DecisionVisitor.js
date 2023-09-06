@@ -6,6 +6,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor =
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a998a8b1f78e098e8269a90654a185de7", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#aafcca24ef26dac706dd9395c943ad03a", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a757bfc53ea68fe65bbca0395728fdcd8", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a6261713c4a2ff24d9a6eb2cd81b6e09d", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a55675f527921fd2e6c0a4d2b6be2d3a1", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a3c94ea7b09b8e67918a28e22a8dc06db", null ],
     [ "visitRankFirstInterval", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionVisitor.html#a173dad118e6003a160dbfa20a72bfe72", null ],

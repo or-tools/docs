@@ -15,6 +15,7 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective =
     [ "setMinimization", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#a741c258a6eb7b5f2c19d3ce33035d2cd", null ],
     [ "setOffset", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#ab4a51dccf73d20f951f830f7cd350d3a", null ],
     [ "setOptimizationDirection", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#ac7fdd58fe7b77691c33c01bfdf9dbc09", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#a487f341b32941ad4c0acf6bfa07ed172", null ],
     [ "value", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#ad94745cecae2857144eff69562be27c0", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPObjective.html#a5bab1b67ddd8d12283bc9a4920ba6359", null ]
 ];

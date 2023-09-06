@@ -12,7 +12,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto =
     [ "getNumRows", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#a88fc7e3f54ec061f87ea3af3b738fd9e", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#affcbf654ba1b6872f69a863a95bca13d", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#a0c8c85d45635ff4d74a2d287c6586072", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#ae46daa5aae0db195f1c3b726c9cf5af2", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#ae8442c38ed2b0c8b287f20d2b3100677", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#a3adb036bc85553708bc1f81344e527b9", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1DenseMatrixProto.html#a59941218e83c1bf1b3a5a019d3f63a9f", null ],

@@ -3,6 +3,7 @@ var cp__model__solver_8h =
     [ "CpModelStats", "cp__model__solver_8h.html#a287579e5f181fc7c89feccf1128faffb", null ],
     [ "CpSatSolverVersion", "cp__model__solver_8h.html#a864c163d77d4ede1b9111a426493a497", null ],
     [ "CpSolverResponseStats", "cp__model__solver_8h.html#af443c47f14a044d69553b02337b5dc52", null ],
+    [ "LoadAndSolveCpModelForTest", "cp__model__solver_8h.html#a277ebf478f1fa693dd01867071080203", null ],
     [ "NewFeasibleSolutionObserver", "cp__model__solver_8h.html#a0558490428f07c5db7b6ae292001375c", null ],
     [ "NewSatParameters", "cp__model__solver_8h.html#adbf4fa68898b3aaa2e6de2b5d3064580", null ],
     [ "NewSatParameters", "cp__model__solver_8h.html#a10700832ca6bc420f2931eb707957b0b", null ],

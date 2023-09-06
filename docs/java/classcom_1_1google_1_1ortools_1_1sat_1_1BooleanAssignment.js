@@ -10,7 +10,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment =
     [ "getLiteralsList", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a37221508a70fdae5242e0f68772a70ab", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a081fbf643d6aa5bf6def2659e03ec4ca", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#ac1cbc08fcdaa0506fa44d01c748e8d27", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#aa1d261f5d79159218226a2089ed805f0", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a6c3c6b25a7ffe92e02047d59f0739318", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a1fd95eaec40efdc7a800183ad228fcd2", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#abb737d133b931d63e74db784e4859644", null ],

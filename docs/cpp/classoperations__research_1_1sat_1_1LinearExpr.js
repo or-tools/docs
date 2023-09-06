@@ -8,7 +8,7 @@ var classoperations__research_1_1sat_1_1LinearExpr =
     [ "constant", "classoperations__research_1_1sat_1_1LinearExpr.html#ac40bd676cb325480e634f6841af0f5c7", null ],
     [ "DebugString", "classoperations__research_1_1sat_1_1LinearExpr.html#a70cd8ac7968f599e7773f69e91a3c16e", null ],
     [ "FromProto", "classoperations__research_1_1sat_1_1LinearExpr.html#ad41090ccdb2675d8909aa054fd5af955", null ],
-    [ "IsConstant", "classoperations__research_1_1sat_1_1LinearExpr.html#ae3c47213a3add27c73e8cdbab035150f", null ],
+    [ "IsConstant", "classoperations__research_1_1sat_1_1LinearExpr.html#a074dbfe3136be483679eced38501a23c", null ],
     [ "operator*=", "classoperations__research_1_1sat_1_1LinearExpr.html#a57c8560a2dd20adb8fe497b1a4e556eb", null ],
     [ "operator+=", "classoperations__research_1_1sat_1_1LinearExpr.html#ae376d916020e052894fd7652e37efa33", null ],
     [ "operator-=", "classoperations__research_1_1sat_1_1LinearExpr.html#aab8e5218aca9b460a24d323df42a94f1", null ],

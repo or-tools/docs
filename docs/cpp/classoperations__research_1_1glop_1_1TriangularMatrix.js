@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1TriangularMatrix =
 [
     [ "TriangularMatrix", "classoperations__research_1_1glop_1_1TriangularMatrix.html#aaf5be25e26d62b572eb5576929fe114e", null ],
+    [ "TriangularMatrix", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a74373c50b2093863eb42646b74c0ad43", null ],
     [ "AddAndNormalizeTriangularColumn", "classoperations__research_1_1glop_1_1TriangularMatrix.html#ad5f38322fa7495d265b8a9d165e04661", null ],
     [ "AddDiagonalOnlyColumn", "classoperations__research_1_1glop_1_1TriangularMatrix.html#abc70f5974dbcb58cd07ff5f9277bf80d", null ],
     [ "AddTriangularColumn", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a4d31884da28c49e7aee04e4a6a715bc1", null ],
@@ -27,6 +28,7 @@ var classoperations__research_1_1glop_1_1TriangularMatrix =
     [ "num_entries", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a73fb9b4264dee8df4845b10f5000e2b4", null ],
     [ "num_rows", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a5c2e47c4b3156f36cb3350f531b8b2f0", null ],
     [ "NumFpOperationsInLastPermutedLowerSparseSolve", "classoperations__research_1_1glop_1_1TriangularMatrix.html#acf32761bb3da2ff68c7482d37f323c9e", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a683b9020d4b26120c30201410595e2dc", null ],
     [ "PermutedComputeRowsToConsider", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a59c08cd91eb0e857026e41d248bf6fbf", null ],
     [ "PermutedLowerSolve", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a02cf3078a1c52efd7e2a2589baef5dd4", null ],
     [ "PermutedLowerSparseSolve", "classoperations__research_1_1glop_1_1TriangularMatrix.html#accd27fcf09dbc70b99c5ff3420df68ab", null ],

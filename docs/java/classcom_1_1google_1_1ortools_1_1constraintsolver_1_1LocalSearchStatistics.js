@@ -31,7 +31,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics =
     [ "getTotalNumAcceptedNeighbors", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#aadb5f961828662ca0ddaeab5e54f8f4a", null ],
     [ "getTotalNumFilteredNeighbors", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#a606f3db9b59b076d8371bf69acead55e", null ],
     [ "getTotalNumNeighbors", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#a51c087b84116693ae1f647957cbd186b", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#a8fb93c73b06d20dafac8e544a8813038", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#aa63c5b2ba33eb820dc77515ed06cda39", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#a60da7502ef4d4607395158d1790ed3a0", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html#ae173b9e7fad8c5f3b0b6034941fc573f", null ],

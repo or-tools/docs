@@ -11,5 +11,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair =
     [ "getSecond", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html#a1f1837b518b141bdae22a27d5144d1bf", null ],
     [ "setFirst", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html#a5b0fed14e2468da17f0c68151c24aafe", null ],
     [ "setSecond", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html#af48d583dbaedbd6acf755b246343a5ee", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html#aa9d09bc2b6a997d3dce2e79ddec7abe6", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html#ac7f156bc97ff700f09c96a4ef73fa962", null ]
 ];

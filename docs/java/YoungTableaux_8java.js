@@ -1,4 +1,0 @@
-var YoungTableaux_8java =
-[
-    [ "com.google.ortools.contrib.YoungTableaux", "classcom_1_1google_1_1ortools_1_1contrib_1_1YoungTableaux.html", "classcom_1_1google_1_1ortools_1_1contrib_1_1YoungTableaux" ]
-];

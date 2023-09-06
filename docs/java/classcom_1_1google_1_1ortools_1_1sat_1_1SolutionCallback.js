@@ -17,6 +17,7 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback =
     [ "solutionIntegerValue", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a18f4cbeca86ff7d2c8a15874c7bafbea", null ],
     [ "stopSearch", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a637881b88e24b2939f89ccf51d5ec72f", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#ae5f58d09a9f920413ac3e8705a4fb09e", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#aceb3c8f8ba07b98d09143139659f8fe9", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#adce8a620de1d6ab2af0779970a4a6f0f", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a552bb2bc3ae166b6d0f7ddc5e7cc3e4c", null ],
     [ "userTime", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a3ae7a23955eabf848b2370f4a31bd56a", null ],

@@ -10,5 +10,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost =
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html#a4ccc38e8dabbc471583b3e025cfe1316", null ],
     [ "setBound", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html#a50b486e60064e85967cd78f99593a63f", null ],
     [ "setCost", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html#a13346ec6f739073e3a412a5189ba5b11", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html#a5f02534abb1ebc357dbfa15fdf59802d", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html#a399b5d1026e9e70449c70a3302c787ef", null ]
 ];

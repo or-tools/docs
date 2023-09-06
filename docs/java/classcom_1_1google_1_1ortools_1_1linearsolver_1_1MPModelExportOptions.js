@@ -13,5 +13,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions =
     [ "setMaxLineLength", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions.html#a391fd2b3832a7a70872baaefff47037f", null ],
     [ "setObfuscate", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions.html#a3330e5a733963a9f8cf46a0813e89021", null ],
     [ "setShowUnusedVariables", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions.html#a5593d2d4f7a796f67a8ef04e5e189321", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions.html#a915282b4105795d985786629b21cd348", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelExportOptions.html#ad025bbe45409122e2d919c5acb172ea2", null ]
 ];

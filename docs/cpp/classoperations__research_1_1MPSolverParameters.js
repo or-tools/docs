@@ -29,8 +29,10 @@ var classoperations__research_1_1MPSolverParameters =
       [ "SCALING_ON", "classoperations__research_1_1MPSolverParameters.html#ae77fef975a893d6118d955ef2eb72ac9a33cf90a88928c32c5b56c9375d7dfd18", null ]
     ] ],
     [ "MPSolverParameters", "classoperations__research_1_1MPSolverParameters.html#accb1cea31a73bd0b09bb75882baa9e5f", null ],
+    [ "MPSolverParameters", "classoperations__research_1_1MPSolverParameters.html#a111f953d893ea979ac3cb541e8ac023b", null ],
     [ "GetDoubleParam", "classoperations__research_1_1MPSolverParameters.html#a4423dd8b21b413522d8b91e4536cfa08", null ],
     [ "GetIntegerParam", "classoperations__research_1_1MPSolverParameters.html#ae9e67424e09a35840b4fda2942b94c6f", null ],
+    [ "operator=", "classoperations__research_1_1MPSolverParameters.html#a282bebc6189294a7f282b3ec05acbd68", null ],
     [ "Reset", "classoperations__research_1_1MPSolverParameters.html#ada3cdf5254959f2807c3d27bb7e18e27", null ],
     [ "ResetDoubleParam", "classoperations__research_1_1MPSolverParameters.html#a7bc16e5febd0604a3400572c0e35c490", null ],
     [ "ResetIntegerParam", "classoperations__research_1_1MPSolverParameters.html#a100330795edeb8c1b12c7b8ff74611df", null ],

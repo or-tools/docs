@@ -31,7 +31,7 @@ var structoperations__research_1_1fz_1_1Argument =
     [ "ValueAt", "structoperations__research_1_1fz_1_1Argument.html#a74ab4a8700e3302991f15d0b16a6608e", null ],
     [ "Var", "structoperations__research_1_1fz_1_1Argument.html#a18ae6fa7049475ee45ce9f013470912c", null ],
     [ "VarAt", "structoperations__research_1_1fz_1_1Argument.html#a318b9e32c8e0a1e2bef33a14a1eae9bb", null ],
-    [ "VarRef", "structoperations__research_1_1fz_1_1Argument.html#adf864b6ff66f39a2b142fd1a7be4406d", null ],
+    [ "VarRef", "structoperations__research_1_1fz_1_1Argument.html#a9575435744ad374f93987e2bc892c8a2", null ],
     [ "VarRefArray", "structoperations__research_1_1fz_1_1Argument.html#ad0922fb4bea982ffe9a3aa026883d3ca", null ],
     [ "VoidArgument", "structoperations__research_1_1fz_1_1Argument.html#a34f423e20c99303ff4b6939f47e8728e", null ],
     [ "domains", "structoperations__research_1_1fz_1_1Argument.html#a22c8a6568e202e805ab0e953b801ef12", null ],

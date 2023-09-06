@@ -1,6 +1,6 @@
 var classoperations__research_1_1DisjunctiveConstraint =
 [
-    [ "DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#a204df98d042e4eb2954aea4563a950e9", null ],
+    [ "DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#a778b4c7c5f9a8968f54a40466a3d7dcf", null ],
     [ "~DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#adc7d8ad50b0d9c98c59f7f9c3f6bda6c", null ],
     [ "actives", "classoperations__research_1_1DisjunctiveConstraint.html#aa622045fea707f79778fda6a5cb91407", null ],
     [ "MakeSequenceVar", "classoperations__research_1_1DisjunctiveConstraint.html#a52114e41b3fbb706799aee332bf106a6", null ],

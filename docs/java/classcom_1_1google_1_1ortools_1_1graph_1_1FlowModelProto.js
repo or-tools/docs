@@ -19,7 +19,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#acf78964ce4008ebe81822a9c2589ed9d", null ],
     [ "getProblemType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#af2f082172d31f8cb99e177139111bb60", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#afd5501a1374d9e7904b1e9c6d261ef95", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a59122d030d828be26651630a45a25f48", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#af5db1f7b70c96d648a376198078cad5e", null ],
     [ "hasProblemType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ac024379d1b90ba0e2c3195846ab9e2d4", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a63e7e93131d48ba84b8eb0424fcfee43", null ],

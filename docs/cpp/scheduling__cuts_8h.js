@@ -8,8 +8,8 @@ var scheduling__cuts_8h =
     [ "CreateCumulativeEnergyCutGenerator", "scheduling__cuts_8h.html#a55cafa81679ac10c971927ca17ec7f2e", null ],
     [ "CreateCumulativePrecedenceCutGenerator", "scheduling__cuts_8h.html#a3472d7c626a01bde822df5443fc76d87", null ],
     [ "CreateCumulativeTimeTableCutGenerator", "scheduling__cuts_8h.html#a808babe15ef3ed46b6b0fdc42653e1da", null ],
-    [ "CreateNoOverlap2dCompletionTimeCutGenerator", "scheduling__cuts_8h.html#a09a2bf4928145f3d7a20f7599a8ee7e7", null ],
-    [ "CreateNoOverlap2dEnergyCutGenerator", "scheduling__cuts_8h.html#a7476bb98ab0ea94ff683d75525fc1f27", null ],
+    [ "CreateNoOverlap2dCompletionTimeCutGenerator", "scheduling__cuts_8h.html#a5453ae22e516e4fb4216ea56bab9d860", null ],
+    [ "CreateNoOverlap2dEnergyCutGenerator", "scheduling__cuts_8h.html#ae19357ee0ddd4752e39f7bbf6cb3ae05", null ],
     [ "CreateNoOverlapCompletionTimeCutGenerator", "scheduling__cuts_8h.html#a8bb41d6a99bb282019a1a7efc6250ce5", null ],
     [ "CreateNoOverlapEnergyCutGenerator", "scheduling__cuts_8h.html#ab20782292f65eff3a95731906141a718", null ],
     [ "CreateNoOverlapPrecedenceCutGenerator", "scheduling__cuts_8h.html#abe41a207e47ea846654b9cb973c0b4b5", null ]

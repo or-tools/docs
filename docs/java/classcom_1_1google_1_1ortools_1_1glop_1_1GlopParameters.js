@@ -62,7 +62,6 @@ var classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters =
     [ "getSmallPivotThreshold", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a3bee9e33ed2c4ddc89db1c52b42f7f84", null ],
     [ "getSolutionFeasibilityTolerance", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#ab70ddcaaf3b8dcc2a7a67b6fd536350e", null ],
     [ "getSolveDualProblem", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a51595a0062d9957ec6f580fd0fba5a6b", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a722ff66e151de984778709ef753ca9a9", null ],
     [ "getUseDedicatedDualFeasibilityAlgorithm", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a88ddc97e1fed5f8ce103fb0ee17bd7df", null ],
     [ "getUseDualSimplex", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#afd14ee62b48a31377ff83bec74bc3b39", null ],
     [ "getUseImpliedFreePreprocessor", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a6f21e82aca4115f77cca2b4d275b680a", null ],

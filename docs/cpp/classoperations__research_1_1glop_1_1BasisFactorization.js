@@ -1,6 +1,7 @@
 var classoperations__research_1_1glop_1_1BasisFactorization =
 [
     [ "BasisFactorization", "classoperations__research_1_1glop_1_1BasisFactorization.html#a5129f6df13a76bd60e8d3deec7ccc9bf", null ],
+    [ "BasisFactorization", "classoperations__research_1_1glop_1_1BasisFactorization.html#a8d62821baf38cc58eeb8181901de1315", null ],
     [ "~BasisFactorization", "classoperations__research_1_1glop_1_1BasisFactorization.html#ada9b0cc0d21f4296c8b9a1e8e7056315", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1BasisFactorization.html#abefe20bdbf4d97ebd896ff6053d7e227", null ],
     [ "ComputeInfinityNorm", "classoperations__research_1_1glop_1_1BasisFactorization.html#a09529aaefb98253313b16412e9fe2c07", null ],
@@ -21,6 +22,7 @@ var classoperations__research_1_1glop_1_1BasisFactorization =
     [ "LeftSolve", "classoperations__research_1_1glop_1_1BasisFactorization.html#ab551189dd36773dbdbf300521e8cc460", null ],
     [ "LeftSolveForUnitRow", "classoperations__research_1_1glop_1_1BasisFactorization.html#a36047a395ef9ba14a16af98774b0bb26", null ],
     [ "NumUpdates", "classoperations__research_1_1glop_1_1BasisFactorization.html#a3414407e34d02446d293801e4159a0ae", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1BasisFactorization.html#a99c3f146a62ba96496dcee7047f587dc", null ],
     [ "Refactorize", "classoperations__research_1_1glop_1_1BasisFactorization.html#aad0102712226c873c131f1fc01ecafc3", null ],
     [ "ResetStats", "classoperations__research_1_1glop_1_1BasisFactorization.html#a4d53111146069ed95a41522ecda954f8", null ],
     [ "RightSolve", "classoperations__research_1_1glop_1_1BasisFactorization.html#a350dbf8381cf2189835d14e607ec49f3", null ],

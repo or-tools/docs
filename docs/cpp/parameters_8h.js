@@ -1,6 +1,7 @@
 var parameters_8h =
 [
     [ "operations_research::math_opt::GurobiParameters", "structoperations__research_1_1math__opt_1_1GurobiParameters.html", "structoperations__research_1_1math__opt_1_1GurobiParameters" ],
+    [ "operations_research::math_opt::GlpkParameters", "structoperations__research_1_1math__opt_1_1GlpkParameters.html", "structoperations__research_1_1math__opt_1_1GlpkParameters" ],
     [ "operations_research::math_opt::SolveParameters", "structoperations__research_1_1math__opt_1_1SolveParameters.html", "structoperations__research_1_1math__opt_1_1SolveParameters" ],
     [ "Emphasis", "parameters_8h.html#a322dff029ac8b26a6056a11211e14efd", [
       [ "kOff", "parameters_8h.html#a322dff029ac8b26a6056a11211e14efdacc9ab5e60ac2a9a675ba64bf4bb49dc8", null ],
@@ -12,14 +13,18 @@ var parameters_8h =
     [ "LPAlgorithm", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3", [
       [ "kPrimalSimplex", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3a3109cf29ac1c83cbca48b23c11ca88fb", null ],
       [ "kDualSimplex", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3ac3a659d06e6ead2ed2179ebbfefc0734", null ],
-      [ "kBarrier", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3affa5976cb7170d234d6b69921bf0f085", null ]
+      [ "kBarrier", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3affa5976cb7170d234d6b69921bf0f085", null ],
+      [ "kFirstOrder", "parameters_8h.html#a35aa806123b336645d9f03aac61687e3a08247752b5d2a127be8dd1b1052d479c", null ]
     ] ],
     [ "SolverType", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7d", [
       [ "kGscip", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da30143491c833be17bff959fa79c72bda", null ],
       [ "kGurobi", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dabc8ddfb8a00bb405e68545ce187ac238", null ],
       [ "kGlop", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da512b5059e1ca814e697fb191d93aaf7f", null ],
       [ "kCpSat", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da44e5c1d9f55c30721e6b79c5ca328a62", null ],
-      [ "kGlpk", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dae2a40eea095a7c19652eff4af08a9144", null ]
+      [ "kGlpk", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dae2a40eea095a7c19652eff4af08a9144", null ],
+      [ "kEcos", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dad02dded0e6f07bc7c293054d023c608b", null ],
+      [ "kScs", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dad1ddb13aaaf649f197e0f6549596571c", null ],
+      [ "kHighs", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da2f251cef0d73c7a190c85afeb75d6ec5", null ]
     ] ],
     [ "AbslParseFlag", "parameters_8h.html#a1ce49faa8b059f86b8f68016119aa4a2", null ],
     [ "AbslParseFlag", "parameters_8h.html#a206556919b1c03d9f5bb8d6170b7c718", null ],

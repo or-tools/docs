@@ -8,9 +8,11 @@ var classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList =
     [ "delete", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a2ad8b1c1b9f498c6259ecd4cd8d0b02e", null ],
     [ "finalize", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#af862ad055d833226a567213b426fffde", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a8016f31f79585c1c7f187103b48dfbaf", null ],
+    [ "insertInterval", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a88e78968667357eed76e6084767dff0e", null ],
     [ "insertIntervals", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#ac4976df8cba0b2b6b562162fa0b57cbe", null ],
     [ "insertIntervals", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a3718baa8fd2cdbd7806908600d182611", null ],
     [ "numIntervals", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a1885d2022862877e95e3bf2639ccb8f7", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a5c22253f4d8b16fef8300e9d49d8a101", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#a7544de574928391a1019a158216db05b", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1util_1_1SortedDisjointIntervalList.html#aa24e2f170b5b4169f38f96143ee7024c", null ]
 ];

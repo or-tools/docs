@@ -9,6 +9,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder =
     [ "nextWrap", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a868cd3e8de630e6e4d400e4909648808", null ],
     [ "set_name", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a94e201dfed10443860cf77227193df0a", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a537c035d613b4940217479bcd83d542d", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#ae3f72e51c48312ef0bbac8480f0c00b9", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a98a96624cda6829fe95610a5b7adba32", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a2e301dcd5386104e5f8e10a95c1ae925", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a60d750f40294310ed2ef6ae420ec51f8", null ]

@@ -1,9 +1,9 @@
 var classoperations__research_1_1CBCInterface =
 [
-    [ "CBCInterface", "classoperations__research_1_1CBCInterface.html#ad33673a0469ef0ae78ac200d7072876d", null ],
+    [ "CBCInterface", "classoperations__research_1_1CBCInterface.html#a286d0382e90300f4f7eddfa6d1cc9c4a", null ],
     [ "~CBCInterface", "classoperations__research_1_1CBCInterface.html#ac11cad2412c1ff3a4e1eedc35589038b", null ],
-    [ "AddRowConstraint", "classoperations__research_1_1CBCInterface.html#ac25fea72dbbecc357410b99037d41a05", null ],
-    [ "AddVariable", "classoperations__research_1_1CBCInterface.html#afdd33fd5a427a37453db37e4a32f5480", null ],
+    [ "AddRowConstraint", "classoperations__research_1_1CBCInterface.html#a1406612f929ee6f6323b08ad3a4f5f2f", null ],
+    [ "AddVariable", "classoperations__research_1_1CBCInterface.html#a74d4234b270a92c9ff924757b4fdcf1e", null ],
     [ "ClearConstraint", "classoperations__research_1_1CBCInterface.html#a176ead637b2953e0e65fe1f1a905e1ab", null ],
     [ "ClearObjective", "classoperations__research_1_1CBCInterface.html#a143e6b766ecbcb6de7023427d4487658", null ],
     [ "column_status", "classoperations__research_1_1CBCInterface.html#a78679f5a04562bbfc9aee751ee387abd", null ],

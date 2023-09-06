@@ -1,7 +1,7 @@
 var classoperations__research_1_1SequenceVarElement =
 [
     [ "SequenceVarElement", "classoperations__research_1_1SequenceVarElement.html#a40179b14fb9451e5d8f6fc3666a6caa9", null ],
-    [ "SequenceVarElement", "classoperations__research_1_1SequenceVarElement.html#ac5f3f869b023af1f5580ed913bdb962f", null ],
+    [ "SequenceVarElement", "classoperations__research_1_1SequenceVarElement.html#af3e93996c9dd46d10b5139826eff5f6c", null ],
     [ "BackwardSequence", "classoperations__research_1_1SequenceVarElement.html#a7fa0aaebef721b2928c83446549f2f5d", null ],
     [ "Bound", "classoperations__research_1_1SequenceVarElement.html#a5439b37d5c44ae4c1b22b85073a82d6c", null ],
     [ "Clone", "classoperations__research_1_1SequenceVarElement.html#a3c8f41ed4d471e70937c2475f1b74307", null ],
@@ -11,7 +11,7 @@ var classoperations__research_1_1SequenceVarElement =
     [ "LoadFromProto", "classoperations__research_1_1SequenceVarElement.html#af1c4120e8b1b34d629b0b2fae26e2b26", null ],
     [ "operator!=", "classoperations__research_1_1SequenceVarElement.html#a41b758288965e16fa33baf041c7d981b", null ],
     [ "operator==", "classoperations__research_1_1SequenceVarElement.html#a2dde19669941089f5262965a4de3fb8a", null ],
-    [ "Reset", "classoperations__research_1_1SequenceVarElement.html#a7aad1cd8d56d5d85aaad8face6643e64", null ],
+    [ "Reset", "classoperations__research_1_1SequenceVarElement.html#a2540cb620f63d09bdc2cb118a86c43e5", null ],
     [ "Restore", "classoperations__research_1_1SequenceVarElement.html#a136038294620a9a9d575eae64a3019eb", null ],
     [ "SetBackwardSequence", "classoperations__research_1_1SequenceVarElement.html#a7296d95d6ce7890ff1ace7779dee8755", null ],
     [ "SetForwardSequence", "classoperations__research_1_1SequenceVarElement.html#aa416720977aa00d0f25d352166f4f005", null ],

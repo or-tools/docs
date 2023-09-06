@@ -1,5 +1,10 @@
 var interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder =
 [
+    [ "getFeasibilityPolishingDetails", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#a1c0b0c2503be0fdfe961eea7ef811bff", null ],
+    [ "getFeasibilityPolishingDetailsCount", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#ae66c293fc4b7114220a74bf35f2aa754", null ],
+    [ "getFeasibilityPolishingDetailsList", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#a98b9dc05ae1813d5043b3beca2a4fe03", null ],
+    [ "getFeasibilityPolishingDetailsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#af0e2e1e3b9497ea96a0ad08ce8125f24", null ],
+    [ "getFeasibilityPolishingDetailsOrBuilderList", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#a2ffac741bdf0e54efce285b5aadd35c7", null ],
     [ "getInstanceName", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#a9819374d65848cfb8b6c948a7caa6437", null ],
     [ "getInstanceNameBytes", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#ad4f77ddfc62c0b462ac5593413af5fc9", null ],
     [ "getIterationCount", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html#a8f69ba4f10e522ac39ffee634af746c5", null ],

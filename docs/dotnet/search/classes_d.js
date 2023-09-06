@@ -2,7 +2,7 @@ var searchData=
 [
   ['pack_0',['Pack',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack.html',1,'Google::OrTools::ConstraintSolver']]],
   ['parametersreflection_1',['ParametersReflection',['../classGoogle_1_1OrTools_1_1Glop_1_1ParametersReflection.html',1,'Google::OrTools::Glop']]],
-  ['partialvariableassignment_2',['PartialVariableAssignment',['../classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment.html',1,'Google.OrTools.Sat.PartialVariableAssignment'],['../classOperationsResearch_1_1PartialVariableAssignment.html',1,'OperationsResearch.PartialVariableAssignment']]],
+  ['partialvariableassignment_2',['partialvariableassignment',['../classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment.html',1,'Google.OrTools.Sat.PartialVariableAssignment'],['../classOperationsResearch_1_1PartialVariableAssignment.html',1,'OperationsResearch.PartialVariableAssignment']]],
   ['pathoperator_3',['PathOperator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathOperator.html',1,'Google::OrTools::ConstraintSolver']]],
   ['pathsmetadata_4',['PathsMetadata',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathsMetadata.html',1,'Google::OrTools::ConstraintSolver']]],
   ['piecewiselinearformulation_5',['PiecewiseLinearFormulation',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html',1,'Google::OrTools::ConstraintSolver::RoutingModel::RouteDimensionTravelInfo::TransitionInfo']]],

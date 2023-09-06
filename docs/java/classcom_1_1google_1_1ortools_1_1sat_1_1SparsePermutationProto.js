@@ -13,7 +13,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto =
     [ "getSupport", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#a0d1aa10ce104a68738d09a692b96fa04", null ],
     [ "getSupportCount", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#a2146f4f1338cca86e9fd8ebcd158f5eb", null ],
     [ "getSupportList", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#ac67a39717b245d36940bdcdd4c39161e", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#ad7c4718bb793dcc1d01977eeece7f0ad", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#ad395def09ce5c1460c3abf0ec26635ba", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#afd05f9c5578c344f4142f59f67bfe829", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html#a59b59c84ee749152e6b0097b81d4de3e", null ],

@@ -9,7 +9,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#afb5901397d53935a83823025a6b63057", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#aec3a3cf82b6aec531026e9e796d711d2", null ],
     [ "getType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#a2fa52dd4b87db6511cc260426b528f27", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#a316ab3520810b7bfac29765384e87654", null ],
     [ "getVarIndex", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#ac03fe8c5ac58e500615ef52a89c81521", null ],
     [ "getVarIndexCount", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#ab10cd841fd1610b6cfed2f8e6596da79", null ],
     [ "getVarIndexList", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#a1687d8e64a904d61fd4902f8f17025f8", null ],

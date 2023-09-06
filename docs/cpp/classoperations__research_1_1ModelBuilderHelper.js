@@ -20,6 +20,8 @@ var classoperations__research_1_1ModelBuilderHelper =
     [ "num_constraints", "classoperations__research_1_1ModelBuilderHelper.html#a26d7ba03b46b2c7d3963ca46e226245d", null ],
     [ "num_variables", "classoperations__research_1_1ModelBuilderHelper.html#ad75125d0508334af953f7e3d78e34b11", null ],
     [ "ObjectiveOffset", "classoperations__research_1_1ModelBuilderHelper.html#afe8f0daf9962d84f8ac5b86037a40f3d", null ],
+    [ "SafeAddConstraintTerm", "classoperations__research_1_1ModelBuilderHelper.html#a3738cdce8361c43d363ea6f597e8fa34", null ],
+    [ "SetConstraintCoefficient", "classoperations__research_1_1ModelBuilderHelper.html#a1941efa442ba1e68093d0f7a21a65dec", null ],
     [ "SetConstraintLowerBound", "classoperations__research_1_1ModelBuilderHelper.html#ab1394b2935fb1e30e3e041c2c9cbf533", null ],
     [ "SetConstraintName", "classoperations__research_1_1ModelBuilderHelper.html#a3633fadc6d0dcb58363573a792e6ba2c", null ],
     [ "SetConstraintUpperBound", "classoperations__research_1_1ModelBuilderHelper.html#a21678bc4fb52380cd37d65b781c75791", null ],

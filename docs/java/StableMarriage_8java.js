@@ -1,4 +1,0 @@
-var StableMarriage_8java =
-[
-    [ "com.google.ortools.contrib.StableMarriage", "classcom_1_1google_1_1ortools_1_1contrib_1_1StableMarriage.html", "classcom_1_1google_1_1ortools_1_1contrib_1_1StableMarriage" ]
-];

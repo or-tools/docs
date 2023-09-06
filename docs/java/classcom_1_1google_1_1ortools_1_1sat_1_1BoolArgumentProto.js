@@ -10,7 +10,6 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto =
     [ "getLiteralsList", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a2fc7333ab9e7e3003d5ef9c93f7c7f42", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a8b6ba3645916df62e574ac759a367425", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a438ca31cbdedf58645825301deed8a0c", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#ae56dd3b7cbf1751bca421ad44353ade5", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a30aae54c9f25620d812042c6e0fd6f48", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a2cf33e6094300c49918f14ee671a75e0", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html#a4652014131e6c9552355f81a13a9a2a2", null ],

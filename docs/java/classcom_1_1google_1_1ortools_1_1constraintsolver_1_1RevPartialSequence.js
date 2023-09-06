@@ -12,6 +12,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence =
     [ "rankFirst", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#a84e33824ad75019230daa08a3acb25b8", null ],
     [ "rankLast", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#a50517cd4006619801f0baed540685273", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#a8b9c9c1736dd37a895dfda30a79e0a26", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#a0c7228595998cdf89f6a55f0aef9f6f0", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#ac6056859327eb43c8a828423f8b7639c", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html#a5d564c2ffdd8dc29076447a314f27796", null ]
 ];

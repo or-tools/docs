@@ -7,7 +7,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment =
     [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a0acced255cbf175b43d87d7a109de886", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#ac4c487ea28cbe86c97bd03774977b4e7", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a86323b7fcac9fca832c006e6af331e34", null ],
-    [ "getUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a7519493e4263cd34c34d037c77c51c49", null ],
     [ "getVarIndex", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#afa9ededa1f0e2293dea56b5cfc82fc58", null ],
     [ "getVarIndexCount", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a646c1b9078bda39029d65a0857b6ad0a", null ],
     [ "getVarIndexList", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a71eea53f9a906cbb1e1aca0b2cf586f7", null ],

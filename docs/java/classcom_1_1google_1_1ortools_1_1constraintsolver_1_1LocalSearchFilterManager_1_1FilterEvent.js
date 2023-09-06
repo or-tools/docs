@@ -11,5 +11,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManage
     [ "setEventType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html#a4275763273bf71c6ba0cc2304e8a3748", null ],
     [ "setFilter", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html#a9c27e3dd4a4ca3d2da79ef1d6b827308", null ],
     [ "setPriority", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html#a80dd83134b59915216f6f7abb8968ee9", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html#af3fb08adf69c94de4816ced5110977d8", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html#a89e59c1ac9eb4947b47f413bba537816", null ]
 ];

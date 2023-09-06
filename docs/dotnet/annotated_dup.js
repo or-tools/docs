@@ -75,6 +75,7 @@ var annotated_dup =
           [ "LocalSearchStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics" ],
           [ "ModelCache", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelCache.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelCache" ],
           [ "ModelVisitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor" ],
+          [ "ObjectiveMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor" ],
           [ "operations_research_constraint_solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solver.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solver" ],
           [ "operations_research_constraint_solverPINVOKE", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE" ],
           [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar" ],
@@ -204,9 +205,6 @@ var annotated_dup =
           [ "SymmetryProto", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto" ],
           [ "TableConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1TableConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1TableConstraintProto" ]
         ] ],
-        [ "Tests", "namespaceGoogle_1_1OrTools_1_1Tests.html", [
-          [ "KnapsakSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1KnapsakSolverTest.html", "classGoogle_1_1OrTools_1_1Tests_1_1KnapsakSolverTest" ]
-        ] ],
         [ "Util", "namespaceGoogle_1_1OrTools_1_1Util.html", [
           [ "Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", "classGoogle_1_1OrTools_1_1Util_1_1Domain" ],
           [ "Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector" ],
@@ -223,6 +221,7 @@ var annotated_dup =
       [ "Pdlp", "namespaceOperationsResearch_1_1Pdlp.html", [
         [ "AdaptiveLinesearchParams", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams.html", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams" ],
         [ "ConvergenceInformation", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation.html", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation" ],
+        [ "FeasibilityPolishingDetails", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails" ],
         [ "InfeasibilityInformation", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation.html", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation" ],
         [ "IterationStats", "classOperationsResearch_1_1Pdlp_1_1IterationStats.html", "classOperationsResearch_1_1Pdlp_1_1IterationStats" ],
         [ "MalitskyPockParams", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams.html", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams" ],

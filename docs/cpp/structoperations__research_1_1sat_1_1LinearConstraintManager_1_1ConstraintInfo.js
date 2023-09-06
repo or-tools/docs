@@ -8,6 +8,8 @@ var structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintIn
     [ "is_deletable", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#abdf73acb15ffe53b95a4131d9ba9aac9", null ],
     [ "is_in_lp", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#ac4fd296487a99ae0fd9635c3d4f2123d", null ],
     [ "l2_norm", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a6e207bb74e4a93a35abca906214acbbf", null ],
+    [ "lb_is_trivial", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a379365d0bc9493f9c20aca09840692b9", null ],
     [ "objective_parallelism", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a666d9247ef04126b6329a1715e7888f5", null ],
-    [ "objective_parallelism_computed", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#af933df23d6da0e5b34f2f92696b70800", null ]
+    [ "objective_parallelism_computed", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#af933df23d6da0e5b34f2f92696b70800", null ],
+    [ "ub_is_trivial", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a410fd1132c5454e621bc015317b9c5ef", null ]
 ];

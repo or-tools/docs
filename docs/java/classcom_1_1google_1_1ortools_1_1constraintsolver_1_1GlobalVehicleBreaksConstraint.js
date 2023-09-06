@@ -7,5 +7,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksCons
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html#a61b74cf8326912ae36ca8b9f16da455a", null ],
     [ "initialPropagate", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html#a69ee68eba47592769a49d2e593a62050", null ],
     [ "post", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html#a232c407ade0358e6c1a05788534dad0e", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html#af110ebd4ef102312afdbed2fddaf28f8", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html#ab1b0dba9d4fee582afe3823cd4ce9f72", null ]
 ];

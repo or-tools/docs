@@ -6,6 +6,7 @@ var SolveLog_8pb_8cs =
     [ "OperationsResearch.Pdlp.InfeasibilityInformation", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation.html", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation" ],
     [ "OperationsResearch.Pdlp.PointMetadata", "classOperationsResearch_1_1Pdlp_1_1PointMetadata.html", "classOperationsResearch_1_1Pdlp_1_1PointMetadata" ],
     [ "OperationsResearch.Pdlp.IterationStats", "classOperationsResearch_1_1Pdlp_1_1IterationStats.html", "classOperationsResearch_1_1Pdlp_1_1IterationStats" ],
+    [ "OperationsResearch.Pdlp.FeasibilityPolishingDetails", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails" ],
     [ "OperationsResearch.Pdlp.SolveLog", "classOperationsResearch_1_1Pdlp_1_1SolveLog.html", "classOperationsResearch_1_1Pdlp_1_1SolveLog" ],
     [ "pb", "SolveLog_8pb_8cs.html#a3a8b1403f9034aa88aad1ce2c733db60", null ],
     [ "pbc", "SolveLog_8pb_8cs.html#acf353ca81053b715ef0a189df5a75499", null ],
@@ -17,7 +18,13 @@ var SolveLog_8pb_8cs =
       [ "IterateDifference", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fac15e904e2330568a295767a6985dd3cf", null ],
       [ "AverageIterate", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fadaf62c9d3393a8082b19accaf2bafaba", null ],
       [ "None", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fa6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "PresolverSolution", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fad49b557e580a67e66070249b2b0a55c1", null ]
+      [ "PresolverSolution", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fad49b557e580a67e66070249b2b0a55c1", null ],
+      [ "FeasibilityPolishingSolution", "SolveLog_8pb_8cs.html#ae2dfa9d033c5bfffd99e8b6db3da9a9fa1136b2a5ddb545b530a67b62e8389576", null ]
+    ] ],
+    [ "PolishingPhaseType", "SolveLog_8pb_8cs.html#a6c21c2a69e2385b5f93485bb39aeea02", [
+      [ "Unspecified", "SolveLog_8pb_8cs.html#a6c21c2a69e2385b5f93485bb39aeea02a6fcdc090caeade09d0efd6253932b6f5", null ],
+      [ "PrimalFeasibility", "SolveLog_8pb_8cs.html#a6c21c2a69e2385b5f93485bb39aeea02a2a373c38f1b8cfc3ce5534cd4af28d7c", null ],
+      [ "DualFeasibility", "SolveLog_8pb_8cs.html#a6c21c2a69e2385b5f93485bb39aeea02ace6cc871412b9ff35c8e4e8fac129814", null ]
     ] ],
     [ "RestartChoice", "SolveLog_8pb_8cs.html#a0f5b628e2674c1f14020a699550b2f47", [
       [ "Unspecified", "SolveLog_8pb_8cs.html#a0f5b628e2674c1f14020a699550b2f47a6fcdc090caeade09d0efd6253932b6f5", null ],

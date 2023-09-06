@@ -9,5 +9,6 @@ var classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion =
     [ "getMinorNumber", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html#a198c40d945b428152aed10dad91155be", null ],
     [ "getPatchNumber", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html#afa0ae33c98abf002fbb44139474899f7", null ],
     [ "getVersionString", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html#a09f4b79c32aa9a5b4da528092f4ae298", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html#abe6bb86181c3f6e0a21f0e679a50c11d", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html#a044239a8d7c08cc336e18d6b2495134d", null ]
 ];

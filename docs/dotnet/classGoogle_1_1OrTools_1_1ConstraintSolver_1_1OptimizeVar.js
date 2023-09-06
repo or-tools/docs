@@ -1,7 +1,7 @@
 var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar =
 [
-    [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a9179283d2b20d80fcc2afb558a67ff18", null ],
-    [ "Accept", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#aa8ef9e2931daa85077ceb57607b37a58", null ],
+    [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a942e197513c3d9274c2b5c3b0fe142f2", null ],
+    [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a9d4cdf46d0e051bebc6be67d6bc7e8b7", null ],
     [ "AcceptDelta", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a347a24891d2bf68ca17298ac3a241dd8", null ],
     [ "AcceptSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a7c38553ef38736163eada9bcf148559e", null ],
     [ "ApplyBound", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#abba8f6bdebbb9f5e1a47fae22a47f6a7", null ],
@@ -9,8 +9,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar =
     [ "BeginNextDecision", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a312f23d208c80cf0ab6458e7b3568c6a", null ],
     [ "Best", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a29111e48e65d492aa4fbde8b1d0b7ebe", null ],
     [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a9efbb4c353dc794cde69e3c7bea01060", null ],
-    [ "EnterSearch", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a31bca95f1464269107cc7d9e739c8205", null ],
-    [ "Print", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a568c81a7fd909939e1e97a5b81ce4c1c", null ],
+    [ "Name", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#af20fdca7a1d1e78805dfce9c876de5a7", null ],
     [ "RefuteDecision", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a9740cffb803b38dcb6477f0a2286514e", null ],
     [ "SwigDelegateOptimizeVar_0", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a0f2fa43b8dce536cde5e3f09980198a6", null ],
     [ "SwigDelegateOptimizeVar_1", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a17701bf1ec12d0b688004ec86acb2036", null ],

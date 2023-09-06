@@ -14,11 +14,6 @@ var xpress__interface_8cc =
       [ "XPRS_FREE_SUPER", "xpress__interface_8cc.html#a70b997695a5a44b2b07fc86c8b6d22daa912371cfb90995579e2c2d0b4f8ab13b", null ]
     ] ],
     [ "BuildXpressInterface", "xpress__interface_8cc.html#a939b48207f60a6bf3fc3f37ab9ffd481", null ],
-    [ "init_xpress_env", "xpress__interface_8cc.html#a94041c61f5d93e4c22f484eba7037867", null ],
-    [ "printError", "xpress__interface_8cc.html#a6e6000c5663fe9e8c356230afc20bc2d", null ],
-    [ "XPRSgetitcnt", "xpress__interface_8cc.html#a07898f601930941c2a61395263db954d", null ],
-    [ "XPRSgetnodecnt", "xpress__interface_8cc.html#a88d82a2a31c5a68993c7a3ff6304912a", null ],
-    [ "XPRSgetnumcols", "xpress__interface_8cc.html#ad9314d15249c2b7e122d19b09a122f40", null ],
-    [ "XPRSgetnumrows", "xpress__interface_8cc.html#a16df084def601d691f10988cd7b4946e", null ],
-    [ "XPRSsetobjoffset", "xpress__interface_8cc.html#aab6646e5308b4cd92736d9e8a4f7e686", null ]
+    [ "cbmessage", "xpress__interface_8cc.html#ab64c6541d0c0ca67d10d019a8466de04", null ],
+    [ "init_xpress_env", "xpress__interface_8cc.html#a94041c61f5d93e4c22f484eba7037867", null ]
 ];

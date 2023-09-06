@@ -1,4 +1,0 @@
-var dir_59d2894b0042086e030ecfac44e02898 =
-[
-    [ "ortools", "dir_9678eb28089965cadea11544056f0981.html", "dir_9678eb28089965cadea11544056f0981" ]
-];

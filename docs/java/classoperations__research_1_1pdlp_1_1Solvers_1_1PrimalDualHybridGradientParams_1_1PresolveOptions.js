@@ -9,7 +9,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientPara
     [ "getGlopParametersOrBuilder", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#adc737227e510393f8e199a11c1845dc7", null ],
     [ "getParserForType", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#aff545d8d24db16ad2b210f8a57bb75f0", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#a396bb2e51bd7da2641231516195f90d9", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#a956c20b395d4a175a3c6c1355c55783a", null ],
     [ "getUseGlop", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#a0ad23df62d91691a777187d31d964aaa", null ],
     [ "hasGlopParameters", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#af3eccdb0d015f3ca7e62458717a3aaed", null ],
     [ "hashCode", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html#a8a71b76545d8e29db0182dac250fd88f", null ],

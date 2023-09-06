@@ -13,6 +13,7 @@ var classoperations__research_1_1SCIPInterface =
     [ "ExtractNewConstraints", "classoperations__research_1_1SCIPInterface.html#a14fa927070e0689efa0127129d313c71", null ],
     [ "ExtractNewVariables", "classoperations__research_1_1SCIPInterface.html#a228e7423aaf5aed733c1760ab3976af4", null ],
     [ "ExtractObjective", "classoperations__research_1_1SCIPInterface.html#a0bcdd3ae9f68feefcc868861a72da909", null ],
+    [ "infinity", "classoperations__research_1_1SCIPInterface.html#a1ca79179dd5f04e12df4a87e105ade03", null ],
     [ "InterruptSolve", "classoperations__research_1_1SCIPInterface.html#a13bc281080fdd2e7e4e61151c1691c90", null ],
     [ "IsContinuous", "classoperations__research_1_1SCIPInterface.html#a2d6bbe7a34033ca9f747b962723a76c9", null ],
     [ "IsLP", "classoperations__research_1_1SCIPInterface.html#ae4a246185433dff56082eabbc8ed8d10", null ],

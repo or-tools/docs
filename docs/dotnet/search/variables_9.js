@@ -8,5 +8,8 @@ var searchData=
   ['kktmatrixpasslimitfieldnumber_5',['KktMatrixPassLimitFieldNumber',['../classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html#adecdc6e6879d8558289e77670378b23e',1,'OperationsResearch::Pdlp::TerminationCriteria']]],
   ['knoprogress_6',['kNoProgress',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitor.html#a77bcc440c50a9bfd54ec23d56cf922f8',1,'Google::OrTools::ConstraintSolver::SearchMonitor']]],
   ['knumpriorities_7',['kNumPriorities',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a99f5532adbd1c7c8fd5a92acaffda406',1,'Google::OrTools::ConstraintSolver::Solver']]],
-  ['krelax_8',['kRelax',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterManager.html#afad630c25014b3c4a4bfee92d4056999',1,'Google::OrTools::ConstraintSolver::LocalSearchFilterManager']]]
+  ['krelax_8',['kRelax',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterManager.html#afad630c25014b3c4a4bfee92d4056999',1,'Google::OrTools::ConstraintSolver::LocalSearchFilterManager']]],
+  ['ktransitevaluatorsignnegativeorzero_9',['kTransitEvaluatorSignNegativeOrZero',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel.html#a36bca6bbf0563b6a72cda40ed4b9b5fb',1,'Google::OrTools::ConstraintSolver::RoutingModel']]],
+  ['ktransitevaluatorsignpositiveorzero_10',['kTransitEvaluatorSignPositiveOrZero',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel.html#ad258866a321c2c9cc2cbf026e8e3e060',1,'Google::OrTools::ConstraintSolver::RoutingModel']]],
+  ['ktransitevaluatorsignunknown_11',['kTransitEvaluatorSignUnknown',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel.html#a77ac117c382ea4f188840294050287f0',1,'Google::OrTools::ConstraintSolver::RoutingModel']]]
 ];

@@ -1,6 +1,6 @@
 var classoperations__research_1_1glop_1_1RowDeletionHelper =
 [
-    [ "RowDeletionHelper", "classoperations__research_1_1glop_1_1RowDeletionHelper.html#acac5d38eb7cb33148fa3cf2ebdb640c1", null ],
+    [ "RowDeletionHelper", "classoperations__research_1_1glop_1_1RowDeletionHelper.html#ad0100e1bdaa479213758e2bd4f8fbb1b", null ],
     [ "RowDeletionHelper", "classoperations__research_1_1glop_1_1RowDeletionHelper.html#ad59c9a206a2dd4fa342d5333761eeb15", null ],
     [ "Clear", "classoperations__research_1_1glop_1_1RowDeletionHelper.html#a0780e1a6c95e2832da2c6e7d7236d939", null ],
     [ "GetMarkedRows", "classoperations__research_1_1glop_1_1RowDeletionHelper.html#a4ebde26bcb62adcd6c942c7548bb4df1", null ],

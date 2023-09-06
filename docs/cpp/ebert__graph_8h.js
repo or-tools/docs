@@ -22,8 +22,6 @@ var ebert__graph_8h =
     [ "operations_research::or_internal::TailArrayReleaser< GraphType, false >", "structoperations__research_1_1or__internal_1_1TailArrayReleaser_3_01GraphType_00_01false_01_4.html", "structoperations__research_1_1or__internal_1_1TailArrayReleaser_3_01GraphType_00_01false_01_4" ],
     [ "operations_research::TailArrayManager< GraphType >", "classoperations__research_1_1TailArrayManager.html", "classoperations__research_1_1TailArrayManager" ],
     [ "operations_research::ArcFunctorOrderingByTailAndHead< GraphType >", "classoperations__research_1_1ArcFunctorOrderingByTailAndHead.html", "classoperations__research_1_1ArcFunctorOrderingByTailAndHead" ],
-    [ "operations_research::or_internal::GraphBuilderFromArcs< GraphType, is_dynamic >", "classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs.html", "classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs" ],
-    [ "operations_research::or_internal::GraphBuilderFromArcs< GraphType, true >", "classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs_3_01GraphType_00_01true_01_4.html", "classoperations__research_1_1or__internal_1_1GraphBuilderFromArcs_3_01GraphType_00_01true_01_4" ],
     [ "operations_research::AnnotatedGraphBuildManager< GraphType >", "classoperations__research_1_1AnnotatedGraphBuildManager.html", "classoperations__research_1_1AnnotatedGraphBuildManager" ],
     [ "ArcIndex", "ebert__graph_8h.html#ac5c8d2e534fb97df3d169ebc7feb0cf5", null ],
     [ "ArcIndexArray", "ebert__graph_8h.html#aa79bf252fa6483cd33cbf95170353fb0", null ],

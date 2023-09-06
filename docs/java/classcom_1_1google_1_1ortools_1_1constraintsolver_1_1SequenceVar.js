@@ -14,5 +14,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar =
     [ "rankNotLast", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar.html#a027a458678afb13ab13c0b315b4c8577", null ],
     [ "rankSequence", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar.html#a3a78682e5c5f044cc3a81bd5a7beac89", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar.html#aea64b0725821cbff27d2aceb23036b58", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar.html#af97e24d5d1e0e14fea80993071027d8c", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SequenceVar.html#aeeff5d304f4ad0624f34384766dc9baf", null ]
 ];

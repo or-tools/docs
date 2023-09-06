@@ -1,7 +1,9 @@
 var classoperations__research_1_1sat_1_1LinearConstraintBuilder =
 [
     [ "LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a9c3eb68e76b59f3aae54a9d8cd4cf42e", null ],
+    [ "LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a288881037f48077f3e0ae9d359e302d4", null ],
     [ "LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#ab647d32fc7aed6b31c0d69457ff6ec0c", null ],
+    [ "LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a7e0efa89eb7eaa7b22c31c652b5392a9", null ],
     [ "LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a029e8c7ac32054484a98093c2ad7629a", null ],
     [ "AddConstant", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a8cb34dd2f2b4639c299c8070331bc8c7", null ],
     [ "AddDecomposedProduct", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a4a3f6799dadae4d157ae00fc941244d0", null ],

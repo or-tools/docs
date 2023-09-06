@@ -2,7 +2,7 @@ var subsolver_8h =
 [
     [ "operations_research::sat::SubSolver", "classoperations__research_1_1sat_1_1SubSolver.html", "classoperations__research_1_1sat_1_1SubSolver" ],
     [ "operations_research::sat::SynchronizationPoint", "classoperations__research_1_1sat_1_1SynchronizationPoint.html", "classoperations__research_1_1sat_1_1SynchronizationPoint" ],
-    [ "DeterministicLoop", "subsolver_8h.html#a43828ad95ab254ebf9cd49702a861512", null ],
-    [ "NonDeterministicLoop", "subsolver_8h.html#ab41ea45c2adb1df7a4abcf54209f9b4c", null ],
-    [ "SequentialLoop", "subsolver_8h.html#a1723097bd52079f0c83c37422f7e97ee", null ]
+    [ "DeterministicLoop", "subsolver_8h.html#afabd967d3c64eaa0c700e4fb160a32b0", null ],
+    [ "NonDeterministicLoop", "subsolver_8h.html#a7ab66b40d6b1168f1a5a47fcf16636ac", null ],
+    [ "SequentialLoop", "subsolver_8h.html#ae4f7fad019ed1def27f3b582c050b3a6", null ]
 ];

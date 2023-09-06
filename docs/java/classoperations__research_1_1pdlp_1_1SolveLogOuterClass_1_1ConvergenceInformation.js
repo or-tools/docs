@@ -21,7 +21,6 @@ var classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInform
     [ "getParserForType", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#aa25556822a390351feeae9c466ea1668", null ],
     [ "getPrimalObjective", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#a60144037f26d910d0485d7f9c5f6879c", null ],
     [ "getSerializedSize", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#ab160b5c271eaabcb222f6df3a7c8ceab", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#a71143954c2f2e7cf667eec586f144732", null ],
     [ "hasCandidateType", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#a4e96c3273777cf9e1abc70aaf59d948d", null ],
     [ "hasCorrectedDualObjective", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#ab1dcde378e32cb0713e2dcb678830cf6", null ],
     [ "hasDualObjective", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#acbfb10cc3553b3be77280e0ccc409e29", null ],

@@ -1,6 +1,7 @@
 var classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer =
 [
     [ "AssignmentAndConstraintFeasibilityMaintainer", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#ad21f8d2758eec921023bf034374560dd", null ],
+    [ "AssignmentAndConstraintFeasibilityMaintainer", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a47f4126b963b389923f3e3e6183bddb1", null ],
     [ "AddBacktrackingLevel", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a4b682930c0f44bec1fc901486779b898", null ],
     [ "Assign", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a090070da4ce10be03ac021bc0c1f882f", null ],
     [ "Assignment", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a533c2c6cbe27a2269dd6ad91f6021f35", null ],
@@ -14,6 +15,7 @@ var classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMainta
     [ "IsFeasible", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#ae56ea1b661ccdea6ec8ac8392937b23b", null ],
     [ "NumConstraints", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#aebe7e8074e17e4a260a7039354023892", null ],
     [ "NumInfeasibleConstraints", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#acd4105b1d349e1393140589dd2afc118", null ],
+    [ "operator=", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a6f51b91547023c72b688c0da28f1c8bd", null ],
     [ "PossiblyInfeasibleConstraints", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a97243a0b6ef89d25a341ef097e64990f", null ],
     [ "PotentialOneFlipRepairs", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#ab9b52ed71802a8f4ae56d61b3e6f42ea", null ],
     [ "reference", "classoperations__research_1_1bop_1_1AssignmentAndConstraintFeasibilityMaintainer.html#a946be112a8ea6c2a169649fe1b946150", null ],

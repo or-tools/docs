@@ -3,7 +3,7 @@ var sharded__optimization__utils_8cc =
     [ "ApplyRescaling", "sharded__optimization__utils_8cc.html#acea6db4184272e326213cd4a7ddc1cd4", null ],
     [ "ComputeDualGradient", "sharded__optimization__utils_8cc.html#a0b0a68c36dafae816b5d18fdf7f4f2d1", null ],
     [ "ComputePrimalGradient", "sharded__optimization__utils_8cc.html#a259d3f73717a2ababa9df2dd43914656", null ],
-    [ "ComputeStats", "sharded__optimization__utils_8cc.html#aa9c351ac6432daa4ea00cef61ced76c8", null ],
+    [ "ComputeStats", "sharded__optimization__utils_8cc.html#a0f96ba4fae041845072b4e960bb42d13", null ],
     [ "DualSubgradientCoefficient", "sharded__optimization__utils_8cc.html#a8d94aed55433c303286276bc57a8d77e", null ],
     [ "EstimateMaximumSingularValueOfConstraintMatrix", "sharded__optimization__utils_8cc.html#a6985b8c7ce87b3858b50efa4a923a0eb", null ],
     [ "HasValidBounds", "sharded__optimization__utils_8cc.html#acc88d1ca95af991600037eaf027f081b", null ],

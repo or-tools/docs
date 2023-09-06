@@ -1,7 +1,7 @@
 var classoperations__research_1_1DimensionCumulOptimizerCore =
 [
     [ "DimensionCumulOptimizerCore", "classoperations__research_1_1DimensionCumulOptimizerCore.html#a976474de096aa40df1a0e6d0f5988e7f", null ],
-    [ "ComputeSingleRouteSolutionCost", "classoperations__research_1_1DimensionCumulOptimizerCore.html#abc5d7cc00c40e94945ee1773c27b65a3", null ],
+    [ "ComputeSingleRouteSolutionCost", "classoperations__research_1_1DimensionCumulOptimizerCore.html#a40ea77ced4f4575eea8acf7e3741f687", null ],
     [ "dimension", "classoperations__research_1_1DimensionCumulOptimizerCore.html#a243c035fd3b3a96b027471439eeb0750", null ],
     [ "Optimize", "classoperations__research_1_1DimensionCumulOptimizerCore.html#aede20bc3ae1e196588b610cfd10e7843", null ],
     [ "OptimizeAndPack", "classoperations__research_1_1DimensionCumulOptimizerCore.html#ab6499a2a9523227eee2869d06bfa75ca", null ],

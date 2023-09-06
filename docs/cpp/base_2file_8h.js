@@ -1,14 +1,10 @@
 var base_2file_8h =
 [
     [ "File", "classFile.html", "classFile" ],
-    [ "Options", "base_2file_8h.html#ad895d5b0053a889e5760aa1918c7d899", null ],
-    [ "Defaults", "base_2file_8h.html#abf07fefe8ff31f769e921f195b5db868", null ],
     [ "Delete", "base_2file_8h.html#a2b6e96e732691b52bfcfc33299a61c66", null ],
     [ "Exists", "base_2file_8h.html#affa01c15bd82268892549b1651c4ddb3", null ],
-    [ "GetBinaryProto", "base_2file_8h.html#aaa315a4e71fc338d2ba80f83b8b706a6", null ],
     [ "GetBinaryProto", "base_2file_8h.html#a123822a738b57ebecbd8ebfc838958fb", null ],
     [ "GetContents", "base_2file_8h.html#a10454f58ae9af93061723f1df1ccc721", null ],
-    [ "GetTextProto", "base_2file_8h.html#a6df411be133420a342fc1a7e6c306149", null ],
     [ "GetTextProto", "base_2file_8h.html#a4dc2f42784780251fb0579bf4d72a837", null ],
     [ "Open", "base_2file_8h.html#a3371f7735522a011e4d16c5ed7ccbb99", null ],
     [ "OpenOrDie", "base_2file_8h.html#ad69d57c53922caa1bff8a394bf1eff69", null ],

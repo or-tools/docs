@@ -9,7 +9,7 @@ var searchData=
   ['booleanassignmentorbuilder_2ejava_6',['BooleanAssignmentOrBuilder.java',['../BooleanAssignmentOrBuilder_8java.html',1,'']]],
   ['booleanproblem_2ejava_7',['BooleanProblem.java',['../BooleanProblem_8java.html',1,'']]],
   ['booleanvar_2ejava_8',['BooleanVar.java',['../BooleanVar_8java.html',1,'']]],
-  ['boolvar_2ejava_9',['BoolVar.java',['../ortools_2java_2com_2google_2ortools_2sat_2BoolVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2BoolVar_8java.html',1,'(Global Namespace)']]],
+  ['boolvar_2ejava_9',['boolvar.java',['../ortools_2java_2com_2google_2ortools_2sat_2BoolVar_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2BoolVar_8java.html',1,'(Global Namespace)']]],
   ['bopoptimizermethod_2ejava_10',['BopOptimizerMethod.java',['../BopOptimizerMethod_8java.html',1,'']]],
   ['bopoptimizermethodorbuilder_2ejava_11',['BopOptimizerMethodOrBuilder.java',['../BopOptimizerMethodOrBuilder_8java.html',1,'']]],
   ['bopparameters_2ejava_12',['BopParameters.java',['../BopParameters_8java.html',1,'']]],

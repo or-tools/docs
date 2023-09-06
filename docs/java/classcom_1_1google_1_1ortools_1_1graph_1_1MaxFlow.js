@@ -16,5 +16,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow =
     [ "getTail", "classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow.html#a52828a061cb88fa128fdcf6678e31325", null ],
     [ "setArcCapacity", "classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow.html#ae316669bcc107981f363cd862956dc0d", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow.html#a1d3df7e36d43babfeefff298b7f7ca7f", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow.html#a6087a3d0da0bebbc5a8cd67f84047fcd", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1graph_1_1MaxFlow.html#a794396959a51fc585a57173edd029407", null ]
 ];

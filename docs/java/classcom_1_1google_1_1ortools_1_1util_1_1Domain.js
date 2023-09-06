@@ -21,6 +21,7 @@ var classcom_1_1google_1_1ortools_1_1util_1_1Domain =
     [ "min", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a8d18576ab944addefccc823796ea777d", null ],
     [ "negation", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a4d98e5387bb26584cbef534887fe330a", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#ad8f9aabb9756d040c04d373e23edc7f0", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a95a3593ce4c27d952a0576b8608ad56b", null ],
     [ "toString", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a0189be53f5d5e4b1d2f46b2dd8730e4e", null ],
     [ "unionWith", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a178c97921895cfea1d5c277a5f706b5a", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html#a363d6de2be7fef82653297dbc3a8da1f", null ]

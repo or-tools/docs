@@ -25,7 +25,6 @@ var classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria =
     [ "getSimpleOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#acb7cb4ba7ce99cf9998af54c38a6f1e0", null ],
     [ "getSimpleOptimalityCriteriaOrBuilder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#a38c0831f62b97ad1ae8bf64e1ad05039", null ],
     [ "getTimeSecLimit", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#abe52aa7387969b1007ca9566f4246ed9", null ],
-    [ "getUnknownFields", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#a81035872b94445643bf9096c92cc768b", null ],
     [ "hasDetailedOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#aa2953f922e1667e166c6adc425bc706d", null ],
     [ "hasEpsDualInfeasible", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#a45e6b4b277216b3f0de82597b316b034", null ],
     [ "hasEpsOptimalAbsolute", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html#a27884206bd6f77a47becf4f7f7fcbb8b", null ],

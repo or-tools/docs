@@ -9,8 +9,8 @@ var solution__serializer_8h =
       [ "kCARPLIB", "solution__serializer_8h.html#a7f4410129ac727b8ef3b125ad18c41bba9123cb47c5ae4ba3ed0e886d6dbd6711", null ],
       [ "kNEARPLIB", "solution__serializer_8h.html#a7f4410129ac727b8ef3b125ad18c41bba657d6b67789be381ca92002aae17bf14", null ]
     ] ],
-    [ "FormatStatistic", "solution__serializer_8h.html#ae9e5da2fc6eedc8f2d92654223e6bd29", null ],
-    [ "FormatStatistic", "solution__serializer_8h.html#ac8ccb5bc825d46925984e259059f1045", null ],
-    [ "PrintStatistic", "solution__serializer_8h.html#a6ec73f20364244127c3b2c76d53bd7c0", null ],
+    [ "FormatStatistic", "solution__serializer_8h.html#a8fb03da6e690d19075ace9fbbf90d057", null ],
+    [ "FormatStatistic", "solution__serializer_8h.html#a108e0d0f765ed56abc079b49c521915b", null ],
+    [ "PrintStatistic", "solution__serializer_8h.html#a75b9f6bbdbf4d7485fe22eae4410128d", null ],
     [ "RoutingOutputFormatFromString", "solution__serializer_8h.html#a96c53bfd9217ef271bbc9f9b51a25fb2", null ]
 ];

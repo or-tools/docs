@@ -1,4 +1,0 @@
-var dir_d5c191cb2d8041d2e7933a50d8335778 =
-[
-    [ "ortools", "dir_035dda1266d38e85282445b011468b4b.html", "dir_035dda1266d38e85282445b011468b4b" ]
-];

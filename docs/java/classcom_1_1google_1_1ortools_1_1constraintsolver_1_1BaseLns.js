@@ -11,6 +11,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns =
     [ "initFragments", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#a6e7bdaaeb9dedab0221b5639f899758e", null ],
     [ "nextFragment", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#ad2aa343d9087118f7c92f11b9e8c1595", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#a81ca011b3252b5b2710bd7dcf2b1e5db", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#ac8bfe2d410d324c5d23f445bd2909fd7", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#af6e9b1ba7d88eef47705faa4250b6344", null ],
     [ "swigTakeOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BaseLns.html#aa3d9382ed5d771873377382e57217ff9", null ]
 ];

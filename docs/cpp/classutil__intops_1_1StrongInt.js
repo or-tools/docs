@@ -5,6 +5,7 @@ var classutil__intops_1_1StrongInt =
     [ "ValueType", "classutil__intops_1_1StrongInt.html#afbbfdbc776c7f226825332fecbc7f618", null ],
     [ "StrongInt", "classutil__intops_1_1StrongInt.html#aef894225285e44eb7ed3e895ca4c1cc6", null ],
     [ "StrongInt", "classutil__intops_1_1StrongInt.html#a449d7453498d2ccfb65b5c10291a0c22", null ],
+    [ "operator T", "classutil__intops_1_1StrongInt.html#af661cd13bdcc81558cae271ced504585", null ],
     [ "operator!", "classutil__intops_1_1StrongInt.html#a489611f8855085f28cae1ab724a25cf0", null ],
     [ "operator+", "classutil__intops_1_1StrongInt.html#adfe211528ff49e5c35ffa6088baf7738", null ],
     [ "operator++", "classutil__intops_1_1StrongInt.html#a84cc0d4c1222ba1e907da278d8723643", null ],

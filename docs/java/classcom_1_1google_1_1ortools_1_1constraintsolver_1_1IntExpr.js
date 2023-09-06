@@ -14,6 +14,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr =
     [ "setMin", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#a623e07dd9674ce2a5ecfb7f723e62717", null ],
     [ "setRange", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#a52c6cc64a6b4ac5d5c924b7d07129e4b", null ],
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#ab58f36823539c7cc6c99744ca588a3da", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#a06543cf6f494240018c9f4def0b37955", null ],
     [ "var", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#a53297911e94c60b09400069219e3feac", null ],
     [ "varWithName", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#a46e26ebcceb51c1c2d71978ce7ce7eb3", null ],
     [ "whenRange", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntExpr.html#aed6cc4420b96694ff78b066056555952", null ],

@@ -20,5 +20,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters =
     [ "getKDefaultRelativeMipGap", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#af9cd9efe879c143df052f56e80df5374", null ],
     [ "setDoubleParam", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#a6d51005788fb8fe4a534863c7da1bbb8", null ],
     [ "setIntegerParam", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#a15d5a5604f1103114a93f947a41e5da7", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#a05f52d37abfb2620b4bd2c4621350ecb", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#add56391336fea85a70231d3498afda77", null ]
 ];

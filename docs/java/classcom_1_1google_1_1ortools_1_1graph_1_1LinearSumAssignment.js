@@ -16,5 +16,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment =
     [ "getRightMate", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html#af2001a3e551ea25b7e7a4e593c313ddc", null ],
     [ "getRightNode", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html#a87192e3bf1461f926adb90d54e5e5553", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html#aba3fbea2425409bb0bd08c25424dd2ce", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html#afede1eeba2efe25ab3227711c637767c", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html#ad1369be8e3901af3d41c5b6164f14214", null ]
 ];

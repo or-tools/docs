@@ -8,5 +8,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1Resourc
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Attributes.html#a4f329894cbc94d9f3484fe861f592858", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Attributes.html#a3c0c6d1a247e146f52bd121fa9c59c8c", null ],
     [ "start_domain", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Attributes.html#a716594a2a855324917b823e414799399", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Attributes.html#a828d5c78fcffa4ab8bc56e8c8176c079", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Attributes.html#a6e85ae823d2619a2ba11ce6cc4f4d192", null ]
 ];

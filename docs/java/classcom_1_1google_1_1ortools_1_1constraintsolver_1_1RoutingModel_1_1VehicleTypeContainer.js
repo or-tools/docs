@@ -13,6 +13,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1Vehicle
     [ "setSorted_vehicle_classes_per_type", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#a706c0602a2b9a3b98e61a9cc5fd3abb8", null ],
     [ "setType_index_of_vehicle", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#a0db4fa2b53205adace2d8fa3c7a653bd", null ],
     [ "setVehicles_per_vehicle_class", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#acbe961f2f6989a6f08f8189dcffbd597", null ],
+    [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#aa4f7c77f073df2fc0ad38af94b7fe28e", null ],
     [ "Type", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#a36b5ed13a4b04405a406f1587d66b0f4", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1VehicleTypeContainer.html#a1e43fa386175faa740cd338c37f0fecc", null ]
 ];
