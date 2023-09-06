@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -euxo pipefail
 
 function assert_defined(){
   if [[ -z "${!1}" ]]; then
@@ -14,14 +14,14 @@ function gen_cpp() {
   docker build \
  --tag ${IMAGE} \
  --target=cpp \
- -f ${ROOT_DIR}/src/Dockerfile \
- ${ROOT_DIR}/src
+ -f "${ROOT_DIR}/src/Dockerfile" \
+ "${ROOT_DIR}/src"
 
   rm -rf "${OUTPUT_DIR}"/cpp
   docker run --rm --init \
- -v ${OUTPUT_DIR}/:/export \
+ -v "${OUTPUT_DIR}/":/export \
  -it \
- --user ${ID_U}:${ID_G} \
+ --user "${ID_U}":"${ID_G}" \
  --name cpp_doc \
  ${IMAGE} \
  "cp -r build/docs/cpp /export/"
@@ -33,14 +33,14 @@ function gen_dotnet() {
   docker build \
  --tag ${IMAGE} \
  --target=dotnet \
- -f ${ROOT_DIR}/src/Dockerfile \
- ${ROOT_DIR}/src
+ -f "${ROOT_DIR}/src/Dockerfile" \
+ "${ROOT_DIR}/src"
 
   rm -rf "${OUTPUT_DIR}"/dotnet
   docker run --rm --init \
- -v ${OUTPUT_DIR}/:/export \
+ -v "${OUTPUT_DIR}/":/export \
  -it \
- --user ${ID_U}:${ID_G} \
+ --user "${ID_U}":"${ID_G}" \
  --name dotnet_doc \
  ${IMAGE} \
  "cp -r build/docs/dotnet /export/"
@@ -52,42 +52,51 @@ function gen_java() {
   docker build \
  --tag ${IMAGE} \
  --target=java \
- -f ${ROOT_DIR}/src/Dockerfile \
- ${ROOT_DIR}/src
+ -f "${ROOT_DIR}/src/Dockerfile" \
+ "${ROOT_DIR}/src"
 
   rm -rf "${OUTPUT_DIR}"/java
   docker run --rm --init \
- -v ${OUTPUT_DIR}/:/export \
+ -v "${OUTPUT_DIR}/":/export \
  -it \
- --user ${ID_U}:${ID_G} \
+ --user "${ID_U}":"${ID_G}" \
  --name java_doc \
  ${IMAGE} \
  "cp -r build/docs/java /export/"
 
   rm -rf "${OUTPUT_DIR}"/javadoc
   docker run --rm --init \
- -v ${OUTPUT_DIR}/:/export \
+ -v "${OUTPUT_DIR}/":/export \
  -it \
- --user ${ID_U}:${ID_G} \
+ --user "${ID_U}":"${ID_G}" \
  --name javadoc_doc \
  ${IMAGE} \
  "cp -r build/docs/javadoc /export/"
 }
 
 function gen_python() {
-  local -r IMAGE="or-tools/docs:dotnet"
+  local -r IMAGE="or-tools/docs:python"
 
   docker build \
  --tag ${IMAGE} \
  --target=python \
- -f ${ROOT_DIR}/src/Dockerfile \
- ${ROOT_DIR}/src
+ -f "${ROOT_DIR}/src/Dockerfile" \
+ "${ROOT_DIR}/src"
+
+  rm -rf "${OUTPUT_DIR}"/python
+  docker run --rm --init \
+ -v "${OUTPUT_DIR}/":/export \
+ -it \
+ --user "${ID_U}":"${ID_G}" \
+ --name python_doc \
+ ${IMAGE} \
+ "cp -r build/docs/python /export/"
 
   rm -rf "${OUTPUT_DIR}"/pdoc
   docker run --rm --init \
- -v ${OUTPUT_DIR}/:/export \
+ -v "${OUTPUT_DIR}/":/export \
  -it \
- --user ${ID_U}:${ID_G} \
+ --user "${ID_U}":"${ID_G}" \
  --name pdoc_doc \
  ${IMAGE} \
  "cp -r build/docs/pdoc /export/"

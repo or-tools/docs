@@ -75,3 +75,4 @@ RUN cmake -S. -Bbuild -DBUILD_DOC=ON \
  -DBUILD_PYTHON=ON -DVENV_USE_SYSTEM_SITE_PACKAGES=ON \
  -DBUILD_CXX_SAMPLES=OFF -DBUILD_CXX_EXAMPLES=OFF
 RUN cmake --build build --target ortools_python_doc -j8 -v
+RUN cmake --build build --target ortools_pdoc_doc -j8 -v
