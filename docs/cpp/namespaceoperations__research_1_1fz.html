@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -150,8 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa41416f89957c612045dcae8af9444b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ede24d17a1022306de513318d00045" id="r_aa4ede24d17a1022306de513318d00045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#aa4ede24d17a1022306de513318d00045">ParseFile</a> (const std::string &amp;filename, bool presolve)</td></tr>
 <tr class="separator:aa4ede24d17a1022306de513318d00045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b035e386f4787fb10f6bfc1c12e508b" id="r_a9b035e386f4787fb10f6bfc1c12e508b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#a9b035e386f4787fb10f6bfc1c12e508b">ContainsId</a> (std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Annotation.html">Annotation</a> &gt; *annotations, const std::string &amp;id)</td></tr>
-<tr class="separator:a9b035e386f4787fb10f6bfc1c12e508b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2dd914a48ed4453e015eba91992452" id="r_a9a2dd914a48ed4453e015eba91992452"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#a9a2dd914a48ed4453e015eba91992452">ContainsId</a> (std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Annotation.html">Annotation</a> &gt; *annotations, absl::string_view id)</td></tr>
+<tr class="separator:a9a2dd914a48ed4453e015eba91992452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7bf253df8336c70c363ac688d9ae1d" id="r_adf7bf253df8336c70c363ac688d9ae1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#adf7bf253df8336c70c363ac688d9ae1d">AllDomainsHaveOneValue</a> (const std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Domain.html">Domain</a> &gt; &amp;domains)</td></tr>
 <tr class="separator:adf7bf253df8336c70c363ac688d9ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaacc0519b036ec714aaf6201c055b7b6" id="r_aaacc0519b036ec714aaf6201c055b7b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#aaacc0519b036ec714aaf6201c055b7b6">ConvertAsIntegerOrDie</a> (double d)</td></tr>
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00058">58</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00059">59</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
 </div>
 </div>
@@ -219,8 +219,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b035e386f4787fb10f6bfc1c12e508b" name="a9b035e386f4787fb10f6bfc1c12e508b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b035e386f4787fb10f6bfc1c12e508b">&#9670;&#160;</a></span>ContainsId()</h2>
+<a id="a9a2dd914a48ed4453e015eba91992452" name="a9a2dd914a48ed4453e015eba91992452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2dd914a48ed4453e015eba91992452">&#9670;&#160;</a></span>ContainsId()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">absl::string_view&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
@@ -246,7 +246,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Whether the given list of annotations contains the given identifier (or function call). </p>
 
-<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00045">45</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00046">46</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
 
 <p>If the argument is an integer, return it as int64_t. Otherwise, die. </p>
 
-<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00067">67</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00068">68</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
 </div>
 </div>
@@ -298,8 +298,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Fix time limit if -t was used.</p>
+<p>Define the default number of workers to 1 if -f was used.</p>
 
-<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00065">65</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00068">68</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
 
 </div>
 </div>
@@ -332,7 +333,7 @@ Functions</h2></td></tr>
 <p>Flatten <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> annotations. </p>
 <p>Helper method to flatten <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> annotations. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01154">1154</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01155">1155</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -352,7 +353,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00157">157</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00172">172</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
 
 </div>
 </div>
@@ -384,9 +385,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Array in flatzinc are 1 based. We use this trivial wrapper for all flatzinc arrays. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000403">Todo:</a></b></dt><dd>(user): replace this by a macro for better logging. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000405">Todo:</a></b></dt><dd>(user): replace this by a macro for better logging. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00077">77</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00078">78</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
 </div>
 </div>
@@ -495,7 +496,7 @@ template&lt;class T &gt; </div>
 <p>Presolve the model.</p>
 <p>Print statistics.</p>
 
-<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00116">116</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00131">131</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
 
 </div>
 </div>

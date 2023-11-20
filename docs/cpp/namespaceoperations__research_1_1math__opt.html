@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -626,8 +626,9 @@ Functions</h2></td></tr>
 <tr class="separator:a4c0703c4f33214bf68365dee80418ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac307abe62a9d26ff0eac456704d950b6" id="r_ac307abe62a9d26ff0eac456704d950b6"><td class="memItemLeft" align="right" valign="top">TerminationProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac307abe62a9d26ff0eac456704d950b6">LimitTerminationProto</a> (LimitProto limit, const double primal_objective, const double dual_objective, const bool claim_dual_feasible_solution_exists, const absl::string_view <a class="el" href="namespaceoperations__research_1_1math__opt.html#a70cfcd84f903e21c628f94b7147f61ef">detail</a>)</td></tr>
 <tr class="separator:ac307abe62a9d26ff0eac456704d950b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6065f869228e0b5544c2ddd2a5c3b26" id="r_ad6065f869228e0b5544c2ddd2a5c3b26"><td class="memItemLeft" align="right" valign="top">TerminationProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ad6065f869228e0b5544c2ddd2a5c3b26">CutoffTerminationProto</a> (bool is_maximize, const absl::string_view <a class="el" href="namespaceoperations__research_1_1math__opt.html#a70cfcd84f903e21c628f94b7147f61ef">detail</a>)</td></tr>
-<tr class="separator:ad6065f869228e0b5544c2ddd2a5c3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83249de0e912dcd5d351fda61b0cf6c1" id="r_a83249de0e912dcd5d351fda61b0cf6c1"><td class="memItemLeft" align="right" valign="top">TerminationProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a83249de0e912dcd5d351fda61b0cf6c1">CutoffTerminationProto</a> (bool is_maximize, absl::string_view <a class="el" href="namespaceoperations__research_1_1math__opt.html#a70cfcd84f903e21c628f94b7147f61ef">detail</a>={})</td></tr>
+<tr class="memdesc:a83249de0e912dcd5d351fda61b0cf6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="namespaceoperations__research_1_1math__opt.html#a647b24c008c0cab90f59e848a507c244">NoSolutionFoundTerminationProto()</a> with LIMIT_CUTOFF LIMIT.  <br /></td></tr>
+<tr class="separator:a83249de0e912dcd5d351fda61b0cf6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a647b24c008c0cab90f59e848a507c244" id="r_a647b24c008c0cab90f59e848a507c244"><td class="memItemLeft" align="right" valign="top">TerminationProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a647b24c008c0cab90f59e848a507c244">NoSolutionFoundTerminationProto</a> (const bool is_maximize, const LimitProto limit, const std::optional&lt; double &gt; optional_dual_objective, const absl::string_view <a class="el" href="namespaceoperations__research_1_1math__opt.html#a70cfcd84f903e21c628f94b7147f61ef">detail</a>)</td></tr>
 <tr class="separator:a647b24c008c0cab90f59e848a507c244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614c1a306a138f7593f4ae84dbf034c9" id="r_a614c1a306a138f7593f4ae84dbf034c9"><td class="memItemLeft" align="right" valign="top">TerminationProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a614c1a306a138f7593f4ae84dbf034c9">FeasibleTerminationProto</a> (const bool is_maximize, const LimitProto limit, const double primal_objective, const std::optional&lt; double &gt; optional_dual_objective, const absl::string_view <a class="el" href="namespaceoperations__research_1_1math__opt.html#a70cfcd84f903e21c628f94b7147f61ef">detail</a>)</td></tr>
@@ -834,6 +835,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9019e3ceb6908ea58dee5e0ea0e627f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c572d6a99dcb1f6872165f43e8defd4" id="r_a7c572d6a99dcb1f6872165f43e8defd4"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a7c572d6a99dcb1f6872165f43e8defd4">operator&lt;&lt;</a> (std::ostream &amp;ostr, const <a class="el" href="structoperations__research_1_1math__opt_1_1BoundedQuadraticExpression.html">BoundedQuadraticExpression</a> &amp;bounded_expression)</td></tr>
 <tr class="separator:a7c572d6a99dcb1f6872165f43e8defd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f0bce7523c853f64982cb8e7f3ad2b" id="r_a51f0bce7523c853f64982cb8e7f3ad2b"><td class="memItemLeft" align="right" valign="top">internal::VariablesEquality&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a51f0bce7523c853f64982cb8e7f3ad2b">operator==</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;lhs, const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;rhs)</td></tr>
+<tr class="separator:a51f0bce7523c853f64982cb8e7f3ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11afaed718a7b609df1ff41ff6e4ad50" id="r_a11afaed718a7b609df1ff41ff6e4ad50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a11afaed718a7b609df1ff41ff6e4ad50">operator!=</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;lhs, const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;rhs)</td></tr>
+<tr class="separator:a11afaed718a7b609df1ff41ff6e4ad50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8f450a61d6f3613fa723a717c3cbca3" id="r_ae8f450a61d6f3613fa723a717c3cbca3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae8f450a61d6f3613fa723a717c3cbca3">operator&lt;&lt;</a> (std::ostream &amp;ostr, const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;variable)</td></tr>
 <tr class="separator:ae8f450a61d6f3613fa723a717c3cbca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5031554b2dc6f04197ea3c91a196a888" id="r_a5031554b2dc6f04197ea3c91a196a888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html">LinearTerm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a5031554b2dc6f04197ea3c91a196a888">operator*</a> (double <a class="el" href="routing__filters_8cc.html#a8e4ee19dee0e00541dbe9bbc83d806ba">coefficient</a>, <a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html">LinearTerm</a> term)</td></tr>
@@ -921,10 +926,6 @@ Functions</h2></td></tr>
 <tr class="separator:a370851012e11f58dab4fc92f6dfb29d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa112ed04197a846ae71e5b4841a4af26" id="r_aa112ed04197a846ae71e5b4841a4af26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa112ed04197a846ae71e5b4841a4af26">operator/</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> lhs, double rhs)</td></tr>
 <tr class="separator:aa112ed04197a846ae71e5b4841a4af26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f0bce7523c853f64982cb8e7f3ad2b" id="r_a51f0bce7523c853f64982cb8e7f3ad2b"><td class="memItemLeft" align="right" valign="top">internal::VariablesEquality&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a51f0bce7523c853f64982cb8e7f3ad2b">operator==</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;lhs, const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;rhs)</td></tr>
-<tr class="separator:a51f0bce7523c853f64982cb8e7f3ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11afaed718a7b609df1ff41ff6e4ad50" id="r_a11afaed718a7b609df1ff41ff6e4ad50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a11afaed718a7b609df1ff41ff6e4ad50">operator!=</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;lhs, const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &amp;rhs)</td></tr>
-<tr class="separator:a11afaed718a7b609df1ff41ff6e4ad50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49443ec01faa947e9ce26d97906f117" id="r_ac49443ec01faa947e9ce26d97906f117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1LowerBoundedLinearExpression.html">LowerBoundedLinearExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac49443ec01faa947e9ce26d97906f117">operator&gt;=</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expression, double constant)</td></tr>
 <tr class="separator:ac49443ec01faa947e9ce26d97906f117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a53298d4a965f733c42ca7a6fd073b" id="r_ae9a53298d4a965f733c42ca7a6fd073b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1LowerBoundedLinearExpression.html">LowerBoundedLinearExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae9a53298d4a965f733c42ca7a6fd073b">operator&lt;=</a> (double constant, <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expression)</td></tr>
@@ -1311,6 +1312,8 @@ Functions</h2></td></tr>
 <tr class="separator:a08236e506a56f4978e904da900947135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd353c6fee94bd77eaba698817922ab" id="r_a6fd353c6fee94bd77eaba698817922ab"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPModelProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a6fd353c6fee94bd77eaba698817922ab">MathOptModelToMPModelProto</a> (const ModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="separator:a6fd353c6fee94bd77eaba698817922ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bd4afc3eab5b043ee4bf92a3acd7cf" id="r_a51bd4afc3eab5b043ee4bf92a3acd7cf"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a51bd4afc3eab5b043ee4bf92a3acd7cf">FormulateIndicatorConstraintAsMip</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="classoperations__research_1_1math__opt_1_1IndicatorConstraint.html">IndicatorConstraint</a> indicator_constraint)</td></tr>
+<tr class="separator:a51bd4afc3eab5b043ee4bf92a3acd7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10ced0eb30142ca4f0f7138d068d4812" id="r_a10ced0eb30142ca4f0f7138d068d4812"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a10ced0eb30142ca4f0f7138d068d4812">LowerBound</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> &amp;linear_expression)</td></tr>
 <tr class="separator:a10ced0eb30142ca4f0f7138d068d4812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8eeb7d68643d4762bf413501134eeeb" id="r_aa8eeb7d68643d4762bf413501134eeeb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa8eeb7d68643d4762bf413501134eeeb">UpperBound</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> &amp;linear_expression)</td></tr>
@@ -1351,6 +1354,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a62e3dab60115f56d2af0e28ff7f446c8" id="r_a62e3dab60115f56d2af0e28ff7f446c8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a62e3dab60115f56d2af0e28ff7f446c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt; T, int64_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a62e3dab60115f56d2af0e28ff7f446c8">IndexToId</a> (const absl::flat_hash_map&lt; int64_t, T &gt; &amp;id_map)</td></tr>
 <tr class="separator:a62e3dab60115f56d2af0e28ff7f446c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8050c4c20206a0f5ac6cafefa8b59b36" id="r_a8050c4c20206a0f5ac6cafefa8b59b36"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a8050c4c20206a0f5ac6cafefa8b59b36">WorstGLPKDualBound</a> (const bool is_maximize, const double <a class="el" href="trust__region_8cc.html#a69703b8569462134ad4e22ab0133e418">objective_value</a>, const double relative_gap_limit)</td></tr>
+<tr class="separator:a8050c4c20206a0f5ac6cafefa8b59b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a130de4099b24be79985918ae99fe3" id="r_ae6a130de4099b24be79985918ae99fe3"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::optional&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1GlpkRay.html">GlpkRay</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ae6a130de4099b24be79985918ae99fe3">GlpkComputeUnboundRay</a> (glp_prob *const problem)</td></tr>
 <tr class="separator:ae6a130de4099b24be79985918ae99fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d13b218c171134584f85dc301bcb67" id="r_ac3d13b218c171134584f85dc301bcb67"><td class="memItemLeft" align="right" valign="top">GScipParameters::MetaParamValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac3d13b218c171134584f85dc301bcb67">ConvertMathOptEmphasis</a> (EmphasisProto emphasis)</td></tr>
@@ -1441,6 +1446,28 @@ Functions</h2></td></tr>
 <tr class="separator:aaadd437e793cc0e460438b6da3fe3278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a875813eeb955fcb8ba3cb8cb6ea7d" id="r_a77a875813eeb955fcb8ba3cb8cb6ea7d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a77a875813eeb955fcb8ba3cb8cb6ea7d">WriteModel</a> (const absl::string_view file_path, const ModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>, const std::optional&lt; SolutionHintProto &gt; &amp;hint_proto, const <a class="el" href="file__format__flags_8h.html#aade2c77823f8e2bb631eec2d55f54acc">FileFormat</a> format)</td></tr>
 <tr class="separator:a77a875813eeb955fcb8ba3cb8cb6ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0249c7cdc741fd34afee24cac6f65035" id="r_a0249c7cdc741fd34afee24cac6f65035"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0249c7cdc741fd34afee24cac6f65035">ValidateFeasibilityStatus</a> (const FeasibilityStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:a0249c7cdc741fd34afee24cac6f65035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b55aa78ba57b37dad955dd78e13f2" id="r_a414b55aa78ba57b37dad955dd78e13f2"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a414b55aa78ba57b37dad955dd78e13f2">ValidateProblemStatus</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
+<tr class="separator:a414b55aa78ba57b37dad955dd78e13f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20cd35a5976773c179c7958cb8f30b98" id="r_a20cd35a5976773c179c7958cb8f30b98"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a20cd35a5976773c179c7958cb8f30b98">CheckPrimalStatusIs</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto required_status)</td></tr>
+<tr class="memdesc:a20cd35a5976773c179c7958cb8f30b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
+<tr class="separator:a20cd35a5976773c179c7958cb8f30b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9680d061a4a6d812eec5972c07a81f9" id="r_af9680d061a4a6d812eec5972c07a81f9"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af9680d061a4a6d812eec5972c07a81f9">CheckPrimalStatusIsNot</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto forbidden_status)</td></tr>
+<tr class="memdesc:af9680d061a4a6d812eec5972c07a81f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
+<tr class="separator:af9680d061a4a6d812eec5972c07a81f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d249585cd1597efbbc38086973ef95" id="r_a17d249585cd1597efbbc38086973ef95"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a17d249585cd1597efbbc38086973ef95">CheckDualStatusIsNot</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto forbidden_status)</td></tr>
+<tr class="memdesc:a17d249585cd1597efbbc38086973ef95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
+<tr class="separator:a17d249585cd1597efbbc38086973ef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615757110cac2f29c5b6cc44b9a2ec82" id="r_a615757110cac2f29c5b6cc44b9a2ec82"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a615757110cac2f29c5b6cc44b9a2ec82">CheckDualStatusIs</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto required_status, const bool primal_or_dual_infeasible_also_ok)</td></tr>
+<tr class="memdesc:a615757110cac2f29c5b6cc44b9a2ec82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
+<tr class="separator:a615757110cac2f29c5b6cc44b9a2ec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed2e7ddd968a64d2b2aa0ffdb473e3f" id="r_abed2e7ddd968a64d2b2aa0ffdb473e3f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#abed2e7ddd968a64d2b2aa0ffdb473e3f">ValidateObjectiveBounds</a> (const ObjectiveBoundsProto &amp;<a class="el" href="cp__model__solver_8cc.html#a3c9a4250aeac8542a7ab9b4abcc6af6f">bounds</a>)</td></tr>
+<tr class="separator:abed2e7ddd968a64d2b2aa0ffdb473e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0f559ac5e6bde44fe7282b55419cdf" id="r_aab0f559ac5e6bde44fe7282b55419cdf"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aab0f559ac5e6bde44fe7282b55419cdf">CheckFinitePrimalBound</a> (const ObjectiveBoundsProto &amp;<a class="el" href="cp__model__solver_8cc.html#a3c9a4250aeac8542a7ab9b4abcc6af6f">bounds</a>)</td></tr>
+<tr class="separator:aab0f559ac5e6bde44fe7282b55419cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee056c25504d7759f90e81fdb2190a9" id="r_aeee056c25504d7759f90e81fdb2190a9"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aeee056c25504d7759f90e81fdb2190a9">ValidateBoundStatusConsistency</a> (const ObjectiveBoundsProto &amp;objective_bounds, const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, bool is_maximize)</td></tr>
+<tr class="separator:aeee056c25504d7759f90e81fdb2190a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb2d07c0b7ce4bff147ed251e8a8de5" id="r_afdb2d07c0b7ce4bff147ed251e8a8de5"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#afdb2d07c0b7ce4bff147ed251e8a8de5">ValidateCallbackRegistration</a> (const CallbackRegistrationProto &amp;callback_registration, const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
 <tr class="memdesc:afdb2d07c0b7ce4bff147ed251e8a8de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that CallbackRegistrationProto is valid given a valid model summary.  <br /></td></tr>
 <tr class="separator:afdb2d07c0b7ce4bff147ed251e8a8de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1476,17 +1503,15 @@ Functions</h2></td></tr>
 <tr class="separator:ae60786fc37f2c7a432cfcdfbc466c41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bea646e30cf117e9de000a554eb8274" id="r_a0bea646e30cf117e9de000a554eb8274"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0bea646e30cf117e9de000a554eb8274">ValidateModelUpdate</a> (const ModelUpdateProto &amp;model_update, <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
 <tr class="separator:a0bea646e30cf117e9de000a554eb8274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67b80a359d3cdb652dc9161a15565ba" id="r_af67b80a359d3cdb652dc9161a15565ba"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af67b80a359d3cdb652dc9161a15565ba">ValidateTermination</a> (const TerminationProto &amp;termination)</td></tr>
-<tr class="separator:af67b80a359d3cdb652dc9161a15565ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add23cecedb126522044aca6764532ce3" id="r_add23cecedb126522044aca6764532ce3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#add23cecedb126522044aca6764532ce3">ValidateSolutions</a> (const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions, const ModelSolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>, const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
+<tr class="separator:add23cecedb126522044aca6764532ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a496ee3e0463ce9a45b495bef527d3" id="r_a95a496ee3e0463ce9a45b495bef527d3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a95a496ee3e0463ce9a45b495bef527d3">CheckHasPrimalSolution</a> (const SolveResultProto &amp;result)</td></tr>
 <tr class="memdesc:a95a496ee3e0463ce9a45b495bef527d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns absl::Ok only if a primal feasible solution is available.  <br /></td></tr>
 <tr class="separator:a95a496ee3e0463ce9a45b495bef527d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e12fc78ddb4b7e21a08255d309fed5d" id="r_a4e12fc78ddb4b7e21a08255d309fed5d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a4e12fc78ddb4b7e21a08255d309fed5d">CheckPrimalSolutionAndStatusConsistency</a> (const SolveResultProto &amp;result)</td></tr>
-<tr class="separator:a4e12fc78ddb4b7e21a08255d309fed5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef327438a1fa36c754675f638de11139" id="r_aef327438a1fa36c754675f638de11139"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aef327438a1fa36c754675f638de11139">CheckDualSolutionAndStatusConsistency</a> (const SolveResultProto &amp;result)</td></tr>
-<tr class="separator:aef327438a1fa36c754675f638de11139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7baa28b18e97ddd47c264de703a0be" id="r_a2e7baa28b18e97ddd47c264de703a0be"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2e7baa28b18e97ddd47c264de703a0be">ValidateTerminationConsistency</a> (const SolveResultProto &amp;result)</td></tr>
-<tr class="separator:a2e7baa28b18e97ddd47c264de703a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13858e187e294c6618ca311d52cf6601" id="r_a13858e187e294c6618ca311d52cf6601"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a13858e187e294c6618ca311d52cf6601">CheckPrimalSolutionAndStatusConsistency</a> (const TerminationProto &amp;termination, const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions)</td></tr>
+<tr class="separator:a13858e187e294c6618ca311d52cf6601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71258c777ec895fb0cbbb600b5242edd" id="r_a71258c777ec895fb0cbbb600b5242edd"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a71258c777ec895fb0cbbb600b5242edd">CheckDualSolutionAndStatusConsistency</a> (const TerminationProto &amp;termination, const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions)</td></tr>
+<tr class="separator:a71258c777ec895fb0cbbb600b5242edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51b998f0ab120a1855bd589f2553fad" id="r_ac51b998f0ab120a1855bd589f2553fad"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac51b998f0ab120a1855bd589f2553fad">ValidateResult</a> (const SolveResultProto &amp;result, const ModelSolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>, const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
 <tr class="memdesc:ac51b998f0ab120a1855bd589f2553fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the input result.  <br /></td></tr>
 <tr class="separator:ac51b998f0ab120a1855bd589f2553fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1513,22 +1538,6 @@ Functions</h2></td></tr>
 <tr class="separator:ac0897bbbb46fa3cd956080d49da1d691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af099801286ce760f79dda3ce9b7be78d" id="r_af099801286ce760f79dda3ce9b7be78d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af099801286ce760f79dda3ce9b7be78d">ValidateSolveParameters</a> (const SolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
 <tr class="separator:af099801286ce760f79dda3ce9b7be78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0249c7cdc741fd34afee24cac6f65035" id="r_a0249c7cdc741fd34afee24cac6f65035"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0249c7cdc741fd34afee24cac6f65035">ValidateFeasibilityStatus</a> (const FeasibilityStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a0249c7cdc741fd34afee24cac6f65035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414b55aa78ba57b37dad955dd78e13f2" id="r_a414b55aa78ba57b37dad955dd78e13f2"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a414b55aa78ba57b37dad955dd78e13f2">ValidateProblemStatus</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
-<tr class="separator:a414b55aa78ba57b37dad955dd78e13f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20cd35a5976773c179c7958cb8f30b98" id="r_a20cd35a5976773c179c7958cb8f30b98"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a20cd35a5976773c179c7958cb8f30b98">CheckPrimalStatusIs</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto required_status)</td></tr>
-<tr class="memdesc:a20cd35a5976773c179c7958cb8f30b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
-<tr class="separator:a20cd35a5976773c179c7958cb8f30b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9680d061a4a6d812eec5972c07a81f9" id="r_af9680d061a4a6d812eec5972c07a81f9"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af9680d061a4a6d812eec5972c07a81f9">CheckPrimalStatusIsNot</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto forbidden_status)</td></tr>
-<tr class="memdesc:af9680d061a4a6d812eec5972c07a81f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
-<tr class="separator:af9680d061a4a6d812eec5972c07a81f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d249585cd1597efbbc38086973ef95" id="r_a17d249585cd1597efbbc38086973ef95"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a17d249585cd1597efbbc38086973ef95">CheckDualStatusIsNot</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto forbidden_status)</td></tr>
-<tr class="memdesc:a17d249585cd1597efbbc38086973ef95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
-<tr class="separator:a17d249585cd1597efbbc38086973ef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615757110cac2f29c5b6cc44b9a2ec82" id="r_a615757110cac2f29c5b6cc44b9a2ec82"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a615757110cac2f29c5b6cc44b9a2ec82">CheckDualStatusIs</a> (const ProblemStatusProto &amp;<a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, const FeasibilityStatusProto required_status, const bool primal_or_dual_infeasible_also_ok)</td></tr>
-<tr class="memdesc:a615757110cac2f29c5b6cc44b9a2ec82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes ValidateProblemStatus(status) is ok.  <br /></td></tr>
-<tr class="separator:a615757110cac2f29c5b6cc44b9a2ec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9597f0a0f8ff95c64d2c4a98d7fe6216" id="r_a9597f0a0f8ff95c64d2c4a98d7fe6216"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a9597f0a0f8ff95c64d2c4a98d7fe6216">ValidateSolveStats</a> (const SolveStatsProto &amp;solve_stats)</td></tr>
 <tr class="separator:a9597f0a0f8ff95c64d2c4a98d7fe6216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca4c0b97abc81be8277051635776cebe" id="r_aca4c0b97abc81be8277051635776cebe"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aca4c0b97abc81be8277051635776cebe">SparseMatrixValid</a> (const SparseDoubleMatrixProto &amp;matrix, const bool enforce_upper_triangular)</td></tr>
@@ -1550,6 +1559,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aad8e16adea761e20e13a0f5efc03c96b" id="r_aad8e16adea761e20e13a0f5efc03c96b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_floating_point&lt;T&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:aad8e16adea761e20e13a0f5efc03c96b"><td class="memTemplItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aad8e16adea761e20e13a0f5efc03c96b">CheckIdsAndValues</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorView.html">SparseVectorView</a>&lt; T &gt; &amp;vector_view, const <a class="el" href="structoperations__research_1_1math__opt_1_1DoubleOptions.html">DoubleOptions</a> &amp;options, absl::string_view value_name=&quot;values&quot;)</td></tr>
 <tr class="separator:aad8e16adea761e20e13a0f5efc03c96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ceae6aa653e550a5312af7cf086a7f" id="r_ad4ceae6aa653e550a5312af7cf086a7f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ad4ceae6aa653e550a5312af7cf086a7f">ValidateTermination</a> (const TerminationProto &amp;termination, bool is_maximize)</td></tr>
+<tr class="memdesc:ad4ceae6aa653e550a5312af7cf086a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks all messages are valid and compatible.  <br /></td></tr>
+<tr class="separator:ad4ceae6aa653e550a5312af7cf086a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1589,6 +1601,12 @@ Variables</h2></td></tr>
 <tr class="separator:adee1061270a25f8ac95f2f38ea2bd93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69593064bb44519e322c99d066c7e5f2" id="r_a69593064bb44519e322c99d066c7e5f2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceoperations__research_1_1math__opt.html#a7599bae2252fb217c01ed5357baba9fb">ObjectiveId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a></td></tr>
 <tr class="separator:a69593064bb44519e322c99d066c7e5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db14f6ec7727f05b4e00c37bdd86840" id="r_a2db14f6ec7727f05b4e00c37bdd86840"><td class="memItemLeft" align="right" valign="top">*If primal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2db14f6ec7727f05b4e00c37bdd86840">bound</a></td></tr>
+<tr class="separator:a2db14f6ec7727f05b4e00c37bdd86840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b504a6fd94e7536c26607813a045e05" id="r_a5b504a6fd94e7536c26607813a045e05"><td class="memItemLeft" align="right" valign="top">*If primal *dual <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> is&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a5b504a6fd94e7536c26607813a045e05">infeasible</a></td></tr>
+<tr class="separator:a5b504a6fd94e7536c26607813a045e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235a84618051b87e8354c7aa7adb294b" id="r_a235a84618051b87e8354c7aa7adb294b"><td class="memItemLeft" align="right" valign="top">*If primal *dual <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> is and *dual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2db14f6ec7727f05b4e00c37bdd86840">bound</a> is equal <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> primal <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2db14f6ec7727f05b4e00c37bdd86840">bound</a> *is&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a235a84618051b87e8354c7aa7adb294b">finite</a></td></tr>
+<tr class="separator:a235a84618051b87e8354c7aa7adb294b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An object oriented wrapper for quadratic constraints in ModelStorage. </p>
@@ -1949,7 +1967,7 @@ template&lt;typename V &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00155">155</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00184">184</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2086,7 @@ template&lt;typename V &gt; </div>
 <tr><td class="fieldname"><a id="a322dff029ac8b26a6056a11211e14efdab19e80cac5b7f585659031a6cff1489b" name="a322dff029ac8b26a6056a11211e14efdab19e80cac5b7f585659031a6cff1489b"></a>kVeryHigh&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00167">167</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00166">166</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -2178,7 +2196,7 @@ template&lt;typename V &gt; </div>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00231">231</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00230">230</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -2214,7 +2232,7 @@ template&lt;typename V &gt; </div>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00116">116</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00115">115</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -2278,7 +2296,7 @@ template&lt;typename V &gt; </div>
 <p>Supports LP, MIP, and nonconvex integer quadratic problems. No dual data for LPs is returned though. Prefer GLOP for LPs. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1a4e2d8708a16ad2817a18f55a516e7dabc8ddfb8a00bb405e68545ce187ac238" name="a1a4e2d8708a16ad2817a18f55a516e7dabc8ddfb8a00bb405e68545ce187ac238"></a>kGurobi&#160;</td><td class="fielddoc"><p><a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> solver (third party).</p>
-<p>Supports LP, MIP, and nonconvex integer quadratic problems. Generally the fastest option, but has special licensing, see go/gurobi-google for details. </p>
+<p>Supports LP, MIP, and nonconvex integer quadratic problems. Generally the fastest option, but has special licensing. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1a4e2d8708a16ad2817a18f55a516e7da512b5059e1ca814e697fb191d93aaf7f" name="a1a4e2d8708a16ad2817a18f55a516e7da512b5059e1ca814e697fb191d93aaf7f"></a>kGlop&#160;</td><td class="fielddoc"><p>Google's Glop solver.</p>
 <p>Supports LP with primal and dual simplex methods. </p>
@@ -2331,7 +2349,7 @@ template&lt;typename V &gt; </div>
 <tr><td class="fieldname"><a id="a09b132961fb88528de3313abb3943314ae8024a6eeff9d90cc3babff8acaec9c9" name="a09b132961fb88528de3313abb3943314ae8024a6eeff9d90cc3babff8acaec9c9"></a>kNotImplemented&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8h_source.html#l00256">256</a> of file <a class="el" href="math__opt__proto__utils_8h_source.html">math_opt_proto_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8h_source.html#l00309">309</a> of file <a class="el" href="math__opt__proto__utils_8h_source.html">math_opt_proto_utils.h</a>.</p>
 
 </div>
 </div>
@@ -2363,7 +2381,7 @@ template&lt;typename V &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="a1e2e001b55e2f55dffeafd6fc18773a2a23ed664a0e17d03024e229f8ef94184d" name="a1e2e001b55e2f55dffeafd6fc18773a2a23ed664a0e17d03024e229f8ef94184d"></a>kUnbounded&#160;</td><td class="fielddoc"><p>The primal problem is feasible and arbitrarily good solutions can be found along a primal ray. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1e2e001b55e2f55dffeafd6fc18773a2a7df6131c263c532b82e1525e06e7778a" name="a1e2e001b55e2f55dffeafd6fc18773a2a7df6131c263c532b82e1525e06e7778a"></a>kInfeasibleOrUnbounded&#160;</td><td class="fielddoc"><p>The primal problem is either infeasible or unbounded. More details on the problem status may be available in solve_stats.problem_status. Note that <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a>'s unbounded status may be mapped here as explained in go/mathopt-solver-specific<a class="el" href="g__gurobi_8cc.html#ac990cb3bd3735ca93fbc86345df21bd5">gurobi</a>-inf-or-unb. </p>
+<tr><td class="fieldname"><a id="a1e2e001b55e2f55dffeafd6fc18773a2a7df6131c263c532b82e1525e06e7778a" name="a1e2e001b55e2f55dffeafd6fc18773a2a7df6131c263c532b82e1525e06e7778a"></a>kInfeasibleOrUnbounded&#160;</td><td class="fielddoc"><p>The primal problem is either infeasible or unbounded. More details on the problem status may be available in solve_stats.problem_status. Note that <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a>'s unbounded status may be mapped here. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1e2e001b55e2f55dffeafd6fc18773a2aa2e9430dc6f4c82d5766b5ce4c36820a" name="a1e2e001b55e2f55dffeafd6fc18773a2aa2e9430dc6f4c82d5766b5ce4c36820a"></a>kImprecise&#160;</td><td class="fielddoc"><p>The problem was solved to one of the criteria above (Optimal, Infeasible, Unbounded, or InfeasibleOrUnbounded), but one or more tolerances was not met. Some primal/dual solutions/rays may be present, but either they will be slightly infeasible, or (if the problem was nearly optimal) their may be a gap between the best solution objective and best objective bound.</p>
 <p>Users can still query primal/dual solutions/rays and solution stats, but they are responsible for dealing with the numerical imprecision. </p>
@@ -2557,7 +2575,7 @@ template&lt;typename H &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02090">2090</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02091">2091</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -3027,7 +3045,7 @@ template&lt;typename H &gt; </div>
 </div><div class="memdoc">
 <p>Applies the primal, dual and reduced costs filters from model_solve_params to the primal solution variable values, dual solution dual values, and dual solution reduced costs, respectively, and overwriting these values with the results.</p>
 <dl class="section warning"><dt>Warning</dt><dd>solution is modified in place.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo:</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000860">Todo:</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00119">119</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -3147,8 +3165,8 @@ template&lt;typename ConstraintType &gt; </div>
 
 </div>
 </div>
-<a id="aef327438a1fa36c754675f638de11139" name="aef327438a1fa36c754675f638de11139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef327438a1fa36c754675f638de11139">&#9670;&#160;</a></span>CheckDualSolutionAndStatusConsistency()</h2>
+<a id="a71258c777ec895fb0cbbb600b5242edd" name="a71258c777ec895fb0cbbb600b5242edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71258c777ec895fb0cbbb600b5242edd">&#9670;&#160;</a></span>CheckDualSolutionAndStatusConsistency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3156,14 +3174,24 @@ template&lt;typename ConstraintType &gt; </div>
         <tr>
           <td class="memname">absl::Status operations_research::math_opt::CheckDualSolutionAndStatusConsistency </td>
           <td>(</td>
-          <td class="paramtype">const SolveResultProto &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramtype">const TerminationProto &amp;&#160;</td>
+          <td class="paramname"><em>termination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00170">170</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00139">139</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3203,7 +3231,7 @@ template&lt;typename ConstraintType &gt; </div>
 <p>If primal_or_dual_infeasible_also_ok is false, returns absl::Ok only if status.dual_status = required_status. If primal_or_dual_infeasible_also_ok is true, it returns absl::Ok when status.dual_status = required_status and when primal_or_dual_infeasible is true. Assumes validateProblemStatus(status) returns absl::Ok. </p>
 <p>ValidateProblemStatus call above guarantees primal and dual statuses are FEASIBILITY_STATUS_UNDETERMINED here.</p>
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00101">101</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00102">102</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3236,7 +3264,27 @@ template&lt;typename ConstraintType &gt; </div>
 <p>Assumes ValidateProblemStatus(status) is ok. </p>
 <p>Returns absl::Ok only if status.dual_status != forbidden_status. Assumes validateProblemStatus(status) returns absl::Ok. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00088">88</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00089">89</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
+
+</div>
+</div>
+<a id="aab0f559ac5e6bde44fe7282b55419cdf" name="aab0f559ac5e6bde44fe7282b55419cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab0f559ac5e6bde44fe7282b55419cdf">&#9670;&#160;</a></span>CheckFinitePrimalBound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::math_opt::CheckFinitePrimalBound </td>
+          <td>(</td>
+          <td class="paramtype">const ObjectiveBoundsProto &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00136">136</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3258,7 +3306,7 @@ template&lt;typename ConstraintType &gt; </div>
 
 <p>Returns absl::Ok only if a primal feasible solution is available. </p>
 
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00149">149</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00117">117</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3504,14 +3552,14 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Checks that the elements of ids are a subset of universe. Elements of ids do not need to be sorted or distinct. If upper_bound is set, elements must be strictly less than upper_bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000940">Todo:</a></b></dt><dd>(b/232526223): try merge this with the CheckIdsSubset overload below, or at least have one call the other. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000942">Todo:</a></b></dt><dd>(b/232526223): try merge this with the CheckIdsSubset overload below, or at least have one call the other. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ids__validator_8cc_source.html#l00055">55</a> of file <a class="el" href="ids__validator_8cc_source.html">ids_validator.cc</a>.</p>
 
 </div>
 </div>
-<a id="a4e12fc78ddb4b7e21a08255d309fed5d" name="a4e12fc78ddb4b7e21a08255d309fed5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e12fc78ddb4b7e21a08255d309fed5d">&#9670;&#160;</a></span>CheckPrimalSolutionAndStatusConsistency()</h2>
+<a id="a13858e187e294c6618ca311d52cf6601" name="a13858e187e294c6618ca311d52cf6601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13858e187e294c6618ca311d52cf6601">&#9670;&#160;</a></span>CheckPrimalSolutionAndStatusConsistency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3519,14 +3567,24 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">absl::Status operations_research::math_opt::CheckPrimalSolutionAndStatusConsistency </td>
           <td>(</td>
-          <td class="paramtype">const SolveResultProto &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramtype">const TerminationProto &amp;&#160;</td>
+          <td class="paramname"><em>termination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00158">158</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00126">126</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3598,7 +3656,7 @@ template&lt;typename T &gt; </div>
 <p>Assumes ValidateProblemStatus(status) is ok. </p>
 <p>Returns absl::Ok only if status.primal_status = required_status. Assumes validateProblemStatus(status) returns absl::Ok. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00062">62</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00063">63</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3631,7 +3689,7 @@ template&lt;typename T &gt; </div>
 <p>Assumes ValidateProblemStatus(status) is ok. </p>
 <p>Returns absl::Ok only if status.primal_status != forbidden_status. Assumes validateProblemStatus(status) returns absl::Ok. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00075">75</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00076">76</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3694,7 +3752,7 @@ template&lt;typename T &gt; </div>
 
 <p>Checks value is not NaN and satisfies the additional conditions in options. </p>
 
-<p class="definition">Definition at line <a class="el" href="scalar__validator_8cc_source.html#l00037">37</a> of file <a class="el" href="scalar__validator_8cc_source.html">scalar_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scalar__validator_8cc_source.html#l00036">36</a> of file <a class="el" href="scalar__validator_8cc_source.html">scalar_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3714,7 +3772,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scalar__validator_8cc_source.html#l00029">29</a> of file <a class="el" href="scalar__validator_8cc_source.html">scalar_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scalar__validator_8cc_source.html#l00028">28</a> of file <a class="el" href="scalar__validator_8cc_source.html">scalar_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -3922,8 +3980,8 @@ template&lt;typename Collection &gt; </div>
 
 </div>
 </div>
-<a id="ad6065f869228e0b5544c2ddd2a5c3b26" name="ad6065f869228e0b5544c2ddd2a5c3b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6065f869228e0b5544c2ddd2a5c3b26">&#9670;&#160;</a></span>CutoffTerminationProto()</h2>
+<a id="a83249de0e912dcd5d351fda61b0cf6c1" name="a83249de0e912dcd5d351fda61b0cf6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83249de0e912dcd5d351fda61b0cf6c1">&#9670;&#160;</a></span>CutoffTerminationProto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3947,6 +4005,8 @@ template&lt;typename Collection &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calls <a class="el" href="namespaceoperations__research_1_1math__opt.html#a647b24c008c0cab90f59e848a507c244">NoSolutionFoundTerminationProto()</a> with LIMIT_CUTOFF LIMIT. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00314">314</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4485,7 +4545,11 @@ template&lt;typename E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>finite_primal_objective should be finite and limit should not be LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead). Assumes dual solution exists if optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000859">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<p>Returns a TERMINATION_REASON_FEASIBLE termination with a FEASIBILITY_STATUS_FEASIBLE primal status. The dual status depends on optional_dual_objective.</p>
+<p>finite_primal_objective should be finite and limit should not be LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead).</p>
+<p>Assumes dual solution exists iff optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value). If set the dual status is set to FEASIBILITY_STATUS_FEASIBLE, else it is FEASIBILITY_STATUS_UNDETERMINED.</p>
+<p>It sets the primal bound based on the primal objective. The dual bound is either set to the optional_dual_objective if set, else to a trivial value.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000863">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00344">344</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4599,7 +4663,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Applies filter to each element of input and returns the elements that remain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000855">Todo:</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000859">Todo:</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00105">105</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4733,6 +4797,42 @@ template&lt;typename IndexType &gt; </div>
 
 </div>
 </div>
+<a id="a51bd4afc3eab5b043ee4bf92a3acd7cf" name="a51bd4afc3eab5b043ee4bf92a3acd7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bd4afc3eab5b043ee4bf92a3acd7cf">&#9670;&#160;</a></span>FormulateIndicatorConstraintAsMip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::math_opt::FormulateIndicatorConstraintAsMip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1math__opt_1_1IndicatorConstraint.html">IndicatorConstraint</a>&#160;</td>
+          <td class="paramname"><em>indicator_constraint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Takes a <code>model</code> and an <code>indicator_constraint</code> from that same model, and models that constraint using mixed-integer programming (MIP). This entails deleting <code>indicator_constraint</code> from <code>model</code> and adding new linear constraints.</p>
+<p>As of 2023-10-03, this formulation is a simple big-M formulation:</p>
+<p>Indicator constraint: x = 1 --&gt; lb ≤ &lt;a, y&gt; ≤ ub Becomes: if lb &gt; -∞: &lt;a, y&gt; ≥ lb + (LowerBound(&lt;a, y&gt;) - lb) (1 - x) if ub &lt; +∞: &lt;a, y&gt; ≤ ub + (UpperBound(&lt;a, y&gt;) - ub) (1 - x),</p>
+<p>where <a class="el" href="namespaceoperations__research_1_1math__opt.html#a10ced0eb30142ca4f0f7138d068d4812">LowerBound()</a> and <a class="el" href="namespaceoperations__research_1_1math__opt.html#aa8eeb7d68643d4762bf413501134eeeb">UpperBound()</a> are from linear_expr_util.</p>
+<p>Will return an error if <code>indicator_constraint</code> is not valid or associated with <code>model</code>, or if the simple bound computations are not able to prove that the indicator constraint is MIP representable (namely, if <a class="el" href="namespaceoperations__research_1_1math__opt.html#a10ced0eb30142ca4f0f7138d068d4812">LowerBound()</a> and/or <a class="el" href="namespaceoperations__research_1_1math__opt.html#aa8eeb7d68643d4762bf413501134eeeb">UpperBound()</a> return -∞ or +∞, respectively). </p>
+<p>One if the implied constraint should hold; zero otherwise.</p>
+
+<p class="definition">Definition at line <a class="el" href="general__constraint__to__mip_8cc_source.html#l00027">27</a> of file <a class="el" href="general__constraint__to__mip_8cc_source.html">general_constraint_to_mip.cc</a>.</p>
+
+</div>
+</div>
 <a id="a55fb38df4be2b4a6e933fbbd6c2cd2d0" name="a55fb38df4be2b4a6e933fbbd6c2cd2d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55fb38df4be2b4a6e933fbbd6c2cd2d0">&#9670;&#160;</a></span>FromGlopBasisStatus()</h2>
 
@@ -4794,7 +4894,7 @@ template&lt;typename ValueType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns solve_result.termination.objective_bounds if present. Otherwise, it builds ObjectiveBoundsProto from solve_result.solve_stats.best_primal/dual_bound </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000853">Todo:</a></b></dt><dd>(b/290091715): Remove once solve_stats.best_primal/dual_bound is removed and we know termination.objective_bounds will always be present. </dd></dl>
+<p>Returns solve_result.termination.objective_bounds if present. Otherwise, it builds ObjectiveBoundsProto from solve_result.solve_stats.best_primal/dual_bound </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000857">Todo:</a></b></dt><dd>(b/290091715): Remove once solve_stats.best_primal/dual_bound is removed and we know termination.objective_bounds will always be present. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00045">45</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4815,7 +4915,7 @@ template&lt;typename ValueType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns solve_result.termination.problem_status if present. Otherwise, it returns solve_result.solve_stats.problem_status </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000854">Todo:</a></b></dt><dd>(b/290091715): Remove once solve_stats.problem_status is removed and we know termination.problem_status will always be present. </dd></dl>
+<p>Returns solve_result.termination.problem_status if present. Otherwise, it returns solve_result.solve_stats.problem_status </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000858">Todo:</a></b></dt><dd>(b/290091715): Remove once solve_stats.problem_status is removed and we know termination.problem_status will always be present. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00056">56</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4967,7 +5067,7 @@ template&lt;typename T &gt; </div>
 <p>Surprisingly, even when <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> fails to load the environment, it still creates one. Here we make sure to free it properly.</p>
 <p>We can also use it with <a class="el" href="namespaceoperations__research.html#abd8a34f95634f5760de889eb76743c5c">GRBgeterrormsg()</a> to get the associated error message that goes with the error and the contains additional data like the user, the host and the hostid.</p>
 
-<p class="definition">Definition at line <a class="el" href="g__gurobi_8cc_source.html#l00144">144</a> of file <a class="el" href="g__gurobi_8cc_source.html">g_gurobi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="g__gurobi_8cc_source.html#l00152">152</a> of file <a class="el" href="g__gurobi_8cc_source.html">g_gurobi.cc</a>.</p>
 
 </div>
 </div>
@@ -5027,6 +5127,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a TERMINATION_REASON_INFEASIBLE_OR_UNBOUNDED termination with FEASIBILITY_STATUS_UNDETERMINED primal status and the provided dual status along with trivial bounds.</p>
+<p>primal_or_dual_infeasible is set if dual_feasibility_status is FEASIBILITY_STATUS_UNDETERMINED.</p>
 <p>dual_feasibility_status must be infeasible or undetermined for a valid TerminationProto to be returned. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00369">369</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
@@ -5064,7 +5166,10 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The convention for infeasible MIPs is that dual_feasibility_status is feasible (There always exist a dual feasible convex relaxation of an infeasible MIP). dual_feasibility_status must not be unspecified for a valid TerminationProto to be returned. </p>
+<p>Returns a TERMINATION_REASON_INFEASIBLE termination with FEASIBILITY_STATUS_INFEASIBLE primal status and the provided dual status.</p>
+<p>It sets a trivial primal bound and a trivial dual bound based on the provided dual status.</p>
+<p>The convention for infeasible MIPs is that dual_feasibility_status is feasible (There always exist a dual feasible convex relaxation of an infeasible MIP).</p>
+<p>dual_feasibility_status must not be FEASIBILITY_STATUS_UNSPECIFIED for a valid TerminationProto to be returned. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00251">251</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5181,7 +5286,8 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assumes primal solution exists if optional_finite_primal_objective is set. If set, optional_finite_primal_objective should be finite if set for a valid TerminationProto to be returned. Assumes dual solution exists if optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000860">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<p>Either calls <a class="el" href="namespaceoperations__research_1_1math__opt.html#a614c1a306a138f7593f4ae84dbf034c9">FeasibleTerminationProto()</a> or <a class="el" href="namespaceoperations__research_1_1math__opt.html#a647b24c008c0cab90f59e848a507c244">NoSolutionFoundTerminationProto()</a> based on optional_finite_primal_objective having a value.</p>
+<p>That is it assumes a primal feasible solution exists iff optional_finite_primal_objective has a value. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00270">270</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5230,7 +5336,10 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assumes primal solution exists if primal_objective is finite. Assumes dual solution exists if claim_dual_feasible_solution_exists is true even if dual_objective is infinite (some solvers return feasible dual solutions without an objective value). If dual_objective is finite then claim_dual_feasible_solution_exists must be true for a valid termination to be returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000861">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<p>Returns either a TERMINATION_REASON_FEASIBLE or TERMINATION_REASON_NO_SOLUTION_FOUND termination depending on primal_objective being finite or not. That is it assumes there is a primal feasible solution iff primal_objective is finite.</p>
+<p>If claim_dual_feasible_solution_exists is true, the dual_status is set as FEASIBILITY_STATUS_FEASIBLE, else FEASIBILITY_STATUS_UNDETERMINED.</p>
+<p>This function assumes dual solution exists if claim_dual_feasible_solution_exists is true even if dual_objective is infinite (some solvers return feasible dual solutions without an objective value). If dual_objective is finite then claim_dual_feasible_solution_exists must be true for a valid termination to be returned.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000864">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00284">284</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5551,12 +5660,25 @@ template&lt;typename KeyType &gt; </div>
         <tr>
           <td class="memname">ObjectiveBoundsProto operations_research::math_opt::MakeTrivialBounds </td>
           <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>is_maximize</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns trivial bounds.</p>
+<p>Trivial bounds are:</p><ul>
+<li>for a maximization:<ul>
+<li>primal_bound: -inf</li>
+<li>dual_bound : +inf</li>
+</ul>
+</li>
+<li>for a minimization:<ul>
+<li>primal_bound: +inf</li>
+<li>dual_bound : -inf </li>
+</ul>
+</li>
+</ul>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00188">188</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -6061,7 +6183,7 @@ template&lt;typename K , typename V &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000881">Todo:</a></b></dt><dd>(user): use the constraint iterator from scip_solver.cc here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000884">Todo:</a></b></dt><dd>(user): use the constraint iterator from scip_solver.cc here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="proto__converter_8cc_source.html#l00387">387</a> of file <a class="el" href="proto__converter_8cc_source.html">proto_converter.cc</a>.</p>
 
@@ -6266,7 +6388,7 @@ template&lt;typename V , typename C &gt; </div>
 <p>The variables' values are changed in the direction that improves the objective. Variables that are not in the objective are not modified.</p>
 <p>This function is typically useful when solving MIP with a non-zero gap or when the time limit interrupts the solve early. In those cases a MIP solver can return a solution where some variables can trivially be changed to improve the objective but since the solution fits in the termination criteria (either the gap or the time limit) the solver did not do it. </p>
 <p>Validate the inputs.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000882">Todo:</a></b></dt><dd>(b/193121090): here we build the proto as the APIs of MathOpt only works with the proto and can't use the C++ <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> (or ModelStorage). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000885">Todo:</a></b></dt><dd>(b/193121090): here we build the proto as the APIs of MathOpt only works with the proto and can't use the C++ <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> (or ModelStorage). </dd></dl>
 <p>We maintain a solution with updated value for each variable in the order of traversal.</p>
 <p>Invariant: values are finite.</p>
 <p>We also maintain the values of each constraint in sync with the values in new_solution.</p>
@@ -6472,7 +6594,10 @@ template&lt;typename V , typename C &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assumes dual solution exists if optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value). optional_dual_objective should not be set when limit is LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000858">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<p>Returns a TERMINATION_REASON_NO_SOLUTION_FOUND termination with FEASIBILITY_STATUS_UNDETERMINED primal status.</p>
+<p>Assumes dual solution exists iff optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value). optional_dual_objective should not be set when limit is LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead).</p>
+<p>It sets a trivial primal bound. The dual bound is either set to the optional_dual_objective if set, else to a trivial value.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000862">Todo:</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00321">321</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -6844,7 +6969,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02105">2105</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02106">2106</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -6885,7 +7010,7 @@ template&lt;typename V , typename C &gt; </div>
 <p>-------------------------&mdash; Multiplication (*) --------------------------&mdash; </p>
 <dl class="section note"><dt>Note</dt><dd>A friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>, but does not touch variables </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02467">2467</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02468">2468</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -6923,7 +7048,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02540">2540</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02541">2541</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -6961,7 +7086,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02529">2529</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02530">2530</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -6999,7 +7124,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02518">2518</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02519">2519</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7151,7 +7276,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02472">2472</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02473">2473</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7227,7 +7352,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02507">2507</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02508">2508</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7265,7 +7390,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02502">2502</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02503">2503</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7303,7 +7428,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02497">2497</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02498">2498</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7379,7 +7504,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02567">2567</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02568">2568</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7418,7 +7543,7 @@ template&lt;typename V , typename C &gt; </div>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>A friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>, but does not touch variables </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02562">2562</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02563">2563</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7456,7 +7581,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02486">2486</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02487">2487</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7494,7 +7619,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02481">2481</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02482">2482</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7532,7 +7657,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02477">2477</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02478">2478</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7613,7 +7738,7 @@ template&lt;typename V , typename C &gt; </div>
 <p>Arithmetic operators (non-member).</p>
 <p>These are NOT required to explicitly CHECK that the underlying model storages agree between linear_terms_ and quadratic_terms_ unless they are a friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a>. As much as possible, defer to the assignment operators and the initializer list constructor for <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02236">2236</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02237">2237</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7651,7 +7776,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02269">2269</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02270">2270</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7727,7 +7852,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02254">2254</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02255">2255</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7803,7 +7928,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02258">2258</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02259">2259</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7879,7 +8004,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02283">2283</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02284">2284</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7917,7 +8042,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02293">2293</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02294">2294</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7955,7 +8080,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02275">2275</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02276">2276</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -7993,7 +8118,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02287">2287</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02288">2288</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8031,7 +8156,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02298">2298</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02299">2299</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8069,7 +8194,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02279">2279</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02280">2280</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8183,7 +8308,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02240">2240</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02241">2241</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8335,7 +8460,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02263">2263</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02264">2264</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8487,7 +8612,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02319">2319</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02320">2320</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8525,7 +8650,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02314">2314</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02315">2315</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8563,7 +8688,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02331">2331</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02332">2332</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8601,7 +8726,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02325">2325</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02326">2326</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8639,7 +8764,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02304">2304</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02305">2305</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8677,7 +8802,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02309">2309</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02310">2310</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8753,7 +8878,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02245">2245</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02246">2246</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8867,7 +8992,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02249">2249</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02250">2250</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -8943,7 +9068,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02391">2391</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02392">2392</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9019,7 +9144,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02375">2375</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02376">2376</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9095,7 +9220,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02379">2379</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02380">2380</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9171,7 +9296,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02406">2406</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02407">2407</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9209,7 +9334,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02416">2416</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02417">2417</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9247,7 +9372,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02398">2398</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02399">2399</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9285,7 +9410,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02410">2410</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02411">2411</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9323,7 +9448,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02421">2421</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02422">2422</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9361,7 +9486,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02402">2402</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02403">2403</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9437,7 +9562,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02357">2357</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02358">2358</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9513,7 +9638,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02361">2361</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02362">2362</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9694,7 +9819,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02385">2385</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02386">2386</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9845,7 +9970,7 @@ template&lt;typename V , typename C &gt; </div>
 </ol>
 <dl class="section note"><dt>Note</dt><dd>A friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a>, but does not touch variables </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02346">2346</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02347">2347</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9884,7 +10009,7 @@ template&lt;typename V , typename C &gt; </div>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>operator-(QuadraticExpression, const LinearTerm) appears above </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02446">2446</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02447">2447</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9923,7 +10048,7 @@ template&lt;typename V , typename C &gt; </div>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>Out-of-order for compilation purposes </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02434">2434</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02435">2435</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9961,7 +10086,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02458">2458</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02459">2459</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -9999,7 +10124,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02452">2452</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02453">2453</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10037,7 +10162,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02428">2428</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02429">2429</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10075,7 +10200,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02439">2439</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02440">2440</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10107,7 +10232,7 @@ template&lt;typename V , typename C &gt; </div>
 <p>We declare those operator overloads that result in a <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>, stated in lexicographic ordering based on lhs type, rhs type):</p>
 <dl class="section note"><dt>Note</dt><dd>A friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>, but does not touch variables </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02340">2340</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02341">2341</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10183,7 +10308,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02367">2367</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02368">2368</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10297,7 +10422,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02371">2371</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02372">2372</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10449,7 +10574,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02580">2580</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02581">2581</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10490,7 +10615,7 @@ template&lt;typename V , typename C &gt; </div>
 <p>----------------------------&mdash; Division (/) -----------------------------&mdash; </p>
 <dl class="section note"><dt>Note</dt><dd>A friend of <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>, but does not touch variables </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02575">2575</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02576">2576</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10626,8 +10751,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000848">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000848">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000852">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000852">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="indicator__constraint_8h_source.html#l00137">137</a> of file <a class="el" href="indicator__constraint_8h_source.html">indicator_constraint.h</a>.</p>
 
@@ -10667,8 +10792,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000866">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000866">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000869">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000869">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00175">175</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
@@ -10699,7 +10824,7 @@ template&lt;typename V , typename C &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000877">Todo:</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000880">Todo:</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
 <li>make sure to quote the variable name so that we support: </li>
 </ul>
 </dd></dl>
@@ -10765,7 +10890,7 @@ template&lt;typename V , typename C &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Streams the name of the objective, as registered upon objective creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000871">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000874">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="objective_8cc_source.html#l00061">61</a> of file <a class="el" href="objective_8cc_source.html">objective.cc</a>.</p>
 
@@ -10835,8 +10960,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000849">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000849">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000853">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000853">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="quadratic__constraint_8h_source.html#l00192">192</a> of file <a class="el" href="quadratic__constraint_8h_source.html">quadratic_constraint.h</a>.</p>
 
@@ -10867,7 +10992,7 @@ template&lt;typename V , typename C &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000878">Todo:</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000881">Todo:</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variable__and__expressions_8cc_source.html#l00155">155</a> of file <a class="el" href="variable__and__expressions_8cc_source.html">variable_and_expressions.cc</a>.</p>
 
@@ -10907,7 +11032,7 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02095">2095</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02096">2096</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -10945,8 +11070,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000850">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000850">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000854">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000854">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="second__order__cone__constraint_8h_source.html#l00127">127</a> of file <a class="el" href="second__order__cone__constraint_8h_source.html">second_order_cone_constraint.h</a>.</p>
 
@@ -11016,8 +11141,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000851">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000851">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000855">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000855">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sos1__constraint_8h_source.html#l00127">127</a> of file <a class="el" href="sos1__constraint_8h_source.html">sos1_constraint.h</a>.</p>
 
@@ -11057,8 +11182,8 @@ template&lt;typename V , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000852">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000852">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sos2__constraint_8h_source.html#l00128">128</a> of file <a class="el" href="sos2__constraint_8h_source.html">sos2_constraint.h</a>.</p>
 
@@ -11089,7 +11214,7 @@ template&lt;typename V , typename C &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000874">Todo:</a></b></dt><dd>(b/200835670): quote detail and escape it properly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000877">Todo:</a></b></dt><dd>(b/200835670): quote detail and escape it properly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="solve__result_8cc_source.html#l00215">215</a> of file <a class="el" href="solve__result_8cc_source.html">solve_result.cc</a>.</p>
 
@@ -11128,8 +11253,8 @@ template&lt;typename V , typename C &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000880">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000880">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000883">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000883">Todo:</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01305">1305</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
@@ -11504,7 +11629,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03078">3078</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03079">3079</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -11808,7 +11933,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02851">2851</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02852">2852</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -11846,7 +11971,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02855">2855</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02856">2856</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -11922,7 +12047,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02892">2892</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02893">2893</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12075,7 +12200,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03084">3084</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03085">3085</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12151,7 +12276,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03110">3110</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03111">3111</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12189,7 +12314,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03116">3116</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03117">3117</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12266,7 +12391,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02887">2887</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02888">2888</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12304,7 +12429,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02940">2940</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02941">2941</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12342,7 +12467,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02928">2928</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02929">2929</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12380,7 +12505,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02868">2868</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02869">2869</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12418,7 +12543,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02946">2946</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02947">2947</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12456,7 +12581,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02934">2934</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02935">2935</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12494,7 +12619,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02952">2952</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02953">2953</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12532,7 +12657,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02872">2872</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02873">2873</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12570,7 +12695,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03026">3026</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03027">3027</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12608,7 +12733,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03031">3031</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03032">3032</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12646,7 +12771,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03015">3015</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03016">3016</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12684,7 +12809,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03021">3021</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03022">3022</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12722,7 +12847,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03036">3036</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03037">3037</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12836,7 +12961,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03142">3142</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03143">3143</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12874,7 +12999,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03148">3148</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03149">3149</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -12990,7 +13115,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 
 <p>Double &ndash;. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03164">3164</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03165">3165</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13088,7 +13213,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03089">3089</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03090">3090</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13544,7 +13669,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 
 <p>Comparisons with lhs = Double. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03169">3169</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03170">3170</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13734,7 +13859,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03094">3094</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03095">3095</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13810,7 +13935,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03121">3121</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03122">3122</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13848,7 +13973,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03126">3126</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03127">3127</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13886,7 +14011,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02968">2968</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02969">2969</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13924,7 +14049,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02958">2958</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02959">2959</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -13962,7 +14087,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02983">2983</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02984">2984</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14000,7 +14125,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02973">2973</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02974">2974</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14038,7 +14163,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02963">2963</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02964">2964</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14076,7 +14201,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02978">2978</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02979">2979</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14114,7 +14239,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03062">3062</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03063">3063</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14152,7 +14277,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03050">3050</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03051">3051</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14190,7 +14315,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03054">3054</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03055">3055</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14228,7 +14353,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03041">3041</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03042">3042</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14266,7 +14391,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03046">3046</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03047">3047</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14304,7 +14429,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03058">3058</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03059">3059</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14342,7 +14467,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02101">2101</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02102">2102</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14494,7 +14619,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03153">3153</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03154">3154</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14532,7 +14657,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03158">3158</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03159">3159</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14572,7 +14697,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 
 <p>Comparisons with lhs = <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03067">3067</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03068">3068</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14914,7 +15039,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02882">2882</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02883">2883</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14952,7 +15077,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02860">2860</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02861">2861</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -14990,7 +15115,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02864">2864</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02865">2865</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15143,7 +15268,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03073">3073</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03074">3074</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15222,7 +15347,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 <p>Comparisons with lhs = <a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html" title="A term in an sum of variables multiplied by coefficients.">LinearTerm</a>. </p>
 <p><a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html" title="A term in an sum of variables multiplied by coefficients.">LinearTerm</a> &ndash;. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03099">3099</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03100">3100</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15260,7 +15385,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03105">3105</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03106">3106</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15298,7 +15423,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02910">2910</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02911">2911</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15339,7 +15464,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 <p>Comparisons with lhs = <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a>. </p>
 <p>We intentionally pass one <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a> argument by value so that we don't make unnecessary copies of temporary objects by using the move constructor and the returned values optimization (RVO). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02898">2898</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02899">2899</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15378,7 +15503,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </div><div class="memdoc">
 <p>We intentionally pass the <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticExpression.html">QuadraticExpression</a> argument by value so that we don't make unnecessary copies of temporary objects by using the move constructor and the returned values optimization (RVO). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02843">2843</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02844">2844</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15416,7 +15541,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02916">2916</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02917">2917</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15454,7 +15579,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02904">2904</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02905">2905</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15492,7 +15617,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02922">2922</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02923">2923</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15530,7 +15655,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02847">2847</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02848">2848</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15568,7 +15693,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03000">3000</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03001">3001</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15606,7 +15731,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03005">3005</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03006">3006</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15646,7 +15771,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 
 <p>Comparisons with lhs = <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTerm.html">QuadraticTerm</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02989">2989</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02990">2990</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15684,7 +15809,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02995">2995</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02996">2996</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15722,7 +15847,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03010">3010</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03011">3011</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15799,7 +15924,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </div><div class="memdoc">
 <p>We intentionally pass the <a class="el" href="structoperations__research_1_1math__opt_1_1UpperBoundedQuadraticExpression.html" title="A QuadraticExpression with an upper bound.">UpperBoundedQuadraticExpression</a> and <a class="el" href="structoperations__research_1_1math__opt_1_1LowerBoundedQuadraticExpression.html" title="A QuadraticExpression with a lower bound.">LowerBoundedQuadraticExpression</a> arguments by value so that we don't make unnecessary copies of temporary objects by using the move constructor and the returned values optimization (RVO). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02877">2877</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02878">2878</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15916,7 +16041,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 <p>Comparisons with lhs = <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>. </p>
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> &ndash;. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03131">3131</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03132">3132</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -15954,7 +16079,7 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03137">3137</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l03138">3138</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -16065,7 +16190,9 @@ template&lt;typename E , typename  = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImple
         </tr>
       </table>
 </div><div class="memdoc">
-<p>finite_primal_objective must be finite for a valid TerminationProto to be returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000857">Todo:</a></b></dt><dd>(b/290359402): additionally require dual_objective to be finite. </dd></dl>
+<p>Returns a TERMINATION_REASON_OPTIMAL termination with the provided objective bounds and FEASIBILITY_STATUS_FEASIBLE primal and dual statuses.</p>
+<p>finite_primal_objective must be finite for a valid TerminationProto to be returned.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000861">Todo:</a></b></dt><dd>(b/290359402): additionally require dual_objective to be finite. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00220">220</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -16859,7 +16986,7 @@ template&lt;typename Iterable &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets problem statuses to undetermined and sets trivial bounds independently of the selected reason. </p>
+<p>Returns a TerminationProto with the provided reason and details along with trivial bounds and FEASIBILITY_STATUS_UNDETERMINED statuses. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00204">204</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -16984,14 +17111,14 @@ template&lt;typename ValueType &gt; </div>
         <tr>
           <td class="memname">TerminationProto operations_research::math_opt::UnboundedTerminationProto </td>
           <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>is_maximize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const absl::string_view&#160;</td>
-          <td class="paramname"><em>detail</em>&#160;</td>
+          <td class="paramtype">absl::string_view&#160;</td>
+          <td class="paramname"><em>detail</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -17000,6 +17127,7 @@ template&lt;typename ValueType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a TERMINATION_REASON_UNBOUNDED termination with a FEASIBILITY_STATUS_FEASIBLE primal status and FEASIBILITY_STATUS_INFEASIBLE dual one along with corresponding trivial bounds. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00236">236</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -17157,6 +17285,42 @@ template&lt;typename IndexType &gt; </div>
 
 </div>
 </div>
+<a id="aeee056c25504d7759f90e81fdb2190a9" name="aeee056c25504d7759f90e81fdb2190a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee056c25504d7759f90e81fdb2190a9">&#9670;&#160;</a></span>ValidateBoundStatusConsistency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::math_opt::ValidateBoundStatusConsistency </td>
+          <td>(</td>
+          <td class="paramtype">const ObjectiveBoundsProto &amp;&#160;</td>
+          <td class="paramname"><em>objective_bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ProblemStatusProto &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_maximize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00215">215</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
+
+</div>
+</div>
 <a id="ac272f30595997993c575d574b43e1d8f" name="ac272f30595997993c575d574b43e1d8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac272f30595997993c575d574b43e1d8f">&#9670;&#160;</a></span>ValidateCallbackDataProto()</h2>
 
@@ -17305,7 +17469,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00081">81</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00080">80</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17328,7 +17492,7 @@ template&lt;typename IndexType &gt; </div>
 <p>Validates the internal consistency of the fields. </p>
 <p>Check that the <code>infeasible_subsystem</code> is empty by validating against an empty <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00092">92</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00091">91</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17543,8 +17707,9 @@ template&lt;typename IndexType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Problem status validators and utilities. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00032">32</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00033">33</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17666,7 +17831,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00052">52</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="infeasible__subsystem__validator_8cc_source.html#l00051">51</a> of file <a class="el" href="infeasible__subsystem__validator_8cc_source.html">infeasible_subsystem_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17701,6 +17866,27 @@ template&lt;typename IndexType &gt; </div>
 <p>If the function returns an error, no guarantees are made on the state of model_summary. </p>
 
 <p class="definition">Definition at line <a class="el" href="math__opt_2validators_2model__validator_8cc_source.html#l00279">279</a> of file <a class="el" href="math__opt_2validators_2model__validator_8cc_source.html">model_validator.cc</a>.</p>
+
+</div>
+</div>
+<a id="abed2e7ddd968a64d2b2aa0ffdb473e3f" name="abed2e7ddd968a64d2b2aa0ffdb473e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed2e7ddd968a64d2b2aa0ffdb473e3f">&#9670;&#160;</a></span>ValidateObjectiveBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::math_opt::ValidateObjectiveBounds </td>
+          <td>(</td>
+          <td class="paramtype">const ObjectiveBoundsProto &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classoperations__research_1_1math__opt_1_1Objective.html">Objective</a> bounds validators and utilities. </p>
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00128">128</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17829,7 +18015,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00043">43</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8cc_source.html#l00044">44</a> of file <a class="el" href="bounds__and__status__validator_8cc_source.html">bounds_and_status_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17866,8 +18052,10 @@ template&lt;typename IndexType &gt; </div>
 </div><div class="memdoc">
 
 <p>Validates the input result. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000944">Todo:</a></b></dt><dd>(b/290091715): Remove once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000945">Todo:</a></b></dt><dd>(b/290091715): Replace by TerminationProto termination = result.termination(); once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00280">280</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00204">204</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17902,9 +18090,49 @@ template&lt;typename IndexType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000943">Todo:</a></b></dt><dd>(b/204457524): consider checking equality of statuses for single-sided LPs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000947">Todo:</a></b></dt><dd>(b/204457524): consider checking equality of statuses for single-sided LPs. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="solution__validator_8cc_source.html#l00119">119</a> of file <a class="el" href="solution__validator_8cc_source.html">solution_validator.cc</a>.</p>
+
+</div>
+</div>
+<a id="add23cecedb126522044aca6764532ce3" name="add23cecedb126522044aca6764532ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add23cecedb126522044aca6764532ce3">&#9670;&#160;</a></span>ValidateSolutions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::math_opt::ValidateSolutions </td>
+          <td>(</td>
+          <td class="paramtype">const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ModelSolveParametersProto &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_summary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Validate individual solutions</p>
+<p>Validate solution order. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000943">Todo:</a></b></dt><dd>(b/204457524): check objective ordering when possible. </dd></dl>
+<p>Primal-feasible solutions must appear first.</p>
+<p>Dual-feasible solutions must appear first within the groups of primal-feasible and other solutions. Equivalently, a dual-feasible solution must be preceded by a dual-feasible solution, except when we switch from the group of primal-feasible solutions to the group of other solutions.</p>
+
+<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00064">64</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17923,7 +18151,7 @@ template&lt;typename IndexType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000945">Todo:</a></b></dt><dd>(b/213697045): some parameters are still not validated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000949">Todo:</a></b></dt><dd>(b/213697045): some parameters are still not validated. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="solve__parameters__validator_8cc_source.html#l00048">48</a> of file <a class="el" href="solve__parameters__validator_8cc_source.html">solve_parameters_validator.cc</a>.</p>
 
@@ -17945,7 +18173,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00164">164</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__stats__validator_8cc_source.html#l00026">26</a> of file <a class="el" href="solve__stats__validator_8cc_source.html">solve_stats_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -17979,8 +18207,8 @@ template&lt;typename IndexType &gt; </div>
 
 </div>
 </div>
-<a id="af67b80a359d3cdb652dc9161a15565ba" name="af67b80a359d3cdb652dc9161a15565ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af67b80a359d3cdb652dc9161a15565ba">&#9670;&#160;</a></span>ValidateTermination()</h2>
+<a id="ad4ceae6aa653e550a5312af7cf086a7f" name="ad4ceae6aa653e550a5312af7cf086a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ceae6aa653e550a5312af7cf086a7f">&#9670;&#160;</a></span>ValidateTermination()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -17989,50 +18217,25 @@ template&lt;typename IndexType &gt; </div>
           <td class="memname">absl::Status operations_research::math_opt::ValidateTermination </td>
           <td>(</td>
           <td class="paramtype">const TerminationProto &amp;&#160;</td>
-          <td class="paramname"><em>termination</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>termination</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks that:</p><ul>
-<li>termination.reason is not UNSPECIFIED,</li>
-<li>termination.limit is set (not UNSPECIFIED) iff termination.reason is either FEASIBLE or NO_SOLUTION_FOUND,</li>
-<li>termination.limit is not CUTOFF when termination.reason is FEASIBLE. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00122">122</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
-
-</div>
-</div>
-<a id="a2e7baa28b18e97ddd47c264de703a0be" name="a2e7baa28b18e97ddd47c264de703a0be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e7baa28b18e97ddd47c264de703a0be">&#9670;&#160;</a></span>ValidateTerminationConsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">absl::Status operations_research::math_opt::ValidateTerminationConsistency </td>
-          <td>(</td>
-          <td class="paramtype">const SolveResultProto &amp;&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_maximize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assumes ValidateTermination has been called and ValidateProblemStatusProto has been called on result.solve_stats.problem_status. </p>
-<p>Dual feasible solution is not required. Primal/dual requirements imply primal/dual solution-status consistency.</p>
-<p>Primal requirements imply primal solution-status consistency. No dual requirements so we check consistency.</p>
-<p>No primal feasible solution is required.</p>
-<p>Primal/dual requirements imply primal/dual solution-status consistency.</p>
-<p>Primal/dual requirements imply primal/dual solution-status consistency. Note if primal status was not FEASIBILITY_STATUS_UNDETERMINED, then primal_or_dual_infeasible must be false and dual status would be FEASIBILITY_STATUS_INFEASIBLE. Then if primal status was FEASIBILITY_STATUS_INFEASIBLE we would have TERMINATION_REASON_INFEASIBLE and if it was FEASIBILITY_STATUS_FEASIBLE we would have TERMINATION_REASON_UNBOUNDED.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000941">Todo:</a></b></dt><dd>(b/211679884): update when imprecise solutions are added. </dd></dl>
-<p>Primal requirement implies primal solution-status consistency so we only check dual consistency.</p>
-<p>Note if dual status was FEASIBILITY_STATUS_INFEASIBLE, then we would have TERMINATION_REASON_UNBOUNDED (For MIP this follows tha assumption that every floating point ray can be scaled to be integer).</p>
-<p>Primal requirement implies primal solution-status consistency so we only check dual consistency.</p>
-<p>Note if primal status was FEASIBILITY_STATUS_INFEASIBLE, then we would have TERMINATION_REASON_INFEASIBLE.</p>
-<p>Primal/dual requirements imply primal/dual solution-status consistency.</p>
 
-<p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00184">184</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
+<p>Checks all messages are valid and compatible. </p>
+
+<p class="definition">Definition at line <a class="el" href="termination__validator_8cc_source.html#l00127">127</a> of file <a class="el" href="termination__validator_8cc_source.html">termination_validator.cc</a>.</p>
 
 </div>
 </div>
@@ -18253,6 +18456,48 @@ template&lt;typename Map , typename Keys , typename  = std::enable_if_t&lt;is_ke
 
 </div>
 </div>
+<a id="a8050c4c20206a0f5ac6cafefa8b59b36" name="a8050c4c20206a0f5ac6cafefa8b59b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8050c4c20206a0f5ac6cafefa8b59b36">&#9670;&#160;</a></span>WorstGLPKDualBound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double operations_research::math_opt::WorstGLPKDualBound </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_maximize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>objective_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relative_gap_limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the worst dual bound corresponding to the given objective value and relative gap limit. This should be used when glp_intopt() returns GLP_EMIPGAP (i.e. stopped because of the gap limit) but the best_dual_bound is not available.</p>
+<p>GLPK define the relative gap as: </p><div class="fragment"><div class="line">|best_objective_value − best_dual_bound|</div>
+</div><!-- fragment --><p> gap := -------------------------------------&mdash; <code>best_objective_value</code> + DBL_EPSILON</p>
+<p>This function thus returns the value of best_dual_bound that makes gap match the relative_gap_limit.</p>
+<p>Negative or NaN relative_gap_limit is considered 0. If the relative_gap_limit is +inf, returns the infinite dual bound corresponding to the is_maximize.</p>
+<p>If the objective_value is infinite or NaN, returns the same value as the worst dual bound (in practice the objective_value should be finite). </p>
+
+<p class="definition">Definition at line <a class="el" href="gap_8cc_source.html#l00023">23</a> of file <a class="el" href="gap_8cc_source.html">gap.cc</a>.</p>
+
+</div>
+</div>
 <a id="a77a875813eeb955fcb8ba3cb8cb6ea7d" name="a77a875813eeb955fcb8ba3cb8cb6ea7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77a875813eeb955fcb8ba3cb8cb6ea7d">&#9670;&#160;</a></span>WriteModel()</h2>
 
@@ -18296,6 +18541,23 @@ template&lt;typename Map , typename Keys , typename  = std::enable_if_t&lt;is_ke
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a2db14f6ec7727f05b4e00c37bdd86840" name="a2db14f6ec7727f05b4e00c37bdd86840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db14f6ec7727f05b4e00c37bdd86840">&#9670;&#160;</a></span>bound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* If primal operations_research::math_opt::bound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Status-Bounds consistency validators. Checks both bound-status compatibility rules. That is: </p>
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8h_source.html#l00073">73</a> of file <a class="el" href="bounds__and__status__validator_8h_source.html">bounds_and_status_validator.h</a>.</p>
+
+</div>
+</div>
 <a id="a31eab0685a86742ac6750e8e2812f0b0" name="a31eab0685a86742ac6750e8e2812f0b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31eab0685a86742ac6750e8e2812f0b0">&#9670;&#160;</a></span>default</h2>
 
@@ -18308,7 +18570,7 @@ template&lt;typename Map , typename Keys , typename  = std::enable_if_t&lt;is_ke
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00163">163</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00162">162</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18325,6 +18587,38 @@ template&lt;typename Map , typename Keys , typename  = std::enable_if_t&lt;is_ke
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8h_source.html#l00165">165</a> of file <a class="el" href="math__opt__proto__utils_8h_source.html">math_opt_proto_utils.h</a>.</p>
+
+</div>
+</div>
+<a id="a235a84618051b87e8354c7aa7adb294b" name="a235a84618051b87e8354c7aa7adb294b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235a84618051b87e8354c7aa7adb294b">&#9670;&#160;</a></span>finite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* If primal * dual <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> is and* dual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2db14f6ec7727f05b4e00c37bdd86840">bound</a> is equal <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> primal <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2db14f6ec7727f05b4e00c37bdd86840">bound</a>* is operations_research::math_opt::finite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8h_source.html#l00079">79</a> of file <a class="el" href="bounds__and__status__validator_8h_source.html">bounds_and_status_validator.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b504a6fd94e7536c26607813a045e05" name="a5b504a6fd94e7536c26607813a045e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b504a6fd94e7536c26607813a045e05">&#9670;&#160;</a></span>infeasible</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* If primal * dual <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> is operations_research::math_opt::infeasible</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounds__and__status__validator_8h_source.html#l00077">77</a> of file <a class="el" href="bounds__and__status__validator_8h_source.html">bounds_and_status_validator.h</a>.</p>
 
 </div>
 </div>
@@ -18428,7 +18722,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00165">165</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00164">164</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18468,7 +18762,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00165">165</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00164">164</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18561,7 +18855,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00165">165</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00164">164</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18603,7 +18897,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00162">162</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00161">161</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18621,7 +18915,7 @@ template&lt;typename T &gt; </div>
 
 <p>mapped to kMedium. </p>
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00165">165</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00164">164</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>
@@ -18642,7 +18936,7 @@ template&lt;typename T &gt; </div>
 <li>If the solver supports the feature: </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00161">161</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parameters_8h_source.html#l00160">160</a> of file <a class="el" href="parameters_8h_source.html">parameters.h</a>.</p>
 
 </div>
 </div>

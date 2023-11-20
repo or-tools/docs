@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -153,7 +153,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a>, typename Iterator = VectorIterator&lt;ScatteredVectorEntry&lt;Index&gt;&gt;&gt;<br />
-struct operations_research::glop::ScatteredVector&lt; Index, Iterator &gt;</div><p>A simple struct that contains a DenseVector and its non-zero indices. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000828">Todo:</a></b></dt><dd>(user): This should be changed from struct to class. </dd></dl>
+struct operations_research::glop::ScatteredVector&lt; Index, Iterator &gt;</div><p>A simple struct that contains a DenseVector and its non-zero indices. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000832">Todo:</a></b></dt><dd>(user): This should be changed from struct to class. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scattered__vector_8h_source.html#l00053">53</a> of file <a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -601,7 +601,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.h
 </table>
 </div><div class="memdoc">
 <p>In many cases there is a choice between treating the <a class="el" href="structoperations__research_1_1glop_1_1ScatteredVector.html">ScatteredVector</a> as dense or as sparse. By default, dense algorithms are used when the proportion of non-zero entries is greater than kDefaultRatioForUsingDenseIteration.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000829">Todo:</a></b></dt><dd>(user): The constant should depend on what algorithm is used. Clearing a dense vector is a lot more efficient than doing more complex stuff. Clean this up by extracting all the currently used constants in one place with meaningful names. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000833">Todo:</a></b></dt><dd>(user): The constant should depend on what algorithm is used. Clearing a dense vector is a lot more efficient than doing more complex stuff. Clean this up by extracting all the currently used constants in one place with meaningful names. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scattered__vector_8h_source.html#l00075">75</a> of file <a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>.</p>
 

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The result of solving an optimization problem with <a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">Solve()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00349">349</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00348">348</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aae370455d41a2064153ebd9a5b1b289e" name="aae370455d41a2064153ebd9a5b1b289e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae370455d41a2064153ebd9a5b1b289e">&#9670;&#160;</a></span>SolveResult()</h2>
@@ -209,7 +209,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00350">350</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00349">349</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Public Attributes</h2></td></tr>
 <p>Indicates if at least one dual ray is available.</p>
 <p>This is NOT guaranteed to be true when termination.reason is <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1e2e001b55e2f55dffeafd6fc18773a2aa4d66aafc8bcba36b995fd8be0483574" title="The primal problem has no feasible solutions.">TerminationReason::kInfeasible</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00489">489</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00488">488</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Public Attributes</h2></td></tr>
 <p>Indicates if at least one primal ray is available.</p>
 <p>This is NOT guaranteed to be true when termination.reason is <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1e2e001b55e2f55dffeafd6fc18773a2a23ed664a0e17d03024e229f8ef94184d">TerminationReason::kUnbounded</a> or <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1e2e001b55e2f55dffeafd6fc18773a2a7df6131c263c532b82e1525e06e7778a">TerminationReason::kInfeasibleOrUnbounded</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00456">456</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00455">455</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the proto equivalent of this.</p>
 <dl class="section note"><dt>Note</dt><dd>the proto uses a oneof for solver specific output. This method will fail if multiple solver specific outputs are set.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000876">Todo:</a></b></dt><dd>(b/231134639): investigate removing the oneof from the proto. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000879">Todo:</a></b></dt><dd>(b/231134639): investigate removing the oneof from the proto. </dd></dl>
 <p>See yaqs/5107601535926272 on checking if a proto is empty.</p>
 
 <p class="definition">Definition at line <a class="el" href="solve__result_8cc_source.html#l00342">342</a> of file <a class="el" href="solve__result_8cc_source.html">solve_result.cc</a>.</p>
@@ -650,7 +650,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00422">422</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00421">421</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -708,7 +708,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Directions of unbounded dual improvement, or equivalently, primal infeasibility certificates. Typically provided for TerminationReason kInfeasible. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00384">384</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00383">383</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +726,7 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> specific output from Gscip. Only populated if Gscip is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00387">387</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00386">386</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> specific output from Pdlp. Only populated if Pdlp is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00389">389</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00388">388</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +767,7 @@ Public Attributes</h2></td></tr>
 <li>All remaining solutions can be returned in any order. Directions of unbounded primal improvement, or equivalently, dual infeasibility certificates. Typically provided for TerminationReasons kUnbounded and kInfeasibleOrUnbounded. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00379">379</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00378">378</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +785,7 @@ Public Attributes</h2></td></tr>
 
 <p>Statistics on the solve process, e.g. running time, iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00357">357</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00356">356</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +803,7 @@ Public Attributes</h2></td></tr>
 
 <p>The reason the solver stopped. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00354">354</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__result_8h_source.html#l00353">353</a> of file <a class="el" href="solve__result_8h_source.html">solve_result.h</a>.</p>
 
 </div>
 </div>

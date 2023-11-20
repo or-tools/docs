@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -108,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab03d819706ca00011e8b94c034d928be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50373b232711b27f49e7802c206d581" id="r_ab50373b232711b27f49e7802c206d581"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1GreedySolutionGenerator.html#ab50373b232711b27f49e7802c206d581">NextSolution</a> ()</td></tr>
 <tr class="separator:ab50373b232711b27f49e7802c206d581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c2dc9102d3ccd79fa6c589e2466fb6" id="r_a89c2dc9102d3ccd79fa6c589e2466fb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1GreedySolutionGenerator.html#a89c2dc9102d3ccd79fa6c589e2466fb6">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus)</td></tr>
+<tr class="separator:a89c2dc9102d3ccd79fa6c589e2466fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The first solution is obtained using the Chvatal heuristic, that guarantees that the solution is at most 1 + log(n) times the optimal value. Vasek Chvatal, 1979. A greedy heuristic for the set-covering problem. Mathematics of Operations Research, 4(3):233-235, 1979. <a href="http://www.jstor.org/stable/3689577">http://www.jstor.org/stable/3689577</a></p>
@@ -116,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <p>G. Cormode, H. Karloff, A. Wirth (2010) "Set Cover Algorithms for Very Large
 Datasets", CIKM'10, ACM, 2010. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00094">94</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00104">104</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab03d819706ca00011e8b94c034d928be" name="ab03d819706ca00011e8b94c034d928be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab03d819706ca00011e8b94c034d928be">&#9670;&#160;</a></span>GreedySolutionGenerator()</h2>
@@ -142,13 +144,13 @@ Datasets", CIKM'10, ACM, 2010. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00096">96</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00106">106</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab50373b232711b27f49e7802c206d581" name="ab50373b232711b27f49e7802c206d581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab50373b232711b27f49e7802c206d581">&#9670;&#160;</a></span>NextSolution()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50373b232711b27f49e7802c206d581">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,9 +164,30 @@ Datasets", CIKM'10, ACM, 2010. </p>
       </table>
 </div><div class="memdoc">
 <p>Returns true if a solution was found. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00086">86</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+
+</div>
+</div>
+<a id="a89c2dc9102d3ccd79fa6c589e2466fb6" name="a89c2dc9102d3ccd79fa6c589e2466fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c2dc9102d3ccd79fa6c589e2466fb6">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::GreedySolutionGenerator::NextSolution </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>focus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the next partial solution considering only the subsets whose indices are in focus. </p>
 <p>The priority is the minimum marginal cost increase. Since the priority queue returns the smallest value, we use the opposite.</p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00078">78</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00090">90</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
 
 </div>
 </div>

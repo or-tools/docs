@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8f9ffa7352bf95a81890bb4259575ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b2f3a9ae011c08a5d19cb6dea15369" id="r_aa7b2f3a9ae011c08a5d19cb6dea15369"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#aa7b2f3a9ae011c08a5d19cb6dea15369">Literal</a> (BooleanVariable variable, bool is_positive)</td></tr>
 <tr class="separator:aa7b2f3a9ae011c08a5d19cb6dea15369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b27485970070e73266f5530d2a7f55c" id="r_a3b27485970070e73266f5530d2a7f55c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#a3b27485970070e73266f5530d2a7f55c">operator LiteralIndex</a> () const</td></tr>
+<tr class="separator:a3b27485970070e73266f5530d2a7f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72b4ac4edff764469349ac4301ef4e0" id="r_aa72b4ac4edff764469349ac4301ef4e0"><td class="memItemLeft" align="right" valign="top">BooleanVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#aa72b4ac4edff764469349ac4301ef4e0">Variable</a> () const</td></tr>
 <tr class="separator:aa72b4ac4edff764469349ac4301ef4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3db0b191fdc43d161249afc71b0bfaf" id="r_ac3db0b191fdc43d161249afc71b0bfaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#ac3db0b191fdc43d161249afc71b0bfaf">IsPositive</a> () const</td></tr>
@@ -132,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb19618cd547911afcd14bc408e9eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58e4f18d79d99f6251e7c2dfd3d25d05" id="r_a58e4f18d79d99f6251e7c2dfd3d25d05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#a58e4f18d79d99f6251e7c2dfd3d25d05">operator!=</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> other) const</td></tr>
 <tr class="separator:a58e4f18d79d99f6251e7c2dfd3d25d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf750cff9a020cff328c329e269112a" id="r_a0cf750cff9a020cff328c329e269112a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#a0cf750cff9a020cff328c329e269112a">operator&lt;</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &amp;<a class="el" href="linear__model_8cc.html#a6582b538eeea909324f67bfaac0e0958">literal</a>) const</td></tr>
-<tr class="separator:a0cf750cff9a020cff328c329e269112a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0697b89f0664b243cc437f0cda23b11a" id="r_a0697b89f0664b243cc437f0cda23b11a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html#a0697b89f0664b243cc437f0cda23b11a">operator&lt;</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &amp;other) const</td></tr>
+<tr class="separator:a0697b89f0664b243cc437f0cda23b11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A literal is used to represent a variable or its negation. If it represents the variable it is said to be positive. If it represent its negation, it is said to be negative. We support two representations as an integer.</p>
@@ -286,7 +288,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00099">99</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00106">106</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +315,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00090">90</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00097">97</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -340,7 +342,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00088">88</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00095">95</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +369,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00087">87</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00094">94</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +396,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00097">97</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00104">104</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -420,6 +422,35 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00098">98</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b27485970070e73266f5530d2a7f55c" name="a3b27485970070e73266f5530d2a7f55c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b27485970070e73266f5530d2a7f55c">&#9670;&#160;</a></span>operator LiteralIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">operations_research::sat::Literal::operator LiteralIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>We want a literal to be implicitly converted to a LiteralIndex(). Before this, we used to have many literal.Index() that didn't add anything.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002056">Todo:</a></b></dt><dd>(user): LiteralIndex might not even be needed, but because of the signed value business, it is still safer with it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00091">91</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
@@ -449,12 +480,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00103">103</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00111">111</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
-<a id="a0cf750cff9a020cff328c329e269112a" name="a0cf750cff9a020cff328c329e269112a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cf750cff9a020cff328c329e269112a">&#9670;&#160;</a></span>operator&lt;()</h2>
+<a id="a0697b89f0664b243cc437f0cda23b11a" name="a0697b89f0664b243cc437f0cda23b11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0697b89f0664b243cc437f0cda23b11a">&#9670;&#160;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +497,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool operations_research::sat::Literal::operator&lt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &amp;&#160;</td>
-          <td class="paramname"><em>literal</em></td><td>)</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -477,7 +508,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00105">105</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00112">112</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +536,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00102">102</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00110">110</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +563,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00093">93</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00100">100</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +590,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00086">86</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00093">93</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>

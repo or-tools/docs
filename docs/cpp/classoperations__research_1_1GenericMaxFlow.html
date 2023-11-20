@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -990,7 +990,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
       </table>
 </div><div class="memdoc">
 <p>Returns the nodes that can reach the sink in the residual graph, the outgoing arcs of this set form a minimum cut. Note that if this is the complement of GetNodeReachableFromSource(), then the min-cut is unique.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000647">Todo:</a></b></dt><dd>(user): In the two-phases algorithm, we can get this minimum cut without doing the second phase. Add an option for this if there is a need to, note that the second phase is pretty fast so the gain will be small. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000649">Todo:</a></b></dt><dd>(user): In the two-phases algorithm, we can get this minimum cut without doing the second phase. Add an option for this if there is a need to, note that the second phase is pretty fast so the gain will be small. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l00250">250</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
 
@@ -1079,19 +1079,19 @@ implementing push-relabel methods for the maximum flow problem", Algorithmica, 1
 <p>We do two BFS in the reverse residual graph, one from the sink and one from the source. Because all the arcs from the source are saturated (except in presence of integer overflow), the source cannot reach the sink in the residual graph. However, we still want to relabel all the nodes that cannot reach the sink but can reach the source (because if they have excess, we need to push it back to the source).</p>
 <dl class="section note"><dt>Note</dt><dd>the second pass is not needed here if we use a two-pass algorithm to return the flow to the source after we found the min cut.</dd></dl>
 <p>Skip the arc if the height of head was already set to the correct value (Remember we are doing reverse BFS).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000633">Todo:</a></b></dt><dd>(user): By using more memory we can speed this up quite a bit by avoiding to take the opposite arc here, too options:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000635">Todo:</a></b></dt><dd>(user): By using more memory we can speed this up quite a bit by avoiding to take the opposite arc here, too options:<ul>
 <li>if (residual_arc_capacity_[arc] != arc_capacity_[arc])</li>
 <li>if (opposite_arc_is_admissible_[arc]) ///&lt; need updates. Experiment with the first option shows more than 10% gain on this function running time, which is the bottleneck on many instances. </li>
 </ul>
 </dd></dl>
 <p>Note(user): We used to have a DCHECK_GE(candidate_distance,
 node_potential_[head]); which is always true except in the case where we can push more than kMaxFlowQuantity out of the source. The problem comes from the fact that in this case, we call <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a05eb488b184996513248b0dffca59600">PushFlowExcessBackToSource()</a> in the middle of the algorithm. The later call will break the properties of the node potential. Note however, that this function will recompute a good node potential for all the nodes and thus fix the issue.</p>
-<p>If head is active, we can steal some or all of its excess. This brings a huge gain on some problems. Note(user): I haven't seen this anywhere in the literature. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000634">Todo:</a></b></dt><dd>(user): Investigate more and maybe write a publication :) </dd></dl>
+<p>If head is active, we can steal some or all of its excess. This brings a huge gain on some problems. Note(user): I haven't seen this anywhere in the literature. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000636">Todo:</a></b></dt><dd>(user): Investigate more and maybe write a publication :) </dd></dl>
 <p>If the arc became saturated, it is no longer in the residual graph, so we do not need to consider head at this time.</p>
 <dl class="section note"><dt>Note</dt><dd>there is no need to touch first_admissible_arc_[node] because of the relaxed <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#aa70e526f9be229e52bf598d9cd0e7406">Relabel()</a> we use.</dd></dl>
 <p>At the end of the search, some nodes may not be in the bfs_queue_. Such nodes cannot reach the sink_ or source_ in the residual graph, so there is no point trying to push flow toward them. We obtain this effect by setting their height to something unreachable.</p>
 <dl class="section note"><dt>Note</dt><dd>this also prevents cycling due to our anti-overflow procedure. For instance, suppose there is an edge s -&gt; n outgoing from the source. If node n has no other connection and some excess, we will push the flow back to the source, but if we don't update the height of n <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a2d2ffca7a04ecd2975025cb34a3898cb">SaturateOutgoingArcsFromSource()</a> will push the flow to n again. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000635">Todo:</a></b></dt><dd>(user): This is another argument for another anti-overflow algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000637">Todo:</a></b></dt><dd>(user): This is another argument for another anti-overflow algorithm. </dd></dl>
 <p>Reset the active nodes. Doing it like this pushes the nodes in increasing order of height. Note that bfs_queue_[0] is the sink_ so we skip it.</p>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l00584">584</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
@@ -1218,7 +1218,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </div><div class="memdoc">
 
 <p>Initializes the preflow to a state that enables to run Refine. </p>
-<p><a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a20139b839cd5764939afc8df968a2484" title="Initializes the preflow to a state that enables to run Refine.">InitializePreflow()</a> clears the whole flow that could have been computed by a previous <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a1da59e63f4d617578a0dc218d7f2f3e9" title="Returns true if a maximum flow was solved.">Solve()</a>. This is not optimal in terms of complexity. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000632">Todo:</a></b></dt><dd>(user): find a way to make the re-solving incremental (not an obvious task, and there has not been a lot of literature on the subject.) </dd></dl>
+<p><a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a20139b839cd5764939afc8df968a2484" title="Initializes the preflow to a state that enables to run Refine.">InitializePreflow()</a> clears the whole flow that could have been computed by a previous <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a1da59e63f4d617578a0dc218d7f2f3e9" title="Returns true if a maximum flow was solved.">Solve()</a>. This is not optimal in terms of complexity. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000634">Todo:</a></b></dt><dd>(user): find a way to make the re-solving incremental (not an obvious task, and there has not been a lot of literature on the subject.) </dd></dl>
 <p>All the initial heights are zero except for the source whose height is equal to the number of nodes and will never change during the algorithm.</p>
 <p>Initially no arcs are admissible except maybe the one leaving the source, but we treat the source in a special way, see <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a2d2ffca7a04ecd2975025cb34a3898cb">SaturateOutgoingArcsFromSource()</a>.</p>
 
@@ -1400,7 +1400,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </table>
 </div><div class="memdoc">
 <p>Explicit instantiations that can be used by a client.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo:</a></b></dt><dd>(user): moves this code out of a .cc file and include it at the end of the header so it can work with any graph implementation ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000642">Todo:</a></b></dt><dd>(user): moves this code out of a .cc file and include it at the end of the header so it can work with any graph implementation ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l01008">1008</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
 
@@ -1562,7 +1562,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </table>
 </div><div class="memdoc">
 <p>Pushes flow on arc, i.e. consumes flow on residual_arc_capacity_[arc], and consumes -flow on residual_arc_capacity_[Opposite(arc)]. Updates node_excess_ at the tail and head of arc accordingly. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000636">Todo:</a></b></dt><dd>(user): Do not allow a zero flow after fixing the UniformMaxFlow code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000638">Todo:</a></b></dt><dd>(user): Do not allow a zero flow after fixing the UniformMaxFlow code. </dd></dl>
 <p>node_excess_ should be always greater than or equal to 0 except for the source where it should always be smaller than or equal to 0. Note however that we cannot check this because when we cancel the flow on a cycle in <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a05eb488b184996513248b0dffca59600">PushFlowExcessBackToSource()</a>, we may break this invariant during the operation even if it is still valid at the end.</p>
 <p>Update the residual capacity of the arc and its opposite arc.</p>
 <p>Update the excesses at the tail and head of the arc.</p>
@@ -1653,8 +1653,8 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 <p>Usually <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a2d2ffca7a04ecd2975025cb34a3898cb">SaturateOutgoingArcsFromSource()</a> will saturate all the arcs from the source in one go, and we will loop just once. But in case we can push more than kMaxFlowQuantity out of the source the loop is as follow:</p><ul>
 <li>Push up to kMaxFlowQuantity out of the source on the admissible outgoing arcs. Stop if no flow was pushed.</li>
 <li><p class="startli">Compute the current max-flow. This will push some flow back to the source and render more outgoing arcs from the source not admissible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000637">Todo:</a></b></dt><dd>(user): This may not be the most efficient algorithm if we need to loop many times. An alternative may be to handle the source like the other nodes in the algorithm, initially putting an excess of kMaxFlowQuantity on it, and making the source active like any other node with positive excess. To investigate.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000638">Todo:</a></b></dt><dd>(user): The code below is buggy when more than kMaxFlowQuantity can be pushed out of the source (i.e. when we loop more than once in the while()). This is not critical, since this code is not used in the default algorithm computation. The issue is twofold:</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000639">Todo:</a></b></dt><dd>(user): This may not be the most efficient algorithm if we need to loop many times. An alternative may be to handle the source like the other nodes in the algorithm, initially putting an excess of kMaxFlowQuantity on it, and making the source active like any other node with positive excess. To investigate.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo:</a></b></dt><dd>(user): The code below is buggy when more than kMaxFlowQuantity can be pushed out of the source (i.e. when we loop more than once in the while()). This is not critical, since this code is not used in the default algorithm computation. The issue is twofold:</dd></dl>
 </li>
 </ul>
 
@@ -1686,7 +1686,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000639">Todo:</a></b></dt><dd>(user): This should be graph_-&gt;num_nodes(), but ebert graph does not have a correct size if the highest index nodes have no arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000641">Todo:</a></b></dt><dd>(user): This should be graph_-&gt;num_nodes(), but ebert graph does not have a correct size if the highest index nodes have no arcs. </dd></dl>
 <p>The idea behind this is that if a node height augments by more than one, then it is likely to push flow back the way it came. This can lead to very costly loops. A bad case is: source -&gt; n1 -&gt; n2 and n2 just recently isolated from the sink. Then n2 will push flow back to n1, and n1 to n2 and so on. The height of each node will increase by steps of two until the height of the source is reached, which can take a long time. If the chain is longer, the situation is even worse. The behavior of this heuristic is related to the Gap heuristic.</p>
 <dl class="section note"><dt>Note</dt><dd>the global update will fix all such cases efficiently. So the idea is to discharge the active node as much as possible, and then do a global update.</dd></dl>
 <p>We skip a node when this condition was true 2 times to avoid doing a global update too frequently.</p>
@@ -1796,7 +1796,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 <p>Sets the capacity for arc to new_capacity. </p>
 <p>The above condition is true if one of the two conditions is true: 1/ (capacity_delta &gt; 0), meaning we are increasing the capacity 2/ (capacity_delta &lt; 0 &amp;&amp; free_capacity + capacity_delta &gt;= 0) meaning we are reducing the capacity, but that the capacity reduction is not larger than the free capacity.</p>
 <dl class="section note"><dt>Note</dt><dd>this breaks the preflow invariants but it is currently not an issue since we restart from scratch on each <a class="el" href="classoperations__research_1_1GenericMaxFlow.html#a1da59e63f4d617578a0dc218d7f2f3e9" title="Returns true if a maximum flow was solved.">Solve()</a> and we set the status to NOT_SOLVED.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000631">Todo:</a></b></dt><dd>(user): The easiest is probably to allow negative node excess in other places than the source, but the current implementation does not deal with this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000633">Todo:</a></b></dt><dd>(user): The easiest is probably to allow negative node excess in other places than the source, but the current implementation does not deal with this. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l00194">194</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
 
@@ -2215,7 +2215,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether or not we check the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000648">Todo:</a></b></dt><dd>(user): Make the check more exhaustive by checking the optimality? </dd></dl>
+<p>Whether or not we check the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000650">Todo:</a></b></dt><dd>(user): Make the check more exhaustive by checking the optimality? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00655">655</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 

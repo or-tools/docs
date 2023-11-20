@@ -193,6 +193,7 @@ var annotated_dup =
           [ "modelbuilder", "namespacecom_1_1google_1_1ortools_1_1modelbuilder.html", [
             [ "AffineExpression", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1AffineExpression.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1AffineExpression" ],
             [ "ConstantExpression", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ConstantExpression.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ConstantExpression" ],
+            [ "EnforcedLinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1EnforcedLinearConstraint.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1EnforcedLinearConstraint" ],
             [ "LinearArgument", "interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearArgument.html", "interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearArgument" ],
             [ "LinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearConstraint.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearConstraint" ],
             [ "LinearExpr", "interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExpr.html", "interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExpr" ],

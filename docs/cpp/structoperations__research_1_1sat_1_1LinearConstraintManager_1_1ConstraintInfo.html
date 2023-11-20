@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,7 +131,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00070">70</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00065">65</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa60263cbfe7f0c4b184f9c1d7efb3ff3" name="aa60263cbfe7f0c4b184f9c1d7efb3ff3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa60263cbfe7f0c4b184f9c1d7efb3ff3">&#9670;&#160;</a></span>active_count</h2>
@@ -146,7 +146,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Updated only for deletable constraints. This is incremented every time <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintManager.html#a6736aa5d3e7f0a44c29023b2bc85a453">ChangeLp()</a> is called and the constraint is active in the LP or not in the LP and violated. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00089">89</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00084">84</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>this constraint always contains "tight" lb/ub, some of these bound might be trivial level zero bounds, and one can know this by looking at lb_is_trivial/ub_is_trivial. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00074">74</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00069">69</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -179,7 +179,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00084">84</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00079">79</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00083">83</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00078">78</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00077">77</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00072">72</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -226,9 +226,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>For now, we mark all the generated cuts as deletable and the problem constraints as undeletable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001719">Todo:</a></b></dt><dd>(user): We can have a better heuristics. Some generated good cuts can be marked undeletable and some unused problem specified constraints can be marked deletable. </dd></dl>
+<p>For now, we mark all the generated cuts as deletable and the problem constraints as undeletable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001760">Todo:</a></b></dt><dd>(user): We can have a better heuristics. Some generated good cuts can be marked undeletable and some unused problem specified constraints can be marked deletable. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00096">96</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00091">91</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00080">80</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00075">75</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00076">76</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00071">71</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00082">82</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00077">77</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00078">78</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00073">73</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00079">79</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00074">74</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00081">81</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00076">76</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>

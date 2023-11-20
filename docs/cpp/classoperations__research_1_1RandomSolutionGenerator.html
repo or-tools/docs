@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -109,11 +109,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a46dd3445cf11ea0df6d6720ec82ac3eb" id="r_a46dd3445cf11ea0df6d6720ec82ac3eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RandomSolutionGenerator.html#a46dd3445cf11ea0df6d6720ec82ac3eb">NextSolution</a> ()</td></tr>
 <tr class="memdesc:a46dd3445cf11ea0df6d6720ec82ac3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a solution was found.  <br /></td></tr>
 <tr class="separator:a46dd3445cf11ea0df6d6720ec82ac3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cc4d11f85df18a6bf9a3385974841c" id="r_aa2cc4d11f85df18a6bf9a3385974841c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1RandomSolutionGenerator.html#aa2cc4d11f85df18a6bf9a3385974841c">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus)</td></tr>
+<tr class="separator:aa2cc4d11f85df18a6bf9a3385974841c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A slightly more complicated but better way to compute a first solution is to select columns randomly. Less silly than the previous one, and provides much better results. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>(user): make it possible to use other random generators. Idea: bias the generator towards the columns with the least marginal costs. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00065">65</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00071">71</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c5b4c83c4442b504a0ca8f73797c9ae" name="a3c5b4c83c4442b504a0ca8f73797c9ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c5b4c83c4442b504a0ca8f73797c9ae">&#9670;&#160;</a></span>RandomSolutionGenerator()</h2>
@@ -139,13 +141,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00067">67</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00073">73</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a46dd3445cf11ea0df6d6720ec82ac3eb" name="a46dd3445cf11ea0df6d6720ec82ac3eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46dd3445cf11ea0df6d6720ec82ac3eb">&#9670;&#160;</a></span>NextSolution()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46dd3445cf11ea0df6d6720ec82ac3eb">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +164,28 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if a solution was found. </p>
 <p><a class="el" href="classoperations__research_1_1RandomSolutionGenerator.html">RandomSolutionGenerator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00041">41</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00051">51</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa2cc4d11f85df18a6bf9a3385974841c" name="aa2cc4d11f85df18a6bf9a3385974841c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cc4d11f85df18a6bf9a3385974841c">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::RandomSolutionGenerator::NextSolution </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>focus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the next partial solution considering only the subsets whose indices are in focus. </p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00055">55</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
 
 </div>
 </div>

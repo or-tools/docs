@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -244,10 +244,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a92bee34a6dd340eb0c130b29e1c68b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5340312c5955bd057c13dabe398f9bf5" id="r_a5340312c5955bd057c13dabe398f9bf5"><td class="memItemLeft" align="right" valign="top">EntryIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a5340312c5955bd057c13dabe398f9bf5">capacity_</a></td></tr>
 <tr class="separator:a5340312c5955bd057c13dabe398f9bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9eb9fe4370fab3b2ffb59f076b3e7b1" id="r_aa9eb9fe4370fab3b2ffb59f076b3e7b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a783efd95525f21afc8045cdb1e9eb00a">Index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#aa9eb9fe4370fab3b2ffb59f076b3e7b1">index_</a></td></tr>
+<tr class="memitem:aa9eb9fe4370fab3b2ffb59f076b3e7b1" id="r_aa9eb9fe4370fab3b2ffb59f076b3e7b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a783efd95525f21afc8045cdb1e9eb00a">Index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#aa9eb9fe4370fab3b2ffb59f076b3e7b1">index_</a> = nullptr</td></tr>
 <tr class="memdesc:aa9eb9fe4370fab3b2ffb59f076b3e7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to the first elements of the index and coefficient arrays.  <br /></td></tr>
 <tr class="separator:aa9eb9fe4370fab3b2ffb59f076b3e7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079ca448e72034a09503ed79f4c46a85" id="r_a079ca448e72034a09503ed79f4c46a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a079ca448e72034a09503ed79f4c46a85">coefficient_</a></td></tr>
+<tr class="memitem:a079ca448e72034a09503ed79f4c46a85" id="r_a079ca448e72034a09503ed79f4c46a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a079ca448e72034a09503ed79f4c46a85">coefficient_</a> = nullptr</td></tr>
 <tr class="separator:a079ca448e72034a09503ed79f4c46a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905f925c4884ff9c163e630ffef925c9" id="r_a905f925c4884ff9c163e630ffef925c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a905f925c4884ff9c163e630ffef925c9">may_contain_duplicates_</a></td></tr>
 <tr class="separator:a905f925c4884ff9c163e630ffef925c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,7 +259,7 @@ class operations_research::glop::SparseVector&lt; IndexType, IteratorType &gt;</
 <p>This class uses strong integer types (i.e. no implicit cast to/from other integer types) for both:</p><ul>
 <li>the index of entries (eg. SparseVector&lt;RowIndex&gt; is a <a class="el" href="classoperations__research_1_1glop_1_1SparseColumn.html">SparseColumn</a>, see ./sparse_column.h).</li>
 <li><p class="startli">the <em>internal</em> indices of entries in the internal storage, which is an entirely different type: EntryType. This class can be extended with a custom iterator/entry type for the iterator-based API. This can be used to extend the interface with additional methods for the entries returned by the iterators; for an example of such extension, see <a class="el" href="classoperations__research_1_1glop_1_1SparseColumnEntry.html">SparseColumnEntry</a> in <a class="el" href="sparse__column_8h.html">sparse_column.h</a>. The custom entries and iterators should be derived from <a class="el" href="classoperations__research_1_1glop_1_1SparseVectorEntry.html">SparseVectorEntry</a> and SparseVectorIterator, or at least provide the same public and protected interface.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000842">Todo:</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000846">Todo:</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
 </li>
 </ul>
 
@@ -620,7 +620,7 @@ template&lt;typename IndexType , typename IteratorType  = VectorIterator&lt;Spar
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000847">Todo:</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
+<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000851">Todo:</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00306">306</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -798,7 +798,7 @@ template&lt;typename IndexType , typename IteratorType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Cleans the vector, i.e. removes zero-values entries, removes duplicates entries and sorts remaining entries in increasing index order. Runs in O(num_entries * log(num_entries)). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000843">Todo:</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000847">Todo:</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00552">552</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1285,7 +1285,7 @@ template&lt;typename IndexType , typename IteratorType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the coefficient at position index. Call with care: runs in O(number-of-entries) as entries may not be sorted. </p>
-<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000846">Todo:</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
+<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000850">Todo:</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00992">992</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1366,7 +1366,7 @@ template&lt;typename IndexType , typename IteratorType &gt; </div>
 </div><div class="memdoc">
 <p>Removes the entries for which index_perm[index] is non-negative and appends them to output. Note that the index of the entries are NOT permuted. </p>
 <dl class="section note"><dt>Note</dt><dd>this function is called many times, so performance does matter and it is why we optimized the "nothing to do" case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000845">Todo:</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000849">Todo:</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00962">962</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1863,7 +1863,7 @@ template&lt;typename IndexType , typename IteratorType  = VectorIterator&lt;Spar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>* <a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">operations_research::glop::SparseVector</a>&lt; IndexType, IteratorType &gt;::coefficient_</td>
+          <td class="memname"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>* <a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">operations_research::glop::SparseVector</a>&lt; IndexType, IteratorType &gt;::coefficient_ = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1889,7 +1889,7 @@ template&lt;typename IndexType , typename IteratorType  = VectorIterator&lt;Spar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a783efd95525f21afc8045cdb1e9eb00a">Index</a>* <a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">operations_research::glop::SparseVector</a>&lt; IndexType, IteratorType &gt;::index_</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html#a783efd95525f21afc8045cdb1e9eb00a">Index</a>* <a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">operations_research::glop::SparseVector</a>&lt; IndexType, IteratorType &gt;::index_ = nullptr</td>
         </tr>
       </table>
   </td>

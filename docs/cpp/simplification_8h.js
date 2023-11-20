@@ -5,7 +5,7 @@ var simplification_8h =
     [ "ComputeResolvant", "simplification_8h.html#adb6db4124c1030575ede339b237d9e68", null ],
     [ "ComputeResolvantSize", "simplification_8h.html#aa4e10d7ec51fc3637bb6d86f3703ab80", null ],
     [ "DifferAtGivenLiteral", "simplification_8h.html#a63a3f2af6ea15181591a33edda577652", null ],
-    [ "ProbeAndFindEquivalentLiteral", "simplification_8h.html#a741dec692e255a08e4fae5ce3a8dbe7d", null ],
+    [ "ProbeAndFindEquivalentLiteral", "simplification_8h.html#aa9cd7652ef26e6d69565e1e7e1db3f07", null ],
     [ "SimplifyClause", "simplification_8h.html#ab649ca11fd81e049dc7a8c0dd1104b5b", null ],
     [ "SolveWithPresolve", "simplification_8h.html#a0b63b0a48f67ce229ee2dad04ac1251c", null ]
 ];

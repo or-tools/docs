@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -471,7 +471,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Utilities for container logging. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000055">Todo:</a></b></dt><dd>(user): Broaden the scope and rename to "stream_util.h"</dd></dl>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Utilities for container logging. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000056">Todo:</a></b></dt><dd>(user): Broaden the scope and rename to "stream_util.h"</dd></dl>
 <p>The typical use looks like this:</p>
 <p>LOG(INFO) &lt;&lt; gtl::LogContainer(container);</p>
 <p>By default, <a class="el" href="namespacegtl.html#a252ef610941828aa417152c3230ca670">LogContainer()</a> uses the <a class="el" href="structgtl_1_1LogShortUpTo100.html">LogShortUpTo100</a> policy: comma-space separation, no newlines, and with limit of 100 items.</p>
@@ -2925,8 +2925,8 @@ template&lt;typename In1 , typename In2 , typename Out , typename Compare &gt; <
 <div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="namespacegtl.html#a68e6f9ee67c1545cc1da3d0b9a2ba0fd">STLSetDifference</a>(<a class="code hl_variable" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, <a class="code hl_variable" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, &amp;out, compare);</div>
 <div class="line">Out STLSetDifferenceAs&lt;Out&gt;(<a class="code hl_variable" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, <a class="code hl_variable" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>);</div>
 <div class="line">Out STLSetDifferenceAs&lt;Out&gt;(<a class="code hl_variable" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, <a class="code hl_variable" href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a>, compare);</div>
-<div class="ttc" id="aconstraint__solver_2table_8cc_html_a9293e4d29cac928301645070dd307683"><div class="ttname"><a href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a></div><div class="ttdeci">int64_t b</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_2table_8cc_source.html#l00047">table.cc:47</a></div></div>
-<div class="ttc" id="aconstraint__solver_2table_8cc_html_acb18315d548212835cd8ed4287e6c0b6"><div class="ttname"><a href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a></div><div class="ttdeci">int64_t a</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_2table_8cc_source.html#l00046">table.cc:46</a></div></div>
+<div class="ttc" id="aconstraint__solver_2table_8cc_html_a9293e4d29cac928301645070dd307683"><div class="ttname"><a href="constraint__solver_2table_8cc.html#a9293e4d29cac928301645070dd307683">b</a></div><div class="ttdeci">int64_t b</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_2table_8cc_source.html#l00048">table.cc:48</a></div></div>
+<div class="ttc" id="aconstraint__solver_2table_8cc_html_acb18315d548212835cd8ed4287e6c0b6"><div class="ttname"><a href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a></div><div class="ttdeci">int64_t a</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_2table_8cc_source.html#l00047">table.cc:47</a></div></div>
 <div class="ttc" id="anamespacegtl_html_a68e6f9ee67c1545cc1da3d0b9a2ba0fd"><div class="ttname"><a href="namespacegtl.html#a68e6f9ee67c1545cc1da3d0b9a2ba0fd">gtl::STLSetDifference</a></div><div class="ttdeci">void STLSetDifference(const In1 &amp;a, const In2 &amp;b, Out *out, Compare compare)</div><div class="ttdef"><b>Definition</b> <a href="stl__util_8h_source.html#l00595">stl_util.h:595</a></div></div>
 </div><!-- fragment --><p> Appends the elements in "a" that are not in "b" to an output container. Optionally specify a comparator, or '&lt;' is used by default. Both input containers must be sorted with respect to the comparator. If specified, the output container must be distinct from both "a" and "b".</p>
 <p>If an output container pointer is not given, a container will be returned by value. The return type can be explicitly specified by calling STLSetDifferenceAs, but it defaults to the type of argument "a".</p>

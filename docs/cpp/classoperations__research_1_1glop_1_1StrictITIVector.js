@@ -13,6 +13,7 @@ var classoperations__research_1_1glop_1_1StrictITIVector =
     [ "AssignToZero", "classoperations__research_1_1glop_1_1StrictITIVector.html#a461809a3096dbd90423bf80d6a863e93", null ],
     [ "capacity", "classoperations__research_1_1glop_1_1StrictITIVector.html#a49d74a288452c8dec85f04277cc44c40", null ],
     [ "const_view", "classoperations__research_1_1glop_1_1StrictITIVector.html#a822679ad0996ce03944c3e964b11be9d", null ],
+    [ "operator=", "classoperations__research_1_1glop_1_1StrictITIVector.html#ad16762b61286df38faecc47db380aa46", null ],
     [ "reserve", "classoperations__research_1_1glop_1_1StrictITIVector.html#ae133d39ec6400b6e8a0cc7a31b4d11bd", null ],
     [ "resize", "classoperations__research_1_1glop_1_1StrictITIVector.html#abe146ab4988b111aeaedc6d376fc1c83", null ],
     [ "resize", "classoperations__research_1_1glop_1_1StrictITIVector.html#ae83f6e6d354a44e0a1ef2b8f47a1736e", null ],

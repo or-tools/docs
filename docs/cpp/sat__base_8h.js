@@ -2,6 +2,7 @@ var sat__base_8h =
 [
     [ "operations_research::sat::Literal", "classoperations__research_1_1sat_1_1Literal.html", "classoperations__research_1_1sat_1_1Literal" ],
     [ "operations_research::sat::VariablesAssignment", "classoperations__research_1_1sat_1_1VariablesAssignment.html", "classoperations__research_1_1sat_1_1VariablesAssignment" ],
+    [ "operations_research::sat::AssignmentView", "classoperations__research_1_1sat_1_1AssignmentView.html", "classoperations__research_1_1sat_1_1AssignmentView" ],
     [ "operations_research::sat::AssignmentInfo", "structoperations__research_1_1sat_1_1AssignmentInfo.html", "structoperations__research_1_1sat_1_1AssignmentInfo" ],
     [ "operations_research::sat::AssignmentType", "structoperations__research_1_1sat_1_1AssignmentType.html", "structoperations__research_1_1sat_1_1AssignmentType" ],
     [ "operations_research::sat::Trail", "classoperations__research_1_1sat_1_1Trail.html", "classoperations__research_1_1sat_1_1Trail" ],

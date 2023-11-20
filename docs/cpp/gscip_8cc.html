@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('gscip_8cc.html',''); initResizable(); 
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -112,13 +111,16 @@ $(document).ready(function(){initNavTree('gscip_8cc.html',''); initResizable(); 
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/memory/memory.h&quot;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;lpi/lpi.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
 <code>#include &quot;ortools/gscip/gscip.pb.h&quot;</code><br />
@@ -129,14 +131,26 @@ $(document).ready(function(){initNavTree('gscip_8cc.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="util_2status__macros_8h_source.html">ortools/util/status_macros.h</a>&quot;</code><br />
 <code>#include &quot;scip/cons_linear.h&quot;</code><br />
 <code>#include &quot;scip/cons_quadratic.h&quot;</code><br />
+<code>#include &quot;scip/def.h&quot;</code><br />
 <code>#include &quot;scip/scip.h&quot;</code><br />
+<code>#include &quot;scip/scip_cons.h&quot;</code><br />
 <code>#include &quot;scip/scip_general.h&quot;</code><br />
+<code>#include &quot;scip/scip_message.h&quot;</code><br />
+<code>#include &quot;scip/scip_numerics.h&quot;</code><br />
 <code>#include &quot;scip/scip_param.h&quot;</code><br />
 <code>#include &quot;scip/scip_prob.h&quot;</code><br />
+<code>#include &quot;scip/scip_sol.h&quot;</code><br />
+<code>#include &quot;scip/scip_solve.h&quot;</code><br />
 <code>#include &quot;scip/scip_solvingstats.h&quot;</code><br />
+<code>#include &quot;scip/scip_var.h&quot;</code><br />
 <code>#include &quot;scip/scipdefplugins.h&quot;</code><br />
 <code>#include &quot;scip/type_cons.h&quot;</code><br />
+<code>#include &quot;scip/type_paramset.h&quot;</code><br />
+<code>#include &quot;scip/type_retcode.h&quot;</code><br />
 <code>#include &quot;scip/type_scip.h&quot;</code><br />
+<code>#include &quot;scip/type_set.h&quot;</code><br />
+<code>#include &quot;scip/type_sol.h&quot;</code><br />
+<code>#include &quot;scip/type_stat.h&quot;</code><br />
 <code>#include &quot;scip/type_var.h&quot;</code><br />
 </div>
 <p><a href="gscip_8cc_source.html">Go to the source code of this file.</a></p>
@@ -178,9 +192,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (!(x))                                                              \</div>
 <div class="line">  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">util::StatusBuilder</a>(absl::InvalidArgumentError(absl::StrFormat( \</div>
 <div class="line">      <span class="stringliteral">&quot;Condition violated at %s:%d: %s&quot;</span>, __FILE__, __LINE__, #x)))</div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html"><div class="ttname"><a href="classutil_1_1StatusBuilder.html">util::StatusBuilder</a></div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00026">status_builder.h:26</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html"><div class="ttname"><a href="classutil_1_1StatusBuilder.html">util::StatusBuilder</a></div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00027">status_builder.h:27</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gscip_8cc_source.html#l00058">58</a> of file <a class="el" href="gscip_8cc_source.html">gscip.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gscip_8cc_source.html#l00072">72</a> of file <a class="el" href="gscip_8cc_source.html">gscip.cc</a>.</p>
 
 </div>
 </div>

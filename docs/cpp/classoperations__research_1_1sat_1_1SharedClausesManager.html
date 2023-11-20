@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <p>It is thread-safe.</p>
 <dl class="section note"><dt>Note</dt><dd>this uses literal as encoded in a <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. Thus, the literals can be negative numbers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00538">538</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00542">542</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae59c352798c22cfb836e8dd267ffcf41" name="ae59c352798c22cfb836e8dd267ffcf41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae59c352798c22cfb836e8dd267ffcf41">&#9670;&#160;</a></span>SharedClausesManager()</h2>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00940">940</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00949">949</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Small optim. If the worker is already up to date with clauses to import, we can mark this new clause as already seen.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00957">957</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00966">966</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Public Member Functions</h2></td></tr>
 <p>Fills new_clauses with {{lit1 of clause1, lit2 of clause1}, {lit1 of clause2, lit2 of clause2}, ...} </p>
 <p>Protects against the optim that increase the last_binary_clause_seen in <a class="el" href="classoperations__research_1_1sat_1_1SharedClausesManager.html#a390489b2496af213519d6fe6445bbeb3">AddBinaryClause()</a>. Checks is nothing needs to be done.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00976">976</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00985">985</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Public Member Functions</h2></td></tr>
 
 <p><a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> statistics. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00991">991</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l01000">1000</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Ids are used to identify which worker is exporting/importing clauses. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00943">943</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00952">952</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00951">951</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00960">960</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -316,9 +316,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unlocks waiting binary clauses for workers if always_synchronize is false. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002183">Todo:</a></b></dt><dd>(user): We could cleanup added_binary_clauses_ periodically. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002228">Todo:</a></b></dt><dd>(user): We could cleanup added_binary_clauses_ periodically. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l01008">1008</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l01017">1017</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>

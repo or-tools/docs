@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['objective_0',['Objective',['../classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html',1,'ortools::linear_solver::pywraplp']]],
-  ['objectivesolutionprinter_1',['ObjectiveSolutionPrinter',['../classortools_1_1sat_1_1python_1_1cp__model_1_1ObjectiveSolutionPrinter.html',1,'ortools::sat::python::cp_model']]],
-  ['optimizevar_2',['OptimizeVar',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1OptimizeVar.html',1,'ortools::constraint_solver::pywrapcp']]]
+  ['notebookboolflag_0',['NotebookBoolFlag',['../classortools_1_1sat_1_1colab_1_1flags_1_1NotebookBoolFlag.html',1,'ortools::sat::colab::flags']]],
+  ['notebookfloatflag_1',['NotebookFloatFlag',['../classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html',1,'ortools::sat::colab::flags']]],
+  ['notebookintflag_2',['NotebookIntFlag',['../classortools_1_1sat_1_1colab_1_1flags_1_1NotebookIntFlag.html',1,'ortools::sat::colab::flags']]],
+  ['notebookstringflag_3',['NotebookStringFlag',['../classortools_1_1sat_1_1colab_1_1flags_1_1NotebookStringFlag.html',1,'ortools::sat::colab::flags']]],
+  ['numericalrevinteger_4',['NumericalRevInteger',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1NumericalRevInteger.html',1,'ortools::constraint_solver::pywrapcp']]]
 ];

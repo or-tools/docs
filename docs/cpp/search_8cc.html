@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,6 +112,10 @@ $(document).ready(function(){initNavTree('search_8cc.html',''); initResizable();
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
+<code>#include &quot;absl/random/distributions.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_join.h&quot;</code><br />
@@ -124,6 +128,8 @@ $(document).ready(function(){initNavTree('search_8cc.html',''); initResizable();
 <code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__solveri_8h_source.html">ortools/constraint_solver/constraint_solveri.h</a>&quot;</code><br />
 <code>#include &quot;ortools/constraint_solver/search_limit.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__array_8h_source.html">ortools/util/string_array.h</a>&quot;</code><br />
 </div>
 <p><a href="search_8cc_source.html">Go to the source code of this file.</a></p>
@@ -295,7 +301,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03786">3786</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03774">3774</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -319,7 +325,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00524">524</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00530">530</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -343,7 +349,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01412">1412</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01415">1415</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -367,7 +373,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00835">835</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00841">841</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -391,7 +397,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03793">3793</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03781">3781</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -415,7 +421,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00836">836</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00842">842</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -439,7 +445,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01961">1961</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01962">1962</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -463,7 +469,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03788">3788</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03776">3776</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -487,7 +493,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03787">3787</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03775">3775</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -511,7 +517,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03784">3784</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03772">3772</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -535,7 +541,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03792">3792</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03780">3780</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -559,7 +565,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03790">3790</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03778">3778</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -583,7 +589,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03794">3794</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03782">3782</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -607,39 +613,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01960">1960</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
-
-</div>
-</div>
-<a id="a7a0fd648d588be00840a1eec10594776" name="a7a0fd648d588be00840a1eec10594776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a0fd648d588be00840a1eec10594776">&#9670;&#160;</a></span>solution_count_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int solution_count_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l02764">2764</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
-
-</div>
-</div>
-<a id="abe4510cd6ac255bce33df03d57787ca4" name="abe4510cd6ac255bce33df03d57787ca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4510cd6ac255bce33df03d57787ca4">&#9670;&#160;</a></span>solutions_pq_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::priority_queue&lt;std::pair&lt;std::vector&lt;int64_t&gt;, SolutionData&gt; &gt; solutions_pq_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l02763">2763</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01961">1961</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -663,7 +637,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00833">833</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00839">839</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -679,7 +653,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03276">3276</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03262">3262</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -695,7 +669,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01405">1405</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01408">1408</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -711,7 +685,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01404">1404</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l01407">1407</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -735,7 +709,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03789">3789</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03777">3777</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>
@@ -759,7 +733,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00834">834</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00840">840</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
 </div>
 </div>

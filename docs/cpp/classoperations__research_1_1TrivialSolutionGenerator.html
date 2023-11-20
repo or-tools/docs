@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -109,17 +109,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72b5cae65519e7893e32e217ef056384" id="r_a72b5cae65519e7893e32e217ef056384"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1TrivialSolutionGenerator.html#a72b5cae65519e7893e32e217ef056384">NextSolution</a> ()</td></tr>
 <tr class="memdesc:a72b5cae65519e7893e32e217ef056384"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1TrivialSolutionGenerator.html">TrivialSolutionGenerator</a>.  <br /></td></tr>
 <tr class="separator:a72b5cae65519e7893e32e217ef056384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1be84f53a706ee1dd0b38780cded16" id="r_a2c1be84f53a706ee1dd0b38780cded16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1TrivialSolutionGenerator.html#a2c1be84f53a706ee1dd0b38780cded16">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus)</td></tr>
+<tr class="separator:a2c1be84f53a706ee1dd0b38780cded16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> classes for the weighted set covering problem.</p>
 <p>The solution procedure is based on the general scheme known as local search. Once a solution exists, it is improved by modifying it slightly, for example by flipping a binary variable, so as to minimize the cost. But first, we have to generate a first solution that is as good as possible.</p>
 <p>The first solution is then improved by using local search descent, which eliminates the T_j's that have no interest in the solution.</p>
 <p>A mix of the guided local search (GLS) and Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> (TS) metaheuristic is also provided.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>(user): add Large Neighborhood <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> that removes a collection of T_j (with a parameterized way to choose them), and that runs the algorithm here on the corresponding subproblem.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>(user): make Large Neighborhood <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> concurrent, solving independent subproblems in different threads. </dd></dl>
+<p>The term 'focus' hereafter means a subset of the T_j's designated by their indices. Focus make it possible to run the algorithms on the corresponding subproblems.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd><p class="startdd">(user): make the different algorithms concurrent, solving independent subproblems in different threads. </p>
+<p class="enddd">(user): implement Large Neighborhood <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a></p>
+</dd></dl>
 <p>An obvious idea is to take all the T_j's (or equivalently to set all the x_j's to 1). It's a bit silly but fast, and we can improve on it later using local search. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00046">46</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00048">48</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a6e83f06c1b551c533df739d553cda1" name="a8a6e83f06c1b551c533df739d553cda1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a6e83f06c1b551c533df739d553cda1">&#9670;&#160;</a></span>TrivialSolutionGenerator()</h2>
@@ -145,13 +149,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00048">48</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00050">50</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a72b5cae65519e7893e32e217ef056384" name="a72b5cae65519e7893e32e217ef056384"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72b5cae65519e7893e32e217ef056384">&#9670;&#160;</a></span>NextSolution()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b5cae65519e7893e32e217ef056384">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +172,28 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1TrivialSolutionGenerator.html">TrivialSolutionGenerator</a>. </p>
 <p>Returns true if a solution was found. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. This seems unlikely, though. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00032">32</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00034">34</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+
+</div>
+</div>
+<a id="a2c1be84f53a706ee1dd0b38780cded16" name="a2c1be84f53a706ee1dd0b38780cded16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1be84f53a706ee1dd0b38780cded16">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::TrivialSolutionGenerator::NextSolution </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>focus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the next partial solution considering only the subsets whose indices are in focus. </p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00038">38</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
 
 </div>
 </div>

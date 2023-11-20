@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('revised__simplex_8cc.html',''); initRe
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
@@ -182,7 +183,7 @@ Variables</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="amarkowitz_8cc_html_aa9d6c98fdf8d89b0e2321fda02adc82c"><div class="ttname"><a href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a></div><div class="ttdeci">ColIndex col</div><div class="ttdef"><b>Definition</b> <a href="markowitz_8cc_source.html#l00187">markowitz.cc:187</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l00067">67</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l00068">68</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>
@@ -205,10 +206,10 @@ Variables</h2></td></tr>
 <div class="line">    DCHECK_LE(0, <a class="code hl_variable" href="revised__simplex_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>);         \</div>
 <div class="line">    DCHECK_GT(num_rows_, <a class="code hl_variable" href="revised__simplex_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>); \</div>
 <div class="line">  }</div>
-<div class="ttc" id="arevised__simplex_8cc_html_aea35f36ba98d5bbd8d033382f50c9e52"><div class="ttname"><a href="revised__simplex_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a></div><div class="ttdeci">RowIndex row</div><div class="ttdef"><b>Definition</b> <a href="revised__simplex_8cc_source.html#l02031">revised_simplex.cc:2031</a></div></div>
-</div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000522">Todo:</a></b></dt><dd>(user): Remove this function. </dd></dl>
+<div class="ttc" id="arevised__simplex_8cc_html_aea35f36ba98d5bbd8d033382f50c9e52"><div class="ttname"><a href="revised__simplex_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a></div><div class="ttdeci">RowIndex row</div><div class="ttdef"><b>Definition</b> <a href="revised__simplex_8cc_source.html#l02033">revised_simplex.cc:2033</a></div></div>
+</div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000524">Todo:</a></b></dt><dd>(user): Remove this function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l00074">74</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l00075">75</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +389,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02033">2033</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02035">2035</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>
@@ -404,7 +405,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02032">2032</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02034">2034</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>
@@ -420,7 +421,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02031">2031</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02033">2033</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>
@@ -436,7 +437,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02034">2034</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8cc_source.html#l02036">2036</a> of file <a class="el" href="revised__simplex_8cc_source.html">revised_simplex.cc</a>.</p>
 
 </div>
 </div>

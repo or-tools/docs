@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -186,7 +186,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001133">Todo:</a></b></dt><dd>(user): We could "easily" create an intermediate variable for more complex linear expression. We could also identify duplicate expressions to not create two identical integer variable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001139">Todo:</a></b></dt><dd>(user): We could "easily" create an intermediate variable for more complex linear expression. We could also identify duplicate expressions to not create two identical integer variable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__mapping_8h_source.html#l00096">96</a> of file <a class="el" href="cp__model__mapping_8h_source.html">cp_model_mapping.h</a>.</p>
 
@@ -743,11 +743,11 @@ template&lt;typename ProtoIndices &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The logic assumes that the linear constraints have been presolved, so that equality with a domain bound have been converted to &lt;= or &gt;= and so that we never have any trivial inequalities.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001113">Todo:</a></b></dt><dd>(user): Regroup/presolve two encoding like b =&gt; x &gt; 2 and the same Boolean b =&gt; x &gt; 5. These shouldn't happen if we merge linear constraints. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001119">Todo:</a></b></dt><dd>(user): Regroup/presolve two encoding like b =&gt; x &gt; 2 and the same Boolean b =&gt; x &gt; 5. These shouldn't happen if we merge linear constraints. </dd></dl>
 <p>Extract the encodings (IntegerVariable &lt;-&gt; Booleans) present in the model. This effectively load some linear constraints of size 1 that will be marked as already loaded. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001114">Todo:</a></b></dt><dd>(user): Debug what makes it unsat at this point. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001120">Todo:</a></b></dt><dd>(user): Debug what makes it unsat at this point. </dd></dl>
 <p>Detection of literal equivalent to (i_var == value). We collect all the half-reified constraint lit =&gt; equality or lit =&gt; inequality for a given variable, and we will later sort them to detect equivalence.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001115">Todo:</a></b></dt><dd>(user): We will re-add the same implied bounds during probing, so it might not be necessary to do that here. Also, it might be too early if some of the literal view used in the LP are created later, but that should be fixable via calls to implied_bounds-&gt;NotifyNewIntegerView(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001121">Todo:</a></b></dt><dd>(user): We will re-add the same implied bounds during probing, so it might not be necessary to do that here. Also, it might be too early if some of the literal view used in the LP are created later, but that should be fixable via calls to implied_bounds-&gt;NotifyNewIntegerView(). </dd></dl>
 <p>Detection of literal equivalent to (i_var &gt;= bound). We also collect all the half-refied part and we will sort the vector for detection of the equivalence.</p>
 <p>Loop over all constraints and fill var_to_equalities and inequalities.</p>
 <p>ct is a linear constraint with one term and one enforcement literal.</p>
@@ -756,18 +756,18 @@ template&lt;typename ProtoIndices &gt; </div>
 <p>Detect enforcement_literal =&gt; (var == value or var != value).</p>
 <dl class="section note"><dt>Note</dt><dd>for domain with 2 values like [0, 1], we will detect both == 0 and != 1. Similarly, for a domain in [min, max], we should both detect (== min) and (&lt;= min), and both detect (== max) and (&gt;= max).</dd></dl>
 <p>Detect <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; X &gt;= value</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001116">Todo:</a></b></dt><dd>(user): In these cases, we could fix the enforcement literal right away or ignore the constraint. Note that it will be done later anyway though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001122">Todo:</a></b></dt><dd>(user): In these cases, we could fix the enforcement literal right away or ignore the constraint. Note that it will be done later anyway though. </dd></dl>
 <p>Encode the half-inequalities.</p>
 <p>Detect <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; X == value and associate them in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001117">Todo:</a></b></dt><dd>(user): Fully encode variable that are almost fully encoded? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001118">Todo:</a></b></dt><dd>(user): Try to remove it. Normally we caught UNSAT above, but tests are very flaky (it only happens in parallel). Keeping it there for the time being. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001123">Todo:</a></b></dt><dd>(user): Fully encode variable that are almost fully encoded? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001124">Todo:</a></b></dt><dd>(user): Try to remove it. Normally we caught UNSAT above, but tests are very flaky (it only happens in parallel). Keeping it there for the time being. </dd></dl>
 <p>Encode the half-equalities.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001119">Todo:</a></b></dt><dd>(user): delay this after <a class="el" href="namespaceoperations__research_1_1sat.html#ad1ebf465eb7ccee4f79a5b8cfccfe7d9">PropagateEncodingFromEquivalenceRelations()</a>? Otherwise we might create new Boolean variables for no reason. Note however, that in the presolve, we should only use the "representative" in linear constraints, so we should be fine. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001125">Todo:</a></b></dt><dd>(user): delay this after <a class="el" href="namespaceoperations__research_1_1sat.html#ad1ebf465eb7ccee4f79a5b8cfccfe7d9">PropagateEncodingFromEquivalenceRelations()</a>? Otherwise we might create new Boolean variables for no reason. Note however, that in the presolve, we should only use the "representative" in linear constraints, so we should be fine. </dd></dl>
 <p>If we have just an half-equality, lets not create the &lt;=&gt; literal but just add two implications. If we don't create hole, we don't really need the reverse literal. This way it is also possible for the <a class="el" href="namespaceoperations__research_1_1sat.html#a89efb582832622f508e29d0c32f56ca9">ExtractElementEncoding()</a> to detect later that actually this literal is &lt;=&gt; to var == value, and this way we create one less Boolean for the same result.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001120">Todo:</a></b></dt><dd>(user): It is not 100% clear what is the best encoding and if we should create equivalent literal or rely on propagator instead to push bounds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001126">Todo:</a></b></dt><dd>(user): It is not 100% clear what is the best encoding and if we should create equivalent literal or rely on propagator instead to push bounds. </dd></dl>
 <p>Update stats.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__loader_8cc_source.html#l00376">376</a> of file <a class="el" href="cp__model__loader_8cc_source.html">cp_model_loader.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__loader_8cc_source.html#l00379">379</a> of file <a class="el" href="cp__model__loader_8cc_source.html">cp_model_loader.cc</a>.</p>
 
 </div>
 </div>
@@ -826,9 +826,9 @@ template&lt;typename ProtoIndices &gt; </div>
 <p>Link any variable that has both views.</p>
 <p>Associate with corresponding integer variable.</p>
 <p>Create the interval variables.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001111">Todo:</a></b></dt><dd>(user): Fix the constant variable situation. An optional interval with constant start/end or size cannot share the same constant variable if it is used in non-optional situation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001117">Todo:</a></b></dt><dd>(user): Fix the constant variable situation. An optional interval with constant start/end or size cannot share the same constant variable if it is used in non-optional situation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__loader_8cc_source.html#l00123">123</a> of file <a class="el" href="cp__model__loader_8cc_source.html">cp_model_loader.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__loader_8cc_source.html#l00126">126</a> of file <a class="el" href="cp__model__loader_8cc_source.html">cp_model_loader.cc</a>.</p>
 
 </div>
 </div>

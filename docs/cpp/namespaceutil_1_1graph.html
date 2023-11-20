@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -164,7 +164,7 @@ template&lt;class AdjacencyLists &gt; </div>
 <p>The DFS stack will contain a chain of nodes, from the root of the DFS to the current leaf.</p>
 <p>Points at the first child node that we did <em>not</em> yet look at.</p>
 <p>Start the DFS.</p>
-<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000696">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
+<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000698">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
 <p>We detected a cycle! It corresponds to the tail end of dfs_stack, in reverse order, until we find "child".</p>
 <p>Push the child onto the stack.</p>
 <p>Verify that its adjacency list seems valid.</p>
@@ -173,7 +173,7 @@ template&lt;class AdjacencyLists &gt; </div>
 <p>The DFS stack will contain a chain of nodes, from the root of the DFS to the current leaf.</p>
 <p>Points at the first child node that we did <em>not</em> yet look at.</p>
 <p>Start the DFS.</p>
-<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000696">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
+<p>Look at the current child, and increase the current state's adj_list_index. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000698">Todo:</a></b></dt><dd>(user): Caching adj[cur_state-&gt;node] in a local stack to improve locality and so that the [] operator is called exactly once per node. </dd></dl>
 <p>We detected a cycle! It corresponds to the tail end of dfs_stack, in reverse order, until we find "child".</p>
 <p>Push the child onto the stack.</p>
 <p>Verify that its adjacency list seems valid.</p>

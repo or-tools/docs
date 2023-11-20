@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Takes references to the linear program data we need. </p>
 
-<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00029">29</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00030">30</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Deterministic time used by some of the functions of this class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000418">Todo:</a></b></dt><dd>(user): Be exhausitive and more precise. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000420">Todo:</a></b></dt><dd>(user): Be exhausitive and more precise. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="entering__variable_8h_source.html#l00083">83</a> of file <a class="el" href="entering__variable_8h_source.html">entering_variable.h</a>.</p>
 
@@ -275,7 +275,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Dual optimization phase (i.e. phase II) ratio test. Returns the index of the entering column given that we want to move along the "update" row vector in the direction given by the sign of cost_variation. Computes the smallest step that keeps the dual feasibility for all the columns. </p>
 <p>If everything has the best possible precision currently, we ignore low coefficients. This make sure we will never choose a pivot too small. It however can degrade the dual feasibility of the solution, but we can always fix that later.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000415">Todo:</a></b></dt><dd>(user): It is unclear if this is a good idea, but the primal simplex have pretty good/stable behavior with a similar logic. Experiment seems to show that this works well with the dual too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000417">Todo:</a></b></dt><dd>(user): It is unclear if this is a good idea, but the primal simplex have pretty good/stable behavior with a similar logic. Experiment seems to show that this works well with the dual too. </dd></dl>
 <p>Harris ratio test. See below for more explanation. Here this is used to prune the first pass by not enqueueing ColWithRatio for columns that have a ratio greater than the current harris_ratio.</p>
 <p>Like for the primal, we always allow a positive ministep, even if a variable is already infeasible by more than the tolerance.</p>
 <p>We will add ratio * coeff to this column with a ratio positive or zero. cost_variation makes sure the leaving variable will be dual-feasible (its update coeff is sign(cost_variation) * 1.0).</p>
@@ -290,7 +290,7 @@ Public Member Functions</h2></td></tr>
 <p>If the column is boxed, we can just switch its bounds and ignore the breakpoint! But we need to see if the entering row still improve the objective. This is called the bound flipping ratio test in the literature. See for instance: <a href="http://www.mpi-inf.mpg.de/conferences/adfocs-03/Slides/Bixby_2.pdf">http://www.mpi-inf.mpg.de/conferences/adfocs-03/Slides/Bixby_2.pdf</a></p>
 <p>For each bound flip, <code>cost_variation</code> decreases by |upper_bound - lower_bound| times <code>coeff</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>the actual flipping will be done afterwards by MakeBoxedVariableDualFeasible() in <a class="el" href="revised__simplex_8cc.html">revised_simplex.cc</a>.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000416">Todo:</a></b></dt><dd>(user): We want to maximize both the ratio (objective improvement) and the coeff_magnitude (stable pivot), so we have to make some trade-offs. Investigate alternative strategies. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000418">Todo:</a></b></dt><dd>(user): We want to maximize both the ratio (objective improvement) and the coeff_magnitude (stable pivot), so we have to make some trade-offs. Investigate alternative strategies. </dd></dl>
 <p>Update harris_ratio. Note that because we process ratio in order, the harris ratio can only get smaller if the coeff_magnitude is bigger than the one of the best coefficient.</p>
 <p>If the dual infeasibility is too high, the harris_ratio can be negative. To avoid this we always allow for a minimum step even if we push some already infeasible variable further away. This is quite important because its helps in the choice of a stable pivot.</p>
 <dl class="section note"><dt>Note</dt><dd>the step is not directly used, so it is okay to leave it negative.</dd></dl>
@@ -299,7 +299,7 @@ Public Member Functions</h2></td></tr>
 <p>If best_coeff is small and they are potential bound flips, we can take a smaller step but use a good pivot.</p>
 <dl class="section note"><dt>Note</dt><dd>it is okay to leave more candidate than necessary in the returned bound_flip_candidates vector.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00037">37</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00038">38</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Public Member Functions</h2></td></tr>
 <p>Fixed variable shouldn't be in the update position list.</p>
 <p>Skip if the coeff is too small to be a numerically stable pivot.</p>
 <p>We will add ratio * coeff to this column. cost_variation makes sure the leaving variable will be dual-feasible (its update coeff is sign(cost_variation) * 1.0).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000417">Todo:</a></b></dt><dd>(user): This is the same in <a class="el" href="classoperations__research_1_1glop_1_1EnteringVariable.html#a863b59030d198656afffb23fcd533948">DualChooseEnteringColumn()</a>, remove duplication? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000419">Todo:</a></b></dt><dd>(user): This is the same in <a class="el" href="classoperations__research_1_1glop_1_1EnteringVariable.html#a863b59030d198656afffb23fcd533948">DualChooseEnteringColumn()</a>, remove duplication? </dd></dl>
 <p>Only proceed if there is a transition, note that if reduced_costs[col] is close to zero, then the variable is counted as dual-feasible.</p>
 <p>Continue if the variation goes in the dual-feasible direction.</p>
 <p>For an already dual-infeasible variable, we allow to push it until the harris_tolerance. But if it is past that or close to it, we also always enforce a minimum push.</p>
@@ -358,7 +358,7 @@ Public Member Functions</h2></td></tr>
 <p>We keep the greatest coeff_magnitude for the same ratio.</p>
 <p>If the variable is free, then not only do we loose the infeasibility improvment, we also render it worse if we keep going in the same direction.</p>
 
-<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00241">241</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00245">245</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00357">357</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entering__variable_8cc_source.html#l00363">363</a> of file <a class="el" href="entering__variable_8cc_source.html">entering_variable.cc</a>.</p>
 
 </div>
 </div>

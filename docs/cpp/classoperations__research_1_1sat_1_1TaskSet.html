@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class to compute the end-min of a set of tasks given their start-min and size-min. In Petr Vilim's PhD "Global Constraints in Scheduling", this corresponds to his Theta-tree except that we use a O(n) implementation for most of the function here, not a O(log(n)) one. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00056">56</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00053">53</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a708e0618e264757ecf38eed35063f5eb" name="a708e0618e264757ecf38eed35063f5eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a708e0618e264757ecf38eed35063f5eb">&#9670;&#160;</a></span>TaskSet()</h2>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00058">58</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00055">55</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +185,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If the task is added after optimized_restart_, we know that we don't need to scan the task before optimized_restart_ in the next <a class="el" href="classoperations__research_1_1sat_1_1TaskSet.html#ab11b88fadeabec68f02c09a97a1cc5b9">ComputeEndMin()</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00215">215</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00158">158</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as AddEntry({t, helper-&gt;ShiftedStartMin(t), helper-&gt;SizeMin(t)}). This is a minor optimization to not call SizeMin(t) twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00230">230</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00173">173</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advanced usage. Instead of calling many <a class="el" href="classoperations__research_1_1sat_1_1TaskSet.html#a660aa36d23b846efd5c6859d2ea186a0">AddEntry()</a>, it is more efficient to call <a class="el" href="classoperations__research_1_1sat_1_1TaskSet.html#a9b8ed1fc63b03410ebacff32852c6b3f">AddUnsortedEntry()</a> instead, but then <a class="el" href="classoperations__research_1_1sat_1_1TaskSet.html#aabb8db7b7f9ce12b218827742620aeb4">Sort()</a> MUST be called just after the insertions. Nothing is checked here, so it is up to the client to do that properly. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00088">88</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00085">85</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Insertion and modification. These leave sorted_tasks_ sorted. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00070">70</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00067">67</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00251">251</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00194">194</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Public Member Functions</h2></td></tr>
 <p>The order in which we process tasks with the same start-min doesn't matter.</p>
 <p>If the ignored task is last and was the start of the critical block, then we need to reset optimized_restart_.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00267">267</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00210">210</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Warning, this is only valid if <a class="el" href="classoperations__research_1_1sat_1_1TaskSet.html#ab11b88fadeabec68f02c09a97a1cc5b9">ComputeEndMin()</a> was just called. It is the same index as if one called ComputeEndMin(-1, &amp;critical_index), but saves another unneeded loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00116">116</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00113">113</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advanced usage, if the entry is present, this assumes that its start_min is &gt;= the end min without it, and update the datastructure accordingly. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00236">236</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00179">179</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00089">89</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00086">86</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00118">118</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00115">115</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>

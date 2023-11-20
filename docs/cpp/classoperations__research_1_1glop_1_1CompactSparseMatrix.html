@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -142,9 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0791643e3884a91ed6092466e61bab8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cfb37c92fd3b030abd7c4937b1835b7" id="r_a4cfb37c92fd3b030abd7c4937b1835b7"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a4cfb37c92fd3b030abd7c4937b1835b7">AddDenseColumn</a> (const <a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> &amp;dense_column)</td></tr>
 <tr class="separator:a4cfb37c92fd3b030abd7c4937b1835b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff5d2175f3b5b2e6809102da52200b93" id="r_aff5d2175f3b5b2e6809102da52200b93"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#aff5d2175f3b5b2e6809102da52200b93">AddDenseColumnPrefix</a> (const <a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> &amp;dense_column, RowIndex <a class="el" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a>)</td></tr>
-<tr class="memdesc:aff5d2175f3b5b2e6809102da52200b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a4cfb37c92fd3b030abd7c4937b1835b7">AddDenseColumn()</a>, but only adds the non-zero from the given start.  <br /></td></tr>
-<tr class="separator:aff5d2175f3b5b2e6809102da52200b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea6f0249ef81c70e6e0d4d31fa1b3a3" id="r_a2ea6f0249ef81c70e6e0d4d31fa1b3a3"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a2ea6f0249ef81c70e6e0d4d31fa1b3a3">AddDenseColumnPrefix</a> (<a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a5913128a85eac124919a5e8685202e33">DenseColumn::ConstView</a> dense_column, RowIndex <a class="el" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a>)</td></tr>
+<tr class="memdesc:a2ea6f0249ef81c70e6e0d4d31fa1b3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a4cfb37c92fd3b030abd7c4937b1835b7">AddDenseColumn()</a>, but only adds the non-zero from the given start.  <br /></td></tr>
+<tr class="separator:a2ea6f0249ef81c70e6e0d4d31fa1b3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f938d04982bbbf245cb21a227043ba" id="r_aa1f938d04982bbbf245cb21a227043ba"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#aa1f938d04982bbbf245cb21a227043ba">AddDenseColumnWithNonZeros</a> (const <a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> &amp;dense_column, const std::vector&lt; RowIndex &gt; &amp;non_zeros)</td></tr>
 <tr class="separator:aa1f938d04982bbbf245cb21a227043ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68984a579051362fc97153bbc5ec8841" id="r_a68984a579051362fc97153bbc5ec8841"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a68984a579051362fc97153bbc5ec8841">AddAndClearColumnWithNonZeros</a> (<a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> *<a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ae9ef9f49cbcd7e699d1ba8d81da1eb8b">column</a>, std::vector&lt; RowIndex &gt; *non_zeros)</td></tr>
@@ -168,6 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa160c146b6b89f9763ceb1f7fc364aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87311902dc39f660f9a9ef00b178e97" id="r_ac87311902dc39f660f9a9ef00b178e97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ac87311902dc39f660f9a9ef00b178e97">ColumnScalarProduct</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>, const <a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">DenseRow</a> &amp;vector) const</td></tr>
 <tr class="separator:ac87311902dc39f660f9a9ef00b178e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3493ab01e9fa04ad82212e27c750d91b" id="r_a3493ab01e9fa04ad82212e27c750d91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a3493ab01e9fa04ad82212e27c750d91b">ColumnAddMultipleToDenseColumn</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> multiplier, <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a4947fe2055bd8a57e01d2ad68380625e">DenseColumn::View</a> dense_column) const</td></tr>
+<tr class="separator:a3493ab01e9fa04ad82212e27c750d91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fc5cdbce924147a60154c8f3fd791d" id="r_a49fc5cdbce924147a60154c8f3fd791d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a49fc5cdbce924147a60154c8f3fd791d">ColumnAddMultipleToDenseColumn</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> multiplier, <a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> *dense_column) const</td></tr>
 <tr class="separator:a49fc5cdbce924147a60154c8f3fd791d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9b156246af047ed1f2524d0e495e16e" id="r_af9b156246af047ed1f2524d0e495e16e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#af9b156246af047ed1f2524d0e495e16e">ColumnAddMultipleToSparseScatteredColumn</a> (ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> multiplier, <a class="el" href="structoperations__research_1_1glop_1_1ScatteredColumn.html">ScatteredColumn</a> *<a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ae9ef9f49cbcd7e699d1ba8d81da1eb8b">column</a>) const</td></tr>
@@ -255,7 +257,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convenient constructors for tests. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000835">Todo:</a></b></dt><dd>(user): If this is needed in production code, it can be done faster. </dd></dl>
+<p>Convenient constructors for tests. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000839">Todo:</a></b></dt><dd>(user): If this is needed in production code, it can be done faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00343">343</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
@@ -342,8 +344,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aff5d2175f3b5b2e6809102da52200b93" name="aff5d2175f3b5b2e6809102da52200b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff5d2175f3b5b2e6809102da52200b93">&#9670;&#160;</a></span>AddDenseColumnPrefix()</h2>
+<a id="a2ea6f0249ef81c70e6e0d4d31fa1b3a3" name="a2ea6f0249ef81c70e6e0d4d31fa1b3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea6f0249ef81c70e6e0d4d31fa1b3a3">&#9670;&#160;</a></span>AddDenseColumnPrefix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +353,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">ColIndex operations_research::glop::CompactSparseMatrix::AddDenseColumnPrefix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a5913128a85eac124919a5e8685202e33">DenseColumn::ConstView</a>&#160;</td>
           <td class="paramname"><em>dense_column</em>, </td>
         </tr>
         <tr>
@@ -461,12 +463,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Functions to iterate on the entries of a given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00504">504</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00508">508</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
 <a id="a49fc5cdbce924147a60154c8f3fd791d" name="a49fc5cdbce924147a60154c8f3fd791d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49fc5cdbce924147a60154c8f3fd791d">&#9670;&#160;</a></span>ColumnAddMultipleToDenseColumn()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49fc5cdbce924147a60154c8f3fd791d">&#9670;&#160;</a></span>ColumnAddMultipleToDenseColumn() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,6 +492,50 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1glop.html#ad2f352599e06269079e571bdc63eb636">DenseColumn</a> *&#160;</td>
+          <td class="paramname"><em>dense_column</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00446">446</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+
+</div>
+</div>
+<a id="a3493ab01e9fa04ad82212e27c750d91b" name="a3493ab01e9fa04ad82212e27c750d91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3493ab01e9fa04ad82212e27c750d91b">&#9670;&#160;</a></span>ColumnAddMultipleToDenseColumn() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::glop::CompactSparseMatrix::ColumnAddMultipleToDenseColumn </td>
+          <td>(</td>
+          <td class="paramtype">ColIndex&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td>
+          <td class="paramname"><em>multiplier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a4947fe2055bd8a57e01d2ad68380625e">DenseColumn::View</a>&#160;</td>
           <td class="paramname"><em>dense_column</em>&#160;</td>
         </tr>
         <tr>
@@ -549,9 +595,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a49fc5cdbce924147a60154c8f3fd791d">ColumnAddMultipleToDenseColumn()</a> but also adds the new non-zeros to the non_zeros vector. A non-zero is "new" if is_non_zero[row] was false, and we update dense_column[row]. This function also updates is_non_zero. </p>
+<p>Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a3493ab01e9fa04ad82212e27c750d91b">ColumnAddMultipleToDenseColumn()</a> but also adds the new non-zeros to the non_zeros vector. A non-zero is "new" if is_non_zero[row] was false, and we update dense_column[row]. This function also updates is_non_zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00451">451</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00455">455</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +636,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#a03926b548606d7ad83460d0c46242971">ColumnCopyToDenseColumn()</a> but assumes the column to be initially all zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00473">473</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00477">477</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +682,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Same as <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html#ac1563ed4581c3708b09a686468d5625a">ColumnCopyToClearedDenseColumn()</a> but also fills non_zeros. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00485">485</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00489">489</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +721,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Copies the given column of this matrix into the given dense_column. This function is declared in the .h for efficiency. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00465">465</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00469">469</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1116,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Holds the columns non-zero coefficients and row positions. The entries for the column of index col are stored in the entries [starts_[col], starts_[col + 1]). </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00515">515</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00519">519</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1140,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00510">510</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00514">514</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1166,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The matrix dimensions, properly updated by full and incremental builders. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00509">509</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00513">513</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1190,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00516">516</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00520">520</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1214,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00517">517</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00521">521</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -407,7 +407,7 @@ Properties</h2></td></tr>
 <tr class="memdesc:a72cde89e56df1607c7f166f6e0e51370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the "infinite_constraint_bound_threshold" field is set.  <br /></td></tr>
 <tr class="separator:a72cde89e56df1607c7f166f6e0e51370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226d7e26e9343ea1584f2579992e682b" id="r_a226d7e26e9343ea1584f2579992e682b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#a226d7e26e9343ea1584f2579992e682b">HandleSomePrimalGradientsOnFiniteBoundsAsResiduals</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a226d7e26e9343ea1584f2579992e682b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a> for notation. handle_some_primal_gradients_on_finite_bounds_as_residuals controls for which primal variables i the term (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− in the theoretical dual objective is included in PDLP's dual objective and which are excluded from the dual objective with r_i accounted separately as contributing to the dual residual. This parameter has no effect on the primal and dual solution found after t iterations; it only affects when termination occurs and reported statistics. When (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− is infinite due to an infinite variable bound the term is always treated as a residual (to keep the dual objective finite) regardless of the value of handle_some_primal_gradients_on_finite_bounds_as_residuals. When handle_some_primal_gradients_on_finite_bounds_as_residuals is false no finite terms are accounted as residuals. When handle_some_primal_gradients_on_finite_bounds_as_residuals is true, finite terms with |x_i - b_i| &gt; <code>x_i</code> (where x_i is the variable's value and b_i is l^v_i if r_i &gt; 0 and u^v_i otherwise) are counted as residuals. Setting this to true can substantially reduce the duality gap at the expense of increasing the dual residual.  <br /></td></tr>
+<tr class="memdesc:a226d7e26e9343ea1584f2579992e682b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a href="https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite">https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite</a> for a description of this flag.  <br /></td></tr>
 <tr class="separator:a226d7e26e9343ea1584f2579992e682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae278240034b5ade952093484ffaf557c" id="r_ae278240034b5ade952093484ffaf557c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#ae278240034b5ade952093484ffaf557c">HasHandleSomePrimalGradientsOnFiniteBoundsAsResiduals</a><code> [get]</code></td></tr>
 <tr class="memdesc:ae278240034b5ade952093484ffaf557c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the "handle_some_primal_gradients_on_finite_bounds_as_residuals" field is set.  <br /></td></tr>
@@ -441,7 +441,7 @@ Properties</h2></td></tr>
 <li>l2_norm_rescaling In addition, tune num_threads to speed up the solve. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02286">2286</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02292">2292</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4337873cef91c1bb16a2441c87786702" name="a4337873cef91c1bb16a2441c87786702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4337873cef91c1bb16a2441c87786702">&#9670;&#160;</a></span>PrimalDualHybridGradientParams() <span class="overload">[1/2]</span></h2>
@@ -466,7 +466,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02312">2312</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02318">2318</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -494,7 +494,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02320">2320</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02326">2326</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03485">3485</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03475">3475</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "diagonal_qp_trust_region_solver_tolerance" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03112">3112</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03102">3102</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "handle_some_primal_gradients_on_finite_bounds_as_residuals" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03043">3043</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03033">3033</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -609,7 +609,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "infinite_constraint_bound_threshold" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02995">2995</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03001">3001</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "initial_primal_weight" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02715">2715</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02721">2721</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -667,7 +667,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "initial_step_size_scaling" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02941">2941</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02947">2947</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "l2_norm_rescaling" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02790">2790</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02796">2796</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "linesearch_rule" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02886">2886</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02892">2892</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "l_inf_ruiz_iterations" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02759">2759</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02765">2765</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -783,7 +783,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "log_interval_seconds" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02543">2543</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02549">2549</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -812,7 +812,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "major_iteration_frequency" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02578">2578</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02584">2584</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "necessary_reduction_for_restart" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02856">2856</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02862">2862</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "num_shards" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02436">2436</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02442">2442</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -899,7 +899,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "num_threads" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02398">2398</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02404">2404</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -928,7 +928,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "primal_weight_update_smoothing" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02679">2679</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02685">2685</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -957,7 +957,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "record_iteration_stats" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02469">2469</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02475">2475</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -986,7 +986,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "restart_strategy" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02642">2642</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02648">2648</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "sufficient_reduction_for_restart" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02822">2822</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02828">2828</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1044,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "termination_check_frequency" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02610">2610</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02616">2616</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1073,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "use_diagonal_qp_trust_region_solver" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03078">3078</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03068">3068</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1102,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "use_feasibility_polishing" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03169">3169</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03159">3159</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1131,7 @@ Properties</h2></td></tr>
 
 <p>Clears the value of the "verbosity_level" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02509">2509</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02515">2515</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1158,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02353">2353</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02359">2359</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1186,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03175">3175</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03165">3165</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1214,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03181">3181</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03171">3171</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1241,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03219">3219</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03209">3209</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1269,7 +1269,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03668">3668</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03658">3658</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1297,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03571">3571</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03561">3561</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1324,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03255">3255</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03245">3245</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03261">3261</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03251">3251</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1379,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "adaptive_linesearch_parameters" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02891">2891</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02897">2897</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1405,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "diagonal_qp_trust_region_solver_tolerance" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03083">3083</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03073">3073</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1431,7 +1431,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "handle_some_primal_gradients_on_finite_bounds_as_residuals" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03000">3000</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03006">3006</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1457,7 +1457,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "infinite_constraint_bound_threshold" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02965">2965</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02971">2971</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1483,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "initial_primal_weight" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02684">2684</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02690">2690</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1509,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "initial_step_size_scaling" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02915">2915</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02921">2921</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1535,7 +1535,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "l2_norm_rescaling" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02764">2764</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02770">2770</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1561,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "linesearch_rule" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02861">2861</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02867">2867</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1587,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "l_inf_ruiz_iterations" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02732">2732</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02738">2738</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1613,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "log_interval_seconds" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02514">2514</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02520">2520</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1639,7 +1639,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "major_iteration_frequency" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02548">2548</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02554">2554</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1665,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "malitsky_pock_parameters" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02903">2903</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02909">2909</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1691,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "necessary_reduction_for_restart" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02827">2827</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02833">2833</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1717,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "num_shards" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02403">2403</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02409">2409</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1743,7 +1743,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "num_threads" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02370">2370</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02376">2376</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1769,7 +1769,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "presolve_options" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02720">2720</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02726">2726</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1795,7 +1795,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "primal_weight_update_smoothing" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02647">2647</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02653">2653</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1821,7 +1821,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "random_projection_seeds" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02946">2946</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02952">2952</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1847,7 +1847,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "record_iteration_stats" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02441">2441</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02447">2447</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1873,7 +1873,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "restart_strategy" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02615">2615</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02621">2621</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +1899,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "sufficient_reduction_for_restart" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02795">2795</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02801">2801</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1925,7 +1925,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "termination_check_frequency" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02583">2583</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02589">2589</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +1951,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "termination_criteria" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02358">2358</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02364">2364</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -1977,7 +1977,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "use_diagonal_qp_trust_region_solver" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03048">3048</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03038">3038</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2003,7 +2003,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "use_feasibility_polishing" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03117">3117</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03107">3107</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2029,7 +2029,7 @@ Properties</h2></td></tr>
 
 <p>Field number for the "verbosity_level" field. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02474">2474</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02480">2480</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2054,7 +2054,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02895">2895</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02901">2901</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2078,7 +2078,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02300">2300</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02306">2306</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2103,9 +2103,9 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The solve tolerance of the experimental trust region solver for diagonal QPs, controlling the accuracy of binary search over a one-dimensional scaling parameter. Smaller values imply smaller relative error of the final solution vector. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>(user): Find an expression for the final relative error. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>(user): Find an expression for the final relative error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03096">3096</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03086">3086</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2129,9 +2129,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>See <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a> for notation. handle_some_primal_gradients_on_finite_bounds_as_residuals controls for which primal variables i the term (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− in the theoretical dual objective is included in PDLP's dual objective and which are excluded from the dual objective with r_i accounted separately as contributing to the dual residual. This parameter has no effect on the primal and dual solution found after t iterations; it only affects when termination occurs and reported statistics. When (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− is infinite due to an infinite variable bound the term is always treated as a residual (to keep the dual objective finite) regardless of the value of handle_some_primal_gradients_on_finite_bounds_as_residuals. When handle_some_primal_gradients_on_finite_bounds_as_residuals is false no finite terms are accounted as residuals. When handle_some_primal_gradients_on_finite_bounds_as_residuals is true, finite terms with |x_i - b_i| &gt; <code>x_i</code> (where x_i is the variable's value and b_i is l^v_i if r_i &gt; 0 and u^v_i otherwise) are counted as residuals. Setting this to true can substantially reduce the duality gap at the expense of increasing the dual residual. </p>
+<p>See <a href="https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite">https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite</a> for a description of this flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03027">3027</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03017">3017</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2157,7 +2157,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "diagonal_qp_trust_region_solver_tolerance" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03106">3106</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03096">3096</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2183,7 +2183,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "handle_some_primal_gradients_on_finite_bounds_as_residuals" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03037">3037</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03027">3027</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2209,7 +2209,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "infinite_constraint_bound_threshold" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02989">2989</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02995">2995</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2235,7 +2235,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "initial_primal_weight" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02709">2709</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02715">2715</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2261,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "initial_step_size_scaling" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02935">2935</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02941">2941</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2287,7 +2287,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "l2_norm_rescaling" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02784">2784</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02790">2790</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2313,7 +2313,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "linesearch_rule" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02880">2880</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02886">2886</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2339,7 +2339,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "l_inf_ruiz_iterations" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02753">2753</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02759">2759</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2365,7 +2365,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "log_interval_seconds" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02537">2537</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02543">2543</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2391,7 +2391,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "major_iteration_frequency" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02572">2572</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02578">2578</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2417,7 +2417,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "necessary_reduction_for_restart" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02850">2850</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02856">2856</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +2443,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "num_shards" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02430">2430</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02436">2436</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2469,7 +2469,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "num_threads" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02392">2392</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02398">2398</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2495,7 +2495,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "primal_weight_update_smoothing" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02673">2673</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02679">2679</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2521,7 +2521,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "record_iteration_stats" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02463">2463</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02469">2469</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2547,7 +2547,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "restart_strategy" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02636">2636</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02642">2642</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2573,7 +2573,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "sufficient_reduction_for_restart" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02816">2816</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02822">2822</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2599,7 +2599,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "termination_check_frequency" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02604">2604</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02610">2610</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2625,7 +2625,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "use_diagonal_qp_trust_region_solver" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03072">3072</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03062">3062</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2651,7 +2651,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "use_feasibility_polishing" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03163">3163</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03153">3153</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2677,7 +2677,7 @@ Properties</h2></td></tr>
 
 <p>Gets whether the "verbosity_level" field is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02503">2503</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02509">2509</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2704,7 +2704,7 @@ Properties</h2></td></tr>
 <p>Constraint bounds with absolute value at least this threshold are replaced with infinities. </p>
 <dl class="section note"><dt>Note</dt><dd>This primarily affects the relative convergence criteria. A smaller value makes the relative convergence criteria stronger. It also affects the problem statistics LOG()ed at the start of the run, and the default initial primal weight, since that is based on the norm of the bounds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02979">2979</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02985">2985</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2730,7 +2730,7 @@ Properties</h2></td></tr>
 
 <p>The initial value of the primal weight (i.e., the ratio of primal and dual step sizes). The primal weight remains fixed throughout the solve if primal_weight_update_smoothing = 0.0. If unset, the default is the ratio of the norm of the objective vector to the L2 norm of the combined constraint bounds vector (as defined above). If this ratio is not finite and positive, then the default is 1.0 instead. For tuning, try powers of 10, for example, from 10^{-6} to 10^6. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02699">2699</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02705">2705</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2756,7 +2756,7 @@ Properties</h2></td></tr>
 
 <p>Scaling factor applied to the initial step size (all step sizes if linesearch_rule == CONSTANT_STEP_SIZE_RULE). </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02925">2925</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02931">2931</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2782,7 +2782,7 @@ Properties</h2></td></tr>
 
 <p>If true, applies L_2 norm rescaling after the Ruiz rescaling. Heuristically this has been found to help convergence. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02774">2774</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02780">2780</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2808,7 @@ Properties</h2></td></tr>
 
 <p>Linesearch rule applied at each major iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02870">2870</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02876">2876</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2834,7 +2834,7 @@ Properties</h2></td></tr>
 
 <p>Number of L_infinity Ruiz rescaling iterations to apply to the constraint matrix. Zero disables this rescaling pass. Recommended values to try when tuning are 0, 5, and 10. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02743">2743</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02749">2749</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2860,7 +2860,7 @@ Properties</h2></td></tr>
 
 <p>Time between iteration-level statistics logging (if <code>verbosity_level &gt; 1</code>). Since iteration-level statistics are only generated when performing termination checks, logs will be generated from next termination check after <code>log_interval_seconds</code> have elapsed. Should be &gt;= 0.0. 0.0 (the default) means log statistics at every termination check. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02527">2527</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02533">2533</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2886,7 +2886,7 @@ Properties</h2></td></tr>
 
 <p>The frequency at which extra work is performed to make major algorithmic decisions, e.g., performing restarts and updating the primal weight. Major iterations also trigger a termination check. For best performance using the NO_RESTARTS or EVERY_MAJOR_ITERATION rule, one should perform a log-scale grid search over this parameter, for example, over powers of two. ADAPTIVE_HEURISTIC is mostly insensitive to this value. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02562">2562</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02568">2568</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2910,7 +2910,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02907">2907</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02913">2913</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2936,7 +2936,7 @@ Properties</h2></td></tr>
 
 <p>For ADAPTIVE_HEURISTIC only: A relative reduction in the potential function by this amount triggers a restart if, additionally, the quality of the iterates appears to be getting worse. The value must be in the interval [sufficient_reduction_for_restart, 1). Smaller values make restarts less frequent, and larger values make them more frequent. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02840">2840</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02846">2846</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2962,7 +2962,7 @@ Properties</h2></td></tr>
 
 <p>For more efficient parallel computation, the matrices and vectors are divided (virtually) into num_shards shards. Results are computed independently for each shard and then combined. As a consequence, the order of computation, and hence floating point roundoff, depends on the number of shards so reproducible results require using the same value for num_shards. However, for efficiency num_shards should a be at least num_threads, and preferably at least 4*num_threads to allow better load balancing. If num_shards is positive, the computation will use that many shards. Otherwise a default that depends on num_threads will be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02420">2420</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02426">2426</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -2988,7 +2988,7 @@ Properties</h2></td></tr>
 
 <p>The number of threads to use. Must be positive. Try various values of num_threads, up to the number of physical cores. Performance may not be monotonically increasing with the number of threads because of memory bandwidth limitations. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02382">2382</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02388">2388</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3012,7 +3012,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02296">2296</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02302">2302</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3036,7 +3036,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02724">2724</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02730">2730</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3062,7 +3062,7 @@ Properties</h2></td></tr>
 
 <p>This parameter controls exponential smoothing of log(primal_weight) when a primal weight update occurs (i.e., when the ratio of primal and dual step sizes is adjusted). At 0.0, the primal weight will be frozen at its initial value and there will be no dynamic updates in the algorithm. At 1.0, there is no smoothing in the updates. The default of 0.5 generally performs well, but has been observed on occasion to trigger unstable swings in the primal weight. We recommend also trying 0.0 (disabling primal weight updates), in which case you must also tune initial_primal_weight. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02663">2663</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02669">2669</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3088,7 +3088,7 @@ Properties</h2></td></tr>
 
 <p>Seeds for generating (pseudo-)random projections of iterates during termination checks. For each seed, the projection of the primal and dual solutions onto random planes in primal and dual space will be computed and added the IterationStats if record_iteration_stats is true. The random planes generated will be determined by the seeds, the primal and dual dimensions, and num_threads. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02960">2960</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02966">2966</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3114,7 +3114,7 @@ Properties</h2></td></tr>
 
 <p>If true, the iteration_stats field of the SolveLog output will be populated at every iteration. Note that we only compute solution statistics at termination checks. Setting this parameter to true may substantially increase the size of the output. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02453">2453</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02459">2459</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3140,7 +3140,7 @@ Properties</h2></td></tr>
 
 <p>NO_RESTARTS and EVERY_MAJOR_ITERATION occasionally outperform the default. If using a strategy other than ADAPTIVE_HEURISTIC, you must also tune major_iteration_frequency. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02626">2626</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02632">2632</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3166,7 +3166,7 @@ Properties</h2></td></tr>
 
 <p>For ADAPTIVE_HEURISTIC and ADAPTIVE_DISTANCE_BASED only: A relative reduction in the potential function by this amount always triggers a restart. Must be between 0.0 and 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02806">2806</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02812">2812</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3192,7 +3192,7 @@ Properties</h2></td></tr>
 
 <p>The frequency (based on a counter reset every major iteration) to check for termination (involves extra work) and log iteration stats. Termination checks do not affect algorithmic progress unless termination is triggered. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02594">2594</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02600">2600</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3216,7 +3216,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02362">2362</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02368">2368</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3241,9 +3241,9 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>When solving QPs with diagonal objective matrices, this option can be turned on to enable an experimental solver that avoids linearization of the quadratic term. The <code>diagonal_qp_solver_accuracy</code> parameter controls the solve accuracy. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>(user): Turn this option on by default for quadratic programs after numerical evaluation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>(user): Turn this option on by default for quadratic programs after numerical evaluation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03062">3062</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03052">3052</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3270,7 +3270,7 @@ Properties</h2></td></tr>
 <p>If true, periodically runs feasibility polishing, which attempts to move from latest average iterate to one that is closer to feasibility (i.e., has smaller primal and dual residuals) while probably increasing the objective gap. This is useful primarily when the feasibility tolerances are fairly tight and the objective gap tolerance is somewhat looser. Note that this does not change the termination criteria, but rather can help achieve the termination criteria more quickly when the objective gap is not as important as feasibility. </p>
 <p><code>use_feasibility_polishing</code> cannot be used with glop presolve, and requires <code>handle_some_primal_gradients_on_finite_bounds_as_residuals == false</code>. <code>use_feasibility_polishing</code> can only be used with linear programs. Feasibility polishing runs two separate phases, primal feasibility and dual feasibility. The primal feasibility phase runs PDHG on the primal feasibility problem (obtained by changing the objective vector to all zeros), using the average primal iterate and zero dual (which is optimal for the primal feasibility problem) as the initial solution. The dual feasibility phase runs PDHG on the dual feasibility problem (obtained by changing all finite variable and constraint bounds to zero), using the average dual iterate and zero primal (which is optimal for the dual feasibility problem) as the initial solution. The primal solution from the primal feasibility phase and dual solution from the dual feasibility phase are then combined (forming a solution of type <code>POINT_TYPE_FEASIBILITY_POLISHING_SOLUTION</code>) and checked against the termination criteria. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03153">3153</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l03143">3143</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>
@@ -3296,7 +3296,7 @@ Properties</h2></td></tr>
 
 <p>The verbosity of logging. 0: No informational logging. (Errors are logged.) 1: Summary statistics only. No iteration-level details. 2: A table of iteration-level statistics is logged. (See ToShortString() in primal_dual_hybrid_gradient.cc). 3: A more detailed table of iteration-level statistics is logged. (See ToString() in primal_dual_hybrid_gradient.cc). 4: For iteration-level details, prints the statistics of both the average (prefixed with A) and the current iterate (prefixed with C). Also prints internal algorithmic state and details. Logging at levels 2-4 also includes messages from level 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02493">2493</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8pb_8cs_source.html#l02499">2499</a> of file <a class="el" href="Solvers_8pb_8cs_source.html">Solvers.pb.cs</a>.</p>
 
 </div>
 </div>

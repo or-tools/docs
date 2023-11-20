@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -144,8 +144,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa47c2156335ccf7e0a0a108d9aef603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857c9448c7fbe67b94370b78e21c8a12" id="r_a857c9448c7fbe67b94370b78e21c8a12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#a857c9448c7fbe67b94370b78e21c8a12">solutionCount</a> ()</td></tr>
 <tr class="separator:a857c9448c7fbe67b94370b78e21c8a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9894b5a654fd2ca53921d9c56ce33a" id="r_acb9894b5a654fd2ca53921d9c56ce33a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#acb9894b5a654fd2ca53921d9c56ce33a">has_solution</a> ()</td></tr>
+<tr class="separator:acb9894b5a654fd2ca53921d9c56ce33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce2e06263561d9bf75b6051d0eeeb2d" id="r_a8ce2e06263561d9bf75b6051d0eeeb2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Assignment.html">Assignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#a8ce2e06263561d9bf75b6051d0eeeb2d">solution</a> (int n)</td></tr>
 <tr class="separator:a8ce2e06263561d9bf75b6051d0eeeb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f676b8837be0bb56b0b85223e6f6b09" id="r_a6f676b8837be0bb56b0b85223e6f6b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Assignment.html">Assignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#a6f676b8837be0bb56b0b85223e6f6b09">last_solution_or_null</a> ()</td></tr>
+<tr class="separator:a6f676b8837be0bb56b0b85223e6f6b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e17b60c41ae411ea9851694f932841d" id="r_a4e17b60c41ae411ea9851694f932841d"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#a4e17b60c41ae411ea9851694f932841d">wallTime</a> (int n)</td></tr>
 <tr class="separator:a4e17b60c41ae411ea9851694f932841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4d49070eb5ed8169c066c8fcdf1595" id="r_a7c4d49070eb5ed8169c066c8fcdf1595"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionCollector.html#a7c4d49070eb5ed8169c066c8fcdf1595">branches</a> (int n)</td></tr>
@@ -558,7 +562,7 @@ Additional Inherited Members</h2></td></tr>
  nth solution. The backward sequence is the list of ranked interval<br  />
  variables starting from the end of the sequence. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00214">214</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00229">229</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -579,7 +583,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the number of branches when the nth solution was found. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00139">139</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00154">154</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -631,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a shortcut to get the DurationValue of 'var' in the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00189">189</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00204">204</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -662,7 +666,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a shortcut to get the EndValue of 'var' in the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00182">182</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00197">197</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -706,7 +710,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the number of failures encountered at the time of the nth<br  />
  solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00147">147</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00162">162</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -768,7 +772,7 @@ Additional Inherited Members</h2></td></tr>
  nth solution. The forward sequence is the list of ranked interval<br  />
  variables starting from the start of the sequence. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00205">205</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00220">220</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -800,6 +804,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="acb9894b5a654fd2ca53921d9c56ce33a" name="acb9894b5a654fd2ca53921d9c56ce33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9894b5a654fd2ca53921d9c56ce33a">&#9670;&#160;</a></span>has_solution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.google.ortools.constraintsolver.SolutionCollector.has_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether any solutions were stored during the search. </p>
+
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00124">124</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+
+</div>
+</div>
 <a id="a6adb40a242dd0af20ce58a79c362aae7" name="a6adb40a242dd0af20ce58a79c362aae7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6adb40a242dd0af20ce58a79c362aae7">&#9670;&#160;</a></span>install()</h2>
 
@@ -824,6 +848,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6f676b8837be0bb56b0b85223e6f6b09" name="a6f676b8837be0bb56b0b85223e6f6b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f676b8837be0bb56b0b85223e6f6b09">&#9670;&#160;</a></span>last_solution_or_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Assignment.html">Assignment</a> com.google.ortools.constraintsolver.SolutionCollector.last_solution_or_null </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the last solution if there are any, nullptr otherwise. </p>
+
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00139">139</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+
+</div>
+</div>
 <a id="a4d4e7493343146487c7e1980e5d7078c" name="a4d4e7493343146487c7e1980e5d7078c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d4e7493343146487c7e1980e5d7078c">&#9670;&#160;</a></span>objectiveValue()</h2>
 
@@ -841,7 +885,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the objective value of the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00154">154</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00169">169</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -872,7 +916,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the value of the index-th objective of the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00161">161</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00176">176</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -903,7 +947,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a shortcut to get the PerformedValue of 'var' in the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00196">196</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00211">211</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -924,7 +968,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00124">124</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00131">131</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -975,7 +1019,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a shortcut to get the StartValue of 'var' in the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00175">175</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00190">190</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1100,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is a shortcut to get the list of unperformed of 'var' in the<br  />
  nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00222">222</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00237">237</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1131,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a shortcut to get the Value of 'var' in the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00168">168</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00183">183</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1152,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the wall time in ms for the nth solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00132">132</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolutionCollector_8java_source.html#l00147">147</a> of file <a class="el" href="SolutionCollector_8java_source.html">SolutionCollector.java</a>.</p>
 
 </div>
 </div>

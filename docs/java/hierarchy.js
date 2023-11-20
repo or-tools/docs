@@ -190,6 +190,7 @@ var hierarchy =
     [ "com.google.ortools.util.Domain", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html", null ],
     [ "com.google.ortools.sat.DoubleLinearExpr", "classcom_1_1google_1_1ortools_1_1sat_1_1DoubleLinearExpr.html", null ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.DoubleParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1DoubleParam.html", null ],
+    [ "com.google.ortools.modelbuilder.EnforcedLinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1EnforcedLinearConstraint.html", null ],
     [ "com.google.protobuf.Internal.EnumLite", null, [
       [ "com.google.ortools.linearsolver.MPGeneralConstraintProto.GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", null ],
       [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ],
@@ -752,6 +753,7 @@ var hierarchy =
     [ "com.google.ortools.init.OrToolsVersion", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html", null ],
     [ "com.google.ortools.glop.Parameters", "classcom_1_1google_1_1ortools_1_1glop_1_1Parameters.html", null ],
     [ "com.google.ortools.constraintsolver.PathsMetadata", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathsMetadata.html", null ],
+    [ "com.google.ortools.constraintsolver.RoutingModel.PickupDeliveryPosition", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1PickupDeliveryPosition.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel.RouteDimensionTravelInfo.TransitionInfo.PiecewiseLinearFormulation", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_430f65925cb053fa6a366a692039efa5.html", null ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.PresolveValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1PresolveValues.html", null ],
     [ "com.google.protobuf.ProtocolMessageEnum", null, [

@@ -7,6 +7,7 @@ var namespaceGoogle_1_1OrTools =
     [ "Graph", "namespaceGoogle_1_1OrTools_1_1Graph.html", "namespaceGoogle_1_1OrTools_1_1Graph" ],
     [ "Init", "namespaceGoogle_1_1OrTools_1_1Init.html", "namespaceGoogle_1_1OrTools_1_1Init" ],
     [ "LinearSolver", "namespaceGoogle_1_1OrTools_1_1LinearSolver.html", "namespaceGoogle_1_1OrTools_1_1LinearSolver" ],
+    [ "ModelBuilder", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html", "namespaceGoogle_1_1OrTools_1_1ModelBuilder" ],
     [ "Sat", "namespaceGoogle_1_1OrTools_1_1Sat.html", "namespaceGoogle_1_1OrTools_1_1Sat" ],
     [ "Util", "namespaceGoogle_1_1OrTools_1_1Util.html", "namespaceGoogle_1_1OrTools_1_1Util" ]
 ];

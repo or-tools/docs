@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,18 +106,18 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1Dimension
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a976474de096aa40df1a0e6d0f5988e7f" id="r_a976474de096aa40df1a0e6d0f5988e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a976474de096aa40df1a0e6d0f5988e7f">DimensionCumulOptimizerCore</a> (const RoutingDimension *<a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a243c035fd3b3a96b027471439eeb0750">dimension</a>, bool use_precedence_propagator)</td></tr>
 <tr class="separator:a976474de096aa40df1a0e6d0f5988e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b0b8b9da7385865bf4982e2fbfb47b" id="r_ae0b0b8b9da7385865bf4982e2fbfb47b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ae0b0b8b9da7385865bf4982e2fbfb47b">OptimizeSingleRoute</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values, int64_t *cost, int64_t *transit_cost, bool clear_lp=true)</td></tr>
-<tr class="separator:ae0b0b8b9da7385865bf4982e2fbfb47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa691a0ea1f5e90e3612326c1fcb22562" id="r_aa691a0ea1f5e90e3612326c1fcb22562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aa691a0ea1f5e90e3612326c1fcb22562">OptimizeSingleRouteWithResource</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, const Resource *resource, bool optimize_vehicle_costs, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values, int64_t *cost, int64_t *transit_cost, bool clear_lp=true)</td></tr>
+<tr class="separator:aa691a0ea1f5e90e3612326c1fcb22562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ea77ced4f4575eea8acf7e3741f687" id="r_a40ea77ced4f4575eea8acf7e3741f687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a40ea77ced4f4575eea8acf7e3741f687">ComputeSingleRouteSolutionCost</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, const std::vector&lt; int64_t &gt; &amp;solution_cumul_values, const std::vector&lt; int64_t &gt; &amp;solution_break_values, int64_t *cost, int64_t *transit_cost, int64_t *cost_offset=nullptr, bool reuse_previous_model_if_possible=true, bool clear_lp=false, bool clear_solution_constraints=true, absl::Duration *solve_duration=nullptr)</td></tr>
 <tr class="separator:a40ea77ced4f4575eea8acf7e3741f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f32cd84dbcafd254560126ba5e970c" id="r_a93f32cd84dbcafd254560126ba5e970c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a93f32cd84dbcafd254560126ba5e970c">OptimizeSingleRouteWithResources</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const std::function&lt; int64_t(int64_t, int64_t)&gt; &amp;transit_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, const std::vector&lt; RoutingModel::ResourceGroup::Resource &gt; &amp;resources, const std::vector&lt; int &gt; &amp;resource_indices, bool optimize_vehicle_costs, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *costs_without_transits, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *cumul_values, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *break_values, bool clear_lp=true)</td></tr>
-<tr class="separator:a93f32cd84dbcafd254560126ba5e970c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678e6d9b22f3daeb4aff94c38e39a1e1" id="r_a678e6d9b22f3daeb4aff94c38e39a1e1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a678e6d9b22f3daeb4aff94c38e39a1e1">OptimizeSingleRouteWithResources</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const std::function&lt; int64_t(int64_t, int64_t)&gt; &amp;transit_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, const std::vector&lt; Resource &gt; &amp;resources, const std::vector&lt; int &gt; &amp;resource_indices, bool optimize_vehicle_costs, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *cumul_values, std::vector&lt; std::vector&lt; int64_t &gt; &gt; *break_values, std::vector&lt; int64_t &gt; *costs, int64_t *transit_cost, bool clear_lp=true)</td></tr>
+<tr class="separator:a678e6d9b22f3daeb4aff94c38e39a1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede20bc3ae1e196588b610cfd10e7843" id="r_aede20bc3ae1e196588b610cfd10e7843"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aede20bc3ae1e196588b610cfd10e7843">Optimize</a> (const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const std::vector&lt; RouteDimensionTravelInfo &gt; &amp;dimension_travel_info_per_route, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values, std::vector&lt; std::vector&lt; int &gt; &gt; *resource_indices_per_group, int64_t *cost, int64_t *transit_cost, bool clear_lp=true)</td></tr>
 <tr class="separator:aede20bc3ae1e196588b610cfd10e7843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6499a2a9523227eee2869d06bfa75ca" id="r_ab6499a2a9523227eee2869d06bfa75ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ab6499a2a9523227eee2869d06bfa75ca">OptimizeAndPack</a> (const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const std::vector&lt; RouteDimensionTravelInfo &gt; &amp;dimension_travel_info_per_route, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values, std::vector&lt; std::vector&lt; int &gt; &gt; *resource_indices_per_group)</td></tr>
 <tr class="separator:ab6499a2a9523227eee2869d06bfa75ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c08dfc4cd84b78481cfee0c2096317d" id="r_a1c08dfc4cd84b78481cfee0c2096317d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a1c08dfc4cd84b78481cfee0c2096317d">OptimizeAndPackSingleRoute</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, const RoutingModel::ResourceGroup::Resource *resource, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values)</td></tr>
-<tr class="separator:a1c08dfc4cd84b78481cfee0c2096317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d616d386e8b382588f8de4b36ddb62" id="r_ac7d616d386e8b382588f8de4b36ddb62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ac7d616d386e8b382588f8de4b36ddb62">OptimizeAndPackSingleRoute</a> (int vehicle, const std::function&lt; int64_t(int64_t)&gt; &amp;next_accessor, const RouteDimensionTravelInfo &amp;dimension_travel_info, const Resource *resource, <a class="el" href="classoperations__research_1_1RoutingLinearSolverWrapper.html">RoutingLinearSolverWrapper</a> *solver, std::vector&lt; int64_t &gt; *cumul_values, std::vector&lt; int64_t &gt; *break_values)</td></tr>
+<tr class="separator:ac7d616d386e8b382588f8de4b36ddb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a243c035fd3b3a96b027471439eeb0750" id="r_a243c035fd3b3a96b027471439eeb0750"><td class="memItemLeft" align="right" valign="top">const RoutingDimension *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#a243c035fd3b3a96b027471439eeb0750">dimension</a> () const</td></tr>
 <tr class="separator:a243c035fd3b3a96b027471439eeb0750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialize vehicle_to_first_index_ so the variables of the breaks of vehicle v are stored from vehicle_to_first_index_[v] to vehicle_to_first_index_[v+1] - 1.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00531">531</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00556">556</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
@@ -249,11 +249,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given some cumuls and breaks, computes the solution cost by solving the same model as in <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ae0b0b8b9da7385865bf4982e2fbfb47b">OptimizeSingleRoute()</a> with the addition of constraints for cumuls and breaks. </p>
+<p>Given some cumuls and breaks, computes the solution cost by solving the same model as in <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aa691a0ea1f5e90e3612326c1fcb22562">OptimizeSingleRouteWithResource()</a> with the addition of constraints for cumuls and breaks. </p>
+<p>Make sure SetRouteCumulConstraints will properly set the cumul bounds by looking at this route only.</p>
 <p>Constrains the cumuls.</p>
 <p>Constrains the breaks.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00590">590</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00586">586</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
@@ -280,7 +281,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8h_source.html#l00700">700</a> of file <a class="el" href="routing__lp__scheduling_8h_source.html">routing_lp_scheduling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8h_source.html#l00706">706</a> of file <a class="el" href="routing__lp__scheduling_8h_source.html">routing_lp_scheduling.h</a>.</p>
 
 </div>
 </div>
@@ -351,10 +352,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>In the <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aede20bc3ae1e196588b610cfd10e7843">Optimize()</a> method, if both "cumul_values" and "cost" parameters are null, we don't optimize the cost and stop at the first feasible solution in the linear solver (since in this case only feasibility is of interest). </p>
 <p>If both "cumul_values" and "cost" parameters are null, we don't try to optimize the cost and stop at the first feasible solution.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000318">Todo:</a></b></dt><dd>(user): In case the status is RELAXED_OPTIMAL_ONLY, check we can safely avoid filling variable and cost values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000317">Todo:</a></b></dt><dd>(user): In case the status is RELAXED_OPTIMAL_ONLY, check we can safely avoid filling variable and cost values. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00872">872</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00898">898</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
@@ -409,14 +411,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>We pass a non-nullptr cost to the <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aede20bc3ae1e196588b610cfd10e7843">Optimize()</a> method so the costs are optimized by the solver.</dd></dl>
 <p>Subtle: Even if the status was RELAXED_OPTIMAL_ONLY we try to pack just in case packing manages to make the solution completely feasible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000319">Todo:</a></b></dt><dd>(user): In case the status is RELAXED_OPTIMAL_ONLY, check we can safely avoid filling variable values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000318">Todo:</a></b></dt><dd>(user): In case the status is RELAXED_OPTIMAL_ONLY, check we can safely avoid filling variable values. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00951">951</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00977">977</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a1c08dfc4cd84b78481cfee0c2096317d" name="a1c08dfc4cd84b78481cfee0c2096317d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c08dfc4cd84b78481cfee0c2096317d">&#9670;&#160;</a></span>OptimizeAndPackSingleRoute()</h2>
+<a id="ac7d616d386e8b382588f8de4b36ddb62" name="ac7d616d386e8b382588f8de4b36ddb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d616d386e8b382588f8de4b36ddb62">&#9670;&#160;</a></span>OptimizeAndPackSingleRoute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +444,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const RoutingModel::ResourceGroup::Resource *&#160;</td>
+          <td class="paramtype">const Resource *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
@@ -470,20 +472,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>We pass a non-nullptr cost to the <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ae0b0b8b9da7385865bf4982e2fbfb47b">OptimizeSingleRoute()</a> method so the costs are optimized by the LP.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l01002">1002</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l01028">1028</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
-<a id="ae0b0b8b9da7385865bf4982e2fbfb47b" name="ae0b0b8b9da7385865bf4982e2fbfb47b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b0b8b9da7385865bf4982e2fbfb47b">&#9670;&#160;</a></span>OptimizeSingleRoute()</h2>
+<a id="aa691a0ea1f5e90e3612326c1fcb22562" name="aa691a0ea1f5e90e3612326c1fcb22562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa691a0ea1f5e90e3612326c1fcb22562">&#9670;&#160;</a></span>OptimizeSingleRouteWithResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a> operations_research::DimensionCumulOptimizerCore::OptimizeSingleRoute </td>
+          <td class="memname"><a class="el" href="namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659">DimensionSchedulingStatus</a> operations_research::DimensionCumulOptimizerCore::OptimizeSingleRouteWithResource </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>vehicle</em>, </td>
@@ -499,6 +500,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const RouteDimensionTravelInfo &amp;&#160;</td>
           <td class="paramname"><em>dimension_travel_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Resource *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>optimize_vehicle_costs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -543,14 +556,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>In the <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#ae0b0b8b9da7385865bf4982e2fbfb47b">OptimizeSingleRoute()</a> and <a class="el" href="classoperations__research_1_1DimensionCumulOptimizerCore.html#aede20bc3ae1e196588b610cfd10e7843">Optimize()</a> methods, if both "cumul_values" and "cost" parameters are null, we don't optimize the cost and stop at the first feasible solution in the linear solver (since in this case only feasibility is of interest). </p>
+<p>Finds an optimal (or just feasible) solution for the route for the given resource. If the resource is null, it is simply ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00678">678</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00696">696</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a93f32cd84dbcafd254560126ba5e970c" name="a93f32cd84dbcafd254560126ba5e970c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93f32cd84dbcafd254560126ba5e970c">&#9670;&#160;</a></span>OptimizeSingleRouteWithResources()</h2>
+<a id="a678e6d9b22f3daeb4aff94c38e39a1e1" name="a678e6d9b22f3daeb4aff94c38e39a1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678e6d9b22f3daeb4aff94c38e39a1e1">&#9670;&#160;</a></span>OptimizeSingleRouteWithResources()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +595,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; RoutingModel::ResourceGroup::Resource &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; Resource &gt; &amp;&#160;</td>
           <td class="paramname"><em>resources</em>, </td>
         </tr>
         <tr>
@@ -606,12 +619,6 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int64_t &gt; *&#160;</td>
-          <td class="paramname"><em>costs_without_transits</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::vector&lt; std::vector&lt; int64_t &gt; &gt; *&#160;</td>
           <td class="paramname"><em>cumul_values</em>, </td>
         </tr>
@@ -620,6 +627,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">std::vector&lt; std::vector&lt; int64_t &gt; &gt; *&#160;</td>
           <td class="paramname"><em>break_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int64_t &gt; *&#160;</td>
+          <td class="paramname"><em>costs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>transit_cost</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -634,12 +653,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the optimal scheduling solution(s) for the route for each resource in 'resources' with an index in 'resource_indices'. If both 'resources' and 'resource_indices' are empty, computes the optimal solution for the route itself (without added resource constraints). </p>
 <p>Make sure SetRouteCumulConstraints will properly set the cumul bounds by looking at this route only.</p>
 <p>An unused empty vehicle doesn't require resources.</p>
+<dl class="section note"><dt>Note</dt><dd>When there are no resources to optimize for, we still solve the optimization problem for the route (without any added resource constraint).</dd></dl>
 <p>The model's deadline has been reached, stop.</p>
 <p>The resource attributes don't match this vehicle.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00774">774</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__lp__scheduling_8cc_source.html#l00802">802</a> of file <a class="el" href="routing__lp__scheduling_8cc_source.html">routing_lp_scheduling.cc</a>.</p>
 
 </div>
 </div>

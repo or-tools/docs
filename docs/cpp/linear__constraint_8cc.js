@@ -13,6 +13,7 @@ var linear__constraint_8cc =
     [ "NegationOf", "linear__constraint_8cc.html#ac64e33318b5b09f0c9008950d29a0a7e", null ],
     [ "NoDuplicateVariable", "linear__constraint_8cc.html#adbad520b0fd87f997fd2de7eeff9e848", null ],
     [ "PositiveVarExpr", "linear__constraint_8cc.html#ac1f5fc24892786308e339b0865309580", null ],
+    [ "PossibleOverflow", "linear__constraint_8cc.html#a62555e26e4185c3c441e9222914b4186", null ],
     [ "RemoveZeroTerms", "linear__constraint_8cc.html#a3a88781ba518fe1373e2bbe36aeb8132", null ],
     [ "ScalarProduct", "linear__constraint_8cc.html#acbbc863153951ef5e0cd45800fe2c56e", null ],
     [ "ValidateLinearConstraintForOverflow", "linear__constraint_8cc.html#ad582c9543b77917ac1084bbfda601f5e", null ]

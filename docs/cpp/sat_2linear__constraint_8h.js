@@ -18,6 +18,7 @@ var sat_2linear__constraint_8h =
     [ "NoDuplicateVariable", "sat_2linear__constraint_8h.html#adbad520b0fd87f997fd2de7eeff9e848", null ],
     [ "operator<<", "sat_2linear__constraint_8h.html#a9ff9b7f7a0e15c369487e0c089dba1a2", null ],
     [ "PositiveVarExpr", "sat_2linear__constraint_8h.html#ac1f5fc24892786308e339b0865309580", null ],
+    [ "PossibleOverflow", "sat_2linear__constraint_8h.html#a62555e26e4185c3c441e9222914b4186", null ],
     [ "RemoveZeroTerms", "sat_2linear__constraint_8h.html#a3a88781ba518fe1373e2bbe36aeb8132", null ],
     [ "ScalarProduct", "sat_2linear__constraint_8h.html#acbbc863153951ef5e0cd45800fe2c56e", null ],
     [ "ValidateLinearConstraintForOverflow", "sat_2linear__constraint_8h.html#ad582c9543b77917ac1084bbfda601f5e", null ]

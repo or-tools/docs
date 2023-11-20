@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Solvers_8java_source.html#l05932">5932</a> of file <a class="el" href="Solvers_8java_source.html">Solvers.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Solvers_8java_source.html#l05933">5933</a> of file <a class="el" href="Solvers_8java_source.html">Solvers.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3e6b3c5be3eeec1edbff500ce04f31c" name="ac3e6b3c5be3eeec1edbff500ce04f31c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3e6b3c5be3eeec1edbff500ce04f31c">&#9670;&#160;</a></span>getAdaptiveLinesearchParameters()</h2>
@@ -312,25 +312,9 @@ TODO(user): Find an expression for the final relative error.
       </table>
 </div><div class="memdoc">
 <pre>
-See <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a> for notation.
-handle_some_primal_gradients_on_finite_bounds_as_residuals controls for
-which primal variables i the term (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− in
-the theoretical dual objective is included in PDLP's dual objective and
-which are excluded from the dual objective with r_i accounted separately as
-contributing to the dual residual. This parameter has no effect on the
-primal and dual solution found after t iterations; it only affects when
-termination occurs and reported statistics.
-When (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− is infinite due to an infinite
-variable bound the term is always treated as a residual (to keep the dual
-objective finite) regardless of the value of
-handle_some_primal_gradients_on_finite_bounds_as_residuals.
-When handle_some_primal_gradients_on_finite_bounds_as_residuals is false no
-finite terms are accounted as residuals.
-When handle_some_primal_gradients_on_finite_bounds_as_residuals is true,
-finite terms with |x_i - b_i| &gt; |x_i| (where x_i is the variable's value
-and b_i is l^v_i if r_i &gt; 0 and u^v_i otherwise) are counted as residuals.
-Setting this to true can substantially reduce the duality gap at the
-expense of increasing the dual residual.
+See
+<a href="https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite">https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite</a>
+for a description of this flag.
 </pre><p><code>optional bool handle_some_primal_gradients_on_finite_bounds_as_residuals = 29 [default = true];</code> </p><dl class="section return"><dt>Returns</dt><dd>The handleSomePrimalGradientsOnFiniteBoundsAsResiduals. </dd></dl>
 
 <p>Implemented in <a class="el" href="classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams.html#aaa68afe14afa80dcf6c0702f1a3aa7d1">operations_research.pdlp.Solvers.PrimalDualHybridGradientParams</a>, and <a class="el" href="classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1Builder.html#a716d3094a42d082811946ed33a624fb3">operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.Builder</a>.</p>
@@ -1119,25 +1103,9 @@ TODO(user): Find an expression for the final relative error.
       </table>
 </div><div class="memdoc">
 <pre>
-See <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a> for notation.
-handle_some_primal_gradients_on_finite_bounds_as_residuals controls for
-which primal variables i the term (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− in
-the theoretical dual objective is included in PDLP's dual objective and
-which are excluded from the dual objective with r_i accounted separately as
-contributing to the dual residual. This parameter has no effect on the
-primal and dual solution found after t iterations; it only affects when
-termination occurs and reported statistics.
-When (l^v_i)^T[r_i]_+ − (u^v_i)^T[r_i]_− is infinite due to an infinite
-variable bound the term is always treated as a residual (to keep the dual
-objective finite) regardless of the value of
-handle_some_primal_gradients_on_finite_bounds_as_residuals.
-When handle_some_primal_gradients_on_finite_bounds_as_residuals is false no
-finite terms are accounted as residuals.
-When handle_some_primal_gradients_on_finite_bounds_as_residuals is true,
-finite terms with |x_i - b_i| &gt; |x_i| (where x_i is the variable's value
-and b_i is l^v_i if r_i &gt; 0 and u^v_i otherwise) are counted as residuals.
-Setting this to true can substantially reduce the duality gap at the
-expense of increasing the dual residual.
+See
+<a href="https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite">https://developers.google.com/optimization/lp/pdlp_math#treating_some_variable_bounds_as_infinite</a>
+for a description of this flag.
 </pre><p><code>optional bool handle_some_primal_gradients_on_finite_bounds_as_residuals = 29 [default = true];</code> </p><dl class="section return"><dt>Returns</dt><dd>Whether the handleSomePrimalGradientsOnFiniteBoundsAsResiduals field is set. </dd></dl>
 
 <p>Implemented in <a class="el" href="classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams.html#af978cfb324f975bd8ecae3494d5f8924">operations_research.pdlp.Solvers.PrimalDualHybridGradientParams</a>, and <a class="el" href="classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1Builder.html#a883f48f77fff5be9aa52096cf11f6a67">operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.Builder</a>.</p>

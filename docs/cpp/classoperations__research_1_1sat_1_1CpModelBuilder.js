@@ -53,7 +53,7 @@ var classoperations__research_1_1sat_1_1CpModelBuilder =
     [ "ClearAssumptions", "classoperations__research_1_1sat_1_1CpModelBuilder.html#a54fb435de25d2a0fb60e7e888e6d8236", null ],
     [ "ClearHints", "classoperations__research_1_1sat_1_1CpModelBuilder.html#ac87cd2d0c67dcc286aeb3d14c309d12a", null ],
     [ "ClearObjective", "classoperations__research_1_1sat_1_1CpModelBuilder.html#abae76add224e6dcdce78e0e4892a51d1", null ],
-    [ "CopyFrom", "classoperations__research_1_1sat_1_1CpModelBuilder.html#ae0a0ee6ac68413b3e318adaeb7db4a30", null ],
+    [ "Clone", "classoperations__research_1_1sat_1_1CpModelBuilder.html#a2752832df06c04468be9b3b45bedec83", null ],
     [ "ExportToFile", "classoperations__research_1_1sat_1_1CpModelBuilder.html#aae022808c9aa010f31cf365e8da953b1", null ],
     [ "FalseVar", "classoperations__research_1_1sat_1_1CpModelBuilder.html#a9a53531099bebddbf54dd15418817326", null ],
     [ "FixVariable", "classoperations__research_1_1sat_1_1CpModelBuilder.html#af8ca05894a834ee653294574c1537121", null ],

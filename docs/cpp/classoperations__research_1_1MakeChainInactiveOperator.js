@@ -5,5 +5,5 @@ var classoperations__research_1_1MakeChainInactiveOperator =
     [ "DebugString", "classoperations__research_1_1MakeChainInactiveOperator.html#a7da9eebdf0b45969084efad749d16795", null ],
     [ "GetBaseNodeRestartPosition", "classoperations__research_1_1MakeChainInactiveOperator.html#a710cd6569c9c16bea3ef8afa0488b18e", null ],
     [ "MakeNeighbor", "classoperations__research_1_1MakeChainInactiveOperator.html#a5fc7df16052a1f69d8690fafb9b67f04", null ],
-    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1MakeChainInactiveOperator.html#aba52b381b3c9f1c1b5de3ed7e039a9a5", null ]
+    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1MakeChainInactiveOperator.html#a5a24007691a70bf1ef2d2f82ad7a3492", null ]
 ];

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -513,7 +513,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="primal__dual__hybrid__gradient_8h_source.html#l00070">70</a> of file <a class="el" href="primal__dual__hybrid__gradient_8h_source.html">primal_dual_hybrid_gradient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="primal__dual__hybrid__gradient_8h_source.html#l00074">74</a> of file <a class="el" href="primal__dual__hybrid__gradient_8h_source.html">primal_dual_hybrid_gradient.h</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1192,7 @@ row_scaling_vec)</code>. <code>scaled_primal_solution</code> and <code>scaled_du
 <p>See <a href="https://developers.google.com/optimization/lp/pdlp_math#rescaling">https://developers.google.com/optimization/lp/pdlp_math#rescaling</a> for notes describing the connection between the scaled and unscaled problem.</p>
 <p>This is the dual objective from <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a> minus the last term (involving r). All scaling terms cancel out.</p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00349">349</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00384">384</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -1329,7 +1329,7 @@ row_scaling_vec)</code>. <code>scaled_primal_ray</code> and <code>scaled_dual_ra
 <p>Compute dual infeasibility information. We don't use <code>primal_residuals.l_inf_componentwise_residual</code>, so don't need to set <code>componentwise_residual_offset</code> to a meaningful value.</p>
 <p><code>primal_residuals</code> contains the violations of the linear constraints. The signs of the components are also constrained by the presence or absence of variable bounds.</p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00421">421</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00456">456</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1714,7 @@ row_scaling_vec)</code>. <code>scaled_primal_ray</code> and <code>scaled_dual_ra
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00520">520</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00555">555</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -2193,7 +2193,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Finds an approximately optimal scaling factor for the solution of the trust region subproblem, which can be passed on to <code>ProjectedCoordinate()</code> to find an approximately optimal solution to the trust region subproblem. The value returned is guaranteed to be within <code>solve_tol</code> * <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max(1, s*)</a> of the optimal scaling s*. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000964">Todo:</a></b></dt><dd>(user): figure out what accuracy is useful to callers and redo the stopping criterion accordingly. </dd></dl>
+<p>Finds an approximately optimal scaling factor for the solution of the trust region subproblem, which can be passed on to <code>ProjectedCoordinate()</code> to find an approximately optimal solution to the trust region subproblem. The value returned is guaranteed to be within <code>solve_tol</code> * <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max(1, s*)</a> of the optimal scaling s*. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000969">Todo:</a></b></dt><dd>(user): figure out what accuracy is useful to callers and redo the stopping criterion accordingly. </dd></dl>
 <p>Determine a search interval using monotonicity of the squared norm of the candidate solution with respect to the scaling factor.</p>
 <p>Invariant: <code>scaling_factor_upper_bound &gt;= scaling_factor_lower_bound</code>.</p>
 <p>Norm is monotonically non-increasing as a function of scaling_factor.</p>
@@ -2229,7 +2229,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
 </div><div class="memdoc">
 <p>Finds and returns the <code>ConvergenceInformation</code> with the specified <code>candidate_type</code>, or std::nullopt if no such candidate exists. </p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00567">567</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00584">584</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -2260,7 +2260,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
 </div><div class="memdoc">
 <p>Finds and returns the <code>InfeasibilityInformation</code> with the specified <code>candidate_type</code>, or std::nullopt if no such candidate exists. </p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00577">577</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00594">594</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -2291,7 +2291,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
 </div><div class="memdoc">
 <p>Finds and returns the <code>PointMetadata</code> with the specified <code>point_type</code>, or std::nullopt if no such point exists. </p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00588">588</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00605">605</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -3385,7 +3385,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000960">Todo:</a></b></dt><dd>(user): Update internal helper functions to use references instead of pointers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000965">Todo:</a></b></dt><dd>(user): Update internal helper functions to use references instead of pointers. </dd></dl>
 <p>Reads a quadratic program, determining the type based on the filename's suffix: *.mps, *.mps.gz, *.mps.bz2 -&gt; <code>ReadMpsLinearProgramOrDie</code> *.pb, *.textproto, *.json, *.json.gz -&gt; <code>ReadMPModelProtoFileOrDie</code> otherwise CHECK-fails. </p>
 
 <p class="definition">Definition at line <a class="el" href="quadratic__program__io_8cc_source.html#l00052">52</a> of file <a class="el" href="quadratic__program__io_8cc_source.html">quadratic_program_io.cc</a>.</p>
@@ -3435,7 +3435,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Computes the reduced costs vector, objective_matrix * <code>primal_solution</code> + objective_vector - constraint_matrix * <code>dual_solution</code> - dual_residuals, when <code>use_zero_primal_objective</code> is false, and -constraint_matrix * <code>dual_solution</code> - dual_residuals when <code>use_zero_primal_objective</code> is true. The elements of the vector are corrected component-wise to zero to ensure that the dual objective takes a finite value. See <a href="https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective">https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective</a>. </p>
+<p>Computes the reduced costs vector, objective_matrix * <code>primal_solution</code> + objective_vector - constraint_matrix * <code>dual_solution</code>, when <code>use_zero_primal_objective</code> is false, and -constraint_matrix * <code>dual_solution</code> when <code>use_zero_primal_objective</code> is true. See <a href="https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective">https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective</a>. </p>
 
 </div>
 </div>
@@ -3483,7 +3483,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00533">533</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00568">568</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>
@@ -3953,7 +3953,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
 </div><div class="memdoc">
 <p>For each entry in <code>random_projection_seeds</code>, computes a random projection of the primal/dual solution pair onto pseudo-random vectors generated from that seed and adds the results to <code>random_primal_projections</code>/<code>random_dual_projections</code> in <code>metadata</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00598">598</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="iteration__stats_8cc_source.html#l00615">615</a> of file <a class="el" href="iteration__stats_8cc_source.html">iteration_stats.cc</a>.</p>
 
 </div>
 </div>

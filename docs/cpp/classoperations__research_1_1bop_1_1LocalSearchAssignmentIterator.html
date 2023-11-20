@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -300,7 +300,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a deterministic number that should be correlated with the time spent in the iterator. The order of magnitude should be close to the time in seconds.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd>(user): The 1.2 multiplier is an approximation only based on the time spent in the SAT wrapper. So far experiments show a good correlation with real time, but we might want to be more accurate. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>(user): The 1.2 multiplier is an approximation only based on the time spent in the SAT wrapper. So far experiments show a good correlation with real time, but we might want to be more accurate. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bop__ls_8cc_source.html#l00860">860</a> of file <a class="el" href="bop__ls_8cc_source.html">bop_ls.cc</a>.</p>
 
@@ -352,7 +352,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Move to the next assignment. Returns false when the search is finished. </p>
 <p>We only look for potential one flip repairs if we reached the end of the LS tree. I tried to do that at every level, but it didn't change the result much on the set-partitionning example I was using.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo:</a></b></dt><dd>(user): Perform more experiments with this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd>(user): Perform more experiments with this. </dd></dl>
 <p>Temporarily apply the potential repair and see if it worked!</p>
 <p>If possible, go deeper, i.e. take one more decision.</p>
 <p>If not, backtrack to the first node that still has untried way to fix its associated constraint. Update it to the next untried way.</p>

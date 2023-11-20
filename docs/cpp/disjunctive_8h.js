@@ -10,7 +10,6 @@ var disjunctive_8h =
     [ "operations_research::sat::DisjunctiveEdgeFinding", "classoperations__research_1_1sat_1_1DisjunctiveEdgeFinding.html", "classoperations__research_1_1sat_1_1DisjunctiveEdgeFinding" ],
     [ "operations_research::sat::DisjunctivePrecedences", "classoperations__research_1_1sat_1_1DisjunctivePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctivePrecedences" ],
     [ "operations_research::sat::DisjunctiveWithTwoItems", "classoperations__research_1_1sat_1_1DisjunctiveWithTwoItems.html", "classoperations__research_1_1sat_1_1DisjunctiveWithTwoItems" ],
-    [ "AddDisjunctiveWithBooleanPrecedences", "disjunctive_8h.html#aa993e5774d37ab0dfba2abdad38ae03d", null ],
-    [ "AddDisjunctiveWithBooleanPrecedencesOnly", "disjunctive_8h.html#a6f5d90e7de4e0877e0abff9cb2467bdd", null ],
-    [ "Disjunctive", "disjunctive_8h.html#ac098947e71d4b76a5e0491bf7aefa924", null ]
+    [ "AddDisjunctive", "disjunctive_8h.html#a9ab304db27f5c4170f35583c69269394", null ],
+    [ "AddDisjunctiveWithBooleanPrecedencesOnly", "disjunctive_8h.html#a6f5d90e7de4e0877e0abff9cb2467bdd", null ]
 ];

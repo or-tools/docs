@@ -1,8 +1,8 @@
 var string__array_8h =
 [
     [ "RETURN_STRINGIFIED_VECTOR", "string__array_8h.html#a3531abff4b68da03b9740268e8ad8a91", null ],
-    [ "JoinDebugString", "string__array_8h.html#af1e66b2f134ccc2e06344f1935bbc16a", null ],
-    [ "JoinDebugStringPtr", "string__array_8h.html#a9be76edcbd5ccb982d92c8d90421a73c", null ],
-    [ "JoinNameFieldPtr", "string__array_8h.html#aed2d2f0a06417c1c636b412b1d8a2593", null ],
-    [ "JoinNamePtr", "string__array_8h.html#aea04391e4d85555ed4fde9b89e8139f2", null ]
+    [ "JoinDebugString", "string__array_8h.html#ae569fe8c26f0a3f6c3dd857f199fb90d", null ],
+    [ "JoinDebugStringPtr", "string__array_8h.html#a2b7d276ca14baaa1b2bf28cb0d88e65b", null ],
+    [ "JoinNameFieldPtr", "string__array_8h.html#a58188691c9707dc4eb2ccc730679de37", null ],
+    [ "JoinNamePtr", "string__array_8h.html#ae512f88674f398bccef6af1c36cc4958", null ]
 ];

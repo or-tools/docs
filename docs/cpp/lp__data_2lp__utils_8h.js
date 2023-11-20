@@ -23,7 +23,6 @@ var lp__data_2lp__utils_8h =
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8h.html#a2e9c642839cb9ae4d0bea67b8a43e5df", null ],
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8h.html#aafe7e422b950668db5efabcd0f5f5e9e", null ],
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8h.html#aaa940dbdf346f73e96410a0dfef7f778", null ],
-    [ "RemoveNearZeroEntries", "lp__data_2lp__utils_8h.html#a6748032dbfb9f38b8a5ba8ea0d920b78", null ],
     [ "RemoveNearZeroEntries", "lp__data_2lp__utils_8h.html#a15864af25924595917569d21d551ba1e", null ],
     [ "RestrictedInfinityNorm", "lp__data_2lp__utils_8h.html#ab024d8c45b029455b257db8241a0b05a", null ],
     [ "ScalarProduct", "lp__data_2lp__utils_8h.html#a6e9a46a1f8cf5298bc59148b03a3b8a0", null ],
@@ -35,6 +34,5 @@ var lp__data_2lp__utils_8h =
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a3f4bc31cf3c66cf61f9eac6048bf75ae", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a251d28033e817dc9c714888a54b28335", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#acc121482814b7aa114912f5de1601a40", null ],
-    [ "Transpose", "lp__data_2lp__utils_8h.html#a7b9550503a9c0494b09c4383fd8b2da1", null ],
-    [ "Transpose", "lp__data_2lp__utils_8h.html#a2ac7ba8d7f2291322bd2b7498b47b900", null ]
+    [ "Transpose", "lp__data_2lp__utils_8h.html#a57e4ca3510085acc223e7067fcd1e283", null ]
 ];

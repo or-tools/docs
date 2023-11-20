@@ -12,11 +12,13 @@ var searchData=
   ['operations_5fresearch_5finitpinvoke_2ecs_9',['operations_research_initPINVOKE.cs',['../operations__research__initPINVOKE_8cs.html',1,'']]],
   ['operations_5fresearch_5flinear_5fsolver_2ecs_10',['operations_research_linear_solver.cs',['../operations__research__linear__solver_8cs.html',1,'']]],
   ['operations_5fresearch_5flinear_5fsolverpinvoke_2ecs_11',['operations_research_linear_solverPINVOKE.cs',['../operations__research__linear__solverPINVOKE_8cs.html',1,'']]],
-  ['operations_5fresearch_5fsat_2ecs_12',['operations_research_sat.cs',['../operations__research__sat_8cs.html',1,'']]],
-  ['operations_5fresearch_5fsatpinvoke_2ecs_13',['operations_research_satPINVOKE.cs',['../operations__research__satPINVOKE_8cs.html',1,'']]],
-  ['operations_5fresearch_5futil_2ecs_14',['operations_research_util.cs',['../operations__research__util_8cs.html',1,'']]],
-  ['operations_5fresearch_5futilpinvoke_2ecs_15',['operations_research_utilPINVOKE.cs',['../operations__research__utilPINVOKE_8cs.html',1,'']]],
-  ['optimizevar_2ecs_16',['OptimizeVar.cs',['../OptimizeVar_8cs.html',1,'']]],
-  ['optionalboolean_2epb_2ecs_17',['OptionalBoolean.pb.cs',['../OptionalBoolean_8pb_8cs.html',1,'']]],
-  ['ortoolsversion_2ecs_18',['OrToolsVersion.cs',['../OrToolsVersion_8cs.html',1,'']]]
+  ['operations_5fresearch_5fmodel_5fbuilder_2ecs_12',['operations_research_model_builder.cs',['../operations__research__model__builder_8cs.html',1,'']]],
+  ['operations_5fresearch_5fmodel_5fbuilderpinvoke_2ecs_13',['operations_research_model_builderPINVOKE.cs',['../operations__research__model__builderPINVOKE_8cs.html',1,'']]],
+  ['operations_5fresearch_5fsat_2ecs_14',['operations_research_sat.cs',['../operations__research__sat_8cs.html',1,'']]],
+  ['operations_5fresearch_5fsatpinvoke_2ecs_15',['operations_research_satPINVOKE.cs',['../operations__research__satPINVOKE_8cs.html',1,'']]],
+  ['operations_5fresearch_5futil_2ecs_16',['operations_research_util.cs',['../operations__research__util_8cs.html',1,'']]],
+  ['operations_5fresearch_5futilpinvoke_2ecs_17',['operations_research_utilPINVOKE.cs',['../operations__research__utilPINVOKE_8cs.html',1,'']]],
+  ['optimizevar_2ecs_18',['OptimizeVar.cs',['../OptimizeVar_8cs.html',1,'']]],
+  ['optionalboolean_2epb_2ecs_19',['OptionalBoolean.pb.cs',['../OptionalBoolean_8pb_8cs.html',1,'']]],
+  ['ortoolsversion_2ecs_20',['OrToolsVersion.cs',['../OrToolsVersion_8cs.html',1,'']]]
 ];

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -104,12 +104,14 @@ $(document).ready(function(){initNavTree('cp__model__utils_8cc.html',''); initRe
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;google/protobuf/message.h&quot;</code><br />
 <code>#include &quot;google/protobuf/text_format.h&quot;</code><br />
@@ -137,6 +139,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:abe7d45e5b1ef013bac04bd33de575589" id="r_abe7d45e5b1ef013bac04bd33de575589"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#abe7d45e5b1ef013bac04bd33de575589">operations_research::sat::LinearExpressionGcd</a> (const LinearExpressionProto &amp;expr, int64_t gcd)</td></tr>
+<tr class="separator:abe7d45e5b1ef013bac04bd33de575589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace619cca537761022dff4ee830354f19" id="r_ace619cca537761022dff4ee830354f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ace619cca537761022dff4ee830354f19">operations_research::sat::DivideLinearExpression</a> (int64_t divisor, LinearExpressionProto *expr)</td></tr>
+<tr class="separator:ace619cca537761022dff4ee830354f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02df75a9e906f53495a7f7f56c782361" id="r_a02df75a9e906f53495a7f7f56c782361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a02df75a9e906f53495a7f7f56c782361">operations_research::sat::SetToNegatedLinearExpression</a> (const LinearExpressionProto &amp;input_expr, LinearExpressionProto *output_negated_expr)</td></tr>
 <tr class="memdesc:a02df75a9e906f53495a7f7f56c782361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the target as negated ref.  <br /></td></tr>
 <tr class="separator:a02df75a9e906f53495a7f7f56c782361"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +221,7 @@ Functions</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ademon__profiler_8cc_html_a05da18ca9c7b657a4a6ea24e07c9b695"><div class="ttname"><a href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a></div><div class="ttdeci">const Constraint * ct</div><div class="ttdef"><b>Definition</b> <a href="demon__profiler_8cc_source.html#l00044">demon_profiler.cc:44</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="cp__model__utils_8cc_source.html#l00177">177</a> of file <a class="el" href="cp__model__utils_8cc_source.html">cp_model_utils.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__utils_8cc_source.html#l00199">199</a> of file <a class="el" href="cp__model__utils_8cc_source.html">cp_model_utils.cc</a>.</p>
 
 </div>
 </div>
@@ -250,7 +256,7 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code hl_variable" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>-&gt;mutable_##ct_name()-&gt;set_##field_name(temp);  \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="cp__model__utils_8cc_source.html#l00170">170</a> of file <a class="el" href="cp__model__utils_8cc_source.html">cp_model_utils.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__utils_8cc_source.html#l00192">192</a> of file <a class="el" href="cp__model__utils_8cc_source.html">cp_model_utils.cc</a>.</p>
 
 </div>
 </div>

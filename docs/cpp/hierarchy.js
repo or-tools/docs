@@ -50,6 +50,7 @@ var hierarchy =
     ] ],
     [ "operations_research::sat::AssignmentInfo", "structoperations__research_1_1sat_1_1AssignmentInfo.html", null ],
     [ "operations_research::sat::AssignmentType", "structoperations__research_1_1sat_1_1AssignmentType.html", null ],
+    [ "operations_research::sat::AssignmentView", "classoperations__research_1_1sat_1_1AssignmentView.html", null ],
     [ "operations_research::math_opt::AtomicConstraintStorage< ConstraintData >", "classoperations__research_1_1math__opt_1_1AtomicConstraintStorage.html", null ],
     [ "operations_research::math_opt::AtomicConstraintTraits< IdType >", "structoperations__research_1_1math__opt_1_1AtomicConstraintTraits.html", null ],
     [ "operations_research::math_opt::AtomicConstraintTraits< IndicatorConstraintId >", "structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01IndicatorConstraintId_01_4.html", null ],
@@ -93,6 +94,7 @@ var hierarchy =
       [ "operations_research::DecisionBuilder", "classoperations__research_1_1DecisionBuilder.html", [
         [ "operations_research::FindOneNeighbor", "classoperations__research_1_1FindOneNeighbor.html", null ],
         [ "operations_research::IntVarFilteredDecisionBuilder", "classoperations__research_1_1IntVarFilteredDecisionBuilder.html", null ],
+        [ "operations_research::LocalSearch", "classoperations__research_1_1LocalSearch.html", null ],
         [ "operations_research::ProfiledDecisionBuilder", "classoperations__research_1_1ProfiledDecisionBuilder.html", null ]
       ] ],
       [ "operations_research::DecisionVisitor", "classoperations__research_1_1DecisionVisitor.html", [
@@ -210,7 +212,9 @@ var hierarchy =
         [ "operations_research::SolutionCollector", "classoperations__research_1_1SolutionCollector.html", null ],
         [ "operations_research::SymmetryManager", "classoperations__research_1_1SymmetryManager.html", null ]
       ] ],
-      [ "operations_research::SolutionPool", "classoperations__research_1_1SolutionPool.html", null ]
+      [ "operations_research::SolutionPool", "classoperations__research_1_1SolutionPool.html", [
+        [ "operations_research::DefaultSolutionPool", "classoperations__research_1_1DefaultSolutionPool.html", null ]
+      ] ]
     ] ],
     [ "operations_research::sat::BasicKnapsackSolver", "classoperations__research_1_1sat_1_1BasicKnapsackSolver.html", null ],
     [ "operations_research::math_opt::Basis", "structoperations__research_1_1math__opt_1_1Basis.html", null ],
@@ -298,7 +302,8 @@ var hierarchy =
       [ "operations_research::glop::TriangularMatrix", "classoperations__research_1_1glop_1_1TriangularMatrix.html", null ]
     ] ],
     [ "operations_research::glop::CompactSparseMatrixView", "classoperations__research_1_1glop_1_1CompactSparseMatrixView.html", null ],
-    [ "operations_research::sat::CompactVectorVector< T >", "classoperations__research_1_1sat_1_1CompactVectorVector.html", null ],
+    [ "operations_research::sat::CompactVectorVector< K, V >", "classoperations__research_1_1sat_1_1CompactVectorVector.html", null ],
+    [ "operations_research::sat::CompactVectorVector< int, int >", "classoperations__research_1_1sat_1_1CompactVectorVector.html", null ],
     [ "operations_research::sat::IndexedInterval::ComparatorByStart", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStart.html", null ],
     [ "operations_research::sat::IndexedInterval::ComparatorByStartThenEndThenIndex", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStartThenEndThenIndex.html", null ],
     [ "operations_research::sat::ValueLiteralPair::CompareByLiteral", "structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByLiteral.html", null ],
@@ -311,8 +316,10 @@ var hierarchy =
       [ "operations_research::sat::CompiledIntDivConstraint", "classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html", null ],
       [ "operations_research::sat::CompiledIntProdConstraint", "classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html", null ],
       [ "operations_research::sat::CompiledLinMaxConstraint", "classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html", null ],
+      [ "operations_research::sat::CompiledNoOverlap2dConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html", null ],
       [ "operations_research::sat::CompiledNoOverlapConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html", null ]
     ] ],
+    [ "operations_research::sat::CompoundMoveBuilder", "classoperations__research_1_1sat_1_1CompoundMoveBuilder.html", null ],
     [ "operations_research::math_opt::Solver::ComputeInfeasibleSubsystemArgs", "structoperations__research_1_1math__opt_1_1Solver_1_1ComputeInfeasibleSubsystemArgs.html", null ],
     [ "operations_research::math_opt::ComputeInfeasibleSubsystemArguments", "structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html", null ],
     [ "operations_research::math_opt::ComputeInfeasibleSubsystemResult", "structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html", null ],
@@ -352,6 +359,7 @@ var hierarchy =
     [ "operations_research::CppBridge", "classoperations__research_1_1CppBridge.html", null ],
     [ "operations_research::CppFlags", "structoperations__research_1_1CppFlags.html", null ],
     [ "operations_research::sat::CpSolverResponseStatisticCallbacks", "structoperations__research_1_1sat_1_1CpSolverResponseStatisticCallbacks.html", null ],
+    [ "operations_research::sat::IntervalsRepository::CumulativeHelper", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html", null ],
     [ "operations_research::CumulBoundsPropagator", "classoperations__research_1_1CumulBoundsPropagator.html", null ],
     [ "operations_research::sat::CustomFifoQueue", "classoperations__research_1_1sat_1_1CustomFifoQueue.html", null ],
     [ "operations_research::sat::CutData", "structoperations__research_1_1sat_1_1CutData.html", null ],
@@ -379,6 +387,10 @@ var hierarchy =
     [ "operations_research::math_opt::LinearConstraintStorage::Diff", "structoperations__research_1_1math__opt_1_1LinearConstraintStorage_1_1Diff.html", null ],
     [ "operations_research::math_opt::ObjectiveStorage::Diff", "structoperations__research_1_1math__opt_1_1ObjectiveStorage_1_1Diff.html", null ],
     [ "operations_research::math_opt::VariableStorage::Diff", "structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html", null ],
+    [ "operations_research::sat::DiffnBaseEvent", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html", [
+      [ "operations_research::sat::DiffnCtEvent", "structoperations__research_1_1sat_1_1DiffnCtEvent.html", null ],
+      [ "operations_research::sat::DiffnEnergyEvent", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html", null ]
+    ] ],
     [ "operations_research::DimensionChecker", "classoperations__research_1_1DimensionChecker.html", null ],
     [ "operations_research::DimensionCumulOptimizerCore", "classoperations__research_1_1DimensionCumulOptimizerCore.html", null ],
     [ "operations_research::sat::DiophantineSolution", "structoperations__research_1_1sat_1_1DiophantineSolution.html", null ],
@@ -464,12 +476,19 @@ var hierarchy =
     [ "operations_research::GraphSymmetryFinder", "classoperations__research_1_1GraphSymmetryFinder.html", null ],
     [ "operations_research::GreedySolutionGenerator", "classoperations__research_1_1GreedySolutionGenerator.html", null ],
     [ "operations_research::GScip", "classoperations__research_1_1GScip.html", null ],
+    [ "operations_research::GScipCallbackStats", "structoperations__research_1_1GScipCallbackStats.html", null ],
+    [ "operations_research::GScipConstraintHandler< ConstraintData >", "classoperations__research_1_1GScipConstraintHandler.html", null ],
+    [ "operations_research::GScipConstraintHandler< void * >", "classoperations__research_1_1GScipConstraintHandler.html", null ],
+    [ "operations_research::GScipConstraintHandlerContext", "classoperations__research_1_1GScipConstraintHandlerContext.html", null ],
+    [ "operations_research::GScipConstraintHandlerProperties", "structoperations__research_1_1GScipConstraintHandlerProperties.html", null ],
     [ "operations_research::GScipConstraintOptions", "structoperations__research_1_1GScipConstraintOptions.html", null ],
+    [ "operations_research::GScipCutOptions", "structoperations__research_1_1GScipCutOptions.html", null ],
     [ "operations_research::GScipEventHandler", "classoperations__research_1_1GScipEventHandler.html", null ],
     [ "operations_research::GScipEventHandlerContext", "classoperations__research_1_1GScipEventHandlerContext.html", null ],
     [ "operations_research::GScipEventHandlerDescription", "structoperations__research_1_1GScipEventHandlerDescription.html", null ],
     [ "operations_research::GScipIndicatorConstraint", "structoperations__research_1_1GScipIndicatorConstraint.html", null ],
     [ "operations_research::GScipIndicatorRangeConstraint", "structoperations__research_1_1GScipIndicatorRangeConstraint.html", null ],
+    [ "operations_research::GScipLazyConstraintOptions", "structoperations__research_1_1GScipLazyConstraintOptions.html", null ],
     [ "operations_research::GScipLinearExpr", "structoperations__research_1_1GScipLinearExpr.html", null ],
     [ "operations_research::GScipLinearRange", "structoperations__research_1_1GScipLinearRange.html", null ],
     [ "operations_research::GScipLogicalConstraintData", "structoperations__research_1_1GScipLogicalConstraintData.html", null ],
@@ -482,8 +501,8 @@ var hierarchy =
     [ "operations_research::math_opt::Gurobi", "classoperations__research_1_1math__opt_1_1Gurobi.html", null ],
     [ "operations_research::math_opt::GurobiCallbackInput", "structoperations__research_1_1math__opt_1_1GurobiCallbackInput.html", null ],
     [ "operations_research::math_opt::GurobiFreeEnv", "structoperations__research_1_1math__opt_1_1GurobiFreeEnv.html", null ],
-    [ "operations_research::math_opt::GurobiIsvKey", "structoperations__research_1_1math__opt_1_1GurobiIsvKey.html", null ],
     [ "operations_research::math_opt::GurobiISVKey", "structoperations__research_1_1math__opt_1_1GurobiISVKey.html", null ],
+    [ "operations_research::math_opt::GurobiIsvKey", "structoperations__research_1_1math__opt_1_1GurobiIsvKey.html", null ],
     [ "operations_research::math_opt::GurobiParameters", "structoperations__research_1_1math__opt_1_1GurobiParameters.html", null ],
     [ "operations_research::HamiltonianPathSolver< CostType, CostFunction >", "classoperations__research_1_1HamiltonianPathSolver.html", null ],
     [ "operations_research::HamiltonianPathSolver< int64_t, std::vector< std::vector< int64_t > > >", "classoperations__research_1_1HamiltonianPathSolver.html", null ],
@@ -493,6 +512,7 @@ var hierarchy =
     [ "util_intops::StrongInt< StrongIntName, _ValueType >::Hasher", "structutil__intops_1_1StrongInt_1_1Hasher.html", null ],
     [ "operations_research::sat::HittingSetOptimizer", "classoperations__research_1_1sat_1_1HittingSetOptimizer.html", null ],
     [ "operations_research::HungarianOptimizer", "classoperations__research_1_1HungarianOptimizer.html", null ],
+    [ "operations_research::sat::IdentityMap< T >", "classoperations__research_1_1sat_1_1IdentityMap.html", null ],
     [ "operations_research::math_opt::IdNameBiMap", "classoperations__research_1_1math__opt_1_1IdNameBiMap.html", null ],
     [ "operations_research::sat::ImpliedBoundEntry", "structoperations__research_1_1sat_1_1ImpliedBoundEntry.html", null ],
     [ "operations_research::sat::ImpliedBounds", "classoperations__research_1_1sat_1_1ImpliedBounds.html", null ],
@@ -567,6 +587,7 @@ var hierarchy =
     [ "util::MutableVectorIteration< T >::Iterator", "structutil_1_1MutableVectorIteration_1_1Iterator.html", null ],
     [ "operations_research::math_opt::iterator_range< IteratorT >", "classoperations__research_1_1math__opt_1_1iterator__range.html", null ],
     [ "operations_research::scheduling::jssp::JsspParser", "classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html", null ],
+    [ "operations_research::sat::JumpTable", "classoperations__research_1_1sat_1_1JumpTable.html", null ],
     [ "operations_research::KnapsackAssignment", "structoperations__research_1_1KnapsackAssignment.html", null ],
     [ "operations_research::KnapsackAssignmentForCuts", "structoperations__research_1_1KnapsackAssignmentForCuts.html", null ],
     [ "operations_research::KnapsackItem", "structoperations__research_1_1KnapsackItem.html", null ],
@@ -630,7 +651,6 @@ var hierarchy =
     [ "operations_research::bop::LocalSearchAssignmentIterator", "classoperations__research_1_1bop_1_1LocalSearchAssignmentIterator.html", null ],
     [ "operations_research::LocalSearchOperatorState", "classoperations__research_1_1LocalSearchOperatorState.html", null ],
     [ "operations_research::LocalSearchState", "classoperations__research_1_1LocalSearchState.html", null ],
-    [ "operations_research::LocalSearchVariable", "classoperations__research_1_1LocalSearchVariable.html", null ],
     [ "operations_research::LocationContainer", "classoperations__research_1_1LocationContainer.html", null ],
     [ "gtl::internal::LogBase", "structgtl_1_1internal_1_1LogBase.html", [
       [ "gtl::internal::LogLegacyBase", "structgtl_1_1internal_1_1LogLegacyBase.html", [
@@ -650,7 +670,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "operations_research::LogCallback", "classoperations__research_1_1LogCallback.html", null ],
     [ "operations_research::math_opt::LowerBoundedLinearExpression", "structoperations__research_1_1math__opt_1_1LowerBoundedLinearExpression.html", null ],
     [ "operations_research::math_opt::LowerBoundedQuadraticExpression", "structoperations__research_1_1math__opt_1_1LowerBoundedQuadraticExpression.html", null ],
     [ "LowerPriorityThan< T, Comparator >", "classLowerPriorityThan.html", null ],
@@ -686,6 +705,7 @@ var hierarchy =
       [ "operations_research::GenericMaxFlow< util::ReverseArcStaticGraph >", "classoperations__research_1_1GenericMaxFlow.html", null ],
       [ "operations_research::GenericMaxFlow< Graph >", "classoperations__research_1_1GenericMaxFlow.html", null ]
     ] ],
+    [ "operations_research::MbLogCallback", "classoperations__research_1_1MbLogCallback.html", null ],
     [ "operations_research::MergingPartition", "classoperations__research_1_1MergingPartition.html", null ],
     [ "operations_research::math_opt::MessageCallbackData", "classoperations__research_1_1math__opt_1_1MessageCallbackData.html", null ],
     [ "operations_research::MinCostFlowBase", "classoperations__research_1_1MinCostFlowBase.html", [
@@ -840,7 +860,9 @@ var hierarchy =
       [ "operations_research::EbertGraphBase< NodeIndexType, ArcIndexType, DerivedGraph >::CycleHandlerForAnnotatedArcs", "classoperations__research_1_1EbertGraphBase_1_1CycleHandlerForAnnotatedArcs.html", null ]
     ] ],
     [ "operations_research::PermutationIndexComparisonByArcHead< NodeIndexType, ArcIndexType >", "classoperations__research_1_1PermutationIndexComparisonByArcHead.html", null ],
+    [ "operations_research::PickupAndDeliveryData", "classoperations__research_1_1PickupAndDeliveryData.html", null ],
     [ "operations_research::PickupDeliveryInsertion", "structoperations__research_1_1PickupDeliveryInsertion.html", null ],
+    [ "operations_research::PickupDeliveryPair", "structoperations__research_1_1PickupDeliveryPair.html", null ],
     [ "operations_research::PiecewiseLinearFunction", "classoperations__research_1_1PiecewiseLinearFunction.html", null ],
     [ "operations_research::PiecewiseSegment", "classoperations__research_1_1PiecewiseSegment.html", null ],
     [ "operations_research::sat::PostsolveClauses", "structoperations__research_1_1sat_1_1PostsolveClauses.html", null ],
@@ -869,6 +891,7 @@ var hierarchy =
     ] ],
     [ "operations_research::sat::PresolveContext", "classoperations__research_1_1sat_1_1PresolveContext.html", null ],
     [ "operations_research::fz::Presolver", "classoperations__research_1_1fz_1_1Presolver.html", null ],
+    [ "operations_research::sat::PresolveTimer", "classoperations__research_1_1sat_1_1PresolveTimer.html", null ],
     [ "operations_research::pdlp::PrimalAndDualSolution", "structoperations__research_1_1pdlp_1_1PrimalAndDualSolution.html", null ],
     [ "operations_research::glop::PrimalEdgeNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html", null ],
     [ "operations_research::glop::PrimalPrices", "classoperations__research_1_1glop_1_1PrimalPrices.html", null ],
@@ -1086,6 +1109,8 @@ var hierarchy =
     [ "operations_research::Solver::SearchLogParameters", "structoperations__research_1_1Solver_1_1SearchLogParameters.html", null ],
     [ "operations_research::math_opt::SecondOrderConeConstraint", "classoperations__research_1_1math__opt_1_1SecondOrderConeConstraint.html", null ],
     [ "operations_research::math_opt::SecondOrderConeConstraintData", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html", null ],
+    [ "operations_research::CheapestInsertionFilteredHeuristic::Seed", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html", null ],
+    [ "operations_research::CheapestInsertionFilteredHeuristic::SeedQueue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html", null ],
     [ "internal::ConnectedComponentsTypeHelper< T, CompareOrHashT, Eq >::SelectContainer< U, V, E >", "structinternal_1_1ConnectedComponentsTypeHelper_1_1SelectContainer.html", null ],
     [ "internal::ConnectedComponentsTypeHelper< T, CompareOrHashT, Eq >::SelectContainer< U, V, absl::enable_if_t< std::is_integral< decltype(std::declval< const U & >()(std::declval< const T & >()))>::value &&!std::is_same_v< V, void > > >", "structinternal_1_1ConnectedComponentsTypeHelper_1_1SelectContainer_3_01U_00_01V_00_01absl_1_1enafd2e7a3e6116b84406aba1c7a3d7d701.html", null ],
     [ "internal::ConnectedComponentsTypeHelper< T, CompareOrHashT, Eq >::SelectContainer< U, V, absl::enable_if_t< std::is_integral< decltype(std::declval< const U & >()(std::declval< const T & >()))>::value &&std::is_same_v< V, void > > >", "structinternal_1_1ConnectedComponentsTypeHelper_1_1SelectContainer_3_01U_00_01V_00_01absl_1_1ena3430d9eb66750f462beed2c1b3ca6ecc.html", null ],
@@ -1108,7 +1133,9 @@ var hierarchy =
     [ "operations_research::sat::SharedSolutionRepository< double >", "classoperations__research_1_1sat_1_1SharedSolutionRepository.html", [
       [ "operations_research::sat::SharedLPSolutionRepository", "classoperations__research_1_1sat_1_1SharedLPSolutionRepository.html", null ]
     ] ],
+    [ "operations_research::sat::SharedSolutionRepository< int64_t >", "classoperations__research_1_1sat_1_1SharedSolutionRepository.html", null ],
     [ "operations_research::sat::SharedStatistics", "classoperations__research_1_1sat_1_1SharedStatistics.html", null ],
+    [ "operations_research::sat::SharedStatTables", "classoperations__research_1_1sat_1_1SharedStatTables.html", null ],
     [ "operations_research::SharedTimeLimit", "classoperations__research_1_1SharedTimeLimit.html", [
       [ "operations_research::sat::ModelSharedTimeLimit", "classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html", null ]
     ] ],
@@ -1344,7 +1371,6 @@ var hierarchy =
       [ "operations_research::sat::ModelLpValues", "structoperations__research_1_1sat_1_1ModelLpValues.html", null ]
     ] ],
     [ "absl::StrongVector< IntegerVariable, int >", "classabsl_1_1StrongVector.html", null ],
-    [ "absl::StrongVector< IntegerVariable, int64_t >", "classabsl_1_1StrongVector.html", null ],
     [ "absl::StrongVector< IntegerVariable, IntegerValue >", "classabsl_1_1StrongVector.html", null ],
     [ "absl::StrongVector< IntegerVariable, IntegerVariableSpan >", "classabsl_1_1StrongVector.html", null ],
     [ "absl::StrongVector< IntegerVariable, LiteralIndex >", "classabsl_1_1StrongVector.html", null ],
@@ -1469,6 +1495,7 @@ var hierarchy =
     [ "operations_research::sat::ValueLiteralPair", "structoperations__research_1_1sat_1_1ValueLiteralPair.html", null ],
     [ "operations_research::sat::VarDomination", "classoperations__research_1_1sat_1_1VarDomination.html", null ],
     [ "operations_research::fz::Variable", "structoperations__research_1_1fz_1_1Variable.html", null ],
+    [ "operations_research::LocalSearchState::Variable", "classoperations__research_1_1LocalSearchState_1_1Variable.html", null ],
     [ "operations_research::math_opt::Variable", "classoperations__research_1_1math__opt_1_1Variable.html", null ],
     [ "operations_research::math_opt::InvalidIndicators::VariableAndConstraint", "structoperations__research_1_1math__opt_1_1InvalidIndicators_1_1VariableAndConstraint.html", null ],
     [ "operations_research::sat::PseudoCosts::VariableBoundChange", "structoperations__research_1_1sat_1_1PseudoCosts_1_1VariableBoundChange.html", null ],

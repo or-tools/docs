@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1LocalSear
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classoperations__research_1_1LocalSearchState-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">operations_research::LocalSearchState Class Reference</div></div>
 </div><!--header-->
@@ -104,34 +103,40 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1LocalSear
 
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState_1_1Variable.html">Variable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abeb007ba8ae5fa131ae265abf07a1921" id="r_abeb007ba8ae5fa131ae265abf07a1921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1LocalSearchVariable.html">LocalSearchVariable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#abeb007ba8ae5fa131ae265abf07a1921">AddVariable</a> (int64_t initial_min, int64_t initial_max)</td></tr>
-<tr class="separator:abeb007ba8ae5fa131ae265abf07a1921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5062c52451d6ea6a4c446b4040534558" id="r_a5062c52451d6ea6a4c446b4040534558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a5062c52451d6ea6a4c446b4040534558">AddVariable</a> (int64_t initial_min, int64_t initial_max)</td></tr>
+<tr class="memdesc:a5062c52451d6ea6a4c446b4040534558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a variable to this state, return a handler to the new variable.  <br /></td></tr>
+<tr class="separator:a5062c52451d6ea6a4c446b4040534558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accce40291f4e28cd230d0d6ab2deedb1" id="r_accce40291f4e28cd230d0d6ab2deedb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#accce40291f4e28cd230d0d6ab2deedb1">ChangeRelaxedVariableBounds</a> (int variable_index, int64_t <a class="el" href="alldiff__cst_8cc.html#ad10edae0a852d72fb76afb1c77735045">min</a>, int64_t <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max</a>)</td></tr>
+<tr class="separator:accce40291f4e28cd230d0d6ab2deedb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3241522d7c46c96724acb539c533985e" id="r_a3241522d7c46c96724acb539c533985e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1LocalSearchState_1_1Variable.html">Variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a3241522d7c46c96724acb539c533985e">MakeVariable</a> (int variable_index)</td></tr>
+<tr class="separator:a3241522d7c46c96724acb539c533985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21fa79fdab637a71137bfb392c3bc42" id="r_ab21fa79fdab637a71137bfb392c3bc42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#ab21fa79fdab637a71137bfb392c3bc42">Commit</a> ()</td></tr>
 <tr class="separator:ab21fa79fdab637a71137bfb392c3bc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1ef765de213fecab8473760318dfd1" id="r_a9b1ef765de213fecab8473760318dfd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a9b1ef765de213fecab8473760318dfd1">Revert</a> ()</td></tr>
 <tr class="separator:a9b1ef765de213fecab8473760318dfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a888f46ad3758a98eb6c69ca9bb577c9b" id="r_a888f46ad3758a98eb6c69ca9bb577c9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a888f46ad3758a98eb6c69ca9bb577c9b">StateIsValid</a> () const</td></tr>
-<tr class="separator:a888f46ad3758a98eb6c69ca9bb577c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a8f5c510ca9b60acf27d2cd564c723ff7" id="r_a8f5c510ca9b60acf27d2cd564c723ff7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a8f5c510ca9b60acf27d2cd564c723ff7">LocalSearchVariable</a></td></tr>
-<tr class="separator:a8f5c510ca9b60acf27d2cd564c723ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182b8a2aa65ab0c872f5cef43e5ca666" id="r_a182b8a2aa65ab0c872f5cef43e5ca666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchState.html#a182b8a2aa65ab0c872f5cef43e5ca666">StateIsFeasible</a> () const</td></tr>
+<tr class="separator:a182b8a2aa65ab0c872f5cef43e5ca666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01697">1697</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+<div class="textblock"><p>Classes to which this template function can be applied to as of 04/2014. Usage: LocalSearchOperator* op = MakeLocalSearchOperator&lt;Relocate&gt;(...); class <a class="el" href="classoperations__research_1_1TwoOpt.html" title="--— 2Opt --—">TwoOpt</a>; class <a class="el" href="classoperations__research_1_1Relocate.html" title="--— Relocate --—">Relocate</a>; class <a class="el" href="classoperations__research_1_1Exchange.html" title="--— Exchange --—">Exchange</a>; class <a class="el" href="classoperations__research_1_1Cross.html" title="--— Cross --—">Cross</a>; class <a class="el" href="classoperations__research_1_1MakeActiveOperator.html" title="--— MakeActiveOperator --—">MakeActiveOperator</a>; class <a class="el" href="classoperations__research_1_1MakeInactiveOperator.html" title="--— MakeInactiveOperator --—">MakeInactiveOperator</a>; class <a class="el" href="classoperations__research_1_1MakeChainInactiveOperator.html" title="--— MakeChainInactiveOperator --—">MakeChainInactiveOperator</a>; class <a class="el" href="classoperations__research_1_1SwapActiveOperator.html" title="--— SwapActiveOperator --—">SwapActiveOperator</a>; class <a class="el" href="classoperations__research_1_1ExtendedSwapActiveOperator.html" title="--— ExtendedSwapActiveOperator --—">ExtendedSwapActiveOperator</a>; class <a class="el" href="classoperations__research_1_1MakeActiveAndRelocate.html" title="--— MakeActiveAndRelocate --—">MakeActiveAndRelocate</a>; class <a class="el" href="classoperations__research_1_1RelocateAndMakeActiveOperator.html" title="-— RelocateAndMakeActiveOperator --—">RelocateAndMakeActiveOperator</a>; class <a class="el" href="classoperations__research_1_1RelocateAndMakeInactiveOperator.html" title="--— RelocateAndMakeInactiveOperator --—">RelocateAndMakeInactiveOperator</a>; A <a class="el" href="classoperations__research_1_1LocalSearchState.html">LocalSearchState</a> is a container for variables with bounds that can be relaxed and tightened, saved and restored. It represents the solution state of a local search engine, and allows it to go from solution to solution by relaxing some variables to form a new subproblem, then tightening those variables to move to a new solution representation. That state may be saved to an internal copy, or reverted to the last saved internal copy. Relaxing a variable returns its bounds to their initial state. Tightening a variable's bounds may make its min larger than its max, in that case, the tightening function will return false, and the state will be marked as invalid. No other operations than <a class="el" href="classoperations__research_1_1LocalSearchState.html#a9b1ef765de213fecab8473760318dfd1">Revert()</a> can be called on an invalid state: in particular, an invalid state cannot be saved. </p>
+
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01695">1695</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abeb007ba8ae5fa131ae265abf07a1921" name="abeb007ba8ae5fa131ae265abf07a1921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeb007ba8ae5fa131ae265abf07a1921">&#9670;&#160;</a></span>AddVariable()</h2>
+<a id="a5062c52451d6ea6a4c446b4040534558" name="a5062c52451d6ea6a4c446b4040534558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5062c52451d6ea6a4c446b4040534558">&#9670;&#160;</a></span>AddVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoperations__research_1_1LocalSearchVariable.html">LocalSearchVariable</a> operations_research::LocalSearchState::AddVariable </td>
+          <td class="memname">int operations_research::LocalSearchState::AddVariable </td>
           <td>(</td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>initial_min</em>, </td>
@@ -150,7 +155,45 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03840">3840</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p>Adds a variable to this state, return a handler to the new variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03824">3824</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="accce40291f4e28cd230d0d6ab2deedb1" name="accce40291f4e28cd230d0d6ab2deedb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accce40291f4e28cd230d0d6ab2deedb1">&#9670;&#160;</a></span>ChangeRelaxedVariableBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::LocalSearchState::ChangeRelaxedVariableBounds </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>variable_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03895">3895</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -168,9 +211,30 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000217">Todo:</a></b></dt><dd>(user): When the class has more users, find a threshold ratio of saved/total variables under which a sparse clear would be more efficient for both <a class="el" href="classoperations__research_1_1LocalSearchState.html#ab21fa79fdab637a71137bfb392c3bc42">Commit()</a> and <a class="el" href="classoperations__research_1_1LocalSearchState.html#a9b1ef765de213fecab8473760318dfd1">Revert()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000219">Todo:</a></b></dt><dd>(user): When the class has more users, find a threshold ratio of saved/total variables under which a sparse clear would be more efficient for both <a class="el" href="classoperations__research_1_1LocalSearchState.html#ab21fa79fdab637a71137bfb392c3bc42">Commit()</a> and <a class="el" href="classoperations__research_1_1LocalSearchState.html#a9b1ef765de213fecab8473760318dfd1">Revert()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03904">3904</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03918">3918</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="a3241522d7c46c96724acb539c533985e" name="a3241522d7c46c96724acb539c533985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3241522d7c46c96724acb539c533985e">&#9670;&#160;</a></span>MakeVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoperations__research_1_1LocalSearchState_1_1Variable.html">LocalSearchState::Variable</a> operations_research::LocalSearchState::MakeVariable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>variable_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Makes an object with restricted operations on the variable identified by variable_index: only Relax, Tighten and read operations are available. </p>
+
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03833">3833</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -189,12 +253,12 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03910">3910</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03925">3925</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
-<a id="a888f46ad3758a98eb6c69ca9bb577c9b" name="a888f46ad3758a98eb6c69ca9bb577c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a888f46ad3758a98eb6c69ca9bb577c9b">&#9670;&#160;</a></span>StateIsValid()</h2>
+<a id="a182b8a2aa65ab0c872f5cef43e5ca666" name="a182b8a2aa65ab0c872f5cef43e5ca666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182b8a2aa65ab0c872f5cef43e5ca666">&#9670;&#160;</a></span>StateIsFeasible()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +267,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool operations_research::LocalSearchState::StateIsValid </td>
+          <td class="memname">bool operations_research::LocalSearchState::StateIsFeasible </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -216,32 +280,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01702">1702</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a8f5c510ca9b60acf27d2cd564c723ff7" name="a8f5c510ca9b60acf27d2cd564c723ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f5c510ca9b60acf27d2cd564c723ff7">&#9670;&#160;</a></span>LocalSearchVariable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classoperations__research_1_1LocalSearchVariable.html">LocalSearchVariable</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01705">1705</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01707">1707</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
 
 </div>
 </div>

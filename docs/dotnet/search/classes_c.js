@@ -12,12 +12,14 @@ var searchData=
   ['operations_5fresearch_5finitpinvoke_9',['operations_research_initPINVOKE',['../classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html',1,'Google::OrTools::Init']]],
   ['operations_5fresearch_5flinear_5fsolver_10',['operations_research_linear_solver',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solver.html',1,'Google::OrTools::LinearSolver']]],
   ['operations_5fresearch_5flinear_5fsolverpinvoke_11',['operations_research_linear_solverPINVOKE',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html',1,'Google::OrTools::LinearSolver']]],
-  ['operations_5fresearch_5fsat_12',['operations_research_sat',['../classGoogle_1_1OrTools_1_1Sat_1_1operations__research__sat.html',1,'Google::OrTools::Sat']]],
-  ['operations_5fresearch_5fsatpinvoke_13',['operations_research_satPINVOKE',['../classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html',1,'Google::OrTools::Sat']]],
-  ['operations_5fresearch_5futil_14',['operations_research_util',['../classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html',1,'Google::OrTools::Util']]],
-  ['operations_5fresearch_5futilpinvoke_15',['operations_research_utilPINVOKE',['../classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html',1,'Google::OrTools::Util']]],
-  ['optimizevar_16',['OptimizeVar',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['optionalbooleanreflection_17',['OptionalBooleanReflection',['../classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection.html',1,'Google::OrTools::Util']]],
-  ['optionaldouble_18',['OptionalDouble',['../classOperationsResearch_1_1OptionalDouble.html',1,'OperationsResearch']]],
-  ['ortoolsversion_19',['OrToolsVersion',['../classGoogle_1_1OrTools_1_1Init_1_1OrToolsVersion.html',1,'Google::OrTools::Init']]]
+  ['operations_5fresearch_5fmodel_5fbuilder_12',['operations_research_model_builder',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builder.html',1,'Google::OrTools::ModelBuilder']]],
+  ['operations_5fresearch_5fmodel_5fbuilderpinvoke_13',['operations_research_model_builderPINVOKE',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html',1,'Google::OrTools::ModelBuilder']]],
+  ['operations_5fresearch_5fsat_14',['operations_research_sat',['../classGoogle_1_1OrTools_1_1Sat_1_1operations__research__sat.html',1,'Google::OrTools::Sat']]],
+  ['operations_5fresearch_5fsatpinvoke_15',['operations_research_satPINVOKE',['../classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html',1,'Google::OrTools::Sat']]],
+  ['operations_5fresearch_5futil_16',['operations_research_util',['../classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html',1,'Google::OrTools::Util']]],
+  ['operations_5fresearch_5futilpinvoke_17',['operations_research_utilPINVOKE',['../classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html',1,'Google::OrTools::Util']]],
+  ['optimizevar_18',['OptimizeVar',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['optionalbooleanreflection_19',['OptionalBooleanReflection',['../classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection.html',1,'Google::OrTools::Util']]],
+  ['optionaldouble_20',['OptionalDouble',['../classOperationsResearch_1_1OptionalDouble.html',1,'OperationsResearch']]],
+  ['ortoolsversion_21',['OrToolsVersion',['../classGoogle_1_1OrTools_1_1Init_1_1OrToolsVersion.html',1,'Google::OrTools::Init']]]
 ];

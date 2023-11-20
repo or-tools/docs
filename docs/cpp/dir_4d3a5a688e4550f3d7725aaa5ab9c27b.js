@@ -22,6 +22,7 @@ var dir_4d3a5a688e4550f3d7725aaa5ab9c27b =
     [ "linear_solver_callback.h", "linear__solver__callback_8h.html", "linear__solver__callback_8h" ],
     [ "model_exporter.cc", "model__exporter_8cc.html", "model__exporter_8cc" ],
     [ "model_exporter.h", "model__exporter_8h.html", "model__exporter_8h" ],
+    [ "model_exporter_main.cc", "model__exporter__main_8cc.html", "model__exporter__main_8cc" ],
     [ "model_validator.cc", "linear__solver_2model__validator_8cc.html", "linear__solver_2model__validator_8cc" ],
     [ "model_validator.h", "linear__solver_2model__validator_8h.html", "linear__solver_2model__validator_8h" ],
     [ "pdlp_interface.cc", "pdlp__interface_8cc.html", "pdlp__interface_8cc" ],

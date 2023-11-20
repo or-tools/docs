@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <li>During the primal-simplex, the non-basic variable values may not be exactly at their bounds because of bound-shifting during degenerate simplex pivoting which is implemented by not setting the variable values exactly at their bounds to have a lower primal residual error. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00045">45</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00046">46</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a99da199aea3703003711b5651290b4c8" name="a99da199aea3703003711b5651290b4c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99da199aea3703003711b5651290b4c8">&#9670;&#160;</a></span>VariableValues() <span class="overload">[1/2]</span></h2>
@@ -212,7 +212,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00026">26</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00027">27</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes the maximum bound error for all the variables, defined as the distance of the current value of the variable to its interval [lower bound, upper bound]. The infeasibility is thus equal to 0.0 if the current value falls within the bounds, to the distance to lower_bound (resp. upper_bound), if the current value is below (resp. above) lower_bound (resp. upper_bound). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00132">132</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00133">133</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes the infinity norm of A.x where A is the linear_program matrix and x is the variable values column. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00120">120</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00121">121</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00144">144</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00150">150</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Getters for the variable values. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00060">60</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00061">61</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00061">61</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00062">62</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ Public Member Functions</h2></td></tr>
 <p>Recomputes the value of the basic variables from the non-basic ones knowing that the linear program matrix A times the variable values vector must be zero. It is better to call this when the basis is refactorized. This is checked in debug mode. </p>
 <p>This makes sure that they will be recomputed if needed.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00101">101</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00102">102</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -425,9 +425,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Functions dealing with the primal-infeasible basic variables. A basic variable is primal-infeasible if its infeasibility is stricly greater than the primal feasibility tolerance. These are exactly the dual "prices" once recalled by the norms. This is only used during the dual simplex.</p>
 <p>This information is only available after a call to <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#ab0a189867045312e53d3f0c88974e81e">RecomputeDualPrices()</a> and has to be kept in sync by calling <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#ad4e69e53b19bf5b13cbcd1a2192b73fe">UpdateDualPrices()</a> for the rows that changed values.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000586">Todo:</a></b></dt><dd>(user): On some problem like stp3d.mps or pds-100.mps, using different price like abs(infeasibility) / squared_norms give better result. Some solver switch according to a criteria like all entry are +1/-1, the column have no more than 24 non-zero and the average column size is no more than 6! Understand and implement some variant of this? I think the gain is mainly because of using sparser vectors? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000588">Todo:</a></b></dt><dd>(user): On some problem like stp3d.mps or pds-100.mps, using different price like abs(infeasibility) / squared_norms give better result. Some solver switch according to a criteria like all entry are +1/-1, the column have no more than 24 non-zero and the average column size is no more than 6! Understand and implement some variant of this? I think the gain is mainly because of using sparser vectors? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00229">229</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00242">242</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Public Member Functions</h2></td></tr>
 <p>Calls <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#af968830c599faba51d812122394ea523">SetNonBasicVariableValueFromStatus()</a> on all non-basic variables. We accept any size for free_initial_values, for columns col that are valid indices, free_initial_values[col] will be used instead of 0.0 for a free column. If free_initial_values is empty, then we have the default behavior of starting at zero for all FREE variables.</p>
 <p>Note(user): It is okay to always use the same value to reset a FREE variable because as soon as a FREE variable value is modified, this variable shouldn't be FREE anymore. It will either move to a bound or enter the basis, these are the only options. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00074">74</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00075">75</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the variable value of a given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00141">141</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00142">142</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the value of a non-basic variable to the exact value implied by its current status. Note that the basic variable values are NOT updated by this function and it is up to the client to call <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#a65ebaeef329de756441227ffa58c8f56">RecomputeBasicVariableValues()</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>there is no default value in the switch() statement above to get a compile-time error if a value is missing.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00042">42</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00043">43</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Parameters and stats functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00144">144</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8h_source.html#l00145">145</a> of file <a class="el" href="variable__values_8h_source.html">variable_values.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Note(user): this is the same as the code in <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#ab0a189867045312e53d3f0c88974e81e">RecomputeDualPrices()</a>, but we do need the clear part.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00261">261</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00281">281</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Batch version of <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#af968830c599faba51d812122394ea523">SetNonBasicVariableValueFromStatus()</a>. This function also updates the basic variable values and infeasibility statuses if update_basic_variables is true. The update is done in an incremental way and is thus more efficient than calling afterwards <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#a65ebaeef329de756441227ffa58c8f56">RecomputeBasicVariableValues()</a> and <a class="el" href="classoperations__research_1_1glop_1_1VariableValues.html#ab0a189867045312e53d3f0c88974e81e">RecomputeDualPrices()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00179">179</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00192">192</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>there is no need to call variables_info_.Update() on basic variables when they change values. Note also that the status of entering_col will be updated later.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00156">156</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00167">167</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
 </div>
 </div>

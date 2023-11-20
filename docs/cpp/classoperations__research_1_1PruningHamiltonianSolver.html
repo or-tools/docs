@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -138,7 +138,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1PruningHamiltonianSolver.html">PruningHamiltonianSolver</a> computes a minimum Hamiltonian path from node 0 over a graph defined by a cost matrix, with pruning. For each search state, <a class="el" href="classoperations__research_1_1PruningHamiltonianSolver.html">PruningHamiltonianSolver</a> computes the lower bound for the future overall TSP cost, and stops further search if it exceeds the current best solution. For the heuristics to determine future lower bound over visited nodeset S and last visited node k, the cost of minimum spanning tree of (V \ S) ∪ {k} is calculated and added to the current cost(S). The cost of MST is guaranteed to be smaller than or equal to the cost of Hamiltonian path, because Hamiltonian path is a spanning tree itself. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000628">Todo:</a></b></dt><dd><p class="startdd">(user): Use generic map-based cache instead of lattice-based one. </p>
+<p><a class="el" href="classoperations__research_1_1PruningHamiltonianSolver.html">PruningHamiltonianSolver</a> computes a minimum Hamiltonian path from node 0 over a graph defined by a cost matrix, with pruning. For each search state, <a class="el" href="classoperations__research_1_1PruningHamiltonianSolver.html">PruningHamiltonianSolver</a> computes the lower bound for the future overall TSP cost, and stops further search if it exceeds the current best solution. For the heuristics to determine future lower bound over visited nodeset S and last visited node k, the cost of minimum spanning tree of (V \ S) ∪ {k} is calculated and added to the current cost(S). The cost of MST is guaranteed to be smaller than or equal to the cost of Hamiltonian path, because Hamiltonian path is a spanning tree itself. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000630">Todo:</a></b></dt><dd><p class="startdd">(user): Use generic map-based cache instead of lattice-based one. </p>
 <p class="enddd">(user): Use SaturatedArithmetic for better precision. </p>
 </dd></dl>
 

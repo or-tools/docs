@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is meant to supersede both IntegerSumLE and the PrecedencePropagator.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001792">Todo:</a></b></dt><dd>(user): This is a work in progress and is currently incomplete:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001833">Todo:</a></b></dt><dd>(user): This is a work in progress and is currently incomplete:<ul>
 <li>Lack more incremental support for faster propag.</li>
 <li>Lack detection and propagation of at least one of these linear is true which can be used to propagate more bound if a variable appear in all these constraint. </li>
 </ul>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>we need this class always in sync.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001774">Todo:</a></b></dt><dd>(user): When we start to push too much (Cycle?) we should see what other propagator says before repropagating this one, system for call later? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001815">Todo:</a></b></dt><dd>(user): When we start to push too much (Cycle?) we should see what other propagator says before repropagating this one, system for call later? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__propagation_8cc_source.html#l00393">393</a> of file <a class="el" href="linear__propagation_8cc_source.html">linear_propagation.cc</a>.</p>
 
@@ -243,12 +243,12 @@ Public Member Functions</h2></td></tr>
 <p>Adds a new constraint to the propagator. </p>
 <p>Make sure max_variations_ is of correct size. </p><dl class="section note"><dt>Note</dt><dd>we also have a hard limit of 1 &lt;&lt; 29 on the size.</dd></dl>
 <p>Initialize constraint data.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001776">Todo:</a></b></dt><dd>(user): we still waste the space in coeffs_buffer_ so that the start are aligned with the variables_buffer_. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001817">Todo:</a></b></dt><dd>(user): we still waste the space in coeffs_buffer_ so that the start are aligned with the variables_buffer_. </dd></dl>
 <p>Initialize watchers. Initialy we want everything to be propagated at least once.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001777">Todo:</a></b></dt><dd>(user): With some care, when we cannot propagate or the constraint is not enforced, we could live in_queue_[] at true but not put the constraint in the queue. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001818">Todo:</a></b></dt><dd>(user): With some care, when we cannot propagate or the constraint is not enforced, we could live in_queue_[] at true but not put the constraint in the queue. </dd></dl>
 <p>Transposed graph to know which constraint to wake up.</p>
 <p>We need both the var entry and its negation to be allocated.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001778">Todo:</a></b></dt><dd>(user): Shall we decide on some ordering here? maybe big coeff first so that we get the largest change in slack? the idea being to propagate large change first in case of cycles. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001819">Todo:</a></b></dt><dd>(user): Shall we decide on some ordering here? maybe big coeff first so that we get the largest change in slack? the idea being to propagate large change first in case of cycles. </dd></dl>
 <p>We need to be registered to the watcher so <a class="el" href="classoperations__research_1_1sat_1_1LinearPropagator.html#a74432b1f2031ef1a7257cf98913c7390">Propagate()</a> is called at the proper priority. But then we rely on modified_vars_.</p>
 
 <p class="definition">Definition at line <a class="el" href="linear__propagation_8cc_source.html#l00500">500</a> of file <a class="el" href="linear__propagation_8cc_source.html">linear_propagation.cc</a>.</p>
@@ -279,7 +279,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
 <p>Initial addition. We will clear modified_vars_ on exit.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001775">Todo:</a></b></dt><dd>(user): Abort this propagator as soon as a Boolean is propagated ? so that we always finish the Boolean propagation first. This can happen when we push a bound that has associated Booleans. The idea is to resume from our current state when we are called again. Note however that we have to clear the propagated_by_ info has other propagator might have pushed the same variable further.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001816">Todo:</a></b></dt><dd>(user): Abort this propagator as soon as a Boolean is propagated ? so that we always finish the Boolean propagation first. This can happen when we push a bound that has associated Booleans. The idea is to resume from our current state when we are called again. Note however that we have to clear the propagated_by_ info has other propagator might have pushed the same variable further.</dd></dl>
 <p>Empty FIFO queue.</p>
 <p>Clean-up modified_vars_ to do as little as possible on the next call.</p>
 

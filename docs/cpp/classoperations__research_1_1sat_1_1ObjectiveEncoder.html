@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00243">243</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00244">244</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00250">250</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00251">251</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
 
 </div>
 </div>
@@ -226,9 +226,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001533">Todo:</a></b></dt><dd>(user): Remove mutable version once refactoring is done. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001559">Todo:</a></b></dt><dd>(user): Remove mutable version once refactoring is done. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00249">249</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00250">250</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ Public Member Functions</h2></td></tr>
 <p>Backtrack to be able to add new constraints.</p>
 <p>Remove from nodes the <a class="el" href="classoperations__research_1_1sat_1_1EncodingNode.html">EncodingNode</a> in the core and put them in to_merge.</p>
 <p>Since the nodes appear in order in the core, we can find the relevant "objective" variable efficiently with a simple linear scan in the nodes vector (done with index).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001529">Todo:</a></b></dt><dd>(user): propagate proper ub first. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001555">Todo:</a></b></dt><dd>(user): propagate proper ub first. </dd></dl>
 <p>We can distinguish the first literal of the node. By not counting its weight in node, and creating a new node for it.</p>
 <p>Now keep processing with this new node instead.</p>
 <p>Special case if the weight &gt; min_weight. we keep it, but reduce its cost. This is the same "trick" as in WPM1 used to deal with weight. We basically split a clause with a larger weight in two identical clauses, one with weight min_weight that will be merged and one with the remaining weight.</p>
@@ -284,9 +284,9 @@ Public Member Functions</h2></td></tr>
 <p>Amongst the node to merge, if many are boolean nodes in an "at most one" relationship, it is super advantageous to exploit it during merging as we can regroup all nodes from an at most one in a single new node with a depth of 1.</p>
 <p>Collect "boolean nodes".</p>
 <p>For "small" core, with O(n) full propagation, we can discover possible at most ones. This is a bit costly but can significantly reduce the number of Booleans needed and has a good positive impact.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001530">Todo:</a></b></dt><dd>(user): this node is closed and can be removed from the core. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001556">Todo:</a></b></dt><dd>(user): this node is closed and can be removed from the core. </dd></dl>
 <p>Unit propagation is not always symmetric.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001531">Todo:</a></b></dt><dd>(user): If assignment.LiteralIsTrue(bool_nodes[j]) We can minimize the core here by removing bool_nodes[i] from it. Note however that since we already minimized the core, this is unlikely to happen. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001557">Todo:</a></b></dt><dd>(user): If assignment.LiteralIsTrue(bool_nodes[j]) We can minimize the core here by removing bool_nodes[i] from it. Note however that since we already minimized the core, this is unlikely to happen. </dd></dl>
 <p>Convert.</p>
 <p>Same case as above, all the nodes in the core are in a exactly_one.</p>
 <p>Extract Amo nodes and set them to nullptr in to_merge.</p>
@@ -294,7 +294,7 @@ Public Member Functions</h2></td></tr>
 <p>Clean-up to_merge.</p>
 <p>If all the literal of the core are in at_most_one, the core is actually an exactly_one. We just subtracted the min_cost above. We just have to enqueue a constant node with min_weight for the rest of the code to work.</p>
 <p>Tricky: We need to enforce an upper bound of 1 on the nodes.</p>
-<p>The negation of the literal in the core are in exactly one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001532">Todo:</a></b></dt><dd>(user): If we infered the exactly one from the binary implication graph, there is no need to add the amo since it is already there. </dd></dl>
+<p>The negation of the literal in the core are in exactly one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001558">Todo:</a></b></dt><dd>(user): If we infered the exactly one from the binary implication graph, there is no need to add the amo since it is already there. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="encoding_8cc_source.html#l00585">585</a> of file <a class="el" href="encoding_8cc_source.html">encoding.cc</a>.</p>
 

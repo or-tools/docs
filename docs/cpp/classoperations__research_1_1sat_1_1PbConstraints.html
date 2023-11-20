@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -285,12 +285,12 @@ Additional Inherited Members</h2></td></tr>
 <p>There are some preconditions, and the function will return false if they are not met. The constraint can be added when the trail is not empty, however given the current propagated assignment:</p><ul>
 <li>The constraint cannot be conflicting.</li>
 <li><p class="startli">The constraint cannot have propagated at an earlier decision level.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001891">Todo:</a></b></dt><dd>(user): This is relatively slow. Take the "transpose" all at once, and maybe put small constraints first on the to_update_ lists. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001932">Todo:</a></b></dt><dd>(user): This is relatively slow. Take the "transpose" all at once, and maybe put small constraints first on the to_update_ lists. </dd></dl>
 </li>
 </ul>
 <p>Special case if this is the first constraint.</p>
 <p>Optimization if the constraint terms are duplicates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001892">Todo:</a></b></dt><dd>(user): the index is needed to give the correct thresholds_ entry to InitializeRhs() below, but this linear scan is not super efficient. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001933">Todo:</a></b></dt><dd>(user): the index is needed to give the correct thresholds_ entry to InitializeRhs() below, but this linear scan is not super efficient. </dd></dl>
 <p>The constraint is redundant, so there is nothing to do.</p>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00836">836</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
@@ -350,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Activity update functions. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001904">Todo:</a></b></dt><dd>(user): Remove duplication with other activity update functions. </dd></dl>
+<p>Activity update functions. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001945">Todo:</a></b></dt><dd>(user): Remove duplication with other activity update functions. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l01079">1079</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#ae8728646f58de0925a1eb45c0a3e53a5">ConflictingConstraint()</a> returns the last PB constraint that caused a conflict. Calling <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#a38e94ac484dcbd409e942d4e6f51d585">ClearConflictingConstraint()</a> reset this to nullptr.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001903">Todo:</a></b></dt><dd>(user): This is a hack to get the PB conflict, because the rest of the solver API assume only clause conflict. Find a cleaner way? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001944">Todo:</a></b></dt><dd>(user): This is a hack to get the PB conflict, because the rest of the solver API assume only clause conflict. Find a cleaner way? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8h_source.html#l00591">591</a> of file <a class="el" href="pb__constraint_8h_source.html">pb_constraint.h</a>.</p>
 
@@ -765,8 +765,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002011">Todo:</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#a1253b3c17c3ff77fbcc5e722b09de6ad">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002012">Todo:</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002060">Todo:</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#a1253b3c17c3ff77fbcc5e722b09de6ad">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002061">Todo:</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <p>Only the constraints which were inspected during <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#a1253b3c17c3ff77fbcc5e722b09de6ad">Propagate()</a> need inspection during <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html#aef55491269871cd498e7b485f369ab0b">Untrail()</a>.</p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a68acada7af835c9c6870ceb876dc2d9c">operations_research::sat::SatPropagator</a>.</p>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,13 +113,14 @@ $(document).ready(function(){initNavTree('cp__model__lns_8h.html',''); initResiz
 <code>#include &quot;absl/random/bit_gen_ref.h&quot;</code><br />
 <code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
-<code>#include &quot;absl/time/time.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="subsolver_8h_source.html">ortools/sat/subsolver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="synchronization_8h_source.html">ortools/sat/synchronization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="adaptative__parameter__value_8h_source.html">ortools/util/adaptative_parameter_value.h</a>&quot;</code><br />
 </div>
 <p><a href="cp__model__lns_8h_source.html">Go to the source code of this file.</a></p>
@@ -184,8 +185,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3d3548a318ab38f50037e3f9a732550f" id="r_a3d3548a318ab38f50037e3f9a732550f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3d3548a318ab38f50037e3f9a732550f">operations_research::sat::GenerateSchedulingNeighborhoodFromRelaxedIntervals</a> (const absl::Span&lt; const int &gt; intervals_to_relax, const CpSolverResponse &amp;initial_solution, absl::BitGenRef random, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
-<tr class="separator:a3d3548a318ab38f50037e3f9a732550f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6078c1c54d29bceb642ec436017a3093" id="r_a6078c1c54d29bceb642ec436017a3093"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6078c1c54d29bceb642ec436017a3093">operations_research::sat::GenerateSchedulingNeighborhoodFromRelaxedIntervals</a> (absl::Span&lt; const int &gt; intervals_to_relax, absl::Span&lt; const int &gt; variables_to_fix, const CpSolverResponse &amp;initial_solution, absl::BitGenRef random, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
+<tr class="separator:a6078c1c54d29bceb642ec436017a3093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f6fa507fbbee0406152f493e0dfb95b" id="r_a4f6fa507fbbee0406152f493e0dfb95b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4f6fa507fbbee0406152f493e0dfb95b">operations_research::sat::GenerateSchedulingNeighborhoodFromIntervalPrecedences</a> (const absl::Span&lt; const std::pair&lt; int, int &gt; &gt; precedences, const CpSolverResponse &amp;initial_solution, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
 <tr class="separator:a4f6fa507fbbee0406152f493e0dfb95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

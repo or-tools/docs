@@ -11,6 +11,8 @@ var integer__search_8h =
     [ "CompleteHeuristics", "integer__search_8h.html#a156a51d1b695cc9ac26e512d43b60028", null ],
     [ "ConfigureSearchHeuristics", "integer__search_8h.html#a08ac4c44a4524b21806a1ae9839bc5bd", null ],
     [ "ContinuousProbing", "integer__search_8h.html#aad67bfc8ef120726f03a65cdc2127b33", null ],
+    [ "CumulativePrecedenceSearchHeuristic", "integer__search_8h.html#af421daf12e0e45a0bb3cc7655cd443cc", null ],
+    [ "DisjunctivePrecedenceSearchHeuristic", "integer__search_8h.html#a33798fe85208035f149a5c124b89b7b4", null ],
     [ "FirstUnassignedVarAtItsMinHeuristic", "integer__search_8h.html#a8c72a9619e1961d1434170437536cff6", null ],
     [ "FollowHint", "integer__search_8h.html#af5603a38b711abfe71b262697d46affb", null ],
     [ "GreaterOrEqualToMiddleValue", "integer__search_8h.html#aeaa27df9712553f45eb84d209a92ca8b", null ],

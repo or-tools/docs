@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <p>See, Jessica Davies and Fahiem Bacchus, "Solving MAXSAT by Solving a
 Sequence of Simpler SAT Instances", <a href="http://www.cs.toronto.edu/~jdavies/daviesCP11.pdf">http://www.cs.toronto.edu/~jdavies/daviesCP11.pdf</a>"</p>
 <dl class="section note"><dt>Note</dt><dd>an implementation of this approach won the 2016 max-SAT competition on the industrial category, see <a href="http://maxsat.ia.udl.cat/results/#wpms-industrial">http://maxsat.ia.udl.cat/results/#wpms-industrial</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001844">Todo:</a></b></dt><dd>(user): This class requires linking with the SCIP MIP solver which is quite big, maybe we should find a way not to do that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001885">Todo:</a></b></dt><dd>(user): This class requires linking with the SCIP MIP solver which is quite big, maybe we should find a way not to do that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__hs_8h_source.html#l00058">58</a> of file <a class="el" href="max__hs_8h_source.html">max_hs.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -176,21 +176,21 @@ Sequence of Simpler SAT Instances", <a href="http://www.cs.toronto.edu/~jdavies/
       </table>
 </div><div class="memdoc">
 <p>This is the "generalized" hitting set problem we will solve. Each time we find a core, a new constraint will be added to this problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001836">Todo:</a></b></dt><dd>(user): remove code duplication with MinimizeWithCoreAndLazyEncoding(); </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001877">Todo:</a></b></dt><dd>(user): remove code duplication with MinimizeWithCoreAndLazyEncoding(); </dd></dl>
 <p>This is used by the "stratified" approach. We will only consider terms with a weight not lower than this threshold. The threshold will decrease as the algorithm progress.</p>
 <p>Start the algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001837">Todo:</a></b></dt><dd>(user): Even though we keep the same solver, currently the solve is not really done incrementally. It might be hard to improve though.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001838">Todo:</a></b></dt><dd>(user): deal with time limit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001878">Todo:</a></b></dt><dd>(user): Even though we keep the same solver, currently the solve is not really done incrementally. It might be hard to improve though.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001879">Todo:</a></b></dt><dd>(user): deal with time limit. </dd></dl>
 <p>Get the best external bound and constraint the objective of the MPModel.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001839">Todo:</a></b></dt><dd>(user): C^c is broken when using SCIP. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001880">Todo:</a></b></dt><dd>(user): C^c is broken when using SCIP. </dd></dl>
 <p>We currently abort if we have a non-optimal result. This is correct if we had a limit reached, but not in the other cases.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001840">Todo:</a></b></dt><dd>(user): It is actually easy to use a FEASIBLE result. If when passing it to SAT it is no feasbile, we can still create cores. If it is feasible, we have a solution, but we cannot increase the lower bound. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001881">Todo:</a></b></dt><dd>(user): It is actually easy to use a FEASIBLE result. If when passing it to SAT it is no feasbile, we can still create cores. If it is feasible, we have a solution, but we cannot increase the lower bound. </dd></dl>
 <p>Update the objective lower bound with our current bound.</p>
 <p>Note(user): This is not needed for correctness, but it might cause more propagation and is nice to have for reporting/logging purpose.</p>
 <p>No assumptions with the current stratified_threshold? use the new one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001841">Todo:</a></b></dt><dd>(user): Use the real weights and exploit the extra cores. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001842">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001843">Todo:</a></b></dt><dd>(user): If we extract more than the objective variables, we could use the solution values from the MPModel as hints to the SAT model. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001882">Todo:</a></b></dt><dd>(user): Use the real weights and exploit the extra cores. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001883">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001884">Todo:</a></b></dt><dd>(user): If we extract more than the objective variables, we could use the solution values from the MPModel as hints to the SAT model. </dd></dl>
 <p>If not all assumptions were taken, continue with a lower stratified bound. Otherwise we have an optimal solution.</p>
 <p>Hack: we use a local limit internally that we restore at the end. However we still return LIMIT_REACHED in this case...</p>
 

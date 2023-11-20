@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('string__array_8h.html',''); initResiza
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 </div>
 <p><a href="string__array_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,22 +120,22 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af1e66b2f134ccc2e06344f1935bbc16a" id="r_af1e66b2f134ccc2e06344f1935bbc16a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af1e66b2f134ccc2e06344f1935bbc16a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af1e66b2f134ccc2e06344f1935bbc16a">operations_research::JoinDebugString</a> (const std::vector&lt; T &gt; &amp;v, const std::string &amp;separator)</td></tr>
-<tr class="memdesc:af1e66b2f134ccc2e06344f1935bbc16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i].DebugString().  <br /></td></tr>
-<tr class="separator:af1e66b2f134ccc2e06344f1935bbc16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be76edcbd5ccb982d92c8d90421a73c" id="r_a9be76edcbd5ccb982d92c8d90421a73c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9be76edcbd5ccb982d92c8d90421a73c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a9be76edcbd5ccb982d92c8d90421a73c">operations_research::JoinDebugStringPtr</a> (const std::vector&lt; T &gt; &amp;v, const std::string &amp;separator)</td></tr>
-<tr class="memdesc:a9be76edcbd5ccb982d92c8d90421a73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;DebugString().  <br /></td></tr>
-<tr class="separator:a9be76edcbd5ccb982d92c8d90421a73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea04391e4d85555ed4fde9b89e8139f2" id="r_aea04391e4d85555ed4fde9b89e8139f2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aea04391e4d85555ed4fde9b89e8139f2"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aea04391e4d85555ed4fde9b89e8139f2">operations_research::JoinNamePtr</a> (const std::vector&lt; T &gt; &amp;v, const std::string &amp;separator)</td></tr>
-<tr class="memdesc:aea04391e4d85555ed4fde9b89e8139f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267" title="A name for logging purposes.">name()</a>.  <br /></td></tr>
-<tr class="separator:aea04391e4d85555ed4fde9b89e8139f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2d2f0a06417c1c636b412b1d8a2593" id="r_aed2d2f0a06417c1c636b412b1d8a2593"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aed2d2f0a06417c1c636b412b1d8a2593"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aed2d2f0a06417c1c636b412b1d8a2593">operations_research::JoinNameFieldPtr</a> (const std::vector&lt; T &gt; &amp;v, const std::string &amp;separator)</td></tr>
-<tr class="memdesc:aed2d2f0a06417c1c636b412b1d8a2593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;name.  <br /></td></tr>
-<tr class="separator:aed2d2f0a06417c1c636b412b1d8a2593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae569fe8c26f0a3f6c3dd857f199fb90d" id="r_ae569fe8c26f0a3f6c3dd857f199fb90d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae569fe8c26f0a3f6c3dd857f199fb90d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae569fe8c26f0a3f6c3dd857f199fb90d">operations_research::JoinDebugString</a> (const std::vector&lt; T &gt; &amp;v, absl::string_view separator)</td></tr>
+<tr class="memdesc:ae569fe8c26f0a3f6c3dd857f199fb90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i].DebugString().  <br /></td></tr>
+<tr class="separator:ae569fe8c26f0a3f6c3dd857f199fb90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7d276ca14baaa1b2bf28cb0d88e65b" id="r_a2b7d276ca14baaa1b2bf28cb0d88e65b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a2b7d276ca14baaa1b2bf28cb0d88e65b"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a2b7d276ca14baaa1b2bf28cb0d88e65b">operations_research::JoinDebugStringPtr</a> (const std::vector&lt; T &gt; &amp;v, absl::string_view separator)</td></tr>
+<tr class="memdesc:a2b7d276ca14baaa1b2bf28cb0d88e65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;DebugString().  <br /></td></tr>
+<tr class="separator:a2b7d276ca14baaa1b2bf28cb0d88e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae512f88674f398bccef6af1c36cc4958" id="r_ae512f88674f398bccef6af1c36cc4958"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae512f88674f398bccef6af1c36cc4958"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae512f88674f398bccef6af1c36cc4958">operations_research::JoinNamePtr</a> (const std::vector&lt; T &gt; &amp;v, absl::string_view separator)</td></tr>
+<tr class="memdesc:ae512f88674f398bccef6af1c36cc4958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267" title="A name for logging purposes.">name()</a>.  <br /></td></tr>
+<tr class="separator:ae512f88674f398bccef6af1c36cc4958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58188691c9707dc4eb2ccc730679de37" id="r_a58188691c9707dc4eb2ccc730679de37"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a58188691c9707dc4eb2ccc730679de37"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a58188691c9707dc4eb2ccc730679de37">operations_research::JoinNameFieldPtr</a> (const std::vector&lt; T &gt; &amp;v, absl::string_view separator)</td></tr>
+<tr class="memdesc:a58188691c9707dc4eb2ccc730679de37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join v[i]-&gt;name.  <br /></td></tr>
+<tr class="separator:a58188691c9707dc4eb2ccc730679de37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3531abff4b68da03b9740268e8ad8a91" name="a3531abff4b68da03b9740268e8ad8a91"></a>
@@ -178,7 +179,7 @@ Functions</h2></td></tr>
 <p>-------&mdash; Pretty Print Helpers -------&mdash; </p>
 <p>See the straightforward (and unique) usage of this macro below. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__array_8h_source.html#l00024">24</a> of file <a class="el" href="string__array_8h_source.html">string_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__array_8h_source.html#l00026">26</a> of file <a class="el" href="string__array_8h_source.html">string_array.h</a>.</p>
 
 </div>
 </div>

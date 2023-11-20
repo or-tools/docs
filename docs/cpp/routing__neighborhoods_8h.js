@@ -13,6 +13,7 @@ var routing__neighborhoods_8h =
     [ "operations_research::IndexPairSwapActiveOperator", "classoperations__research_1_1IndexPairSwapActiveOperator.html", "classoperations__research_1_1IndexPairSwapActiveOperator" ],
     [ "operations_research::RelocateExpensiveChain", "classoperations__research_1_1RelocateExpensiveChain.html", "classoperations__research_1_1RelocateExpensiveChain" ],
     [ "operations_research::PairNodeSwapActiveOperator< swap_first >", "classoperations__research_1_1PairNodeSwapActiveOperator.html", "classoperations__research_1_1PairNodeSwapActiveOperator" ],
+    [ "operations_research::PickupAndDeliveryData", "classoperations__research_1_1PickupAndDeliveryData.html", "classoperations__research_1_1PickupAndDeliveryData" ],
     [ "operations_research::RelocateSubtrip", "classoperations__research_1_1RelocateSubtrip.html", "classoperations__research_1_1RelocateSubtrip" ],
     [ "operations_research::ExchangeSubtrip", "classoperations__research_1_1ExchangeSubtrip.html", "classoperations__research_1_1ExchangeSubtrip" ]
 ];

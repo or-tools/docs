@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,7 +118,7 @@ Public Attributes</h2></td></tr>
 <p>Precondition:</p><ul>
 <li>We assumes that the given initial constraint is tight using the given lp values. This could be relaxed, but for now it should always be the case, so we log a message and abort if not, to ease debugging.</li>
 <li><p class="startli">The IntegerVariable of the cuts are not used here. We assumes that the first three vectors are in one to one correspondence with the initial order of the variable in the cut.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001492">Todo:</a></b></dt><dd>(user): There is a bunch of heuristic involved here, and we could spend more effort tuning them. In particular, one can try many heuristics and keep the best looking cut (or more than one). This is not on the critical code path, so we can spend more effort in finding good cuts. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001508">Todo:</a></b></dt><dd>(user): There is a bunch of heuristic involved here, and we could spend more effort tuning them. In particular, one can try many heuristics and keep the best looking cut (or more than one). This is not on the critical code path, so we can spend more effort in finding good cuts. </dd></dl>
 </li>
 </ul>
 

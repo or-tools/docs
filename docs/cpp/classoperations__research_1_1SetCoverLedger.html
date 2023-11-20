@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -162,6 +162,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a809bd0b01aee56bf4addfb95113d2c2b" id="r_a809bd0b01aee56bf4addfb95113d2c2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SetCoverLedger.html#a809bd0b01aee56bf4addfb95113d2c2b">CheckCoverageAndMarginalImpacts</a> (const <a class="el" href="namespaceoperations__research.html#a19701a75c0da0f6ddb6a50f12cf50b7d">SubsetBoolVector</a> &amp;choices) const</td></tr>
 <tr class="memdesc:a809bd0b01aee56bf4addfb95113d2c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that coverage_ and marginal_impacts_ are consistent with choices.  <br /></td></tr>
 <tr class="separator:a809bd0b01aee56bf4addfb95113d2c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc09e1fb78ce3048288a8a54f230962" id="r_a6dc09e1fb78ce3048288a8a54f230962"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SubsetIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SetCoverLedger.html#a6dc09e1fb78ce3048288a8a54f230962">ComputeSettableSubsets</a> () const</td></tr>
+<tr class="separator:a6dc09e1fb78ce3048288a8a54f230962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c59d6bf9e7568a063997c2bac558a2" id="r_a23c59d6bf9e7568a063997c2bac558a2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SubsetIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SetCoverLedger.html#a23c59d6bf9e7568a063997c2bac558a2">ComputeResettableSubsets</a> () const</td></tr>
+<tr class="separator:a23c59d6bf9e7568a063997c2bac558a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classoperations__research_1_1SetCoverLedger.html">SetCoverLedger</a> does the bookkeeping for a solution to the <a class="el" href="classoperations__research_1_1SetCoverModel.html" title="Main class for describing a weighted set-covering problem.">SetCoverModel</a> passed as argument. The state of a <a class="el" href="classoperations__research_1_1SetCoverLedger.html">SetCoverLedger</a> instance is uniquely de fined by a SubsetBoolVector representing whether a subset is selected in the solution or not. A <a class="el" href="classoperations__research_1_1SetCoverLedger.html">SetCoverLedger</a> is (relatively) small: is_selected_, a partial solution, vector of Booleans of size #subsets. From this, the following can be computed: coverage_, the number of times an elememt is covered; marginal_impacts_, the number of elements of a subset still uncovered; is_removable_, whether a subset can be removed from the solution. </p><dl class="section note"><dt>Note</dt><dd>is_removable_[subset] implies is_selected_[subset], and thus (is_removable_[subset] &lt;= is_selected_[subset]) == true. </dd></dl>
@@ -280,6 +284,45 @@ Public Member Functions</h2></td></tr>
 <p>Compute the impact of the change in the assignment for each subset containing element. Store this in a flat_hash_set so as to buffer the change. </p>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__ledger_8cc_source.html#l00260">260</a> of file <a class="el" href="set__cover__ledger_8cc_source.html">set_cover_ledger.cc</a>.</p>
+
+</div>
+</div>
+<a id="a23c59d6bf9e7568a063997c2bac558a2" name="a23c59d6bf9e7568a063997c2bac558a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c59d6bf9e7568a063997c2bac558a2">&#9670;&#160;</a></span>ComputeResettableSubsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; SubsetIndex &gt; operations_research::SetCoverLedger::ComputeResettableSubsets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="set__cover__ledger_8cc_source.html#l00360">360</a> of file <a class="el" href="set__cover__ledger_8cc_source.html">set_cover_ledger.cc</a>.</p>
+
+</div>
+</div>
+<a id="a6dc09e1fb78ce3048288a8a54f230962" name="a6dc09e1fb78ce3048288a8a54f230962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc09e1fb78ce3048288a8a54f230962">&#9670;&#160;</a></span>ComputeSettableSubsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; SubsetIndex &gt; operations_research::SetCoverLedger::ComputeSettableSubsets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the subsets that are unused that could be used to cover the still uncovered subsets. </p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover__ledger_8cc_source.html#l00344">344</a> of file <a class="el" href="set__cover__ledger_8cc_source.html">set_cover_ledger.cc</a>.</p>
 
 </div>
 </div>

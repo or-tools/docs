@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -110,6 +110,7 @@ $(document).ready(function(){initNavTree('routing__search_8h.html',''); initResi
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
@@ -118,11 +119,12 @@ $(document).ready(function(){initNavTree('routing__search_8h.html',''); initResi
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="adjustable__priority__queue_8h_source.html">ortools/base/adjustable_priority_queue.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__solveri_8h_source.html">ortools/constraint_solver/constraint_solveri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routing_8h_source.html">ortools/constraint_solver/routing.h</a>&quot;</code><br />
+<code>#include &quot;ortools/constraint_solver/routing_parameters.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="routing__utils_8h_source.html">ortools/constraint_solver/routing_utils.h</a>&quot;</code><br />
 </div>
 <p><a href="routing__search_8h_source.html">Go to the source code of this file.</a></p>
@@ -144,6 +146,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html">operations_research::CheapestInsertionFilteredHeuristic::NodeInsertion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">operations_research::CheapestInsertionFilteredHeuristic::StartEndValue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html">operations_research::CheapestInsertionFilteredHeuristic::Seed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">operations_research::CheapestInsertionFilteredHeuristic::SeedQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">clang-format off  <a href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic.html">operations_research::GlobalCheapestInsertionFilteredHeuristic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

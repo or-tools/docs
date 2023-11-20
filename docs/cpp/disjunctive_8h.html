@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('disjunctive_8h.html',''); initResizabl
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
@@ -147,13 +148,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac098947e71d4b76a5e0491bf7aefa924" id="r_ac098947e71d4b76a5e0491bf7aefa924"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac098947e71d4b76a5e0491bf7aefa924">operations_research::sat::Disjunctive</a> (const std::vector&lt; IntervalVariable &gt; &amp;intervals)</td></tr>
-<tr class="separator:ac098947e71d4b76a5e0491bf7aefa924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab304db27f5c4170f35583c69269394" id="r_a9ab304db27f5c4170f35583c69269394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9ab304db27f5c4170f35583c69269394">operations_research::sat::AddDisjunctive</a> (const std::vector&lt; IntervalVariable &gt; &amp;intervals, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a9ab304db27f5c4170f35583c69269394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f5d90e7de4e0877e0abff9cb2467bdd" id="r_a6f5d90e7de4e0877e0abff9cb2467bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6f5d90e7de4e0877e0abff9cb2467bdd">operations_research::sat::AddDisjunctiveWithBooleanPrecedencesOnly</a> (const std::vector&lt; IntervalVariable &gt; &amp;intervals, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="separator:a6f5d90e7de4e0877e0abff9cb2467bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa993e5774d37ab0dfba2abdad38ae03d" id="r_aa993e5774d37ab0dfba2abdad38ae03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa993e5774d37ab0dfba2abdad38ae03d">operations_research::sat::AddDisjunctiveWithBooleanPrecedences</a> (const std::vector&lt; IntervalVariable &gt; &amp;intervals, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="memdesc:aa993e5774d37ab0dfba2abdad38ae03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="namespaceoperations__research_1_1sat.html#ac098947e71d4b76a5e0491bf7aefa924">Disjunctive()</a> + DisjunctiveWithBooleanPrecedencesOnly().  <br /></td></tr>
-<tr class="separator:aa993e5774d37ab0dfba2abdad38ae03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -11,7 +11,7 @@ var routing__filters_8h =
     [ "MakeNodeDisjunctionFilter", "routing__filters_8h.html#a4040cc17b56514e14ebb5c84705801c7", null ],
     [ "MakePathCumulFilter", "routing__filters_8h.html#a95c7e4e8d244f6793625c48488140e69", null ],
     [ "MakePathEnergyCostFilter", "routing__filters_8h.html#ab78692fbae996fa0faf0ce27835b845a", null ],
-    [ "MakePickupDeliveryFilter", "routing__filters_8h.html#a7496660a8567db66b386f142037a54ed", null ],
+    [ "MakePickupDeliveryFilter", "routing__filters_8h.html#a9bfee6a40914fab47d256439c2e6737c", null ],
     [ "MakeResourceAssignmentFilter", "routing__filters_8h.html#ac296090ca74b7395379bfbe385e367ac", null ],
     [ "MakeTypeRegulationsFilter", "routing__filters_8h.html#ad38d41357b37dcf1cfdb9e083afd6d47", null ],
     [ "MakeVehicleAmortizedCostFilter", "routing__filters_8h.html#a0dfad89c7de2c968b58b6c9a90abcb50", null ],

@@ -3,7 +3,6 @@ var classoperations__research_1_1OptimizeVar =
     [ "OptimizeVar", "classoperations__research_1_1OptimizeVar.html#ad0213f17ffc305f0675e958a4cbd6390", null ],
     [ "OptimizeVar", "classoperations__research_1_1OptimizeVar.html#ae2d99a358309a7be9b20e580d7875de8", null ],
     [ "~OptimizeVar", "classoperations__research_1_1OptimizeVar.html#a5f4f2dec1c3aaaac9f795c2b90023dcc", null ],
-    [ "AcceptDelta", "classoperations__research_1_1OptimizeVar.html#a964aef312aae5df04e7d0fe12060e614", null ],
     [ "AcceptSolution", "classoperations__research_1_1OptimizeVar.html#aed1aff1da93b7d6ef67c9433a56e311a", null ],
     [ "ApplyBound", "classoperations__research_1_1OptimizeVar.html#a0a7e487cd5bdc3fa3a515765bb007fdd", null ],
     [ "AtSolution", "classoperations__research_1_1OptimizeVar.html#ab50cd48d312f0e20afcd77b1bf1e94cb", null ],

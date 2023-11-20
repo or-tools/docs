@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a23b9863d0a59ea408a1b71e25dd614e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e528bf81c1cc5a140a19a4fe106a71" id="r_ae2e528bf81c1cc5a140a19a4fe106a71"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#ae2e528bf81c1cc5a140a19a4fe106a71">add_term</a> (self, <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html">Variable</a> var, <a class="el" href="namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html#a7443c3dee731bb5d8d233228d351c9e1">NumberT</a> coeff)</td></tr>
 <tr class="separator:ae2e528bf81c1cc5a140a19a4fe106a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4447a8f7acfaf8808eb707d5d65ab4" id="r_aec4447a8f7acfaf8808eb707d5d65ab4"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#aec4447a8f7acfaf8808eb707d5d65ab4">clear_terms</a> (self)</td></tr>
+<tr class="separator:aec4447a8f7acfaf8808eb707d5d65ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Stores a linear equation.
@@ -140,7 +142,7 @@ Example:
 
     linear_constraint = model.add(x + 2 * y == 5)
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00531">531</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00643">643</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ade4d85198d9e841f25393fe6fed045" name="a6ade4d85198d9e841f25393fe6fed045"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ade4d85198d9e841f25393fe6fed045">&#9670;&#160;</a></span>__init__()</h2>
@@ -174,7 +176,7 @@ Example:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00541">541</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00653">653</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -195,7 +197,7 @@ Example:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00597">597</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00709">709</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -215,7 +217,7 @@ Example:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00594">594</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00706">706</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -251,7 +253,27 @@ Example:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Adds var * coeff to the constraint.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00613">613</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00725">725</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+
+</div>
+</div>
+<a id="aec4447a8f7acfaf8808eb707d5d65ab4" name="aec4447a8f7acfaf8808eb707d5d65ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4447a8f7acfaf8808eb707d5d65ab4">&#9670;&#160;</a></span>clear_terms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None ortools.linear_solver.python.model_builder.LinearConstraint.clear_terms </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Clear all terms of the constraint.</pre> 
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00733">733</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -271,7 +293,7 @@ Example:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the ModelBuilderHelper instance.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00556">556</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00668">668</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -291,7 +313,7 @@ Example:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the index of the constraint in the helper.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00551">551</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00663">663</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -314,7 +336,7 @@ Example:
 
 Usually, it means that it was created by model.add(False)
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00587">587</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00699">699</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -334,7 +356,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00561">561</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00673">673</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -364,7 +386,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00565">565</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00677">677</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -384,7 +406,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00577">577</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00689">689</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -414,7 +436,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00584">584</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00696">696</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -450,7 +472,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Sets the coefficient of the variable in the constraint.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00605">605</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00717">717</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -470,7 +492,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00569">569</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00681">681</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -500,7 +522,7 @@ Usually, it means that it was created by model.add(False)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00573">573</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00685">685</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>

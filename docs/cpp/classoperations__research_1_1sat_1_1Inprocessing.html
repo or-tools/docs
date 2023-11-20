@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -122,11 +122,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63eb5cc01d121fac6c5205d181bb4866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbf49af4f2bef7419f9eff0fc4847b2" id="r_a2fbf49af4f2bef7419f9eff0fc4847b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Inprocessing.html#a2fbf49af4f2bef7419f9eff0fc4847b2">SubsumeAndStrenghtenRound</a> (bool log_info)</td></tr>
 <tr class="separator:a2fbf49af4f2bef7419f9eff0fc4847b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917ed507e6300fd11ca34029f14ee3d3" id="r_a917ed507e6300fd11ca34029f14ee3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Inprocessing.html#a917ed507e6300fd11ca34029f14ee3d3">ProvideLogger</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memdesc:a917ed507e6300fd11ca34029f14ee3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bit hacky. Only needed during refactoring.  <br /></td></tr>
+<tr class="separator:a917ed507e6300fd11ca34029f14ee3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We need to keep some information from one call to the next, so we use a class. Note that as this becomes big, we can probably split it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002075">Todo:</a></b></dt><dd>(user): Some algorithms here use the normal SAT propagation engine. However we might want to temporarily disable activities/phase saving and so on if we want to run them as in-processing steps so that they do not "pollute" the normal SAT search.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002076">Todo:</a></b></dt><dd>(user): For the propagation, this depends on the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> class, which mean we cannot really use it without some refactoring as an in-processing from the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8a32f2b63a24749a0c9f6e34d068f1b0">SatSolver::Solve()</a> function. So we do need a special InprocessingSolve() that lives outside <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>. Alternatively, we can extract the propagation main loop and conflict analysis from <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002124">Todo:</a></b></dt><dd>(user): Some algorithms here use the normal SAT propagation engine. However we might want to temporarily disable activities/phase saving and so on if we want to run them as in-processing steps so that they do not "pollute" the normal SAT search.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002125">Todo:</a></b></dt><dd>(user): For the propagation, this depends on the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> class, which mean we cannot really use it without some refactoring as an in-processing from the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8a32f2b63a24749a0c9f6e34d068f1b0">SatSolver::Solve()</a> function. So we do need a special InprocessingSolve() that lives outside <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>. Alternatively, we can extract the propagation main loop and conflict analysis from <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00096">96</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -186,9 +189,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Detects equivalences in the implication graph and propagates any failed literal found during the process.</p>
 <p>It make sense to do the pre-stamping right after the equivalence detection since it needs a DAG and can detect extra failed literal. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002026">Todo:</a></b></dt><dd>(user): consider doing the transitive reduction after each SCC. It might be slow but we could try to make it more incremental to compensate and it should allow further reduction. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002075">Todo:</a></b></dt><dd>(user): consider doing the transitive reduction after each SCC. It might be slow but we could try to make it more incremental to compensate and it should allow further reduction. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00249">249</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00246">246</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -210,11 +213,11 @@ Public Member Functions</h2></td></tr>
 <p>Mainly useful for development.</p>
 <p>Try to spend a given ratio of time in the inprocessing.</p>
 <p>We make sure we do not "pollute" the current saved polarities. We will restore them at the end.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002024">Todo:</a></b></dt><dd>(user): We should probably also disable the variable/clauses activity updates. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002073">Todo:</a></b></dt><dd>(user): We should probably also disable the variable/clauses activity updates. </dd></dl>
 <p>Probing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002025">Todo:</a></b></dt><dd>(user): Add a small wrapper function to time this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002074">Todo:</a></b></dt><dd>(user): Add a small wrapper function to time this. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00158">158</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00155">155</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +237,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Simple wrapper that makes sure all the clauses are attached before a propagation is performed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00241">241</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00238">238</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -254,7 +257,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if there is new fixed variables or new equivalence relations since <a class="el" href="classoperations__research_1_1sat_1_1Inprocessing.html#a5e0f39f14f9c6d947181e7185d6ed865">RemoveFixedAndEquivalentVariables()</a> was last called. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00230">230</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00227">227</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -273,7 +276,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00235">235</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00232">232</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -297,13 +300,43 @@ Public Member Functions</h2></td></tr>
 <p>We currently do the transformations in a given order and restart each time we did something to make sure that the earlier step cannot srengthen more. This might not be the best, but it is really good during development phase to make sure each individual functions is as incremental and as fast as possible.</p>
 <p>This one is fast since only newly fixed variables are considered.</p>
 <p>This also prepare the stamping below so that we do that on a DAG and do not consider potential new implications added by <a class="el" href="classoperations__research_1_1sat_1_1Inprocessing.html#a5e0f39f14f9c6d947181e7185d6ed865">RemoveFixedAndEquivalentVariables()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002021">Todo:</a></b></dt><dd>(user): This should/could be integrated with the stamping since it seems better to do just one loop instead of two over all clauses. Because of memory access. it isn't that clear though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002070">Todo:</a></b></dt><dd>(user): This should/could be integrated with the stamping since it seems better to do just one loop instead of two over all clauses. Because of memory access. it isn't that clear though. </dd></dl>
 <p>We wait for the fix-point to be reached before doing the other simplifications below.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002022">Todo:</a></b></dt><dd>(user): Combine the two? this way we don't create a full literal &lt;-&gt; clause graph twice. It might make sense to reach the BCE fix point which is unique before each variable elimination. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002071">Todo:</a></b></dt><dd>(user): Combine the two? this way we don't create a full literal &lt;-&gt; clause graph twice. It might make sense to reach the BCE fix point which is unique before each variable elimination. </dd></dl>
 <p>Probing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002023">Todo:</a></b></dt><dd>(user): Maintain the total number of literals in the watched clauses. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002072">Todo:</a></b></dt><dd>(user): Maintain the total number of literals in the watched clauses. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00063">63</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00064">64</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+
+</div>
+</div>
+<a id="a917ed507e6300fd11ca34029f14ee3d3" name="a917ed507e6300fd11ca34029f14ee3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917ed507e6300fd11ca34029f14ee3d3">&#9670;&#160;</a></span>ProvideLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::Inprocessing::ProvideLogger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A bit hacky. Only needed during refactoring. </p>
+
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00145">145</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
 
 </div>
 </div>
@@ -324,19 +357,19 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes fixed variables and exploit equivalence relations to cleanup the clauses. Returns false if UNSAT. </p>
 <p>Preconditions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002027">Todo:</a></b></dt><dd>(user): The level zero is required because we remove fixed variables but if we split this into two functions, we could rewrite clause at any level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002076">Todo:</a></b></dt><dd>(user): The level zero is required because we remove fixed variables but if we split this into two functions, we could rewrite clause at any level. </dd></dl>
 <p>Test if some work is needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002028">Todo:</a></b></dt><dd>(user): If only new fixed variables are there, we can use a faster function. We should also merge the code with the deletion code in sat_solver_.cc, but that require some refactoring of the dependence between files. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002077">Todo:</a></b></dt><dd>(user): If only new fixed variables are there, we can use a faster function. We should also merge the code with the deletion code in sat_solver_.cc, but that require some refactoring of the dependence between files. </dd></dl>
 <p>Start the round.</p>
 <p>We need this temporary vector for the DRAT proof settings, otherwise we could just have done an in-place transformation.</p>
 <p>Used to mark clause literals.</p>
 <p>We first do a loop to see if there is anything to do.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002029">Todo:</a></b></dt><dd>(user): we should output literal to the proof right away, currently if we remove clauses before fixing literal the proof is wrong. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002078">Todo:</a></b></dt><dd>(user): we should output literal to the proof right away, currently if we remove clauses before fixing literal the proof is wrong. </dd></dl>
 <p>Rewrite the clause.</p>
 <p>Restore marked.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002030">Todo:</a></b></dt><dd>(user): find a way to auto-tune that after a run on borg... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002079">Todo:</a></b></dt><dd>(user): find a way to auto-tune that after a run on borg... </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00271">271</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00268">268</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -356,37 +389,37 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Processes all clauses and see if there is any subsumption/strenghtening reductions that can be performed. Returns false if UNSAT.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002031">Todo:</a></b></dt><dd>(user): Use better work limits, see SAT09.CRAFTED.ramseycube.Q3inK12</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002032">Todo:</a></b></dt><dd>(user): Be more incremental, each time a clause is added/reduced track which literal are impacted? Also try to do orthogonal reductions from one round to the next. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002080">Todo:</a></b></dt><dd>(user): Use better work limits, see SAT09.CRAFTED.ramseycube.Q3inK12</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002081">Todo:</a></b></dt><dd>(user): Be more incremental, each time a clause is added/reduced track which literal are impacted? Also try to do orthogonal reductions from one round to the next. </dd></dl>
 <p>We need this temporary vector for the DRAT proof settings, otherwise we could just have done an in-place transformation.</p>
 <p>This function needs the watcher to be detached as we might remove some of the watched literals.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002033">Todo:</a></b></dt><dd>(user): We could do that only if we do some reduction, but this is quite fast though. </dd></dl>
-<p>Process clause by increasing sizes. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002034">Todo:</a></b></dt><dd>(user): probably faster without the size indirection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002082">Todo:</a></b></dt><dd>(user): We could do that only if we do some reduction, but this is quite fast though. </dd></dl>
+<p>Process clause by increasing sizes. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002083">Todo:</a></b></dt><dd>(user): probably faster without the size indirection. </dd></dl>
 <p>Used to mark clause literals.</p>
-<p>Clause index in clauses. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002035">Todo:</a></b></dt><dd>(user): Storing signatures here might be faster? </dd></dl>
+<p>Clause index in clauses. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002084">Todo:</a></b></dt><dd>(user): Storing signatures here might be faster? </dd></dl>
 <p>Clause signatures in the same order as clauses.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002036">Todo:</a></b></dt><dd>(user): Better abort limit. We could also limit the watcher sizes and never look at really long clauses. Note that for an easier incrementality, it is better to reach some kind of completion so we know what new stuff need to be done. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002085">Todo:</a></b></dt><dd>(user): Better abort limit. We could also limit the watcher sizes and never look at really long clauses. Note that for an easier incrementality, it is better to reach some kind of completion so we know what new stuff need to be done. </dd></dl>
 <p>Check for subsumption, note that this currently ignore all clauses in the binary implication graphs. Stamping is doing some of that (and some also happen during probing), but we could consider only direct implications here and be a bit more exhaustive than what stamping do with them (at least for node with many incoming and outgoing implications).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002037">Todo:</a></b></dt><dd>(user): Do some reduction using binary clauses. Note that only clause that never propagated since last round need to be checked for binary subsumption. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002086">Todo:</a></b></dt><dd>(user): Do some reduction using binary clauses. Note that only clause that never propagated since last round need to be checked for binary subsumption. </dd></dl>
 <p>Compute hash and mark literals.</p>
 <p>Look for clause that subsumes this one. Note that because we inspect all one watcher lists for the literals of this clause, if a clause is included inside this one, it must appear in one of these lists.</p>
 <p>For strengthenning we also need to check the negative watcher lists.</p>
 <p>Any literal here can be removed, but afterwards the other might not. For now we just remove the first one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002038">Todo:</a></b></dt><dd>(user): remove first and see if other still removable. Alternatively use a "removed" marker and redo a check for each clause that simplifies this one? Or just remove the first one, and wait for next round. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002087">Todo:</a></b></dt><dd>(user): remove first and see if other still removable. Alternatively use a "removed" marker and redo a check for each clause that simplifies this one? Or just remove the first one, and wait for next round. </dd></dl>
 <p>Recompute signature.</p>
 <p>Register one literal to watch. Any literal works, but we choose the smallest list.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002039">Todo:</a></b></dt><dd>(user): No need to add this clause if we know it cannot subsume any new clause since last round. i.e. unchanged clause that do not contains any literals of newly added clause do not need to be added here. We can track two bitset in <a class="el" href="classoperations__research_1_1sat_1_1LiteralWatchers.html">LiteralWatchers</a> via a register mechanism:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002088">Todo:</a></b></dt><dd>(user): No need to add this clause if we know it cannot subsume any new clause since last round. i.e. unchanged clause that do not contains any literals of newly added clause do not need to be added here. We can track two bitset in <a class="el" href="classoperations__research_1_1sat_1_1LiteralWatchers.html">LiteralWatchers</a> via a register mechanism:<ul>
 <li>literal of newly watched clauses since last clear.</li>
 <li>literal of reduced clauses since last clear.</li>
 </ul>
 </dd></dl>
 <p>Important: we can only use this clause to subsume/strenghten others if it cannot be deleted later.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002040">Todo:</a></b></dt><dd>(user): We could/should sort the literal in this clause by using literals that appear in a small number of clauses first so that we maximize the chance of early abort in the critical loops above.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002041">Todo:</a></b></dt><dd>(user): We could also move the watched literal first so we always skip it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002089">Todo:</a></b></dt><dd>(user): We could/should sort the literal in this clause by using literals that appear in a small number of clauses first so that we maximize the chance of early abort in the critical loops above.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002090">Todo:</a></b></dt><dd>(user): We could also move the watched literal first so we always skip it. </dd></dl>
 <p>We might have fixed variables, finish the propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002042">Todo:</a></b></dt><dd>(user): tune the deterministic time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002091">Todo:</a></b></dt><dd>(user): tune the deterministic time. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00380">380</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00377">377</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>

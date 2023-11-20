@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,184 +117,216 @@ $(document).ready(function(){initNavTree('status__builder_8h_source.html',''); i
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef OR_TOOLS_BASE_STATUS_BUILDER_H_</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define OR_TOOLS_BASE_STATUS_BUILDER_H_</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;absl/status/status.h&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;absl/strings/str_cat.h&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceutil.html">   24</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutil.html">util</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">   28</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">StatusBuilder</a>(<span class="keyword">const</span> absl::StatusCode code)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      : base_status_(code, <span class="comment">/*msg=*/</span>{}) {}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;ios&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;absl/status/status.h&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;absl/strings/str_cat.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceutil.html">   25</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutil.html">util</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">   29</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">StatusBuilder</a>(<span class="keyword">const</span> absl::StatusCode code)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      : base_status_(code, <span class="comment">/*msg=*/</span>{}) {}</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">   31</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">StatusBuilder</a>(<span class="keyword">const</span> absl::Status <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      : base_status_(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)) {}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">   32</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">StatusBuilder</a>(<span class="keyword">const</span> absl::Status <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      : base_status_(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)) {}</div>
 </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a2f7830b18f8fc30a120b31983cd648e8">   34</a></span>  <span class="keyword">operator</span> absl::Status()<span class="keyword"> const </span>{  <span class="comment">// NOLINT</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> std::string annotation = ss_.str();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (annotation.empty()) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keywordflow">return</span> base_status_;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (base_status_.message().empty()) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordflow">return</span> absl::Status(base_status_.code(), annotation);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> std::string annotated_message =</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        absl::StrCat(base_status_.message(), <span class="stringliteral">&quot;; &quot;</span>, annotation);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> absl::Status(base_status_.code(), annotated_message);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a4a2d2db70c616435b8bf4f3c3c825a28">   35</a></span>  <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a4a2d2db70c616435b8bf4f3c3c825a28">StatusBuilder</a>(<span class="keyword">const</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; other)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      : base_status_(other.base_status_),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        ss_(other.ss_.str(), <a class="code hl_namespace" href="namespacestd.html">std</a>::ios_base::app) {}</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">   48</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp; t) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ss_ &lt;&lt; t;</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#ac3157865f6562d81a6ab3b097e6e8b5e">   38</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#ac3157865f6562d81a6ab3b097e6e8b5e">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; other) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    base_status_ = other.base_status_;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ss_ = std::ostringstream(other.ss_.str(), std::ios_base::app);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#adc387801d71a5ac25ef1338471bd938c">   44</a></span>  <a class="code hl_function" href="classutil_1_1StatusBuilder.html#adc387801d71a5ac25ef1338471bd938c">StatusBuilder</a>(<a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp;&amp; other)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      : base_status_(<a class="code hl_namespace" href="namespacestd.html">std</a>::exchange(other.base_status_, <a class="code hl_namespace" href="namespaceabsl.html">absl</a>::OkStatus())),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        ss_(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(other.ss_)) {}</div>
+</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a23763dcfab0c55ce69bb4d068b70016a">   47</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a23763dcfab0c55ce69bb4d068b70016a">operator=</a>(<a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp;&amp; other) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    base_status_ = std::exchange(other.base_status_, absl::OkStatus());</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ss_ = std::move(other.ss_);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  }</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">   53</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">SetAppend</a>() { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">const</span> absl::Status base_status_;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::ostringstream ss_;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a2f7830b18f8fc30a120b31983cd648e8">   53</a></span>  <span class="keyword">operator</span> absl::Status()<span class="keyword"> const </span>{  <span class="comment">// NOLINT</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> std::string annotation = ss_.str();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span> (annotation.empty()) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">return</span> base_status_;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (base_status_.message().empty()) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">return</span> absl::Status(base_status_.code(), annotation);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">const</span> std::string annotated_message =</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        absl::StrCat(base_status_.message(), <span class="stringliteral">&quot;; &quot;</span>, annotation);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> absl::Status(base_status_.code(), annotated_message);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">   60</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">AbortedErrorBuilder</a>() {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kAborted);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">   64</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">AlreadyExistsErrorBuilder</a>() {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kAlreadyExists);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
-</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">   68</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">CancelledErrorBuilder</a>() {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kCancelled);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">   67</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">operator&lt;&lt;</a>(<span class="keyword">const</span> T&amp; t) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    ss_ &lt;&lt; t;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
 </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">   72</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">DataLossErrorBuilder</a>() {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kDataLoss);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">   72</a></span>  <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>&amp; <a class="code hl_function" href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">SetAppend</a>() { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  absl::Status base_status_;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  std::ostringstream ss_;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">   76</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">DeadlineExceededErrorBuilder</a>() {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kDeadlineExceeded);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">   79</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">AbortedErrorBuilder</a>() {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kAborted);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">   80</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">FailedPreconditionErrorBuilder</a>() {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kFailedPrecondition);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">   83</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">AlreadyExistsErrorBuilder</a>() {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kAlreadyExists);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">   84</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">InternalErrorBuilder</a>() {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kInternal);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">   87</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">CancelledErrorBuilder</a>() {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kCancelled);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">   88</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">InvalidArgumentErrorBuilder</a>() {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kInvalidArgument);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">   91</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">DataLossErrorBuilder</a>() {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kDataLoss);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">   92</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">NotFoundErrorBuilder</a>() {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kNotFound);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">   95</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">DeadlineExceededErrorBuilder</a>() {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kDeadlineExceeded);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">   96</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">OutOfRangeErrorBuilder</a>() {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kOutOfRange);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">   99</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">FailedPreconditionErrorBuilder</a>() {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kFailedPrecondition);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">  100</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">PermissionDeniedErrorBuilder</a>() {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kPermissionDenied);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">  103</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">InternalErrorBuilder</a>() {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kInternal);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">  104</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">UnauthenticatedErrorBuilder</a>() {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnauthenticated);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">  107</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">InvalidArgumentErrorBuilder</a>() {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kInvalidArgument);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">  108</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">ResourceExhaustedErrorBuilder</a>() {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kResourceExhausted);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">  111</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">NotFoundErrorBuilder</a>() {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kNotFound);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">  112</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">UnavailableErrorBuilder</a>() {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnavailable);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">  115</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">OutOfRangeErrorBuilder</a>() {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kOutOfRange);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
 </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">  116</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">UnimplementedErrorBuilder</a>() {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnimplemented);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">  119</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">PermissionDeniedErrorBuilder</a>() {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kPermissionDenied);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
 </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">  120</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">UnknownErrorBuilder</a>() {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnknown);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">  123</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">UnauthenticatedErrorBuilder</a>() {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnauthenticated);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}  <span class="comment">// namespace util</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">  127</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">ResourceExhaustedErrorBuilder</a>() {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kResourceExhausted);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
 </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_BASE_STATUS_BUILDER_H_</span></div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html"><div class="ttname"><a href="classutil_1_1StatusBuilder.html">util::StatusBuilder</a></div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00026">status_builder.h:26</a></div></div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a095faae16c5ec680565cfd700b27a03d"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(const absl::Status status)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00031">status_builder.h:31</a></div></div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a20cd0a9fdd893ec676e24b35876f48e4"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">util::StatusBuilder::operator&lt;&lt;</a></div><div class="ttdeci">StatusBuilder &amp; operator&lt;&lt;(const T &amp;t)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00048">status_builder.h:48</a></div></div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html_ab8d56ad04260a8b5115f270c9c95fe35"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">util::StatusBuilder::SetAppend</a></div><div class="ttdeci">StatusBuilder &amp; SetAppend()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00053">status_builder.h:53</a></div></div>
-<div class="ttc" id="aclassutil_1_1StatusBuilder_html_ad443b2de489bfb4ffedfef00cbfd9a7a"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(const absl::StatusCode code)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00028">status_builder.h:28</a></div></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">  131</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">UnavailableErrorBuilder</a>() {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnavailable);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">  135</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">UnimplementedErrorBuilder</a>() {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnimplemented);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">  139</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a> <a class="code hl_function" href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">UnknownErrorBuilder</a>() {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classutil_1_1StatusBuilder.html">StatusBuilder</a>(absl::StatusCode::kUnknown);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}  <span class="comment">// namespace util</span></div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_BASE_STATUS_BUILDER_H_</span></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html"><div class="ttname"><a href="classutil_1_1StatusBuilder.html">util::StatusBuilder</a></div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00027">status_builder.h:27</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a095faae16c5ec680565cfd700b27a03d"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a095faae16c5ec680565cfd700b27a03d">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(const absl::Status status)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00032">status_builder.h:32</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a20cd0a9fdd893ec676e24b35876f48e4"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a20cd0a9fdd893ec676e24b35876f48e4">util::StatusBuilder::operator&lt;&lt;</a></div><div class="ttdeci">StatusBuilder &amp; operator&lt;&lt;(const T &amp;t)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00067">status_builder.h:67</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a23763dcfab0c55ce69bb4d068b70016a"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a23763dcfab0c55ce69bb4d068b70016a">util::StatusBuilder::operator=</a></div><div class="ttdeci">StatusBuilder &amp; operator=(StatusBuilder &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00047">status_builder.h:47</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_a4a2d2db70c616435b8bf4f3c3c825a28"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#a4a2d2db70c616435b8bf4f3c3c825a28">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(const StatusBuilder &amp;other)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00035">status_builder.h:35</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_ab8d56ad04260a8b5115f270c9c95fe35"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#ab8d56ad04260a8b5115f270c9c95fe35">util::StatusBuilder::SetAppend</a></div><div class="ttdeci">StatusBuilder &amp; SetAppend()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00072">status_builder.h:72</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_ac3157865f6562d81a6ab3b097e6e8b5e"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#ac3157865f6562d81a6ab3b097e6e8b5e">util::StatusBuilder::operator=</a></div><div class="ttdeci">StatusBuilder &amp; operator=(const StatusBuilder &amp;other)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00038">status_builder.h:38</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_ad443b2de489bfb4ffedfef00cbfd9a7a"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#ad443b2de489bfb4ffedfef00cbfd9a7a">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(const absl::StatusCode code)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00029">status_builder.h:29</a></div></div>
+<div class="ttc" id="aclassutil_1_1StatusBuilder_html_adc387801d71a5ac25ef1338471bd938c"><div class="ttname"><a href="classutil_1_1StatusBuilder.html#adc387801d71a5ac25ef1338471bd938c">util::StatusBuilder::StatusBuilder</a></div><div class="ttdeci">StatusBuilder(StatusBuilder &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00044">status_builder.h:44</a></div></div>
 <div class="ttc" id="ag__gurobi_8cc_html_a2237393c7ae7ad7344c9885066d5ab6d"><div class="ttname"><a href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a></div><div class="ttdeci">absl::Status status</div><div class="ttdef"><b>Definition</b> <a href="g__gurobi_8cc_source.html#l00042">g_gurobi.cc:42</a></div></div>
+<div class="ttc" id="anamespaceabsl_html"><div class="ttname"><a href="namespaceabsl.html">absl</a></div><div class="ttdef"><b>Definition</b> <a href="cleanup_8h_source.html#l00022">cleanup.h:22</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
-<div class="ttc" id="anamespaceutil_html"><div class="ttname"><a href="namespaceutil.html">util</a></div><div class="ttdoc">A collections of i/o utilities for the Graph classes in ./graph.h.</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00024">status_builder.h:24</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a007b8813fdd1c082efc4e08fbcb8a83e"><div class="ttname"><a href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">util::ResourceExhaustedErrorBuilder</a></div><div class="ttdeci">StatusBuilder ResourceExhaustedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00108">status_builder.h:108</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a23561d268e106df9d3aeba1897ab3c2a"><div class="ttname"><a href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">util::UnknownErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnknownErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00120">status_builder.h:120</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a302ee4bfcb86ea9ed64a193ed0b14648"><div class="ttname"><a href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">util::InternalErrorBuilder</a></div><div class="ttdeci">StatusBuilder InternalErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00084">status_builder.h:84</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a34739da67ea599226350b0cb5d1cbad6"><div class="ttname"><a href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">util::UnimplementedErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnimplementedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00116">status_builder.h:116</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a5532f9a3e8b48bd067e8576789fe36bc"><div class="ttname"><a href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">util::UnavailableErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnavailableErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00112">status_builder.h:112</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a5a8b955fd01d92c38c96d50dd7b36fa9"><div class="ttname"><a href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">util::DataLossErrorBuilder</a></div><div class="ttdeci">StatusBuilder DataLossErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00072">status_builder.h:72</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a5bf5136a95272248cacae1d1a036e8ea"><div class="ttname"><a href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">util::UnauthenticatedErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnauthenticatedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00104">status_builder.h:104</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a6c7131ba28e4222397d1cdb048da94d7"><div class="ttname"><a href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">util::AbortedErrorBuilder</a></div><div class="ttdeci">StatusBuilder AbortedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00060">status_builder.h:60</a></div></div>
-<div class="ttc" id="anamespaceutil_html_a9f0f7d99f534361679bd82e09a56c30a"><div class="ttname"><a href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">util::AlreadyExistsErrorBuilder</a></div><div class="ttdeci">StatusBuilder AlreadyExistsErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00064">status_builder.h:64</a></div></div>
-<div class="ttc" id="anamespaceutil_html_aa86ac164f0f951fca26cc3e9b34d9632"><div class="ttname"><a href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">util::OutOfRangeErrorBuilder</a></div><div class="ttdeci">StatusBuilder OutOfRangeErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00096">status_builder.h:96</a></div></div>
-<div class="ttc" id="anamespaceutil_html_aac4135532bf8cf1a7559e12f568d54d1"><div class="ttname"><a href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">util::CancelledErrorBuilder</a></div><div class="ttdeci">StatusBuilder CancelledErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00068">status_builder.h:68</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ab85d86fd35e985c0fb4c4a200d72adda"><div class="ttname"><a href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">util::PermissionDeniedErrorBuilder</a></div><div class="ttdeci">StatusBuilder PermissionDeniedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00100">status_builder.h:100</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ad0c886e6b95bc531d4a39884a87c0101"><div class="ttname"><a href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00088">status_builder.h:88</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ae6967409cb3e0a291eda5807f3edf796"><div class="ttname"><a href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">util::DeadlineExceededErrorBuilder</a></div><div class="ttdeci">StatusBuilder DeadlineExceededErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00076">status_builder.h:76</a></div></div>
-<div class="ttc" id="anamespaceutil_html_aeb73fb4c4369ff7beb4a819f3cc5831c"><div class="ttname"><a href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">util::FailedPreconditionErrorBuilder</a></div><div class="ttdeci">StatusBuilder FailedPreconditionErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00080">status_builder.h:80</a></div></div>
-<div class="ttc" id="anamespaceutil_html_afe1146d4103ad0b93801f626715519d6"><div class="ttname"><a href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">util::NotFoundErrorBuilder</a></div><div class="ttdeci">StatusBuilder NotFoundErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00092">status_builder.h:92</a></div></div>
+<div class="ttc" id="anamespaceutil_html"><div class="ttname"><a href="namespaceutil.html">util</a></div><div class="ttdoc">A collections of i/o utilities for the Graph classes in ./graph.h.</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00025">status_builder.h:25</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a007b8813fdd1c082efc4e08fbcb8a83e"><div class="ttname"><a href="namespaceutil.html#a007b8813fdd1c082efc4e08fbcb8a83e">util::ResourceExhaustedErrorBuilder</a></div><div class="ttdeci">StatusBuilder ResourceExhaustedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00127">status_builder.h:127</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a23561d268e106df9d3aeba1897ab3c2a"><div class="ttname"><a href="namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a">util::UnknownErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnknownErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00139">status_builder.h:139</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a302ee4bfcb86ea9ed64a193ed0b14648"><div class="ttname"><a href="namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648">util::InternalErrorBuilder</a></div><div class="ttdeci">StatusBuilder InternalErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00103">status_builder.h:103</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a34739da67ea599226350b0cb5d1cbad6"><div class="ttname"><a href="namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6">util::UnimplementedErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnimplementedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00135">status_builder.h:135</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a5532f9a3e8b48bd067e8576789fe36bc"><div class="ttname"><a href="namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc">util::UnavailableErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnavailableErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00131">status_builder.h:131</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a5a8b955fd01d92c38c96d50dd7b36fa9"><div class="ttname"><a href="namespaceutil.html#a5a8b955fd01d92c38c96d50dd7b36fa9">util::DataLossErrorBuilder</a></div><div class="ttdeci">StatusBuilder DataLossErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00091">status_builder.h:91</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a5bf5136a95272248cacae1d1a036e8ea"><div class="ttname"><a href="namespaceutil.html#a5bf5136a95272248cacae1d1a036e8ea">util::UnauthenticatedErrorBuilder</a></div><div class="ttdeci">StatusBuilder UnauthenticatedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00123">status_builder.h:123</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a6c7131ba28e4222397d1cdb048da94d7"><div class="ttname"><a href="namespaceutil.html#a6c7131ba28e4222397d1cdb048da94d7">util::AbortedErrorBuilder</a></div><div class="ttdeci">StatusBuilder AbortedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00079">status_builder.h:79</a></div></div>
+<div class="ttc" id="anamespaceutil_html_a9f0f7d99f534361679bd82e09a56c30a"><div class="ttname"><a href="namespaceutil.html#a9f0f7d99f534361679bd82e09a56c30a">util::AlreadyExistsErrorBuilder</a></div><div class="ttdeci">StatusBuilder AlreadyExistsErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00083">status_builder.h:83</a></div></div>
+<div class="ttc" id="anamespaceutil_html_aa86ac164f0f951fca26cc3e9b34d9632"><div class="ttname"><a href="namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632">util::OutOfRangeErrorBuilder</a></div><div class="ttdeci">StatusBuilder OutOfRangeErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00115">status_builder.h:115</a></div></div>
+<div class="ttc" id="anamespaceutil_html_aac4135532bf8cf1a7559e12f568d54d1"><div class="ttname"><a href="namespaceutil.html#aac4135532bf8cf1a7559e12f568d54d1">util::CancelledErrorBuilder</a></div><div class="ttdeci">StatusBuilder CancelledErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00087">status_builder.h:87</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ab85d86fd35e985c0fb4c4a200d72adda"><div class="ttname"><a href="namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda">util::PermissionDeniedErrorBuilder</a></div><div class="ttdeci">StatusBuilder PermissionDeniedErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00119">status_builder.h:119</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ad0c886e6b95bc531d4a39884a87c0101"><div class="ttname"><a href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00107">status_builder.h:107</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ae6967409cb3e0a291eda5807f3edf796"><div class="ttname"><a href="namespaceutil.html#ae6967409cb3e0a291eda5807f3edf796">util::DeadlineExceededErrorBuilder</a></div><div class="ttdeci">StatusBuilder DeadlineExceededErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00095">status_builder.h:95</a></div></div>
+<div class="ttc" id="anamespaceutil_html_aeb73fb4c4369ff7beb4a819f3cc5831c"><div class="ttname"><a href="namespaceutil.html#aeb73fb4c4369ff7beb4a819f3cc5831c">util::FailedPreconditionErrorBuilder</a></div><div class="ttdeci">StatusBuilder FailedPreconditionErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00099">status_builder.h:99</a></div></div>
+<div class="ttc" id="anamespaceutil_html_afe1146d4103ad0b93801f626715519d6"><div class="ttname"><a href="namespaceutil.html#afe1146d4103ad0b93801f626715519d6">util::NotFoundErrorBuilder</a></div><div class="ttdeci">StatusBuilder NotFoundErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00111">status_builder.h:111</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

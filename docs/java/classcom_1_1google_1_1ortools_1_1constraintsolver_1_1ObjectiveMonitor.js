@@ -3,6 +3,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor =
     [ "ObjectiveMonitor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#a97d1925083e95905b215d6107935c914", null ],
     [ "ObjectiveMonitor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#aa4a360207fe29aef1def9c3e2f2f8882", null ],
     [ "accept", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#a3717b246809132c3a6f5d5ec84dbeb51", null ],
+    [ "acceptDelta", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#ad710ead728faf4a13a992997d78e49d3", null ],
     [ "atSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#adf9b2dbbe22338c3a6aa096def88b646", null ],
     [ "BestValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#a0c9909244f4570ce3cb8810bf8c7cc8c", null ],
     [ "delete", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ObjectiveMonitor.html#ad4d0edc4a50ada667bea888e69df7f5c", null ],

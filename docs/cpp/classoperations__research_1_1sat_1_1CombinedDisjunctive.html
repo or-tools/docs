@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;bool time_direction&gt;<br />
 class operations_research::sat::CombinedDisjunctive&lt; time_direction &gt;</div><p>This propagates the same things as <a class="el" href="classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html">DisjunctiveDetectablePrecedences</a>, except that it only sort the full set of intervals once and then work on a combined set of disjunctives. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00196">196</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00195">195</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba8c08e4e978ce6b886b77ccb578d437" name="aba8c08e4e978ce6b886b77ccb578d437"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba8c08e4e978ce6b886b77ccb578d437">&#9670;&#160;</a></span>CombinedDisjunctive()</h2>
@@ -159,7 +159,7 @@ template&lt;bool time_direction&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00368">368</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00311">311</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ template&lt;bool time_direction&gt; </div>
 </div><div class="memdoc">
 <p>After creation, this must be called for all the disjunctive constraints in the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00380">380</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00323">323</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -213,17 +213,17 @@ template&lt;bool time_direction&gt; </div>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
 <p>Update all task sets.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001506">Todo:</a></b></dt><dd>(user): AddEntry() and ComputeEndMin() could be combined. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001530">Todo:</a></b></dt><dd>(user): AddEntry() and ComputeEndMin() could be combined. </dd></dl>
 <p>Find out amongst the disjunctives in which t appear, the one with the largest end_min, ignoring t itself. This will be the new start min for t.</p>
 <p>If the task t was not added, then there is no task to ignore and end_mins_[d_index] is up to date.</p>
 <p>Do we push something?</p>
-<p>Same reason as <a class="el" href="classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html">DisjunctiveDetectablePrecedences</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001507">Todo:</a></b></dt><dd>(user): Maybe factor out the code? It does require a function with a lot of arguments though. </dd></dl>
+<p>Same reason as <a class="el" href="classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html">DisjunctiveDetectablePrecedences</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001531">Todo:</a></b></dt><dd>(user): Maybe factor out the code? It does require a function with a lot of arguments though. </dd></dl>
 <p>We need to reorder t inside task_set_. Note that if t is in the set, it means that the task is present and that IncreaseStartMin() did push its start (by opposition to an optional interval where the push might not happen if its start is not optional).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001508">Todo:</a></b></dt><dd>(user): Refactor the code to use the same algo as in <a class="el" href="classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html">DisjunctiveDetectablePrecedences</a>, it is superior and do not need this function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001532">Todo:</a></b></dt><dd>(user): Refactor the code to use the same algo as in <a class="el" href="classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html">DisjunctiveDetectablePrecedences</a>, it is superior and do not need this function. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00391">391</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00334">334</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>

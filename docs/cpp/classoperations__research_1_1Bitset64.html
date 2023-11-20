@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -192,8 +192,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ade50af1ebc92216309943678afc614a2" id="r_ade50af1ebc92216309943678afc614a2"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1Bitset64.html#ade50af1ebc92216309943678afc614a2">ConditionalXorOfTwoBits</a> (IndexType i, uint64_t use1, const <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt; &amp;set1, uint64_t use2, const <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt; &amp;set2)</td></tr>
-<tr class="separator:ade50af1ebc92216309943678afc614a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c2fb21afd646bf2415a7592d98ed74" id="r_a88c2fb21afd646bf2415a7592d98ed74"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1Bitset64.html#a88c2fb21afd646bf2415a7592d98ed74">ConditionalXorOfTwoBits</a> (IndexType i, uint64_t use1, <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt;::ConstView set1, uint64_t use2, <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt;::ConstView set2)</td></tr>
+<tr class="separator:a88c2fb21afd646bf2415a7592d98ed74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -449,7 +449,7 @@ template&lt;typename IndexType  = int64_t&gt; </div>
 </div><div class="memdoc">
 
 <p>Changes the number of bits the <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a> can hold and set all of them to 0. </p>
-<p>Memset is 4x faster than data_.assign() as of 19/03/2014. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002262">Todo:</a></b></dt><dd>(user): Ideally if a realloc happens, we don't need to copy the old data... </dd></dl>
+<p>Memset is 4x faster than data_.assign() as of 19/03/2014. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002304">Todo:</a></b></dt><dd>(user): Ideally if a realloc happens, we don't need to copy the old data... </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bitset_8h_source.html#l00460">460</a> of file <a class="el" href="bitset_8h_source.html">bitset.h</a>.</p>
 
@@ -519,8 +519,8 @@ template&lt;typename IndexType  = int64_t&gt; </div>
 
 </div>
 </div>
-<a id="ade50af1ebc92216309943678afc614a2" name="ade50af1ebc92216309943678afc614a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade50af1ebc92216309943678afc614a2">&#9670;&#160;</a></span>ConditionalXorOfTwoBits()</h2>
+<a id="a88c2fb21afd646bf2415a7592d98ed74" name="a88c2fb21afd646bf2415a7592d98ed74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c2fb21afd646bf2415a7592d98ed74">&#9670;&#160;</a></span>ConditionalXorOfTwoBits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -545,7 +545,7 @@ template&lt;typename IndexType  = int64_t&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt;::ConstView&#160;</td>
           <td class="paramname"><em>set1</em>, </td>
         </tr>
         <tr>
@@ -557,7 +557,7 @@ template&lt;typename IndexType  = int64_t&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1Bitset64.html">Bitset64</a>&lt; IndexType &gt;::ConstView&#160;</td>
           <td class="paramname"><em>set2</em>&#160;</td>
         </tr>
         <tr>

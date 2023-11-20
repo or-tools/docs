@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -172,7 +172,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Better behavior of the scaling.</li>
 <li>Better precision and numerical accuracy of the simplex method.</li>
 <li><p class="startli">Slightly improved speed (because adding a column with a variable value of zero takes no work later).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000499">Todo:</a></b></dt><dd>(user): Having for each variable one of their bounds at zero is a requirement for the <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a> and for the implied free column in the <a class="el" href="classoperations__research_1_1glop_1_1ImpliedFreePreprocessor.html">ImpliedFreePreprocessor</a>. However, shifting a variable with a domain like [-1e10, 1e10] may introduce numerical issues. Relax the definition of a free variable so that only having a domain containing 0.0 is enough? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000501">Todo:</a></b></dt><dd>(user): Having for each variable one of their bounds at zero is a requirement for the <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a> and for the implied free column in the <a class="el" href="classoperations__research_1_1glop_1_1ImpliedFreePreprocessor.html">ImpliedFreePreprocessor</a>. However, shifting a variable with a domain like [-1e10, 1e10] may introduce numerical issues. Relax the definition of a free variable so that only having a domain containing 0.0 is enough? </dd></dl>
 </li>
 </ul>
 
@@ -338,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03863">3863</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03847">3847</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -370,13 +370,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Abort early if there is nothing to do.</p>
 <p>Shift the variable bounds and compute the changes to the constraint bounds and objective offset in a precise way.</p>
 <p>In the integer case, we truncate the number because if for instance the lower bound is a positive integer + epsilon, we only want to shift by the integer and leave the lower bound at epsilon.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000492">Todo:</a></b></dt><dd>(user): This would not be needed, if we always make the bound of an integer variable integer before applying this preprocessor. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000494">Todo:</a></b></dt><dd>(user): This would not be needed, if we always make the bound of an integer variable integer before applying this preprocessor. </dd></dl>
 <p>Apply the changes to the constraint bound and objective offset.</p>
 <p>This can happen for bad input where we get floating point overflow. We can even get nan if we have two overflow in opposite direction.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03780">3780</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03764">3764</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

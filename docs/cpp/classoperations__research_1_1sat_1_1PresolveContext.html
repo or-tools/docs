@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -167,10 +167,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92ec01005eca2e8acd89dd803a909c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a85526dd2e4d2a34d323a91e05df368" id="r_a1a85526dd2e4d2a34d323a91e05df368"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a1a85526dd2e4d2a34d323a91e05df368">FixedValue</a> (const LinearExpressionProto &amp;expr) const</td></tr>
 <tr class="separator:a1a85526dd2e4d2a34d323a91e05df368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ccad7f06869ee5a02e5845840e916b" id="r_ac1ccad7f06869ee5a02e5845840e916b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ac1ccad7f06869ee5a02e5845840e916b">ExpressionDivisor</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="separator:ac1ccad7f06869ee5a02e5845840e916b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeccf346c59b352b893313de65c44acf8" id="r_aeccf346c59b352b893313de65c44acf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#aeccf346c59b352b893313de65c44acf8">DivideExpression</a> (LinearExpressionProto *expr, int64_t divisor) const</td></tr>
-<tr class="separator:aeccf346c59b352b893313de65c44acf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a623bc44b1287fc333a3210b8e2282b5f" id="r_a623bc44b1287fc333a3210b8e2282b5f"><td class="memTemplParams" colspan="2">template&lt;typename ProtoWithVarsAndCoeffs &gt; </td></tr>
 <tr class="memitem:a623bc44b1287fc333a3210b8e2282b5f"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; int64_t, int64_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a623bc44b1287fc333a3210b8e2282b5f">ComputeMinMaxActivity</a> (const ProtoWithVarsAndCoeffs &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>) const</td></tr>
 <tr class="separator:a623bc44b1287fc333a3210b8e2282b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,8 +206,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae3462352cb8945d9a90ef835a5413409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc7d287336c388e703889282993257d" id="r_a2dc7d287336c388e703889282993257d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a2dc7d287336c388e703889282993257d">VariableWithCostIsUniqueAndRemovable</a> (int ref) const</td></tr>
 <tr class="separator:a2dc7d287336c388e703889282993257d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3f9971405d9f256903cdce26033caf" id="r_aec3f9971405d9f256903cdce26033caf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#aec3f9971405d9f256903cdce26033caf">VariableIsOnlyUsedInEncodingAndMaybeInObjective</a> (int ref) const</td></tr>
-<tr class="separator:aec3f9971405d9f256903cdce26033caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5987035843beaea2cadbd7ab5a78889a" id="r_a5987035843beaea2cadbd7ab5a78889a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a5987035843beaea2cadbd7ab5a78889a">VariableIsOnlyUsedInEncodingAndMaybeInObjective</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:a5987035843beaea2cadbd7ab5a78889a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507c1fe68c32e41d59517d951b1ea532" id="r_a507c1fe68c32e41d59517d951b1ea532"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a507c1fe68c32e41d59517d951b1ea532">VariableIsOnlyUsedInLinear1AndOneExtraConstraint</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:a507c1fe68c32e41d59517d951b1ea532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183cbc89ee5ff7b8bccefe3611ea9676" id="r_a183cbc89ee5ff7b8bccefe3611ea9676"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a183cbc89ee5ff7b8bccefe3611ea9676">IntersectDomainWith</a> (int ref, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain, bool *domain_modified=nullptr)</td></tr>
 <tr class="separator:a183cbc89ee5ff7b8bccefe3611ea9676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394e849d9191a33e5052df380f79d0e4" id="r_a394e849d9191a33e5052df380f79d0e4"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a394e849d9191a33e5052df380f79d0e4">SetLiteralToFalse</a> (int <a class="el" href="linear__model_8cc.html#a2c015641fdf48f9e1627e4607b49195c">lit</a>)</td></tr>
@@ -244,16 +242,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa087429f5cddf5be6c225890f614b4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127fd4a816673cc6a6ee7c721f7d6baa" id="r_a127fd4a816673cc6a6ee7c721f7d6baa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a127fd4a816673cc6a6ee7c721f7d6baa">StoreBooleanEqualityRelation</a> (int ref_a, int ref_b)</td></tr>
 <tr class="separator:a127fd4a816673cc6a6ee7c721f7d6baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b2f778ae581dd746e551a90ed10276" id="r_a85b2f778ae581dd746e551a90ed10276"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a85b2f778ae581dd746e551a90ed10276">StoreAbsRelation</a> (int target_ref, int ref)</td></tr>
-<tr class="separator:a85b2f778ae581dd746e551a90ed10276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a761798831fd1590e6462e835fe313953" id="r_a761798831fd1590e6462e835fe313953"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a761798831fd1590e6462e835fe313953">GetAbsRelation</a> (int target_ref, int *ref)</td></tr>
-<tr class="separator:a761798831fd1590e6462e835fe313953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa08f3a483dad1815f8d9cfe1e4976f2a" id="r_aa08f3a483dad1815f8d9cfe1e4976f2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#aa08f3a483dad1815f8d9cfe1e4976f2a">GetLiteralRepresentative</a> (int ref) const</td></tr>
 <tr class="memdesc:aa08f3a483dad1815f8d9cfe1e4976f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the representative of a literal.  <br /></td></tr>
 <tr class="separator:aa08f3a483dad1815f8d9cfe1e4976f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2491b07c9528a4665f7d5b2a066b3d" id="r_a9b2491b07c9528a4665f7d5b2a066b3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a9b2491b07c9528a4665f7d5b2a066b3d">GetVariableRepresentative</a> (int ref) const</td></tr>
-<tr class="memdesc:a9b2491b07c9528a4665f7d5b2a066b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns another reference with exactly the same value.  <br /></td></tr>
-<tr class="separator:a9b2491b07c9528a4665f7d5b2a066b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6febea0946bc7a03f0b5efc3e2b0322" id="r_ac6febea0946bc7a03f0b5efc3e2b0322"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ac6febea0946bc7a03f0b5efc3e2b0322">NumAffineRelations</a> () const</td></tr>
 <tr class="memdesc:ac6febea0946bc7a03f0b5efc3e2b0322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for statistics.  <br /></td></tr>
 <tr class="separator:ac6febea0946bc7a03f0b5efc3e2b0322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -518,9 +509,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>b =&gt; x in [lb, ub]. </p>
-<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001945">Todo:</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
+<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001993">Todo:</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00093">93</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00094">94</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -550,7 +541,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01778">1778</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01731">1731</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -580,7 +571,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01767">1767</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01719">1719</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -601,7 +592,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Tricky: The objective domain is without the offset, so we need to shift it.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01794">1794</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01748">1748</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -621,7 +612,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01186">1186</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01132">1132</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -641,7 +632,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00115">115</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00116">116</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -691,7 +682,7 @@ Public Attributes</h2></td></tr>
 <p>We make sure the new variable has a domain starting at zero to minimize future overflow issues. If it end up Boolean, it is also nice to be able to use it as such.</p>
 <p>A potential problem with this is that it messes up the natural variable order chosen by the modeler. We try to correct that when mapping variables at the end of the presolve.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00849">849</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00829">829</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -717,7 +708,7 @@ Public Attributes</h2></td></tr>
 <p>Insert missing encoding.</p>
 <p>Add affine relation.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01215">1215</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01161">1161</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -737,7 +728,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>We replace each entry by its affine representative. </p><dl class="section note"><dt>Note</dt><dd>the non-deterministic loop is fine, but because we iterate one the map while modifying it, it is safer to do a copy rather than to try to handle that in one pass.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001954">Todo:</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002001">Todo:</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
 <p>We need to sort the entries to be deterministic.</p>
 <p>This is the new domain. </p><dl class="section note"><dt>Note</dt><dd>the domain never include the offset.</dd></dl>
 <p>Depending on the use case, we cannot do that.</p>
@@ -747,7 +738,7 @@ Public Attributes</h2></td></tr>
 <p>It is important to update the implied_domain for the "is constraining" test below.</p>
 <p>Detect if the objective domain do not limit the "optimal" objective value. If this is true, then we can apply any reduction that reduce the objective value without any issues.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01643">1643</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01591">1591</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -770,7 +761,7 @@ Public Attributes</h2></td></tr>
 <p>Do the substitution.</p>
 <p>Process new term.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01590">1590</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01539">1539</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -791,9 +782,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A "canonical domain" always have a <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ad5c777be53b24b90df4e7be5969d95fa">MinOf()</a> equal to zero. If needed we introduce a new variable with such canonical domain and add the relation X = Y + offset.</p>
 <p>This is useful in some corner case to avoid overflow.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001963">Todo:</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002010">Todo:</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00819">819</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00799">799</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -845,7 +836,7 @@ Public Attributes</h2></td></tr>
 
 <p>Utility function. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00175">175</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00167">167</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +857,7 @@ Public Attributes</h2></td></tr>
 
 <p>Clear the precedence cache. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02108">2108</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02072">2072</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -918,7 +909,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Accepts any proto with two parallel vector .vars() and .coeffs(), like LinearConstraintProto or ObjectiveProto or LinearExpressionProto but beware that this ignore any offset. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00155">155</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00147">147</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +930,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Checks if a constraint contains an enforcement literal set to false, or if it has been cleared. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00515">515</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00495">495</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -960,7 +951,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Checks if a constraint contains an enforcement literal not fixed, and no enforcement literals set to false. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00527">527</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00507">507</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -988,7 +979,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00507">507</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00500">500</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1008,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Variable &lt;-&gt; constraint graph. The vector list is sorted and contains unique elements.</p>
 <p>Important: To properly handle the objective, var_to_constraints[objective] contains kObjectiveConstraint (i.e. -1) so that if the objective appear in only one constraint, the constraint cannot be simplified. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00503">503</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00496">496</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1028,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>At the beginning of the presolve, we delay the costly creation of this "graph" until we at least ran some basic presolve. This is because during a LNS neighbhorhood, many constraints will be reduced significantly by this "simple" presolve. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00621">621</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00601">601</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1056,40 +1047,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if our current constraints &lt;-&gt; variables graph is ok. This is meant to be used in DEBUG mode only.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001947">Todo:</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001995">Todo:</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00640">640</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
-
-</div>
-</div>
-<a id="aeccf346c59b352b893313de65c44acf8" name="aeccf346c59b352b893313de65c44acf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeccf346c59b352b893313de65c44acf8">&#9670;&#160;</a></span>DivideExpression()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void operations_research::sat::PresolveContext::DivideExpression </td>
-          <td>(</td>
-          <td class="paramtype">LinearExpressionProto *&#160;</td>
-          <td class="paramname"><em>expr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>divisor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Divide the expression in place by 'divisor'. It will DCHECK that 'divisor' divides all constants. </p>
-
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00225">225</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00620">620</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1081,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>This methods only works for affine expressions (checked). </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00436">436</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00416">416</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1111,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00429">429</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00409">409</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1133,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Helpers to query the current domain of a variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00105">105</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00106">106</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1153,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00419">419</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00399">399</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1193,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>This function takes a positive variable reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00205">205</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00197">197</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1215,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Return a super-set of the domain of the linear expression. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00199">199</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00200">200</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1275,7 +1235,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00332">332</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00303">303</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +1255,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00326">326</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00297">297</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1318,28 +1278,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Returns true if a simplification was done. </p>
 <p>Objective = coeff * var = coeff * (1 - ref);</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01882">1882</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
-
-</div>
-</div>
-<a id="ac1ccad7f06869ee5a02e5845840e916b" name="ac1ccad7f06869ee5a02e5845840e916b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1ccad7f06869ee5a02e5845840e916b">&#9670;&#160;</a></span>ExpressionDivisor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t operations_research::sat::PresolveContext::ExpressionDivisor </td>
-          <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;&#160;</td>
-          <td class="paramname"><em>expr</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns a positive constant factor that divides the expression. Currently, it only works with expression with 0 or 1 term. </p>
-
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00209">209</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01838">1838</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1299,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Returns true iff the expr is of the form a * literal + b. The other function can be used to get the literal that achieve <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ad9a56a53bed03585a5cba71fa3ea69be">MaxOf()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00239">239</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00210">210</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1331,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Returns true iff the expr is a literal (x or not(x)). </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00256">256</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00227">227</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1353,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Returns true iff the expr is of the form 1 * var + 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00251">251</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00222">222</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1373,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00190">190</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00191">191</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1454,39 +1393,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00150">150</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
-
-</div>
-</div>
-<a id="a761798831fd1590e6462e835fe313953" name="a761798831fd1590e6462e835fe313953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a761798831fd1590e6462e835fe313953">&#9670;&#160;</a></span>GetAbsRelation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operations_research::sat::PresolveContext::GetAbsRelation </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>target_ref</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>ref</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tricky: In some rare case the stored relation can refer to a deleted variable, so we need to ignore it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001952">Todo:</a></b></dt><dd>(user): Incorporate this as part of SavedVariable/SavedLiteral so we make sure we never forget about this. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01122">1122</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00151">151</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1416,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Returns the representative of ref under the affine relations. </p>
 <p>This makes sure that the affine relation only uses one of the representative from the var_equiv_relations_. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01172">1172</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01118">1118</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1551,7 +1458,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Return the given index, or the index of an interval with the same data. </p>
 <p>In case the "representative" was deleted.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02183">2183</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02151">2151</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1483,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>We made sure that the affine representative can always be used as a literal. However, if some variable are fixed, we might not have only (coeff=1 offset=0) or (coeff=-1 offset=1) and we might have something like (coeff=8 offset=0) which is only valid for both variable at zero...</p>
 <p>What is sure is that depending on the value, only one mapping can be valid because r.coeff can never be zero.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01141">1141</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01087">1087</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1608,7 +1515,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Gets the associated literal if it is already created. Otherwise create it, add the corresponding constraints and returns it.</p>
 <p>Important: This does not update the constraint&lt;-&gt;variable graph, so <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a9b3712d2df9a0fb81962a7d9a528d699">ConstraintVariableGraphIsUpToDate()</a> will be false until <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b" title="Calls UpdateConstraintVariableUsage() on all newly created constraints.">UpdateNewConstraintsVariableUsage()</a> is called. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01517">1517</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01463">1463</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1657,7 +1564,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>This is redundant but should improves performance.</p>
 <p>If GetOrCreateReifiedPrecedenceLiteral(time_j, time_i, active_j, active_i) (the reverse precedence) has been called too, then we can link the two precedence literals, and the two active literals together.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02008">2008</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01972">1972</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1698,7 +1605,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>If the variable was already removed, for now we create a new one. This should be rare hopefully.</p>
 <p>Update the encoding map. The domain could have been reduced to size two after the creation of the first literal.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01445">1445</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01391">1391</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1648,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>In all formulas, active_i and active_j are symmetrical, we can sort the active literals.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02089">2089</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02053">2053</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1762,26 +1669,6 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Some expansion code use constant literal to be simpler to write. This will create a <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#af3111a97c2700c885471fe682edfeee0">NewBoolVar()</a> the first time, but later call will just returns it. </p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00075">75</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
-
-</div>
-</div>
-<a id="a9b2491b07c9528a4665f7d5b2a066b3d" name="a9b2491b07c9528a4665f7d5b2a066b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b2491b07c9528a4665f7d5b2a066b3d">&#9670;&#160;</a></span>GetVariableRepresentative()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int operations_research::sat::PresolveContext::GetVariableRepresentative </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ref</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns another reference with exactly the same value. </p>
 
 </div>
 </div>
@@ -1818,7 +1705,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Returns true if a literal attached to ref == var exists. It assigns the corresponding to <code>literal</code> if non null. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01415">1415</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01361">1361</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1728,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Create the internal structure for any new variables in working_model. </p>
 <p>We mark the domain as modified so we will look at these new variable during our presolve loop.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01193">1193</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01139">1139</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1879,9 +1766,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Inserts the given literal to encode ref == value. If an encoding already exists, it adds the two implications between the previous encoding and the new encoding.</p>
 <p>Important: This does not update the constraint&lt;-&gt;variable graph, so <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a9b3712d2df9a0fb81962a7d9a528d699">ConstraintVariableGraphIsUpToDate()</a> will be false until <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b" title="Calls UpdateConstraintVariableUsage() on all newly created constraints.">UpdateNewConstraintsVariableUsage()</a> is called.</p>
 <p>Returns false if the model become UNSAT.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001964">Todo:</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(ref).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002011">Todo:</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(ref).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01391">1391</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01337">1337</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1919,7 +1806,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Same as <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a183cbc89ee5ff7b8bccefe3611ea9676">IntersectDomainWith()</a> but take a linear expression as input. If this expression if of size &gt; 1, this does nothing for now, so it will only propagates for constant and affine expression. </p>
 <p>We don't do anything for longer expression for now.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00483">483</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00463">463</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1957,7 +1844,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Returns false if the new domain is empty. Sets 'domain_modified' (if provided) to true iff the domain is modified otherwise does not change it. </p>
 <p>Propagate the domain of the representative right away. </p><dl class="section note"><dt>Note</dt><dd>the recursive call should only by one level deep.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00446">446</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00426">426</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -1977,7 +1864,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00288">288</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00259">259</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +1887,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Helper to query the state of an interval. </p>
 <dl class="section note"><dt>Note</dt><dd>we only support converted intervals. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00279">279</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00250">250</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2028,7 +1915,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00515">515</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00508">508</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2048,7 +1935,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00183">183</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00184">184</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +1955,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00109">109</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00110">110</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2089,7 +1976,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>This methods only works for affine expressions (checked). It returns true iff the expression is constant or its one variable is full encoded. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01439">1439</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01385">1385</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2109,9 +1996,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if we have literal &lt;=&gt; var = value for all values of var.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001965">Todo:</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002012">Todo:</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01431">1431</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01377">1377</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2131,7 +2018,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00245">245</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00216">216</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2151,7 +2038,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00129">129</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00130">130</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2171,7 +2058,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00120">120</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00121">121</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2198,7 +2085,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00567">567</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00560">560</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2219,7 +2106,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Logs stats to the logger. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02112">2112</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02076">2076</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2240,7 +2127,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Functions to make sure that once we remove a variable, we no longer reuse it. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00385">385</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00356">356</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2260,7 +2147,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00170">170</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00171">171</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2280,7 +2167,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00144">144</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00145">145</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2301,7 +2188,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Helpers to query the current domain of a linear expression. This doesn't check for integer overflow, but our linear expression should be such that this cannot happen (tested at validation). </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00157">157</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00158">158</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2321,7 +2208,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00138">138</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00139">139</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2236,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>The "expansion" phase should be done once and allow to transform complex constraints into basic ones (see <a class="el" href="cp__model__expand_8h.html">cp_model_expand.h</a>). Some presolve rules need to know if the expansion was ran before beeing applied. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00539">539</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00532">532</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2376,7 +2263,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00257">257</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00258">258</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2415,7 +2302,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Helpers to adds new variables to the presolved model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001961">Todo:</a></b></dt><dd>(user): We should control more how this is called so we can update a solution hint accordingly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002008">Todo:</a></b></dt><dd>(user): We should control more how this is called so we can update a solution hint accordingly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00066">66</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2444,7 +2331,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00540">540</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00533">533</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2472,9 +2359,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>This function always return false. It is just a way to make a little bit more sure that we abort right away when infeasibility is detected. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001962">Todo:</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002009">Todo:</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00249">249</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00250">250</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2503,7 +2390,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Used for statistics. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00336">336</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00329">329</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2531,7 +2418,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00483">483</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00476">476</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2560,7 +2447,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Objective getters. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00479">479</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00472">472</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2587,7 +2474,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00488">488</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00481">481</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2614,7 +2501,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00480">480</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00473">473</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2641,7 +2528,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00568">568</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00561">561</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2662,7 +2549,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Makes sure the domain of ref and of its representative (ref = coeff * rep + offset) are in sync. Returns false on unsat. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00747">747</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00727">727</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2705,7 +2592,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Propagate domains both ways. var = coeff * rep + offset</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00754">754</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00734">734</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2732,7 +2619,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00570">570</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00563">563</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2753,11 +2640,12 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Objective handling functions. We load it at the beginning so that during presolve we can work on the more efficient hash_map representation.</p>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a3ecb80a62e74147541a2067b27392547">ReadObjectiveFromProto()</a> makes sure that var_to_constraints of all the variable that appear in the objective contains -1. This is later enforced by all the functions modifying the objective.</dd></dl>
 <p>Note(user): Because we process affine relation only on <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a0e57a4d478e6619ec142e1c0e3da51a3">CanonicalizeObjective()</a>, it is possible that when processing a canonicalized linear constraint, we don't detect that a variable in affine relation is in the objective. For now this is fine, because when this is the case, we also have an affine linear constraint, so we can't really do anything with that variable since it appear in at least two constraints. </p>
+<p>We do some small canonicalization here</p>
 <p>We might relax this in <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a0e57a4d478e6619ec142e1c0e3da51a3">CanonicalizeObjective()</a> when we will compute the possible objective domain from the domains of the variables.</p>
 <p>This is an upper bound of the higher magnitude that can be reach by summing an objective partial sum. Because of the model validation, this shouldn't overflow, and we make sure it stays this way.</p>
 <p>Skipping var fixed to zero allow to avoid some overflow in situation were we can deal with it.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01536">1536</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01482">1482</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2779,7 +2667,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Transfer all the info to the domain of var.</p>
 <p>Recompute a correct and non-constraining objective domain.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01744">1744</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01694">1694</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2801,7 +2689,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>To facilitate debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01181">1181</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01127">1127</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2829,7 +2717,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Make sure we never delete an "assumption" literal by using a special constraint for that. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00530">530</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00523">523</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -2848,7 +2736,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00782">782</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00762">762</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2873,7 +2761,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>We do not call EraseFromVarToConstraint() on purpose here since the variable is removed.</p>
 <p>If the representative is left alone, we can remove it from the special affine relation constraint too.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00791">791</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00771">771</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2895,7 +2783,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Allows to manipulate the objective coefficients. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01761">1761</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01712">1712</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2915,7 +2803,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>We need the domains up to date before scaling.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00830">830</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00810">810</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2937,7 +2825,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Returns false if the 'lit' doesn't have the desired value in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00505">505</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00485">485</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2957,7 +2845,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00511">511</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00491">491</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -2988,14 +2876,14 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>We can always add a multiple of sum X - 1 == 0 to the objective. However, depending on which multiple we choose, this might break our overflow preconditions on the objective. So we return false and do nothing if this happens. </p>
 <p>We have to be careful because shifting cost like this might increase the min/max possible activity of the sum.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001955">Todo:</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002002">Todo:</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
 <p>The value will be zero if it wasn't present.</p>
 <p>Term = coeff * (1 - X) = coeff - coeff * X; So -coeff -&gt; -coeff -shift And Term = coeff + shift - shift - (coeff + shift) * X = (coeff + shift) * (1 - X) - shift;</p>
 <dl class="section note"><dt>Note</dt><dd>the domain never include the offset, so we need to update it.</dd></dl>
 <p>When we shift the cost using an exactly one, our objective implied bounds might be more or less precise. If the objective domain is not constraining (and thus just constraining the upper bound), we relax it to make sure its stay "non constraining".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001956">Todo:</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002003">Todo:</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01904">1904</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01860">1860</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3015,7 +2903,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00344">344</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00315">315</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3035,7 +2923,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00338">338</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00309">309</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3055,7 +2943,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00320">320</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00291">291</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3075,39 +2963,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00314">314</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
-
-</div>
-</div>
-<a id="a85b2f778ae581dd746e551a90ed10276" name="a85b2f778ae581dd746e551a90ed10276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b2f778ae581dd746e551a90ed10276">&#9670;&#160;</a></span>StoreAbsRelation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operations_research::sat::PresolveContext::StoreAbsRelation </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>target_ref</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ref</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Stores/Get the relation target_ref = abs(ref); The first function returns false if it already exist and the second false if it is not present. </p>
-<p>Tricky: overwrite if the old value refer to a now unused variable.</p>
-
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01107">1107</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00285">285</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3158,7 +3014,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Once the relation is added, it doesn't need to be enforced by a constraint in the model proto, since we will propagate such relation directly and add them to the proto at the end of the presolve.</p>
 <dl class="section note"><dt>Note</dt><dd>this should always add a relation, even though it might need to create a new representative for both ref_x and ref_y in some cases. Like if x = 3z and y = 5t are already added, if we add x = 2y, we have 3z = 10t and can only resolve this by creating a new variable r such that z = 10r and t = 3r.</dd></dl>
 <p>All involved variables will be marked to appear in the special kAffineRelationConstraint. This will allow to identify when a variable is no longer needed (only appear there and is not a representative). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001948">Todo:</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to ref_x or ref_y and this causes issues. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001996">Todo:</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to ref_x or ref_y and this causes issues. </dd></dl>
 <p>If both are already in the same class, we need to make sure the relations are compatible.</p>
 <p>x = rx.coeff * rep + rx.offset; y = ry.coeff * rep + ry.offset; And x == coeff * ry.coeff * rep + (coeff * ry.offset + offset).</p>
 <p>So we get the relation a * rep == b with a and b defined here:</p>
@@ -3169,15 +3025,15 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Canonicalize to x = c * y + o</p>
 <p>Lets propagate domains first.</p>
 <p>To avoid corner cases where replacing x by y in a linear expression can cause overflow, we might want to canonicalize y first to avoid cases like x = c * [large_value, ...] - large_value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001949">Todo:</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001997">Todo:</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
 <p>Both these function recursively call <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#aa087429f5cddf5be6c225890f614b4f1">StoreAffineRelation()</a> but shouldn't be able to cascade (CHECKED).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001950">Todo:</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001998">Todo:</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
 <p>Lets propagate again the new relation. We might as well do it as early as possible and not all call site do it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001951">Todo:</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001999">Todo:</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
 <p>These maps should only contains representative, so only need to remap either x or y.</p>
 <p>The domain didn't change, but this notification allows to re-process any constraint containing these variables. Note that we do not need to retrigger a propagation of the constraint containing a variable whose representative didn't change.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00913">913</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00893">893</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3210,7 +3066,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>a = b</p>
 <p>a = 1 - b</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01084">1084</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01064">1064</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3247,7 +3103,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Stores the fact that literal implies var == value. It returns true if that information is new. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01401">1401</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01347">1347</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3284,7 +3140,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Stores the fact that literal implies var != value. It returns true if that information is new. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01408">1408</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01354">1354</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3328,7 +3184,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Perform the substitution.</p>
 <p>Because we can assume that the constraint we used was constraining (otherwise it would have been removed), the objective domain should be now constraining.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01806">1806</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01761">1761</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3355,7 +3211,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00569">569</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00562">562</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3378,7 +3234,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>We don't optimize the interval usage as this is not super frequent.</p>
 <p>For the variables, we avoid an erase() followed by an insert() for the variables that didn't change.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00585">585</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00565">565</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3399,7 +3255,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Calls <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#aaaebbe40a33ffb948566c7fb2ec6ad03">UpdateConstraintVariableUsage()</a> on all newly created constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00625">625</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00605">605</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3429,9 +3285,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Stores a description of a rule that was just applied to have a summary of what the presolve did at the end. </p>
-<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001946">Todo:</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
+<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001994">Todo:</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00537">537</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00517">517</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3454,12 +3310,12 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Returns true if this ref no longer appears in the model. </p>
 <p>Here, even if the variable is equivalent to others, if its affine defining constraints where removed, then it is not needed anymore. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00380">380</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00351">351</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
-<a id="aec3f9971405d9f256903cdce26033caf" name="aec3f9971405d9f256903cdce26033caf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3f9971405d9f256903cdce26033caf">&#9670;&#160;</a></span>VariableIsOnlyUsedInEncodingAndMaybeInObjective()</h2>
+<a id="a5987035843beaea2cadbd7ab5a78889a" name="a5987035843beaea2cadbd7ab5a78889a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5987035843beaea2cadbd7ab5a78889a">&#9670;&#160;</a></span>VariableIsOnlyUsedInEncodingAndMaybeInObjective()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3468,14 +3324,35 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
           <td class="memname">bool operations_research::sat::PresolveContext::VariableIsOnlyUsedInEncodingAndMaybeInObjective </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if an integer variable is only appearing in the rhs of constraints of the form lit =&gt; var in domain. When this is the case, then we can usually remove this variable and replace these constraints with the proper constraints on the enforcement literals. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00410">410</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00381">381</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+
+</div>
+</div>
+<a id="a507c1fe68c32e41d59517d951b1ea532" name="a507c1fe68c32e41d59517d951b1ea532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507c1fe68c32e41d59517d951b1ea532">&#9670;&#160;</a></span>VariableIsOnlyUsedInLinear1AndOneExtraConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::sat::PresolveContext::VariableIsOnlyUsedInLinear1AndOneExtraConstraint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Similar to <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a5987035843beaea2cadbd7ab5a78889a">VariableIsOnlyUsedInEncodingAndMaybeInObjective()</a> for the case where we have one extra constraint instead of the objective. Sometimes it is possible to transfer the linear1 domain restrictions to another variable. for instance if the other constraint is of the form Y = abs(X) or Y = X^2, then a domain restriction on Y can be transferred to X. We can then move the extra constraint to the mapping model and remove one variable. This happens on the flatzinc celar problems for instance. </p>
+
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00391">391</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3498,7 +3375,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Returns true if this ref only appear in one constraint. </p>
 <p>Tricky: If this variable is equivalent to another one (but not the representative) and appear in just one constraint, then this constraint must be the affine defining one. And in this case the code using this function should do the proper stuff. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00354">354</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00325">325</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3520,7 +3397,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Note(user): I added an indirection and a function for this to be able to display debug information when this return false. This should actually never return false in the cases where it is used. </p>
 <p>It is okay to reuse removed fixed variable.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00392">392</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00363">363</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3541,7 +3418,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a1cbe5a730a5b9ed96b24c2c123e1c346" title="Returns true if this ref only appear in one constraint.">VariableIsUniqueAndRemovable()</a> except that in this case the variable also appear in the objective in addition to a single constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00360">360</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00331">331</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3563,7 +3440,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 <p>Tricky: Same remark as for <a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html#a1cbe5a730a5b9ed96b24c2c123e1c346" title="Returns true if this ref only appear in one constraint.">VariableIsUniqueAndRemovable()</a>.</p>
 <p>Also if the objective domain is constraining, we can't have a preferred direction, so we cannot easily remove such variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00371">371</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00342">342</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3591,7 +3468,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00511">511</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00504">504</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3609,9 +3486,9 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>We need to sort the entries to be deterministic.</p>
+<p>We need to sort the entries to be deterministic. </p><dl class="section note"><dt>Note</dt><dd>&ndash;cpu_profile shows it is slightly faster to only compare key.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01975">1975</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01932">1932</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3631,7 +3508,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Some function need the domain to be up to date in the proto. This make sures our in-memory domain are writted back to the proto. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02002">2002</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01966">1966</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
 </div>
 </div>
@@ -3650,7 +3527,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Advanced presolve. See this class comment. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00603">603</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00596">596</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3667,7 +3544,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Indicate if we are allowed to remove irrelevant feasible solution from the set of feasible solution. For example, if a variable is unused, can we fix it to an arbitrary value (or its mimimum objective one)? This must be true if the client wants to enumerate all solutions or wants correct tightened bounds in the response. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00580">580</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00573">573</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3683,7 +3560,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00573">573</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00566">566</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3701,7 +3578,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Each time a domain is modified this is set to true. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00596">596</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00589">589</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3718,7 +3595,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Number of "rules" applied. This should be equal to the sum of all numbers in stats_by_rule_name. This is used to decide if we should do one more pass of the presolve or not. Note that depending on the presolve transformation, a rule can correspond to a tiny change or a big change. Because of that, this isn't a perfect proxy for the efficacy of the presolve. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00587">587</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00580">580</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3734,7 +3611,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00592">592</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00585">585</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3750,7 +3627,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00593">593</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00586">586</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3768,7 +3645,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 
 <p>Temporary storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00590">590</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00583">583</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3784,7 +3661,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00591">591</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00584">584</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3801,7 +3678,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
 </div><div class="memdoc">
 <p>Each time the constraint &lt;-&gt; variable graph is updated, we update this. A variable is added here iff its usage decreased and is now one or two. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00600">600</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00593">593</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>
@@ -3817,7 +3694,7 @@ template&lt;typename ProtoWithVarsAndCoeffs &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00572">572</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00565">565</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
 </div>
 </div>

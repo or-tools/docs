@@ -15,9 +15,7 @@ var classoperations__research_1_1sat_1_1SubSolver =
     [ "GenerateTask", "classoperations__research_1_1sat_1_1SubSolver.html#a68765bc7ed07ce93ffeddbe61ad40d65", null ],
     [ "IsDone", "classoperations__research_1_1sat_1_1SubSolver.html#a89bbc8ab83ffe5c099a6b7dbc16feeb1", null ],
     [ "name", "classoperations__research_1_1sat_1_1SubSolver.html#a9a69961d4a3133bc666ea9222012098b", null ],
-    [ "StatisticsString", "classoperations__research_1_1sat_1_1SubSolver.html#a532d61bd145619df2de4245b362a46ff", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1SubSolver.html#af8c06db9a9bd5343d209963483b5f3e8", null ],
-    [ "TableLineStats", "classoperations__research_1_1sat_1_1SubSolver.html#ae0f83026bbb08c6d0bd848300ca0659b", null ],
     [ "TaskIsAvailable", "classoperations__research_1_1sat_1_1SubSolver.html#a720cf9eb71542e931bc92cd3d5ff2bdf", null ],
     [ "TimingInfo", "classoperations__research_1_1sat_1_1SubSolver.html#a03147f5723fa17d3ce80ace93578af57", null ],
     [ "type", "classoperations__research_1_1sat_1_1SubSolver.html#a681ee26ab8eb3e27143c2275e6449dbc", null ]

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,7 +107,8 @@ Inheritance diagram for operations_research::SolutionPool:</div>
  <div class="center">
   <img src="classoperations__research_1_1SolutionPool.png" usemap="#operations_5Fresearch::SolutionPool_map" alt=""/>
   <map id="operations_5Fresearch::SolutionPool_map" name="operations_5Fresearch::SolutionPool_map">
-<area href="classoperations__research_1_1BaseObject.html" alt="operations_research::BaseObject" shape="rect" coords="0,0,205,24"/>
+<area href="classoperations__research_1_1BaseObject.html" alt="operations_research::BaseObject" shape="rect" coords="0,0,245,24"/>
+<area href="classoperations__research_1_1DefaultSolutionPool.html" alt="operations_research::DefaultSolutionPool" shape="rect" coords="0,112,245,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,6 +129,11 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1BaseObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classoperations__research_1_1BaseObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoperations__research_1_1BaseObject.html">operations_research::BaseObject</a></td></tr>
 <tr class="memitem:abcf5669a8a0612adb1665e276efb416f inherit pub_methods_classoperations__research_1_1BaseObject" id="r_abcf5669a8a0612adb1665e276efb416f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#abcf5669a8a0612adb1665e276efb416f">BaseObject</a> ()</td></tr>
 <tr class="separator:abcf5669a8a0612adb1665e276efb416f inherit pub_methods_classoperations__research_1_1BaseObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fac9a5866597912ffbe572c1453730 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_ad4fac9a5866597912ffbe572c1453730"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#ad4fac9a5866597912ffbe572c1453730">BaseObject</a> (const <a class="el" href="classoperations__research_1_1BaseObject.html">BaseObject</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ad4fac9a5866597912ffbe572c1453730 inherit pub_methods_classoperations__research_1_1BaseObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
+<tr class="separator:ad4fac9a5866597912ffbe572c1453730 inherit pub_methods_classoperations__research_1_1BaseObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43aa04bbde2d2de7ccb748651ba1468d inherit pub_methods_classoperations__research_1_1BaseObject" id="r_a43aa04bbde2d2de7ccb748651ba1468d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1BaseObject.html">BaseObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#a43aa04bbde2d2de7ccb748651ba1468d">operator=</a> (const <a class="el" href="classoperations__research_1_1BaseObject.html">BaseObject</a> &amp;)=delete</td></tr>
+<tr class="separator:a43aa04bbde2d2de7ccb748651ba1468d inherit pub_methods_classoperations__research_1_1BaseObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd95fcee9e5856c6097b5dfae0b7076 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_a9bd95fcee9e5856c6097b5dfae0b7076"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#a9bd95fcee9e5856c6097b5dfae0b7076">~BaseObject</a> ()</td></tr>
 <tr class="separator:a9bd95fcee9e5856c6097b5dfae0b7076 inherit pub_methods_classoperations__research_1_1BaseObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3b013c5063d71566d5273793c1d828 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_afb3b013c5063d71566d5273793c1d828"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#afb3b013c5063d71566d5273793c1d828">DebugString</a> () const</td></tr>
@@ -136,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to manage a pool of solutions. It can transform a single point local search into a multipoint local search. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05755">5755</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05833">5833</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0c1b8aceb7d2732914ade32de14cfc41" name="a0c1b8aceb7d2732914ade32de14cfc41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c1b8aceb7d2732914ade32de14cfc41">&#9670;&#160;</a></span>SolutionPool()</h2>
@@ -161,7 +167,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05757">5757</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05835">5835</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +194,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05758">5758</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l05836">5836</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 
 </div>
 </div>
@@ -218,6 +224,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This method is called when the local search starts a new neighborhood to initialize the default assignment. </p>
 
+<p>Implemented in <a class="el" href="classoperations__research_1_1DefaultSolutionPool.html#a23e1e888eb4b0c97454e0745a4025220">operations_research::DefaultSolutionPool</a>.</p>
+
 </div>
 </div>
 <a id="a9ad617bfec9fbc03e21cc42b562353db" name="a9ad617bfec9fbc03e21cc42b562353db"></a>
@@ -244,6 +252,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This method is called to initialize the solution pool with the assignment from the local search. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1DefaultSolutionPool.html#aee6cf565c821da1851d678f442f446df">operations_research::DefaultSolutionPool</a>.</p>
 
 </div>
 </div>
@@ -272,6 +282,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This method is called when a new solution has been accepted by the local search. </p>
 
+<p>Implemented in <a class="el" href="classoperations__research_1_1DefaultSolutionPool.html#af45875429de3271ab35a2c363f4be51b">operations_research::DefaultSolutionPool</a>.</p>
+
 </div>
 </div>
 <a id="a74b1e408425edc42af1da18009a21ec3" name="a74b1e408425edc42af1da18009a21ec3"></a>
@@ -298,6 +310,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This method checks if the local solution needs to be updated with an external one. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1DefaultSolutionPool.html#a9570039732f5601df4cb6281d05e56c7">operations_research::DefaultSolutionPool</a>.</p>
 
 </div>
 </div>

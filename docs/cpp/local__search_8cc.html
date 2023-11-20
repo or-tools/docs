@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,35 +102,34 @@ $(document).ready(function(){initNavTree('local__search_8cc.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
-<code>#include &quot;absl/memory/memory.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/random/distributions.h&quot;</code><br />
 <code>#include &quot;absl/random/random.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="hash_8h_source.html">ortools/base/hash.h</a>&quot;</code><br />
+<code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="iterator__adaptors_8h_source.html">ortools/base/iterator_adaptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">ortools/base/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__solver_8h_source.html">ortools/constraint_solver/constraint_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__solveri_8h_source.html">ortools/constraint_solver/constraint_solveri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hamiltonian__path_8h_source.html">ortools/graph/hamiltonian_path.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
 </div>
 <p><a href="local__search_8cc_source.html">Go to the source code of this file.</a></p>
@@ -199,6 +198,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearchPhaseParameters.html">operations_research::LocalSearchPhaseParameters</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">-------&mdash; Local <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> Phase Parameters -------&mdash;  <a href="classoperations__research_1_1LocalSearchPhaseParameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1LocalSearch.html">operations_research::LocalSearch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; Local search decision builder --&mdash;  <a href="classoperations__research_1_1LocalSearch.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DefaultSolutionPool.html">operations_research::DefaultSolutionPool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -277,7 +281,7 @@ Functions</h2></td></tr>
 <div class="line">        vars, secondary_vars, std::move(start_empty_path_class))); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02451">2451</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02447">2447</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -307,7 +311,7 @@ Functions</h2></td></tr>
 <div class="line">        std::move(get_neighbors)));                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02461">2461</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02457">2457</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -493,7 +497,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02848">2848</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02838">2838</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -517,7 +521,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03636">3636</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03620">3620</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -541,7 +545,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03639">3639</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03623">3623</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -565,7 +569,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03637">3637</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03621">3621</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -581,7 +585,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02844">2844</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02834">2834</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -605,7 +609,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03640">3640</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03624">3624</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -621,7 +625,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02847">2847</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02837">2837</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -645,7 +649,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03634">3634</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03618">3618</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -669,7 +673,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03635">3635</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03619">3619</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -693,7 +697,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03638">3638</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03622">3622</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -709,7 +713,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02843">2843</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02833">2833</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>

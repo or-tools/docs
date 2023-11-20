@@ -18,6 +18,7 @@ var sat_2lp__utils_8cc =
     [ "max_absolute_rhs_error", "sat_2lp__utils_8cc.html#abf913d2698d28c0b6b29b4dd13d21dcc", null ],
     [ "max_relative_coeff_error", "sat_2lp__utils_8cc.html#a2a1a02478d02cd8e42a1afece079d4a2", null ],
     [ "max_scaling_factor", "sat_2lp__utils_8cc.html#a24a6b02429aaf5b933eac21ba118ee3a", null ],
+    [ "min_scaling_factor", "sat_2lp__utils_8cc.html#aba597c7ceb53b73f8d96304693ac0f4d", null ],
     [ "scaling_target", "sat_2lp__utils_8cc.html#a29fe8faef79a8a488024bae1a14f9e37", null ],
     [ "upper_bounds", "sat_2lp__utils_8cc.html#a88215c8581662c40eec0fb8621c44af3", null ],
     [ "var_indices", "sat_2lp__utils_8cc.html#a742ae1554f2decd63d35be3e6ff4f58d", null ],

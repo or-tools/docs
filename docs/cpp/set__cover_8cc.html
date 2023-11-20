@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,6 +106,8 @@ $(document).ready(function(){initNavTree('set__cover_8cc.html',''); initResizabl
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/random/random.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="set__cover__ledger_8h_source.html">ortools/algorithms/set_cover_ledger.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="set__cover__model_8h_source.html">ortools/algorithms/set_cover_model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="set__cover__utils_8h_source.html">ortools/algorithms/set_cover_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 </div>
@@ -121,6 +123,11 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0dea6b74a905cbb0a3aa0fc168541f83" id="r_a0dea6b74a905cbb0a3aa0fc168541f83"><td class="memItemLeft" align="right" valign="top">constexpr SubsetIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0dea6b74a905cbb0a3aa0fc168541f83">operations_research::kNotFound</a> (-1)</td></tr>
 <tr class="separator:a0dea6b74a905cbb0a3aa0fc168541f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5faa60999e2952e651d494633087a4" id="r_a7a5faa60999e2952e651d494633087a4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SubsetIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7a5faa60999e2952e651d494633087a4">operations_research::ClearProportionRandomly</a> (double proportion, <a class="el" href="classoperations__research_1_1SetCoverLedger.html">SetCoverLedger</a> *ledger)</td></tr>
+<tr class="memdesc:a7a5faa60999e2952e651d494633087a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomly clears a proportion (between 0 and 1) of the solution.  <br /></td></tr>
+<tr class="separator:a7a5faa60999e2952e651d494633087a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1511ef4162a8ab00410c215905312ff4" id="r_a1511ef4162a8ab00410c215905312ff4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SubsetIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1511ef4162a8ab00410c215905312ff4">operations_research::ClearProportionRandomly</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus, double proportion, <a class="el" href="classoperations__research_1_1SetCoverLedger.html">SetCoverLedger</a> *ledger)</td></tr>
+<tr class="separator:a1511ef4162a8ab00410c215905312ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

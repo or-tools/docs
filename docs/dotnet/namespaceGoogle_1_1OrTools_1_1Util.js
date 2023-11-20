@@ -3,8 +3,6 @@ var namespaceGoogle_1_1OrTools_1_1Util =
     [ "Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", "classGoogle_1_1OrTools_1_1Util_1_1Domain" ],
     [ "Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector" ],
     [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector" ],
-    [ "IntVector", "classGoogle_1_1OrTools_1_1Util_1_1IntVector.html", "classGoogle_1_1OrTools_1_1Util_1_1IntVector" ],
-    [ "IntVectorVector", "classGoogle_1_1OrTools_1_1Util_1_1IntVectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1IntVectorVector" ],
     [ "operations_research_util", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html", null ],
     [ "operations_research_utilPINVOKE", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE" ],
     [ "OptionalBooleanReflection", "classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection.html", "classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection" ],

@@ -24,9 +24,9 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Packages",url:"namespaces.html",children:[
-{text:"Package List",url:"namespaces.html"},
-{text:"Package Members",url:"namespacemembers.html",children:[
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"},
+{text:"Namespace Members",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html",children:[
 {text:"_",url:"namespacemembers.html#index__5F"},
 {text:"a",url:"namespacemembers_a.html#index_a"},
@@ -35,6 +35,7 @@ var menudata={children:[
 {text:"d",url:"namespacemembers_d.html#index_d"},
 {text:"e",url:"namespacemembers_e.html#index_e"},
 {text:"f",url:"namespacemembers_f.html#index_f"},
+{text:"h",url:"namespacemembers_h.html#index_h"},
 {text:"i",url:"namespacemembers_i.html#index_i"},
 {text:"k",url:"namespacemembers_k.html#index_k"},
 {text:"l",url:"namespacemembers_l.html#index_l"},
@@ -66,6 +67,7 @@ var menudata={children:[
 {text:"c",url:"namespacemembers_vars_c.html#index_c"},
 {text:"d",url:"namespacemembers_vars_d.html#index_d"},
 {text:"f",url:"namespacemembers_vars_f.html#index_f"},
+{text:"h",url:"namespacemembers_vars_h.html#index_h"},
 {text:"i",url:"namespacemembers_vars_i.html#index_i"},
 {text:"k",url:"namespacemembers_vars_k.html#index_k"},
 {text:"l",url:"namespacemembers_vars_l.html#index_l"},
@@ -73,6 +75,7 @@ var menudata={children:[
 {text:"n",url:"namespacemembers_vars_n.html#index_n"},
 {text:"o",url:"namespacemembers_vars_o.html#index_o"},
 {text:"p",url:"namespacemembers_vars_p.html#index_p"},
+{text:"r",url:"namespacemembers_vars_r.html#index_r"},
 {text:"s",url:"namespacemembers_vars_s.html#index_s"},
 {text:"u",url:"namespacemembers_vars_u.html#index_u"},
 {text:"v",url:"namespacemembers_vars_v.html#index_v"}]}]}]},
@@ -136,6 +139,7 @@ var menudata={children:[
 {text:"e",url:"functions_vars.html#index_e"},
 {text:"f",url:"functions_vars.html#index_f"},
 {text:"g",url:"functions_vars.html#index_g"},
+{text:"h",url:"functions_vars.html#index_h"},
 {text:"i",url:"functions_vars.html#index_i"},
 {text:"k",url:"functions_vars.html#index_k"},
 {text:"l",url:"functions_vars.html#index_l"},

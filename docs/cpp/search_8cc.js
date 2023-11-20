@@ -19,8 +19,6 @@ var search_8cc =
     [ "penalty_factor_", "search_8cc.html#a0b1795e10c65e7f1062da14c6e63e569", null ],
     [ "reset_penalties_on_new_best_solution_", "search_8cc.html#a75d68001fdd7a0e272ef11c07f888c6f", null ],
     [ "selector_", "search_8cc.html#a55ed096f6ff13bef2f7e921ffe4dda27", null ],
-    [ "solution_count_", "search_8cc.html#a7a0fd648d588be00840a1eec10594776", null ],
-    [ "solutions_pq_", "search_8cc.html#abe4510cd6ac255bce33df03d57787ca4", null ],
     [ "solver_", "search_8cc.html#abd6bfbf6753a5deb0ce273fad6408e1e", null ],
     [ "stamp", "search_8cc.html#a8fe282323b22d8c88d1a43af8f2918f8", null ],
     [ "value", "search_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514", null ],

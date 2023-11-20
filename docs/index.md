@@ -23,7 +23,3 @@
 ### Pdoc
 
 - [ortools module](pdoc/index.html)
-
-### Doxygen
-
-- [ortools-python package](python/index.html)

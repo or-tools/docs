@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('mps__converter_8cc_source.html',''); i
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1math__opt.html#a835fbb14f80767e6a11b8c1a1bd78eae">   36</a></span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a835fbb14f80767e6a11b8c1a1bd78eae">ReadMpsFile</a>(<span class="keyword">const</span> absl::string_view filename) {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  glop::MPSReader mps_reader;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  MPModelProto mp_model;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(mps_reader.ParseFile(std::string(filename), &amp;mp_model));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(mps_reader.ParseFile(filename, &amp;mp_model));</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ab1de4bd3fc3c67de6f6a4eebbb28db5e">MPModelProtoToMathOptModel</a>(mp_model);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 </div>

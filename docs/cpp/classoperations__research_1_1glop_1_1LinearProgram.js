@@ -80,7 +80,7 @@ var classoperations__research_1_1glop_1_1LinearProgram =
     [ "SetConstraintName", "classoperations__research_1_1glop_1_1LinearProgram.html#a0ce5dadd5c001aa0fb3d9ee43a77e1a3", null ],
     [ "SetDcheckBounds", "classoperations__research_1_1glop_1_1LinearProgram.html#aca636f8ac43a667bb966ad2c8b60e119", null ],
     [ "SetMaximizationProblem", "classoperations__research_1_1glop_1_1LinearProgram.html#aff74172836cde26f5d32ff6f821c67d0", null ],
-    [ "SetName", "classoperations__research_1_1glop_1_1LinearProgram.html#ae4925a29f672719f81e97d38d40b8447", null ],
+    [ "SetName", "classoperations__research_1_1glop_1_1LinearProgram.html#a0005af2beff95d557f1488b9ebc2c710", null ],
     [ "SetObjectiveCoefficient", "classoperations__research_1_1glop_1_1LinearProgram.html#a59b06cfded47222cc0cb9e5ff79aa6c7", null ],
     [ "SetObjectiveOffset", "classoperations__research_1_1glop_1_1LinearProgram.html#a4254e7ca1351947e36a2017ed0e09cd5", null ],
     [ "SetObjectiveScalingFactor", "classoperations__research_1_1glop_1_1LinearProgram.html#a6409c98905621caab991c8e3c524907c", null ],

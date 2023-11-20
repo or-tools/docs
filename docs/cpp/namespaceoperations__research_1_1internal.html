@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -186,6 +186,10 @@ Functions</h2></td></tr>
 <tr class="memitem:adeaf341ffaa35e9a3478aeb95f2c580a" id="r_adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a> &gt; </td></tr>
 <tr class="memitem:adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#adeaf341ffaa35e9a3478aeb95f2c580a">GraphIsConnected</a> (const <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a> &amp;graph)</td></tr>
 <tr class="separator:adeaf341ffaa35e9a3478aeb95f2c580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8528c1947f16a5c6178ac8f3e7e5b7a5" id="r_a8528c1947f16a5c6178ac8f3e7e5b7a5"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a8528c1947f16a5c6178ac8f3e7e5b7a5">RegisterConstraintHandler</a> (<a class="el" href="classoperations__research_1_1GScip.html">GScip</a> *gscip, std::unique_ptr&lt; UntypedGScipConstraintHandler &gt; constraint_handler)</td></tr>
+<tr class="separator:a8528c1947f16a5c6178ac8f3e7e5b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0c3ab79e496e97c6902f16e18a86c3" id="r_a9a0c3ab79e496e97c6902f16e18a86c3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a9a0c3ab79e496e97c6902f16e18a86c3">AddCallbackConstraint</a> (<a class="el" href="classoperations__research_1_1GScip.html">GScip</a> *gscip, absl::string_view handler_name, absl::string_view constraint_name, void *constraint_data, const <a class="el" href="structoperations__research_1_1GScipConstraintOptions.html">GScipConstraintOptions</a> &amp;options)</td></tr>
+<tr class="separator:a9a0c3ab79e496e97c6902f16e18a86c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70409052918b97eb7654fc0e38a17100" id="r_a70409052918b97eb7654fc0e38a17100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1internal.html#aa59d11feb104d89d98c47bdeca47a1ae">MessageHandlerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a70409052918b97eb7654fc0e38a17100">CaptureMessageHandlerPtr</a> (SCIP_MESSAGEHDLR *const handler)</td></tr>
 <tr class="separator:a70409052918b97eb7654fc0e38a17100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a90612450d01dd31b13ebc6f3437e86" id="r_a1a90612450d01dd31b13ebc6f3437e86"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="namespaceoperations__research_1_1internal.html#aa59d11feb104d89d98c47bdeca47a1ae">MessageHandlerPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a1a90612450d01dd31b13ebc6f3437e86">MakeSCIPMessageHandler</a> (<a class="el" href="namespaceoperations__research.html#a945ce04104d59b792d343cd58eee8143">GScipMessageHandler</a> gscip_message_handler)</td></tr>
@@ -288,6 +292,54 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9a0c3ab79e496e97c6902f16e18a86c3" name="a9a0c3ab79e496e97c6902f16e18a86c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0c3ab79e496e97c6902f16e18a86c3">&#9670;&#160;</a></span>AddCallbackConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::internal::AddCallbackConstraint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1GScip.html">GScip</a> *&#160;</td>
+          <td class="paramname"><em>gscip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">absl::string_view&#160;</td>
+          <td class="paramname"><em>handler_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">absl::string_view&#160;</td>
+          <td class="paramname"><em>constraint_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>constraint_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1GScipConstraintOptions.html">GScipConstraintOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gscip__constraint__handler_8cc_source.html#l00554">554</a> of file <a class="el" href="gscip__constraint__handler_8cc_source.html">gscip_constraint_handler.cc</a>.</p>
+
+</div>
+</div>
 <a id="a90cc50c603b218efbbaeeef5c7f98d17" name="a90cc50c603b218efbbaeeef5c7f98d17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90cc50c603b218efbbaeeef5c7f98d17">&#9670;&#160;</a></span>AddCallbackConstraintImpl()</h2>
 
@@ -912,6 +964,36 @@ template&lt;typename Proto &gt; </div>
 <p>General method to read expected_num_records from a file. If expected_num_records is -1, then reads all records from the file. If not, dies if the file doesn't contain exactly expected_num_records. </p>
 
 <p class="definition">Definition at line <a class="el" href="file__util_8h_source.html#l00073">73</a> of file <a class="el" href="file__util_8h_source.html">file_util.h</a>.</p>
+
+</div>
+</div>
+<a id="a8528c1947f16a5c6178ac8f3e7e5b7a5" name="a8528c1947f16a5c6178ac8f3e7e5b7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8528c1947f16a5c6178ac8f3e7e5b7a5">&#9670;&#160;</a></span>RegisterConstraintHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::internal::RegisterConstraintHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1GScip.html">GScip</a> *&#160;</td>
+          <td class="paramname"><em>gscip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; UntypedGScipConstraintHandler &gt;&#160;</td>
+          <td class="paramname"><em>constraint_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gscip__constraint__handler_8cc_source.html#l00522">522</a> of file <a class="el" href="gscip__constraint__handler_8cc_source.html">gscip_constraint_handler.cc</a>.</p>
 
 </div>
 </div>

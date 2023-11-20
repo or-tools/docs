@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 A linear expression is built from constants and variables.
 For example, `x + 2.0 * (y - z + 1.0)`.
 
-Linear expressions are used in ModelBuilder models in constraints and in the
+Linear expressions are used in Model models in constraints and in the
 objective:
 
 * You can define linear constraints as in:
@@ -163,7 +163,7 @@ model.add(x + 2 * y &lt;= 5.0)
 model.add(sum(array_of_vars) == 5.0)
 ```
 
-* In ModelBuilder, the objective is a linear expression:
+* In Model, the objective is a linear expression:
 
 ```
 model.minimize(x + 2.0 * y + z)
@@ -178,7 +178,7 @@ model.minimize(model_builder.LinearExpr.sum(expressions))
 model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
 ```
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00066">66</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00065">65</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2ca859a9db8b3decef4f022565ea1f7e" name="a2ca859a9db8b3decef4f022565ea1f7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ca859a9db8b3decef4f022565ea1f7e">&#9670;&#160;</a></span>__add__()</h2>
@@ -206,7 +206,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00195">195</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00194">194</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00219">219</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00218">218</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
 
 <p>Reimplemented in <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#afc6725fb029bcff0e56f2af74a8dc7d0">ortools.linear_solver.python.model_builder.Variable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00222">222</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00221">221</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00225">225</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00224">224</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
 
 <p>Reimplemented in <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#ac7ea2be01921311ad0c0733af46a4fc7">ortools.linear_solver.python.model_builder.Variable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00192">192</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00191">191</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00230">230</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00229">229</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00207">207</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00206">206</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00216">216</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00215">215</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00198">198</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00197">197</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00210">210</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00209">209</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00204">204</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00203">203</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -510,7 +510,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00201">201</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00200">200</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ model.add(model_builder.LinearExpr.weighted_sum(expressions, coeffs) &gt;= 0)
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00213">213</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00212">212</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Args:
 Returns:
   a LinearExpr instance or a numerical constant.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00099">99</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00098">98</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -640,7 +640,7 @@ Args:
 Returns:
   a LinearExpr instance or a numerical constant.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00158">158</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00157">157</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -694,7 +694,7 @@ Args:
 Returns:
   a _LinearExpression instance or a numerical constant.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00125">125</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00124">124</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>

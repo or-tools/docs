@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: operations_research::sat::CompactVectorVector&lt; T &gt; Class Template Reference</title>
+<title>Google OR-Tools: operations_research::sat::CompactVectorVector&lt; K, V &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -96,49 +96,57 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1sat_1_1Co
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classoperations__research_1_1sat_1_1CompactVectorVector-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">operations_research::sat::CompactVectorVector&lt; T &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::sat::CompactVectorVector&lt; K, V &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="inclusion_8h_source.html">inclusion.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sat_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1804531e7a2f644585bf3da293f3c82a" id="r_a1804531e7a2f644585bf3da293f3c82a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a1804531e7a2f644585bf3da293f3c82a">Add</a> (absl::Span&lt; const T &gt; data)</td></tr>
-<tr class="separator:a1804531e7a2f644585bf3da293f3c82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf2905d3ea61c80e453c59026b601968" id="r_abf2905d3ea61c80e453c59026b601968"><td class="memTemplParams" colspan="2">template&lt;typename L &gt; </td></tr>
-<tr class="memitem:abf2905d3ea61c80e453c59026b601968"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#abf2905d3ea61c80e453c59026b601968">AddLiterals</a> (const std::vector&lt; L &gt; &amp;data)</td></tr>
-<tr class="separator:abf2905d3ea61c80e453c59026b601968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac1be595f87cf474d9647d32e270fd1" id="r_aaac1be595f87cf474d9647d32e270fd1"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#aaac1be595f87cf474d9647d32e270fd1">operator[]</a> (int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) const</td></tr>
-<tr class="separator:aaac1be595f87cf474d9647d32e270fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a889ccd1b1f158ddf63fc765db9ba2363" id="r_a889ccd1b1f158ddf63fc765db9ba2363"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a889ccd1b1f158ddf63fc765db9ba2363">clear</a> ()</td></tr>
-<tr class="separator:a889ccd1b1f158ddf63fc765db9ba2363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af48257b029de6fcce22e09d7a55a531f" id="r_af48257b029de6fcce22e09d7a55a531f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#af48257b029de6fcce22e09d7a55a531f">size</a> () const</td></tr>
-<tr class="separator:af48257b029de6fcce22e09d7a55a531f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f644ab0bc97480a2ce865aa3ff16d96" id="r_a8f644ab0bc97480a2ce865aa3ff16d96"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96">size</a> () const</td></tr>
+<tr class="memdesc:a8f644ab0bc97480a2ce865aa3ff16d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the "key" space, always in [0, <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a>).  <br /></td></tr>
+<tr class="separator:a8f644ab0bc97480a2ce865aa3ff16d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5783441ee26d53aabc66bf7a14c244e2" id="r_a5783441ee26d53aabc66bf7a14c244e2"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a5783441ee26d53aabc66bf7a14c244e2">operator[]</a> (K key) const</td></tr>
+<tr class="separator:a5783441ee26d53aabc66bf7a14c244e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a54dbcafd3041ca47b9f949cc19ca7b" id="r_a7a54dbcafd3041ca47b9f949cc19ca7b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; absl::Span&lt; const V &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a7a54dbcafd3041ca47b9f949cc19ca7b">AsVectorOfSpan</a> () const</td></tr>
+<tr class="separator:a7a54dbcafd3041ca47b9f949cc19ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b558855419db266994fea1fd05fce2" id="r_a25b558855419db266994fea1fd05fce2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a25b558855419db266994fea1fd05fce2">clear</a> ()</td></tr>
+<tr class="memdesc:a25b558855419db266994fea1fd05fce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore to empty vector&lt;vector&lt;&gt;&gt;.  <br /></td></tr>
+<tr class="separator:a25b558855419db266994fea1fd05fce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fb752b2ff521010114d2d240b94d62" id="r_a01fb752b2ff521010114d2d240b94d62"><td class="memTemplParams" colspan="2">template&lt;typename Keys , typename Values &gt; </td></tr>
+<tr class="memitem:a01fb752b2ff521010114d2d240b94d62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a01fb752b2ff521010114d2d240b94d62">ResetFromFlatMapping</a> (Keys keys, Values values)</td></tr>
+<tr class="separator:a01fb752b2ff521010114d2d240b94d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab457f5467d82b7cd8c542d4d5fab148c" id="r_ab457f5467d82b7cd8c542d4d5fab148c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#ab457f5467d82b7cd8c542d4d5fab148c">Add</a> (absl::Span&lt; const V &gt; values)</td></tr>
+<tr class="separator:ab457f5467d82b7cd8c542d4d5fab148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819da786a6c4c84162619e9296690982" id="r_a819da786a6c4c84162619e9296690982"><td class="memTemplParams" colspan="2">template&lt;typename L &gt; </td></tr>
+<tr class="memitem:a819da786a6c4c84162619e9296690982"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a819da786a6c4c84162619e9296690982">AddLiterals</a> (const std::vector&lt; L &gt; &amp;wrapped_values)</td></tr>
+<tr class="separator:a819da786a6c4c84162619e9296690982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class operations_research::sat::CompactVectorVector&lt; T &gt;</div><p>Small utility class to store a vector&lt;vector&lt;&gt;&gt; where one can only append new vector and never change previously added ones.</p>
-<dl class="section note"><dt>Note</dt><dd>we implement a really small subset of the vector&lt;vector&lt;&gt;&gt; API. </dd></dl>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K = int, typename V = int&gt;<br />
+class operations_research::sat::CompactVectorVector&lt; K, V &gt;</div><p>Small utility class to store a vector&lt;vector&lt;&gt;&gt; where one can only append new vector and never change previously added ones. This allows to store a static key -&gt; <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value(s)</a> mapping.</p>
+<p>This is a lot more compact memorywise and thus faster than vector&lt;vector&lt;&gt;&gt;. </p><dl class="section note"><dt>Note</dt><dd>we implement a really small subset of the vector&lt;vector&lt;&gt;&gt; API.</dd></dl>
+<p>We support int and StrongType for key K and any copyable type for value V. </p>
 
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00040">40</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00065">65</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1804531e7a2f644585bf3da293f3c82a" name="a1804531e7a2f644585bf3da293f3c82a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1804531e7a2f644585bf3da293f3c82a">&#9670;&#160;</a></span>Add()</h2>
+<a id="ab457f5467d82b7cd8c542d4d5fab148c" name="ab457f5467d82b7cd8c542d4d5fab148c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab457f5467d82b7cd8c542d4d5fab148c">&#9670;&#160;</a></span>Add()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename K , typename V &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; T &gt;::Add </td>
+          <td class="memname">int <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::Add </td>
           <td>(</td>
-          <td class="paramtype">absl::Span&lt; const T &gt;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">absl::Span&lt; const V &gt;&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -148,19 +156,19 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Same as push_back(). Returns the previous <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#af48257b029de6fcce22e09d7a55a531f">size()</a> as this is convenient for how we use it. </p>
+<p>Append a new entry. Returns the previous <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a> as this is convenient for how we use it. </p>
 
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00044">44</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00649">649</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
-<a id="abf2905d3ea61c80e453c59026b601968" name="abf2905d3ea61c80e453c59026b601968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf2905d3ea61c80e453c59026b601968">&#9670;&#160;</a></span>AddLiterals()</h2>
+<a id="a819da786a6c4c84162619e9296690982" name="a819da786a6c4c84162619e9296690982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819da786a6c4c84162619e9296690982">&#9670;&#160;</a></span>AddLiterals()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename K , typename V &gt; </div>
 <div class="memtemplate">
 template&lt;typename L &gt; </div>
 <table class="mlabels">
@@ -168,10 +176,10 @@ template&lt;typename L &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; T &gt;::AddLiterals </td>
+          <td class="memname">int <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::AddLiterals </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; L &gt; &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"><em>wrapped_values</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -181,85 +189,25 @@ template&lt;typename L &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Same as <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a1804531e7a2f644585bf3da293f3c82a">Add()</a> but for <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">sat::Literal</a> or any type from which we can get indices. </p>
+<p>Hacky: same as <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#ab457f5467d82b7cd8c542d4d5fab148c">Add()</a> but for <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">sat::Literal</a> or any type from which we can get a value type V via L.Index().<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00055">55</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00659">659</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
-<a id="a889ccd1b1f158ddf63fc765db9ba2363" name="a889ccd1b1f158ddf63fc765db9ba2363"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a889ccd1b1f158ddf63fc765db9ba2363">&#9670;&#160;</a></span>clear()</h2>
+<a id="a7a54dbcafd3041ca47b9f949cc19ca7b" name="a7a54dbcafd3041ca47b9f949cc19ca7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a54dbcafd3041ca47b9f949cc19ca7b">&#9670;&#160;</a></span>AsVectorOfSpan()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename K , typename V &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; T &gt;::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00075">75</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
-
-</div>
-</div>
-<a id="aaac1be595f87cf474d9647d32e270fd1" name="aaac1be595f87cf474d9647d32e270fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac1be595f87cf474d9647d32e270fd1">&#9670;&#160;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">absl::Span&lt; const T &gt; <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; T &gt;::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section warning"><dt>Warning</dt><dd>this is only valid until the next <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a889ccd1b1f158ddf63fc765db9ba2363">clear()</a> or <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a1804531e7a2f644585bf3da293f3c82a">Add()</a> call. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00066">66</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
-
-</div>
-</div>
-<a id="af48257b029de6fcce22e09d7a55a531f" name="af48257b029de6fcce22e09d7a55a531f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af48257b029de6fcce22e09d7a55a531f">&#9670;&#160;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; T &gt;::size </td>
+          <td class="memname">std::vector&lt; absl::Span&lt; const V &gt; &gt; <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::AsVectorOfSpan </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -272,12 +220,155 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00081">81</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00693">693</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a id="a25b558855419db266994fea1fd05fce2" name="a25b558855419db266994fea1fd05fce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b558855419db266994fea1fd05fce2">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restore to empty vector&lt;vector&lt;&gt;&gt;. </p>
+
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00702">702</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a id="a5783441ee26d53aabc66bf7a14c244e2" name="a5783441ee26d53aabc66bf7a14c244e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5783441ee26d53aabc66bf7a14c244e2">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Span&lt; const V &gt; <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">K&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Getters, either via [] or via a wrapping to be compatible with older api.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Spans are only valid until the next modification! </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00681">681</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a id="a01fb752b2ff521010114d2d240b94d62" name="a01fb752b2ff521010114d2d240b94d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01fb752b2ff521010114d2d240b94d62">&#9670;&#160;</a></span>ResetFromFlatMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<div class="memtemplate">
+template&lt;typename Keys , typename Values &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::ResetFromFlatMapping </td>
+          <td>(</td>
+          <td class="paramtype">Keys&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Values&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given a flat mapping (keys[i] -&gt; values[i]) with two parallel vectors, not necessarily sorted by key, regroup the same key so that <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">CompactVectorVector</a>[key] list all values in the order in which they appear.</p>
+<p>We only check keys.size(), so this can be used with IdentityMap() as second argument. </p>
+<p>Compute maximum index.</p>
+<p>Compute sizes_;</p>
+<p>Compute starts_;</p>
+<p>Copy data and uses starts as temporary indices.</p>
+<p>Restore starts_.</p>
+
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00715">715</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+
+</div>
+</div>
+<a id="a8f644ab0bc97480a2ce865aa3ff16d96" name="a8f644ab0bc97480a2ce865aa3ff16d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f644ab0bc97480a2ce865aa3ff16d96">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector</a>&lt; K, V &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of the "key" space, always in [0, <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00709">709</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ortools/sat/<a class="el" href="inclusion_8h_source.html">inclusion.h</a></li>
+<li>ortools/sat/<a class="el" href="sat_2util_8h_source.html">util.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

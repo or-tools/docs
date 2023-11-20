@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -129,7 +129,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01071">1071</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01079">1079</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a22e344b9350c29a38797ae6dd786dd50" name="a22e344b9350c29a38797ae6dd786dd50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22e344b9350c29a38797ae6dd786dd50">&#9670;&#160;</a></span>AtMostOne</h2>
@@ -143,7 +143,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01075">1075</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01083">1083</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -159,7 +159,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01073">1073</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01081">1081</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01077">1077</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01085">1085</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01081">1081</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01089">1089</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -259,10 +259,10 @@ Public Attributes</h2></td></tr>
 <p>If the first node is not settled, then we do explore the at_most_one constraint again. In "Mixed-Integer-Programming:
 Analyzing 12 years of progress", Tobias Achterberg and Roland Wunderling explains that an at most one need to be looped over at most twice. I am not sure exactly how that works, so for now we are not fully linear, but on actual instances, we only rarely run into this case.</p>
 <dl class="section note"><dt>Note</dt><dd>we change the previous node to explore at most one since the current node will be settled before the old ones.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001021">Todo:</a></b></dt><dd>(user): avoid looping more than twice on the same at most one constraints? Note that the second time we loop we have x =&gt; y =&gt; not(x), so we can already detect that x must be false which we detect below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001027">Todo:</a></b></dt><dd>(user): avoid looping more than twice on the same at most one constraints? Note that the second time we loop we have x =&gt; y =&gt; not(x), so we can already detect that x must be false which we detect below. </dd></dl>
 <p>The first node is already settled and so are all its child. Only not(first_node) might still need exploring.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01089">1089</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01097">1097</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ Analyzing 12 years of progress", Tobias Achterberg and Roland Wunderling explain
 
 <p>All these literals where detected to be true during the SCC computation. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01161">1161</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01169">1169</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Analyzing 12 years of progress", Tobias Achterberg and Roland Wunderling explain
 
 <p>For the deterministic time. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01164">1164</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01172">1172</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>

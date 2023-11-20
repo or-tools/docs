@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -144,7 +144,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A variable X is say to dominate a variable Y if, from any feasible solution, doing X++ and Y&ndash; is also feasible (modulo the domain of X and Y) and has the same or a better objective value.</p>
 <dl class="section note"><dt>Note</dt><dd>we also look for dominance between the negation of the variables. So we detect all (X++, Y++), (X&ndash;, Y&ndash;), (X++, Y&ndash;) and (X&ndash;, Y++) cases. We reuse both ref / Negated(ref) and translate that to IntegerVariable for indexing vectors.</dd></dl>
 <p>Once detected, dominance relation can lead to more propagation. Note however, that we will loose feasible solution that are dominated by better solutions. In particular, in a linear constraint sum coeff * Xi &lt;= rhs with positive coeff, if an X is dominated by a set of other variable in the constraint, then its upper bound can be propagated assuming the dominating variables are at their upper bound. This can in many case result in X being fixed to its lower bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002247">Todo:</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002289">Todo:</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00052">52</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -200,7 +200,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00090">90</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00093">93</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00142">142</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00145">145</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00149">149</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00152">152</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This is true if this variable was never restricted by any call. We can thus fix it to its lower bound. Note that we don't do that here as the <a class="el" href="classoperations__research_1_1sat_1_1DualBoundStrengthening.html">DualBoundStrengthening</a> class will take care of that. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00512">512</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00519">519</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00516">516</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00523">523</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The coeffs vector can be left empty, in which case all variable are assumed to have the same coefficients. <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#a55e1d3cb58c8d3e25617c6b5888df6ad">CanOnlyDominateEachOther()</a> is basically the same as <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#ae473ae1114ce48cf3addfb771f276b38">ActivityShouldNotChange()</a> without any coefficients.</p>
 <p>Note(user): It is better complexity wise to first refine the underlying partition as much as possible, and then process all <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#a916b708397a6873c225eebae2d033241">ActivityShouldNotIncrease()</a> and <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#aeac9827a72865e95037801d56db841b1">ActivityShouldNotDecrease()</a> in two passes. Experiment with it, it might require changing the API slightly since the increase / decrease functions also refine the partition. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00080">80</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00083">83</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a set of variable dominating the given ones. Note that to keep the algo efficient, this might not include all the possible dominations.</p>
 <dl class="section note"><dt>Note</dt><dd>we never include as part of the dominating candidate variables that can freely increase. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00528">528</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00535">535</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00533">533</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00540">540</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns readable string with the possible valid combinations of the form (var++/&ndash;, dom++/&ndash;) to facilitate debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00540">540</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00547">547</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -429,23 +429,21 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> must be called once all constraints have been processed once. One then needs to redo the calls to <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#a916b708397a6873c225eebae2d033241">ActivityShouldNotIncrease()</a> and <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#aeac9827a72865e95037801d56db841b1">ActivityShouldNotDecrease()</a>. And finally call <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a> before querying the domination information.</p>
 <p>If <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> return false, there is no point continuing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002224">Todo:</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002270">Todo:</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
 <p>Some initial lists ar too long and will be cropped to this size. We will handle them slightly differently.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002225">Todo:</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002271">Todo:</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
 <p>Fill the initial domination candidates.</p>
-<p>We start with the partition part. </p><dl class="section note"><dt>Note</dt><dd>all constraint will be filtered again in the second pass.</dd></dl>
-<p>This is to limit the complexity to 1k * num_vars. We fill the list with dummy node so that the heuristic below will fill it with potential transpose candidates.</p>
-<p>We do not want too many candidates per variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002226">Todo:</a></b></dt><dd>(user): randomize? </dd></dl>
-<p>Copy the one that are in the same partition_ part.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002227">Todo:</a></b></dt><dd>(user): This can be too long maybe? even if we have list of at most 1000 at this point, see InitializeUsingTempRanks(). </dd></dl>
-<p>We do not want too many candidates per variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002228">Todo:</a></b></dt><dd>(user): randomize? </dd></dl>
-<p>Heuristic: To try not to remove domination relations corresponding to short lists during transposition (see <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a>), we fill half of the cropped list with the transpose of the short list relations. This helps finding more relation in the presence of cropped lists.</p>
+<p>Two modes, either we scan the full list, or a small subset of it. Not that low variable indices should appear first, so it is better not to randomize.</p>
+<p>Heuristic: To try not to remove domination relations corresponding to short lists during transposition (see <a class="el" href="classoperations__research_1_1sat_1_1VarDomination.html#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a>), we fill the cropped list with the transpose of the short list relations. This helps finding more relation in the presence of cropped lists.</p>
+<p>Compute how many extra space we need for transposed values. </p><dl class="section note"><dt>Note</dt><dd>it cannot be more than twice.</dd></dl>
+<p>Copy into a new buffer.</p>
+<p>Fill the free spaces with transposed values. But do not use new values !</p>
 <p>Remove any duplicates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002229">Todo:</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002272">Todo:</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
 <p>We no longer need the first phase memory.</p>
 <p>A second phase is only needed if there are some potential dominance relations.</p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00219">219</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00217">217</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -469,7 +467,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Pass 3: transpose.</p>
 <p>Pass 4: intersect.</p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00352">352</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00359">359</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>
@@ -547,7 +545,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the class to a clean state. At the beginning, we assume that there is no constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00050">50</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00052">52</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
 
 </div>
 </div>

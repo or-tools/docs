@@ -1,7 +1,7 @@
 var math__opt__proto__utils_8cc =
 [
     [ "ApplyAllFilters", "math__opt__proto__utils_8cc.html#ae492beecf00c5bcfab49f0eb64bd5467", null ],
-    [ "CutoffTerminationProto", "math__opt__proto__utils_8cc.html#ad6065f869228e0b5544c2ddd2a5c3b26", null ],
+    [ "CutoffTerminationProto", "math__opt__proto__utils_8cc.html#a83249de0e912dcd5d351fda61b0cf6c1", null ],
     [ "EventSet", "math__opt__proto__utils_8cc.html#a3a25afd17af174d34cc833c9de987f9a", null ],
     [ "FeasibleTermination", "math__opt__proto__utils_8cc.html#a06f70319c3f435d923d74912576b77e6", null ],
     [ "FeasibleTerminationProto", "math__opt__proto__utils_8cc.html#a614c1a306a138f7593f4ae84dbf034c9", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['unactivelns_0',['UNACTIVELNS',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a5b0290f90a9ab2956bc79d7dbd2d14d7',1,'ortools::constraint_solver::pywrapcp::Solver']]],
-  ['unbounded_1',['UNBOUNDED',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a2358d3071e28b90eaf61e973ac667d1a',1,'ortools::linear_solver::pywraplp::Solver']]],
-  ['unknown_2',['UNKNOWN',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a0d7ec85f0667ae3498caf24d368c447f',1,'ortools::sat::python::cp_model']]]
+  ['twoopt_0',['TWOOPT',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a9f8fc445ccff9c1a89e7acb3fb1cf84b',1,'ortools::constraint_solver::pywrapcp::Solver']]],
+  ['type_5fadded_5fto_5fvehicle_1',['TYPE_ADDED_TO_VEHICLE',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#a54c863e86ba48af48d88ee0bf1f361f7',1,'ortools::constraint_solver::pywrapcp::RoutingModel']]],
+  ['type_5fon_5fvehicle_5fup_5fto_5fvisit_2',['TYPE_ON_VEHICLE_UP_TO_VISIT',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#acb92186040883339e7353c67f76fc457',1,'ortools::constraint_solver::pywrapcp::RoutingModel']]],
+  ['type_5fsimultaneously_5fadded_5fand_5fremoved_3',['TYPE_SIMULTANEOUSLY_ADDED_AND_REMOVED',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#aef9b2ff74f610d87aea8fa1a5f9bff04',1,'ortools::constraint_solver::pywrapcp::RoutingModel']]]
 ];

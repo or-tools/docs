@@ -1,6 +1,7 @@
 var classoperations__research_1_1SearchLimit =
 [
     [ "SearchLimit", "classoperations__research_1_1SearchLimit.html#ae853c8ceb480c9d8e8ba355108c9b816", null ],
+    [ "SearchLimit", "classoperations__research_1_1SearchLimit.html#a94763a53ef13a1a8525dc1b93556d847", null ],
     [ "~SearchLimit", "classoperations__research_1_1SearchLimit.html#a0fe1a712b9cd0ea7dbb96a590d1684f7", null ],
     [ "BeginNextDecision", "classoperations__research_1_1SearchLimit.html#a45bf327a0b078dd249b381c7bf204b23", null ],
     [ "Check", "classoperations__research_1_1SearchLimit.html#a9d6d238836d1b637ea17d0dffb4d6226", null ],
@@ -12,6 +13,7 @@ var classoperations__research_1_1SearchLimit =
     [ "Init", "classoperations__research_1_1SearchLimit.html#aabfdc25c6657291757a2230513d51162", null ],
     [ "Install", "classoperations__research_1_1SearchLimit.html#abe2ab6fa0ea0f51e448e72a6d59bffab", null ],
     [ "MakeClone", "classoperations__research_1_1SearchLimit.html#afcf11eeb2c28f15ab9ae44dcfe6684ff", null ],
+    [ "operator=", "classoperations__research_1_1SearchLimit.html#ace6d49028cf2c657fdca768b4c76110b", null ],
     [ "PeriodicCheck", "classoperations__research_1_1SearchLimit.html#a5e78de48144b2c4446fb2847a525a061", null ],
     [ "RefuteDecision", "classoperations__research_1_1SearchLimit.html#aed290d8d1eafbf0565bb0b210449ebff", null ]
 ];

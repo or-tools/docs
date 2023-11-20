@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -195,7 +195,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="CpSolverResponseOrBuilder_8java_source.html#l00006">6</a> of file <a class="el" href="CpSolverResponseOrBuilder_8java_source.html">CpSolverResponseOrBuilder.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpSolverResponseOrBuilder_8java_source.html#l00007">7</a> of file <a class="el" href="CpSolverResponseOrBuilder_8java_source.html">CpSolverResponseOrBuilder.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abdd469a3ed645b48e742d87e82a7f799" name="abdd469a3ed645b48e742d87e82a7f799"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdd469a3ed645b48e742d87e82a7f799">&#9670;&#160;</a></span>getAdditionalSolutions()</h2>
@@ -591,7 +591,10 @@ the ones given to callbacks.
 </div><div class="memdoc">
 <pre>
 Some statistics about the solve.
-TODO(user): These are broken in multi-thread.
+
+Important: in multithread, this correspond the statistics of the first
+subsolver. Which is usually the one with the user defined parameters. Or
+the default-search if none are specified.
 </pre><p><code>int64 num_integers = 30;</code> </p><dl class="section return"><dt>Returns</dt><dd>The numIntegers. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse.html#a33978e91f002f8a2d3086f2a7aeec473">com.google.ortools.sat.CpSolverResponse</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponse_1_1Builder.html#a9fceecdcabdd3ee99a5aa12d860646f6">com.google.ortools.sat.CpSolverResponse.Builder</a>.</p>

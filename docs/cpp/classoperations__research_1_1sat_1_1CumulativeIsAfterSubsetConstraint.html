@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Given that the "tasks" are part of a cumulative constraint, this adds a constraint that propagate the fact that: var &gt;= <a class="el" href="alldiff__cst_8cc.html#a26e6db9bcc64b584051ecc28171ed11f">max(end of substasks)</a> + offset.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001446">Todo:</a></b></dt><dd>(user): I am not sure this is the best way, but it does at least push the level zero bound on the large cumulative instances. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001462">Todo:</a></b></dt><dd>(user): I am not sure this is the best way, but it does at least push the level zero bound on the large cumulative instances. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cumulative__energy_8h_source.html#l00080">80</a> of file <a class="el" href="cumulative__energy_8h_source.html">cumulative_energy.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00218">218</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00217">217</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
 
 </div>
 </div>
@@ -224,13 +224,13 @@ Public Member Functions</h2></td></tr>
 <p>Skip tasks not relevant for this propagator.</p>
 <p>We prefer higher time in case of ties since that should reduce the explanation size.</p>
 <dl class="section note"><dt>Note</dt><dd>if the energy is zero, we don't push anything. Other propagator will make sure that the end_min is greater than the end_min of any of the task considered here. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001445">Todo:</a></b></dt><dd>(user): actually, we will push using the last task, and the reason will be non-optimal, fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001461">Todo:</a></b></dt><dd>(user): actually, we will push using the last task, and the reason will be non-optimal, fix. </dd></dl>
 <p>Compute the reason. It is just the reason for the energy after time.</p>
 <p>Propagate.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00237">237</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00236">236</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00354">354</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cumulative__energy_8cc_source.html#l00353">353</a> of file <a class="el" href="cumulative__energy_8cc_source.html">cumulative_energy.cc</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,6 +107,11 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1NearestNe
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66b5befc40263f11a42ca90436da6d06" id="r_a66b5befc40263f11a42ca90436da6d06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1NearestNeighbors.html#a66b5befc40263f11a42ca90436da6d06">NearestNeighbors</a> (<a class="el" href="classoperations__research_1_1Solver.html#a5bf3807c5a2888711aeb103500337d65">Solver::IndexEvaluator3</a> evaluator, const <a class="el" href="classoperations__research_1_1PathOperator.html">PathOperator</a> &amp;path_operator, int size)</td></tr>
 <tr class="separator:a66b5befc40263f11a42ca90436da6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6c45d2c0b6ac08025b98e115d71f97" id="r_a5f6c45d2c0b6ac08025b98e115d71f97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1NearestNeighbors.html#a5f6c45d2c0b6ac08025b98e115d71f97">NearestNeighbors</a> (const <a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a5f6c45d2c0b6ac08025b98e115d71f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
+<tr class="separator:a5f6c45d2c0b6ac08025b98e115d71f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf715e99d24ff6f444f7b523011dacc" id="r_adcf715e99d24ff6f444f7b523011dacc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1NearestNeighbors.html#adcf715e99d24ff6f444f7b523011dacc">operator=</a> (const <a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp;)=delete</td></tr>
+<tr class="separator:adcf715e99d24ff6f444f7b523011dacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab348b1e49e130de069ce321f051cf04d" id="r_ab348b1e49e130de069ce321f051cf04d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1NearestNeighbors.html#ab348b1e49e130de069ce321f051cf04d">~NearestNeighbors</a> ()</td></tr>
 <tr class="separator:ab348b1e49e130de069ce321f051cf04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61cd5ece87302a1054745def342cf71" id="r_af61cd5ece87302a1054745def342cf71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1NearestNeighbors.html#af61cd5ece87302a1054745def342cf71">Initialize</a> ()</td></tr>
@@ -120,10 +125,10 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>--&mdash; Lin Kernighan --&mdash; </p>
 <p>For each variable in vars, stores the 'size' pairs(i,j) with the smallest value according to evaluator, where i is the index of the variable in vars and j is in the domain of the variable. </p><dl class="section note"><dt>Note</dt><dd>the resulting pairs are sorted. Works in O(size) per variable on average (same approach as qsort) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01736">1736</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01731">1731</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a66b5befc40263f11a42ca90436da6d06" name="a66b5befc40263f11a42ca90436da6d06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b5befc40263f11a42ca90436da6d06">&#9670;&#160;</a></span>NearestNeighbors()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b5befc40263f11a42ca90436da6d06">&#9670;&#160;</a></span>NearestNeighbors() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +159,35 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01758">1758</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01756">1756</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5f6c45d2c0b6ac08025b98e115d71f97" name="a5f6c45d2c0b6ac08025b98e115d71f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6c45d2c0b6ac08025b98e115d71f97">&#9670;&#160;</a></span>NearestNeighbors() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">operations_research::NearestNeighbors::NearestNeighbors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This type is neither copyable nor movable. </p>
 
 </div>
 </div>
@@ -227,9 +260,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000213">Todo:</a></b></dt><dd>(user): recompute if node changes path ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000215">Todo:</a></b></dt><dd>(user): recompute if node changes path ? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01765">1765</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01763">1763</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
 </div>
 </div>
@@ -249,7 +282,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01776">1776</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01774">1774</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="adcf715e99d24ff6f444f7b523011dacc" name="adcf715e99d24ff6f444f7b523011dacc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf715e99d24ff6f444f7b523011dacc">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp; operations_research::NearestNeighbors::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1NearestNeighbors.html">NearestNeighbors</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

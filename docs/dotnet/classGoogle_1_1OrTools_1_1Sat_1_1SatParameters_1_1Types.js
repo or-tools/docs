@@ -60,7 +60,8 @@ var classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types =
       [ "PseudoCostSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67a35542c30fe22d024e4b0095e5f0effa4", null ],
       [ "PortfolioWithQuickRestartSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67a62f64b53832f83357dcc1d2a1eb4eb43", null ],
       [ "HintSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67ae8708c323f02f30cb10e52cd9a4781e5", null ],
-      [ "PartialFixedSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67ab8983b809aff6e7550a41004cc64713e", null ]
+      [ "PartialFixedSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67ab8983b809aff6e7550a41004cc64713e", null ],
+      [ "RandomizedSearch", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67acb540afd463af068fe774e6ce5c25d30", null ]
     ] ],
     [ "SharedTreeSplitStrategy", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13", [
       [ "SplitStrategyAuto", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#ad55b3562aba21ca0d9776e1adf409e13a288245383e545c6b31e337000b243574", null ],

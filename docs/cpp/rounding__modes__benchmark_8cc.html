@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 
 <p>Returns the contents of the floating-point control register. </p>
 <p>Making it a little bit faster. Supported only on x86-64 for now. We use intrinsics to only touch the non-x87 FP rounding modes. Contrary to fesetround, it does nothing about x87 rounding mode. This is safe because we reset the status to what it was right after performing the operation. Also, we store the previous status, and therefore minimize the number of reads from the status register. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002278">Todo:</a></b></dt><dd>(user): implement for other architectures. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002321">Todo:</a></b></dt><dd>(user): implement for other architectures. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="rounding__modes__benchmark_8cc_source.html#l00154">154</a> of file <a class="el" href="rounding__modes__benchmark_8cc_source.html">rounding_modes_benchmark.cc</a>.</p>
 

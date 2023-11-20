@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00301">301</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00306">306</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a55f5dae5179ae4f88c9ee04b51a43c78" name="a55f5dae5179ae4f88c9ee04b51a43c78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55f5dae5179ae4f88c9ee04b51a43c78">&#9670;&#160;</a></span>BoundedVariableElimination()</h2>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00303">303</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00308">308</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
 
 </div>
 </div>
@@ -158,15 +158,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>We ignore redundant clause. This shouldn't cause any validity issue. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002062">Todo:</a></b></dt><dd>(user): but we shouldn't keep clauses containing removed literals. It is still valid to do so, but it should be less efficient. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002063">Todo:</a></b></dt><dd>(user): add a local dtime limit for the corner case where this take too much time. We can adapt the limit depending on how much we want to spend on inprocessing. </dd></dl>
+<p>We ignore redundant clause. This shouldn't cause any validity issue. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002111">Todo:</a></b></dt><dd>(user): but we shouldn't keep clauses containing removed literals. It is still valid to do so, but it should be less efficient. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002112">Todo:</a></b></dt><dd>(user): add a local dtime limit for the corner case where this take too much time. We can adapt the limit depending on how much we want to spend on inprocessing. </dd></dl>
 <p>Make sure we fix variables first if needed. Note that because new binary clause might appear when we fix variables, we need a loop here.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002064">Todo:</a></b></dt><dd>(user): we might also find new equivalent variable l =&gt; var =&gt; l here, but for now we ignore those. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002113">Todo:</a></b></dt><dd>(user): we might also find new equivalent variable l =&gt; var =&gt; l here, but for now we ignore those. </dd></dl>
 <p>Currently we never re-add top if we just processed it.</p>
 <p>Remove all redundant clause containing a removed literal. This avoid to re-introduce a removed literal via conflict learning.</p>
 <p>Release some memory.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l01095">1095</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l01092">1092</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>

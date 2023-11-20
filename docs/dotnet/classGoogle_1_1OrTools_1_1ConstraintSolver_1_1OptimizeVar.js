@@ -2,7 +2,6 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar =
 [
     [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a942e197513c3d9274c2b5c3b0fe142f2", null ],
     [ "OptimizeVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a9d4cdf46d0e051bebc6be67d6bc7e8b7", null ],
-    [ "AcceptDelta", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a347a24891d2bf68ca17298ac3a241dd8", null ],
     [ "AcceptSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a7c38553ef38736163eada9bcf148559e", null ],
     [ "ApplyBound", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#abba8f6bdebbb9f5e1a47fae22a47f6a7", null ],
     [ "AtSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1OptimizeVar.html#a175b411f38f634714ea0b6dac361f117", null ],

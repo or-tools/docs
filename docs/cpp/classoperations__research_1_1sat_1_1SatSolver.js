@@ -53,6 +53,7 @@ var classoperations__research_1_1sat_1_1SatSolver =
     [ "operator=", "classoperations__research_1_1sat_1_1SatSolver.html#ab044c123d6e5222d758c78d5a1cb9f18", null ],
     [ "parameters", "classoperations__research_1_1sat_1_1SatSolver.html#a8904d8354eb343b3d0cc598a02f4140c", null ],
     [ "ProblemIsPureSat", "classoperations__research_1_1sat_1_1SatSolver.html#a65164219036d2b3a2155164145af413d", null ],
+    [ "ProcessCurrentConflict", "classoperations__research_1_1sat_1_1SatSolver.html#a3afed23ec8289b170f0a25ec4b10dd84", null ],
     [ "ProcessNewlyFixedVariables", "classoperations__research_1_1sat_1_1SatSolver.html#a52e24044eed32b555fd94b40b8f6423c", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1SatSolver.html#a9188c70cc1096900a623a26319a1d4b8", null ],
     [ "ReapplyAssumptionsIfNeeded", "classoperations__research_1_1sat_1_1SatSolver.html#a82300521f18442372bb16efd01463cd9", null ],

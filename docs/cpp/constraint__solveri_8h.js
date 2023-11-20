@@ -25,7 +25,7 @@ var constraint__solveri_8h =
     [ "operations_research::PathOperator", "classoperations__research_1_1PathOperator.html", "classoperations__research_1_1PathOperator" ],
     [ "operations_research::PathOperator::IterationParameters", "structoperations__research_1_1PathOperator_1_1IterationParameters.html", "structoperations__research_1_1PathOperator_1_1IterationParameters" ],
     [ "operations_research::LocalSearchState", "classoperations__research_1_1LocalSearchState.html", "classoperations__research_1_1LocalSearchState" ],
-    [ "operations_research::LocalSearchVariable", "classoperations__research_1_1LocalSearchVariable.html", "classoperations__research_1_1LocalSearchVariable" ],
+    [ "operations_research::LocalSearchState::Variable", "classoperations__research_1_1LocalSearchState_1_1Variable.html", "classoperations__research_1_1LocalSearchState_1_1Variable" ],
     [ "operations_research::LocalSearchFilter", "classoperations__research_1_1LocalSearchFilter.html", "classoperations__research_1_1LocalSearchFilter" ],
     [ "operations_research::LocalSearchFilterManager", "classoperations__research_1_1LocalSearchFilterManager.html", "classoperations__research_1_1LocalSearchFilterManager" ],
     [ "operations_research::LocalSearchFilterManager::FilterEvent", "structoperations__research_1_1LocalSearchFilterManager_1_1FilterEvent.html", "structoperations__research_1_1LocalSearchFilterManager_1_1FilterEvent" ],

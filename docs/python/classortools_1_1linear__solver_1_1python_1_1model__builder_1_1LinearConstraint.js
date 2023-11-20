@@ -4,6 +4,7 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstrai
     [ "__repr__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#a125120ade4c771f248ea3600bf484217", null ],
     [ "__str__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#ad126149785eb823630121c3431e946a7", null ],
     [ "add_term", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#ae2e528bf81c1cc5a140a19a4fe106a71", null ],
+    [ "clear_terms", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#aec4447a8f7acfaf8808eb707d5d65ab4", null ],
     [ "helper", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#ad5ba71a88e8d6759c0b04a04c1c0dcd7", null ],
     [ "index", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#a7fe90c3e0448aaa1da733d384f802b7c", null ],
     [ "is_always_false", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html#ab5020e71c4d6d9c0b43a56f2b3ab02f0", null ],

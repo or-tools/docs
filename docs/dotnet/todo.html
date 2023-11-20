@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -104,23 +104,21 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html#a3e5087102487bbd9a69cc1a1325a001a">Google.OrTools.Bop.BopParameters.UseSymmetry</a>  </dt>
 <dd><a class="anchor" id="_todo000002"></a>(user): turn this on by default once the symmetry finder becomes fast enough to be negligeable for most problem. Or at least support a time limit.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimitParameters.html#ace558647e00d97a7d4d0ed6a1d7e592e">Google.OrTools.ConstraintSolver.RegularLimitParameters.Time</a>  </dt>
-<dd><a class="anchor" id="_todo000005"></a>(user): Specify the time units or switch to google.Duration proto.  </dd>
+<dd><a class="anchor" id="_todo000006"></a>(user): Specify the time units or switch to google.Duration proto.  </dd>
+<dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a60b3c7f308fb59e0821ca71461cfff50">Google.OrTools.ConstraintSolver.RoutingSearchParameters.SecondaryLsTimeLimitRatio</a>  </dt>
+<dd><a class="anchor" id="_todo000004"></a>(user): Since these operators are very fast, add a parameter to cap the max time allocated for this second phase (e.g. Duration max_secondary_ls_time_limit).  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1LocalSearchNeighborhoodOperators.html#af954dce9909183f78097f60084f37603">Google.OrTools.ConstraintSolver.RoutingSearchParameters.Types.LocalSearchNeighborhoodOperators.UseCrossExchange</a>  </dt>
-<dd><a class="anchor" id="_todo000004"></a>(b/68128619): Implement.  </dd>
+<dd><a class="anchor" id="_todo000005"></a>(b/68128619): Implement.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#a08b09c2d455692f2ceb47107d3f9b578">Google.OrTools.Glop.GlopParameters.DualSmallPivotThreshold</a>  </dt>
-<dd><a class="anchor" id="_todo000008"></a>(user): Clean this up and use the same small pivot detection.  </dd>
+<dd><a class="anchor" id="_todo000009"></a>(user): Clean this up and use the same small pivot detection.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#a993f1dc0429d28810c74912b94666029">Google.OrTools.Glop.GlopParameters.MaxDeterministicTime</a>  </dt>
-<dd><a class="anchor" id="_todo000007"></a>(user): Improve the correlation.  </dd>
+<dd><a class="anchor" id="_todo000008"></a>(user): Improve the correlation.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#aa044e3079bf7b91d21a27ac814b698c1">Google.OrTools.Glop.GlopParameters.RatioTestZeroThreshold</a>  </dt>
-<dd><a class="anchor" id="_todo000006"></a>(user): Automatically increase it when we detect that the precision of the Solve() is worse than this.  </dd>
+<dd><a class="anchor" id="_todo000007"></a>(user): Automatically increase it when we detect that the precision of the Solve() is worse than this.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#a2a0ef225585f5a3f6b558f0155070782">Google.OrTools.Glop.GlopParameters.UseDedicatedDualFeasibilityAlgorithm</a>  </dt>
-<dd><a class="anchor" id="_todo000009"></a>(user): For now we have both, but ideally the non-dedicated version will win since it is a lot less code to maintain.  </dd>
-<dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a2565ea5dca78edd8ba42c12bcd07e148">Google.OrTools.Sat.ConstraintProto.IntProd</a>  </dt>
-<dd><a class="anchor" id="_todo000017"></a>(user): Support more than two terms in the product.  </dd>
+<dd><a class="anchor" id="_todo000010"></a>(user): For now we have both, but ideally the non-dedicated version will win since it is a lot less code to maintain.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1CpObjectiveProto.html#a3343e416b321266ec2628f568e87302a">Google.OrTools.Sat.CpObjectiveProto.ScalingWasExact</a>  </dt>
 <dd><a class="anchor" id="_todo000018"></a>(user): Put the error bounds we computed instead?  </dd>
-<dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse.html#a399dccfd477140ba9dd63b53745e8afe">Google.OrTools.Sat.CpSolverResponse.NumIntegers</a>  </dt>
-<dd><a class="anchor" id="_todo000022"></a>(user): These are broken in multi-thread.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse.html#a1cd81adae8275d2fd1a2707f3094a4f3">Google.OrTools.Sat.CpSolverResponse.SufficientAssumptionsForInfeasibility</a>  </dt>
 <dd><a class="anchor" id="_todo000021"></a>(user): Allows for returning multiple core at once.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html#a855a897b1424cc769df01ae2aa6f2b80">Google.OrTools.Sat.DecisionStrategyProto.Types.DomainReductionStrategy</a>  </dt>
@@ -128,35 +126,35 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html#af4bf1a876161cbdf793093bf5e029c18">Google.OrTools.Sat.DecisionStrategyProto.Types.VariableSelectionStrategy</a>  </dt>
 <dd><a class="anchor" id="_todo000019"></a>(user): extend as needed.  </dd>
 <dt>Class <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html">Google.OrTools.Sat.RoutesConstraintProto</a>  </dt>
-<dd><a class="anchor" id="_todo000015"></a>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem.  </dd>
+<dd><a class="anchor" id="_todo000016"></a>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a412b3606791f6e626ebbc8d01ea44475">Google.OrTools.Sat.RoutesConstraintProto.Demands</a>  </dt>
-<dd><a class="anchor" id="_todo000016"></a>(user): Ideally, we should be able to extract any dimension like these (i.e. capacity, route_length, etc..) automatically from the encoding. The classical way to encode that is to have "current_capacity" variables along the route and linear equations of the form: arc_literal =&gt; (current_capacity_tail + demand &lt;= current_capacity_head)  </dd>
+<dd><a class="anchor" id="_todo000017"></a>(user): Ideally, we should be able to extract any dimension like these (i.e. capacity, route_length, etc..) automatically from the encoding. The classical way to encode that is to have "current_capacity" variables along the route and linear equations of the form: arc_literal =&gt; (current_capacity_tail + demand &lt;= current_capacity_head)  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a6406c4f72db4ff5d9f4ea5cbe93d34ee">Google.OrTools.Sat.SatParameters.EnumerateAllSolutions</a>  </dt>
-<dd><a class="anchor" id="_todo000029"></a>(user): Do not do that and let the user choose what behavior is best by setting keep_all_feasible_solutions_in_presolve ?  </dd>
+<dd><a class="anchor" id="_todo000028"></a>(user): Do not do that and let the user choose what behavior is best by setting keep_all_feasible_solutions_in_presolve ?  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a6b2185f3dc5cb551686ded7cae012101">Google.OrTools.Sat.SatParameters.MaxMemoryInMb</a>  </dt>
-<dd><a class="anchor" id="_todo000024"></a>(user): This is only used by the pure SAT solver, generalize to CP-SAT.  </dd>
+<dd><a class="anchor" id="_todo000023"></a>(user): This is only used by the pure SAT solver, generalize to CP-SAT.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a65ed85377f8c617a4f367e1d7fad43a1">Google.OrTools.Sat.SatParameters.MaxNumberOfConflicts</a>  </dt>
-<dd><a class="anchor" id="_todo000023"></a>(user): Maybe change the way the conflict limit is enforced? currently it is enforced on each independent internal SAT solve, rather than on the overall number of conflicts across all solves. So in the context of an optimization problem, this is not really usable directly by a client.  </dd>
+<dd><a class="anchor" id="_todo000022"></a>(user): Maybe change the way the conflict limit is enforced? currently it is enforced on each independent internal SAT solve, rather than on the overall number of conflicts across all solves. So in the context of an optimization problem, this is not really usable directly by a client.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ace7f1b38edcd86aabdae346f1120a24e">Google.OrTools.Sat.SatParameters.MaxNumCuts</a>  </dt>
-<dd><a class="anchor" id="_todo000028"></a>(user): We should probably remove this parameters, and just always generate cuts but only keep the best n or something.  </dd>
-<dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ad039e162cfb93c2c71d8532dc587def6">Google.OrTools.Sat.SatParameters.MinNumLnsWorkers</a>  </dt>
-<dd><a class="anchor" id="_todo000026"></a>(user): Also define like for subsolvers the list of "active" type of neighborhood used.  </dd>
+<dd><a class="anchor" id="_todo000026"></a>(user): We should probably remove this parameters, and just always generate cuts but only keep the best n or something.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a79d692d4a2137026014cefa2e31f609a">Google.OrTools.Sat.SatParameters.ProbingDeterministicTimeLimit</a>  </dt>
-<dd><a class="anchor" id="_todo000025"></a>(user): Clean up. The first one is used in CP-SAT, the other in pure SAT presolve.  </dd>
+<dd><a class="anchor" id="_todo000024"></a>(user): Clean up. The first one is used in CP-SAT, the other in pure SAT presolve.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae7fd428804983b0071bd34b95204e9d3">Google.OrTools.Sat.SatParameters.PropagationLoopDetectionFactor</a>  </dt>
-<dd><a class="anchor" id="_todo000027"></a>(user): Setting this to something like 10 helps in most cases, but the code is currently buggy and can cause the solve to enter a bad state where no progress is made.  </dd>
+<dd><a class="anchor" id="_todo000025"></a>(user): Setting this to something like 10 helps in most cases, but the code is currently buggy and can cause the solve to enter a bad state where no progress is made.  </dd>
 <dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aef3c4ff3d063805e4d28315f6f7b4817">Google.OrTools.Sat.SatParameters.UseOptionalVariables</a>  </dt>
-<dd><a class="anchor" id="_todo000030"></a>(user): This is experimental and seems to lead to wrong optimal in some situation. It should however gives correct solutions. Fix.  </dd>
+<dd><a class="anchor" id="_todo000029"></a>(user): This is experimental and seems to lead to wrong optimal in some situation. It should however gives correct solutions. Fix.  </dd>
+<dt>Member <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#abb600cff0bb168969564e29684761343">Google.OrTools.Sat.SatParameters.ViolationLsCompoundMoveProbability</a>  </dt>
+<dd><a class="anchor" id="_todo000027"></a>(user): Add reference to paper when published.  </dd>
 <dt>Member <a class="el" href="classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#aa980605ecc0f41385b404418c921721e">OperationsResearch.Pdlp.PrimalDualHybridGradientParams.DiagonalQpTrustRegionSolverTolerance</a>  </dt>
-<dd><a class="anchor" id="_todo000013"></a>(user): Find an expression for the final relative error.  </dd>
+<dd><a class="anchor" id="_todo000014"></a>(user): Find an expression for the final relative error.  </dd>
 <dt>Member <a class="el" href="classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams_1_1Types.html#ad0338fa84b33f3fa3d1725beb01192dba4de8a9195c0f1962478bbc6dd39a7333">OperationsResearch.Pdlp.PrimalDualHybridGradientParams.Types.AdaptiveDistanceBased</a>  </dt>
-<dd><a class="anchor" id="_todo000014"></a>(user): Cite paper for the restart strategy and definition of the potential function, when available.  </dd>
+<dd><a class="anchor" id="_todo000015"></a>(user): Cite paper for the restart strategy and definition of the potential function, when available.  </dd>
 <dt>Member <a class="el" href="classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#a08a5d1a1eb137b547ed69df19fe14dab">OperationsResearch.Pdlp.PrimalDualHybridGradientParams.UseDiagonalQpTrustRegionSolver</a>  </dt>
-<dd><a class="anchor" id="_todo000012"></a>(user): Turn this option on by default for quadratic programs after numerical evaluation.  </dd>
+<dd><a class="anchor" id="_todo000013"></a>(user): Turn this option on by default for quadratic programs after numerical evaluation.  </dd>
 <dt>Member <a class="el" href="classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html#accea36e1cbfc1e767a5703eb5e8250f0">OperationsResearch.Pdlp.TerminationCriteria.EpsOptimalAbsolute</a>  </dt>
-<dd><a class="anchor" id="_todo000010"></a>(b/241462829) delete this deprecated field.  </dd>
+<dd><a class="anchor" id="_todo000011"></a>(b/241462829) delete this deprecated field.  </dd>
 <dt>Member <a class="el" href="classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html#ad7582f5a4d102febb0ced22319903efd">OperationsResearch.Pdlp.TerminationCriteria.EpsOptimalRelative</a>  </dt>
-<dd><a class="anchor" id="_todo000011"></a>(b/241462829) delete this deprecated field. </dd>
+<dd><a class="anchor" id="_todo000012"></a>(b/241462829) delete this deprecated field. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

@@ -5,6 +5,7 @@ var classoperations__research_1_1SetCoverModel =
     [ "AddElementToLastSubset", "classoperations__research_1_1SetCoverModel.html#ae8889dcf8d5f1e2ccb56344d4c13d860", null ],
     [ "AddElementToSubset", "classoperations__research_1_1SetCoverModel.html#a75d10e52dd6372adee8c672cf815b04d", null ],
     [ "AddEmptySubset", "classoperations__research_1_1SetCoverModel.html#a45feb2e17647a7fa35f7ceb00613496d", null ],
+    [ "all_subsets", "classoperations__research_1_1SetCoverModel.html#aff27cf168a5890d75dab89f0e05fbe48", null ],
     [ "columns", "classoperations__research_1_1SetCoverModel.html#a64c52ea674b574e24d460c0d91c34328", null ],
     [ "ComputeFeasibility", "classoperations__research_1_1SetCoverModel.html#ad00cbd580a9df65d413ce11ba5e25fe7", null ],
     [ "CreateSparseRowView", "classoperations__research_1_1SetCoverModel.html#ad5f0350019a88c616987c45b8a0e5c82", null ],

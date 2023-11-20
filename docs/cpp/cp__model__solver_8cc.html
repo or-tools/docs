@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -135,7 +135,6 @@ $(document).ready(function(){initNavTree('cp__model__solver_8cc.html',''); initR
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_join.h&quot;</code><br />
-<code>#include &quot;absl/strings/str_split.h&quot;</code><br />
 <code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
@@ -183,6 +182,7 @@ $(document).ready(function(){initNavTree('cp__model__solver_8cc.html',''); initR
 <code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="simplification_8h_source.html">ortools/sat/simplification.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stat__tables_8h_source.html">ortools/sat/stat_tables.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="subsolver_8h_source.html">ortools/sat/subsolver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="synchronization_8h_source.html">ortools/sat/synchronization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
@@ -217,6 +217,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa6b6aa5316ec3a7e0c3ca010c084a747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8591ac486d2906248081c3269852e59c" id="r_a8591ac486d2906248081c3269852e59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a8591ac486d2906248081c3269852e59c">ABSL_FLAG</a> (bool, cp_model_dump_models, false, &quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> true, SolveCpModel() will dump its <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos (original <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, presolved <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, mapping <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>) in text &quot; &quot;format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'{<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>|presolved_model|&quot; &quot;mapping_model}.pb.txt.&quot;)</td></tr>
 <tr class="separator:a8591ac486d2906248081c3269852e59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad036b23de6e6d9df3b991297011030c3" id="r_ad036b23de6e6d9df3b991297011030c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#ad036b23de6e6d9df3b991297011030c3">ABSL_FLAG</a> (bool, cp_model_export_model, false, &quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> true, SolveCpModel() will dump its <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos in text format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'{<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>}.pb.txt.&quot;)</td></tr>
+<tr class="separator:ad036b23de6e6d9df3b991297011030c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294867abe6deecc3acd05497d95c0a97" id="r_a294867abe6deecc3acd05497d95c0a97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a294867abe6deecc3acd05497d95c0a97">ABSL_FLAG</a> (bool, cp_model_dump_text_proto, true, &quot;DEBUG ONLY, dump models in text <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> instead of binary proto.&quot;)</td></tr>
 <tr class="separator:a294867abe6deecc3acd05497d95c0a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341a22ee5767046a84a942d72d80a80d" id="r_a341a22ee5767046a84a942d72d80a80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a341a22ee5767046a84a942d72d80a80d">ABSL_FLAG</a> (bool, cp_model_dump_lns, false, &quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> true, solve will dump all &quot; &quot;lns models <a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a> in text format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> &quot; &quot;'FLAGS_cp_model_dump_prefix'lns_xxx.pb.txt.&quot;)</td></tr>
@@ -231,6 +233,8 @@ Functions</h2></td></tr>
 <tr class="separator:a73c8968cf0877bf8947b93c2889c280a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858fff11042fe8116cbe8d4247de69c3" id="r_a858fff11042fe8116cbe8d4247de69c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a858fff11042fe8116cbe8d4247de69c3">ABSL_FLAG</a> (bool, drat_check, false, &quot;If true, <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a> proof in DRAT format will be stored in memory and &quot; &quot;checked <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> the problem is UNSAT. This will only be used for &quot; &quot;pure-SAT problems.&quot;)</td></tr>
 <tr class="separator:a858fff11042fe8116cbe8d4247de69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67d512c6c69d93b41f9a2926f606a26" id="r_aa67d512c6c69d93b41f9a2926f606a26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#aa67d512c6c69d93b41f9a2926f606a26">ABSL_FLAG</a> (bool, debug_model_copy, false, &quot;If true, copy the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> as <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> with no basic presolve&quot;)</td></tr>
+<tr class="separator:aa67d512c6c69d93b41f9a2926f606a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aab1846f5aa2cda3749adb20a0e7c7b" id="r_a9aab1846f5aa2cda3749adb20a0e7c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#a9aab1846f5aa2cda3749adb20a0e7c7b">ABSL_FLAG</a> (double, max_drat_time_in_seconds, std::numeric_limits&lt; double &gt;::infinity(), &quot;Maximum <a class="el" href="resource_8cc.html#aee52de7b225665566aa47246b9d6b8fa">time</a> in seconds <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> check the DRAT proof. This will only &quot; &quot;be used is the drat_check flag is enabled.&quot;)</td></tr>
 <tr class="separator:a9aab1846f5aa2cda3749adb20a0e7c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d4011427b402d43eb77b73566ea4ac" id="r_ad7d4011427b402d43eb77b73566ea4ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__model__solver_8cc.html#ad7d4011427b402d43eb77b73566ea4ac">ABSL_FLAG</a> (bool, cp_model_check_intermediate_solutions, false, &quot;When true, all intermediate solutions found by the solver will be &quot; &quot;checked. This can be expensive, <a class="el" href="one__tree__lower__bound_8h.html#a6f353d8684dff1645f1601cd68b9a0be">therefore</a> it is off by default.&quot;)</td></tr>
@@ -270,7 +274,7 @@ Functions</h2></td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad7d4011427b402d43eb77b73566ea4ac" name="ad7d4011427b402d43eb77b73566ea4ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7d4011427b402d43eb77b73566ea4ac">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d4011427b402d43eb77b73566ea4ac">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +326,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a341a22ee5767046a84a942d72d80a80d" name="a341a22ee5767046a84a942d72d80a80d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a341a22ee5767046a84a942d72d80a80d">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a341a22ee5767046a84a942d72d80a80d">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +372,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8591ac486d2906248081c3269852e59c" name="a8591ac486d2906248081c3269852e59c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8591ac486d2906248081c3269852e59c">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8591ac486d2906248081c3269852e59c">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +418,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a193cc3f652f9593d27a5ab732f3b78a4" name="a193cc3f652f9593d27a5ab732f3b78a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a193cc3f652f9593d27a5ab732f3b78a4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a193cc3f652f9593d27a5ab732f3b78a4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,7 +464,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23699b8683d3ebab70584a05a59bf098" name="a23699b8683d3ebab70584a05a59bf098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23699b8683d3ebab70584a05a59bf098">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23699b8683d3ebab70584a05a59bf098">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +510,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a294867abe6deecc3acd05497d95c0a97" name="a294867abe6deecc3acd05497d95c0a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a294867abe6deecc3acd05497d95c0a97">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a294867abe6deecc3acd05497d95c0a97">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,8 +555,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad036b23de6e6d9df3b991297011030c3" name="ad036b23de6e6d9df3b991297011030c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad036b23de6e6d9df3b991297011030c3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cp_model_export_model&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;DEBUG ONLY. When set <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>&#160;</td>
+          <td class="paramname"><em>true</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SolveCpModel() will dump its <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> &quot; &quot;protos in text format <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 'FLAGS_cp_model_dump_prefix'{<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>}.pb.txt.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a904089e7dc6d0ff9fcf3dd12ab2c0dcc" name="a904089e7dc6d0ff9fcf3dd12ab2c0dcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904089e7dc6d0ff9fcf3dd12ab2c0dcc">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a904089e7dc6d0ff9fcf3dd12ab2c0dcc">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,7 +642,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a235d61d7468a37db6f8b3532b788683a" name="a235d61d7468a37db6f8b3532b788683a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a235d61d7468a37db6f8b3532b788683a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a235d61d7468a37db6f8b3532b788683a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -637,8 +687,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa67d512c6c69d93b41f9a2926f606a26" name="aa67d512c6c69d93b41f9a2926f606a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67d512c6c69d93b41f9a2926f606a26">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">debug_model_copy&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;If&#160;</td>
+          <td class="paramname"><em>true</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">copy the <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a> <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> as <a class="el" href="parser_8yy_8cc.html#a33e91cd0cef6786e9e3a27ac67707207">if</a> with no basic presolve&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a858fff11042fe8116cbe8d4247de69c3" name="a858fff11042fe8116cbe8d4247de69c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858fff11042fe8116cbe8d4247de69c3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a858fff11042fe8116cbe8d4247de69c3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -684,7 +780,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9aab1846f5aa2cda3749adb20a0e7c7b" name="a9aab1846f5aa2cda3749adb20a0e7c7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aab1846f5aa2cda3749adb20a0e7c7b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aab1846f5aa2cda3749adb20a0e7c7b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -724,7 +820,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa6b6aa5316ec3a7e0c3ca010c084a747" name="aa6b6aa5316ec3a7e0c3ca010c084a747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6b6aa5316ec3a7e0c3ca010c084a747">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b6aa5316ec3a7e0c3ca010c084a747">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -766,7 +862,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a75f95b433d1d98a54c5a3cc08a8ad4af" name="a75f95b433d1d98a54c5a3cc08a8ad4af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f95b433d1d98a54c5a3cc08a8ad4af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f95b433d1d98a54c5a3cc08a8ad4af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[14/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -812,7 +908,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a335160e182a5699147bb9514356c7eb8" name="a335160e182a5699147bb9514356c7eb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335160e182a5699147bb9514356c7eb8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a335160e182a5699147bb9514356c7eb8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[15/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -852,7 +948,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a73c8968cf0877bf8947b93c2889c280a" name="a73c8968cf0877bf8947b93c2889c280a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c8968cf0877bf8947b93c2889c280a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[14/14]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c8968cf0877bf8947b93c2889c280a">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[16/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -912,7 +1008,7 @@ Functions</h2></td></tr>
 
 <p>These can be nullptr depending on the options. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02469">2469</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02471">2471</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -928,7 +1024,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02472">2472</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02474">2474</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -944,7 +1040,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02471">2471</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02473">2473</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -960,7 +1056,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02463">2463</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02465">2465</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -976,7 +1072,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02470">2470</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02472">2472</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1090,7 @@ Functions</h2></td></tr>
 
 <p>These are never nullptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02460">2460</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02462">2462</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1106,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02465">2465</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02467">2467</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1122,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02466">2466</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02468">2468</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+
+</div>
+</div>
+<a id="aef3aee626dc595abab96980c6e3a33a5" name="aef3aee626dc595abab96980c6e3a33a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3aee626dc595abab96980c6e3a33a5">&#9670;&#160;</a></span>stat_tables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SharedStatTables stat_tables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For displaying summary at the end. </p>
+
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02477">2477</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1156,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02464">2464</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02466">2466</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1172,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02462">2462</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02464">2464</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02461">2461</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__solver_8cc_source.html#l02463">2463</a> of file <a class="el" href="cp__model__solver_8cc_source.html">cp_model_solver.cc</a>.</p>
 
 </div>
 </div>

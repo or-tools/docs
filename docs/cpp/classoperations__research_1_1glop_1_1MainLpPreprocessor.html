@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -354,9 +354,9 @@ Additional Inherited Members</h2></td></tr>
 <p>We run it a few times because running one preprocessor may allow another one to remove more stuff.</p>
 <p>Abort early if none of the preprocessors did something. Technically this is true if none of the preprocessors above needs postsolving, which has exactly the same meaning for these particular preprocessors.</p>
 <p>We use i here because the last pass did nothing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000454">Todo:</a></b></dt><dd>(user): Run them in the loop above if the effect on the running time is good. This needs more investigation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000456">Todo:</a></b></dt><dd>(user): Run them in the loop above if the effect on the running time is good. This needs more investigation. </dd></dl>
 <p>If <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a> was run, we need to do some extra preprocessing. This is because it currently adds a lot of zero-cost singleton columns.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000455">Todo:</a></b></dt><dd>(user): We probably want to scale the costs before and after this preprocessor so that the rhs/objective of the dual are with a good magnitude. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000457">Todo:</a></b></dt><dd>(user): We probably want to scale the costs before and after this preprocessor so that the rhs/objective of the dual are with a good magnitude. </dd></dl>
 <p>The scaling is controlled by use_scaling, not use_preprocessing.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>

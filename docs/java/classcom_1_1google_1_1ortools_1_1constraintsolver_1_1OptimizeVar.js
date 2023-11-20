@@ -3,7 +3,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar =
     [ "OptimizeVar", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#ad337507afb74cfde0081496f641b42a4", null ],
     [ "OptimizeVar", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#a05efe6a6c0a39f824cc969de215aa743", null ],
     [ "OptimizeVar", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#a14b0f4947d9acaa9d01609b86bd988e1", null ],
-    [ "acceptDelta", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#a284b124e82d09ba33213446be0f05dc1", null ],
     [ "acceptSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#a0a203df61e16eb1c10c39e4efaaee50b", null ],
     [ "applyBound", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#ac933606a5e04a9c6f90ce9333a3da384", null ],
     [ "atSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1OptimizeVar.html#aba5142e106b3633e48abf4c1d8e6c7fb", null ],

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -368,109 +368,110 @@ $(document).ready(function(){initNavTree('pricing_8h_source.html',''); initResiz
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="comment">// We need to iterate over all the candidates.</span></div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  threshold_ = -<a class="code hl_variable" href="namespaceoperations__research_1_1glop.html#a073868a91ec87d04bc963609af7806b6">kInfinity</a>;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  DCHECK(tops_.empty());</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a> position : is_candidate_) {</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> = values_[position];</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="comment">// TODO(user): Add a mode when we do not maintain the TopK for small sizes</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">// (like n &lt; 1000) ? The gain might not be worth the extra code though.</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt; threshold_) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    UpdateTopK(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &gt;= best_value) {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> == best_value) {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        equivalent_choices_.push_back(position);</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      }</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      equivalent_choices_.clear();</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      best_value = <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      best_position = position;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  }</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keywordflow">return</span> RandomizeIfManyChoices(best_position);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>}</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keyword">const</span> <span class="keyword">auto</span> values = values_.const_view();</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a> position : is_candidate_) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> = values[position];</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">// TODO(user): Add a mode when we do not maintain the TopK for small sizes</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="comment">// (like n &lt; 1000) ? The gain might not be worth the extra code though.</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt; threshold_) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    UpdateTopK(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &gt;= best_value) {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> == best_value) {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        equivalent_choices_.push_back(position);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      equivalent_choices_.clear();</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      best_value = <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      best_position = position;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">return</span> RandomizeIfManyChoices(best_position);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>}</div>
 </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_class" href="classoperations__research_1_1glop_1_1DynamicMaximum.html">DynamicMaximum&lt;Index&gt;::UpdateTopK</a>(<a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a> position,</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                                              <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>) {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="comment">// Note that this should only be called when an update is required.</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  DCHECK_GE(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, threshold_);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  <span class="comment">// We use a compile time size of the form 2^n - 1 to have a full binary heap.</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="comment">// TODO(user): Adapt the size depending on the problem size? Note sure it is</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="comment">// worth it. To experiment more.</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keyword">constexpr</span> <span class="keywordtype">int</span> k = 31;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keyword">static_assert</span>(((k + 1) &amp; k) == 0, <span class="stringliteral">&quot;k + 1 should be a power of 2.&quot;</span>);</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="comment">// Simply grow the vector until we hit a size of k.</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keywordflow">if</span> (tops_.size() &lt; k) {</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    tops_.emplace_back(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">if</span> (tops_.size() == k) {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      std::make_heap(tops_.begin(), tops_.end());</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      threshold_ = tops_[0].value;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <span class="comment">// If the value is equal, we randomly replace it. Having some randomness can</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="comment">// also be important to increase the chance of keeping the true maximum in the</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// top k set.</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="comment">// TODO(user): use proper probability by counting the number of ties seen and</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="comment">// replacing a random minimum element to get an uniform distribution? Note</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="comment">// that it will never be truly uniform since once the top k structure is</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="comment">// constructed, we will reuse it as much as possible, so it will be biased</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="comment">// towards elements already inside.</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> == tops_[0].<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>) {</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">if</span> (absl::Bernoulli(random_, 0.5)) {</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>      tops_[0].index = position;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  }</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="comment">// The code below is basically a custom implementation of this. It is however</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="comment">// only slighlty faster for such a small heap. So it might not be completely</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="comment">// worth it.</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="keywordflow">if</span> (<span class="comment">/*DISABLES CODE*/</span> (<span class="keyword">false</span>)) {</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    std::pop_heap(tops_.begin(), tops_.end());</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    tops_.back() = HeapElement(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    std::push_heap(tops_.begin(), tops_.end());</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    threshold_ = tops_[0].value;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  }</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="comment">// To not have to do std::pop_heap() and then std::push_heap(), we code our</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="comment">// own update. Note that we exploit the fact that k is of the form 2^n - 1 to</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="comment">// save one test per update.</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = 0;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  DCHECK_EQ(tops_.size(), k);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <span class="keyword">constexpr</span> <span class="keywordtype">int</span> limit = k / 2;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="keywordflow">for</span> (; <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> &lt; limit;) {</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> left_child = 2 * <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> + 1;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a> = left_child + 1;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> l_value = tops_[left_child].value;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> r_value = tops_[<a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>].value;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">if</span> (l_value &gt; r_value) {</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt;= r_value) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = tops_[<a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>];</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = <a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>;</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt;= l_value) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>      tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = tops_[left_child];</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = left_child;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    }</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  }</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = HeapElement(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  threshold_ = tops_[0].value;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  DCHECK(std::is_heap(tops_.begin(), tops_.end()));</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>}</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}  <span class="comment">// namespace glop</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}  <span class="comment">// namespace operations_research</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_GLOP_PRICING_H_</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_class" href="classoperations__research_1_1glop_1_1DynamicMaximum.html">DynamicMaximum&lt;Index&gt;::UpdateTopK</a>(<a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a> position,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                                              <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>) {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="comment">// Note that this should only be called when an update is required.</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  DCHECK_GE(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, threshold_);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="comment">// We use a compile time size of the form 2^n - 1 to have a full binary heap.</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="comment">// TODO(user): Adapt the size depending on the problem size? Note sure it is</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="comment">// worth it. To experiment more.</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keyword">constexpr</span> <span class="keywordtype">int</span> k = 31;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keyword">static_assert</span>(((k + 1) &amp; k) == 0, <span class="stringliteral">&quot;k + 1 should be a power of 2.&quot;</span>);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">// Simply grow the vector until we hit a size of k.</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keywordflow">if</span> (tops_.size() &lt; k) {</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    tops_.emplace_back(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">if</span> (tops_.size() == k) {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      std::make_heap(tops_.begin(), tops_.end());</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      threshold_ = tops_[0].value;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="comment">// If the value is equal, we randomly replace it. Having some randomness can</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// also be important to increase the chance of keeping the true maximum in the</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="comment">// top k set.</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="comment">// TODO(user): use proper probability by counting the number of ties seen and</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="comment">// replacing a random minimum element to get an uniform distribution? Note</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="comment">// that it will never be truly uniform since once the top k structure is</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="comment">// constructed, we will reuse it as much as possible, so it will be biased</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="comment">// towards elements already inside.</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> == tops_[0].<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>) {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">if</span> (absl::Bernoulli(random_, 0.5)) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      tops_[0].index = position;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  }</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="comment">// The code below is basically a custom implementation of this. It is however</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="comment">// only slighlty faster for such a small heap. So it might not be completely</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="comment">// worth it.</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordflow">if</span> (<span class="comment">/*DISABLES CODE*/</span> (<span class="keyword">false</span>)) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    std::pop_heap(tops_.begin(), tops_.end());</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    tops_.back() = HeapElement(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    std::push_heap(tops_.begin(), tops_.end());</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    threshold_ = tops_[0].value;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  }</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="comment">// To not have to do std::pop_heap() and then std::push_heap(), we code our</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="comment">// own update. Note that we exploit the fact that k is of the form 2^n - 1 to</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="comment">// save one test per update.</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = 0;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  DCHECK_EQ(tops_.size(), k);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="keyword">constexpr</span> <span class="keywordtype">int</span> limit = k / 2;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="keywordflow">for</span> (; <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> &lt; limit;) {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> left_child = 2 * <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> + 1;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a> = left_child + 1;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> l_value = tops_[left_child].value;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> r_value = tops_[<a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>].value;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span> (l_value &gt; r_value) {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt;= r_value) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = tops_[<a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>];</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = <a class="code hl_variable" href="arc__flow__builder_8cc.html#a37a60bd8e1de6871a556b2822884edea">right_child</a>;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a> &lt;= l_value) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = tops_[left_child];</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = left_child;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    }</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  tops_[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>] = HeapElement(position, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  threshold_ = tops_[0].value;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  DCHECK(std::is_heap(tops_.begin(), tops_.end()));</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}  <span class="comment">// namespace glop</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_GLOP_PRICING_H_</span></div>
 </div>
 </div>
 </div>
@@ -495,7 +496,7 @@ $(document).ready(function(){initNavTree('pricing_8h_source.html',''); initResiz
 <div class="ttc" id="aclassoperations__research_1_1glop_1_1StrictITIVector_html"><div class="ttname"><a href="classoperations__research_1_1glop_1_1StrictITIVector.html">operations_research::glop::StrictITIVector</a></div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00287">lp_types.h:287</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1glop_1_1StrictITIVector_html_aa53133ebe132c844a7ec36821ef0cf14"><div class="ttname"><a href="classoperations__research_1_1glop_1_1StrictITIVector.html#aa53133ebe132c844a7ec36821ef0cf14">operations_research::glop::StrictITIVector::size</a></div><div class="ttdeci">IntType size() const</div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00314">lp_types.h:314</a></div></div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition</b> <a href="demon__profiler_8cc_source.html#l00045">demon_profiler.cc:45</a></div></div>
-<div class="ttc" id="alocal__search_8cc_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition</b> <a href="local__search_8cc_source.html#l02847">local_search.cc:2847</a></div></div>
+<div class="ttc" id="alocal__search_8cc_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition</b> <a href="local__search_8cc_source.html#l02837">local_search.cc:2837</a></div></div>
 <div class="ttc" id="alp__types_8h_html"><div class="ttname"><a href="lp__types_8h.html">lp_types.h</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1glop_html_a073868a91ec87d04bc963609af7806b6"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a073868a91ec87d04bc963609af7806b6">operations_research::glop::kInfinity</a></div><div class="ttdeci">constexpr double kInfinity</div><div class="ttdoc">Infinity for type Fractional.</div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00088">lp_types.h:88</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1glop_html_a0cac235bd48eb39d15cc101516dc1e90"><div class="ttname"><a href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">operations_research::glop::Fractional</a></div><div class="ttdeci">double Fractional</div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00082">lp_types.h:82</a></div></div>

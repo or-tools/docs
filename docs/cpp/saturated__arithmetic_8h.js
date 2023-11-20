@@ -8,6 +8,7 @@ var saturated__arithmetic_8h =
     [ "CapAddGeneric", "saturated__arithmetic_8h.html#a92790ebe58f31601890072ac2d4911c5", null ],
     [ "CapAddTo", "saturated__arithmetic_8h.html#a1e489359fd31c3ef24a113fce05c08ee", null ],
     [ "CapOpp", "saturated__arithmetic_8h.html#af979bdbf1d7d690ae24e97ad456297d2", null ],
+    [ "CapOrFloatAdd", "saturated__arithmetic_8h.html#a93332d9b831924f19930b1ae2110add4", null ],
     [ "CapProd", "saturated__arithmetic_8h.html#aa64bf49d041052c7cb3f40f7496d7534", null ],
     [ "CapProdGeneric", "saturated__arithmetic_8h.html#adfcad7c607afe2de123ac91fcd2b87c0", null ],
     [ "CapSub", "saturated__arithmetic_8h.html#a4a43d435871f16c321861fa5de32df82", null ],

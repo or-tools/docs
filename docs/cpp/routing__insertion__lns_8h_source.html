@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -328,26 +328,25 @@ $(document).ready(function(){initNavTree('routing__insertion__lns_8h_source.html
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  std::vector&lt;int64_t&gt; GetActiveSiblings(int64_t node) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keyword">const</span> std::vector&lt;std::pair&lt;std::vector&lt;int64_t&gt;, std::vector&lt;int64_t&gt;&gt;&gt;&amp;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      pickup_delivery_pairs_;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">int</span> current_node_;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">int</span> last_node_;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">bool</span> just_started_;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">bool</span> initialized_;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; close_nodes_;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> num_close_nodes_;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  std::vector&lt;int64_t&gt; new_nexts_;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  SparseBitset&lt;&gt; changed_nexts_;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  std::vector&lt;int64_t&gt; new_prevs_;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  SparseBitset&lt;&gt; changed_prevs_;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>};</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keyword">const</span> std::vector&lt;PickupDeliveryPair&gt;&amp; pickup_delivery_pairs_;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">int</span> current_node_;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">int</span> last_node_;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">bool</span> just_started_;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">bool</span> initialized_;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  std::vector&lt;std::vector&lt;int64_t&gt;&gt; close_nodes_;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> num_close_nodes_;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  std::vector&lt;int64_t&gt; new_nexts_;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  SparseBitset&lt;&gt; changed_nexts_;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  std::vector&lt;int64_t&gt; new_prevs_;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  SparseBitset&lt;&gt; changed_prevs_;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>};</div>
 </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}  <span class="comment">// namespace operations_research</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_CONSTRAINT_SOLVER_ROUTING_INSERTION_LNS_H_</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_CONSTRAINT_SOLVER_ROUTING_INSERTION_LNS_H_</span></div>
 <div class="ttc" id="abitset_8h_html"><div class="ttname"><a href="bitset_8h.html">bitset.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1FilteredHeuristicCloseNodesLNSOperator_html"><div class="ttname"><a href="classoperations__research_1_1FilteredHeuristicCloseNodesLNSOperator.html">operations_research::FilteredHeuristicCloseNodesLNSOperator</a></div><div class="ttdef"><b>Definition</b> <a href="routing__insertion__lns_8h_source.html#l00188">routing_insertion_lns.h:189</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1FilteredHeuristicCloseNodesLNSOperator_html_a070435954096378304847aca0660c3e5"><div class="ttname"><a href="classoperations__research_1_1FilteredHeuristicCloseNodesLNSOperator.html#a070435954096378304847aca0660c3e5">operations_research::FilteredHeuristicCloseNodesLNSOperator::DebugString</a></div><div class="ttdeci">std::string DebugString() const override</div><div class="ttdef"><b>Definition</b> <a href="routing__insertion__lns_8h_source.html#l00195">routing_insertion_lns.h:195</a></div></div>

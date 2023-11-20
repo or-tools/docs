@@ -25,9 +25,10 @@
 var NAVTREE =
 [
   [ "Google OR-Tools", "index.html", [
-    [ "Packages", "namespaces.html", [
-      [ "Package List", "namespaces.html", "namespaces_dup" ],
-      [ "Package Members", "namespacemembers.html", [
+    [ "OR-Tools", "index.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", "namespacemembers_vars" ]
@@ -57,19 +58,20 @@ var NAVTREEINDEX =
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1IntExpr.html#a369a0b276dba41d5ae71eee5d1ed432f",
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVar.html#a116c8019c4374f33388fa0013d92892a",
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html#a95b8749156c81ae8e2527e6f7fff51d4",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html#ae84d9f71a4a1c31a0c38387cc901aa6d",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#a8612ac2e8a18f8af08909a475d261c0a",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#ab7cd4c2c3ea35908936ac64dab5dedc4",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a39ee5ecf910aa10dea1ad1327911d8ed",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#abaaff52129487e67bdea48e841034786",
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html",
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#a92c42195a0aee91cc67ad50f3ea88d88",
-"classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a5b04ddfbaf41d42879e9113a4f827bd6",
-"classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html",
-"classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#ad3a5b481537970e7d1499ae3c32ee06a",
-"cp__model__helper_8py.html#aa2cf011afadfc21b61dedc04947d3a1a",
-"namespaceortools_1_1constraint__solver_1_1pywrapcp.html#a3fde2faea9310a11909ec2e0127e9a1a",
-"namespaceortools_1_1sat_1_1python_1_1cp__model__helper.html#a8ac534b5e6eb76ff660553548ce30b0e"
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html#af62c642858014400c23ce1994407da3c",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#a840edcc6cbd7d06c688cdd96fef39d13",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a98c49b734144403cff1545344e413f0f",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a31a817ceef0b015a4de9008068675217",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#ab0d9bdc8a921e8a18809ff2b20ed034d",
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html",
+"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#a12510bfa451a41cf550c92d816f9b65f",
+"classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html#a608f2fcac41736bef57c63f16e299c27",
+"classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html#a3d6afbec172cabdfe433f5dfb69b35c9",
+"classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#af4654c73373d80666b541da00bed26fe",
+"classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html#acc8cae3a8768bca3f6f9a2c66fc41de6",
+"model__builder_8py.html#a3c48394758de189d4f3745f7b72abc13",
+"namespaceortools_1_1pdlp_1_1solve__log__pb2.html#a734349fb1da0c694fad260683f05551a",
+"sat_2colab_2____init_____8py_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('result__validator_8h.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;absl/status/status.h&quot;</code><br />
+<code>#include &quot;google/protobuf/repeated_ptr_field.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="model__summary_8h_source.html">ortools/math_opt/core/model_summary.h</a>&quot;</code><br />
 <code>#include &quot;ortools/math_opt/model_parameters.pb.h&quot;</code><br />
 <code>#include &quot;ortools/math_opt/result.pb.h&quot;</code><br />
@@ -117,18 +118,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af67b80a359d3cdb652dc9161a15565ba" id="r_af67b80a359d3cdb652dc9161a15565ba"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#af67b80a359d3cdb652dc9161a15565ba">operations_research::math_opt::ValidateTermination</a> (const TerminationProto &amp;termination)</td></tr>
-<tr class="separator:af67b80a359d3cdb652dc9161a15565ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add23cecedb126522044aca6764532ce3" id="r_add23cecedb126522044aca6764532ce3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#add23cecedb126522044aca6764532ce3">operations_research::math_opt::ValidateSolutions</a> (const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions, const ModelSolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>, const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
+<tr class="separator:add23cecedb126522044aca6764532ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51b998f0ab120a1855bd589f2553fad" id="r_ac51b998f0ab120a1855bd589f2553fad"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac51b998f0ab120a1855bd589f2553fad">operations_research::math_opt::ValidateResult</a> (const SolveResultProto &amp;result, const ModelSolveParametersProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>, const <a class="el" href="structoperations__research_1_1math__opt_1_1ModelSummary.html">ModelSummary</a> &amp;model_summary)</td></tr>
 <tr class="memdesc:ac51b998f0ab120a1855bd589f2553fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the input result.  <br /></td></tr>
 <tr class="separator:ac51b998f0ab120a1855bd589f2553fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a496ee3e0463ce9a45b495bef527d3" id="r_a95a496ee3e0463ce9a45b495bef527d3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a95a496ee3e0463ce9a45b495bef527d3">operations_research::math_opt::CheckHasPrimalSolution</a> (const SolveResultProto &amp;result)</td></tr>
 <tr class="memdesc:a95a496ee3e0463ce9a45b495bef527d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns absl::Ok only if a primal feasible solution is available.  <br /></td></tr>
 <tr class="separator:a95a496ee3e0463ce9a45b495bef527d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e12fc78ddb4b7e21a08255d309fed5d" id="r_a4e12fc78ddb4b7e21a08255d309fed5d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a4e12fc78ddb4b7e21a08255d309fed5d">operations_research::math_opt::CheckPrimalSolutionAndStatusConsistency</a> (const SolveResultProto &amp;result)</td></tr>
-<tr class="separator:a4e12fc78ddb4b7e21a08255d309fed5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef327438a1fa36c754675f638de11139" id="r_aef327438a1fa36c754675f638de11139"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aef327438a1fa36c754675f638de11139">operations_research::math_opt::CheckDualSolutionAndStatusConsistency</a> (const SolveResultProto &amp;result)</td></tr>
-<tr class="separator:aef327438a1fa36c754675f638de11139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13858e187e294c6618ca311d52cf6601" id="r_a13858e187e294c6618ca311d52cf6601"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a13858e187e294c6618ca311d52cf6601">operations_research::math_opt::CheckPrimalSolutionAndStatusConsistency</a> (const TerminationProto &amp;termination, const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions)</td></tr>
+<tr class="separator:a13858e187e294c6618ca311d52cf6601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71258c777ec895fb0cbbb600b5242edd" id="r_a71258c777ec895fb0cbbb600b5242edd"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a71258c777ec895fb0cbbb600b5242edd">operations_research::math_opt::CheckDualSolutionAndStatusConsistency</a> (const TerminationProto &amp;termination, const google::protobuf::RepeatedPtrField&lt; SolutionProto &gt; &amp;solutions)</td></tr>
+<tr class="separator:a71258c777ec895fb0cbbb600b5242edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

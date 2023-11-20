@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -108,11 +108,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e1adc97218d2b9ccd8437b05458f873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b76a69a07f9abf4e7cd0ff88925208d" id="r_a7b76a69a07f9abf4e7cd0ff88925208d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SteepestSearch.html#a7b76a69a07f9abf4e7cd0ff88925208d">NextSolution</a> (int num_iterations)</td></tr>
 <tr class="separator:a7b76a69a07f9abf4e7cd0ff88925208d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624332efac7b18ba1a17bc67bef75636" id="r_a624332efac7b18ba1a17bc67bef75636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SteepestSearch.html#a624332efac7b18ba1a17bc67bef75636">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus, int num_iterations)</td></tr>
+<tr class="separator:a624332efac7b18ba1a17bc67bef75636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Once we have a first solution to the problem, there may be (most often, there are) elements in S that are covered several times. To decrease the total cost, <a class="el" href="classoperations__research_1_1SteepestSearch.html">SteepestSearch</a> tries to eliminate some redundant T_j's from the solution or equivalently, to flip some x_j's from 1 to 0. the algorithm gets its name because it goes in the steepest immediate direction, taking the T_j with the largest total cost. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00121">121</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00135">135</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e1adc97218d2b9ccd8437b05458f873" name="a4e1adc97218d2b9ccd8437b05458f873"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e1adc97218d2b9ccd8437b05458f873">&#9670;&#160;</a></span>SteepestSearch()</h2>
@@ -138,13 +140,46 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00123">123</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8h_source.html#l00137">137</a> of file <a class="el" href="set__cover_8h_source.html">set_cover.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a624332efac7b18ba1a17bc67bef75636" name="a624332efac7b18ba1a17bc67bef75636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624332efac7b18ba1a17bc67bef75636">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::SteepestSearch::NextSolution </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>focus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return false if ledger_ contains no solution.</p>
+<p>Create priority queue with cost of using a subset, by decreasing order. Do it only for removable subsets.</p>
+<p>The priority is the gain from removing the subset from the solution.</p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00140">140</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+
+</div>
+</div>
 <a id="a7b76a69a07f9abf4e7cd0ff88925208d" name="a7b76a69a07f9abf4e7cd0ff88925208d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b76a69a07f9abf4e7cd0ff88925208d">&#9670;&#160;</a></span>NextSolution()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b76a69a07f9abf4e7cd0ff88925208d">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,11 +194,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if a solution was found within num_iterations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
-<p>Return false if ledger_ contains no solution.</p>
-<p>Create priority queue with cost of using a subset, by decreasing order. Do it only for removable subsets.</p>
-<p>The priority is the gain from removing the subset from the solution.</p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00124">124</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover_8cc_source.html#l00136">136</a> of file <a class="el" href="set__cover_8cc_source.html">set_cover.cc</a>.</p>
 
 </div>
 </div>

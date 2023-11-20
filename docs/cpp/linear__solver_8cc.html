@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -108,11 +108,17 @@ $(document).ready(function(){initNavTree('linear__solver_8cc.html',''); initResi
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/const_init.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;absl/strings/ascii.h&quot;</code><br />
@@ -122,18 +128,23 @@ $(document).ready(function(){initNavTree('linear__solver_8cc.html',''); initResi
 <code>#include &quot;absl/strings/str_replace.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/notification.h&quot;</code><br />
+<code>#include &quot;absl/time/clock.h&quot;</code><br />
 <code>#include &quot;absl/time/time.h&quot;</code><br />
+<code>#include &quot;google/protobuf/text_format.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="accurate__sum_8h_source.html">ortools/base/accurate_sum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="threadpool_8h_source.html">ortools/base/threadpool.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__expr_8h_source.html">ortools/linear_solver/linear_expr.h</a>&quot;</code><br />
 <code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="linear__solver__callback_8h_source.html">ortools/linear_solver/linear_solver_callback.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model__exporter_8h_source.html">ortools/linear_solver/model_exporter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="linear__solver_2model__validator_8h_source.html">ortools/linear_solver/model_validator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="port_2file_8h_source.html">ortools/port/file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fp__utils_8h_source.html">ortools/util/fp_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lazy__mutable__copy_8h_source.html">ortools/util/lazy_mutable_copy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
 </div>
 <p><a href="linear__solver_8cc_source.html">Go to the source code of this file.</a></p>
@@ -188,8 +199,8 @@ Functions</h2></td></tr>
 <tr class="separator:a939b48207f60a6bf3fc3f37ab9ffd481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6b9d1e57ed3500a6446b87bf4e6b46" id="r_a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4a6b9d1e57ed3500a6446b87bf4e6b46">operations_research::GurobiIsCorrectlyInstalled</a> ()</td></tr>
 <tr class="separator:a4a6b9d1e57ed3500a6446b87bf4e6b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc3e3b80841b587c6fbfd9e9f3ec9c59" id="r_afc3e3b80841b587c6fbfd9e9f3ec9c59"><td class="memItemLeft" align="right" valign="top">const absl::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#afc3e3b80841b587c6fbfd9e9f3ec9c59">operations_research::ToString</a> (<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2">MPSolver::OptimizationProblemType</a> optimization_problem_type)</td></tr>
-<tr class="separator:afc3e3b80841b587c6fbfd9e9f3ec9c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50e1c26339c45f0bc665e3db44b628c" id="r_ad50e1c26339c45f0bc665e3db44b628c"><td class="memItemLeft" align="right" valign="top">absl::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad50e1c26339c45f0bc665e3db44b628c">operations_research::ToString</a> (<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2">MPSolver::OptimizationProblemType</a> optimization_problem_type)</td></tr>
+<tr class="separator:ad50e1c26339c45f0bc665e3db44b628c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13948d20a1f3c1a1bac05821a52316e" id="r_ac13948d20a1f3c1a1bac05821a52316e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac13948d20a1f3c1a1bac05821a52316e">operations_research::AbslParseFlag</a> (const absl::string_view text, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2">MPSolver::OptimizationProblemType</a> *solver_type, std::string *error)</td></tr>
 <tr class="separator:ac13948d20a1f3c1a1bac05821a52316e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d451963bca16889b3f1e23450a8f2d" id="r_a52d451963bca16889b3f1e23450a8f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a52d451963bca16889b3f1e23450a8f2d">operations_research::MPSolverResponseStatusIsRpcError</a> (MPSolverResponseStatus <a class="el" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>)</td></tr>
@@ -394,7 +405,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00553">553</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00564">564</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -410,7 +421,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00552">552</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00563">563</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -196,9 +196,9 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the base offset in memory for f(s, node), with node contained in s. This is useful in the Dynamic Programming iterations. Note(user): inlining this function gains about 5%. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000625">Todo:</a></b></dt><dd>(user): Investigate how to compute BaseOffset(card - 1, s \ { n }) from BaseOffset(card, n) to speed up the DP iteration. </dd></dl>
+<p>Returns the base offset in memory for f(s, node), with node contained in s. This is useful in the Dynamic Programming iterations. Note(user): inlining this function gains about 5%. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000627">Todo:</a></b></dt><dd>(user): Investigate how to compute BaseOffset(card - 1, s \ { n }) from BaseOffset(card, n) to speed up the DP iteration. </dd></dl>
 <p>There are binomial_coefficients_[node][node_rank + 1] sets which have node at node_rank.</p>
-<p>Note(user): It is possible to get rid of base_offset_[card] by using a 2-D array. It would also make it possible to free all the memory but the layer being constructed and the preceding one, if another lattice of paths is constructed. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000620">Todo:</a></b></dt><dd>(user): Evaluate the interest of the above. There are 'card' f(set, j) to store. That is why we need to multiply local_offset by card before adding it to the corresponding base_offset_. </dd></dl>
+<p>Note(user): It is possible to get rid of base_offset_[card] by using a 2-D array. It would also make it possible to free all the memory but the layer being constructed and the preceding one, if another lattice of paths is constructed. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000622">Todo:</a></b></dt><dd>(user): Evaluate the interest of the above. There are 'card' f(set, j) to store. That is why we need to multiply local_offset by card before adding it to the corresponding base_offset_. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00408">408</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 

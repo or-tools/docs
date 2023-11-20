@@ -12,5 +12,6 @@ var classoperations__research_1_1sat_1_1VariablesAssignment =
     [ "operator=", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a6246986cc378228e64024813c9a440ff", null ],
     [ "Resize", "classoperations__research_1_1sat_1_1VariablesAssignment.html#ad5926cd564927309c9e1771882133a71", null ],
     [ "UnassignLiteral", "classoperations__research_1_1sat_1_1VariablesAssignment.html#aa3439e4609bb21a459fb7b7ef2754418", null ],
-    [ "VariableIsAssigned", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a0eea6c0efc86a9bc7ceaf76afb8ea03c", null ]
+    [ "VariableIsAssigned", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a0eea6c0efc86a9bc7ceaf76afb8ea03c", null ],
+    [ "AssignmentView", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a21bbe0d9044a586ec4c1ecec275e9ca1", null ]
 ];

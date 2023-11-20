@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -298,7 +298,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns all the information learned so far. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>(user): In the current implementation the learned information only contains binary clauses added since the last call to <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html#a40cfe7e1004b790e5f3d591da473883f">SynchronizationDone()</a>. Add an iterator on the <a class="el" href="classoperations__research_1_1sat_1_1BinaryClauseManager.html" title="A simple class to manage a set of binary clauses.">sat::BinaryClauseManager</a>. </dd></dl>
+<p>Returns all the information learned so far. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd>(user): In the current implementation the learned information only contains binary clauses added since the last call to <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html#a40cfe7e1004b790e5f3d591da473883f">SynchronizationDone()</a>. Add an iterator on the <a class="el" href="classoperations__research_1_1sat_1_1BinaryClauseManager.html" title="A simple class to manage a set of binary clauses.">sat::BinaryClauseManager</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bop__base_8cc_source.html#l00231">231</a> of file <a class="el" href="bop__base_8cc_source.html">bop_base.cc</a>.</p>
 
@@ -627,7 +627,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Merges the learned information with the current problem state. For instance, if variables x, and y are fixed in the current state, and z is learned to be fixed, the result of the merge will be x, y, and z being fixed in the problem state. </p><dl class="section note"><dt>Note</dt><dd>the LP values contained in the learned information (if any) will replace the LP values of the problem state, whatever the cost is. Returns true when the merge has changed the problem state.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000060">Todo:</a></b></dt><dd>(user): refactor this to not rely on the optimization status. All the information can be encoded in the learned_info bounds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd>(user): refactor this to not rely on the optimization status. All the information can be encoded in the learned_info bounds. </dd></dl>
 <p>The lower bound might be greater that the cost of a feasible solution due to rounding errors in the problem scaling and Glop. As a feasible solution was found, the solution is proved optimal.</p>
 <p>Merge fixed variables. Note that variables added during search, i.e. not in the original problem, are ignored.</p>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> the solution to the fixed variables.</p>

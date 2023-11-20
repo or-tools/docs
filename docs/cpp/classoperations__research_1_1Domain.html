@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -242,7 +242,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This class can be used to represent such set efficiently as a sorted and non-adjacent list of intervals. This is efficient as long as the size of such list stays reasonable.</p>
 <p>In the comments below, the domain of *this will always be written 'D'. Note that all the functions are safe with respect to integer overflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00082">82</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00083">83</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8026c98d5255e56fc3f224be687a07c3" name="a8026c98d5255e56fc3f224be687a07c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8026c98d5255e56fc3f224be687a07c3">&#9670;&#160;</a></span>Domain() <span class="overload">[1/5]</span></h2>
@@ -269,7 +269,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>By default, <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> will be empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00085">85</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00086">86</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Copy constructor (mandatory as we define the move constructor). </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00089">89</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00090">90</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00098">98</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00099">99</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns {x ∈ Int64, ∃ a ∈ D, ∃ b ∈ domain, x = a + b}.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo:</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002328">Todo:</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
 <p>The sort is not needed if one of the list is of size 1.</p>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00419">419</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
@@ -469,7 +469,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00460">460</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00461">461</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00462">462</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00463">463</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the value closest to the given point. If there is a tie, pick larger one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002283">Todo:</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="classoperations__research_1_1Domain.html#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002326">Todo:</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="classoperations__research_1_1Domain.html#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00243">243</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -624,7 +624,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the distance from the value to the domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002284">Todo:</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002327">Todo:</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00305">305</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -675,7 +675,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00465">465</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00466">466</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +888,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00459">459</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00460">460</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +916,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the domain has just two values. This often mean a non-fixed Boolean variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00234">234</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00235">235</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -967,9 +967,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002290">Todo:</a></b></dt><dd>(user): remove, this makes a copy and is of a different type that our internal InlinedVector() anyway. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002333">Todo:</a></b></dt><dd>(user): remove, this makes a copy and is of a different type that our internal InlinedVector() anyway. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00473">473</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00474">474</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1178,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Basic read-only std::vector&lt;&gt; wrapping to view a <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> as a sorted list of non-adjacent intervals. Note that we don't expose size() which might be confused with the number of values in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00458">458</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00459">459</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1206,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00449">449</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00450">450</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1257,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Copy operator (mandatory as we define the move operator). </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00092">92</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00093">93</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1287,7 +1287,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Move operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00101">101</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00102">102</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1315,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00445">445</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00446">446</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1343,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00461">461</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00462">462</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +1614,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00214">214</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00215">215</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1641,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00215">215</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00216">216</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>

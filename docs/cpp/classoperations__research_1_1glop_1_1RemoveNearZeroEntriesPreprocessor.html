@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -162,7 +162,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classoperations__research_1_1glop_1_1RemoveNearZeroEntriesPreprocessor.html">RemoveNearZeroEntriesPreprocessor</a> Removes matrix entries that have only a negligible impact on the solution. Using the variable bounds, we derive a maximum possible impact, and remove the entries whose impact is under a given tolerance.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000497">Todo:</a></b></dt><dd>(user): This preprocessor doesn't work well on badly scaled problems. In particular, it will set the objective to zero if all the objective coefficients are small! Run it after <a class="el" href="classoperations__research_1_1glop_1_1ScalingPreprocessor.html">ScalingPreprocessor</a> or fix the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000499">Todo:</a></b></dt><dd>(user): This preprocessor doesn't work well on badly scaled problems. In particular, it will set the objective to zero if all the objective coefficients are small! Run it after <a class="el" href="classoperations__research_1_1glop_1_1ScalingPreprocessor.html">ScalingPreprocessor</a> or fix the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="preprocessor_8h_source.html#l00831">831</a> of file <a class="el" href="preprocessor_8h_source.html">preprocessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -299,7 +299,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03083">3083</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03067">3067</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -329,13 +329,13 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1glop_1_1RemoveNearZeroEntriesPreprocessor.html">RemoveNearZeroEntriesPreprocessor</a> </p>
 <p>We will use a different threshold for each row depending on its degree. We use Fractionals for convenience since they will be used as such below.</p>
 <p>To not have too many parameters, we use the preprocessor_zero_tolerance.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000481">Todo:</a></b></dt><dd>(user): Our criteria ensure that during presolve a primal feasible solution will stay primal feasible. However, we have no guarantee on the dual-feasibility (because the dual variable values range is not taken into account). Fix that? or find a better criteria since it seems that on all our current problems, this preprocessor helps and doesn't introduce errors. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000482">Todo:</a></b></dt><dd>(user): Write a small class that takes a matrix, its transpose, row and column bounds, and "propagate" the bounds as much as possible so we can use this better estimate here and remove more near-zero entries. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000483">Todo:</a></b></dt><dd>(user): Our criteria ensure that during presolve a primal feasible solution will stay primal feasible. However, we have no guarantee on the dual-feasibility (because the dual variable values range is not taken into account). Fix that? or find a better criteria since it seems that on all our current problems, this preprocessor helps and doesn't introduce errors. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000484">Todo:</a></b></dt><dd>(user): Write a small class that takes a matrix, its transpose, row and column bounds, and "propagate" the bounds as much as possible so we can use this better estimate here and remove more near-zero entries. </dd></dl>
 <p>No post-solve is required.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03016">3016</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03000">3000</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

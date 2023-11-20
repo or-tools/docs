@@ -8,7 +8,7 @@ var classoperations__research_1_1glop_1_1PrimalEdgeNorms =
     [ "GetDevexWeights", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a58e5e95e3647fe0c281c15bed012a44d", null ],
     [ "GetEdgeSquaredNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#adaefbad538b87de5dff3405eb18ad3d8", null ],
     [ "GetMatrixColumnNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a4784c80c7c1735907180706f3428a83f", null ],
-    [ "GetSquaredNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a47a0ae460196146bbda4018315e38121", null ],
+    [ "GetSquaredNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a4e8a716053fee745d6b6f370c56004d0", null ],
     [ "NeedsBasisRefactorization", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#ae4061af56ebd0caa33a9df4f72e20980", null ],
     [ "operator=", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a1d2dc380cfeac8d86b6da0d096300bdc", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#ae45f1261ac4e8da05692bdfc534f9843", null ],

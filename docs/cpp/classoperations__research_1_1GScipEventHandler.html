@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -146,7 +146,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassoperations__research_1_1GScipEventHandler_html_a55733bd35aafd3ae06df04760d7fe05d"><div class="ttname"><a href="classoperations__research_1_1GScipEventHandler.html#a55733bd35aafd3ae06df04760d7fe05d">operations_research::GScipEventHandler::CatchEvent</a></div><div class="ttdeci">SCIP_RETCODE CatchEvent(SCIP_EVENTTYPE event_type)</div><div class="ttdef"><b>Definition</b> <a href="gscip__event__handler_8cc_source.html#l00121">gscip_event_handler.cc:121</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1GScipEventHandler_html_a893dc5dd681f86dd18ce08b0ec522505"><div class="ttname"><a href="classoperations__research_1_1GScipEventHandler.html#a893dc5dd681f86dd18ce08b0ec522505">operations_research::GScipEventHandler::Init</a></div><div class="ttdeci">virtual SCIP_RETCODE Init(GScip *gscip)</div><div class="ttdef"><b>Definition</b> <a href="gscip__event__handler_8h_source.html#l00116">gscip_event_handler.h:116</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1GScipEventHandler_html_aaf33701fa43a2e15a8bcaca85b412787"><div class="ttname"><a href="classoperations__research_1_1GScipEventHandler.html#aaf33701fa43a2e15a8bcaca85b412787">operations_research::GScipEventHandler::Execute</a></div><div class="ttdeci">virtual SCIP_RETCODE Execute(GScipEventHandlerContext context)</div><div class="ttdef"><b>Definition</b> <a href="gscip__event__handler_8h_source.html#l00122">gscip_event_handler.h:122</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1GScip_html"><div class="ttname"><a href="classoperations__research_1_1GScip.html">operations_research::GScip</a></div><div class="ttdef"><b>Definition</b> <a href="gscip_8h_source.html#l00127">gscip.h:127</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1GScip_html"><div class="ttname"><a href="classoperations__research_1_1GScip.html">operations_research::GScip</a></div><div class="ttdef"><b>Definition</b> <a href="gscip_8h_source.html#l00132">gscip.h:132</a></div></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a5f287b83a753915ae862fed64f8640a6"><div class="ttname"><a href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a></div><div class="ttdeci">GurobiMPCallbackContext * context</div><div class="ttdef"><b>Definition</b> <a href="gurobi__interface_8cc_source.html#l00517">gurobi_interface.cc:517</a></div></div>
 </div><!-- fragment --><p> };</p>
 <p>std::unique_ptr&lt;GScip&gt; gscip = ...;</p>
@@ -235,8 +235,8 @@ Friends</h2></td></tr>
 <p>This method must only be called after the problem is transformed; typically it is called in the <a class="el" href="classoperations__research_1_1GScipEventHandler.html#a893dc5dd681f86dd18ce08b0ec522505">Init()</a> virtual method.</p>
 <p>Caught events will be automatically dropped when the handler will be called on EXIT (before calling the corresponding <a class="el" href="classoperations__research_1_1GScipEventHandler.html#acee508e58cd355d68378739f0c2ae70c">Exit()</a> member function).</p>
 <p>See scip/type_event.h for the list of possible events. This function corresponds to SCIPcatchEvent().</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000707">Todo:</a></b></dt><dd>(user): Support Var and Row events.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000708">Todo:</a></b></dt><dd>(user): Support registering events in the EVENTINITSOL callback, which would cause them to be trapped only after presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000711">Todo:</a></b></dt><dd>(user): Support Var and Row events.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000712">Todo:</a></b></dt><dd>(user): Support registering events in the EVENTINITSOL callback, which would cause them to be trapped only after presolve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="gscip__event__handler_8cc_source.html#l00121">121</a> of file <a class="el" href="gscip__event__handler_8cc_source.html">gscip_event_handler.cc</a>.</p>
 

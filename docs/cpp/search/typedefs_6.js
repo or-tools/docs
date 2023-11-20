@@ -6,6 +6,7 @@ var searchData=
   ['grbmodel_3',['GRBmodel',['../environment_8h.html#a865e461c79c88bc5c0d5f56087ae4876',1,'environment.h']]],
   ['grbsvec_4',['GRBsvec',['../environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa',1,'environment.h']]],
   ['gscipbranchingpriority_5',['GScipBranchingPriority',['../namespaceoperations__research.html#a3c7537590c9cef691b122949f80f9beb',1,'operations_research']]],
-  ['gscipmessagehandler_6',['GScipMessageHandler',['../namespaceoperations__research.html#a945ce04104d59b792d343cd58eee8143',1,'operations_research']]],
-  ['gscipsolution_7',['GScipSolution',['../namespaceoperations__research.html#a3734e3bb09e2b07b6cbe694bc6422e71',1,'operations_research']]]
+  ['gsciphandler_6',['GScipHandler',['../gscip__constraint__handler_8cc.html#a9dcd351bd4c16760c0add8fb0edd8bb7',1,'gscip_constraint_handler.cc']]],
+  ['gscipmessagehandler_7',['GScipMessageHandler',['../namespaceoperations__research.html#a945ce04104d59b792d343cd58eee8143',1,'operations_research']]],
+  ['gscipsolution_8',['GScipSolution',['../namespaceoperations__research.html#a3734e3bb09e2b07b6cbe694bc6422e71',1,'operations_research']]]
 ];

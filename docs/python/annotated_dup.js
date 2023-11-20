@@ -81,10 +81,11 @@ var annotated_dup =
             [ "_Product", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Product.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Product" ],
             [ "_Sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum" ],
             [ "BoundedLinearExpression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression" ],
+            [ "EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint" ],
             [ "LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint" ],
             [ "LinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr" ],
-            [ "ModelBuilder", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelBuilder.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelBuilder" ],
-            [ "ModelSolver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelSolver.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelSolver" ],
+            [ "Model", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model" ],
+            [ "Solver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver" ],
             [ "VarEqVar", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar" ],
             [ "Variable", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable" ]
           ] ]

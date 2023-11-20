@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: Main Page</title>
+<title>Google OR-Tools: OR-Tools</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -92,10 +92,57 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Google OR-Tools Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">OR-Tools </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p>This is the reference documentation for the Google OR-Tools Python wrappers.</p>
+<p>This repository contains several components:</p>
+<p>Link with the C++ layer</p>
+<ul>
+<li>ortools.init.python.init,</li>
+</ul>
+<p>Knapsack solver</p>
+<ul>
+<li>ortools.algorithms.python.knapsack_solver,</li>
+</ul>
+<p>Graph and flow algorithms</p>
+<ul>
+<li>ortools.graph.python.linear_sum_assignment, </li>
+<li>ortools.graph.python.max_flow, </li>
+<li>ortools.graph.python.min_cost_flow,</li>
+</ul>
+<p>Routing library and legacy Constraint Programming Solver</p>
+<ul>
+<li><a class="el" href="namespaceortools_1_1constraint__solver_1_1pywrapcp.html">ortools.constraint_solver.pywrapcp</a>,</li>
+</ul>
+<p>Minimalistic linear solver wrapper</p>
+<ul>
+<li><a class="el" href="namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html">ortools.linear_solver.python.model_builder</a></li>
+</ul>
+<p>CP-SAT</p>
+<ul>
+<li><a class="el" href="namespaceortools_1_1sat_1_1python_1_1cp__model.html">ortools.sat.python.cp_model</a>, </li>
+<li>ortools.util.python.sorted_interval_list, </li>
+<li><a class="el" href="namespaceortools_1_1sat_1_1cp__model__pb2.html">ortools.sat.cp_model_pb2</a> </li>
+<li><a class="el" href="namespaceortools_1_1sat_1_1sat__parameters__pb2.html">ortools.sat.sat_parameters_pb2</a></li>
+</ul>
+<p>Legacy linear solver wrapper</p>
+<ul>
+<li><a class="el" href="namespaceortools_1_1linear__solver_1_1pywraplp.html">ortools.linear_solver.pywraplp</a>, </li>
+<li><a class="el" href="namespaceortools_1_1linear__solver_1_1linear__solver__pb2.html">ortools.linear_solver.linear_solver_pb2</a>,</li>
+</ul>
+<p>Linear solver backends</p>
+<ul>
+<li><a class="el" href="namespaceortools_1_1bop_1_1bop__parameters__pb2.html">ortools.bop.bop_parameters_pb2</a>, </li>
+<li><a class="el" href="namespaceortools_1_1glop_1_1parameters__pb2.html">ortools.glop.parameters_pb2</a>, </li>
+<li><a class="el" href="namespaceortools_1_1pdlp.html">ortools.pdlp</a>,</li>
+</ul>
+<p>PSPLIB Parser</p>
+<ul>
+<li>ortools.scheduling.python.rcpsp </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

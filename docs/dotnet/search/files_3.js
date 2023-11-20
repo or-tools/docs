@@ -8,5 +8,5 @@ var searchData=
   ['demon_2ecs_5',['Demon.cs',['../Demon_8cs.html',1,'']]],
   ['disjunctiveconstraint_2ecs_6',['DisjunctiveConstraint.cs',['../DisjunctiveConstraint_8cs.html',1,'']]],
   ['domain_2ecs_7',['domain.cs',['../constraint__solver_2Domain_8cs.html',1,'(Global Namespace)'],['../util_2Domain_8cs.html',1,'(Global Namespace)']]],
-  ['doublevector_2ecs_8',['DoubleVector.cs',['../DoubleVector_8cs.html',1,'']]]
+  ['doublevector_2ecs_8',['doublevector.cs',['../linear__solver_2DoubleVector_8cs.html',1,'(Global Namespace)'],['../model__builder_2DoubleVector_8cs.html',1,'(Global Namespace)']]]
 ];

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows to query information about the current bounds of the loaded <a class="el" href="cp__model_8proto.html">cp_model.proto</a> variables during the search. It is a "view" of the current solver state using the indices of the proto.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001329">Todo:</a></b></dt><dd>(user): For now it uses proto indices of the loaded model. We will need to add a mapping to use proto indices of the non-presolved model to allow for a client custom search with presolve. The main API shouldn't change though and the change will be transparent. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001344">Todo:</a></b></dt><dd>(user): For now it uses proto indices of the loaded model. We will need to add a mapping to use proto indices of the non-presolved model to allow for a client custom search with presolve. The main API shouldn't change though and the change will be transparent. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8h_source.html#l00042">42</a> of file <a class="el" href="cp__model__search_8h_source.html">cp_model_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8h_source.html#l00043">43</a> of file <a class="el" href="cp__model__search_8h_source.html">cp_model_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab289fd5d9a9758c798994fd53d4e14c3" name="ab289fd5d9a9758c798994fd53d4e14c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab289fd5d9a9758c798994fd53d4e14c3">&#9670;&#160;</a></span>CpModelView()</h2>
@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00050">50</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00051">51</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Helpers to generate a decision. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00093">93</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00094">94</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
 <p>If under a given partial assignment, the value of a variable has no impact, this might returns true, and there is no point trying to branch on this variable.</p>
 <p>This might for example be the case for the start of an unperformed interval which will not impact the rest of the problem in any way. Note that it is still possible to branch on ignored variable, this will just not change anything. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00068">68</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00069">69</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Getters about the current domain of the given variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00058">58</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00059">59</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00109">109</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00110">110</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00083">83</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00084">84</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>5 values -&gt; returns the second. 4 values -&gt; returns the second too. Array is 0 based.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00125">125</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00126">126</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00073">73</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00074">74</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Public Member Functions</h2></td></tr>
 
 <p>The valid indices for the calls below are in [0, num_variables). </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00056">56</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00057">57</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>

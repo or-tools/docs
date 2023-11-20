@@ -1,14 +1,15 @@
 var classoperations__research_1_1GuidedTabuSearch =
 [
     [ "GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html#adc0dd941b13cc34da4d0cc26843ae328", null ],
+    [ "GetEpsilon", "classoperations__research_1_1GuidedTabuSearch.html#a4a1a033393ea50374db5a9427dde5a18", null ],
     [ "GetLagrangianFactor", "classoperations__research_1_1GuidedTabuSearch.html#a42888e0253e0b3b84b5ef60621edc10e", null ],
     [ "GetPenaltyFactor", "classoperations__research_1_1GuidedTabuSearch.html#a709d533e9ff8f8fe8a24cbd270327e6b", null ],
-    [ "GetRadius", "classoperations__research_1_1GuidedTabuSearch.html#a733f197614f0fbc53034c1df4effbc81", null ],
     [ "GetTabuListSize", "classoperations__research_1_1GuidedTabuSearch.html#a3541ddd32dcc6d7f65c77e1f6747b1de", null ],
     [ "Initialize", "classoperations__research_1_1GuidedTabuSearch.html#a196c898a417f522728967a7a99b255d0", null ],
+    [ "NextSolution", "classoperations__research_1_1GuidedTabuSearch.html#a3b432dccc848e7c957cfe8e4ebb3919a", null ],
     [ "NextSolution", "classoperations__research_1_1GuidedTabuSearch.html#ae9e079ba191daebeff738fa832239443", null ],
+    [ "SetEpsilon", "classoperations__research_1_1GuidedTabuSearch.html#a8cb7ad08b3aaeba36fc434c5656b6faa", null ],
     [ "SetLagrangianFactor", "classoperations__research_1_1GuidedTabuSearch.html#a276460a461462ece00e2b69a4ba0cc75", null ],
     [ "SetPenaltyFactor", "classoperations__research_1_1GuidedTabuSearch.html#a888e107a346d8edd7d81f63dca373796", null ],
-    [ "SetRadiusFactor", "classoperations__research_1_1GuidedTabuSearch.html#a99fa1b4233c97b8350b3ae75c1aaa083", null ],
     [ "SetTabuListSize", "classoperations__research_1_1GuidedTabuSearch.html#a183ea908be227f682d45c5520905c37f", null ]
 ];

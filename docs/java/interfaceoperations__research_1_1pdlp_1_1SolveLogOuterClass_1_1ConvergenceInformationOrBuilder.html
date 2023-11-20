@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="SolveLogOuterClass_8java_source.html#l04737">4737</a> of file <a class="el" href="SolveLogOuterClass_8java_source.html">SolveLogOuterClass.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SolveLogOuterClass_8java_source.html#l04738">4738</a> of file <a class="el" href="SolveLogOuterClass_8java_source.html">SolveLogOuterClass.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afacc5f60f3c96cbf0fae20b63d1dfa1c" name="afacc5f60f3c96cbf0fae20b63d1dfa1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afacc5f60f3c96cbf0fae20b63d1dfa1c">&#9670;&#160;</a></span>getCandidateType()</h2>
@@ -236,6 +236,10 @@ bound is available.
 <pre>
 The dual objective. The dual need not be feasible. The dual objective
 includes the contributions from reduced costs.
+NOTE: The definition of dual_objective changed in OR-tools version 9.8.
+See
+<a href="https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective">https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective</a>
+for details.
 </pre><p><code>optional double dual_objective = 3;</code> </p><dl class="section return"><dt>Returns</dt><dd>The dualObjective. </dd></dl>
 
 <p>Implemented in <a class="el" href="classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#a0ef9f0161d8f6d1eb88a2cbcea50e5fd">operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation</a>, and <a class="el" href="classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation_1_1Builder.html#ac4f7718fcccc9069b9c947a6d34c37b4">operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation.Builder</a>.</p>
@@ -562,6 +566,10 @@ bound is available.
 <pre>
 The dual objective. The dual need not be feasible. The dual objective
 includes the contributions from reduced costs.
+NOTE: The definition of dual_objective changed in OR-tools version 9.8.
+See
+<a href="https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective">https://developers.google.com/optimization/lp/pdlp_math#reduced_costs_dual_residuals_and_the_corrected_dual_objective</a>
+for details.
 </pre><p><code>optional double dual_objective = 3;</code> </p><dl class="section return"><dt>Returns</dt><dd>Whether the dualObjective field is set. </dd></dl>
 
 <p>Implemented in <a class="el" href="classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html#acbfb10cc3553b3be77280e0ccc409e29">operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation</a>, and <a class="el" href="classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation_1_1Builder.html#ab545b8d6c3783282643d699b056b8806">operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation.Builder</a>.</p>

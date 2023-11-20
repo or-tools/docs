@@ -10,5 +10,6 @@ var constraint__violation_8h =
     [ "operations_research::sat::CompiledAllDiffConstraint", "classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html", "classoperations__research_1_1sat_1_1CompiledAllDiffConstraint" ],
     [ "operations_research::sat::CompiledNoOverlapConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html", "classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint" ],
     [ "operations_research::sat::CompiledCumulativeConstraint", "classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html", "classoperations__research_1_1sat_1_1CompiledCumulativeConstraint" ],
+    [ "operations_research::sat::CompiledNoOverlap2dConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html", "classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint" ],
     [ "ExprValue", "constraint__violation_8h.html#a81059e67e158faf5b55f5ac49123901d", null ]
 ];

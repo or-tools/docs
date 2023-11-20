@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -133,7 +133,7 @@ class operations_research::SavingsFilteredHeuristic::SavingsContainer&lt; Saving
 <p>UpdateNextAndSkippedSavingsForArcWithType() also updates the next_savings_ vector, which stores the savings to go through once we've iterated through all sorted_savings_. In the first case above, where neither nodes are contained, we skip the current <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> (current_saving_), and add the next best <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> for this arc to next_savings_ (in case this skipped <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> is never considered). In the second case with a specific type, we search for the <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> with the correct type for this arc, and add it to both next_savings_ and the skipped Savings.</p>
 <p>The skipped Savings are then re-considered when one of their ends gets inserted: When another <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> other_node--&gt;before (or after--&gt;other_node) gets inserted, all skipped Savings in skipped_savings_starting_at_[before] (or skipped_savings_ending_at_[after]) are once again considered by calling <a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#ab2acb39717ace377432db96e1225d29a">ReinjectSkippedSavingsStartingAt()</a> (or <a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#aaae52a28c21763faf737f404249a83f8">ReinjectSkippedSavingsEndingAt()</a>). Then, when calling <a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a8073c9e0a0e0d73724f373a2a54e3033">GetSaving()</a>, we iterate through the reinjected Savings in order of insertion in the vectors while there are reinjected savings. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02923">2923</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03086">3086</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9bacefaa2268805bb1336702b9783e5a" name="a9bacefaa2268805bb1336702b9783e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bacefaa2268805bb1336702b9783e5a">&#9670;&#160;</a></span>SavingsContainer()</h2>
@@ -171,7 +171,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02925">2925</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03088">3088</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02963">2963</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03126">3126</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </div><div class="memdoc">
 <p>Get the best <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> among the two.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03030">3030</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03193">3193</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03095">3095</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03258">3258</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03025">3025</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03188">3188</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02935">2935</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03098">3098</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03106">3106</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03269">3269</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03101">3101</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03264">3264</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -448,9 +448,9 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 <p>For each arc, sort the savings by decreasing total cost start--&gt;a--&gt;b--&gt;end. The best saving for each arc is therefore the last of its vector.</p>
-<p>Insert all Savings for this arc with the lowest cost into sorted_savings_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000355">Todo:</a></b></dt><dd>(user): Also do this when reiterating on next_savings_. </dd></dl>
+<p>Insert all Savings for this arc with the lowest cost into sorted_savings_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000357">Todo:</a></b></dt><dd>(user): Also do this when reiterating on next_savings_. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02972">2972</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03135">3135</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03066">3066</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03229">3229</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ template&lt;typename <a class="el" href="structoperations__research_1_1SavingsFi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03090">3090</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03253">3253</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>

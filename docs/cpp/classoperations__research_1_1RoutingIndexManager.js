@@ -6,7 +6,6 @@ var classoperations__research_1_1RoutingIndexManager =
     [ "RoutingIndexManager", "classoperations__research_1_1RoutingIndexManager.html#a82d6a798a50025f837067d76138c0c24", null ],
     [ "GetEndIndex", "classoperations__research_1_1RoutingIndexManager.html#a9bcc4ee8d5b1e75f22611539c9fc7417", null ],
     [ "GetIndexToNodeMap", "classoperations__research_1_1RoutingIndexManager.html#a0437b8297db6b108276430e6a7294dfd", null ],
-    [ "GetNodeToIndexMap", "classoperations__research_1_1RoutingIndexManager.html#abe9479063bbe2bd2359244b4953490fd", null ],
     [ "GetStartIndex", "classoperations__research_1_1RoutingIndexManager.html#acf2474bacd9acb4c3635309ea72041a5", null ],
     [ "IndexToNode", "classoperations__research_1_1RoutingIndexManager.html#ac5b5c56c53ac47cbf2b32776845bcc3b", null ],
     [ "IndicesToNodes", "classoperations__research_1_1RoutingIndexManager.html#a6a77c595b5b55ab968034e950cdff0ee", null ],

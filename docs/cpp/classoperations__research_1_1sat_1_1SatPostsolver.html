@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac0edc0a7a3d9ff6cf86c730f9dabdd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3336b2762049c2d81e2bd255e9c9ecc8" id="r_a3336b2762049c2d81e2bd255e9c9ecc8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPostsolver.html#a3336b2762049c2d81e2bd255e9c9ecc8">Clause</a> (int <a class="el" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>) const</td></tr>
 <tr class="separator:a3336b2762049c2d81e2bd255e9c9ecc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc8aa8496956c7ddda818f95003117e" id="r_a3cc8aa8496956c7ddda818f95003117e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1VariablesAssignment.html">VariablesAssignment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPostsolver.html#a3cc8aa8496956c7ddda818f95003117e">assignment</a> ()</td></tr>
+<tr class="separator:a3cc8aa8496956c7ddda818f95003117e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simple sat postsolver.</p>
@@ -243,6 +245,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3cc8aa8496956c7ddda818f95003117e" name="a3cc8aa8496956c7ddda818f95003117e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc8aa8496956c7ddda818f95003117e">&#9670;&#160;</a></span>assignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1VariablesAssignment.html">VariablesAssignment</a> &amp; operations_research::sat::SatPostsolver::assignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This will initially contains the Fixed variable. If <a class="el" href="classoperations__research_1_1sat_1_1SatPostsolver.html#a572087bb791cbfcb082e327d09e0fadb">PostsolveSolution()</a> is called, it will contain the final solution. </p>
+
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00110">110</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+
+</div>
+</div>
 <a id="a3336b2762049c2d81e2bd255e9c9ecc8" name="a3336b2762049c2d81e2bd255e9c9ecc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3336b2762049c2d81e2bd255e9c9ecc8">&#9670;&#160;</a></span>Clause()</h2>
 
@@ -266,7 +296,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002163">Todo:</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot juste use absl::Span&lt;Literal&gt; for instance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002208">Todo:</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot juste use absl::Span&lt;Literal&gt; for instance. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00090">90</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
@@ -310,7 +340,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tells the postsolver that the given literal must be true in any solution. We currently check that the variable is not already fixed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002162">Todo:</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002207">Todo:</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00068">68</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 

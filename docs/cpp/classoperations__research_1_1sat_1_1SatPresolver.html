@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -158,10 +158,10 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class holds a SAT problem (i.e. a set of clauses) and the logic to presolve it by a series of subsumption, self-subsuming resolution, and variable elimination by clause distribution.</p>
 <dl class="section note"><dt>Note</dt><dd>this does propagate unit-clauses, but probably much less efficiently than the propagation code in the SAT solver. So it is better to use a SAT solver to fix variables before using this class.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002159">Todo:</a></b></dt><dd>(user): Interact more with a SAT solver to reuse its propagation logic.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002160">Todo:</a></b></dt><dd>(user): Forbid the removal of some variables. This way we can presolve only the clause part of a general Boolean problem by not removing variables appearing in pseudo-Boolean constraints. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo:</a></b></dt><dd>(user): Interact more with a SAT solver to reuse its propagation logic.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo:</a></b></dt><dd>(user): Forbid the removal of some variables. This way we can presolve only the clause part of a general Boolean problem by not removing variables appearing in pseudo-Boolean constraints. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00147">147</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00151">151</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a48d43c858e789a63bf76da7414b55a5f" name="a48d43c858e789a63bf76da7414b55a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48d43c858e789a63bf76da7414b55a5f">&#9670;&#160;</a></span>ClauseIndex</h2>
@@ -174,9 +174,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002164">Todo:</a></b></dt><dd>(user): use IntType! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002209">Todo:</a></b></dt><dd>(user): use IntType! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00150">150</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00154">154</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00152">152</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00156">156</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +325,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00191">191</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00195">195</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -354,11 +354,11 @@ Public Member Functions</h2></td></tr>
 <p>Abort early if the "size" become too big.</p>
 <p>This is an incomplete heuristic for blocked clause detection. Here, the clause i is "blocked", so we can remove it. Note that the code below already do that if we decide to eliminate x.</p>
 <p>For more details, see the paper "Blocked clause elimination", Matti Jarvisalo, Armin Biere, Marijn Heule. TACAS, volume 6015 of Lecture Notes in Computer Science, pages 129–144. Springer, 2010.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002149">Todo:</a></b></dt><dd>(user): Choose if we use x or x.Negated() depending on the list sizes? The function achieve the same if x = x.Negated(), however the loops are not done in the same order which may change this incomplete "blocked" clause detection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo:</a></b></dt><dd>(user): Choose if we use x or x.Negated() depending on the list sizes? The function achieve the same if x = x.Negated(), however the loops are not done in the same order which may change this incomplete "blocked" clause detection. </dd></dl>
 <p>Add all the resolvant clauses. </p><dl class="section note"><dt>Note</dt><dd>the variable priority queue will only be updated during the deletion.</dd></dl>
 <p>Deletes the old clauses.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002150">Todo:</a></b></dt><dd>(user): We could only update the priority queue once for each variable instead of doing it many times. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002151">Todo:</a></b></dt><dd>(user): At this point x.Variable() is added back to the priority queue. Avoid doing that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002195">Todo:</a></b></dt><dd>(user): We could only update the priority queue once for each variable instead of doing it many times. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002196">Todo:</a></b></dt><dd>(user): At this point x.Variable() is added back to the priority queue. Avoid doing that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00712">712</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 
@@ -411,7 +411,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>All the clauses managed by this class. </p><dl class="section note"><dt>Note</dt><dd>deleted clauses keep their indices (they are just empty). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00190">190</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00194">194</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The number of variables. This is computed automatically from the clauses added to the <a class="el" href="classoperations__research_1_1sat_1_1SatPresolver.html">SatPresolver</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00197">197</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00201">201</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Presolves the problem currently loaded. Returns false if the model is proven to be UNSAT during the presolving.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo:</a></b></dt><dd>(user): Add support for a time limit and some kind of iterations limit so that this can never take too much time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002210">Todo:</a></b></dt><dd>(user): Add support for a time limit and some kind of iterations limit so that this can never take too much time. </dd></dl>
 <p>This is slighlty inefficient, but the presolve algorithm is a lot more costly anyway.</p>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00330">330</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
@@ -507,7 +507,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1sat_1_1SatPresolver.html#a32df98e6426d1e7a18247a18207717f1">Presolve()</a> but only allow to remove BooleanVariable whose index is set to true in the given vector. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo:</a></b></dt><dd>(user): When a clause is strengthened, add it to a queue so it can be processed again? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo:</a></b></dt><dd>(user): When a clause is strengthened, add it to a queue so it can be processed again? </dd></dl>
 <p>We apply BVA after a pass of the other algorithms.</p>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00337">337</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
@@ -551,11 +551,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Visible for Testing. Takes a given clause index and looks for clause that can be subsumed or strengthened using this clause. Returns false if the model is proven to be unsat.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002146">Todo:</a></b></dt><dd>(user): Binary clauses are really common, and we can probably do this more efficiently for them. For instance, we could just take the intersection of two sorted lists to get the simplified clauses. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002191">Todo:</a></b></dt><dd>(user): Binary clauses are really common, and we can probably do this more efficiently for them. For instance, we could just take the intersection of two sorted lists to get the simplified clauses. </dd></dl>
 <p>If there is another "short" occurrence list, use it. Otherwise use the one corresponding to the negation of lit.</p>
 <p>Treat the clauses containing lit.Negated().</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002147">Todo:</a></b></dt><dd>(user): not super optimal since we could abort earlier if opposite_literal is not the negation of shortest_list. Note that this applies to the second call to ProcessClauseToSimplifyOthersUsingLiteral() above too. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002148">Todo:</a></b></dt><dd>(user): remove the old clauses_[ci] afterwards. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002192">Todo:</a></b></dt><dd>(user): not super optimal since we could abort earlier if opposite_literal is not the negation of shortest_list. Note that this applies to the second call to ProcessClauseToSimplifyOthersUsingLiteral() above too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo:</a></b></dt><dd>(user): remove the old clauses_[ci] afterwards. </dd></dl>
 <p>Recompute signature.</p>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00636">636</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
@@ -586,7 +586,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00230">230</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00234">234</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -613,9 +613,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Registers a mapping to encode equivalent literals. See <a class="el" href="namespaceoperations__research_1_1sat.html#a741dec692e255a08e4fae5ce3a8dbe7d">ProbeAndFindEquivalentLiteral()</a>. </p>
+<p>Registers a mapping to encode equivalent literals. See <a class="el" href="namespaceoperations__research_1_1sat.html#aa9cd7652ef26e6d69565e1e7e1db3f07">ProbeAndFindEquivalentLiteral()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00167">167</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00171">171</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +665,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00162">162</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00166">166</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00163">163</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00167">167</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
 </div>
 </div>

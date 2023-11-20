@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -335,10 +335,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Note(user): using the first coefficient may not give the best precision.</p>
 <p>The new row bounds (only meaningful for the proportional rows).</p>
 <p>Where the new bounds are coming from. Only for the constraints that stay in the lp and are modified, kInvalidRow otherwise.</p>
-<p>Initialization. We need the first representative of each proportional row class to point to itself for the loop below. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000458">Todo:</a></b></dt><dd>(user): Already return such a mapping from <a class="el" href="namespaceoperations__research_1_1glop.html#aed75af61dbbe6d3c628c274f271f9000">FindProportionalColumns()</a>? </dd></dl>
+<p>Initialization. We need the first representative of each proportional row class to point to itself for the loop below. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000460">Todo:</a></b></dt><dd>(user): Already return such a mapping from <a class="el" href="namespaceoperations__research_1_1glop.html#aed75af61dbbe6d3c628c274f271f9000">FindProportionalColumns()</a>? </dd></dl>
 <p>Compute the bound of each representative as implied by the rows which are proportional to it. Also keep the source row of each bound.</p>
 <p>For now, delete all the rows that are proportional to another one. </p><dl class="section note"><dt>Note</dt><dd>we will unmark the final representative of this class later.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000459">Todo:</a></b></dt><dd>(user): if the bounds are equal, use the largest row in magnitude? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000461">Todo:</a></b></dt><dd>(user): if the bounds are equal, use the largest row in magnitude? </dd></dl>
 <p>For maximum precision, and also to simplify the postsolve, we choose a representative for each class of proportional columns that has at least one of the two tightest bounds.</p>
 <p>In this case, a simple change of representative is enough. The constraint bounds of the representative will not change.</p>
 <p>Report <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a7850fcfea005b86b2a3fa0d4293c5ee0">ProblemStatus::PRIMAL_INFEASIBLE</a> if the new lower bound is not lower than the new upper bound modulo the default tolerance.</p>

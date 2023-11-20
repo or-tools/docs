@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,6 +118,11 @@ Public Types</h2></td></tr>
 , <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a1f7f5fcf0035f687f3bc948623b2d385">GLPK_MIXED_INTEGER_PROGRAMMING</a> = 4
 , <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a6f8b8f9d64ae299e8cfccf4917bf5282">CBC_MIXED_INTEGER_PROGRAMMING</a> = 5
 , <br />
+&#160;&#160;<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a700f1ee7e3a0b8d2239b2f203d3dfebd">HIGHS_MIXED_INTEGER_PROGRAMMING</a> = 16
+, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2aaef5b33a2d88606a978524ebc7b1cb7b">BOP_INTEGER_PROGRAMMING</a> = 12
+, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a3f2fcd45bd10db9f9ff5942c75c1ab1f">SAT_INTEGER_PROGRAMMING</a> = 14
+, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2ad3f75a53295bb1785b56df35f74469b9">KNAPSACK_MIXED_INTEGER_PROGRAMMING</a> = 13
+, <br />
 &#160;&#160;<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2adc92b60bbd3f4fdb4ec34766dbc2b2ca">GUROBI_LINEAR_PROGRAMMING</a> = 6
 , <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a829acae9ac9512341d406f859977f8e2">GUROBI_MIXED_INTEGER_PROGRAMMING</a> = 7
 , <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a3c817a44b603f504b07d5b8d6b88fe0f">CPLEX_LINEAR_PROGRAMMING</a> = 10
@@ -125,11 +130,8 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a9d6c1f109d69332778da4f9f994b87f9">XPRESS_LINEAR_PROGRAMMING</a> = 101
 , <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a5f7f159762795a6b8b292131862c8b10">XPRESS_MIXED_INTEGER_PROGRAMMING</a> = 102
-, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a700f1ee7e3a0b8d2239b2f203d3dfebd">HIGHS_MIXED_INTEGER_PROGRAMMING</a> = 16
-, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2aaef5b33a2d88606a978524ebc7b1cb7b">BOP_INTEGER_PROGRAMMING</a> = 12
-, <br />
-&#160;&#160;<a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a3f2fcd45bd10db9f9ff5942c75c1ab1f">SAT_INTEGER_PROGRAMMING</a> = 14
-, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2ad3f75a53295bb1785b56df35f74469b9">KNAPSACK_MIXED_INTEGER_PROGRAMMING</a> = 13
+, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a8a777d4fabecd42a27e399cd0c4320c1">COPT_LINEAR_PROGRAMMING</a> = 103
+, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2aa8132e98717e82aa7ce02c648ca26410">COPT_MIXED_INTEGER_PROGRAMMING</a> = 104
 <br />
  }</td></tr>
 <tr class="separator:a42c406c7e6fba381aa2bb41aae4b44f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,6 +354,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aeb2254bd729ca1e7a66dfc0bfbfa48d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3662b74e66a8ff603eefe33ba522361f" id="r_a3662b74e66a8ff603eefe33ba522361f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolver.html#a3662b74e66a8ff603eefe33ba522361f">SolverTypeSupportsInterruption</a> (const MPModelRequest::SolverType solver)</td></tr>
 <tr class="separator:a3662b74e66a8ff603eefe33ba522361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e79892daadece7845a57c392ff4c5a1" id="r_a9e79892daadece7845a57c392ff4c5a1"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolver.html#a9e79892daadece7845a57c392ff4c5a1">GetMPModelRequestLoggingInfo</a> (const MPModelRequest &amp;request)</td></tr>
+<tr class="memdesc:a9e79892daadece7845a57c392ff4c5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">static  <br /></td></tr>
+<tr class="separator:a9e79892daadece7845a57c392ff4c5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b15f7248e2b72d474bae0444a613033" id="r_a5b15f7248e2b72d474bae0444a613033"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolver.html#a5b15f7248e2b72d474bae0444a613033">infinity</a> ()</td></tr>
 <tr class="separator:a5b15f7248e2b72d474bae0444a613033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe44ede4035dc2c48a79a22491e109af" id="r_abe44ede4035dc2c48a79a22491e109af"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolver.html#abe44ede4035dc2c48a79a22491e109af">global_num_variables</a> ()</td></tr>
@@ -397,7 +402,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This mathematical programming (MP) solver class is the main class though which users build and solve problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00188">188</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00189">189</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7e2a34816b22749e70e23d26f49cf743" name="a7e2a34816b22749e70e23d26f49cf743"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e2a34816b22749e70e23d26f49cf743">&#9670;&#160;</a></span>BasisStatus</h2>
@@ -419,7 +424,7 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a7e2a34816b22749e70e23d26f49cf743a0185d5946c48b9852d8a02a7493f4dcf" name="a7e2a34816b22749e70e23d26f49cf743a0185d5946c48b9852d8a02a7493f4dcf"></a>BASIC&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00702">702</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00709">709</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -448,13 +453,6 @@ Friends</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a1f7f5fcf0035f687f3bc948623b2d385" name="a42c406c7e6fba381aa2bb41aae4b44f2a1f7f5fcf0035f687f3bc948623b2d385"></a>GLPK_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a6f8b8f9d64ae299e8cfccf4917bf5282" name="a42c406c7e6fba381aa2bb41aae4b44f2a6f8b8f9d64ae299e8cfccf4917bf5282"></a>CBC_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2adc92b60bbd3f4fdb4ec34766dbc2b2ca" name="a42c406c7e6fba381aa2bb41aae4b44f2adc92b60bbd3f4fdb4ec34766dbc2b2ca"></a>GUROBI_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"><p>Commercial software (need license). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a829acae9ac9512341d406f859977f8e2" name="a42c406c7e6fba381aa2bb41aae4b44f2a829acae9ac9512341d406f859977f8e2"></a>GUROBI_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a3c817a44b603f504b07d5b8d6b88fe0f" name="a42c406c7e6fba381aa2bb41aae4b44f2a3c817a44b603f504b07d5b8d6b88fe0f"></a>CPLEX_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2ac5e8da8ca3309ef96a34bbfa83f07dc7" name="a42c406c7e6fba381aa2bb41aae4b44f2ac5e8da8ca3309ef96a34bbfa83f07dc7"></a>CPLEX_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a9d6c1f109d69332778da4f9f994b87f9" name="a42c406c7e6fba381aa2bb41aae4b44f2a9d6c1f109d69332778da4f9f994b87f9"></a>XPRESS_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a5f7f159762795a6b8b292131862c8b10" name="a42c406c7e6fba381aa2bb41aae4b44f2a5f7f159762795a6b8b292131862c8b10"></a>XPRESS_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a700f1ee7e3a0b8d2239b2f203d3dfebd" name="a42c406c7e6fba381aa2bb41aae4b44f2a700f1ee7e3a0b8d2239b2f203d3dfebd"></a>HIGHS_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2aaef5b33a2d88606a978524ebc7b1cb7b" name="a42c406c7e6fba381aa2bb41aae4b44f2aaef5b33a2d88606a978524ebc7b1cb7b"></a>BOP_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"><p>Boolean optimization problem (requires only integer variables and works best with only Boolean variables). </p>
 </td></tr>
@@ -463,9 +461,18 @@ Friends</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2ad3f75a53295bb1785b56df35f74469b9" name="a42c406c7e6fba381aa2bb41aae4b44f2ad3f75a53295bb1785b56df35f74469b9"></a>KNAPSACK_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"><p>Dedicated knapsack solvers. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2adc92b60bbd3f4fdb4ec34766dbc2b2ca" name="a42c406c7e6fba381aa2bb41aae4b44f2adc92b60bbd3f4fdb4ec34766dbc2b2ca"></a>GUROBI_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"><p>Commercial software (need license). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a829acae9ac9512341d406f859977f8e2" name="a42c406c7e6fba381aa2bb41aae4b44f2a829acae9ac9512341d406f859977f8e2"></a>GUROBI_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a3c817a44b603f504b07d5b8d6b88fe0f" name="a42c406c7e6fba381aa2bb41aae4b44f2a3c817a44b603f504b07d5b8d6b88fe0f"></a>CPLEX_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2ac5e8da8ca3309ef96a34bbfa83f07dc7" name="a42c406c7e6fba381aa2bb41aae4b44f2ac5e8da8ca3309ef96a34bbfa83f07dc7"></a>CPLEX_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a9d6c1f109d69332778da4f9f994b87f9" name="a42c406c7e6fba381aa2bb41aae4b44f2a9d6c1f109d69332778da4f9f994b87f9"></a>XPRESS_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a5f7f159762795a6b8b292131862c8b10" name="a42c406c7e6fba381aa2bb41aae4b44f2a5f7f159762795a6b8b292131862c8b10"></a>XPRESS_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2a8a777d4fabecd42a27e399cd0c4320c1" name="a42c406c7e6fba381aa2bb41aae4b44f2a8a777d4fabecd42a27e399cd0c4320c1"></a>COPT_LINEAR_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42c406c7e6fba381aa2bb41aae4b44f2aa8132e98717e82aa7ce02c648ca26410" name="a42c406c7e6fba381aa2bb41aae4b44f2aa8132e98717e82aa7ce02c648ca26410"></a>COPT_MIXED_INTEGER_PROGRAMMING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00196">196</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00197">197</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -498,7 +505,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00462">462</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00465">465</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +538,7 @@ Friends</h2></td></tr>
 
 <p>Create a solver with the given name and underlying solver backend. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00478">478</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00489">489</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -586,7 +593,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00490">490</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00501">501</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -607,7 +614,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets values of out of bound variables to the corresponding bound and returns an error if any of the variables have NaN value. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01636">1636</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01649">1649</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -627,7 +634,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Clears the objective (including the optimization direction), all variables and constraints. All the other properties of the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> (like the time limit) are kept untouched. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01367">1367</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01380">1380</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -646,9 +653,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Advanced usage: compute the "activities" of all constraints, which are the sums of their linear terms. The activities are returned in the same order as <a class="el" href="classoperations__research_1_1MPSolver.html#aa5826c3b7ca4e37feef5a6dce06bc5a0">constraints()</a>, which is the order in which constraints were added; but you can also use <a class="el" href="classoperations__research_1_1MPConstraint.html#abdf2c9c953fd4d118e7871a716445600" title="Returns the index of the constraint in the MPSolver::constraints_.">MPConstraint::index()</a> to get a constraint's index. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000754">Todo:</a></b></dt><dd>(user): test this failure case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000758">Todo:</a></b></dt><dd>(user): test this failure case. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01654">1654</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01667">1667</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -677,7 +684,7 @@ Friends</h2></td></tr>
 </ul>
 <p>The computation of the condition number depends on the quality of the LU decomposition, so it is not very accurate when the matrix is ill conditioned. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01824">1824</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01837">1837</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -706,7 +713,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the constraint at the given index. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00403">403</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00406">406</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +742,7 @@ Friends</h2></td></tr>
 <p>Returns the array of constraints handled by the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>.</p>
 <p>They are listed in the order in which they were created. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00400">400</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00403">403</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -782,7 +789,7 @@ Friends</h2></td></tr>
 <li>GLPK_MIXED_INTEGER_PROGRAMMING or GLPK or GLPK_MIP </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00653">653</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00664">664</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -809,7 +816,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00755">755</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00762">762</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -830,7 +837,7 @@ Friends</h2></td></tr>
 
 <p>Enables solver logging. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01816">1816</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01829">1829</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -862,7 +869,7 @@ Friends</h2></td></tr>
 <p>Shortcuts to the homonymous MPModelProtoExporter methods, via exporting to a MPModelProto with <a class="el" href="classoperations__research_1_1MPSolver.html#a9c8cc8b3c36fe9c08d8e0eefbc98b774" title="Exports model to protocol buffer.">ExportModelToProto()</a> (see above).</p>
 <p>Produces empty std::string on portable platforms (e.g. android, ios). </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01837">1837</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01850">1850</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -898,7 +905,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01849">1849</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01862">1862</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -921,14 +928,14 @@ Friends</h2></td></tr>
 <p>Exports model to protocol buffer. </p>
 <p>Name</p>
 <p>Variables</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000750">Todo:</a></b></dt><dd>(user): Add option to avoid filling the var name to avoid overly large protocol buffers. </dd></dl>
-<p>Map the variables to their indices. This is needed to output the variables in the order they were created, which in turn is needed to have repeatable results with ExportModelAsLpFormat and ExportModelAsMpsFormat. This step is needed as long as the variable indices are given by the underlying solver at the time of model extraction. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000751">Todo:</a></b></dt><dd>(user): remove this step. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000754">Todo:</a></b></dt><dd>(user): Add option to avoid filling the var name to avoid overly large protocol buffers. </dd></dl>
+<p>Map the variables to their indices. This is needed to output the variables in the order they were created, which in turn is needed to have repeatable results with ExportModelAsLpFormat and ExportModelAsMpsFormat. This step is needed as long as the variable indices are given by the underlying solver at the time of model extraction. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000755">Todo:</a></b></dt><dd>(user): remove this step. </dd></dl>
 <p>Constraints</p>
 <p>Vector linear_term will contain pairs (variable index, coeff), that will be sorted by variable index.</p>
 <p>The cost of sort is expected to be low as constraints usually have very few terms.</p>
 <p>Now use linear term.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01189">1189</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01202">1202</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -952,7 +959,38 @@ Friends</h2></td></tr>
 <p>Dual values have no meaning in MIP.</p>
 <p>Reduced cost have no meaning in MIP.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00962">962</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00973">973</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+
+</div>
+</div>
+<a id="a9e79892daadece7845a57c392ff4c5a1" name="a9e79892daadece7845a57c392ff4c5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e79892daadece7845a57c392ff4c5a1">&#9670;&#160;</a></span>GetMPModelRequestLoggingInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string operations_research::MPSolver::GetMPModelRequestLoggingInfo </td>
+          <td>(</td>
+          <td class="paramtype">const MPModelRequest &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>static </p>
+<p>Gives some brief (a few lines, at most) human-readable information about the given request, suitable for debug logging. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l02328">2328</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -981,7 +1019,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of threads to be used during solve. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00668">668</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00670">670</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1046,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00677">677</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00679">679</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1036,9 +1074,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>static </p>
-<p>Why not ReaderMutexLock? See go/totw/197#when-are-shared-locks-useful.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01908">1908</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01920">1920</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1067,9 +1104,8 @@ Friends</h2></td></tr>
 
 <p>static </p>
 <p>Global counters of variables and constraints ever created across all <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> instances. Those are only updated after the destruction (or <a class="el" href="classoperations__research_1_1MPSolver.html#a4fb5381d2f4a764660365168622e4955">Clear()</a>) of each <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> instance. </p>
-<p>Why not ReaderMutexLock? See go/totw/197#when-are-shared-locks-useful.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01901">1901</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01914">1914</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1134,7 @@ Friends</h2></td></tr>
 <p>Infinity.</p>
 <p>You can use -<a class="el" href="classoperations__research_1_1MPSolver.html#a5b15f7248e2b72d474bae0444a613033">MPSolver::infinity()</a> for negative infinity. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00730">730</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00737">737</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1155,7 @@ Friends</h2></td></tr>
 <p>Interrupts the <a class="el" href="classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962" title="Solves the problem using the default parameter values.">Solve()</a> execution to terminate processing if possible.</p>
 <p>If the underlying interface supports interruption; it does that and returns true regardless of whether there's an ongoing <a class="el" href="classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962" title="Solves the problem using the default parameter values.">Solve()</a> or not. The <a class="el" href="classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962" title="Solves the problem using the default parameter values.">Solve()</a> call may still linger for a while depending on the conditions. If interruption is not supported; returns false and does nothing. <a class="el" href="classoperations__research_1_1MPSolver.html#a3662b74e66a8ff603eefe33ba522361f">MPSolver::SolverTypeSupportsInterruption</a> can be used to check if interruption is supported for a given solver type. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01390">1390</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01403">1403</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1176,7 @@ Friends</h2></td></tr>
 
 <p>--&mdash; Interface shortcuts --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00336">336</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00347">347</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1197,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of simplex iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01820">1820</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01833">1833</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1238,7 @@ Friends</h2></td></tr>
 <p>Returns MPSOLVER_MODEL_IS_VALID if the model is valid, and another status otherwise (currently only MPSOLVER_MODEL_INVALID and MPSOLVER_INFEASIBLE). If the model isn't valid, populates "error_message". If <code>clear_names</code> is true (the default), clears all names, otherwise returns MPSOLVER_MODEL_INVALID if there are duplicates (non-empty) names. </p>
 <p>The variable and constraint names are dropped, because we allow duplicate names in the proto (they're not considered as 'ids'), unlike the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> C++ API which crashes if there are duplicate names. Clearing the names makes the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> generate unique names.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00688">688</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00699">699</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1271,7 @@ Friends</h2></td></tr>
 <p>The same as above, except that the loading keeps original variable and constraint names. Caller should make sure that all variable names and constraint names are unique, respectively. </p>
 <p>Force variable and constraint name indexing (which CHECKs name uniqueness).</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00705">705</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00716">716</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1276,13 +1312,13 @@ Friends</h2></td></tr>
 <div class="line">  CHECK_OK(my_solver.<a class="code hl_function" href="classoperations__research_1_1MPSolver.html#aae2800c3df9ebf5f1e3c21cd5af3c9a9">LoadSolutionFromProto</a>(solver_response));</div>
 <div class="line">  ... inspect the <a class="code hl_function" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a> <span class="keyword">using </span>the usual API: solution_value(), etc...</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html">operations_research::MPSolver</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00188">linear_solver.h:188</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_a154ea994632a88cccebd5e8d6469573f"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#a154ea994632a88cccebd5e8d6469573f">operations_research::MPSolver::variables</a></div><div class="ttdeci">const std::vector&lt; MPVariable * &gt; &amp; variables() const</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00329">linear_solver.h:329</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_a9c8cc8b3c36fe9c08d8e0eefbc98b774"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#a9c8cc8b3c36fe9c08d8e0eefbc98b774">operations_research::MPSolver::ExportModelToProto</a></div><div class="ttdeci">void ExportModelToProto(MPModelProto *output_model) const</div><div class="ttdoc">Exports model to protocol buffer.</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01189">linear_solver.cc:1189</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aa5826c3b7ca4e37feef5a6dce06bc5a0"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aa5826c3b7ca4e37feef5a6dce06bc5a0">operations_research::MPSolver::constraints</a></div><div class="ttdeci">const std::vector&lt; MPConstraint * &gt; &amp; constraints() const</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00400">linear_solver.h:400</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aae2800c3df9ebf5f1e3c21cd5af3c9a9"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aae2800c3df9ebf5f1e3c21cd5af3c9a9">operations_research::MPSolver::LoadSolutionFromProto</a></div><div class="ttdeci">absl::Status LoadSolutionFromProto(const MPSolutionResponse &amp;response, double tolerance=std::numeric_limits&lt; double &gt;::infinity())</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01276">linear_solver.cc:1276</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aeb2254bd729ca1e7a66dfc0bfbfa48d2"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aeb2254bd729ca1e7a66dfc0bfbfa48d2">operations_research::MPSolver::SolveWithProto</a></div><div class="ttdeci">static void SolveWithProto(const MPModelRequest &amp;model_request, MPSolutionResponse *response, std::atomic&lt; bool &gt; *interrupt=nullptr)</div><div class="ttdoc">static</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01006">linear_solver.cc:1006</a></div></div>
-<div class="ttc" id="acp__model__solver_8cc_html_ac3c7e255171970400b8e766957e73d85"><div class="ttname"><a href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a></div><div class="ttdeci">const CpModelProto *const model_proto</div><div class="ttdoc">These are never nullptr.</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02460">cp_model_solver.cc:2460</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html">operations_research::MPSolver</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00189">linear_solver.h:189</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_a154ea994632a88cccebd5e8d6469573f"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#a154ea994632a88cccebd5e8d6469573f">operations_research::MPSolver::variables</a></div><div class="ttdeci">const std::vector&lt; MPVariable * &gt; &amp; variables() const</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00332">linear_solver.h:332</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_a9c8cc8b3c36fe9c08d8e0eefbc98b774"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#a9c8cc8b3c36fe9c08d8e0eefbc98b774">operations_research::MPSolver::ExportModelToProto</a></div><div class="ttdeci">void ExportModelToProto(MPModelProto *output_model) const</div><div class="ttdoc">Exports model to protocol buffer.</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01202">linear_solver.cc:1202</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aa5826c3b7ca4e37feef5a6dce06bc5a0"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aa5826c3b7ca4e37feef5a6dce06bc5a0">operations_research::MPSolver::constraints</a></div><div class="ttdeci">const std::vector&lt; MPConstraint * &gt; &amp; constraints() const</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8h_source.html#l00403">linear_solver.h:403</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aae2800c3df9ebf5f1e3c21cd5af3c9a9"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aae2800c3df9ebf5f1e3c21cd5af3c9a9">operations_research::MPSolver::LoadSolutionFromProto</a></div><div class="ttdeci">absl::Status LoadSolutionFromProto(const MPSolutionResponse &amp;response, double tolerance=std::numeric_limits&lt; double &gt;::infinity())</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01289">linear_solver.cc:1289</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPSolver_html_aeb2254bd729ca1e7a66dfc0bfbfa48d2"><div class="ttname"><a href="classoperations__research_1_1MPSolver.html#aeb2254bd729ca1e7a66dfc0bfbfa48d2">operations_research::MPSolver::SolveWithProto</a></div><div class="ttdeci">static void SolveWithProto(const MPModelRequest &amp;model_request, MPSolutionResponse *response, std::atomic&lt; bool &gt; *interrupt=nullptr)</div><div class="ttdoc">static</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8cc_source.html#l01017">linear_solver.cc:1017</a></div></div>
+<div class="ttc" id="acp__model__solver_8cc_html_ac3c7e255171970400b8e766957e73d85"><div class="ttname"><a href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a></div><div class="ttdeci">const CpModelProto *const model_proto</div><div class="ttdoc">These are never nullptr.</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02462">cp_model_solver.cc:2462</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_html_a35a30dc825cd0afa0e095f47118cd3cd"><div class="ttname"><a href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">operations_research::solution</a></div><div class="ttdeci">Select next search node to expand Select next item_i to add this new search node to the search Generate a new search node where item_i is not in the knapsack Check validity of this new partial solution(using propagators) - If valid</div></div>
 </div><!-- fragment --><p>The response must be in OPTIMAL or FEASIBLE status.</p>
 <p>Returns a non-OK status if a problem arised (typically, if it wasn't used like it should be):</p><ul>
@@ -1293,11 +1329,11 @@ Friends</h2></td></tr>
 <p>Note: the objective value isn't checked. You can use <a class="el" href="classoperations__research_1_1MPSolver.html#a2a4a0234b5830d4ea82d549b3b6b5baf">VerifySolution()</a> for that. </p>
 <p>Before touching the variables, verify that the solution looks legit: each variable of the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> must have its value listed exactly once, and each listed solution should correspond to a known variable.</p>
 <p>Look further: verify that the variable values are within the bounds.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000752">Todo:</a></b></dt><dd>(user): Use parameter when they become available in this class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000756">Todo:</a></b></dt><dd>(user): Use parameter when they become available in this class. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> the objective value, if is known. NOTE(user): We do not verify the objective, even though we could!</p>
 <p>Mark the status as SOLUTION_SYNCHRONIZED, so that users may inspect the solution normally.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01276">1276</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01289">1289</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1355,7 @@ Friends</h2></td></tr>
 <p>Looks up a constraint by name, and returns nullptr if it does not exist.</p>
 <p>The first call has a O(n) complexity, as the constraint name index is lazily created upon first use. Will crash if constraint names are not unique. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00677">677</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00688">688</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1340,7 +1376,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Looks up a variable by name, and returns nullptr if it does not exist. The first call has a O(n) complexity, as the variable name index is lazily created upon first use. Will crash if variable names are not unique. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00668">668</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00679">679</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1398,7 @@ Friends</h2></td></tr>
 
 <p>Creates a boolean variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01424">1424</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01437">1437</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1436,7 @@ Friends</h2></td></tr>
 
 <p>Creates an array of boolean variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01457">1457</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01470">1470</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1438,7 +1474,7 @@ Friends</h2></td></tr>
 
 <p>Creates an integer variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01419">1419</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01432">1432</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1524,7 @@ Friends</h2></td></tr>
 
 <p>Creates an array of integer variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01451">1451</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01464">1464</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1562,7 @@ Friends</h2></td></tr>
 
 <p>Creates a continuous variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01414">1414</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01427">1427</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1612,7 @@ Friends</h2></td></tr>
 
 <p>Creates an array of continuous variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01445">1445</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01458">1458</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1633,7 @@ Friends</h2></td></tr>
 
 <p>Creates a constraint with -infinity and +infinity bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01466">1466</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01479">1479</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1618,7 +1654,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a constraint owned by <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> enforcing: range.lower_bound() &lt;= range.linear_expr() &lt;= range.upper_bound() </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01489">1489</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01502">1502</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1650,7 +1686,7 @@ Friends</h2></td></tr>
 
 <p>As above, but also names the constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01493">1493</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01506">1506</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1708,7 @@ Friends</h2></td></tr>
 
 <p>Creates a named constraint with -infinity and +infinity bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01485">1485</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01498">1498</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1705,7 +1741,7 @@ Friends</h2></td></tr>
 <p>Bounds can be finite or +/- <a class="el" href="classoperations__research_1_1MPSolver.html#a5b15f7248e2b72d474bae0444a613033">MPSolver::infinity()</a>. The <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> class assumes ownership of the constraint.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the newly created constraint. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01462">1462</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01475">1475</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1743,7 +1779,7 @@ Friends</h2></td></tr>
 
 <p>Creates a named constraint with given bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01470">1470</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01483">1483</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1786,7 +1822,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a variable with the given bounds, integrality requirement and name. Bounds can be finite or +/- <a class="el" href="classoperations__research_1_1MPSolver.html#a5b15f7248e2b72d474bae0444a613033">MPSolver::infinity()</a>. The <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> owns the variable (i.e. the returned pointer is borrowed). Variable names are optional. If you give an empty name, <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267" title="A name for logging purposes.">name()</a> will auto-generate one for you upon request. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01400">1400</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01413">1413</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1852,7 +1888,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01428">1428</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01441">1441</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +1917,7 @@ Friends</h2></td></tr>
 
 <p>Returns the mutable objective object. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00454">454</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00457">457</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1910,7 +1946,7 @@ Friends</h2></td></tr>
 
 <p>Returns the name of the model set at construction. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00306">306</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00309">309</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1932,7 +1968,7 @@ Friends</h2></td></tr>
 <p>The optimality properties of the additional solutions found, and whether or not the solver computes them ahead of time or when <a class="el" href="classoperations__research_1_1MPSolver.html#a561dde3db0550a8d0c4b4671515ee9d6">NextSolution()</a> is called is solver specific.</p>
 <p>As of 2020-02-10, only Gurobi and SCIP support <a class="el" href="classoperations__research_1_1MPSolver.html#a561dde3db0550a8d0c4b4671515ee9d6">NextSolution()</a>, see linear_solver_interfaces_test for an example of how to configure these solvers for multiple solutions. Other solvers return false unconditionally. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01885">1885</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01898">1898</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1953,7 +1989,7 @@ Friends</h2></td></tr>
 <p>Returns the number of branch-and-bound nodes evaluated during the solve.</p>
 <p>Only available for discrete problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01822">1822</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01835">1835</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1982,7 +2018,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00393">393</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00396">396</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2011,7 +2047,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00323">323</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00326">326</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2076,7 @@ Friends</h2></td></tr>
 <p>Returns the objective object.</p>
 <p>Note that the objective is owned by the solver, and is initialized to its default value (see the <a class="el" href="classoperations__research_1_1MPObjective.html" title="A class to express a linear objective.">MPObjective</a> class below) at construction. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00451">451</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00454">454</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2087,7 +2123,7 @@ Friends</h2></td></tr>
 <p>Controls (or queries) the amount of output produced by the underlying solver. The output can surface to LOGs, or to stdout or stderr, depending on the implementation. The amount of output will greatly vary with each implementation and each problem.</p>
 <p>Output is suppressed by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01814">1814</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01827">1827</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2110,7 +2146,7 @@ Friends</h2></td></tr>
 <p>Debugging: verify that the given MPVariable* belongs to this solver. </p>
 <p>Then, verify that the variable with this index has the same address.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01828">1828</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01841">1841</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2157,7 +2193,7 @@ Friends</h2></td></tr>
 <p>Rewrite CP-SAT into SAT.</p>
 <p>Reverse lookup in the kOptimizationProblemTypeNames[] array.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00583">583</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00594">594</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2186,7 +2222,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Parses the name of the solver and returns the correct optimization type or dies. Invariant: ParseSolverTypeOrDie(ToString(type)) = type. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00645">645</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00656">656</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2251,7 @@ Friends</h2></td></tr>
 
 <p>Returns the optimization problem type set at construction. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00311">311</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00314">314</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2236,7 +2272,7 @@ Friends</h2></td></tr>
 <p>Advanced usage: resets extracted model to solve from scratch.</p>
 <p>This won't reset the parameters that were set with <a class="el" href="classoperations__research_1_1MPSolver.html#a532d2fb86e5cdc4710e1a168acbbe7f6">SetSolverSpecificParametersAsString()</a> or <a class="el" href="classoperations__research_1_1MPSolver.html#afd2b60b65f99f6f74c9a067115ffe660">set_time_limit()</a> or even clear the linear program. It will just make sure that next <a class="el" href="classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962" title="Solves the problem using the default parameter values.">Solve()</a> will be as if everything was reconstructed from scratch. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01388">1388</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01401">1401</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2264,7 +2300,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00851">851</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00856">856</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2284,10 +2320,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Does not take ownership of "mp_callback".</p>
-<p>As of 2019-10-22, only SCIP and Gurobi support Callbacks. SCIP does not support suggesting a heuristic solution in the callback.</p>
-<p>See go/mpsolver-callbacks for additional documentation. </p>
+<p>As of 2019-10-22, only SCIP and Gurobi support Callbacks. SCIP does not support suggesting a heuristic solution in the callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01887">1887</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01900">1900</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2311,7 +2346,7 @@ Friends</h2></td></tr>
 <p>Note: It may not always be faster to give a hint like this to the solver. There is also no guarantee that the solver will use this hint or try to return a solution "close" to this assignment in case of multiple optimal solutions.</p>
 <p>Calling SetHint clears all previous hints. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01861">1861</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01874">1874</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2335,7 +2370,7 @@ Friends</h2></td></tr>
 <p>Sets the number of threads to use by the underlying solver.</p>
 <p>Returns OkStatus if the operation was successful. num_threads must be equal to or greater than 1. Note that the behaviour of this call depends on the underlying solver. E.g., it may set the exact number of threads or the max number of threads (check the solver's interface implementation for details). Also, some solvers may not (yet) support this function, but still enable multi-threading via <a class="el" href="classoperations__research_1_1MPSolver.html#a532d2fb86e5cdc4710e1a168acbbe7f6">SetSolverSpecificParametersAsString()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00346">346</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00357">357</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2357,7 +2392,7 @@ Friends</h2></td></tr>
 <p>Advanced usage: pass solver specific parameters in text format.</p>
 <p>The format is solver-specific and is the same as the corresponding solver configuration file format. Returns true if the operation was successful. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00357">357</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00368">368</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2390,7 +2425,7 @@ Friends</h2></td></tr>
 <p>This function takes a starting basis to be used in the next LP <a class="el" href="classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962" title="Solves the problem using the default parameter values.">Solve()</a> call. The statuses of a current solution can be retrieved via the basis_status() function of a <a class="el" href="classoperations__research_1_1MPVariable.html" title="The class for variables of a Mathematical Programming (MP) model.">MPVariable</a> or a <a class="el" href="classoperations__research_1_1MPConstraint.html">MPConstraint</a>.</p>
 <p>WARNING: With Glop, you should disable presolve when using this because this information will not be modified in sync with the presolve and will likely not mean much on the presolved problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01392">1392</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01405">1405</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2418,7 +2453,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00750">750</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00757">757</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2439,7 +2474,7 @@ Friends</h2></td></tr>
 
 <p>Solves the problem using the default parameter values. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01539">1539</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01552">1552</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2460,9 +2495,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Solves the problem using the specified parameter values. </p>
-<p>Special case for infeasible constraints so that all solvers have the same behavior. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000753">Todo:</a></b></dt><dd>(user): replace this by model extraction to proto + proto validation (the proto has very low overhead compared to the wrapper, both in performance and memory, so it's ok). </dd></dl>
+<p>Special case for infeasible constraints so that all solvers have the same behavior. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000757">Todo:</a></b></dt><dd>(user): replace this by model extraction to proto + proto validation (the proto has very low overhead compared to the wrapper, both in performance and memory, so it's ok). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01544">1544</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01557">1557</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2481,7 +2516,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01398">1398</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01411">1411</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2508,9 +2543,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Interruption requires that <a class="el" href="classoperations__research_1_1MPSolver.html#a4413905b5839d17823e756cff10d0ffe">MPSolver::InterruptSolve</a> is supported for the underlying solver. Interrupting requests using SCIP is also not supported as of 2021/08/23, since InterruptSolve is not go/thread-safe for SCIP (see e.g. cl/350545631 for details).</p>
+<p>Interruption requires that <a class="el" href="classoperations__research_1_1MPSolver.html#a4413905b5839d17823e756cff10d0ffe">MPSolver::InterruptSolve</a> is supported for the underlying solver. Interrupting requests using SCIP is also not supported as of 2021/08/23, since InterruptSolve is not thread safe for SCIP.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00586">586</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00589">589</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2531,7 +2566,7 @@ Friends</h2></td></tr>
 
 <p>Returns a string describing the underlying solver and its version. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00338">338</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00349">349</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2596,7 +2631,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01006">1006</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01017">1017</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +2650,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01891">1891</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01904">1904</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2646,7 +2681,7 @@ Friends</h2></td></tr>
 <p>static </p>
 <p>Whether the given problem type is supported (this will depend on the targets that you linked). </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00495">495</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00506">506</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2667,7 +2702,7 @@ Friends</h2></td></tr>
 
 <p>Suppresses solver logging. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01818">1818</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01831">1831</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2696,7 +2731,7 @@ Friends</h2></td></tr>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="classoperations__research_1_1MPSolver.html#aae2fbd44c86451dadfc256f000772394">TimeLimit()</a> and <a class="el" href="classoperations__research_1_1MPSolver.html#a47a5516ca826adbc25bd5bf1d7935fd1">SetTimeLimit(absl::Duration)</a> instead. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>These deprecated functions used the convention time_limit = 0 to mean "no limit", which now corresponds to time_limit_ = InfiniteDuration(). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00846">846</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00851">851</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2723,7 +2758,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00856">856</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00861">861</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2750,7 +2785,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00749">749</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00756">756</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2771,7 +2806,7 @@ Friends</h2></td></tr>
 <p>Advanced usage: returns the underlying solver.</p>
 <p>Returns the underlying solver so that the user can use solver-specific features or features that are not exposed in the simple API of <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>. This method is for advanced users, use at your own risk! In particular, if you modify the model or the solution by accessing the underlying solver directly, then the underlying solver will be out of sync with the information kept in the wrapper (<a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>, <a class="el" href="classoperations__research_1_1MPVariable.html" title="The class for variables of a Mathematical Programming (MP) model.">MPVariable</a>, <a class="el" href="classoperations__research_1_1MPConstraint.html">MPConstraint</a>, <a class="el" href="classoperations__research_1_1MPObjective.html" title="A class to express a linear objective.">MPObjective</a>). You need to cast the void* returned back to its original type that depends on the interface (CBC: OsiClpSolverInterface*, CLP: ClpSimplex*, GLPK: glp_prob*, SCIP: SCIP*). </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00342">342</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l00353">353</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2800,7 +2835,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the variable at position index. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00334">334</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00337">337</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2828,7 +2863,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the array of variables handled by the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>. (They are listed in the order in which they were created.) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00329">329</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00332">332</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2867,7 +2902,7 @@ Friends</h2></td></tr>
 <li>If "tolerance" is negative, it will be set to <a class="el" href="classoperations__research_1_1MPSolver.html#a5b15f7248e2b72d474bae0444a613033">infinity()</a>.</li>
 </ul>
 <p>Most users should just set the &ndash;verify_solution flag and not bother using this method directly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000755">Todo:</a></b></dt><dd>(user): split. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000759">Todo:</a></b></dt><dd>(user): split. </dd></dl>
 <p>Verify variables.</p>
 <p>Check for NaN.</p>
 <p>Check lower bound.</p>
@@ -2879,7 +2914,7 @@ Friends</h2></td></tr>
 <p>Check bounds.</p>
 <p>Verify that the objective value wasn't reported incorrectly.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01670">1670</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01683">1683</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2907,7 +2942,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <a class="el" href="classoperations__research_1_1MPSolver.html#a6a68e7fab8751978c9faa30867f91241">DurationSinceConstruction()</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00861">861</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00866">866</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2928,7 +2963,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Writes the model using the solver internal write function. Currently only available for Gurobi. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01571">1571</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01584">1584</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -2953,7 +2988,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00875">875</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00880">880</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -2977,7 +3012,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00867">867</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00872">872</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3001,7 +3036,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00866">866</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00871">871</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3025,7 +3060,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00870">870</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00875">875</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3049,7 +3084,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00874">874</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00879">879</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3073,7 +3108,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00865">865</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00870">870</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3097,7 +3132,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00869">869</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00874">874</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3121,7 +3156,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00878">878</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00883">883</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3145,7 +3180,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00879">879</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00884">884</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3169,7 +3204,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00873">873</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00878">878</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3193,7 +3228,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00877">877</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00882">882</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3217,7 +3252,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00876">876</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00881">881</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3241,7 +3276,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00868">868</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00873">873</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3265,7 +3300,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00872">872</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00877">877</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>
@@ -3289,7 +3324,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00871">871</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l00876">876</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,6 +106,11 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1SweepArra
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6643a037216d1efb2c3c63f1707b1cdb" id="r_a6643a037216d1efb2c3c63f1707b1cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html#a6643a037216d1efb2c3c63f1707b1cdb">SweepArranger</a> (const std::vector&lt; std::pair&lt; int64_t, int64_t &gt; &gt; &amp;points)</td></tr>
 <tr class="separator:a6643a037216d1efb2c3c63f1707b1cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354a0a57d753a098520b6aaa360382b4" id="r_a354a0a57d753a098520b6aaa360382b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html#a354a0a57d753a098520b6aaa360382b4">SweepArranger</a> (const <a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a354a0a57d753a098520b6aaa360382b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
+<tr class="separator:a354a0a57d753a098520b6aaa360382b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44381c6e44da657e67108b7261f3bc0" id="r_af44381c6e44da657e67108b7261f3bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html#af44381c6e44da657e67108b7261f3bc0">operator=</a> (const <a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp;)=delete</td></tr>
+<tr class="separator:af44381c6e44da657e67108b7261f3bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab305a51a9b45be4d95d65044e4b8dfe5" id="r_ab305a51a9b45be4d95d65044e4b8dfe5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html#ab305a51a9b45be4d95d65044e4b8dfe5">~SweepArranger</a> ()</td></tr>
 <tr class="separator:ab305a51a9b45be4d95d65044e4b8dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e70ef0de14ebd5d879a07bd2cfde27" id="r_a67e70ef0de14ebd5d879a07bd2cfde27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SweepArranger.html#a67e70ef0de14ebd5d879a07bd2cfde27">ArrangeIndices</a> (std::vector&lt; int64_t &gt; *indices)</td></tr>
@@ -116,10 +121,10 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to arrange indices by their distance and their angle from the depot. Used in the Sweep first solution heuristic. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01381">1381</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01408">1408</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6643a037216d1efb2c3c63f1707b1cdb" name="a6643a037216d1efb2c3c63f1707b1cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6643a037216d1efb2c3c63f1707b1cdb">&#9670;&#160;</a></span>SweepArranger()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6643a037216d1efb2c3c63f1707b1cdb">&#9670;&#160;</a></span>SweepArranger() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +147,35 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03978">3978</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l04141">4141</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="a354a0a57d753a098520b6aaa360382b4" name="a354a0a57d753a098520b6aaa360382b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354a0a57d753a098520b6aaa360382b4">&#9670;&#160;</a></span>SweepArranger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">operations_research::SweepArranger::SweepArranger </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This type is neither copyable nor movable. </p>
 
 </div>
 </div>
@@ -169,7 +202,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01385">1385</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01417">1417</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +225,33 @@ Public Member Functions</h2></td></tr>
 <p>Splits the space of the indices into sectors and sorts the indices of each sector with ascending angle from the depot. </p>
 <p>Suppose that the center is at x0, y0.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03989">3989</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l04152">4152</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="af44381c6e44da657e67108b7261f3bc0" name="af44381c6e44da657e67108b7261f3bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44381c6e44da657e67108b7261f3bc0">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp; operations_research::SweepArranger::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1SweepArranger.html">SweepArranger</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -220,7 +279,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01387">1387</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01419">1419</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 
 </div>
 </div>

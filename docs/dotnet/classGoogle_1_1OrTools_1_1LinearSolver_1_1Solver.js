@@ -15,14 +15,14 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver =
       [ "SCIP_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a14e34930f1b183af64ba424d4ef8ff72", null ],
       [ "GLPK_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a66e482b29a43af3bb8afe56f12667f51", null ],
       [ "CBC_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a0a14ca4f1e3ae6c03c6d12584db267c2", null ],
+      [ "BOP_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a32f0882d12aebb0a2ee7f8965944f4c3", null ],
+      [ "SAT_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a4f493d273137ac723e76068cb441f2e9", null ],
       [ "GUROBI_LINEAR_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a220d6d874e5da0e9c8a79af5aaee41ab", null ],
       [ "GUROBI_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a0a1461a5e0dbd9d85275f4bf92a689da", null ],
       [ "CPLEX_LINEAR_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471ae6d94aed8be97c6b68b6b0681c8f46eb", null ],
       [ "CPLEX_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471ab8f978b4c73a9e949aa21c4bbf6291e6", null ],
       [ "XPRESS_LINEAR_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a4b7c09c36f7a4f41403e2915423ec75f", null ],
-      [ "XPRESS_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a596a3daf71f9f4da8a4e23465b9d25d3", null ],
-      [ "BOP_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a32f0882d12aebb0a2ee7f8965944f4c3", null ],
-      [ "SAT_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a4f493d273137ac723e76068cb441f2e9", null ]
+      [ "XPRESS_MIXED_INTEGER_PROGRAMMING", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a596a3daf71f9f4da8a4e23465b9d25d3", null ]
     ] ],
     [ "ResultStatus", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a892336a27efe44a99640ddf6001be23d", [
       [ "OPTIMAL", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a892336a27efe44a99640ddf6001be23daf00c8dbdd6e1f11bdae06be94277d293", null ],

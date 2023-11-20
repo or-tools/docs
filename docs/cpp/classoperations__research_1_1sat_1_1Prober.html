@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1e9d80c7f62d666ad8a3ec5a14f3c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5873acf530b40f395c869b77bddcb7f0" id="r_a5873acf530b40f395c869b77bddcb7f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Prober.html#a5873acf530b40f395c869b77bddcb7f0">ProbeOneVariable</a> (BooleanVariable <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>)</td></tr>
 <tr class="separator:a5873acf530b40f395c869b77bddcb7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184f5f96652d674c8ddb7a62b8cc04c7" id="r_a184f5f96652d674c8ddb7a62b8cc04c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Prober.html#a184f5f96652d674c8ddb7a62b8cc04c7">num_decisions</a> () const</td></tr>
+<tr class="separator:a184f5f96652d674c8ddb7a62b8cc04c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddd50eb7e511a0c59aebd841b291508" id="r_adddd50eb7e511a0c59aebd841b291508"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Prober.html#adddd50eb7e511a0c59aebd841b291508">num_new_literals_fixed</a> () const</td></tr>
 <tr class="separator:adddd50eb7e511a0c59aebd841b291508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4374872c3567d5214cdc99b8fc18c7" id="r_a6a4374872c3567d5214cdc99b8fc18c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1Prober.html#a6a4374872c3567d5214cdc99b8fc18c7">num_new_binary_clauses</a> () const</td></tr>
@@ -152,6 +154,34 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a184f5f96652d674c8ddb7a62b8cc04c7" name="a184f5f96652d674c8ddb7a62b8cc04c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184f5f96652d674c8ddb7a62b8cc04c7">&#9670;&#160;</a></span>num_decisions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operations_research::sat::Prober::num_decisions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Statistics. They are reset each time ProbleBooleanVariables() is called. Note however that we do not reset them on a call to <a class="el" href="classoperations__research_1_1sat_1_1Prober.html#a5873acf530b40f395c869b77bddcb7f0">ProbeOneVariable()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00087">87</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
+
+</div>
+</div>
 <a id="a6a4374872c3567d5214cdc99b8fc18c7" name="a6a4374872c3567d5214cdc99b8fc18c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a4374872c3567d5214cdc99b8fc18c7">&#9670;&#160;</a></span>num_new_binary_clauses()</h2>
 
@@ -175,7 +205,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00088">88</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00089">89</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 
 </div>
 </div>
@@ -201,9 +231,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Statistics. They are reset each time ProbleBooleanVariables() is called. Note however that we do not reset them on a call to <a class="el" href="classoperations__research_1_1sat_1_1Prober.html#a5873acf530b40f395c869b77bddcb7f0">ProbeOneVariable()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00087">87</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00088">88</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 
 </div>
 </div>
@@ -229,10 +258,10 @@ Public Member Functions</h2></td></tr>
 <li>Tighten the bounds of integer variables. If we probe the two possible values of a Boolean (b=0 and b=1), we get for each integer variables two propagated domain D_0 and D_1. The level zero domain can then be intersected with D_0 U D_1. This can restrict the lower/upper bounds of a variable, but it can also create holes in the domain! This will detect common cases like an integer variable in [0, 10] that actually only take two values [0] or [10] depending on one Boolean.</li>
 </ul>
 <p>Returns false if the problem was proved INFEASIBLE during probing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001985">Todo:</a></b></dt><dd>(user): For now we process the Boolean in their natural order, this is not the most efficient.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001986">Todo:</a></b></dt><dd>(user): This might generate a lot of new direct implications. We might not want to add them directly to the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> and could instead use them directly to detect equivalent literal like in <a class="el" href="namespaceoperations__research_1_1sat.html#a741dec692e255a08e4fae5ce3a8dbe7d">ProbeAndFindEquivalentLiteral()</a>. The situation is not clear.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001987">Todo:</a></b></dt><dd>(user): More generally, we might want to register any literal =&gt; bound in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a>. This would allow to remember them and use them in other part of the solver (cuts, lifting, ...).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001988">Todo:</a></b></dt><dd>(user): Rename to include Integer in the name and distinguish better from FailedLiteralProbing() below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002032">Todo:</a></b></dt><dd>(user): For now we process the Boolean in their natural order, this is not the most efficient.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002033">Todo:</a></b></dt><dd>(user): This might generate a lot of new direct implications. We might not want to add them directly to the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> and could instead use them directly to detect equivalent literal like in <a class="el" href="namespaceoperations__research_1_1sat.html#aa9cd7652ef26e6d69565e1e7e1db3f07">ProbeAndFindEquivalentLiteral()</a>. The situation is not clear.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002034">Todo:</a></b></dt><dd>(user): More generally, we might want to register any literal =&gt; bound in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a>. This would allow to remember them and use them in other part of the solver (cuts, lifting, ...).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002035">Todo:</a></b></dt><dd>(user): Rename to include Integer in the name and distinguish better from FailedLiteralProbing() below. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00056">56</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
 
@@ -267,12 +296,12 @@ Public Member Functions</h2></td></tr>
 <p>Reset statistics.</p>
 <p>Resize the propagated sparse bitset.</p>
 <p>Reset the solver in case it was already used.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001978">Todo:</a></b></dt><dd>(user): Instead of an hard deterministic limit, we should probably use a lower one, but reset it each time we have found something useful. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002025">Todo:</a></b></dt><dd>(user): Instead of an hard deterministic limit, we should probably use a lower one, but reset it each time we have found something useful. </dd></dl>
 <p>Propagate b=1 and then b=0.</p>
 <p>Update stats.</p>
 <p>Display stats.</p>
 
-<p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00217">217</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00218">218</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
 
 </div>
 </div>
@@ -295,7 +324,7 @@ Public Member Functions</h2></td></tr>
 <p>Reset the solver in case it was already used.</p>
 <p>Statistics</p>
 
-<p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00199">199</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00200">200</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
 
 </div>
 </div>
@@ -324,7 +353,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Register a callback that will be called on each "propagation". One can inspect the <a class="el" href="classoperations__research_1_1sat_1_1VariablesAssignment.html">VariablesAssignment</a> to see what are the inferred literals. </p>
 
-<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00093">93</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00094">94</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 
 </div>
 </div>

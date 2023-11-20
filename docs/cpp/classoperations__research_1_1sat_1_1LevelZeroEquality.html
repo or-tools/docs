@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This assumes target = SUM_i coeffs[i] * vars[i], and detects that the target must be of the form (a*X + b).</p>
 <p>This propagator is quite specific and runs only at level zero. For now, this is mainly used for the objective variable. As we fix terms with high objective coefficient, it is possible the only terms left have a common divisor. This close app2-2.mps in less than a second instead of running forever to prove the optimal (in single thread). </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00147">147</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00161">161</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af6a64e79a3651dcf3fbddbc163893f99" name="af6a64e79a3651dcf3fbddbc163893f99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6a64e79a3651dcf3fbddbc163893f99">&#9670;&#160;</a></span>LevelZeroEquality()</h2>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00446">446</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00459">459</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>
@@ -189,12 +189,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001623">Todo:</a></b></dt><dd>(user): We could go even further than just the GCD, and do more arithmetic to tighten the target bounds. See for instance a problem like ej.mps.gz that we don't solve easily, but has just 3 variables! the goal is to minimize X, given 31013 X - 41014 Y - 51015 Z = -31013 (all &gt;=0, Y and Z bounded with high values). I know some MIP solvers have a basic linear diophantine equation support. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001624">Todo:</a></b></dt><dd>(user): Once the GCD is not 1, we could at any level make sure the objective is of the correct form. For now, this only happen in a few miplib problem that we close quickly, so I didn't add the extra code yet. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001648">Todo:</a></b></dt><dd>(user): We could go even further than just the GCD, and do more arithmetic to tighten the target bounds. See for instance a problem like ej.mps.gz that we don't solve easily, but has just 3 variables! the goal is to minimize X, given 31013 X - 41014 Y - 51015 Z = -31013 (all &gt;=0, Y and Z bounded with high values). I know some MIP solvers have a basic linear diophantine equation support. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001649">Todo:</a></b></dt><dd>(user): Once the GCD is not 1, we could at any level make sure the objective is of the correct form. For now, this only happen in a few miplib problem that we close quickly, so I didn't add the extra code yet. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00470">470</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00483">483</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>

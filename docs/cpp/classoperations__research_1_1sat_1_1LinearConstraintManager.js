@@ -12,11 +12,17 @@ var classoperations__research_1_1sat_1_1LinearConstraintManager =
     [ "DEFINE_STRONG_INDEX_TYPE", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#ae1b635b38038a5545a06ddb338cd4e86", null ],
     [ "LpConstraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a58d67a2af8288f0ba574bdf1dc9c2f6f", null ],
     [ "LpValues", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a78886bd3260781cc5dc178ec51713ef1", null ],
+    [ "num_add_cut_calls", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a78beec97c2d7833294c955f04e91cdc6", null ],
     [ "num_coeff_strenghtening", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a36ec1280fb32237f8425e4ec3db1cb83", null ],
+    [ "num_constraint_updates", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a4d918dc658a55a1c970357379eb08e41", null ],
+    [ "num_constraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a50bdff56799c24c48d0f24f3abb71c45", null ],
     [ "num_cuts", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aa3b7870cd362797306bfdcfe6cb43152", null ],
+    [ "num_merged_constraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aa72add3313b7b9227c3854a63d65e8d6", null ],
     [ "num_shortened_constraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a7561b142193abfeef387be27c9aa783d", null ],
+    [ "num_simplifications", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aed32f8db6d0e22a14021689d8fd67a0b", null ],
+    [ "num_split_constraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a8b3d49f28fd2e37e2298d3350b3f9c8c", null ],
     [ "SetObjectiveCoefficient", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aecd6d1e2e008f3c0fde4b21cc4ce40bb", null ],
-    [ "Statistics", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a2efbad588d8b552e444e4ca7b047b13e", null ],
+    [ "type_to_num_cuts", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#ac5273f0fa47f98e76dbed35be9d8900b", null ],
     [ "UpdateConstraintLb", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aacd0517fcca03a6ffa4f9722c66578a9", null ],
     [ "UpdateConstraintUb", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a9280dbb983da613520cb87dbd29ff588", null ]
 ];

@@ -1,5 +1,7 @@
 var sat_2util_8h =
 [
+    [ "operations_research::sat::IdentityMap< T >", "classoperations__research_1_1sat_1_1IdentityMap.html", "classoperations__research_1_1sat_1_1IdentityMap" ],
+    [ "operations_research::sat::CompactVectorVector< K, V >", "classoperations__research_1_1sat_1_1CompactVectorVector.html", "classoperations__research_1_1sat_1_1CompactVectorVector" ],
     [ "operations_research::sat::ModelRandomGenerator", "classoperations__research_1_1sat_1_1ModelRandomGenerator.html", "classoperations__research_1_1sat_1_1ModelRandomGenerator" ],
     [ "operations_research::sat::ModelSharedTimeLimit", "classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html", "classoperations__research_1_1sat_1_1ModelSharedTimeLimit" ],
     [ "operations_research::sat::MaxBoundedSubsetSum", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum" ],
@@ -20,7 +22,7 @@ var sat_2util_8h =
     [ "FloorSquareRoot", "sat_2util_8h.html#a392d70cc768a13de271f87123513acf2", null ],
     [ "FormatCounter", "sat_2util_8h.html#a88a7a53b2e474d3d5c602030c5c449e9", null ],
     [ "FormatName", "sat_2util_8h.html#af41bef85b701ac3dd74b685f5232b96b", null ],
-    [ "FormatTable", "sat_2util_8h.html#ac683c5a8d9d1032a34230bdc075dced6", null ],
+    [ "FormatTable", "sat_2util_8h.html#af7414c91f17a6ff5a2621fa05fedf7da", null ],
     [ "FullyCompressTuples", "sat_2util_8h.html#a36bf1351ffa74960b3040a96ddc37468", null ],
     [ "IsNegatableInt64", "sat_2util_8h.html#a4e355cfd816df871c404e097c4b02696", null ],
     [ "LinearInequalityCanBeReducedWithClosestMultiple", "sat_2util_8h.html#ad2eb117de96cd02d6a15049c43cf114f", null ],

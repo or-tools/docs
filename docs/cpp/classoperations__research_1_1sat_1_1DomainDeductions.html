@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,10 +119,10 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If for each literal of a clause, we can infer a domain on an integer variable, then we know that this variable domain is included in the union of such infered domains.</p>
 <p>This allows to propagate "element" like constraints encoded as enforced linear relations, and other more general reasoning.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001969">Todo:</a></b></dt><dd>(user): Also use these "deductions" in the solver directly. This is done in good MIP solvers, and we should exploit them more.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001970">Todo:</a></b></dt><dd>(user): Also propagate implicit clauses (lit, not(lit)). Maybe merge that with probing code? it might be costly to store all deduction done by probing though, but I think this is what MIP solver do. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002016">Todo:</a></b></dt><dd>(user): Also use these "deductions" in the solver directly. This is done in good MIP solvers, and we should exploit them more.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002017">Todo:</a></b></dt><dd>(user): Also propagate implicit clauses (lit, not(lit)). Maybe merge that with probing code? it might be costly to store all deduction done by probing though, but I think this is what MIP solver do. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00054">54</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00100">100</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa98318ecab993b06e5fd091e7f58c800" name="aa98318ecab993b06e5fd091e7f58c800"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa98318ecab993b06e5fd091e7f58c800">&#9670;&#160;</a></span>AddDeduction()</h2>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <p>New element.</p>
 <p>Existing element.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00041">41</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00065">65</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the domain of var when literal_ref is true. If there is no information, returns <a class="el" href="classoperations__research_1_1Domain.html#a958f844e3a187a511a3db62777523db7">Domain::AllValues()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00066">66</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00090">90</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -219,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Optimization. Any following <a class="el" href="classoperations__research_1_1sat_1_1DomainDeductions.html#a90eec97bf72d63f4c921156b3f31c5a4">ProcessClause()</a> will be fast if no more deduction touching that clause are added. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00078">78</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00124">124</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the total number of "deductions" stored by this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00083">83</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00129">129</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
 </div>
 </div>
@@ -268,13 +268,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns list of (var, domain) that were deduced because: 1/ We have a domain deduction for var and all literal from the clause 2/ So we can take the union of all the deduced domains.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001973">Todo:</a></b></dt><dd>(user): We could probably be even more efficient. We could also compute exactly what clauses need to be "waked up" as new deductions are added. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002020">Todo:</a></b></dt><dd>(user): We could probably be even more efficient. We could also compute exactly what clauses need to be "waked up" as new deductions are added. </dd></dl>
 <p>We only need to process this clause if something changed since last time.</p>
 <p>Count for each variable, how many times it appears in the deductions lists.</p>
 <p>Clear the counts.</p>
 <p>Compute the domain unions.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00074">74</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00098">98</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>

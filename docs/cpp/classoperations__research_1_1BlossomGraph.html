@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -201,8 +201,8 @@ Static Public Attributes</h2></td></tr>
 <p>A matched pair of free nodes: [0] === [0]</p>
 <p>A possible rooted tree: [+] &ndash; [-] ==== [+] \ [-] ==== [+] -&mdash; [-] === [+] \ [-] === [+]</p>
 <p>A single unmatched node is also a tree: [+]</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000681">Todo:</a></b></dt><dd>(user): For now this class does not maintain a second graph of edges between the trees nor does it maintains priority queue of edges.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000682">Todo:</a></b></dt><dd>(user): For now we use CHECKs in many places to facilitate development. Switch them to DCHECKs for speed once the code is more stable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000683">Todo:</a></b></dt><dd>(user): For now this class does not maintain a second graph of edges between the trees nor does it maintains priority queue of edges.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000684">Todo:</a></b></dt><dd>(user): For now we use CHECKs in many places to facilitate development. Switch them to DCHECKs for speed once the code is more stable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00170">170</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -292,14 +292,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Merges two tree and augment the number of matched nodes by 1. This is the only functions that change the current matching. </p>
 <p>Compute the path from root_a to root_b.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000674">Todo:</a></b></dt><dd>(user): Check all dual/slack same after primal op? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000676">Todo:</a></b></dt><dd>(user): Check all dual/slack same after primal op? </dd></dl>
 <p>Make all the nodes from both trees free while keeping the current matching.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000675">Todo:</a></b></dt><dd>(user): It seems that we may waste some computation since the part of the tree not in the path between roots can lead to the same <a class="el" href="classoperations__research_1_1BlossomGraph.html#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a> operations later when one of its node is ratched to a new root.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000676">Todo:</a></b></dt><dd>(user): Reduce this O(num_nodes) complexity. We might be able to even do O(num_node_in_path) with lazy updates. Note that this operation will only be performed at most num_initial_unmatched_nodes / 2 times though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000677">Todo:</a></b></dt><dd>(user): It seems that we may waste some computation since the part of the tree not in the path between roots can lead to the same <a class="el" href="classoperations__research_1_1BlossomGraph.html#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a> operations later when one of its node is ratched to a new root.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000678">Todo:</a></b></dt><dd>(user): Reduce this O(num_nodes) complexity. We might be able to even do O(num_node_in_path) with lazy updates. Note that this operation will only be performed at most num_initial_unmatched_nodes / 2 times though. </dd></dl>
 <p>If the other end is not in one of the two trees, and it is a plus node, we add it the plus_free queue. All previous [+]&ndash;[0] and [+]&ndash;[+] edges need to be removed from the queues.</p>
 <p>Change the matching of nodes along node_path.</p>
 <p>Update unmatched_nodes_.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000677">Todo:</a></b></dt><dd>(user): This could probably be optimized if needed. But we do usually iterate a lot more over it than we update it. Note that as long as we use the same delta for all trees, this is not even needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000679">Todo:</a></b></dt><dd>(user): This could probably be optimized if needed. But we do usually iterate a lot more over it than we update it. Note that as long as we use the same delta for all trees, this is not even needed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00557">557</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
@@ -320,7 +320,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the maximum possible delta for <a class="el" href="classoperations__research_1_1BlossomGraph.html#a115148d925e4f18f7b983502012a8c9d">UpdateAllTrees()</a> that keeps the dual feasibility. Dual update approach (2) from the paper. This also fills primal_update_edge_queue_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000671">Todo:</a></b></dt><dd>(user): Avoid this linear loop. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000673">Todo:</a></b></dt><dd>(user): Avoid this linear loop. </dd></dl>
 <p>This code only works because all tree_dual_delta are the same.</p>
 <p>This means infeasible, and returning zero will abort the search.</p>
 <p>Initialize primal_update_edge_queue_ with all the edges that will have a slack of zero once we apply the update.</p>
@@ -677,7 +677,7 @@ Static Public Attributes</h2></td></tr>
 <p>This must be called at the end of the algorithm to recover the matching. </p>
 <p><a class="el" href="classoperations__research_1_1Queue.html">Queue</a> of blossoms to expand.</p>
 <p>When this is called, there should be no more trees.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000679">Todo:</a></b></dt><dd>(user): remove duplication with expand? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000681">Todo:</a></b></dt><dd>(user): remove duplication with expand? </dd></dl>
 <p>Find the edge used to match to_expand with Match(to_expand).</p>
 <p>Restore the saved data.</p>
 <p>Restore the edges Head()/Tail().</p>
@@ -805,19 +805,19 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Heuristic to start with a dual-feasible solution and some matched edges. To be called once all edges are added. Returns false if the problem is detected to be INFEASIBLE.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000666">Todo:</a></b></dt><dd>(user): Code the more advanced "Fractional matching initialization" heuristic.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000667">Todo:</a></b></dt><dd>(user): Add a preprocessing step that performs the 'forced' matches? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000668">Todo:</a></b></dt><dd>(user): Code the more advanced "Fractional matching initialization" heuristic.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000669">Todo:</a></b></dt><dd>(user): Add a preprocessing step that performs the 'forced' matches? </dd></dl>
 <p>Initialize the dual of each nodes to min_cost / 2.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000668">Todo:</a></b></dt><dd>(user): We might be able to do better for odd min_cost, but then we might need to scale by 4? think about it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000670">Todo:</a></b></dt><dd>(user): We might be able to do better for odd min_cost, but then we might need to scale by 4? think about it. </dd></dl>
 <p>Starts with all nodes as tree roots.</p>
 <p>Update the slack of each edges now that nodes might have non-zero duals. </p><dl class="section note"><dt>Note</dt><dd>we made sure that all updated slacks are non-negative.</dd></dl>
 <p>After this greedy update, there will be at least an edge with a slack of zero.</p>
 <p>Match this node if possible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000669">Todo:</a></b></dt><dd>(user): Optimize by merging this loop with the one above? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000671">Todo:</a></b></dt><dd>(user): Optimize by merging this loop with the one above? </dd></dl>
 <p>Initialize unmatched_nodes_.</p>
 <p>Scale everything by 2 and update the dual cost. Note that we made sure that there cannot be an integer overflow at the beginning of Solve().</p>
 <p>This scaling allows to only have integer weights during the algorithm because the slack of [+] &ndash; [+] edges will always stay even.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000670">Todo:</a></b></dt><dd>(user): Reduce the number of loops we do in the initialization. We could likely just scale the edge cost as we fill them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000672">Todo:</a></b></dt><dd>(user): Reduce the number of loops we do in the initialization. We could likely just scale the edge cost as we fill them. </dd></dl>
 <p>Initialize the edge priority queues and the primal update queue. We only need to do that if we have unmatched nodes.</p>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00153">153</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
@@ -934,13 +934,13 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enters a loop that perform one of <a class="el" href="classoperations__research_1_1BlossomGraph.html#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a>/Augment()/Shrink()/Expand() until a fixed point is reached. </p>
 <p>Any Grow/Augment/Shrink/Expand operation can add new tight edges that need to be explored again.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000672">Todo:</a></b></dt><dd>(user): avoid adding duplicates? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000674">Todo:</a></b></dt><dd>(user): avoid adding duplicates? </dd></dl>
 <p>First, we Grow/Augment as much as possible.</p>
 <p>Because of the <a class="el" href="classoperations__research_1_1BlossomGraph.html#ad210089a5165469377449a22257eb52a" title="Expands a Blossom into its component.">Expand()</a> operation, the edge may have become un-tight since it has been inserted in the tight edges queue. It's cheaper to detect it here and skip it than it would be to dynamically update the queue to only keep actually tight edges at all times.</p>
 <p>Shrink all potential Blossom.</p>
 <p>Delay expand if any blossom was created.</p>
 <p>Expand Blossom if any.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000673">Todo:</a></b></dt><dd>(user): Avoid doing a O(num_nodes). Also expand all blossom recursively? I am not sure it is a good heuristic to expand all possible blossom before trying the other operations though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000675">Todo:</a></b></dt><dd>(user): Avoid doing a O(num_nodes). Also expand all blossom recursively? I am not sure it is a good heuristic to expand all possible blossom before trying the other operations though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00391">391</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
@@ -972,7 +972,7 @@ Static Public Attributes</h2></td></tr>
 <p>Skip edge that are already internal.</p>
 <p>This internal edge was already processed from its other end, so we can just skip it.</p>
 <p>This is a new-internal edge that we didn't process yet.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000678">Todo:</a></b></dt><dd>(user): It would be nicer to not to have to read the memory of the other node at all. It might be possible once we store the parent edge instead of the parent node since then we will only need to know if this edges point to a new-internal node or not. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000680">Todo:</a></b></dt><dd>(user): It would be nicer to not to have to read the memory of the other node at all. It might be possible once we store the parent edge instead of the parent node since then we will only need to know if this edges point to a new-internal node or not. </dd></dl>
 <p>Replace the parent of any child of n by lca_index.</p>
 <p>Adjust when the edge used to be connected to a [-] node now that we attach it to a [+] node. Note that if the node was [+] then the non-internal incident edges slack and type do not change.</p>
 <p>Add it to the correct PQ.</p>

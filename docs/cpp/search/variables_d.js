@@ -30,6 +30,7 @@ var searchData=
   ['operators_27',['operators',['../structoperations__research_1_1GScipLogicalConstraintData.html#a695cf3be1f248f3648751cb30f072d64',1,'operations_research::GScipLogicalConstraintData']]],
   ['orfz_5fdebug_28',['orfz_debug',['../parser__util_8cc.html#a84c51f873e0b406b886ae6eef8a06a8f',1,'parser_util.cc']]],
   ['original_5findex_29',['original_index',['../arc__flow__builder_8cc.html#a5139ed46ade38540eb6e74fdfe1f6cdf',1,'arc_flow_builder.cc']]],
-  ['os_30',['os',['../structoperations__research_1_1base_1_1internal__dump__vars_1_1print__fields.html#a2173ed1fef560d0da69684887437c645',1,'operations_research::base::internal_dump_vars::print_fields']]],
-  ['out_5fflow_31',['out_flow',['../structoperations__research_1_1sat_1_1SingleNodeFlow.html#a83e5b4e0bff07fe27edcf60e8267fb63',1,'operations_research::sat::SingleNodeFlow']]]
+  ['ortools_5fmode_30',['ortools_mode',['../structoperations__research_1_1fz_1_1FlatzincSatParameters.html#a47ddce0680ddf5e27b336c0750f2b6a0',1,'operations_research::fz::FlatzincSatParameters']]],
+  ['os_31',['os',['../structoperations__research_1_1base_1_1internal__dump__vars_1_1print__fields.html#a2173ed1fef560d0da69684887437c645',1,'operations_research::base::internal_dump_vars::print_fields']]],
+  ['out_5fflow_32',['out_flow',['../structoperations__research_1_1sat_1_1SingleNodeFlow.html#a83e5b4e0bff07fe27edcf60e8267fb63',1,'operations_research::sat::SingleNodeFlow']]]
 ];

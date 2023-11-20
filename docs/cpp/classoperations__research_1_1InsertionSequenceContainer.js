@@ -3,7 +3,7 @@ var classoperations__research_1_1InsertionSequenceContainer =
     [ "Insertion", "structoperations__research_1_1InsertionSequenceContainer_1_1Insertion.html", "structoperations__research_1_1InsertionSequenceContainer_1_1Insertion" ],
     [ "InsertionSequence", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequence.html", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequence" ],
     [ "InsertionSequenceIterator", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequenceIterator.html", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequenceIterator" ],
-    [ "AddInsertionSequence", "classoperations__research_1_1InsertionSequenceContainer.html#acf7255c1c3a70e04fcaaf09f50f017cf", null ],
+    [ "AddInsertionSequence", "classoperations__research_1_1InsertionSequenceContainer.html#af173c815cf2e5424cb9394b3cc55078e", null ],
     [ "AddInsertionSequence", "classoperations__research_1_1InsertionSequenceContainer.html#a647b46060434096799c3f24543c00776", null ],
     [ "begin", "classoperations__research_1_1InsertionSequenceContainer.html#a67d158c121ef3a49b1a67e7e2c91b8a6", null ],
     [ "Clear", "classoperations__research_1_1InsertionSequenceContainer.html#a91bcd881c55f5d3179618405efdfa1b0", null ],

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -99,20 +99,22 @@ $(document).ready(function(){initNavTree('fz_8cc.html',''); initResizable(); });
   <div class="headertitle"><div class="title">fz.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;csignal&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/log/initialize.h&quot;</code><br />
+<code>#include &quot;absl/strings/match.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_split.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="path_8h_source.html">ortools/base/path.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">ortools/base/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__fz__solver_8h_source.html">ortools/flatzinc/cp_model_fz_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="flatzinc_2model_8h_source.html">ortools/flatzinc/model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parser_8h_source.html">ortools/flatzinc/parser.h</a>&quot;</code><br />
@@ -133,8 +135,10 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a2e6f19a873c967cb1f135e943b9e1c3b" id="r_a2e6f19a873c967cb1f135e943b9e1c3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a2e6f19a873c967cb1f135e943b9e1c3b">ABSL_FLAG</a> (double, <a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>, 0, &quot;time limit in seconds.&quot;)</td></tr>
 <tr class="separator:a2e6f19a873c967cb1f135e943b9e1c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75cb059f27d9827d079c709f3f877643" id="r_a75cb059f27d9827d079c709f3f877643"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a75cb059f27d9827d079c709f3f877643">ABSL_FLAG</a> (bool, all_solutions, false, &quot;Search for all solutions.&quot;)</td></tr>
-<tr class="separator:a75cb059f27d9827d079c709f3f877643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580f5960261d69125a1634613b5d4597" id="r_a580f5960261d69125a1634613b5d4597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a580f5960261d69125a1634613b5d4597">ABSL_FLAG</a> (bool, search_all_solutions, false, &quot;Search for all solutions.&quot;)</td></tr>
+<tr class="separator:a580f5960261d69125a1634613b5d4597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a9bccc2c2f454eae3f02997feab6e8" id="r_a53a9bccc2c2f454eae3f02997feab6e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a53a9bccc2c2f454eae3f02997feab6e8">ABSL_FLAG</a> (bool, display_all_solutions, false, &quot;Display all improving solutions.&quot;)</td></tr>
+<tr class="separator:a53a9bccc2c2f454eae3f02997feab6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f9496ac80f2ae93ec0bf1b735c8548" id="r_a91f9496ac80f2ae93ec0bf1b735c8548"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a91f9496ac80f2ae93ec0bf1b735c8548">ABSL_FLAG</a> (bool, free_search, false, &quot;If false, the solver must follow the defined search.&quot; &quot;If true, other search are allowed.&quot;)</td></tr>
 <tr class="separator:a91f9496ac80f2ae93ec0bf1b735c8548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5eda279f9858a638a01db7cc9b405a3" id="r_aa5eda279f9858a638a01db7cc9b405a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#aa5eda279f9858a638a01db7cc9b405a3">ABSL_FLAG</a> (int, threads, 0, &quot;Number of threads the solver will use.&quot;)</td></tr>
@@ -153,8 +157,8 @@ Functions</h2></td></tr>
 <tr class="separator:a543e998a2c584b5d8d0b0a2240bd1309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfaa35cae22db07f4988924b69c40297" id="r_adfaa35cae22db07f4988924b69c40297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#adfaa35cae22db07f4988924b69c40297">ABSL_FLAG</a> (bool, fz_logging, false, &quot;Print logging information from the flatzinc interpreter.&quot;)</td></tr>
 <tr class="separator:adfaa35cae22db07f4988924b69c40297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7d1d937f2a07f250a29312f72fa720" id="r_ace7d1d937f2a07f250a29312f72fa720"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#ace7d1d937f2a07f250a29312f72fa720">ABSL_FLAG</a> (bool, use_flatzinc_format, true, &quot;Display solutions in the flatzinc format&quot;)</td></tr>
-<tr class="separator:ace7d1d937f2a07f250a29312f72fa720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4462e20b63ee39443a965c943b2afd" id="r_a6b4462e20b63ee39443a965c943b2afd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fz_8cc.html#a6b4462e20b63ee39443a965c943b2afd">ABSL_FLAG</a> (bool, ortools_mode, true, &quot;Display solutions in the flatzinc format&quot;)</td></tr>
+<tr class="separator:a6b4462e20b63ee39443a965c943b2afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af40ac5cede5292cafdfa7eea500a01bd" id="r_af40ac5cede5292cafdfa7eea500a01bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#af40ac5cede5292cafdfa7eea500a01bd">operations_research::fz::FixAndParseParameters</a> (int *argc, char ***argv)</td></tr>
 <tr class="separator:af40ac5cede5292cafdfa7eea500a01bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af21f55c8ac992181c81331ece1779c16" id="r_af21f55c8ac992181c81331ece1779c16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1fz_1_1Model.html">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#af21f55c8ac992181c81331ece1779c16">operations_research::fz::ParseFlatzincModel</a> (const std::string &amp;<a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, bool input_is_filename, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
@@ -165,8 +169,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a75cb059f27d9827d079c709f3f877643" name="a75cb059f27d9827d079c709f3f877643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75cb059f27d9827d079c709f3f877643">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/12]</span></h2>
+<a id="a53a9bccc2c2f454eae3f02997feab6e8" name="a53a9bccc2c2f454eae3f02997feab6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a9bccc2c2f454eae3f02997feab6e8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +184,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">all_solutions&#160;</td>
+          <td class="paramtype">display_all_solutions&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -192,7 +196,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Search for all solutions.&quot;&#160;</td>
+          <td class="paramtype">&quot;Display all improving solutions.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -206,7 +210,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91f9496ac80f2ae93ec0bf1b735c8548" name="a91f9496ac80f2ae93ec0bf1b735c8548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f9496ac80f2ae93ec0bf1b735c8548">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f9496ac80f2ae93ec0bf1b735c8548">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +262,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="adfaa35cae22db07f4988924b69c40297" name="adfaa35cae22db07f4988924b69c40297"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfaa35cae22db07f4988924b69c40297">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaa35cae22db07f4988924b69c40297">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,8 +301,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b4462e20b63ee39443a965c943b2afd" name="a6b4462e20b63ee39443a965c943b2afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4462e20b63ee39443a965c943b2afd">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ortools_mode&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Display solutions in the flatzinc format&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a77d52b84e562ff9f906c37645ca0da42" name="a77d52b84e562ff9f906c37645ca0da42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77d52b84e562ff9f906c37645ca0da42">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d52b84e562ff9f906c37645ca0da42">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +382,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a335f9634d15d7d44eaf4a7514d124dc4" name="a335f9634d15d7d44eaf4a7514d124dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335f9634d15d7d44eaf4a7514d124dc4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a335f9634d15d7d44eaf4a7514d124dc4">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,8 +427,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a580f5960261d69125a1634613b5d4597" name="a580f5960261d69125a1634613b5d4597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580f5960261d69125a1634613b5d4597">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">search_all_solutions&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Search for all solutions.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a98534193460083f34c3cde28da0dc2f6" name="a98534193460083f34c3cde28da0dc2f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98534193460083f34c3cde28da0dc2f6">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98534193460083f34c3cde28da0dc2f6">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,48 +507,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace7d1d937f2a07f250a29312f72fa720" name="ace7d1d937f2a07f250a29312f72fa720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace7d1d937f2a07f250a29312f72fa720">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/12]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ABSL_FLAG </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">use_flatzinc_format&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">true&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Display solutions in the flatzinc format&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2e6f19a873c967cb1f135e943b9e1c3b" name="a2e6f19a873c967cb1f135e943b9e1c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e6f19a873c967cb1f135e943b9e1c3b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6f19a873c967cb1f135e943b9e1c3b">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +550,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6141b998ee4160662c4e4f29baeacaea" name="a6141b998ee4160662c4e4f29baeacaea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6141b998ee4160662c4e4f29baeacaea">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6141b998ee4160662c4e4f29baeacaea">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +590,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa5eda279f9858a638a01db7cc9b405a3" name="aa5eda279f9858a638a01db7cc9b405a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5eda279f9858a638a01db7cc9b405a3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5eda279f9858a638a01db7cc9b405a3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,7 +630,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3090e7722f5c005a5cf0db73c40c5da3" name="a3090e7722f5c005a5cf0db73c40c5da3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3090e7722f5c005a5cf0db73c40c5da3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3090e7722f5c005a5cf0db73c40c5da3">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -626,7 +670,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a543e998a2c584b5d8d0b0a2240bd1309" name="a543e998a2c584b5d8d0b0a2240bd1309"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a543e998a2c584b5d8d0b0a2240bd1309">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a543e998a2c584b5d8d0b0a2240bd1309">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,8 +736,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Flatzinc specifications require single dash parameters (-a, -f, -p). We need to fix parameters before parsing them.</p>
 <p>We allow piping model through stdin.</p>
+<p>log_to_stdout is disabled later.</p>
 
-<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00174">174</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fz_8cc_source.html#l00189">189</a> of file <a class="el" href="fz_8cc_source.html">fz.cc</a>.</p>
 
 </div>
 </div>

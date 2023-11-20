@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -166,7 +166,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Changing the bounds of all constraints to (0, 0) to make them an equality.</li>
 </ol>
 <p>As a consequence, the matrix of the linear program always has full row rank after this preprocessor. Note that the slack variables are always added last, so that the rightmost square sub-matrix is always the identity matrix.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000500">Todo:</a></b></dt><dd>(user): Do not require this step to talk to the revised simplex. On large LPs like supportcase11.mps, this step alone can add 1.5 GB to the solver peak memory for no good reason. The internal matrix representation used in glop is a lot more efficient, and there is no point keeping the slacks in <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. It is also bad for incrementaly modifying the LP. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000502">Todo:</a></b></dt><dd>(user): Do not require this step to talk to the revised simplex. On large LPs like supportcase11.mps, this step alone can add 1.5 GB to the solver peak memory for no good reason. The internal matrix representation used in glop is a lot more efficient, and there is no point keeping the slacks in <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. It is also bad for incrementaly modifying the LP. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="preprocessor_8h_source.html#l01120">1120</a> of file <a class="el" href="preprocessor_8h_source.html">preprocessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -306,7 +306,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03997">3997</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03981">3981</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03988">3988</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03972">3972</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

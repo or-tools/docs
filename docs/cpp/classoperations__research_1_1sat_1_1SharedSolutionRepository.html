@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -164,9 +164,9 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ValueType&gt;<br />
 class operations_research::sat::SharedSolutionRepository&lt; ValueType &gt;</div><p>Thread-safe. Keeps a set of n unique best solution found so far.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo:</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002229">Todo:</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00055">55</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00056">56</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c0eedda28690ca436286776c6b81318" name="a9c0eedda28690ca436286776c6b81318"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c0eedda28690ca436286776c6b81318">&#9670;&#160;</a></span>SharedSolutionRepository()</h2>
@@ -204,7 +204,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00057">57</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00058">58</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;typename ValueType &gt; </div>
 <p>Add a new solution. Note that it will not be added to the pool of solution right away. One must call Synchronize for this to happen.</p>
 <p>Works in O(num_solutions_to_keep_). </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00652">652</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00656">656</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ template&lt;typename ValueType &gt; </div>
 <p>Helper method for adding the solutions once the mutex is acquired. </p>
 <p>Do not add identical solution.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00659">659</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00663">663</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -482,12 +482,12 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a random solution biased towards good solutions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002185">Todo:</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002230">Todo:</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
 <p>As long as we have solution with the best objective that haven't been explored too much, we select one uniformly. Otherwise, we select a solution from the pool uniformly.</p>
 <p>Note(user): Because of the increase of num_selected, this is dependent on the order of call. It should be fine for "determinism" because we do generate the task of a batch always in the same order.</p>
 <p>Select all the best solution with a low enough selection count.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00616">616</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00620">620</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ template&lt;typename ValueType &gt; </div>
 
 <p>Returns the solution <a class="el" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> where i must be smaller than <a class="el" href="classoperations__research_1_1sat_1_1SharedSolutionRepository.html#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00600">600</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00604">604</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 <p>Returns the variable value of variable 'var_index' from solution 'solution_index' where solution_index must be smaller than <a class="el" href="classoperations__research_1_1sat_1_1SharedSolutionRepository.html#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a> and 'var_index' must be smaller than number of variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00607">607</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00611">611</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 <p>Returns the number of current solution in the pool. This will never decrease. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00593">593</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00597">597</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -589,9 +589,9 @@ template&lt;typename ValueType &gt; </div>
 <p>Updates the current pool of solution with the one recently added. Note that we use a stable ordering of solutions, so the final pool will be independent on the order of the calls to AddSolution() provided that the set of added solutions is the same.</p>
 <p>Works in O(num_solutions_to_keep_). </p>
 <p>We use a stable sort to keep the num_selected count for the already existing solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002186">Todo:</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002231">Todo:</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00681">681</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00685">685</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00121">121</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00122">122</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00136">136</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00137">137</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -673,7 +673,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00133">133</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00134">134</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +699,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00134">134</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00135">135</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Asserts that the subtree in path up to <code>level</code> contains no improving solutions. Clears path. </p>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00442">442</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00445">445</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -292,9 +292,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Called by workers in order to split the shared tree. <code>path</code> may or may not be extended by one level, branching on <code>decision</code>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002249">Todo:</a></b></dt><dd>(user): Need to write up the shape this creates. This rule will allow twice as many leaves in the preferred subtree. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002291">Todo:</a></b></dt><dd>(user): Need to write up the shape this creates. This rule will allow twice as many leaves in the preferred subtree. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00252">252</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00258">258</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -315,9 +315,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Assigns a path prefix that the worker should explore. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002250">Todo:</a></b></dt><dd>(user): Investigate assigning a random leaf so workers can still improve shared tree bounds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002292">Todo:</a></b></dt><dd>(user): Investigate assigning a random leaf so workers can still improve shared tree bounds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00312">312</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00318">318</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -387,6 +387,7 @@ Public Member Functions</h2></td></tr>
 <p>Syncs the state of path with the shared search tree. Clears <code>path</code> and returns false if the assigned subtree is closed or a restart has invalidated the path. </p>
 <p>We don't rely on these being empty, but we expect them to be.</p>
 <p>Restart after processing updates - we might learn a new objective bound.</p>
+<p>Sync lower bounds and implications from the shared tree to <code>path</code>.</p>
 
 <p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00220">220</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -201,19 +201,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<p>This only uses one time direction, but the helper might be used elsewhere. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001438">Todo:</a></b></dt><dd>(user): just keep the current direction? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001439">Todo:</a></b></dt><dd>(user): force capacity_max &gt;= 0, fail/remove optionals when 0. </dd></dl>
+<p>This only uses one time direction, but the helper might be used elsewhere. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001454">Todo:</a></b></dt><dd>(user): just keep the current direction? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001455">Todo:</a></b></dt><dd>(user): force capacity_max &gt;= 0, fail/remove optionals when 0. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> up theta tree.</p>
 <p>Main loop: insert tasks by increasing end_max, check for overloads.</p>
 <p>Add the current task to the tree.</p>
 <p>Find the critical interval.</p>
 <p>Push the new capacity min, note that this can fail if it go above the maximum capacity.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001440">Todo:</a></b></dt><dd>(user): We do not need the capacity max in the reason, but by using a lower one, we could maybe have propagated more the minimum capacity. investigate. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001456">Todo:</a></b></dt><dd>(user): We do not need the capacity max in the reason, but by using a lower one, we could maybe have propagated more the minimum capacity. investigate. </dd></dl>
 <p>Reduce energy of all tasks whose max energy would exceed an interval ending at current_end.</p>
-<p>Some task's max energy is too high, reduce its maximal energy. Explain with tasks present in the critical interval. If it is optional, it might get excluded, in that case, remove it from the tree. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001441">Todo:</a></b></dt><dd>(user): This could be done lazily. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001442">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001443">Todo:</a></b></dt><dd>(user): the same required task can have its energy pruned several times, making this algorithm O(n^2 log n). Is there a way to get the best pruning in one go? This looks like edge-finding not being able to converge in one pass, so it might not be easy. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001444">Todo:</a></b></dt><dd>(user): Improve window_end using envelope of critical event. </dd></dl>
+<p>Some task's max energy is too high, reduce its maximal energy. Explain with tasks present in the critical interval. If it is optional, it might get excluded, in that case, remove it from the tree. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001457">Todo:</a></b></dt><dd>(user): This could be done lazily. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001458">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001459">Todo:</a></b></dt><dd>(user): the same required task can have its energy pruned several times, making this algorithm O(n^2 log n). Is there a way to get the best pruning in one go? This looks like edge-finding not being able to converge in one pass, so it might not be easy. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001460">Todo:</a></b></dt><dd>(user): Improve window_end using envelope of critical event. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

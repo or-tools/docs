@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,8 +119,8 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>A single node flow relaxation is a constraint of the form Sum in_flow - Sum out_flow &lt;= demand where each flow variable F_i is in [0, capacity_i] and satisfy F_i &lt;= capacity_i B_i with B_i a Boolean representing the arc usage.</p>
 <p>From a generic constraint sum coeff_i X_i &lt;= b, we try to put it in this format. We can first transform all variables to be in [0, max_value].</p>
 <p>Then we cover different cases: 1/ A coeff * Boolean, can be easily transformed. 2/ A coeff * Integer in [0, capacity] with Bool =&gt; integer == 0 too. 3/ For a general integer, we can always use a Bool == 1 for the arc usage.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001489">Todo:</a></b></dt><dd>(user): cover case 3/. We loose a lot of relaxation here, except if the variable is at is upper/lower bound.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001490">Todo:</a></b></dt><dd>(user): Altough the cut should still be correct, we might use the same Boolean more than once in the implied bound. Or this Boolean might already appear in the constraint. Not sure if we can do something smarter here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001505">Todo:</a></b></dt><dd>(user): cover case 3/. We loose a lot of relaxation here, except if the variable is at is upper/lower bound.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001506">Todo:</a></b></dt><dd>(user): Altough the cut should still be correct, we might use the same Boolean more than once in the implied bound. Or this Boolean might already appear in the constraint. Not sure if we can do something smarter here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00278">278</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
@@ -201,7 +201,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001493">Todo:</a></b></dt><dd>(user): We don't use this in the heuristic currently. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001509">Todo:</a></b></dt><dd>(user): We don't use this in the heuristic currently. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00286">286</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 

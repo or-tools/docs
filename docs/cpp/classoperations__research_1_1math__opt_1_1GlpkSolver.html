@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -176,7 +176,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Here we simply log an error but glp_delete_prob() should crash with an error like: <code>glp_free: memory allocation error</code>.</p>
 
-<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l00862">862</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l00924">924</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a229d3600074174a31d5e515d6c0d965e">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l01738">1738</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l01806">1806</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l00826">826</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l00888">888</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -342,19 +342,19 @@ Additional Inherited Members</h2></td></tr>
 <li>For LPs:</li>
 </ul>
 <p>These solve algorithms have dedicated data segments in glp_prob which use different access functions to get the solution; hence each branch will set the corresponding function pointers accordingly. They also use a custom struct for parameters that will be initialized and passed to the algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000888">Todo:</a></b></dt><dd>(b/187027049): glp_intopt with presolve off requires an optional solution of the relaxed problem. Here we simply always enable pre-solve but we should support disabling the presolve and call glp_simplex() in that case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo:</a></b></dt><dd>(b/187027049): glp_intopt with presolve off requires an optional solution of the relaxed problem. Here we simply always enable pre-solve but we should support disabling the presolve and call glp_simplex() in that case. </dd></dl>
 <p>glp_interior() does not support being called with an empty model and returns GLP_EFAIL. Thus we use placeholders in that case.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000889">Todo:</a></b></dt><dd>(b/259557110): the emptiness is tested by glp_interior() <em>after</em> some pre-processing (including removing fixed variables). The current IsEmpty() is thus not good enough to deal with all cases. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo:</a></b></dt><dd>(b/187027049): add solver specific parameters for glp_iptcp.ord_alg. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000891">Todo:</a></b></dt><dd>(b/187027049): add option to use glp_exact(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000891">Todo:</a></b></dt><dd>(b/259557110): the emptiness is tested by glp_interior() <em>after</em> some pre-processing (including removing fixed variables). The current IsEmpty() is thus not good enough to deal with all cases. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000892">Todo:</a></b></dt><dd>(b/187027049): add solver specific parameters for glp_iptcp.ord_alg. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000893">Todo:</a></b></dt><dd>(b/187027049): add option to use glp_exact(). </dd></dl>
 <p>If the primal is proven infeasible and the dual is feasible, the dual is unbounded. Thus we can compute a better dual bound rather than the default value.</p>
 <p>Unregister the callback and flush the potential last unfinished line.</p>
 <p>Here we can't use obj_val(problem_) as it would be a finite value of the feasible solution found.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000892">Todo:</a></b></dt><dd>(b/187027049): compute the dual value when the dual is feasible (or problem optimal for interior point) based on the bounds and the dual values for LPs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000894">Todo:</a></b></dt><dd>(b/187027049): compute the dual value when the dual is feasible (or problem optimal for interior point) based on the bounds and the dual values for LPs. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a685761a4d3d241a3246d09605c8e3a50">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l00994">994</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l01056">1056</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a6de754c2e507136a902230670f574c85">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l01614">1614</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="glpk__solver_8cc_source.html#l01682">1682</a> of file <a class="el" href="glpk__solver_8cc_source.html">glpk_solver.cc</a>.</p>
 
 </div>
 </div>

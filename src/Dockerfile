@@ -30,7 +30,7 @@ RUN apk add --no-cache openjdk8 maven
 RUN apk add --no-cache python3-dev py3-pip py3-wheel \
  py3-numpy py3-pandas py3-matplotlib py3-scipy
 RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED
-RUN python3 -m pip install absl-py mypy-protobuf pdoc
+RUN python3 -m pip install absl-py mypy mypy-protobuf pdoc
 
 ################
 ##  OR-TOOLS  ##
@@ -43,7 +43,7 @@ ENV DISTRIBUTION=alpine-edge
 # use SRC_GIT_SHA1 to modify the command
 # i.e. avoid docker reusing the cache when new commit is pushed
 ARG ORTOOLS_GIT_BRANCH
-ENV ORTOOLS_GIT_BRANCH ${ORTOOLS_GIT_BRANCH:-main}
+ENV ORTOOLS_GIT_BRANCH ${ORTOOLS_GIT_BRANCH:-stable}
 RUN git clone -b "${ORTOOLS_GIT_BRANCH}" --single-branch --depth=1 https://github.com/google/or-tools
 WORKDIR /root/or-tools
 

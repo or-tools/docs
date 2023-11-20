@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -289,7 +289,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000875">Todo:</a></b></dt><dd>(b/195295177): Update to add clearer contracts once PDLP's bounds contract is clarified. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000878">Todo:</a></b></dt><dd>(b/195295177): Update to add clearer contracts once PDLP's bounds contract is clarified. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> claims the optimal value is equal or better (smaller for minimization and larger for maximization) than best_primal_bound up to the solvers primal feasibility tolerance (see warning below):</p><ul>
 <li>best_primal_bound is trivial (+inf for minimization and -inf maximization) when the solver does not claim to have such bound.</li>
 <li>best_primal_bound can be closer to the optimal value than the objective of the best primal feasible solution. In particular, best_primal_bound may be non-trivial even when no primal feasible solutions are returned. <dl class="section warning"><dt>Warning</dt><dd>The precise claim is that there exists a primal solution that:</dd></dl>

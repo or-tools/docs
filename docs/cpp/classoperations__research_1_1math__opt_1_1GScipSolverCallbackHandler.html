@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -120,7 +120,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handler for user callbacks for <a class="el" href="classoperations__research_1_1math__opt_1_1GScipSolver.html">GScipSolver</a>.</p>
 <p>It deals with solve interruption when the user request it or when an error occurs during the call of the user callback. Any such error is returned by <a class="el" href="classoperations__research_1_1math__opt_1_1GScipSolverCallbackHandler.html#a14d8d3e9c8321a60fb2798a09b91a60d">Flush()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000902">Todo:</a></b></dt><dd>(b/193537362): see if we need to share code with the handling of <a class="el" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>. It is likely that it could the case to make sure the <code>userinterrupt</code> flag is not lost. It may require sharing the same SCIP event handler to make sure the user callback is called first; but maybe that is not necessary. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000905">Todo:</a></b></dt><dd>(b/193537362): see if we need to share code with the handling of <a class="el" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>. It is likely that it could the case to make sure the <code>userinterrupt</code> flag is not lost. It may require sharing the same SCIP event handler to make sure the user callback is called first; but maybe that is not necessary. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="gscip__solver__callback_8h_source.html#l00042">42</a> of file <a class="el" href="gscip__solver__callback_8h_source.html">gscip_solver_callback.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -245,7 +245,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a non null handler if needed (there are supported events that we register to).</p>
 <p>The caller will also have to use MessageHandler() when calling <a class="el" href="classoperations__research_1_1GScip.html#a144b0f0e0d083c553bbcbd8c217c1747">GScip::Solve()</a> when the result is not nullptr.</p>
 <p>At the end of the solve, <a class="el" href="classoperations__research_1_1math__opt_1_1GScipSolverCallbackHandler.html#a14d8d3e9c8321a60fb2798a09b91a60d">Flush()</a> must be called (when everything else succeeded) to make the final user callback calls and return the first error that occurred when calling the user callback. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000900">Todo:</a></b></dt><dd>(b/180617976): Don't ignore unknown callbacks. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000903">Todo:</a></b></dt><dd>(b/180617976): Don't ignore unknown callbacks. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="gscip__solver__callback_8cc_source.html#l00038">38</a> of file <a class="el" href="gscip__solver__callback_8cc_source.html">gscip_solver_callback.cc</a>.</p>
 

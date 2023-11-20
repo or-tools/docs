@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -266,10 +266,10 @@ Public Member Functions</h2></td></tr>
 <p>Start by moving the singleton columns to the front and by putting their non-zero coefficient on the diagonal. The general algorithm below would have the same effect, but this function is a lot faster.</p>
 <p>Initialize residual_matrix_non_zero_ with the submatrix left after we removed the singleton and residual singleton columns.</p>
 <p>Perform Gaussian elimination.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000440">Todo:</a></b></dt><dd>(user): If we don't need L and U, we can abort when the residual matrix becomes dense (i.e. when its density factor is above a certain threshold). The residual size is 'end_index - index' and the density can either be computed exactly or estimated from min_markowitz. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000442">Todo:</a></b></dt><dd>(user): If we don't need L and U, we can abort when the residual matrix becomes dense (i.e. when its density factor is above a certain threshold). The residual size is 'end_index - index' and the density can either be computed exactly or estimated from min_markowitz. </dd></dl>
 <p>Singular matrix? No pivot will be selected if a column has no entries. If a column has some entries, then we are sure that a pivot will be selected but its magnitude can be really close to zero. In both cases, we report the singularity of the matrix.</p>
-<p>Update residual_matrix_non_zero_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000441">Todo:</a></b></dt><dd>(user): This step can be skipped, once a fully dense matrix is obtained. But note that permuted_lower_column_needs_solve_ needs to be updated. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000442">Todo:</a></b></dt><dd>(user): Note that in some rare cases, because of numerical cancellation, the column degree may actually be smaller than pivot_col_degree. Exploit that better? </dd></dl>
+<p>Update residual_matrix_non_zero_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000443">Todo:</a></b></dt><dd>(user): This step can be skipped, once a fully dense matrix is obtained. But note that permuted_lower_column_needs_solve_ needs to be updated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000444">Todo:</a></b></dt><dd>(user): Note that in some rare cases, because of numerical cancellation, the column degree may actually be smaller than pivot_col_degree. Exploit that better? </dd></dl>
 <p>Update the permutations.</p>
 <p>To get a better deterministic time, we add a factor that depend on the final number of entries in the result.</p>
 

@@ -21,6 +21,7 @@ var namespaceoperations__research_1_1internal =
       [ "kIndicators", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a2ba753273480afb7df77df7d9e95387a", null ],
       [ "kEndData", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a0e071d669ad3d79e7fffb9654a90e9c9", null ]
     ] ],
+    [ "AddCallbackConstraint", "namespaceoperations__research_1_1internal.html#a9a0c3ab79e496e97c6902f16e18a86c3", null ],
     [ "AddCallbackConstraintImpl", "namespaceoperations__research_1_1internal.html#a90cc50c603b218efbbaeeef5c7f98d17", null ],
     [ "AddConstraintHandlerImpl", "namespaceoperations__research_1_1internal.html#a2ac127174821e785a26be62bf70516ff", null ],
     [ "AddInPlace", "namespaceoperations__research_1_1internal.html#a44e028ca9c90fa8a5b020b09d4088ad0", null ],
@@ -41,6 +42,7 @@ var namespaceoperations__research_1_1internal =
     [ "OneBit64", "namespaceoperations__research_1_1internal.html#a4276a61ac148b5e4009e2f515f1453ee", null ],
     [ "ReadNumRecords", "namespaceoperations__research_1_1internal.html#a4c502cb057a0c067c38aff7673965727", null ],
     [ "ReadNumRecords", "namespaceoperations__research_1_1internal.html#a69fdb007201984e0caf5498e5a05490f", null ],
+    [ "RegisterConstraintHandler", "namespaceoperations__research_1_1internal.html#a8528c1947f16a5c6178ac8f3e7e5b7a5", null ],
     [ "ScipCodeToUtilStatus", "namespaceoperations__research_1_1internal.html#aa1c0d85ffd530d0fe9dcffbe5c5f4038", null ],
     [ "SetBit64", "namespaceoperations__research_1_1internal.html#a07743e286ce6ded2b13ed91d43158404", null ],
     [ "UsesTwosComplement", "namespaceoperations__research_1_1internal.html#a7576c96963562faa59a8f0bc85b52430", null ],

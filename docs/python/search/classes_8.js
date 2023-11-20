@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['linearconstraint_0',['linearconstraint',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html',1,'ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html',1,'ortools.linear_solver.python.model_builder.LinearConstraint']]],
-  ['linearexpr_1',['linearexpr',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html',1,'ortools.linear_solver.python.linear_solver_natural_api.LinearExpr'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html',1,'ortools.linear_solver.python.model_builder.LinearExpr'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html',1,'ortools.sat.python.cp_model.LinearExpr']]],
-  ['localsearchfilter_2',['LocalSearchFilter',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilter.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchfiltermanager_3',['LocalSearchFilterManager',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilterManager.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchmetaheuristic_4',['LocalSearchMetaheuristic',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchMetaheuristic.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchoperator_5',['LocalSearchOperator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html',1,'ortools::constraint_solver::pywrapcp']]]
+  ['intervalvar_0',['intervalvar',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVar.html',1,'ortools.constraint_solver.pywrapcp.IntervalVar'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html',1,'ortools.sat.python.cp_model.IntervalVar']]],
+  ['intervalvarcontainer_1',['IntervalVarContainer',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVarContainer.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intervalvarelement_2',['IntervalVarElement',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVarElement.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intexpr_3',['IntExpr',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntExpr.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intvar_4',['intvar',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVar.html',1,'ortools.constraint_solver.pywrapcp.IntVar'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html',1,'ortools.sat.python.cp_model.IntVar']]],
+  ['intvarcontainer_5',['IntVarContainer',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarContainer.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intvarelement_6',['IntVarElement',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarElement.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intvariterator_7',['IntVarIterator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarIterator.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intvarlocalsearchfilter_8',['IntVarLocalSearchFilter',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarLocalSearchFilter.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['intvarlocalsearchoperator_9',['IntVarLocalSearchOperator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarLocalSearchOperator.html',1,'ortools::constraint_solver::pywrapcp']]]
 ];

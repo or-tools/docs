@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -120,11 +120,11 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;int n&gt;<br />
 class operations_research::sat::FirstFewValues&lt; n &gt;</div><p>Simple DP to keep the set of the first n reachable value (n &gt; 1).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002217">Todo:</a></b></dt><dd><p class="startdd">(user): Maybe modulo some prime number we can keep more info. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002262">Todo:</a></b></dt><dd><p class="startdd">(user): Maybe modulo some prime number we can keep more info. </p>
 <p class="enddd">(user): Another common case is a bunch of really small values and larger ones, so we could bound the sum of the small values and keep the first few reachable by the big ones. This is similar to some presolve transformations. </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00278">278</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00340">340</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4b7fae9dfe9c6c69bca8ece3f7bc568" name="af4b7fae9dfe9c6c69bca8ece3f7bc568"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4b7fae9dfe9c6c69bca8ece3f7bc568">&#9670;&#160;</a></span>FirstFewValues()</h2>
@@ -151,7 +151,7 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00280">280</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00342">342</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -182,12 +182,12 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>We assume the given positive value can be added as many time as wanted.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002222">Todo:</a></b></dt><dd>(user): Implement <a class="el" href="classoperations__research_1_1sat_1_1FirstFewValues.html#afb10d079fe78aa99d7256c85f6d24bde">Add()</a> with an upper bound on the multiplicity. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002268">Todo:</a></b></dt><dd>(user): Implement <a class="el" href="classoperations__research_1_1sat_1_1FirstFewValues.html#afb10d079fe78aa99d7256c85f6d24bde">Add()</a> with an upper bound on the multiplicity. </dd></dl>
 <p>We copy from reachable_[i] to new_reachable_[j]. The position zero is already copied.</p>
 <p>Eliminate duplicates.</p>
 <p>insert candidate in its final place.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00291">291</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00353">353</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00323">323</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00385">385</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ template&lt;int n&gt; </div>
 </div><div class="memdoc">
 <p>Returns true iff sum might be expressible as a weighted sum of the added value. Any sum &gt;= <a class="el" href="classoperations__research_1_1sat_1_1FirstFewValues.html#a10c73995e4366dcfe28ccfa1d91e2a22">LastValue()</a> is always considered potentially reachable. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00317">317</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00379">379</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00322">322</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00384">384</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +305,7 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00282">282</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00344">344</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>

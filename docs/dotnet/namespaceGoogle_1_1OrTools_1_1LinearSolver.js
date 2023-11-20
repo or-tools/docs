@@ -2,10 +2,6 @@ var namespaceGoogle_1_1OrTools_1_1LinearSolver =
 [
     [ "Constraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint" ],
     [ "DoubleVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector" ],
-    [ "Int64Vector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64Vector" ],
-    [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64VectorVector" ],
-    [ "IntVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVector" ],
-    [ "IntVectorVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVectorVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVectorVector" ],
     [ "MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector" ],
     [ "MPSolverParameters", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters" ],
     [ "MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector" ],

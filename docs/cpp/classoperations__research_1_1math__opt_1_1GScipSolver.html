@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -386,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">rows      |         3         |</div>
 <div class="line">          \                   /</div>
 </div><!-- fragment --><p> The coefficients of sub-matrix 1 are set by UpdateLinearConstraints(), the ones of sub-matrix 2 by AddVariables() and the ones of the sub-matrix 3 by AddLinearConstraints(). The rationale here is that SCIPchgCoefLinear() has a complexity of O(non_zeros). Thus it is inefficient and can lead to O(n^2) behaviors if it was used for new rows or for new columns. For new rows it is more efficient to pass all the variables coefficients at once when building the constraints. For new columns and existing rows, since we can assume there is no existing coefficient, we can use SCIPaddCoefLinear() which is O(1). This leads to only use SCIPchgCoefLinear() for changing the coefficients of existing rows and columns.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000898">Todo:</a></b></dt><dd>(b/215722113): maybe we could use SCIPaddCoefLinear() for sub-matrix 1. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000901">Todo:</a></b></dt><dd>(b/215722113): maybe we could use SCIPaddCoefLinear() for sub-matrix 1. </dd></dl>
 <p>Add new variables.</p>
 <p>Update linear constraints properties and sub-matrix 1.</p>
 <p>Update the sub-matrix 2.</p>

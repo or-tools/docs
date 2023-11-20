@@ -22,5 +22,6 @@ var searchData=
   ['vehicle_5fclass_19',['vehicle_class',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer_1_1VehicleClassEntry.html#aeedf38733f53983e54633047377add08',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer::VehicleClassEntry']]],
   ['vehicles_5fper_5fvehicle_5fclass_20',['vehicles_per_vehicle_class',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer.html#a4593b0295aea2c1101c89da85cd3f8f4',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer']]],
   ['verbositylevel_21',['VerbosityLevel',['../classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#a54a2f819c1963e6c45b492b6197dcded',1,'OperationsResearch::Pdlp::PrimalDualHybridGradientParams']]],
-  ['violationlsperturbationperiod_22',['ViolationLsPerturbationPeriod',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a1452323c676611bf37053a1f7643c066',1,'Google::OrTools::Sat::SatParameters']]]
+  ['violationlscompoundmoveprobability_22',['ViolationLsCompoundMoveProbability',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#abb600cff0bb168969564e29684761343',1,'Google::OrTools::Sat::SatParameters']]],
+  ['violationlsperturbationperiod_23',['ViolationLsPerturbationPeriod',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a1452323c676611bf37053a1f7643c066',1,'Google::OrTools::Sat::SatParameters']]]
 ];

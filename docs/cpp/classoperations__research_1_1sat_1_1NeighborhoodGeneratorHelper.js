@@ -18,6 +18,7 @@ var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
     [ "GetSchedulingPrecedences", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aca0952c56878d9ecc6a8557bd42d170e", null ],
     [ "GetUniqueIntervalSets", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a95e747811a348dcd5c8e0419b4156af2", null ],
     [ "IsActive", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a131c26490547085cade57780099f34c0", null ],
+    [ "KeepActiveIntervals", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#afe15f3b2fc8d4858aa06c06a3236472b", null ],
     [ "ModelProto", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aa6ec3e4643746db3d8211a1b5ca6d4af", null ],
     [ "NoNeighborhood", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a4f293d79011f40d009d0072aede0126c", null ],
     [ "NumActiveVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a716d338fa48961986d31bae718c7acfd", null ],

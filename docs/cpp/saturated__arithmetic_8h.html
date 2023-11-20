@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('saturated__arithmetic_8h.html',''); in
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &quot;absl/base/casts.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">ortools/base/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bitset_8h_source.html">ortools/util/bitset.h</a>&quot;</code><br />
@@ -152,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad6bc7f73c7f1b8854f5a0c3f3bd02db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfcad7c607afe2de123ac91fcd2b87c0" id="r_adfcad7c607afe2de123ac91fcd2b87c0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#adfcad7c607afe2de123ac91fcd2b87c0">operations_research::CapProdGeneric</a> (int64_t x, int64_t y)</td></tr>
 <tr class="separator:adfcad7c607afe2de123ac91fcd2b87c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93332d9b831924f19930b1ae2110add4" id="r_a93332d9b831924f19930b1ae2110add4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a93332d9b831924f19930b1ae2110add4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a93332d9b831924f19930b1ae2110add4">operations_research::CapOrFloatAdd</a> (T x, T y)</td></tr>
+<tr class="separator:a93332d9b831924f19930b1ae2110add4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111f44b9b9cf67a8e8d83794ac9f5291" id="r_a111f44b9b9cf67a8e8d83794ac9f5291"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a111f44b9b9cf67a8e8d83794ac9f5291">operations_research::CapAdd</a> (int64_t x, int64_t y)</td></tr>
 <tr class="separator:a111f44b9b9cf67a8e8d83794ac9f5291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e489359fd31c3ef24a113fce05c08ee" id="r_a1e489359fd31c3ef24a113fce05c08ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1e489359fd31c3ef24a113fce05c08ee">operations_research::CapAddTo</a> (int64_t x, int64_t *y)</td></tr>

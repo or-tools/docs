@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
 <p>The optimizer is selected using the following algorithm (L being the sorted list of optimizers, and l the position of the last selected optimizer): a- If a new solution has been found by optimizer l, select the first optimizer l' in L, l' &gt;= 0, that can run. b- If optimizer l didn't find a new solution, select the first optimizer l', with l' &gt; l, such that its deterministic time spent since last solution is smaller than the deterministic time spent by any runnable optimizer in 1..l since last solution. If no such optimizer is available, go to option a. </p>
 <p>Select the first possible optimizer.</p>
 <p>Select the next possible optimizer. If none, select the first one. Check that the time is smaller than all previous optimizers which are runnable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>(user): Remove this recursive call, even if in practice it's safe because the max depth is the number of optimizers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>(user): Remove this recursive call, even if in practice it's safe because the max depth is the number of optimizers. </dd></dl>
 <p>Select the optimizer.</p>
 
 <p class="definition">Definition at line <a class="el" href="bop__portfolio_8cc_source.html#l00368">368</a> of file <a class="el" href="bop__portfolio_8cc_source.html">bop_portfolio.cc</a>.</p>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets whether or not an optimizer is "runnable". Like a non-selectable one, a non-runnable optimizer will never be returned by <a class="el" href="classoperations__research_1_1bop_1_1OptimizerSelector.html#a39afee83d9f173f951fd8bef5668d1cc">SelectOptimizer()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>(user): Maybe we should simply have the notion of selectability here and let the client handle the logic to decide what optimizer are selectable or not. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo:</a></b></dt><dd>(user): Maybe we should simply have the notion of selectability here and let the client handle the logic to decide what optimizer are selectable or not. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bop__portfolio_8cc_source.html#l00438">438</a> of file <a class="el" href="bop__portfolio_8cc_source.html">bop_portfolio.cc</a>.</p>
 

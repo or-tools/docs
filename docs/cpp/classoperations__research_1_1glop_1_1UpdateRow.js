@@ -10,7 +10,7 @@ var classoperations__research_1_1glop_1_1UpdateRow =
     [ "DeterministicTime", "classoperations__research_1_1glop_1_1UpdateRow.html#aaab467401b5d57187f29430599e10dcd", null ],
     [ "GetCoefficient", "classoperations__research_1_1glop_1_1UpdateRow.html#aea37c23076faa1f8d93bfcb541af2bef", null ],
     [ "GetCoefficients", "classoperations__research_1_1glop_1_1UpdateRow.html#a0574601e3d61bdd8bafbd8996c78516b", null ],
-    [ "GetNonZeroPositions", "classoperations__research_1_1glop_1_1UpdateRow.html#ad3bca01d9fb39eb811952a1322745c03", null ],
+    [ "GetNonZeroPositions", "classoperations__research_1_1glop_1_1UpdateRow.html#af51fb5a64ef2a242eef9d4d3742e770f", null ],
     [ "GetUnitRowLeftInverse", "classoperations__research_1_1glop_1_1UpdateRow.html#a807fbcca305cca74ab88c323c1c5140a", null ],
     [ "Invalidate", "classoperations__research_1_1glop_1_1UpdateRow.html#a707f9d0bc5f56a8d7fd39c650ce19720", null ],
     [ "IsComputedFor", "classoperations__research_1_1glop_1_1UpdateRow.html#aa1844f9045c2ebc3f9ff7e4fa8abfdef", null ],

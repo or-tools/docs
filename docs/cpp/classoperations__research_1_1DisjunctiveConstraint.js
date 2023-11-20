@@ -1,10 +1,12 @@
 var classoperations__research_1_1DisjunctiveConstraint =
 [
     [ "DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#a778b4c7c5f9a8968f54a40466a3d7dcf", null ],
+    [ "DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#ac824fa45e9b48459ef97e947e8875d83", null ],
     [ "~DisjunctiveConstraint", "classoperations__research_1_1DisjunctiveConstraint.html#adc7d8ad50b0d9c98c59f7f9c3f6bda6c", null ],
     [ "actives", "classoperations__research_1_1DisjunctiveConstraint.html#aa622045fea707f79778fda6a5cb91407", null ],
     [ "MakeSequenceVar", "classoperations__research_1_1DisjunctiveConstraint.html#a52114e41b3fbb706799aee332bf106a6", null ],
     [ "nexts", "classoperations__research_1_1DisjunctiveConstraint.html#ac83696288179301aed1e821b6699ece2", null ],
+    [ "operator=", "classoperations__research_1_1DisjunctiveConstraint.html#ab533d1973da26602ced40db8df7499c9", null ],
     [ "SetTransitionTime", "classoperations__research_1_1DisjunctiveConstraint.html#af80d78dab69e2420e5df2acd13be698e", null ],
     [ "time_cumuls", "classoperations__research_1_1DisjunctiveConstraint.html#a7fb5366450e3823da4bf0eef528189c2", null ],
     [ "time_slacks", "classoperations__research_1_1DisjunctiveConstraint.html#a49cc393b98c87908eff894e56261f5eb", null ],

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,21 +107,21 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1sat_1_1To
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a61305bb21c49216689362adc72a4de44" id="r_a61305bb21c49216689362adc72a4de44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1TopNCuts.html#a61305bb21c49216689362adc72a4de44">TopNCuts</a> (int n)</td></tr>
 <tr class="separator:a61305bb21c49216689362adc72a4de44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a506f351d80f2e62c5a1baaff7ee6dc4e" id="r_a506f351d80f2e62c5a1baaff7ee6dc4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1TopNCuts.html#a506f351d80f2e62c5a1baaff7ee6dc4e">AddCut</a> (<a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, const std::string &amp;<a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;lp_solution)</td></tr>
-<tr class="memdesc:a506f351d80f2e62c5a1baaff7ee6dc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a cut to the local pool.  <br /></td></tr>
-<tr class="separator:a506f351d80f2e62c5a1baaff7ee6dc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1a36c716824951cdd94469e0192944" id="r_a8d1a36c716824951cdd94469e0192944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1TopNCuts.html#a8d1a36c716824951cdd94469e0192944">AddCut</a> (<a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> <a class="el" href="demon__profiler_8cc.html#a05da18ca9c7b657a4a6ea24e07c9b695">ct</a>, absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>, const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;lp_solution)</td></tr>
+<tr class="memdesc:a8d1a36c716824951cdd94469e0192944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a cut to the local pool.  <br /></td></tr>
+<tr class="separator:a8d1a36c716824951cdd94469e0192944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e8fa95f09633b75778b8294257c960" id="r_a56e8fa95f09633b75778b8294257c960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1TopNCuts.html#a56e8fa95f09633b75778b8294257c960">TransferToManager</a> (<a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintManager.html">LinearConstraintManager</a> *manager)</td></tr>
 <tr class="memdesc:a56e8fa95f09633b75778b8294257c960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty the local pool and add all its content to the manager.  <br /></td></tr>
 <tr class="separator:a56e8fa95f09633b75778b8294257c960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Before adding cuts to the global pool, it is a classical thing to only keep the top n of a given type during one generation round. This is there to help doing that.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001718">Todo:</a></b></dt><dd><p class="startdd">(user): Avoid computing efficacity twice. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001759">Todo:</a></b></dt><dd><p class="startdd">(user): Avoid computing efficacity twice. </p>
 <p class="interdd">(user): We don't use any orthogonality consideration here. </p>
 <p class="enddd">(user): Detect duplicate cuts? </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00287">287</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00290">290</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a61305bb21c49216689362adc72a4de44" name="a61305bb21c49216689362adc72a4de44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61305bb21c49216689362adc72a4de44">&#9670;&#160;</a></span>TopNCuts()</h2>
@@ -147,13 +147,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00289">289</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00292">292</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a506f351d80f2e62c5a1baaff7ee6dc4e" name="a506f351d80f2e62c5a1baaff7ee6dc4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a506f351d80f2e62c5a1baaff7ee6dc4e">&#9670;&#160;</a></span>AddCut()</h2>
+<a id="a8d1a36c716824951cdd94469e0192944" name="a8d1a36c716824951cdd94469e0192944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1a36c716824951cdd94469e0192944">&#9670;&#160;</a></span>AddCut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">absl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Adds a cut to the local pool. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00846">846</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00788">788</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Empty the local pool and add all its content to the manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00857">857</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00799">799</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
 
 </div>
 </div>

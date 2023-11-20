@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('parser__util_8cc.html',''); initResiza
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mathutil_8h_source.html">ortools/base/mathutil.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
@@ -130,8 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:aaf333de8b6860e46b2d657d5b0dc973d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3dd488cca2722913a7c869ccfee54a3" id="r_ad3dd488cca2722913a7c869ccfee54a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser__util_8cc.html#ad3dd488cca2722913a7c869ccfee54a3">orfz_error</a> (<a class="el" href="structoperations__research_1_1fz_1_1ParserContext.html">operations_research::fz::ParserContext</a> *<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>, <a class="el" href="classoperations__research_1_1fz_1_1Model.html">operations_research::fz::Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, bool *ok, void *scanner, const char *str)</td></tr>
 <tr class="separator:ad3dd488cca2722913a7c869ccfee54a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b035e386f4787fb10f6bfc1c12e508b" id="r_a9b035e386f4787fb10f6bfc1c12e508b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#a9b035e386f4787fb10f6bfc1c12e508b">operations_research::fz::ContainsId</a> (std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Annotation.html">Annotation</a> &gt; *annotations, const std::string &amp;id)</td></tr>
-<tr class="separator:a9b035e386f4787fb10f6bfc1c12e508b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2dd914a48ed4453e015eba91992452" id="r_a9a2dd914a48ed4453e015eba91992452"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#a9a2dd914a48ed4453e015eba91992452">operations_research::fz::ContainsId</a> (std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Annotation.html">Annotation</a> &gt; *annotations, absl::string_view id)</td></tr>
+<tr class="separator:a9a2dd914a48ed4453e015eba91992452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7bf253df8336c70c363ac688d9ae1d" id="r_adf7bf253df8336c70c363ac688d9ae1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#adf7bf253df8336c70c363ac688d9ae1d">operations_research::fz::AllDomainsHaveOneValue</a> (const std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Domain.html">Domain</a> &gt; &amp;domains)</td></tr>
 <tr class="separator:adf7bf253df8336c70c363ac688d9ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaacc0519b036ec714aaf6201c055b7b6" id="r_aaacc0519b036ec714aaf6201c055b7b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1fz.html#aaacc0519b036ec714aaf6201c055b7b6">operations_research::fz::ConvertAsIntegerOrDie</a> (double d)</td></tr>
@@ -191,7 +192,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00034">34</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00035">35</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
 </div>
 </div>

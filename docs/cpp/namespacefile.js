@@ -16,6 +16,7 @@ var namespacefile =
     [ "GetContents", "namespacefile.html#a10454f58ae9af93061723f1df1ccc721", null ],
     [ "GetTextProto", "namespacefile.html#a4dc2f42784780251fb0579bf4d72a837", null ],
     [ "IsAbsolutePath", "namespacefile.html#a358560f14e46ae0e559f132c657aa4fb", null ],
+    [ "IsDirectory", "namespacefile.html#abdb3d07f55edfadf171396daa63be2c8", null ],
     [ "JoinPath", "namespacefile.html#a5b299e16001ed45a61bcbc3383dd3400", null ],
     [ "JoinPath", "namespacefile.html#a62a7a92325cc66f2a6d7a611483fdc81", null ],
     [ "JoinPath", "namespacefile.html#a16012c75098a10032a714ce6e149e7e2", null ],

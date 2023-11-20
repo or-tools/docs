@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -316,9 +316,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This function assumes that next_, prev_, next_literal_ and must_be_in_cycle_ are all up to date. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000987">Todo:</a></b></dt><dd>(user): both this and the loop on must_be_in_cycle_ might take some time on large graph. Optimize if this become an issue. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000992">Todo:</a></b></dt><dd>(user): both this and the loop on must_be_in_cycle_ might take some time on large graph. Optimize if this become an issue. </dd></dl>
 <p>Find the start and end of the path containing node n. If this is a circuit, we will have start_node == end_node.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000988">Todo:</a></b></dt><dd>(user): we can fail early in more case, like no more possible path to any of the mandatory node. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000993">Todo:</a></b></dt><dd>(user): we can fail early in more case, like no more possible path to any of the mandatory node. </dd></dl>
 <p>Any cycle must contain zero.</p>
 <p>An incomplete path cannot be closed except if one of the end-points is zero.</p>
 <p>None of the other propagation below are valid in case of multiple circuits.</p>
@@ -352,7 +352,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is needed in case a <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> is used for more than one arc, we may propagate it to false/true here, and it might trigger more propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000986">Todo:</a></b></dt><dd>(user): come up with a test that fail when this is not here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000991">Todo:</a></b></dt><dd>(user): come up with a test that fail when this is not here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00102">102</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 

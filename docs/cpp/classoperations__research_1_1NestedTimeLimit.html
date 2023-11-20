@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,12 +131,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">                                       subalgorithm_limit_in_seconds,</div>
 <div class="line">                                       subalgorithm_deterministic_limit);</div>
 <div class="line">RunTheSubalgorithm(subalgorithm_time_limit.GetTimeLimit());</div>
-<div class="ttc" id="aclassoperations__research_1_1NestedTimeLimit_html"><div class="ttname"><a href="classoperations__research_1_1NestedTimeLimit.html">operations_research::NestedTimeLimit</a></div><div class="ttdef"><b>Definition</b> <a href="time__limit_8h_source.html#l00385">time_limit.h:385</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1NestedTimeLimit_html"><div class="ttname"><a href="classoperations__research_1_1NestedTimeLimit.html">operations_research::NestedTimeLimit</a></div><div class="ttdef"><b>Definition</b> <a href="time__limit_8h_source.html#l00405">time_limit.h:405</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1TimeLimit_html"><div class="ttname"><a href="classoperations__research_1_1TimeLimit.html">operations_research::TimeLimit</a></div><div class="ttdef"><b>Definition</b> <a href="time__limit_8h_source.html#l00089">time_limit.h:89</a></div></div>
 </div><!-- fragment --><p>Note that remaining wall time in the base time limit is decreasing "automatically", but the deterministic time needs to be updated manually. This update is done only once, during the destruction of the nested time limit object. To track the deterministic time properly, the user must avoid modifying the base time limit object when a nested time limit exists.</p>
 <p>The nested time limits supports the external time limit condition in the sense, that if the overall time limit has an external boolean registered, the nested time limit object will use the same boolean value as an external time limit too. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00385">385</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00405">405</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8909a77a948695e61cfa6e5f2c3d069b" name="a8909a77a948695e61cfa6e5f2c3d069b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8909a77a948695e61cfa6e5f2c3d069b">&#9670;&#160;</a></span>NestedTimeLimit() <span class="overload">[1/2]</span></h2>
@@ -261,7 +261,7 @@ template&lt;typename Parameters &gt; </div>
 </div><div class="memdoc">
 <p>Creates a time limit object initialized from a base time limit and an object that provides methods max_time_in_seconds() and max_deterministic_time(). This method is designed specifically to work with solver parameter protos, e.g. BopParameters, MipParameters and SatParameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00411">411</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00431">431</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ template&lt;typename Parameters &gt; </div>
 </div><div class="memdoc">
 <p>Returns a time limit object that represents the combination of the overall time limit and the part-specific time limit. The returned time limit object is owned by the nested time limit object that returns it, and it will remain valid until the nested time limit object is destroyed. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00424">424</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00444">444</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
 
 </div>
 </div>

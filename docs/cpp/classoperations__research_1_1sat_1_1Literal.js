@@ -10,8 +10,9 @@ var classoperations__research_1_1sat_1_1Literal =
     [ "IsPositive", "classoperations__research_1_1sat_1_1Literal.html#ac3db0b191fdc43d161249afc71b0bfaf", null ],
     [ "Negated", "classoperations__research_1_1sat_1_1Literal.html#a7b40ae6edf538900d4b7df1810f7cc81", null ],
     [ "NegatedIndex", "classoperations__research_1_1sat_1_1Literal.html#a495e7f680dd6f93698d8e17c5b2fbe0c", null ],
+    [ "operator LiteralIndex", "classoperations__research_1_1sat_1_1Literal.html#a3b27485970070e73266f5530d2a7f55c", null ],
     [ "operator!=", "classoperations__research_1_1sat_1_1Literal.html#a58e4f18d79d99f6251e7c2dfd3d25d05", null ],
-    [ "operator<", "classoperations__research_1_1sat_1_1Literal.html#a0cf750cff9a020cff328c329e269112a", null ],
+    [ "operator<", "classoperations__research_1_1sat_1_1Literal.html#a0697b89f0664b243cc437f0cda23b11a", null ],
     [ "operator==", "classoperations__research_1_1sat_1_1Literal.html#acb19618cd547911afcd14bc408e9eb64", null ],
     [ "SignedValue", "classoperations__research_1_1sat_1_1Literal.html#a3bd8e23190a39971c5ceab0ca318bf58", null ],
     [ "Variable", "classoperations__research_1_1sat_1_1Literal.html#aa72b4ac4edff764469349ac4301ef4e0", null ]

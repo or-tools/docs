@@ -23,5 +23,7 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching =
     [ "PORTFOLIO_WITH_QUICK_RESTART_SEARCH", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#aa29e895ed88765c3c78306afc98e9899", null ],
     [ "PORTFOLIO_WITH_QUICK_RESTART_SEARCH_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a468a8ea3a319f49159714c0061094d67", null ],
     [ "PSEUDO_COST_SEARCH", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#ab9420d73250b8a6c04b784ce0976dbd4", null ],
-    [ "PSEUDO_COST_SEARCH_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a98d3bf1800988bdf879face474f643d7", null ]
+    [ "PSEUDO_COST_SEARCH_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a98d3bf1800988bdf879face474f643d7", null ],
+    [ "RANDOMIZED_SEARCH", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a35f570df723b10e7fadc49b255500f60", null ],
+    [ "RANDOMIZED_SEARCH_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a57aaede50b8437fd0d891ab30b06ed19", null ]
 ];

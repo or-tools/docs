@@ -13,6 +13,7 @@ var classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram =
     [ "Qp", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a39e77be184fc6818a960c356e0f825be", null ],
     [ "ReplaceLargeConstraintBoundsWithInfinity", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#aa9d9d5903bdf63af31485d871f95477c", null ],
     [ "RescaleQuadraticProgram", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#afdc10bb749b1e680b718b128f91e26cf", null ],
+    [ "SetConstraintBounds", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a8c4529d525ac254a0b15f4816081dac5", null ],
     [ "SwapConstraintBounds", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a38bdc5c094b70e6936da1d8bbbe94955", null ],
     [ "SwapObjectiveVector", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#aba8402aa2d7b3371de8a938789e9882c", null ],
     [ "SwapVariableBounds", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a71618775b95af6a0e12255db942ed124", null ],

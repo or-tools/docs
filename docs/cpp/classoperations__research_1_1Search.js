@@ -44,7 +44,7 @@ var classoperations__research_1_1Search =
     [ "set_backtrack_at_the_end_of_the_search", "classoperations__research_1_1Search.html#a7c7418be9f37bc7ab177c5e10ef11bdd", null ],
     [ "set_created_by_solve", "classoperations__research_1_1Search.html#a1fcd92000011aeb8f6dc5454bfba38a9", null ],
     [ "set_decision_builder", "classoperations__research_1_1Search.html#a4b37a519f7faebaeb4b6be5c62757c2b", null ],
-    [ "set_search_context", "classoperations__research_1_1Search.html#a6b35219b5a88835342c1209617bd954e", null ],
+    [ "set_search_context", "classoperations__research_1_1Search.html#a15c5bb22e0cbe34300cf39f2dd028455", null ],
     [ "set_search_depth", "classoperations__research_1_1Search.html#a1ff26a6a5c4835440aaeba8bbd92c0ec", null ],
     [ "set_search_left_depth", "classoperations__research_1_1Search.html#a578d5df848003bfa499f3547ce30b3c1", null ],
     [ "set_should_finish", "classoperations__research_1_1Search.html#ac8d6976508790637ceb0522654a8e126", null ],

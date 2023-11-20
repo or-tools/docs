@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000683">Todo:</a></b></dt><dd>(user): For now we ask the number of nodes at construction, but we could automatically infer it from the added edges if needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000685">Todo:</a></b></dt><dd>(user): For now we ask the number of nodes at construction, but we could automatically infer it from the added edges if needed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00059">59</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
@@ -254,8 +254,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds an undirected edges between the two given nodes.</p>
-<p>For now we only accept non-negative cost. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000685">Todo:</a></b></dt><dd>(user): We can easily shift all costs if negative costs are needed.</dd></dl>
-<p>Important: The algorithm supports multi-edges, but it will be slower. So it is better to only add one edge with a minimum cost between two nodes. In particular, do not add both AddEdge(a, b, cost) and AddEdge(b, a, cost). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000686">Todo:</a></b></dt><dd>(user): We could just presolve them away. </dd></dl>
+<p>For now we only accept non-negative cost. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000687">Todo:</a></b></dt><dd>(user): We can easily shift all costs if negative costs are needed.</dd></dl>
+<p>Important: The algorithm supports multi-edges, but it will be slower. So it is better to only add one edge with a minimum cost between two nodes. In particular, do not add both AddEdge(a, b, cost) and AddEdge(b, a, cost). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000688">Todo:</a></b></dt><dd>(user): We could just presolve them away. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00036">36</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resets the class for a new graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000684">Todo:</a></b></dt><dd>(user): Eventually, we may support incremental Solves(). Or at least memory reuse if one wants to solve many problems in a row. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000686">Todo:</a></b></dt><dd>(user): Eventually, we may support incremental Solves(). Or at least memory reuse if one wants to solve many problems in a row. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00030">30</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
@@ -383,8 +383,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>We want all dual and all slack value to never overflow. After Initialize() they are both bounded by the 2 * maximum cost. And we track an upper bound on these quantities. The factor two is because of the re-scaling we do internally since all our dual values are actually multiple of 1/2.</p>
 <dl class="section note"><dt>Note</dt><dd>since the whole code in <a class="el" href="classoperations__research_1_1BlossomGraph.html">BlossomGraph</a> assumes that dual/slack have a magnitude that is always lower than kMaxCostValue it is important to use it here since there is no reason it cannot be smaller than kint64max.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000664">Todo:</a></b></dt><dd>(user): Improve the overflow detection if needed. The current one seems ok though. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000665">Todo:</a></b></dt><dd>(user): Maybe there is a faster/better way to recover the mapping in the presence of blossoms. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000666">Todo:</a></b></dt><dd>(user): Improve the overflow detection if needed. The current one seems ok though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000667">Todo:</a></b></dt><dd>(user): Maybe there is a faster/better way to recover the mapping in the presence of blossoms. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00048">48</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 

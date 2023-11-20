@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -373,7 +373,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This mainly forward the call to <a class="el" href="classoperations__research_1_1glop_1_1LuFactorization.html#a869bfef729c9d233c4e876020d7fdbbc">LuFactorization::ComputeInitialBasis()</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>once this is called, one would need to call <a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> to actually create the factorization. The only side effect of this is to update the deterministic time.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000413">Todo:</a></b></dt><dd>(user): This "double" factorization is a bit inefficient, and we should probably <a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> right away the factorization with the new basis, but more code is needed for that. It is also not that easy also because we want to permute all the added slack first. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000415">Todo:</a></b></dt><dd>(user): This "double" factorization is a bit inefficient, and we should probably <a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> right away the factorization with the new basis, but more code is needed for that. It is also not that easy also because we want to permute all the added slack first. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="basis__representation_8cc_source.html#l00223">223</a> of file <a class="el" href="basis__representation_8cc_source.html">basis_representation.cc</a>.</p>
 
@@ -418,7 +418,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the 1-norm of the inverse of B. For this we iteratively solve B.x = e_j, where e_j is the jth unit vector. The result of this computation is the jth column of B^-1.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000411">Todo:</a></b></dt><dd>(user): try to merge the computation of the norm of inverses with that of <a class="el" href="classoperations__research_1_1glop_1_1MatrixView.html">MatrixView</a>. Maybe use a wrapper class for InverseMatrix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000413">Todo:</a></b></dt><dd>(user): try to merge the computation of the norm of inverses with that of <a class="el" href="classoperations__research_1_1glop_1_1MatrixView.html">MatrixView</a>. Maybe use a wrapper class for InverseMatrix. </dd></dl>
 <p>Get a column of the matrix inverse.</p>
 <p>Compute sum_i <code>inverse_ij</code>.</p>
 <p>Compute max_j sum_i <code>inverse_ij</code></p>
@@ -831,7 +831,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html#a350dbf8381cf2189835d14e607ec49f3" title="Right solves the system B.d = a where the input is the initial value of d.">RightSolve()</a> for matrix.column(col). This also exploits its sparsity. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000410">Todo:</a></b></dt><dd>(user): if right_pool_mapping_[col] != kInvalidCol, we can reuse it and just apply the last rank one update since it was computed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000412">Todo:</a></b></dt><dd>(user): if right_pool_mapping_[col] != kInvalidCol, we can reuse it and just apply the last rank one update since it was computed. </dd></dl>
 <p>The sort is needed if we want to have the same behavior for the sparse or hyper-sparse version.</p>
 
 <p class="definition">Definition at line <a class="el" href="basis__representation_8cc_source.html#l00474">474</a> of file <a class="el" href="basis__representation_8cc_source.html">basis_representation.cc</a>.</p>

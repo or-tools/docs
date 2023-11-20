@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,23 +118,25 @@ $(document).ready(function(){initNavTree('graph_2util_8cc_source.html',''); init
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutil.html">util</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;absl/types/span.h&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceutil.html#aa9fb4c9a176acaf72053b11727436e9e">   20</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutil.html#aa9fb4c9a176acaf72053b11727436e9e">IsSubsetOf0N</a>(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; v, <span class="keywordtype">int</span> n) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;bool&gt; mask(n, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">int</span> i : v) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= n || mask[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    mask[i] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutil.html">util</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceutil.html#aca9c2faec725bc47baf08421b377f643">   22</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutil.html#aca9c2faec725bc47baf08421b377f643">IsSubsetOf0N</a>(absl::Span&lt;const int&gt; v, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  std::vector&lt;bool&gt; mask(n, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">int</span> i : v) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= n || mask[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    mask[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}  <span class="comment">// namespace util</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}  <span class="comment">// namespace util</span></div>
 <div class="ttc" id="agraph_2util_8h_html"><div class="ttname"><a href="graph_2util_8h.html">util.h</a></div></div>
-<div class="ttc" id="anamespaceutil_html"><div class="ttname"><a href="namespaceutil.html">util</a></div><div class="ttdoc">A collections of i/o utilities for the Graph classes in ./graph.h.</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00024">status_builder.h:24</a></div></div>
-<div class="ttc" id="anamespaceutil_html_aa9fb4c9a176acaf72053b11727436e9e"><div class="ttname"><a href="namespaceutil.html#aa9fb4c9a176acaf72053b11727436e9e">util::IsSubsetOf0N</a></div><div class="ttdeci">bool IsSubsetOf0N(const std::vector&lt; int &gt; &amp;v, int n)</div><div class="ttdef"><b>Definition</b> <a href="graph_2util_8cc_source.html#l00020">util.cc:20</a></div></div>
+<div class="ttc" id="anamespaceutil_html"><div class="ttname"><a href="namespaceutil.html">util</a></div><div class="ttdoc">A collections of i/o utilities for the Graph classes in ./graph.h.</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00025">status_builder.h:25</a></div></div>
+<div class="ttc" id="anamespaceutil_html_aca9c2faec725bc47baf08421b377f643"><div class="ttname"><a href="namespaceutil.html#aca9c2faec725bc47baf08421b377f643">util::IsSubsetOf0N</a></div><div class="ttdeci">bool IsSubsetOf0N(absl::Span&lt; const int &gt; v, int n)</div><div class="ttdef"><b>Definition</b> <a href="graph_2util_8cc_source.html#l00022">util.cc:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

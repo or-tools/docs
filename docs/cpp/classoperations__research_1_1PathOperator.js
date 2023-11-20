@@ -5,7 +5,7 @@ var classoperations__research_1_1PathOperator =
     [ "PathOperator", "classoperations__research_1_1PathOperator.html#af5bf6f677ddfd994ffe9f8d6c4eaf715", null ],
     [ "~PathOperator", "classoperations__research_1_1PathOperator.html#a192caff70f4f12fd43df88bf8053e50d", null ],
     [ "AddAlternativeSet", "classoperations__research_1_1PathOperator.html#aa8764e213613afa0feb5fe343455631f", null ],
-    [ "AddPairAlternativeSets", "classoperations__research_1_1PathOperator.html#a36d3b8436023a890838a2a8fc5d03ba2", null ],
+    [ "AddPairAlternativeSets", "classoperations__research_1_1PathOperator.html#a5ba1c635f0485c86a51013aba3f1fee7", null ],
     [ "BaseAlternative", "classoperations__research_1_1PathOperator.html#a5ec7c149fd0ed6f83d61bd41e7e73044", null ],
     [ "BaseAlternativeNode", "classoperations__research_1_1PathOperator.html#a96c6f258bb8b75bc383d2984549ff2a5", null ],
     [ "BaseNode", "classoperations__research_1_1PathOperator.html#af8db39e00c1f7ecfbf0f260b996ac621", null ],

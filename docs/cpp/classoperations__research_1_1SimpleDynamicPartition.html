@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -116,8 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f1d83f8e24c94df7c9252693e6717ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c587650904c17514345aad9f902e0a" id="r_a77c587650904c17514345aad9f902e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a77c587650904c17514345aad9f902e0a">Refine</a> (absl::Span&lt; const int &gt; distinguished_subset)</td></tr>
 <tr class="separator:a77c587650904c17514345aad9f902e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a86df34aeb9f14da8c51677ae3ddd73" id="r_a9a86df34aeb9f14da8c51677ae3ddd73"><td class="memItemLeft" align="right" valign="top">std::vector&lt; absl::Span&lt; const int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a9a86df34aeb9f14da8c51677ae3ddd73">GetParts</a> (std::vector&lt; int &gt; *buffer)</td></tr>
-<tr class="separator:a9a86df34aeb9f14da8c51677ae3ddd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b9b3a376ee91c9f0f6ccdaedc654ef" id="r_a69b9b3a376ee91c9f0f6ccdaedc654ef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a69b9b3a376ee91c9f0f6ccdaedc654ef"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; absl::Span&lt; const T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a69b9b3a376ee91c9f0f6ccdaedc654ef">GetParts</a> (std::vector&lt; T &gt; *buffer)</td></tr>
+<tr class="separator:a69b9b3a376ee91c9f0f6ccdaedc654ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A subset of the API of <a class="el" href="classoperations__research_1_1DynamicPartition.html">DynamicPartition</a> without backtrack support. The <a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a77c587650904c17514345aad9f902e0a">Refine()</a> here is about twice as fast, but we have limited query support until a batch ComputeElementsByPart() is called. </p>
@@ -153,27 +154,37 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9a86df34aeb9f14da8c51677ae3ddd73" name="a9a86df34aeb9f14da8c51677ae3ddd73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a86df34aeb9f14da8c51677ae3ddd73">&#9670;&#160;</a></span>GetParts()</h2>
+<a id="a69b9b3a376ee91c9f0f6ccdaedc654ef" name="a69b9b3a376ee91c9f0f6ccdaedc654ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b9b3a376ee91c9f0f6ccdaedc654ef">&#9670;&#160;</a></span>GetParts()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; absl::Span&lt; const int &gt; &gt; operations_research::SimpleDynamicPartition::GetParts </td>
+          <td class="memname">std::vector&lt; absl::Span&lt; const T &gt; &gt; operations_research::SimpleDynamicPartition::GetParts </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt; *&#160;</td>
+          <td class="paramtype">std::vector&lt; T &gt; *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>This is meant to be called once after a bunch of <a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a77c587650904c17514345aad9f902e0a">Refine()</a>. The returned Span&lt;&gt; points into the given buffer which is re-initialized. </p>
+<p>This is meant to be called once after a bunch of <a class="el" href="classoperations__research_1_1SimpleDynamicPartition.html#a77c587650904c17514345aad9f902e0a">Refine()</a>. The returned Span&lt;&gt; points into the given buffer which is re-initialized. To handle strongly typed int, we actually call T(int) as we fill the buffer. </p>
 <p>Compute start of each part in buffer.</p>
 <p>Fill result.</p>
 <p>Copy elements in order and at their place.</p>
 
-<p class="definition">Definition at line <a class="el" href="dynamic__partition_8cc_source.html#l00339">339</a> of file <a class="el" href="dynamic__partition_8cc_source.html">dynamic_partition.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamic__partition_8h_source.html#l00380">380</a> of file <a class="el" href="dynamic__partition_8h_source.html">dynamic_partition.h</a>.</p>
 
 </div>
 </div>

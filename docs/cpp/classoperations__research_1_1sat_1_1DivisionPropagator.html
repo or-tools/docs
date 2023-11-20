@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -134,9 +134,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Propagates num / denom = div. Basic version, we don't extract any special cases, and we only propagates the bounds. It expects denom to be &gt; 0.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001633">Todo:</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo:</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00284">284</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00298">298</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b951c45cfb8a5565c612123e9b4b052" name="a4b951c45cfb8a5565c612123e9b4b052"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b951c45cfb8a5565c612123e9b4b052">&#9670;&#160;</a></span>DivisionPropagator() <span class="overload">[1/2]</span></h2>
@@ -175,9 +175,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The denominator can never be zero.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01169">1169</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01182">1182</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>
@@ -258,11 +257,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001653">Todo:</a></b></dt><dd><p class="startdd">(user): We can propagate more, especially in the case where denom spans across 0. </p>
+<p class="enddd">(user): We can propagate a bit more if min_div = 0: (min_num &gt; -min_denom). </p>
+</dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01183">1183</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01198">1198</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>
@@ -282,7 +283,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01351">1351</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01385">1385</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>

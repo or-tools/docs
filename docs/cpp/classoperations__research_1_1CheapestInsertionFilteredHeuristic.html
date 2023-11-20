@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1CheapestI
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classoperations__research_1_1CheapestInsertionFilteredHeuristic-members.html">List of all members</a>  </div>
@@ -121,6 +120,11 @@ Inheritance diagram for operations_research::CheapestInsertionFilteredHeuristic:
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html">NodeInsertion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html">Seed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">SeedQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">clang-format off  <a href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,20 +175,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ce9faf8459bb3be7918cbc3d6327404 inherit pub_methods_classoperations__research_1_1IntVarFilteredHeuristic" id="r_a1ce9faf8459bb3be7918cbc3d6327404"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html#a1ce9faf8459bb3be7918cbc3d6327404">DebugString</a> () const</td></tr>
 <tr class="separator:a1ce9faf8459bb3be7918cbc3d6327404 inherit pub_methods_classoperations__research_1_1IntVarFilteredHeuristic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:ae4aa4cf78afb8e979993f237eec46d91" id="r_ae4aa4cf78afb8e979993f237eec46d91"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#ae4aa4cf78afb8e979993f237eec46d91">Seed</a></td></tr>
-<tr class="separator:ae4aa4cf78afb8e979993f237eec46d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aabcdb4b93d8aed00bc35f8f04a3c5f0a" id="r_aabcdb4b93d8aed00bc35f8f04a3c5f0a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#aabcdb4b93d8aed00bc35f8f04a3c5f0a">ComputeStartEndDistanceForVehicles</a> (const std::vector&lt; int &gt; &amp;vehicles)</td></tr>
 <tr class="separator:aabcdb4b93d8aed00bc35f8f04a3c5f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775d3ce4a87d83f393300ab2f9f09e4e" id="r_a775d3ce4a87d83f393300ab2f9f09e4e"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Queue</a> &gt; </td></tr>
-<tr class="memitem:a775d3ce4a87d83f393300ab2f9f09e4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#a775d3ce4a87d83f393300ab2f9f09e4e">InitializePriorityQueue</a> (std::vector&lt; std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; &gt; *start_end_distances_per_node, <a class="el" href="classoperations__research_1_1Queue.html">Queue</a> *priority_queue)</td></tr>
-<tr class="separator:a775d3ce4a87d83f393300ab2f9f09e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1632e664073cafb659debc842021931" id="r_aa1632e664073cafb659debc842021931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#aa1632e664073cafb659debc842021931">InitializeSeedQueue</a> (std::vector&lt; std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; &gt; *start_end_distances_per_node, <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">SeedQueue</a> *sq)</td></tr>
+<tr class="separator:aa1632e664073cafb659debc842021931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c0a735c5ed327dfe80cafd7a90db2e" id="r_af7c0a735c5ed327dfe80cafd7a90db2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#af7c0a735c5ed327dfe80cafd7a90db2e">AddSeedNodeToQueue</a> (int node, std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; *start_end_distances, <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">SeedQueue</a> *sq)</td></tr>
+<tr class="memdesc:af7c0a735c5ed327dfe80cafd7a90db2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">clang-format on  <br /></td></tr>
+<tr class="separator:af7c0a735c5ed327dfe80cafd7a90db2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17a266e58e6b92b3d28e6ba25ed2ba8" id="r_ae17a266e58e6b92b3d28e6ba25ed2ba8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#ae17a266e58e6b92b3d28e6ba25ed2ba8">InsertBetween</a> (int64_t node, int64_t predecessor, int64_t successor, int vehicle=-1)</td></tr>
-<tr class="memdesc:ae17a266e58e6b92b3d28e6ba25ed2ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">clang-format on  <br /></td></tr>
 <tr class="separator:ae17a266e58e6b92b3d28e6ba25ed2ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c18706fac83525e118fe6700cb7061" id="r_ab4c18706fac83525e118fe6700cb7061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#ab4c18706fac83525e118fe6700cb7061">AppendInsertionPositionsAfter</a> (int64_t node_to_insert, int64_t <a class="el" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a>, int64_t next_after_start, int vehicle, bool ignore_cost, std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html">NodeInsertion</a> &gt; *node_insertions)</td></tr>
 <tr class="separator:ab4c18706fac83525e118fe6700cb7061"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,33 +251,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00311">311</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae4aa4cf78afb8e979993f237eec46d91" name="ae4aa4cf78afb8e979993f237eec46d91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4aa4cf78afb8e979993f237eec46d91">&#9670;&#160;</a></span>Seed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a>, int&gt; <a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#ae4aa4cf78afb8e979993f237eec46d91">operations_research::CheapestInsertionFilteredHeuristic::Seed</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00343">343</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00313">313</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf0b140fd14f2bb37e2279df950d13d5" name="aaf0b140fd14f2bb37e2279df950d13d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf0b140fd14f2bb37e2279df950d13d5">&#9670;&#160;</a></span>CheapestInsertionFilteredHeuristic()</h2>
 
@@ -325,7 +300,7 @@ Protected Attributes</h2></td></tr>
 <p>Takes ownership of evaluator. </p>
 <p><a class="el" href="classoperations__research_1_1CheapestInsertionFilteredHeuristic.html">CheapestInsertionFilteredHeuristic</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00527">527</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00528">528</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -352,11 +327,59 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00319">319</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00321">321</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af7c0a735c5ed327dfe80cafd7a90db2e" name="af7c0a735c5ed327dfe80cafd7a90db2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c0a735c5ed327dfe80cafd7a90db2e">&#9670;&#160;</a></span>AddSeedNodeToQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::CheapestInsertionFilteredHeuristic::AddSeedNodeToQueue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; *&#160;</td>
+          <td class="paramname"><em>start_end_distances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">SeedQueue</a> *&#160;</td>
+          <td class="paramname"><em>sq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clang-format on </p>
+<p>Adds a <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html">Seed</a> corresponding to the given 'node' to sq.priority_queue, based on the last entry in its 'start_end_distances' (from which it's deleted). </p>
+<p>Put the best <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> for this node in the priority queue.</p>
+
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00609">609</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+
+</div>
+</div>
 <a id="ab4c18706fac83525e118fe6700cb7061" name="ab4c18706fac83525e118fe6700cb7061"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4c18706fac83525e118fe6700cb7061">&#9670;&#160;</a></span>AppendInsertionPositionsAfter()</h2>
 
@@ -416,7 +439,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Helper method to the ComputeEvaluatorSortedPositions* methods. Finds all possible insertion positions of node 'node_to_insert' in the partial route starting at node 'start' and adds them to 'node_insertions' (no sorting is done). If ignore_cost is true, insertion costs may not be computed. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00624">624</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00653">653</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -443,13 +466,11 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Computes and returns the distance of each uninserted node to every vehicle in "vehicles" as a std::vector&lt;std::vector&lt;StartEndValue&gt;&gt;, start_end_distances_per_node. For each node, start_end_distances_per_node[node] is sorted in decreasing order. clang-format off </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000343">Todo:</a></b></dt><dd>(user): consider checking search limits. </dd></dl>
-<p>We compute the distance of node to the start/end nodes of the route.</p>
-<p>Iterating over an <a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> domain is faster than calling Contains. Therefore we iterate on 'vehicles' only if it's smaller than the domain size of the VehicleVar.</p>
+<p>Computes and returns the distance of each uninserted node to every vehicle in 'vehicles' as a std::vector&lt;std::vector&lt;StartEndValue&gt;&gt;, start_end_distances_per_node. For each node, start_end_distances_per_node[node] is sorted in decreasing order. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000344">Todo:</a></b></dt><dd>(user): consider checking search limits. </dd></dl>
 <p>Sort the distances for the node to all start/ends of available vehicles in decreasing order.</p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00537">537</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00574">574</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -499,11 +520,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the cost of inserting 'node_to_insert' between 'insert_after' and 'insert_before' on the 'vehicle', i.e. Cost(insert_after--&gt;node) + Cost(node--&gt;insert_before)</p><ul>
-<li>Cost (insert_after--&gt;insert_before). <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000359">Todo:</a></b></dt><dd>(user): Replace 'insert_before' and 'insert_after' by 'predecessor' and 'successor' in the code. </dd></dl>
+<li>Cost (insert_after--&gt;insert_before). <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000361">Todo:</a></b></dt><dd>(user): Replace 'insert_before' and 'insert_after' by 'predecessor' and 'successor' in the code. </dd></dl>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00652">652</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00681">681</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -532,23 +553,21 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the cost of unperforming node 'node_to_insert'. Returns kint64max if penalty callback is null or if the node cannot be unperformed. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00661">661</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00690">690</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
-<a id="a775d3ce4a87d83f393300ab2f9f09e4e" name="a775d3ce4a87d83f393300ab2f9f09e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775d3ce4a87d83f393300ab2f9f09e4e">&#9670;&#160;</a></span>InitializePriorityQueue()</h2>
+<a id="aa1632e664073cafb659debc842021931" name="aa1632e664073cafb659debc842021931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1632e664073cafb659debc842021931">&#9670;&#160;</a></span>InitializeSeedQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Queue</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void operations_research::CheapestInsertionFilteredHeuristic::InitializePriorityQueue </td>
+          <td class="memname">void operations_research::CheapestInsertionFilteredHeuristic::InitializeSeedQueue </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> &gt; &gt; *&#160;</td>
           <td class="paramname"><em>start_end_distances_per_node</em>, </td>
@@ -556,8 +575,8 @@ template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Q
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classoperations__research_1_1Queue.html">Queue</a> *&#160;</td>
-          <td class="paramname"><em>priority_queue</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html">SeedQueue</a> *&#160;</td>
+          <td class="paramname"><em>sq</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -571,10 +590,9 @@ template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Q
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes the priority_queue by inserting the best entry corresponding to each node, i.e. the last element of start_end_distances_per_node[node], which is supposed to be sorted in decreasing order. <a class="el" href="classoperations__research_1_1Queue.html">Queue</a> is a priority queue containing Seeds. </p>
-<p>Put the best <a class="el" href="structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html">StartEndValue</a> for this node in the priority queue.</p>
+<p>Initializes sq-&gt;priority_queue by inserting the best entry corresponding to each node, i.e. the last element of start_end_distances_per_node[node], which is supposed to be sorted in decreasing order. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00590">590</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00627">627</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -623,11 +641,9 @@ template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Q
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>clang-format on </p>
 <p>Inserts 'node' just after 'predecessor', and just before 'successor' on the route of 'vehicle', resulting in the following subsequence: predecessor -&gt; node -&gt; successor. If 'node' is part of a disjunction, other nodes of the disjunction are made unperformed. </p>
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00610">610</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l00639">639</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 
 </div>
 </div>
@@ -652,7 +668,7 @@ template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Q
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00393">393</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00424">424</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +692,7 @@ template&lt;class <a class="el" href="classoperations__research_1_1Queue.html">Q
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00394">394</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00425">425</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 
 </div>
 </div>

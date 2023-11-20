@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -212,9 +212,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows registering Propagator that will be called if a watched <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> or LbVar changes.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001602">Todo:</a></b></dt><dd>(user): Move this to its own file. Add unit tests! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001625">Todo:</a></b></dt><dd>(user): Move this to its own file. Add unit tests! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01360">1360</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01374">1374</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad53c31fda5130ffda98dbb242faf3145" name="ad53c31fda5130ffda98dbb242faf3145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad53c31fda5130ffda98dbb242faf3145">&#9670;&#160;</a></span>GenericLiteralWatcher() <span class="overload">[1/2]</span></h2>
@@ -239,9 +239,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001595">Todo:</a></b></dt><dd>(user): This propagator currently needs to be last because it is the only one enforcing that a fix-point is reached on the integer variables. Figure out a better interaction between the sat propagation loop and this one. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001618">Todo:</a></b></dt><dd>(user): This propagator currently needs to be last because it is the only one enforcing that a fix-point is reached on the integer variables. Figure out a better interaction between the sat propagation loop and this one. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02084">2084</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02086">2086</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Whether we call a propagator even if its watched variables didn't change. This is only used when we are back to level zero. This was introduced for the LP propagator where we might need to continue an interrupted solve or add extra cuts at level zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02341">2341</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02355">2355</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add the given propagator to its queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02105">2105</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02107">2107</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the id of the propagator we are currently calling. This is meant to be used from inside <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> in case a propagator was registered more than once at different priority for instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01479">1479</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01493">1493</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>The default behavior is to assume that a propagator does not need to be called twice in a row. However, propagators on which this is called will be called again if they change one of their own watched variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02336">2336</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02350">2350</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the number of registered propagators. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01451">1451</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01465">1465</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -471,24 +471,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>On propagate, the registered propagators will be called if they need to until a fixed point is reached. Propagators with low ids will tend to be called first, but it ultimately depends on their "waking" order. </p>
 <p>Only once per call to <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a>, if we are at level zero, we might want to call propagators even if the bounds didn't change.</p>
+<p>Increase the deterministic time depending on some basic fact about our propagation.</p>
 <dl class="section note"><dt>Note</dt><dd>the priority may be set to -1 inside the loop in order to restart at zero.</dd></dl>
 <p>We test the time limit from time to time. This is in order to return in case of slow propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001596">Todo:</a></b></dt><dd>(user): The queue will not be emptied, but I am not sure the solver will be left in an usable state. Fix if it become needed to resume the solve from the last time it was interrupted. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001619">Todo:</a></b></dt><dd>(user): The queue will not be emptied, but I am not sure the solver will be left in an usable state. Fix if it become needed to resume the solve from the last time it was interrupted. </dd></dl>
 <p>Before we propagate, make sure any reversible structure are up to date. </p><dl class="section note"><dt>Note</dt><dd>we never do anything expensive more than once per level.</dd></dl>
 <p>This is needed to detect if the propagator propagated anything or not.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001597">Todo:</a></b></dt><dd>(user): Maybe just provide one function Propagate(watch_indices) ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001620">Todo:</a></b></dt><dd>(user): Maybe just provide one function Propagate(watch_indices) ? </dd></dl>
 <p>Update the propagation queue. At this point, the propagator has been removed from the queue but in_queue_ is still true.</p>
 <p>If the propagator is assumed to be idempotent, then we set in_queue_ to false after UpdateCallingNeeds() so this later function will never add it back.</p>
 <p>Otherwise, we set in_queue_ to false first so that UpdateCallingNeeds() may add it back if the propagator modified any of its watched variables.</p>
 <p>If the propagator pushed a literal, we exit in order to rerun all SAT only propagators first. Note that since a literal was pushed we are guaranteed to be called again, and we will resume from priority 0.</p>
 <p>Important: for now we need to re-run the clauses propagator each time we push a new literal because some propagator like the arc consistent all diff relies on this.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001598">Todo:</a></b></dt><dd>(user): However, on some problem, it seems to work better to not do that. One possible reason is that the reason of a "natural" propagation might be better than one we learned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001621">Todo:</a></b></dt><dd>(user): However, on some problem, it seems to work better to not do that. One possible reason is that the reason of a "natural" propagation might be better than one we learned. </dd></dl>
 <p>If the propagator pushed an integer bound, we revert to priority = 0.</p>
 <p>We wait until we reach the fix point before calling the callback.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a8417cfbc49d425aac62ce622b058b018">operations_research::sat::SatPropagator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02152">2152</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02154">2154</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -510,9 +511,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Registers a propagator and returns its unique ids. </p>
 <p>Call this propagator at least once the next time <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001599">Todo:</a></b></dt><dd>(user): This initial propagation does not respect any later priority settings. Fix this. Maybe we should force users to pass the priority at registration. For now I didn't want to change the interface because there are plans to implement a kind of "dynamic" priority, and if it works we may want to get rid of this altogether. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001622">Todo:</a></b></dt><dd>(user): This initial propagation does not respect any later priority settings. Fix this. Maybe we should force users to pass the priority at registration. For now I didn't want to change the interface because there are plans to implement a kind of "dynamic" priority, and if it works we may want to get rid of this altogether. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02306">2306</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02320">2320</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -543,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This will be called (only at level zero) with the list of IntegerVariable with changed lower bounds. Note that it might be called more than once during the same propagation cycle if we fix variables in "stages".</p>
 <p>Also note that this will be called if some BooleanVariable where fixed even if no IntegerVariable are changed, so the passed vector to the function might be empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01462">1462</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01476">1476</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +576,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Registers a reversible class with a given propagator. This class will be changed to the correct state just before the propagator is called.</p>
 <p>Doing it just before should minimize cache-misses and bundle as much as possible the "backtracking" together. Many propagators only watches a few variables and will not be called at each decision levels. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02345">2345</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02359">2359</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -608,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>this will work in O(num_rev_int_of_propagator_id) per call to <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> and happens at most once per decision level. As such this is meant for classes that have just a few reversible ints or that will have a similar complexity anyway.</dd></dl>
 <p>Alternatively, one can directly get the underlying <a class="el" href="classoperations__research_1_1RevRepository.html">RevRepository&lt;int&gt;</a> with a call to model.Get&lt;&gt;(), and use SaveWithStamp() before each modification to have just a slight overhead per int updates. This later option is what is usually done in a CP solver at the cost of a slightly more complex API. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02350">2350</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02364">2364</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -630,7 +631,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Memory optimization: you can call this before registering watchers. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02101">2101</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02103">2103</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -661,7 +662,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Changes the priority of the propagator with given id. The priority is a non-negative integer. Propagators with a lower priority will always be run before the ones with a higher one. The default priority is one. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02329">2329</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02343">2343</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -690,7 +691,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This will be called not too often during propagation (when we finish propagating one priority). If it returns true, we will stop propagation there. It is used by <a class="el" href="classoperations__research_1_1sat_1_1LbTreeSearch.html">LbTreeSearch</a> as we can stop as soon as the objective lower bound crossed a threshold and do not need to call expensive propagator when this is the case. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01472">1472</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01486">1486</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -728,15 +729,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002011">Todo:</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002012">Todo:</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002060">Todo:</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002061">Todo:</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <p>Nothing to do since we found a conflict before <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> was called.</p>
 <p>We need to clear the watch indices on untrail.</p>
 <p>This means that we already propagated all there is to propagate at the level trail_index, so we can safely clear modified_vars_ in case it wasn't already done.</p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a68acada7af835c9c6870ceb876dc2d9c">operations_research::sat::SatPropagator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02282">2282</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02296">2296</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
 </div>
 </div>
@@ -774,7 +775,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01418">1418</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01432">1432</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +813,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01426">1426</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01440">1440</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +857,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01739">1739</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01764">1764</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +903,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Watches the corresponding quantity. The propagator with given id will be called if it changes. Note that <a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a567af35dcc7d3a46b9828cec7e6ef464">WatchLiteral()</a> only trigger when the literal becomes true.</p>
 <p>If watch_index is specified, it is associated with the watched literal. Doing this will cause IncrementalPropagate() to be called (see the documentation of this interface for more detail). </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01707">1707</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01732">1732</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -941,7 +942,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Because the coeff is always positive, whatching an affine expression is the same as watching its var. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01412">1412</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01426">1426</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +981,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>No-op overload for "constant" IntegerVariable that are sometimes templated as an IntegerValue. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01424">1424</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01438">1438</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1026,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Minor optim, so that we don't watch the same variable twice. Propagator code is easier this way since for example when one wants to watch both an interval start and interval end, both might have the same underlying variable.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01715">1715</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01740">1740</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1064,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01415">1415</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01429">1429</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1102,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01425">1425</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01439">1439</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1146,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01733">1733</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01758">1758</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>

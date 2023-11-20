@@ -3,7 +3,7 @@ var classoperations__research_1_1glop_1_1VariablesInfo =
     [ "VariablesInfo", "classoperations__research_1_1glop_1_1VariablesInfo.html#af7564550a3c3b572ae6c65611aecd625", null ],
     [ "VariablesInfo", "classoperations__research_1_1glop_1_1VariablesInfo.html#aab345c7b4821a7c049e3d00a7b1fd088", null ],
     [ "ChangeUnusedBasicVariablesToFree", "classoperations__research_1_1glop_1_1VariablesInfo.html#aa41f6d9ccfb0882ac1ccc5d77b54397b", null ],
-    [ "EndDualPhaseI", "classoperations__research_1_1glop_1_1VariablesInfo.html#a29fdd427dcae4052217c2977b7a11868", null ],
+    [ "EndDualPhaseI", "classoperations__research_1_1glop_1_1VariablesInfo.html#ad86973493f57542e9a1e926b2e1f5198", null ],
     [ "GetBoundDifference", "classoperations__research_1_1glop_1_1VariablesInfo.html#a90bf6e290eeffa11bc16225807ca20be", null ],
     [ "GetCanDecreaseBitRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#a2f96318247a6914c83612c20c2dc8345", null ],
     [ "GetCanIncreaseBitRow", "classoperations__research_1_1glop_1_1VariablesInfo.html#a34f7579e718572e3bd811eec47ee0741", null ],
@@ -24,7 +24,7 @@ var classoperations__research_1_1glop_1_1VariablesInfo =
     [ "MakeBoxedVariableRelevant", "classoperations__research_1_1glop_1_1VariablesInfo.html#a7600482ad30d031010691456c924100d", null ],
     [ "operator=", "classoperations__research_1_1glop_1_1VariablesInfo.html#a406151f603f5f29089c2a828bb5bd731", null ],
     [ "SnapFreeVariablesToBound", "classoperations__research_1_1glop_1_1VariablesInfo.html#af48ca511d769d18c082829c3cae13320", null ],
-    [ "TransformToDualPhaseIProblem", "classoperations__research_1_1glop_1_1VariablesInfo.html#a3e74d6566e11d92438687f6dbb48daf1", null ],
+    [ "TransformToDualPhaseIProblem", "classoperations__research_1_1glop_1_1VariablesInfo.html#a2b7789e59bf13941d89cc6accd874fe1", null ],
     [ "UpdateToBasicStatus", "classoperations__research_1_1glop_1_1VariablesInfo.html#aa6ae2139d9427d7dc458a93e2f8b5588", null ],
     [ "UpdateToNonBasicStatus", "classoperations__research_1_1glop_1_1VariablesInfo.html#ab9991493bfa4fbc4fb9d4b3fcff0133b", null ]
 ];

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -164,7 +164,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type NodeSet to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000626">Todo:</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type NodeSet to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000628">Todo:</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00476">476</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 

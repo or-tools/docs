@@ -2,6 +2,7 @@ var classoperations__research_1_1IntVar =
 [
     [ "IntVar", "classoperations__research_1_1IntVar.html#a4d265d37c8a275ce241845a7423a207d", null ],
     [ "IntVar", "classoperations__research_1_1IntVar.html#ad9b1500cd23aad6b1bfffb3aa7c49710", null ],
+    [ "IntVar", "classoperations__research_1_1IntVar.html#ab4e590824a53385d47d581bf6ce50c95", null ],
     [ "~IntVar", "classoperations__research_1_1IntVar.html#ab6acebb20eb1a885ca1313d759db0bdb", null ],
     [ "Accept", "classoperations__research_1_1IntVar.html#a3d1dc06f1568cc21d312a57c065daea9", null ],
     [ "Contains", "classoperations__research_1_1IntVar.html#a900c588e7640a95efc1a210b8d45bb3e", null ],
@@ -15,6 +16,7 @@ var classoperations__research_1_1IntVar =
     [ "MakeHoleIterator", "classoperations__research_1_1IntVar.html#ac1bec686b1df35a122878a954a174a3f", null ],
     [ "OldMax", "classoperations__research_1_1IntVar.html#a659f339ae894d89cc89deaf61a604ab0", null ],
     [ "OldMin", "classoperations__research_1_1IntVar.html#ad42827f5194c40397b1320f550561307", null ],
+    [ "operator=", "classoperations__research_1_1IntVar.html#a85d5d3e82026ab09be819dc561a3099f", null ],
     [ "RemoveInterval", "classoperations__research_1_1IntVar.html#ad127ed5a069913d7034240881e34c7a3", null ],
     [ "RemoveValue", "classoperations__research_1_1IntVar.html#aa9e37401c3ca453e1a6251f8f46f8195", null ],
     [ "RemoveValues", "classoperations__research_1_1IntVar.html#af3c6b509b9279db09301192b57dfb3cd", null ],

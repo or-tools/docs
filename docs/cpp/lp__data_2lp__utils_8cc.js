@@ -9,7 +9,6 @@ var lp__data_2lp__utils_8cc =
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8cc.html#a2e9c642839cb9ae4d0bea67b8a43e5df", null ],
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8cc.html#aafe7e422b950668db5efabcd0f5f5e9e", null ],
     [ "PreciseSquaredNorm", "lp__data_2lp__utils_8cc.html#aaa940dbdf346f73e96410a0dfef7f778", null ],
-    [ "RemoveNearZeroEntries", "lp__data_2lp__utils_8cc.html#a6748032dbfb9f38b8a5ba8ea0d920b78", null ],
     [ "RemoveNearZeroEntries", "lp__data_2lp__utils_8cc.html#a15864af25924595917569d21d551ba1e", null ],
     [ "RestrictedInfinityNorm", "lp__data_2lp__utils_8cc.html#ab024d8c45b029455b257db8241a0b05a", null ],
     [ "SetSupportToFalse", "lp__data_2lp__utils_8cc.html#ab3441b48e38e41168adc5f425cf8d3b2", null ],

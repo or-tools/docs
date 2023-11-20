@@ -20,6 +20,7 @@ var classoperations__research_1_1TimeLimit =
     [ "MergeWithGlobalTimeLimit", "classoperations__research_1_1TimeLimit.html#a925eda810ea66774925d18110681c3f7", null ],
     [ "operator=", "classoperations__research_1_1TimeLimit.html#a05bb454f16c6dffc4a207a0151754822", null ],
     [ "RegisterExternalBooleanAsLimit", "classoperations__research_1_1TimeLimit.html#aba7c7aba04d6ff4ae8c33becb57caa11", null ],
+    [ "RegisterSecondaryExternalBooleanAsLimit", "classoperations__research_1_1TimeLimit.html#ac3c4269240d47a7fe1bc7bb9a17c0460", null ],
     [ "ResetLimitFromParameters", "classoperations__research_1_1TimeLimit.html#ae5d371426089214f99736580774f360a", null ],
     [ "NestedTimeLimit", "classoperations__research_1_1TimeLimit.html#a80c2662c13e3bbf165ffe1603fe87433", null ],
     [ "ParallelTimeLimit", "classoperations__research_1_1TimeLimit.html#a4c1bbdcb2a449b42a788178d2c3d2477", null ],

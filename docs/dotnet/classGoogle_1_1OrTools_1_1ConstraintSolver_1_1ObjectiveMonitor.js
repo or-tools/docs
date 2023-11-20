@@ -2,6 +2,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor =
 [
     [ "ObjectiveMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#a6890d37571154231a06ce353b9241a92", null ],
     [ "Accept", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#ac0b0991a9cf71e69de9a73410aea908e", null ],
+    [ "AcceptDelta", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#a749e9bf30f3297a96aa467e67e13333d", null ],
     [ "AtSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#ac62447535f6b29659c3e0d1615da84b9", null ],
     [ "BestValue", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#a08ce81d8980f3c3131e985eba67bfade", null ],
     [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ObjectiveMonitor.html#a667fcb559207d9c06e3c7e66c3fbe6af", null ],

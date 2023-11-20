@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -135,10 +135,9 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 <li>Pick m variables such that the columns of A are linearly independent and assign the status BASIC.</li>
 <li>Assign the status AT_LOWER for the remaining n - m variables.</li>
 </ul>
-<p>The basic solution for this basis is the unique solution of A * x = b that has all variables with status AT_LOWER fixed to their lower bounds (all zero). The resulting solution is called a basic feasible solution if it also satisfies x &gt;= 0.</p>
-<p>See go/mathopt-basis for treatment of the general case and an explanation of how a dual solution is determined for a basis. </p>
+<p>The basic solution for this basis is the unique solution of A * x = b that has all variables with status AT_LOWER fixed to their lower bounds (all zero). The resulting solution is called a basic feasible solution if it also satisfies x &gt;= 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00219">219</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00208">208</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06f26db7af187263a04125edaba59a64" name="a06f26db7af187263a04125edaba59a64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06f26db7af187263a04125edaba59a64">&#9670;&#160;</a></span>CheckModelStorage()</h2>
@@ -239,10 +238,10 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>This is an advanced feature used by MathOpt to characterize feasibility of suboptimal LP solutions (optimal solutions will always have status <a class="el" href="namespaceoperations__research_1_1math__opt.html#a637909695d6438261a9c072e9cf5f677a6936fc811b6bf3bfd7c65ab1f48e3f1f" title="Solver claims the solution is feasible.">SolutionStatus::kFeasible</a>).</p>
-<p>For single-sided LPs it should be equal to the feasibility status of the associated dual solution. For two-sided LPs it may be different in some edge cases (e.g. incomplete solves with primal simplex). For more details see go/mathopt-basis-advanced#dualfeasibility.</p>
+<p>For single-sided LPs it should be equal to the feasibility status of the associated dual solution. For two-sided LPs it may be different in some edge cases (e.g. incomplete solves with primal simplex).</p>
 <p>If you are providing a starting basis via <code><a class="el" href="structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a89d3cb0f810d8dfe3d559f32425b0a9e">ModelSolveParameters.initial_basis</a></code>, this value is ignored. It is only relevant for the basis returned by <code><a class="el" href="structoperations__research_1_1math__opt_1_1Solution.html#a335fe361c63f38a774cbe4b4b67908fb">Solution.basis</a></code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00254">254</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00242">242</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -258,7 +257,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00239">239</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00228">228</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +273,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00240">240</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00229">229</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>

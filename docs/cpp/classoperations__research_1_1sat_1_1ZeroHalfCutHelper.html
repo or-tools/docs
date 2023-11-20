@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -201,8 +201,8 @@ Public Member Functions</h2></td></tr>
 <p>Ignore column in the binary matrix if its lp value is almost zero.</p>
 <p>Because we work on the shifted variable, the rhs needs to be updated.</p>
 <p>We ignore constraint with large coefficient, since there is little chance to cancel them and because of that the efficacity of a generated cut will be limited.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002253">Todo:</a></b></dt><dd>(user): experiment with the best value. probably only tight rows are best? and we could use the basis status rather than recomputing the activity for that.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002254">Todo:</a></b></dt><dd>(user): Avoid adding duplicates and just randomly pick one. Note that we should also remove duplicate in a generic way. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002295">Todo:</a></b></dt><dd>(user): experiment with the best value. probably only tight rows are best? and we could use the basis status rather than recomputing the activity for that.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002296">Todo:</a></b></dt><dd>(user): Avoid adding duplicates and just randomly pick one. Note that we should also remove duplicate in a generic way. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00069">69</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>
 
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Public API: <a class="el" href="classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#afdfcb5fc07e17801df44b7eb133476a0">ProcessVariables()</a> must be called first and then constraints can be added one by one. Finally GetZeroHalfInterestingCuts() will return a set of good candidates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002256">Todo:</a></b></dt><dd>(user): This is a first implementation, both the heuristic and the code performance can probably be improved uppon. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002298">Todo:</a></b></dt><dd>(user): This is a first implementation, both the heuristic and the code performance can probably be improved uppon. </dd></dl>
 <p>Shift all variables to their closest bound.</p>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00039">39</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>
@@ -417,7 +417,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Visible for testing.</p>
 <p>Like std::set_symmetric_difference, but use a vector&lt;bool&gt; instead of sort. This assumes tmp_marked_ to be all false. We don't DCHECK it here for speed, but it DCHECKed on each <a class="el" href="classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a6af96a4c4659a3ed22a87052945a60ee" title="This is basically one step of a Gaussian elimination with the given pivot.">EliminateVarUsingRow()</a> call. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002255">Todo:</a></b></dt><dd>(user): optim by doing that at the end? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002297">Todo:</a></b></dt><dd>(user): optim by doing that at the end? </dd></dl>
 <p>Remove position that are not marked, and clear tmp_marked_.</p>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00123">123</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>

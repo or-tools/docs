@@ -22,6 +22,8 @@ var local__search_8cc =
     [ "operations_research::LocalSearchProfiler", "classoperations__research_1_1LocalSearchProfiler.html", "classoperations__research_1_1LocalSearchProfiler" ],
     [ "operations_research::FindOneNeighbor", "classoperations__research_1_1FindOneNeighbor.html", "classoperations__research_1_1FindOneNeighbor" ],
     [ "operations_research::LocalSearchPhaseParameters", "classoperations__research_1_1LocalSearchPhaseParameters.html", "classoperations__research_1_1LocalSearchPhaseParameters" ],
+    [ "operations_research::LocalSearch", "classoperations__research_1_1LocalSearch.html", "classoperations__research_1_1LocalSearch" ],
+    [ "operations_research::DefaultSolutionPool", "classoperations__research_1_1DefaultSolutionPool.html", "classoperations__research_1_1DefaultSolutionPool" ],
     [ "MAKE_LOCAL_SEARCH_OPERATOR", "local__search_8cc.html#abbbbee7259152ce5851cd46ede1b148b", null ],
     [ "MAKE_LOCAL_SEARCH_OPERATOR_WITH_NEIGHBORS", "local__search_8cc.html#a16c582460b84ce21c47d5021c4c3995f", null ],
     [ "ABSL_FLAG", "local__search_8cc.html#a898b5fa8252977b945674cd2606574e4", null ],

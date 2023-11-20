@@ -18,7 +18,8 @@ var searchData=
   ['solver_2ecs_15',['solver.cs',['../constraint__solver_2Solver_8cs.html',1,'(Global Namespace)'],['../linear__solver_2Solver_8cs.html',1,'(Global Namespace)']]],
   ['solverparameters_2epb_2ecs_16',['SolverParameters.pb.cs',['../SolverParameters_8pb_8cs.html',1,'']]],
   ['solvers_2epb_2ecs_17',['Solvers.pb.cs',['../Solvers_8pb_8cs.html',1,'']]],
-  ['solvewrapper_2ecs_18',['SolveWrapper.cs',['../SolveWrapper_8cs.html',1,'']]],
-  ['symmetrybreaker_2ecs_19',['SymmetryBreaker.cs',['../SymmetryBreaker_8cs.html',1,'']]],
-  ['symmetrybreakervector_2ecs_20',['SymmetryBreakerVector.cs',['../SymmetryBreakerVector_8cs.html',1,'']]]
+  ['solvestatus_2ecs_18',['SolveStatus.cs',['../SolveStatus_8cs.html',1,'']]],
+  ['solvewrapper_2ecs_19',['SolveWrapper.cs',['../SolveWrapper_8cs.html',1,'']]],
+  ['symmetrybreaker_2ecs_20',['SymmetryBreaker.cs',['../SymmetryBreaker_8cs.html',1,'']]],
+  ['symmetrybreakervector_2ecs_21',['SymmetryBreakerVector.cs',['../SymmetryBreakerVector_8cs.html',1,'']]]
 ];

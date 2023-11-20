@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,14 +107,15 @@ Inheritance diagram for operations_research::sat::CompiledConstraint:</div>
  <div class="center">
   <img src="classoperations__research_1_1sat_1_1CompiledConstraint.png" usemap="#operations_5Fresearch::sat::CompiledConstraint_map" alt=""/>
   <map id="operations_5Fresearch::sat::CompiledConstraint_map" name="operations_5Fresearch::sat::CompiledConstraint_map">
-<area href="classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html" alt="operations_research::sat::CompiledAllDiffConstraint" shape="rect" coords="338,56,666,80"/>
-<area href="classoperations__research_1_1sat_1_1CompiledBoolXorConstraint.html" title="Individual compiled constraints." alt="operations_research::sat::CompiledBoolXorConstraint" shape="rect" coords="338,112,666,136"/>
-<area href="classoperations__research_1_1sat_1_1CompiledCircuitConstraint.html" title="--— CompiledCircuitConstraint --—" alt="operations_research::sat::CompiledCircuitConstraint" shape="rect" coords="338,168,666,192"/>
-<area href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html" title="The violation of a cumulative is the sum of overloads over time." alt="operations_research::sat::CompiledCumulativeConstraint" shape="rect" coords="338,224,666,248"/>
-<area href="classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html" alt="operations_research::sat::CompiledIntDivConstraint" shape="rect" coords="338,280,666,304"/>
-<area href="classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html" alt="operations_research::sat::CompiledIntProdConstraint" shape="rect" coords="338,336,666,360"/>
-<area href="classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html" alt="operations_research::sat::CompiledLinMaxConstraint" shape="rect" coords="338,392,666,416"/>
-<area href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html" title="The violation of a no_overlap is the sum of overloads over time." alt="operations_research::sat::CompiledNoOverlapConstraint" shape="rect" coords="338,448,666,472"/>
+<area href="classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html" alt="operations_research::sat::CompiledAllDiffConstraint" shape="rect" coords="352,56,694,80"/>
+<area href="classoperations__research_1_1sat_1_1CompiledBoolXorConstraint.html" title="The violation of a bool_xor constraint is 0 or 1." alt="operations_research::sat::CompiledBoolXorConstraint" shape="rect" coords="352,112,694,136"/>
+<area href="classoperations__research_1_1sat_1_1CompiledCircuitConstraint.html" title="--— CompiledCircuitConstraint --—" alt="operations_research::sat::CompiledCircuitConstraint" shape="rect" coords="352,168,694,192"/>
+<area href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html" title="The violation of a cumulative is the sum of overloads over time." alt="operations_research::sat::CompiledCumulativeConstraint" shape="rect" coords="352,224,694,248"/>
+<area href="classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html" alt="operations_research::sat::CompiledIntDivConstraint" shape="rect" coords="352,280,694,304"/>
+<area href="classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html" alt="operations_research::sat::CompiledIntProdConstraint" shape="rect" coords="352,336,694,360"/>
+<area href="classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html" alt="operations_research::sat::CompiledLinMaxConstraint" shape="rect" coords="352,392,694,416"/>
+<area href="classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html" title="The violation of a no_overlap is the sum of overloads over time." alt="operations_research::sat::CompiledNoOverlap2dConstraint" shape="rect" coords="352,448,694,472"/>
+<area href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html" title="The violation of a no_overlap is the sum of overloads over time." alt="operations_research::sat::CompiledNoOverlapConstraint" shape="rect" coords="352,504,694,528"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -144,11 +145,11 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>View of a generic (non linear) constraint for the <a class="el" href="classoperations__research_1_1sat_1_1LsEvaluator.html">LsEvaluator</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001039">Todo:</a></b></dt><dd><p class="startdd">(user): Do we add a Update(solution, var, new_value) method ? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001045">Todo:</a></b></dt><dd><p class="startdd">(user): Do we add a Update(solution, var, new_value) method ? </p>
 <p class="enddd">(user): Do we want to support Update(solutions, vars, new_values) ? </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00235">235</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00247">247</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c1ebc5c93d737aabc2c9787d4b13ec8" name="a9c1ebc5c93d737aabc2c9787d4b13ec8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c1ebc5c93d737aabc2c9787d4b13ec8">&#9670;&#160;</a></span>CompiledConstraint()</h2>
@@ -176,7 +177,7 @@ Public Member Functions</h2></td></tr>
 
 <p>--&mdash; <a class="el" href="classoperations__research_1_1sat_1_1CompiledConstraint.html">CompiledConstraint</a> --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00841">841</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00913">913</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -232,7 +233,7 @@ Public Member Functions</h2></td></tr>
 <p>Computes the violation of a constraint.</p>
 <p>A violation is a positive integer value. A zero value means the constraint is not violated. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1CompiledCircuitConstraint.html#a497734dc6e8f0ed95ffed7ae931b8ed7">operations_research::sat::CompiledCircuitConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledBoolXorConstraint.html#ac87e44708479caf90fa4652d85470de2">operations_research::sat::CompiledBoolXorConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html#a10ed03b788f171a9dbb9561128240869">operations_research::sat::CompiledLinMaxConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html#a774c0296f36551967e0f643c0195b2ab">operations_research::sat::CompiledIntProdConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html#ae0ddfbdb3096cf2649deb8d97facd16c">operations_research::sat::CompiledIntDivConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html#a0dcca92debc3383d9cff1827a87f063f">operations_research::sat::CompiledAllDiffConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html#ab6afda7b53765662b4a46c92e7d643ce">operations_research::sat::CompiledNoOverlapConstraint</a>, and <a class="el" href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html#a01fb34b806f7afbbabbb84130fe1b6b4">operations_research::sat::CompiledCumulativeConstraint</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1CompiledCircuitConstraint.html#a497734dc6e8f0ed95ffed7ae931b8ed7">operations_research::sat::CompiledCircuitConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledBoolXorConstraint.html#ac87e44708479caf90fa4652d85470de2">operations_research::sat::CompiledBoolXorConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html#a10ed03b788f171a9dbb9561128240869">operations_research::sat::CompiledLinMaxConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html#a774c0296f36551967e0f643c0195b2ab">operations_research::sat::CompiledIntProdConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html#ae0ddfbdb3096cf2649deb8d97facd16c">operations_research::sat::CompiledIntDivConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html#a0dcca92debc3383d9cff1827a87f063f">operations_research::sat::CompiledAllDiffConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html#ab6afda7b53765662b4a46c92e7d643ce">operations_research::sat::CompiledNoOverlapConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html#a01fb34b806f7afbbabbb84130fe1b6b4">operations_research::sat::CompiledCumulativeConstraint</a>, and <a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html#a10a4629693ae0553eacd5b7e28f2bb54">operations_research::sat::CompiledNoOverlap2dConstraint</a>.</p>
 
 </div>
 </div>
@@ -261,7 +262,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Getters. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00259">259</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00271">271</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +284,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Recomputes the violation of the constraint from scratch. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00844">844</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00916">916</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -321,7 +322,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Update the violation with the new value. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00849">849</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00921">921</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -348,7 +349,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00260">260</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00272">272</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +397,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1sat_1_1CompiledBoolXorConstraint.html#aadc51f1e0015352ccd9b8b38fd7f3f5d">operations_research::sat::CompiledBoolXorConstraint</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00855">855</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00927">927</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>

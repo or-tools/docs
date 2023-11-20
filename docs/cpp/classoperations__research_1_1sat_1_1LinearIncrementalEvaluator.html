@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -120,17 +120,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a10a2e3af01fe675fc66f6f8445284536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc310b06e4c7f687365afb8a29d2ae39" id="r_acc310b06e4c7f687365afb8a29d2ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#acc310b06e4c7f687365afb8a29d2ae39">AddLinearExpression</a> (int <a class="el" href="linear__model_8cc.html#a6dc1e5c9bb1d0a32ad3fd59437cccee1">ct_index</a>, const LinearExpressionProto &amp;expr, int64_t multiplier)</td></tr>
 <tr class="separator:acc310b06e4c7f687365afb8a29d2ae39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab2df406a4460a09ae11b74f2894836" id="r_a7ab2df406a4460a09ae11b74f2894836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a7ab2df406a4460a09ae11b74f2894836">PrecomputeCompactView</a> ()</td></tr>
-<tr class="separator:a7ab2df406a4460a09ae11b74f2894836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15e855847e8e9fd85eb17774c2fe277" id="r_ad15e855847e8e9fd85eb17774c2fe277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#ad15e855847e8e9fd85eb17774c2fe277">PrecomputeCompactView</a> (absl::Span&lt; const int64_t &gt; var_max_variation)</td></tr>
+<tr class="separator:ad15e855847e8e9fd85eb17774c2fe277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37bd96e052745fa92b1e5d9fc8f3167d" id="r_a37bd96e052745fa92b1e5d9fc8f3167d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a37bd96e052745fa92b1e5d9fc8f3167d">ComputeInitialActivities</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="memdesc:a37bd96e052745fa92b1e5d9fc8f3167d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute activities and update them.  <br /></td></tr>
 <tr class="separator:a37bd96e052745fa92b1e5d9fc8f3167d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c2b84b3d5f022f3a86a8a65480bae2" id="r_ab8c2b84b3d5f022f3a86a8a65480bae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#ab8c2b84b3d5f022f3a86a8a65480bae2">Update</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>)</td></tr>
-<tr class="separator:ab8c2b84b3d5f022f3a86a8a65480bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d5930909bf059fa5847ef0c3012a5d" id="r_a86d5930909bf059fa5847ef0c3012a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a86d5930909bf059fa5847ef0c3012a5d">UpdateVariableAndScores</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>, absl::Span&lt; const double &gt; weights, absl::Span&lt; const int64_t &gt; jump_values, absl::Span&lt; double &gt; jump_scores)</td></tr>
-<tr class="separator:a86d5930909bf059fa5847ef0c3012a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c24845a348e55618e3d346b34ec8fe0" id="r_a5c24845a348e55618e3d346b34ec8fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a5c24845a348e55618e3d346b34ec8fe0">UpdateScoreOnWeightUpdate</a> (int c, double weight_delta, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>, absl::Span&lt; const int64_t &gt; jump_values, absl::Span&lt; double &gt; jump_scores)</td></tr>
-<tr class="separator:a5c24845a348e55618e3d346b34ec8fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff7d6c383a73560b2c4c31ef54a2da5" id="r_a2ff7d6c383a73560b2c4c31ef54a2da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a2ff7d6c383a73560b2c4c31ef54a2da5">Update</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; *violation_deltas=nullptr)</td></tr>
+<tr class="separator:a2ff7d6c383a73560b2c4c31ef54a2da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671255f48649433719b5367def21ae06" id="r_a671255f48649433719b5367def21ae06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a671255f48649433719b5367def21ae06">UpdateVariableAndScores</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, absl::Span&lt; const double &gt; weights, absl::Span&lt; const int64_t &gt; jump_deltas, absl::Span&lt; double &gt; jump_scores, std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; *violation_deltas=nullptr)</td></tr>
+<tr class="separator:a671255f48649433719b5367def21ae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099aa35ca98c88c59a3ea7269c34e704" id="r_a099aa35ca98c88c59a3ea7269c34e704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a099aa35ca98c88c59a3ea7269c34e704">UpdateScoreOnWeightUpdate</a> (int c, absl::Span&lt; const int64_t &gt; jump_deltas, absl::Span&lt; double &gt; var_to_score_change)</td></tr>
+<tr class="memdesc:a099aa35ca98c88c59a3ea7269c34e704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Also for feasibility jump.  <br /></td></tr>
+<tr class="separator:a099aa35ca98c88c59a3ea7269c34e704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac74244a841edf260f5426f9fe01b784" id="r_aac74244a841edf260f5426f9fe01b784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#aac74244a841edf260f5426f9fe01b784">ClearAffectedVariables</a> ()</td></tr>
 <tr class="separator:aac74244a841edf260f5426f9fe01b784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73069eb1e61223da77653e2e60aca1c" id="r_af73069eb1e61223da77653e2e60aca1c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#af73069eb1e61223da77653e2e60aca1c">VariablesAffectedByLastUpdate</a> () const</td></tr>
@@ -165,10 +166,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1e2e0eb2fb15ada9bb947b4f7ed6529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8973b5ccfff241290cd430aace1c250b" id="r_a8973b5ccfff241290cd430aace1c250b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a8973b5ccfff241290cd430aace1c250b">ObjectiveDelta</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>) const</td></tr>
 <tr class="separator:a8973b5ccfff241290cd430aace1c250b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad823f76616edcd69c575d47b29b04b58" id="r_ad823f76616edcd69c575d47b29b04b58"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#ad823f76616edcd69c575d47b29b04b58">ConstraintToVars</a> (int c) const</td></tr>
+<tr class="separator:ad823f76616edcd69c575d47b29b04b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00033">33</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00034">34</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae34f2bde3365839accaeec3587da2504" name="ae34f2bde3365839accaeec3587da2504"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae34f2bde3365839accaeec3587da2504">&#9670;&#160;</a></span>LinearIncrementalEvaluator()</h2>
@@ -214,7 +217,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Query violation. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00567">567</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00630">630</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -244,7 +247,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Incrementaly build the constraint.</p>
-<p>In case of duplicate variables on the same constraint, the code assumes constraints are built in-order as it checks for duplication. </p>
+<p>In case of duplicate variables on the same constraint, the code assumes constraints are built in-order as it checks for duplication.</p>
+<dl class="section note"><dt>Note</dt><dd>the code assume that a Boolean variable DO NOT appear both in the enforcement list and in the constraint. Otherwise the update will just be wrong. This should be enforced by our presolve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00096">96</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
@@ -410,7 +414,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00654">654</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00717">717</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -428,9 +432,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Variables whose score was updated since the last clear. </p><dl class="section note"><dt>Note</dt><dd>we also include variable whose score might be the same but for which different jump values might have a changed score. </dd></dl>
+<p>Variables whose score might have decreased since the last clear for at least one jump value.</p>
+<dl class="section note"><dt>Note</dt><dd>because we reason on a per-constraint basis, this is actually independent of the set of positive constraint weight used. We just list variable for which the contribution to the violation of one constraint might have decreased for any jump value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00241">241</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00258">258</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -459,6 +464,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad823f76616edcd69c575d47b29b04b58" name="ad823f76616edcd69c575d47b29b04b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad823f76616edcd69c575d47b29b04b58">&#9670;&#160;</a></span>ConstraintToVars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Span&lt; const int &gt; operations_research::sat::LinearIncrementalEvaluator::ConstraintToVars </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00137">137</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+
+</div>
+</div>
 <a id="ac1e2e0eb2fb15ada9bb947b4f7ed6529" name="ac1e2e0eb2fb15ada9bb947b4f7ed6529"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1e2e0eb2fb15ada9bb947b4f7ed6529">&#9670;&#160;</a></span>DeterministicTime()</h2>
 
@@ -482,7 +515,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00116">116</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00125">125</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +535,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00575">575</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00638">638</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -554,7 +587,7 @@ Public Member Functions</h2></td></tr>
 
 <p><a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> getters. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00093">93</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00102">102</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -592,12 +625,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00120">120</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00129">129</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
-<a id="a7ab2df406a4460a09ae11b74f2894836" name="a7ab2df406a4460a09ae11b74f2894836"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ab2df406a4460a09ae11b74f2894836">&#9670;&#160;</a></span>PrecomputeCompactView()</h2>
+<a id="ad15e855847e8e9fd85eb17774c2fe277" name="ad15e855847e8e9fd85eb17774c2fe277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15e855847e8e9fd85eb17774c2fe277">&#9670;&#160;</a></span>PrecomputeCompactView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +638,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::LinearIncrementalEvaluator::PrecomputeCompactView </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">absl::Span&lt; const int64_t &gt;&#160;</td>
+          <td class="paramname"><em>var_max_variation</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -614,11 +648,11 @@ Public Member Functions</h2></td></tr>
 <p>Compute the total size. </p><dl class="section note"><dt>Note</dt><dd>at this point the constraint indices are not "encoded" yet.</dd></dl>
 <p>Compactify for faster <a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html#a201fdc143b0a225b578f5a5d123ef53a">WeightedViolationDelta()</a>.</p>
 <p>We do not need var_entries_ or literal_entries_ anymore.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001037">Todo:</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001044">Todo:</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
 <p>Initialize the SpanData. Transform tmp_row_sizes_ to starts in the row_var_buffer_. Transform tmp_row_num_linear_entries_ to starts in the row_coeff_buffer_.</p>
 <p>Copy data.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00707">707</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00772">772</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -655,7 +689,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Intersect constraint bounds with [lb..ub]. It returns true if a reduction of the domain took place. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00580">580</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00643">643</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -692,14 +726,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The violation for each constraint is a piecewise linear function. This computes and aggregates all the breakpoints for the given variable and its domain.</p>
 <dl class="section note"><dt>Note</dt><dd>if the domain contains less than two values, we return an empty vector. This function is not meant to be used for such domains. </dd></dl>
-<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001036">Todo:</a></b></dt><dd>(user): Deal with holes? </dd></dl>
+<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001043">Todo:</a></b></dt><dd>(user): Deal with holes? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00662">662</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00725">725</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="ab8c2b84b3d5f022f3a86a8a65480bae2" name="ab8c2b84b3d5f022f3a86a8a65480bae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c2b84b3d5f022f3a86a8a65480bae2">&#9670;&#160;</a></span>Update()</h2>
+<a id="a2ff7d6c383a73560b2c4c31ef54a2da5" name="a2ff7d6c383a73560b2c4c31ef54a2da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff7d6c383a73560b2c4c31ef54a2da5">&#9670;&#160;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -714,7 +748,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>delta</em>&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; *&#160;</td>
+          <td class="paramname"><em>violation_deltas</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -729,8 +769,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c24845a348e55618e3d346b34ec8fe0" name="a5c24845a348e55618e3d346b34ec8fe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c24845a348e55618e3d346b34ec8fe0">&#9670;&#160;</a></span>UpdateScoreOnWeightUpdate()</h2>
+<a id="a099aa35ca98c88c59a3ea7269c34e704" name="a099aa35ca98c88c59a3ea7269c34e704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099aa35ca98c88c59a3ea7269c34e704">&#9670;&#160;</a></span>UpdateScoreOnWeightUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -744,26 +784,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>weight_delta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">absl::Span&lt; const int64_t &gt;&#160;</td>
-          <td class="paramname"><em>solution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">absl::Span&lt; const int64_t &gt;&#160;</td>
-          <td class="paramname"><em>jump_values</em>, </td>
+          <td class="paramname"><em>jump_deltas</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">absl::Span&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>jump_scores</em>&#160;</td>
+          <td class="paramname"><em>var_to_score_change</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -772,15 +800,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update enforcement part, all change are 0 -&gt; 1 transition and decrease by this.</p>
+
+<p>Also for feasibility jump. </p>
+<p>Tricky: Here we re-use in_last_affected_variables_ to resest var_to_score_change. And in particular we need to list all variable whose score changed here. Not just the one for which we have a decrease. </p>
+<p>Update enforcement part. Because we only update weight of currently infeasible constraint, all change are 0 -&gt; 1 transition and change by the same amount, which is the current distance.</p>
 <p>Update linear part.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00249">249</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00272">272</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a86d5930909bf059fa5847ef0c3012a5d" name="a86d5930909bf059fa5847ef0c3012a5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86d5930909bf059fa5847ef0c3012a5d">&#9670;&#160;</a></span>UpdateVariableAndScores()</h2>
+<a id="a671255f48649433719b5367def21ae06" name="a671255f48649433719b5367def21ae06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671255f48649433719b5367def21ae06">&#9670;&#160;</a></span>UpdateVariableAndScores()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,12 +831,6 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">absl::Span&lt; const int64_t &gt;&#160;</td>
-          <td class="paramname"><em>solution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">absl::Span&lt; const double &gt;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
         </tr>
@@ -813,13 +838,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">absl::Span&lt; const int64_t &gt;&#160;</td>
-          <td class="paramname"><em>jump_values</em>, </td>
+          <td class="paramname"><em>jump_deltas</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">absl::Span&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>jump_scores</em>&#160;</td>
+          <td class="paramname"><em>jump_scores</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; *&#160;</td>
+          <td class="paramname"><em>violation_deltas</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -831,7 +862,7 @@ Public Member Functions</h2></td></tr>
 <p>Function specific to the feasibility jump heuristic. </p><dl class="section note"><dt>Note</dt><dd>the score of the changed variable will not be updated correctly! </dd></dl>
 <p>Only the 1 -&gt; 0 are impacted. This is the same as the 1-&gt;2 transition, but the old 1-&gt;0 needs to be changed from - weight * distance to - weight * new_distance.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00474">474</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00526">526</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -858,7 +889,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00075">75</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00084">84</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +931,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00571">571</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00634">634</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -922,7 +953,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Checks if the jump value of a variable is always optimal. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00832">832</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00904">904</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -943,7 +974,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the weighted sum of the violation. </p><dl class="section note"><dt>Note</dt><dd>weights might have more entries than the number of constraints. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00587">587</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00650">650</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -980,13 +1011,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes how much the weighted violation will change if var was changed from its old value by += delta.</p>
 <p>Most of the time is spent in this function.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001035">Todo:</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001042">Todo:</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
 <p class="enddd">(user): Maybe we can compute an absolute value instead of removing old_distance. </p>
 </dd></dl>
 <p>Since delta != 0, we are sure this is an enforced -&gt; unenforced change.</p>
 <p>Since delta != 0, we are sure this is an enforced -&gt; unenforced change.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00603">603</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00666">666</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>

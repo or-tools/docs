@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This helper class perform copy with simplification from a model and a partial assignment to another model. The purpose is to miminize the size of the copied model, as well as to reduce the pressure on the memory sub-system.</p>
 <p>It is currently used by the LNS part, but could be used with any other scheme that generates partial assignments. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8h_source.html#l00321">321</a> of file <a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8h_source.html#l00344">344</a> of file <a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa20f53d5c18d877d3e12c8580d84f8a0" name="aa20f53d5c18d877d3e12c8580d84f8a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa20f53d5c18d877d3e12c8580d84f8a0">&#9670;&#160;</a></span>ModelCopy()</h2>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10285">10285</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10814">10814</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>
@@ -182,14 +182,14 @@ Public Member Functions</h2></td></tr>
 <p>It returns false iff the model is proven infeasible.</p>
 <p>It does not clear the constraints part of the working model of the context.</p>
 <p>Note(user): If first_copy is true, we will reorder the scheduling constraint so that they only use reference to previously defined intervals. This allow to be more efficient later in a few preprocessing steps.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001282">Todo:</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001283">Todo:</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001294">Todo:</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001295">Todo:</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
 <p>If first_copy is true, we reorder the scheduling constraint to be sure they refer to interval before them.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001284">Todo:</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001285">Todo:</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001296">Todo:</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001297">Todo:</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
 <p>This should be empty if first_copy is false.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10307">10307</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10836">10836</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Copy variables from the in_model to the working model. It reads the 'ignore_names' parameters from the context, and keeps or deletes names accordingly. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10287">10287</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10816">10816</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>

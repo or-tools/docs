@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,6 +111,7 @@ $(document).ready(function(){initNavTree('graph_2util_8h.html',''); initResizabl
 <code>#include &quot;absl/container/btree_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/inlined_vector.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="hash_8h_source.html">ortools/base/hash.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connected__components_8h_source.html">ortools/graph/connected_components.h</a>&quot;</code><br />
@@ -154,14 +155,14 @@ Functions</h2></td></tr>
 <tr class="memitem:acfecdce43e9933bde2a94fd879f12f5f" id="r_acfecdce43e9933bde2a94fd879f12f5f"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt; </td></tr>
 <tr class="memitem:acfecdce43e9933bde2a94fd879f12f5f"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#acfecdce43e9933bde2a94fd879f12f5f">util::RemapGraph</a> (const <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph, const std::vector&lt; int &gt; &amp;new_node_index)</td></tr>
 <tr class="separator:acfecdce43e9933bde2a94fd879f12f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1df170a504d335462a1104a942e6069" id="r_ad1df170a504d335462a1104a942e6069"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt; </td></tr>
-<tr class="memitem:ad1df170a504d335462a1104a942e6069"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ad1df170a504d335462a1104a942e6069">util::GetSubgraphOfNodes</a> (const <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph, const std::vector&lt; int &gt; &amp;<a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>)</td></tr>
-<tr class="separator:ad1df170a504d335462a1104a942e6069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbba6a42d616fc4fb5c9ab3afe649197" id="r_adbba6a42d616fc4fb5c9ab3afe649197"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt; </td></tr>
+<tr class="memitem:adbba6a42d616fc4fb5c9ab3afe649197"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#adbba6a42d616fc4fb5c9ab3afe649197">util::GetSubgraphOfNodes</a> (const <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph, absl::Span&lt; const int &gt; <a class="el" href="routing__search_8cc.html#a6b7983ccd32c86cbbc3d4d9cda4cac17">nodes</a>)</td></tr>
+<tr class="separator:adbba6a42d616fc4fb5c9ab3afe649197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a31111f9a74492f1de9238e463edd2a" id="r_a8a31111f9a74492f1de9238e463edd2a"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt; </td></tr>
 <tr class="memitem:a8a31111f9a74492f1de9238e463edd2a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a8a31111f9a74492f1de9238e463edd2a">util::GetWeaklyConnectedComponents</a> (const <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph)</td></tr>
 <tr class="separator:a8a31111f9a74492f1de9238e463edd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fb4c9a176acaf72053b11727436e9e" id="r_aa9fb4c9a176acaf72053b11727436e9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#aa9fb4c9a176acaf72053b11727436e9e">util::IsSubsetOf0N</a> (const std::vector&lt; int &gt; &amp;v, int n)</td></tr>
-<tr class="separator:aa9fb4c9a176acaf72053b11727436e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9c2faec725bc47baf08421b377f643" id="r_aca9c2faec725bc47baf08421b377f643"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#aca9c2faec725bc47baf08421b377f643">util::IsSubsetOf0N</a> (absl::Span&lt; const int &gt; v, int n)</td></tr>
+<tr class="separator:aca9c2faec725bc47baf08421b377f643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7986b01cf61a31c09a27b4a97db6a83" id="r_ad7986b01cf61a31c09a27b4a97db6a83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#ad7986b01cf61a31c09a27b4a97db6a83">util::IsValidPermutation</a> (const std::vector&lt; int &gt; &amp;v)</td></tr>
 <tr class="memdesc:ad7986b01cf61a31c09a27b4a97db6a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the given vector is a permutation of [0..size()-1].  <br /></td></tr>
 <tr class="separator:ad7986b01cf61a31c09a27b4a97db6a83"><td class="memSeparator" colspan="2">&#160;</td></tr>

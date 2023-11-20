@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -765,278 +765,273 @@ $(document).ready(function(){initNavTree('glop__solver_8cc_source.html',''); ini
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> == glop::ProblemStatus::PRIMAL_FEASIBLE) {</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="comment">// Solve reached phase II of primal simplex and current basis is not</span></div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="comment">// optimal. Hence basis is primal feasible, but cannot be dual feasible.</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="comment">// Dual solution could still be feasible as noted in</span></div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <span class="comment">// go/mathopt-basis-advanced#dualfeasibility</span></div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_FEASIBLE);</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_INFEASIBLE);</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> == glop::ProblemStatus::DUAL_FEASIBLE) {</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="comment">// Solve reached phase II of dual simplex and current basis is not optimal.</span></div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <span class="comment">// Hence basis is dual feasible, but cannot be primal feasible. In addition,</span></div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <span class="comment">// glop applies dual feasibility correction in dual simplex so feasibility</span></div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="comment">// of the dual solution matches dual feasibility of the basis (i.e the issue</span></div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <span class="comment">// described in go/mathopt-basis-advanced#dualfeasibility cannot happen).</span></div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    <span class="comment">// TODO(b/195295177): confirm with fdid</span></div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_FEASIBLE);</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_FEASIBLE);</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>  } <span class="keywordflow">else</span> {  <span class="comment">// status == INIT</span></div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>    <span class="comment">// Phase I of primal or dual simplex ran for at least one iteration</span></div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    <span class="keywordflow">if</span> (lp_solver_.GetParameters().use_dual_simplex()) {</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      <span class="comment">// Phase I did not finish so basis is not dual feasible. In addition,</span></div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      <span class="comment">// glop applies dual feasibility correction so feasibility of the dual</span></div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      <span class="comment">// solution matches dual feasibility of the basis (i.e the issue described</span></div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      <span class="comment">// in go/mathopt-basis-advanced#dualfeasibility cannot happen).</span></div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>      <span class="comment">// TODO(b/195295177): confirm with fdid</span></div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_INFEASIBLE);</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      <span class="comment">// Phase I did not finish so basis is not primal feasible.</span></div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>      dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>      basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_UNDETERMINED);</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    }</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  }</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  <span class="comment">// Fill in objective values</span></div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_objective_value(lp_solver_.GetObjectiveValue());</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  <span class="keywordflow">if</span> (basis-&gt;basic_dual_feasibility() == SOLUTION_STATUS_FEASIBLE) {</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="comment">// Primal and dual objectives are the same for a dual feasible basis</span></div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    <span class="comment">// see go/mathopt-basis-advanced#cs-obj-dual-feasible-dual-feasible-basis</span></div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    dual_solution-&gt;set_objective_value(<a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;objective_value());</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  }</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  <span class="comment">// Fill solution and basis</span></div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>  *basis-&gt;mutable_constraint_status() = *basis-&gt;mutable_variable_status() =</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>      <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#af7a6f14baf994a27e663ec535c32d199">FillSparseBasisStatusVector</a>(sorted_variables, variables_,</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                                  lp_solver_.variable_statuses());</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  *basis-&gt;mutable_constraint_status() =</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>      <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#af7a6f14baf994a27e663ec535c32d199">FillSparseBasisStatusVector</a>(sorted_constraints, linear_constraints_,</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                                  lp_solver_.constraint_statuses());</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span> </div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  *<a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;mutable_variable_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      sorted_variables, variables_, lp_solver_.variable_values(),</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>      model_parameters.variable_values_filter());</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  *dual_solution-&gt;mutable_dual_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>      sorted_constraints, linear_constraints_, lp_solver_.dual_values(),</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>      model_parameters.dual_values_filter());</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  *dual_solution-&gt;mutable_reduced_costs() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>      sorted_variables, variables_, lp_solver_.reduced_costs(),</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>      model_parameters.reduced_costs_filter());</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keywordflow">if</span> (!lp_solver_.primal_ray().empty()) {</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    PrimalRayProto* <span class="keyword">const</span> primal_ray = solve_result.add_primal_rays();</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    *primal_ray-&gt;mutable_variable_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        sorted_variables, variables_, lp_solver_.primal_ray(),</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        model_parameters.variable_values_filter());</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>  }</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  <span class="keywordflow">if</span> (!lp_solver_.constraints_dual_ray().empty() &amp;&amp;</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>      !lp_solver_.variable_bounds_dual_ray().empty()) {</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    DualRayProto* <span class="keyword">const</span> dual_ray = solve_result.add_dual_rays();</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    *dual_ray-&gt;mutable_dual_values() =</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(sorted_constraints, linear_constraints_,</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>                               lp_solver_.constraints_dual_ray(),</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>                               model_parameters.dual_values_filter());</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    *dual_ray-&gt;mutable_reduced_costs() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        sorted_variables, variables_, lp_solver_.variable_bounds_dual_ray(),</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        model_parameters.reduced_costs_filter());</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  }</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>}</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>absl::Status GlopSolver::FillSolveStats(<span class="keyword">const</span> absl::Duration solve_time,</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>                                        SolveStatsProto&amp; solve_stats) {</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="comment">// Fill remaining stats</span></div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  solve_stats.set_simplex_iterations(lp_solver_.GetNumberOfSimplexIterations());</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceutil__time.html#a9b705fc0063004954faa62e54450d4fc">util_time::EncodeGoogleApiProto</a>(</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>      solve_time, solve_stats.mutable_solve_time()));</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>  <span class="keywordflow">return</span> absl::OkStatus();</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>}</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>absl::StatusOr&lt;SolveResultProto&gt; GlopSolver::MakeSolveResult(</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keyword">const</span> glop::ProblemStatus <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>,</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    <span class="keyword">const</span> ModelSolveParametersProto&amp; model_parameters,</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keyword">const</span> SolveInterrupter* <span class="keyword">const</span> interrupter,</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keyword">const</span> absl::Duration solve_time) {</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>  SolveResultProto solve_result;</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>  <a class="code hl_define" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN</a>(*solve_result.mutable_termination(),</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>                   BuildTermination(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, interrupter,</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>                                    linear_program_.IsMaximizationProblem(),</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>                                    lp_solver_.GetObjectiveValue()));</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>  FillSolution(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, model_parameters, solve_result);</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      FillSolveStats(solve_time, *solve_result.mutable_solve_stats()));</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>  <span class="keywordflow">return</span> solve_result;</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>}</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="keywordtype">void</span> GlopSolver::SetGlopBasis(<span class="keyword">const</span> BasisProto&amp; basis) {</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  glop::VariableStatusRow variable_statuses(linear_program_.num_variables());</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [<span class="keywordtype">id</span>, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>] : <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a80e158d48db32a3bbbe915179b36e405">MakeView</a>(basis.variable_status())) {</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    variable_statuses[variables_.at(<span class="keywordtype">id</span>)] =</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        ToGlopBasisStatus&lt;glop::VariableStatus&gt;(</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>            <span class="keyword">static_cast&lt;</span>BasisStatusProto<span class="keyword">&gt;</span>(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>));</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>  }</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>  glop::ConstraintStatusColumn constraint_statuses(</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>      linear_program_.num_constraints());</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [<span class="keywordtype">id</span>, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>] : <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a80e158d48db32a3bbbe915179b36e405">MakeView</a>(basis.constraint_status())) {</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    constraint_statuses[linear_constraints_.at(<span class="keywordtype">id</span>)] =</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        ToGlopBasisStatus&lt;glop::ConstraintStatus&gt;(</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>            <span class="keyword">static_cast&lt;</span>BasisStatusProto<span class="keyword">&gt;</span>(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>));</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>  }</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>  lp_solver_.SetInitialBasis(variable_statuses, constraint_statuses);</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>}</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
-<div class="foldopen" id="foldopen00773" data-start="{" data-end="}">
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a0ef282706a117dbfa0c978f411d9f1d6">  773</a></span>absl::StatusOr&lt;SolveResultProto&gt; GlopSolver::Solve(</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="keyword">const</span> SolveParametersProto&amp; <a class="code hl_variable" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>,</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="keyword">const</span> ModelSolveParametersProto&amp; model_parameters,</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb,</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="keyword">const</span> CallbackRegistrationProto&amp; callback_registration, <span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#aca4eaf4769b24cea270a05f5c969c187">Callback</a>,</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>* <span class="keyword">const</span> interrupter) {</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a7b6416ee129e11e10bd16560d739c7e9">CheckRegisteredCallbackEvents</a>(callback_registration,</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>                                                <span class="comment">/*supported_events=*/</span>{}));</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  <span class="keyword">const</span> absl::Time <a class="code hl_variable" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a> = absl::Now();</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  <a class="code hl_define" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN</a>(</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>      <span class="keyword">const</span> glop::GlopParameters glop_parameters,</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      MergeSolveParameters(</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>          <a class="code hl_variable" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>,</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>          <span class="comment">/*setting_initial_basis=*/</span>model_parameters.has_initial_basis(),</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>          <span class="comment">/*has_message_callback=*/</span>message_cb != <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>          linear_program_.IsMaximizationProblem()));</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  lp_solver_.SetParameters(glop_parameters);</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  <span class="keywordflow">if</span> (model_parameters.has_initial_basis()) {</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    SetGlopBasis(model_parameters.initial_basis());</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  }</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="comment">// Dual solution could still be feasible.</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_FEASIBLE);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_INFEASIBLE);</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> == glop::ProblemStatus::DUAL_FEASIBLE) {</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="comment">// Solve reached phase II of dual simplex and current basis is not optimal.</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="comment">// Hence basis is dual feasible, but cannot be primal feasible. In addition,</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <span class="comment">// glop applies dual feasibility correction in dual simplex so feasibility</span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <span class="comment">// of the dual solution matches dual feasibility of the basis.</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="comment">// TODO(b/195295177): confirm with fdid</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_FEASIBLE);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_FEASIBLE);</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  } <span class="keywordflow">else</span> {  <span class="comment">// status == INIT</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    <span class="comment">// Phase I of primal or dual simplex ran for at least one iteration</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keywordflow">if</span> (lp_solver_.GetParameters().use_dual_simplex()) {</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>      <span class="comment">// Phase I did not finish so basis is not dual feasible. In addition,</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      <span class="comment">// glop applies dual feasibility correction so feasibility of the dual</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      <span class="comment">// solution matches dual feasibility of the basis.</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_INFEASIBLE);</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <span class="comment">// Phase I did not finish so basis is not primal feasible.</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_feasibility_status(SOLUTION_STATUS_INFEASIBLE);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      dual_solution-&gt;set_feasibility_status(SOLUTION_STATUS_UNDETERMINED);</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>      basis-&gt;set_basic_dual_feasibility(SOLUTION_STATUS_UNDETERMINED);</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    }</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  }</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  <span class="comment">// Fill in objective values</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>  <a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;set_objective_value(lp_solver_.GetObjectiveValue());</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  <span class="keywordflow">if</span> (basis-&gt;basic_dual_feasibility() == SOLUTION_STATUS_FEASIBLE) {</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    <span class="comment">// Primal and dual objectives are the same for a dual feasible basis.</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    dual_solution-&gt;set_objective_value(<a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;objective_value());</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  }</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  <span class="comment">// Fill solution and basis</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  *basis-&gt;mutable_constraint_status() = *basis-&gt;mutable_variable_status() =</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>      <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#af7a6f14baf994a27e663ec535c32d199">FillSparseBasisStatusVector</a>(sorted_variables, variables_,</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                                  lp_solver_.variable_statuses());</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>  *basis-&gt;mutable_constraint_status() =</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>      <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#af7a6f14baf994a27e663ec535c32d199">FillSparseBasisStatusVector</a>(sorted_constraints, linear_constraints_,</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                                  lp_solver_.constraint_statuses());</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  *<a class="code hl_variable" href="namespaceoperations__research_1_1pdlp.html#a5eacdd74b066b885e267adad79344020">primal_solution</a>-&gt;mutable_variable_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>      sorted_variables, variables_, lp_solver_.variable_values(),</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>      model_parameters.variable_values_filter());</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  *dual_solution-&gt;mutable_dual_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>      sorted_constraints, linear_constraints_, lp_solver_.dual_values(),</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      model_parameters.dual_values_filter());</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  *dual_solution-&gt;mutable_reduced_costs() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>      sorted_variables, variables_, lp_solver_.reduced_costs(),</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>      model_parameters.reduced_costs_filter());</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>  <span class="keywordflow">if</span> (!lp_solver_.primal_ray().empty()) {</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    PrimalRayProto* <span class="keyword">const</span> primal_ray = solve_result.add_primal_rays();</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    *primal_ray-&gt;mutable_variable_values() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        sorted_variables, variables_, lp_solver_.primal_ray(),</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>        model_parameters.variable_values_filter());</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  }</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  <span class="keywordflow">if</span> (!lp_solver_.constraints_dual_ray().empty() &amp;&amp;</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>      !lp_solver_.variable_bounds_dual_ray().empty()) {</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    DualRayProto* <span class="keyword">const</span> dual_ray = solve_result.add_dual_rays();</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    *dual_ray-&gt;mutable_dual_values() =</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(sorted_constraints, linear_constraints_,</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>                               lp_solver_.constraints_dual_ray(),</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>                               model_parameters.dual_values_filter());</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    *dual_ray-&gt;mutable_reduced_costs() = <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a49f967b1420551cce50b84075ab62535">FillSparseDoubleVector</a>(</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        sorted_variables, variables_, lp_solver_.variable_bounds_dual_ray(),</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        model_parameters.reduced_costs_filter());</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  }</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>}</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>absl::Status GlopSolver::FillSolveStats(<span class="keyword">const</span> absl::Duration solve_time,</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                                        SolveStatsProto&amp; solve_stats) {</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  <span class="comment">// Fill remaining stats</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  solve_stats.set_simplex_iterations(lp_solver_.GetNumberOfSimplexIterations());</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceutil__time.html#a9b705fc0063004954faa62e54450d4fc">util_time::EncodeGoogleApiProto</a>(</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>      solve_time, solve_stats.mutable_solve_time()));</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="keywordflow">return</span> absl::OkStatus();</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>}</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>absl::StatusOr&lt;SolveResultProto&gt; GlopSolver::MakeSolveResult(</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    <span class="keyword">const</span> glop::ProblemStatus <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>,</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <span class="keyword">const</span> ModelSolveParametersProto&amp; model_parameters,</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keyword">const</span> SolveInterrupter* <span class="keyword">const</span> interrupter,</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keyword">const</span> absl::Duration solve_time) {</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  SolveResultProto solve_result;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>  <a class="code hl_define" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN</a>(*solve_result.mutable_termination(),</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>                   BuildTermination(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, interrupter,</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>                                    linear_program_.IsMaximizationProblem(),</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>                                    lp_solver_.GetObjectiveValue()));</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>  FillSolution(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, model_parameters, solve_result);</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>      FillSolveStats(solve_time, *solve_result.mutable_solve_stats()));</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>  <span class="keywordflow">return</span> solve_result;</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>}</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="keywordtype">void</span> GlopSolver::SetGlopBasis(<span class="keyword">const</span> BasisProto&amp; basis) {</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>  glop::VariableStatusRow variable_statuses(linear_program_.num_variables());</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [<span class="keywordtype">id</span>, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>] : <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a80e158d48db32a3bbbe915179b36e405">MakeView</a>(basis.variable_status())) {</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    variable_statuses[variables_.at(<span class="keywordtype">id</span>)] =</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        ToGlopBasisStatus&lt;glop::VariableStatus&gt;(</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>            <span class="keyword">static_cast&lt;</span>BasisStatusProto<span class="keyword">&gt;</span>(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>));</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  }</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>  glop::ConstraintStatusColumn constraint_statuses(</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>      linear_program_.num_constraints());</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [<span class="keywordtype">id</span>, <a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>] : <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a80e158d48db32a3bbbe915179b36e405">MakeView</a>(basis.constraint_status())) {</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    constraint_statuses[linear_constraints_.at(<span class="keywordtype">id</span>)] =</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        ToGlopBasisStatus&lt;glop::ConstraintStatus&gt;(</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>            <span class="keyword">static_cast&lt;</span>BasisStatusProto<span class="keyword">&gt;</span>(<a class="code hl_variable" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>));</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>  }</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>  lp_solver_.SetInitialBasis(variable_statuses, constraint_statuses);</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
+<div class="foldopen" id="foldopen00768" data-start="{" data-end="}">
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a0ef282706a117dbfa0c978f411d9f1d6">  768</a></span>absl::StatusOr&lt;SolveResultProto&gt; GlopSolver::Solve(</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keyword">const</span> SolveParametersProto&amp; <a class="code hl_variable" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>,</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    <span class="keyword">const</span> ModelSolveParametersProto&amp; model_parameters,</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb,</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    <span class="keyword">const</span> CallbackRegistrationProto&amp; callback_registration, <span class="keyword">const</span> <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#aca4eaf4769b24cea270a05f5c969c187">Callback</a>,</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>* <span class="keyword">const</span> interrupter) {</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a7b6416ee129e11e10bd16560d739c7e9">CheckRegisteredCallbackEvents</a>(callback_registration,</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>                                                <span class="comment">/*supported_events=*/</span>{}));</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>  <span class="keyword">const</span> absl::Time <a class="code hl_variable" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a> = absl::Now();</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>  <a class="code hl_define" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN</a>(</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>      <span class="keyword">const</span> glop::GlopParameters glop_parameters,</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>      MergeSolveParameters(</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>          <a class="code hl_variable" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>,</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>          <span class="comment">/*setting_initial_basis=*/</span>model_parameters.has_initial_basis(),</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>          <span class="comment">/*has_message_callback=*/</span>message_cb != <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>          linear_program_.IsMaximizationProblem()));</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  lp_solver_.SetParameters(glop_parameters);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  <span class="keywordflow">if</span> (model_parameters.has_initial_basis()) {</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    SetGlopBasis(model_parameters.initial_basis());</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  }</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  std::atomic&lt;bool&gt; interrupt_solve = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  <span class="keyword">const</span> std::unique_ptr&lt;TimeLimit&gt; <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a> =</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>      TimeLimit::FromParameters(lp_solver_.GetParameters());</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>-&gt;RegisterExternalBooleanAsLimit(&amp;interrupt_solve);</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  std::atomic&lt;bool&gt; interrupt_solve = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  <span class="keyword">const</span> std::unique_ptr&lt;TimeLimit&gt; <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a> =</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>      TimeLimit::FromParameters(lp_solver_.GetParameters());</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>-&gt;RegisterExternalBooleanAsLimit(&amp;interrupt_solve);</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1ScopedSolveInterrupterCallback.html">ScopedSolveInterrupterCallback</a> scoped_interrupt_cb(interrupter, [&amp;]() {</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    CHECK_NE(interrupter, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    interrupt_solve = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  });</div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1ScopedSolveInterrupterCallback.html">ScopedSolveInterrupterCallback</a> scoped_interrupt_cb(interrupter, [&amp;]() {</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    CHECK_NE(interrupter, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    interrupt_solve = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  });</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  <span class="keywordflow">if</span> (message_cb != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="comment">// Please note that the logging is enabled in MergeSolveParameters() where</span></div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="comment">// we also disable logging to stdout. We can&#39;t modify the SolverLogger here</span></div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="comment">// since the values are overwritten from the parameters at the beginning of</span></div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    <span class="comment">// the solve.</span></div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <span class="comment">// Here we test that there are no other callbacks since we will clear them</span></div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="comment">// all in the cleanup below.</span></div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    CHECK_EQ(lp_solver_.GetSolverLogger().NumInfoLoggingCallbacks(), 0);</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    lp_solver_.GetSolverLogger().AddInfoLoggingCallback(</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        [&amp;](absl::string_view <a class="code hl_variable" href="trace_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>) {</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>          message_cb(absl::StrSplit(<a class="code hl_variable" href="trace_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, <span class="charliteral">&#39;\n&#39;</span>));</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        });</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>  }</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>  <span class="keyword">const</span> <span class="keyword">auto</span> message_cb_cleanup = <a class="code hl_function" href="namespaceabsl.html#a01547ab811df98c71089487f394ec259">absl::MakeCleanup</a>([&amp;]() {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keywordflow">if</span> (message_cb != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>      <span class="comment">// Check that no other callbacks have been added to the logger.</span></div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>      CHECK_EQ(lp_solver_.GetSolverLogger().NumInfoLoggingCallbacks(), 1);</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>      lp_solver_.GetSolverLogger().ClearInfoLoggingCallbacks();</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    }</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  });</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  <span class="keywordflow">if</span> (message_cb != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    <span class="comment">// Please note that the logging is enabled in MergeSolveParameters() where</span></div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="comment">// we also disable logging to stdout. We can&#39;t modify the SolverLogger here</span></div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    <span class="comment">// since the values are overwritten from the parameters at the beginning of</span></div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="comment">// the solve.</span></div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="comment">// Here we test that there are no other callbacks since we will clear them</span></div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="comment">// all in the cleanup below.</span></div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    CHECK_EQ(lp_solver_.GetSolverLogger().NumInfoLoggingCallbacks(), 0);</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    lp_solver_.GetSolverLogger().AddInfoLoggingCallback(</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        [&amp;](absl::string_view <a class="code hl_variable" href="trace_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>) {</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>          message_cb(absl::StrSplit(<a class="code hl_variable" href="trace_8cc.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, <span class="charliteral">&#39;\n&#39;</span>));</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        });</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>  }</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  <span class="keyword">const</span> <span class="keyword">auto</span> message_cb_cleanup = <a class="code hl_function" href="namespaceabsl.html#a01547ab811df98c71089487f394ec259">absl::MakeCleanup</a>([&amp;]() {</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <span class="keywordflow">if</span> (message_cb != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>      <span class="comment">// Check that no other callbacks have been added to the logger.</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>      CHECK_EQ(lp_solver_.GetSolverLogger().NumInfoLoggingCallbacks(), 1);</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>      lp_solver_.GetSolverLogger().ClearInfoLoggingCallbacks();</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    }</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  });</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>  <span class="comment">// Glop returns an error when bounds are inverted and does not list the</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>  <span class="comment">// offending variables/constraints. Here we want to return a more detailed</span></div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>  <span class="comment">// status.</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(ListInvertedBounds().ToStatus());</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>  <span class="comment">// Glop returns an error when bounds are inverted and does not list the</span></div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>  <span class="comment">// offending variables/constraints. Here we want to return a more detailed</span></div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <span class="comment">// status.</span></div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(ListInvertedBounds().ToStatus());</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">glop::ProblemStatus</a> <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> =</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>      lp_solver_.SolveWithTimeLimit(linear_program_, <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>.get());</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  <span class="keyword">const</span> absl::Duration solve_time = absl::Now() - <a class="code hl_variable" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a>;</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  <span class="keywordflow">return</span> MakeSolveResult(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, model_parameters, interrupter, solve_time);</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">glop::ProblemStatus</a> <a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a> =</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      lp_solver_.SolveWithTimeLimit(linear_program_, <a class="code hl_variable" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>.get());</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <span class="keyword">const</span> absl::Duration solve_time = absl::Now() - <a class="code hl_variable" href="sparse__submatrix_8cc.html#a9b7656b922ea4ec96097d7380c0e61fe">start</a>;</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <span class="keywordflow">return</span> MakeSolveResult(<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>, model_parameters, interrupter, solve_time);</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>}</div>
 </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
-<div class="foldopen" id="foldopen00839" data-start="{" data-end="}">
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#ae89a5a0778e93404cbd3ec3039f6a416">  839</a></span>absl::StatusOr&lt;std::unique_ptr&lt;SolverInterface&gt;&gt; GlopSolver::New(</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">InitArgs</a>&amp;) {</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a04864c36e281b011af6289eec39b35df">ModelIsSupported</a>(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, kGlopSupportedStructures, <span class="stringliteral">&quot;Glop&quot;</span>));</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>  <span class="keyword">auto</span> solver = absl::WrapUnique(<span class="keyword">new</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1GlopSolver.html">GlopSolver</a>);</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>  <span class="comment">// By default Glop CHECKs that bounds are always consistent (lb &lt; ub); thus it</span></div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>  <span class="comment">// would fail if the initial model or later updates temporarily set inverted</span></div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>  <span class="comment">// bounds.</span></div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>  solver-&gt;linear_program_.SetDcheckBounds(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>  solver-&gt;linear_program_.SetName(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.name());</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>  solver-&gt;linear_program_.SetMaximizationProblem(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().maximize());</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>  solver-&gt;linear_program_.SetObjectiveOffset(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().offset());</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>  solver-&gt;AddVariables(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.variables());</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>  solver-&gt;SetOrUpdateObjectiveCoefficients(</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>      <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().linear_coefficients());</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span> </div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  solver-&gt;AddLinearConstraints(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.linear_constraints());</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>  solver-&gt;SetOrUpdateConstraintMatrix(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.linear_constraint_matrix());</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>  solver-&gt;linear_program_.CleanUp();</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  <span class="keywordflow">return</span> solver;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>}</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
+<div class="foldopen" id="foldopen00834" data-start="{" data-end="}">
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#ae89a5a0778e93404cbd3ec3039f6a416">  834</a></span>absl::StatusOr&lt;std::unique_ptr&lt;SolverInterface&gt;&gt; GlopSolver::New(</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">InitArgs</a>&amp;) {</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a04864c36e281b011af6289eec39b35df">ModelIsSupported</a>(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, kGlopSupportedStructures, <span class="stringliteral">&quot;Glop&quot;</span>));</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>  <span class="keyword">auto</span> solver = absl::WrapUnique(<span class="keyword">new</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1GlopSolver.html">GlopSolver</a>);</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>  <span class="comment">// By default Glop CHECKs that bounds are always consistent (lb &lt; ub); thus it</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>  <span class="comment">// would fail if the initial model or later updates temporarily set inverted</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>  <span class="comment">// bounds.</span></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>  solver-&gt;linear_program_.SetDcheckBounds(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>  solver-&gt;linear_program_.SetName(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.name());</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>  solver-&gt;linear_program_.SetMaximizationProblem(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().maximize());</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>  solver-&gt;linear_program_.SetObjectiveOffset(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().offset());</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span> </div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>  solver-&gt;AddVariables(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.variables());</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>  solver-&gt;SetOrUpdateObjectiveCoefficients(</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>      <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.objective().linear_coefficients());</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>  solver-&gt;AddLinearConstraints(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.linear_constraints());</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>  solver-&gt;SetOrUpdateConstraintMatrix(<a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>.linear_constraint_matrix());</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>  solver-&gt;linear_program_.CleanUp();</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>  <span class="keywordflow">return</span> solver;</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>}</div>
 </div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span> </div>
+<div class="foldopen" id="foldopen00857" data-start="{" data-end="}">
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a30633553098c3de7d35db080664ba500">  857</a></span>absl::StatusOr&lt;bool&gt; GlopSolver::Update(<span class="keyword">const</span> ModelUpdateProto&amp; model_update) {</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a4fbf5a578f0b1e8161f5ad01d479e108">UpdateIsSupported</a>(model_update, kGlopSupportedStructures)) {</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>  }</div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
-<div class="foldopen" id="foldopen00862" data-start="{" data-end="}">
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a30633553098c3de7d35db080664ba500">  862</a></span>absl::StatusOr&lt;bool&gt; GlopSolver::Update(<span class="keyword">const</span> ModelUpdateProto&amp; model_update) {</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a4fbf5a578f0b1e8161f5ad01d479e108">UpdateIsSupported</a>(model_update, kGlopSupportedStructures)) {</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>  <span class="keywordflow">if</span> (model_update.objective_updates().has_direction_update()) {</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    linear_program_.SetMaximizationProblem(</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        model_update.objective_updates().direction_update());</div>
 <div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>  }</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span> </div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>  <span class="keywordflow">if</span> (model_update.objective_updates().has_direction_update()) {</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    linear_program_.SetMaximizationProblem(</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>        model_update.objective_updates().direction_update());</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  }</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>  <span class="keywordflow">if</span> (model_update.objective_updates().has_offset_update()) {</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>    linear_program_.SetObjectiveOffset(</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        model_update.objective_updates().offset_update());</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  }</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>  DeleteVariables(model_update.deleted_variable_ids());</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>  AddVariables(model_update.new_variables());</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>  SetOrUpdateObjectiveCoefficients(</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>      model_update.objective_updates().linear_coefficients());</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>  UpdateVariableBounds(model_update.variable_updates());</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>  DeleteLinearConstraints(model_update.deleted_linear_constraint_ids());</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>  AddLinearConstraints(model_update.new_linear_constraints());</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>  UpdateLinearConstraintBounds(model_update.linear_constraint_updates());</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span> </div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>  SetOrUpdateConstraintMatrix(model_update.linear_constraint_matrix_updates());</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>  <span class="keywordflow">if</span> (model_update.objective_updates().has_offset_update()) {</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    linear_program_.SetObjectiveOffset(</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>        model_update.objective_updates().offset_update());</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>  }</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span> </div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>  DeleteVariables(model_update.deleted_variable_ids());</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  AddVariables(model_update.new_variables());</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span> </div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  SetOrUpdateObjectiveCoefficients(</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>      model_update.objective_updates().linear_coefficients());</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>  UpdateVariableBounds(model_update.variable_updates());</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>  DeleteLinearConstraints(model_update.deleted_linear_constraint_ids());</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>  AddLinearConstraints(model_update.new_linear_constraints());</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>  UpdateLinearConstraintBounds(model_update.linear_constraint_updates());</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span> </div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>  SetOrUpdateConstraintMatrix(model_update.linear_constraint_matrix_updates());</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>  linear_program_.CleanUp();</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>}</div>
+</div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span> </div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>  linear_program_.CleanUp();</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>}</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>absl::StatusOr&lt;ComputeInfeasibleSubsystemResultProto&gt;</div>
+<div class="foldopen" id="foldopen00890" data-start="{" data-end="}">
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a2c78c01d8775bba7b6fb5c47f691fb24">  890</a></span>GlopSolver::ComputeInfeasibleSubsystem(<span class="keyword">const</span> SolveParametersProto&amp;,</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>                                       <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a>, <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>*) {</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>  <span class="keywordflow">return</span> absl::UnimplementedError(</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>      <span class="stringliteral">&quot;GLOP does not implement a method to compute an infeasible subsystem&quot;</span>);</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>}</div>
 </div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>absl::StatusOr&lt;ComputeInfeasibleSubsystemResultProto&gt;</div>
-<div class="foldopen" id="foldopen00895" data-start="{" data-end="}">
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno"><a class="line" href="classoperations__research_1_1math__opt_1_1GlopSolver.html#a2c78c01d8775bba7b6fb5c47f691fb24">  895</a></span>GlopSolver::ComputeInfeasibleSubsystem(<span class="keyword">const</span> SolveParametersProto&amp;,</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                                       <a class="code hl_typedef" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a>, <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1SolveInterrupter.html">SolveInterrupter</a>*) {</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  <span class="keywordflow">return</span> absl::UnimplementedError(</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>      <span class="stringliteral">&quot;GLOP does not implement a method to compute an infeasible subsystem&quot;</span>);</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>}</div>
-</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span><a class="code hl_define" href="solver__interface_8h.html#ad082a79cf1be23f55e3435fad5bf4949">MATH_OPT_REGISTER_SOLVER</a>(SOLVER_TYPE_GLOP, GlopSolver::New)</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>}  <span class="comment">// namespace math_opt</span></div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span> </div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><a class="code hl_define" href="solver__interface_8h.html#ad082a79cf1be23f55e3435fad5bf4949">MATH_OPT_REGISTER_SOLVER</a>(SOLVER_TYPE_GLOP, GlopSolver::New)</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span> </div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>}  <span class="comment">// namespace math_opt</span></div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="abase_2status__macros_8h_html"><div class="ttname"><a href="base_2status__macros_8h.html">status_macros.h</a></div></div>
 <div class="ttc" id="abase_2status__macros_8h_html_a600de4b8f65fe0a4b1898041634f9011"><div class="ttname"><a href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN</a></div><div class="ttdeci">#define ASSIGN_OR_RETURN(lhs, rexpr)</div><div class="ttdef"><b>Definition</b> <a href="base_2status__macros_8h_source.html#l00046">status_macros.h:46</a></div></div>
 <div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition</b> <a href="base_2status__macros_8h_source.html#l00027">status_macros.h:27</a></div></div>
 <div class="ttc" id="acallback__validator_8h_html"><div class="ttname"><a href="callback__validator_8h.html">callback_validator.h</a></div></div>
 <div class="ttc" id="aclassabsl_1_1StrongVector_html"><div class="ttname"><a href="classabsl_1_1StrongVector.html">absl::StrongVector</a></div><div class="ttdoc">STL vector ---------------------------------------------------------------—.</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00076">strong_vector.h:76</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html_a9bad44b9510f86afb4e66779deb3e044"><div class="ttname"><a href="classabsl_1_1StrongVector.html#a9bad44b9510f86afb4e66779deb3e044">absl::StrongVector::push_back</a></div><div class="ttdeci">void push_back(const value_type &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00162">strong_vector.h:162</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html_af2da5dcd186243bbf780f85cd859326e"><div class="ttname"><a href="classabsl_1_1StrongVector.html#af2da5dcd186243bbf780f85cd859326e">absl::StrongVector::erase</a></div><div class="ttdeci">iterator erase(const_iterator pos)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00183">strong_vector.h:183</a></div></div>
+<div class="ttc" id="aclassabsl_1_1StrongVector_html_a9bad44b9510f86afb4e66779deb3e044"><div class="ttname"><a href="classabsl_1_1StrongVector.html#a9bad44b9510f86afb4e66779deb3e044">absl::StrongVector::push_back</a></div><div class="ttdeci">void push_back(const value_type &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00165">strong_vector.h:165</a></div></div>
+<div class="ttc" id="aclassabsl_1_1StrongVector_html_af2da5dcd186243bbf780f85cd859326e"><div class="ttname"><a href="classabsl_1_1StrongVector.html#af2da5dcd186243bbf780f85cd859326e">absl::StrongVector::erase</a></div><div class="ttdeci">iterator erase(const_iterator pos)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00186">strong_vector.h:186</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1glop_1_1StrictITIVector_html"><div class="ttname"><a href="classoperations__research_1_1glop_1_1StrictITIVector.html">operations_research::glop::StrictITIVector</a></div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00287">lp_types.h:287</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1glop_1_1StrictITIVector_html_aa53133ebe132c844a7ec36821ef0cf14"><div class="ttname"><a href="classoperations__research_1_1glop_1_1StrictITIVector.html#aa53133ebe132c844a7ec36821ef0cf14">operations_research::glop::StrictITIVector::size</a></div><div class="ttdeci">IntType size() const</div><div class="ttdef"><b>Definition</b> <a href="lp__types_8h_source.html#l00314">lp_types.h:314</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1math__opt_1_1GlopSolver_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1GlopSolver.html">operations_research::math_opt::GlopSolver</a></div><div class="ttdef"><b>Definition</b> <a href="glop__solver_8h_source.html#l00046">glop_solver.h:46</a></div></div>
@@ -1045,9 +1040,9 @@ $(document).ready(function(){initNavTree('glop__solver_8cc_source.html',''); ini
 <div class="ttc" id="aclassoperations__research_1_1math__opt_1_1SolverInterface_html_a478a3b5e923888a4d846548c2e42d120"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">operations_research::math_opt::SolverInterface::MessageCallback</a></div><div class="ttdeci">std::function&lt; void(const std::vector&lt; std::string &gt; &amp;)&gt; MessageCallback</div><div class="ttdef"><b>Definition</b> <a href="solver__interface_8h_source.html#l00068">solver_interface.h:68</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1math__opt_1_1SolverInterface_html_aca4eaf4769b24cea270a05f5c969c187"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1SolverInterface.html#aca4eaf4769b24cea270a05f5c969c187">operations_research::math_opt::SolverInterface::Callback</a></div><div class="ttdeci">std::function&lt; absl::StatusOr&lt; CallbackResultProto &gt;(const CallbackDataProto &amp;)&gt; Callback</div><div class="ttdef"><b>Definition</b> <a href="solver__interface_8h_source.html#l00076">solver_interface.h:77</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate.html">operations_research::math_opt::SparseVectorFilterPredicate</a></div><div class="ttdef"><b>Definition</b> <a href="math__opt__proto__utils_8h_source.html#l00091">math_opt_proto_utils.h:91</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate_html_a4913d016a5b40481fc9fc9008eff147e"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate.html#a4913d016a5b40481fc9fc9008eff147e">operations_research::math_opt::SparseVectorFilterPredicate::AcceptsAndUpdate</a></div><div class="ttdeci">bool AcceptsAndUpdate(int64_t id, const Value &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="math__opt__proto__utils_8h_source.html#l00295">math_opt_proto_utils.h:295</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate_html_a4913d016a5b40481fc9fc9008eff147e"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate.html#a4913d016a5b40481fc9fc9008eff147e">operations_research::math_opt::SparseVectorFilterPredicate::AcceptsAndUpdate</a></div><div class="ttdeci">bool AcceptsAndUpdate(int64_t id, const Value &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="math__opt__proto__utils_8h_source.html#l00348">math_opt_proto_utils.h:348</a></div></div>
 <div class="ttc" id="acleanup_8h_html"><div class="ttname"><a href="cleanup_8h.html">cleanup.h</a></div></div>
-<div class="ttc" id="acp__model__fz__solver_8cc_html_a10a1eab179b472c030bdc2a2efef7219"><div class="ttname"><a href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a></div><div class="ttdeci">SatParameters parameters</div><div class="ttdef"><b>Definition</b> <a href="cp__model__fz__solver_8cc_source.html#l00122">cp_model_fz_solver.cc:122</a></div></div>
+<div class="ttc" id="acp__model__fz__solver_8cc_html_a10a1eab179b472c030bdc2a2efef7219"><div class="ttname"><a href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a></div><div class="ttdeci">SatParameters parameters</div><div class="ttdef"><b>Definition</b> <a href="cp__model__fz__solver_8cc_source.html#l00127">cp_model_fz_solver.cc:127</a></div></div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition</b> <a href="demon__profiler_8cc_source.html#l00045">demon_profiler.cc:45</a></div></div>
 <div class="ttc" id="ag__gurobi_8cc_html_a2237393c7ae7ad7344c9885066d5ab6d"><div class="ttname"><a href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a></div><div class="ttdeci">absl::Status status</div><div class="ttdef"><b>Definition</b> <a href="g__gurobi_8cc_source.html#l00042">g_gurobi.cc:42</a></div></div>
 <div class="ttc" id="aglop_2parameters__validation_8h_html"><div class="ttname"><a href="glop_2parameters__validation_8h.html">parameters_validation.h</a></div></div>
@@ -1055,7 +1050,7 @@ $(document).ready(function(){initNavTree('glop__solver_8cc_source.html',''); ini
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition</b> <a href="gurobi__interface_8cc_source.html#l00277">gurobi_interface.cc:277</a></div></div>
 <div class="ttc" id="ainverted__bounds_8h_html"><div class="ttname"><a href="inverted__bounds_8h.html">inverted_bounds.h</a></div></div>
 <div class="ttc" id="alinear__solver_2solve_8cc_html_a5924b2104bcf836d8c82d6d5b6bf4b36"><div class="ttname"><a href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a></div><div class="ttdeci">time_limit</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_2solve_8cc_source.html#l00022">solve.cc:22</a></div></div>
-<div class="ttc" id="alocal__search_8cc_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition</b> <a href="local__search_8cc_source.html#l02847">local_search.cc:2847</a></div></div>
+<div class="ttc" id="alocal__search_8cc_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition</b> <a href="local__search_8cc_source.html#l02837">local_search.cc:2837</a></div></div>
 <div class="ttc" id="alp__data_8h_html"><div class="ttname"><a href="lp__data_8h.html">lp_data.h</a></div></div>
 <div class="ttc" id="alp__solver_8h_html"><div class="ttname"><a href="lp__solver_8h.html">lp_solver.h</a></div></div>
 <div class="ttc" id="alp__types_8h_html"><div class="ttname"><a href="lp__types_8h.html">lp_types.h</a></div></div>
@@ -1108,12 +1103,12 @@ $(document).ready(function(){initNavTree('glop__solver_8cc_source.html',''); ini
 <div class="ttc" id="anamespaceoperations__research_html_a760c8bbae2698a370004ceaaba9d9920"><div class="ttname"><a href="namespaceoperations__research.html#a760c8bbae2698a370004ceaaba9d9920">operations_research::ProtoEnumToString</a></div><div class="ttdeci">std::string ProtoEnumToString(ProtoEnumType enum_value)</div><div class="ttdef"><b>Definition</b> <a href="port_2proto__utils_8h_source.html#l00049">proto_utils.h:49</a></div></div>
 <div class="ttc" id="anamespaceutil__time_html_a801584734c5b3898f94cf932202b2eb7"><div class="ttname"><a href="namespaceutil__time.html#a801584734c5b3898f94cf932202b2eb7">util_time::DecodeGoogleApiProto</a></div><div class="ttdeci">inline ::absl::StatusOr&lt; absl::Duration &gt; DecodeGoogleApiProto(const google::protobuf::Duration &amp;proto)</div><div class="ttdef"><b>Definition</b> <a href="protoutil_8h_source.html#l00042">protoutil.h:42</a></div></div>
 <div class="ttc" id="anamespaceutil__time_html_a9b705fc0063004954faa62e54450d4fc"><div class="ttname"><a href="namespaceutil__time.html#a9b705fc0063004954faa62e54450d4fc">util_time::EncodeGoogleApiProto</a></div><div class="ttdeci">inline ::absl::StatusOr&lt; google::protobuf::Duration &gt; EncodeGoogleApiProto(absl::Duration d)</div><div class="ttdef"><b>Definition</b> <a href="protoutil_8h_source.html#l00027">protoutil.h:27</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ad0c886e6b95bc531d4a39884a87c0101"><div class="ttname"><a href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00088">status_builder.h:88</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ad0c886e6b95bc531d4a39884a87c0101"><div class="ttname"><a href="namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101">util::InvalidArgumentErrorBuilder</a></div><div class="ttdeci">StatusBuilder InvalidArgumentErrorBuilder()</div><div class="ttdef"><b>Definition</b> <a href="status__builder_8h_source.html#l00107">status_builder.h:107</a></div></div>
 <div class="ttc" id="aport_2proto__utils_8h_html"><div class="ttname"><a href="port_2proto__utils_8h.html">proto_utils.h</a></div></div>
 <div class="ttc" id="aprotoutil_8h_html"><div class="ttname"><a href="protoutil_8h.html">protoutil.h</a></div></div>
-<div class="ttc" id="arouting__filters_8cc_html_a8e4ee19dee0e00541dbe9bbc83d806ba"><div class="ttname"><a href="routing__filters_8cc.html#a8e4ee19dee0e00541dbe9bbc83d806ba">coefficient</a></div><div class="ttdeci">int64_t coefficient</div><div class="ttdef"><b>Definition</b> <a href="routing__filters_8cc_source.html#l00970">routing_filters.cc:970</a></div></div>
-<div class="ttc" id="asat_2lp__utils_8cc_html_a561d7bf12fc7674b3fe0ad2ba2e175a0"><div class="ttname"><a href="sat_2lp__utils_8cc.html#a561d7bf12fc7674b3fe0ad2ba2e175a0">lower_bounds</a></div><div class="ttdeci">std::vector&lt; double &gt; lower_bounds</div><div class="ttdef"><b>Definition</b> <a href="sat_2lp__utils_8cc_source.html#l00677">lp_utils.cc:677</a></div></div>
-<div class="ttc" id="asat_2lp__utils_8cc_html_a88215c8581662c40eec0fb8621c44af3"><div class="ttname"><a href="sat_2lp__utils_8cc.html#a88215c8581662c40eec0fb8621c44af3">upper_bounds</a></div><div class="ttdeci">std::vector&lt; double &gt; upper_bounds</div><div class="ttdef"><b>Definition</b> <a href="sat_2lp__utils_8cc_source.html#l00678">lp_utils.cc:678</a></div></div>
+<div class="ttc" id="arouting__filters_8cc_html_a8e4ee19dee0e00541dbe9bbc83d806ba"><div class="ttname"><a href="routing__filters_8cc.html#a8e4ee19dee0e00541dbe9bbc83d806ba">coefficient</a></div><div class="ttdeci">int64_t coefficient</div><div class="ttdef"><b>Definition</b> <a href="routing__filters_8cc_source.html#l00978">routing_filters.cc:978</a></div></div>
+<div class="ttc" id="asat_2lp__utils_8cc_html_a561d7bf12fc7674b3fe0ad2ba2e175a0"><div class="ttname"><a href="sat_2lp__utils_8cc.html#a561d7bf12fc7674b3fe0ad2ba2e175a0">lower_bounds</a></div><div class="ttdeci">std::vector&lt; double &gt; lower_bounds</div><div class="ttdef"><b>Definition</b> <a href="sat_2lp__utils_8cc_source.html#l00678">lp_utils.cc:678</a></div></div>
+<div class="ttc" id="asat_2lp__utils_8cc_html_a88215c8581662c40eec0fb8621c44af3"><div class="ttname"><a href="sat_2lp__utils_8cc.html#a88215c8581662c40eec0fb8621c44af3">upper_bounds</a></div><div class="ttdeci">std::vector&lt; double &gt; upper_bounds</div><div class="ttdef"><b>Definition</b> <a href="sat_2lp__utils_8cc_source.html#l00679">lp_utils.cc:679</a></div></div>
 <div class="ttc" id="asolve__interrupter_8h_html"><div class="ttname"><a href="solve__interrupter_8h.html">solve_interrupter.h</a></div></div>
 <div class="ttc" id="asolver__interface_8h_html"><div class="ttname"><a href="solver__interface_8h.html">solver_interface.h</a></div></div>
 <div class="ttc" id="asolver__interface_8h_html_ad082a79cf1be23f55e3435fad5bf4949"><div class="ttname"><a href="solver__interface_8h.html#ad082a79cf1be23f55e3435fad5bf4949">MATH_OPT_REGISTER_SOLVER</a></div><div class="ttdeci">#define MATH_OPT_REGISTER_SOLVER(solver_type, solver_factory)</div><div class="ttdef"><b>Definition</b> <a href="solver__interface_8h_source.html#l00204">solver_interface.h:204</a></div></div>

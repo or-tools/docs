@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -302,13 +302,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Sort by col first and then row.</p>
 <dl class="section note"><dt>Note</dt><dd>this will be empty if there were no deleted rows.</dd></dl>
 <p>This is for <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea88c189a42c87aa49d667fc8ab76bc323">VariableStatus::FREE</a> rows.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000472">Todo:</a></b></dt><dd>(user): In presence of free row, we must move them to 0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000474">Todo:</a></b></dt><dd>(user): In presence of free row, we must move them to 0. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>currently <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea88c189a42c87aa49d667fc8ab76bc323">VariableStatus::FREE</a> rows should be removed before this is called.</dd></dl>
 <p>activity and sign correction must have the same sign or be zero. If not, we find the first unbounded variable and change it accordingly. </p><dl class="section note"><dt>Note</dt><dd>by construction, the variable value will move towards its unbounded direction.</dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l02109">2109</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l02093">2093</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -345,9 +345,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes the given variable and all the rows in which it appears: If a variable is unconstrained with a zero cost, then all the constraints in which it appears can be made free! More precisely, during postsolve, if such a variable is unconstrained towards +kInfinity, for any activity value of the involved constraints, an M exists such that for each value of the variable &gt;= M the problem will be feasible.</p>
 <p>The algorithm during postsolve is to find a feasible value for all such variables while trying to keep their magnitudes small (for better numerical behavior). target_bound should take only two possible values: +/-kInfinity. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000466">Todo:</a></b></dt><dd>(user): Here, we may render the row free, so subsequent columns processed by the columns loop in <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#a59fa9c1508a94256ea5cb1d79597d170">Run()</a> have more chance to be removed. However, we need to be more careful during the postsolve() if we do that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000468">Todo:</a></b></dt><dd>(user): Here, we may render the row free, so subsequent columns processed by the columns loop in <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#a59fa9c1508a94256ea5cb1d79597d170">Run()</a> have more chance to be removed. However, we need to be more careful during the postsolve() if we do that. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01824">1824</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01808">1808</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -376,26 +376,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Runs the preprocessor by modifying the given linear program. Returns true if a postsolve step will be needed (i.e. <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#a85bc81777e98efdcf8e96566dc7b34b5">RecoverSolution()</a> is not the identity function). Also updates status_ to something different from <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004afaee4ca3c30ee18148ce3ada37466498" title="The solver didn&#39;t had a chance to prove anything.">ProblemStatus::INIT</a> if the problem was solved (including bad statuses like <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a88ec4386a3c49b50819358a579fb9adb" title="An error occurred during the solving process.">ProblemStatus::ABNORMAL</a>, ProblemStatus::INFEASIBLE, etc.). </p>
 <p>To simplify the problem if something is almost zero, we use the low tolerance (1e-9 by default) to be defensive. But to detect an infeasibility we want to be sure (especially since the problem is not scaled in the presolver) so we use an higher tolerance.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000467">Todo:</a></b></dt><dd>(user): Expose it as a parameter. We could rename both to preprocessor_low_tolerance and preprocessor_high_tolerance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000469">Todo:</a></b></dt><dd>(user): Expose it as a parameter. We could rename both to preprocessor_low_tolerance and preprocessor_high_tolerance. </dd></dl>
 <p>We start by the dual variable bounds from the constraints.</p>
 <p>We maintain a queue of columns to process.</p>
-<p>Arbitrary limit to avoid corner cases with long loops. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000468">Todo:</a></b></dt><dd>(user): expose this as a parameter? IMO it isn't really needed as we shouldn't reach this limit except in corner cases. </dd></dl>
+<p>Arbitrary limit to avoid corner cases with long loops. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000470">Todo:</a></b></dt><dd>(user): expose this as a parameter? IMO it isn't really needed as we shouldn't reach this limit except in corner cases. </dd></dl>
 <p>Compute the bounds on the reduced costs of this column.</p>
 <p>If the reduced cost domain do not contain zero (modulo the tolerance), we can move the variable to its corresponding bound. Note that we need to be careful that this variable didn't participate in creating the used reduced cost bound in the first place.</p>
 <p>The second condition is here for the case we can choose one of the two directions.</p>
 <dl class="section note"><dt>Note</dt><dd>in MIP context, this assumes that the bounds of an integer variable are integer.</dd></dl>
 <p>If the target bound is infinite and the reduced cost bound is non-zero, then the problem is <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a53ef0c1aa260e08f9010ddcc28d5a4a6">ProblemStatus::INFEASIBLE_OR_UNBOUNDED</a>.</p>
 <p>We can remove this column and all its constraints! We just need to choose proper variable values during the call to <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#a85bc81777e98efdcf8e96566dc7b34b5">RecoverSolution()</a> that make all the constraints satisfiable. Unfortunately, this is not so easy to do in the general case, so we only deal with a simpler case when the cost of the variable is zero, and none of the constraints (even the deleted one) block the variable moving to its infinite target_bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000469">Todo:</a></b></dt><dd>(user): deal with the more generic case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000471">Todo:</a></b></dt><dd>(user): deal with the more generic case. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>it is important to check the rows that are already deleted here, otherwise the post-solve will not work.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000470">Todo:</a></b></dt><dd>(user): this also works if the variable is integer, but we must choose an integer value during the post-solve. Implement this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000472">Todo:</a></b></dt><dd>(user): this also works if the variable is integer, but we must choose an integer value during the post-solve. Implement this. </dd></dl>
 <p>The rest of the code will update the dual bounds. There is no need to do it if the column was removed or if it is not unconstrained in some direction.</p>
-<p>For MIP, we only exploit the constraints. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000471">Todo:</a></b></dt><dd>(user): It should probably work with only small modification, investigate. </dd></dl>
+<p>For MIP, we only exploit the constraints. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000473">Todo:</a></b></dt><dd>(user): It should probably work with only small modification, investigate. </dd></dl>
 <p>Change the rhs to reflect the fixed variables. Note that is important to do that after all the calls to <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#ab9d32efc837e15a7512083c4e450d459">RemoveZeroCostUnconstrainedVariable()</a> because <a class="el" href="classoperations__research_1_1glop_1_1UnconstrainedVariablePreprocessor.html#ab9d32efc837e15a7512083c4e450d459">RemoveZeroCostUnconstrainedVariable()</a> needs to store the rhs before this modification!</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01865">1865</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01849">1849</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

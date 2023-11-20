@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class manages a pool of lower and upper bounds on a set of variables in a parallel context. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00458">458</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00462">462</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae017b893b05588b21d8667976773544b" name="ae017b893b05588b21d8667976773544b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae017b893b05588b21d8667976773544b">&#9670;&#160;</a></span>SharedBoundsManager()</h2>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00755">755</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00764">764</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -186,12 +186,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If we solved a small independent component of the full problem, then we can in most situation fix the solution on this subspace.</p>
 <dl class="section note"><dt>Note</dt><dd>because there can be more than one optimal solution on an independent subproblem, it is important to do that in a locked fashion, and reject future incompatible fixing.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002182">Todo:</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002227">Todo:</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
 <p>Abort if incompatible. Note that we only check the position that we are about to fix. This should be enough. Otherwise we might never accept any solution because the base LNS solution was not the same in some of the variables that we fixed here.</p>
 <p>Fix the variables.</p>
 <p>This is problematic as we might find a different partial solution. To allow for further investigation, we currently fix it to the debug solution instead.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00820">820</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00829">829</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>When called, returns the set of bounds improvements since the last time this method was called with the same id. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00896">896</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00905">905</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If non-empty, we will check that all bounds update contains this solution. </p><dl class="section note"><dt>Note</dt><dd>this might fail once we reach optimality and we might have wrong bounds, but if it fail before that it can help find bugs. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00505">505</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00509">509</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00921">921</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00930">930</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00933">933</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00942">942</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a new id to be used in <a class="el" href="classoperations__research_1_1sat_1_1SharedBoundsManager.html#ac29edc993736be2d933b31b91f78a562">GetChangedBounds()</a>. This is just an ever increasing sequence starting from zero. Note that the class is not designed to have too many of these. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00879">879</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00888">888</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Reports a set of locally improved variable bounds to the shared bounds manager. The manager will compare these bounds changes against its global state, and incorporate the improving ones. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00774">774</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00783">783</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Publishes any new bounds so that <a class="el" href="classoperations__research_1_1sat_1_1SharedBoundsManager.html#ac29edc993736be2d933b31b91f78a562">GetChangedBounds()</a> will reflect the latest state. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00866">866</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00875">875</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This should not be called too often as it lock the class for O(num_variables) time. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00912">912</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00921">921</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>
 
 </div>
 </div>

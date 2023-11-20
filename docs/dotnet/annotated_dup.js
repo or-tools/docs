@@ -8,8 +8,6 @@ var annotated_dup =
         [ "Algorithms", "namespaceGoogle_1_1OrTools_1_1Algorithms.html", [
           [ "Int64Vector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector" ],
           [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector" ],
-          [ "IntVector", "classGoogle_1_1OrTools_1_1Algorithms_1_1IntVector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1IntVector" ],
-          [ "IntVectorVector", "classGoogle_1_1OrTools_1_1Algorithms_1_1IntVectorVector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1IntVectorVector" ],
           [ "KnapsackSolver", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver" ],
           [ "operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithms.html", null ],
           [ "operations_research_algorithmsPINVOKE", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE" ]
@@ -82,6 +80,7 @@ var annotated_dup =
           [ "Pack", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack" ],
           [ "PathOperator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathOperator.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathOperator" ],
           [ "PathsMetadata", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathsMetadata.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathsMetadata" ],
+          [ "PickupDeliveryPair", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PickupDeliveryPair.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PickupDeliveryPair" ],
           [ "PropagationBaseObject", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationBaseObject.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationBaseObject" ],
           [ "PropagationMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationMonitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationMonitor" ],
           [ "RegularLimit", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimit.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimit" ],
@@ -145,10 +144,6 @@ var annotated_dup =
         [ "LinearSolver", "namespaceGoogle_1_1OrTools_1_1LinearSolver.html", [
           [ "Constraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint" ],
           [ "DoubleVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector" ],
-          [ "Int64Vector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64Vector" ],
-          [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Int64VectorVector" ],
-          [ "IntVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVector" ],
-          [ "IntVectorVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVectorVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1IntVectorVector" ],
           [ "MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector" ],
           [ "MPSolverParameters", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters" ],
           [ "MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector" ],
@@ -157,6 +152,15 @@ var annotated_dup =
           [ "operations_research_linear_solverPINVOKE", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE" ],
           [ "Solver", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver" ],
           [ "Variable", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable" ]
+        ] ],
+        [ "ModelBuilder", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html", [
+          [ "DoubleVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1DoubleVector.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1DoubleVector" ],
+          [ "IntVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector" ],
+          [ "MbLogCallback", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1MbLogCallback.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1MbLogCallback" ],
+          [ "ModelBuilderHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper" ],
+          [ "ModelSolverHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelSolverHelper.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelSolverHelper" ],
+          [ "operations_research_model_builder", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builder.html", null ],
+          [ "operations_research_model_builderPINVOKE", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE" ]
         ] ],
         [ "Sat", "namespaceGoogle_1_1OrTools_1_1Sat.html", [
           [ "AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto" ],
@@ -209,8 +213,6 @@ var annotated_dup =
           [ "Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", "classGoogle_1_1OrTools_1_1Util_1_1Domain" ],
           [ "Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector" ],
           [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector" ],
-          [ "IntVector", "classGoogle_1_1OrTools_1_1Util_1_1IntVector.html", "classGoogle_1_1OrTools_1_1Util_1_1IntVector" ],
-          [ "IntVectorVector", "classGoogle_1_1OrTools_1_1Util_1_1IntVectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1IntVectorVector" ],
           [ "operations_research_util", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html", null ],
           [ "operations_research_utilPINVOKE", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE" ],
           [ "OptionalBooleanReflection", "classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection.html", "classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection" ]

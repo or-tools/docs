@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,7 +118,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Holds the statuses of all the variables, including slack variables. There is no point storing constraint statuses since internally all constraints are always fixed to zero.</p>
 <dl class="section note"><dt>Note</dt><dd>this is the minimal amount of information needed to perform a "warm
 start". Using this information and the original linear program, the basis can be refactorized and all the needed quantities derived.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000593">Todo:</a></b></dt><dd>(user): Introduce another state class to store a complete state of the solver. Using this state and the original linear program, the solver can be restarted with as little time overhead as possible. This is especially useful for strong branching in a MIP context. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000595">Todo:</a></b></dt><dd>(user): Introduce another state class to store a complete state of the solver. Using this state and the original linear program, the solver can be restarted with as little time overhead as possible. This is especially useful for strong branching in a MIP context. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variables__info_8h_source.html#l00035">35</a> of file <a class="el" href="variables__info_8h_source.html">variables_info.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -163,7 +163,7 @@ start". Using this information and the original linear program, the basis can be
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000594">Todo:</a></b></dt><dd>(user): A MIP solver will potentially store a lot of BasisStates so memory usage is important. It is possible to use only 2 bits for one VariableStatus enum. To achieve this, the FIXED_VALUE status can be converted to either AT_LOWER_BOUND or AT_UPPER_BOUND and decoded properly later since this will be used with a given linear program. This way we can even encode more information by using the reduced cost sign to choose to which bound the fixed status correspond. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000596">Todo:</a></b></dt><dd>(user): A MIP solver will potentially store a lot of BasisStates so memory usage is important. It is possible to use only 2 bits for one VariableStatus enum. To achieve this, the FIXED_VALUE status can be converted to either AT_LOWER_BOUND or AT_UPPER_BOUND and decoded properly later since this will be used with a given linear program. This way we can even encode more information by using the reduced cost sign to choose to which bound the fixed status correspond. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variables__info_8h_source.html#l00043">43</a> of file <a class="el" href="variables__info_8h_source.html">variables_info.h</a>.</p>
 

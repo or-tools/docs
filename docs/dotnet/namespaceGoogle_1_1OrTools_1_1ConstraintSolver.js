@@ -61,6 +61,7 @@ var namespaceGoogle_1_1OrTools_1_1ConstraintSolver =
     [ "Pack", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack" ],
     [ "PathOperator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathOperator.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathOperator" ],
     [ "PathsMetadata", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathsMetadata.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PathsMetadata" ],
+    [ "PickupDeliveryPair", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PickupDeliveryPair.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PickupDeliveryPair" ],
     [ "PropagationBaseObject", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationBaseObject.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationBaseObject" ],
     [ "PropagationMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationMonitor.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationMonitor" ],
     [ "RegularLimit", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimit.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimit" ],

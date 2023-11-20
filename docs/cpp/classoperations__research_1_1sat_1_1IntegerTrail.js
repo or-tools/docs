@@ -12,6 +12,8 @@ var classoperations__research_1_1sat_1_1IntegerTrail =
     [ "ConditionalEnqueue", "classoperations__research_1_1sat_1_1IntegerTrail.html#a07f3c5bf9ad7390cb25efb3f6a0de3b3", null ],
     [ "ConditionalLowerBound", "classoperations__research_1_1sat_1_1IntegerTrail.html#a66382da2a09be1293d5232bdfbc9cf21", null ],
     [ "ConditionalLowerBound", "classoperations__research_1_1sat_1_1IntegerTrail.html#a8f437eb0dbb5af48d9e21983d69e3db8", null ],
+    [ "ConditionalUpperBound", "classoperations__research_1_1sat_1_1IntegerTrail.html#ae6b6c7522936396b71b49a11bfe7375e", null ],
+    [ "ConditionalUpperBound", "classoperations__research_1_1sat_1_1IntegerTrail.html#a96e2ec2502be35c12ac3f31f87330e5b", null ],
     [ "CurrentBranchHadAnIncompletePropagation", "classoperations__research_1_1sat_1_1IntegerTrail.html#ae7f1de43bcab881e1834b5ea598ae143", null ],
     [ "Enqueue", "classoperations__research_1_1sat_1_1IntegerTrail.html#aa5f3f24dfc832d45939478360f2a9ef1", null ],
     [ "Enqueue", "classoperations__research_1_1sat_1_1IntegerTrail.html#ae5d98735536061f5c38f91ddd6a0b073", null ],

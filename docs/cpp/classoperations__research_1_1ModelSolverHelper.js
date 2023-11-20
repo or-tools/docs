@@ -13,7 +13,7 @@ var classoperations__research_1_1ModelSolverHelper =
     [ "reduced_cost", "classoperations__research_1_1ModelSolverHelper.html#aa719447367837b87127c623851b92bfd", null ],
     [ "response", "classoperations__research_1_1ModelSolverHelper.html#a7f65c5200b67ee9c4917d715e8927ed3", null ],
     [ "SetLogCallback", "classoperations__research_1_1ModelSolverHelper.html#a5151c010c142933adce2d75813f0f6cf", null ],
-    [ "SetLogCallbackFromDirectorClass", "classoperations__research_1_1ModelSolverHelper.html#a70692f7ad1d5f5016315c80c18740e15", null ],
+    [ "SetLogCallbackFromDirectorClass", "classoperations__research_1_1ModelSolverHelper.html#a8f2381163884a873cfe84bbf372f25cd", null ],
     [ "SetSolverSpecificParameters", "classoperations__research_1_1ModelSolverHelper.html#a2be18b1d778ef93af398205b3f5e86ef", null ],
     [ "SetTimeLimitInSeconds", "classoperations__research_1_1ModelSolverHelper.html#ae4dbe2bf237ac51664b5e7c55bfecc74", null ],
     [ "Solve", "classoperations__research_1_1ModelSolverHelper.html#a0a3942146394eec75729ef0d79319237", null ],

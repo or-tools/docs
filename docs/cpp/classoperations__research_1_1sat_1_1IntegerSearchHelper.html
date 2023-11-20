@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,8 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1edce26656a3005817e7729dc560dfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ee78224d85d7bacc01e604d5cd2b5d" id="r_ae0ee78224d85d7bacc01e604d5cd2b5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#ae0ee78224d85d7bacc01e604d5cd2b5d">BeforeTakingDecision</a> ()</td></tr>
 <tr class="separator:ae0ee78224d85d7bacc01e604d5cd2b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8f66768737022f2d24fa3b0c73dfcca" id="r_ac8f66768737022f2d24fa3b0c73dfcca"><td class="memItemLeft" align="right" valign="top">LiteralIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#ac8f66768737022f2d24fa3b0c73dfcca">GetDecision</a> (const std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; &amp;f)</td></tr>
-<tr class="separator:ac8f66768737022f2d24fa3b0c73dfcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d4796c1f43982c5c9f31174be82908" id="r_ac2d4796c1f43982c5c9f31174be82908"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#ac2d4796c1f43982c5c9f31174be82908">GetDecision</a> (const std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; &amp;f, LiteralIndex *decision)</td></tr>
+<tr class="separator:ac2d4796c1f43982c5c9f31174be82908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae585ee5232c5a6f6f28eb072a05d2e4c" id="r_ae585ee5232c5a6f6f28eb072a05d2e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#ae585ee5232c5a6f6f28eb072a05d2e4c">NotifyThatConflictWasFoundDuringGetDecision</a> ()</td></tr>
+<tr class="separator:ae585ee5232c5a6f6f28eb072a05d2e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e2faa726399df6f91e4dc89d9ed5117" id="r_a2e2faa726399df6f91e4dc89d9ed5117"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#a2e2faa726399df6f91e4dc89d9ed5117">TakeDecision</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> decision)</td></tr>
 <tr class="separator:a2e2faa726399df6f91e4dc89d9ed5117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee604e664f5122db61cd4c73f437be2a" id="r_aee604e664f5122db61cd4c73f437be2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#aee604e664f5122db61cd4c73f437be2a">SolveIntegerProblem</a> ()</td></tr>
@@ -121,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An helper class to share the code used by the different kind of search. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00243">243</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00264">264</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1edce26656a3005817e7729dc560dfc7" name="a1edce26656a3005817e7729dc560dfc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1edce26656a3005817e7729dc560dfc7">&#9670;&#160;</a></span>IntegerSearchHelper()</h2>
@@ -148,7 +150,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This is needed for recording the pseudo-costs.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l00821">821</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01241">1241</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -170,33 +172,72 @@ Public Member Functions</h2></td></tr>
 <p>Executes some code before a new decision. Returns false if model is UNSAT. </p>
 <p>If we pushed root level deductions, we restart to incorporate them. </p><dl class="section note"><dt>Note</dt><dd>in the present of assumptions, it is important to return to the level zero first ! otherwise, the new deductions will not be incorporated and the solver will loop forever.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l00837">837</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01257">1257</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
-<a id="ac8f66768737022f2d24fa3b0c73dfcca" name="ac8f66768737022f2d24fa3b0c73dfcca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f66768737022f2d24fa3b0c73dfcca">&#9670;&#160;</a></span>GetDecision()</h2>
+<a id="ac2d4796c1f43982c5c9f31174be82908" name="ac2d4796c1f43982c5c9f31174be82908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d4796c1f43982c5c9f31174be82908">&#9670;&#160;</a></span>GetDecision()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LiteralIndex operations_research::sat::IntegerSearchHelper::GetDecision </td>
+          <td class="memname">bool operations_research::sat::IntegerSearchHelper::GetDecision </td>
           <td>(</td>
           <td class="paramtype">const std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; &amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">LiteralIndex *&#160;</td>
+          <td class="paramname"><em>decision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calls the decision heuristics and extract a non-fixed literal. </p><dl class="section note"><dt>Note</dt><dd>we do not want to copy the function here. </dd></dl>
+<p>Calls the decision heuristics and extract a non-fixed literal. </p><dl class="section note"><dt>Note</dt><dd>we do not want to copy the function here.</dd></dl>
+<p>Returns false if a conflict was found while trying to take a decision. </p>
 <p>Convert integer decision to literal one if needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001654">Todo:</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currrently hard to do so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001655">Todo:</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentionned in a</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001656">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001657">Todo:</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001691">Todo:</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currently hard to do so. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001692">Todo:</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentioned in a</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001693">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001694">Todo:</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l00867">867</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01287">1287</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae585ee5232c5a6f6f28eb072a05d2e4c" name="ae585ee5232c5a6f6f28eb072a05d2e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae585ee5232c5a6f6f28eb072a05d2e4c">&#9670;&#160;</a></span>NotifyThatConflictWasFoundDuringGetDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::IntegerSearchHelper::NotifyThatConflictWasFoundDuringGetDecision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Functions passed to <a class="el" href="classoperations__research_1_1sat_1_1IntegerSearchHelper.html#ac2d4796c1f43982c5c9f31174be82908">GetDecision()</a> might call this to notify a conflict was detected. </p>
+
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00281">281</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
 
 </div>
 </div>
@@ -218,23 +259,23 @@ Public Member Functions</h2></td></tr>
 <p>This function continues from the current state of the solver and loop until all variables are instantiated (i.e. the next decision is kNoLiteralIndex) or a search limit is reached. It uses the heuristic from the <a class="el" href="structoperations__research_1_1sat_1_1SearchHeuristics.html">SearchHeuristics</a> class in the model to decide when to restart and what next decision to take.</p>
 <p>Each time a restart happen, this increment the policy index modulo the number of heuristics to act as a portfolio search. </p>
 <dl class="section note"><dt>Note</dt><dd>it is important to do the level-zero propagation if it wasn't already done because EnqueueDecisionAndBackjumpOnConflict() assumes that the solver is in a "propagated" state.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo:</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001696">Todo:</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
 <p>Main search loop.</p>
 <p>If needed, restart and switch decision_policy.</p>
 <dl class="section note"><dt>Note</dt><dd>to properly count the num_times, we do not want to move this function, but actually call that copy.</dd></dl>
 <p>Probing?</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001660">Todo:</a></b></dt><dd>(user): Be smarter about what variables we probe, we can also do more than one. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001697">Todo:</a></b></dt><dd>(user): Be smarter about what variables we probe, we can also do more than one. </dd></dl>
 <p>We need to check after the probing that the literal is not fixed, otherwise we just go to the next decision.</p>
 <p>No decision means that we reached a leave of the search tree and that we have a feasible solution.</p>
 <p>Tricky: If the time limit is reached during the final propagation when all variables are fixed, there is no guarantee that the propagation responsible for testing the validity of the solution was run to completion. So we cannot report a feasible solution.</p>
 <p>Save the current polarity of all Booleans in the solution. It will be followed for the next SAT decisions. This is known to be a good policy for optimization problem. Note that for decision problem we don't care since we are just done as soon as a solution is found.</p>
 <p>This idea is kind of "well known", see for instance the "LinSBPS" submission to the maxSAT 2018 competition by Emir Demirovic and Peter Stuckey where they show it is a good idea and provide more references.</p>
 <p>In multi-thread, we really only want to save the LP relaxation for thread with high linearization level to avoid to pollute the repository with sub-par lp solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001661">Todo:</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001662">Todo:</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001698">Todo:</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001699">Todo:</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>We can actually record LP solutions more frequently. However this process is time consuming and workers waste a lot of time doing this. To avoid this we don't record solutions after each decision.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l00958">958</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01384">1384</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -256,11 +297,11 @@ Public Member Functions</h2></td></tr>
 <p>Tries to take the current decision, this might backjump. Returns false if the model is UNSAT. </p>
 <p>Record the changelist and objective bounds for updating pseudo costs.</p>
 <dl class="section note"><dt>Note</dt><dd>kUnsatTrailIndex might also mean ASSUMPTIONS_UNSAT.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001658">Todo:</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001695">Todo:</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
 <p>Update the implied bounds each time we enqueue a literal at level zero. This is "almost free", so we might as well do it.</p>
 <p>Update the pseudo costs.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l00918">918</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01344">1344</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>

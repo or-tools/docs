@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('sat_2util_8h.html',''); initResizable(
 <code>#include &lt;deque&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/btree_set.h&quot;</code><br />
@@ -131,6 +132,10 @@ $(document).ready(function(){initNavTree('sat_2util_8h.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1IdentityMap.html">operations_research::sat::IdentityMap&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">operations_research::sat::CompactVectorVector&lt; K, V &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1ModelRandomGenerator.html">operations_research::sat::ModelRandomGenerator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html">operations_research::sat::ModelSharedTimeLimit</a></td></tr>
@@ -170,8 +175,8 @@ Functions</h2></td></tr>
 <tr class="memitem:af41bef85b701ac3dd74b685f5232b96b" id="r_af41bef85b701ac3dd74b685f5232b96b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af41bef85b701ac3dd74b685f5232b96b">operations_research::sat::FormatName</a> (absl::string_view <a class="el" href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a>)</td></tr>
 <tr class="memdesc:af41bef85b701ac3dd74b685f5232b96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to format our table first row entry.  <br /></td></tr>
 <tr class="separator:af41bef85b701ac3dd74b685f5232b96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac683c5a8d9d1032a34230bdc075dced6" id="r_ac683c5a8d9d1032a34230bdc075dced6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac683c5a8d9d1032a34230bdc075dced6">operations_research::sat::FormatTable</a> (const std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp;table, int spacing)</td></tr>
-<tr class="separator:ac683c5a8d9d1032a34230bdc075dced6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7414c91f17a6ff5a2621fa05fedf7da" id="r_af7414c91f17a6ff5a2621fa05fedf7da"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af7414c91f17a6ff5a2621fa05fedf7da">operations_research::sat::FormatTable</a> (std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp;table, int spacing)</td></tr>
+<tr class="separator:af7414c91f17a6ff5a2621fa05fedf7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a998a24858a532c80b11c1d015e76db" id="r_a4a998a24858a532c80b11c1d015e76db"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4a998a24858a532c80b11c1d015e76db">operations_research::sat::ModularInverse</a> (int64_t x, int64_t m)</td></tr>
 <tr class="separator:a4a998a24858a532c80b11c1d015e76db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac435c5e5536231b2542ba53f100c3936" id="r_ac435c5e5536231b2542ba53f100c3936"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ac435c5e5536231b2542ba53f100c3936">operations_research::sat::PositiveMod</a> (int64_t x, int64_t m)</td></tr>

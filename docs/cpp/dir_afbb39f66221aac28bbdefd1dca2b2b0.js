@@ -34,8 +34,6 @@ var dir_afbb39f66221aac28bbdefd1dca2b2b0 =
     [ "routing_enums.proto", "routing__enums_8proto.html", null ],
     [ "routing_filters.cc", "routing__filters_8cc.html", "routing__filters_8cc" ],
     [ "routing_filters.h", "routing__filters_8h.html", "routing__filters_8h" ],
-    [ "routing_flags.cc", "routing__flags_8cc.html", "routing__flags_8cc" ],
-    [ "routing_flags.h", "routing__flags_8h.html", "routing__flags_8h" ],
     [ "routing_flow.cc", "routing__flow_8cc.html", "routing__flow_8cc" ],
     [ "routing_index_manager.cc", "routing__index__manager_8cc.html", null ],
     [ "routing_index_manager.h", "routing__index__manager_8h.html", "routing__index__manager_8h" ],

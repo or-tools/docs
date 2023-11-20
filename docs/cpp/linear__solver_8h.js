@@ -16,6 +16,6 @@ var linear__solver_8h =
     [ "operator<<", "linear__solver_8h.html#a45a908ea6b50a2a7d3f6bd59de6db37c", null ],
     [ "SolverTypeIsMip", "linear__solver_8h.html#a653e11eef608bfb88f21325e7fa12f2b", null ],
     [ "SolverTypeIsMip", "linear__solver_8h.html#a417ee4c2129def5589f952ac70233b2e", null ],
-    [ "ToString", "linear__solver_8h.html#afc3e3b80841b587c6fbfd9e9f3ec9c59", null ],
+    [ "ToString", "linear__solver_8h.html#ad50e1c26339c45f0bc665e3db44b628c", null ],
     [ "kDefaultPrimalTolerance", "linear__solver_8h.html#a07189276cc680928dad51ed197142077", null ]
 ];

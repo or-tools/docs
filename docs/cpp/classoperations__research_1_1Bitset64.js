@@ -13,7 +13,7 @@ var classoperations__research_1_1Bitset64 =
     [ "ClearAndResize", "classoperations__research_1_1Bitset64.html#adde7d1500621913ae1f3e71cda4fb502", null ],
     [ "ClearBucket", "classoperations__research_1_1Bitset64.html#a1270fd02ad26f21ffbf6c899cb11bd7f", null ],
     [ "ClearTwoBits", "classoperations__research_1_1Bitset64.html#a8b5b15847524a93a0aba7ff7c44ec8aa", null ],
-    [ "ConditionalXorOfTwoBits", "classoperations__research_1_1Bitset64.html#ade50af1ebc92216309943678afc614a2", null ],
+    [ "ConditionalXorOfTwoBits", "classoperations__research_1_1Bitset64.html#a88c2fb21afd646bf2415a7592d98ed74", null ],
     [ "const_view", "classoperations__research_1_1Bitset64.html#af6ff2a760b93406c1bbae5923129d2c8", null ],
     [ "CopyBucket", "classoperations__research_1_1Bitset64.html#a0018595dbbdbb67569e5ad7fec06cdde", null ],
     [ "DebugString", "classoperations__research_1_1Bitset64.html#a8810a6161f6b66249477fc3663013f1d", null ],

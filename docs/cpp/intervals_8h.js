@@ -1,10 +1,13 @@
 var intervals_8h =
 [
     [ "operations_research::sat::IntervalsRepository", "classoperations__research_1_1sat_1_1IntervalsRepository.html", "classoperations__research_1_1sat_1_1IntervalsRepository" ],
+    [ "operations_research::sat::IntervalsRepository::CumulativeHelper", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper" ],
     [ "operations_research::sat::TaskTime", "structoperations__research_1_1sat_1_1TaskTime.html", "structoperations__research_1_1sat_1_1TaskTime" ],
     [ "operations_research::sat::SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper" ],
     [ "operations_research::sat::SchedulingConstraintHelper::ProfileEvent", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent.html", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent" ],
     [ "operations_research::sat::SchedulingDemandHelper", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html", "classoperations__research_1_1sat_1_1SchedulingDemandHelper" ],
+    [ "AddIntegerVariableFromIntervals", "intervals_8h.html#ac807305eb9dd5e975f7fe9766307de2f", null ],
+    [ "AppendVariablesFromCapacityAndDemands", "intervals_8h.html#a82da37638ef0ea4f3caa6c2fceb22b09", null ],
     [ "ComputeEnergyMinInWindow", "intervals_8h.html#ae083e01b19bc7d25069476b6ca3a6819", null ],
     [ "DEFINE_STRONG_INDEX_TYPE", "intervals_8h.html#ad5b04eae7b76b3c8989b8ac5753cbc16", null ],
     [ "EndVar", "intervals_8h.html#a44547d916134af6e645c0667addcc74b", null ],

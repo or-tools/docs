@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -166,7 +166,7 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li>The <a class="el" href="classoperations__research_1_1glop_1_1SingletonPreprocessor.html">SingletonPreprocessor</a> already deals with implied free singleton variables and removes the columns and the rows in which they appear.</li>
 <li><p class="startli">Any multiple of the column of a free variable can be added to any other column without changing the linear program solution. This is the dual counterpart of the fact that any multiple of an equality row can be added to any row.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000496">Todo:</a></b></dt><dd>(user): Only process doubleton columns so we have more chance in the later passes to create more doubleton columns? Such columns lead to a smaller problem thanks to the <a class="el" href="classoperations__research_1_1glop_1_1DoubletonFreeColumnPreprocessor.html">DoubletonFreeColumnPreprocessor</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000498">Todo:</a></b></dt><dd>(user): Only process doubleton columns so we have more chance in the later passes to create more doubleton columns? Such columns lead to a smaller problem thanks to the <a class="el" href="classoperations__research_1_1glop_1_1DoubletonFreeColumnPreprocessor.html">DoubletonFreeColumnPreprocessor</a>. </dd></dl>
 </li>
 </ul>
 
@@ -306,7 +306,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01612">1612</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01596">1596</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -333,9 +333,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Runs the preprocessor by modifying the given linear program. Returns true if a postsolve step will be needed (i.e. <a class="el" href="classoperations__research_1_1glop_1_1ImpliedFreePreprocessor.html#a52a7028b73209113e526b81ad2e61b92">RecoverSolution()</a> is not the identity function). Also updates status_ to something different from <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004afaee4ca3c30ee18148ce3ada37466498" title="The solver didn&#39;t had a chance to prove anything.">ProblemStatus::INIT</a> if the problem was solved (including bad statuses like <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a88ec4386a3c49b50819358a579fb9adb" title="An error occurred during the solving process.">ProblemStatus::ABNORMAL</a>, ProblemStatus::INFEASIBLE, etc.). </p>
+<p><a class="el" href="classoperations__research_1_1glop_1_1ImpliedFreePreprocessor.html">ImpliedFreePreprocessor</a> </p>
 <p>For each constraint with n entries and each of its variable, we want the bounds implied by the (n - 1) other variables and the constraint. We use two handy utility classes that allow us to do that efficiently while dealing properly with infinite bounds.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000460">Todo:</a></b></dt><dd>(user) : Replace SumWithNegativeInfiniteAndOneMissing and SumWithPositiveInfiniteAndOneMissing with IntervalSumWithOneMissing. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000462">Todo:</a></b></dt><dd>(user) : Replace SumWithNegativeInfiniteAndOneMissing and SumWithPositiveInfiniteAndOneMissing with IntervalSumWithOneMissing. </dd></dl>
 <p>Initialize the sums by adding all the bounds of the variables.</p>
 <p>The inequality constraint_lb &lt;= sum(entries) &lt;= constraint_ub can be rewritten as: sum(entries) + (-activity) = 0, where (-activity) has bounds [-constraint_ub, -constraint_lb]. We use this latter convention to simplify our code.</p>
 <p>Once a variable is freed, none of the rows in which it appears can be used to make another variable free.</p>
@@ -343,8 +343,8 @@ Additional Inherited Members</h2></td></tr>
 <li>Degree-two columns make it possible to remove a row from the problem.</li>
 <li>This way there is more chance to make more free columns.</li>
 <li><p class="startli">It is better to have low degree free columns since a free column will always end up in the simplex basis (except if there is more than the number of rows in the problem).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000461">Todo:</a></b></dt><dd>(user): Only process degree-two so in subsequent passes more degree-two columns could be made free. And only when no other reduction can be applied, process the higher degree column?</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000462">Todo:</a></b></dt><dd>(user): Be smarter about the order that maximizes the number of free column. For instance if we have 3 doubleton columns that use the rows (1,2) (2,3) and (3,4) then it is better not to make (2,3) free so the two other two can be made free. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000463">Todo:</a></b></dt><dd>(user): Only process degree-two so in subsequent passes more degree-two columns could be made free. And only when no other reduction can be applied, process the higher degree column?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000464">Todo:</a></b></dt><dd>(user): Be smarter about the order that maximizes the number of free column. For instance if we have 3 doubleton columns that use the rows (1,2) (2,3) and (3,4) then it is better not to make (2,3) free so the two other two can be made free. </dd></dl>
 </li>
 </ul>
 <p>Now loop over the columns in order and make all implied-free columns free.</p>
@@ -357,14 +357,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Detect infeasible cases.</p>
 <p>Detect fixed variable cases (there are two kinds). </p><dl class="section note"><dt>Note</dt><dd>currently we don't do anything here except counting them.</dd></dl>
 <p>This case is already dealt with by the <a class="el" href="classoperations__research_1_1glop_1_1ForcingAndImpliedFreeConstraintPreprocessor.html">ForcingAndImpliedFreeConstraintPreprocessor</a> since it means that (at least) one of the row is forcing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000463">Todo:</a></b></dt><dd>(user): As of July 2013, with our preprocessors this case is never triggered on the Netlib. Note however that if it appears it can have a big impact since by fixing the variable, the two involved constraints are forcing and can be removed too (with all the variables they touch). The postsolve step is quite involved though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000465">Todo:</a></b></dt><dd>(user): As of July 2013, with our preprocessors this case is never triggered on the Netlib. Note however that if it appears it can have a big impact since by fixing the variable, the two involved constraints are forcing and can be removed too (with all the variables they touch). The postsolve step is quite involved though. </dd></dl>
 <p>Is the variable implied free? Note that for an infinite lower_bound or upper_bound the respective inequality is always true.</p>
 <p>This is a tricky part. We're freeing this variable, which means that after solve, the modified variable will have status either <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea88c189a42c87aa49d667fc8ab76bc323">VariableStatus::FREE</a> or <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eeae4ac03f6c9f00665644e868dd1fb9f1e">VariableStatus::BASIC</a>. In the former case (<a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea88c189a42c87aa49d667fc8ab76bc323">VariableStatus::FREE</a>, value = 0.0), we need to "fix" the status (technically, our variable isn't free!) to either <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea74c506bd3d744fb5c2862229c8f2b6ce">VariableStatus::AT_LOWER_BOUND</a> or <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eea14dc61f52267ea9b476f64c1d4d975b1">VariableStatus::AT_UPPER_BOUND</a> (note that we skipped fixed variables), and "fix" the value to that bound's value as well. We make the decision and the precomputation here: we simply offset the variable by one of its bounds, and store which bound that was. Note that if the modified variable turns out to be <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eeae4ac03f6c9f00665644e868dd1fb9f1e">VariableStatus::BASIC</a>, we'll simply un-offset its value too; and let the status be <a class="el" href="namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603eeae4ac03f6c9f00665644e868dd1fb9f1e">VariableStatus::BASIC</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000464">Todo:</a></b></dt><dd>(user): This trick is already used in the <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a>, maybe we should just have a preprocessor that shifts all the variables bounds to have at least one of them at 0.0, will that improve precision and speed of the simplex? One advantage is that we can compute the new constraint bounds with better precision using <a class="el" href="classoperations__research_1_1AccurateSum.html">AccurateSum</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000466">Todo:</a></b></dt><dd>(user): This trick is already used in the <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a>, maybe we should just have a preprocessor that shifts all the variables bounds to have at least one of them at 0.0, will that improve precision and speed of the simplex? One advantage is that we can compute the new constraint bounds with better precision using <a class="el" href="classoperations__research_1_1AccurateSum.html">AccurateSum</a>. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01413">1413</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l01399">1399</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allow to build a <a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> while making sure there is no duplicate variables. Note that we do not simplify literal/variable that are currently fixed here.</p>
 <p>All the functions manipulate a linear expression with an offset. The final constraint bounds will include this offset.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001703">Todo:</a></b></dt><dd>(user): Rename to LinearExpressionBuilder? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001744">Todo:</a></b></dt><dd>(user): Rename to LinearExpressionBuilder? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat_2linear__constraint_8h_source.html#l00156">156</a> of file <a class="el" href="sat_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -320,7 +320,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section warning"><dt>Warning</dt><dd>this version without encoder cannot be used to add literals, so one shouldn't call <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a2e0e40fb0d6e7fe60f792ee77c706d4f">AddLiteralTerm()</a> on it. All other functions works.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001705">Todo:</a></b></dt><dd>(user): Have a subclass so we can enforce that a caller using <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a2e0e40fb0d6e7fe60f792ee77c706d4f">AddLiteralTerm()</a> must construct the Builder with an encoder. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001746">Todo:</a></b></dt><dd>(user): Have a subclass so we can enforce that a caller using <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a2e0e40fb0d6e7fe60f792ee77c706d4f">AddLiteralTerm()</a> must construct the Builder with an encoder. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat_2linear__constraint_8h_source.html#l00178">178</a> of file <a class="el" href="sat_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
@@ -365,7 +365,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Add the corresponding decomposed products (obtained from TryToDecomposeProduct). The code assumes all literals to be in an exactly_one relation. It returns false if one literal does not have an integer view, as it actually calls <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a2e0e40fb0d6e7fe60f792ee77c706d4f">AddLiteralTerm()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001698">Todo:</a></b></dt><dd>(user): Checks the value of literals. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001739">Todo:</a></b></dt><dd>(user): Checks the value of literals. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint_8cc_source.html#l00082">82</a> of file <a class="el" href="linear__constraint_8cc_source.html">linear_constraint.cc</a>.</p>
 
@@ -491,7 +491,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Add an under linearization of the product of two affine expressions. If at least one of them is fixed, then we add the exact product (which is linear). Otherwise, we use McCormick relaxation: left * right = (left_min + delta_left) * (right_min + delta_right) = left_min * right_min + delta_left * right_min + delta_right * left_min + delta_left * delta_right which is &gt;= (by ignoring the quatratic term) right_min * left + left_min * right - right_min * left_min</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001706">Todo:</a></b></dt><dd>(user): We could use (max - delta) instead of (min + delta) for each expression instead. This would depend on the LP value of the left and right. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001747">Todo:</a></b></dt><dd>(user): We could use (max - delta) instead of (min + delta) for each expression instead. This would depend on the LP value of the left and right. </dd></dl>
 <p>Substract the energy counted twice.</p>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint_8cc_source.html#l00103">103</a> of file <a class="el" href="linear__constraint_8cc_source.html">linear_constraint.cc</a>.</p>
@@ -576,7 +576,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Builds and returns the corresponding constraint in a canonical form. All the IntegerVariable will be positive and appear in increasing index order.</p>
 <p>The bounds can be changed here or taken at construction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001707">Todo:</a></b></dt><dd>(user): this doesn't invalidate the builder object, but if one wants to do a lot of dynamic editing to the constraint, then then underlying algorithm needs to be optimized for that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001748">Todo:</a></b></dt><dd>(user): this doesn't invalidate the builder object, but if one wants to do a lot of dynamic editing to the constraint, then then underlying algorithm needs to be optimized for that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint_8cc_source.html#l00143">143</a> of file <a class="el" href="linear__constraint_8cc_source.html">linear_constraint.cc</a>.</p>
 

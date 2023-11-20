@@ -5,6 +5,8 @@ var classoperations__research_1_1SetCoverLedger =
     [ "CheckCoverageAndMarginalImpacts", "classoperations__research_1_1SetCoverLedger.html#a809bd0b01aee56bf4addfb95113d2c2b", null ],
     [ "CheckSolution", "classoperations__research_1_1SetCoverLedger.html#aa07ba45de70d737227ecf17dd6296ca7", null ],
     [ "ComputeImpactedSubsets", "classoperations__research_1_1SetCoverLedger.html#a528fd9e66e3f491c19ae12458cea3007", null ],
+    [ "ComputeResettableSubsets", "classoperations__research_1_1SetCoverLedger.html#a23c59d6bf9e7568a063997c2bac558a2", null ],
+    [ "ComputeSettableSubsets", "classoperations__research_1_1SetCoverLedger.html#a6dc09e1fb78ce3048288a8a54f230962", null ],
     [ "cost", "classoperations__research_1_1SetCoverLedger.html#ad9ad7bb3ea7d54dd9a542ccd213312eb", null ],
     [ "coverage", "classoperations__research_1_1SetCoverLedger.html#ac1418bcbdf50574c7445eb1756990244", null ],
     [ "GetSolution", "classoperations__research_1_1SetCoverLedger.html#a51cb581f6076694cae304cdeb58aa01b", null ],

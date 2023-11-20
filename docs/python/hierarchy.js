@@ -16,6 +16,7 @@ var hierarchy =
     [ "ortools.sat.python.cp_model.Constraint", "classortools_1_1sat_1_1python_1_1cp__model_1_1Constraint.html", null ],
     [ "ortools.sat.python.cp_model.CpModel", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html", null ],
     [ "ortools.sat.python.cp_model.CpSolver", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html", null ],
+    [ "ortools.linear_solver.python.model_builder.EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", null ],
     [ "ortools.sat.python.cp_model.IntervalVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html", null ],
     [ "ortools.linear_solver.python.model_builder.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", null ],
     [ "ortools.sat.python.cp_model.LinearExpr", "classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html", [
@@ -30,8 +31,7 @@ var hierarchy =
       [ "ortools.linear_solver.python.model_builder.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html", null ],
       [ "ortools.linear_solver.python.model_builder._BoundedLinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html", null ]
     ] ],
-    [ "ortools.linear_solver.python.model_builder.ModelBuilder", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelBuilder.html", null ],
-    [ "ortools.linear_solver.python.model_builder.ModelSolver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1ModelSolver.html", null ],
+    [ "ortools.linear_solver.python.model_builder.Model", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html", null ],
     [ "ortools.sat.colab.flags.NotebookBoolFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookBoolFlag.html", null ],
     [ "ortools.sat.colab.flags.NotebookFloatFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html", null ],
     [ "ortools.sat.colab.flags.NotebookIntFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookIntFlag.html", null ],
@@ -135,6 +135,7 @@ var hierarchy =
         [ "ortools.sat.python.cp_model.VarArraySolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter.html", null ]
       ] ]
     ] ],
+    [ "ortools.linear_solver.python.model_builder.Solver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html", null ],
     [ "type", null, [
       [ "ortools.constraint_solver.pywrapcp._SwigNonDynamicMeta", "classortools_1_1constraint__solver_1_1pywrapcp_1_1__SwigNonDynamicMeta.html", null ],
       [ "ortools.linear_solver.pywraplp._SwigNonDynamicMeta", "classortools_1_1linear__solver_1_1pywraplp_1_1__SwigNonDynamicMeta.html", null ]

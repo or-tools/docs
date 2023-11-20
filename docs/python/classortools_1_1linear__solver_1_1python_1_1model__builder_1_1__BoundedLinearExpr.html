@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -114,6 +114,8 @@ Inheritance diagram for ortools.linear_solver.python.model_builder._BoundedLinea
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8a4d1741e0ca586574e1fabce4c3c7cc" id="r_a8a4d1741e0ca586574e1fabce4c3c7cc"><td class="memItemLeft" align="right" valign="top">&quot;LinearConstraint&quot;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html#a8a4d1741e0ca586574e1fabce4c3c7cc">_add_linear_constraint</a> (self, mbh.ModelBuilderHelper helper, str name)</td></tr>
 <tr class="separator:a8a4d1741e0ca586574e1fabce4c3c7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb3a5a829a961dcd59c53c6c8b0d2d2" id="r_afeb3a5a829a961dcd59c53c6c8b0d2d2"><td class="memItemLeft" align="right" valign="top">&quot;EnforcedLinearConstraint&quot;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html#afeb3a5a829a961dcd59c53c6c8b0d2d2">_add_enforced_linear_constraint</a> (self, mbh.ModelBuilderHelper helper, <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html">Variable</a> var, bool value, str name)</td></tr>
+<tr class="separator:afeb3a5a829a961dcd59c53c6c8b0d2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Interface for types that can build bounded linear (boolean) expressions.
@@ -124,8 +126,77 @@ to be satisfied.
   * BoundedLinearExpression: a linear expression with upper and lower bounds.
   * VarEqVar: an equality comparison between two variables.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00368">368</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00367">367</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afeb3a5a829a961dcd59c53c6c8b0d2d2" name="afeb3a5a829a961dcd59c53c6c8b0d2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb3a5a829a961dcd59c53c6c8b0d2d2">&#9670;&#160;</a></span>_add_enforced_linear_constraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> &quot;EnforcedLinearConstraint&quot; ortools.linear_solver.python.model_builder._BoundedLinearExpr._add_enforced_linear_constraint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mbh.ModelBuilderHelper&#160;</td>
+          <td class="paramname"><em>helper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html">Variable</a>&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Creates a new enforced linear constraint in the helper.
+
+Args:
+  helper (mbh.ModelBuilderHelper): The helper to create the constraint.
+  var (Variable): The indicator variable of the constraint.
+  value (bool): The indicator value of the constraint.
+  name (str): The name of the linear constraint.
+
+Returns:
+  Enforced LinearConstraint: A reference to the linear constraint in the
+  helper.
+</pre> 
+<p>Reimplemented in <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html#a5356487d6417626c533ee55d1e157753">ortools.linear_solver.python.model_builder.BoundedLinearExpression</a>, and <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html#a322a937fb44a8652ea146cee45739d86">ortools.linear_solver.python.model_builder.VarEqVar</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00392">392</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+
+</div>
+</div>
 <a id="a8a4d1741e0ca586574e1fabce4c3c7cc" name="a8a4d1741e0ca586574e1fabce4c3c7cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a4d1741e0ca586574e1fabce4c3c7cc">&#9670;&#160;</a></span>_add_linear_constraint()</h2>
 
@@ -177,7 +248,7 @@ Returns:
 </pre> 
 <p>Reimplemented in <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html#a9c8410e8474e3b70161048552d9c1785">ortools.linear_solver.python.model_builder.BoundedLinearExpression</a>, and <a class="el" href="classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html#acec0a6becd340313d9609401ca540565">ortools.linear_solver.python.model_builder.VarEqVar</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00379">379</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l00378">378</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>

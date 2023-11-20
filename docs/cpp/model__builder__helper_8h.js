@@ -1,7 +1,7 @@
 var model__builder__helper_8h =
 [
     [ "operations_research::ModelBuilderHelper", "classoperations__research_1_1ModelBuilderHelper.html", "classoperations__research_1_1ModelBuilderHelper" ],
-    [ "operations_research::LogCallback", "classoperations__research_1_1LogCallback.html", "classoperations__research_1_1LogCallback" ],
+    [ "operations_research::MbLogCallback", "classoperations__research_1_1MbLogCallback.html", "classoperations__research_1_1MbLogCallback" ],
     [ "operations_research::ModelSolverHelper", "classoperations__research_1_1ModelSolverHelper.html", "classoperations__research_1_1ModelSolverHelper" ],
     [ "SolveStatus", "model__builder__helper_8h.html#ab132fd63742d9e8f11c0dcfd66b6964a", [
       [ "OPTIMAL", "model__builder__helper_8h.html#ab132fd63742d9e8f11c0dcfd66b6964aa0a3d252cc54de9e7623b979f7ca54460", null ],

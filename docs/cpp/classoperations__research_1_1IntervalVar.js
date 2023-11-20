@@ -1,6 +1,7 @@
 var classoperations__research_1_1IntervalVar =
 [
     [ "IntervalVar", "classoperations__research_1_1IntervalVar.html#aeb43b24cad9ab5cae8741d69e1c6c9e0", null ],
+    [ "IntervalVar", "classoperations__research_1_1IntervalVar.html#af9ef5c302ba68f7061363b1f5d066d91", null ],
     [ "~IntervalVar", "classoperations__research_1_1IntervalVar.html#a5416b468bd7fa583482aa3a5affe906c", null ],
     [ "Accept", "classoperations__research_1_1IntervalVar.html#ad8f098cdc9a629f58b7a2f0f63f2bbc2", null ],
     [ "CannotBePerformed", "classoperations__research_1_1IntervalVar.html#a7240f2caf6bf198514219a78d6dd11f1", null ],
@@ -19,6 +20,7 @@ var classoperations__research_1_1IntervalVar =
     [ "OldEndMin", "classoperations__research_1_1IntervalVar.html#a843c9f71684d75eef2cc370ba41f6ec4", null ],
     [ "OldStartMax", "classoperations__research_1_1IntervalVar.html#a4789e7faf1c21b88117fc4a21e823043", null ],
     [ "OldStartMin", "classoperations__research_1_1IntervalVar.html#ae851867b48e8a94c29902f634be27bb6", null ],
+    [ "operator=", "classoperations__research_1_1IntervalVar.html#ab7b89017155b5b497daeae0773bad2a9", null ],
     [ "PerformedExpr", "classoperations__research_1_1IntervalVar.html#a092fbce61056d871f0e94312350815f1", null ],
     [ "SafeDurationExpr", "classoperations__research_1_1IntervalVar.html#aaf6ddf6a4c2083d8069f7862819c58f1", null ],
     [ "SafeEndExpr", "classoperations__research_1_1IntervalVar.html#ab9528d1922c77adebcdc5b5067ac1f80", null ],

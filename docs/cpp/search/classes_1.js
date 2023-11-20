@@ -48,13 +48,14 @@ var searchData=
   ['assignmentelement_45',['AssignmentElement',['../classoperations__research_1_1AssignmentElement.html',1,'operations_research']]],
   ['assignmentinfo_46',['AssignmentInfo',['../structoperations__research_1_1sat_1_1AssignmentInfo.html',1,'operations_research::sat']]],
   ['assignmenttype_47',['AssignmentType',['../structoperations__research_1_1sat_1_1AssignmentType.html',1,'operations_research::sat']]],
-  ['atomicconstraintstorage_48',['AtomicConstraintStorage',['../classoperations__research_1_1math__opt_1_1AtomicConstraintStorage.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_49',['AtomicConstraintTraits',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_3c_20indicatorconstraintid_20_3e_50',['AtomicConstraintTraits&lt; IndicatorConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01IndicatorConstraintId_01_4.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_3c_20quadraticconstraintid_20_3e_51',['AtomicConstraintTraits&lt; QuadraticConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01QuadraticConstraintId_01_4.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_3c_20secondorderconeconstraintid_20_3e_52',['AtomicConstraintTraits&lt; SecondOrderConeConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01SecondOrderConeConstraintId_01_4.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_3c_20sos1constraintid_20_3e_53',['AtomicConstraintTraits&lt; Sos1ConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos1ConstraintId_01_4.html',1,'operations_research::math_opt']]],
-  ['atomicconstrainttraits_3c_20sos2constraintid_20_3e_54',['AtomicConstraintTraits&lt; Sos2ConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos2ConstraintId_01_4.html',1,'operations_research::math_opt']]],
-  ['automatonconstraint_55',['AutomatonConstraint',['../classoperations__research_1_1sat_1_1AutomatonConstraint.html',1,'operations_research::sat']]],
-  ['avx512rounding_56',['Avx512Rounding',['../structAvx512Rounding.html',1,'']]]
+  ['assignmentview_48',['AssignmentView',['../classoperations__research_1_1sat_1_1AssignmentView.html',1,'operations_research::sat']]],
+  ['atomicconstraintstorage_49',['AtomicConstraintStorage',['../classoperations__research_1_1math__opt_1_1AtomicConstraintStorage.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_50',['AtomicConstraintTraits',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_3c_20indicatorconstraintid_20_3e_51',['AtomicConstraintTraits&lt; IndicatorConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01IndicatorConstraintId_01_4.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_3c_20quadraticconstraintid_20_3e_52',['AtomicConstraintTraits&lt; QuadraticConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01QuadraticConstraintId_01_4.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_3c_20secondorderconeconstraintid_20_3e_53',['AtomicConstraintTraits&lt; SecondOrderConeConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01SecondOrderConeConstraintId_01_4.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_3c_20sos1constraintid_20_3e_54',['AtomicConstraintTraits&lt; Sos1ConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos1ConstraintId_01_4.html',1,'operations_research::math_opt']]],
+  ['atomicconstrainttraits_3c_20sos2constraintid_20_3e_55',['AtomicConstraintTraits&lt; Sos2ConstraintId &gt;',['../structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos2ConstraintId_01_4.html',1,'operations_research::math_opt']]],
+  ['automatonconstraint_56',['AutomatonConstraint',['../classoperations__research_1_1sat_1_1AutomatonConstraint.html',1,'operations_research::sat']]],
+  ['avx512rounding_57',['Avx512Rounding',['../structAvx512Rounding.html',1,'']]]
 ];

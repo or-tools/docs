@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -303,9 +303,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae022808c9aa010f31cf365e8da953b1" id="r_aae022808c9aa010f31cf365e8da953b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html#aae022808c9aa010f31cf365e8da953b1">ExportToFile</a> (const std::string &amp;filename) const</td></tr>
 <tr class="memdesc:aae022808c9aa010f31cf365e8da953b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the model to file.  <br /></td></tr>
 <tr class="separator:aae022808c9aa010f31cf365e8da953b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a0ee6ac68413b3e318adaeb7db4a30" id="r_ae0a0ee6ac68413b3e318adaeb7db4a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html#ae0a0ee6ac68413b3e318adaeb7db4a30">CopyFrom</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>)</td></tr>
-<tr class="memdesc:ae0a0ee6ac68413b3e318adaeb7db4a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the current model with the one from the given proto.  <br /></td></tr>
-<tr class="separator:ae0a0ee6ac68413b3e318adaeb7db4a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2752832df06c04468be9b3b45bedec83" id="r_a2752832df06c04468be9b3b45bedec83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html">CpModelBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html#a2752832df06c04468be9b3b45bedec83">Clone</a> () const</td></tr>
+<tr class="memdesc:a2752832df06c04468be9b3b45bedec83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cloned version of the current model.  <br /></td></tr>
+<tr class="separator:a2752832df06c04468be9b3b45bedec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0721fd23aeccbb443ba97ec68d664e0e" id="r_a0721fd23aeccbb443ba97ec68d664e0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html#a0721fd23aeccbb443ba97ec68d664e0e">GetBoolVarFromProtoIndex</a> (int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>)</td></tr>
 <tr class="memdesc:a0721fd23aeccbb443ba97ec68d664e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Boolean variable from its index in the proto.  <br /></td></tr>
 <tr class="separator:a0721fd23aeccbb443ba97ec68d664e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1891,25 +1891,22 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0a0ee6ac68413b3e318adaeb7db4a30" name="ae0a0ee6ac68413b3e318adaeb7db4a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0a0ee6ac68413b3e318adaeb7db4a30">&#9670;&#160;</a></span>CopyFrom()</h2>
+<a id="a2752832df06c04468be9b3b45bedec83" name="a2752832df06c04468be9b3b45bedec83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2752832df06c04468be9b3b45bedec83">&#9670;&#160;</a></span>Clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void operations_research::sat::CpModelBuilder::CopyFrom </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html">CpModelBuilder</a> operations_research::sat::CpModelBuilder::Clone </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;&#160;</td>
-          <td class="paramname"><em>model_proto</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Replaces the current model with the one from the given proto. </p>
-<p>Rebuild constant to index map.</p>
-<p>This one would be more complicated to rebuild. Let's just clear it.</p>
+<p>Returns a cloned version of the current model. </p>
 
 <p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01297">1297</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
 
@@ -1933,7 +1930,7 @@ Friends</h2></td></tr>
 
 <p>Export the model to file. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01343">1343</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01349">1349</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
 
 </div>
 </div>
@@ -2037,7 +2034,7 @@ value) which add a constraint, these functions modify directly the underlying va
 
 <p>Returns the Boolean variable from its index in the proto. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01311">1311</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01317">1317</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
 
 </div>
 </div>
@@ -2059,7 +2056,7 @@ value) which add a constraint, these functions modify directly the underlying va
 
 <p>Returns the interval variable from its index in the proto. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01333">1333</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01339">1339</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
 
 </div>
 </div>
@@ -2081,7 +2078,7 @@ value) which add a constraint, these functions modify directly the underlying va
 
 <p>Returns the integer variable from its index in the proto. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01327">1327</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model_8cc_source.html#l01333">1333</a> of file <a class="el" href="cp__model_8cc_source.html">cp_model.cc</a>.</p>
 
 </div>
 </div>

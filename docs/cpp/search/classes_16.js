@@ -3,7 +3,7 @@ var searchData=
   ['valuedeleter_0',['ValueDeleter',['../classgtl_1_1ValueDeleter.html',1,'gtl']]],
   ['valueliteralpair_1',['ValueLiteralPair',['../structoperations__research_1_1sat_1_1ValueLiteralPair.html',1,'operations_research::sat']]],
   ['vardomination_2',['VarDomination',['../classoperations__research_1_1sat_1_1VarDomination.html',1,'operations_research::sat']]],
-  ['variable_3',['variable',['../structoperations__research_1_1fz_1_1Variable.html',1,'operations_research::fz::Variable'],['../classoperations__research_1_1math__opt_1_1Variable.html',1,'operations_research::math_opt::Variable']]],
+  ['variable_3',['variable',['../structoperations__research_1_1fz_1_1Variable.html',1,'operations_research::fz::Variable'],['../classoperations__research_1_1LocalSearchState_1_1Variable.html',1,'operations_research::LocalSearchState::Variable'],['../classoperations__research_1_1math__opt_1_1Variable.html',1,'operations_research::math_opt::Variable']]],
   ['variableandconstraint_4',['VariableAndConstraint',['../structoperations__research_1_1math__opt_1_1InvalidIndicators_1_1VariableAndConstraint.html',1,'operations_research::math_opt::InvalidIndicators']]],
   ['variableboundchange_5',['VariableBoundChange',['../structoperations__research_1_1sat_1_1PseudoCosts_1_1VariableBoundChange.html',1,'operations_research::sat::PseudoCosts']]],
   ['variablegraphneighborhoodgenerator_6',['VariableGraphNeighborhoodGenerator',['../classoperations__research_1_1sat_1_1VariableGraphNeighborhoodGenerator.html',1,'operations_research::sat']]],

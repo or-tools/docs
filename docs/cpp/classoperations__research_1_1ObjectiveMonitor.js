@@ -4,6 +4,7 @@ var classoperations__research_1_1ObjectiveMonitor =
     [ "~ObjectiveMonitor", "classoperations__research_1_1ObjectiveMonitor.html#a368c42b3dbd6b65af1e5cd3acab3689d", null ],
     [ "ObjectiveMonitor", "classoperations__research_1_1ObjectiveMonitor.html#a40f7f514607542c8cbdd8b085addb519", null ],
     [ "Accept", "classoperations__research_1_1ObjectiveMonitor.html#a8920c407b1017d708ab1258eb554ba03", null ],
+    [ "AcceptDelta", "classoperations__research_1_1ObjectiveMonitor.html#a7eef4be9b88f9ca288eca7aa822c04f6", null ],
     [ "AtSolution", "classoperations__research_1_1ObjectiveMonitor.html#ab7a032adb1470f22279a2e4528677742", null ],
     [ "BestInternalValue", "classoperations__research_1_1ObjectiveMonitor.html#a68010b22b1ea038f6475fdd3fb8f88e1", null ],
     [ "BestValue", "classoperations__research_1_1ObjectiveMonitor.html#a8dcb1d4ec64c6988076e93c53ee97aa8", null ],

@@ -1,6 +1,7 @@
 var classoperations__research_1_1SearchMonitor =
 [
     [ "SearchMonitor", "classoperations__research_1_1SearchMonitor.html#aa13f15c14e3a5237526cf6215f3b3077", null ],
+    [ "SearchMonitor", "classoperations__research_1_1SearchMonitor.html#a2798d41a140fb73abd890449b771feec", null ],
     [ "~SearchMonitor", "classoperations__research_1_1SearchMonitor.html#a10ccf64fe0a40e01816b20818a32b8b6", null ],
     [ "Accept", "classoperations__research_1_1SearchMonitor.html#a882965b47b12e3535de5d8557cdf75e3", null ],
     [ "AcceptDelta", "classoperations__research_1_1SearchMonitor.html#a329bbd7c909dbbf7fcffc5bd6b86ab9d", null ],
@@ -23,6 +24,7 @@ var classoperations__research_1_1SearchMonitor =
     [ "ListenToEvent", "classoperations__research_1_1SearchMonitor.html#ac9a3ef22296c39963cc26430be17f3e1", null ],
     [ "LocalOptimum", "classoperations__research_1_1SearchMonitor.html#a9bc1249bb77ce92f7f899a4adbc7a415", null ],
     [ "NoMoreSolutions", "classoperations__research_1_1SearchMonitor.html#aa7bb4e8f2ebab4cc34d5e6d7812664c1", null ],
+    [ "operator=", "classoperations__research_1_1SearchMonitor.html#ac889e8dd06566980ef0587e7d6c3e3d9", null ],
     [ "PeriodicCheck", "classoperations__research_1_1SearchMonitor.html#aa54fd83d1bcceecccd7d0a3106b6fc74", null ],
     [ "ProgressPercent", "classoperations__research_1_1SearchMonitor.html#a4e4e007e3de77736cd9d7a3b9df2f5f9", null ],
     [ "RefuteDecision", "classoperations__research_1_1SearchMonitor.html#a48b7e72fe6613ff410290b0babe10a71", null ],

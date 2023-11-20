@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('cp__model__presolve_8cc.html',''); ini
 <code>#include &lt;deque&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
@@ -121,12 +122,15 @@ $(document).ready(function(){initNavTree('cp__model__presolve_8cc.html',''); ini
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/meta/type_traits.h&quot;</code><br />
 <code>#include &quot;absl/numeric/int128.h&quot;</code><br />
+<code>#include &quot;absl/random/distributions.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;google/protobuf/text_format.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mathutil_8h_source.html">ortools/base/mathutil.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="strongly__connected__components_8h_source.html">ortools/graph/strongly_connected_components.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="topologicalsorter_8h_source.html">ortools/graph/topologicalsorter.h</a>&quot;</code><br />
@@ -147,6 +151,7 @@ $(document).ready(function(){initNavTree('cp__model__presolve_8cc.html',''); ini
 <code>#include &quot;<a class="el" href="presolve__util_8h_source.html">ortools/sat/presolve_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="probing_8h_source.html">ortools/sat/probing.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat__base_8h_source.html">ortools/sat/sat_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat__inprocessing_8h_source.html">ortools/sat/sat_inprocessing.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat__solver_8h_source.html">ortools/sat/sat_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="simplification_8h_source.html">ortools/sat/simplification.h</a>&quot;</code><br />

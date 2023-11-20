@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple class to combine linear expression efficiently. First in a sparse way that switch to dense when the number of non-zeros grows. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00064">64</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00065">65</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a57cd5a9cb4155be237671c19743942ca" name="a57cd5a9cb4155be237671c19743942ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57cd5a9cb4155be237671c19743942ca">&#9670;&#160;</a></span>Add()</h2>
@@ -158,7 +158,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Does vector[col] += value and return false in case of overflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00090">90</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00091">91</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ template&lt;bool check_overflow&gt; </div>
 <p>Similar to <a class="el" href="classoperations__research_1_1sat_1_1ScatteredIntegerVector.html#a57cd5a9cb4155be237671c19743942ca" title="Does vector[col] += value and return false in case of overflow.">Add()</a> but for multiplier * terms.</p>
 <p>Returns false if we encountered any integer overflow. If the template bool is false, we do not check for a bit of extra speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00104">104</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00105">105</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ template&lt;bool check_overflow&gt; </div>
 </div><div class="memdoc">
 <p>This must be called with the correct size before any other functions are used. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00073">73</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00074">74</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00168">168</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00169">169</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -297,9 +297,9 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>This is not const only because non_zeros is sorted. Note that sorting the non-zeros make the result deterministic whether or not we were in sparse mode.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001770">Todo:</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="classoperations__research_1_1sat_1_1ScatteredIntegerVector.html#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001811">Todo:</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="classoperations__research_1_1sat_1_1ScatteredIntegerVector.html#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00142">142</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00143">143</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;bool check_overflow&gt; </div>
 
 <p>Similar to <a class="el" href="classoperations__research_1_1sat_1_1ScatteredIntegerVector.html#a30b27f80b570d6cd978843cf7fae74e4">ConvertToLinearConstraint()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00198">198</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00199">199</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ template&lt;bool check_overflow&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00105">105</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00106">106</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ template&lt;bool check_overflow&gt; </div>
 
 <p>We only provide the const []. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00101">101</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00102">102</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>

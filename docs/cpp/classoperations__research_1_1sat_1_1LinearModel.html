@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,9 +106,6 @@ $(document).ready(function(){initNavTree('classoperations__research_1_1sat_1_1Li
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c594ce81043440f547bf1320674a829" id="r_a8c594ce81043440f547bf1320674a829"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html#a8c594ce81043440f547bf1320674a829">LinearModel</a> (const CpModelProto &amp;<a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html#a360d7e39a267c5d0442f912df6a248dd">model_proto</a>)</td></tr>
 <tr class="separator:a8c594ce81043440f547bf1320674a829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab35a9319b1ee59b84b748d2e6c76d43" id="r_aab35a9319b1ee59b84b748d2e6c76d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html#aab35a9319b1ee59b84b748d2e6c76d43">Initialize</a> ()</td></tr>
-<tr class="memdesc:aab35a9319b1ee59b84b748d2e6c76d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the model, hide constraints, and adds new one.  <br /></td></tr>
-<tr class="separator:aab35a9319b1ee59b84b748d2e6c76d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360d7e39a267c5d0442f912df6a248dd" id="r_a360d7e39a267c5d0442f912df6a248dd"><td class="memItemLeft" align="right" valign="top">const CpModelProto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html#a360d7e39a267c5d0442f912df6a248dd">model_proto</a> () const</td></tr>
 <tr class="separator:a360d7e39a267c5d0442f912df6a248dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba0625ed2a8977579381e81af5ac47cc" id="r_aba0625ed2a8977579381e81af5ac47cc"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html#aba0625ed2a8977579381e81af5ac47cc">ignored_constraints</a> () const</td></tr>
@@ -154,8 +151,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001761">Todo:</a></b></dt><dd>(user): Do we use the loader code to detect full encodings and element encodings. </dd></dl>
+<p>Loop over all constraints and fill var_to_equalities.</p>
+<p>Sort literals to get a canonical constraint.</p>
+<p>ct is a linear constraint with one term and one enforcement literal.</p>
+<p>Detect enforcement_literal =&gt; (var == value or var != value).</p>
+<dl class="section note"><dt>Note</dt><dd>for domain with 2 values like [0, 1], we will detect both == 0 and != 1. Similarly, for a domain in [min, max], we should both detect (== min) and (&lt;= min), and both detect (== max) and (&gt;= max).</dd></dl>
+<p>Detect <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; X == value and rebuild full encodings.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001762">Todo:</a></b></dt><dd>(user): Deal with/Check double insertion. </dd></dl>
+<p>We sort to have a canonical representation with increasing values and sorted literals.</p>
+<p>Fill exactly one.</p>
+<p>Fill linear encoding.</p>
+<p>We shift the var = sum(lit * value) by the min value.</p>
+<p>Add exactly_one constraint if new.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8cc_source.html#l00032">32</a> of file <a class="el" href="linear__model_8cc_source.html">linear_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8cc_source.html#l00082">82</a> of file <a class="el" href="linear__model_8cc_source.html">linear_model.cc</a>.</p>
 
 </div>
 </div>
@@ -185,7 +195,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Additional constraints created during the initialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00044">44</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00041">41</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -214,41 +224,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Mask on the constraints of the model passed to the ctor. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00039">39</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
-
-</div>
-</div>
-<a id="aab35a9319b1ee59b84b748d2e6c76d43" name="aab35a9319b1ee59b84b748d2e6c76d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab35a9319b1ee59b84b748d2e6c76d43">&#9670;&#160;</a></span>Initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void operations_research::sat::LinearModel::Initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Scans the model, hide constraints, and adds new one. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001720">Todo:</a></b></dt><dd>(user): Do we use the loader code to detect full encodings and element encodings. </dd></dl>
-<p>Loop over all constraints and fill var_to_equalities.</p>
-<p>Sort literals to get a canonical constraint.</p>
-<p>ct is a linear constraint with one term and one enforcement literal.</p>
-<p>Detect enforcement_literal =&gt; (var == value or var != value).</p>
-<dl class="section note"><dt>Note</dt><dd>for domain with 2 values like [0, 1], we will detect both == 0 and != 1. Similarly, for a domain in [min, max], we should both detect (== min) and (&lt;= min), and both detect (== max) and (&gt;= max).</dd></dl>
-<p>Detect <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; X == value and rebuild full encodings.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001721">Todo:</a></b></dt><dd>(user): Deal with/Check double insertion. </dd></dl>
-<p>We sort to have a canonical representation with increasing values and sorted literals.</p>
-<p>Fill exactly one.</p>
-<p>Fill linear encoding.</p>
-<p>We shift the var = sum(lit * value) by the min value.</p>
-<p>Add exactly_one constraint if new.</p>
-
-<p class="definition">Definition at line <a class="el" href="linear__model_8cc_source.html#l00088">88</a> of file <a class="el" href="linear__model_8cc_source.html">linear_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00036">36</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +251,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00036">36</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00033">33</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +278,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00051">51</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00048">48</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +305,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00049">49</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00046">46</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +332,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00050">50</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00047">47</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +359,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00048">48</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00045">45</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
 
 </div>
 </div>

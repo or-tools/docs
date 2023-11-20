@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -121,8 +121,6 @@ $(document).ready(function(){initNavTree('cp__model__lns_8cc.html',''); initResi
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_join.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
-<code>#include &quot;absl/time/clock.h&quot;</code><br />
-<code>#include &quot;absl/time/time.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stl__util_8h_source.html">ortools/base/stl_util.h</a>&quot;</code><br />
@@ -162,8 +160,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a4f6fa507fbbee0406152f493e0dfb95b" id="r_a4f6fa507fbbee0406152f493e0dfb95b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a4f6fa507fbbee0406152f493e0dfb95b">operations_research::sat::GenerateSchedulingNeighborhoodFromIntervalPrecedences</a> (const absl::Span&lt; const std::pair&lt; int, int &gt; &gt; precedences, const CpSolverResponse &amp;initial_solution, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
 <tr class="separator:a4f6fa507fbbee0406152f493e0dfb95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3548a318ab38f50037e3f9a732550f" id="r_a3d3548a318ab38f50037e3f9a732550f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3d3548a318ab38f50037e3f9a732550f">operations_research::sat::GenerateSchedulingNeighborhoodFromRelaxedIntervals</a> (const absl::Span&lt; const int &gt; intervals_to_relax, const CpSolverResponse &amp;initial_solution, absl::BitGenRef random, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
-<tr class="separator:a3d3548a318ab38f50037e3f9a732550f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6078c1c54d29bceb642ec436017a3093" id="r_a6078c1c54d29bceb642ec436017a3093"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6078c1c54d29bceb642ec436017a3093">operations_research::sat::GenerateSchedulingNeighborhoodFromRelaxedIntervals</a> (absl::Span&lt; const int &gt; intervals_to_relax, absl::Span&lt; const int &gt; variables_to_fix, const CpSolverResponse &amp;initial_solution, absl::BitGenRef random, const <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> &amp;helper)</td></tr>
+<tr class="separator:a6078c1c54d29bceb642ec436017a3093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ad3882b6f2abb8df63ecc34dc73c4e886" name="ad3882b6f2abb8df63ecc34dc73c4e886"></a>
@@ -178,7 +176,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00517">517</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00507">507</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -194,7 +192,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00586">586</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00583">583</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -210,7 +208,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00518">518</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00508">508</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+
+</div>
+</div>
+<a id="ab2aaadfef489cbe12ff4885fb051c629" name="ab2aaadfef489cbe12ff4885fb051c629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2aaadfef489cbe12ff4885fb051c629">&#9670;&#160;</a></span>indices_after_selected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; indices_after_selected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00519">519</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+
+</div>
+</div>
+<a id="aeb6776f45f2570c10ddf1956abee3405" name="aeb6776f45f2570c10ddf1956abee3405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6776f45f2570c10ddf1956abee3405">&#9670;&#160;</a></span>indices_before_selected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; indices_before_selected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00517">517</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -226,7 +256,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00583">583</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00580">580</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+
+</div>
+</div>
+<a id="aedb3acb007b8cca8efc63eed08f45705" name="aedb3acb007b8cca8efc63eed08f45705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb3acb007b8cca8efc63eed08f45705">&#9670;&#160;</a></span>noise</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double noise</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00509">509</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+
+</div>
+</div>
+<a id="af2429842a2514942533fbe2f41f77f69" name="af2429842a2514942533fbe2f41f77f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2429842a2514942533fbe2f41f77f69">&#9670;&#160;</a></span>selected_indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; selected_indices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00518">518</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -242,7 +304,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00516">516</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00506">506</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -258,7 +320,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00804">804</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00801">801</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -274,7 +336,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00803">803</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00800">800</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -290,7 +352,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00806">806</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00803">803</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -306,7 +368,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00805">805</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00802">802</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>

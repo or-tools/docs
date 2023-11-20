@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <p>Fixed arc. It will never be removed.</p>
 <p>We have to deal with the same literal controlling more than one arc.</p>
 <p>We register at construction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000989">Todo:</a></b></dt><dd>(user): Uniformize this across propagator. Sometimes it is nice not to register them, but most of them can be registered right away. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000994">Todo:</a></b></dt><dd>(user): Uniformize this across propagator. Sometimes it is nice not to register them, but most of them can be registered right away. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00345">345</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
@@ -241,11 +241,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000990">Todo:</a></b></dt><dd>(user): only explore node with newly added arcs.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000991">Todo:</a></b></dt><dd>(user): We could easily re-index the graph so that only nodes with arcs are used. Because right now we are in O(num_nodes) even if the graph is empty. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000995">Todo:</a></b></dt><dd>(user): only explore node with newly added arcs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000996">Todo:</a></b></dt><dd>(user): We could easily re-index the graph so that only nodes with arcs are used. Because right now we are in O(num_nodes) even if the graph is empty. </dd></dl>
 <p>The graph should be up to date when this is called thanks to <a class="el" href="classoperations__research_1_1sat_1_1NoCyclePropagator.html#ace715bb16f085796e71dcc817debdb52">IncrementalPropagate()</a>. We just do a SCC on the graph.</p>
 <p>We collect all arc from this compo.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000992">Todo:</a></b></dt><dd>(user): We could be more efficient here, but this is only executed on conflicts. We should at least make sure we return a single cycle even though if this is called often enough, we shouldn't have a lot more than this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000997">Todo:</a></b></dt><dd>(user): We could be more efficient here, but this is only executed on conflicts. We should at least make sure we return a single cycle even though if this is called often enough, we shouldn't have a lot more than this. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

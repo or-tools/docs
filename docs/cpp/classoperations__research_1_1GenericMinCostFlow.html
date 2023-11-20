@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -207,7 +207,7 @@ class operations_research::GenericMinCostFlow&lt; Graph, ArcFlowType, ArcScaledC
 <li>ArcScaledCostType is used for a per-arc scaled cost. It must be signed and large enough to hold the maximum unit cost of an arc times (num_nodes + 1).</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>the latter two are different than FlowQuantity and CostValue, which are used for global, aggregated values and may need to be larger.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000659">Todo:</a></b></dt><dd>(user): Avoid using the globally defined type CostValue and FlowQuantity. Also uses the Arc*Type where there is no risk of overflow in more places. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000661">Todo:</a></b></dt><dd>(user): Avoid using the globally defined type CostValue and FlowQuantity. Also uses the Arc*Type where there is no risk of overflow in more places. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="min__cost__flow_8h_source.html#l00381">381</a> of file <a class="el" href="min__cost__flow_8h_source.html">min_cost_flow.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -417,7 +417,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
       </table>
 </div><div class="memdoc">
 <p>Checks for feasibility, i.e., that all the supplies and demands can be matched without exceeding bottlenecks in the network. If infeasible_supply_node (resp. infeasible_demand_node) are not NULL, they are populated with the indices of the nodes where the initial supplies (resp. demands) are too large. Feasible values for the supplies and demands are accessible through FeasibleSupply. </p><dl class="section note"><dt>Note</dt><dd>CheckFeasibility is called by <a class="el" href="classoperations__research_1_1GenericMinCostFlow.html#a17e2df29d767d03fc9fc42aee71bf5da" title="Solves the problem, returning true if a min-cost flow could be found.">Solve()</a> when the flag min_cost_flow_check_feasibility is set to true (which is the default.) </dd></dl>
-<p>Create a new graph, which is a copy of graph_, with the following modifications: Two nodes are added: a source and a sink. The source is linked to each supply node (whose supply &gt; 0) by an arc whose capacity is equal to the supply at the supply node. The sink is linked to each demand node (whose supply &lt; 0) by an arc whose capacity is the demand (-supply) at the demand node. There are no supplies or demands or costs in the graph, as we will run max-flow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000650">Todo:</a></b></dt><dd>(user): make it possible to share a graph by <a class="el" href="classoperations__research_1_1MaxFlow.html">MaxFlow</a> and <a class="el" href="classoperations__research_1_1MinCostFlow.html">MinCostFlow</a>. For this it is necessary to make StarGraph resizable. </dd></dl>
+<p>Create a new graph, which is a copy of graph_, with the following modifications: Two nodes are added: a source and a sink. The source is linked to each supply node (whose supply &gt; 0) by an arc whose capacity is equal to the supply at the supply node. The sink is linked to each demand node (whose supply &lt; 0) by an arc whose capacity is the demand (-supply) at the demand node. There are no supplies or demands or costs in the graph, as we will run max-flow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000652">Todo:</a></b></dt><dd>(user): make it possible to share a graph by <a class="el" href="classoperations__research_1_1MaxFlow.html">MaxFlow</a> and <a class="el" href="classoperations__research_1_1MinCostFlow.html">MinCostFlow</a>. For this it is necessary to make StarGraph resizable. </dd></dl>
 <p>Copy graph_ to checker_graph.</p>
 <p>Create the source-to-supply node arcs and the demand-node-to-sink arcs.</p>
 

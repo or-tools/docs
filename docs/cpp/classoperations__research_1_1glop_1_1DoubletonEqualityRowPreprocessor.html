@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -306,14 +306,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Now we need to reconstruct the dual. This is a bit tricky and is basically the same as inverting a really structed and easy to invert matrix. For n doubleton rows, looking only at the new_basic_columns, there is exactly n by construction (one per row). We consider only this n x n matrix, and we must choose dual row values so that we make the reduced costs zero on all these columns.</p>
 <p>There is always an order that make this matrix triangular. We start with a singleton column which fix its corresponding row and then work on the square submatrix left. We can always start and continue, because if we take the first substituted row of the current submatrix, if its deleted column was in the submatrix we have a singleton column. If it is outside, we have 2 n - 1 entries for a matrix with n columns, so one must be singleton.</p>
 <p>Note(user): Another advantage of working on the "original" matrix before this presolve is an increased precision.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000488">Todo:</a></b></dt><dd>(user): We can probably use something better than a vector of set, but the number of entry is really sparse though. And the size of a set&lt;int&gt; is 24 bytes, same as a std::vector&lt;int&gt;. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000490">Todo:</a></b></dt><dd>(user): We can probably use something better than a vector of set, but the number of entry is really sparse though. And the size of a set&lt;int&gt; is 24 bytes, same as a std::vector&lt;int&gt;. </dd></dl>
 <p>Adjust the dual value of the deleted constraint so that col have a reduced costs of zero.</p>
 <p>Update singleton</p>
 <p>Fix potential bad <a class="el" href="namespaceoperations__research_1_1glop.html#a1f55066a2cd55290e5cc385fbc363205ae91836db656214f9797e10c15928e501">ConstraintStatus::FIXED_VALUE</a> statuses.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a28882fc9e0b3b828fbd785cfa6126104">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03360">3360</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03344">3344</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>
@@ -342,20 +342,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1glop_1_1DoubletonEqualityRowPreprocessor.html">DoubletonEqualityRowPreprocessor</a> </p>
 <p>This is needed at postsolve.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000483">Todo:</a></b></dt><dd>(user): Get rid of the FIXED status instead to avoid spending time/memory for no good reason here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000485">Todo:</a></b></dt><dd>(user): Get rid of the FIXED status instead to avoid spending time/memory for no good reason here. </dd></dl>
 <p>This is needed for postsolving dual.</p>
 <dl class="section note"><dt>Note</dt><dd>we don't update the transpose during this preprocessor run.</dd></dl>
 <p>Heuristic: We try to subtitute sparse columns first to avoid a complexity explosion. Note that if we do long chain of substitution, we can still end up with a complexity of O(num_rows x num_cols) instead of O(num_entries).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000484">Todo:</a></b></dt><dd>(user): There is probably some more robust ways. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000486">Todo:</a></b></dt><dd>(user): There is probably some more robust ways. </dd></dl>
 <p>Iterate over the rows that were already doubletons before this preprocessor run, and whose items don't belong to a column that we deleted during this run. This implies that the rows are only ever touched once per run, because we only modify rows that have an item on a deleted column.</p>
 <p>Collect the two row items. Skip the ones involving a deleted column. </p><dl class="section note"><dt>Note</dt><dd>we filled r.col[] and r.coeff[] by item order, and currently we always pick the first column as the to-be-deleted one. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000485">Todo:</a></b></dt><dd>(user): make a smarter choice of which column to delete, and swap col[] and coeff[] accordingly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000487">Todo:</a></b></dt><dd>(user): make a smarter choice of which column to delete, and swap col[] and coeff[] accordingly. </dd></dl>
 <p>Discard some cases that will be treated by other preprocessors, or by another run of this one. 1) One or two of the items were in a deleted column.</p>
 <p>Fill the RestoreInfo, even if we end up not using it (because we give up on preprocessing this row): it has a bunch of handy shortcuts.</p>
 <p>2) One of the columns is fixed: don't bother, it will be treated by the <a class="el" href="classoperations__research_1_1glop_1_1FixedVariablePreprocessor.html" title="Removes the fixed variables from the problem.">FixedVariablePreprocessor</a>.</p>
 <p>Look at the bounds of both variables and exit early if we can delegate to another pre-processor; otherwise adjust the bounds of the remaining variable as necessary. If the current row is: aX + bY = c, then the bounds of Y must be adjusted to satisfy Y = c/b + (-a/b)X</p>
 <dl class="section note"><dt>Note</dt><dd>when we compute the coefficients of these equations, we can cause underflows/overflows that could be avoided if we did the computations more carefully; but for now we just treat those cases as <a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a88ec4386a3c49b50819358a579fb9adb" title="An error occurred during the solving process.">ProblemStatus::ABNORMAL</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000486">Todo:</a></b></dt><dd>(user): consider skipping the problematic rows in this preprocessor, or trying harder to avoid the under/overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000488">Todo:</a></b></dt><dd>(user): consider skipping the problematic rows in this preprocessor, or trying harder to avoid the under/overflow. </dd></dl>
 <p>Default (and simplest) case: the lower bound didn't change.</p>
 <p>Default (and simplest) case: the upper bound didn't change.</p>
 <p>3) If the new bounds are fixed (the domain is a singleton) or infeasible, then we let the <a class="el" href="classoperations__research_1_1glop_1_1ForcingAndImpliedFreeConstraintPreprocessor.html">ForcingAndImpliedFreeConstraintPreprocessor</a> do the work.</p>
@@ -363,13 +363,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Again we don't bother too much with over/underflows.</p>
 <dl class="section note"><dt>Note</dt><dd>we do not save again a saved column, so that we only save columns from the initial LP. This is important to limit the memory usage. It complexify a bit the postsolve though.</dd></dl>
 <p>Apply similar operations on the objective coefficients. </p><dl class="section note"><dt>Note</dt><dd>the offset is being updated by SubtractColumnMultipleFromConstraintBound() below.</dd></dl>
-<p>Carry over the constant factor of the substitution as well. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000487">Todo:</a></b></dt><dd>(user): rename that method to reflect the fact that it also updates the objective offset, in the other direction. </dd></dl>
+<p>Carry over the constant factor of the substitution as well. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000489">Todo:</a></b></dt><dd>(user): rename that method to reflect the fact that it also updates the objective offset, in the other direction. </dd></dl>
 <p>If we keep substituing the same "dense" columns over and over, we can have a memory in O(num_rows * num_cols) which can be order of magnitude larger than the original problem. It is important to reclaim the memory of the deleted column right away.</p>
 <p>Mark the column and the row for deletion.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03142">3142</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03126">3126</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
 
 </div>
 </div>

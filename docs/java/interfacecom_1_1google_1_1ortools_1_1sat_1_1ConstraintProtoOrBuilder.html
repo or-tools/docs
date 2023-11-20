@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ConstraintProtoOrBuilder_8java_source.html#l00006">6</a> of file <a class="el" href="ConstraintProtoOrBuilder_8java_source.html">ConstraintProtoOrBuilder.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConstraintProtoOrBuilder_8java_source.html#l00007">7</a> of file <a class="el" href="ConstraintProtoOrBuilder_8java_source.html">ConstraintProtoOrBuilder.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a230608210911e8437693bb185486ab4c" name="a230608210911e8437693bb185486ab4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a230608210911e8437693bb185486ab4c">&#9670;&#160;</a></span>getAllDiff()</h2>
@@ -965,8 +965,7 @@ The division is "rounded" towards zero, so we can have for instance
 then you should use instead of t = a / b, the int_prod constraint
 a = b * t.
 
-Note that this forces exprs[1] to never take the value 0.
-Important: currently we do not support exprs[1] spanning across 0.
+If 0 belongs to the domain of exprs[1], then the model is deemed invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_div = 7;</code> </p><dl class="section return"><dt>Returns</dt><dd>The intDiv. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#afcb2768fd31aca7ed9ebb4fec84f1861">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#acabad2fd0e0f662b2ae64481537f4fa3">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>
@@ -994,8 +993,7 @@ The division is "rounded" towards zero, so we can have for instance
 then you should use instead of t = a / b, the int_prod constraint
 a = b * t.
 
-Note that this forces exprs[1] to never take the value 0.
-Important: currently we do not support exprs[1] spanning across 0.
+If 0 belongs to the domain of exprs[1], then the model is deemed invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_div = 7;</code> </p>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a62554bd93d355afd2ef25b0c8bb72871">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#a4dabfe5a8c0362bf480b2f70b66b6def">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>
@@ -1115,11 +1113,10 @@ The int_prod constraint forces the target to equal the product of all
 variables. By convention, because we can just remove term equal to one,
 the empty product forces the target to be one.
 
-Note that the solver checks for potential integer overflow. So it is
-recommended to limit the domain of the variables such that the product
-fits in [INT_MIN + 1..INT_MAX - 1].
-
-TODO(user): Support more than two terms in the product.
+Note that the solver checks for potential integer overflow. So the
+product of the maximum absolute value of all the terms (using the initial
+domain) should fit on an int64. Otherwise the model will be declared
+invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_prod = 11;</code> </p><dl class="section return"><dt>Returns</dt><dd>The intProd. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#ae7785b38807c0a15e3ba63cbbc48b993">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#a2d37546d543f52266ca779260f2b7877">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>
@@ -1145,11 +1142,10 @@ The int_prod constraint forces the target to equal the product of all
 variables. By convention, because we can just remove term equal to one,
 the empty product forces the target to be one.
 
-Note that the solver checks for potential integer overflow. So it is
-recommended to limit the domain of the variables such that the product
-fits in [INT_MIN + 1..INT_MAX - 1].
-
-TODO(user): Support more than two terms in the product.
+Note that the solver checks for potential integer overflow. So the
+product of the maximum absolute value of all the terms (using the initial
+domain) should fit on an int64. Otherwise the model will be declared
+invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_prod = 11;</code> </p>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a155c93dad41ad0e075d5350bf216bd38">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#a8ecb3bb590ecc2e5bb3941ce1c98fd24">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>
@@ -1864,8 +1860,7 @@ The division is "rounded" towards zero, so we can have for instance
 then you should use instead of t = a / b, the int_prod constraint
 a = b * t.
 
-Note that this forces exprs[1] to never take the value 0.
-Important: currently we do not support exprs[1] spanning across 0.
+If 0 belongs to the domain of exprs[1], then the model is deemed invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_div = 7;</code> </p><dl class="section return"><dt>Returns</dt><dd>Whether the intDiv field is set. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a13b31ab04a61a674f541f804334835b2">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#aebf3be8d8ad2151865e12e0075df27d6">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>
@@ -1938,11 +1933,10 @@ The int_prod constraint forces the target to equal the product of all
 variables. By convention, because we can just remove term equal to one,
 the empty product forces the target to be one.
 
-Note that the solver checks for potential integer overflow. So it is
-recommended to limit the domain of the variables such that the product
-fits in [INT_MIN + 1..INT_MAX - 1].
-
-TODO(user): Support more than two terms in the product.
+Note that the solver checks for potential integer overflow. So the
+product of the maximum absolute value of all the terms (using the initial
+domain) should fit on an int64. Otherwise the model will be declared
+invalid.
 </pre><p><code>.operations_research.sat.LinearArgumentProto int_prod = 11;</code> </p><dl class="section return"><dt>Returns</dt><dd>Whether the intProd field is set. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a3f5c717b1ae5810f50c5225769ac2eb9">com.google.ortools.sat.ConstraintProto</a>, and <a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html#abcb2562f1e32183695385a5f0f89b650">com.google.ortools.sat.ConstraintProto.Builder</a>.</p>

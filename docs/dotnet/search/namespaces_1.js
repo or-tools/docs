@@ -9,6 +9,7 @@ var searchData=
   ['google_3a_3aortools_3a_3agraph_6',['Graph',['../namespaceGoogle_1_1OrTools_1_1Graph.html',1,'Google::OrTools']]],
   ['google_3a_3aortools_3a_3ainit_7',['Init',['../namespaceGoogle_1_1OrTools_1_1Init.html',1,'Google::OrTools']]],
   ['google_3a_3aortools_3a_3alinearsolver_8',['LinearSolver',['../namespaceGoogle_1_1OrTools_1_1LinearSolver.html',1,'Google::OrTools']]],
-  ['google_3a_3aortools_3a_3asat_9',['Sat',['../namespaceGoogle_1_1OrTools_1_1Sat.html',1,'Google::OrTools']]],
-  ['google_3a_3aortools_3a_3autil_10',['Util',['../namespaceGoogle_1_1OrTools_1_1Util.html',1,'Google::OrTools']]]
+  ['google_3a_3aortools_3a_3amodelbuilder_9',['ModelBuilder',['../namespaceGoogle_1_1OrTools_1_1ModelBuilder.html',1,'Google::OrTools']]],
+  ['google_3a_3aortools_3a_3asat_10',['Sat',['../namespaceGoogle_1_1OrTools_1_1Sat.html',1,'Google::OrTools']]],
+  ['google_3a_3aortools_3a_3autil_11',['Util',['../namespaceGoogle_1_1OrTools_1_1Util.html',1,'Google::OrTools']]]
 ];

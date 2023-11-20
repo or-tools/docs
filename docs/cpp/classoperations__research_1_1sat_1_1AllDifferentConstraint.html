@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.7</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.8</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialize literals cache.</p>
 <p>Compute value range of all variables.</p>
-<p>FullyEncode does not like 1-value domains, handle this case first. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000973">Todo:</a></b></dt><dd>(user): Prune now, ignore these variables during solving. </dd></dl>
+<p>FullyEncode does not like 1-value domains, handle this case first. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000978">Todo:</a></b></dt><dd>(user): Prune now, ignore these variables during solving. </dd></dl>
 <p>Force full encoding if not already done.</p>
 <p>Fill cache with literals, default value is kFalseLiteralIndex.</p>
 <p>Can happen because of initial propagation!</p>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The algorithm copies the solver state to successor_, which is used to compute a matching. If all variables can be matched, it generates the residual graph in separate vectors, computes its SCCs, and filters variable -&gt; value if variable is not in the same SCC as value. Explanations for failure and filtering are fine-grained: failure is explained by a Hall set, i.e. dom(variables) \subseteq {values}, with <code>variables</code> &lt; <code>values</code>; filtering is explained by the Hall set that would happen if the variable was assigned to the value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000974">Todo:</a></b></dt><dd>(user): If needed, there are several ways performance could be improved. If copying the variable state is too costly, it could be maintained instead. If the propagator has too many fruitless calls (without failing/pruning), we can remember the O(n) arcs used in the matching and the SCC decomposition, and guard calls to <a class="el" href="classoperations__research_1_1sat_1_1AllDifferentConstraint.html#a1adb3a2f02ebc277b22879cd01e994b2">Propagate()</a> if these arcs are still valid. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000979">Todo:</a></b></dt><dd>(user): If needed, there are several ways performance could be improved. If copying the variable state is too costly, it could be maintained instead. If the propagator has too many fruitless calls (without failing/pruning), we can remember the O(n) arcs used in the matching and the SCC decomposition, and guard calls to <a class="el" href="classoperations__research_1_1sat_1_1AllDifferentConstraint.html#a1adb3a2f02ebc277b22879cd01e994b2">Propagate()</a> if these arcs are still valid. </dd></dl>
 <p>Copy variable state to graph state.</p>
 <p>Forward-checking should propagate x != value.</p>
 <p>Because we currently propagates all clauses before entering this propagator, we known that this can't happen.</p>
