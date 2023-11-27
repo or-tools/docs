@@ -1,6 +1,7 @@
 var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator =
 [
     [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html#a180b1182dcb2da045eddd5a7625de99c", null ],
+    [ "GetEnumerator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html#a940ee4a10b2f64a8d279246f0a4a4c22", null ],
     [ "Init", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html#a02359289277fb889f2590ceb667b7c53", null ],
     [ "Next", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html#a1a0b50196a09f254a4a070f7c94f0428", null ],
     [ "Ok", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html#a67d0abfcbca0f2190fe7e9292fb6aa63", null ],

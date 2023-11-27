@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a622ecba3e19ebeba970818d387117255", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#afc806b179852cfa22839c61875ad60a6", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a93d17b04c4d1751c7a054cd9c1de8276", null ],
+    [ "operator MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#ac84ab6ed5647f3032131344bf38a3b97", null ],
+    [ "operator Variable[]", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#ae0cfa79e350d67e33814690d03640aee", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a411e561e877f1c177af8d7dc60955a56", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#ac852c0e9caa17820129630f29ba69dc5", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a444cda6ddeab916de0b8f965c3654472", null ],

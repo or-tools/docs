@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['baseintexpr_0',['BaseIntExpr',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseIntExpr.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['baselns_1',['BaseLns',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseLns.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['baseobject_2',['BaseObject',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseObject.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['boolargumentproto_3',['BoolArgumentProto',['../classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html',1,'Google::OrTools::Sat']]],
-  ['booleanassignment_4',['BooleanAssignment',['../classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html',1,'Google::OrTools::Sat']]],
-  ['booleanproblemreflection_5',['BooleanProblemReflection',['../classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html',1,'Google::OrTools::Sat']]],
-  ['booleanvar_6',['BooleanVar',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['bopoptimizermethod_7',['BopOptimizerMethod',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html',1,'Google::OrTools::Bop']]],
-  ['bopparameters_8',['BopParameters',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html',1,'Google::OrTools::Bop']]],
-  ['bopparametersreflection_9',['BopParametersReflection',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParametersReflection.html',1,'Google::OrTools::Bop']]],
-  ['bopsolveroptimizerset_10',['BopSolverOptimizerSet',['../classGoogle_1_1OrTools_1_1Bop_1_1BopSolverOptimizerSet.html',1,'Google::OrTools::Bop']]],
-  ['boundcost_11',['BoundCost',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BoundCost.html',1,'Google::OrTools::ConstraintSolver']]]
+  ['baseequality_0',['BaseEquality',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseEquality.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['baseintexpr_1',['BaseIntExpr',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseIntExpr.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['baselns_2',['BaseLns',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseLns.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['baseobject_3',['BaseObject',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseObject.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['boolargumentproto_4',['BoolArgumentProto',['../classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html',1,'Google::OrTools::Sat']]],
+  ['booleanassignment_5',['BooleanAssignment',['../classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html',1,'Google::OrTools::Sat']]],
+  ['booleanproblemreflection_6',['BooleanProblemReflection',['../classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html',1,'Google::OrTools::Sat']]],
+  ['booleanvar_7',['BooleanVar',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['boolvar_8',['BoolVar',['../classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html',1,'Google::OrTools::Sat']]],
+  ['bopoptimizermethod_9',['BopOptimizerMethod',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html',1,'Google::OrTools::Bop']]],
+  ['bopparameters_10',['BopParameters',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html',1,'Google::OrTools::Bop']]],
+  ['bopparametersreflection_11',['BopParametersReflection',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParametersReflection.html',1,'Google::OrTools::Bop']]],
+  ['bopsolveroptimizerset_12',['BopSolverOptimizerSet',['../classGoogle_1_1OrTools_1_1Bop_1_1BopSolverOptimizerSet.html',1,'Google::OrTools::Bop']]],
+  ['boundcost_13',['BoundCost',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BoundCost.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['boundcosttest_14',['BoundCostTest',['../classGoogle_1_1OrTools_1_1Tests_1_1BoundCostTest.html',1,'Google::OrTools::Tests']]],
+  ['boundedlinearexpression_15',['boundedlinearexpression',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html',1,'Google.OrTools.ModelBuilder.BoundedLinearExpression'],['../classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html',1,'Google.OrTools.Sat.BoundedLinearExpression']]]
 ];

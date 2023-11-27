@@ -16608,7 +16608,7 @@ Incremental SAT Solving with Assumptions: Application to MUS Extraction" Theory 
 </div><div class="memdoc">
 
 <p>Whether we enumerate all solutions of a problem without objective. Note that setting this to true automatically disable some presolve reduction that can remove feasible solution. That is it has the same effect as setting keep_all_feasible_solutions_in_presolve. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>(user): Do not do that and let the user choose what behavior is best by setting keep_all_feasible_solutions_in_presolve ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>(user): Do not do that and let the user choose what behavior is best by setting keep_all_feasible_solutions_in_presolve ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l06373">6373</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -23724,7 +23724,7 @@ this only affect the "final" solution, not the one passed to the solution callba
 </div><div class="memdoc">
 
 <p>Maximum memory allowed for the whole thread containing the solver. The solver will abort as soon as it detects that this limit is crossed. As a result, this limit is approximative, but usually the solver will not go too much over. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>(user): This is only used by the pure SAT solver, generalize to CP-SAT. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>(user): This is only used by the pure SAT solver, generalize to CP-SAT. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l01954">1954</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -23751,7 +23751,7 @@ this only affect the "final" solution, not the one passed to the solution callba
 </div><div class="memdoc">
 
 <p>Maximum number of conflicts allowed to solve a problem. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>(user): Maybe change the way the conflict limit is enforced? currently it is enforced on each independent internal SAT solve, rather than on the overall number of conflicts across all solves. So in the context of an optimization problem, this is not really usable directly by a client. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>(user): Maybe change the way the conflict limit is enforced? currently it is enforced on each independent internal SAT solve, rather than on the overall number of conflicts across all solves. So in the context of an optimization problem, this is not really usable directly by a client. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l01918">1918</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -23778,7 +23778,7 @@ this only affect the "final" solution, not the one passed to the solution callba
 </div><div class="memdoc">
 
 <p>The limit on the number of cuts in our cut pool. When this is reached we do not generate cuts anymore. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>(user): We should probably remove this parameters, and just always generate cuts but only keep the best n or something. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>(user): We should probably remove this parameters, and just always generate cuts but only keep the best n or something. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l04566">4566</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -25244,7 +25244,7 @@ learnt clause minimization approach for CDCL Sat Solvers", <a href="https://www.
 </div><div class="memdoc">
 
 <p>The maximum "deterministic" time limit to spend in probing. A value of zero will disable the probing. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>(user): Clean up. The first one is used in CP-SAT, the other in pure SAT presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>(user): Clean up. The first one is used in CP-SAT, the other in pure SAT presolve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l02512">2512</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -25297,7 +25297,7 @@ learnt clause minimization approach for CDCL Sat Solvers", <a href="https://www.
 </div><div class="memdoc">
 
 <p>Some search decisions might cause a really large number of propagations to happen when integer variables with large domains are only reduced by 1 at each step. If we propagate more than the number of variable times this parameters we try to take counter-measure. Setting this to 0.0 disable this feature. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>(user): Setting this to something like 10 helps in most cases, but the code is currently buggy and can cause the solve to enter a bad state where no progress is made. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>(user): Setting this to something like 10 helps in most cases, but the code is currently buggy and can cause the solve to enter a bad state where no progress is made. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l03930">3930</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -26759,7 +26759,7 @@ Programs", 2023. </p>
 </div><div class="memdoc">
 
 <p>If true, we automatically detect variables whose constraint are always enforced by the same literal and we mark them as optional. This allows to propagate them as if they were present in some situation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>(user): This is experimental and seems to lead to wrong optimal in some situation. It should however gives correct solutions. Fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>(user): This is experimental and seems to lead to wrong optimal in some situation. It should however gives correct solutions. Fix. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l06980">6980</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 
@@ -27153,7 +27153,7 @@ Programs", 2023. </p>
 </div><div class="memdoc">
 
 <p>Probability of using compound move search each restart. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>(user): Add reference to paper when published. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>(user): Add reference to paper when published. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SatParameters_8pb_8cs_source.html#l06180">6180</a> of file <a class="el" href="SatParameters_8pb_8cs_source.html">SatParameters.pb.cs</a>.</p>
 

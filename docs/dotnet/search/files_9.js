@@ -5,11 +5,16 @@ var searchData=
   ['mblogcallback_2ecs_2',['MbLogCallback.cs',['../MbLogCallback_8cs.html',1,'']]],
   ['mincostflow_2ecs_3',['MinCostFlow.cs',['../MinCostFlow_8cs.html',1,'']]],
   ['mincostflowbase_2ecs_4',['MinCostFlowBase.cs',['../MinCostFlowBase_8cs.html',1,'']]],
-  ['modelbuilderhelper_2ecs_5',['ModelBuilderHelper.cs',['../ModelBuilderHelper_8cs.html',1,'']]],
-  ['modelcache_2ecs_6',['ModelCache.cs',['../ModelCache_8cs.html',1,'']]],
-  ['modelsolverhelper_2ecs_7',['ModelSolverHelper.cs',['../ModelSolverHelper_8cs.html',1,'']]],
-  ['modelvisitor_2ecs_8',['ModelVisitor.cs',['../ModelVisitor_8cs.html',1,'']]],
-  ['mpconstraintvector_2ecs_9',['MPConstraintVector.cs',['../MPConstraintVector_8cs.html',1,'']]],
-  ['mpsolverparameters_2ecs_10',['MPSolverParameters.cs',['../MPSolverParameters_8cs.html',1,'']]],
-  ['mpvariablevector_2ecs_11',['MPVariableVector.cs',['../MPVariableVector_8cs.html',1,'']]]
+  ['modelbuilder_2ecs_5',['ModelBuilder.cs',['../ModelBuilder_8cs.html',1,'']]],
+  ['modelbuilderconstraint_2ecs_6',['ModelBuilderConstraint.cs',['../ModelBuilderConstraint_8cs.html',1,'']]],
+  ['modelbuilderexpr_2ecs_7',['ModelBuilderExpr.cs',['../ModelBuilderExpr_8cs.html',1,'']]],
+  ['modelbuilderhelper_2ecs_8',['ModelBuilderHelper.cs',['../ModelBuilderHelper_8cs.html',1,'']]],
+  ['modelbuildertests_2ecs_9',['ModelBuilderTests.cs',['../ModelBuilderTests_8cs.html',1,'']]],
+  ['modelcache_2ecs_10',['ModelCache.cs',['../ModelCache_8cs.html',1,'']]],
+  ['modelsolver_2ecs_11',['ModelSolver.cs',['../ModelSolver_8cs.html',1,'']]],
+  ['modelsolverhelper_2ecs_12',['ModelSolverHelper.cs',['../ModelSolverHelper_8cs.html',1,'']]],
+  ['modelvisitor_2ecs_13',['ModelVisitor.cs',['../ModelVisitor_8cs.html',1,'']]],
+  ['mpconstraintvector_2ecs_14',['MPConstraintVector.cs',['../MPConstraintVector_8cs.html',1,'']]],
+  ['mpsolverparameters_2ecs_15',['MPSolverParameters.cs',['../MPSolverParameters_8cs.html',1,'']]],
+  ['mpvariablevector_2ecs_16',['MPVariableVector.cs',['../MPVariableVector_8cs.html',1,'']]]
 ];

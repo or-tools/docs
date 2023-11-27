@@ -4616,7 +4616,7 @@ cycling procedure for linearly constrained optimization". Mathematical Programmi
 </div><div class="memdoc">
 
 <p>Like small_pivot_threshold but for the dual simplex. This is needed because the dual algorithm does not interpret this value in the same way. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>(user): Clean this up and use the same small pivot detection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>(user): Clean this up and use the same small pivot detection. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Parameters_8pb_8cs_source.html#l01486">1486</a> of file <a class="el" href="Parameters_8pb_8cs_source.html">Parameters.pb.cs</a>.</p>
 
@@ -6438,7 +6438,7 @@ cycling procedure for linearly constrained optimization". Mathematical Programmi
 </div><div class="memdoc">
 
 <p>Maximum deterministic time allowed to solve a problem. The deterministic time is more or less correlated to the running time, and its unit should be around the second (at least on a Xeon(R) CPU E5-1650 v2 @ 3.50GHz). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>(user): Improve the correlation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>(user): Improve the correlation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Parameters_8pb_8cs_source.html#l01138">1138</a> of file <a class="el" href="Parameters_8pb_8cs_source.html">Parameters.pb.cs</a>.</p>
 
@@ -6889,7 +6889,7 @@ simplex solver", Ph.D, dissertation, University of Edinburgh. </p>
 </div><div class="memdoc">
 
 <p>During the primal simplex (resp. dual simplex), the coefficients of the direction (resp. update row) with a magnitude lower than this threshold are not considered during the ratio test. This tolerance is related to the precision at which a Solve() involving the basis matrix can be performed. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>(user): Automatically increase it when we detect that the precision of the Solve() is worse than this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>(user): Automatically increase it when we detect that the precision of the Solve() is worse than this. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Parameters_8pb_8cs_source.html#l00502">502</a> of file <a class="el" href="Parameters_8pb_8cs_source.html">Parameters.pb.cs</a>.</p>
 
@@ -7157,7 +7157,7 @@ simplex solver", Ph.D, dissertation, University of Edinburgh. </p>
 </div><div class="memdoc">
 
 <p>We have two possible dual phase I algorithms. Both work on an LP that minimize the sum of dual infeasiblities. One use dedicated code (when this param is true), the other one use exactly the same code as the dual phase II but on an auxiliary problem where the variable bounds of the original problem are changed. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>(user): For now we have both, but ideally the non-dedicated version will win since it is a lot less code to maintain. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>(user): For now we have both, but ideally the non-dedicated version will win since it is a lot less code to maintain. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Parameters_8pb_8cs_source.html#l01785">1785</a> of file <a class="el" href="Parameters_8pb_8cs_source.html">Parameters.pb.cs</a>.</p>
 

@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#ada00d5090bce7698ed0dbaa6db93b37b", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a691b40f900e928884620bb7fcbc95899", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a7d42dd3ca2e9e59815d56752db7be8fa", null ],
+    [ "operator SymmetryBreaker[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#af9d2c73d0fd58a9ac743d3801556287f", null ],
+    [ "operator SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a870c14ed382722b9f4993f75be122f0f", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a9d3d9502c0646370e9320bdb95e5f1b3", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a7ea4d809c9432ebc69c941e528bc51e6", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a95b0f781ea6e51e0565626440590f9a4", null ],

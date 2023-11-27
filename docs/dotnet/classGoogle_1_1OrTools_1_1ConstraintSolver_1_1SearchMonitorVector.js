@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#ade85b935d1b9da6dc4a3812d66f11c87", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#a8ed465223f43aec13817cae8b3c297a2", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#aaf233e02fe00dda2dc3ea2aa86be6659", null ],
+    [ "operator SearchMonitor[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#ad1e5d80afcc076bed0900451e6a8d117", null ],
+    [ "operator SearchMonitorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#aaaf94516d0eae01cc2295c07f9724341", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#a3d233f5325e82b6d307f1ba13979b9df", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#afeec4e331284d4f45d2f1a3161c4cd6f", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html#a608ff6cf803273dbaec42a2b3e601813", null ],

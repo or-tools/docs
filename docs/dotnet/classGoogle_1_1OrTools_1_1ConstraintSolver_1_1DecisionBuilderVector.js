@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#aec34de7ddedf87ed426ab7e83b6e76aa", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a51a5ea6e45ed90b5809a26d0789c9f40", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a30700f92ac50be0c236ca04d44acdac7", null ],
+    [ "operator DecisionBuilder[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a0e03c65d73a4e635ddec3a7e2a112389", null ],
+    [ "operator DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#aa0566a8a7924fdeed50f579aaf81d8a4", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#aa2b5c16a25d127989024014bdac29b91", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a43572e0eea02ad98775c57f318adb9f1", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a9c330c51c641f05f060af4fa6fa474ba", null ],

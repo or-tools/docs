@@ -1,12 +1,21 @@
 var namespaceGoogle_1_1OrTools_1_1ModelBuilder =
 [
+    [ "BoundedLinearExpression", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression" ],
     [ "DoubleVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1DoubleVector.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1DoubleVector" ],
+    [ "EnforcedLinearConstraint", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1EnforcedLinearConstraint.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1EnforcedLinearConstraint" ],
     [ "IntVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector" ],
+    [ "LinearConstraint", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearConstraint.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearConstraint" ],
+    [ "LinearExpr", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExpr.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExpr" ],
+    [ "LinearExprBuilder", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExprBuilder.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExprBuilder" ],
     [ "MbLogCallback", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1MbLogCallback.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1MbLogCallback" ],
+    [ "Model", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model" ],
     [ "ModelBuilderHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper" ],
     [ "ModelSolverHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelSolverHelper.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelSolverHelper" ],
     [ "operations_research_model_builder", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builder.html", null ],
     [ "operations_research_model_builderPINVOKE", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE" ],
+    [ "Solver", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Solver.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Solver" ],
+    [ "Term", "structGoogle_1_1OrTools_1_1ModelBuilder_1_1Term.html", "structGoogle_1_1OrTools_1_1ModelBuilder_1_1Term" ],
+    [ "Variable", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable" ],
     [ "SolveStatus", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html#aae542e2abe5b334ff3c40c14fc023512", [
       [ "OPTIMAL", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html#aae542e2abe5b334ff3c40c14fc023512af00c8dbdd6e1f11bdae06be94277d293", null ],
       [ "FEASIBLE", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html#aae542e2abe5b334ff3c40c14fc023512ad8be64d186c48f18e82bdf0501e42f72", null ],

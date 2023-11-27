@@ -9,5 +9,8 @@ var namespaceGoogle_1_1OrTools =
     [ "LinearSolver", "namespaceGoogle_1_1OrTools_1_1LinearSolver.html", "namespaceGoogle_1_1OrTools_1_1LinearSolver" ],
     [ "ModelBuilder", "namespaceGoogle_1_1OrTools_1_1ModelBuilder.html", "namespaceGoogle_1_1OrTools_1_1ModelBuilder" ],
     [ "Sat", "namespaceGoogle_1_1OrTools_1_1Sat.html", "namespaceGoogle_1_1OrTools_1_1Sat" ],
-    [ "Util", "namespaceGoogle_1_1OrTools_1_1Util.html", "namespaceGoogle_1_1OrTools_1_1Util" ]
+    [ "Tests", "namespaceGoogle_1_1OrTools_1_1Tests.html", "namespaceGoogle_1_1OrTools_1_1Tests" ],
+    [ "Util", "namespaceGoogle_1_1OrTools_1_1Util.html", "namespaceGoogle_1_1OrTools_1_1Util" ],
+    [ "NestedArrayHelper", "classGoogle_1_1OrTools_1_1NestedArrayHelper.html", "classGoogle_1_1OrTools_1_1NestedArrayHelper" ],
+    [ "ProtoHelper", "classGoogle_1_1OrTools_1_1ProtoHelper.html", "classGoogle_1_1OrTools_1_1ProtoHelper" ]
 ];

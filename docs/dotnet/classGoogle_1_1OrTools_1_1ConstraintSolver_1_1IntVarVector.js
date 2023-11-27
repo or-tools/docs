@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a5557eca15f52eac2e6fedde93858a1f1", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a4de2597db0a24be54d4067b1ba5d4f81", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#ab02e2f98794419871f4a713915569d96", null ],
+    [ "operator IntVar[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a123acee666a754f05c36bab42a539875", null ],
+    [ "operator IntVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a34ba56d12c3803cf4fba2311429d4bb1", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a9370f0f309dec31a27fd33f9d9d7577c", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#a7e7fe393b74501308375538e15169913", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html#afc5f68593797e7ec7b041d9232649ec6", null ],

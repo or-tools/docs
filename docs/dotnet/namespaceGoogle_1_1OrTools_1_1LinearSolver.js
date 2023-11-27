@@ -2,12 +2,24 @@ var namespaceGoogle_1_1OrTools_1_1LinearSolver =
 [
     [ "Constraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint" ],
     [ "DoubleVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector" ],
+    [ "Equality", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Equality.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Equality" ],
+    [ "LinearConstraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearConstraint.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearConstraint" ],
+    [ "LinearExpr", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr" ],
+    [ "LinearExprArrayHelper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExprArrayHelper.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExprArrayHelper" ],
     [ "MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector" ],
     [ "MPSolverParameters", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters" ],
     [ "MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector" ],
     [ "Objective", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Objective.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Objective" ],
     [ "operations_research_linear_solver", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solver.html", null ],
     [ "operations_research_linear_solverPINVOKE", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE" ],
+    [ "ProductCst", "classGoogle_1_1OrTools_1_1LinearSolver_1_1ProductCst.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1ProductCst" ],
+    [ "RangeConstraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1RangeConstraint.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1RangeConstraint" ],
     [ "Solver", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver" ],
-    [ "Variable", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable" ]
+    [ "Sum", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Sum.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Sum" ],
+    [ "SumArray", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumArray.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumArray" ],
+    [ "SumCst", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumCst.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumCst" ],
+    [ "SumVarArray", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumVarArray.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumVarArray" ],
+    [ "VarEquality", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarEquality.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarEquality" ],
+    [ "Variable", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Variable" ],
+    [ "VarWrapper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarWrapper.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarWrapper" ]
 ];

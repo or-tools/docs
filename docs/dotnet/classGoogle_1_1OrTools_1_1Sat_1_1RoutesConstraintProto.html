@@ -181,7 +181,7 @@ Properties</h2></td></tr>
 <li>There are no duplicate arcs.</li>
 <li>Self-arcs are allowed except for node 0.</li>
 <li>There is no cycle in this graph, except through node 0. <dl class="section note"><dt>Note</dt><dd>Currently this constraint expect all the nodes in [0, num_nodes) to have at least one incident arc. The model will be considered invalid if it is not the case. You can add self-arc fixed to one to ignore some nodes if needed. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem. </dd></dl>
 </li>
 </ul>
 
@@ -668,7 +668,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>EXPERIMENTAL. The demands for each node, and the maximum capacity for each route. Note that this is currently only used for the LP relaxation and one need to add the corresponding constraint to enforce this outside of the LP. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>(user): Ideally, we should be able to extract any dimension like these (i.e. capacity, route_length, etc..) automatically from the encoding. The classical way to encode that is to have "current_capacity" variables along the route and linear equations of the form: arc_literal =&gt; (current_capacity_tail + demand &lt;= current_capacity_head) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>(user): Ideally, we should be able to extract any dimension like these (i.e. capacity, route_length, etc..) automatically from the encoding. The classical way to encode that is to have "current_capacity" variables along the route and linear equations of the form: arc_literal =&gt; (current_capacity_tail + demand &lt;= current_capacity_head) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l03563">3563</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
 

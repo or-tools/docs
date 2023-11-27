@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a14c8aa8824bb4d0327d38f6f40b5ab71", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a8cddc12c23c341260db3f0aaee2cd35a", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#adeb9dce61b351024ad8b500e84268662", null ],
+    [ "operator SequenceVar[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a7265e32595a9ee1d35cff5bbc2be89cc", null ],
+    [ "operator SequenceVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a55f28cd1a28dee577dc8d041b568c0c6", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a35eac0421bb3ad66260734861eb4d722", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#aa7d222ef4f290f8ad6ab47ac22e6c82f", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html#a1ccb5fbbbc62b8639b84d447923d1fef", null ],

@@ -20,5 +20,6 @@ var searchData=
   ['boolunspecified_17',['BoolUnspecified',['../namespaceGoogle_1_1OrTools_1_1Util.html#a986a6ec57f396c9c90b69ba57c390f34a68b06a661e77d469644ee2ebeb6b64cf',1,'Google::OrTools::Util']]],
   ['boolxor_18',['BoolXor',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7a98109c65144890f8bde5f1a841abec7c',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['bop_5finteger_5fprogramming_19',['BOP_INTEGER_PROGRAMMING',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471a32f0882d12aebb0a2ee7f8965944f4c3',1,'Google::OrTools::LinearSolver::Solver']]],
-  ['bopintegerprogramming_20',['BopIntegerProgramming',['../classOperationsResearch_1_1MPModelRequest_1_1Types.html#a49ae4b6577bc07957008f1c2ad283bc2a5738385c7efbde6b9a2f87ecab70360a',1,'OperationsResearch::MPModelRequest::Types']]]
+  ['bopintegerprogramming_20',['BopIntegerProgramming',['../classOperationsResearch_1_1MPModelRequest_1_1Types.html#a49ae4b6577bc07957008f1c2ad283bc2a5738385c7efbde6b9a2f87ecab70360a',1,'OperationsResearch::MPModelRequest::Types']]],
+  ['boundexpression_21',['boundexpression',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html#a2f4f46ef2384aa683022b2c4927b281aacbdce67d7e212f36c72b066e524d89f7',1,'Google.OrTools.ModelBuilder.BoundedLinearExpression.BoundExpression'],['../classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a2b09cf6ca5bede2368ebd73de4482758acbdce67d7e212f36c72b066e524d89f7',1,'Google.OrTools.Sat.BoundedLinearExpression.BoundExpression']]]
 ];

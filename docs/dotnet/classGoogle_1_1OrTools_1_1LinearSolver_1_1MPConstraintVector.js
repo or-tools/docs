@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#a11c74335e6f6aa8a162562529f1cb8b2", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#a0069b648dd2a4d8a1ec1261ab2882da1", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#a3747832468716b8b7a11ce37b7b64f5c", null ],
+    [ "operator Constraint[]", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#af855fc021a8db1c6d09d7782cefd1510", null ],
+    [ "operator MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#af98c3d413187e6679681f6b34200c7d1", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#a5e5c4834dab20f105c4e53e6b53e8ddc", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#ac83f2591313a348850583e43172610c9", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html#a99fdcd6de00b33c5dd5431be103ae886", null ],

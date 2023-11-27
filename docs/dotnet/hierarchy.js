@@ -2,9 +2,26 @@ var hierarchy =
 [
     [ "Google.OrTools.Sat.BooleanProblemReflection", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html", null ],
     [ "Google.OrTools.Bop.BopParametersReflection", "classGoogle_1_1OrTools_1_1Bop_1_1BopParametersReflection.html", null ],
+    [ "Google.OrTools.Tests.BoundCostTest", "classGoogle_1_1OrTools_1_1Tests_1_1BoundCostTest.html", null ],
+    [ "Google.OrTools.ModelBuilder.BoundedLinearExpression", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html", null ],
+    [ "Google.OrTools.Sat.BoundedLinearExpression", "classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html", null ],
+    [ "Google.OrTools.Sat.Constraint", "classGoogle_1_1OrTools_1_1Sat_1_1Constraint.html", [
+      [ "Google.OrTools.Sat.AutomatonConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint.html", null ],
+      [ "Google.OrTools.Sat.CircuitConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1CircuitConstraint.html", null ],
+      [ "Google.OrTools.Sat.CumulativeConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1CumulativeConstraint.html", null ],
+      [ "Google.OrTools.Sat.MultipleCircuitConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1MultipleCircuitConstraint.html", null ],
+      [ "Google.OrTools.Sat.NoOverlap2dConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1NoOverlap2dConstraint.html", null ],
+      [ "Google.OrTools.Sat.ReservoirConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraint.html", null ],
+      [ "Google.OrTools.Sat.TableConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1TableConstraint.html", null ]
+    ] ],
+    [ "Google.OrTools.Tests.ConstraintSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1ConstraintSolverTest.html", null ],
+    [ "Google.OrTools.Sat.CpModel", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html", null ],
     [ "Google.OrTools.Sat.CpModelReflection", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelReflection.html", null ],
     [ "Google.OrTools.Sat.CpModelServiceReflection", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelServiceReflection.html", null ],
+    [ "Google.OrTools.Sat.CpSolver", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html", null ],
+    [ "Google.OrTools.ModelBuilder.EnforcedLinearConstraint", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1EnforcedLinearConstraint.html", null ],
     [ "Google.OrTools.Graph.FlowProblemReflection", "classGoogle_1_1OrTools_1_1Graph_1_1FlowProblemReflection.html", null ],
+    [ "Google.OrTools.Tests.FlowTest", "classGoogle_1_1OrTools_1_1Tests_1_1FlowTest.html", null ],
     [ "pb.IBufferMessage", null, [
       [ "Google.OrTools.Bop.BopOptimizerMethod", "classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html", null ],
       [ "Google.OrTools.Bop.BopParameters", "classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html", null ],
@@ -98,14 +115,34 @@ var hierarchy =
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.DetailedOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", null ],
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.SimpleOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", null ]
     ] ],
-    [ "IConstraintWithStatus", null, [
+    [ "Google.OrTools.ConstraintSolver.IConstraintWithStatus", "interfaceGoogle_1_1OrTools_1_1ConstraintSolver_1_1IConstraintWithStatus.html", [
+      [ "Google.OrTools.ConstraintSolver.BaseEquality", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseEquality.html", [
+        [ "Google.OrTools.ConstraintSolver.ConstraintEquality", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintEquality.html", null ],
+        [ "Google.OrTools.ConstraintSolver.IntExprEquality", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntExprEquality.html", null ],
+        [ "Google.OrTools.ConstraintSolver.WrappedConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1WrappedConstraint.html", null ]
+      ] ],
       [ "Google.OrTools.ConstraintSolver.Constraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Constraint.html", [
         [ "Google.OrTools.ConstraintSolver.CastConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1CastConstraint.html", null ],
         [ "Google.OrTools.ConstraintSolver.DisjunctiveConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DisjunctiveConstraint.html", null ],
         [ "Google.OrTools.ConstraintSolver.GlobalVehicleBreaksConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1GlobalVehicleBreaksConstraint.html", null ],
+        [ "Google.OrTools.ConstraintSolver.NetConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1NetConstraint.html", null ],
         [ "Google.OrTools.ConstraintSolver.Pack", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Pack.html", null ],
         [ "Google.OrTools.ConstraintSolver.TypeRegulationsConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1TypeRegulationsConstraint.html", null ]
-      ] ]
+      ] ],
+      [ "Google.OrTools.ConstraintSolver.Constraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Constraint.html", null ]
+    ] ],
+    [ "IDisposable", null, [
+      [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntervalVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchFilterVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchOperatorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SearchMonitorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SequenceVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.Solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", null ]
     ] ],
     [ "global.SystemCollections.Generic.IEnumerable", null, [
       [ "Google.OrTools.Algorithms.Int64VectorVector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html", null ],
@@ -136,8 +173,19 @@ var hierarchy =
       [ "Google.OrTools.Util.Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", null ],
       [ "Google.OrTools.Util.Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", null ]
     ] ],
-    [ "IEnumerable", null, [
-      [ "Google.OrTools.ConstraintSolver.IntVarIterator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html", null ]
+    [ "System.Collections.IEnumerable", null, [
+      [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntVarIterator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntVarIterator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntervalVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchFilterVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchOperatorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SearchMonitorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SequenceVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", null ]
     ] ],
     [ "global.SystemCollections.Generic.IEnumerator", null, [
       [ "Google.OrTools.Algorithms.Int64Vector.Int64VectorEnumerator", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector_1_1Int64VectorEnumerator.html", null ],
@@ -185,6 +233,9 @@ var hierarchy =
       [ "Google.OrTools.Util.Int64Vector.Int64VectorEnumerator", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector_1_1Int64VectorEnumerator.html", null ],
       [ "Google.OrTools.Util.Int64VectorVector.Int64VectorVectorEnumerator", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector_1_1Int64VectorVectorEnumerator.html", null ]
     ] ],
+    [ "IEnumerator", null, [
+      [ "Google.OrTools.ConstraintSolver.IntVarEnumerator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarEnumerator.html", null ]
+    ] ],
     [ "global.SystemCollections.Generic.IList", null, [
       [ "Google.OrTools.Algorithms.Int64Vector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector.html", null ],
       [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html", null ],
@@ -203,6 +254,22 @@ var hierarchy =
       [ "Google.OrTools.ModelBuilder.DoubleVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1DoubleVector.html", null ],
       [ "Google.OrTools.ModelBuilder.IntVector", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html", null ],
       [ "Google.OrTools.Util.Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", null ]
+    ] ],
+    [ "System.Collections.Generic.IList", null, [
+      [ "Google.OrTools.ConstraintSolver.DecisionBuilderVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.IntervalVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchFilterVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.LocalSearchOperatorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SearchMonitorVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchMonitorVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SequenceVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVarVector.html", null ],
+      [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", null ],
+      [ "Google.OrTools.LinearSolver.MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", null ]
+    ] ],
+    [ "Google.OrTools.Sat.ILiteral", "interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html", [
+      [ "Google.OrTools.Sat.BoolVar", "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html", null ],
+      [ "Google.OrTools.Sat.NotBoolVar", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html", null ]
     ] ],
     [ "pb.IMessage", null, [
       [ "Google.OrTools.Bop.BopOptimizerMethod", "classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html", null ],
@@ -297,7 +364,43 @@ var hierarchy =
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.DetailedOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", null ],
       [ "OperationsResearch.Pdlp.TerminationCriteria.Types.SimpleOptimalityCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", null ]
     ] ],
+    [ "Google.OrTools.Tests.InitTest", "classGoogle_1_1OrTools_1_1Tests_1_1InitTest.html", null ],
+    [ "Google.OrTools.ConstraintSolver.IntArrayHelper", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntArrayHelper.html", null ],
+    [ "Google.OrTools.Sat.IntervalVar", "classGoogle_1_1OrTools_1_1Sat_1_1IntervalVar.html", null ],
+    [ "Google.OrTools.ConstraintSolver.IntervalVarArrayHelper", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarArrayHelper.html", null ],
+    [ "Google.OrTools.ConstraintSolver.IntVarArrayHelper", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarArrayHelper.html", null ],
+    [ "Google.OrTools.Tests.KnapsakSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1KnapsakSolverTest.html", null ],
+    [ "Google.OrTools.LinearSolver.LinearConstraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearConstraint.html", [
+      [ "Google.OrTools.LinearSolver.Equality", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Equality.html", null ],
+      [ "Google.OrTools.LinearSolver.RangeConstraint", "classGoogle_1_1OrTools_1_1LinearSolver_1_1RangeConstraint.html", null ],
+      [ "Google.OrTools.LinearSolver.VarEquality", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarEquality.html", null ]
+    ] ],
+    [ "Google.OrTools.ModelBuilder.LinearConstraint", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearConstraint.html", null ],
+    [ "Google.OrTools.LinearSolver.LinearExpr", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html", [
+      [ "Google.OrTools.LinearSolver.ProductCst", "classGoogle_1_1OrTools_1_1LinearSolver_1_1ProductCst.html", null ],
+      [ "Google.OrTools.LinearSolver.Sum", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Sum.html", null ],
+      [ "Google.OrTools.LinearSolver.SumArray", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumArray.html", null ],
+      [ "Google.OrTools.LinearSolver.SumCst", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumCst.html", null ],
+      [ "Google.OrTools.LinearSolver.SumVarArray", "classGoogle_1_1OrTools_1_1LinearSolver_1_1SumVarArray.html", null ],
+      [ "Google.OrTools.LinearSolver.VarWrapper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1VarWrapper.html", null ]
+    ] ],
+    [ "Google.OrTools.ModelBuilder.LinearExpr", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExpr.html", [
+      [ "Google.OrTools.ModelBuilder.LinearExprBuilder", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1LinearExprBuilder.html", null ],
+      [ "Google.OrTools.ModelBuilder.Variable", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable.html", null ]
+    ] ],
+    [ "Google.OrTools.Sat.LinearExpr", "classGoogle_1_1OrTools_1_1Sat_1_1LinearExpr.html", [
+      [ "Google.OrTools.Sat.IntVar", "classGoogle_1_1OrTools_1_1Sat_1_1IntVar.html", [
+        [ "Google.OrTools.Sat.BoolVar", "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html", null ]
+      ] ],
+      [ "Google.OrTools.Sat.LinearExprBuilder", "classGoogle_1_1OrTools_1_1Sat_1_1LinearExprBuilder.html", null ],
+      [ "Google.OrTools.Sat.NotBoolVar", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html", null ]
+    ] ],
+    [ "Google.OrTools.LinearSolver.LinearExprArrayHelper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExprArrayHelper.html", null ],
     [ "OperationsResearch.LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", null ],
+    [ "Google.OrTools.Tests.LinearSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1LinearSolverTest.html", null ],
+    [ "Google.OrTools.ModelBuilder.Model", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html", null ],
+    [ "Google.OrTools.Tests.ModelBuilderTest", "classGoogle_1_1OrTools_1_1Tests_1_1ModelBuilderTest.html", null ],
+    [ "Google.OrTools.NestedArrayHelper", "classGoogle_1_1OrTools_1_1NestedArrayHelper.html", null ],
     [ "Google.OrTools.Algorithms.operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithms.html", null ],
     [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html", null ],
     [ "Google.OrTools.ConstraintSolver.operations_research_constraint_solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solver.html", null ],
@@ -317,12 +420,17 @@ var hierarchy =
     [ "Google.OrTools.Util.OptionalBooleanReflection", "classGoogle_1_1OrTools_1_1Util_1_1OptionalBooleanReflection.html", null ],
     [ "Google.OrTools.Glop.ParametersReflection", "classGoogle_1_1OrTools_1_1Glop_1_1ParametersReflection.html", null ],
     [ "CreateSigningKey.Program", "classCreateSigningKey_1_1Program.html", null ],
+    [ "Google.OrTools.ProtoHelper", "classGoogle_1_1OrTools_1_1ProtoHelper.html", null ],
+    [ "Google.OrTools.Tests.RoutingDimensionTest", "classGoogle_1_1OrTools_1_1Tests_1_1RoutingDimensionTest.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingEnumsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingEnumsReflection.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingParametersReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingParametersReflection.html", null ],
+    [ "Google.OrTools.Tests.RoutingSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1RoutingSolverTest.html", null ],
     [ "Google.OrTools.Sat.SatParametersReflection", "classGoogle_1_1OrTools_1_1Sat_1_1SatParametersReflection.html", null ],
+    [ "Google.OrTools.Tests.SatSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html", null ],
     [ "Google.OrTools.ConstraintSolver.SearchLimitReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchLimitReflection.html", null ],
     [ "Google.OrTools.ConstraintSolver.SearchStatsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatsReflection.html", null ],
     [ "OperationsResearch.Pdlp.SolveLogReflection", "classOperationsResearch_1_1Pdlp_1_1SolveLogReflection.html", null ],
+    [ "Google.OrTools.ModelBuilder.Solver", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Solver.html", null ],
     [ "Google.OrTools.ConstraintSolver.SolverParametersReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SolverParametersReflection.html", null ],
     [ "OperationsResearch.Pdlp.SolversReflection", "classOperationsResearch_1_1Pdlp_1_1SolversReflection.html", null ],
     [ "Google.OrTools.Algorithms.operations_research_algorithmsPINVOKE.SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html", null ],
@@ -362,12 +470,19 @@ var hierarchy =
       [ "Google.OrTools.ConstraintSolver.AssignmentIntervalContainer", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentIntervalContainer.html", null ],
       [ "Google.OrTools.ConstraintSolver.AssignmentSequenceContainer", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentSequenceContainer.html", null ],
       [ "Google.OrTools.ConstraintSolver.BaseObject", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseObject.html", [
-        [ "Google.OrTools.ConstraintSolver.Decision", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Decision.html", null ],
-        [ "Google.OrTools.ConstraintSolver.DecisionBuilder", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilder.html", null ],
+        [ "Google.OrTools.ConstraintSolver.Decision", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Decision.html", [
+          [ "Google.OrTools.ConstraintSolver.NetDecision", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1NetDecision.html", null ]
+        ] ],
+        [ "Google.OrTools.ConstraintSolver.DecisionBuilder", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilder.html", [
+          [ "Google.OrTools.ConstraintSolver.NetDecisionBuilder", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1NetDecisionBuilder.html", null ]
+        ] ],
         [ "Google.OrTools.ConstraintSolver.DecisionVisitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionVisitor.html", [
           [ "Google.OrTools.ConstraintSolver.SymmetryBreaker", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreaker.html", null ]
         ] ],
-        [ "Google.OrTools.ConstraintSolver.Demon", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Demon.html", null ],
+        [ "Google.OrTools.ConstraintSolver.Demon", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Demon.html", [
+          [ "Google.OrTools.ConstraintSolver.NetDemon", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1NetDemon.html", null ]
+        ] ],
+        [ "Google.OrTools.ConstraintSolver.IntVarIterator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html", null ],
         [ "Google.OrTools.ConstraintSolver.IntVarIterator", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarIterator.html", null ],
         [ "Google.OrTools.ConstraintSolver.LocalSearchFilter", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilter.html", [
           [ "Google.OrTools.ConstraintSolver.IntVarLocalSearchFilter", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarLocalSearchFilter.html", null ]
@@ -384,12 +499,14 @@ var hierarchy =
         [ "Google.OrTools.ConstraintSolver.PropagationBaseObject", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1PropagationBaseObject.html", [
           [ "Google.OrTools.ConstraintSolver.Assignment", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Assignment.html", null ],
           [ "Google.OrTools.ConstraintSolver.Constraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Constraint.html", null ],
+          [ "Google.OrTools.ConstraintSolver.Constraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Constraint.html", null ],
           [ "Google.OrTools.ConstraintSolver.IntExpr", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntExpr.html", [
             [ "Google.OrTools.ConstraintSolver.BaseIntExpr", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseIntExpr.html", null ],
             [ "Google.OrTools.ConstraintSolver.IntVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVar.html", [
               [ "Google.OrTools.ConstraintSolver.BooleanVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html", null ]
             ] ]
           ] ],
+          [ "Google.OrTools.ConstraintSolver.IntExpr", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntExpr.html", null ],
           [ "Google.OrTools.ConstraintSolver.IntervalVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVar.html", null ],
           [ "Google.OrTools.ConstraintSolver.SequenceVar", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SequenceVar.html", null ]
         ] ],
@@ -477,13 +594,21 @@ var hierarchy =
       [ "Google.OrTools.ModelBuilder.ModelBuilderHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html", null ],
       [ "Google.OrTools.ModelBuilder.ModelSolverHelper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelSolverHelper.html", null ],
       [ "Google.OrTools.Sat.CpSatHelper", "classGoogle_1_1OrTools_1_1Sat_1_1CpSatHelper.html", null ],
-      [ "Google.OrTools.Sat.LogCallback", "classGoogle_1_1OrTools_1_1Sat_1_1LogCallback.html", null ],
-      [ "Google.OrTools.Sat.SolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolutionCallback.html", null ],
+      [ "Google.OrTools.Sat.LogCallback", "classGoogle_1_1OrTools_1_1Sat_1_1LogCallback.html", [
+        [ "Google.OrTools.Sat.LogCallbackDelegate", "classGoogle_1_1OrTools_1_1Sat_1_1LogCallbackDelegate.html", null ]
+      ] ],
+      [ "Google.OrTools.Sat.SolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolutionCallback.html", [
+        [ "Google.OrTools.Sat.CpSolverSolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolutionCallback.html", [
+          [ "Google.OrTools.Sat.ObjectiveSolutionPrinter", "classGoogle_1_1OrTools_1_1Sat_1_1ObjectiveSolutionPrinter.html", null ]
+        ] ]
+      ] ],
       [ "Google.OrTools.Sat.SolveWrapper", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html", null ],
       [ "Google.OrTools.Util.Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", null ],
       [ "Google.OrTools.Util.Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", null ],
       [ "Google.OrTools.Util.Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", null ]
     ] ],
+    [ "Google.OrTools.ModelBuilder.Term", "structGoogle_1_1OrTools_1_1ModelBuilder_1_1Term.html", null ],
+    [ "Google.OrTools.Sat.Term", "structGoogle_1_1OrTools_1_1Sat_1_1Term.html", null ],
     [ "Google.OrTools.Bop.BopOptimizerMethod.Types", "classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod_1_1Types.html", null ],
     [ "Google.OrTools.Bop.BopParameters.Types", "classGoogle_1_1OrTools_1_1Bop_1_1BopParameters_1_1Types.html", null ],
     [ "Google.OrTools.ConstraintSolver.ConstraintSolverParameters.Types", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverParameters_1_1Types.html", null ],

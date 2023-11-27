@@ -21,6 +21,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector =
     [ "Insert", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#ab574bcd30bb483a2c187197e36e513bd", null ],
     [ "InsertRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a76eefdf23856ab86f10ed85a5a9aec3d", null ],
     [ "LastIndexOf", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a0d293b8b924b3f52d1b2554cb93a5947", null ],
+    [ "operator IntervalVar[]", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a5582c9cdf1f28b762acaa577b4423a1d", null ],
+    [ "operator IntervalVarVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a0ad7eefaa06a964ae3f18df5b41f1deb", null ],
     [ "Remove", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a37bcd3211c15fdfb64e9904272a95e8b", null ],
     [ "RemoveAt", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#ab2f992b220c5ed737ddf6ab47007fe09", null ],
     [ "RemoveRange", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#ac11da188009a8c3eadcd967165896715", null ],
