@@ -5,7 +5,12 @@ var annotated_dup =
         [ "ortools", "namespacecom_1_1google_1_1ortools.html", [
           [ "algorithms", "namespacecom_1_1google_1_1ortools_1_1algorithms.html", [
             [ "KnapsackSolver", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html", "classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver" ],
-            [ "main", "classcom_1_1google_1_1ortools_1_1algorithms_1_1main.html", null ]
+            [ "main", "classcom_1_1google_1_1ortools_1_1algorithms_1_1main.html", null ],
+            [ "SetCover", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCover.html", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCover" ],
+            [ "SetCoverProto", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto.html", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto" ],
+            [ "SetCoverProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProtoOrBuilder" ],
+            [ "SetCoverSolutionResponse", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse.html", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse" ],
+            [ "SetCoverSolutionResponseOrBuilder", "interfacecom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponseOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponseOrBuilder" ]
           ] ],
           [ "bop", "namespacecom_1_1google_1_1ortools_1_1bop.html", [
             [ "BopOptimizerMethod", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod" ],
@@ -315,6 +320,9 @@ var annotated_dup =
           ] ],
           [ "util", "namespacecom_1_1google_1_1ortools_1_1util.html", [
             [ "Domain", "classcom_1_1google_1_1ortools_1_1util_1_1Domain.html", "classcom_1_1google_1_1ortools_1_1util_1_1Domain" ],
+            [ "Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", "classcom_1_1google_1_1ortools_1_1util_1_1Int128" ],
+            [ "Int128OrBuilder", "interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder" ],
+            [ "Int128OuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass" ],
             [ "main", "classcom_1_1google_1_1ortools_1_1util_1_1main.html", null ],
             [ "OptionalBoolean", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean" ],
             [ "OptionalBooleanOuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1OptionalBooleanOuterClass.html", "classcom_1_1google_1_1ortools_1_1util_1_1OptionalBooleanOuterClass" ],
@@ -324,10 +332,11 @@ var annotated_dup =
         ] ]
       ] ]
     ] ],
-    [ "operations_research", null, [
+    [ "operations_research", "namespaceoperations__research.html", [
       [ "pdlp", "namespaceoperations__research_1_1pdlp.html", [
         [ "SolveLogOuterClass", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass" ],
         [ "Solvers", "classoperations__research_1_1pdlp_1_1Solvers.html", "classoperations__research_1_1pdlp_1_1Solvers" ]
-      ] ]
+      ] ],
+      [ "RoutingIls", "classoperations__research_1_1RoutingIls.html", "classoperations__research_1_1RoutingIls" ]
     ] ]
 ];

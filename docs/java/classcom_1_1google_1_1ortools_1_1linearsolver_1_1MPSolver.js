@@ -68,5 +68,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver =
     [ "variables", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a86b73c264a3ce9a9f8615574f80c6204", null ],
     [ "verifySolution", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a2e87b3e192b81d1df9f79055efedeceb", null ],
     [ "wallTime", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a421429bb3274ee3b0a9aa73de0ae0abe", null ],
+    [ "write", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a1cc68d4403d73332516ed194d2e263e9", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a0c09f1e0f4d378b22b804b96117b81eb", null ]
 ];

@@ -164,6 +164,12 @@ var NAVTREEINDEX0 =
 "GlopParameters_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,3,0],
 "ImprovementSearchLimit_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,26],
 "ImprovementSearchLimit_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,26],
+"Int128OrBuilder_8java.html":[4,0,0,0,0,0,0,0,0,0,0,9,2],
+"Int128OrBuilder_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,9,2],
+"Int128OuterClass_8java.html":[4,0,0,0,0,0,0,0,0,0,0,9,3],
+"Int128OuterClass_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,9,3],
+"Int128_8java.html":[4,0,0,0,0,0,0,0,0,0,0,9,1],
+"Int128_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,9,1],
 "IntBoolPair_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,27],
 "IntBoolPair_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,27],
 "IntExpr_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,30],
@@ -243,11 +249,5 @@ var NAVTREEINDEX0 =
 "LocalSearchPhaseParameters_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,46],
 "LocalSearchPhaseParameters_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,46],
 "LocalSearchStatisticsOrBuilder_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,48],
-"LocalSearchStatisticsOrBuilder_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,48],
-"LocalSearchStatistics_8java.html":[4,0,0,0,0,0,0,0,0,0,0,2,47],
-"LocalSearchStatistics_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,47],
-"MPAbsConstraintOrBuilder_8java.html":[4,0,0,0,0,0,0,0,0,0,0,6,3],
-"MPAbsConstraintOrBuilder_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,6,3],
-"MPAbsConstraint_8java.html":[4,0,0,0,0,0,0,0,0,0,0,6,2],
-"MPAbsConstraint_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,6,2]
+"LocalSearchStatisticsOrBuilder_8java_source.html":[4,0,0,0,0,0,0,0,0,0,0,2,48]
 };

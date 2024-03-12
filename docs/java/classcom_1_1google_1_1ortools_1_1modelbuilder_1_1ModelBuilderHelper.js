@@ -45,6 +45,7 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper =
     [ "numConstraints", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#abe01e24dc426f045a76fbb35011f44f7", null ],
     [ "numVariables", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a5f315146bc65513b31d0b8536fe62dad", null ],
     [ "overwriteModel", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#addff64c75cdf1a6da5c209b0580eb058", null ],
+    [ "readModelFromProtoFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a0009d6d2f542e25c0874d0935a450068", null ],
     [ "safeAddConstraintTerm", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a0781af3a2295d3f74bae36e2b430afd4", null ],
     [ "safeAddEnforcedConstraintTerm", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a65172ae23e76f693c5d3575e1c2509ce", null ],
     [ "setConstraintCoefficient", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a5d8d9426162eebbadb7657840ab97829", null ],
@@ -66,6 +67,6 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper =
     [ "setVarObjectiveCoefficient", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a2ab129f854d4f5aaa5ddbca6e99f450d", null ],
     [ "setVarUpperBound", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#ae488020e010e7a94f51d01c8b421c7aa", null ],
     [ "swigRelease", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a4e5016d5d91ecb9fa4c060ccefc7d3d1", null ],
-    [ "writeModelToFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#aa9b1c70f270972236d48f440f4ff48de", null ],
+    [ "writeModelToProtoFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a9e151a350b7132b476224d04646157cb", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a3bf99b68afc961afc05d15284e8da1ca", null ]
 ];

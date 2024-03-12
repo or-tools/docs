@@ -48,6 +48,8 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder =
     [ "getHelper", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a66b3247bc2a1b9605ff1e94663aebb41", null ],
     [ "getName", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#af7e3f663326ec8cc50b7da97db3e8c1a", null ],
     [ "getName", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#af7e3f663326ec8cc50b7da97db3e8c1a", null ],
+    [ "importFromFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#afec55cf97e5fabb5ea20963de520a15d", null ],
+    [ "importFromFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#afec55cf97e5fabb5ea20963de520a15d", null ],
     [ "importFromLpFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#ae51e122b45f589ce7d30525a2b1e6059", null ],
     [ "importFromLpFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#ae51e122b45f589ce7d30525a2b1e6059", null ],
     [ "importFromLpString", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#af5819c4f198dc8c62e5b953e7a89897d", null ],

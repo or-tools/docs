@@ -7,7 +7,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder =
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a59f1100e495eba9d3210feb258105c21", null ],
     [ "GetName", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a20b8486d2f98c2ed3603f62ad84b3023", null ],
     [ "nextWrap", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a868cd3e8de630e6e4d400e4909648808", null ],
-    [ "set_name", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#aa8896691b6b13a65d9720bf4e3dc0ac3", null ],
+    [ "set_name", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a94e201dfed10443860cf77227193df0a", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a537c035d613b4940217479bcd83d542d", null ],
     [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#ae3f72e51c48312ef0bbac8480f0c00b9", null ],
     [ "swigReleaseOwnership", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html#a98a96624cda6829fe95610a5b7adba32", null ],

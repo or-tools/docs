@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ub_0',['ub',['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#a2c3a8277b887c85254c93e0b24b8f9ff',1,'com.google.ortools.linearsolver.MPVariable.ub()'],['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#a71e2a5848b6791b9ffe2948ad9d17e5a',1,'com.google.ortools.linearsolver.MPConstraint.ub()']]],
+  ['ub_0',['ub',['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPConstraint.html#a71e2a5848b6791b9ffe2948ad9d17e5a',1,'com.google.ortools.linearsolver.MPConstraint.ub()'],['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariable.html#a2c3a8277b887c85254c93e0b24b8f9ff',1,'com.google.ortools.linearsolver.MPVariable.ub()']]],
   ['unassignallremainingitems_1',['unassignAllRemainingItems',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html#a59c60c3b80e39d330db4f0c3bfce0f24',1,'com::google::ortools::constraintsolver::Pack']]],
   ['unchecked_5fsolutions_2',['unchecked_solutions',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#abbce72ee5418817c2e1f1703e8b3387e',1,'com::google::ortools::constraintsolver::Solver']]],
   ['unfreezequeue_3',['unfreezeQueue',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PropagationBaseObject.html#a1fb862d7d176653fbc54834ac861023b',1,'com::google::ortools::constraintsolver::PropagationBaseObject']]],
@@ -12,5 +12,5 @@ var searchData=
   ['updatetimelimit_9',['UpdateTimeLimit',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel.html#a520c1c9ef8f9f92dacc05c855757c08a',1,'com::google::ortools::constraintsolver::RoutingModel']]],
   ['usefastlocalsearch_10',['UseFastLocalSearch',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#abbc94edeedd0fb27f01405d89b5fb9d5',1,'com::google::ortools::constraintsolver::Solver']]],
   ['usereduction_11',['useReduction',['../classcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver.html#a9397051479da2ba13997e21ce9b02493',1,'com::google::ortools::algorithms::KnapsackSolver']]],
-  ['usertime_12',['usertime',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#ad7c755da81776f896e5908d4aaace66e',1,'com.google.ortools.sat.CpSolver.userTime()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#ad7c755da81776f896e5908d4aaace66e',1,'com.google.ortools.sat.CpSolver.userTime()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a3ae7a23955eabf848b2370f4a31bd56a',1,'com.google.ortools.sat.SolutionCallback.userTime()']]]
+  ['usertime_12',['userTime',['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#ad7c755da81776f896e5908d4aaace66e',1,'com.google.ortools.sat.CpSolver.userTime()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1CpSolver.html#ad7c755da81776f896e5908d4aaace66e',1,'com.google.ortools.sat.CpSolver.userTime()'],['../classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html#a3ae7a23955eabf848b2370f4a31bd56a',1,'com.google.ortools.sat.SolutionCallback.userTime()']]]
 ];

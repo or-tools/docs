@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['linearargument_0',['linearargument',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearArgument.html',1,'com.google.ortools.sat.LinearArgument'],['../interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearArgument.html',1,'com.google.ortools.modelbuilder.LinearArgument']]],
+  ['linearargument_0',['LinearArgument',['../interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearArgument.html',1,'com.google.ortools.modelbuilder.LinearArgument'],['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearArgument.html',1,'com.google.ortools.sat.LinearArgument']]],
   ['linearargumentproto_1',['LinearArgumentProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearArgumentProto.html',1,'com::google::ortools::sat']]],
   ['linearargumentprotoorbuilder_2',['LinearArgumentProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearArgumentProtoOrBuilder.html',1,'com::google::ortools::sat']]],
   ['linearbooleanconstraint_3',['LinearBooleanConstraint',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanConstraint.html',1,'com::google::ortools::sat']]],
@@ -10,8 +10,8 @@ var searchData=
   ['linearconstraint_7',['LinearConstraint',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearConstraint.html',1,'com::google::ortools::modelbuilder']]],
   ['linearconstraintproto_8',['LinearConstraintProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProto.html',1,'com::google::ortools::sat']]],
   ['linearconstraintprotoorbuilder_9',['LinearConstraintProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearConstraintProtoOrBuilder.html',1,'com::google::ortools::sat']]],
-  ['linearexpr_10',['linearexpr',['../interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExpr.html',1,'com.google.ortools.modelbuilder.LinearExpr'],['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpr.html',1,'com.google.ortools.sat.LinearExpr']]],
-  ['linearexprbuilder_11',['linearexprbuilder',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExprBuilder.html',1,'com.google.ortools.modelbuilder.LinearExprBuilder'],['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearExprBuilder.html',1,'com.google.ortools.sat.LinearExprBuilder']]],
+  ['linearexpr_10',['LinearExpr',['../interfacecom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExpr.html',1,'com.google.ortools.modelbuilder.LinearExpr'],['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpr.html',1,'com.google.ortools.sat.LinearExpr']]],
+  ['linearexprbuilder_11',['LinearExprBuilder',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearExprBuilder.html',1,'com.google.ortools.modelbuilder.LinearExprBuilder'],['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearExprBuilder.html',1,'com.google.ortools.sat.LinearExprBuilder']]],
   ['linearexpressionproto_12',['LinearExpressionProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProto.html',1,'com::google::ortools::sat']]],
   ['linearexpressionprotoorbuilder_13',['LinearExpressionProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearExpressionProtoOrBuilder.html',1,'com::google::ortools::sat']]],
   ['linearobjective_14',['LinearObjective',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html',1,'com::google::ortools::sat']]],
@@ -41,5 +41,6 @@ var searchData=
   ['localsearchstatisticsorbuilder_38',['LocalSearchStatisticsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatisticsOrBuilder.html',1,'com::google::ortools::constraintsolver']]],
   ['longternaryoperator_39',['LongTernaryOperator',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LongTernaryOperator.html',1,'com::google::ortools::constraintsolver']]],
   ['longternarypredicate_40',['LongTernaryPredicate',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LongTernaryPredicate.html',1,'com::google::ortools::constraintsolver']]],
-  ['lpalgorithmvalues_41',['lpalgorithmvalues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html',1,'com.google.ortools.linearsolver.MPSolverCommonParameters.LPAlgorithmValues'],['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues.html',1,'com.google.ortools.linearsolver.MPSolverParameters.LpAlgorithmValues']]]
+  ['lpalgorithmvalues_41',['LPAlgorithmValues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html',1,'com::google::ortools::linearsolver::MPSolverCommonParameters']]],
+  ['lpalgorithmvalues_42',['LpAlgorithmValues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues.html',1,'com::google::ortools::linearsolver::MPSolverParameters']]]
 ];

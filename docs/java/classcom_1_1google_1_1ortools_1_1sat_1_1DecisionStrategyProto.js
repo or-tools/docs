@@ -1,7 +1,5 @@
 var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto =
 [
-    [ "AffineTransformation", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation.html", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformation" ],
-    [ "AffineTransformationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformationOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1AffineTransformationOrBuilder" ],
     [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder" ],
     [ "DomainReductionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy" ],
     [ "VariableSelectionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy" ],
@@ -11,13 +9,13 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto =
     [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#acf77a557008107167229ffbc89b7d203", null ],
     [ "getDomainReductionStrategy", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a795972db67721f474c3fcb66a68386a8", null ],
     [ "getDomainReductionStrategyValue", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a0b17aa9480bdafbf8f21e790603eba47", null ],
+    [ "getExprs", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ace6105ee1bbd0c3e2420773579a06e88", null ],
+    [ "getExprsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#aa3eb9447ab042453f3799bad3c18422d", null ],
+    [ "getExprsList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a5d167574ec93bf621f12a07f4908fcfa", null ],
+    [ "getExprsOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a896b0c6b31cfde8c8052e6c7f22af5b6", null ],
+    [ "getExprsOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a7245fed805ec053407c819977cfbc736", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#abbc3a4fc32c9bf1e25c11c6db1e95e5e", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ae3f4e412ab94cb2bd6b4d82fe019e5d7", null ],
-    [ "getTransformations", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ae5c570609caa7265f5a3d4e9e9fc869b", null ],
-    [ "getTransformationsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a1412f6c44776f99fd6b2728368162a4a", null ],
-    [ "getTransformationsList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a275bbf9fb74877cccd4b429c1e36dbe9", null ],
-    [ "getTransformationsOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a92f65fec0ea4d77f5175b2bd7ac1c600", null ],
-    [ "getTransformationsOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a4ead448cf0307fa65d0e407a1eea04bf", null ],
     [ "getVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ad345eb3eb0a51a462a6e48983ca3ef1a", null ],
     [ "getVariablesCount", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ab84b8189ffaefe8c86f89f6b346dcdee", null ],
     [ "getVariableSelectionStrategy", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#af51871693e644c02a8fbd84ef49e6e87", null ],
@@ -47,7 +45,7 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto =
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ad006774aeb5f407e140138d52ca42423", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a04d9393c7fb854ef1a5f48548fda15d3", null ],
     [ "DOMAIN_REDUCTION_STRATEGY_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a4fd1a2ad68c3f3c2c8f3c008c83d8eba", null ],
-    [ "TRANSFORMATIONS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ab0b8734b129e1f020bb7468625c36021", null ],
+    [ "EXPRS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#af57806ced23183be0f4d060b4916409e", null ],
     [ "VARIABLE_SELECTION_STRATEGY_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#acf8dff015c7e3b1528a74c977fc690ec", null ],
     [ "VARIABLES_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#aeda6327f57cbac9bbc81e6ae16d134fb", null ]
 ];

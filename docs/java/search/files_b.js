@@ -6,10 +6,10 @@ var searchData=
   ['maxflow_2ejava_3',['MaxFlow.java',['../MaxFlow_8java.html',1,'']]],
   ['mincostflow_2ejava_4',['MinCostFlow.java',['../MinCostFlow_8java.html',1,'']]],
   ['mincostflowbase_2ejava_5',['MinCostFlowBase.java',['../MinCostFlowBase_8java.html',1,'']]],
-  ['modelbuilder_2ejava_6',['modelbuilder.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2modelbuilder_2ModelBuilder_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2modelbuilder_2ModelBuilder_8java.html',1,'(Global Namespace)']]],
+  ['modelbuilder_2ejava_6',['ModelBuilder.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2modelbuilder_2ModelBuilder_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2modelbuilder_2ModelBuilder_8java.html',1,'(Global Namespace)']]],
   ['modelbuilderhelper_2ejava_7',['ModelBuilderHelper.java',['../ModelBuilderHelper_8java.html',1,'']]],
   ['modelcache_2ejava_8',['ModelCache.java',['../ModelCache_8java.html',1,'']]],
-  ['modelsolver_2ejava_9',['modelsolver.java',['../ortools_2java_2com_2google_2ortools_2modelbuilder_2ModelSolver_8java.html',1,'(Global Namespace)'],['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2modelbuilder_2ModelSolver_8java.html',1,'(Global Namespace)']]],
+  ['modelsolver_2ejava_9',['ModelSolver.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2modelbuilder_2ModelSolver_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2modelbuilder_2ModelSolver_8java.html',1,'(Global Namespace)']]],
   ['modelsolverhelper_2ejava_10',['ModelSolverHelper.java',['../ModelSolverHelper_8java.html',1,'']]],
   ['modelvisitor_2ejava_11',['ModelVisitor.java',['../ModelVisitor_8java.html',1,'']]],
   ['mpabsconstraint_2ejava_12',['MPAbsConstraint.java',['../MPAbsConstraint_8java.html',1,'']]],
@@ -53,5 +53,5 @@ var searchData=
   ['mpvariable_2ejava_50',['MPVariable.java',['../MPVariable_8java.html',1,'']]],
   ['mpvariableproto_2ejava_51',['MPVariableProto.java',['../MPVariableProto_8java.html',1,'']]],
   ['mpvariableprotoorbuilder_2ejava_52',['MPVariableProtoOrBuilder.java',['../MPVariableProtoOrBuilder_8java.html',1,'']]],
-  ['multiplecircuitconstraint_2ejava_53',['multiplecircuitconstraint.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2MultipleCircuitConstraint_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2sat_2MultipleCircuitConstraint_8java.html',1,'(Global Namespace)']]]
+  ['multiplecircuitconstraint_2ejava_53',['MultipleCircuitConstraint.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2MultipleCircuitConstraint_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2sat_2MultipleCircuitConstraint_8java.html',1,'(Global Namespace)']]]
 ];

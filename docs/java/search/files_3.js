@@ -11,5 +11,5 @@ var searchData=
   ['densematrixprotoorbuilder_2ejava_8',['DenseMatrixProtoOrBuilder.java',['../DenseMatrixProtoOrBuilder_8java.html',1,'']]],
   ['disjunctiveconstraint_2ejava_9',['DisjunctiveConstraint.java',['../DisjunctiveConstraint_8java.html',1,'']]],
   ['domain_2ejava_10',['Domain.java',['../Domain_8java.html',1,'']]],
-  ['doublelinearexpr_2ejava_11',['doublelinearexpr.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2DoubleLinearExpr_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2sat_2DoubleLinearExpr_8java.html',1,'(Global Namespace)']]]
+  ['doublelinearexpr_2ejava_11',['DoubleLinearExpr.java',['../build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2sat_2DoubleLinearExpr_8java.html',1,'(Global Namespace)'],['../ortools_2java_2com_2google_2ortools_2sat_2DoubleLinearExpr_8java.html',1,'(Global Namespace)']]]
 ];
