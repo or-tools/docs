@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.sat.boolean_problem_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -389,7 +389,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -415,7 +415,7 @@ Protocol buffer to encode a Boolean satisfiability/optimization problem.</p>
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/sat/boolean_problem.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1319,13 +1319,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="LinearBooleanConstraint.literals" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanConstraint.literals-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">literals</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanConstraint.literals-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanConstraint.literals"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanConstraint.literals-642"><a href="#LinearBooleanConstraint.literals-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanConstraint.literals-643"><a href="#LinearBooleanConstraint.literals-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.literals-644"><a href="#LinearBooleanConstraint.literals-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanConstraint.literals-645"><a href="#LinearBooleanConstraint.literals-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanConstraint.literals-646"><a href="#LinearBooleanConstraint.literals-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.literals-647"><a href="#LinearBooleanConstraint.literals-647"><span class="linenos">647</span></a>
+</span><span id="LinearBooleanConstraint.literals-648"><a href="#LinearBooleanConstraint.literals-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanConstraint.literals-649"><a href="#LinearBooleanConstraint.literals-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanConstraint.literals-650"><a href="#LinearBooleanConstraint.literals-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanConstraint.literals-651"><a href="#LinearBooleanConstraint.literals-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanConstraint.literals-652"><a href="#LinearBooleanConstraint.literals-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanConstraint.literals-653"><a href="#LinearBooleanConstraint.literals-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanConstraint.literals-654"><a href="#LinearBooleanConstraint.literals-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.literals-655"><a href="#LinearBooleanConstraint.literals-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Linear terms involved in this constraint.</p>
 
 <p>literals[i] is the signed representation of the i-th literal of the
@@ -1352,13 +1370,31 @@ coefficients are not allowed.</p>
 
                             </div>
                             <div id="LinearBooleanConstraint.coefficients" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanConstraint.coefficients-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">coefficients</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanConstraint.coefficients-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanConstraint.coefficients"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanConstraint.coefficients-642"><a href="#LinearBooleanConstraint.coefficients-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanConstraint.coefficients-643"><a href="#LinearBooleanConstraint.coefficients-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.coefficients-644"><a href="#LinearBooleanConstraint.coefficients-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanConstraint.coefficients-645"><a href="#LinearBooleanConstraint.coefficients-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanConstraint.coefficients-646"><a href="#LinearBooleanConstraint.coefficients-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.coefficients-647"><a href="#LinearBooleanConstraint.coefficients-647"><span class="linenos">647</span></a>
+</span><span id="LinearBooleanConstraint.coefficients-648"><a href="#LinearBooleanConstraint.coefficients-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanConstraint.coefficients-649"><a href="#LinearBooleanConstraint.coefficients-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanConstraint.coefficients-650"><a href="#LinearBooleanConstraint.coefficients-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanConstraint.coefficients-651"><a href="#LinearBooleanConstraint.coefficients-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanConstraint.coefficients-652"><a href="#LinearBooleanConstraint.coefficients-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanConstraint.coefficients-653"><a href="#LinearBooleanConstraint.coefficients-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanConstraint.coefficients-654"><a href="#LinearBooleanConstraint.coefficients-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanConstraint.coefficients-655"><a href="#LinearBooleanConstraint.coefficients-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for coefficients.</p>
 </div>
 
@@ -1377,13 +1413,21 @@ coefficients are not allowed.</p>
 
                             </div>
                             <div id="LinearBooleanConstraint.lower_bound" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanConstraint.lower_bound-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">lower_bound</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanConstraint.lower_bound-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanConstraint.lower_bound"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanConstraint.lower_bound-685"><a href="#LinearBooleanConstraint.lower_bound-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanConstraint.lower_bound-686"><a href="#LinearBooleanConstraint.lower_bound-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanConstraint.lower_bound-687"><a href="#LinearBooleanConstraint.lower_bound-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanConstraint.lower_bound-688"><a href="#LinearBooleanConstraint.lower_bound-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Optional lower (resp. upper) bound of the constraint. If not present, it
 means that the constraint is not bounded in this direction. The bounds
 are INCLUSIVE.</p>
@@ -1404,13 +1448,21 @@ are INCLUSIVE.</p>
 
                             </div>
                             <div id="LinearBooleanConstraint.upper_bound" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanConstraint.upper_bound-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">upper_bound</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanConstraint.upper_bound-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanConstraint.upper_bound"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanConstraint.upper_bound-685"><a href="#LinearBooleanConstraint.upper_bound-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanConstraint.upper_bound-686"><a href="#LinearBooleanConstraint.upper_bound-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanConstraint.upper_bound-687"><a href="#LinearBooleanConstraint.upper_bound-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanConstraint.upper_bound-688"><a href="#LinearBooleanConstraint.upper_bound-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for upper_bound.</p>
 </div>
 
@@ -1429,13 +1481,21 @@ are INCLUSIVE.</p>
 
                             </div>
                             <div id="LinearBooleanConstraint.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanConstraint.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanConstraint.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanConstraint.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanConstraint.name-685"><a href="#LinearBooleanConstraint.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanConstraint.name-686"><a href="#LinearBooleanConstraint.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanConstraint.name-687"><a href="#LinearBooleanConstraint.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanConstraint.name-688"><a href="#LinearBooleanConstraint.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The name of this constraint.</p>
 </div>
 
@@ -2378,13 +2438,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="LinearObjective.literals" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearObjective.literals-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">literals</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="LinearObjective.literals-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearObjective.literals"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearObjective.literals-642"><a href="#LinearObjective.literals-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearObjective.literals-643"><a href="#LinearObjective.literals-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearObjective.literals-644"><a href="#LinearObjective.literals-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearObjective.literals-645"><a href="#LinearObjective.literals-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearObjective.literals-646"><a href="#LinearObjective.literals-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearObjective.literals-647"><a href="#LinearObjective.literals-647"><span class="linenos">647</span></a>
+</span><span id="LinearObjective.literals-648"><a href="#LinearObjective.literals-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearObjective.literals-649"><a href="#LinearObjective.literals-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearObjective.literals-650"><a href="#LinearObjective.literals-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearObjective.literals-651"><a href="#LinearObjective.literals-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearObjective.literals-652"><a href="#LinearObjective.literals-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearObjective.literals-653"><a href="#LinearObjective.literals-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearObjective.literals-654"><a href="#LinearObjective.literals-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearObjective.literals-655"><a href="#LinearObjective.literals-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The goal is always to minimize the linear Boolean formula defined by these
 two fields: sum_i literal_i * coefficient_i where literal_i is 1 iff
 literal_i is true in a given assignment.</p>
@@ -2408,13 +2486,31 @@ coefficients are not allowed.</p>
 
                             </div>
                             <div id="LinearObjective.coefficients" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearObjective.coefficients-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">coefficients</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="LinearObjective.coefficients-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearObjective.coefficients"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearObjective.coefficients-642"><a href="#LinearObjective.coefficients-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearObjective.coefficients-643"><a href="#LinearObjective.coefficients-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearObjective.coefficients-644"><a href="#LinearObjective.coefficients-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearObjective.coefficients-645"><a href="#LinearObjective.coefficients-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearObjective.coefficients-646"><a href="#LinearObjective.coefficients-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearObjective.coefficients-647"><a href="#LinearObjective.coefficients-647"><span class="linenos">647</span></a>
+</span><span id="LinearObjective.coefficients-648"><a href="#LinearObjective.coefficients-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearObjective.coefficients-649"><a href="#LinearObjective.coefficients-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearObjective.coefficients-650"><a href="#LinearObjective.coefficients-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearObjective.coefficients-651"><a href="#LinearObjective.coefficients-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearObjective.coefficients-652"><a href="#LinearObjective.coefficients-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearObjective.coefficients-653"><a href="#LinearObjective.coefficients-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearObjective.coefficients-654"><a href="#LinearObjective.coefficients-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearObjective.coefficients-655"><a href="#LinearObjective.coefficients-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for coefficients.</p>
 </div>
 
@@ -2433,13 +2529,21 @@ coefficients are not allowed.</p>
 
                             </div>
                             <div id="LinearObjective.offset" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearObjective.offset-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">offset</span><span class="annotation">: float</span>
 
-        
+                <label class="view-source-button" for="LinearObjective.offset-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearObjective.offset"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearObjective.offset-685"><a href="#LinearObjective.offset-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearObjective.offset-686"><a href="#LinearObjective.offset-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearObjective.offset-687"><a href="#LinearObjective.offset-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearObjective.offset-688"><a href="#LinearObjective.offset-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>For a given variable assignment, the "real" problem objective value is
 'scaling_factor * (minimization_objective + offset)' where
 'minimization_objective is the one defined just above.</p>
@@ -2464,13 +2568,21 @@ a maximization problem, even if the "internal" objective is minimized.</p>
 
                             </div>
                             <div id="LinearObjective.scaling_factor" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearObjective.scaling_factor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">scaling_factor</span><span class="annotation">: float</span>
 
-        
+                <label class="view-source-button" for="LinearObjective.scaling_factor-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearObjective.scaling_factor"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearObjective.scaling_factor-685"><a href="#LinearObjective.scaling_factor-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearObjective.scaling_factor-686"><a href="#LinearObjective.scaling_factor-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearObjective.scaling_factor-687"><a href="#LinearObjective.scaling_factor-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearObjective.scaling_factor-688"><a href="#LinearObjective.scaling_factor-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for scaling_factor.</p>
 </div>
 
@@ -3417,13 +3529,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="BooleanAssignment.literals" class="classattr">
-                                <div class="attr variable">
+                                        <input id="BooleanAssignment.literals-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">literals</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="BooleanAssignment.literals-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#BooleanAssignment.literals"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="BooleanAssignment.literals-642"><a href="#BooleanAssignment.literals-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="BooleanAssignment.literals-643"><a href="#BooleanAssignment.literals-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="BooleanAssignment.literals-644"><a href="#BooleanAssignment.literals-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="BooleanAssignment.literals-645"><a href="#BooleanAssignment.literals-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="BooleanAssignment.literals-646"><a href="#BooleanAssignment.literals-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="BooleanAssignment.literals-647"><a href="#BooleanAssignment.literals-647"><span class="linenos">647</span></a>
+</span><span id="BooleanAssignment.literals-648"><a href="#BooleanAssignment.literals-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="BooleanAssignment.literals-649"><a href="#BooleanAssignment.literals-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="BooleanAssignment.literals-650"><a href="#BooleanAssignment.literals-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="BooleanAssignment.literals-651"><a href="#BooleanAssignment.literals-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="BooleanAssignment.literals-652"><a href="#BooleanAssignment.literals-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="BooleanAssignment.literals-653"><a href="#BooleanAssignment.literals-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="BooleanAssignment.literals-654"><a href="#BooleanAssignment.literals-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="BooleanAssignment.literals-655"><a href="#BooleanAssignment.literals-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for literals.</p>
 </div>
 
@@ -4366,13 +4496,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="LinearBooleanProblem.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.name-685"><a href="#LinearBooleanProblem.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.name-686"><a href="#LinearBooleanProblem.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanProblem.name-687"><a href="#LinearBooleanProblem.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanProblem.name-688"><a href="#LinearBooleanProblem.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The name of the problem.</p>
 </div>
 
@@ -4391,13 +4529,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="LinearBooleanProblem.num_variables" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.num_variables-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">num_variables</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.num_variables-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.num_variables"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.num_variables-685"><a href="#LinearBooleanProblem.num_variables-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.num_variables-686"><a href="#LinearBooleanProblem.num_variables-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanProblem.num_variables-687"><a href="#LinearBooleanProblem.num_variables-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanProblem.num_variables-688"><a href="#LinearBooleanProblem.num_variables-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The number of variables in the problem.
 All the signed representation of the problem literals must be in
 [-num_variables, num_variables], excluding 0.</p>
@@ -4418,13 +4564,31 @@ All the signed representation of the problem literals must be in
 
                             </div>
                             <div id="LinearBooleanProblem.constraints" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.constraints-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">constraints</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#LinearBooleanConstraint">LinearBooleanConstraint</a>]</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.constraints-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.constraints"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.constraints-642"><a href="#LinearBooleanProblem.constraints-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.constraints-643"><a href="#LinearBooleanProblem.constraints-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.constraints-644"><a href="#LinearBooleanProblem.constraints-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanProblem.constraints-645"><a href="#LinearBooleanProblem.constraints-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanProblem.constraints-646"><a href="#LinearBooleanProblem.constraints-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.constraints-647"><a href="#LinearBooleanProblem.constraints-647"><span class="linenos">647</span></a>
+</span><span id="LinearBooleanProblem.constraints-648"><a href="#LinearBooleanProblem.constraints-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanProblem.constraints-649"><a href="#LinearBooleanProblem.constraints-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanProblem.constraints-650"><a href="#LinearBooleanProblem.constraints-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanProblem.constraints-651"><a href="#LinearBooleanProblem.constraints-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanProblem.constraints-652"><a href="#LinearBooleanProblem.constraints-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanProblem.constraints-653"><a href="#LinearBooleanProblem.constraints-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanProblem.constraints-654"><a href="#LinearBooleanProblem.constraints-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.constraints-655"><a href="#LinearBooleanProblem.constraints-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The constraints of the problem.</p>
 </div>
 
@@ -4443,13 +4607,31 @@ All the signed representation of the problem literals must be in
 
                             </div>
                             <div id="LinearBooleanProblem.objective" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.objective-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">objective</span><span class="annotation">: <a href="#LinearObjective">LinearObjective</a></span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.objective-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.objective"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.objective-741"><a href="#LinearBooleanProblem.objective-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.objective-742"><a href="#LinearBooleanProblem.objective-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.objective-743"><a href="#LinearBooleanProblem.objective-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanProblem.objective-744"><a href="#LinearBooleanProblem.objective-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanProblem.objective-745"><a href="#LinearBooleanProblem.objective-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.objective-746"><a href="#LinearBooleanProblem.objective-746"><span class="linenos">746</span></a>
+</span><span id="LinearBooleanProblem.objective-747"><a href="#LinearBooleanProblem.objective-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanProblem.objective-748"><a href="#LinearBooleanProblem.objective-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanProblem.objective-749"><a href="#LinearBooleanProblem.objective-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanProblem.objective-750"><a href="#LinearBooleanProblem.objective-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanProblem.objective-751"><a href="#LinearBooleanProblem.objective-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanProblem.objective-752"><a href="#LinearBooleanProblem.objective-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanProblem.objective-753"><a href="#LinearBooleanProblem.objective-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.objective-754"><a href="#LinearBooleanProblem.objective-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The objective of the problem.
 If left empty, we just have a satisfiability problem.</p>
 </div>
@@ -4469,13 +4651,31 @@ If left empty, we just have a satisfiability problem.</p>
 
                             </div>
                             <div id="LinearBooleanProblem.var_names" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.var_names-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">var_names</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[str]</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.var_names-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.var_names"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.var_names-642"><a href="#LinearBooleanProblem.var_names-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.var_names-643"><a href="#LinearBooleanProblem.var_names-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.var_names-644"><a href="#LinearBooleanProblem.var_names-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanProblem.var_names-645"><a href="#LinearBooleanProblem.var_names-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanProblem.var_names-646"><a href="#LinearBooleanProblem.var_names-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.var_names-647"><a href="#LinearBooleanProblem.var_names-647"><span class="linenos">647</span></a>
+</span><span id="LinearBooleanProblem.var_names-648"><a href="#LinearBooleanProblem.var_names-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanProblem.var_names-649"><a href="#LinearBooleanProblem.var_names-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanProblem.var_names-650"><a href="#LinearBooleanProblem.var_names-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanProblem.var_names-651"><a href="#LinearBooleanProblem.var_names-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanProblem.var_names-652"><a href="#LinearBooleanProblem.var_names-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanProblem.var_names-653"><a href="#LinearBooleanProblem.var_names-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanProblem.var_names-654"><a href="#LinearBooleanProblem.var_names-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.var_names-655"><a href="#LinearBooleanProblem.var_names-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The names of the problem variables. The variables index are 0-based and
 var_names[i] will be the name of the i-th variable which correspond to
 literals +(i + 1) or -(i + 1). This is optional and can be left empty.</p>
@@ -4496,13 +4696,31 @@ literals +(i + 1) or -(i + 1). This is optional and can be left empty.</p>
 
                             </div>
                             <div id="LinearBooleanProblem.assignment" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.assignment-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">assignment</span><span class="annotation">: <a href="#BooleanAssignment">BooleanAssignment</a></span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.assignment-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.assignment"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.assignment-741"><a href="#LinearBooleanProblem.assignment-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.assignment-742"><a href="#LinearBooleanProblem.assignment-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.assignment-743"><a href="#LinearBooleanProblem.assignment-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="LinearBooleanProblem.assignment-744"><a href="#LinearBooleanProblem.assignment-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="LinearBooleanProblem.assignment-745"><a href="#LinearBooleanProblem.assignment-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.assignment-746"><a href="#LinearBooleanProblem.assignment-746"><span class="linenos">746</span></a>
+</span><span id="LinearBooleanProblem.assignment-747"><a href="#LinearBooleanProblem.assignment-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="LinearBooleanProblem.assignment-748"><a href="#LinearBooleanProblem.assignment-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="LinearBooleanProblem.assignment-749"><a href="#LinearBooleanProblem.assignment-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="LinearBooleanProblem.assignment-750"><a href="#LinearBooleanProblem.assignment-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="LinearBooleanProblem.assignment-751"><a href="#LinearBooleanProblem.assignment-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="LinearBooleanProblem.assignment-752"><a href="#LinearBooleanProblem.assignment-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="LinearBooleanProblem.assignment-753"><a href="#LinearBooleanProblem.assignment-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="LinearBooleanProblem.assignment-754"><a href="#LinearBooleanProblem.assignment-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Stores an assignment of the problem variables. That may be an initial
 feasible solution, just a partial assignment or the optimal solution.</p>
 </div>
@@ -4522,13 +4740,21 @@ feasible solution, just a partial assignment or the optimal solution.</p>
 
                             </div>
                             <div id="LinearBooleanProblem.original_num_variables" class="classattr">
-                                <div class="attr variable">
+                                        <input id="LinearBooleanProblem.original_num_variables-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">original_num_variables</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="LinearBooleanProblem.original_num_variables-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#LinearBooleanProblem.original_num_variables"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="LinearBooleanProblem.original_num_variables-685"><a href="#LinearBooleanProblem.original_num_variables-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="LinearBooleanProblem.original_num_variables-686"><a href="#LinearBooleanProblem.original_num_variables-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="LinearBooleanProblem.original_num_variables-687"><a href="#LinearBooleanProblem.original_num_variables-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="LinearBooleanProblem.original_num_variables-688"><a href="#LinearBooleanProblem.original_num_variables-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Hack: When converting a wcnf formulat to a LinearBooleanProblem, extra
 variables need to be created. This stores the number of variables in the
 original problem (which are in one to one correspondence with the first

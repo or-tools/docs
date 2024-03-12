@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.algorithms.python.knapsack_solver API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -89,6 +89,9 @@
                         <li>
                                 <a class="variable" href="#SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER">KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</a>
+                        </li>
                 </ul>
 
             </li>
@@ -113,10 +116,13 @@
             <li>
                     <a class="variable" href="#KNAPSACK_DIVIDE_AND_CONQUER_SOLVER">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</a>
             </li>
+            <li>
+                    <a class="variable" href="#KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER">KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</a>
+            </li>
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -232,7 +238,7 @@ final long profit = solver.solve();
                             <div id="KnapsackSolver.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">KnapsackSolver</span><span class="signature pdoc-code condensed">()</span>
+        <span class="name">KnapsackSolver</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">arg0</span>, </span><span class="param"><span class="n">arg1</span><span class="p">:</span> <span class="nb">str</span></span>)</span>
 
         
     </div>
@@ -247,7 +253,7 @@ final long profit = solver.solve();
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">init</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">init</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">profits</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>,</span><span class="param">	<span class="n">weights</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span>,</span><span class="param">	<span class="n">capacities</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -264,7 +270,7 @@ final long profit = solver.solve();
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">solve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">solve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -281,7 +287,7 @@ final long profit = solver.solve();
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">best_solution_contains</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">best_solution_contains</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
 
         
     </div>
@@ -298,7 +304,7 @@ final long profit = solver.solve();
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">is_solution_optimal</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">is_solution_optimal</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
 
         
     </div>
@@ -315,7 +321,7 @@ final long profit = solver.solve();
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_time_limit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_time_limit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">time_limit_seconds</span><span class="p">:</span> <span class="nb">float</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -335,7 +341,7 @@ optimal if the limit is reached.</p>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_use_reduction</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_use_reduction</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">use_reduction</span><span class="p">:</span> <span class="nb">bool</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -404,13 +410,18 @@ dimensions. This solver is based on Integer Programming solver SCIP.</p>
 technique and is suitable for larger problems than Dynamic Programming
 Solver. The time complexity is O(capacity * number_of_items) and the
 space complexity is O(capacity + number_of_items).</p>
+
+<p>KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER : CP_SAT based solver</p>
+
+<p>This solver can deal with both large number of items and several
+dimensions. This solver is based on the CP-SAT solver.</p>
 </div>
 
 
                             <div id="SolverType.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">SolverType</span><span class="signature pdoc-code condensed">()</span>
+        <span class="name">SolverType</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span></span>)</span>
 
         
     </div>
@@ -423,7 +434,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.name" class="classattr">
                                 <div class="attr variable">
-            <span class="name">name</span>
+            <span class="name">name</span><span class="annotation">: str</span>
 
         
     </div>
@@ -436,7 +447,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.value" class="classattr">
                                 <div class="attr variable">
-            <span class="name">value</span>
+            <span class="name">value</span><span class="annotation">: int</span>
 
         
     </div>
@@ -449,7 +460,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</a>: 5&gt;</span>
 
         
@@ -461,7 +472,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_BRUTE_FORCE_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_BRUTE_FORCE_SOLVER</span>        =
+            <span class="name">KNAPSACK_BRUTE_FORCE_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_BRUTE_FORCE_SOLVER">SolverType.KNAPSACK_BRUTE_FORCE_SOLVER</a>: 0&gt;</span>
 
         
@@ -473,7 +484,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_64ITEMS_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_64ITEMS_SOLVER</span>        =
+            <span class="name">KNAPSACK_64ITEMS_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_64ITEMS_SOLVER">SolverType.KNAPSACK_64ITEMS_SOLVER</a>: 1&gt;</span>
 
         
@@ -485,7 +496,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</span>        =
+            <span class="name">KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER">SolverType.KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</a>: 2&gt;</span>
 
         
@@ -497,7 +508,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</a>: 3&gt;</span>
 
         
@@ -509,7 +520,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</a>: 6&gt;</span>
 
         
@@ -521,7 +532,7 @@ space complexity is O(capacity + number_of_items).</p>
                             </div>
                             <div id="SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER" class="classattr">
                                 <div class="attr variable">
-            <span class="name">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</span>        =
+            <span class="name">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER">SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</a>: 9&gt;</span>
 
         
@@ -531,10 +542,22 @@ space complexity is O(capacity + number_of_items).</p>
     
 
                             </div>
+                            <div id="SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER" class="classattr">
+                                <div class="attr variable">
+            <span class="name">KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</span><span class="annotation">: ClassVar[<a href="#SolverType">SolverType</a>]</span>        =
+<span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</a>: 10&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER"></a>
+    
+    
+
+                            </div>
                 </section>
                 <section id="KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER</a>: 5&gt;</span>
 
         
@@ -546,7 +569,7 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_BRUTE_FORCE_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_BRUTE_FORCE_SOLVER</span>        =
+            <span class="name">KNAPSACK_BRUTE_FORCE_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_BRUTE_FORCE_SOLVER">SolverType.KNAPSACK_BRUTE_FORCE_SOLVER</a>: 0&gt;</span>
 
         
@@ -558,7 +581,7 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_64ITEMS_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_64ITEMS_SOLVER</span>        =
+            <span class="name">KNAPSACK_64ITEMS_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_64ITEMS_SOLVER">SolverType.KNAPSACK_64ITEMS_SOLVER</a>: 1&gt;</span>
 
         
@@ -570,7 +593,7 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</span>        =
+            <span class="name">KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER">SolverType.KNAPSACK_DYNAMIC_PROGRAMMING_SOLVER</a>: 2&gt;</span>
 
         
@@ -582,7 +605,7 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER</a>: 3&gt;</span>
 
         
@@ -594,7 +617,7 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</span>        =
+            <span class="name">KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER</a>: 6&gt;</span>
 
         
@@ -606,12 +629,24 @@ space complexity is O(capacity + number_of_items).</p>
                 </section>
                 <section id="KNAPSACK_DIVIDE_AND_CONQUER_SOLVER">
                     <div class="attr variable">
-            <span class="name">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</span>        =
+            <span class="name">KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
 <span class="default_value">&lt;<a href="#SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER">SolverType.KNAPSACK_DIVIDE_AND_CONQUER_SOLVER</a>: 9&gt;</span>
 
         
     </div>
     <a class="headerlink" href="#KNAPSACK_DIVIDE_AND_CONQUER_SOLVER"></a>
+    
+    
+
+                </section>
+                <section id="KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER">
+                    <div class="attr variable">
+            <span class="name">KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</span><span class="annotation">: <a href="#SolverType">SolverType</a></span>        =
+<span class="default_value">&lt;<a href="#SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER">SolverType.KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER</a>: 10&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER"></a>
     
     
 

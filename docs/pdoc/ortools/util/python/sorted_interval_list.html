@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.util.python.sorted_interval_list API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -36,6 +36,51 @@
                                 <a class="function" href="#Domain.__init__">Domain</a>
                         </li>
                         <li>
+                                <a class="function" href="#Domain.all_values">all_values</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.from_values">from_values</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.from_intervals">from_intervals</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.from_flat_intervals">from_flat_intervals</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.addition_with">addition_with</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.complement">complement</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.contains">contains</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.flattened_intervals">flattened_intervals</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.intersection_with">intersection_with</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.is_empty">is_empty</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.size">size</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.max">max</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.min">min</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.negation">negation</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Domain.union_with">union_with</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#Domain.AllValues">AllValues</a>
                         </li>
                         <li>
@@ -48,37 +93,7 @@
                                 <a class="function" href="#Domain.FromFlatIntervals">FromFlatIntervals</a>
                         </li>
                         <li>
-                                <a class="function" href="#Domain.AdditionWith">AdditionWith</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Complement">Complement</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Contains">Contains</a>
-                        </li>
-                        <li>
                                 <a class="function" href="#Domain.FlattenedIntervals">FlattenedIntervals</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.IntersectionWith">IntersectionWith</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.IsEmpty">IsEmpty</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Size">Size</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Max">Max</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Min">Min</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.Negation">Negation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Domain.UnionWith">UnionWith</a>
                         </li>
                 </ul>
 
@@ -86,7 +101,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -129,7 +144,7 @@ Note that all the functions are safe with respect to integer overflow.</p>
                             <div id="Domain.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Domain</span><span class="signature pdoc-code condensed">()</span>
+        <span class="name">Domain</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">arg0</span><span class="p">:</span> <span class="nb">int</span>, </span><span class="param"><span class="n">arg1</span><span class="p">:</span> <span class="nb">int</span></span>)</span>
 
         
     </div>
@@ -142,11 +157,280 @@ Note that all the functions are safe with respect to integer overflow.</p>
 
 
                             </div>
+                            <div id="Domain.all_values" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">all_values</span><span class="signature pdoc-code condensed">(<span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.all_values"></a>
+    
+            <div class="docstring"><p>all_values() -> <a href="#Domain">Domain</a></p>
+
+<p>Returns the full domain Int64.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.from_values" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">from_values</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">values</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.from_values"></a>
+    
+            <div class="docstring"><p>from_values(values: List[int]) -> <a href="#Domain">Domain</a></p>
+
+<p>Creates a domain from the union of an unsorted list of integer values.
+Input values may be repeated, with no consequence on the output</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.from_intervals" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">from_intervals</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">intervals</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.from_intervals"></a>
+    
+            <div class="docstring"><p>from_intervals(intervals: List[List[int]]) -> <a href="#Domain">Domain</a></p>
+
+<p>This method is available in Python, Java and .NET. It allows building
+a Domain object from a list of intervals (long[][] in Java and .NET,
+[[0, 2], [5, 5], [8, 10]] in python).</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.from_flat_intervals" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">from_flat_intervals</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">flat_intervals</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.from_flat_intervals"></a>
+    
+            <div class="docstring"><p>from_flat_intervals(flat_intervals: List[int]) -> <a href="#Domain">Domain</a></p>
+
+<p>This method is available in Python, Java and .NET. It allows building
+a Domain object from a flattened list of intervals (long[] in Java and
+.NET, [0, 2, 5, 5, 8, 10] in python).</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.addition_with" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">addition_with</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">domain</span><span class="p">:</span> <span class="n"><a href="#Domain">Domain</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.addition_with"></a>
+    
+            <div class="docstring"><p>addition_with(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
+
+<p>Returns {x ∈ Int64, ∃ a ∈ D, ∃ b ∈ domain, x = a + b}.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.complement" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">complement</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.complement"></a>
+    
+            <div class="docstring"><p>complement(self: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
+
+<p>Returns the set Int64 ∖ D.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.contains" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">contains</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.contains"></a>
+    
+            <div class="docstring"><p>contains(self: <a href="#Domain">Domain</a>, value: int) -> bool</p>
+
+<p>Returns true iff value is in Domain.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.flattened_intervals" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">flattened_intervals</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.flattened_intervals"></a>
+    
+            <div class="docstring"><p>flattened_intervals(self: <a href="#Domain">Domain</a>) -> List[int]</p>
+
+<p>This method returns the flattened list of interval bounds of the
+domain.</p>
+
+<p>Thus the domain {0, 1, 2, 5, 8, 9, 10} will return [0, 2, 5, 5, 8, 10]
+(as a C++ std::vector<int64_t>, as a java or C# long[], as a python
+list of integers).</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.intersection_with" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">intersection_with</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">domain</span><span class="p">:</span> <span class="n"><a href="#Domain">Domain</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.intersection_with"></a>
+    
+            <div class="docstring"><p>intersection_with(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
+
+<p>Returns the intersection of D and domain.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.is_empty" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">is_empty</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.is_empty"></a>
+    
+            <div class="docstring"><p>is_empty(self: <a href="#Domain">Domain</a>) -> bool</p>
+
+<p>Returns true if this is the empty set.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.size" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">size</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.size"></a>
+    
+            <div class="docstring"><p>size(self: <a href="#Domain">Domain</a>) -> int</p>
+
+<p>Returns the number of elements in the domain. It is capped at
+kint64max</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.max" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">max</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.max"></a>
+    
+            <div class="docstring"><p>max(self: <a href="#Domain">Domain</a>) -> int</p>
+
+<p>Returns the max value of the domain. The domain must not be empty.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.min" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">min</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.min"></a>
+    
+            <div class="docstring"><p>min(self: <a href="#Domain">Domain</a>) -> int</p>
+
+<p>Returns the min value of the domain. The domain must not be empty.</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.negation" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">negation</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.negation"></a>
+    
+            <div class="docstring"><p>negation(self: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
+
+<p>Returns {x ∈ Int64, ∃ e ∈ D, x = -e}.</p>
+
+<p>Note in particular that if the negation of Int64 is not Int64 but
+Int64 \ {kint64min} !!</p>
+</div>
+
+
+                            </div>
+                            <div id="Domain.union_with" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">union_with</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">domain</span><span class="p">:</span> <span class="n"><a href="#Domain">Domain</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Domain.union_with"></a>
+    
+            <div class="docstring"><p>union_with(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
+
+<p>Returns the union of D and domain.</p>
+</div>
+
+
+                            </div>
                             <div id="Domain.AllValues" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">AllValues</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">AllValues</span><span class="signature pdoc-code condensed">(<span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
 
         
     </div>
@@ -163,7 +447,7 @@ Note that all the functions are safe with respect to integer overflow.</p>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">FromValues</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">FromValues</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">values</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
 
         
     </div>
@@ -181,7 +465,7 @@ Input values may be repeated, with no consequence on the output</p>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">FromIntervals</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">FromIntervals</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">intervals</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
 
         
     </div>
@@ -200,7 +484,7 @@ a Domain object from a list of intervals (long[][] in Java and .NET,
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">FromFlatIntervals</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">FromFlatIntervals</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">flat_intervals</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Domain">Domain</a></span>:</span></span>
 
         
     </div>
@@ -215,62 +499,11 @@ a Domain object from a flattened list of intervals (long[] in Java and
 
 
                             </div>
-                            <div id="Domain.AdditionWith" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">AdditionWith</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.AdditionWith"></a>
-    
-            <div class="docstring"><p>AdditionWith(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
-
-<p>Returns {x ∈ Int64, ∃ a ∈ D, ∃ b ∈ domain, x = a + b}.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Complement" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Complement</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Complement"></a>
-    
-            <div class="docstring"><p>Complement(self: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
-
-<p>Returns the set Int64 ∖ D.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Contains" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Contains</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Contains"></a>
-    
-            <div class="docstring"><p>Contains(self: <a href="#Domain">Domain</a>, value: int) -> bool</p>
-
-<p>Returns true iff value is in Domain.</p>
-</div>
-
-
-                            </div>
                             <div id="Domain.FlattenedIntervals" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">FlattenedIntervals</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">FlattenedIntervals</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>:</span></span>
 
         
     </div>
@@ -284,129 +517,6 @@ domain.</p>
 <p>Thus the domain {0, 1, 2, 5, 8, 9, 10} will return [0, 2, 5, 5, 8, 10]
 (as a C++ std::vector<int64_t>, as a java or C# long[], as a python
 list of integers).</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.IntersectionWith" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">IntersectionWith</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.IntersectionWith"></a>
-    
-            <div class="docstring"><p>IntersectionWith(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
-
-<p>Returns the intersection of D and domain.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.IsEmpty" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">IsEmpty</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.IsEmpty"></a>
-    
-            <div class="docstring"><p>IsEmpty(self: <a href="#Domain">Domain</a>) -> bool</p>
-
-<p>Returns true if this is the empty set.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Size" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Size</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Size"></a>
-    
-            <div class="docstring"><p>Size(self: <a href="#Domain">Domain</a>) -> int</p>
-
-<p>Returns the number of elements in the domain. It is capped at
-kint64max</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Max" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Max</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Max"></a>
-    
-            <div class="docstring"><p>Max(self: <a href="#Domain">Domain</a>) -> int</p>
-
-<p>Returns the max value of the domain. The domain must not be empty.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Min" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Min</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Min"></a>
-    
-            <div class="docstring"><p>Min(self: <a href="#Domain">Domain</a>) -> int</p>
-
-<p>Returns the min value of the domain. The domain must not be empty.</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.Negation" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Negation</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.Negation"></a>
-    
-            <div class="docstring"><p>Negation(self: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
-
-<p>Returns {x ∈ Int64, ∃ e ∈ D, x = -e}.</p>
-
-<p>Note in particular that if the negation of Int64 is not Int64 but
-Int64 \ {kint64min} !!</p>
-</div>
-
-
-                            </div>
-                            <div id="Domain.UnionWith" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">UnionWith</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Domain.UnionWith"></a>
-    
-            <div class="docstring"><p>UnionWith(self: <a href="#Domain">Domain</a>, domain: <a href="#Domain">Domain</a>) -> <a href="#Domain">Domain</a></p>
-
-<p>Returns the union of D and domain.</p>
 </div>
 
 

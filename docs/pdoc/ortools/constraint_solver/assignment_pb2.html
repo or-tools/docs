@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.constraint_solver.assignment_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -512,7 +512,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -528,7 +528,7 @@
 
                         <div class="docstring"><p>@generated by mypy-protobuf.  Do not edit manually!
 isort:skip_file
-Copyright 2010-2022 Google LLC
+Copyright 2010-2024 Google LLC
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at</p>
@@ -550,7 +550,7 @@ limitations under the License.</p>
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/constraint_solver/assignment.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1452,13 +1452,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntVarAssignment.var_id" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntVarAssignment.var_id-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">var_id</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="IntVarAssignment.var_id-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntVarAssignment.var_id"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntVarAssignment.var_id-685"><a href="#IntVarAssignment.var_id-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntVarAssignment.var_id-686"><a href="#IntVarAssignment.var_id-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntVarAssignment.var_id-687"><a href="#IntVarAssignment.var_id-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntVarAssignment.var_id-688"><a href="#IntVarAssignment.var_id-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for var_id.</p>
 </div>
 
@@ -1477,13 +1485,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntVarAssignment.min" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntVarAssignment.min-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">min</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntVarAssignment.min-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntVarAssignment.min"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntVarAssignment.min-685"><a href="#IntVarAssignment.min-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntVarAssignment.min-686"><a href="#IntVarAssignment.min-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntVarAssignment.min-687"><a href="#IntVarAssignment.min-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntVarAssignment.min-688"><a href="#IntVarAssignment.min-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for min.</p>
 </div>
 
@@ -1502,13 +1518,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntVarAssignment.max" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntVarAssignment.max-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">max</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntVarAssignment.max-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntVarAssignment.max"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntVarAssignment.max-685"><a href="#IntVarAssignment.max-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntVarAssignment.max-686"><a href="#IntVarAssignment.max-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntVarAssignment.max-687"><a href="#IntVarAssignment.max-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntVarAssignment.max-688"><a href="#IntVarAssignment.max-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for max.</p>
 </div>
 
@@ -1527,13 +1551,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntVarAssignment.active" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntVarAssignment.active-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">active</span><span class="annotation">: bool</span>
 
-        
+                <label class="view-source-button" for="IntVarAssignment.active-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntVarAssignment.active"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntVarAssignment.active-685"><a href="#IntVarAssignment.active-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntVarAssignment.active-686"><a href="#IntVarAssignment.active-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntVarAssignment.active-687"><a href="#IntVarAssignment.active-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntVarAssignment.active-688"><a href="#IntVarAssignment.active-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for active.</p>
 </div>
 
@@ -2476,13 +2508,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.var_id" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.var_id-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">var_id</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.var_id-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.var_id"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.var_id-685"><a href="#IntervalVarAssignment.var_id-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.var_id-686"><a href="#IntervalVarAssignment.var_id-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.var_id-687"><a href="#IntervalVarAssignment.var_id-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.var_id-688"><a href="#IntervalVarAssignment.var_id-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for var_id.</p>
 </div>
 
@@ -2501,13 +2541,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.start_min" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.start_min-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">start_min</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.start_min-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.start_min"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.start_min-685"><a href="#IntervalVarAssignment.start_min-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.start_min-686"><a href="#IntervalVarAssignment.start_min-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.start_min-687"><a href="#IntervalVarAssignment.start_min-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.start_min-688"><a href="#IntervalVarAssignment.start_min-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for start_min.</p>
 </div>
 
@@ -2526,13 +2574,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.start_max" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.start_max-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">start_max</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.start_max-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.start_max"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.start_max-685"><a href="#IntervalVarAssignment.start_max-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.start_max-686"><a href="#IntervalVarAssignment.start_max-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.start_max-687"><a href="#IntervalVarAssignment.start_max-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.start_max-688"><a href="#IntervalVarAssignment.start_max-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for start_max.</p>
 </div>
 
@@ -2551,13 +2607,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.duration_min" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.duration_min-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">duration_min</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.duration_min-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.duration_min"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.duration_min-685"><a href="#IntervalVarAssignment.duration_min-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.duration_min-686"><a href="#IntervalVarAssignment.duration_min-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.duration_min-687"><a href="#IntervalVarAssignment.duration_min-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.duration_min-688"><a href="#IntervalVarAssignment.duration_min-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for duration_min.</p>
 </div>
 
@@ -2576,13 +2640,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.duration_max" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.duration_max-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">duration_max</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.duration_max-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.duration_max"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.duration_max-685"><a href="#IntervalVarAssignment.duration_max-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.duration_max-686"><a href="#IntervalVarAssignment.duration_max-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.duration_max-687"><a href="#IntervalVarAssignment.duration_max-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.duration_max-688"><a href="#IntervalVarAssignment.duration_max-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for duration_max.</p>
 </div>
 
@@ -2601,13 +2673,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.end_min" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.end_min-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">end_min</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.end_min-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.end_min"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.end_min-685"><a href="#IntervalVarAssignment.end_min-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.end_min-686"><a href="#IntervalVarAssignment.end_min-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.end_min-687"><a href="#IntervalVarAssignment.end_min-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.end_min-688"><a href="#IntervalVarAssignment.end_min-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for end_min.</p>
 </div>
 
@@ -2626,13 +2706,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.end_max" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.end_max-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">end_max</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.end_max-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.end_max"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.end_max-685"><a href="#IntervalVarAssignment.end_max-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.end_max-686"><a href="#IntervalVarAssignment.end_max-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.end_max-687"><a href="#IntervalVarAssignment.end_max-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.end_max-688"><a href="#IntervalVarAssignment.end_max-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for end_max.</p>
 </div>
 
@@ -2651,13 +2739,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.performed_min" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.performed_min-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">performed_min</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.performed_min-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.performed_min"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.performed_min-685"><a href="#IntervalVarAssignment.performed_min-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.performed_min-686"><a href="#IntervalVarAssignment.performed_min-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.performed_min-687"><a href="#IntervalVarAssignment.performed_min-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.performed_min-688"><a href="#IntervalVarAssignment.performed_min-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for performed_min.</p>
 </div>
 
@@ -2676,13 +2772,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.performed_max" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.performed_max-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">performed_max</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.performed_max-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.performed_max"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.performed_max-685"><a href="#IntervalVarAssignment.performed_max-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.performed_max-686"><a href="#IntervalVarAssignment.performed_max-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.performed_max-687"><a href="#IntervalVarAssignment.performed_max-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.performed_max-688"><a href="#IntervalVarAssignment.performed_max-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for performed_max.</p>
 </div>
 
@@ -2701,13 +2805,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="IntervalVarAssignment.active" class="classattr">
-                                <div class="attr variable">
+                                        <input id="IntervalVarAssignment.active-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">active</span><span class="annotation">: bool</span>
 
-        
+                <label class="view-source-button" for="IntervalVarAssignment.active-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#IntervalVarAssignment.active"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="IntervalVarAssignment.active-685"><a href="#IntervalVarAssignment.active-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="IntervalVarAssignment.active-686"><a href="#IntervalVarAssignment.active-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="IntervalVarAssignment.active-687"><a href="#IntervalVarAssignment.active-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="IntervalVarAssignment.active-688"><a href="#IntervalVarAssignment.active-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for active.</p>
 </div>
 
@@ -3650,13 +3762,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="SequenceVarAssignment.var_id" class="classattr">
-                                <div class="attr variable">
+                                        <input id="SequenceVarAssignment.var_id-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">var_id</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="SequenceVarAssignment.var_id-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#SequenceVarAssignment.var_id"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="SequenceVarAssignment.var_id-685"><a href="#SequenceVarAssignment.var_id-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="SequenceVarAssignment.var_id-686"><a href="#SequenceVarAssignment.var_id-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="SequenceVarAssignment.var_id-687"><a href="#SequenceVarAssignment.var_id-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="SequenceVarAssignment.var_id-688"><a href="#SequenceVarAssignment.var_id-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for var_id.</p>
 </div>
 
@@ -3675,13 +3795,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="SequenceVarAssignment.forward_sequence" class="classattr">
-                                <div class="attr variable">
+                                        <input id="SequenceVarAssignment.forward_sequence-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">forward_sequence</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="SequenceVarAssignment.forward_sequence-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#SequenceVarAssignment.forward_sequence"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="SequenceVarAssignment.forward_sequence-642"><a href="#SequenceVarAssignment.forward_sequence-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="SequenceVarAssignment.forward_sequence-643"><a href="#SequenceVarAssignment.forward_sequence-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.forward_sequence-644"><a href="#SequenceVarAssignment.forward_sequence-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="SequenceVarAssignment.forward_sequence-645"><a href="#SequenceVarAssignment.forward_sequence-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="SequenceVarAssignment.forward_sequence-646"><a href="#SequenceVarAssignment.forward_sequence-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.forward_sequence-647"><a href="#SequenceVarAssignment.forward_sequence-647"><span class="linenos">647</span></a>
+</span><span id="SequenceVarAssignment.forward_sequence-648"><a href="#SequenceVarAssignment.forward_sequence-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="SequenceVarAssignment.forward_sequence-649"><a href="#SequenceVarAssignment.forward_sequence-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="SequenceVarAssignment.forward_sequence-650"><a href="#SequenceVarAssignment.forward_sequence-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="SequenceVarAssignment.forward_sequence-651"><a href="#SequenceVarAssignment.forward_sequence-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="SequenceVarAssignment.forward_sequence-652"><a href="#SequenceVarAssignment.forward_sequence-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="SequenceVarAssignment.forward_sequence-653"><a href="#SequenceVarAssignment.forward_sequence-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="SequenceVarAssignment.forward_sequence-654"><a href="#SequenceVarAssignment.forward_sequence-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.forward_sequence-655"><a href="#SequenceVarAssignment.forward_sequence-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for forward_sequence.</p>
 </div>
 
@@ -3700,13 +3838,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="SequenceVarAssignment.backward_sequence" class="classattr">
-                                <div class="attr variable">
+                                        <input id="SequenceVarAssignment.backward_sequence-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">backward_sequence</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="SequenceVarAssignment.backward_sequence-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#SequenceVarAssignment.backward_sequence"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="SequenceVarAssignment.backward_sequence-642"><a href="#SequenceVarAssignment.backward_sequence-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="SequenceVarAssignment.backward_sequence-643"><a href="#SequenceVarAssignment.backward_sequence-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.backward_sequence-644"><a href="#SequenceVarAssignment.backward_sequence-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="SequenceVarAssignment.backward_sequence-645"><a href="#SequenceVarAssignment.backward_sequence-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="SequenceVarAssignment.backward_sequence-646"><a href="#SequenceVarAssignment.backward_sequence-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.backward_sequence-647"><a href="#SequenceVarAssignment.backward_sequence-647"><span class="linenos">647</span></a>
+</span><span id="SequenceVarAssignment.backward_sequence-648"><a href="#SequenceVarAssignment.backward_sequence-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="SequenceVarAssignment.backward_sequence-649"><a href="#SequenceVarAssignment.backward_sequence-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="SequenceVarAssignment.backward_sequence-650"><a href="#SequenceVarAssignment.backward_sequence-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="SequenceVarAssignment.backward_sequence-651"><a href="#SequenceVarAssignment.backward_sequence-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="SequenceVarAssignment.backward_sequence-652"><a href="#SequenceVarAssignment.backward_sequence-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="SequenceVarAssignment.backward_sequence-653"><a href="#SequenceVarAssignment.backward_sequence-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="SequenceVarAssignment.backward_sequence-654"><a href="#SequenceVarAssignment.backward_sequence-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.backward_sequence-655"><a href="#SequenceVarAssignment.backward_sequence-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for backward_sequence.</p>
 </div>
 
@@ -3725,13 +3881,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="SequenceVarAssignment.unperformed" class="classattr">
-                                <div class="attr variable">
+                                        <input id="SequenceVarAssignment.unperformed-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">unperformed</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="SequenceVarAssignment.unperformed-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#SequenceVarAssignment.unperformed"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="SequenceVarAssignment.unperformed-642"><a href="#SequenceVarAssignment.unperformed-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="SequenceVarAssignment.unperformed-643"><a href="#SequenceVarAssignment.unperformed-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.unperformed-644"><a href="#SequenceVarAssignment.unperformed-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="SequenceVarAssignment.unperformed-645"><a href="#SequenceVarAssignment.unperformed-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="SequenceVarAssignment.unperformed-646"><a href="#SequenceVarAssignment.unperformed-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.unperformed-647"><a href="#SequenceVarAssignment.unperformed-647"><span class="linenos">647</span></a>
+</span><span id="SequenceVarAssignment.unperformed-648"><a href="#SequenceVarAssignment.unperformed-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="SequenceVarAssignment.unperformed-649"><a href="#SequenceVarAssignment.unperformed-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="SequenceVarAssignment.unperformed-650"><a href="#SequenceVarAssignment.unperformed-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="SequenceVarAssignment.unperformed-651"><a href="#SequenceVarAssignment.unperformed-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="SequenceVarAssignment.unperformed-652"><a href="#SequenceVarAssignment.unperformed-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="SequenceVarAssignment.unperformed-653"><a href="#SequenceVarAssignment.unperformed-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="SequenceVarAssignment.unperformed-654"><a href="#SequenceVarAssignment.unperformed-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="SequenceVarAssignment.unperformed-655"><a href="#SequenceVarAssignment.unperformed-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for unperformed.</p>
 </div>
 
@@ -3750,13 +3924,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="SequenceVarAssignment.active" class="classattr">
-                                <div class="attr variable">
+                                        <input id="SequenceVarAssignment.active-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">active</span><span class="annotation">: bool</span>
 
-        
+                <label class="view-source-button" for="SequenceVarAssignment.active-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#SequenceVarAssignment.active"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="SequenceVarAssignment.active-685"><a href="#SequenceVarAssignment.active-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="SequenceVarAssignment.active-686"><a href="#SequenceVarAssignment.active-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="SequenceVarAssignment.active-687"><a href="#SequenceVarAssignment.active-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="SequenceVarAssignment.active-688"><a href="#SequenceVarAssignment.active-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for active.</p>
 </div>
 
@@ -4699,13 +4881,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="WorkerInfo.worker_id" class="classattr">
-                                <div class="attr variable">
+                                        <input id="WorkerInfo.worker_id-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">worker_id</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="WorkerInfo.worker_id-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#WorkerInfo.worker_id"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="WorkerInfo.worker_id-685"><a href="#WorkerInfo.worker_id-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="WorkerInfo.worker_id-686"><a href="#WorkerInfo.worker_id-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="WorkerInfo.worker_id-687"><a href="#WorkerInfo.worker_id-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="WorkerInfo.worker_id-688"><a href="#WorkerInfo.worker_id-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for worker_id.</p>
 </div>
 
@@ -4724,13 +4914,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="WorkerInfo.bns" class="classattr">
-                                <div class="attr variable">
+                                        <input id="WorkerInfo.bns-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">bns</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="WorkerInfo.bns-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#WorkerInfo.bns"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="WorkerInfo.bns-685"><a href="#WorkerInfo.bns-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="WorkerInfo.bns-686"><a href="#WorkerInfo.bns-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="WorkerInfo.bns-687"><a href="#WorkerInfo.bns-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="WorkerInfo.bns-688"><a href="#WorkerInfo.bns-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for bns.</p>
 </div>
 
@@ -5673,13 +5871,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.int_var_assignment" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.int_var_assignment-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">int_var_assignment</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#IntVarAssignment">IntVarAssignment</a>]</span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.int_var_assignment-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.int_var_assignment"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.int_var_assignment-642"><a href="#AssignmentProto.int_var_assignment-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.int_var_assignment-643"><a href="#AssignmentProto.int_var_assignment-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignmentProto.int_var_assignment-644"><a href="#AssignmentProto.int_var_assignment-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignmentProto.int_var_assignment-645"><a href="#AssignmentProto.int_var_assignment-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignmentProto.int_var_assignment-646"><a href="#AssignmentProto.int_var_assignment-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignmentProto.int_var_assignment-647"><a href="#AssignmentProto.int_var_assignment-647"><span class="linenos">647</span></a>
+</span><span id="AssignmentProto.int_var_assignment-648"><a href="#AssignmentProto.int_var_assignment-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignmentProto.int_var_assignment-649"><a href="#AssignmentProto.int_var_assignment-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignmentProto.int_var_assignment-650"><a href="#AssignmentProto.int_var_assignment-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignmentProto.int_var_assignment-651"><a href="#AssignmentProto.int_var_assignment-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignmentProto.int_var_assignment-652"><a href="#AssignmentProto.int_var_assignment-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignmentProto.int_var_assignment-653"><a href="#AssignmentProto.int_var_assignment-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignmentProto.int_var_assignment-654"><a href="#AssignmentProto.int_var_assignment-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignmentProto.int_var_assignment-655"><a href="#AssignmentProto.int_var_assignment-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for int_var_assignment.</p>
 </div>
 
@@ -5698,13 +5914,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.interval_var_assignment" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.interval_var_assignment-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">interval_var_assignment</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#IntervalVarAssignment">IntervalVarAssignment</a>]</span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.interval_var_assignment-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.interval_var_assignment"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.interval_var_assignment-642"><a href="#AssignmentProto.interval_var_assignment-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.interval_var_assignment-643"><a href="#AssignmentProto.interval_var_assignment-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignmentProto.interval_var_assignment-644"><a href="#AssignmentProto.interval_var_assignment-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignmentProto.interval_var_assignment-645"><a href="#AssignmentProto.interval_var_assignment-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignmentProto.interval_var_assignment-646"><a href="#AssignmentProto.interval_var_assignment-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignmentProto.interval_var_assignment-647"><a href="#AssignmentProto.interval_var_assignment-647"><span class="linenos">647</span></a>
+</span><span id="AssignmentProto.interval_var_assignment-648"><a href="#AssignmentProto.interval_var_assignment-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignmentProto.interval_var_assignment-649"><a href="#AssignmentProto.interval_var_assignment-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignmentProto.interval_var_assignment-650"><a href="#AssignmentProto.interval_var_assignment-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignmentProto.interval_var_assignment-651"><a href="#AssignmentProto.interval_var_assignment-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignmentProto.interval_var_assignment-652"><a href="#AssignmentProto.interval_var_assignment-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignmentProto.interval_var_assignment-653"><a href="#AssignmentProto.interval_var_assignment-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignmentProto.interval_var_assignment-654"><a href="#AssignmentProto.interval_var_assignment-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignmentProto.interval_var_assignment-655"><a href="#AssignmentProto.interval_var_assignment-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for interval_var_assignment.</p>
 </div>
 
@@ -5723,13 +5957,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.sequence_var_assignment" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.sequence_var_assignment-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">sequence_var_assignment</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#SequenceVarAssignment">SequenceVarAssignment</a>]</span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.sequence_var_assignment-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.sequence_var_assignment"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.sequence_var_assignment-642"><a href="#AssignmentProto.sequence_var_assignment-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.sequence_var_assignment-643"><a href="#AssignmentProto.sequence_var_assignment-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignmentProto.sequence_var_assignment-644"><a href="#AssignmentProto.sequence_var_assignment-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignmentProto.sequence_var_assignment-645"><a href="#AssignmentProto.sequence_var_assignment-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignmentProto.sequence_var_assignment-646"><a href="#AssignmentProto.sequence_var_assignment-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignmentProto.sequence_var_assignment-647"><a href="#AssignmentProto.sequence_var_assignment-647"><span class="linenos">647</span></a>
+</span><span id="AssignmentProto.sequence_var_assignment-648"><a href="#AssignmentProto.sequence_var_assignment-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignmentProto.sequence_var_assignment-649"><a href="#AssignmentProto.sequence_var_assignment-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignmentProto.sequence_var_assignment-650"><a href="#AssignmentProto.sequence_var_assignment-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignmentProto.sequence_var_assignment-651"><a href="#AssignmentProto.sequence_var_assignment-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignmentProto.sequence_var_assignment-652"><a href="#AssignmentProto.sequence_var_assignment-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignmentProto.sequence_var_assignment-653"><a href="#AssignmentProto.sequence_var_assignment-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignmentProto.sequence_var_assignment-654"><a href="#AssignmentProto.sequence_var_assignment-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignmentProto.sequence_var_assignment-655"><a href="#AssignmentProto.sequence_var_assignment-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for sequence_var_assignment.</p>
 </div>
 
@@ -5748,13 +6000,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.objective" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.objective-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">objective</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#IntVarAssignment">IntVarAssignment</a>]</span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.objective-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.objective"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.objective-642"><a href="#AssignmentProto.objective-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.objective-643"><a href="#AssignmentProto.objective-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignmentProto.objective-644"><a href="#AssignmentProto.objective-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignmentProto.objective-645"><a href="#AssignmentProto.objective-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignmentProto.objective-646"><a href="#AssignmentProto.objective-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignmentProto.objective-647"><a href="#AssignmentProto.objective-647"><span class="linenos">647</span></a>
+</span><span id="AssignmentProto.objective-648"><a href="#AssignmentProto.objective-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignmentProto.objective-649"><a href="#AssignmentProto.objective-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignmentProto.objective-650"><a href="#AssignmentProto.objective-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignmentProto.objective-651"><a href="#AssignmentProto.objective-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignmentProto.objective-652"><a href="#AssignmentProto.objective-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignmentProto.objective-653"><a href="#AssignmentProto.objective-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignmentProto.objective-654"><a href="#AssignmentProto.objective-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignmentProto.objective-655"><a href="#AssignmentProto.objective-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for objective.</p>
 </div>
 
@@ -5773,13 +6043,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.worker_info" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.worker_info-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">worker_info</span><span class="annotation">: <a href="#WorkerInfo">WorkerInfo</a></span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.worker_info-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.worker_info"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.worker_info-741"><a href="#AssignmentProto.worker_info-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.worker_info-742"><a href="#AssignmentProto.worker_info-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignmentProto.worker_info-743"><a href="#AssignmentProto.worker_info-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignmentProto.worker_info-744"><a href="#AssignmentProto.worker_info-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignmentProto.worker_info-745"><a href="#AssignmentProto.worker_info-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignmentProto.worker_info-746"><a href="#AssignmentProto.worker_info-746"><span class="linenos">746</span></a>
+</span><span id="AssignmentProto.worker_info-747"><a href="#AssignmentProto.worker_info-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignmentProto.worker_info-748"><a href="#AssignmentProto.worker_info-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignmentProto.worker_info-749"><a href="#AssignmentProto.worker_info-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignmentProto.worker_info-750"><a href="#AssignmentProto.worker_info-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignmentProto.worker_info-751"><a href="#AssignmentProto.worker_info-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignmentProto.worker_info-752"><a href="#AssignmentProto.worker_info-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignmentProto.worker_info-753"><a href="#AssignmentProto.worker_info-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignmentProto.worker_info-754"><a href="#AssignmentProto.worker_info-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for worker_info.</p>
 </div>
 
@@ -5798,13 +6086,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignmentProto.is_valid" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignmentProto.is_valid-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">is_valid</span><span class="annotation">: bool</span>
 
-        
+                <label class="view-source-button" for="AssignmentProto.is_valid-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignmentProto.is_valid"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignmentProto.is_valid-685"><a href="#AssignmentProto.is_valid-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignmentProto.is_valid-686"><a href="#AssignmentProto.is_valid-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AssignmentProto.is_valid-687"><a href="#AssignmentProto.is_valid-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AssignmentProto.is_valid-688"><a href="#AssignmentProto.is_valid-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for is_valid.</p>
 </div>
 

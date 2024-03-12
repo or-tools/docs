@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.scheduling.course_scheduling_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -731,7 +731,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -755,7 +755,7 @@
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/scheduling/course_scheduling.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1651,13 +1651,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.display_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.display_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">display_name</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.display_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.display_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.display_name-685"><a href="#CourseSchedulingModel.display_name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.display_name-686"><a href="#CourseSchedulingModel.display_name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="CourseSchedulingModel.display_name-687"><a href="#CourseSchedulingModel.display_name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="CourseSchedulingModel.display_name-688"><a href="#CourseSchedulingModel.display_name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for display_name.</p>
 </div>
 
@@ -1676,13 +1684,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.days_count" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.days_count-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">days_count</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.days_count-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.days_count"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.days_count-685"><a href="#CourseSchedulingModel.days_count-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.days_count-686"><a href="#CourseSchedulingModel.days_count-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="CourseSchedulingModel.days_count-687"><a href="#CourseSchedulingModel.days_count-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="CourseSchedulingModel.days_count-688"><a href="#CourseSchedulingModel.days_count-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for days_count.</p>
 </div>
 
@@ -1701,13 +1717,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.daily_time_slot_count" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.daily_time_slot_count-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">daily_time_slot_count</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.daily_time_slot_count-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.daily_time_slot_count"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.daily_time_slot_count-685"><a href="#CourseSchedulingModel.daily_time_slot_count-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.daily_time_slot_count-686"><a href="#CourseSchedulingModel.daily_time_slot_count-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="CourseSchedulingModel.daily_time_slot_count-687"><a href="#CourseSchedulingModel.daily_time_slot_count-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="CourseSchedulingModel.daily_time_slot_count-688"><a href="#CourseSchedulingModel.daily_time_slot_count-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for daily_time_slot_count.</p>
 </div>
 
@@ -1726,13 +1750,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.courses" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.courses-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">courses</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.courses-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.courses"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.courses-642"><a href="#CourseSchedulingModel.courses-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.courses-643"><a href="#CourseSchedulingModel.courses-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.courses-644"><a href="#CourseSchedulingModel.courses-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingModel.courses-645"><a href="#CourseSchedulingModel.courses-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingModel.courses-646"><a href="#CourseSchedulingModel.courses-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.courses-647"><a href="#CourseSchedulingModel.courses-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingModel.courses-648"><a href="#CourseSchedulingModel.courses-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingModel.courses-649"><a href="#CourseSchedulingModel.courses-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingModel.courses-650"><a href="#CourseSchedulingModel.courses-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingModel.courses-651"><a href="#CourseSchedulingModel.courses-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingModel.courses-652"><a href="#CourseSchedulingModel.courses-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingModel.courses-653"><a href="#CourseSchedulingModel.courses-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingModel.courses-654"><a href="#CourseSchedulingModel.courses-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.courses-655"><a href="#CourseSchedulingModel.courses-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for courses.</p>
 </div>
 
@@ -1751,13 +1793,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.teachers" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.teachers-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">teachers</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.teachers-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.teachers"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.teachers-642"><a href="#CourseSchedulingModel.teachers-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.teachers-643"><a href="#CourseSchedulingModel.teachers-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.teachers-644"><a href="#CourseSchedulingModel.teachers-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingModel.teachers-645"><a href="#CourseSchedulingModel.teachers-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingModel.teachers-646"><a href="#CourseSchedulingModel.teachers-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.teachers-647"><a href="#CourseSchedulingModel.teachers-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingModel.teachers-648"><a href="#CourseSchedulingModel.teachers-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingModel.teachers-649"><a href="#CourseSchedulingModel.teachers-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingModel.teachers-650"><a href="#CourseSchedulingModel.teachers-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingModel.teachers-651"><a href="#CourseSchedulingModel.teachers-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingModel.teachers-652"><a href="#CourseSchedulingModel.teachers-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingModel.teachers-653"><a href="#CourseSchedulingModel.teachers-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingModel.teachers-654"><a href="#CourseSchedulingModel.teachers-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.teachers-655"><a href="#CourseSchedulingModel.teachers-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for teachers.</p>
 </div>
 
@@ -1776,13 +1836,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.students" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.students-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">students</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.students-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.students"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.students-642"><a href="#CourseSchedulingModel.students-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.students-643"><a href="#CourseSchedulingModel.students-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.students-644"><a href="#CourseSchedulingModel.students-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingModel.students-645"><a href="#CourseSchedulingModel.students-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingModel.students-646"><a href="#CourseSchedulingModel.students-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.students-647"><a href="#CourseSchedulingModel.students-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingModel.students-648"><a href="#CourseSchedulingModel.students-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingModel.students-649"><a href="#CourseSchedulingModel.students-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingModel.students-650"><a href="#CourseSchedulingModel.students-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingModel.students-651"><a href="#CourseSchedulingModel.students-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingModel.students-652"><a href="#CourseSchedulingModel.students-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingModel.students-653"><a href="#CourseSchedulingModel.students-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingModel.students-654"><a href="#CourseSchedulingModel.students-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.students-655"><a href="#CourseSchedulingModel.students-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for students.</p>
 </div>
 
@@ -1801,13 +1879,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingModel.rooms" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingModel.rooms-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">rooms</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingModel.rooms-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingModel.rooms"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingModel.rooms-642"><a href="#CourseSchedulingModel.rooms-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingModel.rooms-643"><a href="#CourseSchedulingModel.rooms-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.rooms-644"><a href="#CourseSchedulingModel.rooms-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingModel.rooms-645"><a href="#CourseSchedulingModel.rooms-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingModel.rooms-646"><a href="#CourseSchedulingModel.rooms-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.rooms-647"><a href="#CourseSchedulingModel.rooms-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingModel.rooms-648"><a href="#CourseSchedulingModel.rooms-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingModel.rooms-649"><a href="#CourseSchedulingModel.rooms-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingModel.rooms-650"><a href="#CourseSchedulingModel.rooms-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingModel.rooms-651"><a href="#CourseSchedulingModel.rooms-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingModel.rooms-652"><a href="#CourseSchedulingModel.rooms-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingModel.rooms-653"><a href="#CourseSchedulingModel.rooms-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingModel.rooms-654"><a href="#CourseSchedulingModel.rooms-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingModel.rooms-655"><a href="#CourseSchedulingModel.rooms-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for rooms.</p>
 </div>
 
@@ -2736,13 +2832,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingResult.message" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingResult.message-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">message</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingResult.message-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingResult.message"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingResult.message-685"><a href="#CourseSchedulingResult.message-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingResult.message-686"><a href="#CourseSchedulingResult.message-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="CourseSchedulingResult.message-687"><a href="#CourseSchedulingResult.message-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="CourseSchedulingResult.message-688"><a href="#CourseSchedulingResult.message-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for message.</p>
 </div>
 
@@ -2761,13 +2865,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingResult.solver_status" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingResult.solver_status-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">solver_status</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingResult.solver_status-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingResult.solver_status"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingResult.solver_status-685"><a href="#CourseSchedulingResult.solver_status-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingResult.solver_status-686"><a href="#CourseSchedulingResult.solver_status-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="CourseSchedulingResult.solver_status-687"><a href="#CourseSchedulingResult.solver_status-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="CourseSchedulingResult.solver_status-688"><a href="#CourseSchedulingResult.solver_status-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for solver_status.</p>
 </div>
 
@@ -2786,13 +2898,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingResult.class_assignments" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingResult.class_assignments-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">class_assignments</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingResult.class_assignments-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingResult.class_assignments"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingResult.class_assignments-642"><a href="#CourseSchedulingResult.class_assignments-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingResult.class_assignments-643"><a href="#CourseSchedulingResult.class_assignments-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.class_assignments-644"><a href="#CourseSchedulingResult.class_assignments-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingResult.class_assignments-645"><a href="#CourseSchedulingResult.class_assignments-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingResult.class_assignments-646"><a href="#CourseSchedulingResult.class_assignments-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.class_assignments-647"><a href="#CourseSchedulingResult.class_assignments-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingResult.class_assignments-648"><a href="#CourseSchedulingResult.class_assignments-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingResult.class_assignments-649"><a href="#CourseSchedulingResult.class_assignments-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingResult.class_assignments-650"><a href="#CourseSchedulingResult.class_assignments-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingResult.class_assignments-651"><a href="#CourseSchedulingResult.class_assignments-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingResult.class_assignments-652"><a href="#CourseSchedulingResult.class_assignments-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingResult.class_assignments-653"><a href="#CourseSchedulingResult.class_assignments-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingResult.class_assignments-654"><a href="#CourseSchedulingResult.class_assignments-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.class_assignments-655"><a href="#CourseSchedulingResult.class_assignments-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for class_assignments.</p>
 </div>
 
@@ -2811,13 +2941,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="CourseSchedulingResult.student_assignments" class="classattr">
-                                <div class="attr variable">
+                                        <input id="CourseSchedulingResult.student_assignments-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">student_assignments</span>
 
-        
+                <label class="view-source-button" for="CourseSchedulingResult.student_assignments-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#CourseSchedulingResult.student_assignments"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="CourseSchedulingResult.student_assignments-642"><a href="#CourseSchedulingResult.student_assignments-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="CourseSchedulingResult.student_assignments-643"><a href="#CourseSchedulingResult.student_assignments-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.student_assignments-644"><a href="#CourseSchedulingResult.student_assignments-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="CourseSchedulingResult.student_assignments-645"><a href="#CourseSchedulingResult.student_assignments-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="CourseSchedulingResult.student_assignments-646"><a href="#CourseSchedulingResult.student_assignments-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.student_assignments-647"><a href="#CourseSchedulingResult.student_assignments-647"><span class="linenos">647</span></a>
+</span><span id="CourseSchedulingResult.student_assignments-648"><a href="#CourseSchedulingResult.student_assignments-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="CourseSchedulingResult.student_assignments-649"><a href="#CourseSchedulingResult.student_assignments-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="CourseSchedulingResult.student_assignments-650"><a href="#CourseSchedulingResult.student_assignments-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="CourseSchedulingResult.student_assignments-651"><a href="#CourseSchedulingResult.student_assignments-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="CourseSchedulingResult.student_assignments-652"><a href="#CourseSchedulingResult.student_assignments-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="CourseSchedulingResult.student_assignments-653"><a href="#CourseSchedulingResult.student_assignments-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="CourseSchedulingResult.student_assignments-654"><a href="#CourseSchedulingResult.student_assignments-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="CourseSchedulingResult.student_assignments-655"><a href="#CourseSchedulingResult.student_assignments-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for student_assignments.</p>
 </div>
 
@@ -3746,13 +3894,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="ClassAssignment.course_index" class="classattr">
-                                <div class="attr variable">
+                                        <input id="ClassAssignment.course_index-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">course_index</span>
 
-        
+                <label class="view-source-button" for="ClassAssignment.course_index-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#ClassAssignment.course_index"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="ClassAssignment.course_index-685"><a href="#ClassAssignment.course_index-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="ClassAssignment.course_index-686"><a href="#ClassAssignment.course_index-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="ClassAssignment.course_index-687"><a href="#ClassAssignment.course_index-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="ClassAssignment.course_index-688"><a href="#ClassAssignment.course_index-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for course_index.</p>
 </div>
 
@@ -3771,13 +3927,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="ClassAssignment.section_number" class="classattr">
-                                <div class="attr variable">
+                                        <input id="ClassAssignment.section_number-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">section_number</span>
 
-        
+                <label class="view-source-button" for="ClassAssignment.section_number-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#ClassAssignment.section_number"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="ClassAssignment.section_number-685"><a href="#ClassAssignment.section_number-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="ClassAssignment.section_number-686"><a href="#ClassAssignment.section_number-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="ClassAssignment.section_number-687"><a href="#ClassAssignment.section_number-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="ClassAssignment.section_number-688"><a href="#ClassAssignment.section_number-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for section_number.</p>
 </div>
 
@@ -3796,13 +3960,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="ClassAssignment.time_slots" class="classattr">
-                                <div class="attr variable">
+                                        <input id="ClassAssignment.time_slots-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">time_slots</span>
 
-        
+                <label class="view-source-button" for="ClassAssignment.time_slots-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#ClassAssignment.time_slots"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="ClassAssignment.time_slots-642"><a href="#ClassAssignment.time_slots-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="ClassAssignment.time_slots-643"><a href="#ClassAssignment.time_slots-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="ClassAssignment.time_slots-644"><a href="#ClassAssignment.time_slots-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="ClassAssignment.time_slots-645"><a href="#ClassAssignment.time_slots-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="ClassAssignment.time_slots-646"><a href="#ClassAssignment.time_slots-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="ClassAssignment.time_slots-647"><a href="#ClassAssignment.time_slots-647"><span class="linenos">647</span></a>
+</span><span id="ClassAssignment.time_slots-648"><a href="#ClassAssignment.time_slots-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="ClassAssignment.time_slots-649"><a href="#ClassAssignment.time_slots-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="ClassAssignment.time_slots-650"><a href="#ClassAssignment.time_slots-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="ClassAssignment.time_slots-651"><a href="#ClassAssignment.time_slots-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="ClassAssignment.time_slots-652"><a href="#ClassAssignment.time_slots-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="ClassAssignment.time_slots-653"><a href="#ClassAssignment.time_slots-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="ClassAssignment.time_slots-654"><a href="#ClassAssignment.time_slots-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="ClassAssignment.time_slots-655"><a href="#ClassAssignment.time_slots-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for time_slots.</p>
 </div>
 
@@ -3821,13 +4003,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="ClassAssignment.room_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="ClassAssignment.room_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">room_indices</span>
 
-        
+                <label class="view-source-button" for="ClassAssignment.room_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#ClassAssignment.room_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="ClassAssignment.room_indices-642"><a href="#ClassAssignment.room_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="ClassAssignment.room_indices-643"><a href="#ClassAssignment.room_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="ClassAssignment.room_indices-644"><a href="#ClassAssignment.room_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="ClassAssignment.room_indices-645"><a href="#ClassAssignment.room_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="ClassAssignment.room_indices-646"><a href="#ClassAssignment.room_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="ClassAssignment.room_indices-647"><a href="#ClassAssignment.room_indices-647"><span class="linenos">647</span></a>
+</span><span id="ClassAssignment.room_indices-648"><a href="#ClassAssignment.room_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="ClassAssignment.room_indices-649"><a href="#ClassAssignment.room_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="ClassAssignment.room_indices-650"><a href="#ClassAssignment.room_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="ClassAssignment.room_indices-651"><a href="#ClassAssignment.room_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="ClassAssignment.room_indices-652"><a href="#ClassAssignment.room_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="ClassAssignment.room_indices-653"><a href="#ClassAssignment.room_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="ClassAssignment.room_indices-654"><a href="#ClassAssignment.room_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="ClassAssignment.room_indices-655"><a href="#ClassAssignment.room_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for room_indices.</p>
 </div>
 
@@ -4756,13 +4956,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="StudentAssignment.student_index" class="classattr">
-                                <div class="attr variable">
+                                        <input id="StudentAssignment.student_index-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">student_index</span>
 
-        
+                <label class="view-source-button" for="StudentAssignment.student_index-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#StudentAssignment.student_index"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="StudentAssignment.student_index-685"><a href="#StudentAssignment.student_index-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="StudentAssignment.student_index-686"><a href="#StudentAssignment.student_index-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="StudentAssignment.student_index-687"><a href="#StudentAssignment.student_index-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="StudentAssignment.student_index-688"><a href="#StudentAssignment.student_index-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for student_index.</p>
 </div>
 
@@ -4781,13 +4989,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="StudentAssignment.course_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="StudentAssignment.course_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">course_indices</span>
 
-        
+                <label class="view-source-button" for="StudentAssignment.course_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#StudentAssignment.course_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="StudentAssignment.course_indices-642"><a href="#StudentAssignment.course_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="StudentAssignment.course_indices-643"><a href="#StudentAssignment.course_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="StudentAssignment.course_indices-644"><a href="#StudentAssignment.course_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="StudentAssignment.course_indices-645"><a href="#StudentAssignment.course_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="StudentAssignment.course_indices-646"><a href="#StudentAssignment.course_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="StudentAssignment.course_indices-647"><a href="#StudentAssignment.course_indices-647"><span class="linenos">647</span></a>
+</span><span id="StudentAssignment.course_indices-648"><a href="#StudentAssignment.course_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="StudentAssignment.course_indices-649"><a href="#StudentAssignment.course_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="StudentAssignment.course_indices-650"><a href="#StudentAssignment.course_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="StudentAssignment.course_indices-651"><a href="#StudentAssignment.course_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="StudentAssignment.course_indices-652"><a href="#StudentAssignment.course_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="StudentAssignment.course_indices-653"><a href="#StudentAssignment.course_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="StudentAssignment.course_indices-654"><a href="#StudentAssignment.course_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="StudentAssignment.course_indices-655"><a href="#StudentAssignment.course_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for course_indices.</p>
 </div>
 
@@ -4806,13 +5032,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="StudentAssignment.section_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="StudentAssignment.section_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">section_indices</span>
 
-        
+                <label class="view-source-button" for="StudentAssignment.section_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#StudentAssignment.section_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="StudentAssignment.section_indices-642"><a href="#StudentAssignment.section_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="StudentAssignment.section_indices-643"><a href="#StudentAssignment.section_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="StudentAssignment.section_indices-644"><a href="#StudentAssignment.section_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="StudentAssignment.section_indices-645"><a href="#StudentAssignment.section_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="StudentAssignment.section_indices-646"><a href="#StudentAssignment.section_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="StudentAssignment.section_indices-647"><a href="#StudentAssignment.section_indices-647"><span class="linenos">647</span></a>
+</span><span id="StudentAssignment.section_indices-648"><a href="#StudentAssignment.section_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="StudentAssignment.section_indices-649"><a href="#StudentAssignment.section_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="StudentAssignment.section_indices-650"><a href="#StudentAssignment.section_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="StudentAssignment.section_indices-651"><a href="#StudentAssignment.section_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="StudentAssignment.section_indices-652"><a href="#StudentAssignment.section_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="StudentAssignment.section_indices-653"><a href="#StudentAssignment.section_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="StudentAssignment.section_indices-654"><a href="#StudentAssignment.section_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="StudentAssignment.section_indices-655"><a href="#StudentAssignment.section_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for section_indices.</p>
 </div>
 
@@ -5741,13 +5985,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.display_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.display_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">display_name</span>
 
-        
+                <label class="view-source-button" for="Course.display_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.display_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.display_name-685"><a href="#Course.display_name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.display_name-686"><a href="#Course.display_name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Course.display_name-687"><a href="#Course.display_name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Course.display_name-688"><a href="#Course.display_name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for display_name.</p>
 </div>
 
@@ -5766,13 +6018,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.meetings_count" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.meetings_count-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">meetings_count</span>
 
-        
+                <label class="view-source-button" for="Course.meetings_count-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.meetings_count"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.meetings_count-685"><a href="#Course.meetings_count-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.meetings_count-686"><a href="#Course.meetings_count-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Course.meetings_count-687"><a href="#Course.meetings_count-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Course.meetings_count-688"><a href="#Course.meetings_count-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for meetings_count.</p>
 </div>
 
@@ -5791,13 +6051,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.max_capacity" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.max_capacity-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">max_capacity</span>
 
-        
+                <label class="view-source-button" for="Course.max_capacity-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.max_capacity"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.max_capacity-685"><a href="#Course.max_capacity-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.max_capacity-686"><a href="#Course.max_capacity-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Course.max_capacity-687"><a href="#Course.max_capacity-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Course.max_capacity-688"><a href="#Course.max_capacity-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for max_capacity.</p>
 </div>
 
@@ -5816,13 +6084,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.min_capacity" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.min_capacity-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">min_capacity</span>
 
-        
+                <label class="view-source-button" for="Course.min_capacity-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.min_capacity"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.min_capacity-685"><a href="#Course.min_capacity-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.min_capacity-686"><a href="#Course.min_capacity-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Course.min_capacity-687"><a href="#Course.min_capacity-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Course.min_capacity-688"><a href="#Course.min_capacity-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for min_capacity.</p>
 </div>
 
@@ -5841,13 +6117,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.consecutive_slots_count" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.consecutive_slots_count-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">consecutive_slots_count</span>
 
-        
+                <label class="view-source-button" for="Course.consecutive_slots_count-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.consecutive_slots_count"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.consecutive_slots_count-685"><a href="#Course.consecutive_slots_count-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.consecutive_slots_count-686"><a href="#Course.consecutive_slots_count-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Course.consecutive_slots_count-687"><a href="#Course.consecutive_slots_count-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Course.consecutive_slots_count-688"><a href="#Course.consecutive_slots_count-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for consecutive_slots_count.</p>
 </div>
 
@@ -5866,13 +6150,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.teacher_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.teacher_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">teacher_indices</span>
 
-        
+                <label class="view-source-button" for="Course.teacher_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.teacher_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.teacher_indices-642"><a href="#Course.teacher_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.teacher_indices-643"><a href="#Course.teacher_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Course.teacher_indices-644"><a href="#Course.teacher_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Course.teacher_indices-645"><a href="#Course.teacher_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Course.teacher_indices-646"><a href="#Course.teacher_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Course.teacher_indices-647"><a href="#Course.teacher_indices-647"><span class="linenos">647</span></a>
+</span><span id="Course.teacher_indices-648"><a href="#Course.teacher_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Course.teacher_indices-649"><a href="#Course.teacher_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Course.teacher_indices-650"><a href="#Course.teacher_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Course.teacher_indices-651"><a href="#Course.teacher_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Course.teacher_indices-652"><a href="#Course.teacher_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Course.teacher_indices-653"><a href="#Course.teacher_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Course.teacher_indices-654"><a href="#Course.teacher_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Course.teacher_indices-655"><a href="#Course.teacher_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for teacher_indices.</p>
 </div>
 
@@ -5891,13 +6193,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.teacher_section_counts" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.teacher_section_counts-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">teacher_section_counts</span>
 
-        
+                <label class="view-source-button" for="Course.teacher_section_counts-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.teacher_section_counts"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.teacher_section_counts-642"><a href="#Course.teacher_section_counts-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.teacher_section_counts-643"><a href="#Course.teacher_section_counts-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Course.teacher_section_counts-644"><a href="#Course.teacher_section_counts-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Course.teacher_section_counts-645"><a href="#Course.teacher_section_counts-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Course.teacher_section_counts-646"><a href="#Course.teacher_section_counts-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Course.teacher_section_counts-647"><a href="#Course.teacher_section_counts-647"><span class="linenos">647</span></a>
+</span><span id="Course.teacher_section_counts-648"><a href="#Course.teacher_section_counts-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Course.teacher_section_counts-649"><a href="#Course.teacher_section_counts-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Course.teacher_section_counts-650"><a href="#Course.teacher_section_counts-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Course.teacher_section_counts-651"><a href="#Course.teacher_section_counts-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Course.teacher_section_counts-652"><a href="#Course.teacher_section_counts-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Course.teacher_section_counts-653"><a href="#Course.teacher_section_counts-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Course.teacher_section_counts-654"><a href="#Course.teacher_section_counts-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Course.teacher_section_counts-655"><a href="#Course.teacher_section_counts-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for teacher_section_counts.</p>
 </div>
 
@@ -5916,13 +6236,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Course.room_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Course.room_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">room_indices</span>
 
-        
+                <label class="view-source-button" for="Course.room_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Course.room_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Course.room_indices-642"><a href="#Course.room_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Course.room_indices-643"><a href="#Course.room_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Course.room_indices-644"><a href="#Course.room_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Course.room_indices-645"><a href="#Course.room_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Course.room_indices-646"><a href="#Course.room_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Course.room_indices-647"><a href="#Course.room_indices-647"><span class="linenos">647</span></a>
+</span><span id="Course.room_indices-648"><a href="#Course.room_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Course.room_indices-649"><a href="#Course.room_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Course.room_indices-650"><a href="#Course.room_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Course.room_indices-651"><a href="#Course.room_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Course.room_indices-652"><a href="#Course.room_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Course.room_indices-653"><a href="#Course.room_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Course.room_indices-654"><a href="#Course.room_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Course.room_indices-655"><a href="#Course.room_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for room_indices.</p>
 </div>
 
@@ -6851,13 +7189,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Teacher.display_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Teacher.display_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">display_name</span>
 
-        
+                <label class="view-source-button" for="Teacher.display_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Teacher.display_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Teacher.display_name-685"><a href="#Teacher.display_name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Teacher.display_name-686"><a href="#Teacher.display_name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Teacher.display_name-687"><a href="#Teacher.display_name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Teacher.display_name-688"><a href="#Teacher.display_name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for display_name.</p>
 </div>
 
@@ -6876,13 +7222,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Teacher.restricted_time_slots" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Teacher.restricted_time_slots-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">restricted_time_slots</span>
 
-        
+                <label class="view-source-button" for="Teacher.restricted_time_slots-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Teacher.restricted_time_slots"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Teacher.restricted_time_slots-642"><a href="#Teacher.restricted_time_slots-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Teacher.restricted_time_slots-643"><a href="#Teacher.restricted_time_slots-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Teacher.restricted_time_slots-644"><a href="#Teacher.restricted_time_slots-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Teacher.restricted_time_slots-645"><a href="#Teacher.restricted_time_slots-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Teacher.restricted_time_slots-646"><a href="#Teacher.restricted_time_slots-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Teacher.restricted_time_slots-647"><a href="#Teacher.restricted_time_slots-647"><span class="linenos">647</span></a>
+</span><span id="Teacher.restricted_time_slots-648"><a href="#Teacher.restricted_time_slots-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Teacher.restricted_time_slots-649"><a href="#Teacher.restricted_time_slots-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Teacher.restricted_time_slots-650"><a href="#Teacher.restricted_time_slots-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Teacher.restricted_time_slots-651"><a href="#Teacher.restricted_time_slots-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Teacher.restricted_time_slots-652"><a href="#Teacher.restricted_time_slots-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Teacher.restricted_time_slots-653"><a href="#Teacher.restricted_time_slots-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Teacher.restricted_time_slots-654"><a href="#Teacher.restricted_time_slots-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Teacher.restricted_time_slots-655"><a href="#Teacher.restricted_time_slots-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for restricted_time_slots.</p>
 </div>
 
@@ -7811,13 +8175,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Student.display_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Student.display_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">display_name</span>
 
-        
+                <label class="view-source-button" for="Student.display_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Student.display_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Student.display_name-685"><a href="#Student.display_name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Student.display_name-686"><a href="#Student.display_name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Student.display_name-687"><a href="#Student.display_name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Student.display_name-688"><a href="#Student.display_name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for display_name.</p>
 </div>
 
@@ -7836,13 +8208,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Student.course_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Student.course_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">course_indices</span>
 
-        
+                <label class="view-source-button" for="Student.course_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Student.course_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Student.course_indices-642"><a href="#Student.course_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Student.course_indices-643"><a href="#Student.course_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Student.course_indices-644"><a href="#Student.course_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Student.course_indices-645"><a href="#Student.course_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Student.course_indices-646"><a href="#Student.course_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Student.course_indices-647"><a href="#Student.course_indices-647"><span class="linenos">647</span></a>
+</span><span id="Student.course_indices-648"><a href="#Student.course_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Student.course_indices-649"><a href="#Student.course_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Student.course_indices-650"><a href="#Student.course_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Student.course_indices-651"><a href="#Student.course_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Student.course_indices-652"><a href="#Student.course_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Student.course_indices-653"><a href="#Student.course_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Student.course_indices-654"><a href="#Student.course_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Student.course_indices-655"><a href="#Student.course_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for course_indices.</p>
 </div>
 
@@ -8771,13 +9161,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Room.display_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Room.display_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">display_name</span>
 
-        
+                <label class="view-source-button" for="Room.display_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Room.display_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Room.display_name-685"><a href="#Room.display_name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Room.display_name-686"><a href="#Room.display_name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Room.display_name-687"><a href="#Room.display_name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Room.display_name-688"><a href="#Room.display_name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for display_name.</p>
 </div>
 
@@ -8796,13 +9194,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Room.capacity" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Room.capacity-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">capacity</span>
 
-        
+                <label class="view-source-button" for="Room.capacity-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Room.capacity"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Room.capacity-685"><a href="#Room.capacity-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Room.capacity-686"><a href="#Room.capacity-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Room.capacity-687"><a href="#Room.capacity-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Room.capacity-688"><a href="#Room.capacity-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for capacity.</p>
 </div>
 

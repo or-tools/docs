@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.pdlp.solvers_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -575,7 +575,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -599,7 +599,7 @@
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/pdlp/solvers.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1504,13 +1504,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.optimality_norm" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.optimality_norm-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">optimality_norm</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.optimality_norm-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.optimality_norm"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.optimality_norm-685"><a href="#TerminationCriteria.optimality_norm-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.optimality_norm-686"><a href="#TerminationCriteria.optimality_norm-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.optimality_norm-687"><a href="#TerminationCriteria.optimality_norm-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.optimality_norm-688"><a href="#TerminationCriteria.optimality_norm-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for optimality_norm.</p>
 </div>
 
@@ -1529,13 +1537,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.simple_optimality_criteria" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.simple_optimality_criteria-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">simple_optimality_criteria</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.simple_optimality_criteria-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.simple_optimality_criteria"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.simple_optimality_criteria-741"><a href="#TerminationCriteria.simple_optimality_criteria-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-742"><a href="#TerminationCriteria.simple_optimality_criteria-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-743"><a href="#TerminationCriteria.simple_optimality_criteria-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-744"><a href="#TerminationCriteria.simple_optimality_criteria-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-745"><a href="#TerminationCriteria.simple_optimality_criteria-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-746"><a href="#TerminationCriteria.simple_optimality_criteria-746"><span class="linenos">746</span></a>
+</span><span id="TerminationCriteria.simple_optimality_criteria-747"><a href="#TerminationCriteria.simple_optimality_criteria-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-748"><a href="#TerminationCriteria.simple_optimality_criteria-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-749"><a href="#TerminationCriteria.simple_optimality_criteria-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-750"><a href="#TerminationCriteria.simple_optimality_criteria-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-751"><a href="#TerminationCriteria.simple_optimality_criteria-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-752"><a href="#TerminationCriteria.simple_optimality_criteria-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-753"><a href="#TerminationCriteria.simple_optimality_criteria-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="TerminationCriteria.simple_optimality_criteria-754"><a href="#TerminationCriteria.simple_optimality_criteria-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for simple_optimality_criteria.</p>
 </div>
 
@@ -1554,13 +1580,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.detailed_optimality_criteria" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.detailed_optimality_criteria-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">detailed_optimality_criteria</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.detailed_optimality_criteria-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.detailed_optimality_criteria"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.detailed_optimality_criteria-741"><a href="#TerminationCriteria.detailed_optimality_criteria-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-742"><a href="#TerminationCriteria.detailed_optimality_criteria-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-743"><a href="#TerminationCriteria.detailed_optimality_criteria-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-744"><a href="#TerminationCriteria.detailed_optimality_criteria-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-745"><a href="#TerminationCriteria.detailed_optimality_criteria-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-746"><a href="#TerminationCriteria.detailed_optimality_criteria-746"><span class="linenos">746</span></a>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-747"><a href="#TerminationCriteria.detailed_optimality_criteria-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-748"><a href="#TerminationCriteria.detailed_optimality_criteria-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-749"><a href="#TerminationCriteria.detailed_optimality_criteria-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-750"><a href="#TerminationCriteria.detailed_optimality_criteria-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-751"><a href="#TerminationCriteria.detailed_optimality_criteria-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-752"><a href="#TerminationCriteria.detailed_optimality_criteria-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-753"><a href="#TerminationCriteria.detailed_optimality_criteria-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="TerminationCriteria.detailed_optimality_criteria-754"><a href="#TerminationCriteria.detailed_optimality_criteria-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for detailed_optimality_criteria.</p>
 </div>
 
@@ -1579,13 +1623,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.eps_optimal_absolute" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.eps_optimal_absolute-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">eps_optimal_absolute</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.eps_optimal_absolute-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.eps_optimal_absolute"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.eps_optimal_absolute-685"><a href="#TerminationCriteria.eps_optimal_absolute-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.eps_optimal_absolute-686"><a href="#TerminationCriteria.eps_optimal_absolute-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.eps_optimal_absolute-687"><a href="#TerminationCriteria.eps_optimal_absolute-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.eps_optimal_absolute-688"><a href="#TerminationCriteria.eps_optimal_absolute-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for eps_optimal_absolute.</p>
 </div>
 
@@ -1604,13 +1656,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.eps_optimal_relative" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.eps_optimal_relative-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">eps_optimal_relative</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.eps_optimal_relative-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.eps_optimal_relative"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.eps_optimal_relative-685"><a href="#TerminationCriteria.eps_optimal_relative-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.eps_optimal_relative-686"><a href="#TerminationCriteria.eps_optimal_relative-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.eps_optimal_relative-687"><a href="#TerminationCriteria.eps_optimal_relative-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.eps_optimal_relative-688"><a href="#TerminationCriteria.eps_optimal_relative-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for eps_optimal_relative.</p>
 </div>
 
@@ -1629,13 +1689,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.eps_primal_infeasible" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.eps_primal_infeasible-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">eps_primal_infeasible</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.eps_primal_infeasible-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.eps_primal_infeasible"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.eps_primal_infeasible-685"><a href="#TerminationCriteria.eps_primal_infeasible-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.eps_primal_infeasible-686"><a href="#TerminationCriteria.eps_primal_infeasible-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.eps_primal_infeasible-687"><a href="#TerminationCriteria.eps_primal_infeasible-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.eps_primal_infeasible-688"><a href="#TerminationCriteria.eps_primal_infeasible-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for eps_primal_infeasible.</p>
 </div>
 
@@ -1654,13 +1722,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.eps_dual_infeasible" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.eps_dual_infeasible-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">eps_dual_infeasible</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.eps_dual_infeasible-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.eps_dual_infeasible"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.eps_dual_infeasible-685"><a href="#TerminationCriteria.eps_dual_infeasible-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.eps_dual_infeasible-686"><a href="#TerminationCriteria.eps_dual_infeasible-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.eps_dual_infeasible-687"><a href="#TerminationCriteria.eps_dual_infeasible-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.eps_dual_infeasible-688"><a href="#TerminationCriteria.eps_dual_infeasible-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for eps_dual_infeasible.</p>
 </div>
 
@@ -1679,13 +1755,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.time_sec_limit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.time_sec_limit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">time_sec_limit</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.time_sec_limit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.time_sec_limit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.time_sec_limit-685"><a href="#TerminationCriteria.time_sec_limit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.time_sec_limit-686"><a href="#TerminationCriteria.time_sec_limit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.time_sec_limit-687"><a href="#TerminationCriteria.time_sec_limit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.time_sec_limit-688"><a href="#TerminationCriteria.time_sec_limit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for time_sec_limit.</p>
 </div>
 
@@ -1704,13 +1788,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.iteration_limit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.iteration_limit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">iteration_limit</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.iteration_limit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.iteration_limit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.iteration_limit-685"><a href="#TerminationCriteria.iteration_limit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.iteration_limit-686"><a href="#TerminationCriteria.iteration_limit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.iteration_limit-687"><a href="#TerminationCriteria.iteration_limit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.iteration_limit-688"><a href="#TerminationCriteria.iteration_limit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for iteration_limit.</p>
 </div>
 
@@ -1729,13 +1821,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TerminationCriteria.kkt_matrix_pass_limit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TerminationCriteria.kkt_matrix_pass_limit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">kkt_matrix_pass_limit</span>
 
-        
+                <label class="view-source-button" for="TerminationCriteria.kkt_matrix_pass_limit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TerminationCriteria.kkt_matrix_pass_limit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TerminationCriteria.kkt_matrix_pass_limit-685"><a href="#TerminationCriteria.kkt_matrix_pass_limit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TerminationCriteria.kkt_matrix_pass_limit-686"><a href="#TerminationCriteria.kkt_matrix_pass_limit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="TerminationCriteria.kkt_matrix_pass_limit-687"><a href="#TerminationCriteria.kkt_matrix_pass_limit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="TerminationCriteria.kkt_matrix_pass_limit-688"><a href="#TerminationCriteria.kkt_matrix_pass_limit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for kkt_matrix_pass_limit.</p>
 </div>
 
@@ -2786,13 +2886,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AdaptiveLinesearchParams.step_size_reduction_exponent" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AdaptiveLinesearchParams.step_size_reduction_exponent-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">step_size_reduction_exponent</span>
 
-        
+                <label class="view-source-button" for="AdaptiveLinesearchParams.step_size_reduction_exponent-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AdaptiveLinesearchParams.step_size_reduction_exponent"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AdaptiveLinesearchParams.step_size_reduction_exponent-685"><a href="#AdaptiveLinesearchParams.step_size_reduction_exponent-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AdaptiveLinesearchParams.step_size_reduction_exponent-686"><a href="#AdaptiveLinesearchParams.step_size_reduction_exponent-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AdaptiveLinesearchParams.step_size_reduction_exponent-687"><a href="#AdaptiveLinesearchParams.step_size_reduction_exponent-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AdaptiveLinesearchParams.step_size_reduction_exponent-688"><a href="#AdaptiveLinesearchParams.step_size_reduction_exponent-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for step_size_reduction_exponent.</p>
 </div>
 
@@ -2811,13 +2919,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AdaptiveLinesearchParams.step_size_growth_exponent" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AdaptiveLinesearchParams.step_size_growth_exponent-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">step_size_growth_exponent</span>
 
-        
+                <label class="view-source-button" for="AdaptiveLinesearchParams.step_size_growth_exponent-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AdaptiveLinesearchParams.step_size_growth_exponent"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AdaptiveLinesearchParams.step_size_growth_exponent-685"><a href="#AdaptiveLinesearchParams.step_size_growth_exponent-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AdaptiveLinesearchParams.step_size_growth_exponent-686"><a href="#AdaptiveLinesearchParams.step_size_growth_exponent-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AdaptiveLinesearchParams.step_size_growth_exponent-687"><a href="#AdaptiveLinesearchParams.step_size_growth_exponent-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AdaptiveLinesearchParams.step_size_growth_exponent-688"><a href="#AdaptiveLinesearchParams.step_size_growth_exponent-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for step_size_growth_exponent.</p>
 </div>
 
@@ -3746,13 +3862,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="MalitskyPockParams.step_size_downscaling_factor" class="classattr">
-                                <div class="attr variable">
+                                        <input id="MalitskyPockParams.step_size_downscaling_factor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">step_size_downscaling_factor</span>
 
-        
+                <label class="view-source-button" for="MalitskyPockParams.step_size_downscaling_factor-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#MalitskyPockParams.step_size_downscaling_factor"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="MalitskyPockParams.step_size_downscaling_factor-685"><a href="#MalitskyPockParams.step_size_downscaling_factor-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="MalitskyPockParams.step_size_downscaling_factor-686"><a href="#MalitskyPockParams.step_size_downscaling_factor-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="MalitskyPockParams.step_size_downscaling_factor-687"><a href="#MalitskyPockParams.step_size_downscaling_factor-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="MalitskyPockParams.step_size_downscaling_factor-688"><a href="#MalitskyPockParams.step_size_downscaling_factor-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for step_size_downscaling_factor.</p>
 </div>
 
@@ -3771,13 +3895,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="MalitskyPockParams.linesearch_contraction_factor" class="classattr">
-                                <div class="attr variable">
+                                        <input id="MalitskyPockParams.linesearch_contraction_factor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">linesearch_contraction_factor</span>
 
-        
+                <label class="view-source-button" for="MalitskyPockParams.linesearch_contraction_factor-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#MalitskyPockParams.linesearch_contraction_factor"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="MalitskyPockParams.linesearch_contraction_factor-685"><a href="#MalitskyPockParams.linesearch_contraction_factor-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="MalitskyPockParams.linesearch_contraction_factor-686"><a href="#MalitskyPockParams.linesearch_contraction_factor-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="MalitskyPockParams.linesearch_contraction_factor-687"><a href="#MalitskyPockParams.linesearch_contraction_factor-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="MalitskyPockParams.linesearch_contraction_factor-688"><a href="#MalitskyPockParams.linesearch_contraction_factor-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for linesearch_contraction_factor.</p>
 </div>
 
@@ -3796,13 +3928,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="MalitskyPockParams.step_size_interpolation" class="classattr">
-                                <div class="attr variable">
+                                        <input id="MalitskyPockParams.step_size_interpolation-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">step_size_interpolation</span>
 
-        
+                <label class="view-source-button" for="MalitskyPockParams.step_size_interpolation-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#MalitskyPockParams.step_size_interpolation"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="MalitskyPockParams.step_size_interpolation-685"><a href="#MalitskyPockParams.step_size_interpolation-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="MalitskyPockParams.step_size_interpolation-686"><a href="#MalitskyPockParams.step_size_interpolation-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="MalitskyPockParams.step_size_interpolation-687"><a href="#MalitskyPockParams.step_size_interpolation-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="MalitskyPockParams.step_size_interpolation-688"><a href="#MalitskyPockParams.step_size_interpolation-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for step_size_interpolation.</p>
 </div>
 
@@ -4863,13 +5003,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.termination_criteria" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.termination_criteria-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">termination_criteria</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.termination_criteria-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.termination_criteria"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.termination_criteria-741"><a href="#PrimalDualHybridGradientParams.termination_criteria-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-742"><a href="#PrimalDualHybridGradientParams.termination_criteria-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-743"><a href="#PrimalDualHybridGradientParams.termination_criteria-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-744"><a href="#PrimalDualHybridGradientParams.termination_criteria-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-745"><a href="#PrimalDualHybridGradientParams.termination_criteria-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-746"><a href="#PrimalDualHybridGradientParams.termination_criteria-746"><span class="linenos">746</span></a>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-747"><a href="#PrimalDualHybridGradientParams.termination_criteria-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-748"><a href="#PrimalDualHybridGradientParams.termination_criteria-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-749"><a href="#PrimalDualHybridGradientParams.termination_criteria-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-750"><a href="#PrimalDualHybridGradientParams.termination_criteria-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-751"><a href="#PrimalDualHybridGradientParams.termination_criteria-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-752"><a href="#PrimalDualHybridGradientParams.termination_criteria-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-753"><a href="#PrimalDualHybridGradientParams.termination_criteria-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.termination_criteria-754"><a href="#PrimalDualHybridGradientParams.termination_criteria-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for termination_criteria.</p>
 </div>
 
@@ -4888,13 +5046,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.num_threads" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.num_threads-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">num_threads</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.num_threads-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.num_threads"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.num_threads-685"><a href="#PrimalDualHybridGradientParams.num_threads-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.num_threads-686"><a href="#PrimalDualHybridGradientParams.num_threads-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.num_threads-687"><a href="#PrimalDualHybridGradientParams.num_threads-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.num_threads-688"><a href="#PrimalDualHybridGradientParams.num_threads-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for num_threads.</p>
 </div>
 
@@ -4913,13 +5079,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.num_shards" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.num_shards-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">num_shards</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.num_shards-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.num_shards"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.num_shards-685"><a href="#PrimalDualHybridGradientParams.num_shards-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.num_shards-686"><a href="#PrimalDualHybridGradientParams.num_shards-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.num_shards-687"><a href="#PrimalDualHybridGradientParams.num_shards-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.num_shards-688"><a href="#PrimalDualHybridGradientParams.num_shards-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for num_shards.</p>
 </div>
 
@@ -4938,13 +5112,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.record_iteration_stats" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.record_iteration_stats-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">record_iteration_stats</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.record_iteration_stats-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.record_iteration_stats"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.record_iteration_stats-685"><a href="#PrimalDualHybridGradientParams.record_iteration_stats-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.record_iteration_stats-686"><a href="#PrimalDualHybridGradientParams.record_iteration_stats-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.record_iteration_stats-687"><a href="#PrimalDualHybridGradientParams.record_iteration_stats-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.record_iteration_stats-688"><a href="#PrimalDualHybridGradientParams.record_iteration_stats-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for record_iteration_stats.</p>
 </div>
 
@@ -4963,13 +5145,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.verbosity_level" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.verbosity_level-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">verbosity_level</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.verbosity_level-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.verbosity_level"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.verbosity_level-685"><a href="#PrimalDualHybridGradientParams.verbosity_level-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.verbosity_level-686"><a href="#PrimalDualHybridGradientParams.verbosity_level-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.verbosity_level-687"><a href="#PrimalDualHybridGradientParams.verbosity_level-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.verbosity_level-688"><a href="#PrimalDualHybridGradientParams.verbosity_level-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for verbosity_level.</p>
 </div>
 
@@ -4988,13 +5178,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.log_interval_seconds" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.log_interval_seconds-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">log_interval_seconds</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.log_interval_seconds-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.log_interval_seconds"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.log_interval_seconds-685"><a href="#PrimalDualHybridGradientParams.log_interval_seconds-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.log_interval_seconds-686"><a href="#PrimalDualHybridGradientParams.log_interval_seconds-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.log_interval_seconds-687"><a href="#PrimalDualHybridGradientParams.log_interval_seconds-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.log_interval_seconds-688"><a href="#PrimalDualHybridGradientParams.log_interval_seconds-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for log_interval_seconds.</p>
 </div>
 
@@ -5013,13 +5211,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.major_iteration_frequency" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.major_iteration_frequency-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">major_iteration_frequency</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.major_iteration_frequency-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.major_iteration_frequency"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.major_iteration_frequency-685"><a href="#PrimalDualHybridGradientParams.major_iteration_frequency-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.major_iteration_frequency-686"><a href="#PrimalDualHybridGradientParams.major_iteration_frequency-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.major_iteration_frequency-687"><a href="#PrimalDualHybridGradientParams.major_iteration_frequency-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.major_iteration_frequency-688"><a href="#PrimalDualHybridGradientParams.major_iteration_frequency-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for major_iteration_frequency.</p>
 </div>
 
@@ -5038,13 +5244,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.termination_check_frequency" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.termination_check_frequency-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">termination_check_frequency</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.termination_check_frequency-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.termination_check_frequency"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.termination_check_frequency-685"><a href="#PrimalDualHybridGradientParams.termination_check_frequency-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.termination_check_frequency-686"><a href="#PrimalDualHybridGradientParams.termination_check_frequency-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.termination_check_frequency-687"><a href="#PrimalDualHybridGradientParams.termination_check_frequency-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.termination_check_frequency-688"><a href="#PrimalDualHybridGradientParams.termination_check_frequency-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for termination_check_frequency.</p>
 </div>
 
@@ -5063,13 +5277,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.restart_strategy" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.restart_strategy-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">restart_strategy</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.restart_strategy-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.restart_strategy"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.restart_strategy-685"><a href="#PrimalDualHybridGradientParams.restart_strategy-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.restart_strategy-686"><a href="#PrimalDualHybridGradientParams.restart_strategy-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.restart_strategy-687"><a href="#PrimalDualHybridGradientParams.restart_strategy-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.restart_strategy-688"><a href="#PrimalDualHybridGradientParams.restart_strategy-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for restart_strategy.</p>
 </div>
 
@@ -5088,13 +5310,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.primal_weight_update_smoothing" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.primal_weight_update_smoothing-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">primal_weight_update_smoothing</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.primal_weight_update_smoothing-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.primal_weight_update_smoothing"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.primal_weight_update_smoothing-685"><a href="#PrimalDualHybridGradientParams.primal_weight_update_smoothing-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.primal_weight_update_smoothing-686"><a href="#PrimalDualHybridGradientParams.primal_weight_update_smoothing-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.primal_weight_update_smoothing-687"><a href="#PrimalDualHybridGradientParams.primal_weight_update_smoothing-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.primal_weight_update_smoothing-688"><a href="#PrimalDualHybridGradientParams.primal_weight_update_smoothing-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for primal_weight_update_smoothing.</p>
 </div>
 
@@ -5113,13 +5343,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.initial_primal_weight" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.initial_primal_weight-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">initial_primal_weight</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.initial_primal_weight-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.initial_primal_weight"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.initial_primal_weight-685"><a href="#PrimalDualHybridGradientParams.initial_primal_weight-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.initial_primal_weight-686"><a href="#PrimalDualHybridGradientParams.initial_primal_weight-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.initial_primal_weight-687"><a href="#PrimalDualHybridGradientParams.initial_primal_weight-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.initial_primal_weight-688"><a href="#PrimalDualHybridGradientParams.initial_primal_weight-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for initial_primal_weight.</p>
 </div>
 
@@ -5138,13 +5376,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.presolve_options" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.presolve_options-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">presolve_options</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.presolve_options-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.presolve_options"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.presolve_options-741"><a href="#PrimalDualHybridGradientParams.presolve_options-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-742"><a href="#PrimalDualHybridGradientParams.presolve_options-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-743"><a href="#PrimalDualHybridGradientParams.presolve_options-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-744"><a href="#PrimalDualHybridGradientParams.presolve_options-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-745"><a href="#PrimalDualHybridGradientParams.presolve_options-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-746"><a href="#PrimalDualHybridGradientParams.presolve_options-746"><span class="linenos">746</span></a>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-747"><a href="#PrimalDualHybridGradientParams.presolve_options-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-748"><a href="#PrimalDualHybridGradientParams.presolve_options-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-749"><a href="#PrimalDualHybridGradientParams.presolve_options-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-750"><a href="#PrimalDualHybridGradientParams.presolve_options-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-751"><a href="#PrimalDualHybridGradientParams.presolve_options-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-752"><a href="#PrimalDualHybridGradientParams.presolve_options-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-753"><a href="#PrimalDualHybridGradientParams.presolve_options-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.presolve_options-754"><a href="#PrimalDualHybridGradientParams.presolve_options-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for presolve_options.</p>
 </div>
 
@@ -5163,13 +5419,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">l_inf_ruiz_iterations</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.l_inf_ruiz_iterations"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-685"><a href="#PrimalDualHybridGradientParams.l_inf_ruiz_iterations-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-686"><a href="#PrimalDualHybridGradientParams.l_inf_ruiz_iterations-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-687"><a href="#PrimalDualHybridGradientParams.l_inf_ruiz_iterations-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.l_inf_ruiz_iterations-688"><a href="#PrimalDualHybridGradientParams.l_inf_ruiz_iterations-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for l_inf_ruiz_iterations.</p>
 </div>
 
@@ -5188,13 +5452,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.l2_norm_rescaling" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.l2_norm_rescaling-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">l2_norm_rescaling</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.l2_norm_rescaling-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.l2_norm_rescaling"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.l2_norm_rescaling-685"><a href="#PrimalDualHybridGradientParams.l2_norm_rescaling-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.l2_norm_rescaling-686"><a href="#PrimalDualHybridGradientParams.l2_norm_rescaling-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.l2_norm_rescaling-687"><a href="#PrimalDualHybridGradientParams.l2_norm_rescaling-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.l2_norm_rescaling-688"><a href="#PrimalDualHybridGradientParams.l2_norm_rescaling-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for l2_norm_rescaling.</p>
 </div>
 
@@ -5213,13 +5485,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">sufficient_reduction_for_restart</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.sufficient_reduction_for_restart"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-685"><a href="#PrimalDualHybridGradientParams.sufficient_reduction_for_restart-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-686"><a href="#PrimalDualHybridGradientParams.sufficient_reduction_for_restart-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-687"><a href="#PrimalDualHybridGradientParams.sufficient_reduction_for_restart-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.sufficient_reduction_for_restart-688"><a href="#PrimalDualHybridGradientParams.sufficient_reduction_for_restart-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for sufficient_reduction_for_restart.</p>
 </div>
 
@@ -5238,13 +5518,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.necessary_reduction_for_restart" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.necessary_reduction_for_restart-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">necessary_reduction_for_restart</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.necessary_reduction_for_restart-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.necessary_reduction_for_restart"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.necessary_reduction_for_restart-685"><a href="#PrimalDualHybridGradientParams.necessary_reduction_for_restart-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.necessary_reduction_for_restart-686"><a href="#PrimalDualHybridGradientParams.necessary_reduction_for_restart-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.necessary_reduction_for_restart-687"><a href="#PrimalDualHybridGradientParams.necessary_reduction_for_restart-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.necessary_reduction_for_restart-688"><a href="#PrimalDualHybridGradientParams.necessary_reduction_for_restart-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for necessary_reduction_for_restart.</p>
 </div>
 
@@ -5263,13 +5551,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.linesearch_rule" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.linesearch_rule-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">linesearch_rule</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.linesearch_rule-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.linesearch_rule"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.linesearch_rule-685"><a href="#PrimalDualHybridGradientParams.linesearch_rule-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.linesearch_rule-686"><a href="#PrimalDualHybridGradientParams.linesearch_rule-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.linesearch_rule-687"><a href="#PrimalDualHybridGradientParams.linesearch_rule-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.linesearch_rule-688"><a href="#PrimalDualHybridGradientParams.linesearch_rule-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for linesearch_rule.</p>
 </div>
 
@@ -5288,13 +5584,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">adaptive_linesearch_parameters</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-741"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-742"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-743"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-744"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-745"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-746"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-746"><span class="linenos">746</span></a>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-747"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-748"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-749"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-750"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-751"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-752"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-753"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.adaptive_linesearch_parameters-754"><a href="#PrimalDualHybridGradientParams.adaptive_linesearch_parameters-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for adaptive_linesearch_parameters.</p>
 </div>
 
@@ -5313,13 +5627,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.malitsky_pock_parameters" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.malitsky_pock_parameters-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">malitsky_pock_parameters</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.malitsky_pock_parameters-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.malitsky_pock_parameters"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-741"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-742"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-743"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-744"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-745"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-746"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-746"><span class="linenos">746</span></a>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-747"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-748"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-749"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-750"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-751"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-752"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-753"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.malitsky_pock_parameters-754"><a href="#PrimalDualHybridGradientParams.malitsky_pock_parameters-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for malitsky_pock_parameters.</p>
 </div>
 
@@ -5338,13 +5670,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.initial_step_size_scaling" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.initial_step_size_scaling-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">initial_step_size_scaling</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.initial_step_size_scaling-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.initial_step_size_scaling"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.initial_step_size_scaling-685"><a href="#PrimalDualHybridGradientParams.initial_step_size_scaling-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.initial_step_size_scaling-686"><a href="#PrimalDualHybridGradientParams.initial_step_size_scaling-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.initial_step_size_scaling-687"><a href="#PrimalDualHybridGradientParams.initial_step_size_scaling-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.initial_step_size_scaling-688"><a href="#PrimalDualHybridGradientParams.initial_step_size_scaling-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for initial_step_size_scaling.</p>
 </div>
 
@@ -5363,13 +5703,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.random_projection_seeds" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.random_projection_seeds-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">random_projection_seeds</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.random_projection_seeds-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.random_projection_seeds"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.random_projection_seeds-642"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-643"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-644"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-645"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-646"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-647"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-647"><span class="linenos">647</span></a>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-648"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-649"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-650"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-651"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-652"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-653"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-654"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="PrimalDualHybridGradientParams.random_projection_seeds-655"><a href="#PrimalDualHybridGradientParams.random_projection_seeds-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for random_projection_seeds.</p>
 </div>
 
@@ -5388,13 +5746,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">infinite_constraint_bound_threshold</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.infinite_constraint_bound_threshold"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-685"><a href="#PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-686"><a href="#PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-687"><a href="#PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-688"><a href="#PrimalDualHybridGradientParams.infinite_constraint_bound_threshold-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for infinite_constraint_bound_threshold.</p>
 </div>
 
@@ -5413,13 +5779,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">handle_some_primal_gradients_on_finite_bounds_as_residuals</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-685"><a href="#PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-686"><a href="#PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-687"><a href="#PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-688"><a href="#PrimalDualHybridGradientParams.handle_some_primal_gradients_on_finite_bounds_as_residuals-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for handle_some_primal_gradients_on_finite_bounds_as_residuals.</p>
 </div>
 
@@ -5438,13 +5812,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">use_diagonal_qp_trust_region_solver</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-685"><a href="#PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-686"><a href="#PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-687"><a href="#PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-688"><a href="#PrimalDualHybridGradientParams.use_diagonal_qp_trust_region_solver-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for use_diagonal_qp_trust_region_solver.</p>
 </div>
 
@@ -5463,13 +5845,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">diagonal_qp_trust_region_solver_tolerance</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-685"><a href="#PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-686"><a href="#PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-687"><a href="#PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-688"><a href="#PrimalDualHybridGradientParams.diagonal_qp_trust_region_solver_tolerance-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for diagonal_qp_trust_region_solver_tolerance.</p>
 </div>
 
@@ -5488,13 +5878,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="PrimalDualHybridGradientParams.use_feasibility_polishing" class="classattr">
-                                <div class="attr variable">
+                                        <input id="PrimalDualHybridGradientParams.use_feasibility_polishing-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">use_feasibility_polishing</span>
 
-        
+                <label class="view-source-button" for="PrimalDualHybridGradientParams.use_feasibility_polishing-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#PrimalDualHybridGradientParams.use_feasibility_polishing"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="PrimalDualHybridGradientParams.use_feasibility_polishing-685"><a href="#PrimalDualHybridGradientParams.use_feasibility_polishing-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="PrimalDualHybridGradientParams.use_feasibility_polishing-686"><a href="#PrimalDualHybridGradientParams.use_feasibility_polishing-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="PrimalDualHybridGradientParams.use_feasibility_polishing-687"><a href="#PrimalDualHybridGradientParams.use_feasibility_polishing-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="PrimalDualHybridGradientParams.use_feasibility_polishing-688"><a href="#PrimalDualHybridGradientParams.use_feasibility_polishing-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for use_feasibility_polishing.</p>
 </div>
 

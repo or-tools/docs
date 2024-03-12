@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.sat.python.swig_helper API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -93,22 +93,22 @@
                                 <a class="function" href="#SolveWrapper.__init__">SolveWrapper</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.AddLogCallback">AddLogCallback</a>
+                                <a class="function" href="#SolveWrapper.add_log_callback">add_log_callback</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.AddSolutionCallback">AddSolutionCallback</a>
+                                <a class="function" href="#SolveWrapper.add_solution_callback">add_solution_callback</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.ClearSolutionCallback">ClearSolutionCallback</a>
+                                <a class="function" href="#SolveWrapper.clear_solution_callback">clear_solution_callback</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.SetParameters">SetParameters</a>
+                                <a class="function" href="#SolveWrapper.set_parameters">set_parameters</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.Solve">Solve</a>
+                                <a class="function" href="#SolveWrapper.solve">solve</a>
                         </li>
                         <li>
-                                <a class="function" href="#SolveWrapper.StopSearch">StopSearch</a>
+                                <a class="function" href="#SolveWrapper.stop_search">stop_search</a>
                         </li>
                 </ul>
 
@@ -120,19 +120,19 @@
                                 <a class="function" href="#CpSatHelper.__init__">CpSatHelper</a>
                         </li>
                         <li>
-                                <a class="function" href="#CpSatHelper.ModelStats">ModelStats</a>
+                                <a class="function" href="#CpSatHelper.model_stats">model_stats</a>
                         </li>
                         <li>
-                                <a class="function" href="#CpSatHelper.SolverResponseStats">SolverResponseStats</a>
+                                <a class="function" href="#CpSatHelper.solver_response_stats">solver_response_stats</a>
                         </li>
                         <li>
-                                <a class="function" href="#CpSatHelper.ValidateModel">ValidateModel</a>
+                                <a class="function" href="#CpSatHelper.validate_model">validate_model</a>
                         </li>
                         <li>
-                                <a class="function" href="#CpSatHelper.VariableDomain">VariableDomain</a>
+                                <a class="function" href="#CpSatHelper.variable_domain">variable_domain</a>
                         </li>
                         <li>
-                                <a class="function" href="#CpSatHelper.WriteModelToFile">WriteModelToFile</a>
+                                <a class="function" href="#CpSatHelper.write_model_to_file">write_model_to_file</a>
                         </li>
                 </ul>
 
@@ -140,7 +140,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -189,7 +189,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">OnSolutionCallback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">OnSolutionCallback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -204,7 +204,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">BestObjectiveBound</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">BestObjectiveBound</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">float</span>:</span></span>
 
         
     </div>
@@ -219,7 +219,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">DeterministicTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">DeterministicTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">float</span>:</span></span>
 
         
     </div>
@@ -234,7 +234,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">HasResponse</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">HasResponse</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
 
         
     </div>
@@ -249,7 +249,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">NumBinaryPropagations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">NumBinaryPropagations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -264,7 +264,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">NumBooleans</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">NumBooleans</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -279,7 +279,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">NumBranches</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">NumBranches</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -294,7 +294,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">NumConflicts</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">NumConflicts</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -309,7 +309,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">NumIntegerPropagations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">NumIntegerPropagations</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -324,7 +324,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">ObjectiveValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">ObjectiveValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">float</span>:</span></span>
 
         
     </div>
@@ -339,7 +339,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">Response</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">Response</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -354,7 +354,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">SolutionBooleanValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">SolutionBooleanValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">index</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
 
         
     </div>
@@ -369,7 +369,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">SolutionIntegerValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">SolutionIntegerValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">index</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">) -> <span class="nb">int</span>:</span></span>
 
         
     </div>
@@ -384,7 +384,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">StopSearch</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">StopSearch</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -399,7 +399,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">UserTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">UserTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">float</span>:</span></span>
 
         
     </div>
@@ -414,7 +414,7 @@
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">WallTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">WallTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="nb">float</span>:</span></span>
 
         
     </div>
@@ -452,92 +452,92 @@
 
 
                             </div>
-                            <div id="SolveWrapper.AddLogCallback" class="classattr">
+                            <div id="SolveWrapper.add_log_callback" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">AddLogCallback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">add_log_callback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">log_callback</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">NoneType</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.AddLogCallback"></a>
+    <a class="headerlink" href="#SolveWrapper.add_log_callback"></a>
     
-            <div class="docstring"><p>AddLogCallback(self: <a href="#SolveWrapper">SolveWrapper</a>, log_callback: Callable[[str], None]) -> None</p>
+            <div class="docstring"><p>add_log_callback(self: <a href="#SolveWrapper">SolveWrapper</a>, log_callback: Callable[[str], None]) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="SolveWrapper.AddSolutionCallback" class="classattr">
+                            <div id="SolveWrapper.add_solution_callback" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">AddSolutionCallback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">add_solution_callback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">callback</span><span class="p">:</span> <span class="n"><a href="#SolutionCallback">SolutionCallback</a></span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.AddSolutionCallback"></a>
+    <a class="headerlink" href="#SolveWrapper.add_solution_callback"></a>
     
-            <div class="docstring"><p>AddSolutionCallback(self: <a href="#SolveWrapper">SolveWrapper</a>, callback: <a href="#SolutionCallback">SolutionCallback</a>) -> None</p>
+            <div class="docstring"><p>add_solution_callback(self: <a href="#SolveWrapper">SolveWrapper</a>, callback: <a href="#SolutionCallback">SolutionCallback</a>) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="SolveWrapper.ClearSolutionCallback" class="classattr">
+                            <div id="SolveWrapper.clear_solution_callback" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">ClearSolutionCallback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">clear_solution_callback</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">arg0</span><span class="p">:</span> <span class="n"><a href="#SolutionCallback">SolutionCallback</a></span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.ClearSolutionCallback"></a>
+    <a class="headerlink" href="#SolveWrapper.clear_solution_callback"></a>
     
-            <div class="docstring"><p>ClearSolutionCallback(self: <a href="#SolveWrapper">SolveWrapper</a>, arg0: <a href="#SolutionCallback">SolutionCallback</a>) -> None</p>
+            <div class="docstring"><p>clear_solution_callback(self: <a href="#SolveWrapper">SolveWrapper</a>, arg0: <a href="#SolutionCallback">SolutionCallback</a>) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="SolveWrapper.SetParameters" class="classattr">
+                            <div id="SolveWrapper.set_parameters" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">SetParameters</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_parameters</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">parameters</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.SetParameters"></a>
+    <a class="headerlink" href="#SolveWrapper.set_parameters"></a>
     
-            <div class="docstring"><p>SetParameters(self: <a href="#SolveWrapper">SolveWrapper</a>, parameters: operations_research::sat::SatParameters) -> None</p>
+            <div class="docstring"><p>set_parameters(self: <a href="#SolveWrapper">SolveWrapper</a>, parameters: operations_research::sat::SatParameters) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="SolveWrapper.Solve" class="classattr">
+                            <div id="SolveWrapper.solve" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">Solve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">solve</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.Solve"></a>
+    <a class="headerlink" href="#SolveWrapper.solve"></a>
     
-            <div class="docstring"><p>Solve(self: <a href="#SolveWrapper">SolveWrapper</a>, arg0: operations_research::sat::CpModelProto) -> operations_research::sat::CpSolverResponse</p>
+            <div class="docstring"><p>solve(self: <a href="#SolveWrapper">SolveWrapper</a>, arg0: operations_research::sat::CpModelProto) -> operations_research::sat::CpSolverResponse</p>
 </div>
 
 
                             </div>
-                            <div id="SolveWrapper.StopSearch" class="classattr">
+                            <div id="SolveWrapper.stop_search" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">StopSearch</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">stop_search</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SolveWrapper.StopSearch"></a>
+    <a class="headerlink" href="#SolveWrapper.stop_search"></a>
     
-            <div class="docstring"><p>StopSearch(self: <a href="#SolveWrapper">SolveWrapper</a>) -> None</p>
+            <div class="docstring"><p>stop_search(self: <a href="#SolveWrapper">SolveWrapper</a>) -> None</p>
 </div>
 
 
@@ -567,77 +567,77 @@
     
 
                             </div>
-                            <div id="CpSatHelper.ModelStats" class="classattr">
+                            <div id="CpSatHelper.model_stats" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">ModelStats</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">model_stats</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">model_proto</span></span><span class="return-annotation">) -> <span class="nb">str</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#CpSatHelper.ModelStats"></a>
+    <a class="headerlink" href="#CpSatHelper.model_stats"></a>
     
-            <div class="docstring"><p>ModelStats(model_proto: operations_research::sat::CpModelProto) -> str</p>
+            <div class="docstring"><p>model_stats(model_proto: operations_research::sat::CpModelProto) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="CpSatHelper.SolverResponseStats" class="classattr">
+                            <div id="CpSatHelper.solver_response_stats" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">SolverResponseStats</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">solver_response_stats</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">response</span></span><span class="return-annotation">) -> <span class="nb">str</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#CpSatHelper.SolverResponseStats"></a>
+    <a class="headerlink" href="#CpSatHelper.solver_response_stats"></a>
     
-            <div class="docstring"><p>SolverResponseStats(response: operations_research::sat::CpSolverResponse) -> str</p>
+            <div class="docstring"><p>solver_response_stats(response: operations_research::sat::CpSolverResponse) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="CpSatHelper.ValidateModel" class="classattr">
+                            <div id="CpSatHelper.validate_model" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">ValidateModel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">validate_model</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">model_proto</span></span><span class="return-annotation">) -> <span class="nb">str</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#CpSatHelper.ValidateModel"></a>
+    <a class="headerlink" href="#CpSatHelper.validate_model"></a>
     
-            <div class="docstring"><p>ValidateModel(model_proto: operations_research::sat::CpModelProto) -> str</p>
+            <div class="docstring"><p>validate_model(model_proto: operations_research::sat::CpModelProto) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="CpSatHelper.VariableDomain" class="classattr">
+                            <div id="CpSatHelper.variable_domain" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">VariableDomain</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">variable_domain</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">variable_proto</span></span><span class="return-annotation">) -> <span class="n"><a href="../../util/python/sorted_interval_list.html#Domain">ortools.util.python.sorted_interval_list.Domain</a></span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#CpSatHelper.VariableDomain"></a>
+    <a class="headerlink" href="#CpSatHelper.variable_domain"></a>
     
-            <div class="docstring"><p>VariableDomain(variable_proto: operations_research::sat::IntegerVariableProto) -> <a href="../../util/python/sorted_interval_list.html#Domain">ortools.util.python.sorted_interval_list.Domain</a></p>
+            <div class="docstring"><p>variable_domain(variable_proto: operations_research::sat::IntegerVariableProto) -> <a href="../../util/python/sorted_interval_list.html#Domain">ortools.util.python.sorted_interval_list.Domain</a></p>
 </div>
 
 
                             </div>
-                            <div id="CpSatHelper.WriteModelToFile" class="classattr">
+                            <div id="CpSatHelper.write_model_to_file" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">WriteModelToFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">write_model_to_file</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">model_proto</span>, </span><span class="param"><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#CpSatHelper.WriteModelToFile"></a>
+    <a class="headerlink" href="#CpSatHelper.write_model_to_file"></a>
     
-            <div class="docstring"><p>WriteModelToFile(model_proto: operations_research::sat::CpModelProto, filename: str) -> bool</p>
+            <div class="docstring"><p>write_model_to_file(model_proto: operations_research::sat::CpModelProto, filename: str) -> bool</p>
 </div>
 
 

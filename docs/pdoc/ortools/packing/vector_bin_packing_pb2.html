@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.packing.vector_bin_packing_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -407,7 +407,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -431,7 +431,7 @@
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/packing/vector_bin_packing.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1320,13 +1320,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span>
 
-        
+                <label class="view-source-button" for="Item.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.name-685"><a href="#Item.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.name-686"><a href="#Item.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Item.name-687"><a href="#Item.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Item.name-688"><a href="#Item.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for name.</p>
 </div>
 
@@ -1345,13 +1353,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.resource_usage" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.resource_usage-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">resource_usage</span>
 
-        
+                <label class="view-source-button" for="Item.resource_usage-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.resource_usage"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.resource_usage-642"><a href="#Item.resource_usage-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.resource_usage-643"><a href="#Item.resource_usage-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Item.resource_usage-644"><a href="#Item.resource_usage-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Item.resource_usage-645"><a href="#Item.resource_usage-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Item.resource_usage-646"><a href="#Item.resource_usage-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Item.resource_usage-647"><a href="#Item.resource_usage-647"><span class="linenos">647</span></a>
+</span><span id="Item.resource_usage-648"><a href="#Item.resource_usage-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Item.resource_usage-649"><a href="#Item.resource_usage-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Item.resource_usage-650"><a href="#Item.resource_usage-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Item.resource_usage-651"><a href="#Item.resource_usage-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Item.resource_usage-652"><a href="#Item.resource_usage-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Item.resource_usage-653"><a href="#Item.resource_usage-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Item.resource_usage-654"><a href="#Item.resource_usage-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Item.resource_usage-655"><a href="#Item.resource_usage-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for resource_usage.</p>
 </div>
 
@@ -1370,13 +1396,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.num_copies" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.num_copies-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">num_copies</span>
 
-        
+                <label class="view-source-button" for="Item.num_copies-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.num_copies"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.num_copies-685"><a href="#Item.num_copies-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.num_copies-686"><a href="#Item.num_copies-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Item.num_copies-687"><a href="#Item.num_copies-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Item.num_copies-688"><a href="#Item.num_copies-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for num_copies.</p>
 </div>
 
@@ -1395,13 +1429,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.num_optional_copies" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.num_optional_copies-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">num_optional_copies</span>
 
-        
+                <label class="view-source-button" for="Item.num_optional_copies-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.num_optional_copies"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.num_optional_copies-685"><a href="#Item.num_optional_copies-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.num_optional_copies-686"><a href="#Item.num_optional_copies-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Item.num_optional_copies-687"><a href="#Item.num_optional_copies-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Item.num_optional_copies-688"><a href="#Item.num_optional_copies-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for num_optional_copies.</p>
 </div>
 
@@ -1420,13 +1462,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.max_number_of_copies_per_bin" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.max_number_of_copies_per_bin-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">max_number_of_copies_per_bin</span>
 
-        
+                <label class="view-source-button" for="Item.max_number_of_copies_per_bin-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.max_number_of_copies_per_bin"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.max_number_of_copies_per_bin-685"><a href="#Item.max_number_of_copies_per_bin-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.max_number_of_copies_per_bin-686"><a href="#Item.max_number_of_copies_per_bin-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Item.max_number_of_copies_per_bin-687"><a href="#Item.max_number_of_copies_per_bin-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Item.max_number_of_copies_per_bin-688"><a href="#Item.max_number_of_copies_per_bin-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for max_number_of_copies_per_bin.</p>
 </div>
 
@@ -1445,13 +1495,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Item.penalty_per_missing_copy" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Item.penalty_per_missing_copy-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">penalty_per_missing_copy</span>
 
-        
+                <label class="view-source-button" for="Item.penalty_per_missing_copy-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Item.penalty_per_missing_copy"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Item.penalty_per_missing_copy-685"><a href="#Item.penalty_per_missing_copy-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Item.penalty_per_missing_copy-686"><a href="#Item.penalty_per_missing_copy-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Item.penalty_per_missing_copy-687"><a href="#Item.penalty_per_missing_copy-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Item.penalty_per_missing_copy-688"><a href="#Item.penalty_per_missing_copy-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for penalty_per_missing_copy.</p>
 </div>
 
@@ -2380,13 +2438,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.name-685"><a href="#VectorBinPackingProblem.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.name-686"><a href="#VectorBinPackingProblem.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingProblem.name-687"><a href="#VectorBinPackingProblem.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingProblem.name-688"><a href="#VectorBinPackingProblem.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for name.</p>
 </div>
 
@@ -2405,13 +2471,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.resource_capacity" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.resource_capacity-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">resource_capacity</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.resource_capacity-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.resource_capacity"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.resource_capacity-642"><a href="#VectorBinPackingProblem.resource_capacity-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-643"><a href="#VectorBinPackingProblem.resource_capacity-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-644"><a href="#VectorBinPackingProblem.resource_capacity-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-645"><a href="#VectorBinPackingProblem.resource_capacity-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-646"><a href="#VectorBinPackingProblem.resource_capacity-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-647"><a href="#VectorBinPackingProblem.resource_capacity-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingProblem.resource_capacity-648"><a href="#VectorBinPackingProblem.resource_capacity-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-649"><a href="#VectorBinPackingProblem.resource_capacity-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-650"><a href="#VectorBinPackingProblem.resource_capacity-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-651"><a href="#VectorBinPackingProblem.resource_capacity-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-652"><a href="#VectorBinPackingProblem.resource_capacity-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-653"><a href="#VectorBinPackingProblem.resource_capacity-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-654"><a href="#VectorBinPackingProblem.resource_capacity-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_capacity-655"><a href="#VectorBinPackingProblem.resource_capacity-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for resource_capacity.</p>
 </div>
 
@@ -2430,13 +2514,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.resource_name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.resource_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">resource_name</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.resource_name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.resource_name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.resource_name-642"><a href="#VectorBinPackingProblem.resource_name-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.resource_name-643"><a href="#VectorBinPackingProblem.resource_name-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_name-644"><a href="#VectorBinPackingProblem.resource_name-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingProblem.resource_name-645"><a href="#VectorBinPackingProblem.resource_name-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingProblem.resource_name-646"><a href="#VectorBinPackingProblem.resource_name-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_name-647"><a href="#VectorBinPackingProblem.resource_name-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingProblem.resource_name-648"><a href="#VectorBinPackingProblem.resource_name-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingProblem.resource_name-649"><a href="#VectorBinPackingProblem.resource_name-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingProblem.resource_name-650"><a href="#VectorBinPackingProblem.resource_name-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingProblem.resource_name-651"><a href="#VectorBinPackingProblem.resource_name-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingProblem.resource_name-652"><a href="#VectorBinPackingProblem.resource_name-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingProblem.resource_name-653"><a href="#VectorBinPackingProblem.resource_name-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingProblem.resource_name-654"><a href="#VectorBinPackingProblem.resource_name-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.resource_name-655"><a href="#VectorBinPackingProblem.resource_name-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for resource_name.</p>
 </div>
 
@@ -2455,13 +2557,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.item" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.item-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">item</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.item-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.item"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.item-642"><a href="#VectorBinPackingProblem.item-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.item-643"><a href="#VectorBinPackingProblem.item-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.item-644"><a href="#VectorBinPackingProblem.item-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingProblem.item-645"><a href="#VectorBinPackingProblem.item-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingProblem.item-646"><a href="#VectorBinPackingProblem.item-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.item-647"><a href="#VectorBinPackingProblem.item-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingProblem.item-648"><a href="#VectorBinPackingProblem.item-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingProblem.item-649"><a href="#VectorBinPackingProblem.item-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingProblem.item-650"><a href="#VectorBinPackingProblem.item-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingProblem.item-651"><a href="#VectorBinPackingProblem.item-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingProblem.item-652"><a href="#VectorBinPackingProblem.item-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingProblem.item-653"><a href="#VectorBinPackingProblem.item-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingProblem.item-654"><a href="#VectorBinPackingProblem.item-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingProblem.item-655"><a href="#VectorBinPackingProblem.item-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for item.</p>
 </div>
 
@@ -2480,13 +2600,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.max_bins" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.max_bins-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">max_bins</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.max_bins-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.max_bins"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.max_bins-685"><a href="#VectorBinPackingProblem.max_bins-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.max_bins-686"><a href="#VectorBinPackingProblem.max_bins-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingProblem.max_bins-687"><a href="#VectorBinPackingProblem.max_bins-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingProblem.max_bins-688"><a href="#VectorBinPackingProblem.max_bins-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for max_bins.</p>
 </div>
 
@@ -2505,13 +2633,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingProblem.cost_per_bin" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingProblem.cost_per_bin-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">cost_per_bin</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingProblem.cost_per_bin-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingProblem.cost_per_bin"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingProblem.cost_per_bin-685"><a href="#VectorBinPackingProblem.cost_per_bin-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingProblem.cost_per_bin-686"><a href="#VectorBinPackingProblem.cost_per_bin-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingProblem.cost_per_bin-687"><a href="#VectorBinPackingProblem.cost_per_bin-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingProblem.cost_per_bin-688"><a href="#VectorBinPackingProblem.cost_per_bin-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for cost_per_bin.</p>
 </div>
 
@@ -3440,13 +3576,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingOneBinInSolution.item_indices" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingOneBinInSolution.item_indices-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">item_indices</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingOneBinInSolution.item_indices-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingOneBinInSolution.item_indices"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingOneBinInSolution.item_indices-642"><a href="#VectorBinPackingOneBinInSolution.item_indices-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-643"><a href="#VectorBinPackingOneBinInSolution.item_indices-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-644"><a href="#VectorBinPackingOneBinInSolution.item_indices-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-645"><a href="#VectorBinPackingOneBinInSolution.item_indices-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-646"><a href="#VectorBinPackingOneBinInSolution.item_indices-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-647"><a href="#VectorBinPackingOneBinInSolution.item_indices-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-648"><a href="#VectorBinPackingOneBinInSolution.item_indices-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-649"><a href="#VectorBinPackingOneBinInSolution.item_indices-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-650"><a href="#VectorBinPackingOneBinInSolution.item_indices-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-651"><a href="#VectorBinPackingOneBinInSolution.item_indices-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-652"><a href="#VectorBinPackingOneBinInSolution.item_indices-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-653"><a href="#VectorBinPackingOneBinInSolution.item_indices-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-654"><a href="#VectorBinPackingOneBinInSolution.item_indices-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_indices-655"><a href="#VectorBinPackingOneBinInSolution.item_indices-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for item_indices.</p>
 </div>
 
@@ -3465,13 +3619,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingOneBinInSolution.item_copies" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingOneBinInSolution.item_copies-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">item_copies</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingOneBinInSolution.item_copies-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingOneBinInSolution.item_copies"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingOneBinInSolution.item_copies-642"><a href="#VectorBinPackingOneBinInSolution.item_copies-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-643"><a href="#VectorBinPackingOneBinInSolution.item_copies-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-644"><a href="#VectorBinPackingOneBinInSolution.item_copies-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-645"><a href="#VectorBinPackingOneBinInSolution.item_copies-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-646"><a href="#VectorBinPackingOneBinInSolution.item_copies-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-647"><a href="#VectorBinPackingOneBinInSolution.item_copies-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-648"><a href="#VectorBinPackingOneBinInSolution.item_copies-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-649"><a href="#VectorBinPackingOneBinInSolution.item_copies-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-650"><a href="#VectorBinPackingOneBinInSolution.item_copies-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-651"><a href="#VectorBinPackingOneBinInSolution.item_copies-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-652"><a href="#VectorBinPackingOneBinInSolution.item_copies-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-653"><a href="#VectorBinPackingOneBinInSolution.item_copies-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-654"><a href="#VectorBinPackingOneBinInSolution.item_copies-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingOneBinInSolution.item_copies-655"><a href="#VectorBinPackingOneBinInSolution.item_copies-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for item_copies.</p>
 </div>
 
@@ -4400,13 +4572,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.solver_info" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.solver_info-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">solver_info</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.solver_info-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.solver_info"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.solver_info-685"><a href="#VectorBinPackingSolution.solver_info-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.solver_info-686"><a href="#VectorBinPackingSolution.solver_info-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingSolution.solver_info-687"><a href="#VectorBinPackingSolution.solver_info-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingSolution.solver_info-688"><a href="#VectorBinPackingSolution.solver_info-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for solver_info.</p>
 </div>
 
@@ -4425,13 +4605,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.bins" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.bins-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">bins</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.bins-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.bins"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.bins-642"><a href="#VectorBinPackingSolution.bins-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.bins-643"><a href="#VectorBinPackingSolution.bins-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="VectorBinPackingSolution.bins-644"><a href="#VectorBinPackingSolution.bins-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="VectorBinPackingSolution.bins-645"><a href="#VectorBinPackingSolution.bins-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="VectorBinPackingSolution.bins-646"><a href="#VectorBinPackingSolution.bins-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="VectorBinPackingSolution.bins-647"><a href="#VectorBinPackingSolution.bins-647"><span class="linenos">647</span></a>
+</span><span id="VectorBinPackingSolution.bins-648"><a href="#VectorBinPackingSolution.bins-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="VectorBinPackingSolution.bins-649"><a href="#VectorBinPackingSolution.bins-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="VectorBinPackingSolution.bins-650"><a href="#VectorBinPackingSolution.bins-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="VectorBinPackingSolution.bins-651"><a href="#VectorBinPackingSolution.bins-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="VectorBinPackingSolution.bins-652"><a href="#VectorBinPackingSolution.bins-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="VectorBinPackingSolution.bins-653"><a href="#VectorBinPackingSolution.bins-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="VectorBinPackingSolution.bins-654"><a href="#VectorBinPackingSolution.bins-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="VectorBinPackingSolution.bins-655"><a href="#VectorBinPackingSolution.bins-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for bins.</p>
 </div>
 
@@ -4450,13 +4648,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.status" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.status-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">status</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.status-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.status"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.status-685"><a href="#VectorBinPackingSolution.status-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.status-686"><a href="#VectorBinPackingSolution.status-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingSolution.status-687"><a href="#VectorBinPackingSolution.status-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingSolution.status-688"><a href="#VectorBinPackingSolution.status-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for status.</p>
 </div>
 
@@ -4475,13 +4681,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.objective_value" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.objective_value-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">objective_value</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.objective_value-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.objective_value"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.objective_value-685"><a href="#VectorBinPackingSolution.objective_value-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.objective_value-686"><a href="#VectorBinPackingSolution.objective_value-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingSolution.objective_value-687"><a href="#VectorBinPackingSolution.objective_value-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingSolution.objective_value-688"><a href="#VectorBinPackingSolution.objective_value-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for objective_value.</p>
 </div>
 
@@ -4500,13 +4714,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.solve_time_in_seconds" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.solve_time_in_seconds-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">solve_time_in_seconds</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.solve_time_in_seconds-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.solve_time_in_seconds"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.solve_time_in_seconds-685"><a href="#VectorBinPackingSolution.solve_time_in_seconds-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.solve_time_in_seconds-686"><a href="#VectorBinPackingSolution.solve_time_in_seconds-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingSolution.solve_time_in_seconds-687"><a href="#VectorBinPackingSolution.solve_time_in_seconds-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingSolution.solve_time_in_seconds-688"><a href="#VectorBinPackingSolution.solve_time_in_seconds-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for solve_time_in_seconds.</p>
 </div>
 
@@ -4525,13 +4747,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="VectorBinPackingSolution.arc_flow_time_in_seconds" class="classattr">
-                                <div class="attr variable">
+                                        <input id="VectorBinPackingSolution.arc_flow_time_in_seconds-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">arc_flow_time_in_seconds</span>
 
-        
+                <label class="view-source-button" for="VectorBinPackingSolution.arc_flow_time_in_seconds-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#VectorBinPackingSolution.arc_flow_time_in_seconds"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="VectorBinPackingSolution.arc_flow_time_in_seconds-685"><a href="#VectorBinPackingSolution.arc_flow_time_in_seconds-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="VectorBinPackingSolution.arc_flow_time_in_seconds-686"><a href="#VectorBinPackingSolution.arc_flow_time_in_seconds-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="VectorBinPackingSolution.arc_flow_time_in_seconds-687"><a href="#VectorBinPackingSolution.arc_flow_time_in_seconds-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="VectorBinPackingSolution.arc_flow_time_in_seconds-688"><a href="#VectorBinPackingSolution.arc_flow_time_in_seconds-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for arc_flow_time_in_seconds.</p>
 </div>
 

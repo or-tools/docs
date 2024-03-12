@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.1.0"/>
+    <meta name="generator" content="pdoc 14.4.0"/>
     <title>ortools.scheduling.jobshop_scheduling_pb2 API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -794,7 +794,7 @@
     </ul>
 
 
-            <footer>OR-Tools v9.8</footer>
+            <footer>OR-Tools v9.9</footer>
 
         <a class="attribution" title="pdoc: Python API documentation generator" href="https://pdoc.dev" target="_blank">
             built with <span class="visually-hidden">pdoc</span><img
@@ -847,7 +847,7 @@ earliness and tardiness penalties can be specified.</p>
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># -*- coding: utf-8 -*-</span>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="c1"># Generated by the protocol buffer compiler.  DO NOT EDIT!</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="c1"># source: ortools/scheduling/jobshop_scheduling.proto</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.0</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="c1"># Protobuf Python Version: 4.25.3</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">&quot;&quot;&quot;Generated protocol buffer code.&quot;&quot;&quot;</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor</span> <span class="k">as</span> <span class="n">_descriptor</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">google.protobuf</span> <span class="kn">import</span> <span class="n">descriptor_pool</span> <span class="k">as</span> <span class="n">_descriptor_pool</span>
@@ -1759,13 +1759,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Task.machine" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Task.machine-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">machine</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="Task.machine-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Task.machine"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Task.machine-642"><a href="#Task.machine-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Task.machine-643"><a href="#Task.machine-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Task.machine-644"><a href="#Task.machine-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Task.machine-645"><a href="#Task.machine-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Task.machine-646"><a href="#Task.machine-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Task.machine-647"><a href="#Task.machine-647"><span class="linenos">647</span></a>
+</span><span id="Task.machine-648"><a href="#Task.machine-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Task.machine-649"><a href="#Task.machine-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Task.machine-650"><a href="#Task.machine-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Task.machine-651"><a href="#Task.machine-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Task.machine-652"><a href="#Task.machine-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Task.machine-653"><a href="#Task.machine-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Task.machine-654"><a href="#Task.machine-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Task.machine-655"><a href="#Task.machine-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The alternative machines that can perform that task. Only one must
 be selected. We store the index of the machine in the main
 JsspInputProblem.</p>
@@ -1786,13 +1804,31 @@ JsspInputProblem.</p>
 
                             </div>
                             <div id="Task.duration" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Task.duration-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">duration</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="Task.duration-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Task.duration"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Task.duration-642"><a href="#Task.duration-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Task.duration-643"><a href="#Task.duration-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Task.duration-644"><a href="#Task.duration-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Task.duration-645"><a href="#Task.duration-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Task.duration-646"><a href="#Task.duration-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Task.duration-647"><a href="#Task.duration-647"><span class="linenos">647</span></a>
+</span><span id="Task.duration-648"><a href="#Task.duration-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Task.duration-649"><a href="#Task.duration-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Task.duration-650"><a href="#Task.duration-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Task.duration-651"><a href="#Task.duration-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Task.duration-652"><a href="#Task.duration-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Task.duration-653"><a href="#Task.duration-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Task.duration-654"><a href="#Task.duration-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Task.duration-655"><a href="#Task.duration-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The corresponding duration for the alternative ways of performing this
 task. This list must have the same size as the machine_id list.</p>
 </div>
@@ -1812,13 +1848,31 @@ task. This list must have the same size as the machine_id list.</p>
 
                             </div>
                             <div id="Task.cost" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Task.cost-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">cost</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="Task.cost-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Task.cost"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Task.cost-642"><a href="#Task.cost-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Task.cost-643"><a href="#Task.cost-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Task.cost-644"><a href="#Task.cost-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Task.cost-645"><a href="#Task.cost-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Task.cost-646"><a href="#Task.cost-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Task.cost-647"><a href="#Task.cost-647"><span class="linenos">647</span></a>
+</span><span id="Task.cost-648"><a href="#Task.cost-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Task.cost-649"><a href="#Task.cost-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Task.cost-650"><a href="#Task.cost-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Task.cost-651"><a href="#Task.cost-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Task.cost-652"><a href="#Task.cost-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Task.cost-653"><a href="#Task.cost-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Task.cost-654"><a href="#Task.cost-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Task.cost-655"><a href="#Task.cost-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>An optional cost for selecting one alternative way of performing the task
 against another. This list must either be empty, or has the same size as
 the above two lists.</p>
@@ -2766,13 +2820,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Job.tasks" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.tasks-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">tasks</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#Task">Task</a>]</span>
 
-        
+                <label class="view-source-button" for="Job.tasks-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.tasks"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.tasks-642"><a href="#Job.tasks-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.tasks-643"><a href="#Job.tasks-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Job.tasks-644"><a href="#Job.tasks-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Job.tasks-645"><a href="#Job.tasks-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Job.tasks-646"><a href="#Job.tasks-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Job.tasks-647"><a href="#Job.tasks-647"><span class="linenos">647</span></a>
+</span><span id="Job.tasks-648"><a href="#Job.tasks-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Job.tasks-649"><a href="#Job.tasks-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Job.tasks-650"><a href="#Job.tasks-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Job.tasks-651"><a href="#Job.tasks-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Job.tasks-652"><a href="#Job.tasks-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Job.tasks-653"><a href="#Job.tasks-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Job.tasks-654"><a href="#Job.tasks-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Job.tasks-655"><a href="#Job.tasks-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The ordered sequence of tasks.</p>
 </div>
 
@@ -2791,13 +2863,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Job.earliest_start" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.earliest_start-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">earliest_start</span><span class="annotation">: google.protobuf.wrappers_pb2.Int64Value</span>
 
-        
+                <label class="view-source-button" for="Job.earliest_start-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.earliest_start"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.earliest_start-741"><a href="#Job.earliest_start-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.earliest_start-742"><a href="#Job.earliest_start-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Job.earliest_start-743"><a href="#Job.earliest_start-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Job.earliest_start-744"><a href="#Job.earliest_start-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Job.earliest_start-745"><a href="#Job.earliest_start-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Job.earliest_start-746"><a href="#Job.earliest_start-746"><span class="linenos">746</span></a>
+</span><span id="Job.earliest_start-747"><a href="#Job.earliest_start-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Job.earliest_start-748"><a href="#Job.earliest_start-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Job.earliest_start-749"><a href="#Job.earliest_start-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Job.earliest_start-750"><a href="#Job.earliest_start-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Job.earliest_start-751"><a href="#Job.earliest_start-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Job.earliest_start-752"><a href="#Job.earliest_start-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Job.earliest_start-753"><a href="#Job.earliest_start-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Job.earliest_start-754"><a href="#Job.earliest_start-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>This date, if set, specifies a hard constraint on when the job can start.</p>
 </div>
 
@@ -2816,13 +2906,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Job.early_due_date" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.early_due_date-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">early_due_date</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="Job.early_due_date-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.early_due_date"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.early_due_date-685"><a href="#Job.early_due_date-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.early_due_date-686"><a href="#Job.early_due_date-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Job.early_due_date-687"><a href="#Job.early_due_date-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Job.early_due_date-688"><a href="#Job.early_due_date-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>This date specifies the earliest time the job should end. If
 this is set, then the earliness_cost_per_time_unit should be set
 too with a positive value.</p>
@@ -2843,13 +2941,21 @@ too with a positive value.</p>
 
                             </div>
                             <div id="Job.late_due_date" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.late_due_date-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">late_due_date</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="Job.late_due_date-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.late_due_date"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.late_due_date-685"><a href="#Job.late_due_date-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.late_due_date-686"><a href="#Job.late_due_date-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Job.late_due_date-687"><a href="#Job.late_due_date-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Job.late_due_date-688"><a href="#Job.late_due_date-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>This date specifies the latest time the job should end. If this
 is set, then the lateness_cost_per_time_unit should be set too
 with a positive value.  If both early_due_date and late_due_date
@@ -2871,13 +2977,21 @@ are set, then early_due_date &lt;= late_due_date must hold.</p>
 
                             </div>
                             <div id="Job.earliness_cost_per_time_unit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.earliness_cost_per_time_unit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">earliness_cost_per_time_unit</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="Job.earliness_cost_per_time_unit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.earliness_cost_per_time_unit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.earliness_cost_per_time_unit-685"><a href="#Job.earliness_cost_per_time_unit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.earliness_cost_per_time_unit-686"><a href="#Job.earliness_cost_per_time_unit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Job.earliness_cost_per_time_unit-687"><a href="#Job.earliness_cost_per_time_unit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Job.earliness_cost_per_time_unit-688"><a href="#Job.earliness_cost_per_time_unit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The cost model is a convex function
    \            /
     \          /
@@ -2903,13 +3017,21 @@ the date and a positive cost must be defined. All costs must be positive.</p>
 
                             </div>
                             <div id="Job.lateness_cost_per_time_unit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.lateness_cost_per_time_unit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">lateness_cost_per_time_unit</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="Job.lateness_cost_per_time_unit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.lateness_cost_per_time_unit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.lateness_cost_per_time_unit-685"><a href="#Job.lateness_cost_per_time_unit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.lateness_cost_per_time_unit-686"><a href="#Job.lateness_cost_per_time_unit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Job.lateness_cost_per_time_unit-687"><a href="#Job.lateness_cost_per_time_unit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Job.lateness_cost_per_time_unit-688"><a href="#Job.lateness_cost_per_time_unit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for lateness_cost_per_time_unit.</p>
 </div>
 
@@ -2928,13 +3050,31 @@ the date and a positive cost must be defined. All costs must be positive.</p>
 
                             </div>
                             <div id="Job.latest_end" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.latest_end-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">latest_end</span><span class="annotation">: google.protobuf.wrappers_pb2.Int64Value</span>
 
-        
+                <label class="view-source-button" for="Job.latest_end-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.latest_end"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.latest_end-741"><a href="#Job.latest_end-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.latest_end-742"><a href="#Job.latest_end-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Job.latest_end-743"><a href="#Job.latest_end-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Job.latest_end-744"><a href="#Job.latest_end-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Job.latest_end-745"><a href="#Job.latest_end-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Job.latest_end-746"><a href="#Job.latest_end-746"><span class="linenos">746</span></a>
+</span><span id="Job.latest_end-747"><a href="#Job.latest_end-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Job.latest_end-748"><a href="#Job.latest_end-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Job.latest_end-749"><a href="#Job.latest_end-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Job.latest_end-750"><a href="#Job.latest_end-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Job.latest_end-751"><a href="#Job.latest_end-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Job.latest_end-752"><a href="#Job.latest_end-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Job.latest_end-753"><a href="#Job.latest_end-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Job.latest_end-754"><a href="#Job.latest_end-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>This date, if set, specifies a hard constraint on when the job
 can end.  If both earliest_start and latest_end are specified,
 then earliest_start &lt;= latest_end must hold.</p>
@@ -2955,13 +3095,21 @@ then earliest_start &lt;= latest_end must hold.</p>
 
                             </div>
                             <div id="Job.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Job.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="Job.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Job.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Job.name-685"><a href="#Job.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Job.name-686"><a href="#Job.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Job.name-687"><a href="#Job.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Job.name-688"><a href="#Job.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Optional. A name for the job. This will only be used for logging purposes.</p>
 </div>
 
@@ -3908,13 +4056,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="TransitionTimeMatrix.transition_time" class="classattr">
-                                <div class="attr variable">
+                                        <input id="TransitionTimeMatrix.transition_time-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">transition_time</span><span class="annotation">: google.protobuf.internal.containers.RepeatedScalarFieldContainer[int]</span>
 
-        
+                <label class="view-source-button" for="TransitionTimeMatrix.transition_time-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#TransitionTimeMatrix.transition_time"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="TransitionTimeMatrix.transition_time-642"><a href="#TransitionTimeMatrix.transition_time-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="TransitionTimeMatrix.transition_time-643"><a href="#TransitionTimeMatrix.transition_time-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="TransitionTimeMatrix.transition_time-644"><a href="#TransitionTimeMatrix.transition_time-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="TransitionTimeMatrix.transition_time-645"><a href="#TransitionTimeMatrix.transition_time-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="TransitionTimeMatrix.transition_time-646"><a href="#TransitionTimeMatrix.transition_time-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="TransitionTimeMatrix.transition_time-647"><a href="#TransitionTimeMatrix.transition_time-647"><span class="linenos">647</span></a>
+</span><span id="TransitionTimeMatrix.transition_time-648"><a href="#TransitionTimeMatrix.transition_time-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="TransitionTimeMatrix.transition_time-649"><a href="#TransitionTimeMatrix.transition_time-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="TransitionTimeMatrix.transition_time-650"><a href="#TransitionTimeMatrix.transition_time-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="TransitionTimeMatrix.transition_time-651"><a href="#TransitionTimeMatrix.transition_time-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="TransitionTimeMatrix.transition_time-652"><a href="#TransitionTimeMatrix.transition_time-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="TransitionTimeMatrix.transition_time-653"><a href="#TransitionTimeMatrix.transition_time-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="TransitionTimeMatrix.transition_time-654"><a href="#TransitionTimeMatrix.transition_time-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="TransitionTimeMatrix.transition_time-655"><a href="#TransitionTimeMatrix.transition_time-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for transition_time.</p>
 </div>
 
@@ -4861,13 +5027,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Machine.transition_time_matrix" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Machine.transition_time_matrix-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">transition_time_matrix</span><span class="annotation">: <a href="#TransitionTimeMatrix">TransitionTimeMatrix</a></span>
 
-        
+                <label class="view-source-button" for="Machine.transition_time_matrix-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Machine.transition_time_matrix"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Machine.transition_time_matrix-741"><a href="#Machine.transition_time_matrix-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Machine.transition_time_matrix-742"><a href="#Machine.transition_time_matrix-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="Machine.transition_time_matrix-743"><a href="#Machine.transition_time_matrix-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Machine.transition_time_matrix-744"><a href="#Machine.transition_time_matrix-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="Machine.transition_time_matrix-745"><a href="#Machine.transition_time_matrix-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="Machine.transition_time_matrix-746"><a href="#Machine.transition_time_matrix-746"><span class="linenos">746</span></a>
+</span><span id="Machine.transition_time_matrix-747"><a href="#Machine.transition_time_matrix-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="Machine.transition_time_matrix-748"><a href="#Machine.transition_time_matrix-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="Machine.transition_time_matrix-749"><a href="#Machine.transition_time_matrix-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="Machine.transition_time_matrix-750"><a href="#Machine.transition_time_matrix-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="Machine.transition_time_matrix-751"><a href="#Machine.transition_time_matrix-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="Machine.transition_time_matrix-752"><a href="#Machine.transition_time_matrix-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="Machine.transition_time_matrix-753"><a href="#Machine.transition_time_matrix-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="Machine.transition_time_matrix-754"><a href="#Machine.transition_time_matrix-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Optional transition time matrix for this machine.</p>
 </div>
 
@@ -4886,13 +5070,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="Machine.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="Machine.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="Machine.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#Machine.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Machine.name-685"><a href="#Machine.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Machine.name-686"><a href="#Machine.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="Machine.name-687"><a href="#Machine.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="Machine.name-688"><a href="#Machine.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Optional. A name for a machine. This will only be used for logging
 purposes.</p>
 </div>
@@ -5837,13 +6029,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JobPrecedence.first_job_index" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JobPrecedence.first_job_index-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">first_job_index</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JobPrecedence.first_job_index-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JobPrecedence.first_job_index"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JobPrecedence.first_job_index-685"><a href="#JobPrecedence.first_job_index-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JobPrecedence.first_job_index-686"><a href="#JobPrecedence.first_job_index-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JobPrecedence.first_job_index-687"><a href="#JobPrecedence.first_job_index-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JobPrecedence.first_job_index-688"><a href="#JobPrecedence.first_job_index-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for first_job_index.</p>
 </div>
 
@@ -5862,13 +6062,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JobPrecedence.second_job_index" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JobPrecedence.second_job_index-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">second_job_index</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JobPrecedence.second_job_index-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JobPrecedence.second_job_index"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JobPrecedence.second_job_index-685"><a href="#JobPrecedence.second_job_index-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JobPrecedence.second_job_index-686"><a href="#JobPrecedence.second_job_index-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JobPrecedence.second_job_index-687"><a href="#JobPrecedence.second_job_index-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JobPrecedence.second_job_index-688"><a href="#JobPrecedence.second_job_index-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for second_job_index.</p>
 </div>
 
@@ -5887,13 +6095,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JobPrecedence.min_delay" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JobPrecedence.min_delay-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">min_delay</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JobPrecedence.min_delay-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JobPrecedence.min_delay"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JobPrecedence.min_delay-685"><a href="#JobPrecedence.min_delay-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JobPrecedence.min_delay-686"><a href="#JobPrecedence.min_delay-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JobPrecedence.min_delay-687"><a href="#JobPrecedence.min_delay-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JobPrecedence.min_delay-688"><a href="#JobPrecedence.min_delay-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for min_delay.</p>
 </div>
 
@@ -6836,13 +7052,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspInputProblem.jobs" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.jobs-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">jobs</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#Job">Job</a>]</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.jobs-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.jobs"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.jobs-642"><a href="#JsspInputProblem.jobs-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.jobs-643"><a href="#JsspInputProblem.jobs-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="JsspInputProblem.jobs-644"><a href="#JsspInputProblem.jobs-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="JsspInputProblem.jobs-645"><a href="#JsspInputProblem.jobs-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="JsspInputProblem.jobs-646"><a href="#JsspInputProblem.jobs-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="JsspInputProblem.jobs-647"><a href="#JsspInputProblem.jobs-647"><span class="linenos">647</span></a>
+</span><span id="JsspInputProblem.jobs-648"><a href="#JsspInputProblem.jobs-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="JsspInputProblem.jobs-649"><a href="#JsspInputProblem.jobs-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="JsspInputProblem.jobs-650"><a href="#JsspInputProblem.jobs-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="JsspInputProblem.jobs-651"><a href="#JsspInputProblem.jobs-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="JsspInputProblem.jobs-652"><a href="#JsspInputProblem.jobs-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="JsspInputProblem.jobs-653"><a href="#JsspInputProblem.jobs-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="JsspInputProblem.jobs-654"><a href="#JsspInputProblem.jobs-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="JsspInputProblem.jobs-655"><a href="#JsspInputProblem.jobs-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for jobs.</p>
 </div>
 
@@ -6861,13 +7095,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspInputProblem.machines" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.machines-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">machines</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#Machine">Machine</a>]</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.machines-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.machines"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.machines-642"><a href="#JsspInputProblem.machines-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.machines-643"><a href="#JsspInputProblem.machines-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="JsspInputProblem.machines-644"><a href="#JsspInputProblem.machines-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="JsspInputProblem.machines-645"><a href="#JsspInputProblem.machines-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="JsspInputProblem.machines-646"><a href="#JsspInputProblem.machines-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="JsspInputProblem.machines-647"><a href="#JsspInputProblem.machines-647"><span class="linenos">647</span></a>
+</span><span id="JsspInputProblem.machines-648"><a href="#JsspInputProblem.machines-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="JsspInputProblem.machines-649"><a href="#JsspInputProblem.machines-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="JsspInputProblem.machines-650"><a href="#JsspInputProblem.machines-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="JsspInputProblem.machines-651"><a href="#JsspInputProblem.machines-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="JsspInputProblem.machines-652"><a href="#JsspInputProblem.machines-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="JsspInputProblem.machines-653"><a href="#JsspInputProblem.machines-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="JsspInputProblem.machines-654"><a href="#JsspInputProblem.machines-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="JsspInputProblem.machines-655"><a href="#JsspInputProblem.machines-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for machines.</p>
 </div>
 
@@ -6886,13 +7138,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspInputProblem.precedences" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.precedences-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">precedences</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#JobPrecedence">JobPrecedence</a>]</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.precedences-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.precedences"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.precedences-642"><a href="#JsspInputProblem.precedences-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.precedences-643"><a href="#JsspInputProblem.precedences-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="JsspInputProblem.precedences-644"><a href="#JsspInputProblem.precedences-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="JsspInputProblem.precedences-645"><a href="#JsspInputProblem.precedences-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="JsspInputProblem.precedences-646"><a href="#JsspInputProblem.precedences-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="JsspInputProblem.precedences-647"><a href="#JsspInputProblem.precedences-647"><span class="linenos">647</span></a>
+</span><span id="JsspInputProblem.precedences-648"><a href="#JsspInputProblem.precedences-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="JsspInputProblem.precedences-649"><a href="#JsspInputProblem.precedences-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="JsspInputProblem.precedences-650"><a href="#JsspInputProblem.precedences-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="JsspInputProblem.precedences-651"><a href="#JsspInputProblem.precedences-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="JsspInputProblem.precedences-652"><a href="#JsspInputProblem.precedences-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="JsspInputProblem.precedences-653"><a href="#JsspInputProblem.precedences-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="JsspInputProblem.precedences-654"><a href="#JsspInputProblem.precedences-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="JsspInputProblem.precedences-655"><a href="#JsspInputProblem.precedences-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for precedences.</p>
 </div>
 
@@ -6911,13 +7181,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspInputProblem.makespan_cost_per_time_unit" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.makespan_cost_per_time_unit-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">makespan_cost_per_time_unit</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.makespan_cost_per_time_unit-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.makespan_cost_per_time_unit"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.makespan_cost_per_time_unit-685"><a href="#JsspInputProblem.makespan_cost_per_time_unit-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.makespan_cost_per_time_unit-686"><a href="#JsspInputProblem.makespan_cost_per_time_unit-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JsspInputProblem.makespan_cost_per_time_unit-687"><a href="#JsspInputProblem.makespan_cost_per_time_unit-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JsspInputProblem.makespan_cost_per_time_unit-688"><a href="#JsspInputProblem.makespan_cost_per_time_unit-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Getter for makespan_cost_per_time_unit.</p>
 </div>
 
@@ -6936,13 +7214,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspInputProblem.scaling_factor" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.scaling_factor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">scaling_factor</span><span class="annotation">: google.protobuf.wrappers_pb2.DoubleValue</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.scaling_factor-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.scaling_factor"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.scaling_factor-741"><a href="#JsspInputProblem.scaling_factor-741"><span class="linenos">741</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.scaling_factor-742"><a href="#JsspInputProblem.scaling_factor-742"><span class="linenos">742</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="JsspInputProblem.scaling_factor-743"><a href="#JsspInputProblem.scaling_factor-743"><span class="linenos">743</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="JsspInputProblem.scaling_factor-744"><a href="#JsspInputProblem.scaling_factor-744"><span class="linenos">744</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="JsspInputProblem.scaling_factor-745"><a href="#JsspInputProblem.scaling_factor-745"><span class="linenos">745</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="JsspInputProblem.scaling_factor-746"><a href="#JsspInputProblem.scaling_factor-746"><span class="linenos">746</span></a>
+</span><span id="JsspInputProblem.scaling_factor-747"><a href="#JsspInputProblem.scaling_factor-747"><span class="linenos">747</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="JsspInputProblem.scaling_factor-748"><a href="#JsspInputProblem.scaling_factor-748"><span class="linenos">748</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="JsspInputProblem.scaling_factor-749"><a href="#JsspInputProblem.scaling_factor-749"><span class="linenos">749</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="JsspInputProblem.scaling_factor-750"><a href="#JsspInputProblem.scaling_factor-750"><span class="linenos">750</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="JsspInputProblem.scaling_factor-751"><a href="#JsspInputProblem.scaling_factor-751"><span class="linenos">751</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="JsspInputProblem.scaling_factor-752"><a href="#JsspInputProblem.scaling_factor-752"><span class="linenos">752</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="JsspInputProblem.scaling_factor-753"><a href="#JsspInputProblem.scaling_factor-753"><span class="linenos">753</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="JsspInputProblem.scaling_factor-754"><a href="#JsspInputProblem.scaling_factor-754"><span class="linenos">754</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>If set, the cost coefficients are multiplied by this factor.
 It is set to 1000 by the parser when reading early tardy taillard problems
 where the weight of a job is a floating point value.</p>
@@ -6963,13 +7259,21 @@ where the weight of a job is a floating point value.</p>
 
                             </div>
                             <div id="JsspInputProblem.seed" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.seed-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">seed</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.seed-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.seed"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.seed-685"><a href="#JsspInputProblem.seed-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.seed-686"><a href="#JsspInputProblem.seed-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JsspInputProblem.seed-687"><a href="#JsspInputProblem.seed-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JsspInputProblem.seed-688"><a href="#JsspInputProblem.seed-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Sometimes, the academic data files contain extra information. We store it
 in the input problem message.</p>
 </div>
@@ -6989,13 +7293,21 @@ in the input problem message.</p>
 
                             </div>
                             <div id="JsspInputProblem.name" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspInputProblem.name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">name</span><span class="annotation">: str</span>
 
-        
+                <label class="view-source-button" for="JsspInputProblem.name-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspInputProblem.name"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspInputProblem.name-685"><a href="#JsspInputProblem.name-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspInputProblem.name-686"><a href="#JsspInputProblem.name-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JsspInputProblem.name-687"><a href="#JsspInputProblem.name-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JsspInputProblem.name-688"><a href="#JsspInputProblem.name-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Optional: Name of the problem.</p>
 </div>
 
@@ -7938,13 +8250,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignedTask.alternative_index" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignedTask.alternative_index-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">alternative_index</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="AssignedTask.alternative_index-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignedTask.alternative_index"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignedTask.alternative_index-685"><a href="#AssignedTask.alternative_index-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignedTask.alternative_index-686"><a href="#AssignedTask.alternative_index-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AssignedTask.alternative_index-687"><a href="#AssignedTask.alternative_index-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AssignedTask.alternative_index-688"><a href="#AssignedTask.alternative_index-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Indicates which alternative was selected. It corresponds to the
 alternative_index-th machine in the 'machine' field in Tasks</p>
 </div>
@@ -7964,13 +8284,21 @@ alternative_index-th machine in the 'machine' field in Tasks</p>
 
                             </div>
                             <div id="AssignedTask.start_time" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignedTask.start_time-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">start_time</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="AssignedTask.start_time-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignedTask.start_time"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignedTask.start_time-685"><a href="#AssignedTask.start_time-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignedTask.start_time-686"><a href="#AssignedTask.start_time-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AssignedTask.start_time-687"><a href="#AssignedTask.start_time-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AssignedTask.start_time-688"><a href="#AssignedTask.start_time-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The start time of that task.</p>
 </div>
 
@@ -8913,13 +9241,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignedJob.tasks" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignedJob.tasks-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">tasks</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#AssignedTask">AssignedTask</a>]</span>
 
-        
+                <label class="view-source-button" for="AssignedJob.tasks-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignedJob.tasks"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignedJob.tasks-642"><a href="#AssignedJob.tasks-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignedJob.tasks-643"><a href="#AssignedJob.tasks-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="AssignedJob.tasks-644"><a href="#AssignedJob.tasks-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="AssignedJob.tasks-645"><a href="#AssignedJob.tasks-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="AssignedJob.tasks-646"><a href="#AssignedJob.tasks-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="AssignedJob.tasks-647"><a href="#AssignedJob.tasks-647"><span class="linenos">647</span></a>
+</span><span id="AssignedJob.tasks-648"><a href="#AssignedJob.tasks-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="AssignedJob.tasks-649"><a href="#AssignedJob.tasks-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="AssignedJob.tasks-650"><a href="#AssignedJob.tasks-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="AssignedJob.tasks-651"><a href="#AssignedJob.tasks-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="AssignedJob.tasks-652"><a href="#AssignedJob.tasks-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="AssignedJob.tasks-653"><a href="#AssignedJob.tasks-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="AssignedJob.tasks-654"><a href="#AssignedJob.tasks-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="AssignedJob.tasks-655"><a href="#AssignedJob.tasks-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>How each task is executed.</p>
 </div>
 
@@ -8938,13 +9284,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignedJob.due_date_cost" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignedJob.due_date_cost-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">due_date_cost</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="AssignedJob.due_date_cost-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignedJob.due_date_cost"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignedJob.due_date_cost-685"><a href="#AssignedJob.due_date_cost-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignedJob.due_date_cost-686"><a href="#AssignedJob.due_date_cost-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AssignedJob.due_date_cost-687"><a href="#AssignedJob.due_date_cost-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AssignedJob.due_date_cost-688"><a href="#AssignedJob.due_date_cost-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Earliness-Tardiness cost of that job.</p>
 </div>
 
@@ -8963,13 +9317,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="AssignedJob.sum_of_task_costs" class="classattr">
-                                <div class="attr variable">
+                                        <input id="AssignedJob.sum_of_task_costs-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">sum_of_task_costs</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="AssignedJob.sum_of_task_costs-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#AssignedJob.sum_of_task_costs"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="AssignedJob.sum_of_task_costs-685"><a href="#AssignedJob.sum_of_task_costs-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="AssignedJob.sum_of_task_costs-686"><a href="#AssignedJob.sum_of_task_costs-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="AssignedJob.sum_of_task_costs-687"><a href="#AssignedJob.sum_of_task_costs-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="AssignedJob.sum_of_task_costs-688"><a href="#AssignedJob.sum_of_task_costs-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>Sum of all tasks costs for that job.</p>
 </div>
 
@@ -9912,13 +10274,31 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspOutputSolution.jobs" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspOutputSolution.jobs-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">jobs</span><span class="annotation">: google.protobuf.internal.containers.RepeatedCompositeFieldContainer[<a href="#AssignedJob">AssignedJob</a>]</span>
 
-        
+                <label class="view-source-button" for="JsspOutputSolution.jobs-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspOutputSolution.jobs"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspOutputSolution.jobs-642"><a href="#JsspOutputSolution.jobs-642"><span class="linenos">642</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspOutputSolution.jobs-643"><a href="#JsspOutputSolution.jobs-643"><span class="linenos">643</span></a>    <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</span><span id="JsspOutputSolution.jobs-644"><a href="#JsspOutputSolution.jobs-644"><span class="linenos">644</span></a>    <span class="k">if</span> <span class="n">field_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="JsspOutputSolution.jobs-645"><a href="#JsspOutputSolution.jobs-645"><span class="linenos">645</span></a>      <span class="c1"># Construct a new object to represent this field.</span>
+</span><span id="JsspOutputSolution.jobs-646"><a href="#JsspOutputSolution.jobs-646"><span class="linenos">646</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">_default_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="JsspOutputSolution.jobs-647"><a href="#JsspOutputSolution.jobs-647"><span class="linenos">647</span></a>
+</span><span id="JsspOutputSolution.jobs-648"><a href="#JsspOutputSolution.jobs-648"><span class="linenos">648</span></a>      <span class="c1"># Atomically check if another thread has preempted us and, if not, swap</span>
+</span><span id="JsspOutputSolution.jobs-649"><a href="#JsspOutputSolution.jobs-649"><span class="linenos">649</span></a>      <span class="c1"># in the new object we just created.  If someone has preempted us, we</span>
+</span><span id="JsspOutputSolution.jobs-650"><a href="#JsspOutputSolution.jobs-650"><span class="linenos">650</span></a>      <span class="c1"># take that object and discard ours.</span>
+</span><span id="JsspOutputSolution.jobs-651"><a href="#JsspOutputSolution.jobs-651"><span class="linenos">651</span></a>      <span class="c1"># WARNING:  We are relying on setdefault() being atomic.  This is true</span>
+</span><span id="JsspOutputSolution.jobs-652"><a href="#JsspOutputSolution.jobs-652"><span class="linenos">652</span></a>      <span class="c1">#   in CPython but we haven&#39;t investigated others.  This warning appears</span>
+</span><span id="JsspOutputSolution.jobs-653"><a href="#JsspOutputSolution.jobs-653"><span class="linenos">653</span></a>      <span class="c1">#   in several other locations in this file.</span>
+</span><span id="JsspOutputSolution.jobs-654"><a href="#JsspOutputSolution.jobs-654"><span class="linenos">654</span></a>      <span class="n">field_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+</span><span id="JsspOutputSolution.jobs-655"><a href="#JsspOutputSolution.jobs-655"><span class="linenos">655</span></a>    <span class="k">return</span> <span class="n">field_value</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The solution for all jobs.</p>
 </div>
 
@@ -9937,13 +10317,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspOutputSolution.makespan_cost" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspOutputSolution.makespan_cost-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">makespan_cost</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JsspOutputSolution.makespan_cost-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspOutputSolution.makespan_cost"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspOutputSolution.makespan_cost-685"><a href="#JsspOutputSolution.makespan_cost-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspOutputSolution.makespan_cost-686"><a href="#JsspOutputSolution.makespan_cost-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JsspOutputSolution.makespan_cost-687"><a href="#JsspOutputSolution.makespan_cost-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JsspOutputSolution.makespan_cost-688"><a href="#JsspOutputSolution.makespan_cost-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The makespan cost of that solution.</p>
 </div>
 
@@ -9962,13 +10350,21 @@ defined field or oneof group, <code>ValueError</code> is raised.</p>
 
                             </div>
                             <div id="JsspOutputSolution.total_cost" class="classattr">
-                                <div class="attr variable">
+                                        <input id="JsspOutputSolution.total_cost-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr variable">
             <span class="name">total_cost</span><span class="annotation">: int</span>
 
-        
+                <label class="view-source-button" for="JsspOutputSolution.total_cost-view-source"><span>View Source</span></label>
+
     </div>
     <a class="headerlink" href="#JsspOutputSolution.total_cost"></a>
-    
+            <div class="pdoc-code codehilite"><pre><span></span><span id="JsspOutputSolution.total_cost-685"><a href="#JsspOutputSolution.total_cost-685"><span class="linenos">685</span></a>  <span class="k">def</span> <span class="nf">getter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="JsspOutputSolution.total_cost-686"><a href="#JsspOutputSolution.total_cost-686"><span class="linenos">686</span></a>    <span class="c1"># TODO: This may be broken since there may not be</span>
+</span><span id="JsspOutputSolution.total_cost-687"><a href="#JsspOutputSolution.total_cost-687"><span class="linenos">687</span></a>    <span class="c1"># default_value.  Combine with has_default_value somehow.</span>
+</span><span id="JsspOutputSolution.total_cost-688"><a href="#JsspOutputSolution.total_cost-688"><span class="linenos">688</span></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</span></pre></div>
+
+
             <div class="docstring"><p>The total cost of that solution.</p>
 </div>
 
