@@ -1,5 +1,6 @@
 var namespacegoogle_1_1protobuf =
 [
+    [ "contrib", "namespacegoogle_1_1protobuf_1_1contrib.html", "namespacegoogle_1_1protobuf_1_1contrib" ],
     [ "util", "namespacegoogle_1_1protobuf_1_1util.html", [
       [ "ParseTextOrDie", "namespacegoogle_1_1protobuf_1_1util.html#ad0ab08de6aa2b7160fbd23962859da9d", null ],
       [ "RemoveAt", "namespacegoogle_1_1protobuf_1_1util.html#a226602739b000b3f363e6614ddbd91e9", null ],

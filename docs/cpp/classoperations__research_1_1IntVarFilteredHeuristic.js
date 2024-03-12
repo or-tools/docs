@@ -6,6 +6,7 @@ var classoperations__research_1_1IntVarFilteredHeuristic =
     [ "BuildSolutionInternal", "classoperations__research_1_1IntVarFilteredHeuristic.html#a2bb6eaa2c29bcf1894e96e9cae332ff7", null ],
     [ "Contains", "classoperations__research_1_1IntVarFilteredHeuristic.html#a5dd521044231a1083849c076db73fa65", null ],
     [ "DebugString", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1ce9faf8459bb3be7918cbc3d6327404", null ],
+    [ "delta_indices", "classoperations__research_1_1IntVarFilteredHeuristic.html#ad8e4271c00e755cd578f7f5a155d4527", null ],
     [ "Evaluate", "classoperations__research_1_1IntVarFilteredHeuristic.html#ade4e61c3bfed33f3a9c90679c9098689", null ],
     [ "HasSecondaryVars", "classoperations__research_1_1IntVarFilteredHeuristic.html#a0a13e44044b388408dfbdd17423aa39d", null ],
     [ "Initialize", "classoperations__research_1_1IntVarFilteredHeuristic.html#a87c243d990d578cee83354a443405b48", null ],

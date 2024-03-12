@@ -1,5 +1,25 @@
 var searchData=
 [
-  ['work_5fassignment_2ecc_0',['work_assignment.cc',['../work__assignment_8cc.html',1,'']]],
-  ['work_5fassignment_2eh_1',['work_assignment.h',['../work__assignment_8h.html',1,'']]]
+  ['validator_2ecc_0',['validator.cc',['../indicator_2validator_8cc.html',1,'(Global Namespace)'],['../quadratic_2validator_8cc.html',1,'(Global Namespace)'],['../second__order__cone_2validator_8cc.html',1,'(Global Namespace)'],['../sos_2validator_8cc.html',1,'(Global Namespace)']]],
+  ['validator_2eh_1',['validator.h',['../indicator_2validator_8h.html',1,'(Global Namespace)'],['../quadratic_2validator_8h.html',1,'(Global Namespace)'],['../second__order__cone_2validator_8h.html',1,'(Global Namespace)'],['../sos_2validator_8h.html',1,'(Global Namespace)']]],
+  ['var_5fdomination_2ecc_2',['var_domination.cc',['../var__domination_8cc.html',1,'']]],
+  ['var_5fdomination_2eh_3',['var_domination.h',['../var__domination_8h.html',1,'']]],
+  ['variable_5fand_5fexpressions_2ecc_4',['variable_and_expressions.cc',['../variable__and__expressions_8cc.html',1,'']]],
+  ['variable_5fand_5fexpressions_2eh_5',['variable_and_expressions.h',['../variable__and__expressions_8h.html',1,'']]],
+  ['variable_5fstorage_2ecc_6',['variable_storage.cc',['../variable__storage_8cc.html',1,'']]],
+  ['variable_5fstorage_2eh_7',['variable_storage.h',['../variable__storage_8h.html',1,'']]],
+  ['variable_5fvalues_2ecc_8',['variable_values.cc',['../variable__values_8cc.html',1,'']]],
+  ['variable_5fvalues_2eh_9',['variable_values.h',['../variable__values_8h.html',1,'']]],
+  ['variables_5finfo_2ecc_10',['variables_info.cc',['../variables__info_8cc.html',1,'']]],
+  ['variables_5finfo_2eh_11',['variables_info.h',['../variables__info_8h.html',1,'']]],
+  ['vector_5fbin_5fpacking_2eproto_12',['vector_bin_packing.proto',['../vector__bin__packing_8proto.html',1,'']]],
+  ['vector_5fbin_5fpacking_5fmain_2ecc_13',['vector_bin_packing_main.cc',['../vector__bin__packing__main_8cc.html',1,'']]],
+  ['vector_5fbin_5fpacking_5fparser_2ecc_14',['vector_bin_packing_parser.cc',['../vector__bin__packing__parser_8cc.html',1,'']]],
+  ['vector_5fbin_5fpacking_5fparser_2eh_15',['vector_bin_packing_parser.h',['../vector__bin__packing__parser_8h.html',1,'']]],
+  ['vector_5for_5ffunction_2eh_16',['vector_or_function.h',['../vector__or__function_8h.html',1,'']]],
+  ['vector_5fsum_2eh_17',['vector_sum.h',['../vector__sum_8h.html',1,'']]],
+  ['vector_5fsum_5finternal_2eh_18',['vector_sum_internal.h',['../vector__sum__internal_8h.html',1,'']]],
+  ['version_2ecc_19',['version.cc',['../version_8cc.html',1,'']]],
+  ['version_2eh_20',['version.h',['../version_8h.html',1,'']]],
+  ['visitor_2ecc_21',['visitor.cc',['../visitor_8cc.html',1,'']]]
 ];

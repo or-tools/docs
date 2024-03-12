@@ -12,6 +12,7 @@ var cuts_8h =
     [ "operations_research::sat::RoundingOptions", "structoperations__research_1_1sat_1_1RoundingOptions.html", "structoperations__research_1_1sat_1_1RoundingOptions" ],
     [ "operations_research::sat::IntegerRoundingCutHelper", "classoperations__research_1_1sat_1_1IntegerRoundingCutHelper.html", "classoperations__research_1_1sat_1_1IntegerRoundingCutHelper" ],
     [ "operations_research::sat::CoverCutHelper", "classoperations__research_1_1sat_1_1CoverCutHelper.html", "classoperations__research_1_1sat_1_1CoverCutHelper" ],
+    [ "operations_research::sat::BoolRLTCutHelper", "classoperations__research_1_1sat_1_1BoolRLTCutHelper.html", "classoperations__research_1_1sat_1_1BoolRLTCutHelper" ],
     [ "operations_research::sat::SumOfAllDiffLowerBounder", "classoperations__research_1_1sat_1_1SumOfAllDiffLowerBounder.html", "classoperations__research_1_1sat_1_1SumOfAllDiffLowerBounder" ],
     [ "BuildMaxAffineUpConstraint", "cuts_8h.html#a25c7acbe0b5cf9fc66aad60c6968a3d9", null ],
     [ "ComputeHyperplanAboveSquare", "cuts_8h.html#a9ae754b2aa285603335beca4d62587cc", null ],

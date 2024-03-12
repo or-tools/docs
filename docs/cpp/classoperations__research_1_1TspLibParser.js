@@ -10,7 +10,7 @@ var classoperations__research_1_1TspLibParser =
       [ "UNDEFINED_TYPE", "classoperations__research_1_1TspLibParser.html#ae85742c923dc556430d2a5740456264fa83bcb98fabfc27eadc64618dbce18d3f", null ]
     ] ],
     [ "TspLibParser", "classoperations__research_1_1TspLibParser.html#a258bb508724d993ebef6c5ff9ef21dd1", null ],
-    [ "BuildTourFromRoutes", "classoperations__research_1_1TspLibParser.html#a90d8c763be1396d3d07dd0ca101f8ec6", null ],
+    [ "BuildTourFromRoutes", "classoperations__research_1_1TspLibParser.html#ab320130a6c99bf9ee2c777295ea9e2cb", null ],
     [ "capacity", "classoperations__research_1_1TspLibParser.html#a75da8a6e62ac4077dc09a63bea250492", null ],
     [ "comments", "classoperations__research_1_1TspLibParser.html#a803b85de9824ff8fd1c991940415dd19", null ],
     [ "coordinates", "classoperations__research_1_1TspLibParser.html#a8242f07cc2cc77cf2ca47189863394ef", null ],

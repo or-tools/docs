@@ -15,5 +15,5 @@ var sharded__optimization__utils_8h =
     [ "L2NormRescaling", "sharded__optimization__utils_8h.html#af41379e6fa8d7e6e6e8151c256906970", null ],
     [ "LInfRuizRescaling", "sharded__optimization__utils_8h.html#a897df53498faee509db98ef2681556ce", null ],
     [ "ProjectToDualVariableBounds", "sharded__optimization__utils_8h.html#a4b46c4812be8af75325d63ed3ced80f0", null ],
-    [ "ProjectToPrimalVariableBounds", "sharded__optimization__utils_8h.html#a03f1c93e7c9a345a90874f314196d1aa", null ]
+    [ "ProjectToPrimalVariableBounds", "sharded__optimization__utils_8h.html#a7865a873a402347ac2065a887bacb299", null ]
 ];

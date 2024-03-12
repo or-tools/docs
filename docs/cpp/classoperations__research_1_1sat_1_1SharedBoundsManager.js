@@ -8,6 +8,7 @@ var classoperations__research_1_1sat_1_1SharedBoundsManager =
     [ "NumBoundsExported", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#a8ff62f62bc0311cbf7bfe05d067889ac", null ],
     [ "RegisterNewId", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#afe1360d8efc49d1dfb485219e9e9b2df", null ],
     [ "ReportPotentialNewBounds", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#af58f95aa33b844058c4253d0dbf7862b", null ],
+    [ "set_dump_prefix", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#a1534ed7e688d965d234145e9e2e077e6", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#a588251f316c07272f1f172a25eed3c73", null ],
     [ "UpdateDomains", "classoperations__research_1_1sat_1_1SharedBoundsManager.html#a300ea1072b4ebb4f7797e1f0196043c3", null ]
 ];

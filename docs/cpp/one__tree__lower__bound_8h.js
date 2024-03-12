@@ -6,7 +6,7 @@ var one__tree__lower__bound_8h =
     [ "Next", "one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4", null ],
     [ "number_of_nodes_", "one__tree__lower__bound_8h.html#a01198f1b6b698fc8c033ef878977c27d", null ],
     [ "OnNewWMax", "one__tree__lower__bound_8h.html#a2ad04ff9537d97fcabc58c86183890c3", null ],
-    [ "OnOneTree", "one__tree__lower__bound_8h.html#a33c2c5b8d838c77c2701a538f7f30ae4", null ],
+    [ "OnOneTree", "one__tree__lower__bound_8h.html#a05eb1234dc1be67131f28f4add69ae09", null ],
     [ "step1_", "one__tree__lower__bound_8h.html#adba1a0c02ca6636f5610de2337f3f697", null ],
     [ "degrees", "one__tree__lower__bound_8h.html#af86d4c4e6a18908cda194651a9ab7beb", null ],
     [ "max_iterations", "one__tree__lower__bound_8h.html#af85cb5d69bd041414717718f6a833325", null ],

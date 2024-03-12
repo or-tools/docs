@@ -16,7 +16,7 @@ var classoperations__research_1_1DynamicPartition =
     [ "NumParts", "classoperations__research_1_1DynamicPartition.html#a2be965bec4379c6d374904fbfdfca568", null ],
     [ "ParentOfPart", "classoperations__research_1_1DynamicPartition.html#a079d605b371556e228347843c9b15d2d", null ],
     [ "PartOf", "classoperations__research_1_1DynamicPartition.html#af3a2c6e1e18891125f15e42e391055bb", null ],
-    [ "Refine", "classoperations__research_1_1DynamicPartition.html#a16fce09dd4c359a6acfd0a864e0a5ebd", null ],
+    [ "Refine", "classoperations__research_1_1DynamicPartition.html#ab82a2915429e5c6626c9187ed85e7064", null ],
     [ "SizeOfPart", "classoperations__research_1_1DynamicPartition.html#a87ccb17e1972d153100a9b061a918ba1", null ],
     [ "UndoRefineUntilNumPartsEqual", "classoperations__research_1_1DynamicPartition.html#a968140cdf9d2766625e1d476a7a71590", null ]
 ];

@@ -1,6 +1,5 @@
 var linear__constraint_8cc =
 [
-    [ "CanonicalizeConstraint", "linear__constraint_8cc.html#afadbda106c6b8673a235186582fafa3a", null ],
     [ "CanonicalizeExpr", "linear__constraint_8cc.html#a83443be9bcc967eec871d47ead6bfb73", null ],
     [ "ComputeActivity", "linear__constraint_8cc.html#a6916f5386d6fce09719e427e69b6591f", null ],
     [ "ComputeInfinityNorm", "linear__constraint_8cc.html#a3be9ba98c31d692caf42401992a0b4c3", null ],
@@ -15,6 +14,6 @@ var linear__constraint_8cc =
     [ "PositiveVarExpr", "linear__constraint_8cc.html#ac1f5fc24892786308e339b0865309580", null ],
     [ "PossibleOverflow", "linear__constraint_8cc.html#a62555e26e4185c3c441e9222914b4186", null ],
     [ "RemoveZeroTerms", "linear__constraint_8cc.html#a3a88781ba518fe1373e2bbe36aeb8132", null ],
-    [ "ScalarProduct", "linear__constraint_8cc.html#acbbc863153951ef5e0cd45800fe2c56e", null ],
+    [ "ScalarProduct", "linear__constraint_8cc.html#afb476403c2ecaebf0c38e03a0e770c40", null ],
     [ "ValidateLinearConstraintForOverflow", "linear__constraint_8cc.html#ad582c9543b77917ac1084bbfda601f5e", null ]
 ];

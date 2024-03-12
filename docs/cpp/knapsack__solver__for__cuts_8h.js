@@ -7,6 +7,6 @@ var knapsack__solver__for__cuts_8h =
     [ "operations_research::KnapsackStateForCuts", "classoperations__research_1_1KnapsackStateForCuts.html", "classoperations__research_1_1KnapsackStateForCuts" ],
     [ "operations_research::KnapsackPropagatorForCuts", "classoperations__research_1_1KnapsackPropagatorForCuts.html", "classoperations__research_1_1KnapsackPropagatorForCuts" ],
     [ "operations_research::KnapsackSolverForCuts", "classoperations__research_1_1KnapsackSolverForCuts.html", "classoperations__research_1_1KnapsackSolverForCuts" ],
-    [ "KnapsackItemForCutsPtr", "knapsack__solver__for__cuts_8h.html#a499cf7f0ece70cd9dce8e22a86d7dcab", null ],
+    [ "KnapsackItemForCutsPtr", "knapsack__solver__for__cuts_8h.html#a0d081d438a0be2589031a17873c58fd7", null ],
     [ "MoveUpToDepth", "knapsack__solver__for__cuts_8h.html#ac011fafae07246fa907fce772dddde2a", null ]
 ];

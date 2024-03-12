@@ -32,5 +32,7 @@ var dir_4d3a5a688e4550f3d7725aaa5ab9c27b =
     [ "scip_helper_macros.h", "scip__helper__macros_8h.html", "scip__helper__macros_8h" ],
     [ "scip_interface.cc", "scip__interface_8cc.html", "scip__interface_8cc" ],
     [ "solve.cc", "linear__solver_2solve_8cc.html", "linear__solver_2solve_8cc" ],
+    [ "solve_mp_model.cc", "solve__mp__model_8cc.html", "solve__mp__model_8cc" ],
+    [ "solve_mp_model.h", "solve__mp__model_8h.html", "solve__mp__model_8h" ],
     [ "xpress_interface.cc", "xpress__interface_8cc.html", "xpress__interface_8cc" ]
 ];

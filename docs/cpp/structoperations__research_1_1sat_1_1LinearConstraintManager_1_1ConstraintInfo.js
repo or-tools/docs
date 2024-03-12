@@ -2,9 +2,8 @@ var structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintIn
 [
     [ "active_count", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#aa60263cbfe7f0c4b184f9c1d7efb3ff3", null ],
     [ "constraint", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a6ee5f068403b3a01e8aa324030d66c3a", null ],
-    [ "current_score", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a74c6f846364c5a211c75b6ed04cd6c19", null ],
     [ "hash", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a537b9cdb3582c316fae1768756bdd940", null ],
-    [ "inactive_count", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a29d2827577f618618ea83da0b32a2c39", null ],
+    [ "inactive_count", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a466661f3078984c94567ad58040edb6e", null ],
     [ "is_deletable", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#abdf73acb15ffe53b95a4131d9ba9aac9", null ],
     [ "is_in_lp", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#ac4fd296487a99ae0fd9635c3d4f2123d", null ],
     [ "l2_norm", "structoperations__research_1_1sat_1_1LinearConstraintManager_1_1ConstraintInfo.html#a6e207bb74e4a93a35abca906214acbbf", null ],

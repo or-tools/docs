@@ -1,5 +1,6 @@
 var integer__search_8cc =
 [
+    [ "RETURN_IF_NOT_FEASIBLE", "integer__search_8cc.html#a9d75d670a0366c6a3acde3dcb9bce520", null ],
     [ "AtMinValue", "integer__search_8cc.html#a6bb183ffafc072d9fd0d52c6cc355993", null ],
     [ "ChooseBestObjectiveValue", "integer__search_8cc.html#adc31ecce24797c08bdc3c1cf8cd8454e", null ],
     [ "CompleteHeuristics", "integer__search_8cc.html#a156a51d1b695cc9ac26e512d43b60028", null ],
@@ -11,6 +12,7 @@ var integer__search_8cc =
     [ "GreaterOrEqualToMiddleValue", "integer__search_8cc.html#aeaa27df9712553f45eb84d209a92ca8b", null ],
     [ "IntegerValueSelectionHeuristic", "integer__search_8cc.html#a4f8e9410f7631560e2efea8f401e5aa1", null ],
     [ "LinearizedPartIsLarge", "integer__search_8cc.html#ac8088e9f55c5b4430a04da7e3367f32d", null ],
+    [ "MostFractionalHeuristic", "integer__search_8cc.html#af302dfe77be22de2fdecf4d3fa3e42be", null ],
     [ "PseudoCost", "integer__search_8cc.html#a7bb3adbf30215f4aafac3f24caf00f84", null ],
     [ "RandomizeOnRestartHeuristic", "integer__search_8cc.html#ac2b9ed2c9fd55af7cfd4effe1ad5a5d6", null ],
     [ "ResetAndSolveIntegerProblem", "integer__search_8cc.html#ade6ce3f7172b49fd16513489bdb4ca32", null ],

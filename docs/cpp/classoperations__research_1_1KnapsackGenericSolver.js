@@ -9,5 +9,5 @@ var classoperations__research_1_1KnapsackGenericSolver =
     [ "Init", "classoperations__research_1_1KnapsackGenericSolver.html#ab80817ff3b5e067f90a0f35853f665ac", null ],
     [ "operator=", "classoperations__research_1_1KnapsackGenericSolver.html#ad366bc24f6a9ce72081e82f802388dde", null ],
     [ "set_primary_propagator_id", "classoperations__research_1_1KnapsackGenericSolver.html#a0d7784a56ccdbda845afba49228d68bd", null ],
-    [ "Solve", "classoperations__research_1_1KnapsackGenericSolver.html#a1b91c5201e09e788f6f4893f3d61a8cd", null ]
+    [ "Solve", "classoperations__research_1_1KnapsackGenericSolver.html#af8d9b9558f702f783e201124aaee068a", null ]
 ];

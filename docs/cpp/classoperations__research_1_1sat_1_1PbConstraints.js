@@ -1,6 +1,7 @@
 var classoperations__research_1_1sat_1_1PbConstraints =
 [
     [ "PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a42f1f47f547f84fd8941efd1b9d3cf98", null ],
+    [ "PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a36c0c13831be197bcf681a12b4365173", null ],
     [ "~PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a435ebc62a792f25c66b80a5c7414ff84", null ],
     [ "AddConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a09190309faf157e3b7187403cfcb514c", null ],
     [ "AddLearnedConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a9f899a5003debe87f874330b80760cdb", null ],
@@ -13,6 +14,7 @@ var classoperations__research_1_1sat_1_1PbConstraints =
     [ "num_inspected_constraint_literals", "classoperations__research_1_1sat_1_1PbConstraints.html#a7f2ee098e4fce56cfc3421ba12223ba4", null ],
     [ "num_threshold_updates", "classoperations__research_1_1sat_1_1PbConstraints.html#aa08b7a873f9d39c2219bf757b53a374c", null ],
     [ "NumberOfConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a46e4634cdc5738107d4af835e68d75d6", null ],
+    [ "operator=", "classoperations__research_1_1sat_1_1PbConstraints.html#a20b684be4068df877c0b19bacab74b38", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1PbConstraints.html#a1253b3c17c3ff77fbcc5e722b09de6ad", null ],
     [ "Reason", "classoperations__research_1_1sat_1_1PbConstraints.html#a3151c83360e61a129ad6792e7a100672", null ],
     [ "ReasonPbConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a4fe27914908fe61745e4a3d2ab2ab8b9", null ],

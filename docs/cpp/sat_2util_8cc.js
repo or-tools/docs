@@ -8,11 +8,12 @@ var sat_2util_8cc =
     [ "FormatCounter", "sat_2util_8cc.html#a88a7a53b2e474d3d5c602030c5c449e9", null ],
     [ "FormatTable", "sat_2util_8cc.html#af7414c91f17a6ff5a2621fa05fedf7da", null ],
     [ "FullyCompressTuples", "sat_2util_8cc.html#a36bf1351ffa74960b3040a96ddc37468", null ],
-    [ "LinearInequalityCanBeReducedWithClosestMultiple", "sat_2util_8cc.html#ad2eb117de96cd02d6a15049c43cf114f", null ],
+    [ "LinearInequalityCanBeReducedWithClosestMultiple", "sat_2util_8cc.html#acfcd7f361a263decf1acd1f3aa585706", null ],
     [ "ModularInverse", "sat_2util_8cc.html#a4a998a24858a532c80b11c1d015e76db", null ],
     [ "MoveOneUnprocessedLiteralLast", "sat_2util_8cc.html#ad40dd9970adbe462e75e6074f8896e76", null ],
     [ "PositiveMod", "sat_2util_8cc.html#ac435c5e5536231b2542ba53f100c3936", null ],
     [ "ProductWithModularInverse", "sat_2util_8cc.html#a345bada8924ba2bf94e22f85916b23ad", null ],
     [ "RandomizeDecisionHeuristic", "sat_2util_8cc.html#a2421e921ab494e0c666f6d7ed2a7e432", null ],
-    [ "SolveDiophantineEquationOfSizeTwo", "sat_2util_8cc.html#a34eb7909877704c304f50d65dd5c0052", null ]
+    [ "SolveDiophantineEquationOfSizeTwo", "sat_2util_8cc.html#a34eb7909877704c304f50d65dd5c0052", null ],
+    [ "WeightedPick", "sat_2util_8cc.html#a7fc73d43252c02a3d538fd5bbf1f2aec", null ]
 ];

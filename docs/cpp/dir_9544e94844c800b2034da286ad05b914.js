@@ -8,6 +8,7 @@ var dir_9544e94844c800b2034da286ad05b914 =
     [ "binpacking_2d_parser.h", "binpacking__2d__parser_8h.html", "binpacking__2d__parser_8h" ],
     [ "multiple_dimensions_bin_packing.proto", "multiple__dimensions__bin__packing_8proto.html", null ],
     [ "vector_bin_packing.proto", "vector__bin__packing_8proto.html", null ],
+    [ "vector_bin_packing_main.cc", "vector__bin__packing__main_8cc.html", "vector__bin__packing__main_8cc" ],
     [ "vector_bin_packing_parser.cc", "vector__bin__packing__parser_8cc.html", null ],
     [ "vector_bin_packing_parser.h", "vector__bin__packing__parser_8h.html", "vector__bin__packing__parser_8h" ]
 ];

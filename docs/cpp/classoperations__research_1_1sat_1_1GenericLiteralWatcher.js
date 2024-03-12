@@ -17,6 +17,7 @@ var classoperations__research_1_1sat_1_1GenericLiteralWatcher =
     [ "ReserveSpaceForNumVariables", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#ab15d425c00957b1c0beb3ed915998000", null ],
     [ "SetPropagatorPriority", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a9fba6f44d3cae2bf8a4ba49a7bc8df29", null ],
     [ "SetStopPropagationCallback", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a9973fcd4bc94477f8e45eb9369faaaf7", null ],
+    [ "SetUntilNextBacktrack", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a32974567c73fc5a2bcbe9fc013284898", null ],
     [ "Untrail", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a6f7e5b1c113d59271a4470379284b56a", null ],
     [ "WatchAffineExpression", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a357b0e23b1a7f90fe46cb92081201c0f", null ],
     [ "WatchIntegerVariable", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a573c5e90225aef685521b1bcbd414a6f", null ],

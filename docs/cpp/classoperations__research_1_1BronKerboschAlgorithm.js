@@ -1,6 +1,6 @@
 var classoperations__research_1_1BronKerboschAlgorithm =
 [
-    [ "CliqueCallback", "classoperations__research_1_1BronKerboschAlgorithm.html#ae49289c12a088e9f15bb26f927406c2f", null ],
+    [ "CliqueCallback", "classoperations__research_1_1BronKerboschAlgorithm.html#ab8bbcdbc6c3b38a304c9c37f61943c1b", null ],
     [ "IsArcCallback", "classoperations__research_1_1BronKerboschAlgorithm.html#a2c635d9b0b40012abf93606dd023e535", null ],
     [ "BronKerboschAlgorithm", "classoperations__research_1_1BronKerboschAlgorithm.html#ae7ca5a1b7767ea98c2f337e8b6f94c44", null ],
     [ "Run", "classoperations__research_1_1BronKerboschAlgorithm.html#a6dcb077f31531cc17c94da3364b6f099", null ],

@@ -2,6 +2,7 @@ var solve__result_8h =
 [
     [ "operations_research::math_opt::ProblemStatus", "structoperations__research_1_1math__opt_1_1ProblemStatus.html", "structoperations__research_1_1math__opt_1_1ProblemStatus" ],
     [ "operations_research::math_opt::SolveStats", "structoperations__research_1_1math__opt_1_1SolveStats.html", "structoperations__research_1_1math__opt_1_1SolveStats" ],
+    [ "operations_research::math_opt::ObjectiveBounds", "structoperations__research_1_1math__opt_1_1ObjectiveBounds.html", "structoperations__research_1_1math__opt_1_1ObjectiveBounds" ],
     [ "operations_research::math_opt::Termination", "structoperations__research_1_1math__opt_1_1Termination.html", "structoperations__research_1_1math__opt_1_1Termination" ],
     [ "operations_research::math_opt::SolveResult", "structoperations__research_1_1math__opt_1_1SolveResult.html", "structoperations__research_1_1math__opt_1_1SolveResult" ],
     [ "FeasibilityStatus", "solve__result_8h.html#afbadea5ab90874606c70ca64817ac2bb", [
@@ -34,9 +35,11 @@ var solve__result_8h =
       [ "kNumericalError", "solve__result_8h.html#a1e2e001b55e2f55dffeafd6fc18773a2a631fe1d70108dee6ae7d6acde27f76ef", null ],
       [ "kOtherError", "solve__result_8h.html#a1e2e001b55e2f55dffeafd6fc18773a2a298223b78cd88f4983fbc5ae093136ca", null ]
     ] ],
+    [ "AbslStringify", "solve__result_8h.html#a9c2698f10b46c1590cfeb7537cd0468d", null ],
     [ "MATH_OPT_DEFINE_ENUM", "solve__result_8h.html#afd61e5a9a83580286ce2e9a185642f94", null ],
     [ "MATH_OPT_DEFINE_ENUM", "solve__result_8h.html#ad80f0acad4ffc70b0438653db4503bf5", null ],
     [ "MATH_OPT_DEFINE_ENUM", "solve__result_8h.html#abac41abdbb7a6ee0f536d9b4a5ba6579", null ],
+    [ "operator<<", "solve__result_8h.html#ad6006a96d3f4ce72a30c619a7151286e", null ],
     [ "operator<<", "solve__result_8h.html#a18d8859ffa055ca8b3f843b8cacfea67", null ],
     [ "operator<<", "solve__result_8h.html#aa1276d0f31347dd1f2b5595180c7531c", null ],
     [ "operator<<", "solve__result_8h.html#a0c5b0162f1414d908ad71eca691451b1", null ],

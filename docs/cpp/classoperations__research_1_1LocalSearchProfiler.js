@@ -16,6 +16,7 @@ var classoperations__research_1_1LocalSearchProfiler =
     [ "ExitSearch", "classoperations__research_1_1LocalSearchProfiler.html#a286c66ca63c7fca77801b2dfd5c1fb60", null ],
     [ "ExportToLocalSearchStatistics", "classoperations__research_1_1LocalSearchProfiler.html#a245626ce2fbb8ec5ba0fecc94fc411d5", null ],
     [ "Install", "classoperations__research_1_1LocalSearchProfiler.html#aa16cb14b8f829ac14060a4196da6fae9", null ],
+    [ "IsActive", "classoperations__research_1_1LocalSearchProfiler.html#a98e2ab2c997232565c28eb4c83445862", null ],
     [ "ParseFirstSolutionStatistics", "classoperations__research_1_1LocalSearchProfiler.html#aaa41b9371472c8e9b50828a32604ddcc", null ],
     [ "ParseLocalSearchFilterStatistics", "classoperations__research_1_1LocalSearchProfiler.html#a6bb98e99b8d1648d89fca3fa04783ce9", null ],
     [ "ParseLocalSearchOperatorStatistics", "classoperations__research_1_1LocalSearchProfiler.html#a3bb8c225562f18e4a333fc533ba463c5", null ],

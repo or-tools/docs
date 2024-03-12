@@ -1,13 +1,27 @@
 var diffn__util_8cc =
 [
-    [ "AnalyzeIntervals", "diffn__util_8cc.html#a9dc02c27e1c588a0e3e7a0ebd60c386b", null ],
+    [ "AnalyzeIntervals", "diffn__util_8cc.html#a43f4e0c653d01e67ff65ec40eb96e2e5", null ],
+    [ "AppendPairwiseRestrictions", "diffn__util_8cc.html#a25b5d6a5567291680f59563128599427", null ],
+    [ "AppendPairwiseRestrictions", "diffn__util_8cc.html#a5a105a78abf31dda3e58f115944d197b", null ],
     [ "BoxesAreInEnergyConflict", "diffn__util_8cc.html#a3b855792c88d6555dacbd8f060a93435", null ],
     [ "ConstructOverlappingSets", "diffn__util_8cc.html#a461d44370c54b18a0d36fd5683352eb0", null ],
-    [ "FilterBoxesAndRandomize", "diffn__util_8cc.html#a1022d95f62235d06bea9aebf407597a2", null ],
+    [ "FilterBoxesAndRandomize", "diffn__util_8cc.html#a3f0be3244a48d1875afbbb1fa690d743", null ],
     [ "FilterBoxesThatAreTooLarge", "diffn__util_8cc.html#aa65c80ff34cbdd8c2155991d7d891564", null ],
+    [ "FindRectanglesWithEnergyConflictMC", "diffn__util_8cc.html#a9c95d68b46f17e3aa215ce63ea446514", null ],
     [ "GetIntervalArticulationPoints", "diffn__util_8cc.html#a632e976a0e61c8dc649c0fcb4d3cc324", null ],
     [ "GetOverlappingIntervalComponents", "diffn__util_8cc.html#ada6c4aa7b48dc203f11f4be4581dbdd6", null ],
-    [ "GetOverlappingRectangleComponents", "diffn__util_8cc.html#a72ab12dc64a6ce904b25a9f14533603b", null ],
+    [ "GetOverlappingRectangleComponents", "diffn__util_8cc.html#a92f6f3c573f3242e0c7ef91d0bed86e0", null ],
     [ "operator<<", "diffn__util_8cc.html#ab57313c8750510a4590d95a0c71ce41c", null ],
-    [ "ReportEnergyConflict", "diffn__util_8cc.html#a89dc2fa5d4896cd17270cf7d40099e08", null ]
+    [ "ReportEnergyConflict", "diffn__util_8cc.html#a89dc2fa5d4896cd17270cf7d40099e08", null ],
+    [ "Smallest1DIntersection", "diffn__util_8cc.html#ad6111749765bdc417d6faab8b21bebe1", null ],
+    [ "adjacent_corner", "diffn__util_8cc.html#a93092dcd0311719fad69517cd2af106b", null ],
+    [ "edge", "diffn__util_8cc.html#aeceef98ad3623d0d1d05e9b75c98eb2a", null ],
+    [ "kBottom", "diffn__util_8cc.html#a4066ae84f44effc226b6a57993f36ad7", null ],
+    [ "kLeft", "diffn__util_8cc.html#a751c14eb7acd1dde59f20ef678254f03", null ],
+    [ "kRight", "diffn__util_8cc.html#ade7ed51aaf960b60d4b2eb37c8488248", null ],
+    [ "kTop", "diffn__util_8cc.html#a41872698731f273e7aa4f5d0d9630ee2", null ],
+    [ "opposite_edge", "diffn__util_8cc.html#a90e0bf5cc7baf7185cdb2395304a72b1", null ],
+    [ "orthogonal_edges", "diffn__util_8cc.html#a89ca35fc9d4c9953c709bd1cb8d2cf9a", null ],
+    [ "orthogonal_shrink_direction", "diffn__util_8cc.html#a7c54ffa7d78ecd7db8740629e3cd4240", null ],
+    [ "shrink_direction", "diffn__util_8cc.html#a9e981e7c7daac7d6cbc862f113442498", null ]
 ];

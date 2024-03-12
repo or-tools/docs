@@ -1,5 +1,6 @@
 var sat_2lp__utils_8h =
 [
+    [ "ChangeLargeBoundsToInfinity", "sat_2lp__utils_8h.html#a5e72e8b29637efc57d3d9489078a5748", null ],
     [ "ComputeTrueObjectiveLowerBound", "sat_2lp__utils_8h.html#ac47959359a009b02531ab19f206cdd54", null ],
     [ "ConvertBinaryMPModelProtoToBooleanProblem", "sat_2lp__utils_8h.html#aa97f36cf2700f25a17eb5f3370df6b11", null ],
     [ "ConvertBooleanProblemToLinearProgram", "sat_2lp__utils_8h.html#a3813521303490a81cc8585dc4dc13daa", null ],

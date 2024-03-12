@@ -2,6 +2,10 @@ var strong__integers_8h =
 [
     [ "operations_research::StrongIndex< StrongIndexName >", "classoperations__research_1_1StrongIndex.html", "classoperations__research_1_1StrongIndex" ],
     [ "operations_research::StrongInt64< StrongIntegerName >", "classoperations__research_1_1StrongInt64.html", "classoperations__research_1_1StrongInt64" ],
+    [ "std::hash< operations_research::StrongIndex< Tag > >", "structstd_1_1hash_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html", null ],
+    [ "std::hash< operations_research::StrongInt64< Tag > >", "structstd_1_1hash_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html", null ],
+    [ "std::numeric_limits< operations_research::StrongIndex< Tag > >", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4" ],
+    [ "std::numeric_limits< operations_research::StrongInt64< Tag > >", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4" ],
     [ "DEFINE_STRONG_INDEX_TYPE", "strong__integers_8h.html#a79edede25cc7390299371435bbd9a8d3", null ],
     [ "DEFINE_STRONG_INT64_TYPE", "strong__integers_8h.html#a43adf713fa2b8bd29c1dfdd8e7230000", null ],
     [ "INCREMENT_AND_DECREMENT_OPERATORS", "strong__integers_8h.html#abbb302b429c6df38b00b2801fa2cf267", null ],

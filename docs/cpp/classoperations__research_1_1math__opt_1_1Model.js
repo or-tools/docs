@@ -15,7 +15,7 @@ var classoperations__research_1_1math__opt_1_1Model =
     [ "AddMaximizationObjective", "classoperations__research_1_1math__opt_1_1Model.html#ae47b4bdab404b8a3501d252233df869a", null ],
     [ "AddMinimizationObjective", "classoperations__research_1_1math__opt_1_1Model.html#a6d5bfa3075c08e9a6cdeafd7ae1aa264", null ],
     [ "AddQuadraticConstraint", "classoperations__research_1_1math__opt_1_1Model.html#a08ad80cdc4e2c4da44865d1fc4b45055", null ],
-    [ "AddSecondOrderConeConstraint", "classoperations__research_1_1math__opt_1_1Model.html#ab871b1b848388c4f30dfd482defe963d", null ],
+    [ "AddSecondOrderConeConstraint", "classoperations__research_1_1math__opt_1_1Model.html#a526e1d2bd551d76a1ea69adb90af2063", null ],
     [ "AddSos1Constraint", "classoperations__research_1_1math__opt_1_1Model.html#a0260ab18f0921d7e3a818f4890b9975c", null ],
     [ "AddSos2Constraint", "classoperations__research_1_1math__opt_1_1Model.html#a09bc8486630828e9413bfad3b17668de", null ],
     [ "AddToObjective", "classoperations__research_1_1math__opt_1_1Model.html#a37ac710d28568db40c79a615285aa88b", null ],

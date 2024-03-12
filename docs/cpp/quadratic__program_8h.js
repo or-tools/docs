@@ -3,7 +3,6 @@ var quadratic__program_8h =
     [ "operations_research::pdlp::QuadraticProgram", "structoperations__research_1_1pdlp_1_1QuadraticProgram.html", "structoperations__research_1_1pdlp_1_1QuadraticProgram" ],
     [ "CanFitInMpModelProto", "quadratic__program_8h.html#ad98a981710e58e6eead1ca6c76f7b2b7", null ],
     [ "CombineRepeatedTripletsInPlace", "quadratic__program_8h.html#a447ec3acc6fcfa2bfbbe2e2ac685f959", null ],
-    [ "HasValidBounds", "quadratic__program_8h.html#aa4aeab0f9534091e49e800a82445edc2", null ],
     [ "IsLinearProgram", "quadratic__program_8h.html#a850865b3deabb2a623e130691df99f15", null ],
     [ "QpFromMpModelProto", "quadratic__program_8h.html#a70f90c55cdcb499205898fd7f90da6f3", null ],
     [ "QpToMpModelProto", "quadratic__program_8h.html#a03fc89d57cdfcdd70d122ffc32fb015d", null ],

@@ -37,6 +37,8 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "IsAbsent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ab73c9ec781569bf57f059ba95d6a0c27", null ],
     [ "IsOptional", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ac25da1d0b7b591b48f807fd813979400", null ],
     [ "IsPresent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a666e937bf7e30e12c4dbb7f3c7d742cd", null ],
+    [ "LevelZeroStartMax", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a9db6ad300be760b6dad4ce68f0dabdec", null ],
+    [ "LevelZeroStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ae967c1f42a6a9d248e6f3c8ea18d12c5", null ],
     [ "MutableIntegerReason", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a2b846a8273354f67ef67b2cf77ceaf9a", null ],
     [ "MutableLiteralReason", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ad347a39374a27c659f5393b33097dbd4", null ],
     [ "NumTasks", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a539099a4301504241f7e8d13068f5f8e", null ],

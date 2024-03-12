@@ -6,5 +6,5 @@ var classoperations__research_1_1BaseKnapsackSolver =
     [ "GetLowerAndUpperBoundWhenItem", "classoperations__research_1_1BaseKnapsackSolver.html#ab28644613d7d516cbc0a25a1ecc2de04", null ],
     [ "GetName", "classoperations__research_1_1BaseKnapsackSolver.html#ae19aff92b4b38e712ead1cfcafd81f03", null ],
     [ "Init", "classoperations__research_1_1BaseKnapsackSolver.html#a323e799197d00edd62a9b1cf9bdfd62f", null ],
-    [ "Solve", "classoperations__research_1_1BaseKnapsackSolver.html#a284253dce78ef49dcdb2dc19119af47a", null ]
+    [ "Solve", "classoperations__research_1_1BaseKnapsackSolver.html#a10e04b141a245f70d0b95bedd18a4852", null ]
 ];

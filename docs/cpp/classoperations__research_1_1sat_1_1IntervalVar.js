@@ -10,7 +10,7 @@ var classoperations__research_1_1sat_1_1IntervalVar =
     [ "PresenceBoolVar", "classoperations__research_1_1sat_1_1IntervalVar.html#aa5cc77b54d51bda6a6c8e30907b9a917", null ],
     [ "SizeExpr", "classoperations__research_1_1sat_1_1IntervalVar.html#a9c68a86d094aab9d9dd0a945e6ac956a", null ],
     [ "StartExpr", "classoperations__research_1_1sat_1_1IntervalVar.html#a1d436e5ab02bd3b8691ab0d4e7e0a031", null ],
-    [ "WithName", "classoperations__research_1_1sat_1_1IntervalVar.html#a1b7333dffeb56f1cffe35973cab19dd1", null ],
+    [ "WithName", "classoperations__research_1_1sat_1_1IntervalVar.html#a0722cc9b9ddf43ed5f922ebc23eff949", null ],
     [ "CpModelBuilder", "classoperations__research_1_1sat_1_1IntervalVar.html#ae04c85577cf33a05fb50bb361877fb42", null ],
     [ "CumulativeConstraint", "classoperations__research_1_1sat_1_1IntervalVar.html#a9d31ad87d4edee55fc3cb5e239077720", null ],
     [ "NoOverlap2DConstraint", "classoperations__research_1_1sat_1_1IntervalVar.html#abdbbe5d06195ef1dc4c30ad25b9017ac", null ],

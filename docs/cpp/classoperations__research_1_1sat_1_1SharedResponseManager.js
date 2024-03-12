@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
 [
     [ "SharedResponseManager", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a38f285b1f636f66048d8c0b209fb7be0", null ],
     [ "AddFinalResponsePostprocessor", "classoperations__research_1_1sat_1_1SharedResponseManager.html#abf3c070f2959f4586af099c8417b3914", null ],
+    [ "AddLogCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a597c1cc8e1c478f8fdf425406eba8a15", null ],
     [ "AddResponsePostprocessor", "classoperations__research_1_1sat_1_1SharedResponseManager.html#ac96aab47ad87e243c2b6745ebbdd7322", null ],
     [ "AddSolutionCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#acdf25f1ccc8b6895427e8f5016a7dd5a", null ],
     [ "AddSolutionPostprocessor", "classoperations__research_1_1sat_1_1SharedResponseManager.html#adb2f8b3d6cd0a978500112840ec4e43c", null ],
@@ -18,7 +19,7 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
     [ "InitializeObjective", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a9ea51a27575960e19ce95f25ac259276", null ],
     [ "LoadDebugSolution", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a72f0b8efa0039f148f6ad458f9461d17", null ],
     [ "LoggingIsEnabled", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a9b45d90b9745cbffac23e655d21de28a", null ],
-    [ "LogMessage", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a7c7e0458f8021d26e6bb7adcf1092c4c", null ],
+    [ "LogMessage", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a47074be355f4f009c04f85574f51193c", null ],
     [ "LogMessageWithThrottling", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a28e725ce8d133a29edf39797ff364cfd", null ],
     [ "MutableSolutionsRepository", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a376cd71387f7c437b7cbcd784999800c", null ],
     [ "NewSolution", "classoperations__research_1_1sat_1_1SharedResponseManager.html#adbf9c545bd1e91d71d36638ca7c1acfd", null ],
@@ -33,6 +34,7 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
     [ "SynchronizedInnerObjectiveLowerBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#aab532fd40f53ea7a1e1f2045d8cb033c", null ],
     [ "SynchronizedInnerObjectiveUpperBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#af6b7153114fbac01f305a97e9a559c97", null ],
     [ "UnregisterCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a8507584a3e508275aa43a8094a13ec41", null ],
+    [ "UnregisterLogCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a651a59a266fa9311cda8a61847d664be", null ],
     [ "UpdateGapIntegral", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a5185cffec0489a7680f3dfb38749208a", null ],
     [ "UpdateInnerObjectiveBounds", "classoperations__research_1_1sat_1_1SharedResponseManager.html#af4876e4857461716fabf61e3df652bd6", null ]
 ];

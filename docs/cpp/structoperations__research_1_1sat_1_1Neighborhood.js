@@ -1,6 +1,5 @@
 var structoperations__research_1_1sat_1_1Neighborhood =
 [
-    [ "constraints_to_ignore", "structoperations__research_1_1sat_1_1Neighborhood.html#adc1666c8d217f52684c0b9932be95514", null ],
     [ "delta", "structoperations__research_1_1sat_1_1Neighborhood.html#a971f9dcca9bbd489f0056edeb21d5735", null ],
     [ "id", "structoperations__research_1_1sat_1_1Neighborhood.html#a9d77507f928ca9524da987bfbf75eee8", null ],
     [ "is_generated", "structoperations__research_1_1sat_1_1Neighborhood.html#aae74c116bf7923c0576d42080aa56d05", null ],

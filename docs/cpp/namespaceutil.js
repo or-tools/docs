@@ -1,8 +1,14 @@
 var namespaceutil =
 [
     [ "graph", "namespaceutil_1_1graph.html", [
+      [ "DenseIntStableTopologicalSortOrDie", "namespaceutil_1_1graph.html#a1b429182836eddf34189e5af39f1e886", null ],
+      [ "DenseIntTopologicalSortOrDie", "namespaceutil_1_1graph.html#a5c544f7c7c323eb16a64389b95b79458", null ],
       [ "FastTopologicalSort", "namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e", null ],
-      [ "FindCycleInGraph", "namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7", null ]
+      [ "FindCycleInGraph", "namespaceutil_1_1graph.html#a440afdf238e5a752bbe4e1bcc8878fe7", null ],
+      [ "GetBFSDistances", "namespaceutil_1_1graph.html#ae983373ed3b415fdda5b223bb0a40431", null ],
+      [ "GetBFSRootedTree", "namespaceutil_1_1graph.html#a64d412571923330f6b2b1036377b6c43", null ],
+      [ "GetBFSShortestPath", "namespaceutil_1_1graph.html#a37d4e06c981eff78332549151ac55f2f", null ],
+      [ "StableTopologicalSortOrDie", "namespaceutil_1_1graph.html#a4bcd58ffa60a8a68fb960ff41deba777", null ]
     ] ],
     [ "internal", "namespaceutil_1_1internal.html", "namespaceutil_1_1internal" ],
     [ "BaseGraph", "classutil_1_1BaseGraph.html", "classutil_1_1BaseGraph" ],
@@ -73,10 +79,10 @@ var namespaceutil =
     [ "InternalErrorBuilder", "namespaceutil.html#a302ee4bfcb86ea9ed64a193ed0b14648", null ],
     [ "InvalidArgumentErrorBuilder", "namespaceutil.html#ad0c886e6b95bc531d4a39884a87c0101", null ],
     [ "IsSubsetOf0N", "namespaceutil.html#aca9c2faec725bc47baf08421b377f643", null ],
-    [ "IsValidPermutation", "namespaceutil.html#ad7986b01cf61a31c09a27b4a97db6a83", null ],
+    [ "IsValidPermutation", "namespaceutil.html#a0aab823d80d85f004d3d2139cc4f6c2f", null ],
     [ "NotFoundErrorBuilder", "namespaceutil.html#afe1146d4103ad0b93801f626715519d6", null ],
     [ "OutOfRangeErrorBuilder", "namespaceutil.html#aa86ac164f0f951fca26cc3e9b34d9632", null ],
-    [ "PathHasCycle", "namespaceutil.html#adbb18bcb2f9d64cbbaeb57c328f57e7b", null ],
+    [ "PathHasCycle", "namespaceutil.html#a34114d206959f75a472b167c806da2cb", null ],
     [ "PermissionDeniedErrorBuilder", "namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda", null ],
     [ "Permute", "namespaceutil.html#a8c227a057c1ce9d46b1185abf77ad91e", null ],
     [ "Permute", "namespaceutil.html#ac497881c4166bc694adc4bee62746118", null ],
@@ -100,5 +106,5 @@ var namespaceutil =
     [ "UnavailableErrorBuilder", "namespaceutil.html#a5532f9a3e8b48bd067e8576789fe36bc", null ],
     [ "UnimplementedErrorBuilder", "namespaceutil.html#a34739da67ea599226350b0cb5d1cbad6", null ],
     [ "UnknownErrorBuilder", "namespaceutil.html#a23561d268e106df9d3aeba1897ab3c2a", null ],
-    [ "WriteGraphToFile", "namespaceutil.html#a83e255c1426a060140494d15add27c66", null ]
+    [ "WriteGraphToFile", "namespaceutil.html#a2bc3683e5d8f49f745bea0fa513f1675", null ]
 ];

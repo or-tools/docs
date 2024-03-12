@@ -9,6 +9,5 @@ var structoperations__research_1_1sat_1_1EnergyEvent =
     [ "linearized_energy", "structoperations__research_1_1sat_1_1EnergyEvent.html#ab0d2ce530e31d177d8dc546e5757bf47", null ],
     [ "linearized_energy_lp_value", "structoperations__research_1_1sat_1_1EnergyEvent.html#aa8389f354a5f88885ed67482b14d057f", null ],
     [ "presence_literal_index", "structoperations__research_1_1sat_1_1EnergyEvent.html#a723fd490ec4c7bff22499ae6190be977", null ],
-    [ "y_size", "structoperations__research_1_1sat_1_1EnergyEvent.html#a17060211bf8cbf1bbbe922531217fc9d", null ],
-    [ "y_spread", "structoperations__research_1_1sat_1_1EnergyEvent.html#ab1c77c53a5720a254cb64e22b09ad028", null ]
+    [ "y_size", "structoperations__research_1_1sat_1_1EnergyEvent.html#a17060211bf8cbf1bbbe922531217fc9d", null ]
 ];

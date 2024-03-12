@@ -5,7 +5,7 @@ var fp__utils_8h =
     [ "EXPECT_NOTCOMPARABLE", "fp__utils_8h.html#a9ba22f5b9700b4d8930219ecd6cf5a1a", null ],
     [ "AreWithinAbsoluteOrRelativeTolerances", "fp__utils_8h.html#a4175e34e3e7f573a9dd0187b199afc24", null ],
     [ "AreWithinAbsoluteTolerance", "fp__utils_8h.html#a705ecff17f450f06856ceec064725b8d", null ],
-    [ "ComputeGcdOfRoundedDoubles", "fp__utils_8h.html#abe3334c3efd85c1def6b23ab91a7ca96", null ],
+    [ "ComputeGcdOfRoundedDoubles", "fp__utils_8h.html#abbceec7fa0f9f263f29a04fb59e3a074", null ],
     [ "ComputeScalingErrors", "fp__utils_8h.html#ab3e5fdd41c05d48f5d5f5d8c81ea7425", null ],
     [ "fast_ilogb", "fp__utils_8h.html#a04180c9ac5149ba5ef934b4e3bac2e66", null ],
     [ "fast_scalbn", "fp__utils_8h.html#a1e319f0dc0fe83ec003d6630e56c8b56", null ],

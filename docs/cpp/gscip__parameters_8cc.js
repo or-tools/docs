@@ -1,5 +1,6 @@
 var gscip__parameters_8cc =
 [
+    [ "DisableAllCutsExceptUserDefined", "gscip__parameters_8cc.html#a7b1d3f0fd5543ce5c204dbb1bbbe4fc0", null ],
     [ "GScipCatchCtrlC", "gscip__parameters_8cc.html#aa52693df9914838826f55b5fb6a5c10c", null ],
     [ "GScipCatchCtrlCSet", "gscip__parameters_8cc.html#a3d44a2df2aac46d0bafa9da040a73fbd", null ],
     [ "GScipLogLevel", "gscip__parameters_8cc.html#af590ca2d0292bd193a21a2d11ba9ce15", null ],

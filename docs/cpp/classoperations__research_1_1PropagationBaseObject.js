@@ -15,7 +15,7 @@ var classoperations__research_1_1PropagationBaseObject =
     [ "operator=", "classoperations__research_1_1PropagationBaseObject.html#a3a0554dce015748b62adeae13f4c2db8", null ],
     [ "reset_action_on_fail", "classoperations__research_1_1PropagationBaseObject.html#ad07aa613bcc8d3896dff3f33520b061c", null ],
     [ "set_action_on_fail", "classoperations__research_1_1PropagationBaseObject.html#a5c6bf90bb0b099a2c8f81aaefdfdd46c", null ],
-    [ "set_name", "classoperations__research_1_1PropagationBaseObject.html#a5d4a4cf402b353ba2908836656cf0c62", null ],
+    [ "set_name", "classoperations__research_1_1PropagationBaseObject.html#abdd8361e75fc79845e9549354c1e513d", null ],
     [ "set_variable_to_clean_on_fail", "classoperations__research_1_1PropagationBaseObject.html#a4d2ccb8a806df14394b3271791c81e61", null ],
     [ "solver", "classoperations__research_1_1PropagationBaseObject.html#adc8ee1d27d035343d531a3d419791f29", null ],
     [ "UnfreezeQueue", "classoperations__research_1_1PropagationBaseObject.html#a97782b79fbcf8043201fefaa7729dcf1", null ]

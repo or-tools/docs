@@ -6,5 +6,6 @@ var classoperations__research_1_1TwoOpt =
     [ "GetBaseNodeRestartPosition", "classoperations__research_1_1TwoOpt.html#a3b56773954ef497252721f3948beb691", null ],
     [ "IsIncremental", "classoperations__research_1_1TwoOpt.html#aa55abfe4c2d455db336b26d93f238b08", null ],
     [ "MakeNeighbor", "classoperations__research_1_1TwoOpt.html#a839988b1aa3a6c8d3c0d6036ad4dbb20", null ],
-    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1TwoOpt.html#ae85f9c3bef4c6361ff26477a7cbadbc4", null ]
+    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1TwoOpt.html#ae85f9c3bef4c6361ff26477a7cbadbc4", null ],
+    [ "Reset", "classoperations__research_1_1TwoOpt.html#aaa9bf29f11b35539ad4f2600bab7178b", null ]
 ];

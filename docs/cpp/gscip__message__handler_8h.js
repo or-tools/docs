@@ -2,8 +2,8 @@ var gscip__message__handler_8h =
 [
     [ "operations_research::internal::ReleaseSCIPMessageHandler", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler.html", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler" ],
     [ "operations_research::internal::ScopedSCIPMessageHandlerDisabler", "classoperations__research_1_1internal_1_1ScopedSCIPMessageHandlerDisabler.html", "classoperations__research_1_1internal_1_1ScopedSCIPMessageHandlerDisabler" ],
-    [ "GScipMessageHandler", "gscip__message__handler_8h.html#a945ce04104d59b792d343cd58eee8143", null ],
-    [ "MessageHandlerPtr", "gscip__message__handler_8h.html#aa59d11feb104d89d98c47bdeca47a1ae", null ],
+    [ "GScipMessageHandler", "gscip__message__handler_8h.html#adb1cd8727b26bf4bde1252d09e6781f5", null ],
+    [ "MessageHandlerPtr", "gscip__message__handler_8h.html#af00491471902054c58b10873703119a1", null ],
     [ "GScipMessageType", "gscip__message__handler_8h.html#a9c86560917fd7728a05a423837f92771", [
       [ "kInfoMessage", "gscip__message__handler_8h.html#a9c86560917fd7728a05a423837f92771afe3f540d315882ec4f18def8e100f446", null ],
       [ "kDialogMessage", "gscip__message__handler_8h.html#a9c86560917fd7728a05a423837f92771a56673af8302b6d4c940c046bf94a0d30", null ],

@@ -21,5 +21,7 @@ var dir_a7cc1eeded8f693d0da6c729bc88c45a =
     [ "routing", "dir_05e52241c995b3dbbeaa2e8a16965cc4.html", "dir_05e52241c995b3dbbeaa2e8a16965cc4" ],
     [ "sat", "dir_dddac007a45022d9da6ea1dee012c3b9.html", "dir_dddac007a45022d9da6ea1dee012c3b9" ],
     [ "scheduling", "dir_2acf60cea6a5e15c2c72192424e7f50e.html", "dir_2acf60cea6a5e15c2c72192424e7f50e" ],
-    [ "util", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc" ]
+    [ "service", "dir_b9b04626500200bfaf9927ae01f2eadf.html", "dir_b9b04626500200bfaf9927ae01f2eadf" ],
+    [ "util", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc" ],
+    [ "xpress", "dir_a02fde108e33a3dd564a8799e7b75c0a.html", "dir_a02fde108e33a3dd564a8799e7b75c0a" ]
 ];

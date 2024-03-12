@@ -25,7 +25,7 @@ var dir_903a7ff076ee7f01be86992fe717fc82 =
     [ "mps_reader_template.cc", "mps__reader__template_8cc.html", null ],
     [ "mps_reader_template.h", "mps__reader__template_8h.html", "mps__reader__template_8h" ],
     [ "permutation.h", "lp__data_2permutation_8h.html", "lp__data_2permutation_8h" ],
-    [ "proto_utils.cc", "proto__utils_8cc.html", "proto__utils_8cc" ],
+    [ "proto_utils.cc", "lp__data_2proto__utils_8cc.html", "lp__data_2proto__utils_8cc" ],
     [ "proto_utils.h", "lp__data_2proto__utils_8h.html", "lp__data_2proto__utils_8h" ],
     [ "scattered_vector.h", "scattered__vector_8h.html", "scattered__vector_8h" ],
     [ "sol_reader.cc", "sol__reader_8cc.html", "sol__reader_8cc" ],

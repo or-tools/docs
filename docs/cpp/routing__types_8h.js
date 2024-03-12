@@ -7,5 +7,6 @@ var routing__types_8h =
     [ "DEFINE_INT_TYPE", "routing__types_8h.html#a3d98b6fb94b9cdabfaca3d9f3c9632e9", null ],
     [ "DEFINE_INT_TYPE", "routing__types_8h.html#a1edd1d7c020633019991b13d14b4b15b", null ],
     [ "DEFINE_INT_TYPE", "routing__types_8h.html#a8fee47a5359613bc7f8df356595c7ff0", null ],
+    [ "DEFINE_INT_TYPE", "routing__types_8h.html#a87be9662855fab8c3ba386a9b35d06e8", null ],
     [ "DEFINE_INT_TYPE", "routing__types_8h.html#aff19b78b3d56ff95c23727ca4ff64ea7", null ]
 ];

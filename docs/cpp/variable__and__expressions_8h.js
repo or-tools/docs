@@ -1,6 +1,7 @@
 var variable__and__expressions_8h =
 [
     [ "operations_research::math_opt::Variable", "classoperations__research_1_1math__opt_1_1Variable.html", "classoperations__research_1_1math__opt_1_1Variable" ],
+    [ "operations_research::math_opt::internal::VariablesEquality", "structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality.html", "structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality" ],
     [ "operations_research::math_opt::LinearTerm", "structoperations__research_1_1math__opt_1_1LinearTerm.html", "structoperations__research_1_1math__opt_1_1LinearTerm" ],
     [ "operations_research::math_opt::LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html", "classoperations__research_1_1math__opt_1_1LinearExpression" ],
     [ "operations_research::math_opt::LowerBoundedLinearExpression", "structoperations__research_1_1math__opt_1_1LowerBoundedLinearExpression.html", "structoperations__research_1_1math__opt_1_1LowerBoundedLinearExpression" ],
@@ -12,9 +13,9 @@ var variable__and__expressions_8h =
     [ "operations_research::math_opt::LowerBoundedQuadraticExpression", "structoperations__research_1_1math__opt_1_1LowerBoundedQuadraticExpression.html", "structoperations__research_1_1math__opt_1_1LowerBoundedQuadraticExpression" ],
     [ "operations_research::math_opt::UpperBoundedQuadraticExpression", "structoperations__research_1_1math__opt_1_1UpperBoundedQuadraticExpression.html", "structoperations__research_1_1math__opt_1_1UpperBoundedQuadraticExpression" ],
     [ "operations_research::math_opt::BoundedQuadraticExpression", "structoperations__research_1_1math__opt_1_1BoundedQuadraticExpression.html", "structoperations__research_1_1math__opt_1_1BoundedQuadraticExpression" ],
-    [ "QuadraticProductId", "variable__and__expressions_8h.html#aa7417f0cf54fd0e145f30fa512e1ac9f", null ],
-    [ "QuadraticTermMap", "variable__and__expressions_8h.html#aef956c631bdd4f193f8671c72350507e", null ],
-    [ "VariableMap", "variable__and__expressions_8h.html#adcacab0e14c439437b5e5acb39b228b1", null ],
+    [ "QuadraticProductId", "variable__and__expressions_8h.html#af437439da0c828180ac0efb3f9f0829a", null ],
+    [ "QuadraticTermMap", "variable__and__expressions_8h.html#a4a78cc37feb540b6321c3a679b6883b7", null ],
+    [ "VariableMap", "variable__and__expressions_8h.html#a0cfee3f4c5c5a923566b26311c634582", null ],
     [ "AbslHashValue", "variable__and__expressions_8h.html#a9e6fcdeef575528b100332d330bd6e64", null ],
     [ "AbslHashValue", "variable__and__expressions_8h.html#a8dd7028e8f17f1c0b547414c87340fa4", null ],
     [ "AddInnerProduct", "variable__and__expressions_8h.html#abc4cb42a63b67b786373bd902d77ecfe", null ],

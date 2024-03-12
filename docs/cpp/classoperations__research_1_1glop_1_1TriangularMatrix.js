@@ -11,7 +11,6 @@ var classoperations__research_1_1glop_1_1TriangularMatrix =
     [ "ComputeInverseInfinityNorm", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a04cc9a74ee40418a3b80232941c81c0f", null ],
     [ "ComputeInverseInfinityNormUpperBound", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a3b96282a18495971faeb2f7e8a942e0d", null ],
     [ "ComputeRowsToConsiderInSortedOrder", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a73b763db84bea0b037a221f4f0a8b341", null ],
-    [ "ComputeRowsToConsiderInSortedOrder", "classoperations__research_1_1glop_1_1TriangularMatrix.html#ac20baed56dfc7f31921f5bbb64e6950e", null ],
     [ "ComputeRowsToConsiderWithDfs", "classoperations__research_1_1glop_1_1TriangularMatrix.html#adbf1ad02396e91500821d368dcd2ed4a", null ],
     [ "CopyColumnToSparseColumn", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a7c9af034cdc3d2a08631578613bf4bc3", null ],
     [ "CopyToSparseMatrix", "classoperations__research_1_1glop_1_1TriangularMatrix.html#a318ade3c265a89506f7dbbd9e40d7a8f", null ],

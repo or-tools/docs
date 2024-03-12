@@ -12,6 +12,6 @@ var primal__dual__hybrid__gradient_8h =
       [ "kFeasibilityPolishingTermination", "primal__dual__hybrid__gradient_8h.html#afe5252c7e11352b2fd773332db49caeaa5daa2a77074cdd5071382b576c7ff07b", null ]
     ] ],
     [ "ComputeStatuses", "primal__dual__hybrid__gradient_8h.html#acae8b13203ae4acdf59f3c411c79ae9a", null ],
-    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8h.html#a333f489ba459dad7b5491ec327d8340f", null ],
-    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8h.html#a7b96f89f313a2d89099e740349e02214", null ]
+    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8h.html#a4976f41a18336d1f56e40e10927df23d", null ],
+    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8h.html#af8af91fb08550bb1fee05251d70b702d", null ]
 ];

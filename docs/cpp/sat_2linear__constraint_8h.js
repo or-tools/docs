@@ -3,9 +3,9 @@ var sat_2linear__constraint_8h =
     [ "operations_research::sat::LinearConstraint", "structoperations__research_1_1sat_1_1LinearConstraint.html", "structoperations__research_1_1sat_1_1LinearConstraint" ],
     [ "operations_research::sat::LinearExpression", "structoperations__research_1_1sat_1_1LinearExpression.html", "structoperations__research_1_1sat_1_1LinearExpression" ],
     [ "operations_research::sat::LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html", "classoperations__research_1_1sat_1_1LinearConstraintBuilder" ],
-    [ "CanonicalizeConstraint", "sat_2linear__constraint_8h.html#afadbda106c6b8673a235186582fafa3a", null ],
     [ "CanonicalizeExpr", "sat_2linear__constraint_8h.html#a83443be9bcc967eec871d47ead6bfb73", null ],
-    [ "CleanTermsAndFillConstraint", "sat_2linear__constraint_8h.html#a6314c72e08e179c06ce3b76747499b8c", null ],
+    [ "CleanTermsAndFillConstraint", "sat_2linear__constraint_8h.html#a9a8b9aa5e8f896a552de39960a007b86", null ],
+    [ "CleanTermsAndFillConstraint", "sat_2linear__constraint_8h.html#a71dda16556ea20503fe019addd42f605", null ],
     [ "ComputeActivity", "sat_2linear__constraint_8h.html#a6916f5386d6fce09719e427e69b6591f", null ],
     [ "ComputeInfinityNorm", "sat_2linear__constraint_8h.html#a3be9ba98c31d692caf42401992a0b4c3", null ],
     [ "ComputeL2Norm", "sat_2linear__constraint_8h.html#a268155d48da53ccd81c49ee890c8e75f", null ],
@@ -20,6 +20,6 @@ var sat_2linear__constraint_8h =
     [ "PositiveVarExpr", "sat_2linear__constraint_8h.html#ac1f5fc24892786308e339b0865309580", null ],
     [ "PossibleOverflow", "sat_2linear__constraint_8h.html#a62555e26e4185c3c441e9222914b4186", null ],
     [ "RemoveZeroTerms", "sat_2linear__constraint_8h.html#a3a88781ba518fe1373e2bbe36aeb8132", null ],
-    [ "ScalarProduct", "sat_2linear__constraint_8h.html#acbbc863153951ef5e0cd45800fe2c56e", null ],
+    [ "ScalarProduct", "sat_2linear__constraint_8h.html#afb476403c2ecaebf0c38e03a0e770c40", null ],
     [ "ValidateLinearConstraintForOverflow", "sat_2linear__constraint_8h.html#ad582c9543b77917ac1084bbfda601f5e", null ]
 ];

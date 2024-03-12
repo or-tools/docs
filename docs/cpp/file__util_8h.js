@@ -8,12 +8,13 @@ var file__util_8h =
     ] ],
     [ "ReadAllRecordsOrDie", "file__util_8h.html#ac9031f8daeb1d1211d7524835aaac549", null ],
     [ "ReadAllRecordsOrDie", "file__util_8h.html#a0f3f24e096bca7cd6c901f048a1cf61d", null ],
-    [ "ReadFileToProto", "file__util_8h.html#abbef832207bfa0f93652a39fa12bf259", null ],
-    [ "ReadFileToProtoOrDie", "file__util_8h.html#a46d49062de0bcefe89a1d4c58b629a2c", null ],
+    [ "ReadFileToProto", "file__util_8h.html#a16bcb748464870d971ee64c53c9da0ec", null ],
+    [ "ReadFileToProto", "file__util_8h.html#ae4f80f3675606ea0b092eec19029834e", null ],
     [ "ReadFileToString", "file__util_8h.html#a78190eb879828f5495a8d52f4970c702", null ],
     [ "ReadNumRecords", "file__util_8h.html#a4c502cb057a0c067c38aff7673965727", null ],
     [ "ReadNumRecords", "file__util_8h.html#a69fdb007201984e0caf5498e5a05490f", null ],
     [ "ReadOneRecordOrDie", "file__util_8h.html#ace54bf84f7270aae9477ad57dcf7ce59", null ],
-    [ "WriteProtoToFile", "file__util_8h.html#aca6d10eb0fd0e94b6a496eb15a57994c", null ],
+    [ "StringToProto", "file__util_8h.html#aa37f1c42c1c2691397cf578d762fff44", null ],
+    [ "WriteProtoToFile", "file__util_8h.html#acf7f6c6d11e2912d96b43d9ab516b744", null ],
     [ "WriteRecordsOrDie", "file__util_8h.html#a6b3cadabb0e5354ea2730e10401427f5", null ]
 ];

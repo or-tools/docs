@@ -1,8 +1,8 @@
 var classoperations__research_1_1Bitset64 =
 [
     [ "ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
-    [ "EndIterator", "classoperations__research_1_1Bitset64_1_1EndIterator.html", null ],
     [ "Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
+    [ "value_type", "classoperations__research_1_1Bitset64.html#a6c86cec021f3202f3046b69e51fbd199", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ac9f83666423013e68cc3481c4a397b22", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ab0746d309f0ea913d5a9d0197717fc9c", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#a830c79a97c03bb7733a542abf90ccc98", null ],
@@ -17,7 +17,7 @@ var classoperations__research_1_1Bitset64 =
     [ "const_view", "classoperations__research_1_1Bitset64.html#af6ff2a760b93406c1bbae5923129d2c8", null ],
     [ "CopyBucket", "classoperations__research_1_1Bitset64.html#a0018595dbbdbb67569e5ad7fec06cdde", null ],
     [ "DebugString", "classoperations__research_1_1Bitset64.html#a8810a6161f6b66249477fc3663013f1d", null ],
-    [ "end", "classoperations__research_1_1Bitset64.html#ad85330dec34359b543ea1d45ffc3e3f0", null ],
+    [ "end", "classoperations__research_1_1Bitset64.html#a5d3dd799c02c7745a347fb39fe6df163", null ],
     [ "Intersection", "classoperations__research_1_1Bitset64.html#a52f5fa1cae11c203b568e1e2d0c6f67e", null ],
     [ "IsSet", "classoperations__research_1_1Bitset64.html#a29e4a24eb3fdcc26e2f4980732f92bfb", null ],
     [ "operator=", "classoperations__research_1_1Bitset64.html#ad7202776cbafca2bb0aab1a91243c013", null ],

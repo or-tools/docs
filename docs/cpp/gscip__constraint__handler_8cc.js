@@ -2,8 +2,10 @@ var gscip__constraint__handler_8cc =
 [
     [ "SCIP_ConshdlrData", "structSCIP__ConshdlrData.html", "structSCIP__ConshdlrData" ],
     [ "SCIP_ConsData", "structSCIP__ConsData.html", "structSCIP__ConsData" ],
-    [ "GScipHandler", "gscip__constraint__handler_8cc.html#a9dcd351bd4c16760c0add8fb0edd8bb7", null ],
-    [ "AddCallbackConstraint", "gscip__constraint__handler_8cc.html#a9a0c3ab79e496e97c6902f16e18a86c3", null ],
+    [ "GScipHandler", "gscip__constraint__handler_8cc.html#a6545811bc88907420ba41860219599be", null ],
+    [ "AddCallbackConstraint", "gscip__constraint__handler_8cc.html#a30b61d637f83941aa9acb03aef639410", null ],
+    [ "ConstraintHandlerResultPriority", "gscip__constraint__handler_8cc.html#a2eece6fe0651f3feb361752ae5eea35c", null ],
+    [ "MergeConstraintHandlerResults", "gscip__constraint__handler_8cc.html#afbaba3325d824dfc03c768b97157c9ca", null ],
     [ "RegisterConstraintHandler", "gscip__constraint__handler_8cc.html#a8528c1947f16a5c6178ac8f3e7e5b7a5", null ],
     [ "SCIP_DECL_CONSCHECK", "gscip__constraint__handler_8cc.html#ae5cc41357bffc84dee6ba5e059a30ca5", null ],
     [ "SCIP_DECL_CONSDELETE", "gscip__constraint__handler_8cc.html#aaf54a7e3c783cd58567c9b8e18583f03", null ],

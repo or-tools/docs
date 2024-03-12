@@ -8,6 +8,7 @@ var cp__model__utils_8cc =
     [ "ApplyToAllVariableIndices", "cp__model__utils_8cc.html#af703c0ffe9861cc773696e46ccff0a5f", null ],
     [ "ComputeInnerObjective", "cp__model__utils_8cc.html#a2979162c101d957e47f1ad97155a023e", null ],
     [ "ConstraintCaseName", "cp__model__utils_8cc.html#ab77c8edd75ecda9e91f2a9a02af6adca", null ],
+    [ "ConvertCpModelProtoToCnf", "cp__model__utils_8cc.html#a6da39a32345d2a2c18a62bb356bfd3b3", null ],
     [ "DivideLinearExpression", "cp__model__utils_8cc.html#ace619cca537761022dff4ee830354f19", null ],
     [ "ExpressionContainsSingleRef", "cp__model__utils_8cc.html#abc34dbcdae318ae9788e4448a65acecc", null ],
     [ "ExpressionIsAffine", "cp__model__utils_8cc.html#a75cf12df936171c3abd17cf962264dcb", null ],

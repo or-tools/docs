@@ -11,7 +11,6 @@ var dir_d7102cb9b8f7e43929a688c6d6951c0b =
     [ "objective_storage.cc", "objective__storage_8cc.html", null ],
     [ "objective_storage.h", "objective__storage_8h.html", "objective__storage_8h" ],
     [ "range.h", "range_8h.html", "range_8h" ],
-    [ "sorted.h", "sorted_8h.html", "sorted_8h" ],
     [ "sparse_coefficient_map.cc", "sparse__coefficient__map_8cc.html", null ],
     [ "sparse_coefficient_map.h", "sparse__coefficient__map_8h.html", "sparse__coefficient__map_8h" ],
     [ "sparse_matrix.cc", "sparse__matrix_8cc.html", null ],

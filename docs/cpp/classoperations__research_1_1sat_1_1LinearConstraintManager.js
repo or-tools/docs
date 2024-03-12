@@ -5,7 +5,7 @@ var classoperations__research_1_1sat_1_1LinearConstraintManager =
     [ "~LinearConstraintManager", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a020c6d38806066dcd1142ec34b1be016", null ],
     [ "Add", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a6d1a851e398b69a45b7d644cd1f43abb", null ],
     [ "AddAllConstraintsToLp", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#abfdd742c210f1e74f9af0f467f6731c2", null ],
-    [ "AddCut", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a34361c7a55c3faf7d05794909a851b22", null ],
+    [ "AddCut", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a7ed5d2e7a9f57fe18d3962de8ee08815", null ],
     [ "AllConstraints", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a26caadf08a57fcc712e153a1a713c9cd", null ],
     [ "ChangeLp", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a6736aa5d3e7f0a44c29023b2bc85a453", null ],
     [ "DebugCheckConstraint", "classoperations__research_1_1sat_1_1LinearConstraintManager.html#aab909fac1dde12c752169a81fa3e2825", null ],

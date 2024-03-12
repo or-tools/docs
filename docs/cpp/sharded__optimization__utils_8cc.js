@@ -10,7 +10,7 @@ var sharded__optimization__utils_8cc =
     [ "L2NormRescaling", "sharded__optimization__utils_8cc.html#a9dee2894b8028a57b7f7d2306b402e44", null ],
     [ "LInfRuizRescaling", "sharded__optimization__utils_8cc.html#a54ded6625965f8ddd342161a55263cce", null ],
     [ "ProjectToDualVariableBounds", "sharded__optimization__utils_8cc.html#a898c0c776a5736cf1931036d0d370724", null ],
-    [ "ProjectToPrimalVariableBounds", "sharded__optimization__utils_8cc.html#acb7f29f435d6c9fc53148ee403c7049e", null ],
+    [ "ProjectToPrimalVariableBounds", "sharded__optimization__utils_8cc.html#a6b5ae66853ff4985ca2911ba4d453fdc", null ],
     [ "average", "sharded__optimization__utils_8cc.html#a2e50537b138c27e2e30e8d3a568fbee0", null ],
     [ "col_norms", "sharded__optimization__utils_8cc.html#ae323226dd10a4425417d674b6f72deb0", null ],
     [ "kInfinity", "sharded__optimization__utils_8cc.html#a7b49a0361e8201ffd1515e0067b9fd30", null ],

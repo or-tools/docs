@@ -21,10 +21,12 @@ var parameters_8h =
       [ "kGurobi", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dabc8ddfb8a00bb405e68545ce187ac238", null ],
       [ "kGlop", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da512b5059e1ca814e697fb191d93aaf7f", null ],
       [ "kCpSat", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da44e5c1d9f55c30721e6b79c5ca328a62", null ],
+      [ "kPdlp", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7daef04ff0a5c499cf28bb09dc3f59da9f8", null ],
       [ "kGlpk", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dae2a40eea095a7c19652eff4af08a9144", null ],
       [ "kEcos", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dad02dded0e6f07bc7c293054d023c608b", null ],
       [ "kScs", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7dad1ddb13aaaf649f197e0f6549596571c", null ],
-      [ "kHighs", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da2f251cef0d73c7a190c85afeb75d6ec5", null ]
+      [ "kHighs", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da2f251cef0d73c7a190c85afeb75d6ec5", null ],
+      [ "kSantorini", "parameters_8h.html#a1a4e2d8708a16ad2817a18f55a516e7da2c152d0c05f690114bc0020f47743c34", null ]
     ] ],
     [ "AbslParseFlag", "parameters_8h.html#a1ce49faa8b059f86b8f68016119aa4a2", null ],
     [ "AbslParseFlag", "parameters_8h.html#a206556919b1c03d9f5bb8d6170b7c718", null ],

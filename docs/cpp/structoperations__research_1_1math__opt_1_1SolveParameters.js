@@ -18,6 +18,7 @@ var structoperations__research_1_1math__opt_1_1SolveParameters =
     [ "lp_algorithm", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a05fa068a515d99b6101f6e20a0d45f37", null ],
     [ "node_limit", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a13843301a7c63fcd0b947c4085a1546f", null ],
     [ "objective_limit", "structoperations__research_1_1math__opt_1_1SolveParameters.html#ad9f849eb20b996099d37493fd2df1552", null ],
+    [ "pdlp", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a3027602e61802248947b413eccd7d9f9", null ],
     [ "presolve", "structoperations__research_1_1math__opt_1_1SolveParameters.html#addc633423d49ac322dc9a32bf228b719", null ],
     [ "random_seed", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a13cdb7b787cc9b505ea25ce03dddcd40", null ],
     [ "relative_gap_tolerance", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a509a6df993fab6c1ef2ad7e4250f032b", null ],

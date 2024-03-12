@@ -4,6 +4,7 @@ var strong__int_8h =
     [ "util_intops::StrongInt< StrongIntName, _ValueType >::Hasher", "structutil__intops_1_1StrongInt_1_1Hasher.html", "structutil__intops_1_1StrongInt_1_1Hasher" ],
     [ "util_intops::StrongIntRange< IntType >", "classutil__intops_1_1StrongIntRange.html", "classutil__intops_1_1StrongIntRange" ],
     [ "util_intops::StrongIntRange< IntType >::StrongIntRangeIterator", "classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator.html", "classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator" ],
+    [ "std::hash< util_intops::StrongInt< StrongIntName, ValueType > >", "structstd_1_1hash_3_01util__intops_1_1StrongInt_3_01StrongIntName_00_01ValueType_01_4_01_4.html", null ],
     [ "DEFINE_STRONG_INT_TYPE", "strong__int_8h.html#a382737ba620573d644e36820b1e2f33b", null ],
     [ "STRONG_INT_TYPE_ARITHMETIC_OP", "strong__int_8h.html#ab9cbfc83a4f33d12ef0aebc41f982322", null ],
     [ "STRONG_INT_TYPE_ASSIGNMENT_OP", "strong__int_8h.html#a25327aa090469c1d220f44104a587360", null ],

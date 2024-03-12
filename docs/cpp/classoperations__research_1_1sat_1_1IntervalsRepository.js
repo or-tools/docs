@@ -11,7 +11,6 @@ var classoperations__research_1_1sat_1_1IntervalsRepository =
     [ "CreateInterval", "classoperations__research_1_1sat_1_1IntervalsRepository.html#aba1b268e41918b98c14f1a1254ec9a65", null ],
     [ "CreatePrecedenceLiteral", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a89d4a8a4b1575bb7a0d793402c82e099", null ],
     [ "End", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a28ca9ba8432d4e7ae99bc375a14f7d6f", null ],
-    [ "EndVar", "classoperations__research_1_1sat_1_1IntervalsRepository.html#aeff49e982df2c314a02c5a353d2a7967", null ],
     [ "GetOrCreateDemandHelper", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a1f392bd87ddad621e69d4cf80876df4e", null ],
     [ "GetOrCreateHelper", "classoperations__research_1_1sat_1_1IntervalsRepository.html#ae9f8653f78ec2416053ba12305b3b2a7", null ],
     [ "GetPrecedenceLiteral", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a82b74057b21278acec7655e6b08fc2db", null ],
@@ -26,7 +25,5 @@ var classoperations__research_1_1sat_1_1IntervalsRepository =
     [ "PresenceLiteral", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a606d8e3f5f82c51ba90e697804719743", null ],
     [ "RegisterCumulative", "classoperations__research_1_1sat_1_1IntervalsRepository.html#ab8c477ca3496838e1c5ede5b02e1e1f5", null ],
     [ "Size", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a27f16a73b9fed505c532289fc2d997a4", null ],
-    [ "SizeVar", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a9c4a62791b1627c07db15039b187f0c8", null ],
-    [ "Start", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a261e5e253f8d83bbd9359c48e58fa984", null ],
-    [ "StartVar", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a728dfbc99397311714ca4561fc9bdff0", null ]
+    [ "Start", "classoperations__research_1_1sat_1_1IntervalsRepository.html#a261e5e253f8d83bbd9359c48e58fa984", null ]
 ];

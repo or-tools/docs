@@ -9,7 +9,8 @@ var classoperations__research_1_1KnapsackSolver =
       [ "KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893aa6d83fc5b8d17db1f82c1b414a4e8b20", null ],
       [ "KNAPSACK_MULTIDIMENSION_XPRESS_MIP_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893a91363e5987ca50c3a0530572a1b26163", null ],
       [ "KNAPSACK_MULTIDIMENSION_CPLEX_MIP_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893ad81d222cb7c96c68e5a9682fed696585", null ],
-      [ "KNAPSACK_DIVIDE_AND_CONQUER_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893a4c69064bd223ef044eefa0d22e6cc38d", null ]
+      [ "KNAPSACK_DIVIDE_AND_CONQUER_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893a4c69064bd223ef044eefa0d22e6cc38d", null ],
+      [ "KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER", "classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893a95af4ad3667434d2daf7aac1b8ac61f9", null ]
     ] ],
     [ "KnapsackSolver", "classoperations__research_1_1KnapsackSolver.html#a7638cb76df7cb79d956dda62d179a554", null ],
     [ "KnapsackSolver", "classoperations__research_1_1KnapsackSolver.html#ab36466b997fe3f25955461708061ce40", null ],

@@ -1,6 +1,6 @@
 var classoperations__research_1_1GuidedTabuSearch =
 [
-    [ "GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html#adc0dd941b13cc34da4d0cc26843ae328", null ],
+    [ "GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html#a94429884370880b95beb23aa7a37b555", null ],
     [ "GetEpsilon", "classoperations__research_1_1GuidedTabuSearch.html#a4a1a033393ea50374db5a9427dde5a18", null ],
     [ "GetLagrangianFactor", "classoperations__research_1_1GuidedTabuSearch.html#a42888e0253e0b3b84b5ef60621edc10e", null ],
     [ "GetPenaltyFactor", "classoperations__research_1_1GuidedTabuSearch.html#a709d533e9ff8f8fe8a24cbd270327e6b", null ],

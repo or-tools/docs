@@ -6,5 +6,5 @@ var io_8h =
       [ "PRINT_GRAPH_ADJACENCY_LISTS_SORTED", "io_8h.html#ae705e1342dacc10a13fb3f11f91d0696a454bb1ede69e280a1e4959acb82748ef", null ]
     ] ],
     [ "GraphToString", "io_8h.html#affed79554a202aaa8bda5b5e98c3a6b2", null ],
-    [ "WriteGraphToFile", "io_8h.html#a83e255c1426a060140494d15add27c66", null ]
+    [ "WriteGraphToFile", "io_8h.html#a2bc3683e5d8f49f745bea0fa513f1675", null ]
 ];

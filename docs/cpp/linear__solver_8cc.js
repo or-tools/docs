@@ -21,6 +21,7 @@ var linear__solver_8cc =
     [ "MPSolverResponseStatusIsRpcError", "linear__solver_8cc.html#a52d451963bca16889b3f1e23450a8f2d", null ],
     [ "SolverTypeIsMip", "linear__solver_8cc.html#a653e11eef608bfb88f21325e7fa12f2b", null ],
     [ "ToString", "linear__solver_8cc.html#ad50e1c26339c45f0bc665e3db44b628c", null ],
+    [ "XpressIsCorrectlyInstalled", "linear__solver_8cc.html#a8a407053b194dd9b1f6f23abc96c7db6", null ],
     [ "kOptimizationProblemTypeNames", "linear__solver_8cc.html#a7a23ad44b4de4025ad85dc0ae0476570", null ],
     [ "name", "linear__solver_8cc.html#a82e2a7e0f28d620da677073b6b24574b", null ],
     [ "problem_type", "linear__solver_8cc.html#acdf66e64954cbe33c30a45395b4d74b6", null ]

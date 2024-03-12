@@ -1,15 +1,6 @@
 var searchData=
 [
-  ['satformat_0',['SatFormat',['../namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce',1,'operations_research::sat']]],
-  ['scalingvalues_1',['ScalingValues',['../classoperations__research_1_1MPSolverParameters.html#ae77fef975a893d6118d955ef2eb72ac9',1,'operations_research::MPSolverParameters']]],
-  ['scipseparationresult_2',['ScipSeparationResult',['../namespaceoperations__research.html#acb335e855d7f794ab66a05a4859a7a46',1,'operations_research']]],
-  ['sequencestrategy_3',['SequenceStrategy',['../classoperations__research_1_1Solver.html#a94a24557456395e59c924a095f2096aa',1,'operations_research::Solver']]],
-  ['solutionstatus_4',['SolutionStatus',['../namespaceoperations__research_1_1math__opt.html#a637909695d6438261a9c072e9cf5f677',1,'operations_research::math_opt']]],
-  ['solverstate_5',['SolverState',['../classoperations__research_1_1Solver.html#a5b5712802e63dcd3ee5abfd37e0f2a95',1,'operations_research::Solver']]],
-  ['solvertype_6',['solvertype',['../classoperations__research_1_1KnapsackSolver.html#a81ce17438663c39f7793e8db92ff1893',1,'operations_research::KnapsackSolver::SolverType'],['../namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d',1,'operations_research::math_opt::SolverType']]],
-  ['solvestatus_7',['SolveStatus',['../namespaceoperations__research.html#ab132fd63742d9e8f11c0dcfd66b6964a',1,'operations_research']]],
-  ['status_8',['status',['../classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3',1,'operations_research::sat::DratChecker::Status'],['../classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352',1,'operations_research::sat::SatSolver::Status'],['../classoperations__research_1_1MinCostPerfectMatching.html#a8f8e0078e299401cea8cd3fe6170eb44',1,'operations_research::MinCostPerfectMatching::Status'],['../classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457',1,'operations_research::MinCostFlowBase::Status'],['../classoperations__research_1_1MaxFlowStatusClass.html#aa3fbead787cfdfac0b9e7b217e06cbfb',1,'operations_research::MaxFlowStatusClass::Status'],['../classoperations__research_1_1SimpleMaxFlow.html#a8a7acde49c4d55f2eb42e2b6869cdb3d',1,'operations_research::SimpleMaxFlow::Status'],['../classoperations__research_1_1SimpleLinearSumAssignment.html#abb18c90a17fde10536345a29d7fd57d6',1,'operations_research::SimpleLinearSumAssignment::Status'],['../classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63',1,'operations_research::bop::BopOptimizerBase::Status']]],
-  ['subsolvertype_9',['SubsolverType',['../classoperations__research_1_1sat_1_1SubSolver.html#a9966dc2666e1cc9bad0fc4611715117c',1,'operations_research::sat::SubSolver']]],
-  ['supporttype_10',['SupportType',['../namespaceoperations__research_1_1math__opt.html#a09b132961fb88528de3313abb3943314',1,'operations_research::math_opt']]],
-  ['synchronizationstatus_11',['SynchronizationStatus',['../classoperations__research_1_1MPSolverInterface.html#a912394f09fe0aee694df2e9c962853a0',1,'operations_research::MPSolverInterface']]]
+  ['resultstatus_0',['ResultStatus',['../classoperations__research_1_1MPSolver.html#a16bca30fdb1b048d987631b757c63192',1,'operations_research::MPSolver']]],
+  ['roundinglockdirection_1',['RoundingLockDirection',['../namespaceoperations__research.html#a06c7f6a20a02730e6c31f40f469dd47e',1,'operations_research']]],
+  ['routingoutputformat_2',['RoutingOutputFormat',['../namespaceoperations__research.html#a7f4410129ac727b8ef3b125ad18c41bb',1,'operations_research']]]
 ];

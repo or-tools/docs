@@ -2,7 +2,7 @@ var namespacegtl =
 [
     [ "detail", "namespacegtl_1_1detail.html", "namespacegtl_1_1detail" ],
     [ "internal", "namespacegtl_1_1internal.html", "namespacegtl_1_1internal" ],
-    [ "stl_util_internal", "namespacegtl_1_1stl__util__internal.html", null ],
+    [ "stl_util_internal", "namespacegtl_1_1stl__util__internal.html", "namespacegtl_1_1stl__util__internal" ],
     [ "BaseDeleter", "classgtl_1_1BaseDeleter.html", "classgtl_1_1BaseDeleter" ],
     [ "ElementDeleter", "classgtl_1_1ElementDeleter.html", "classgtl_1_1ElementDeleter" ],
     [ "IntType", "classgtl_1_1IntType.html", "classgtl_1_1IntType" ],

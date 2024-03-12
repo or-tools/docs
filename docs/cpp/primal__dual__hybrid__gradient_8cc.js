@@ -1,8 +1,8 @@
 var primal__dual__hybrid__gradient_8cc =
 [
     [ "ComputeStatuses", "primal__dual__hybrid__gradient_8cc.html#acae8b13203ae4acdf59f3c411c79ae9a", null ],
-    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8cc.html#ac43b4c39d3be5e0bced44530d50f8208", null ],
-    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8cc.html#a5e5be3defc8ff241ecc00008c63569df", null ],
+    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8cc.html#abf423134517a37a89f497afc72942735", null ],
+    [ "PrimalDualHybridGradient", "primal__dual__hybrid__gradient_8cc.html#a71c304e3179e094cb89d838e86684c1e", null ],
     [ "delta", "primal__dual__hybrid__gradient_8cc.html#ae99d92906640f8755574c1f93f39d320", null ],
     [ "distance_moved_last_restart_period", "primal__dual__hybrid__gradient_8cc.html#ae3146d59eb9e49c48bd3ea7b3e60ab65", null ],
     [ "length_of_last_restart_period", "primal__dual__hybrid__gradient_8cc.html#af6ec6f87520da8de4c5522f7bd04dfe4", null ],

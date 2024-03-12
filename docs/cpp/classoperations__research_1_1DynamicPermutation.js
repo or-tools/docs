@@ -1,7 +1,7 @@
 var classoperations__research_1_1DynamicPermutation =
 [
     [ "DynamicPermutation", "classoperations__research_1_1DynamicPermutation.html#a5743ffc1c6fb22b0c4d63ce242135cbe", null ],
-    [ "AddMappings", "classoperations__research_1_1DynamicPermutation.html#af1058ff0d3ae20f6f313a82e12febbbf", null ],
+    [ "AddMappings", "classoperations__research_1_1DynamicPermutation.html#a6810a8457d4ea0ea36d325e4a6a54d16", null ],
     [ "AllMappingsSrc", "classoperations__research_1_1DynamicPermutation.html#a384c0a0da69a500b0f41788c167e121a", null ],
     [ "CreateSparsePermutation", "classoperations__research_1_1DynamicPermutation.html#af4a56b605f368daf357abc0cf3afb20a", null ],
     [ "DebugString", "classoperations__research_1_1DynamicPermutation.html#ae095cf4e546b2a3048a4f424fcd1e770", null ],

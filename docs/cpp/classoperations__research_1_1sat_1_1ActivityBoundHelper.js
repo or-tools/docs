@@ -7,6 +7,8 @@ var classoperations__research_1_1sat_1_1ActivityBoundHelper =
     [ "ComputeMaxActivity", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#a7569741972c7325665407db889dc36af", null ],
     [ "ComputeMinActivity", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#abf2d755f2c9cb18279897688370f7a7f", null ],
     [ "IsAmo", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#aea0301f31120bf9d9b5ce799c2ef4983", null ],
+    [ "NumAmoForVariable", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#afb2ab68ef37bce5ef7b4669909ae29c3", null ],
     [ "PartitionLiteralsIntoAmo", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#accfcc79dedf0f11235975e95d8e9a263", null ],
-    [ "PresolveEnforcement", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#ad71179e60a9659f4899d68ad8472b679", null ]
+    [ "PresolveEnforcement", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#ad71179e60a9659f4899d68ad8472b679", null ],
+    [ "RemoveEnforcementThatMakesConstraintTrivial", "classoperations__research_1_1sat_1_1ActivityBoundHelper.html#a981ddaa8e6b0fba03b9aab2b491cde43", null ]
 ];

@@ -19,5 +19,5 @@ var classoperations__research_1_1sat_1_1SchedulingDemandHelper =
     [ "FilteredDecomposedEnergy", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a13f1d8d8c111c44c2b38b445dd4a2212", null ],
     [ "InitDecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a8aa9f56ef8a1e2f49e7b07e441b9e418", null ],
     [ "OverrideDecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#abe6d5aa91c66af113b1d9b04c9745f95", null ],
-    [ "OverrideLinearizedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a1abd2f29e8f0087dc8a3b43c03fdd52c", null ]
+    [ "OverrideLinearizedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a5d1ce25352abb8a484139619fbb9b9c4", null ]
 ];

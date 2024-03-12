@@ -2,7 +2,6 @@ var bitset_8h =
 [
     [ "operations_research::Bitset64< IndexType >", "classoperations__research_1_1Bitset64.html", "classoperations__research_1_1Bitset64" ],
     [ "operations_research::Bitset64< IndexType >::ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
-    [ "operations_research::Bitset64< IndexType >::EndIterator", "classoperations__research_1_1Bitset64_1_1EndIterator.html", null ],
     [ "operations_research::Bitset64< IndexType >::Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
     [ "operations_research::BitQueue64", "classoperations__research_1_1BitQueue64.html", "classoperations__research_1_1BitQueue64" ],
     [ "operations_research::SparseBitset< IntegerType >", "classoperations__research_1_1SparseBitset.html", "classoperations__research_1_1SparseBitset" ],

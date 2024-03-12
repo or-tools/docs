@@ -20,9 +20,10 @@ var search_8cc =
     [ "reset_penalties_on_new_best_solution_", "search_8cc.html#a75d68001fdd7a0e272ef11c07f888c6f", null ],
     [ "selector_", "search_8cc.html#a55ed096f6ff13bef2f7e921ffe4dda27", null ],
     [ "solver_", "search_8cc.html#abd6bfbf6753a5deb0ce273fad6408e1e", null ],
-    [ "stamp", "search_8cc.html#a8fe282323b22d8c88d1a43af8f2918f8", null ],
+    [ "stamp", "search_8cc.html#a0de845646ed304ef563229f2f606d899", null ],
     [ "value", "search_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514", null ],
     [ "var", "search_8cc.html#a7b137f8db5d9cd79d1cd5a4541a0cfc0", null ],
+    [ "var_index", "search_8cc.html#a3de5fd09893127e4ec08e3cbf9cbcb62", null ],
     [ "var_index_to_local_index_", "search_8cc.html#a416da10b07f89f5c1da16f3d601fca1f", null ],
     [ "vars_", "search_8cc.html#a9b229f7e8aa2b819b08a9eef9b39df61", null ]
 ];

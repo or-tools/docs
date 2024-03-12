@@ -55,8 +55,5 @@ var classoperations__research_1_1PathOperator =
     [ "StartNode", "classoperations__research_1_1PathOperator.html#ad94c225019c58c1b11cd7ad8ad6cba83", null ],
     [ "SwapActiveAndInactive", "classoperations__research_1_1PathOperator.html#a5b17bfc9cf66523426c2485f9dd2332b", null ],
     [ "ignore_path_vars_", "classoperations__research_1_1PathOperator.html#a46728a21c28eaf507a20bba345d9df8f", null ],
-    [ "next_base_to_increment_", "classoperations__research_1_1PathOperator.html#a10f2c4277993608f09fea9244df0a301", null ],
-    [ "num_paths_", "classoperations__research_1_1PathOperator.html#aadab60adab155e9fe9da3f550643d671", null ],
-    [ "number_of_nexts_", "classoperations__research_1_1PathOperator.html#ae108cf2f383928202b506cba66e911ee", null ],
-    [ "start_to_path_", "classoperations__research_1_1PathOperator.html#a7bee1de619c4e89a7da20bd0326f50b2", null ]
+    [ "number_of_nexts_", "classoperations__research_1_1PathOperator.html#ae108cf2f383928202b506cba66e911ee", null ]
 ];

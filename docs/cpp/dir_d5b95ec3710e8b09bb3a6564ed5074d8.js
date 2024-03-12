@@ -24,6 +24,7 @@ var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
     [ "solver_debug.h", "solver__debug_8h.html", null ],
     [ "solver_interface.cc", "solver__interface_8cc.html", null ],
     [ "solver_interface.h", "solver__interface_8h.html", "solver__interface_8h" ],
+    [ "sorted.h", "sorted_8h.html", "sorted_8h" ],
     [ "sparse_submatrix.cc", "sparse__submatrix_8cc.html", "sparse__submatrix_8cc" ],
     [ "sparse_submatrix.h", "sparse__submatrix_8h.html", "sparse__submatrix_8h" ],
     [ "sparse_vector.h", "math__opt_2core_2sparse__vector_8h.html", "math__opt_2core_2sparse__vector_8h" ],

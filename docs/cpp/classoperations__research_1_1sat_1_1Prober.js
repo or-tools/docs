@@ -6,6 +6,7 @@ var classoperations__research_1_1sat_1_1Prober =
     [ "num_new_literals_fixed", "classoperations__research_1_1sat_1_1Prober.html#adddd50eb7e511a0c59aebd841b291508", null ],
     [ "ProbeBooleanVariables", "classoperations__research_1_1sat_1_1Prober.html#a2127d7db0f3c791613c92c8177e02432", null ],
     [ "ProbeBooleanVariables", "classoperations__research_1_1sat_1_1Prober.html#ab1e9d80c7f62d666ad8a3ec5a14f3c13", null ],
+    [ "ProbeDnf", "classoperations__research_1_1sat_1_1Prober.html#a1323e15e0e075b7a73f7a56e81e42a61", null ],
     [ "ProbeOneVariable", "classoperations__research_1_1sat_1_1Prober.html#a5873acf530b40f395c869b77bddcb7f0", null ],
     [ "SetPropagationCallback", "classoperations__research_1_1sat_1_1Prober.html#a5f55bbeaa6a94647c5f3aecdc8b2c0f7", null ]
 ];

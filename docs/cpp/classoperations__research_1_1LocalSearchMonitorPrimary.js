@@ -13,5 +13,6 @@ var classoperations__research_1_1LocalSearchMonitorPrimary =
     [ "EndFilterNeighbor", "classoperations__research_1_1LocalSearchMonitorPrimary.html#a6e091ca3af6d51764a5dc96ccff45937", null ],
     [ "EndMakeNextNeighbor", "classoperations__research_1_1LocalSearchMonitorPrimary.html#a600dea14839e1108e636bd0486e505c6", null ],
     [ "EndOperatorStart", "classoperations__research_1_1LocalSearchMonitorPrimary.html#a49aebdf824bc35aec658239dd38058ff", null ],
-    [ "Install", "classoperations__research_1_1LocalSearchMonitorPrimary.html#aaacde24ec1867c085abda3e61ea67db8", null ]
+    [ "Install", "classoperations__research_1_1LocalSearchMonitorPrimary.html#aaacde24ec1867c085abda3e61ea67db8", null ],
+    [ "IsActive", "classoperations__research_1_1LocalSearchMonitorPrimary.html#a8b5896657bde00aa4cff988142bcdc0e", null ]
 ];

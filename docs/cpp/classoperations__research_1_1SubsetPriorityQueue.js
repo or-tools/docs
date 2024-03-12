@@ -1,6 +1,6 @@
 var classoperations__research_1_1SubsetPriorityQueue =
 [
-    [ "SubsetPriorityQueue", "classoperations__research_1_1SubsetPriorityQueue.html#a28f00f7a8434e1752509d034e3e69357", null ],
+    [ "SubsetPriorityQueue", "classoperations__research_1_1SubsetPriorityQueue.html#a8169bb3bd9247844989e74653f2c95a1", null ],
     [ "Add", "classoperations__research_1_1SubsetPriorityQueue.html#a0ca563f5dea1af3b8a99095f8a610ac6", null ],
     [ "ChangePriority", "classoperations__research_1_1SubsetPriorityQueue.html#afc15acdd067fd3c289892500bd43e83b", null ],
     [ "Contains", "classoperations__research_1_1SubsetPriorityQueue.html#a48def977fd2916b1201c28d6b3703dfe", null ],

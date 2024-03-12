@@ -8,13 +8,12 @@ var searchData=
   ['domain_5fint_5fvar_5',['DOMAIN_INT_VAR',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba035478726d2dcd2fb9ac77afb5c759cc',1,'operations_research']]],
   ['domain_5flist_6',['DOMAIN_LIST',['../structoperations__research_1_1fz_1_1Argument.html#ae0f265565f43a13229277a1a423bbfb7a2d62717fb6a51f5399eb9a46551cabdb',1,'operations_research::fz::Argument']]],
   ['done_7',['DONE',['../classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html#ad935bcd7ea1cf2f9f88d155cd4f90317ac1efc497d016e52cb0fc55daf869ef49',1,'operations_research::scheduling::jssp::JsspParser']]],
-  ['dot_5fformat_8',['DOT_FORMAT',['../classoperations__research_1_1GraphExporter.html#a98cbc595fc26c9884578e596906b2ee0ae63b5de1f816c9125477d6a1f5c3b686',1,'operations_research::GraphExporter']]],
-  ['dotdot_9',['dotdot',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69aaf40bb46e66376286beeb28ad11c9c95',1,'DOTDOT:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69aaf40bb46e66376286beeb28ad11c9c95',1,'DOTDOT:&#160;parser.tab.hh']]],
-  ['drat_10',['DRAT',['../namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8',1,'operations_research::sat']]],
-  ['dual_11',['DUAL',['../classoperations__research_1_1MPSolverParameters.html#ab297405e6084c08a9058012361376762a2aca0e0bfd9807b5a938bb3bbc2bea07',1,'operations_research::MPSolverParameters']]],
-  ['dual_5ffeasible_12',['DUAL_FEASIBLE',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a57ad14e7a035f33c8ba6c0ea9ea23caa',1,'operations_research::glop']]],
-  ['dual_5finfeasible_13',['DUAL_INFEASIBLE',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a1583be76ac58a4ac4c024f73b3d85811',1,'operations_research::glop']]],
-  ['dual_5ftolerance_14',['DUAL_TOLERANCE',['../classoperations__research_1_1MPSolverParameters.html#a3834b74a8764c1c971e10ce9ba2f265ea313eaed42edf309599e71ca7563cce22',1,'operations_research::MPSolverParameters']]],
-  ['dual_5funbounded_15',['DUAL_UNBOUNDED',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a8ada5da7749eac0d9fe1782ad9bab585',1,'operations_research::glop']]],
-  ['dvalue_16',['dvalue',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69af30c26ebeb1c287be2915ca5f9f79502',1,'DVALUE:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af30c26ebeb1c287be2915ca5f9f79502',1,'DVALUE:&#160;parser.tab.hh']]]
+  ['dotdot_8',['DOTDOT',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69aaf40bb46e66376286beeb28ad11c9c95',1,'DOTDOT:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69aaf40bb46e66376286beeb28ad11c9c95',1,'DOTDOT:&#160;parser.tab.hh']]],
+  ['drat_9',['DRAT',['../namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8',1,'operations_research::sat']]],
+  ['dual_10',['DUAL',['../classoperations__research_1_1MPSolverParameters.html#ab297405e6084c08a9058012361376762a2aca0e0bfd9807b5a938bb3bbc2bea07',1,'operations_research::MPSolverParameters']]],
+  ['dual_5ffeasible_11',['DUAL_FEASIBLE',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a57ad14e7a035f33c8ba6c0ea9ea23caa',1,'operations_research::glop']]],
+  ['dual_5finfeasible_12',['DUAL_INFEASIBLE',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a1583be76ac58a4ac4c024f73b3d85811',1,'operations_research::glop']]],
+  ['dual_5ftolerance_13',['DUAL_TOLERANCE',['../classoperations__research_1_1MPSolverParameters.html#a3834b74a8764c1c971e10ce9ba2f265ea313eaed42edf309599e71ca7563cce22',1,'operations_research::MPSolverParameters']]],
+  ['dual_5funbounded_14',['DUAL_UNBOUNDED',['../namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004a8ada5da7749eac0d9fe1782ad9bab585',1,'operations_research::glop']]],
+  ['dvalue_15',['DVALUE',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69af30c26ebeb1c287be2915ca5f9f79502',1,'DVALUE:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af30c26ebeb1c287be2915ca5f9f79502',1,'DVALUE:&#160;parser.tab.hh']]]
 ];

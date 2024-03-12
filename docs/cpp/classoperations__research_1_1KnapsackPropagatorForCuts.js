@@ -7,7 +7,7 @@ var classoperations__research_1_1KnapsackPropagatorForCuts =
     [ "CopyCurrentStateToSolution", "classoperations__research_1_1KnapsackPropagatorForCuts.html#a40a8563e905ede9e93bb8cd4b262a742", null ],
     [ "current_profit", "classoperations__research_1_1KnapsackPropagatorForCuts.html#a23dc9f6647c2f825a1feccbea85b7915", null ],
     [ "GetNextItemId", "classoperations__research_1_1KnapsackPropagatorForCuts.html#aa181dc8960e6e25d2537c3a7c40b8ecf", null ],
-    [ "Init", "classoperations__research_1_1KnapsackPropagatorForCuts.html#aa8af9f7028370a4e3684bea0070338c3", null ],
+    [ "Init", "classoperations__research_1_1KnapsackPropagatorForCuts.html#ae1a4e1cc1e201faa235c9b54e2891ac6", null ],
     [ "InitPropagator", "classoperations__research_1_1KnapsackPropagatorForCuts.html#a4f444da6838854314e1e36784d417e85", null ],
     [ "items", "classoperations__research_1_1KnapsackPropagatorForCuts.html#acb987665ba6407ee4a42373fcdd3b72b", null ],
     [ "operator=", "classoperations__research_1_1KnapsackPropagatorForCuts.html#a2a8b049a7b06a1db4acee2303612a5f0", null ],

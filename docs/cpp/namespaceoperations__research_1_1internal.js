@@ -7,7 +7,13 @@ var namespaceoperations__research_1_1internal =
     [ "ScipCallbackRunner", "classoperations__research_1_1internal_1_1ScipCallbackRunner.html", "classoperations__research_1_1internal_1_1ScipCallbackRunner" ],
     [ "ScipCallbackRunnerImpl", "classoperations__research_1_1internal_1_1ScipCallbackRunnerImpl.html", "classoperations__research_1_1internal_1_1ScipCallbackRunnerImpl" ],
     [ "ScopedSCIPMessageHandlerDisabler", "classoperations__research_1_1internal_1_1ScopedSCIPMessageHandlerDisabler.html", "classoperations__research_1_1internal_1_1ScopedSCIPMessageHandlerDisabler" ],
-    [ "MessageHandlerPtr", "namespaceoperations__research_1_1internal.html#aa59d11feb104d89d98c47bdeca47a1ae", null ],
+    [ "ToUInt", "structoperations__research_1_1internal_1_1ToUInt.html", null ],
+    [ "ToUInt< double >", "structoperations__research_1_1internal_1_1ToUInt_3_01double_01_4.html", "structoperations__research_1_1internal_1_1ToUInt_3_01double_01_4" ],
+    [ "ToUInt< float >", "structoperations__research_1_1internal_1_1ToUInt_3_01float_01_4.html", "structoperations__research_1_1internal_1_1ToUInt_3_01float_01_4" ],
+    [ "UntypedGScipConstraintHandler", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler" ],
+    [ "UntypedGScipConstraintHandlerImpl", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl" ],
+    [ "MessageHandlerPtr", "namespaceoperations__research_1_1internal.html#af00491471902054c58b10873703119a1", null ],
+    [ "to_uint", "namespaceoperations__research_1_1internal.html#aa7930aa4689479c09dbc61f1ec4f4626", null ],
     [ "MPSSectionId", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183", [
       [ "kUnknownSection", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a345e3423066ae7e7dd85a8a5f5e15ee8", null ],
       [ "kName", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183ae3c0e1ec842318f7832e603f500355c3", null ],
@@ -21,7 +27,7 @@ var namespaceoperations__research_1_1internal =
       [ "kIndicators", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a2ba753273480afb7df77df7d9e95387a", null ],
       [ "kEndData", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a0e071d669ad3d79e7fffb9654a90e9c9", null ]
     ] ],
-    [ "AddCallbackConstraint", "namespaceoperations__research_1_1internal.html#a9a0c3ab79e496e97c6902f16e18a86c3", null ],
+    [ "AddCallbackConstraint", "namespaceoperations__research_1_1internal.html#a30b61d637f83941aa9acb03aef639410", null ],
     [ "AddCallbackConstraintImpl", "namespaceoperations__research_1_1internal.html#a90cc50c603b218efbbaeeef5c7f98d17", null ],
     [ "AddConstraintHandlerImpl", "namespaceoperations__research_1_1internal.html#a2ac127174821e785a26be62bf70516ff", null ],
     [ "AddInPlace", "namespaceoperations__research_1_1internal.html#a44e028ca9c90fa8a5b020b09d4088ad0", null ],

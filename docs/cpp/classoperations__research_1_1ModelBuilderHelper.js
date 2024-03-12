@@ -35,6 +35,7 @@ var classoperations__research_1_1ModelBuilderHelper =
     [ "num_variables", "classoperations__research_1_1ModelBuilderHelper.html#ad75125d0508334af953f7e3d78e34b11", null ],
     [ "ObjectiveOffset", "classoperations__research_1_1ModelBuilderHelper.html#afe8f0daf9962d84f8ac5b86037a40f3d", null ],
     [ "OverwriteModel", "classoperations__research_1_1ModelBuilderHelper.html#afd228f236d3440ad7a5d0626c13d4258", null ],
+    [ "ReadModelFromProtoFile", "classoperations__research_1_1ModelBuilderHelper.html#a096905518b14dfe930a01ccc6942a62b", null ],
     [ "SafeAddConstraintTerm", "classoperations__research_1_1ModelBuilderHelper.html#a3738cdce8361c43d363ea6f597e8fa34", null ],
     [ "SafeAddEnforcedConstraintTerm", "classoperations__research_1_1ModelBuilderHelper.html#a1b0a3f479241819774b0484cba44b7b0", null ],
     [ "SetConstraintCoefficient", "classoperations__research_1_1ModelBuilderHelper.html#a1941efa442ba1e68093d0f7a21a65dec", null ],
@@ -60,5 +61,5 @@ var classoperations__research_1_1ModelBuilderHelper =
     [ "VarName", "classoperations__research_1_1ModelBuilderHelper.html#a451426d25128ed1b99fa250c761008af", null ],
     [ "VarObjectiveCoefficient", "classoperations__research_1_1ModelBuilderHelper.html#a859302a575d75b996ba46ca3629ac908", null ],
     [ "VarUpperBound", "classoperations__research_1_1ModelBuilderHelper.html#a7c3b256f85231919616f38872cc8fc8d", null ],
-    [ "WriteModelToFile", "classoperations__research_1_1ModelBuilderHelper.html#a2470b20337f08ffa91d4ff43d6a69441", null ]
+    [ "WriteModelToProtoFile", "classoperations__research_1_1ModelBuilderHelper.html#af558451e70536e1b5c04f6b9fe3bb520", null ]
 ];

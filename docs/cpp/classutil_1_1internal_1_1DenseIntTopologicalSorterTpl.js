@@ -5,7 +5,7 @@ var classutil_1_1internal_1_1DenseIntTopologicalSorterTpl =
     [ "DenseIntTopologicalSorterTpl", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#a1747dbc0e6adac73a5eb6742167bded5", null ],
     [ "DenseIntTopologicalSorterTpl", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#aba07743845ba46f2954a3e071ed54940", null ],
     [ "AddEdge", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#a60adc1c18abcbb4c91720c3be174c193", null ],
-    [ "AddEdges", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#aea04c20ad5443ec6ad529d0b0440e6c4", null ],
+    [ "AddEdges", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#a92ebf18faac60e5bc6931857a3c605db", null ],
     [ "AddNode", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#a4a8fcefb433bd62a26dc9d2360d5332b", null ],
     [ "ExtractCycle", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#ad0672896191e49b6621ca41a48331458", null ],
     [ "GetCurrentFringeSize", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html#a82bfdf18e6c943ad65a05cf94a587e38", null ],

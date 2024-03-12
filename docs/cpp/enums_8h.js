@@ -3,7 +3,7 @@ var enums_8h =
     [ "operations_research::math_opt::Enum< E >", "structoperations__research_1_1math__opt_1_1Enum.html", "structoperations__research_1_1math__opt_1_1Enum" ],
     [ "operations_research::math_opt::EnumProto< P >", "structoperations__research_1_1math__opt_1_1EnumProto.html", "structoperations__research_1_1math__opt_1_1EnumProto" ],
     [ "MATH_OPT_DEFINE_ENUM", "enums_8h.html#af602afafd0a177b2dcab54c32c999d81", null ],
-    [ "ProtoEnumIsValid", "enums_8h.html#a4c7bdab2f818900b52d1db711976b4b4", null ],
+    [ "ProtoEnumIsValid", "enums_8h.html#ae425899064c48c173812a46628be5a01", null ],
     [ "EnumFromProto", "enums_8h.html#a4e13f3d7d95d38a0dca9615964d9c4c2", null ],
     [ "EnumFromString", "enums_8h.html#a70999feb078a7e3df114e995d67fe3c4", null ],
     [ "EnumToOptString", "enums_8h.html#a3efacd0ef47aee00d70a4d2a62f39300", null ],

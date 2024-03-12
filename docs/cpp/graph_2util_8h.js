@@ -11,8 +11,8 @@ var graph_2util_8h =
     [ "GraphIsSymmetric", "graph_2util_8h.html#a784b483eeae1b49164a8a02fe9c0d3ba", null ],
     [ "GraphIsWeaklyConnected", "graph_2util_8h.html#a97311561fd1f01e9f35b2f7ce18b0af3", null ],
     [ "IsSubsetOf0N", "graph_2util_8h.html#aca9c2faec725bc47baf08421b377f643", null ],
-    [ "IsValidPermutation", "graph_2util_8h.html#ad7986b01cf61a31c09a27b4a97db6a83", null ],
-    [ "PathHasCycle", "graph_2util_8h.html#adbb18bcb2f9d64cbbaeb57c328f57e7b", null ],
+    [ "IsValidPermutation", "graph_2util_8h.html#a0aab823d80d85f004d3d2139cc4f6c2f", null ],
+    [ "PathHasCycle", "graph_2util_8h.html#a34114d206959f75a472b167c806da2cb", null ],
     [ "RemapGraph", "graph_2util_8h.html#acfecdce43e9933bde2a94fd879f12f5f", null ],
     [ "RemoveCyclesFromPath", "graph_2util_8h.html#a06fa201576c927d92657e090fa86bfdb", null ],
     [ "RemoveSelfArcsAndDuplicateArcs", "graph_2util_8h.html#a8a06031908a024a50dbdddc394a22490", null ]

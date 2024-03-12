@@ -4,6 +4,7 @@ var classoperations__research_1_1sat_1_1PrecedencesPropagator =
     [ "PrecedencesPropagator", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7dcc4d51adc2f15f2b3d7e4997f27cf0", null ],
     [ "PrecedencesPropagator", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a27cd3258fb300eed3f053eaa56c1c9c4", null ],
     [ "~PrecedencesPropagator", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7fc6614f053e30f750021e6443be583e", null ],
+    [ "AddAffineCoeffOnePrecedence", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a6b6a75f82142dbb26396af7f8bb02bc9", null ],
     [ "AddConditionalPrecedence", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#aea4c93001d71ff6fb073c40cdc7947e5", null ],
     [ "AddConditionalPrecedenceWithOffset", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#adeceaf061f206ced732c073c7f425e98", null ],
     [ "AddGreaterThanAtLeastOneOfConstraints", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a3a76b9c2a7fae816a7bf98ceb157c658", null ],

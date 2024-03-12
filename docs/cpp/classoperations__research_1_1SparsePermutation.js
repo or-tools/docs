@@ -8,7 +8,7 @@ var classoperations__research_1_1SparsePermutation =
     [ "DebugString", "classoperations__research_1_1SparsePermutation.html#a6886dcada3acf697af20e88ce32a7ae1", null ],
     [ "LastElementInCycle", "classoperations__research_1_1SparsePermutation.html#a9fc0ca5752b5ad6cc2a78ff7c512b22a", null ],
     [ "NumCycles", "classoperations__research_1_1SparsePermutation.html#a4941ad4a0095fa3bc4e8aa0e8fb521bf", null ],
-    [ "RemoveCycles", "classoperations__research_1_1SparsePermutation.html#abca48ca404a02f35f06f295814407100", null ],
+    [ "RemoveCycles", "classoperations__research_1_1SparsePermutation.html#a1190fc1695811df74812b7fb1051f3bc", null ],
     [ "Size", "classoperations__research_1_1SparsePermutation.html#aff385d18c768ffa364c5dccb5fb35c0a", null ],
     [ "Support", "classoperations__research_1_1SparsePermutation.html#a572cabcec91fc1b8ac009a80ca417684", null ]
 ];

@@ -1,8 +1,8 @@
 var classoperations__research_1_1pdlp_1_1Sharder =
 [
     [ "Shard", "classoperations__research_1_1pdlp_1_1Sharder_1_1Shard.html", "classoperations__research_1_1pdlp_1_1Sharder_1_1Shard" ],
-    [ "ConstSparseColumnBlock", "classoperations__research_1_1pdlp_1_1Sharder.html#aa844837c102896aac5ba44978757fbf5", null ],
-    [ "SparseColumnBlock", "classoperations__research_1_1pdlp_1_1Sharder.html#aaeb5f98a623d9e1a8bdefc01ae271b3f", null ],
+    [ "ConstSparseColumnBlock", "classoperations__research_1_1pdlp_1_1Sharder.html#a5c3e22fc350e1bde399c1244c0e241b9", null ],
+    [ "SparseColumnBlock", "classoperations__research_1_1pdlp_1_1Sharder.html#a3ecccaa87bd167aa3425ae8591a1c17c", null ],
     [ "Sharder", "classoperations__research_1_1pdlp_1_1Sharder.html#ab58d69d28ee91608a75ee7b63b9d58d4", null ],
     [ "Sharder", "classoperations__research_1_1pdlp_1_1Sharder.html#a7d7d20effa26acf46b9d3a481fb937de", null ],
     [ "Sharder", "classoperations__research_1_1pdlp_1_1Sharder.html#a0eb933a522ec1a523191bb927193edcd", null ],

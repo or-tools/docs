@@ -10,7 +10,7 @@ var pb__constraint_8h =
     [ "operations_research::sat::VariableWithSameReasonIdentifier", "classoperations__research_1_1sat_1_1VariableWithSameReasonIdentifier.html", "classoperations__research_1_1sat_1_1VariableWithSameReasonIdentifier" ],
     [ "AbslHashValue", "pb__constraint_8h.html#adf5729c9f2cd9c6c4897cd486978291a", null ],
     [ "ApplyLiteralMapping", "pb__constraint_8h.html#a3170d75cc011609e109542bbd6ca2e66", null ],
-    [ "BooleanLinearExpressionIsCanonical", "pb__constraint_8h.html#acd9e74903eb3b148ec50b729efc714b3", null ],
+    [ "BooleanLinearExpressionIsCanonical", "pb__constraint_8h.html#a937ae99fd6f6c445a8aad34f04222a1a", null ],
     [ "ComputeBooleanLinearExpressionCanonicalForm", "pb__constraint_8h.html#afe0ad26c40a4024f160695f2a504ff0a", null ],
     [ "ComputeCanonicalRhs", "pb__constraint_8h.html#aa6c84ab8a0590875d286e1d518b804c9", null ],
     [ "ComputeNegatedCanonicalRhs", "pb__constraint_8h.html#a530ca58b0a7104b907a8933f8704dce8", null ],

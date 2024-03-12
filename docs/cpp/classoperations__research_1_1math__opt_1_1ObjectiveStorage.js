@@ -28,5 +28,5 @@ var classoperations__research_1_1math__opt_1_1ObjectiveStorage =
     [ "set_priority", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html#a47e837f5b63b6012ea4b2e4fc264e637", null ],
     [ "set_quadratic_term", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html#afd4abcbf3b9396a2b58bbc747e06b24a", null ],
     [ "SortedAuxiliaryObjectives", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html#a2f02634b26fcc74615a85032095b7def", null ],
-    [ "Update", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html#a7713f638d1e1b8a9c79003d49aea585d", null ]
+    [ "Update", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html#ae11667b579786f8d27273b26907125ad", null ]
 ];

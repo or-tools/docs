@@ -9,7 +9,7 @@ var classoperations__research_1_1sat_1_1IntVar =
     [ "operator!=", "classoperations__research_1_1sat_1_1IntVar.html#a824aadc0688ab57929ae744b1f1a7a26", null ],
     [ "operator==", "classoperations__research_1_1sat_1_1IntVar.html#a23d836e740ab297549905c5fa8539ba5", null ],
     [ "ToBoolVar", "classoperations__research_1_1sat_1_1IntVar.html#ae99d2fbcc2cbff25e4bb02787c82a842", null ],
-    [ "WithName", "classoperations__research_1_1sat_1_1IntVar.html#a5f1761c6d2c5f7908f5f92bb16b91de9", null ],
+    [ "WithName", "classoperations__research_1_1sat_1_1IntVar.html#ae85580e87ecee25a58f031584a255753", null ],
     [ "BoolVar", "classoperations__research_1_1sat_1_1IntVar.html#a94aeffd65c320be161bbf94bdc0ec13f", null ],
     [ "CpModelBuilder", "classoperations__research_1_1sat_1_1IntVar.html#ae04c85577cf33a05fb50bb361877fb42", null ],
     [ "CumulativeConstraint", "classoperations__research_1_1sat_1_1IntVar.html#a9d31ad87d4edee55fc3cb5e239077720", null ],
