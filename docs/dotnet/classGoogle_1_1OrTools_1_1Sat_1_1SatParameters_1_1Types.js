@@ -41,9 +41,7 @@ var classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types =
     [ "Polarity", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118", [
       [ "True", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118af827cf462f62848df37c5e1e94a4da74", null ],
       [ "False", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118af8320b26d30ab433c5a54546d21f414c", null ],
-      [ "Random", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118a64663f4646781c9c0110838b905daa23", null ],
-      [ "WeightedSign", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118a0ff7729cbe2b54e4038f6c17c4d931cd", null ],
-      [ "ReverseWeightedSign", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118a45946ada455d01972d43ec569c6d8112", null ]
+      [ "Random", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118a64663f4646781c9c0110838b905daa23", null ]
     ] ],
     [ "RestartAlgorithm", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a63be85029756eafa85b823c46decd833", [
       [ "NoRestart", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a63be85029756eafa85b823c46decd833a96193ff81cf3c3e077d1528fc51f9811", null ],

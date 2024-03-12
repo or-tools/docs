@@ -279,6 +279,8 @@ var annotated_dup =
         ] ],
         [ "Util", "namespaceGoogle_1_1OrTools_1_1Util.html", [
           [ "Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", "classGoogle_1_1OrTools_1_1Util_1_1Domain" ],
+          [ "Int128", "classGoogle_1_1OrTools_1_1Util_1_1Int128.html", "classGoogle_1_1OrTools_1_1Util_1_1Int128" ],
+          [ "Int128Reflection", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection.html", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection" ],
           [ "Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector" ],
           [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector" ],
           [ "operations_research_util", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html", null ],
@@ -305,6 +307,8 @@ var annotated_dup =
         [ "SolversReflection", "classOperationsResearch_1_1Pdlp_1_1SolversReflection.html", "classOperationsResearch_1_1Pdlp_1_1SolversReflection" ],
         [ "TerminationCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria" ]
       ] ],
+      [ "AcceptanceStrategy", "classOperationsResearch_1_1AcceptanceStrategy.html", "classOperationsResearch_1_1AcceptanceStrategy" ],
+      [ "IteratedLocalSearchParameters", "classOperationsResearch_1_1IteratedLocalSearchParameters.html", "classOperationsResearch_1_1IteratedLocalSearchParameters" ],
       [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],
       [ "MPAbsConstraint", "classOperationsResearch_1_1MPAbsConstraint.html", "classOperationsResearch_1_1MPAbsConstraint" ],
       [ "MPArrayConstraint", "classOperationsResearch_1_1MPArrayConstraint.html", "classOperationsResearch_1_1MPArrayConstraint" ],
@@ -324,6 +328,13 @@ var annotated_dup =
       [ "MPSosConstraint", "classOperationsResearch_1_1MPSosConstraint.html", "classOperationsResearch_1_1MPSosConstraint" ],
       [ "MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", "classOperationsResearch_1_1MPVariableProto" ],
       [ "OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", "classOperationsResearch_1_1OptionalDouble" ],
-      [ "PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", "classOperationsResearch_1_1PartialVariableAssignment" ]
+      [ "PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", "classOperationsResearch_1_1PartialVariableAssignment" ],
+      [ "PerturbationStrategy", "classOperationsResearch_1_1PerturbationStrategy.html", "classOperationsResearch_1_1PerturbationStrategy" ],
+      [ "RoutingIlsReflection", "classOperationsResearch_1_1RoutingIlsReflection.html", "classOperationsResearch_1_1RoutingIlsReflection" ],
+      [ "RuinRecreateParameters", "classOperationsResearch_1_1RuinRecreateParameters.html", "classOperationsResearch_1_1RuinRecreateParameters" ],
+      [ "RuinStrategy", "classOperationsResearch_1_1RuinStrategy.html", "classOperationsResearch_1_1RuinStrategy" ],
+      [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", "classOperationsResearch_1_1SetCoverProto" ],
+      [ "SetCoverReflection", "classOperationsResearch_1_1SetCoverReflection.html", "classOperationsResearch_1_1SetCoverReflection" ],
+      [ "SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", "classOperationsResearch_1_1SetCoverSolutionResponse" ]
     ] ]
 ];

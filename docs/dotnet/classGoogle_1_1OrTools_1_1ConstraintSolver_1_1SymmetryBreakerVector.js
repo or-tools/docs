@@ -34,6 +34,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a49ca2351863fa50171d2105bc1a5af4b", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a272f82f7cccf8fec25e5dea5f7913559", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#accf3925ef75674274a6b3dabbc64e86c", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a0e6ad0cb0a8f340fce9052c8dc937110", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a23ba7e7d288aa11ed44427ae119e35ce", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a152bcdef5bbcf04038ee27389cd13dd7", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#a118dfd5694ed72ba6f06fff8aa8ea086", null ],

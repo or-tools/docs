@@ -13,13 +13,13 @@ var classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto =
     [ "ToString", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a6bd21e3a297a9fb4b479103dbb128474", null ],
     [ "WriteTo", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a89de5fa6ed9cf018ac2b498b541bcc75", null ],
     [ "DomainReductionStrategyFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a52d0b52038fba45a53b296d5b9b1d013", null ],
-    [ "TransformationsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#ab2bd1c3fbdfde35c2829ba2f0d02b1c9", null ],
+    [ "ExprsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a87444fdc1560ef011bb2fe444b108fd2", null ],
     [ "VariableSelectionStrategyFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#add2ec68a24ad9f67e870ad122f0b8e32", null ],
     [ "VariablesFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#ad49aeab17bb462b8c0ce22a5a531b4e3", null ],
     [ "Descriptor", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a27d2618b45627b6991298e382d9c536d", null ],
     [ "DomainReductionStrategy", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a7de77fd998127116fa41d7102f5a815b", null ],
+    [ "Exprs", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a36ff2a8e0820224d3c6a094df4f5d82a", null ],
     [ "Parser", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#aeb64484facb84d16c93145cc87dc986e", null ],
-    [ "Transformations", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#af008f6f4f9dd1353045b0d5f39da6289", null ],
     [ "Variables", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#a09810fa4676702d65aba8014010bc636", null ],
     [ "VariableSelectionStrategy", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html#aad8c552db27dda04d51277c328e9bc17", null ]
 ];

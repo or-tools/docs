@@ -32,6 +32,7 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a5a0a4328b5e72cded37186a75a9ddd8a", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a23293df6676a80ea4b9988b862ff59d6", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#aa56463a7126f20d2aefde027b75e2989", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a9503d373f8ec4ebf4b906234976dc267", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#ad4d22f7df904484077063ac435557a75", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#acb3968a488d20b143bb5d9df534107c6", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a181308e1a41e643213c530c2220ddeeb", null ],

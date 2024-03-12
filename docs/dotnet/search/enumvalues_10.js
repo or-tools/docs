@@ -13,6 +13,6 @@ var searchData=
   ['relative_5fmip_5fgap_10',['RELATIVE_MIP_GAP',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1MPSolverParameters.html#a1114a955c1a6a429595da445147ec878ab4926bc5827373e2ea9b1903653039b7',1,'Google::OrTools::LinearSolver::MPSolverParameters']]],
   ['reservoir_11',['Reservoir',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7ac79f7a034eca687f6ba06bc74bd51ca4',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['restarttoaverage_12',['RestartToAverage',['../namespaceOperationsResearch_1_1Pdlp.html#a0f5b628e2674c1f14020a699550b2f47a479fef6705494f920ad418026ec956c0',1,'OperationsResearch::Pdlp']]],
-  ['reverseweightedsign_13',['ReverseWeightedSign',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a34768445d73e7d69a657d7a26f1ca118a45946ada455d01972d43ec569c6d8112',1,'Google::OrTools::Sat::SatParameters::Types']]],
-  ['routes_14',['Routes',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7ab41067229f91bece9cdfc66681cdd7a3',1,'Google::OrTools::Sat::ConstraintProto']]]
+  ['routes_13',['Routes',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7ab41067229f91bece9cdfc66681cdd7a3',1,'Google::OrTools::Sat::ConstraintProto']]],
+  ['ruinandrecreate_14',['RuinAndRecreate',['../classOperationsResearch_1_1PerturbationStrategy_1_1Types.html#a05338cb092fc6d74f70b2793e0d144d4a27bcb7b325893cc10cd97ac7c98a2fde',1,'OperationsResearch::PerturbationStrategy::Types']]]
 ];

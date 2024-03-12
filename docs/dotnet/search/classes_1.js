@@ -15,5 +15,5 @@ var searchData=
   ['bopsolveroptimizerset_12',['BopSolverOptimizerSet',['../classGoogle_1_1OrTools_1_1Bop_1_1BopSolverOptimizerSet.html',1,'Google::OrTools::Bop']]],
   ['boundcost_13',['BoundCost',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BoundCost.html',1,'Google::OrTools::ConstraintSolver']]],
   ['boundcosttest_14',['BoundCostTest',['../classGoogle_1_1OrTools_1_1Tests_1_1BoundCostTest.html',1,'Google::OrTools::Tests']]],
-  ['boundedlinearexpression_15',['boundedlinearexpression',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html',1,'Google.OrTools.ModelBuilder.BoundedLinearExpression'],['../classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html',1,'Google.OrTools.Sat.BoundedLinearExpression']]]
+  ['boundedlinearexpression_15',['BoundedLinearExpression',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1BoundedLinearExpression.html',1,'Google.OrTools.ModelBuilder.BoundedLinearExpression'],['../classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html',1,'Google.OrTools.Sat.BoundedLinearExpression']]]
 ];

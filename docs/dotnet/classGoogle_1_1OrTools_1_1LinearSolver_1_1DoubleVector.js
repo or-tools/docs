@@ -32,6 +32,7 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#ae0eea37f83939a4c3c7ef2839df7e69f", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#af954be755679614caa43a82bc0c30ef5", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#ac995237bc23b6850bfdb3f4438c480f9", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#a70c67e09640f3e372bce9105b52418f8", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#a1a779b6c2ed849145160af21f1b9b82f", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#a1917a1ddf1b28160c4a634acbea47253", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1LinearSolver_1_1DoubleVector.html#a737c5d6b2a89306c8b26d30b9a2daa46", null ],

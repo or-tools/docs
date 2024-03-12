@@ -15,11 +15,14 @@ var searchData=
   ['routingdimension_12',['RoutingDimension',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingDimension.html',1,'Google::OrTools::ConstraintSolver']]],
   ['routingdimensiontest_13',['RoutingDimensionTest',['../classGoogle_1_1OrTools_1_1Tests_1_1RoutingDimensionTest.html',1,'Google::OrTools::Tests']]],
   ['routingenumsreflection_14',['RoutingEnumsReflection',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingEnumsReflection.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingindexmanager_15',['RoutingIndexManager',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingIndexManager.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingmodel_16',['RoutingModel',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingmodelparameters_17',['RoutingModelParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModelParameters.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingmodelvisitor_18',['RoutingModelVisitor',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModelVisitor.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingparametersreflection_19',['RoutingParametersReflection',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingParametersReflection.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingsearchparameters_20',['RoutingSearchParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html',1,'Google::OrTools::ConstraintSolver']]],
-  ['routingsolvertest_21',['RoutingSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1RoutingSolverTest.html',1,'Google::OrTools::Tests']]]
+  ['routingilsreflection_15',['RoutingIlsReflection',['../classOperationsResearch_1_1RoutingIlsReflection.html',1,'OperationsResearch']]],
+  ['routingindexmanager_16',['RoutingIndexManager',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingIndexManager.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingmodel_17',['RoutingModel',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingmodelparameters_18',['RoutingModelParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModelParameters.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingmodelvisitor_19',['RoutingModelVisitor',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModelVisitor.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingparametersreflection_20',['RoutingParametersReflection',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingParametersReflection.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingsearchparameters_21',['RoutingSearchParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html',1,'Google::OrTools::ConstraintSolver']]],
+  ['routingsolvertest_22',['RoutingSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1RoutingSolverTest.html',1,'Google::OrTools::Tests']]],
+  ['ruinrecreateparameters_23',['RuinRecreateParameters',['../classOperationsResearch_1_1RuinRecreateParameters.html',1,'OperationsResearch']]],
+  ['ruinstrategy_24',['RuinStrategy',['../classOperationsResearch_1_1RuinStrategy.html',1,'OperationsResearch']]]
 ];

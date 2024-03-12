@@ -7,7 +7,8 @@ var classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver =
       [ "KNAPSACK_MULTIDIMENSION_CBC_MIP_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758a4d05f61469074b5aa0e447c7784eb723", null ],
       [ "KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758a5f4d7c17c6be76a0a8aac60d9e40aa2a", null ],
       [ "KNAPSACK_MULTIDIMENSION_SCIP_MIP_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758a6b75f05334d3f5e86cacaf665936421e", null ],
-      [ "KNAPSACK_DIVIDE_AND_CONQUER_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758ab52a7eb1699c7b6d0eab9edea37ff2c8", null ]
+      [ "KNAPSACK_DIVIDE_AND_CONQUER_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758ab52a7eb1699c7b6d0eab9edea37ff2c8", null ],
+      [ "KNAPSACK_MULTIDIMENSION_CP_SAT_SOLVER", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a180be4ef2d77bbae6f96dbcfe13eb758a707049c735825773317f07272dfc0453", null ]
     ] ],
     [ "KnapsackSolver", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#a91133cd834fb86f2bd776d32f0ff29df", null ],
     [ "KnapsackSolver", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html#af7f44bf755753f7888228f36f1b240bc", null ],

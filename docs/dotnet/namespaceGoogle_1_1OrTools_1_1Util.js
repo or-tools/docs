@@ -1,6 +1,8 @@
 var namespaceGoogle_1_1OrTools_1_1Util =
 [
     [ "Domain", "classGoogle_1_1OrTools_1_1Util_1_1Domain.html", "classGoogle_1_1OrTools_1_1Util_1_1Domain" ],
+    [ "Int128", "classGoogle_1_1OrTools_1_1Util_1_1Int128.html", "classGoogle_1_1OrTools_1_1Util_1_1Int128" ],
+    [ "Int128Reflection", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection.html", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection" ],
     [ "Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64Vector" ],
     [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Util_1_1Int64VectorVector" ],
     [ "operations_research_util", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__util.html", null ],

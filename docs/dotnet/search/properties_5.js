@@ -18,12 +18,14 @@ var searchData=
   ['finalstates_15',['FinalStates',['../classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html#aae4a9c71125c81504c7c66466e6e1ef9',1,'Google::OrTools::Sat::AutomatonConstraintProto']]],
   ['findbiglinearoverlap_16',['FindBigLinearOverlap',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a0d44e0eac445b5bd2fabf1b1dd86e2c9',1,'Google::OrTools::Sat::SatParameters']]],
   ['findmultiplecores_17',['FindMultipleCores',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a59e37f43b1f6bc0286e02dbec2f1c7c3',1,'Google::OrTools::Sat::SatParameters']]],
-  ['finverse_18',['FInverse',['../classGoogle_1_1OrTools_1_1Sat_1_1InverseConstraintProto.html#a4dad6f74de85614af809bcfe5eeadfa2',1,'Google::OrTools::Sat::InverseConstraintProto']]],
-  ['first_19',['first',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntBoolPair.html#a200e83df34de48c28031a67986f35c20',1,'Google::OrTools::ConstraintSolver::IntBoolPair']]],
-  ['firstsolutionstatistics_20',['FirstSolutionStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics.html#a880df24a5f08ba415f470a90b5222ea2',1,'Google::OrTools::ConstraintSolver::LocalSearchStatistics']]],
-  ['firstsolutionstrategy_21',['FirstSolutionStrategy',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a708b4e50fe219ea544adfed0904fccb8',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['fixed_5fcost_22',['fixed_cost',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer_1_1VehicleClassEntry.html#a1e2f93be01f4af31fe27ddca8309ec9a',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer::VehicleClassEntry']]],
-  ['fixvariablestotheirhintedvalue_23',['FixVariablesToTheirHintedValue',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aa04c40c841ffe007cfcae763a5c4a05b',1,'Google::OrTools::Sat::SatParameters']]],
-  ['floatingpointobjective_24',['FloatingPointObjective',['../classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto.html#a4837686ee78afde54ba22211e03d6256',1,'Google::OrTools::Sat::CpModelProto']]],
-  ['fprounding_25',['FpRounding',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae5b1488ca75932300181bfd8ee185dc7',1,'Google::OrTools::Sat::SatParameters']]]
+  ['fingerprint_18',['Fingerprint',['../classOperationsResearch_1_1SetCoverProto.html#acc4303ae3cbb0a95d6a97fe8b248f18d',1,'OperationsResearch.SetCoverProto.Fingerprint'],['../classOperationsResearch_1_1SetCoverSolutionResponse.html#af269bbd68d8958740238de60a599db00',1,'OperationsResearch.SetCoverSolutionResponse.Fingerprint']]],
+  ['finverse_19',['FInverse',['../classGoogle_1_1OrTools_1_1Sat_1_1InverseConstraintProto.html#a4dad6f74de85614af809bcfe5eeadfa2',1,'Google::OrTools::Sat::InverseConstraintProto']]],
+  ['first_20',['first',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntBoolPair.html#a200e83df34de48c28031a67986f35c20',1,'Google::OrTools::ConstraintSolver::IntBoolPair']]],
+  ['firstsolutionoptimizationperiod_21',['FirstSolutionOptimizationPeriod',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a3a1404ddd600ee479f07665394653713',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['firstsolutionstatistics_22',['FirstSolutionStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics.html#a880df24a5f08ba415f470a90b5222ea2',1,'Google::OrTools::ConstraintSolver::LocalSearchStatistics']]],
+  ['firstsolutionstrategy_23',['FirstSolutionStrategy',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a708b4e50fe219ea544adfed0904fccb8',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['fixed_5fcost_24',['fixed_cost',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer_1_1VehicleClassEntry.html#a1e2f93be01f4af31fe27ddca8309ec9a',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer::VehicleClassEntry']]],
+  ['fixvariablestotheirhintedvalue_25',['FixVariablesToTheirHintedValue',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aa04c40c841ffe007cfcae763a5c4a05b',1,'Google::OrTools::Sat::SatParameters']]],
+  ['floatingpointobjective_26',['FloatingPointObjective',['../classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto.html#a4837686ee78afde54ba22211e03d6256',1,'Google::OrTools::Sat::CpModelProto']]],
+  ['fprounding_27',['FpRounding',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae5b1488ca75932300181bfd8ee185dc7',1,'Google::OrTools::Sat::SatParameters']]]
 ];

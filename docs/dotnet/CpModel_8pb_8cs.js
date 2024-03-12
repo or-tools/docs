@@ -24,7 +24,6 @@ var CpModel_8pb_8cs =
     [ "Google.OrTools.Sat.FloatObjectiveProto", "classGoogle_1_1OrTools_1_1Sat_1_1FloatObjectiveProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1FloatObjectiveProto" ],
     [ "Google.OrTools.Sat.DecisionStrategyProto", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto" ],
     [ "Google.OrTools.Sat.DecisionStrategyProto.Types", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types" ],
-    [ "Google.OrTools.Sat.DecisionStrategyProto.Types.AffineTransformation", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types_1_1AffineTransformation.html", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types_1_1AffineTransformation" ],
     [ "Google.OrTools.Sat.PartialVariableAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment.html", "classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment" ],
     [ "Google.OrTools.Sat.SparsePermutationProto", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto" ],
     [ "Google.OrTools.Sat.DenseMatrixProto", "classGoogle_1_1OrTools_1_1Sat_1_1DenseMatrixProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1DenseMatrixProto" ],

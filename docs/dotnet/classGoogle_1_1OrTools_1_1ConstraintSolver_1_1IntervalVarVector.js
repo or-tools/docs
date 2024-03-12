@@ -34,6 +34,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a4639e3528c78de526ccd2fcf4abaae5d", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#ae95bca878b7bf3feaeed3baefbfbb3fd", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a49157cb58fddeab08cbcbbf34e222af6", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a948f968c3c28b80179f4196cd8a4410c", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#aef1ddb165f9e1587dcc7719ba4bd5c37", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a7394e0ff5f2b569c71745572b3dba3f7", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntervalVarVector.html#a3d6c55754174ae8661871909c13d1258", null ],

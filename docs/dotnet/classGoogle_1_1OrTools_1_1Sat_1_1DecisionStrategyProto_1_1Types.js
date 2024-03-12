@@ -1,6 +1,5 @@
 var classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types =
 [
-    [ "AffineTransformation", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types_1_1AffineTransformation.html", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types_1_1AffineTransformation" ],
     [ "DomainReductionStrategy", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html#a855a897b1424cc769df01ae2aa6f2b80", [
       [ "SelectMinValue", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html#a855a897b1424cc769df01ae2aa6f2b80a1875282f148b62ca5496ff62ecf7fcb3", null ],
       [ "SelectMaxValue", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html#a855a897b1424cc769df01ae2aa6f2b80a801ed31e8a61b786c0053ba613c9a7e6", null ],

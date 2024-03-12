@@ -14,6 +14,7 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model =
     [ "ExportToFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#aa8257b54635166fd8dc681c02d3b0adb", null ],
     [ "ExportToLpString", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a99c4bbb68a9383011ec781c68559954f", null ],
     [ "ExportToMpsString", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a201a89de42865313d7c12d114e6d9126", null ],
+    [ "ImportFromFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#aeb97a8809bba0b9701372f72c1b28cb0", null ],
     [ "ImportFromLpFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#ac4bbfcacdad55fc823c301d8ba4d9eb6", null ],
     [ "ImportFromLpString", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#ac5cccc065c6b20ba06e707d05796c5f9", null ],
     [ "ImportFromMpsFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a7ae8a47616f86cd03ef766aa0621af08", null ],

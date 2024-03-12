@@ -47,6 +47,7 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver =
     [ "ExportModelAsLpFormat", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#aaa019e25a6d58814e4a80ab3a7107c52", null ],
     [ "ExportModelAsMpsFormat", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#aa986184035f146b1f4fee7a3b5d2aaaf", null ],
     [ "InterruptSolve", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a440749a29ad6c701e7c6a20dd96ffb7f", null ],
+    [ "IsMip", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#ab316ef8a2092a84c144629cb7a094993", null ],
     [ "Iterations", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a7b0d98b696ff39931cb9bc39f886cd13", null ],
     [ "LookupConstraintOrNull", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#ae371c34bba607af816026cdb089e4787", null ],
     [ "LookupVariableOrNull", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#afb6d565265aae88b0b829d81745b8ec3", null ],

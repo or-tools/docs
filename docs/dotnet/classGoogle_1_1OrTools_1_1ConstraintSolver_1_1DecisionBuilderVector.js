@@ -34,6 +34,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a3f3ba606d08cbc839cd49ce405f8ce09", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a6481c295984f667d9942ec6724ba285d", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a8667a08a0dbfbebf02e2d4f8889d2b7a", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a3b92b2641739065d0302caea590fb6db", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#ab75ee913b440d9d0b16a2cd0227b6bc0", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#a6330df3503c49c3ba86df07fe3247573", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DecisionBuilderVector.html#ab0eb5e88bc4dd4f810780d1e06c61207", null ],

@@ -1,6 +1,8 @@
 var namespaceOperationsResearch =
 [
     [ "Pdlp", "namespaceOperationsResearch_1_1Pdlp.html", "namespaceOperationsResearch_1_1Pdlp" ],
+    [ "AcceptanceStrategy", "classOperationsResearch_1_1AcceptanceStrategy.html", "classOperationsResearch_1_1AcceptanceStrategy" ],
+    [ "IteratedLocalSearchParameters", "classOperationsResearch_1_1IteratedLocalSearchParameters.html", "classOperationsResearch_1_1IteratedLocalSearchParameters" ],
     [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],
     [ "MPAbsConstraint", "classOperationsResearch_1_1MPAbsConstraint.html", "classOperationsResearch_1_1MPAbsConstraint" ],
     [ "MPArrayConstraint", "classOperationsResearch_1_1MPArrayConstraint.html", "classOperationsResearch_1_1MPArrayConstraint" ],
@@ -21,6 +23,13 @@ var namespaceOperationsResearch =
     [ "MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", "classOperationsResearch_1_1MPVariableProto" ],
     [ "OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", "classOperationsResearch_1_1OptionalDouble" ],
     [ "PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", "classOperationsResearch_1_1PartialVariableAssignment" ],
+    [ "PerturbationStrategy", "classOperationsResearch_1_1PerturbationStrategy.html", "classOperationsResearch_1_1PerturbationStrategy" ],
+    [ "RoutingIlsReflection", "classOperationsResearch_1_1RoutingIlsReflection.html", "classOperationsResearch_1_1RoutingIlsReflection" ],
+    [ "RuinRecreateParameters", "classOperationsResearch_1_1RuinRecreateParameters.html", "classOperationsResearch_1_1RuinRecreateParameters" ],
+    [ "RuinStrategy", "classOperationsResearch_1_1RuinStrategy.html", "classOperationsResearch_1_1RuinStrategy" ],
+    [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", "classOperationsResearch_1_1SetCoverProto" ],
+    [ "SetCoverReflection", "classOperationsResearch_1_1SetCoverReflection.html", "classOperationsResearch_1_1SetCoverReflection" ],
+    [ "SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", "classOperationsResearch_1_1SetCoverSolutionResponse" ],
     [ "MPSolverResponseStatus", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6", [
       [ "MpsolverOptimal", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a8d5cc50fccb1a695ddbb5e7450c31c3b", null ],
       [ "MpsolverFeasible", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6addf4c361d2611834af061a4b4200e18b", null ],

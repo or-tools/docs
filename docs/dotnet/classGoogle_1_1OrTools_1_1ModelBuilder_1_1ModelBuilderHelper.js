@@ -37,6 +37,7 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper =
     [ "Name", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a7a2b6bc961eacfda7b25e325f5cf4280", null ],
     [ "ObjectiveOffset", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ae93d6b7f30fdff88d860a46a87c1bf57", null ],
     [ "OverwriteModel", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a56822cedbf187690d9252b4d8638180d", null ],
+    [ "ReadModelFromProtoFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#aa2575dd4507b11c841e44705c0097bdc", null ],
     [ "SafeAddConstraintTerm", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#af3311ff941a0adef11520ecab99ce54f", null ],
     [ "SafeAddEnforcedConstraintTerm", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a3870360b521c5fc9095f5596fffc2443", null ],
     [ "SetConstraintCoefficient", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a7b51e0857c01303c0aac619c607fd2d8", null ],
@@ -63,6 +64,6 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper =
     [ "VarName", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ae360dce73f78badd59592be823a0d7ad", null ],
     [ "VarObjectiveCoefficient", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ad87475aa3ef6474c91e1604e4098f897", null ],
     [ "VarUpperBound", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a186790287fbb1cbd11566df173a26922", null ],
-    [ "WriteModelToFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#abed5bf6f0a0c7f91faa21bed4f7d6e82", null ],
+    [ "WriteModelToProtoFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ab96009c7fd20e6009443702a18fd8429", null ],
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a6ff4e80ef37a6b050d4a2185ff440667", null ]
 ];

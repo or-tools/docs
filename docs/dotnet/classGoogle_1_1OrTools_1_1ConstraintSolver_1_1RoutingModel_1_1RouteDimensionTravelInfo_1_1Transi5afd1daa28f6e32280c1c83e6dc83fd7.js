@@ -6,6 +6,6 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimension
     [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#a577b3b5be3931134ea120a81341728d6", null ],
     [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#a2bea6f895b9b59e074175bdfb55c74a5", null ],
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#af45322069ae7edae7f48d4bbef3871ab", null ],
-    [ "x_anchors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#aaef2ffb5a597cad60c29ca7dcbca1af9", null ],
-    [ "y_anchors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#a9a6d405cb725b0ae8dd429c2e1b001c8", null ]
+    [ "x_anchors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#aab6808d1bb9361d05f1888aaba81a4fe", null ],
+    [ "y_anchors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1RouteDimensionTravelInfo_1_1Transi5afd1daa28f6e32280c1c83e6dc83fd7.html#ad27d1c5fa115197641d6e261587d9527", null ]
 ];

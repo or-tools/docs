@@ -1,0 +1,25 @@
+var classOperationsResearch_1_1SetCoverProto =
+[
+    [ "Types", "classOperationsResearch_1_1SetCoverProto_1_1Types.html", "classOperationsResearch_1_1SetCoverProto_1_1Types" ],
+    [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html#a665c21d10ceba19a801b68bd5569a4d8", null ],
+    [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html#a20f950703a1c9f2517c8cc13b99734a7", null ],
+    [ "CalculateSize", "classOperationsResearch_1_1SetCoverProto.html#a30d75a45e9f5714cf6746c9c1e85c3f7", null ],
+    [ "ClearName", "classOperationsResearch_1_1SetCoverProto.html#a786e6c318ee8404b87d09807420206ad", null ],
+    [ "Clone", "classOperationsResearch_1_1SetCoverProto.html#a2d76520813df3a3ae52eca4329cf4c34", null ],
+    [ "Equals", "classOperationsResearch_1_1SetCoverProto.html#a2347276a4d04f35d08b2d168598c66f0", null ],
+    [ "Equals", "classOperationsResearch_1_1SetCoverProto.html#a3be7c43667da26e047a1e7fd3d9b4aaf", null ],
+    [ "GetHashCode", "classOperationsResearch_1_1SetCoverProto.html#ac6744937e7f7446ea2a1368bb1dd26d0", null ],
+    [ "MergeFrom", "classOperationsResearch_1_1SetCoverProto.html#ad3b7b2374381378ca49cc797e2f14ad6", null ],
+    [ "MergeFrom", "classOperationsResearch_1_1SetCoverProto.html#a30786bb34a2b102065a0171cc2dcee7e", null ],
+    [ "ToString", "classOperationsResearch_1_1SetCoverProto.html#ac8c12ace09669c18e59031587e22ef87", null ],
+    [ "WriteTo", "classOperationsResearch_1_1SetCoverProto.html#a93c08d6e6789d492ff9719138fe8b69a", null ],
+    [ "FingerprintFieldNumber", "classOperationsResearch_1_1SetCoverProto.html#a85416c171ff4bb8ffa6f0cb69cc18941", null ],
+    [ "NameFieldNumber", "classOperationsResearch_1_1SetCoverProto.html#aa1ce359cb8606083c52899946604843d", null ],
+    [ "SubsetFieldNumber", "classOperationsResearch_1_1SetCoverProto.html#a7938b8c4eabc83c124e060804a254e92", null ],
+    [ "Descriptor", "classOperationsResearch_1_1SetCoverProto.html#a6822676f163d62b29e9e33a7a7ba4e76", null ],
+    [ "Fingerprint", "classOperationsResearch_1_1SetCoverProto.html#acc4303ae3cbb0a95d6a97fe8b248f18d", null ],
+    [ "HasName", "classOperationsResearch_1_1SetCoverProto.html#ab516983dda2efce992fa1cd0386284fd", null ],
+    [ "Name", "classOperationsResearch_1_1SetCoverProto.html#a1493aaf45827123b656a9f1f89f04086", null ],
+    [ "Parser", "classOperationsResearch_1_1SetCoverProto.html#a72770e798f737d7a3ae9c6e53c9d250b", null ],
+    [ "Subset", "classOperationsResearch_1_1SetCoverProto.html#af6de452570b03f0040a9dc5f57f9866b", null ]
+];

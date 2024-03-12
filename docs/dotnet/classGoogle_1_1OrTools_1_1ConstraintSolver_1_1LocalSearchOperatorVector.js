@@ -34,6 +34,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#a2b596b7185c5221244c65055188e7c81", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#a3e29f4601c9a31e772544769d3773133", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#ac5c2d1c1e1aa09e0a939dddaaa012b3a", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#a01ad259efbb5bdb36c701349e2355e2b", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#ab9069902f21fcc071061663e2679b7fa", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#a7035f123811600815ce595399236b396", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchOperatorVector.html#a1ad19458bc89a23ff153b688136d0de3", null ],

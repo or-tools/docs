@@ -28,6 +28,7 @@ var classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector =
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#aa312078be392f30c3b09bde82d891aeb", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#a562091a22c69ed7d87dd66a8753fe429", null ],
     [ "Count", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#a468df61bab507c8798d6d47a04b5f5c0", null ],
+    [ "IsEmpty", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#aa2b036451af8cdc3e1236cd1c140d712", null ],
     [ "IsFixedSize", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#af16a5dab57415e3f0bb09791af713a48", null ],
     [ "IsReadOnly", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#a57d877d32d443dd1a23c4a6666358dd5", null ],
     [ "IsSynchronized", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html#a3092127992a812116d184f13064f46fc", null ],
