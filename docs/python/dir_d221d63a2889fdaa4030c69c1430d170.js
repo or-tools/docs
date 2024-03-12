@@ -5,12 +5,15 @@ var dir_d221d63a2889fdaa4030c69c1430d170 =
     [ "constraint_solver", "dir_c000b7e99f855aec1c092112341b4887.html", "dir_c000b7e99f855aec1c092112341b4887" ],
     [ "glop", "dir_9f897219721043f85afbab237c471c0e.html", "dir_9f897219721043f85afbab237c471c0e" ],
     [ "graph", "dir_95f0714ed13a6bc22415e864a0d1375a.html", "dir_95f0714ed13a6bc22415e864a0d1375a" ],
+    [ "gscip", "dir_bbb62c5d74969e83d9566d69886158e8.html", "dir_bbb62c5d74969e83d9566d69886158e8" ],
     [ "init", "dir_5b77eca379cf9baccf52da0fd8449675.html", "dir_5b77eca379cf9baccf52da0fd8449675" ],
     [ "linear_solver", "dir_8e5f35e9c5660cf1bad2c4365ddf4ca6.html", "dir_8e5f35e9c5660cf1bad2c4365ddf4ca6" ],
+    [ "math_opt", "dir_5603c10b27299db4b8b39f6ed54e3c41.html", "dir_5603c10b27299db4b8b39f6ed54e3c41" ],
     [ "packing", "dir_875d1876c984a7eef9d04d270527fe58.html", "dir_875d1876c984a7eef9d04d270527fe58" ],
     [ "pdlp", "dir_1a1adba7ea2992f2cf3d4d90113177b7.html", "dir_1a1adba7ea2992f2cf3d4d90113177b7" ],
     [ "sat", "dir_191023c342b8d35b537d70b26324fe8b.html", "dir_191023c342b8d35b537d70b26324fe8b" ],
     [ "scheduling", "dir_bc538845c1cdb70cab18e4bf0f3862c8.html", "dir_bc538845c1cdb70cab18e4bf0f3862c8" ],
+    [ "service", "dir_99a8a4b7e83a390f5e349e0fd7a54e64.html", "dir_99a8a4b7e83a390f5e349e0fd7a54e64" ],
     [ "util", "dir_d3669346593166e59857730016fbb921.html", "dir_d3669346593166e59857730016fbb921" ],
     [ "__init__.py", "____init_____8py.html", null ]
 ];

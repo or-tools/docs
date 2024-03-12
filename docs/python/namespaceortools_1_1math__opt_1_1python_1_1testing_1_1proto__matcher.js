@@ -1,0 +1,4 @@
+var namespaceortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher =
+[
+    [ "MathOptProtoEquivMatcher", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher.html", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher" ]
+];

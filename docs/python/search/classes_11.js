@@ -1,8 +1,23 @@
 var searchData=
 [
-  ['vararrayandobjectivesolutionprinter_0',['VarArrayAndObjectiveSolutionPrinter',['../classortools_1_1sat_1_1python_1_1cp__model_1_1VarArrayAndObjectiveSolutionPrinter.html',1,'ortools::sat::python::cp_model']]],
-  ['vararraysolutionprinter_1',['VarArraySolutionPrinter',['../classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter.html',1,'ortools::sat::python::cp_model']]],
-  ['vareqvar_2',['VarEqVar',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html',1,'ortools::linear_solver::python::model_builder']]],
-  ['variable_3',['variable',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html',1,'ortools.linear_solver.python.model_builder.Variable'],['../classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html',1,'ortools.linear_solver.pywraplp.Variable']]],
-  ['variableexpr_4',['VariableExpr',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]]
+  ['searchlimit_0',['SearchLimit',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchLimit.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['searchmonitor_1',['SearchMonitor',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['sequencevar_2',['SequenceVar',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVar.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['sequencevarcontainer_3',['SequenceVarContainer',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVarContainer.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['sequencevarelement_4',['SequenceVarElement',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVarElement.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['simpleboundcosts_5',['SimpleBoundCosts',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SimpleBoundCosts.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['solution_6',['Solution',['../classortools_1_1math__opt_1_1python_1_1solution_1_1Solution.html',1,'ortools::math_opt::python::solution']]],
+  ['solutioncollector_7',['SolutionCollector',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SolutionCollector.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['solutionhint_8',['SolutionHint',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1SolutionHint.html',1,'ortools::math_opt::python::model_parameters']]],
+  ['solutionstatus_9',['SolutionStatus',['../classortools_1_1math__opt_1_1python_1_1solution_1_1SolutionStatus.html',1,'ortools::math_opt::python::solution']]],
+  ['solveparameters_10',['SolveParameters',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html',1,'ortools::math_opt::python::parameters']]],
+  ['solver_11',['Solver',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html',1,'ortools.constraint_solver.pywrapcp.Solver'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html',1,'ortools.linear_solver.python.model_builder.Solver'],['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html',1,'ortools.linear_solver.pywraplp.Solver']]],
+  ['solveresult_12',['SolveResult',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html',1,'ortools::math_opt::python::result']]],
+  ['solverresources_13',['SolverResources',['../classortools_1_1math__opt_1_1python_1_1solver__resources_1_1SolverResources.html',1,'ortools::math_opt::python::solver_resources']]],
+  ['solvertype_14',['SolverType',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType.html',1,'ortools::math_opt::python::parameters']]],
+  ['solvestats_15',['SolveStats',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html',1,'ortools::math_opt::python::result']]],
+  ['sparsevectorfilter_16',['SparseVectorFilter',['../classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html',1,'ortools::math_opt::python::sparse_containers']]],
+  ['storageupdatetracker_17',['StorageUpdateTracker',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker.html',1,'ortools::math_opt::python::model_storage']]],
+  ['sumarray_18',['SumArray',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
+  ['svgwrapper_19',['SvgWrapper',['../classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html',1,'ortools::sat::colab::visualization']]]
 ];

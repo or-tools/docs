@@ -1,0 +1,4 @@
+var classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions =
+[
+    [ "assert_protos_equiv", "classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html#ad98bce08842bc150e258aefdbc988abb", null ]
+];

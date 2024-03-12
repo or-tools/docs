@@ -100,6 +100,127 @@ var annotated_dup =
           [ "Variable", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable" ]
         ] ]
       ] ],
+      [ "math_opt", "namespaceortools_1_1math__opt.html", [
+        [ "python", "namespaceortools_1_1math__opt_1_1python.html", [
+          [ "callback", "namespaceortools_1_1math__opt_1_1python_1_1callback.html", [
+            [ "CallbackData", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData" ],
+            [ "CallbackRegistration", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration" ],
+            [ "CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult" ],
+            [ "Event", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event" ],
+            [ "GeneratedConstraint", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint" ]
+          ] ],
+          [ "compute_infeasible_subsystem_result", "namespaceortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result.html", [
+            [ "ComputeInfeasibleSubsystemResult", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ComputeInfeasibleSubsystemResult.html", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ComputeInfeasibleSubsystemResult" ],
+            [ "ModelSubset", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset.html", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset" ],
+            [ "ModelSubsetBounds", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds.html", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds" ]
+          ] ],
+          [ "hash_model_storage", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage.html", [
+            [ "_LinearConstraintStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage" ],
+            [ "_QuadraticTermStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage" ],
+            [ "_UpdateTracker", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker" ],
+            [ "_VariableStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage" ],
+            [ "HashModelStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage" ]
+          ] ],
+          [ "ipc", "namespaceortools_1_1math__opt_1_1python_1_1ipc.html", [
+            [ "remote_http_solve", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html", [
+              [ "OptimizationServiceError", "classortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve_1_1OptimizationServiceError.html", null ]
+            ] ]
+          ] ],
+          [ "model", "namespaceortools_1_1math__opt_1_1python_1_1model.html", [
+            [ "_ProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ProcessedElements.html", "classortools_1_1math__opt_1_1python_1_1model_1_1__ProcessedElements" ],
+            [ "_QuadraticProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements.html", "classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements" ],
+            [ "_ToProcessElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements" ],
+            [ "_ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation" ],
+            [ "BoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression" ],
+            [ "LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase" ],
+            [ "LinearConstraint", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint" ],
+            [ "LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry" ],
+            [ "LinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression" ],
+            [ "LinearLinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct" ],
+            [ "LinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct" ],
+            [ "LinearSum", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearSum.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearSum" ],
+            [ "LinearTerm", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearTerm.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearTerm" ],
+            [ "LowerBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression" ],
+            [ "Model", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html", "classortools_1_1math__opt_1_1python_1_1model_1_1Model" ],
+            [ "NormalizedLinearInequality", "classortools_1_1math__opt_1_1python_1_1model_1_1NormalizedLinearInequality.html", "classortools_1_1math__opt_1_1python_1_1model_1_1NormalizedLinearInequality" ],
+            [ "Objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective" ],
+            [ "QuadraticBase", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticBase.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticBase" ],
+            [ "QuadraticExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression" ],
+            [ "QuadraticProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct" ],
+            [ "QuadraticSum", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticSum.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticSum" ],
+            [ "QuadraticTerm", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTerm.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTerm" ],
+            [ "QuadraticTermKey", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTermKey.html", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTermKey" ],
+            [ "UpdateTracker", "classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker.html", "classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker" ],
+            [ "UpperBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1UpperBoundedLinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1UpperBoundedLinearExpression" ],
+            [ "VarEqVar", "classortools_1_1math__opt_1_1python_1_1model_1_1VarEqVar.html", "classortools_1_1math__opt_1_1python_1_1model_1_1VarEqVar" ],
+            [ "Variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable" ]
+          ] ],
+          [ "model_parameters", "namespaceortools_1_1math__opt_1_1python_1_1model__parameters.html", [
+            [ "ModelSolveParameters", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters" ],
+            [ "SolutionHint", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1SolutionHint.html", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1SolutionHint" ]
+          ] ],
+          [ "model_storage", "namespaceortools_1_1math__opt_1_1python_1_1model__storage.html", [
+            [ "BadLinearConstraintIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError" ],
+            [ "BadVariableIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadVariableIdError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadVariableIdError" ],
+            [ "LinearConstraintMatrixIdEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry" ],
+            [ "LinearObjectiveEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry" ],
+            [ "ModelStorage", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1ModelStorage.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1ModelStorage" ],
+            [ "QuadraticEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry" ],
+            [ "QuadraticTermIdKey", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey" ],
+            [ "StorageUpdateTracker", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker" ],
+            [ "UsedUpdateTrackerAfterRemovalError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError" ]
+          ] ],
+          [ "parameters", "namespaceortools_1_1math__opt_1_1python_1_1parameters.html", [
+            [ "Emphasis", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis" ],
+            [ "GlpkParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters" ],
+            [ "GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters" ],
+            [ "LPAlgorithm", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm" ],
+            [ "SolveParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters" ],
+            [ "SolverType", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType" ]
+          ] ],
+          [ "result", "namespaceortools_1_1math__opt_1_1python_1_1result.html", [
+            [ "FeasibilityStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1FeasibilityStatus.html", "classortools_1_1math__opt_1_1python_1_1result_1_1FeasibilityStatus" ],
+            [ "Limit", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit" ],
+            [ "ObjectiveBounds", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds" ],
+            [ "ProblemStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus.html", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus" ],
+            [ "SolveResult", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult" ],
+            [ "SolveStats", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats" ],
+            [ "Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination" ],
+            [ "TerminationReason", "classortools_1_1math__opt_1_1python_1_1result_1_1TerminationReason.html", "classortools_1_1math__opt_1_1python_1_1result_1_1TerminationReason" ]
+          ] ],
+          [ "solution", "namespaceortools_1_1math__opt_1_1python_1_1solution.html", [
+            [ "Basis", "classortools_1_1math__opt_1_1python_1_1solution_1_1Basis.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1Basis" ],
+            [ "BasisStatus", "classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus" ],
+            [ "DualRay", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualRay.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualRay" ],
+            [ "DualSolution", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution" ],
+            [ "PrimalRay", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalRay.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalRay" ],
+            [ "PrimalSolution", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalSolution.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalSolution" ],
+            [ "Solution", "classortools_1_1math__opt_1_1python_1_1solution_1_1Solution.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1Solution" ],
+            [ "SolutionStatus", "classortools_1_1math__opt_1_1python_1_1solution_1_1SolutionStatus.html", "classortools_1_1math__opt_1_1python_1_1solution_1_1SolutionStatus" ]
+          ] ],
+          [ "solve", "namespaceortools_1_1math__opt_1_1python_1_1solve.html", [
+            [ "IncrementalSolver", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver" ]
+          ] ],
+          [ "solver_resources", "namespaceortools_1_1math__opt_1_1python_1_1solver__resources.html", [
+            [ "SolverResources", "classortools_1_1math__opt_1_1python_1_1solver__resources_1_1SolverResources.html", "classortools_1_1math__opt_1_1python_1_1solver__resources_1_1SolverResources" ]
+          ] ],
+          [ "sparse_containers", "namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html", [
+            [ "SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter" ]
+          ] ],
+          [ "statistics", "namespaceortools_1_1math__opt_1_1python_1_1statistics.html", [
+            [ "ModelRanges", "classortools_1_1math__opt_1_1python_1_1statistics_1_1ModelRanges.html", "classortools_1_1math__opt_1_1python_1_1statistics_1_1ModelRanges" ],
+            [ "Range", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range" ]
+          ] ],
+          [ "testing", "namespaceortools_1_1math__opt_1_1python_1_1testing.html", [
+            [ "compare_proto", "namespaceortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto.html", [
+              [ "MathOptProtoAssertions", "classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html", "classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions" ]
+            ] ],
+            [ "proto_matcher", "namespaceortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher.html", [
+              [ "MathOptProtoEquivMatcher", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher.html", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher" ]
+            ] ]
+          ] ]
+        ] ]
+      ] ],
       [ "sat", "namespaceortools_1_1sat.html", [
         [ "colab", "namespaceortools_1_1sat_1_1colab.html", [
           [ "flags", "namespaceortools_1_1sat_1_1colab_1_1flags.html", [

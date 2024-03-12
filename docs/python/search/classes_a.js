@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['model_0',['Model',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html',1,'ortools::linear_solver::python::model_builder']]],
-  ['modelexportoptions_1',['ModelExportOptions',['../classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html',1,'ortools::linear_solver::pywraplp']]],
-  ['mpsolverparameters_2',['MPSolverParameters',['../classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html',1,'ortools::linear_solver::pywraplp']]]
+  ['limit_0',['Limit',['../classortools_1_1math__opt_1_1python_1_1result_1_1Limit.html',1,'ortools::math_opt::python::result']]],
+  ['linearbase_1',['LinearBase',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html',1,'ortools::math_opt::python::model']]],
+  ['linearconstraint_2',['LinearConstraint',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html',1,'ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html',1,'ortools.linear_solver.python.model_builder.LinearConstraint'],['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html',1,'ortools.math_opt.python.model.LinearConstraint']]],
+  ['linearconstraintmatrixentry_3',['LinearConstraintMatrixEntry',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html',1,'ortools::math_opt::python::model']]],
+  ['linearconstraintmatrixidentry_4',['LinearConstraintMatrixIdEntry',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html',1,'ortools::math_opt::python::model_storage']]],
+  ['linearexpr_5',['LinearExpr',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html',1,'ortools.linear_solver.python.linear_solver_natural_api.LinearExpr'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html',1,'ortools.linear_solver.python.model_builder.LinearExpr'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html',1,'ortools.sat.python.cp_model.LinearExpr']]],
+  ['linearexpression_6',['LinearExpression',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html',1,'ortools::math_opt::python::model']]],
+  ['linearlinearproduct_7',['LinearLinearProduct',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct.html',1,'ortools::math_opt::python::model']]],
+  ['linearobjectiveentry_8',['LinearObjectiveEntry',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html',1,'ortools::math_opt::python::model_storage']]],
+  ['linearproduct_9',['LinearProduct',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html',1,'ortools::math_opt::python::model']]],
+  ['linearsum_10',['LinearSum',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearSum.html',1,'ortools::math_opt::python::model']]],
+  ['linearterm_11',['LinearTerm',['../classortools_1_1math__opt_1_1python_1_1model_1_1LinearTerm.html',1,'ortools::math_opt::python::model']]],
+  ['localsearchfilter_12',['LocalSearchFilter',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilter.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['localsearchfiltermanager_13',['LocalSearchFilterManager',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilterManager.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['localsearchmetaheuristic_14',['LocalSearchMetaheuristic',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchMetaheuristic.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['localsearchoperator_15',['LocalSearchOperator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['lowerboundedlinearexpression_16',['LowerBoundedLinearExpression',['../classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression.html',1,'ortools::math_opt::python::model']]],
+  ['lpalgorithm_17',['LPAlgorithm',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html',1,'ortools::math_opt::python::parameters']]]
 ];

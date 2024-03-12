@@ -41,7 +41,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
@@ -54,24 +54,34 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1BooleanVar.html#a3cee3458990a24a7cdf243183314bc55",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1IntExpr.html#a369a0b276dba41d5ae71eee5d1ed432f",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVar.html#a116c8019c4374f33388fa0013d92892a",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html#a95b8749156c81ae8e2527e6f7fff51d4",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html#af62c642858014400c23ce1994407da3c",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#a840edcc6cbd7d06c688cdd96fef39d13",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a98c49b734144403cff1545344e413f0f",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a31a817ceef0b015a4de9008068675217",
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#ab0d9bdc8a921e8a18809ff2b20ed034d",
-"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html",
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#a12510bfa451a41cf550c92d816f9b65f",
-"classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html#a608f2fcac41736bef57c63f16e299c27",
-"classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html#a3d6afbec172cabdfe433f5dfb69b35c9",
-"classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#af4654c73373d80666b541da00bed26fe",
-"classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html#acc8cae3a8768bca3f6f9a2c66fc41de6",
-"model__builder_8py.html#a3c48394758de189d4f3745f7b72abc13",
-"namespaceortools_1_1pdlp_1_1solve__log__pb2.html#a734349fb1da0c694fad260683f05551a",
-"sat_2colab_2____init_____8py_source.html"
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject.html#a806b42e0996d9786224ab6619a7c69ea",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1IntExpr.html",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1IntervalVar.html#a07d7fa6cce7d4cca9aac09678b0eec42",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilterManager.html#af9d486d2f2ae63d985e0683a669023b0",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html#aa4b25bb24b782f9c50a41bad16e7cec0",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html#a75c20e57b0ba7e2d985ce209aefc2283",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a386d4baf5a6ac2a115e7d2a4472e24a2",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a26fad9a7774aeaa434c6b0efe05477ce",
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa18a1d39917bd0cb2d31ec42c85af9a4",
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af07ece1b12e750ad07b817dafedffa9c",
+"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ac2f660cdc84164dc96ed2fca6ec5f98f",
+"classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html#abb0d06538bddb2c9ed6ff952165d6e75",
+"classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ad00c8e3075de67b76103057a2e1ebd9b",
+"classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage.html#a9d7dcd8109e9765489e1c846c6d9927a",
+"classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression.html#a605f5e2aac286c15e91f61d04538ebc2",
+"classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker.html#a330cab08e51cbfb7656f56611f3c5ccd",
+"classortools_1_1math__opt_1_1python_1_1model__storage_1_1ModelStorage.html#ad9291959c5ada99da6f71416ab34b77e",
+"classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a59bc01bef44604fcb0c36302e7deaafc",
+"classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html#ad98bce08842bc150e258aefdbc988abb",
+"classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#a868d6618f206b083e8c72b0cccb22f07",
+"classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#afa8de0d6d9fa50a54b00d6687afeda72",
+"classortools_1_1sat_1_1python_1_1cp__model_1_1__NotBooleanVariable.html#a5f754153021fa87c5ceac3ded08f957d",
+"functions_func_n.html",
+"model_8py.html#a8ef891cbeccaa03f85be11ba1380329e",
+"namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html#a4523d16b18597fa76e137d120d76ed66",
+"namespaceortools_1_1math__opt_1_1solvers_1_1osqp__pb2.html#a3b08dc629bd35ce49d325cd2fbd04cdf",
+"namespaceortools_1_1util_1_1int128__pb2.html#a6470609bca8e08924bbe7bce92ab12b6",
+"service_2v1_2mathopt_2solution__pb2_8py.html#af8fb397d81e7a399a4c3118451558426"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
