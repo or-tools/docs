@@ -8,6 +8,8 @@ var searchData=
   ['highs_5finterface_2ecc_5',['highs_interface.cc',['../highs__interface_8cc.html',1,'']]],
   ['highs_5fproto_5fsolver_2ecc_6',['highs_proto_solver.cc',['../highs__proto__solver_8cc.html',1,'']]],
   ['highs_5fproto_5fsolver_2eh_7',['highs_proto_solver.h',['../highs__proto__solver_8h.html',1,'']]],
-  ['hungarian_2ecc_8',['hungarian.cc',['../hungarian_8cc.html',1,'']]],
-  ['hungarian_2eh_9',['hungarian.h',['../hungarian_8h.html',1,'']]]
+  ['highs_5fsolver_2ecc_8',['highs_solver.cc',['../highs__solver_8cc.html',1,'']]],
+  ['highs_5fsolver_2eh_9',['highs_solver.h',['../highs__solver_8h.html',1,'']]],
+  ['hungarian_2ecc_10',['hungarian.cc',['../hungarian_8cc.html',1,'']]],
+  ['hungarian_2eh_11',['hungarian.h',['../hungarian_8h.html',1,'']]]
 ];

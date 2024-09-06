@@ -13,9 +13,9 @@ var namespaceortools_1_1math__opt_1_1python =
     [ "mathopt", "namespaceortools_1_1math__opt_1_1python_1_1mathopt.html", null ],
     [ "message_callback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html", [
       [ "list_message_callback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a29ec1b382cd309bd56220f12c004f560", null ],
-      [ "log_messages", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a08c9f03af5fc94872350cbfc6300f6d6", null ],
-      [ "printer_message_callback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a1c672de4348e202f89988a5803a53bda", null ],
-      [ "vlog_messages", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a23e7fc6e71d20903eabf3772d0abdc70", null ],
+      [ "log_messages", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#adfd1ad38d9772dd0297452c783d506cf", null ],
+      [ "printer_message_callback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#af65b16ea54c97690b4ad8484a436687b", null ],
+      [ "vlog_messages", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a7d9ec75566301d16fccb646844939ee3", null ],
       [ "SolveMessageCallback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html#a5a3ce80500ae2f4b668bc16d42ce66a2", null ]
     ] ],
     [ "model", "namespaceortools_1_1math__opt_1_1python_1_1model.html", "namespaceortools_1_1math__opt_1_1python_1_1model" ],

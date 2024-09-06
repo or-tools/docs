@@ -10,13 +10,12 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble =
     [ "getValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#af3c47f5e331f8043bdbbd8fd215bedf8", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a74ba1c921f579028386967b38a19ed6d", null ],
     [ "hasValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a5e2d51319db2cbd4aeb65090a4f34f14", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#afa453ec7f138e012a412402ba0313713", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a035030c5127c8695481c5591ab140e78", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a7aadd21d945dfb52815d9fb8e206016f", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a501448f184b3270b675cce9ed1f4a430", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a4466c3dcced54fbdd306b4e39f30ea55", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a093fa94626cc53346f223b4afd0642ff", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#adf952dcf33631a919860778c4b5dc15a", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a8ec72b553e571bc55433d967fd0ab171", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#aa1189a243475c2dad3d0db46139d1fec", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a46a68ff6d70ef0911f92f817a7836f61", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a9f3abfc04e03639801aa3fa94ea42b1f", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#ad7984d3f6c0c22b99db646418a08a35d", null ],
@@ -32,6 +31,5 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble =
     [ "parser", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#abf07010e69030db5cb9a1751a5fe7471", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#ab8ebfa302ac00e1db2df163cf1c65153", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#afec34d34a63fe284dc039e7bbdc45729", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a24a6362b6a952deb49280ba90028e56f", null ],
     [ "VALUE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html#a4a59d68339fa11e03793d152123ba34b", null ]
 ];

@@ -15,7 +15,7 @@ var model__builder_8py =
     [ "_add_enforced_linear_constraint_to_helper", "model__builder_8py.html#a8ffbf519612160481d98e75fcfd7bd29", null ],
     [ "_add_linear_constraint_to_helper", "model__builder_8py.html#a739418a6fe7b5fba1628992b4e7f05db", null ],
     [ "_as_flat_linear_expression", "model__builder_8py.html#a6e49b2ee942de80e39c46cbb5468e3b3", null ],
-    [ "_attribute_series", "model__builder_8py.html#a9b5d336cf40be527ba67d9c243c54f68", null ],
+    [ "_attribute_series", "model__builder_8py.html#ab1a25662df6c57e43ffc81cf79d37ea0", null ],
     [ "_convert_to_series_and_validate_index", "model__builder_8py.html#a6772ff316f55a3c785ca3328a6a1d4fe", null ],
     [ "_convert_to_var_series_and_validate_index", "model__builder_8py.html#a0a9a9806a13f1d786a00a97c1da4324c", null ],
     [ "_get_index", "model__builder_8py.html#a369c139271219b4935df11e81bb62467", null ],

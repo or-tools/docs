@@ -1,7 +1,7 @@
 var classutil_1_1BaseGraph =
 [
-    [ "ArcIndex", "classutil_1_1BaseGraph.html#a0eba6e5899924388644dfa2258ae8929", null ],
-    [ "NodeIndex", "classutil_1_1BaseGraph.html#adb271cf4bcf2de5b5bbe300d7054af29", null ],
+    [ "ArcIndex", "classutil_1_1BaseGraph.html#a81ef3deecbddf4b33fd6c677ee3224c6", null ],
+    [ "NodeIndex", "classutil_1_1BaseGraph.html#a6a9829cc1e31216507c0507c5ee2f263", null ],
     [ "BaseGraph", "classutil_1_1BaseGraph.html#ab2aa905e49f98689100f071c493d20fa", null ],
     [ "BaseGraph", "classutil_1_1BaseGraph.html#ad1f82076b963467515c95c06093596c0", null ],
     [ "~BaseGraph", "classutil_1_1BaseGraph.html#a88d0589bf16c23c2365f2cdfd2f0e7c1", null ],

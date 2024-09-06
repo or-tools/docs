@@ -38,7 +38,7 @@ var searchData=
   ['linearrange_35',['LinearRange',['../classoperations__research_1_1LinearRange.html',1,'operations_research']]],
   ['linearrelaxation_36',['LinearRelaxation',['../classoperations__research_1_1bop_1_1LinearRelaxation.html',1,'operations_research::bop::LinearRelaxation'],['../structoperations__research_1_1sat_1_1LinearRelaxation.html',1,'operations_research::sat::LinearRelaxation']]],
   ['linearsumassignment_37',['LinearSumAssignment',['../classoperations__research_1_1LinearSumAssignment.html',1,'operations_research']]],
-  ['linearterm_38',['LinearTerm',['../structoperations__research_1_1math__opt_1_1LinearTerm.html',1,'operations_research::math_opt']]],
+  ['linearterm_38',['LinearTerm',['../structoperations__research_1_1math__opt_1_1LinearTerm.html',1,'operations_research::math_opt::LinearTerm'],['../structoperations__research_1_1sat_1_1LinearTerm.html',1,'operations_research::sat::LinearTerm']]],
   ['linked_5fhash_5fmap_39',['linked_hash_map',['../classgtl_1_1linked__hash__map.html',1,'gtl']]],
   ['linked_5fhash_5fmap_3c_20int64_5ft_2c_20int_20_3e_40',['linked_hash_map&lt; int64_t, int &gt;',['../classgtl_1_1linked__hash__map.html',1,'gtl']]],
   ['linked_5fhash_5fmap_3c_20int64_5ft_2c_20int64_5ft_20_3e_41',['linked_hash_map&lt; int64_t, int64_t &gt;',['../classgtl_1_1linked__hash__map.html',1,'gtl']]],

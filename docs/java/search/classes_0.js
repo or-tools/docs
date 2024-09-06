@@ -2,8 +2,8 @@ var searchData=
 [
   ['acceptancestrategy_0',['AcceptanceStrategy',['../classoperations__research_1_1RoutingIls_1_1AcceptanceStrategy.html',1,'operations_research::RoutingIls']]],
   ['acceptancestrategyorbuilder_1',['AcceptanceStrategyOrBuilder',['../interfaceoperations__research_1_1RoutingIls_1_1AcceptanceStrategyOrBuilder.html',1,'operations_research::RoutingIls']]],
-  ['adaptivelinesearchparams_2',['AdaptiveLinesearchParams',['../classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html',1,'operations_research::pdlp::Solvers']]],
-  ['adaptivelinesearchparamsorbuilder_3',['AdaptiveLinesearchParamsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParamsOrBuilder.html',1,'operations_research::pdlp::Solvers']]],
+  ['adaptivelinesearchparams_2',['AdaptiveLinesearchParams',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams.html',1,'com::google::ortools::pdlp']]],
+  ['adaptivelinesearchparamsorbuilder_3',['AdaptiveLinesearchParamsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParamsOrBuilder.html',1,'com::google::ortools::pdlp']]],
   ['affineexpression_4',['AffineExpression',['../classcom_1_1google_1_1ortools_1_1modelbuilder_1_1AffineExpression.html',1,'com.google.ortools.modelbuilder.AffineExpression'],['../classcom_1_1google_1_1ortools_1_1sat_1_1AffineExpression.html',1,'com.google.ortools.sat.AffineExpression']]],
   ['alldifferentconstraintproto_5',['AllDifferentConstraintProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html',1,'com::google::ortools::sat']]],
   ['alldifferentconstraintprotoorbuilder_6',['AllDifferentConstraintProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProtoOrBuilder.html',1,'com::google::ortools::sat']]],

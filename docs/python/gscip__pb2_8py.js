@@ -1,7 +1,7 @@
 var gscip__pb2_8py =
 [
     [ "_globals", "gscip__pb2_8py.html#af16bb19ec161d4574afb7dae92b71c70", null ],
-    [ "_options", "gscip__pb2_8py.html#ae4ea1d8090c836e9f3284dfddbcc73dc", null ],
+    [ "_loaded_options", "gscip__pb2_8py.html#adf06c7da89637604c580ff30aa52a58b", null ],
     [ "_serialized_end", "gscip__pb2_8py.html#ab305f4a4b40143530e51de204d846b30", null ],
     [ "_serialized_options", "gscip__pb2_8py.html#a9ad93bad2925e0043f1609e405d5c1fd", null ],
     [ "_serialized_start", "gscip__pb2_8py.html#afa0bdaa0565f2d964244e38fefebc324", null ],

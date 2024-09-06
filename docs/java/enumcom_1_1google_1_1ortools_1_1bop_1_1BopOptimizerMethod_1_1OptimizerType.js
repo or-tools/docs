@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#a152384be0e55aaca3b92d2de05a023fa", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#af8a8ddf724a03c9c97d91fa676a35743", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#af58f897851c9aee13b2fa80720078596", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#ae7b41b34e4baaa826f92607f2f13aaf1", null ],

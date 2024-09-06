@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "ortools.linear_solver.python.linear_solver_natural_api._FakeMPVariableRepresentingTheConstantOffset", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1__FakeMPVariableRepresentingTheConstantOffset.html", null ],
     [ "ortools.math_opt.python.hash_model_storage._LinearConstraintStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage.html", null ],
     [ "ortools.math_opt.python.model._ProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ProcessedElements.html", [
       [ "ortools.math_opt.python.model._QuadraticProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements.html", null ]
@@ -75,9 +76,16 @@ var hierarchy =
     [ "ortools.math_opt.python.parameters.GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", null ],
     [ "ortools.math_opt.python.solve.IncrementalSolver", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html", null ],
     [ "ortools.sat.python.cp_model.IntervalVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html", null ],
+    [ "ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html", null ],
     [ "ortools.linear_solver.python.model_builder.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", null ],
     [ "ortools.math_opt.python.model.LinearConstraint", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html", null ],
     [ "ortools.math_opt.python.model_storage.LinearConstraintMatrixIdEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html", null ],
+    [ "ortools.linear_solver.python.linear_solver_natural_api.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html", [
+      [ "ortools.linear_solver.python.linear_solver_natural_api.Constant", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1Constant.html", null ],
+      [ "ortools.linear_solver.python.linear_solver_natural_api.ProductCst", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1ProductCst.html", null ],
+      [ "ortools.linear_solver.python.linear_solver_natural_api.SumArray", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html", null ],
+      [ "ortools.linear_solver.python.linear_solver_natural_api.VariableExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html", null ]
+    ] ],
     [ "ortools.sat.python.cp_model.LinearExpr", "classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html", [
       [ "ortools.sat.python.cp_model.IntVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html", null ],
       [ "ortools.sat.python.cp_model._NotBooleanVariable", "classortools_1_1sat_1_1python_1_1cp__model_1_1__NotBooleanVariable.html", null ],
@@ -185,14 +193,6 @@ var hierarchy =
         [ "ortools.constraint_solver.pywrapcp.TypeIncompatibilityChecker", "classortools_1_1constraint__solver_1_1pywrapcp_1_1TypeIncompatibilityChecker.html", null ],
         [ "ortools.constraint_solver.pywrapcp.TypeRequirementChecker", "classortools_1_1constraint__solver_1_1pywrapcp_1_1TypeRequirementChecker.html", null ]
       ] ],
-      [ "ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html", null ],
-      [ "ortools.linear_solver.python.linear_solver_natural_api.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html", [
-        [ "ortools.linear_solver.python.linear_solver_natural_api.Constant", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1Constant.html", null ],
-        [ "ortools.linear_solver.python.linear_solver_natural_api.ProductCst", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1ProductCst.html", null ],
-        [ "ortools.linear_solver.python.linear_solver_natural_api.SumArray", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html", null ],
-        [ "ortools.linear_solver.python.linear_solver_natural_api.VariableExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html", null ]
-      ] ],
-      [ "ortools.linear_solver.python.linear_solver_natural_api._FakeMPVariableRepresentingTheConstantOffset", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1__FakeMPVariableRepresentingTheConstantOffset.html", null ],
       [ "ortools.linear_solver.pywraplp.Constraint", "classortools_1_1linear__solver_1_1pywraplp_1_1Constraint.html", null ],
       [ "ortools.linear_solver.pywraplp.MPSolverParameters", "classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html", null ],
       [ "ortools.linear_solver.pywraplp.ModelExportOptions", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html", null ],

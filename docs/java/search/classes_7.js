@@ -4,8 +4,8 @@ var searchData=
   ['improvementsearchlimitparameters_1',['ImprovementSearchLimitParameters',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParameters.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
   ['improvementsearchlimitparametersorbuilder_2',['ImprovementSearchLimitParametersOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1ImprovementSearchLimitParametersOrBuilder.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
   ['incrementalityvalues_3',['IncrementalityValues',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html',1,'com::google::ortools::linearsolver::MPSolverParameters']]],
-  ['infeasibilityinformation_4',['InfeasibilityInformation',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['infeasibilityinformationorbuilder_5',['InfeasibilityInformationOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformationOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
+  ['infeasibilityinformation_4',['InfeasibilityInformation',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation.html',1,'com::google::ortools::pdlp']]],
+  ['infeasibilityinformationorbuilder_5',['InfeasibilityInformationOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformationOrBuilder.html',1,'com::google::ortools::pdlp']]],
   ['initialbasisheuristic_6',['InitialBasisHeuristic',['../enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html',1,'com::google::ortools::glop::GlopParameters']]],
   ['int128_7',['Int128',['../classcom_1_1google_1_1ortools_1_1util_1_1Int128.html',1,'com::google::ortools::util']]],
   ['int128orbuilder_8',['Int128OrBuilder',['../interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder.html',1,'com::google::ortools::util']]],
@@ -31,6 +31,6 @@ var searchData=
   ['inverseconstraintprotoorbuilder_28',['InverseConstraintProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1InverseConstraintProtoOrBuilder.html',1,'com::google::ortools::sat']]],
   ['iteratedlocalsearchparameters_29',['IteratedLocalSearchParameters',['../classoperations__research_1_1RoutingIls_1_1IteratedLocalSearchParameters.html',1,'operations_research::RoutingIls']]],
   ['iteratedlocalsearchparametersorbuilder_30',['IteratedLocalSearchParametersOrBuilder',['../interfaceoperations__research_1_1RoutingIls_1_1IteratedLocalSearchParametersOrBuilder.html',1,'operations_research::RoutingIls']]],
-  ['iterationstats_31',['IterationStats',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['iterationstatsorbuilder_32',['IterationStatsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStatsOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]]
+  ['iterationstats_31',['IterationStats',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html',1,'com::google::ortools::pdlp']]],
+  ['iterationstatsorbuilder_32',['IterationStatsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1pdlp_1_1IterationStatsOrBuilder.html',1,'com::google::ortools::pdlp']]]
 ];

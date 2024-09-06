@@ -16,7 +16,7 @@ var searchData=
   ['clplinearprogramming_13',['ClpLinearProgramming',['../classOperationsResearch_1_1MPModelRequest_1_1Types.html#a49ae4b6577bc07957008f1c2ad283bc2aefe46409d50c57d5b1dff46f32b15143',1,'OperationsResearch::MPModelRequest::Types']]],
   ['completelns_14',['CompleteLns',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod_1_1Types.html#a1932e76c998b262c3e3745f4d93c3cffa34f35d2a96130d6fde7327ea9774c17b',1,'Google::OrTools::Bop::BopOptimizerMethod::Types']]],
   ['compresswithzlib_15',['CompressWithZlib',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverParameters_1_1Types.html#a721e04bee85d060bf2ad5e340165ae79af3564e3865c79bf16f847612f41938c3',1,'Google::OrTools::ConstraintSolver::ConstraintSolverParameters::Types']]],
-  ['constantstepsizerule_16',['ConstantStepSizeRule',['../classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams_1_1Types.html#ae2544740987b56e97b574eb314527856abf86360e2219d9edf5b1337a4aea222f',1,'OperationsResearch::Pdlp::PrimalDualHybridGradientParams::Types']]],
+  ['constantstepsizerule_16',['ConstantStepSizeRule',['../classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams_1_1Types.html#abe66ba2e3ea4a97b9e62db1615b6a6fdabf86360e2219d9edf5b1337a4aea222f',1,'Google::OrTools::PDLP::PrimalDualHybridGradientParams::Types']]],
   ['constraint_17',['Constraint',['../classOperationsResearch_1_1MPModelProto_1_1Types_1_1Annotation_1_1Types.html#a56ff9111b67a2df7d6bfc4e77209a80ea5573c74299e0af37fd558445022c4b15',1,'OperationsResearch::MPModelProto::Types::Annotation::Types']]],
   ['containonecostscaling_18',['ContainOneCostScaling',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters_1_1Types.html#a77b7f871d119dd54009a5ebf5bfd986ea03c747c232909b1b5e508c5c85a9baeb',1,'Google::OrTools::Glop::GlopParameters::Types']]],
   ['cplex_5flinear_5fprogramming_19',['CPLEX_LINEAR_PROGRAMMING',['../classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a0a4a30e11e52fbdecf3ddc4eb4e50471ae6d94aed8be97c6b68b6b0681c8f46eb',1,'Google::OrTools::LinearSolver::Solver']]],
@@ -24,5 +24,5 @@ var searchData=
   ['cplexlinearprogramming_21',['CplexLinearProgramming',['../classOperationsResearch_1_1MPModelRequest_1_1Types.html#a49ae4b6577bc07957008f1c2ad283bc2ad44525f65ab1377cf2e320300f1e2e46',1,'OperationsResearch::MPModelRequest::Types']]],
   ['cplexmixedintegerprogramming_22',['CplexMixedIntegerProgramming',['../classOperationsResearch_1_1MPModelRequest_1_1Types.html#a49ae4b6577bc07957008f1c2ad283bc2ab1bd4489b49f57d66a4bbd36d8a3d1b6',1,'OperationsResearch::MPModelRequest::Types']]],
   ['cumulative_23',['Cumulative',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7aeb2527806a7e1ef48009eaaa785368fe',1,'Google::OrTools::Sat::ConstraintProto']]],
-  ['currentiterate_24',['CurrentIterate',['../namespaceOperationsResearch_1_1Pdlp.html#ae2dfa9d033c5bfffd99e8b6db3da9a9faa7c07f78e5f50f7c1eb6377c2b6dc945',1,'OperationsResearch::Pdlp']]]
+  ['currentiterate_24',['CurrentIterate',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a106d6f0c2814a905efac526b28b04e36aa7c07f78e5f50f7c1eb6377c2b6dc945',1,'Google::OrTools::PDLP']]]
 ];

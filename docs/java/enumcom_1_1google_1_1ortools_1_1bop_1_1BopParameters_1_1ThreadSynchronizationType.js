@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html#a5bb36c72ad6e25bbfac67739128ddb83", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html#ab28a17d5242d63b43523ef9421fdad7d", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html#a7461672502536b86863f3c911f290e10", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html#aa02bc2f52521013e076d00bb1c80d48a", null ],

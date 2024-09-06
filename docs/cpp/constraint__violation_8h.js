@@ -7,6 +7,7 @@ var constraint__violation_8h =
     [ "operations_research::sat::CompiledLinMaxConstraint", "classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html", "classoperations__research_1_1sat_1_1CompiledLinMaxConstraint" ],
     [ "operations_research::sat::CompiledIntProdConstraint", "classoperations__research_1_1sat_1_1CompiledIntProdConstraint.html", "classoperations__research_1_1sat_1_1CompiledIntProdConstraint" ],
     [ "operations_research::sat::CompiledIntDivConstraint", "classoperations__research_1_1sat_1_1CompiledIntDivConstraint.html", "classoperations__research_1_1sat_1_1CompiledIntDivConstraint" ],
+    [ "operations_research::sat::CompiledIntModConstraint", "classoperations__research_1_1sat_1_1CompiledIntModConstraint.html", "classoperations__research_1_1sat_1_1CompiledIntModConstraint" ],
     [ "operations_research::sat::CompiledAllDiffConstraint", "classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html", "classoperations__research_1_1sat_1_1CompiledAllDiffConstraint" ],
     [ "operations_research::sat::CompiledNoOverlapConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html", "classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint" ],
     [ "operations_research::sat::CompiledCumulativeConstraint", "classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html", "classoperations__research_1_1sat_1_1CompiledCumulativeConstraint" ],

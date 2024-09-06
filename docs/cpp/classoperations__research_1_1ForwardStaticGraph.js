@@ -1,8 +1,8 @@
 var classoperations__research_1_1ForwardStaticGraph =
 [
     [ "CycleHandlerForAnnotatedArcs", "classoperations__research_1_1ForwardStaticGraph_1_1CycleHandlerForAnnotatedArcs.html", "classoperations__research_1_1ForwardStaticGraph_1_1CycleHandlerForAnnotatedArcs" ],
-    [ "ArcIndex", "classoperations__research_1_1ForwardStaticGraph.html#adb472ecf630f43f292ce28d0de542ac5", null ],
-    [ "NodeIndex", "classoperations__research_1_1ForwardStaticGraph.html#add943be8b26c7537cf53b9dbfc32fd99", null ],
+    [ "ArcIndex", "classoperations__research_1_1ForwardStaticGraph.html#ae5ce8fe1dca8e1186c8bb93ec2bbed6e", null ],
+    [ "NodeIndex", "classoperations__research_1_1ForwardStaticGraph.html#a1fb1112dac879c592e603dc1d3970fd7", null ],
     [ "ForwardStaticGraph", "classoperations__research_1_1ForwardStaticGraph.html#a299d30373ebbfcb70fc84ecc66d95b92", null ],
     [ "BuildTailArray", "classoperations__research_1_1ForwardStaticGraph.html#afff790414356268c9a40c7fa5316eebf", null ],
     [ "CheckArcBounds", "classoperations__research_1_1ForwardStaticGraph.html#a325685db5b8c282db5b30a78206edd30", null ],

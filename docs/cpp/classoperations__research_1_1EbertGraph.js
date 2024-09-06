@@ -2,8 +2,8 @@ var classoperations__research_1_1EbertGraph =
 [
     [ "IncomingArcIterator", "classoperations__research_1_1EbertGraph_1_1IncomingArcIterator.html", "classoperations__research_1_1EbertGraph_1_1IncomingArcIterator" ],
     [ "OutgoingOrOppositeIncomingArcIterator", "classoperations__research_1_1EbertGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", "classoperations__research_1_1EbertGraph_1_1OutgoingOrOppositeIncomingArcIterator" ],
-    [ "ArcIndex", "classoperations__research_1_1EbertGraph.html#a63a3ceac3b9c14b81d517117914a7010", null ],
-    [ "NodeIndex", "classoperations__research_1_1EbertGraph.html#af1720ff38e249834efb67023e4393fad", null ],
+    [ "ArcIndex", "classoperations__research_1_1EbertGraph.html#abbf0e4602d07d92bcb8d5f193379a38e", null ],
+    [ "NodeIndex", "classoperations__research_1_1EbertGraph.html#a47882a229bf96369d09c0eddb30a0694", null ],
     [ "EbertGraph", "classoperations__research_1_1EbertGraph.html#adbd8962e4234a144e016479cf3fc7357", null ],
     [ "EbertGraph", "classoperations__research_1_1EbertGraph.html#a485bd7f0bcfb0aa0b4906f06c895b5fd", null ],
     [ "~EbertGraph", "classoperations__research_1_1EbertGraph.html#a85b7aa85a264fcc445bdbce6befc8c78", null ],

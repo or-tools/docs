@@ -6,5 +6,6 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct =
     [ "_quadratic_flatten_once_and_add_to", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#a7ac8fe9183584d64bef6ce6de848aa0b", null ],
     [ "quadratic", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#a698e2fbbe6d8ceb33cf07148056f0b95", null ],
     [ "scalar", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#a0d58808fef5d654daeae84ac2bc6ffe4", null ],
-    [ "_quadratic", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#a1330ac8365b0c08c264c1b1e7e7a70fa", null ]
+    [ "_quadratic", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#a1330ac8365b0c08c264c1b1e7e7a70fa", null ],
+    [ "_scalar", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html#af43e107d4786a6d3ab76635e92a60c92", null ]
 ];

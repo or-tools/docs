@@ -4,12 +4,13 @@ var cp__model__solver_8h =
     [ "CpSatSolverVersion", "cp__model__solver_8h.html#a864c163d77d4ede1b9111a426493a497", null ],
     [ "CpSolverResponseStats", "cp__model__solver_8h.html#af443c47f14a044d69553b02337b5dc52", null ],
     [ "LoadAndSolveCpModelForTest", "cp__model__solver_8h.html#a277ebf478f1fa693dd01867071080203", null ],
+    [ "NewBestBoundCallback", "cp__model__solver_8h.html#a9e8bc70ae581d62f20820eebbb17407e", null ],
+    [ "NewFeasibleSolutionLogCallback", "cp__model__solver_8h.html#aa7e12611a48297771228ed1bb6971fe1", null ],
+    [ "NewFeasibleSolutionObserver", "cp__model__solver_8h.html#a0558490428f07c5db7b6ae292001375c", null ],
     [ "NewSatParameters", "cp__model__solver_8h.html#adbf4fa68898b3aaa2e6de2b5d3064580", null ],
+    [ "NewSatParameters", "cp__model__solver_8h.html#a10700832ca6bc420f2931eb707957b0b", null ],
     [ "Solve", "cp__model__solver_8h.html#a09d851f944ab4f305c3d9f8df99b7bf8", null ],
     [ "SolveCpModel", "cp__model__solver_8h.html#a9d67b9c66f1cb9c1dcc3415cd5af11bf", null ],
     [ "SolveWithParameters", "cp__model__solver_8h.html#aa3062797aa0396abf37dbcc99a746f12", null ],
-    [ "SolveWithParameters", "cp__model__solver_8h.html#af52c27ecb43d6486c1a70e022b4aad39", null ],
-    [ "NewFeasibleSolutionLogCallback", "cp__model__solver_8h.html#a13f4d3a3e426ad0b337a6fe2e4d3a4f4", null ],
-    [ "NewFeasibleSolutionObserver", "cp__model__solver_8h.html#acfd21bf42faf606c3e0bc3a1f1ecd29d", null ],
-    [ "NewSatParameters", "cp__model__solver_8h.html#a8778e9db6fac31eddd2d7308e11e30df", null ]
+    [ "SolveWithParameters", "cp__model__solver_8h.html#af52c27ecb43d6486c1a70e022b4aad39", null ]
 ];

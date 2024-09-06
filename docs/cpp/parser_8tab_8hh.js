@@ -4,8 +4,6 @@ var parser_8tab_8hh =
     [ "ORFZ_DEBUG", "parser_8tab_8hh.html#aa9f05d9712a795f726cffb4cc5c3393d", null ],
     [ "ORFZ_TOKENTYPE", "parser_8tab_8hh.html#a769f973b7f1d3270f6030dc7553be8ed", null ],
     [ "YYLEX_PARAM", "parser_8tab_8hh.html#adc0d8ea07f0c331fcda68c49fe1145bc", null ],
-    [ "orfz_token_kind_t", "parser_8tab_8hh.html#a268b7774ca45ed59f124bcbb4c7cff02", null ],
-    [ "YYSTYPE", "parser_8tab_8hh.html#ada05af3f6f19ddaae9f4a382f8a4e4cd", null ],
     [ "orfz_tokentype", "parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69", [
       [ "ORFZ_EMPTY", "parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69ab2325f79f66053a950cdb1541dd38b44", null ],
       [ "ORFZ_EOF", "parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af1b680f86b42fd013328a0ad4a38af84", null ],

@@ -134,7 +134,7 @@ var annotated_dup =
             [ "BoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression" ],
             [ "LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase" ],
             [ "LinearConstraint", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint" ],
-            [ "LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry" ],
+            [ "LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", null ],
             [ "LinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression" ],
             [ "LinearLinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct" ],
             [ "LinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct" ],
@@ -162,10 +162,10 @@ var annotated_dup =
           [ "model_storage", "namespaceortools_1_1math__opt_1_1python_1_1model__storage.html", [
             [ "BadLinearConstraintIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError" ],
             [ "BadVariableIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadVariableIdError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadVariableIdError" ],
-            [ "LinearConstraintMatrixIdEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry" ],
-            [ "LinearObjectiveEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry" ],
+            [ "LinearConstraintMatrixIdEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html", null ],
+            [ "LinearObjectiveEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html", null ],
             [ "ModelStorage", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1ModelStorage.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1ModelStorage" ],
-            [ "QuadraticEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry" ],
+            [ "QuadraticEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html", null ],
             [ "QuadraticTermIdKey", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey" ],
             [ "StorageUpdateTracker", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker" ],
             [ "UsedUpdateTrackerAfterRemovalError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError.html", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError" ]
@@ -209,7 +209,7 @@ var annotated_dup =
           ] ],
           [ "statistics", "namespaceortools_1_1math__opt_1_1python_1_1statistics.html", [
             [ "ModelRanges", "classortools_1_1math__opt_1_1python_1_1statistics_1_1ModelRanges.html", "classortools_1_1math__opt_1_1python_1_1statistics_1_1ModelRanges" ],
-            [ "Range", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range" ]
+            [ "Range", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html", null ]
           ] ],
           [ "testing", "namespaceortools_1_1math__opt_1_1python_1_1testing.html", [
             [ "compare_proto", "namespaceortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto.html", [

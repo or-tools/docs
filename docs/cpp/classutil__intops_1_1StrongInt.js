@@ -1,8 +1,8 @@
 var classutil__intops_1_1StrongInt =
 [
     [ "Hasher", "structutil__intops_1_1StrongInt_1_1Hasher.html", "structutil__intops_1_1StrongInt_1_1Hasher" ],
-    [ "ThisType", "classutil__intops_1_1StrongInt.html#a629da8a2dbd540a0d0e377fd7bcebea7", null ],
-    [ "ValueType", "classutil__intops_1_1StrongInt.html#afbbfdbc776c7f226825332fecbc7f618", null ],
+    [ "ThisType", "classutil__intops_1_1StrongInt.html#a4dbc79188a4dec6ea1bcaf9b7e7ec784", null ],
+    [ "ValueType", "classutil__intops_1_1StrongInt.html#a141161f22a8b669ea010327e5f1815ae", null ],
     [ "StrongInt", "classutil__intops_1_1StrongInt.html#aef894225285e44eb7ed3e895ca4c1cc6", null ],
     [ "StrongInt", "classutil__intops_1_1StrongInt.html#a449d7453498d2ccfb65b5c10291a0c22", null ],
     [ "operator T", "classutil__intops_1_1StrongInt.html#af661cd13bdcc81558cae271ced504585", null ],

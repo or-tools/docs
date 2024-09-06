@@ -7,5 +7,6 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression =
     [ "evaluate", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#ae96e94e9a1a4515bcfe1cf9ef1dc9396", null ],
     [ "offset", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#ac62800d1235a28e1d1ece190f8d93793", null ],
     [ "terms", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#ac99aa122a20fb205ddcf0914d0ee18d4", null ],
-    [ "_offset", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#a22003ed0b94c36f43e997d570ee2eb3d", null ]
+    [ "_offset", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#a2b6cfb22f1b08bd801b8bf11038fd913", null ],
+    [ "_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html#a77d0dc6fffdbbdb846de3891b84061e5", null ]
 ];

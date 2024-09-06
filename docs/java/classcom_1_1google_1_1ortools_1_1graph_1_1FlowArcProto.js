@@ -16,13 +16,12 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto =
     [ "hasHead", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a8a11f59e8e7fa473186bc914a68dc0ec", null ],
     [ "hasTail", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a552127141b41172ad7f2bc84fee4f359", null ],
     [ "hasUnitCost", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a8a2bae121197a7c8fac25cb27ad00555", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a4e7ec41ebec292e767d0e21c80beb2e9", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ad1e92d97af11f662c75c672378ca6c4d", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a74d2823468e4f2059debd1f7c3f4ed67", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#aab4692e9ff203c3be3122bf1329fb422", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a2a7e194a3c72b64a2f5cf0a0235f9de9", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a658906f69edda48af0f0544d2b6718cf", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ae200d8fc63f900620dc6ad7359fdbeb6", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ad919194ddd8e661251a12d40ab0855b9", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a8979e5c354e6b0e30f6628d80fc10e93", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a3f25aa55db388f8fdd9aa6ca37a8ea54", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a860f9fb633f688a15d9b5e81ae950127", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a33fb065e129c65ef23b64ba3ebe6531e", null ],
@@ -40,7 +39,6 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto =
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ab7dadb6d3050f06ffcac01e61ba18e42", null ],
     [ "CAPACITY_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ac027064a9b9d3b04df43406d0d3a6d5f", null ],
     [ "HEAD_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a22b7007505629fec6d5d81277c00ef46", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#adabf14dee65735e9a2efae0b0bef617d", null ],
     [ "TAIL_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#ae848be225ec33862f9b0d12b684853fb", null ],
     [ "UNIT_COST_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html#a707fa4473404b015923225b95cad2b13", null ]
 ];

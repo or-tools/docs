@@ -7,10 +7,10 @@ var classortools_1_1linear__solver_1_1pywraplp_1_1Variable =
     [ "basis_status", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a49b0f8f664c6d9c77b4ffa5f44f49053", null ],
     [ "branching_priority", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a2452b08d54d478fe6ff309e5bb6087b3", null ],
     [ "index", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#aed94470379bd9baf1b0d65ca5b711b4b", null ],
-    [ "integer", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ae034042042187d52ad3fd21823606203", null ],
     [ "Integer", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a618f7c6832ba26b0c8a539ca93a9b29f", null ],
-    [ "lb", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#af0ccf45ad201883bbb9a73cfa6be48b4", null ],
+    [ "integer", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ae034042042187d52ad3fd21823606203", null ],
     [ "Lb", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a5a82c296c49652cf59e04123d072af5f", null ],
+    [ "lb", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#af0ccf45ad201883bbb9a73cfa6be48b4", null ],
     [ "name", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ad5d02d6f1b1720edd2b5c0406b1c23ee", null ],
     [ "reduced_cost", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ad7833623e3d458fc5084faefae576ea7", null ],
     [ "ReducedCost", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a065a4c29d48300d6a42ba1ea3590983d", null ],
@@ -21,7 +21,7 @@ var classortools_1_1linear__solver_1_1pywraplp_1_1Variable =
     [ "SetUb", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a82c3a17eb0799695834dc9f7448c5c01", null ],
     [ "solution_value", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#addcf45553fadbe971c9acaba7eae997b", null ],
     [ "SolutionValue", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#acde5c7f9d782dfa89fa4e02982df4016", null ],
-    [ "ub", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#abe118054733f417662ea4508f682fdd8", null ],
     [ "Ub", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a9fe5c7eb3504dcb80f16f62cd05b05f1", null ],
+    [ "ub", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#abe118054733f417662ea4508f682fdd8", null ],
     [ "thisown", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#ad00c8e3075de67b76103057a2e1ebd9b", null ]
 ];

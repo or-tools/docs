@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a8be1518b93f666c10ff352f3fd0801a8", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#af74d84ba06a7ffb8ccbef29af0ec5b41", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a40ed47edf3012a678174d0df3f9db02e", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#ae68a68bf36dbde26e9e5b8ccc10fc95d", null ],

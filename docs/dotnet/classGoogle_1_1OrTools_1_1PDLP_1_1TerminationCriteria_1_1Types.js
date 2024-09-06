@@ -1,0 +1,5 @@
+var classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types =
+[
+    [ "DetailedOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria" ],
+    [ "SimpleOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria" ]
+];

@@ -13,13 +13,12 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution =
     [ "getVariableValueList", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a7e819a360a521d3e01675aff0bff9c24", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#aa8704fe714f435eeba811e91f005d951", null ],
     [ "hasObjectiveValue", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a59199d50bec96e09a4ed996b6089c3f4", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a764e6eb39fba799c77d0142683433934", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#ac5bc4fc7e4430aade6f0d648eb43e1ed", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a9f1502a1a02b8b68b2230c0d0c3077f1", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#ad96132363e6dc2c7dd0462890b600365", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#aad371d63f4d097c688cbfdbbd56e2adc", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a32c26049e9aac4c8b2cb588662c8a131", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#aec7b2cb630c7644a81da88a8467c9c0e", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a4a311130c1e652d6bc0e6b596f0fbd89", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a90d2d953866df31ffec97cf6203dc3c0", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a4671b3eb0c1406f068c6ef63affe7e5e", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#ac6ca6409309579929cc6d10eaeecc8b5", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#ae14f491bd214e9c45f1c141081b1707a", null ],
@@ -36,6 +35,5 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution =
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#af050906d517ba635eb4f1cc41ad3fdf6", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a2e93c9f74761c34459b3b875cd0ad9f2", null ],
     [ "OBJECTIVE_VALUE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a2f75e78bb7223a6a7dd3702dbbc8b7d5", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a90c217aed2439f1afa9001b537f8905e", null ],
     [ "VARIABLE_VALUE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolution.html#a1676f78c9d51e90536ce3ad6942d07d9", null ]
 ];

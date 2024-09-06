@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity.html#a859b3251bb98b051d07fee10f9fc7140", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity.html#a80999d7ca7b8cb088bbd1e6e4baf94cc", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity.html#a6895b698ca5375ebb032a39d391f72f0", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Polarity.html#ab4f97364debc1c4b84ea1864521162e1", null ],

@@ -12,13 +12,12 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo =
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a8d029fee872042170a45e786d01996d1", null ],
     [ "hasSolveUserTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a857a62d83df6a5468d08cd1252111a7e", null ],
     [ "hasSolveWallTimeSeconds", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a945299ff0480ef21e24351f8f9d54ffd", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a1286fc89eaf8b1ba814a037e118550d4", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a6fbcebdabbb930bfdb41ece2cf4b9d73", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#ae0341aa0e6dd4d3e5665a7387fe694e1", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a1e271075a25455454b843b9966c427c0", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#aae7187f3f459b39ff56ed87959734b61", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#ad8f8a6238c8df6f88037967538cb1119", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a07e7ef38fc779dbb45e4027883de36f9", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a0e5c5f24cf8e48f22590ae6d864e969c", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a04ccd3d4f9c71fb84bce25432ccc8515", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a897169a0cf0ac08ff03023f39fd18f8a", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a15f8619800d81a172a7c597e9c703d62", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a72a532a7a092eadad51a714794d357fb", null ],
@@ -34,7 +33,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo =
     [ "parser", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#aee646318ef28a07cf48b803b1da418a6", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a08e996816749079f077bf01f569be5be", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a6396b41b1dc6e8658f4a580a410d6c2d", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a30abca30a61c7b297693a1bff439e109", null ],
     [ "SOLVE_USER_TIME_SECONDS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#acb81bc5ba682adbde3f9ef0904616a31", null ],
     [ "SOLVE_WALL_TIME_SECONDS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolveInfo.html#a0dadac39da258ffe7ff8662681f734fb", null ]
 ];

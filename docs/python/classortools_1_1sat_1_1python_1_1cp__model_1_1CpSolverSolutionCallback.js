@@ -1,6 +1,6 @@
 var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback =
 [
-    [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a23285a52249cfaf9489c4efc3c36bcf0", null ],
+    [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#ae435fc0c2dd0bee7a51d392d5598ea08", null ],
     [ "best_objective_bound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a24c2d0c9ada7f665830b3a3a4d4f7043", null ],
     [ "boolean_value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a0747c687d1ab4734b5ed62f9746fa624", null ],
     [ "deterministic_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a1db89c3a2d5eb09810b4d2ee1eb761ac", null ],

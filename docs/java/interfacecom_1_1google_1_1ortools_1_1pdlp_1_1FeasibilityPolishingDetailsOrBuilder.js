@@ -1,0 +1,26 @@
+var interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder =
+[
+    [ "getIterationCount", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ab0af325b7e5ac10edcf82f56f0b0a869", null ],
+    [ "getIterationStats", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a5f03d17d9c98221420181aea8011e48b", null ],
+    [ "getIterationStatsCount", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a03f74007d946b4188f06838438b5021d", null ],
+    [ "getIterationStatsList", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ad80f3a42af0c13e99f3a41f871037e97", null ],
+    [ "getIterationStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a6f3f9534253800ab7c500c76f4746b6c", null ],
+    [ "getIterationStatsOrBuilderList", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a7a8717764b51f15225557bc16a4d4b4d", null ],
+    [ "getMainIterationCount", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ad091445fd01ee6ec34c92b244afaf5b6", null ],
+    [ "getParams", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a0ef7bb7568b8c6e3a8ed7d2112cb8ca3", null ],
+    [ "getParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#aabda51162df5346cefde8833988c2fe1", null ],
+    [ "getPolishingPhaseType", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#acd81d4dcb4d6799b9e20a32407a52a29", null ],
+    [ "getSolutionStats", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a4205dd73e7b6b737af1f27e62476e6f4", null ],
+    [ "getSolutionStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a878f28f98de7a9d908403ecd2887d044", null ],
+    [ "getSolutionType", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#aed2dd6a50f9166c1234447868c34cb99", null ],
+    [ "getSolveTimeSec", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#af82480f2bea362f56ca99d81ac7fa924", null ],
+    [ "getTerminationReason", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a62aa1c4b9358751a582a5571c2790f53", null ],
+    [ "hasIterationCount", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a1fec01beeef947ce74e834ad321e3c6c", null ],
+    [ "hasMainIterationCount", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ad303c6d04d4135a13e0880fc1cf401d4", null ],
+    [ "hasParams", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ae849fd6abae831fe41822e2471f0f63c", null ],
+    [ "hasPolishingPhaseType", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a0857b97f6295b19fdcb9b01749fdcb8b", null ],
+    [ "hasSolutionStats", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a6e5553a3bf408a5aea47e50699ed2799", null ],
+    [ "hasSolutionType", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#a00b897bc9b6f426cf03f46b5afbce41b", null ],
+    [ "hasSolveTimeSec", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#ab7d9e927d5f5d51b89a60e2f88e9b99b", null ],
+    [ "hasTerminationReason", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html#aabd3ac466b366d9b2ae3fa5b76f17d66", null ]
+];

@@ -8,7 +8,7 @@ var classoperations__research_1_1SatInterface =
     [ "ClearConstraint", "classoperations__research_1_1SatInterface.html#a7961deb7d91b620cf52052d8835d4bf3", null ],
     [ "ClearObjective", "classoperations__research_1_1SatInterface.html#ada546af000f099e73f93ce92b029813d", null ],
     [ "column_status", "classoperations__research_1_1SatInterface.html#add356aa4b248dc0a195f9bda8e16813f", null ],
-    [ "DirectlySolveProto", "classoperations__research_1_1SatInterface.html#aa547bd3bd6144efef0c257ada432a5d7", null ],
+    [ "DirectlySolveProto", "classoperations__research_1_1SatInterface.html#ad2da0ea92e2cac6b74e48db7c6b084aa", null ],
     [ "ExtractNewConstraints", "classoperations__research_1_1SatInterface.html#a89643222ca9741dc27ecf6d0a9e04f53", null ],
     [ "ExtractNewVariables", "classoperations__research_1_1SatInterface.html#ab1be252452ff609007e92c5e367834e8", null ],
     [ "ExtractObjective", "classoperations__research_1_1SatInterface.html#a55148d7b6304ff0fe208559a8c207815", null ],
@@ -38,5 +38,6 @@ var classoperations__research_1_1SatInterface =
     [ "SetVariableInteger", "classoperations__research_1_1SatInterface.html#a7513d04d0f054cb4f2665d9ded795689", null ],
     [ "Solve", "classoperations__research_1_1SatInterface.html#a69f9f38dc595d55c3be97d5e2aa69003", null ],
     [ "SolverVersion", "classoperations__research_1_1SatInterface.html#aa3effe512b7ebecd1b757749be2fba66", null ],
+    [ "SupportsDirectlySolveProto", "classoperations__research_1_1SatInterface.html#a422051b8367623d53c3378cd00ddfcef", null ],
     [ "underlying_solver", "classoperations__research_1_1SatInterface.html#a48cd33dd1b2196e420abf6435b87b6cd", null ]
 ];

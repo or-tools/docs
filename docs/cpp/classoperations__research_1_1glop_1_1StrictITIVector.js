@@ -1,8 +1,8 @@
 var classoperations__research_1_1glop_1_1StrictITIVector =
 [
     [ "ConstView", "classoperations__research_1_1glop_1_1StrictITIVector.html#a5913128a85eac124919a5e8685202e33", null ],
-    [ "IndexType", "classoperations__research_1_1glop_1_1StrictITIVector.html#a99a436550793698955f9126a8d3082c7", null ],
-    [ "ParentType", "classoperations__research_1_1glop_1_1StrictITIVector.html#ab25b7c882f5acff0e3fdf67de24538de", null ],
+    [ "IndexType", "classoperations__research_1_1glop_1_1StrictITIVector.html#a05ae30b480a270a22ede6a6477ed783e", null ],
+    [ "ParentType", "classoperations__research_1_1glop_1_1StrictITIVector.html#a44867de7749ab5837967c57b0707242d", null ],
     [ "View", "classoperations__research_1_1glop_1_1StrictITIVector.html#a4947fe2055bd8a57e01d2ad68380625e", null ],
     [ "StrictITIVector", "classoperations__research_1_1glop_1_1StrictITIVector.html#af723ba245a5bfe5e9b1e3a0fb539334b", null ],
     [ "StrictITIVector", "classoperations__research_1_1glop_1_1StrictITIVector.html#ad58e4618cdc66123cf6ceedd4bae91ce", null ],

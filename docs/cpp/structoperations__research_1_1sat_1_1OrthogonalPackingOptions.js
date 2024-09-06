@@ -1,5 +1,6 @@
 var structoperations__research_1_1sat_1_1OrthogonalPackingOptions =
 [
+    [ "brute_force_threshold", "structoperations__research_1_1sat_1_1OrthogonalPackingOptions.html#a702b6452604ad69538b5089d93d52044", null ],
     [ "dff2_max_number_of_parameters_to_check", "structoperations__research_1_1sat_1_1OrthogonalPackingOptions.html#a38a9da46e4737bc4478234f4ede652ba", null ],
     [ "use_dff_f0", "structoperations__research_1_1sat_1_1OrthogonalPackingOptions.html#a96376a1117eb49cdaef15db1106b56bf", null ],
     [ "use_dff_f2", "structoperations__research_1_1sat_1_1OrthogonalPackingOptions.html#af0763b90d2ad77a00ca1d1f3890890ef", null ],

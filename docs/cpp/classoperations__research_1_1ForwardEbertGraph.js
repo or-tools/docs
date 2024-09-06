@@ -1,7 +1,7 @@
 var classoperations__research_1_1ForwardEbertGraph =
 [
-    [ "ArcIndex", "classoperations__research_1_1ForwardEbertGraph.html#abd24e74c9c077d01704ea898863e35e6", null ],
-    [ "NodeIndex", "classoperations__research_1_1ForwardEbertGraph.html#abe6bf9da3d9867dfb88d65d99ce657ad", null ],
+    [ "ArcIndex", "classoperations__research_1_1ForwardEbertGraph.html#a38cbc6c0c0fbe5a4613fb2454250fb63", null ],
+    [ "NodeIndex", "classoperations__research_1_1ForwardEbertGraph.html#a3a4bd0ecbef5b95638b5215a763332d0", null ],
     [ "ForwardEbertGraph", "classoperations__research_1_1ForwardEbertGraph.html#acd1b48d245b0892f4427a90011976e6c", null ],
     [ "ForwardEbertGraph", "classoperations__research_1_1ForwardEbertGraph.html#a40c24da8c720bc8b18274f53c62b24b9", null ],
     [ "~ForwardEbertGraph", "classoperations__research_1_1ForwardEbertGraph.html#a6c8c4982af7ce7f58794956f3267d488", null ],

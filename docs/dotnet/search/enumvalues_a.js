@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['l2_0',['L2',['../namespaceOperationsResearch_1_1Pdlp.html#a31fbad5b58a1b77f1ab6c33005cf928ea7e6aa2d53f6ee2b1a34b017fa403cb76',1,'OperationsResearch::Pdlp']]],
+  ['l2_0',['L2',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a069529c88ff714a40d23b802c2e8909ea7e6aa2d53f6ee2b1a34b017fa403cb76',1,'Google::OrTools::PDLP']]],
   ['lbdmovingaveragerestart_1',['LbdMovingAverageRestart',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a63be85029756eafa85b823c46decd833a7a6ee3cfce4f7103a4e6c19487a1184b',1,'Google::OrTools::Sat::SatParameters::Types']]],
   ['letsolverdecide_2',['LetSolverDecide',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters_1_1Types.html#a342487496741180d11ab4cbde7507471afa4928963712f1404fbced60911bea02',1,'Google::OrTools::Glop::GlopParameters::Types']]],
   ['linear_3',['Linear',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7a32a843da6ea40ab3b17a3421ccdf671b',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['linearprogram_4',['LinearProgram',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters_1_1Types.html#a4a509e9945717aa6471d74b46e7832a1a60324b2357f6d13e40dd6e095cca6cf6',1,'Google::OrTools::Glop::GlopParameters::Types']]],
   ['linearrelaxation_5',['LinearRelaxation',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod_1_1Types.html#a1932e76c998b262c3e3745f4d93c3cffac39cc75d0760df10bfcdfebe3f1a4e20',1,'Google::OrTools::Bop::BopOptimizerMethod::Types']]],
   ['linearsumassignment_6',['LinearSumAssignment',['../classGoogle_1_1OrTools_1_1Graph_1_1FlowModelProto_1_1Types.html#a54ab44492aa7e9760e5e89b499b3bb64a198e31d50024d5f23e9d0e98dfe8541b',1,'Google::OrTools::Graph::FlowModelProto::Types']]],
-  ['linf_7',['LInf',['../namespaceOperationsResearch_1_1Pdlp.html#a31fbad5b58a1b77f1ab6c33005cf928ea670dd9977bd096e92741f57578aab0f7',1,'OperationsResearch::Pdlp']]],
-  ['linfcomponentwise_8',['LInfComponentwise',['../namespaceOperationsResearch_1_1Pdlp.html#a31fbad5b58a1b77f1ab6c33005cf928ea65979fb243e7b3528ba93240d03de7b2',1,'OperationsResearch::Pdlp']]],
+  ['linf_7',['LInf',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a069529c88ff714a40d23b802c2e8909ea670dd9977bd096e92741f57578aab0f7',1,'Google::OrTools::PDLP']]],
+  ['linfcomponentwise_8',['LInfComponentwise',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a069529c88ff714a40d23b802c2e8909ea65979fb243e7b3528ba93240d03de7b2',1,'Google::OrTools::PDLP']]],
   ['linmax_9',['LinMax',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1746facda48573cc9894d9b5ea1411c7af067905cb02860b539ca5d5051b63c59',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['localcheapestarc_10',['LocalCheapestArc',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fad8f6fc249fb502b8ad0fb30eea3e67c7',1,'Google::OrTools::ConstraintSolver::FirstSolutionStrategy::Types']]],
   ['localcheapestcostinsertion_11',['LocalCheapestCostInsertion',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa3c9f0bff513001ddca861683882eba1c',1,'Google::OrTools::ConstraintSolver::FirstSolutionStrategy::Types']]],

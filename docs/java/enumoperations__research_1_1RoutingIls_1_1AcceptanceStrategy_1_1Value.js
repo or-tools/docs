@@ -1,5 +1,6 @@
 var enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value =
 [
+    [ "[static initializer]", "enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value.html#a90b6ea94ff493bf807bd2836e16adb6c", null ],
     [ "forNumber", "enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value.html#ac39674f06d53f5ded7f29544c241ec68", null ],
     [ "getDescriptor", "enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value.html#a5f7ad72419d9265fbff38831268d2bea", null ],
     [ "getDescriptorForType", "enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value.html#ae449bd282f755e419ff43073d033457c", null ],

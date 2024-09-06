@@ -13,13 +13,12 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a0fe086afaa5eb3b66948989c54aa9151", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#adf8ac8c21c09233942d9badc0ac64b27", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a9892ce308b2f2429844f857985932517", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a9d14ad496a1f760518cca8459f436008", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a88d9761d708ebba02cab4aaa27f3f9cd", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a76a0269db60220df29e43197819269eb", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a6f3e4a1c9a14cb1298599b0f8f69f11d", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a51d5f29b04ec529c4481e512dfe44240", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a3d769c20fd59557f9288d9fc34b303d7", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a5dd0efe64d1718c254a8302583f46d74", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#affce6dfdf4bb3643d433927e570caeea", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a77ca248b7ecb1db6d983812b6e0f7449", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#ab36f1a829b1b263531af7bf9538e43df", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a6bd1c5ee3d0f25d9220f343ffd5a9515", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#ae223ca45507dd22ed89ceb9d9cd50efc", null ],
@@ -35,6 +34,5 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet =
     [ "parser", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a74cf5df6444be43f16d87a81516b3ee5", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#abafaba73f70ff45c4b70eb948c96ed3d", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a5fae8a3665f85b6e718e21f2e2dc65e0", null ],
-    [ "METHODS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a2f3d903ea6f658b7a685e8a5c9777357", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a0bf2b956ab39dd1383632bd2ec070c1b", null ]
+    [ "METHODS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html#a2f3d903ea6f658b7a685e8a5c9777357", null ]
 ];

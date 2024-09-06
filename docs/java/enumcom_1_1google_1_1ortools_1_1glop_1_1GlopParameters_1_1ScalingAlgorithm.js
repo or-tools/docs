@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm.html#a24cc74346c58e7db22f7b112585c3903", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm.html#aae22e0b2f09e7be6187bb70822f951da", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm.html#a970841f282d0c8aa279195f9216e6790", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm.html#a0169beacf585bbb1fd224a0de79c6370", null ],

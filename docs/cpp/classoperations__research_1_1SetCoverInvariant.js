@@ -2,11 +2,7 @@ var classoperations__research_1_1SetCoverInvariant =
 [
     [ "SetCoverInvariant", "classoperations__research_1_1SetCoverInvariant.html#a628207858da063861e027b4a98b3a378", null ],
     [ "CheckConsistency", "classoperations__research_1_1SetCoverInvariant.html#a7563d32f021f7b1bc43af67564fd8dea", null ],
-    [ "CheckCoverageAndMarginalImpacts", "classoperations__research_1_1SetCoverInvariant.html#a28d4e5ad04d8e93d03503e8bc376ecec", null ],
-    [ "CheckSolution", "classoperations__research_1_1SetCoverInvariant.html#ad49731b027725bb96103b682d93490bb", null ],
-    [ "ComputeImpactedSubsets", "classoperations__research_1_1SetCoverInvariant.html#aae2ad7cdc8baaeee65c58c4647899e0f", null ],
-    [ "ComputeResettableSubsets", "classoperations__research_1_1SetCoverInvariant.html#a2c185cb9d7a28325d0b0ca951ead2a65", null ],
-    [ "ComputeSettableSubsets", "classoperations__research_1_1SetCoverInvariant.html#acaf5843dd9062e8b396f7a19df9bd4ed", null ],
+    [ "Clear", "classoperations__research_1_1SetCoverInvariant.html#adbea63b8c5716f586b07857ac85fb6da", null ],
     [ "cost", "classoperations__research_1_1SetCoverInvariant.html#aca3d679c044e5771401c4b6671c3a421", null ],
     [ "coverage", "classoperations__research_1_1SetCoverInvariant.html#af3f5c77428c334f1a048f79984c158c6", null ],
     [ "ExportSolutionAsProto", "classoperations__research_1_1SetCoverInvariant.html#a2b697a40dd33da943c9f7451ea6c3a47", null ],
@@ -15,12 +11,13 @@ var classoperations__research_1_1SetCoverInvariant =
     [ "is_removable", "classoperations__research_1_1SetCoverInvariant.html#ae7d45252f61a92cbdb3a9e36d0bb8342", null ],
     [ "is_selected", "classoperations__research_1_1SetCoverInvariant.html#a65d5b58cf9ea8db319839f69a968d4b0", null ],
     [ "LoadSolution", "classoperations__research_1_1SetCoverInvariant.html#a630f86d277effde6d742de2029917566", null ],
-    [ "MakeDataConsistent", "classoperations__research_1_1SetCoverInvariant.html#ace2a49965680049226e4973496a4cb82", null ],
-    [ "marginal_impacts", "classoperations__research_1_1SetCoverInvariant.html#ae9ec2697677a7b8bc5f99a9f03cfd9e8", null ],
     [ "model", "classoperations__research_1_1SetCoverInvariant.html#a6bb011167e1d0d0841f5ab57b30f90b4", null ],
-    [ "num_elements_covered", "classoperations__research_1_1SetCoverInvariant.html#ad305d9e00e9c50ab8d15a2b26a0e6fe7", null ],
-    [ "RecomputeIsRemovable", "classoperations__research_1_1SetCoverInvariant.html#a3bf18bb03aa9822dd27b8db515a2097b", null ],
+    [ "num_coverage_le_1_elements", "classoperations__research_1_1SetCoverInvariant.html#a3ebca36faedb94890bb3a41560a1a49f", null ],
+    [ "num_free_elements", "classoperations__research_1_1SetCoverInvariant.html#a0e4f5d7b149288c674e6764ce7ee99ee", null ],
+    [ "num_uncovered_elements", "classoperations__research_1_1SetCoverInvariant.html#a135ff3bb111476298c95b6d7bb4b5de5", null ],
+    [ "RecomputeInvariant", "classoperations__research_1_1SetCoverInvariant.html#a414adf230b10afe2cb45201d193c5cb6", null ],
     [ "Toggle", "classoperations__research_1_1SetCoverInvariant.html#af8599647e3b17994e852e3e05c512e33", null ],
+    [ "UnsafeRemove", "classoperations__research_1_1SetCoverInvariant.html#a086c4ccce3d101447931e3bb7838a195", null ],
     [ "UnsafeToggle", "classoperations__research_1_1SetCoverInvariant.html#a2ba953bb6a4384c86666ffc61fb3cc0e", null ],
-    [ "UpdateCoverage", "classoperations__research_1_1SetCoverInvariant.html#aa3304ad1c97b36527b007c6b7ea0b5e4", null ]
+    [ "UnsafeUse", "classoperations__research_1_1SetCoverInvariant.html#ab4cc940648ca5e400e68285f1dd2eab7", null ]
 ];

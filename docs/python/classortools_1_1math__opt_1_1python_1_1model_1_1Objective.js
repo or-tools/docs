@@ -17,5 +17,6 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1Objective =
     [ "offset", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#ad0ac8773c591e10ebd80760cbc52d701", null ],
     [ "quadratic_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#a323c794b875db4adf6eaeddb5c32be56", null ],
     [ "set_linear_coefficient", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#aef5ee9b5d76dec112f308c6f133c3c95", null ],
-    [ "set_quadratic_coefficient", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#a6c819bd30b1f518e59fc1cf939cae50f", null ]
+    [ "set_quadratic_coefficient", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#a6c819bd30b1f518e59fc1cf939cae50f", null ],
+    [ "_model", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html#aae504a80a7eb1c385b1e4e0b9b11ec2d", null ]
 ];

@@ -15,6 +15,7 @@ var sat_2lp__utils_8cc =
     [ "ScaleAndSetObjective", "sat_2lp__utils_8cc.html#a389ddb89e23f648aa44920b46d000749", null ],
     [ "ScaleContinuousVariables", "sat_2lp__utils_8cc.html#ad6d384c7c56f3027894875278e4b9526", null ],
     [ "coefficients", "sat_2lp__utils_8cc.html#ab1734711414da2e668957d24a41b1ddf", null ],
+    [ "keep_names", "sat_2lp__utils_8cc.html#a7f31218864fbe0eed4e16317561a7054", null ],
     [ "lower_bounds", "sat_2lp__utils_8cc.html#a561d7bf12fc7674b3fe0ad2ba2e175a0", null ],
     [ "max_absolute_rhs_error", "sat_2lp__utils_8cc.html#abf913d2698d28c0b6b29b4dd13d21dcc", null ],
     [ "max_relative_coeff_error", "sat_2lp__utils_8cc.html#a2a1a02478d02cd8e42a1afece079d4a2", null ],

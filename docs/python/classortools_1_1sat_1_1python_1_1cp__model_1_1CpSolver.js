@@ -1,6 +1,6 @@
 var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
 [
-    [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#adecbed105be78b679b6cf726f3413b19", null ],
+    [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a29ff9045a7c9a47e612c54d2abf0b407", null ],
     [ "_solution", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a94bcce9649d986f30be7b3a56b550540", null ],
     [ "best_objective_bound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af55a3ea4148cd755b89d7154584e1745", null ],
     [ "BestObjectiveBound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a53600e30823260b56e64722b687e638b", null ],
@@ -23,8 +23,8 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
     [ "SearchForAllSolutions", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a3bf9a55f21e51eff73a47d372646a7b5", null ],
     [ "solution_info", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a84ca81ee94d5a9784e717c7e4dfe2a0e", null ],
     [ "SolutionInfo", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a5306f15755e2cc9e0a9e27b288b3d061", null ],
-    [ "solve", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a0e8899df012b81c22aea1b3ddcbbb368", null ],
     [ "Solve", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a4e3c352b917851acd7751ba2c6490497", null ],
+    [ "solve", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a0e8899df012b81c22aea1b3ddcbbb368", null ],
     [ "SolveWithSolutionCallback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a2a862322152d04d3db9238cf3c4681ec", null ],
     [ "status_name", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af21a401eb45f4a34a1c4f682bc61ed76", null ],
     [ "StatusName", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#acb745b26181535d3d4427114105c4749", null ],
@@ -34,13 +34,14 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
     [ "SufficientAssumptionsForInfeasibility", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#aff99788296ca5ce42800811ef07b66ab", null ],
     [ "user_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a4984108f87bafe8301c0a487259eb683", null ],
     [ "UserTime", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a1cae1e8afb7567e645879378844a2229", null ],
-    [ "value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a53b87b4fad1a580444e3eec4d28ffb60", null ],
     [ "Value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a47407d97e7993b70c207f17a76800089", null ],
-    [ "values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af755b4ae5abfa1d1437f148cc3733443", null ],
+    [ "value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a53b87b4fad1a580444e3eec4d28ffb60", null ],
     [ "Values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a4dbf546606c6156c2fe5e0c214635a6d", null ],
+    [ "values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af755b4ae5abfa1d1437f148cc3733443", null ],
     [ "wall_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a23b9b02f598f62933dcbc198ec5426af", null ],
     [ "WallTime", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#abb928190f3301b1277fa7f7a957a74cd", null ],
     [ "_solution", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a718eca5c48c93d5b962ca2ba9069d922", null ],
+    [ "best_bound_callback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af1dcd041edb3fc2a4b0be52f217c1b12", null ],
     [ "log_callback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#ad1754db98e40672449de629d7f2a8771", null ],
     [ "parameters", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a566bee874a11750a6b583f88836e27bb", null ]
 ];

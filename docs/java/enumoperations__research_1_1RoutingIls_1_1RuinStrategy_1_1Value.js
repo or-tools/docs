@@ -1,5 +1,6 @@
 var enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value =
 [
+    [ "[static initializer]", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html#a6a784c0a270c49233b7cbe9a5c9515a7", null ],
     [ "forNumber", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html#a09f7b868bcd7412a4a1be44a932e8c0b", null ],
     [ "getDescriptor", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html#ab1f2e8d65e0758ed212b38688d8d4441", null ],
     [ "getDescriptorForType", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html#ab4e13a3f156d6b4b1c792340b64f2748", null ],

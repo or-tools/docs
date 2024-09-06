@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html#aa4cc88f6e9cf3bab250fe90b53b7b3bf", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html#ae633c1cf74a41ad8201b0b9df1480ffe", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html#ac8213577d2aaf0369328bebb9e10f157", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html#a104567b4644ed0b88e7f0a3c386ff3b0", null ],

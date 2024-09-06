@@ -10,7 +10,7 @@ var searchData=
   ['constraintsolverparameters_7',['ConstraintSolverParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverParameters.html',1,'Google::OrTools::ConstraintSolver']]],
   ['constraintsolverstatistics_8',['ConstraintSolverStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html',1,'Google::OrTools::ConstraintSolver']]],
   ['constraintsolvertest_9',['ConstraintSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1ConstraintSolverTest.html',1,'Google::OrTools::Tests']]],
-  ['convergenceinformation_10',['ConvergenceInformation',['../classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation.html',1,'OperationsResearch::Pdlp']]],
+  ['convergenceinformation_10',['ConvergenceInformation',['../classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html',1,'Google::OrTools::PDLP']]],
   ['cpmodel_11',['CpModel',['../classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html',1,'Google::OrTools::Sat']]],
   ['cpmodelproto_12',['CpModelProto',['../classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto.html',1,'Google::OrTools::Sat']]],
   ['cpmodelreflection_13',['CpModelReflection',['../classGoogle_1_1OrTools_1_1Sat_1_1CpModelReflection.html',1,'Google::OrTools::Sat']]],

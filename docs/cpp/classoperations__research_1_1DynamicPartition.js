@@ -1,13 +1,9 @@
 var classoperations__research_1_1DynamicPartition =
 [
     [ "IterablePart", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html", "structoperations__research_1_1DynamicPartition_1_1IterablePart" ],
-    [ "DebugStringSorting", "classoperations__research_1_1DynamicPartition.html#a67b2a5be57842485dcb3c3db93bc2e1a", [
-      [ "SORT_LEXICOGRAPHICALLY", "classoperations__research_1_1DynamicPartition.html#a67b2a5be57842485dcb3c3db93bc2e1aacb9b001cac613035de5d6f1f38f7fda1", null ],
-      [ "SORT_BY_PART", "classoperations__research_1_1DynamicPartition.html#a67b2a5be57842485dcb3c3db93bc2e1aa5edad0b79a2c83ec1b1560960504c161", null ]
-    ] ],
     [ "DynamicPartition", "classoperations__research_1_1DynamicPartition.html#afe6f90b99c0b1d646b00ad2d1bb0a09d", null ],
     [ "DynamicPartition", "classoperations__research_1_1DynamicPartition.html#ae0789ce355b93a5161e63666b4467e67", null ],
-    [ "DebugString", "classoperations__research_1_1DynamicPartition.html#ac535d0a440192c96effe5b938a9482c7", null ],
+    [ "DebugString", "classoperations__research_1_1DynamicPartition.html#a7058e937dbebd9b84a202573d9825640", null ],
     [ "ElementsInHierarchicalOrder", "classoperations__research_1_1DynamicPartition.html#a4151b05d39b89cb2c5aaa4530f0e7eb5", null ],
     [ "ElementsInPart", "classoperations__research_1_1DynamicPartition.html#ac1dcc361f73f495e0f362f834b224e89", null ],
     [ "ElementsInSamePartAs", "classoperations__research_1_1DynamicPartition.html#a79106998d8499c5c25f4c74c14456b60", null ],

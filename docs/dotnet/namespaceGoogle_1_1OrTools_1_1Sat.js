@@ -3,6 +3,8 @@ var namespaceGoogle_1_1OrTools_1_1Sat =
     [ "AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto" ],
     [ "AutomatonConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint" ],
     [ "AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto" ],
+    [ "BestBoundCallback", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback.html", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback" ],
+    [ "BestBoundCallbackDelegate", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallbackDelegate.html", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallbackDelegate" ],
     [ "BoolArgumentProto", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto" ],
     [ "BooleanAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment" ],
     [ "BooleanProblemReflection", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection" ],
@@ -74,5 +76,6 @@ var namespaceGoogle_1_1OrTools_1_1Sat =
       [ "Infeasible", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040a54def92f4c562f166a6abbcbceadeb46", null ],
       [ "Optimal", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040acb61fef1e5e79e07a80421cb9a073a80", null ]
     ] ],
+    [ "DoubleToVoidDelegate", "namespaceGoogle_1_1OrTools_1_1Sat.html#acd0a42977f006740f85cbb6a5a5f12a4", null ],
     [ "StringToVoidDelegate", "namespaceGoogle_1_1OrTools_1_1Sat.html#adc71c96c5becb4eba83715b1b4fd5a64", null ]
 ];

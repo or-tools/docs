@@ -106,6 +106,7 @@ var classoperations__research_1_1MPSolver =
     [ "SetTimeLimit", "classoperations__research_1_1MPSolver.html#a47a5516ca826adbc25bd5bf1d7935fd1", null ],
     [ "Solve", "classoperations__research_1_1MPSolver.html#a18aef4e4cdea4ee15ce472d3b5f57962", null ],
     [ "Solve", "classoperations__research_1_1MPSolver.html#a9f2efb3304b325430e46e848574d63e5", null ],
+    [ "SolveLazyMutableRequest", "classoperations__research_1_1MPSolver.html#a0152f4af541ca1b2aeb645b32ce04463", null ],
     [ "solver_infinity", "classoperations__research_1_1MPSolver.html#a84a654a5d22a25708afb36160a6df36b", null ],
     [ "SolverVersion", "classoperations__research_1_1MPSolver.html#aee22680c23e591329e9ac50ff78f572d", null ],
     [ "SolveWithProto", "classoperations__research_1_1MPSolver.html#aeb2254bd729ca1e7a66dfc0bfbfa48d2", null ],

@@ -212,6 +212,37 @@ var annotated_dup =
             [ "Variable", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1Variable.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1Variable" ],
             [ "WeightedSumExpression", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1WeightedSumExpression.html", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1WeightedSumExpression" ]
           ] ],
+          [ "pdlp", "namespacecom_1_1google_1_1ortools_1_1pdlp.html", [
+            [ "AdaptiveLinesearchParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams" ],
+            [ "AdaptiveLinesearchParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParamsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParamsOrBuilder" ],
+            [ "ConvergenceInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation" ],
+            [ "ConvergenceInformationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformationOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformationOrBuilder" ],
+            [ "FeasibilityPolishingDetails", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails" ],
+            [ "FeasibilityPolishingDetailsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder" ],
+            [ "InfeasibilityInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation" ],
+            [ "InfeasibilityInformationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformationOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformationOrBuilder" ],
+            [ "IterationStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats" ],
+            [ "IterationStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1IterationStatsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1IterationStatsOrBuilder" ],
+            [ "MalitskyPockParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams" ],
+            [ "MalitskyPockParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParamsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParamsOrBuilder" ],
+            [ "OptimalityNorm", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm" ],
+            [ "PointMetadata", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata" ],
+            [ "PointMetadataOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadataOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadataOrBuilder" ],
+            [ "PointType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PointType.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PointType" ],
+            [ "PolishingPhaseType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PolishingPhaseType.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PolishingPhaseType" ],
+            [ "PrimalDualHybridGradientParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams" ],
+            [ "PrimalDualHybridGradientParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder" ],
+            [ "QuadraticProgramStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats" ],
+            [ "QuadraticProgramStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStatsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStatsOrBuilder" ],
+            [ "RestartChoice", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice" ],
+            [ "SolveLog", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog" ],
+            [ "SolveLogOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOrBuilder" ],
+            [ "SolveLogOuterClass", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass" ],
+            [ "Solvers", "classcom_1_1google_1_1ortools_1_1pdlp_1_1Solvers.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1Solvers" ],
+            [ "TerminationCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria" ],
+            [ "TerminationCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder" ],
+            [ "TerminationReason", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationReason.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationReason" ]
+          ] ],
           [ "sat", "namespacecom_1_1google_1_1ortools_1_1sat.html", [
             [ "v1", "namespacecom_1_1google_1_1ortools_1_1sat_1_1v1.html", [
               [ "CpModelServiceProto", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpModelServiceProto.html", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpModelServiceProto" ],
@@ -333,10 +364,6 @@ var annotated_dup =
       ] ]
     ] ],
     [ "operations_research", "namespaceoperations__research.html", [
-      [ "pdlp", "namespaceoperations__research_1_1pdlp.html", [
-        [ "SolveLogOuterClass", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass.html", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass" ],
-        [ "Solvers", "classoperations__research_1_1pdlp_1_1Solvers.html", "classoperations__research_1_1pdlp_1_1Solvers" ]
-      ] ],
       [ "RoutingIls", "classoperations__research_1_1RoutingIls.html", "classoperations__research_1_1RoutingIls" ]
     ] ]
 ];

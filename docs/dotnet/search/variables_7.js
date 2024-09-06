@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handlesomeprimalgradientsonfiniteboundsasresidualsfieldnumber_0',['HandleSomePrimalGradientsOnFiniteBoundsAsResidualsFieldNumber',['../classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html#a876b8771651dd4c00a0cb293e02462ce',1,'OperationsResearch::Pdlp::PrimalDualHybridGradientParams']]],
+  ['handlesomeprimalgradientsonfiniteboundsasresidualsfieldnumber_0',['HandleSomePrimalGradientsOnFiniteBoundsAsResidualsFieldNumber',['../classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams.html#aa9d4de8e44d000a5993bd82da26898eb',1,'Google::OrTools::PDLP::PrimalDualHybridGradientParams']]],
   ['harristoleranceratiofieldnumber_1',['HarrisToleranceRatioFieldNumber',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#ab20d12230a985df76d4bf963c67fb328',1,'Google::OrTools::Glop::GlopParameters']]],
   ['headfieldnumber_2',['HeadFieldNumber',['../classGoogle_1_1OrTools_1_1Graph_1_1FlowArcProto.html#a06941a0da0436a2f739439dc53516450',1,'Google::OrTools::Graph::FlowArcProto']]],
   ['headsfieldnumber_3',['HeadsFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1CircuitConstraintProto.html#a9042964eb657e8a99302248bb540712a',1,'Google.OrTools.Sat.CircuitConstraintProto.HeadsFieldNumber'],['../classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a09e73cb8bb7dbe38e12c0e7d0249ce74',1,'Google.OrTools.Sat.RoutesConstraintProto.HeadsFieldNumber']]],

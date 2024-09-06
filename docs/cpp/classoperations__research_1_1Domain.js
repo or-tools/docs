@@ -45,6 +45,7 @@ var classoperations__research_1_1Domain =
     [ "operator=", "classoperations__research_1_1Domain.html#ad1331800052ed59ba22e4c6fabd40338", null ],
     [ "operator==", "classoperations__research_1_1Domain.html#acf15b6795a380eeb7521e1a8e15ee5d9", null ],
     [ "operator[]", "classoperations__research_1_1Domain.html#ad3bfaa1ea6a1fce5a0c5a8ee61bfca3f", null ],
+    [ "PartAroundZero", "classoperations__research_1_1Domain.html#ae6c1e0b5c2bf1adc663c7f8b2c8f912f", null ],
     [ "PositiveDivisionBySuperset", "classoperations__research_1_1Domain.html#aae1848a7fb08fe19a8300eaaa296603f", null ],
     [ "PositiveModuloBySuperset", "classoperations__research_1_1Domain.html#a62fcc9912334c4cc8b4958518ae4cd73", null ],
     [ "RelaxIfTooComplex", "classoperations__research_1_1Domain.html#ab06560137156458393e8f44acfd01712", null ],

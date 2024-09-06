@@ -13,7 +13,7 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr =
     [ "__rsub__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#a37f29ae09b6e6393678a74a24718f5fc", null ],
     [ "__sub__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#ac1669f948bbde5a9f0a330a4a5e97f21", null ],
     [ "__truediv__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#a03c9c55f5694f7852abff26ca71fcbd4", null ],
-    [ "sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#ac0b1e053ba2235e9d69e118ab20e57e8", null ],
-    [ "term", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#a705ff13cf243fb0fef8e8b3050c887d7", null ],
-    [ "weighted_sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#a868767016366d2420052e50170a6a420", null ]
+    [ "sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#acb0209fdc96548d00c2233d97f22332b", null ],
+    [ "term", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#ae1f8038b411a360bf0207d541b8a37ad", null ],
+    [ "weighted_sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html#ac524b9f7e0ff4192e7c6c31f9fce446c", null ]
 ];

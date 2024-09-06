@@ -1,6 +1,7 @@
 var structoperations__research_1_1sat_1_1ObjectiveDefinition =
 [
     [ "ScaleIntegerObjective", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html#a82b835956b6114e53e3666598e53b779", null ],
+    [ "ScaleObjective", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html#a5c9b444a1d2e456f14dc79b0056ebec1", null ],
     [ "coeffs", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html#ade5ce56af0034a480d4f4c9476a59eb9", null ],
     [ "objective_impacting_variables", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html#a47033e3e8665dcc21d575fc7434e7e0a", null ],
     [ "objective_var", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html#a0b9efe61e80a1e2fc4583998e25d335c", null ],

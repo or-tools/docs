@@ -26,10 +26,6 @@ var LinearSolver_8pb_8cs =
     [ "OperationsResearch.MPSolution", "classOperationsResearch_1_1MPSolution.html", "classOperationsResearch_1_1MPSolution" ],
     [ "OperationsResearch.MPSolveInfo", "classOperationsResearch_1_1MPSolveInfo.html", "classOperationsResearch_1_1MPSolveInfo" ],
     [ "OperationsResearch.MPSolutionResponse", "classOperationsResearch_1_1MPSolutionResponse.html", "classOperationsResearch_1_1MPSolutionResponse" ],
-    [ "pb", "LinearSolver_8pb_8cs.html#a3a8b1403f9034aa88aad1ce2c733db60", null ],
-    [ "pbc", "LinearSolver_8pb_8cs.html#acf353ca81053b715ef0a189df5a75499", null ],
-    [ "pbr", "LinearSolver_8pb_8cs.html#a4c9bca18934bf8b310b9d65812404c69", null ],
-    [ "scg", "LinearSolver_8pb_8cs.html#a6de48d7be2d1c733071a3f897657ee05", null ],
     [ "MPSolverResponseStatus", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6", [
       [ "MpsolverOptimal", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a8d5cc50fccb1a695ddbb5e7450c31c3b", null ],
       [ "MpsolverFeasible", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6addf4c361d2611834af061a4b4200e18b", null ],

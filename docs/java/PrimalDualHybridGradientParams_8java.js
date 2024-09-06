@@ -1,0 +1,10 @@
+var PrimalDualHybridGradientParams_8java =
+[
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.RestartStrategy", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.LinesearchRule", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptionsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder" ],
+    [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder" ]
+];

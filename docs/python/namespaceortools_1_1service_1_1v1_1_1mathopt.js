@@ -2,7 +2,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
 [
     [ "model_parameters_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#a9cf9f6b87ddfd358fb25a68a4bb56cbb", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#a5d3a4a0300b7f291fd666ee8901f88d6", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#af4f046e0c7770fcf7ff8ea187b56d42c", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#abbefdad9a223be878d5ffa02e42c9592", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#a54159b4fdc629f4b8b00822e10b72c4f", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__parameters__pb2.html#a345cf0849059dd23890b2016895230fe", null ],
@@ -11,7 +11,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
     ] ],
     [ "model_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#aaa6b287889908708210f435f101f4aa9", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#a5302f6023071668e534d4d5bf5c984ae", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#a6c3af309ddd0a942da6d62fa122dae5c", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#a699a3bffd43ac1bf27920a0eba62db22", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#a1216cc3a6adc250f3f217ca87adc125b", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1model__pb2.html#a3df4db7d0b7d60991eecc19c4a90046e", null ],
@@ -20,7 +20,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
     ] ],
     [ "parameters_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#a511d4e64dbefaf0a3903c4bdfc562bb7", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#ad2fea0ee3be835ee6d97801701efb295", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#a39195b8ddf177d1cecbcb522b2a89700", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#a9ede528e30e40d17634dc9ed003d8f3d", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#a178e56acea03ad8d524793f93cabfe85", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1parameters__pb2.html#a03557a9dc1a98217141d4c25b12bf321", null ],
@@ -29,7 +29,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
     ] ],
     [ "result_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#ada70224980c644f63937855fa188495f", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#a3e0dbc4ab506da87b77b20531eecdb7e", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#a75b116f0f1e559796fab748ddfaf85e8", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#a313344f597eb0b19e7b8bcd5cbf36f13", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#a426b8401397b137a62ec5302badf7a85", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1result__pb2.html#acafc28ee04c68930f7a821a6d98bea54", null ],
@@ -38,7 +38,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
     ] ],
     [ "solution_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#aa3786e13f9377fec49860adde2c44e1a", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#abaccd412e2740793c26f1f729c4b967a", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#a568778ce15b9e67a2cd1333736aae260", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#a6d34f8cf9f92a7d9112b709a9df81efb", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#a14bc1e7c49f11b47571037a5d5baa93c", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#a185858e6d66bdc0a7baf4ed9899c7c14", null ],
@@ -47,7 +47,7 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
     ] ],
     [ "sparse_containers_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a10f84c6cf7e7ef76ba565c243dbcc5f6", null ],
-      [ "_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a01c49616d7a1f84ce7ed6f6142c08495", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a3f9daa02517e0247090d81ed024ba80f", null ],
       [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#aaab2190a56def2bc4e4ecec95597475c", null ],
       [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a9edb49725cdca8a3f51a5abfd293d21d", null ],
       [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a2c728f3ee1e550419381fd09a7680d53", null ],

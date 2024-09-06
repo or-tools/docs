@@ -1,8 +1,8 @@
 var structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4 =
 [
-    [ "ArcIndex", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#aa6368fe9b8973e136da83e6a13825ef7", null ],
-    [ "Graph", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#ac66e0eebbeabd9a4a3b24cfb734a589b", null ],
-    [ "NodeIndex", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#a77ebbaf314514d539596cf23baf1b20c", null ],
+    [ "ArcIndex", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#a16a1f2379dc11f3937007c0ee3874513", null ],
+    [ "Graph", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#aeb4dc1ef31430f9c31da4a74d17f7775", null ],
+    [ "NodeIndex", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#a4dc894def5ff83c4f2dafe83087a0b95", null ],
     [ "ArcReservation", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#a92594364f4f2937129c921c372742a45", null ],
     [ "Build", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#a1f747b6fd23eaac5feac8cb4f3f3a798", null ],
     [ "Build", "structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#ad09c8a0cdfd9a213a8d89883e794e2d1", null ],

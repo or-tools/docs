@@ -18,7 +18,7 @@ var searchData=
   ['linearobjectiveorbuilder_15',['LinearObjectiveOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1LinearObjectiveOrBuilder.html',1,'com::google::ortools::sat']]],
   ['linearsolver_16',['LinearSolver',['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1LinearSolver.html',1,'com::google::ortools::linearsolver']]],
   ['linearsumassignment_17',['LinearSumAssignment',['../classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html',1,'com::google::ortools::graph']]],
-  ['linesearchrule_18',['LinesearchRule',['../enumoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html',1,'operations_research::pdlp::Solvers::PrimalDualHybridGradientParams']]],
+  ['linesearchrule_18',['LinesearchRule',['../enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html',1,'com::google::ortools::pdlp::PrimalDualHybridGradientParams']]],
   ['listofvariablesproto_19',['ListOfVariablesProto',['../classcom_1_1google_1_1ortools_1_1sat_1_1ListOfVariablesProto.html',1,'com::google::ortools::sat']]],
   ['listofvariablesprotoorbuilder_20',['ListOfVariablesProtoOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1ListOfVariablesProtoOrBuilder.html',1,'com::google::ortools::sat']]],
   ['literal_21',['Literal',['../interfacecom_1_1google_1_1ortools_1_1sat_1_1Literal.html',1,'com::google::ortools::sat']]],

@@ -31,5 +31,6 @@ var searchData=
   ['onsolutioncallback_28',['OnSolutionCallback',['../classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#ab519b26d0b2464441ff9c26e095c79f9',1,'ortools::sat::python::cp_model::CpSolverSolutionCallback']]],
   ['onstart_29',['OnStart',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarLocalSearchOperator.html#abb02f523fe8f1f8c612b22636222d89e',1,'ortools::constraint_solver::pywrapcp::IntVarLocalSearchOperator']]],
   ['operator_30',['Operator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a22f0085408c7e1453153bca6f753b77b',1,'ortools::constraint_solver::pywrapcp::Solver']]],
-  ['optimize_31',['Optimize',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a55b6c468fd34f3692b4fc86c48c79b62',1,'ortools::constraint_solver::pywrapcp::Solver']]]
+  ['optimize_31',['Optimize',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a55b6c468fd34f3692b4fc86c48c79b62',1,'ortools::constraint_solver::pywrapcp::Solver']]],
+  ['optional_5fsolution_5fstatus_5fto_5fproto_32',['optional_solution_status_to_proto',['../namespaceortools_1_1math__opt_1_1python_1_1solution.html#abb12f5a8a203adbcd5c60f569facf8ed',1,'ortools::math_opt::python::solution']]]
 ];

@@ -2,16 +2,17 @@ var namespaceortools_1_1math__opt =
 [
     [ "callback_pb2", "namespaceortools_1_1math__opt_1_1callback__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a0767a5ce55a7d36ad7c7f17adb95dad8", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1callback__pb2.html#ac6de5b44537acc8dc19725235900057e", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a8f7c73ed6c45a8c00a49275c0d735767", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1callback__pb2.html#ac2b50a84adc8ccea35c1a5174a10990a", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a950798342f299897f51592131a9b9e7a", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a6c6c1fa0c4f56758e26f2928bc9d55a2", null ],
       [ "_sym_db", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a628e68ad245a2251a0d7bd4c785807da", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a4e80a69086c62e9270491704f9441e32", null ]
     ] ],
+    [ "core", "namespaceortools_1_1math__opt_1_1core.html", "namespaceortools_1_1math__opt_1_1core" ],
     [ "infeasible_subsystem_pb2", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#aa78600af16b6db77430e289c9ffdc560", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a8776fa06948448af22b1c99462529eac", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a71b332b9c6c03b8707625ffa6b37b39a", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a6205739eb1612093c1c71cd5a64ab3f7", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a93efba874a6d28dc7aa8bf4e1ef200f5", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a55bc363255cf78421857a4ce9e1455cf", null ],
@@ -20,7 +21,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "model_parameters_pb2", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#abb39cce193c5b383242de3544583fd08", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#a482c4456701015bc426210f1501176d1", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#acc4c828464741d03b04b2667a3958d58", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#a77e2a27cb716bdf368c04b1689173481", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#a02370cc7c6ffb0ba8fbed32cb95c5388", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#ab4c71034c6cc25a587c6ed0aa2ae39f8", null ],
@@ -29,7 +30,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "model_pb2", "namespaceortools_1_1math__opt_1_1model__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1model__pb2.html#a2b27164dc0cda4fd0fdad308a0d79cf6", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1model__pb2.html#ac87dc3d1e6d92d04d9957469d8233d22", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1model__pb2.html#af14d779c976ab83d27b1eed7824973b0", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1model__pb2.html#ab7a3501df1eb12571b7d522ddb89b3c9", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1model__pb2.html#ab0ece33e14a24479ba53b883177ae532", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1model__pb2.html#a954ea03aca29fbf6585164313a60ec50", null ],
@@ -38,7 +39,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "model_update_pb2", "namespaceortools_1_1math__opt_1_1model__update__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#ab57854195a6cd1deed62c020d9fd27e3", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#a86eed3031cc4371b6ffb33c1ba3346dc", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#ad84a100c162a13e48336c4b9d6b1ffd6", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#a2a009df281c37ab319bf581c15f7b262", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#a3f46b73c4f5ed342933058b326b164a6", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1model__update__pb2.html#a90d05b786644280edfc6d54867c7e5b6", null ],
@@ -47,7 +48,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "parameters_pb2", "namespaceortools_1_1math__opt_1_1parameters__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#a82c43c99ae4a94c4e64f12ac1c81f2b9", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#af49987bf7cc619f5acace6fe88d8d633", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#a683ffcc3c0bd586b57b65844ea20d246", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#a7f3e119b55ecc429f732d2b7e35de858", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#a657b3af66851779f470f02a25409f2a4", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1parameters__pb2.html#abc225f16b4fd26ac03d3a79f6dcd0267", null ],
@@ -57,7 +58,7 @@ var namespaceortools_1_1math__opt =
     [ "python", "namespaceortools_1_1math__opt_1_1python.html", "namespaceortools_1_1math__opt_1_1python" ],
     [ "result_pb2", "namespaceortools_1_1math__opt_1_1result__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1result__pb2.html#a63781f7969695b011de7963672f6904c", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1result__pb2.html#a17ea5993cd9e82165d68ffde6dc561ae", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1result__pb2.html#aefd37f2869173a7c33cb43c5a359caca", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1result__pb2.html#a5f72e914f6304a23e6e773ef6b5ca4ae", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1result__pb2.html#a2079391af46c23f888677b7b9faf9bce", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1result__pb2.html#af136ba852b315ee1c841ffde61361e53", null ],
@@ -66,7 +67,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "rpc_pb2", "namespaceortools_1_1math__opt_1_1rpc__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#acb0e33b99e2b307a91d140b9d49c5ca0", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#a845c3616f619a2555bd49f595b35bfd6", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#afccb0d29bac54a8e965247dd0617032b", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#a8d4b276168e39a4c60820344f73a01e7", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#af9d825c23b7316376c119a2ef32f7bf7", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1rpc__pb2.html#aededbe9f229955e4013115cebb9aada5", null ],
@@ -75,7 +76,7 @@ var namespaceortools_1_1math__opt =
     ] ],
     [ "solution_pb2", "namespaceortools_1_1math__opt_1_1solution__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1solution__pb2.html#ab4bb00b0fcff8f39c516eb2fb8723d58", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1solution__pb2.html#ac6915cea73e2939f9eb3d61dd026b3d3", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1solution__pb2.html#a82bf54b5854350744c065258f30decd9", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1solution__pb2.html#a01e77073a837c01c4a62250e2931be8b", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1solution__pb2.html#a593405cbd2041554006ab0364cfcba82", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1solution__pb2.html#aa0fc5a630270136f3fec8010efb4ce44", null ],
@@ -85,7 +86,7 @@ var namespaceortools_1_1math__opt =
     [ "solvers", "namespaceortools_1_1math__opt_1_1solvers.html", "namespaceortools_1_1math__opt_1_1solvers" ],
     [ "sparse_containers_pb2", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#a4aa4f70644eb3af54df365926124ad37", null ],
-      [ "_options", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#aefc071d4f21d7c0673186f6ef5575884", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#a2672d14848b81a195538e7a4f38286c8", null ],
       [ "_serialized_end", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#aeb7ff050c7fe681f9188c6dd7a0c8917", null ],
       [ "_serialized_options", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#a77de727e3290a826e5266cbb7a1686ae", null ],
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1sparse__containers__pb2.html#a9b27317075f5bcae49a82ae128854190", null ],

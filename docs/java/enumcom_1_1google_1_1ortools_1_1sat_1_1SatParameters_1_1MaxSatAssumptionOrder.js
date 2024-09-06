@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html#aa98aa78f6aaec247e0ffe08646a638dd", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html#a7aba329de7a296c6bb5b0377c407b09b", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html#a1230295608d9fdb54f1fb442f0ed7683", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html#a9e60601550a3b43579eeacecc99c4692", null ],

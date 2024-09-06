@@ -1,7 +1,7 @@
 var classoperations__research_1_1HamiltonianPathSolver =
 [
-    [ "Integer", "classoperations__research_1_1HamiltonianPathSolver.html#ab7380d5367176d7d567876433d1dd918", null ],
-    [ "NodeSet", "classoperations__research_1_1HamiltonianPathSolver.html#afe5925b90aecb674fffc3910b93cc925", null ],
+    [ "Integer", "classoperations__research_1_1HamiltonianPathSolver.html#a3f13afbdf8f0e7c748ba80de7859e803", null ],
+    [ "NodeSet", "classoperations__research_1_1HamiltonianPathSolver.html#acbf3b7fe5ecae52ceeb43776ea03df2b", null ],
     [ "HamiltonianPathSolver", "classoperations__research_1_1HamiltonianPathSolver.html#a1e754bd18247e695674bbb1a3d1187f3", null ],
     [ "HamiltonianPathSolver", "classoperations__research_1_1HamiltonianPathSolver.html#adcd88e0846cbbfc84ecd93ab3cd5cb77", null ],
     [ "BestHamiltonianPathEndNode", "classoperations__research_1_1HamiltonianPathSolver.html#a6d4e7053b1ca9bb72ca86712ba83ed56", null ],

@@ -14,7 +14,7 @@ var diffn__util_8h =
     [ "operations_research::sat::FindRectanglesResult", "structoperations__research_1_1sat_1_1FindRectanglesResult.html", "structoperations__research_1_1sat_1_1FindRectanglesResult" ],
     [ "AnalyzeIntervals", "diffn__util_8h.html#a43f4e0c653d01e67ff65ec40eb96e2e5", null ],
     [ "AppendPairwiseRestrictions", "diffn__util_8h.html#a25b5d6a5567291680f59563128599427", null ],
-    [ "AppendPairwiseRestrictions", "diffn__util_8h.html#a5a105a78abf31dda3e58f115944d197b", null ],
+    [ "AppendPairwiseRestrictions", "diffn__util_8h.html#a2b1d306774ad5e4fbaaa82a302d2068a", null ],
     [ "BoxesAreInEnergyConflict", "diffn__util_8h.html#a3b855792c88d6555dacbd8f060a93435", null ],
     [ "ConstructOverlappingSets", "diffn__util_8h.html#a461d44370c54b18a0d36fd5683352eb0", null ],
     [ "FilterBoxesAndRandomize", "diffn__util_8h.html#a3f0be3244a48d1875afbbb1fa690d743", null ],
@@ -24,6 +24,7 @@ var diffn__util_8h =
     [ "GetOverlappingIntervalComponents", "diffn__util_8h.html#ada6c4aa7b48dc203f11f4be4581dbdd6", null ],
     [ "GetOverlappingRectangleComponents", "diffn__util_8h.html#a92f6f3c573f3242e0c7ef91d0bed86e0", null ],
     [ "operator<<", "diffn__util_8h.html#ab57313c8750510a4590d95a0c71ce41c", null ],
+    [ "RenderDot", "diffn__util_8h.html#a99d1707525b3533931be02c4897dfd00", null ],
     [ "ReportEnergyConflict", "diffn__util_8h.html#a89dc2fa5d4896cd17270cf7d40099e08", null ],
     [ "Smallest1DIntersection", "diffn__util_8h.html#ad6111749765bdc417d6faab8b21bebe1", null ]
 ];

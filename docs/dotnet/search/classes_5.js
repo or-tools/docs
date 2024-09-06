@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['feasibilitypolishingdetails_0',['FeasibilityPolishingDetails',['../classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html',1,'OperationsResearch::Pdlp']]],
+  ['feasibilitypolishingdetails_0',['FeasibilityPolishingDetails',['../classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html',1,'Google::OrTools::PDLP']]],
   ['filterevent_1',['FilterEvent',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchFilterManager_1_1FilterEvent.html',1,'Google::OrTools::ConstraintSolver::LocalSearchFilterManager']]],
   ['firstsolutionstatistics_2',['FirstSolutionStatistics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1FirstSolutionStatistics.html',1,'Google::OrTools::ConstraintSolver::LocalSearchStatistics::Types']]],
   ['firstsolutionstrategy_3',['FirstSolutionStrategy',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy.html',1,'Google::OrTools::ConstraintSolver']]],

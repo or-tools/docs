@@ -1,7 +1,7 @@
 var structoperations__research_1_1Graphs =
 [
-    [ "ArcIndex", "structoperations__research_1_1Graphs.html#ab48fb0d55ba8e5a1f3fae0eb20c29e2d", null ],
-    [ "NodeIndex", "structoperations__research_1_1Graphs.html#a41cd02c6876d39529d121b0f6102d3ef", null ],
+    [ "ArcIndex", "structoperations__research_1_1Graphs.html#ad1908ca2cd827c57f6edba1bf138ce79", null ],
+    [ "NodeIndex", "structoperations__research_1_1Graphs.html#a5c14b4e82b107ad3e154046a83443f61", null ],
     [ "ArcReservation", "structoperations__research_1_1Graphs.html#a3e2837ba11c076d455d71ff67c8ddc36", null ],
     [ "Build", "structoperations__research_1_1Graphs.html#a1a8c52fdd8fe2db239708cb506d647e5", null ],
     [ "Build", "structoperations__research_1_1Graphs.html#ac47c4735096495d462403431e16f0940", null ],

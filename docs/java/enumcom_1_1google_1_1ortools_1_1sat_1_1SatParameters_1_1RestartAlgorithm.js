@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1RestartAlgorithm =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1RestartAlgorithm.html#a3ed0dfa1548717703c49714b6579d863", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1RestartAlgorithm.html#a41620a24563a21d4960a2f875875182e", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1RestartAlgorithm.html#a973fd77c251c9f20276097cf6ee4a903", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1RestartAlgorithm.html#a11fa48cac543a19628c957589f0602e3", null ],

@@ -8,6 +8,7 @@ var dir_ca3554d4989d5c030dec9ae5f0959277 =
     [ "init", "dir_93d85e0761c965935f364a16b7f3ea33.html", "dir_93d85e0761c965935f364a16b7f3ea33" ],
     [ "linearsolver", "dir_06073cda78cc6ec631661c34773f2f0b.html", "dir_06073cda78cc6ec631661c34773f2f0b" ],
     [ "modelbuilder", "dir_a3c15ea5e9d2d463e7973fffb66eebd9.html", "dir_a3c15ea5e9d2d463e7973fffb66eebd9" ],
+    [ "pdlp", "dir_fc566cc3fd02b17b25effcea0341b1a7.html", "dir_fc566cc3fd02b17b25effcea0341b1a7" ],
     [ "sat", "dir_31a49814dab2977424e7b34e56d78a16.html", "dir_31a49814dab2977424e7b34e56d78a16" ],
     [ "util", "dir_6c78f0d72bffe202e847971b21942a3c.html", "dir_6c78f0d72bffe202e847971b21942a3c" ],
     [ "Loader.java", "build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2Loader_8java.html", "build_2java_2ortools-java_2src_2main_2java_2com_2google_2ortools_2Loader_8java" ]

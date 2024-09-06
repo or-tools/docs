@@ -1,9 +1,9 @@
 var classoperations__research_1_1glop_1_1SparseVector =
 [
-    [ "DenseVector", "classoperations__research_1_1glop_1_1SparseVector.html#a38c031d168b70a7966cb28608543423c", null ],
+    [ "DenseVector", "classoperations__research_1_1glop_1_1SparseVector.html#a025e8885a57de3c94cbe3c6906e6bc91", null ],
     [ "Entry", "classoperations__research_1_1glop_1_1SparseVector.html#a94af89df9f08aaa81ad38379314fd697", null ],
-    [ "Index", "classoperations__research_1_1glop_1_1SparseVector.html#a783efd95525f21afc8045cdb1e9eb00a", null ],
-    [ "IndexPermutation", "classoperations__research_1_1glop_1_1SparseVector.html#abfcfccfaf0aa53fac439442676718dad", null ],
+    [ "Index", "classoperations__research_1_1glop_1_1SparseVector.html#a8ea157fb9ae8d0f05b102de9ea612dab", null ],
+    [ "IndexPermutation", "classoperations__research_1_1glop_1_1SparseVector.html#ae2043661d5644c002a98639814e29081", null ],
     [ "Iterator", "classoperations__research_1_1glop_1_1SparseVector.html#abbf0ace6a94f9445f57879cc743f5df4", null ],
     [ "SparseVector", "classoperations__research_1_1glop_1_1SparseVector.html#abb55a2b5b5c9a55751c36dcc6d25e764", null ],
     [ "SparseVector", "classoperations__research_1_1glop_1_1SparseVector.html#a8b239a430871f919f487f09dc327f3bd", null ],

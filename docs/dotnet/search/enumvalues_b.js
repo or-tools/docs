@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['malitskypocklinesearchrule_0',['MalitskyPockLinesearchRule',['../classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams_1_1Types.html#ae2544740987b56e97b574eb314527856a0c35af3a95decb15179dcb1041875cc7',1,'OperationsResearch::Pdlp::PrimalDualHybridGradientParams::Types']]],
+  ['malitskypocklinesearchrule_0',['MalitskyPockLinesearchRule',['../classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams_1_1Types.html#abe66ba2e3ea4a97b9e62db1615b6a6fda0c35af3a95decb15179dcb1041875cc7',1,'Google::OrTools::PDLP::PrimalDualHybridGradientParams::Types']]],
   ['maros_1',['Maros',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters_1_1Types.html#a727fcdb06b45438d8358d19314793b8eab0ae8cdff66f66efa78eaeb83239d276',1,'Google::OrTools::Glop::GlopParameters::Types']]],
   ['maxconstraint_2',['MaxConstraint',['../classOperationsResearch_1_1MPGeneralConstraintProto.html#a0a887efaefee91908e6719adf5a54e90abfaef034be139a16ea09e9cc429effe5',1,'OperationsResearch::MPGeneralConstraintProto']]],
   ['maxflow_3',['MaxFlow',['../classGoogle_1_1OrTools_1_1Graph_1_1FlowModelProto_1_1Types.html#a54ab44492aa7e9760e5e89b499b3bb64a5f8ae559de95b2b071aa8dc722d5d877',1,'Google::OrTools::Graph::FlowModelProto::Types']]],

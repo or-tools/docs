@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html#a1fe63ff4ad170395d2a6a1db5837fcda", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html#ab005c3f2ea34dc96e8570715bdcacdb7", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html#a46127cd3e94b8c9d9c2b5150a69d70fc", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html#afa5f88c1bef0c32bf272d46f82afc7fc", null ],

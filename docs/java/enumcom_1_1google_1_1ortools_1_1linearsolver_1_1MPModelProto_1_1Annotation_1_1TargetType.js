@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation_1_1TargetType =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation_1_1TargetType.html#a607f8307b3ec1f29aaa0794a16a78a56", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation_1_1TargetType.html#a9a040b7a5664633591b2c3b7444d69d2", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation_1_1TargetType.html#a4300af20ae0325ece9194d28b75d40fe", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation_1_1TargetType.html#ad6e391dfa08729f8dc7309be9b25ba61", null ],

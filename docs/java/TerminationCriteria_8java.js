@@ -1,0 +1,12 @@
+var TerminationCriteria_8java =
+[
+    [ "com.google.ortools.pdlp.TerminationCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase" ],
+    [ "com.google.ortools.pdlp.TerminationCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder" ]
+];

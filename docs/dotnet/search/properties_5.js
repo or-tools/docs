@@ -10,7 +10,7 @@ var searchData=
   ['feasibilityjumprestartfactor_7',['FeasibilityJumpRestartFactor',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae1008816c7029a3f92e8f70126caf73d',1,'Google::OrTools::Sat::SatParameters']]],
   ['feasibilityjumpvarperburbationrangeratio_8',['FeasibilityJumpVarPerburbationRangeRatio',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a6d74ef6b1198463817aec48494f021d2',1,'Google::OrTools::Sat::SatParameters']]],
   ['feasibilityjumpvarrandomizationprobability_9',['FeasibilityJumpVarRandomizationProbability',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aea20c6d0c461bd43f370845e21b165b6',1,'Google::OrTools::Sat::SatParameters']]],
-  ['feasibilitypolishingdetails_10',['FeasibilityPolishingDetails',['../classOperationsResearch_1_1Pdlp_1_1SolveLog.html#aec6d26232497b881580b82e476a784d4',1,'OperationsResearch::Pdlp::SolveLog']]],
+  ['feasibilitypolishingdetails_10',['FeasibilityPolishingDetails',['../classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a527b36df937437056754172e5e8983ce',1,'Google::OrTools::PDLP::SolveLog']]],
   ['feasibilityrule_11',['FeasibilityRule',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#ab3c54a016e1846ef3d95d7c1eda375c2',1,'Google::OrTools::Glop::GlopParameters']]],
   ['filladditionalsolutionsinresponse_12',['FillAdditionalSolutionsInResponse',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae548f8c86e125221aa7de6803d9f607d',1,'Google::OrTools::Sat::SatParameters']]],
   ['filltighteneddomainsinresponse_13',['FillTightenedDomainsInResponse',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a14537c54aacd7896e4d93f273d9c53c1',1,'Google::OrTools::Sat::SatParameters']]],

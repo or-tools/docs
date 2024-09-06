@@ -39,5 +39,5 @@ var xpress__interface_8cc =
     [ "stringToCharPtr", "xpress__interface_8cc.html#a9f9f0cdcb5dc49379728119820ee63d0", null ],
     [ "XpressBasisStatusesFrom", "xpress__interface_8cc.html#a8e1b81922d18888defed6ca385b257f8", null ],
     [ "XpressIntSolCallbackImpl", "xpress__interface_8cc.html#aa3ef89b7e6148abd853e15aa5d849051", null ],
-    [ "XpressToMPSolverBasisStatus", "xpress__interface_8cc.html#a361e2b0edf22016e49d8e742fae42dd2", null ]
+    [ "XpressToMPSolverBasisStatus", "xpress__interface_8cc.html#a12dca8ac30758f65f985612ce87592ad", null ]
 ];

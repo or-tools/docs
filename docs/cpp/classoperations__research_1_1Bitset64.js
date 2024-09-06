@@ -2,6 +2,7 @@ var classoperations__research_1_1Bitset64 =
 [
     [ "ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
     [ "Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
+    [ "View", "classoperations__research_1_1Bitset64_1_1View.html", "classoperations__research_1_1Bitset64_1_1View" ],
     [ "value_type", "classoperations__research_1_1Bitset64.html#a6c86cec021f3202f3046b69e51fbd199", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ac9f83666423013e68cc3481c4a397b22", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ab0746d309f0ea913d5a9d0197717fc9c", null ],
@@ -31,5 +32,6 @@ var classoperations__research_1_1Bitset64 =
     [ "SetContentFromBitsetOfSameSize", "classoperations__research_1_1Bitset64.html#af289a4c2636d5c4054cebb7549f95c5c", null ],
     [ "size", "classoperations__research_1_1Bitset64.html#a3b337f39d42b2e93b11c94babaffdbbb", null ],
     [ "Union", "classoperations__research_1_1Bitset64.html#a4cbb0d754fd0a93d79754241083ce43e", null ],
+    [ "view", "classoperations__research_1_1Bitset64.html#a0207d55ff95929c02b53cb4e68f355a5", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ad1c91a5364329325587f1529b3f705b2", null ]
 ];

@@ -19,5 +19,6 @@ var searchData=
   ['vectoriterator_16',['VectorIterator',['../classoperations__research_1_1glop_1_1VectorIterator.html',1,'operations_research::glop']]],
   ['vectororfunction_17',['VectorOrFunction',['../classoperations__research_1_1VectorOrFunction.html',1,'operations_research']]],
   ['vectororfunction_3c_20scalartype_2c_20std_3a_3avector_3c_20scalartype_20_3e_20_3e_18',['VectorOrFunction&lt; ScalarType, std::vector&lt; ScalarType &gt; &gt;',['../classoperations__research_1_1VectorOrFunction_3_01ScalarType_00_01std_1_1vector_3_01ScalarType_01_4_01_4.html',1,'operations_research']]],
-  ['vehicletypecurator_19',['VehicleTypeCurator',['../classoperations__research_1_1VehicleTypeCurator.html',1,'operations_research']]]
+  ['vehicletypecurator_19',['VehicleTypeCurator',['../classoperations__research_1_1VehicleTypeCurator.html',1,'operations_research']]],
+  ['view_20',['View',['../classoperations__research_1_1Bitset64_1_1View.html',1,'operations_research::Bitset64']]]
 ];

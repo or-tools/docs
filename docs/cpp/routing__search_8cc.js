@@ -2,7 +2,7 @@ var routing__search_8cc =
 [
     [ "operations_research::GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue", "classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue.html", "classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue" ],
     [ "operations_research::GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue::Entry", "structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue_1_1Entry.html", "structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue_1_1Entry" ],
-    [ "operations_research::SavingsFilteredHeuristic::SavingsContainer< Saving >", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer" ],
+    [ "operations_research::SavingsFilteredHeuristic::SavingsContainer< S >", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer" ],
     [ "ABSL_FLAG", "routing__search_8cc.html#acc95d14bc59afe35d789e11bbacfab6f", null ],
     [ "ABSL_FLAG", "routing__search_8cc.html#a15b2283cda558b516f2abd4f72d60161", null ],
     [ "AutomaticFirstSolutionStrategy", "routing__search_8cc.html#a270548116df8ad74e03d376c40025566", null ],

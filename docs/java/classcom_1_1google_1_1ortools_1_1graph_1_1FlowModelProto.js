@@ -21,13 +21,12 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto =
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#afd5501a1374d9e7904b1e9c6d261ef95", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#af5db1f7b70c96d648a376198078cad5e", null ],
     [ "hasProblemType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ac024379d1b90ba0e2c3195846ab9e2d4", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a63e7e93131d48ba84b8eb0424fcfee43", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a45f5f256dc1b2e87895356fe7c32f9c9", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#abeb8631bcbf823577999b444d66ffb7a", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#aa23aa7c581f64cfc7200e66cf20b7186", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#aa35dc27bc31e291cb9a3f8d8215c9ff9", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ab9e695342c31b0f270a840c449e13938", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a642627ba898703b2fc8b34f30b5adb62", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ab9d28c489834034ec42bb8e2945c41f1", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ad0efe9463328792e1ceb7a0a85566a55", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a9a07e907241725c76026d46e33ebb932", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a1cdfed2e6f8253d67f9f77c2dc20cf9e", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ab8097d6c81109d8b8bfd11a3dafffa6f", null ],
@@ -45,6 +44,5 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto =
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a07a9aa036b1ce9731b86ec9f27eae751", null ],
     [ "ARCS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a844e76a8e00c91235f6df3a4ed945073", null ],
     [ "NODES_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a42d4c7ab3ea8c7cc81d4270d010e3147", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a2aaf5ca108240311f76a505bc0f5eabb", null ],
     [ "PROBLEM_TYPE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#acee42c9d29b1963dd6c82f8c44af21f9", null ]
 ];

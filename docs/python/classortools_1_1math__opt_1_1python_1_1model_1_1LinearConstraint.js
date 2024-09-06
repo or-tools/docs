@@ -13,5 +13,6 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint =
     [ "terms", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#af24ac5fd992e6cc3311d89720a41845d", null ],
     [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#acabbafd6a36953ada8c9361ab6bb6f6e", null ],
     [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#a4872bed54d813f2ced63be70b4f7b654", null ],
-    [ "_id", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#a310ba40348572c78a285de159c671d56", null ]
+    [ "_id", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#a310ba40348572c78a285de159c671d56", null ],
+    [ "_model", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html#a252e54ed4e8146f25f793f1b68f062ef", null ]
 ];

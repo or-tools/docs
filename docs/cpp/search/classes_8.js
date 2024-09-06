@@ -8,6 +8,7 @@ var searchData=
   ['hash_3c_20util_5fintops_3a_3astrongint_3c_20strongintname_2c_20valuetype_20_3e_20_3e_5',['hash&lt; util_intops::StrongInt&lt; StrongIntName, ValueType &gt; &gt;',['../structstd_1_1hash_3_01util__intops_1_1StrongInt_3_01StrongIntName_00_01ValueType_01_4_01_4.html',1,'std']]],
   ['hasher_6',['Hasher',['../structgtl_1_1IntType_1_1Hasher.html',1,'gtl::IntType&lt; IntTypeName, _ValueType &gt;::Hasher'],['../structutil__intops_1_1StrongInt_1_1Hasher.html',1,'util_intops::StrongInt&lt; StrongIntName, _ValueType &gt;::Hasher']]],
   ['highsinterface_7',['HighsInterface',['../classoperations__research_1_1HighsInterface.html',1,'operations_research']]],
-  ['hittingsetoptimizer_8',['HittingSetOptimizer',['../classoperations__research_1_1sat_1_1HittingSetOptimizer.html',1,'operations_research::sat']]],
-  ['hungarianoptimizer_9',['HungarianOptimizer',['../classoperations__research_1_1HungarianOptimizer.html',1,'operations_research']]]
+  ['highssolver_8',['HighsSolver',['../classoperations__research_1_1math__opt_1_1HighsSolver.html',1,'operations_research::math_opt']]],
+  ['hittingsetoptimizer_9',['HittingSetOptimizer',['../classoperations__research_1_1sat_1_1HittingSetOptimizer.html',1,'operations_research::sat']]],
+  ['hungarianoptimizer_10',['HungarianOptimizer',['../classoperations__research_1_1HungarianOptimizer.html',1,'operations_research']]]
 ];

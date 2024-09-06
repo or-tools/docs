@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html#abf59f926abdce469b3259f4e3dda2758", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html#a1ccc5cd7a133c9fcb5e53010bfbc5a28", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html#a0ea48d36c7c7cd49d2cc2f39b25accf3", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html#af176de516adae610dbb1a32386aa6d22", null ],

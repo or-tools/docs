@@ -13,7 +13,7 @@ var graph_2util_8h =
     [ "IsSubsetOf0N", "graph_2util_8h.html#aca9c2faec725bc47baf08421b377f643", null ],
     [ "IsValidPermutation", "graph_2util_8h.html#a0aab823d80d85f004d3d2139cc4f6c2f", null ],
     [ "PathHasCycle", "graph_2util_8h.html#a34114d206959f75a472b167c806da2cb", null ],
-    [ "RemapGraph", "graph_2util_8h.html#acfecdce43e9933bde2a94fd879f12f5f", null ],
+    [ "RemapGraph", "graph_2util_8h.html#a88c65bcf51a7c679ad0159e09ecfb3fc", null ],
     [ "RemoveCyclesFromPath", "graph_2util_8h.html#a06fa201576c927d92657e090fa86bfdb", null ],
     [ "RemoveSelfArcsAndDuplicateArcs", "graph_2util_8h.html#a8a06031908a024a50dbdddc394a22490", null ]
 ];

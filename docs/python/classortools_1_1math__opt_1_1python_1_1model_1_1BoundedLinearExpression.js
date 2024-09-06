@@ -6,5 +6,8 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression =
     [ "__str__", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a9afbce185ac0aa376b22c9a615d58bc7", null ],
     [ "expression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#ac6d574ef9d8f888acc88b23c57e18762", null ],
     [ "lower_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a716d5a706ea644edc78a7fbd634b904c", null ],
-    [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a77fc4b1163330b0c9760bfe0a70f5965", null ]
+    [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a77fc4b1163330b0c9760bfe0a70f5965", null ],
+    [ "_expression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a7e243a0df96601900b29741eac376c6f", null ],
+    [ "_lower_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a359f032a1667bc989e11402dd2d70f1b", null ],
+    [ "_upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html#a23d45335b64793d48decbbb972d4b4a6", null ]
 ];

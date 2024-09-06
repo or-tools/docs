@@ -7,7 +7,7 @@ var classoperations__research_1_1HighsInterface =
     [ "ClearConstraint", "classoperations__research_1_1HighsInterface.html#ae9a4d49cd45637e41ff03968df602f67", null ],
     [ "ClearObjective", "classoperations__research_1_1HighsInterface.html#aaf51d5047404a112e98b7e0d91448c86", null ],
     [ "column_status", "classoperations__research_1_1HighsInterface.html#aa0445eec4920c34b74fb03b837ff15b0", null ],
-    [ "DirectlySolveProto", "classoperations__research_1_1HighsInterface.html#a0ad364d5019ee755808e1401b01f3e9c", null ],
+    [ "DirectlySolveProto", "classoperations__research_1_1HighsInterface.html#a527f426beaa67145c7a6f98deb2e2f0a", null ],
     [ "ExtractNewConstraints", "classoperations__research_1_1HighsInterface.html#af3559d621a4bf6fb80df6f49b7d50463", null ],
     [ "ExtractNewVariables", "classoperations__research_1_1HighsInterface.html#acca5dc85a458dd855c32a4c4fd091ce7", null ],
     [ "ExtractObjective", "classoperations__research_1_1HighsInterface.html#aea48a471c84c6df60c59027f47fe9a50", null ],
@@ -36,5 +36,6 @@ var classoperations__research_1_1HighsInterface =
     [ "SetVariableInteger", "classoperations__research_1_1HighsInterface.html#a70e4755bcce2f4caff5051238bc88489", null ],
     [ "Solve", "classoperations__research_1_1HighsInterface.html#a49aeeddb5a6fd041bffaa61a66a0af99", null ],
     [ "SolverVersion", "classoperations__research_1_1HighsInterface.html#a9ea47abff6bbc25d367d34bea3ad2889", null ],
+    [ "SupportsDirectlySolveProto", "classoperations__research_1_1HighsInterface.html#a3b5187fcf8ffb4b01e201602d367a757", null ],
     [ "underlying_solver", "classoperations__research_1_1HighsInterface.html#a9423aab732ca4e92e3640bd534e92023", null ]
 ];

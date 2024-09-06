@@ -1,6 +1,7 @@
 var classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper =
 [
     [ "SolveWrapper", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html#ab3d04afa4c7e03203d462176a1b2329f", null ],
+    [ "AddBestBoundCallbackFromClass", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html#a94cd68e4580c44bf2557e1c25e373d40", null ],
     [ "AddLogCallbackFromClass", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html#ae16014a33b2535a72fdc8cac7e5e28da", null ],
     [ "AddSolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html#a72ed6f03b1d2f0abc4c5a327bea5fa59", null ],
     [ "ClearSolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html#a863101735c4042047c446fa1489866f9", null ],

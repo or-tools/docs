@@ -1,0 +1,26 @@
+var interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder =
+[
+    [ "getDetailedOptimalityCriteria", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a3715df6ae54d80e252e1a614da532c13", null ],
+    [ "getDetailedOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a7792baf04b11a902966556258cc2c2f1", null ],
+    [ "getEpsDualInfeasible", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#ad8b3475e6dd3b2a59808cf76396eb91f", null ],
+    [ "getEpsOptimalAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#aea562fc3552bf12d4c9baa5038a45397", null ],
+    [ "getEpsOptimalRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a096662da6b011fe06618c73a15adb7e3", null ],
+    [ "getEpsPrimalInfeasible", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a4545ed54a59b43d2304a12aa63387744", null ],
+    [ "getIterationLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a8ab5a4d98b6b0545b9430138cdc7ec4d", null ],
+    [ "getKktMatrixPassLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a03d0f1986ea6955062a3d89d5661b4fe", null ],
+    [ "getOptimalityCriteriaCase", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#ab5ca4e13c5694f46ba944075c186840f", null ],
+    [ "getOptimalityNorm", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a68401e1ff8f7b54bfce436a086a4cb11", null ],
+    [ "getSimpleOptimalityCriteria", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#acc4f27f5f9e2d0308826e0c978dbe63f", null ],
+    [ "getSimpleOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#aff9781e57018211251e11b90248f6887", null ],
+    [ "getTimeSecLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a019a79733072a290a9374c6edd2623e3", null ],
+    [ "hasDetailedOptimalityCriteria", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a95bd58ecb3289cefd0e9bc8e1da70fb6", null ],
+    [ "hasEpsDualInfeasible", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a733710dd175303c072916f5c965381fa", null ],
+    [ "hasEpsOptimalAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a65f77127fcd353a66c0c46a30f1c22b6", null ],
+    [ "hasEpsOptimalRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a5491411f2b07479021d615ec4f40798e", null ],
+    [ "hasEpsPrimalInfeasible", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a590ae54a05957ffcf1279a11d244f29c", null ],
+    [ "hasIterationLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#af69d50e7eb6d2f10ef142890faa552f2", null ],
+    [ "hasKktMatrixPassLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#ac50c2aa1295d73d373f61ca37f1211f3", null ],
+    [ "hasOptimalityNorm", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#afa883b8fded21d437595f1f26490e6ef", null ],
+    [ "hasSimpleOptimalityCriteria", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#afa7e9b07dd7d4eab08ec5bf462ecdbf3", null ],
+    [ "hasTimeSecLimit", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html#a2964474cc5eab205fec81b9f2a3391da", null ]
+];

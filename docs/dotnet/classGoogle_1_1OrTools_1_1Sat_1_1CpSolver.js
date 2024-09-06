@@ -1,10 +1,13 @@
 var classGoogle_1_1OrTools_1_1Sat_1_1CpSolver =
 [
     [ "BooleanValue", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#abf532b0903adf8363ad2cfb0d3a4b929", null ],
+    [ "ClearBestBoundCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#aa19db7159a0eb5d9dd2c7bd71619da79", null ],
+    [ "ClearLogCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#af55c097838d25f6a02ab1f876b42de29", null ],
     [ "NumBranches", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a5c344afdabaea460cab201cd9170a9a0", null ],
     [ "NumConflicts", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a7693b6f79a632169e6013a684e571ca1", null ],
     [ "ResponseStats", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#aef6caf5f3cd5f4074135d1be2ddfe2c8", null ],
     [ "SearchAllSolutions", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a711296034d9325e18d29ceb7e131404d", null ],
+    [ "SetBestBoundCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a6ffb7934443a45221a43202b9a2b417c", null ],
     [ "SetLogCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#aef60e37e5f8833d13fd56e62c9042939", null ],
     [ "SolutionInfo", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a14aac0e38d0d6a5805d4e56a5f063808", null ],
     [ "Solve", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a7fd81a4adab2a00cb6852ae24c857383", null ],

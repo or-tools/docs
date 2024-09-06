@@ -6,8 +6,8 @@ var SetCover_8pb_8cs =
     [ "OperationsResearch.SetCoverProto.Types.Subset", "classOperationsResearch_1_1SetCoverProto_1_1Types_1_1Subset.html", "classOperationsResearch_1_1SetCoverProto_1_1Types_1_1Subset" ],
     [ "OperationsResearch.SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", "classOperationsResearch_1_1SetCoverSolutionResponse" ],
     [ "OperationsResearch.SetCoverSolutionResponse.Types", "classOperationsResearch_1_1SetCoverSolutionResponse_1_1Types.html", "classOperationsResearch_1_1SetCoverSolutionResponse_1_1Types" ],
-    [ "pb", "SetCover_8pb_8cs.html#a3a8b1403f9034aa88aad1ce2c733db60", null ],
-    [ "pbc", "SetCover_8pb_8cs.html#acf353ca81053b715ef0a189df5a75499", null ],
-    [ "pbr", "SetCover_8pb_8cs.html#a4c9bca18934bf8b310b9d65812404c69", null ],
-    [ "scg", "SetCover_8pb_8cs.html#a6de48d7be2d1c733071a3f897657ee05", null ]
+    [ "pb", "SetCover_8pb_8cs.html#afd8acb6d311ac0897a8d4c41218648c0", null ],
+    [ "pbc", "SetCover_8pb_8cs.html#af5dd0a37a4fca178bf191ce7e1ea753a", null ],
+    [ "pbr", "SetCover_8pb_8cs.html#a2ab194728295bc9b0e358d3ffacef8c6", null ],
+    [ "scg", "SetCover_8pb_8cs.html#a3c932208d9685450aae1e0b456cb64e3", null ]
 ];

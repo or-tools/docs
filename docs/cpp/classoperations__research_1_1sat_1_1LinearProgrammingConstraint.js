@@ -1,9 +1,10 @@
 var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
 [
-    [ "ConstraintIndex", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a8fe544f4c772d8b90d4c4eff81533b70", null ],
+    [ "ConstraintIndex", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#abf361ba682cd7655299753525736d687", null ],
     [ "LinearProgrammingConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#ac305ae4d90e003c68c190a412f9879de", null ],
     [ "AddCutGenerator", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6fcb3c581c8d5c59ce05d3bb52ab30c7", null ],
     [ "AddLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a72b2d1b80da67159738ee0a4b9138948", null ],
+    [ "AtOptimal", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a86aefc1266220f6351747f080a9ffa20", null ],
     [ "average_degeneracy", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#af3341d5cb4ed691b8d43004af49cd250", null ],
     [ "ComputeNewLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a2f5923685a1ae258852e564eff198eba", null ],
     [ "constraint_manager", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a166e428fd79240889d3886de39ddb677", null ],
@@ -23,6 +24,7 @@ var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
     [ "num_solves", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6a012d7360e392c2e2b5a0b8f87e06da", null ],
     [ "num_solves_by_status", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#af46c3c349e221eaeb47db0adcc578fc1", null ],
     [ "NumVariables", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#add1aa18d9355ceca0d24a6e36915bfb1", null ],
+    [ "ObjectiveLpLowerBound", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#af20f236be5a92916149a5186daf1ae3e", null ],
     [ "ObjectiveVariable", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6dcf731444d5c5a52f5365d9b0d0e256", null ],
     [ "OptimalConstraints", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a2dfb059b40c1da2b98f4e2c079caff26", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a7ff29ebe58aca89b537dc833cc1c45de", null ],
@@ -32,7 +34,6 @@ var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
     [ "SetMainObjectiveVariable", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a21ec1a795ddd791fb2b082517c40b023", null ],
     [ "SetObjectiveCoefficient", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#aa8cc91955baa33b1b420c1a3bba27029", null ],
     [ "SolutionIsInteger", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a3d03a8162d6d231cb98bc453f8b0b8a1", null ],
-    [ "SolutionObjectiveValue", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a1cd998718539f2c79cabb426991d8d86", null ],
     [ "total_num_cut_propagations", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a090b4e51b2ee75944a61b009787476c9", null ],
     [ "total_num_eq_propagations", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a34b29c266361f873a7918af5695bd70e", null ],
     [ "total_num_simplex_iterations", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a469f7163d6d44b2bfb486345126bdfb8", null ]

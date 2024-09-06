@@ -46,6 +46,17 @@ var classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStor
     [ "set_variable_lb", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#aa5708ec6781fdf4b34d71b04586ff153", null ],
     [ "set_variable_ub", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a421536618d1c834534d7803c29b88c05", null ],
     [ "variable_exists", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#aa550461e170a3bca44f84bad1a3a3cbf", null ],
-    [ "_is_maximize", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a49fee8c2303252e5bd8be28a880faaf4", null ],
-    [ "_objective_offset", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a0332196aeb6fed751f8741b71f843984", null ]
+    [ "_is_maximize", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#ac099cd1965c693df7743c1ec91375da6", null ],
+    [ "_linear_constraint_matrix", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a62834af771820dba086f1dc4d63ac8b1", null ],
+    [ "_linear_constraint_matrix", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#afeb03860a7422f33fa7c2fd68fdbca74", null ],
+    [ "_name", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a462761696e8eaa1c89483e4bb486766e", null ],
+    [ "_next_lin_con_id", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a93e4fb747d1d08c8bd8efb2f03cee719", null ],
+    [ "_next_var_id", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a9e5b0af21d8f9be328ef5f08b574471d", null ],
+    [ "_objective_offset", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a3944677f5467ff950cb7f38d78095c32", null ],
+    [ "_quadratic_objective_coefficients", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#ab6efdc471bf33abfa9e92249c5decf58", null ],
+    [ "_update_trackers", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#af68787ad1ab93e1634ab41bfec47bbaf", null ],
+    [ "_update_trackers", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#af68787ad1ab93e1634ab41bfec47bbaf", null ],
+    [ "linear_constraints", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a514205bfa720ba5201efca59614b9f38", null ],
+    [ "linear_objective_coefficient", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#ae324cc2853dc517ac2145265c817bc9d", null ],
+    [ "variables", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html#a9d43b1aeb61b1e27f1a02f68c172435c", null ]
 ];

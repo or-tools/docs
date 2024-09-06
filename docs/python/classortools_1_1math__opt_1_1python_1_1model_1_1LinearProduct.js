@@ -6,5 +6,6 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct =
     [ "_flatten_once_and_add_to", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#a46340bbebd22e7bcd06245ffadef2aa7", null ],
     [ "linear", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#a868aa1c2ddd339c26fa3e58770a4f821", null ],
     [ "scalar", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#ac1293cac0493593ba035473b14f79626", null ],
-    [ "_linear", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#a723716fde6abeb103447c1f013c0373d", null ]
+    [ "_linear", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#a723716fde6abeb103447c1f013c0373d", null ],
+    [ "_scalar", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html#a98e654a63241478172aaf01f52a2426d", null ]
 ];

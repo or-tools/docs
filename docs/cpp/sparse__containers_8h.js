@@ -9,5 +9,6 @@ var sparse__containers_8h =
     [ "VariableBasisFromProto", "sparse__containers_8h.html#ac5e18dd898517136444a5f6ec986102f", null ],
     [ "VariableBasisToProto", "sparse__containers_8h.html#a67a72267ba3c5cb04de3bcdcff15014d", null ],
     [ "VariableValuesFromProto", "sparse__containers_8h.html#a62b0640d4793cf31886de2a8956254cf", null ],
+    [ "VariableValuesFromProto", "sparse__containers_8h.html#ac314f0b74d80ecd84545a1ac3bb760fe", null ],
     [ "VariableValuesToProto", "sparse__containers_8h.html#a96d334f018cd64754f057b885ec81fab", null ]
 ];

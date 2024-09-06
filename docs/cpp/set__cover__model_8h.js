@@ -1,6 +1,7 @@
 var set__cover__model_8h =
 [
     [ "operations_research::SetCoverModel", "classoperations__research_1_1SetCoverModel.html", "classoperations__research_1_1SetCoverModel" ],
+    [ "operations_research::SetCoverModel::Stats", "structoperations__research_1_1SetCoverModel_1_1Stats.html", "structoperations__research_1_1SetCoverModel_1_1Stats" ],
     [ "Cost", "set__cover__model_8h.html#acd268ddbf6d3e61f2769f5872ca97755", null ],
     [ "ElementCostVector", "set__cover__model_8h.html#a20d342b7be03346c2ceb4605c22796bc", null ],
     [ "ElementToSubsetVector", "set__cover__model_8h.html#ae52f309c7b47ac2d814174a49bc92920", null ],

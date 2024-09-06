@@ -18,13 +18,12 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective =
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a8fdc0f10c64f2fc5ab658b6e87717e73", null ],
     [ "hasOffset", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a166c311bdc42553b51ac50b76c986c84", null ],
     [ "hasScalingFactor", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a55f083512c0ef197b32c0320025c5f5b", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#ab8c4fa2e9b8315d946958c0133d6f512", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a2cc601e00485eb8593ba060881eb4664", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a81f7a4de29e29d4db507db65bca249a4", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a7109e0fb4bd6b34c7aa0c8a694b3eb52", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#aa391dd040f01fbb30305cf2791a17b64", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#acdcbc049f06e229ca83b18a36913f74a", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a3ef7f299e857c238c82af76dfc3ca269", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#aa58d9797c09247c2e936ae0259b0f457", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a7d640e9e5291f6036b94a9e7adc052bf", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#ac4e0af40e90529e394a75e2ffe4b70c4", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a36c01e7ce75bddc96cd4dbac371dd191", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a4673f54362719cb37f53dc46e39de7bc", null ],
@@ -43,6 +42,5 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective =
     [ "COEFFICIENTS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a475f12b3bf361fb2fc04b716d74f4535", null ],
     [ "LITERALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a109c13f4289d80332b6ac941ba87d021", null ],
     [ "OFFSET_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#aafb5ea547c6ab929e77d9cf5c1f9f573", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a5e6e691cff24b40a35e295c1f6708ea6", null ],
     [ "SCALING_FACTOR_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearObjective.html#a38bd5a046faa8e0b680790873955d26f", null ]
 ];

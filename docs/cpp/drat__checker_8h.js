@@ -10,6 +10,6 @@ var drat__checker_8h =
     [ "ContainsLiteral", "drat__checker_8h.html#ac63affeaff6ccd82933aa13529338857", null ],
     [ "DEFINE_STRONG_INDEX_TYPE", "drat__checker_8h.html#a0e75372160364c7130866052ddade46b", null ],
     [ "kNoClauseIndex", "drat__checker_8h.html#affcb42181de5b23ba7b5df37fe1676a3", null ],
-    [ "PrintClauses", "drat__checker_8h.html#a9994f4b2203877215534f0346e41d356", null ],
+    [ "PrintClauses", "drat__checker_8h.html#a89916cb29dee74465f5d966707a34845", null ],
     [ "Resolve", "drat__checker_8h.html#a3518eef034832dda8fbc0df67737c35b", null ]
 ];

@@ -1,15 +1,11 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder =
 [
-    [ "addRepeatedField", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#afdccc1f94f546d2826161d8a49eee5cd", null ],
     [ "build", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a06f0e9ba73be33fe158fe08aba63edda", null ],
     [ "buildPartial", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a81f09cb4994c078e5be64ed50be11903", null ],
     [ "clear", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a28d80f19406c88d0b2dac6bc91ebf69f", null ],
     [ "clearBaselineModelFilePath", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#aaaba22555c30097f771517f8297fb2b5", null ],
     [ "clearConstraintOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a597da8dfcb59eed87ac9824c055ea307", null ],
-    [ "clearField", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a2f110d3aeafa75184e3ec1ceb3ca11ec", null ],
-    [ "clearOneof", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#adb3c5b34dfdfe4e54b9d8f39a6441e36", null ],
     [ "clearVariableOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#aa88d485a51ebc3c189f860f1317d6e0e", null ],
-    [ "clone", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a5c0d09c8f628e5193ae48f8f78a73a8e", null ],
     [ "containsConstraintOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a2a0d12cc33b1c1b28388394fec41d1d4", null ],
     [ "containsVariableOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a83ce9789f3bfcede92e8564e433a740f", null ],
     [ "getBaselineModelFilePath", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a5dfbd77c087f6338e71a4536472562f7", null ],
@@ -30,14 +26,13 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builde
     [ "getVariableOverridesOrDefault", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a1ac46caabea4ac113a6209ceecd152f6", null ],
     [ "getVariableOverridesOrThrow", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a03620d80417c948cc8521b8dd1fc7cbe", null ],
     [ "hasBaselineModelFilePath", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a60b481d695c48d8cd23b2f48cd433c9e", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#ae368de5ba80373483ddbd98cba8dfb06", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a84a570e2fd25b9a9c166a29407ca1584", null ],
     [ "internalGetMapFieldReflection", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a0a4d1af99390a1f41f9e2856bfb0526b", null ],
     [ "internalGetMutableMapFieldReflection", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a4af81d8f9b80eb80fcb8e6088c72a6a0", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#afbea5fd1b00d10222585a5f84183153a", null ],
     [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a588ed36d8ec3b9cab229f06f37f217fc", null ],
     [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#aef4afbc78cf29d47af5f5b4572e180a6", null ],
     [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#ad468da0eae1c7c445419cbadaf667f23", null ],
-    [ "mergeUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a54ae26d51c247852a317387b36b6f5bc", null ],
     [ "putAllConstraintOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a6d81be068f3f3cf402908db3a67204b4", null ],
     [ "putAllVariableOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a695a7e00d6ac1cf6ab1079433e5f0267", null ],
     [ "putConstraintOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a15f346158baf89746bd4352a4cebc150", null ],
@@ -47,8 +42,5 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builde
     [ "removeConstraintOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#ad1f7832b86dd582f2f3abf308a4af1c1", null ],
     [ "removeVariableOverrides", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a0dc67c570b51ab8b4eff03ee45f9c9c6", null ],
     [ "setBaselineModelFilePath", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a252da0f079004711d613f8bd0d727eea", null ],
-    [ "setBaselineModelFilePathBytes", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#ac8e3b40fcf87feaa95be70cc3fe530a4", null ],
-    [ "setField", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a63118d06c34ddd4333303423680e54ab", null ],
-    [ "setRepeatedField", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a6dfc5f1f0a2b1cd4e1b5950117228962", null ],
-    [ "setUnknownFields", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#a3c374a335975ef29017f4072194d6c07", null ]
+    [ "setBaselineModelFilePathBytes", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelDeltaProto_1_1Builder.html#ac8e3b40fcf87feaa95be70cc3fe530a4", null ]
 ];

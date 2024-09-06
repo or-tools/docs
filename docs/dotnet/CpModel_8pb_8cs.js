@@ -31,10 +31,6 @@ var CpModel_8pb_8cs =
     [ "Google.OrTools.Sat.CpModelProto", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto" ],
     [ "Google.OrTools.Sat.CpSolverSolution", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolution.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolution" ],
     [ "Google.OrTools.Sat.CpSolverResponse", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse" ],
-    [ "pb", "CpModel_8pb_8cs.html#a3a8b1403f9034aa88aad1ce2c733db60", null ],
-    [ "pbc", "CpModel_8pb_8cs.html#acf353ca81053b715ef0a189df5a75499", null ],
-    [ "pbr", "CpModel_8pb_8cs.html#a4c9bca18934bf8b310b9d65812404c69", null ],
-    [ "scg", "CpModel_8pb_8cs.html#a6de48d7be2d1c733071a3f897657ee05", null ],
     [ "CpSolverStatus", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040", [
       [ "Unknown", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "ModelInvalid", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040aa1cc2f9a5c97bd1133373ebbc79fd554", null ],

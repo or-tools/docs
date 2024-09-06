@@ -11,13 +11,12 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment =
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a081fbf643d6aa5bf6def2659e03ec4ca", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#ac1cbc08fcdaa0506fa44d01c748e8d27", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a6c3c6b25a7ffe92e02047d59f0739318", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a1fd95eaec40efdc7a800183ad228fcd2", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a195f3b147a6caec282a17a17e12c992f", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#abb737d133b931d63e74db784e4859644", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a6f91b0b0ffdb69887cab5287941ae7ae", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a014762d2ccff90685f4fdf75ee3cef79", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a34c4efbf47056a472877bd99e5cbf589", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#ab9dd9b0df0a71cffe6113d7823fe1789", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a5b4f73e926b7e1621e514c2997e83153", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a54c95c8b6958616728818f7b73ad860e", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#acc54b842c0e4829c0e7e6b94a2f1f696", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#ac4b27b4c4c6de4080bfd445eb82c2f4e", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#aed6ed4c1d8e971e8b53d6a10069c5609", null ],
@@ -33,6 +32,5 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment =
     [ "parser", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a3ee6e7dbde5df5466877c8e688bf156e", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#af139c1f764bb913082e6d0d6a24dc50b", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a8f5b26646bc191eb9c7253a72d8e2c5b", null ],
-    [ "LITERALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#aa72dbc7fbc8158283006ef4640741e7d", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#a4afbf82390e61159f7c1a7e18aa8f93b", null ]
+    [ "LITERALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html#aa72dbc7fbc8158283006ef4640741e7d", null ]
 ];

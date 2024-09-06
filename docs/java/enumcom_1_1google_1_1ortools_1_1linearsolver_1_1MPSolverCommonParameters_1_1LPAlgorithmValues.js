@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html#a6f56073f8947fb449c2000bd81331b8a", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html#ab87bd7ecff801f16d49efeacf6d41697", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html#a3b218ad74deeccd42ff3fb4fdaacfe65", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html#ab2f7cf2b9b6d906cc95fe58186beef99", null ],

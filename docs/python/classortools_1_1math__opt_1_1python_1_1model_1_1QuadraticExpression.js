@@ -8,5 +8,7 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression =
     [ "linear_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#aa69ba071bf0a5d3ea6e0aada2074d5db", null ],
     [ "offset", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#a41cccb1b1efe2a8cb76e268e428be0ac", null ],
     [ "quadratic_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#afc4dc6e9451667adf8f42ec7dd962b76", null ],
-    [ "_offset", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#a26bfd7dc62a155b32952f5620290c65e", null ]
+    [ "_linear_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#a4f687b30197061376bae4d8c60fda18d", null ],
+    [ "_offset", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#adca3038e2e0f88e81dada2a89ea47464", null ],
+    [ "_quadratic_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html#aaa152d9beacd980304d86e72cf17a957", null ]
 ];

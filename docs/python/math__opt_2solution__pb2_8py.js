@@ -1,7 +1,7 @@
 var math__opt_2solution__pb2_8py =
 [
     [ "_globals", "math__opt_2solution__pb2_8py.html#ab4bb00b0fcff8f39c516eb2fb8723d58", null ],
-    [ "_options", "math__opt_2solution__pb2_8py.html#ac6915cea73e2939f9eb3d61dd026b3d3", null ],
+    [ "_loaded_options", "math__opt_2solution__pb2_8py.html#a82bf54b5854350744c065258f30decd9", null ],
     [ "_serialized_end", "math__opt_2solution__pb2_8py.html#a01e77073a837c01c4a62250e2931be8b", null ],
     [ "_serialized_options", "math__opt_2solution__pb2_8py.html#a593405cbd2041554006ab0364cfcba82", null ],
     [ "_serialized_start", "math__opt_2solution__pb2_8py.html#aa0fc5a630270136f3fec8010efb4ce44", null ],

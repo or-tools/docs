@@ -2,7 +2,7 @@ var namespaceoperations__research_1_1internal =
 [
     [ "AlignedBlock", "structoperations__research_1_1internal_1_1AlignedBlock.html", "structoperations__research_1_1internal_1_1AlignedBlock" ],
     [ "AllocatorWithAlignment", "structoperations__research_1_1internal_1_1AllocatorWithAlignment.html", "structoperations__research_1_1internal_1_1AllocatorWithAlignment" ],
-    [ "MPSLineInfo", "classoperations__research_1_1internal_1_1MPSLineInfo.html", "classoperations__research_1_1internal_1_1MPSLineInfo" ],
+    [ "PathWithPriority", "classoperations__research_1_1internal_1_1PathWithPriority.html", "classoperations__research_1_1internal_1_1PathWithPriority" ],
     [ "ReleaseSCIPMessageHandler", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler.html", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler" ],
     [ "ScipCallbackRunner", "classoperations__research_1_1internal_1_1ScipCallbackRunner.html", "classoperations__research_1_1internal_1_1ScipCallbackRunner" ],
     [ "ScipCallbackRunnerImpl", "classoperations__research_1_1internal_1_1ScipCallbackRunnerImpl.html", "classoperations__research_1_1internal_1_1ScipCallbackRunnerImpl" ],
@@ -10,23 +10,11 @@ var namespaceoperations__research_1_1internal =
     [ "ToUInt", "structoperations__research_1_1internal_1_1ToUInt.html", null ],
     [ "ToUInt< double >", "structoperations__research_1_1internal_1_1ToUInt_3_01double_01_4.html", "structoperations__research_1_1internal_1_1ToUInt_3_01double_01_4" ],
     [ "ToUInt< float >", "structoperations__research_1_1internal_1_1ToUInt_3_01float_01_4.html", "structoperations__research_1_1internal_1_1ToUInt_3_01float_01_4" ],
+    [ "UnderlyingContainerAdapter", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter.html", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter" ],
     [ "UntypedGScipConstraintHandler", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler" ],
     [ "UntypedGScipConstraintHandlerImpl", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl" ],
     [ "MessageHandlerPtr", "namespaceoperations__research_1_1internal.html#af00491471902054c58b10873703119a1", null ],
     [ "to_uint", "namespaceoperations__research_1_1internal.html#aa7930aa4689479c09dbc61f1ec4f4626", null ],
-    [ "MPSSectionId", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183", [
-      [ "kUnknownSection", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a345e3423066ae7e7dd85a8a5f5e15ee8", null ],
-      [ "kName", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183ae3c0e1ec842318f7832e603f500355c3", null ],
-      [ "kObjsense", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a70a7924d04cd4e5b6e530933ee495424", null ],
-      [ "kRows", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183abbac874253d24b446a98df62240fd8fc", null ],
-      [ "kLazycons", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a30b53cf08047661971679eb4faad934a", null ],
-      [ "kColumns", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183ab20180d2a86988dfa3b82e867e94df59", null ],
-      [ "kRhs", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a82a00be30d5c9e6f4e8f9c6a5a52973f", null ],
-      [ "kRanges", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a52dc7b8d26817bd6c112c54bb555a6c8", null ],
-      [ "kBounds", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183ac76b06b371103617f97259ed74bbbdfd", null ],
-      [ "kIndicators", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a2ba753273480afb7df77df7d9e95387a", null ],
-      [ "kEndData", "namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183a0e071d669ad3d79e7fffb9654a90e9c9", null ]
-    ] ],
     [ "AddCallbackConstraint", "namespaceoperations__research_1_1internal.html#a30b61d637f83941aa9acb03aef639410", null ],
     [ "AddCallbackConstraintImpl", "namespaceoperations__research_1_1internal.html#a90cc50c603b218efbbaeeef5c7f98d17", null ],
     [ "AddConstraintHandlerImpl", "namespaceoperations__research_1_1internal.html#a2ac127174821e785a26be62bf70516ff", null ],
@@ -38,6 +26,9 @@ var namespaceoperations__research_1_1internal =
     [ "BitPos64", "namespaceoperations__research_1_1internal.html#a642d0ef30f0099a44aef96c27d84b090", null ],
     [ "CaptureMessageHandlerPtr", "namespaceoperations__research_1_1internal.html#a70409052918b97eb7654fc0e38a17100", null ],
     [ "ClearBit64", "namespaceoperations__research_1_1internal.html#aa04bf52dc3de549e6ddc4c823bd5ab5e", null ],
+    [ "ComputePathLength", "namespaceoperations__research_1_1internal.html#a330aa4abcb2cc54174d90968235473af", null ],
+    [ "ComputeShortestPath", "namespaceoperations__research_1_1internal.html#a494c63aaa23915eafaf78dd554c52780", null ],
+    [ "FindArcIndex", "namespaceoperations__research_1_1internal.html#aed7d95b48fcf6ae24a01da206204261f", null ],
     [ "GraphIsConnected", "namespaceoperations__research_1_1internal.html#adeaf341ffaa35e9a3478aeb95f2c580a", null ],
     [ "IsBitSet64", "namespaceoperations__research_1_1internal.html#a8254b0157656b65e18e2db918d462e5a", null ],
     [ "IsNanGeneric", "namespaceoperations__research_1_1internal.html#a6a3c9b831bd054a90c48a31ef1b6f1aa", null ],
@@ -53,5 +44,6 @@ var namespaceoperations__research_1_1internal =
     [ "SetBit64", "namespaceoperations__research_1_1internal.html#a07743e286ce6ded2b13ed91d43158404", null ],
     [ "UsesTwosComplement", "namespaceoperations__research_1_1internal.html#a7576c96963562faa59a8f0bc85b52430", null ],
     [ "VectorSum", "namespaceoperations__research_1_1internal.html#a8f87919870c77d9773c65601003944f6", null ],
-    [ "kNumMpsFields", "namespaceoperations__research_1_1internal.html#ab99fcff887e540d930fb7241a61da9cc", null ]
+    [ "kDisconnectedDistance", "namespaceoperations__research_1_1internal.html#a80b050d31e410a80458c8dc040d0f02d", null ],
+    [ "kMaxDistance", "namespaceoperations__research_1_1internal.html#abf625005f250173e1bf34b85e36f1d98", null ]
 ];

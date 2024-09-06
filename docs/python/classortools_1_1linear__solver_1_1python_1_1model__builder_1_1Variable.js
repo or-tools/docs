@@ -1,6 +1,6 @@
 var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable =
 [
-    [ "__init__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#ac288e2051f8bb577d242442eedd9b5c2", null ],
+    [ "__init__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#aba63490b1340336c614c7a9c7e668bc1", null ],
     [ "__eq__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#afc6725fb029bcff0e56f2af74a8dc7d0", null ],
     [ "__hash__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#ac7ea2be01921311ad0c0733af46a4fc7", null ],
     [ "__repr__", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#ad2782bbbe59efe12aaa7546aead34c7c", null ],
@@ -18,5 +18,5 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable =
     [ "objective_coefficient", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#a4fdad9d25262a039a7485a9f7ebecfa5", null ],
     [ "upper_bound", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#afa8b2bda779b3095e32085120a4e1747", null ],
     [ "upper_bound", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#aa2a5c41976d48df5e4028aed249f501a", null ],
-    [ "index", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#a8837f433cb3f66a5e7e9aabb1182f773", null ]
+    [ "index", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html#a7a8eee3d42a2216d10c7a32acb4cdd83", null ]
 ];

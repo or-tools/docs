@@ -7,7 +7,7 @@ var searchData=
   ['domain_4',['Domain',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#aa561f079171b584b0e30a5dcc8355407',1,'ortools::sat::python::cp_model']]],
   ['dual_5',['DUAL',['../classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html#a968efb3a761a12439aa611fa57502a8b',1,'ortools::linear_solver::pywraplp::MPSolverParameters']]],
   ['dual_5fbound_6',['dual_bound',['../classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html#a42e0f1fbd11d8de6424957b5dea11be0',1,'ortools::math_opt::python::result::ObjectiveBounds']]],
-  ['dual_5frays_7',['dual_rays',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#ac61ff8d5c7992af916bcbea7127fa281',1,'ortools.math_opt.python.result.SolveResult.dual_rays'],['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a488f61329730665fd8bcc2b06d6fafb1',1,'ortools.math_opt.python.result.SolveResult.dual_rays']]],
+  ['dual_5frays_7',['dual_rays',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a488f61329730665fd8bcc2b06d6fafb1',1,'ortools::math_opt::python::result::SolveResult']]],
   ['dual_5fsimplex_8',['DUAL_SIMPLEX',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html#ade7c446796b028bc416805714cc68eb7',1,'ortools::math_opt::python::parameters::LPAlgorithm']]],
   ['dual_5fsolution_9',['dual_solution',['../classortools_1_1math__opt_1_1python_1_1solution_1_1Solution.html#ad49e44ab530c6a15fdd8eef5083d1f4a',1,'ortools::math_opt::python::solution::Solution']]],
   ['dual_5fstatus_10',['dual_status',['../classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus.html#a24eb94d7c614e9a4f3241030bae87248',1,'ortools::math_opt::python::result::ProblemStatus']]],

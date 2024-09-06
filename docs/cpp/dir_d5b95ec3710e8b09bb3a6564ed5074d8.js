@@ -16,8 +16,6 @@ var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
     [ "model_summary.h", "model__summary_8h.html", "model__summary_8h" ],
     [ "non_streamable_solver_init_arguments.cc", "non__streamable__solver__init__arguments_8cc.html", null ],
     [ "non_streamable_solver_init_arguments.h", "non__streamable__solver__init__arguments_8h.html", "non__streamable__solver__init__arguments_8h" ],
-    [ "solve_interrupter.cc", "solve__interrupter_8cc.html", null ],
-    [ "solve_interrupter.h", "solve__interrupter_8h.html", "solve__interrupter_8h" ],
     [ "solver.cc", "solver_8cc.html", "solver_8cc" ],
     [ "solver.h", "solver_8h.html", "solver_8h" ],
     [ "solver_debug.cc", "solver__debug_8cc.html", "solver__debug_8cc" ],

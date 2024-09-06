@@ -26,6 +26,5 @@ var classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters =
     [ "solution_limit", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a8eb8d4f5e05b91feaf28bb98925dfce9", null ],
     [ "solution_pool_size", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a51548a5029becf06521ca662f022a188", null ],
     [ "threads", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a2e372665862190263ba3c255d4371f07", null ],
-    [ "time_limit", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#aed6d1eb3e482cc6f311b8ae20e5fd132", null ],
     [ "time_limit", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#acaff97dc968b1ea6f0635e87fb12d711", null ]
 ];

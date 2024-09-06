@@ -1,5 +1,6 @@
 var dir_80dda7a75b0dfcf996988638a63eb03a =
 [
+    [ "adjustable_k_ary_heap.h", "adjustable__k__ary__heap_8h.html", "adjustable__k__ary__heap_8h" ],
     [ "binary_indexed_tree.h", "binary__indexed__tree_8h.html", "binary__indexed__tree_8h" ],
     [ "binary_search.h", "binary__search_8h.html", "binary__search_8h" ],
     [ "dense_doubly_linked_list.h", "dense__doubly__linked__list_8h.html", "dense__doubly__linked__list_8h" ],
@@ -15,12 +16,10 @@ var dir_80dda7a75b0dfcf996988638a63eb03a =
     [ "hungarian.h", "hungarian_8h.html", "hungarian_8h" ],
     [ "knapsack_solver.cc", "knapsack__solver_8cc.html", "knapsack__solver_8cc" ],
     [ "knapsack_solver.h", "knapsack__solver_8h.html", "knapsack__solver_8h" ],
-    [ "knapsack_solver_for_cuts.cc", "knapsack__solver__for__cuts_8cc.html", "knapsack__solver__for__cuts_8cc" ],
-    [ "knapsack_solver_for_cuts.h", "knapsack__solver__for__cuts_8h.html", "knapsack__solver__for__cuts_8h" ],
     [ "radix_sort.h", "radix__sort_8h.html", "radix__sort_8h" ],
-    [ "set_cover.cc", "set__cover_8cc.html", "set__cover_8cc" ],
-    [ "set_cover.h", "set__cover_8h.html", "set__cover_8h" ],
     [ "set_cover.proto", "set__cover_8proto.html", null ],
+    [ "set_cover_heuristics.cc", "set__cover__heuristics_8cc.html", "set__cover__heuristics_8cc" ],
+    [ "set_cover_heuristics.h", "set__cover__heuristics_8h.html", "set__cover__heuristics_8h" ],
     [ "set_cover_invariant.cc", "set__cover__invariant_8cc.html", null ],
     [ "set_cover_invariant.h", "set__cover__invariant_8h.html", "set__cover__invariant_8h" ],
     [ "set_cover_mip.cc", "set__cover__mip_8cc.html", "set__cover__mip_8cc" ],
@@ -29,8 +28,6 @@ var dir_80dda7a75b0dfcf996988638a63eb03a =
     [ "set_cover_model.h", "set__cover__model_8h.html", "set__cover__model_8h" ],
     [ "set_cover_reader.cc", "set__cover__reader_8cc.html", "set__cover__reader_8cc" ],
     [ "set_cover_reader.h", "set__cover__reader_8h.html", "set__cover__reader_8h" ],
-    [ "set_cover_utils.cc", "set__cover__utils_8cc.html", null ],
-    [ "set_cover_utils.h", "set__cover__utils_8h.html", "set__cover__utils_8h" ],
     [ "sparse_permutation.cc", "sparse__permutation_8cc.html", null ],
     [ "sparse_permutation.h", "sparse__permutation_8h.html", "sparse__permutation_8h" ]
 ];

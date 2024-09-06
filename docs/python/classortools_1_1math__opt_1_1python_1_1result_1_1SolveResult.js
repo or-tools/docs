@@ -43,14 +43,12 @@ var classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult =
     [ "variable_values", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a218a88f1919c9be2322415fd11f1b3b1", null ],
     [ "variable_values", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a199f75178a3c23fe8e89e62755c7a886", null ],
     [ "variable_values", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#aede2c2fae7eab1fffffc92ccff8923e3", null ],
-    [ "dual_rays", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#ac61ff8d5c7992af916bcbea7127fa281", null ],
     [ "dual_rays", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a488f61329730665fd8bcc2b06d6fafb1", null ],
     [ "gscip_specific_output", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#ad5a76cda0ade283d5ea106e9d6a837fd", null ],
     [ "osqp_specific_output", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#ab03e7035e04535b407a6c078c1e30113", null ],
     [ "pdlp_specific_output", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a411bc0fb652496b9e57d5ec256b4365a", null ],
-    [ "primal_rays", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a5f1835f133b76ac2acbcbe65f346dd53", null ],
     [ "primal_rays", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#aaa3a217f98f46a1dc9de123dcaa919be", null ],
-    [ "solutions", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a074aacc94614d66b1e1003e45a79e8e1", null ],
+    [ "solutions", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#aa1954e8b98c0d66950a36910656f990f", null ],
     [ "solve_stats", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a94e9fa8ad09f3003aea4341aa7988ebf", null ],
     [ "termination", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#a9269045fe1605e064eb33504f540c45b", null ]
 ];

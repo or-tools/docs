@@ -20,6 +20,8 @@ var dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd =
     [ "gurobi_solver.cc", "gurobi__solver_8cc.html", null ],
     [ "gurobi_solver.h", "gurobi__solver_8h.html", "gurobi__solver_8h" ],
     [ "highs.proto", "highs_8proto.html", null ],
+    [ "highs_solver.cc", "highs__solver_8cc.html", "highs__solver_8cc" ],
+    [ "highs_solver.h", "highs__solver_8h.html", "highs__solver_8h" ],
     [ "message_callback_data.cc", "message__callback__data_8cc.html", null ],
     [ "message_callback_data.h", "message__callback__data_8h.html", "message__callback__data_8h" ],
     [ "osqp.proto", "osqp_8proto.html", null ],

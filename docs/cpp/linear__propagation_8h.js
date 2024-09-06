@@ -1,7 +1,7 @@
 var linear__propagation_8h =
 [
-    [ "operations_research::sat::CustomFifoQueue", "classoperations__research_1_1sat_1_1CustomFifoQueue.html", "classoperations__research_1_1sat_1_1CustomFifoQueue" ],
     [ "operations_research::sat::EnforcementPropagator", "classoperations__research_1_1sat_1_1EnforcementPropagator.html", "classoperations__research_1_1sat_1_1EnforcementPropagator" ],
+    [ "operations_research::sat::ConstraintPropagationOrder", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder" ],
     [ "operations_research::sat::LinearPropagator", "classoperations__research_1_1sat_1_1LinearPropagator.html", "classoperations__research_1_1sat_1_1LinearPropagator" ],
     [ "EnforcementStatus", "linear__propagation_8h.html#aa4a62b204187763884e737d2f51aad8a", [
       [ "IS_FALSE", "linear__propagation_8h.html#aa4a62b204187763884e737d2f51aad8aadeab83d56dee7ab418359a59b4ff2eb0", null ],

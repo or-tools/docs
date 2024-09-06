@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus.html#a2c5a8c25fbee4d80278410cfc9f37529", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus.html#a3e4fab06c8a45f73cd278329374ae717", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus.html#a29ee249217ba92e44a30f90b2904c4d2", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus.html#a46283b5954bae638941405d3c9cfb83f", null ],

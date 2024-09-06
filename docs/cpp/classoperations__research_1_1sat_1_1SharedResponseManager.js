@@ -1,6 +1,7 @@
 var classoperations__research_1_1sat_1_1SharedResponseManager =
 [
     [ "SharedResponseManager", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a38f285b1f636f66048d8c0b209fb7be0", null ],
+    [ "AddBestBoundCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a59acdff58462ade975cff83326572abb", null ],
     [ "AddFinalResponsePostprocessor", "classoperations__research_1_1sat_1_1SharedResponseManager.html#abf3c070f2959f4586af099c8417b3914", null ],
     [ "AddLogCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a597c1cc8e1c478f8fdf425406eba8a15", null ],
     [ "AddResponsePostprocessor", "classoperations__research_1_1sat_1_1SharedResponseManager.html#ac96aab47ad87e243c2b6745ebbdd7322", null ],
@@ -33,6 +34,7 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
     [ "Synchronize", "classoperations__research_1_1sat_1_1SharedResponseManager.html#ac3d4888bd876546e4b1275ce8004da1d", null ],
     [ "SynchronizedInnerObjectiveLowerBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#aab532fd40f53ea7a1e1f2045d8cb033c", null ],
     [ "SynchronizedInnerObjectiveUpperBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#af6b7153114fbac01f305a97e9a559c97", null ],
+    [ "UnregisterBestBoundCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a8cd61eded7509c965d19e648213987f9", null ],
     [ "UnregisterCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a8507584a3e508275aa43a8094a13ec41", null ],
     [ "UnregisterLogCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a651a59a266fa9311cda8a61847d664be", null ],
     [ "UpdateGapIntegral", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a5185cffec0489a7680f3dfb38749208a", null ],

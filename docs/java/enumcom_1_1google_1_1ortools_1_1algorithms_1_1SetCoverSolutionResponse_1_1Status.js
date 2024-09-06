@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Status =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Status.html#a351a0e01fed71c7aeb401447b85ba936", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Status.html#ae91df0571e57bd379dd46a0d43a5d1e8", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Status.html#ac9f806227b6b30c3757a51946a8c9b86", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Status.html#a59958f24e0b61deb9b0565247ca00c0a", null ],

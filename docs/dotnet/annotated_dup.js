@@ -6,8 +6,8 @@ var annotated_dup =
     [ "Google", "namespaceGoogle.html", [
       [ "OrTools", "namespaceGoogle_1_1OrTools.html", [
         [ "Algorithms", "namespaceGoogle_1_1OrTools_1_1Algorithms.html", [
+          [ "Int64Matrix", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Matrix.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Matrix" ],
           [ "Int64Vector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Vector" ],
-          [ "Int64VectorVector", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64VectorVector" ],
           [ "KnapsackSolver", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1KnapsackSolver" ],
           [ "operations_research_algorithms", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithms.html", null ],
           [ "operations_research_algorithmsPINVOKE", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE" ]
@@ -196,10 +196,27 @@ var annotated_dup =
           [ "Term", "structGoogle_1_1OrTools_1_1ModelBuilder_1_1Term.html", "structGoogle_1_1OrTools_1_1ModelBuilder_1_1Term" ],
           [ "Variable", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable.html", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable" ]
         ] ],
+        [ "PDLP", "namespaceGoogle_1_1OrTools_1_1PDLP.html", [
+          [ "AdaptiveLinesearchParams", "classGoogle_1_1OrTools_1_1PDLP_1_1AdaptiveLinesearchParams.html", "classGoogle_1_1OrTools_1_1PDLP_1_1AdaptiveLinesearchParams" ],
+          [ "ConvergenceInformation", "classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html", "classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation" ],
+          [ "FeasibilityPolishingDetails", "classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html", "classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails" ],
+          [ "InfeasibilityInformation", "classGoogle_1_1OrTools_1_1PDLP_1_1InfeasibilityInformation.html", "classGoogle_1_1OrTools_1_1PDLP_1_1InfeasibilityInformation" ],
+          [ "IterationStats", "classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html", "classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats" ],
+          [ "MalitskyPockParams", "classGoogle_1_1OrTools_1_1PDLP_1_1MalitskyPockParams.html", "classGoogle_1_1OrTools_1_1PDLP_1_1MalitskyPockParams" ],
+          [ "PointMetadata", "classGoogle_1_1OrTools_1_1PDLP_1_1PointMetadata.html", "classGoogle_1_1OrTools_1_1PDLP_1_1PointMetadata" ],
+          [ "PrimalDualHybridGradientParams", "classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams.html", "classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams" ],
+          [ "QuadraticProgramStats", "classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html", "classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats" ],
+          [ "SolveLog", "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html", "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog" ],
+          [ "SolveLogReflection", "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLogReflection.html", "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLogReflection" ],
+          [ "SolversReflection", "classGoogle_1_1OrTools_1_1PDLP_1_1SolversReflection.html", "classGoogle_1_1OrTools_1_1PDLP_1_1SolversReflection" ],
+          [ "TerminationCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria.html", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria" ]
+        ] ],
         [ "Sat", "namespaceGoogle_1_1OrTools_1_1Sat.html", [
           [ "AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto" ],
           [ "AutomatonConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint" ],
           [ "AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto" ],
+          [ "BestBoundCallback", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback.html", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback" ],
+          [ "BestBoundCallbackDelegate", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallbackDelegate.html", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallbackDelegate" ],
           [ "BoolArgumentProto", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto" ],
           [ "BooleanAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment" ],
           [ "BooleanProblemReflection", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection" ],
@@ -292,21 +309,6 @@ var annotated_dup =
       ] ]
     ] ],
     [ "OperationsResearch", "namespaceOperationsResearch.html", [
-      [ "Pdlp", "namespaceOperationsResearch_1_1Pdlp.html", [
-        [ "AdaptiveLinesearchParams", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams.html", "classOperationsResearch_1_1Pdlp_1_1AdaptiveLinesearchParams" ],
-        [ "ConvergenceInformation", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation.html", "classOperationsResearch_1_1Pdlp_1_1ConvergenceInformation" ],
-        [ "FeasibilityPolishingDetails", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails.html", "classOperationsResearch_1_1Pdlp_1_1FeasibilityPolishingDetails" ],
-        [ "InfeasibilityInformation", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation.html", "classOperationsResearch_1_1Pdlp_1_1InfeasibilityInformation" ],
-        [ "IterationStats", "classOperationsResearch_1_1Pdlp_1_1IterationStats.html", "classOperationsResearch_1_1Pdlp_1_1IterationStats" ],
-        [ "MalitskyPockParams", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams.html", "classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams" ],
-        [ "PointMetadata", "classOperationsResearch_1_1Pdlp_1_1PointMetadata.html", "classOperationsResearch_1_1Pdlp_1_1PointMetadata" ],
-        [ "PrimalDualHybridGradientParams", "classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams.html", "classOperationsResearch_1_1Pdlp_1_1PrimalDualHybridGradientParams" ],
-        [ "QuadraticProgramStats", "classOperationsResearch_1_1Pdlp_1_1QuadraticProgramStats.html", "classOperationsResearch_1_1Pdlp_1_1QuadraticProgramStats" ],
-        [ "SolveLog", "classOperationsResearch_1_1Pdlp_1_1SolveLog.html", "classOperationsResearch_1_1Pdlp_1_1SolveLog" ],
-        [ "SolveLogReflection", "classOperationsResearch_1_1Pdlp_1_1SolveLogReflection.html", "classOperationsResearch_1_1Pdlp_1_1SolveLogReflection" ],
-        [ "SolversReflection", "classOperationsResearch_1_1Pdlp_1_1SolversReflection.html", "classOperationsResearch_1_1Pdlp_1_1SolversReflection" ],
-        [ "TerminationCriteria", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html", "classOperationsResearch_1_1Pdlp_1_1TerminationCriteria" ]
-      ] ],
       [ "AcceptanceStrategy", "classOperationsResearch_1_1AcceptanceStrategy.html", "classOperationsResearch_1_1AcceptanceStrategy" ],
       [ "IteratedLocalSearchParameters", "classOperationsResearch_1_1IteratedLocalSearchParameters.html", "classOperationsResearch_1_1IteratedLocalSearchParameters" ],
       [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],

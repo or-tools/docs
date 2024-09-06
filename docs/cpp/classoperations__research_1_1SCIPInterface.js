@@ -9,7 +9,7 @@ var classoperations__research_1_1SCIPInterface =
     [ "ClearConstraint", "classoperations__research_1_1SCIPInterface.html#a5814704340fe7d16d5679fd749c05f6a", null ],
     [ "ClearObjective", "classoperations__research_1_1SCIPInterface.html#a7112ebce0f9900a3a719e244b038f2ca", null ],
     [ "column_status", "classoperations__research_1_1SCIPInterface.html#a33d04229730c80420b6e18d021df4f60", null ],
-    [ "DirectlySolveProto", "classoperations__research_1_1SCIPInterface.html#a383e47407e2c0cccf6976aafb7fc3093", null ],
+    [ "DirectlySolveProto", "classoperations__research_1_1SCIPInterface.html#aec4d1b03954326245775fac50c98c433", null ],
     [ "ExtractNewConstraints", "classoperations__research_1_1SCIPInterface.html#a14fa927070e0689efa0127129d313c71", null ],
     [ "ExtractNewVariables", "classoperations__research_1_1SCIPInterface.html#a228e7423aaf5aed733c1760ab3976af4", null ],
     [ "ExtractObjective", "classoperations__research_1_1SCIPInterface.html#a0bcdd3ae9f68feefcc868861a72da909", null ],
@@ -34,5 +34,6 @@ var classoperations__research_1_1SCIPInterface =
     [ "Solve", "classoperations__research_1_1SCIPInterface.html#a8682d7f525de8a5c389cf5e1b495f1ac", null ],
     [ "SolverVersion", "classoperations__research_1_1SCIPInterface.html#ad83817a4081949e30f7534503ad18e24", null ],
     [ "SupportsCallbacks", "classoperations__research_1_1SCIPInterface.html#ab66ee70710f045748a2103679709f8ef", null ],
+    [ "SupportsDirectlySolveProto", "classoperations__research_1_1SCIPInterface.html#ae71ef7f8ccfc1b8caa907eb84be8349d", null ],
     [ "underlying_solver", "classoperations__research_1_1SCIPInterface.html#a2a02b6ebc4fb602269d59239f522fdf5", null ]
 ];

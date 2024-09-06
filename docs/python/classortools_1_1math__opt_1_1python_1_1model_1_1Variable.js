@@ -28,6 +28,7 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1Variable =
     [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#aa0ed801bcda91cc23cce0733c8c92c86", null ],
     [ "upper_bound", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#a95e9f25cb247abc19042d8cc38dbbcef", null ],
     [ "_id", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#a496f3bdb9faf2c53c800b0ab64ce6139", null ],
+    [ "_model", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#a28c7c1f467c619d203656bddb5dd4fb2", null ],
     [ "id", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#acc1bfdd677ce35753a171739760b63ff", null ],
     [ "model", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html#a0caf353df9c76d617a3ea39eed283494", null ]
 ];

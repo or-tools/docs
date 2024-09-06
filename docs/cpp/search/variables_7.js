@@ -22,7 +22,7 @@ var searchData=
   ['heuristic_5fsearch_19',['heuristic_search',['../structoperations__research_1_1sat_1_1SearchHeuristics.html#a188cd5f150ed62392859eba24c469402',1,'operations_research::sat::SearchHeuristics']]],
   ['heuristics_20',['heuristics',['../structoperations__research_1_1math__opt_1_1SolveParameters.html#a5c4152606ca0a8faf79e513150d54296',1,'operations_research::math_opt::SolveParameters']]],
   ['highs_21',['highs',['../structoperations__research_1_1math__opt_1_1SolveParameters.html#a2b448ecf23954d29c845aecf7fcf4222',1,'operations_research::math_opt::SolveParameters']]],
-  ['hint_22',['hint',['../mathopt__solve__main_8cc.html#ac800b7ae4ecfef086c40e66fa7d1f030',1,'mathopt_solve_main.cc']]],
+  ['hint_22',['hint',['../mathopt__solve_8cc.html#ac800b7ae4ecfef086c40e66fa7d1f030',1,'mathopt_solve.cc']]],
   ['hint_5faccepted_5fmessage_5fregex_23',['hint_accepted_message_regex',['../structoperations__research_1_1math__opt_1_1SolutionHintTestParams.html#a9055625300cfb870c05ca5d8b2bef815',1,'operations_research::math_opt::SolutionHintTestParams']]],
   ['hint_5fsearch_24',['hint_search',['../structoperations__research_1_1sat_1_1SearchHeuristics.html#a83fe91a66dbf3d11bbabc8fb64e424fe',1,'operations_research::sat::SearchHeuristics']]],
   ['hint_5fsupported_25',['hint_supported',['../structoperations__research_1_1math__opt_1_1IpParameterTestParameters.html#aa6d3d6ba6005e5556d6792122fcb225e',1,'operations_research::math_opt::IpParameterTestParameters']]],

@@ -8,7 +8,6 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpres
     [ "variable_indices", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#acbf70d3bc797ea76d03c81d6798e7511", null ],
     [ "_coefficients", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#aadb676b614de180b0436ac90fed46516", null ],
     [ "_helper", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#a506d43c02b50ad592cdd28b89733b4d8", null ],
-    [ "_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#a459afa8a85507434c29ad84ec7830828", null ],
     [ "_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#ad4ddec63c82b670e0c7240be360d718f", null ],
     [ "_variable_indices", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#afdef17c41d44846425e0f6811d478a1d", null ],
     [ "coefficients", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html#abc476bbb5fd282fcc26fb9b35e526ae3", null ],

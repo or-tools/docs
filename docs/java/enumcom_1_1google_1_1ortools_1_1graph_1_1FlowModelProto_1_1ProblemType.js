@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html#a441acc9ee2a9ebe0adee7db49c5760ee", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html#a33e27fbf6e1611221616adf3f403f3b1", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html#a230f019d2af39bdec9de68b46284f0fc", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html#a3718a4ff89ae08b4af814d7a750f7cc2", null ],

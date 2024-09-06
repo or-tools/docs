@@ -1,7 +1,0 @@
-var interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder =
-[
-    [ "getEpsOptimalAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html#a22d886d20c1efee3aac28605cea5b177", null ],
-    [ "getEpsOptimalRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html#ad6786429c7f7de515637ce65e5682cad", null ],
-    [ "hasEpsOptimalAbsolute", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html#a08baf61d48cb2b0374de1f54803b8b7e", null ],
-    [ "hasEpsOptimalRelative", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html#a243497a72e398fba9b7f84c593dcd4e7", null ]
-];

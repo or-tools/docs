@@ -1,0 +1,15 @@
+var interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder =
+[
+    [ "getEpsOptimalDualResidualAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a1c40008939325a12278599936488aa4e", null ],
+    [ "getEpsOptimalDualResidualRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#aa33f225c4e0c708d29aa66149b378990", null ],
+    [ "getEpsOptimalObjectiveGapAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#abdfa53c728fe55992a2884f9d14c2c1e", null ],
+    [ "getEpsOptimalObjectiveGapRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a6428d4dc9f436cafbc59ee539f4778b0", null ],
+    [ "getEpsOptimalPrimalResidualAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#ad20e6a83a791aa010eb35f4ed84e3619", null ],
+    [ "getEpsOptimalPrimalResidualRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a0e1fd1a0053491a38ab458e9d154ec33", null ],
+    [ "hasEpsOptimalDualResidualAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#abf0135c531ea5def446c13fc5c63cfcf", null ],
+    [ "hasEpsOptimalDualResidualRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a3654e696571646451d5e65956add39ee", null ],
+    [ "hasEpsOptimalObjectiveGapAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a34b2b692acd7982c8ecb7d5f1066f6a9", null ],
+    [ "hasEpsOptimalObjectiveGapRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#abe10546045fb31d5c013e25b3becfedf", null ],
+    [ "hasEpsOptimalPrimalResidualAbsolute", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a9f494b65456b44b55152e3fb1bd9bc8e", null ],
+    [ "hasEpsOptimalPrimalResidualRelative", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html#a921b6bab37e29653b5935b5edb629465", null ]
+];

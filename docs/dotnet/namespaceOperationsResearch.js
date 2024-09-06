@@ -1,6 +1,5 @@
 var namespaceOperationsResearch =
 [
-    [ "Pdlp", "namespaceOperationsResearch_1_1Pdlp.html", "namespaceOperationsResearch_1_1Pdlp" ],
     [ "AcceptanceStrategy", "classOperationsResearch_1_1AcceptanceStrategy.html", "classOperationsResearch_1_1AcceptanceStrategy" ],
     [ "IteratedLocalSearchParameters", "classOperationsResearch_1_1IteratedLocalSearchParameters.html", "classOperationsResearch_1_1IteratedLocalSearchParameters" ],
     [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],

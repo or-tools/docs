@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy.html#a144301e0b25e87461785cdea4a73d812", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy.html#abae73ea8990e878d71efd0f688ee6169", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy.html#ad54e65e077f96cee24c74b7fd75d89c1", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SharedTreeSplitStrategy.html#a3f9a7b8cd06eec9c429ec9f8f80f84db", null ],

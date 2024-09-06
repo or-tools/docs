@@ -16,6 +16,7 @@ var cp__model__utils_8h =
     [ "EnforcementLiteral", "cp__model__utils_8h.html#adff14ec933b464328de54c33e81429a9", null ],
     [ "ExpressionContainsSingleRef", "cp__model__utils_8h.html#abc34dbcdae318ae9788e4448a65acecc", null ],
     [ "ExpressionIsAffine", "cp__model__utils_8h.html#a75cf12df936171c3abd17cf962264dcb", null ],
+    [ "ExpressionsContainsOnlyOneVar", "cp__model__utils_8h.html#ab1263f7cb0bf4a69c2981e643af985f5", null ],
     [ "FillDomainInProto", "cp__model__utils_8h.html#a901c19b12842f8af153e588a689a90b5", null ],
     [ "FingerprintExpression", "cp__model__utils_8h.html#a70f1774c343aaebb5a3d9686e12e7f7e", null ],
     [ "FingerprintModel", "cp__model__utils_8h.html#a7492392221bdfcc832cce2d93c9b681c", null ],

@@ -1,7 +1,7 @@
 var sat__parameters__pb2_8py =
 [
     [ "_globals", "sat__parameters__pb2_8py.html#a8229bc629c6e55d65835708b83b1f2a1", null ],
-    [ "_options", "sat__parameters__pb2_8py.html#a77c2d9a04c5c6c2ab4d21885de11edaf", null ],
+    [ "_loaded_options", "sat__parameters__pb2_8py.html#a4b54a1a59d8574d981de26be22de7ab9", null ],
     [ "_serialized_end", "sat__parameters__pb2_8py.html#ac16c3801716307c46dae2c00be58ac60", null ],
     [ "_serialized_options", "sat__parameters__pb2_8py.html#a29901d3308ff346982560f284d1afff1", null ],
     [ "_serialized_start", "sat__parameters__pb2_8py.html#a7b6c9feb3dc09ddbcf3f412f8eecd529", null ],

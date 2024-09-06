@@ -14,13 +14,12 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment =
     [ "getVarValueCount", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#aaabee21c76e1e536ec8ce9d71a1677be", null ],
     [ "getVarValueList", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a1b604a185fb6ef4138f67d0aa242d25b", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#ad2195a9ab5ae9fc136fe626250d37867", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#ae87efeac87984b8d6e491f635c0cd4d9", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#ad36ed8002a5a58fb6d762e372bdf96b8", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a2d44aa9ff8870c3ef7af0591803823a0", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#aa270d9c7019b4d21eaa39e3be41b7ff6", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a9873922115fe65208f69bafe510a9842", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a060c541b62ca5af1f12dadecd3e32331", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#ae2b1ac77b2b40ee6b3ef605b2c3dcd20", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a36541e4056f81bfde5ab14a2f6f896b4", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a3d445def9803e16d9d494148666bfa70", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a05620ab6829a21b38eb764612ac90613", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a90b5d0fc2ddfeaaf240845872644934b", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#aafb41c213cd39f4cf9c867f5101e4764", null ],
@@ -36,7 +35,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment =
     [ "parser", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#af227649a0e598b8b40f48b6d672aef7d", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a37c0d055e950a1240bb25bf4daa15d33", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a74e1552ed85b80b10bcb7f35aa234ebc", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a0550abf8dc87457888dc7dbdbe2c702b", null ],
     [ "VAR_INDEX_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a055ceab58b4a3e5c9e19e35953c760f3", null ],
     [ "VAR_VALUE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html#a5639fb033be31ef0ea066b3ae2ba8107", null ]
 ];

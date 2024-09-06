@@ -70,7 +70,7 @@ var hierarchy =
     [ "com.google.ortools.sat.BooleanProblem", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanProblem.html", null ],
     [ "com.google.ortools.bop.BopParametersOuterClass", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParametersOuterClass.html", null ],
     [ "com.google.ortools.constraintsolver.BoundCost", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html", null ],
-    [ "com.google.protobuf.GeneratedMessageV3.Builder", null, [
+    [ "com.google.protobuf.GeneratedMessage.Builder", null, [
       [ "com.google.ortools.algorithms.SetCoverProto.Builder", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto_1_1Builder.html", null ],
       [ "com.google.ortools.algorithms.SetCoverProto.Subset.Builder", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto_1_1Subset_1_1Builder.html", null ],
       [ "com.google.ortools.algorithms.SetCoverSolutionResponse.Builder", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse_1_1Builder.html", null ],
@@ -115,6 +115,20 @@ var hierarchy =
       [ "com.google.ortools.linearsolver.MPVariableProto.Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariableProto_1_1Builder.html", null ],
       [ "com.google.ortools.linearsolver.OptionalDouble.Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble_1_1Builder.html", null ],
       [ "com.google.ortools.linearsolver.PartialVariableAssignment.Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.AdaptiveLinesearchParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.ConvergenceInformation.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.FeasibilityPolishingDetails.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.InfeasibilityInformation.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.IterationStats.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.MalitskyPockParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.PointMetadata.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.QuadraticProgramStats.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.SolveLog.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", null ],
       [ "com.google.ortools.sat.AllDifferentConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.AutomatonConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.BoolArgumentProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto_1_1Builder.html", null ],
@@ -155,21 +169,7 @@ var hierarchy =
       [ "operations_research.RoutingIls.IteratedLocalSearchParameters.Builder", "classoperations__research_1_1RoutingIls_1_1IteratedLocalSearchParameters_1_1Builder.html", null ],
       [ "operations_research.RoutingIls.PerturbationStrategy.Builder", "classoperations__research_1_1RoutingIls_1_1PerturbationStrategy_1_1Builder.html", null ],
       [ "operations_research.RoutingIls.RuinRecreateParameters.Builder", "classoperations__research_1_1RoutingIls_1_1RuinRecreateParameters_1_1Builder.html", null ],
-      [ "operations_research.RoutingIls.RuinStrategy.Builder", "classoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.FeasibilityPolishingDetails.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.InfeasibilityInformation.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.IterationStats.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.PointMetadata.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.QuadraticProgramStats.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats_1_1Builder.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.SolveLog.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLog_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.AdaptiveLinesearchParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.MalitskyPockParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.PresolveOptions.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", null ]
+      [ "operations_research.RoutingIls.RuinStrategy.Builder", "classoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Builder.html", null ]
     ] ],
     [ "com.google.ortools.sat.Constraint", "classcom_1_1google_1_1ortools_1_1sat_1_1Constraint.html", [
       [ "com.google.ortools.sat.AutomatonConstraint", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html", null ],
@@ -201,15 +201,15 @@ var hierarchy =
     [ "com.google.ortools.modelbuilder.EnforcedLinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1EnforcedLinearConstraint.html", null ],
     [ "com.google.protobuf.Internal.EnumLite", null, [
       [ "com.google.ortools.linearsolver.MPGeneralConstraintProto.GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", null ],
-      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.OptimalityCriteriaCase", "enumoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ]
+      [ "com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ],
+      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ]
     ] ],
     [ "Exception", null, [
       [ "com.google.ortools.constraintsolver.Solver.FailException", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1FailException.html", null ]
     ] ],
     [ "com.google.ortools.constraintsolver.LocalSearchFilterManager.FilterEvent", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html", null ],
     [ "com.google.ortools.graph.FlowProblem", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowProblem.html", null ],
-    [ "com.google.protobuf.GeneratedMessageV3", null, [
+    [ "com.google.protobuf.GeneratedMessage", null, [
       [ "com.google.ortools.algorithms.SetCoverProto", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto.html", null ],
       [ "com.google.ortools.algorithms.SetCoverProto.Subset", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverProto_1_1Subset.html", null ],
       [ "com.google.ortools.algorithms.SetCoverSolutionResponse", "classcom_1_1google_1_1ortools_1_1algorithms_1_1SetCoverSolutionResponse.html", null ],
@@ -254,6 +254,20 @@ var hierarchy =
       [ "com.google.ortools.linearsolver.MPVariableProto", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariableProto.html", null ],
       [ "com.google.ortools.linearsolver.OptionalDouble", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1OptionalDouble.html", null ],
       [ "com.google.ortools.linearsolver.PartialVariableAssignment", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html", null ],
+      [ "com.google.ortools.pdlp.AdaptiveLinesearchParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams.html", null ],
+      [ "com.google.ortools.pdlp.ConvergenceInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation.html", null ],
+      [ "com.google.ortools.pdlp.FeasibilityPolishingDetails", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails.html", null ],
+      [ "com.google.ortools.pdlp.InfeasibilityInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation.html", null ],
+      [ "com.google.ortools.pdlp.IterationStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html", null ],
+      [ "com.google.ortools.pdlp.MalitskyPockParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html", null ],
+      [ "com.google.ortools.pdlp.PointMetadata", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", null ],
+      [ "com.google.ortools.pdlp.QuadraticProgramStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html", null ],
+      [ "com.google.ortools.pdlp.SolveLog", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", null ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", null ],
       [ "com.google.ortools.sat.AllDifferentConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html", null ],
       [ "com.google.ortools.sat.AutomatonConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html", null ],
       [ "com.google.ortools.sat.BoolArgumentProto", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html", null ],
@@ -294,21 +308,7 @@ var hierarchy =
       [ "operations_research.RoutingIls.IteratedLocalSearchParameters", "classoperations__research_1_1RoutingIls_1_1IteratedLocalSearchParameters.html", null ],
       [ "operations_research.RoutingIls.PerturbationStrategy", "classoperations__research_1_1RoutingIls_1_1PerturbationStrategy.html", null ],
       [ "operations_research.RoutingIls.RuinRecreateParameters", "classoperations__research_1_1RoutingIls_1_1RuinRecreateParameters.html", null ],
-      [ "operations_research.RoutingIls.RuinStrategy", "classoperations__research_1_1RoutingIls_1_1RuinStrategy.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.FeasibilityPolishingDetails", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.InfeasibilityInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.IterationStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.PointMetadata", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.QuadraticProgramStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.SolveLog", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLog.html", null ],
-      [ "operations_research.pdlp.Solvers.AdaptiveLinesearchParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html", null ],
-      [ "operations_research.pdlp.Solvers.MalitskyPockParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.PresolveOptions", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.DetailedOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.SimpleOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", null ]
+      [ "operations_research.RoutingIls.RuinStrategy", "classoperations__research_1_1RoutingIls_1_1RuinStrategy.html", null ]
     ] ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.IncrementalityValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html", null ],
     [ "com.google.ortools.util.Int128OuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html", null ],
@@ -317,8 +317,8 @@ var hierarchy =
     [ "com.google.ortools.linearsolver.MPSolverParameters.IntegerParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IntegerParam.html", null ],
     [ "com.google.protobuf.AbstractMessage.InternalOneOfEnum", null, [
       [ "com.google.ortools.linearsolver.MPGeneralConstraintProto.GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", null ],
-      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.OptimalityCriteriaCase", "enumoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ]
+      [ "com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ],
+      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ]
     ] ],
     [ "com.google.ortools.sat.IntervalVar", "classcom_1_1google_1_1ortools_1_1sat_1_1IntervalVar.html", null ],
     [ "com.google.ortools.constraintsolver.IntIntToLongFunction", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IntIntToLongFunction.html", null ],
@@ -561,6 +561,62 @@ var hierarchy =
         [ "com.google.ortools.linearsolver.PartialVariableAssignment", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment.html", null ],
         [ "com.google.ortools.linearsolver.PartialVariableAssignment.Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1PartialVariableAssignment_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.pdlp.AdaptiveLinesearchParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParamsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.AdaptiveLinesearchParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams.html", null ],
+        [ "com.google.ortools.pdlp.AdaptiveLinesearchParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1AdaptiveLinesearchParams_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.ConvergenceInformationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformationOrBuilder.html", [
+        [ "com.google.ortools.pdlp.ConvergenceInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation.html", null ],
+        [ "com.google.ortools.pdlp.ConvergenceInformation.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1ConvergenceInformation_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.FeasibilityPolishingDetailsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.FeasibilityPolishingDetails", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails.html", null ],
+        [ "com.google.ortools.pdlp.FeasibilityPolishingDetails.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.InfeasibilityInformationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformationOrBuilder.html", [
+        [ "com.google.ortools.pdlp.InfeasibilityInformation", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation.html", null ],
+        [ "com.google.ortools.pdlp.InfeasibilityInformation.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.IterationStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1IterationStatsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.IterationStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html", null ],
+        [ "com.google.ortools.pdlp.IterationStats.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.MalitskyPockParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParamsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.MalitskyPockParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html", null ],
+        [ "com.google.ortools.pdlp.MalitskyPockParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.PointMetadataOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadataOrBuilder.html", [
+        [ "com.google.ortools.pdlp.PointMetadata", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata.html", null ],
+        [ "com.google.ortools.pdlp.PointMetadata.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptionsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", null ],
+        [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.PresolveOptions.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParamsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html", null ],
+        [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.QuadraticProgramStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStatsOrBuilder.html", [
+        [ "com.google.ortools.pdlp.QuadraticProgramStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html", null ],
+        [ "com.google.ortools.pdlp.QuadraticProgramStats.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.SolveLogOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOrBuilder.html", [
+        [ "com.google.ortools.pdlp.SolveLog", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html", null ],
+        [ "com.google.ortools.pdlp.SolveLog.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html", [
+        [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", null ],
+        [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html", [
+        [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", null ],
+        [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.pdlp.TerminationCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteriaOrBuilder.html", [
+        [ "com.google.ortools.pdlp.TerminationCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html", null ],
+        [ "com.google.ortools.pdlp.TerminationCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.sat.AllDifferentConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProtoOrBuilder.html", [
         [ "com.google.ortools.sat.AllDifferentConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html", null ],
         [ "com.google.ortools.sat.AllDifferentConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto_1_1Builder.html", null ]
@@ -724,62 +780,6 @@ var hierarchy =
       [ "operations_research.RoutingIls.RuinStrategyOrBuilder", "interfaceoperations__research_1_1RoutingIls_1_1RuinStrategyOrBuilder.html", [
         [ "operations_research.RoutingIls.RuinStrategy", "classoperations__research_1_1RoutingIls_1_1RuinStrategy.html", null ],
         [ "operations_research.RoutingIls.RuinStrategy.Builder", "classoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.ConvergenceInformationOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformationOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.ConvergenceInformation.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1ConvergenceInformation_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.FeasibilityPolishingDetailsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetailsOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.FeasibilityPolishingDetails", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.FeasibilityPolishingDetails.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.InfeasibilityInformationOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformationOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.InfeasibilityInformation", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.InfeasibilityInformation.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1InfeasibilityInformation_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.IterationStatsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStatsOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.IterationStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.IterationStats.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1IterationStats_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.PointMetadataOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadataOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.PointMetadata", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.PointMetadata.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointMetadata_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.QuadraticProgramStatsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStatsOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.QuadraticProgramStats", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.QuadraticProgramStats.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1QuadraticProgramStats_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.SolveLogOuterClass.SolveLogOrBuilder", "interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLogOrBuilder.html", [
-        [ "operations_research.pdlp.SolveLogOuterClass.SolveLog", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLog.html", null ],
-        [ "operations_research.pdlp.SolveLogOuterClass.SolveLog.Builder", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1SolveLog_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.AdaptiveLinesearchParamsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParamsOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.AdaptiveLinesearchParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams.html", null ],
-        [ "operations_research.pdlp.Solvers.AdaptiveLinesearchParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1AdaptiveLinesearchParams_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.MalitskyPockParamsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParamsOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.MalitskyPockParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams.html", null ],
-        [ "operations_research.pdlp.Solvers.MalitskyPockParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1MalitskyPockParams_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.PresolveOptionsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.PresolveOptions", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", null ],
-        [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.PresolveOptions.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1PresolveOptions_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParamsOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParamsOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams.html", null ],
-        [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.DetailedOptimalityCriteriaOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.TerminationCriteria.DetailedOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", null ],
-        [ "operations_research.pdlp.Solvers.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteria.SimpleOptimalityCriteriaOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.TerminationCriteria.SimpleOptimalityCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", null ],
-        [ "operations_research.pdlp.Solvers.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.pdlp.Solvers.TerminationCriteriaOrBuilder", "interfaceoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteriaOrBuilder.html", [
-        [ "operations_research.pdlp.Solvers.TerminationCriteria", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria.html", null ],
-        [ "operations_research.pdlp.Solvers.TerminationCriteria.Builder", "classoperations__research_1_1pdlp_1_1Solvers_1_1TerminationCriteria_1_1Builder.html", null ]
       ] ]
     ] ],
     [ "com.google.ortools.graph.MinCostFlowBase", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlowBase.html", [
@@ -826,6 +826,13 @@ var hierarchy =
       [ "com.google.ortools.linearsolver.MPSolverCommonParameters.LPAlgorithmValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html", null ],
       [ "com.google.ortools.linearsolver.MPSolverResponseStatus", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus.html", null ],
       [ "com.google.ortools.linearsolver.MPSosConstraint.Type", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html", null ],
+      [ "com.google.ortools.pdlp.OptimalityNorm", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html", null ],
+      [ "com.google.ortools.pdlp.PointType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PointType.html", null ],
+      [ "com.google.ortools.pdlp.PolishingPhaseType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PolishingPhaseType.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.LinesearchRule", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html", null ],
+      [ "com.google.ortools.pdlp.PrimalDualHybridGradientParams.RestartStrategy", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html", null ],
+      [ "com.google.ortools.pdlp.RestartChoice", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html", null ],
+      [ "com.google.ortools.pdlp.TerminationReason", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationReason.html", null ],
       [ "com.google.ortools.sat.CpSolverStatus", "enumcom_1_1google_1_1ortools_1_1sat_1_1CpSolverStatus.html", null ],
       [ "com.google.ortools.sat.DecisionStrategyProto.DomainReductionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html", null ],
       [ "com.google.ortools.sat.DecisionStrategyProto.VariableSelectionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy.html", null ],
@@ -844,14 +851,7 @@ var hierarchy =
       [ "com.google.ortools.util.OptionalBoolean", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html", null ],
       [ "operations_research.RoutingIls.AcceptanceStrategy.Value", "enumoperations__research_1_1RoutingIls_1_1AcceptanceStrategy_1_1Value.html", null ],
       [ "operations_research.RoutingIls.PerturbationStrategy.Value", "enumoperations__research_1_1RoutingIls_1_1PerturbationStrategy_1_1Value.html", null ],
-      [ "operations_research.RoutingIls.RuinStrategy.Value", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.PointType", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PointType.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.PolishingPhaseType", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1PolishingPhaseType.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.RestartChoice", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1RestartChoice.html", null ],
-      [ "operations_research.pdlp.SolveLogOuterClass.TerminationReason", "enumoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1TerminationReason.html", null ],
-      [ "operations_research.pdlp.Solvers.OptimalityNorm", "enumoperations__research_1_1pdlp_1_1Solvers_1_1OptimalityNorm.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.LinesearchRule", "enumoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html", null ],
-      [ "operations_research.pdlp.Solvers.PrimalDualHybridGradientParams.RestartStrategy", "enumoperations__research_1_1pdlp_1_1Solvers_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html", null ]
+      [ "operations_research.RoutingIls.RuinStrategy.Value", "enumoperations__research_1_1RoutingIls_1_1RuinStrategy_1_1Value.html", null ]
     ] ],
     [ "com.google.ortools.constraintsolver.RoutingModel.ResourceGroup.Resource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup_1_1Resource.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel.ResourceGroup", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html", null ],
@@ -879,10 +879,10 @@ var hierarchy =
       [ "com.google.ortools.sat.CpSolverSolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverSolutionCallback.html", null ],
       [ "com.google.ortools.sat.CpSolverSolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverSolutionCallback.html", null ]
     ] ],
-    [ "operations_research.pdlp.SolveLogOuterClass", "classoperations__research_1_1pdlp_1_1SolveLogOuterClass.html", null ],
+    [ "com.google.ortools.pdlp.SolveLogOuterClass", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass.html", null ],
     [ "com.google.ortools.constraintsolver.Solver", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html", null ],
     [ "com.google.ortools.constraintsolver.SolverParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolverParameters.html", null ],
-    [ "operations_research.pdlp.Solvers", "classoperations__research_1_1pdlp_1_1Solvers.html", null ],
+    [ "com.google.ortools.pdlp.Solvers", "classcom_1_1google_1_1ortools_1_1pdlp_1_1Solvers.html", null ],
     [ "com.google.ortools.algorithms.KnapsackSolver.SolverType", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver_1_1SolverType.html", null ],
     [ "com.google.ortools.modelbuilder.SolveStatus", "enumcom_1_1google_1_1ortools_1_1modelbuilder_1_1SolveStatus.html", null ],
     [ "com.google.ortools.sat.SolveWrapper", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html", null ],

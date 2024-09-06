@@ -80,7 +80,7 @@ var searchData=
   ['kisless_77',['kIsLess',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#a97d28c66d277072f543e701814fadb2a',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],
   ['kislessorequal_78',['kIsLessOrEqual',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#ac113979906da1ddd696e184be48e03ad',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],
   ['kismember_79',['kIsMember',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#a789babcc30d2c306438cbbb453e2a1ed',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],
-  ['kktmatrixpasslimit_80',['KktMatrixPassLimit',['../classOperationsResearch_1_1Pdlp_1_1TerminationCriteria.html#a7d8b1a450ac120631e262f4bb1596716',1,'OperationsResearch::Pdlp::TerminationCriteria']]],
+  ['kktmatrixpasslimit_80',['KktMatrixPassLimit',['../classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria.html#a993294013d2c512405b8e0654bb8579e',1,'Google::OrTools::PDLP::TerminationCriteria']]],
   ['klatecostargument_81',['kLateCostArgument',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#ae96435db11e5aab4b094b4bbe72586bc',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],
   ['klatedateargument_82',['kLateDateArgument',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#a7cd1f2b4338f998b18f142db96caccb0',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],
   ['kleftargument_83',['kLeftArgument',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ModelVisitor.html#ab975325a0158ba33f0ee0a577d1da112',1,'Google::OrTools::ConstraintSolver::ModelVisitor']]],

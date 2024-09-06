@@ -3,6 +3,7 @@ var structoperations__research_1_1math__opt_1_1ModelSolveParameters =
     [ "ObjectiveParameters", "structoperations__research_1_1math__opt_1_1ModelSolveParameters_1_1ObjectiveParameters.html", "structoperations__research_1_1math__opt_1_1ModelSolveParameters_1_1ObjectiveParameters" ],
     [ "SolutionHint", "structoperations__research_1_1math__opt_1_1ModelSolveParameters_1_1SolutionHint.html", "structoperations__research_1_1math__opt_1_1ModelSolveParameters_1_1SolutionHint" ],
     [ "CheckModelStorage", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a235a1acf8ae44447c12e366c10187253", null ],
+    [ "FromProto", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#ae1a7f3f11f6fa7b31cfd944b7b16eaee", null ],
     [ "OnlyPrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#ac229a7f787a33221ecec9da4f99ac81a", null ],
     [ "OnlySomePrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#aa62634bda415d389f3305c025422586b", null ],
     [ "OnlySomePrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a7eb9a9ce2bd54001d1e26bf00b47434f", null ],

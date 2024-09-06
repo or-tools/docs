@@ -1,13 +1,13 @@
 var classortools_1_1math__opt_1_1python_1_1model_1_1Model =
 [
-    [ "__init__", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a9455f8f0f29886e47d52282eee303bea", null ],
+    [ "__init__", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a05b0be5ec029f86dbb7414949a7e4a23", null ],
     [ "_get_or_make_linear_constraint", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a9073187dcc811a4dd3c72ac649415f99", null ],
     [ "_get_or_make_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#aef088f8c21e48616752759496e139e91", null ],
-    [ "add_binary_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a49f38b1a94a8d13917a4899d73b54330", null ],
-    [ "add_integer_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ac03a40e0ba0963f26ddcaa654231e287", null ],
-    [ "add_linear_constraint", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ab6b09256b334cff54e10c4e2952034d6", null ],
+    [ "add_binary_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a665c91a73ea4a72e0654e024906d8ebd", null ],
+    [ "add_integer_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a07f430c1d17f673f026537e6bb663c43", null ],
+    [ "add_linear_constraint", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#aa9fa1d383d0b809f62caabf2778ce904", null ],
     [ "add_update_tracker", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a7f3336c37d4c087adc12c274658ef0d9", null ],
-    [ "add_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a95562f6f1c856f1ee49195d6910bdfc2", null ],
+    [ "add_variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a4baf0c7e86828f1541e381c3e14a48bf", null ],
     [ "check_compatible", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#aae7f85266378b3f639a7ba9022ef99a6", null ],
     [ "column_nonzeros", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a6659c643fe9b430f256fc2de57292e27", null ],
     [ "delete_linear_constraint", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a7b0ce1ce54c405b230af988c7c837068", null ],
@@ -29,8 +29,12 @@ var classortools_1_1math__opt_1_1python_1_1model_1_1Model =
     [ "quadratic_objective_terms", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a881c8753da542cf9e3e3f4b7bd264e02", null ],
     [ "remove_update_tracker", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a5262bf49cc7c7b9199b4f4f0405354bf", null ],
     [ "row_nonzeros", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#aad19ca85e9534bdb85a43a0d85091170", null ],
-    [ "set_linear_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a5a68b4ced2f72f44ab38ea7360ed7c8c", null ],
-    [ "set_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a35d8ef17ef6c5975f978e9fdbea51f19", null ],
-    [ "set_quadratic_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a00944ea2e15aee149a444342f8e811c2", null ],
-    [ "variables", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ab2639c527532cd9fa20e90243654bbc0", null ]
+    [ "set_linear_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ae81bc6b5257f870dd045528a5e6cd6b6", null ],
+    [ "set_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a6af9f08c55ba8355f331d341760319a2", null ],
+    [ "set_quadratic_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a76b8673a98805a701ee7f878527a23f0", null ],
+    [ "variables", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ab2639c527532cd9fa20e90243654bbc0", null ],
+    [ "_linear_constraint_ids", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#af0e9f2ce0c882c299ec1a326df0c6e02", null ],
+    [ "_objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ad805021f8cfc1e83b2b9eaee3392cdeb", null ],
+    [ "_variable_ids", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a74b7ab9b5fd499f5c80f586b3d542615", null ],
+    [ "storage", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ad51d7daee96213c0889ceaeda9fbea79", null ]
 ];

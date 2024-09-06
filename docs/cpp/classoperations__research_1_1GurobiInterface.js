@@ -10,7 +10,7 @@ var classoperations__research_1_1GurobiInterface =
     [ "ClearObjective", "classoperations__research_1_1GurobiInterface.html#a56310c54404687d191d4464b73f15935", null ],
     [ "column_status", "classoperations__research_1_1GurobiInterface.html#aa0a6339405747d266425225bde1b022f", null ],
     [ "ComputeExactConditionNumber", "classoperations__research_1_1GurobiInterface.html#a80f01ad50450397a74e29c3db67ff69c", null ],
-    [ "DirectlySolveProto", "classoperations__research_1_1GurobiInterface.html#af213b85d0a682f0bf1c01b1f6fa80ad4", null ],
+    [ "DirectlySolveProto", "classoperations__research_1_1GurobiInterface.html#a46e172664d4c211db83abd4491a958b8", null ],
     [ "ExtractNewConstraints", "classoperations__research_1_1GurobiInterface.html#a6dd0ce71fb3ad91850efe7059b31054d", null ],
     [ "ExtractNewVariables", "classoperations__research_1_1GurobiInterface.html#ab2c86b9e7eebb7d1a6088b86f15519af", null ],
     [ "ExtractObjective", "classoperations__research_1_1GurobiInterface.html#a0d42deeb7eadf9cdf4d738489a664b8f", null ],
@@ -34,6 +34,7 @@ var classoperations__research_1_1GurobiInterface =
     [ "Solve", "classoperations__research_1_1GurobiInterface.html#a3fdaaef4033cbc2f6e0ef07ade784682", null ],
     [ "SolverVersion", "classoperations__research_1_1GurobiInterface.html#ab0216bf61c25cb5c1790c0b90246023e", null ],
     [ "SupportsCallbacks", "classoperations__research_1_1GurobiInterface.html#a163904a7b909674538ec4d414369577b", null ],
+    [ "SupportsDirectlySolveProto", "classoperations__research_1_1GurobiInterface.html#a4fee43f30013ec9e8c611e14db31b4cf", null ],
     [ "underlying_solver", "classoperations__research_1_1GurobiInterface.html#a18a37d0537a5d7a40d8f0e090da04201", null ],
     [ "Write", "classoperations__research_1_1GurobiInterface.html#a0350c44900f00ba2e373addab045ae1f", null ]
 ];

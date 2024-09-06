@@ -4,6 +4,8 @@ var dir_dddac007a45022d9da6ea1dee012c3b9 =
     [ "2d_orthogonal_packing.h", "2d__orthogonal__packing_8h.html", "2d__orthogonal__packing_8h" ],
     [ "2d_orthogonal_packing_testing.cc", "2d__orthogonal__packing__testing_8cc.html", "2d__orthogonal__packing__testing_8cc" ],
     [ "2d_orthogonal_packing_testing.h", "2d__orthogonal__packing__testing_8h.html", "2d__orthogonal__packing__testing_8h" ],
+    [ "2d_packing_brute_force.cc", "2d__packing__brute__force_8cc.html", "2d__packing__brute__force_8cc" ],
+    [ "2d_packing_brute_force.h", "2d__packing__brute__force_8h.html", "2d__packing__brute__force_8h" ],
     [ "all_different.cc", "all__different_8cc.html", "all__different_8cc" ],
     [ "all_different.h", "all__different_8h.html", "all__different_8h" ],
     [ "boolean_problem.cc", "boolean__problem_8cc.html", "boolean__problem_8cc" ],

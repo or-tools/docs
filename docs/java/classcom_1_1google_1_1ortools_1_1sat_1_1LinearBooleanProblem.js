@@ -30,13 +30,12 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem =
     [ "hasNumVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#acf9dc101c1b16b4c4c86c9a24d3d18fe", null ],
     [ "hasObjective", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#af9373d82b730e0e3f4a4f0a1149c142a", null ],
     [ "hasOriginalNumVariables", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#ad952eed0f6bfb639ed23fedea3323720", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a035cfc4a2f881fafa2ccf42a4fd63a3c", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a137e74c8ead4c936ff0eb35a29a3c8ec", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#ac1c54fb6160922022b68a8da408078fb", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a324a9325c6e35a4af96fc3df2d7b5a56", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#ab3ed6361f12c147d482ef8c63045fccb", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#ad871326735d167655baa971504df3a98", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#abd430b9dee556222d85fa9971c460da1", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a7cafd2fb359ed7a4b9bb681b65a7d9c0", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a8cf0ebf713c8a9eeeb1d17f8dbcf27f7", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a9a133c1b943a2859688e872fc01a3501", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a8bed8ab3557fda53791beaed7f8f0a14", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a1a5e90627a96c2dbc1786fcad1c93239", null ],
@@ -58,6 +57,5 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem =
     [ "NUM_VARIABLES_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a3e24b43414be623ca8a7912f81bf20c1", null ],
     [ "OBJECTIVE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a5f3ffb07cc5487f5683734ed0187cc83", null ],
     [ "ORIGINAL_NUM_VARIABLES_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a8ba983ed42fc0ea0ba426c7ea378fd3f", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a39e6bc1fea9d20d170dd80ec5d3fbe74", null ],
     [ "VAR_NAMES_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a51ae0198ef2e24025534d46e9bb3b7c5", null ]
 ];

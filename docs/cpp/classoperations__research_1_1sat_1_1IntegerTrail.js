@@ -43,6 +43,7 @@ var classoperations__research_1_1sat_1_1IntegerTrail =
     [ "LowerBound", "classoperations__research_1_1sat_1_1IntegerTrail.html#a0b2afe8b074760d54d767d2d73f60aea", null ],
     [ "LowerBoundAsLiteral", "classoperations__research_1_1sat_1_1IntegerTrail.html#a32873f018d4520f331a392d96506c720", null ],
     [ "LowerBoundAsLiteral", "classoperations__research_1_1sat_1_1IntegerTrail.html#a5e7d94f60772f7fa56fb85bdcdad2ce0", null ],
+    [ "LowerBoundsData", "classoperations__research_1_1sat_1_1IntegerTrail.html#a985c046c5b10e7a48f3ffe533623ad0e", null ],
     [ "MergeReasonInto", "classoperations__research_1_1sat_1_1IntegerTrail.html#ac1fb45f018e2314a5d367335536e503c", null ],
     [ "NextVariableToBranchOnInPropagationLoop", "classoperations__research_1_1sat_1_1IntegerTrail.html#a94aef13eb728ffde07b8f7aa50e55aed", null ],
     [ "NotifyThatPropagationWasAborted", "classoperations__research_1_1sat_1_1IntegerTrail.html#a049cddb7be16d2b9eb09a838558131ea", null ],

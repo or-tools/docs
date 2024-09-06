@@ -1,6 +1,6 @@
 var classoperations__research_1_1sat_1_1SatPresolver =
 [
-    [ "ClauseIndex", "classoperations__research_1_1sat_1_1SatPresolver.html#a48d43c858e789a63bf76da7414b55a5f", null ],
+    [ "ClauseIndex", "classoperations__research_1_1sat_1_1SatPresolver.html#a670988de72965600bed15b192faa433a", null ],
     [ "SatPresolver", "classoperations__research_1_1sat_1_1SatPresolver.html#a4bd42b077470a42bff94fdad0013f350", null ],
     [ "SatPresolver", "classoperations__research_1_1sat_1_1SatPresolver.html#afb368ff54e2cbb123fdd26d29b25f83c", null ],
     [ "AddBinaryClause", "classoperations__research_1_1sat_1_1SatPresolver.html#a0410962dbc999d742afe91f1f87aee93", null ],

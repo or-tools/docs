@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html#a0afa98725c8cd467d30fb3ad7291b29e", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html#afcfc9ac6c4c566e252033d9627e75828", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html#a245feaa5f959feefad283abd16cbe93b", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html#ab4fe45f444e2be790975168c5cb605ee", null ],

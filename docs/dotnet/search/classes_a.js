@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['malitskypockparams_0',['MalitskyPockParams',['../classOperationsResearch_1_1Pdlp_1_1MalitskyPockParams.html',1,'OperationsResearch::Pdlp']]],
+  ['malitskypockparams_0',['MalitskyPockParams',['../classGoogle_1_1OrTools_1_1PDLP_1_1MalitskyPockParams.html',1,'Google::OrTools::PDLP']]],
   ['maxflow_1',['MaxFlow',['../classGoogle_1_1OrTools_1_1Graph_1_1MaxFlow.html',1,'Google::OrTools::Graph']]],
   ['mblogcallback_2',['MbLogCallback',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1MbLogCallback.html',1,'Google::OrTools::ModelBuilder']]],
   ['mincostflow_3',['MinCostFlow',['../classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html',1,'Google::OrTools::Graph']]],

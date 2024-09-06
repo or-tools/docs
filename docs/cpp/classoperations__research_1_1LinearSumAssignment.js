@@ -1,8 +1,8 @@
 var classoperations__research_1_1LinearSumAssignment =
 [
     [ "BipartiteLeftNodeIterator", "classoperations__research_1_1LinearSumAssignment_1_1BipartiteLeftNodeIterator.html", "classoperations__research_1_1LinearSumAssignment_1_1BipartiteLeftNodeIterator" ],
-    [ "ArcIndex", "classoperations__research_1_1LinearSumAssignment.html#a0e8e2b115674cbc0c82b83a950839e2d", null ],
-    [ "NodeIndex", "classoperations__research_1_1LinearSumAssignment.html#a1780a52b2a406fbcd615241ab7705824", null ],
+    [ "ArcIndex", "classoperations__research_1_1LinearSumAssignment.html#a3147a0dfcd961a3bac1ff6e081f62df3", null ],
+    [ "NodeIndex", "classoperations__research_1_1LinearSumAssignment.html#aaf838cd488efdc18dfcdc74d8e2eaff2", null ],
     [ "LinearSumAssignment", "classoperations__research_1_1LinearSumAssignment.html#a1eae4227ff347a3d9b66cc705118f092", null ],
     [ "LinearSumAssignment", "classoperations__research_1_1LinearSumAssignment.html#aeab56b5cf9d29dd479588f6ae9905df6", null ],
     [ "LinearSumAssignment", "classoperations__research_1_1LinearSumAssignment.html#a8c98b188042b701127bf53c48c66ef0d", null ],

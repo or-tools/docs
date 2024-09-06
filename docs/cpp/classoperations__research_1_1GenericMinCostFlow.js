@@ -1,10 +1,10 @@
 var classoperations__research_1_1GenericMinCostFlow =
 [
-    [ "ArcIndex", "classoperations__research_1_1GenericMinCostFlow.html#ad66a0601a4f1c5f98079d333d5a465e8", null ],
-    [ "ArcIndexArray", "classoperations__research_1_1GenericMinCostFlow.html#a81e1e8d405058ffdd6aa80978345fa83", null ],
-    [ "NodeIndex", "classoperations__research_1_1GenericMinCostFlow.html#aaf02e6d654d4be1a50507d9d40dd1e99", null ],
-    [ "OutgoingArcIterator", "classoperations__research_1_1GenericMinCostFlow.html#a3c6c7677fb80955e5c7386849596043e", null ],
-    [ "OutgoingOrOppositeIncomingArcIterator", "classoperations__research_1_1GenericMinCostFlow.html#a0aadf64af2dbb2115943c046e3d14622", null ],
+    [ "ArcIndex", "classoperations__research_1_1GenericMinCostFlow.html#a33ce68959105a14252de14ca2a3c82b8", null ],
+    [ "ArcIndexArray", "classoperations__research_1_1GenericMinCostFlow.html#a7c6dc565ff7cfefce582db0df6f53fb4", null ],
+    [ "NodeIndex", "classoperations__research_1_1GenericMinCostFlow.html#ad49387ed8598fee410dc73d4cf05e642", null ],
+    [ "OutgoingArcIterator", "classoperations__research_1_1GenericMinCostFlow.html#a2ed7991eb6565cd47b576d6066c8655f", null ],
+    [ "OutgoingOrOppositeIncomingArcIterator", "classoperations__research_1_1GenericMinCostFlow.html#a0c99322ecbe60e97d15ded9737134bf5", null ],
     [ "GenericMinCostFlow", "classoperations__research_1_1GenericMinCostFlow.html#a17aff4acf62f808db05d5c43f37efda2", null ],
     [ "GenericMinCostFlow", "classoperations__research_1_1GenericMinCostFlow.html#a5a95f5a8f18e65c5de09f1c7ab2f1312", null ],
     [ "Capacity", "classoperations__research_1_1GenericMinCostFlow.html#a44c22a9d4609a54cfc7034de3e541ce7", null ],

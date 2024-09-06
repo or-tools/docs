@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus.html#a6e53549abc9b4d30b5a8e6ea909ce2fa", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus.html#a324f9b7d2e425defa6cf4a3d5b7ec398", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus.html#a1218d4e08a2881c1b573ea1afeb5de64", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverResponseStatus.html#a9f0e43c3bfe42613d5f7054e3bfa6428", null ],

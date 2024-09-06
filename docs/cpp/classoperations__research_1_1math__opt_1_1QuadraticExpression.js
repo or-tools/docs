@@ -2,7 +2,7 @@ var classoperations__research_1_1math__opt_1_1QuadraticExpression =
 [
     [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#acae749801d18a1f283466a30e7c3e167", null ],
     [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a88e92b68c1797dee9b7261e11a777fa1", null ],
-    [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#aa4aadf26bc8a080c3e3d4f4ea84c0efc", null ],
+    [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a7e3df4fe13972651a1644d0df203268a", null ],
     [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6d4c5702a2768e8dcb0e228476fad2cc", null ],
     [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a72c10a9f44e1334b578389bfda465a63", null ],
     [ "QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#adff66122d06994c1238eccb2157ebd0e", null ],
@@ -31,7 +31,7 @@ var classoperations__research_1_1math__opt_1_1QuadraticExpression =
     [ "operator-=", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a1ec92e777c78fc575a3387997091f46f", null ],
     [ "operator/=", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#ac0d7749d5883e04d0681188825a44182", null ],
     [ "operator=", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#afc0e3af69146d7fcd70b8c0f79149053", null ],
-    [ "operator=", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a2e7d46d18293b74881bb733102c99381", null ],
+    [ "operator=", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6731a8b26d00c9229be2843aa3db295a", null ],
     [ "quadratic_terms", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a25c17615841aef7d079019a115d277ca", null ],
     [ "storage", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a4e75bb2893d9e620ddaa16b9e312922c", null ],
     [ "Sum", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#aa7f159558e1766c69152a8c50b06f395", null ],

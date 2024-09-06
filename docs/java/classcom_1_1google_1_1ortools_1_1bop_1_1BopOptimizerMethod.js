@@ -11,13 +11,12 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod =
     [ "getType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ac9444020f09b9dec0cc6ee2bac54d4be", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a0a06597cefd9f7a023eea9afcd2f89b7", null ],
     [ "hasType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ada1e7f83623628336d8d008736e2acbd", null ],
-    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ab6de13b16c5d0bd4090ba578168b7b5a", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a3b830cc7616bc6f3a8bbe87a0f30b0ce", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#aa8cc72c005ae8b74440cfe821486b23c", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a644f51a7ad998d3924e5451c16e34be6", null ],
     [ "newBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#aeb7fd5aaac041a493171ce6ba786ec0f", null ],
     [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a4952e969b0c77c1fdea93f3072422e40", null ],
-    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ab9496a8c6299338599141a35458f30e9", null ],
-    [ "newInstance", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a409e73ec97d995171dc6163425284d64", null ],
+    [ "newBuilderForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a8dab12aa064d63b5362fd15953c1f0f7", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ac41de064d51848eea7a6add129e121c1", null ],
     [ "parseDelimitedFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a849c1ded008fdb0d449ffe875c636b33", null ],
     [ "parseFrom", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a0d8087e1a741cd66850c512887d3e4b1", null ],
@@ -33,6 +32,5 @@ var classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod =
     [ "parser", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#ae619de47b8a51a604bb85015e592a342", null ],
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a83cd50166cb0d20688fb4834f3784cde", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a8f8c545d20d05542042ba9eeebf8351d", null ],
-    [ "PARSER", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a173669cf078a01025d6b69740e4e07b1", null ],
     [ "TYPE_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a90802d4a5f42dba7742556758bcb8452", null ]
 ];

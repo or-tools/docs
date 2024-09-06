@@ -1,8 +1,8 @@
 var searchData=
 [
   ['failexception_0',['FailException',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1FailException.html',1,'com::google::ortools::constraintsolver::Solver']]],
-  ['feasibilitypolishingdetails_1',['FeasibilityPolishingDetails',['../classoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetails.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
-  ['feasibilitypolishingdetailsorbuilder_2',['FeasibilityPolishingDetailsOrBuilder',['../interfaceoperations__research_1_1pdlp_1_1SolveLogOuterClass_1_1FeasibilityPolishingDetailsOrBuilder.html',1,'operations_research::pdlp::SolveLogOuterClass']]],
+  ['feasibilitypolishingdetails_1',['FeasibilityPolishingDetails',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetails.html',1,'com::google::ortools::pdlp']]],
+  ['feasibilitypolishingdetailsorbuilder_2',['FeasibilityPolishingDetailsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1pdlp_1_1FeasibilityPolishingDetailsOrBuilder.html',1,'com::google::ortools::pdlp']]],
   ['filterevent_3',['FilterEvent',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html',1,'com::google::ortools::constraintsolver::LocalSearchFilterManager']]],
   ['firstsolutionstatistics_4',['FirstSolutionStatistics',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html',1,'com::google::ortools::constraintsolver::LocalSearchStatistics']]],
   ['firstsolutionstatisticsorbuilder_5',['FirstSolutionStatisticsOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatisticsOrBuilder.html',1,'com::google::ortools::constraintsolver::LocalSearchStatistics']]],

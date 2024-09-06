@@ -64,8 +64,10 @@ var searchData=
   ['boundedquadraticexpression_61',['BoundedQuadraticExpression',['../structoperations__research_1_1math__opt_1_1BoundedQuadraticExpression.html',1,'operations_research::math_opt']]],
   ['boundedvariableelimination_62',['BoundedVariableElimination',['../classoperations__research_1_1sat_1_1BoundedVariableElimination.html',1,'operations_research::sat']]],
   ['bounds_63',['Bounds',['../structoperations__research_1_1fz_1_1SolutionOutputSpecs_1_1Bounds.html',1,'operations_research::fz::SolutionOutputSpecs::Bounds'],['../structoperations__research_1_1math__opt_1_1ModelSubset_1_1Bounds.html',1,'operations_research::math_opt::ModelSubset::Bounds']]],
-  ['branchprioritiestest_64',['BranchPrioritiesTest',['../classoperations__research_1_1math__opt_1_1BranchPrioritiesTest.html',1,'operations_research::math_opt']]],
-  ['branchprioritiestestparams_65',['BranchPrioritiesTestParams',['../structoperations__research_1_1math__opt_1_1BranchPrioritiesTestParams.html',1,'operations_research::math_opt']]],
-  ['bronkerboschalgorithm_66',['BronKerboschAlgorithm',['../classoperations__research_1_1BronKerboschAlgorithm.html',1,'operations_research']]],
-  ['bufferedmessagecallback_67',['BufferedMessageCallback',['../classoperations__research_1_1math__opt_1_1BufferedMessageCallback.html',1,'operations_research::math_opt']]]
+  ['branchinginfo_64',['BranchingInfo',['../structoperations__research_1_1sat_1_1PseudoCosts_1_1BranchingInfo.html',1,'operations_research::sat::PseudoCosts']]],
+  ['branchprioritiestest_65',['BranchPrioritiesTest',['../classoperations__research_1_1math__opt_1_1BranchPrioritiesTest.html',1,'operations_research::math_opt']]],
+  ['branchprioritiestestparams_66',['BranchPrioritiesTestParams',['../structoperations__research_1_1math__opt_1_1BranchPrioritiesTestParams.html',1,'operations_research::math_opt']]],
+  ['bronkerboschalgorithm_67',['BronKerboschAlgorithm',['../classoperations__research_1_1BronKerboschAlgorithm.html',1,'operations_research']]],
+  ['bruteforceresult_68',['BruteForceResult',['../structoperations__research_1_1sat_1_1BruteForceResult.html',1,'operations_research::sat']]],
+  ['bufferedmessagecallback_69',['BufferedMessageCallback',['../classoperations__research_1_1math__opt_1_1BufferedMessageCallback.html',1,'operations_research::math_opt']]]
 ];

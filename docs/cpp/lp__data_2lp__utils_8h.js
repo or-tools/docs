@@ -30,9 +30,11 @@ var lp__data_2lp__utils_8h =
     [ "ScalarProduct", "lp__data_2lp__utils_8h.html#a3d9874910f9632900fe8677463b1c0be", null ],
     [ "SetSupportToFalse", "lp__data_2lp__utils_8h.html#ab3441b48e38e41168adc5f425cf8d3b2", null ],
     [ "Square", "lp__data_2lp__utils_8h.html#a1dcd08b0f6c19cd4a302bb5a3a6ea06e", null ],
+    [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a56d07cec757f3893e1d14f2eb5526f3e", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a458e835e24e717c79b69f5841994d14b", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a3f4bc31cf3c66cf61f9eac6048bf75ae", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#a251d28033e817dc9c714888a54b28335", null ],
     [ "SquaredNorm", "lp__data_2lp__utils_8h.html#acc121482814b7aa114912f5de1601a40", null ],
+    [ "SquaredNormAndResetToZero", "lp__data_2lp__utils_8h.html#ae3ee0e0e5017ea0b50147ac7e08c0d1d", null ],
     [ "Transpose", "lp__data_2lp__utils_8h.html#a57e4ca3510085acc223e7067fcd1e283", null ]
 ];

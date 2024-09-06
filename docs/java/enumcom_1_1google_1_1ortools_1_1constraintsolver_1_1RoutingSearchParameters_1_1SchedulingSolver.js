@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver.html#a85365ab06b82f2f87f9fcd86dd7ef79c", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver.html#ab1dbd0668739fb4567cbf8aac3b76dc6", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver.html#aa2c4acb3cccade3c68c23ac3a104ae7b", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver.html#a51e774d09ae7bf3324a08c5f271b1fbb", null ],

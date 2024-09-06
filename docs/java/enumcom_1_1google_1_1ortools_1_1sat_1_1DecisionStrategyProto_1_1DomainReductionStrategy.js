@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#ad1eca94c45a7bdc30fa153c705f39a4c", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a7a93232bfc3b08b1db83c40f33c65ba0", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a607a6d2a0d641b5868c82415c5d85809", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#aa1f6d3d131a2a1a66dd9c71e44fbf59c", null ],

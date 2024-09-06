@@ -62,9 +62,11 @@ var searchData=
   ['gurobi_5fproto_5fsolver_2eh_59',['gurobi_proto_solver.h',['../gurobi__proto__solver_8h.html',1,'']]],
   ['gurobi_5fsolver_2ecc_60',['gurobi_solver.cc',['../gurobi__solver_8cc.html',1,'']]],
   ['gurobi_5fsolver_2eh_61',['gurobi_solver.h',['../gurobi__solver_8h.html',1,'']]],
-  ['gurobi_5futil_2ecc_62',['gurobi_util.cc',['../gurobi__util_8cc.html',1,'']]],
-  ['gurobi_5futil_2eh_63',['gurobi_util.h',['../gurobi__util_8h.html',1,'']]],
-  ['gzipfile_2ecc_64',['gzipfile.cc',['../gzipfile_8cc.html',1,'']]],
-  ['gzipfile_2eh_65',['gzipfile.h',['../gzipfile_8h.html',1,'']]],
-  ['gzipstring_2eh_66',['gzipstring.h',['../gzipstring_8h.html',1,'']]]
+  ['gurobi_5fstdout_5fmatchers_2ecc_62',['gurobi_stdout_matchers.cc',['../gurobi__stdout__matchers_8cc.html',1,'']]],
+  ['gurobi_5fstdout_5fmatchers_2eh_63',['gurobi_stdout_matchers.h',['../gurobi__stdout__matchers_8h.html',1,'']]],
+  ['gurobi_5futil_2ecc_64',['gurobi_util.cc',['../gurobi__util_8cc.html',1,'']]],
+  ['gurobi_5futil_2eh_65',['gurobi_util.h',['../gurobi__util_8h.html',1,'']]],
+  ['gzipfile_2ecc_66',['gzipfile.cc',['../gzipfile_8cc.html',1,'']]],
+  ['gzipfile_2eh_67',['gzipfile.h',['../gzipfile_8h.html',1,'']]],
+  ['gzipstring_2eh_68',['gzipstring.h',['../gzipstring_8h.html',1,'']]]
 ];

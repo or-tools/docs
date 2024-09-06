@@ -1,5 +1,6 @@
 var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection =
 [
+    [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection.html#a00fdf309e46d69b66846a398ddc7c9d8", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection.html#aaef5980c02f3d1c49dc6d9b2c35959db", null ],
     [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection.html#a115d77840527b06d743d330474225d3a", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection.html#a47e894cb6369c43863242f71510fbb22", null ],
