@@ -68,5 +68,6 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper =
     [ "setVarUpperBound", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#ae488020e010e7a94f51d01c8b421c7aa", null ],
     [ "swigRelease", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a4e5016d5d91ecb9fa4c060ccefc7d3d1", null ],
     [ "writeModelToProtoFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a9e151a350b7132b476224d04646157cb", null ],
+    [ "writeToMpsFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a85330b3b94b64df52847719a01270f2f", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilderHelper.html#a3bf99b68afc961afc05d15284e8da1ca", null ]
 ];

@@ -1,5 +1,11 @@
 var NAVTREEINDEX79 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab1466c0be74518a0346d90c60a30ef09":[3,0,0,0,0,8,22,0,105],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab216a8712195a55230de1a3fb2c850e5":[2,0,0,0,0,8,22,0,98],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab216a8712195a55230de1a3fb2c850e5":[3,0,0,0,0,8,22,0,98],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab504c893eca1718e6c10c1fa916752cd":[2,0,0,0,0,8,22,0,70],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab504c893eca1718e6c10c1fa916752cd":[3,0,0,0,0,8,22,0,70],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab8968c5a4a207a355754518d46eb3b57":[2,0,0,0,0,8,22,0,23],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab8968c5a4a207a355754518d46eb3b57":[3,0,0,0,0,8,22,0,23],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab9abad74d4c5739e2a71909118125b4e":[2,0,0,0,0,8,22,0,67],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog_1_1Builder.html#ab9abad74d4c5739e2a71909118125b4e":[3,0,0,0,0,8,22,0,67],
@@ -243,11 +249,5 @@ var NAVTREEINDEX79 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a65fe261becb29a152f64dfb51ac896a6":[3,0,0,0,0,8,26,0,9],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a663bca942670bcf29be74a39342e9abc":[2,0,0,0,0,8,26,0,12],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a663bca942670bcf29be74a39342e9abc":[3,0,0,0,0,8,26,0,12],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a68c8ee98a3584d354da8c3da0571ebe1":[2,0,0,0,0,8,26,0,43],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a68c8ee98a3584d354da8c3da0571ebe1":[3,0,0,0,0,8,26,0,43],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a777c50164f46b05a006d86f5efee8592":[2,0,0,0,0,8,26,0,2],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a777c50164f46b05a006d86f5efee8592":[3,0,0,0,0,8,26,0,2],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a78cde64bfc4d7a26956b750a3593da39":[2,0,0,0,0,8,26,0,27],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a78cde64bfc4d7a26956b750a3593da39":[3,0,0,0,0,8,26,0,27],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a7b26078fe4d0c04f9dce96ad4f89a7c0":[2,0,0,0,0,8,26,0,13]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a68c8ee98a3584d354da8c3da0571ebe1":[2,0,0,0,0,8,26,0,43]
 };

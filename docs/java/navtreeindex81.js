@@ -1,5 +1,11 @@
 var NAVTREEINDEX81 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a468dc518bb1c0536a3b9a546334ed3d3":[3,0,0,0,0,8,26,4,5],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a486e4661d1a383e6d06fad05b43e9cf1":[2,0,0,0,0,8,26,4,14],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a486e4661d1a383e6d06fad05b43e9cf1":[3,0,0,0,0,8,26,4,14],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a546493c28a0a33ddbc353c4f6db649e3":[2,0,0,0,0,8,26,4,18],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a546493c28a0a33ddbc353c4f6db649e3":[3,0,0,0,0,8,26,4,18],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a658ad3076002fc2e73b7c9c77d601535":[2,0,0,0,0,8,26,4,28],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a658ad3076002fc2e73b7c9c77d601535":[3,0,0,0,0,8,26,4,28],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a68a5a290c1c25340499e3a5c42944448":[2,0,0,0,0,8,26,4,2],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a68a5a290c1c25340499e3a5c42944448":[3,0,0,0,0,8,26,4,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX81 =
 "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto_1_1Builder.html#afdd1c6627e493da18e95bf4d244d52f2":[3,0,0,0,0,9,2,0,24],
 "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html":[2,0,0,0,0,9,4],
 "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html":[3,0,0,0,0,9,4],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html#a22e4c4cb6d82f876cb9a8f59969f24e1":[2,0,0,0,0,9,4,0],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html#a22e4c4cb6d82f876cb9a8f59969f24e1":[2,0,0,0,0,9,4,1],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html#a22e4c4cb6d82f876cb9a8f59969f24e1":[3,0,0,0,0,9,4,0],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html#a22e4c4cb6d82f876cb9a8f59969f24e1":[3,0,0,0,0,9,4,1],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html":[2,0,0,0,0,9,5],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html":[3,0,0,0,0,9,5],
-"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html#a014c7fb3b3b9b383599a91a0fd97e19a":[2,0,0,0,0,9,5,21]
+"classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html#a22e4c4cb6d82f876cb9a8f59969f24e1":[2,0,0,0,0,9,4,0]
 };

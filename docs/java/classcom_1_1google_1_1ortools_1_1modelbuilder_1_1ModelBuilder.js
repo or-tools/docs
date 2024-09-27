@@ -81,5 +81,7 @@ var classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder =
     [ "setName", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#ab22035a9917a9b3d2ee88b6857dc5480", null ],
     [ "setName", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#ab22035a9917a9b3d2ee88b6857dc5480", null ],
     [ "varFromIndex", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a67d360a2cbedb7b9417d612893839559", null ],
-    [ "varFromIndex", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a67d360a2cbedb7b9417d612893839559", null ]
+    [ "varFromIndex", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a67d360a2cbedb7b9417d612893839559", null ],
+    [ "writeToMpsFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a6b4f943603e55820829044d9d3c3af4d", null ],
+    [ "writeToMpsFile", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1ModelBuilder.html#a6b4f943603e55820829044d9d3c3af4d", null ]
 ];

@@ -13,7 +13,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1Resourc
     [ "GetResourceClassesCount", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a2ff71ebb98011a954de5c90f89588711", null ],
     [ "GetResourceClassIndex", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a035d5ca78abc8fcbf22901994a9fae1a", null ],
     [ "GetResourceIndicesInClass", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a4fd4f60da4c4e386776224136581d21e", null ],
-    [ "GetResourceIndicesPerClass", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ad864bddb97f0f512609447aaddcf5d4e", null ],
+    [ "GetResourceIndicesPerClass", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ad177ae7f8e4a3f6a744c23898d3867c3", null ],
     [ "GetResources", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ac710b8863e64f7b60a5455fae25d144a", null ],
     [ "GetResourcesMarkedAllowedForVehicle", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a5acac02c209c76e5cdeecdab8b6edc60", null ],
     [ "GetVehiclesRequiringAResource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ae697aff08cb3a838e248a80a1261adc2", null ],

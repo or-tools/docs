@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -110,6 +110,7 @@ $(function(){initNavTree('functions_vars_s.html',''); initResizable(true); });
 <li>SAT_LINEAR_SEARCH&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#a0850acdf11bb27fcc1d7938797577421">com.google.ortools.bop.BopOptimizerMethod.OptimizerType</a></li>
 <li>SAT_LINEAR_SEARCH_VALUE&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html#a1cb1325afb25fc68831a44472cbef90e">com.google.ortools.bop.BopOptimizerMethod.OptimizerType</a></li>
 <li>SAT_PARAMETERS_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters.html#af508da70afd42a70f904b19c29981a0a">com.google.ortools.constraintsolver.RoutingSearchParameters</a></li>
+<li>SAVE_LP_BASIS_IN_LB_TREE_SEARCH_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#ad3a44440a4ae6cbec8aade1ead49b533">com.google.ortools.sat.SatParameters</a></li>
 <li>SAVINGS&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a3c52306f20ea82bf00988d2945a2923c">com.google.ortools.constraintsolver.FirstSolutionStrategy.Value</a></li>
 <li>SAVINGS_ADD_REVERSE_ARCS_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters.html#abcd71f4d58bfc70c8820faeb5d0dd93c">com.google.ortools.constraintsolver.RoutingSearchParameters</a></li>
 <li>SAVINGS_ARC_COEFFICIENT_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters.html#a728fd2eadfcd8603f4fada88c72fdfd7">com.google.ortools.constraintsolver.RoutingSearchParameters</a></li>
@@ -154,15 +155,18 @@ $(function(){initNavTree('functions_vars_s.html',''); initResizable(true); });
 <li>SEQUENTIAL_CHEAPEST_INSERTION&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a3bec79b270aae045665d7100d5d73978">com.google.ortools.constraintsolver.FirstSolutionStrategy.Value</a></li>
 <li>SEQUENTIAL_CHEAPEST_INSERTION_VALUE&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a7d8509ea521ac18ab85490a77174c835">com.google.ortools.constraintsolver.FirstSolutionStrategy.Value</a></li>
 <li>SHARE_BINARY_CLAUSES_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#aa59f5222077c930196cfd822f3a860b1">com.google.ortools.sat.SatParameters</a></li>
+<li>SHARE_GLUE_CLAUSES_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#aebb6892814fe7105caca568621852609">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARE_LEVEL_ZERO_BOUNDS_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#acc02b60bbbd8a4afdf47a8a6a7cf2f54">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARE_OBJECTIVE_BOUNDS_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a8873199cc9ddb93d2b5fb7060dc5629f">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_MAX_NODES_PER_WORKER_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a9c11cb735b4d08756f62448f7ccc2bc5">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_NUM_WORKERS_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#abd7a93d9db0135a6fee91eadd5c91668">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_OPEN_LEAVES_PER_WORKER_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a50ddeba252fc6a7ff1638ea72eb62e32">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_SPLIT_STRATEGY_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a1efd5331474730a99e13b424ef7258b8">com.google.ortools.sat.SatParameters</a></li>
+<li>SHARED_TREE_WORKER_ENABLE_TRAIL_SHARING_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#aa782162a4ecb2278ee1b29f7007da0c9">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_WORKER_MIN_RESTARTS_PER_SUBTREE_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a32badba995918c94570a58bc43ff9c8f">com.google.ortools.sat.SatParameters</a></li>
 <li>SHARED_TREE_WORKER_OBJECTIVE_SPLIT_PROBABILITY_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a63413d0f4eb7ded873e5b74e7dd971db">com.google.ortools.sat.SatParameters</a></li>
 <li>SHAVING_SEARCH_DETERMINISTIC_TIME_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#aa8cd1a4fb6b63300047b310dcfbaa106">com.google.ortools.sat.SatParameters</a></li>
+<li>SHAVING_SEARCH_THRESHOLD_FIELD_NUMBER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a34e45f33a3315b2f815674dc5a51e2d7">com.google.ortools.sat.SatParameters</a></li>
 <li>SIMPLE&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#adc08ad557fcea8441d54c7ea8f14e9da">com.google.ortools.sat.SatParameters.ConflictMinimizationAlgorithm</a></li>
 <li>SIMPLE_MARKER&#160;:&#160;<a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a1e9be2b22ee0ac95fdbe0ab9aca40f03">com.google.ortools.constraintsolver.Solver</a></li>
 <li>SIMPLE_OPTIMALITY_CRITERIA&#160;:&#160;<a class="el" href="enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html#a9dfb428f0789d9eb9c903fa67e73b0b4">com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase</a></li>

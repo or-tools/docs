@@ -1,5 +1,11 @@
 var NAVTREEINDEX71 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ac02f796e32cf107fe988cb8d6726f27a":[3,0,0,0,0,8,8,64],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ac458f79f1ea1e7257d76e8beccbb10d0":[2,0,0,0,0,8,8,24],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ac458f79f1ea1e7257d76e8beccbb10d0":[3,0,0,0,0,8,8,24],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ac5d52e1154f6e69e6a2f30d00da54b7c":[2,0,0,0,0,8,8,61],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ac5d52e1154f6e69e6a2f30d00da54b7c":[3,0,0,0,0,8,8,61],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ad97a8b332e1152e8fbb749938ad0c285":[2,0,0,0,0,8,8,43],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#ad97a8b332e1152e8fbb749938ad0c285":[3,0,0,0,0,8,8,43],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#adb0ac874cb9e0d994c218338b4830462":[2,0,0,0,0,8,8,13],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1IterationStats.html#adb0ac874cb9e0d994c218338b4830462":[3,0,0,0,0,8,8,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX71 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4b927c7e6f255cd0fe34a724bca60e6b":[3,0,0,0,0,8,10,17],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4c90980714fdaad3736e204bfd59ad29":[2,0,0,0,0,8,10,34],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4c90980714fdaad3736e204bfd59ad29":[3,0,0,0,0,8,10,34],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4d1089358647ad042bb4e80ead8393bc":[2,0,0,0,0,8,10,22],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4d1089358647ad042bb4e80ead8393bc":[3,0,0,0,0,8,10,22],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4f9fdf85f59761037f2ec42e312b891c":[2,0,0,0,0,8,10,7],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4f9fdf85f59761037f2ec42e312b891c":[3,0,0,0,0,8,10,7],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4fcd0a203600770bceafb7e2bb0593ff":[2,0,0,0,0,8,10,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4fcd0a203600770bceafb7e2bb0593ff":[3,0,0,0,0,8,10,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a591f64e5e6b6874c22b7253a29e84f2b":[2,0,0,0,0,8,10,16]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#a4d1089358647ad042bb4e80ead8393bc":[2,0,0,0,0,8,10,22]
 };
