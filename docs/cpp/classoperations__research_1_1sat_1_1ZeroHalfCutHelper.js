@@ -9,5 +9,5 @@ var classoperations__research_1_1sat_1_1ZeroHalfCutHelper =
     [ "MatrixRow", "classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a1d3ba5da1bad9aec36c644b330ef9805", null ],
     [ "ProcessVariables", "classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a67c63ecc26af5761893b5b5e93e7c5dd", null ],
     [ "Reset", "classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a4825509d96709dedb89a5c3ef5421bfa", null ],
-    [ "SymmetricDifference", "classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a33f87ee16f3556183d93b891e7f21fe1", null ]
+    [ "SymmetricDifference", "classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html#a263bfb5f369c64ebc8abba96d2e69d63", null ]
 ];

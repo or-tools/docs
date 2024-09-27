@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -686,7 +686,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Arrays for modifying the problem are setup. Update the index of variables that will get extracted now. Updating indices <em>before</em> the actual extraction makes things much simpler in case we support incremental extraction. In case of error we just reset the indeces.</p>
 <p>If we support incremental extraction then we must update existing constraints with the new variables. To do that we use CPXXaddcols() to actually create the variables. This is supposed to be faster than combining CPXXnewcols() and CPXXchgcoeflist().</p>
 <p>For each column count the size of the intersection with existing constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000745">Todo</a></b></dt><dd>: Use a bitarray to flag the constraints that actually intersect new variables? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000764">Todo</a></b></dt><dd>: Use a bitarray to flag the constraints that actually intersect new variables? </dd></dl>
 <p>At least one of the new variables did intersect with an old constraint. We have to create the new columns via CPXXaddcols().</p>
 <p>Here is how cmatbeg[] is setup:</p><ul>
 <li>it is initialized as [ 0, 0, collen[0], collen[0]+collen[1], ... ] so that cmatbeg[j+1] tells us where in cmatind[] and cmatval[] we need to put the next nonzero for column j</li>
@@ -1380,7 +1380,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the scaling mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000746">Todo</a></b></dt><dd>: 0 is equilibrium scaling (the default), CPLEX also supports </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000765">Todo</a></b></dt><dd>: 0 is equilibrium scaling (the default), CPLEX also supports </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#aaaa84e64f7c29af15440e02189a362da">operations_research::MPSolverInterface</a>.</p>
 
@@ -1492,7 +1492,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Modifies integrality of an extracted variable. </p>
 <dl class="section note"><dt>Note</dt><dd>The type of the model (continuous or mixed integer) is defined once and for all in the constructor. There are no dynamic changes to the model type.</dd></dl>
 <p>Changing the type of a variable should be fast. Still, doing all updates in one big chunk right before solve() is usually faster. However, if we support incremental extraction (supportIncrementalExtraction is true) then we MUST change the type of extracted variables here.</p>
-<p>Variable is extracted. Change the type immediately. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000744">Todo</a></b></dt><dd>: Should we check the current type and don't do anything in case the type does not change? </dd></dl>
+<p>Variable is extracted. Change the type immediately. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000763">Todo</a></b></dt><dd>: Should we check the current type and don't do anything in case the type does not change? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#a5e445125231a8febc619d3a81cb8c12f">operations_research::MPSolverInterface</a>.</p>
 

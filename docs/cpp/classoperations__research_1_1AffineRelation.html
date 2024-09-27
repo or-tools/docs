@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Union-Find algorithm to maintain "representative" for relations of the form: x = coeff * y + offset, where "coeff" and "offset" are integers. The variable x and y are represented by non-negative integer indices. The idea is to express variables in affine relation using as little different variables as possible (the representatives).</p>
 <p>IMPORTANT: If there are relations with std::abs(coeff) != 1, then some relations might be ignored. See <a class="el" href="#a5c2556af84128ec02d7f72be8c51a43d">TryAdd()</a> for more details.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002403">Todo</a></b></dt><dd>(user): it might be possible to do something fancier and drop less relations if all the affine relations are given before hand. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002442">Todo</a></b></dt><dd>(user): it might be possible to do something fancier and drop less relations if all the affine relations are given before hand. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="affine__relation_8h_source.html#l00037">37</a> of file <a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -382,7 +382,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a5c2556af84128ec02d7f72be8c51a43d">TryAdd()</a> with the option to disallow the use of a given representative. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002404">Todo</a></b></dt><dd>(user): It should be possible to optimize this code block a bit, for instance depending on the magnitude of new_coeff vs coeff_x, we may already know that one of the two merge is not possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002443">Todo</a></b></dt><dd>(user): It should be possible to optimize this code block a bit, for instance depending on the magnitude of new_coeff vs coeff_x, we may already know that one of the two merge is not possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="affine__relation_8h_source.html#l00173">173</a> of file <a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>.</p>
 

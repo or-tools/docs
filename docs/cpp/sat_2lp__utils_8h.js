@@ -7,7 +7,7 @@ var sat_2lp__utils_8h =
     [ "ConvertCpModelProtoToMPModelProto", "sat_2lp__utils_8h.html#ac9c41d8a7687386839ef94182e3badb9", null ],
     [ "ConvertMPModelProtoToCpModelProto", "sat_2lp__utils_8h.html#a2d32bfb7e130364f3dd94087b686b6f5", null ],
     [ "DetectImpliedIntegers", "sat_2lp__utils_8h.html#a753e3aea07903c667891eb57036d26de", null ],
-    [ "FindBestScalingAndComputeErrors", "sat_2lp__utils_8h.html#a76d6dd44958673bb83ac31e970539135", null ],
+    [ "FindBestScalingAndComputeErrors", "sat_2lp__utils_8h.html#a078949f573405fc4dbedc484093b1826", null ],
     [ "FindRationalFactor", "sat_2lp__utils_8h.html#a2fa3c7d5ae90dfbcdf080ee3cefbedda", null ],
     [ "MakeBoundsOfIntegerVariablesInteger", "sat_2lp__utils_8h.html#a416207a1e2a7eb94bd6c36442802ed96", null ],
     [ "MPModelProtoValidationBeforeConversion", "sat_2lp__utils_8h.html#af63eebc797e29eb26229f5787cdf5212", null ],

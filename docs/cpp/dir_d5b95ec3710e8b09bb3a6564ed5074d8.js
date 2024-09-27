@@ -2,6 +2,8 @@ var dir_d5b95ec3710e8b09bb3a6564ed5074d8 =
 [
     [ "c_api", "dir_05b2702534200c244e429e320de15c27.html", "dir_05b2702534200c244e429e320de15c27" ],
     [ "arrow_operator_proxy.h", "arrow__operator__proxy_8h.html", "arrow__operator__proxy_8h" ],
+    [ "base_solver.cc", "base__solver_8cc.html", "base__solver_8cc" ],
+    [ "base_solver.h", "base__solver_8h.html", "base__solver_8h" ],
     [ "concurrent_calls_guard.cc", "concurrent__calls__guard_8cc.html", null ],
     [ "concurrent_calls_guard.h", "concurrent__calls__guard_8h.html", "concurrent__calls__guard_8h" ],
     [ "empty_bounds.cc", "empty__bounds_8cc.html", "empty__bounds_8cc" ],

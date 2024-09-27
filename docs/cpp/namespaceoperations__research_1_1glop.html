@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -355,9 +355,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a5d2803020dd06eb8bc2642d0606d9d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac7ffc36077965c98914024892290f" id="r_a77ac7ffc36077965c98914024892290f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77ac7ffc36077965c98914024892290f">SparseRowIterator</a> = <a class="el" href="classoperations__research_1_1glop_1_1VectorIterator.html">VectorIterator</a>&lt;<a class="el" href="classoperations__research_1_1glop_1_1SparseRowEntry.html">SparseRowEntry</a>&gt;</td></tr>
 <tr class="separator:a77ac7ffc36077965c98914024892290f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5aec5ee10f1a37d89a9d930211c545" id="r_a1e5aec5ee10f1a37d89a9d930211c545"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; RowIndex, <a class="el" href="classoperations__research_1_1glop_1_1SparseRow.html">SparseRow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e5aec5ee10f1a37d89a9d930211c545">RowMajorSparseMatrix</a></td></tr>
-<tr class="memdesc:a1e5aec5ee10f1a37d89a9d930211c545"><td class="mdescLeft">&#160;</td><td class="mdescRight">A matrix stored by rows.  <br /></td></tr>
-<tr class="separator:a1e5aec5ee10f1a37d89a9d930211c545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c62a502aa5dca576a27f97664c2fd4f" id="r_a7c62a502aa5dca576a27f97664c2fd4f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; RowIndex, <a class="el" href="classoperations__research_1_1glop_1_1SparseRow.html">SparseRow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c62a502aa5dca576a27f97664c2fd4f">RowMajorSparseMatrix</a></td></tr>
+<tr class="memdesc:a7c62a502aa5dca576a27f97664c2fd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A matrix stored by rows.  <br /></td></tr>
+<tr class="separator:a7c62a502aa5dca576a27f97664c2fd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -582,7 +582,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a2019fc6c15a0413896d3f35057a070"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6a2019fc6c15a0413896d3f35057a070">PermuteWithKnownNonZeros</a> (const <a class="el" href="classoperations__research_1_1glop_1_1Permutation.html">Permutation</a>&lt; IndexType &gt; &amp;permutation, <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">StrictITIVector</a>&lt; IndexType, <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> &gt; *zero_scratchpad, <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">StrictITIVector</a>&lt; IndexType, <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> &gt; *output, std::vector&lt; IndexType &gt; *non_zeros)</td></tr>
 <tr class="separator:a6a2019fc6c15a0413896d3f35057a070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c552b94fa80def1d4d1ea64697afb1" id="r_aa6c552b94fa80def1d4d1ea64697afb1"><td class="memTemplParams" colspan="2">template&lt;typename IndexType , typename ScatteredRowOrCol &gt; </td></tr>
-<tr class="memitem:aa6c552b94fa80def1d4d1ea64697afb1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa6c552b94fa80def1d4d1ea64697afb1">ClearAndResizeVectorWithNonZeros</a> (IndexType size, ScatteredRowOrCol *v)</td></tr>
+<tr class="memitem:aa6c552b94fa80def1d4d1ea64697afb1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa6c552b94fa80def1d4d1ea64697afb1">ClearAndResizeVectorWithNonZeros</a> (IndexType <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, ScatteredRowOrCol *v)</td></tr>
 <tr class="memdesc:aa6c552b94fa80def1d4d1ea64697afb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a dense vector for which the non zeros are known to be non_zeros.  <br /></td></tr>
 <tr class="separator:aa6c552b94fa80def1d4d1ea64697afb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7ff1f9383648fd132667b1e601229c9" id="r_ab7ff1f9383648fd132667b1e601229c9"><td class="memTemplParams" colspan="2">template&lt;typename IndexType &gt; </td></tr>
@@ -672,7 +672,7 @@ Variables</h2></td></tr>
 
 <p>Vector of row or column indices. Useful to list the non-zero positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00356">356</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00362">362</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ Variables</h2></td></tr>
 
 <p>Row of column indices. Used to represent mappings between columns. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00353">353</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00359">359</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +707,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Row of row indices. Useful for knowing which row corresponds to a particular column in the basis, or for storing the number of rows for a given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00362">362</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00368">368</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +741,7 @@ Variables</h2></td></tr>
 
 <p>Column of constraints (slack variables) statuses. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00393">393</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00399">399</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Variables</h2></td></tr>
 
 <p>Column of bits. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00382">382</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00388">388</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +777,7 @@ Variables</h2></td></tr>
 
 <p>Row of bits. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00371">371</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00377">377</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ Variables</h2></td></tr>
 
 <p>Column of booleans. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00379">379</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00385">385</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ Variables</h2></td></tr>
 
 <p>Row of booleans. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00350">350</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00356">356</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +832,7 @@ Variables</h2></td></tr>
 <p>Column-vector types. Column-vector types are indexed by a row index. </p>
 <p>Column of fractional values. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00376">376</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00382">382</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ Variables</h2></td></tr>
 <p>Row-vector types. Row-vector types are indexed by a column index. </p>
 <p>Row of fractional values. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00347">347</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00353">353</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +900,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000847">Todo</a></b></dt><dd>(user): For some Fractional types, it may not gain much (or even nothing if we are in infinite precision) to use this sum. A solution is to templatize this class and specialize it to a normal sum for the Fractional type we want so in this case the PreciseXXX() functions below will become equivalent to their normal version. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000866">Todo</a></b></dt><dd>(user): For some Fractional types, it may not gain much (or even nothing if we are in infinite precision) to use this sum. A solution is to templatize this class and specialize it to a normal sum for the Fractional type we want so in this case the PreciseXXX() functions below will become equivalent to their normal version. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00037">37</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
 
@@ -918,18 +918,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00357">357</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00363">363</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
-<a id="a1e5aec5ee10f1a37d89a9d930211c545" name="a1e5aec5ee10f1a37d89a9d930211c545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5aec5ee10f1a37d89a9d930211c545">&#9670;&#160;</a></span>RowMajorSparseMatrix</h2>
+<a id="a7c62a502aa5dca576a27f97664c2fd4f" name="a7c62a502aa5dca576a27f97664c2fd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c62a502aa5dca576a27f97664c2fd4f">&#9670;&#160;</a></span>RowMajorSparseMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt;RowIndex, <a class="el" href="classoperations__research_1_1glop_1_1SparseRow.html">SparseRow</a>&gt; <a class="el" href="#a1e5aec5ee10f1a37d89a9d930211c545">operations_research::glop::RowMajorSparseMatrix</a></td>
+          <td class="memname">typedef <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;RowIndex, <a class="el" href="classoperations__research_1_1glop_1_1SparseRow.html">SparseRow</a>&gt; <a class="el" href="#a7c62a502aa5dca576a27f97664c2fd4f">operations_research::glop::RowMajorSparseMatrix</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -954,7 +954,7 @@ Variables</h2></td></tr>
 
 <p>Column of row indices. Used to represent mappings between rows. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00385">385</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00391">391</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -987,7 +987,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Column of column indices. Used to represent which column corresponds to a particular row in the basis, or for storing the number of columns for a given row. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00390">390</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00396">396</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1101,7 @@ Variables</h2></td></tr>
 
 <p>Row of variable statuses. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00368">368</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00374">374</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1119,7 @@ Variables</h2></td></tr>
 
 <p>Row of variable types. </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00365">365</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00371">371</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1298,7 @@ Variables</h2></td></tr>
 <p>Implementation class. Please use the 2 functions above.</p>
 <p>Reads a linear program in the mps format.</p>
 <p>All Parse() methods clear the previously parsed instance and store the result in the given Data class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000855">Todo</a></b></dt><dd>(user): Remove the MPSReader class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000874">Todo</a></b></dt><dd>(user): Remove the MPSReader class. </dd></dl>
 <p>Parses instance from a file.</p>
 <p>Loads instance from string. Useful with MapReduce. Automatically detects the file's format (free or fixed).</p>
 
@@ -1420,7 +1420,7 @@ template&lt;typename IndexType , typename ITIVectorType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Applies the permutation perm to the vector b. Overwrites result to store the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000863">Todo</a></b></dt><dd>(user): Try to restrict this method to using the same integer type in the permutation and for the vector indices, i.e. IndexType == ITIVectorType::IndexType. Some client code will need to be refactored. </dd></dl>
+<p>Applies the permutation perm to the vector b. Overwrites result to store the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000882">Todo</a></b></dt><dd>(user): Try to restrict this method to using the same integer type in the permutation and for the vector indices, i.e. IndexType == ITIVectorType::IndexType. Some client code will need to be refactored. </dd></dl>
 <p>Empty size means identity.</p>
 <p>Empty size means identity.</p>
 
@@ -1489,7 +1489,7 @@ template&lt;typename IndexType , typename ITIVectorType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true iff the two given matrices have exactly the same first num_rows entries on the first num_cols columns. The two given matrices must be ordered by rows (this is DCHECKed, but only for the first one at this point). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000852">Todo</a></b></dt><dd>(user): Also DCHECK() that matrix_b is ordered by rows. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000871">Todo</a></b></dt><dd>(user): Also DCHECK() that matrix_b is ordered by rows. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="matrix__utils_8cc_source.html#l00198">198</a> of file <a class="el" href="matrix__utils_8cc_source.html">matrix_utils.cc</a>.</p>
 
@@ -1750,7 +1750,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the fraction of non-zero entries of the given row.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000849">Todo</a></b></dt><dd>(user): Take a Scattered row/col instead. This is only used to report stats, but we should still have a sparse version to do it faster. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000868">Todo</a></b></dt><dd>(user): Take a Scattered row/col instead. This is only used to report stats, but we should still have a sparse version to do it faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8cc_source.html#l00176">176</a> of file <a class="el" href="lp__data_2lp__utils_8cc_source.html">lp_utils.cc</a>.</p>
 
@@ -1780,7 +1780,7 @@ template&lt;typename IndexType &gt; </div>
 </div><div class="memdoc">
 <p>This is used during the deterministic time computation to convert a given number of floating-point operations to something in the same order of magnitude as a second (on a 2014 desktop). </p>
 
-<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00429">429</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lp__types_8h_source.html#l00435">435</a> of file <a class="el" href="lp__types_8h_source.html">lp_types.h</a>.</p>
 
 </div>
 </div>
@@ -1811,7 +1811,7 @@ template&lt;typename IndexType &gt; </div>
 <p>Compute the fingerprint of each columns and sort them.</p>
 <p>Find a representative of each proportional columns class. This only compares columns with a close-enough fingerprint.</p>
 <dl class="section note"><dt>Note</dt><dd>we use the same tolerance for the fingerprints. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000851">Todo</a></b></dt><dd>(user): Derive precise bounds on what this tolerance should be so that no proportional columns are missed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000870">Todo</a></b></dt><dd>(user): Derive precise bounds on what this tolerance should be so that no proportional columns are missed. </dd></dl>
 <p>Sort the mapping so that the representative of each class is the smallest column. To achieve this, the current representative is used as a pointer to the new one, a bit like in an union find algorithm.</p>
 
 <p class="definition">Definition at line <a class="el" href="matrix__utils_8cc_source.html#l00123">123</a> of file <a class="el" href="matrix__utils_8cc_source.html">matrix_utils.cc</a>.</p>
@@ -1866,7 +1866,7 @@ template&lt;typename IndexType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Because of numerical imprecision, a preprocessor like <a class="el" href="classoperations__research_1_1glop_1_1DoubletonEqualityRowPreprocessor.html">DoubletonEqualityRowPreprocessor</a> can transform a constraint/variable domain like [1, 1+1e-7] to a fixed domain (for ex by multiplying the above domain by 1e9). This causes an issue because at postsolve, a FIXED_VALUE status now needs to be transformed to a AT_LOWER_BOUND/AT_UPPER_BOUND status. This is what this function is doing for the constraint statuses only.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000508">Todo</a></b></dt><dd>(user): A better solution would simply be to get rid of the FIXED status altogether, it is better to simply use AT_LOWER_BOUND/AT_UPPER_BOUND depending on the constraining bound in the optimal solution. Note that we can always at the end transform any variable/constraint with a fixed domain to FIXED_VALUE if needed to keep the same external API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000526">Todo</a></b></dt><dd>(user): A better solution would simply be to get rid of the FIXED status altogether, it is better to simply use AT_LOWER_BOUND/AT_UPPER_BOUND depending on the constraining bound in the optimal solution. Note that we can always at the end transform any variable/constraint with a fixed domain to FIXED_VALUE if needed to keep the same external API. </dd></dl>
 <p>We need to fix the status and we just need to make sure that the bound we choose satisfies the LP optimality conditions.</p>
 
 <p class="definition">Definition at line <a class="el" href="preprocessor_8cc_source.html#l03402">3402</a> of file <a class="el" href="preprocessor_8cc_source.html">preprocessor.cc</a>.</p>
@@ -2284,7 +2284,7 @@ template&lt;typename Container &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000877">Todo</a></b></dt><dd>(user): Consider using kInvalidRow for this? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000896">Todo</a></b></dt><dd>(user): Consider using kInvalidRow for this? </dd></dl>
 
 </div>
 </div>
@@ -2382,8 +2382,8 @@ template&lt;typename Container &gt; </div>
 </div><div class="memdoc">
 
 <p>Converts a MPModelProto to a <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000864">Todo</a></b></dt><dd>(user): clean up loops to use natural range iteration. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000865">Todo</a></b></dt><dd>(user): implement strong proto validation in the linear solver server and re-use it here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000883">Todo</a></b></dt><dd>(user): clean up loops to use natural range iteration. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000884">Todo</a></b></dt><dd>(user): implement strong proto validation in the linear solver server and re-use it here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2proto__utils_8cc_source.html#l00058">58</a> of file <a class="el" href="lp__data_2proto__utils_8cc_source.html">proto_utils.cc</a>.</p>
 
@@ -2935,7 +2935,7 @@ template&lt;class DenseRowOrColumn &gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>This version is heavily used in the pricing. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000848">Todo</a></b></dt><dd>(user): Optimize this more (SSE or unroll with two sums). Another option is to skip the u[col] that are 0.0 rather than fetching the coeff and doing a Fractional multiplication. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000867">Todo</a></b></dt><dd>(user): Optimize this more (SSE or unroll with two sums). Another option is to skip the u[col] that are 0.0 rather than fetching the coeff and doing a Fractional multiplication. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00087">87</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
 

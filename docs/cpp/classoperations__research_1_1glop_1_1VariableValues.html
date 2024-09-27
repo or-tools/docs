@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -137,8 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0498e284236dd588fbcb0009871dcc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f0262a19afea6d9be4039ccd2998b6" id="r_a50f0262a19afea6d9be4039ccd2998b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50f0262a19afea6d9be4039ccd2998b6">UpdateOnPivoting</a> (const <a class="el" href="structoperations__research_1_1glop_1_1ScatteredColumn.html">ScatteredColumn</a> &amp;direction, ColIndex entering_col, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> step)</td></tr>
 <tr class="separator:a50f0262a19afea6d9be4039ccd2998b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f5942343034bef9f5fb8c93d443b27" id="r_a94f5942343034bef9f5fb8c93d443b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f5942343034bef9f5fb8c93d443b27">UpdateGivenNonBasicVariables</a> (const std::vector&lt; ColIndex &gt; &amp;cols_to_update, bool update_basic_variables)</td></tr>
-<tr class="separator:a94f5942343034bef9f5fb8c93d443b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590355e95042b0ec12df5fee56be3315" id="r_a590355e95042b0ec12df5fee56be3315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a590355e95042b0ec12df5fee56be3315">UpdateGivenNonBasicVariables</a> (absl::Span&lt; const ColIndex &gt; cols_to_update, bool update_basic_variables)</td></tr>
+<tr class="separator:a590355e95042b0ec12df5fee56be3315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a189867045312e53d3f0c88974e81e" id="r_ab0a189867045312e53d3f0c88974e81e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0a189867045312e53d3f0c88974e81e">RecomputeDualPrices</a> (bool put_more_importance_on_norm=false)</td></tr>
 <tr class="separator:ab0a189867045312e53d3f0c88974e81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e69e53b19bf5b13cbcd1a2192b73fe" id="r_ad4e69e53b19bf5b13cbcd1a2192b73fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e69e53b19bf5b13cbcd1a2192b73fe">UpdateDualPrices</a> (absl::Span&lt; const RowIndex &gt; <a class="el" href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a>)</td></tr>
@@ -416,7 +416,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Functions dealing with the primal-infeasible basic variables. A basic variable is primal-infeasible if its infeasibility is stricly greater than the primal feasibility tolerance. These are exactly the dual "prices" once recalled by the norms. This is only used during the dual simplex.</p>
 <p>This information is only available after a call to <a class="el" href="#ab0a189867045312e53d3f0c88974e81e">RecomputeDualPrices()</a> and has to be kept in sync by calling <a class="el" href="#ad4e69e53b19bf5b13cbcd1a2192b73fe">UpdateDualPrices()</a> for the rows that changed values.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000597">Todo</a></b></dt><dd>(user): On some problem like stp3d.mps or pds-100.mps, using different price like abs(infeasibility) / squared_norms give better result. Some solver switch according to a criteria like all entry are +1/-1, the column have no more than 24 non-zero and the average column size is no more than 6! Understand and implement some variant of this? I think the gain is mainly because of using sparser vectors? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000616">Todo</a></b></dt><dd>(user): On some problem like stp3d.mps or pds-100.mps, using different price like abs(infeasibility) / squared_norms give better result. Some solver switch according to a criteria like all entry are +1/-1, the column have no more than 24 non-zero and the average column size is no more than 6! Understand and implement some variant of this? I think the gain is mainly because of using sparser vectors? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variable__values_8cc_source.html#l00253">253</a> of file <a class="el" href="variable__values_8cc_source.html">variable_values.cc</a>.</p>
 
@@ -546,8 +546,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a94f5942343034bef9f5fb8c93d443b27" name="a94f5942343034bef9f5fb8c93d443b27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94f5942343034bef9f5fb8c93d443b27">&#9670;&#160;</a></span>UpdateGivenNonBasicVariables()</h2>
+<a id="a590355e95042b0ec12df5fee56be3315" name="a590355e95042b0ec12df5fee56be3315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590355e95042b0ec12df5fee56be3315">&#9670;&#160;</a></span>UpdateGivenNonBasicVariables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +555,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::glop::VariableValues::UpdateGivenNonBasicVariables </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; ColIndex &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cols_to_update</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const ColIndex &gt;</td>          <td class="paramname"><span class="paramname"><em>cols_to_update</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

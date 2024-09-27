@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -210,8 +210,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>reference_assignment_ is used to keep track of the last assignment on which operators were started, assignment_ corresponding to the last successful neighbor. last_synchronized_assignment_ keeps track of the last assignment on which filters were synchronized and is used to compute the filter_assignment_delta_ when synchronizing again. </p>
 <p>If limit is nullptr, default limit is 1 solution</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000223">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks for limits accepting more than one solution (e.g. best accept). For now re-enabling systematic checks. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000224">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks with LNS (at least on the non-LNS operators). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000241">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks for limits accepting more than one solution (e.g. best accept). For now re-enabling systematic checks. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000242">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks with LNS (at least on the non-LNS operators). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l04803">4803</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
@@ -302,14 +302,14 @@ Public Member Functions</h2></td></tr>
 <p>Only called on the first call to <a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>, reference_assignment_ has not been synced with assignment_ yet</p>
 <p>Keeping the code in case a performance problem forces us to use the old code with a zero test on pool_. reference_assignment_-&gt;CopyIntersection(assignment_);</p>
 <p>Another assignment is needed to apply the delta</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000225">Todo</a></b></dt><dd>(user) : SyncNeed(assignment_) ? </dd></dl>
-<p>All filters must be called for incrementality reasons. Empty deltas must also be sent to incremental filters; can be needed to resync filters on non-incremental (empty) moves. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000226">Todo</a></b></dt><dd>(user): Don't call both if no filter is incremental and one of them returned false. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000243">Todo</a></b></dt><dd>(user) : SyncNeed(assignment_) ? </dd></dl>
+<p>All filters must be called for incrementality reasons. Empty deltas must also be sent to incremental filters; can be needed to resync filters on non-incremental (empty) moves. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000244">Todo</a></b></dt><dd>(user): Don't call both if no filter is incremental and one of them returned false. </dd></dl>
 <p>LNS deltas need to be restored</p>
-<p>Advancing local search to the current solution without checking. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000227">Todo</a></b></dt><dd>(user): support the case were limit_ accepts more than one solution (e.g. best accept). </dd></dl>
+<p>Advancing local search to the current solution without checking. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000245">Todo</a></b></dt><dd>(user): support the case were limit_ accepts more than one solution (e.g. best accept). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>SynchronizeAll() sets neighbor_found_ to false, force it back to true when skipping checks.</dd></dl>
-<p>Filtering is not perfect, disabling fast local search and resynchronizing with the last checked solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000228">Todo</a></b></dt><dd>(user): Restore state of local search operators to make sure we are exploring neighbors in the same order. This can affect the local optimum found. </dd></dl>
+<p>Filtering is not perfect, disabling fast local search and resynchronizing with the last checked solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000246">Todo</a></b></dt><dd>(user): Restore state of local search operators to make sure we are exploring neighbors in the same order. This can affect the local optimum found. </dd></dl>
 <p>Reset the last synchronized assignment in case it's no longer up to date or we fail below.</p>
-<p>In case the last checked assignment isn't the current one, restore it to make sure the solver knows about it, especially if this is the end of the search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000229">Todo</a></b></dt><dd>(user): Compare assignments in addition to their cost. </dd></dl>
+<p>In case the last checked assignment isn't the current one, restore it to make sure the solver knows about it, especially if this is the end of the search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000247">Todo</a></b></dt><dd>(user): Compare assignments in addition to their cost. </dd></dl>
 <p>If restoring fails this means filtering is not perfect and the solver will consider the last checked assignment.</p>
 <p>Keeping the code in case a performance problem forces us to use the old code with a zero test on pool_. reference_assignment_-&gt;CopyIntersection(assignment_);</p>
 <p>NOTE(user): The last synchronized assignment must be reset here to guarantee filters will be properly synched in case we re-solve using an assignment that wasn't the last accepted and synchronized assignment.</p>

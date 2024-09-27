@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -158,26 +158,26 @@ $(function(){initNavTree('path_8cc_source.html',''); initResizable(true); });
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> absl::string_view path : paths) total_size += path.size();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    result.resize(total_size);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">auto</span> <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a> = result.begin();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> out = <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">auto</span> begin = result.begin();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> out = begin;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> trailing_slash = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">for</span> (absl::string_view path : paths) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">if</span> (path.empty()) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">if</span> (path.front() == <span class="charliteral">&#39;/&#39;</span>) {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">if</span> (honor_abs) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>          out = <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>;  <span class="comment">// wipe out whatever we&#39;ve built up so far.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>          out = begin;  <span class="comment">// wipe out whatever we&#39;ve built up so far.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (trailing_slash) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          path.remove_prefix(1);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span> (!trailing_slash &amp;&amp; out != <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>) *out++ = <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span> (!trailing_slash &amp;&amp; out != begin) *out++ = <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">const</span> <span class="keywordtype">size_t</span> this_size = path.size();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      memcpy(&amp;*out, path.data(), this_size);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      out += this_size;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      trailing_slash = out[-1] == <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    result.erase(out - <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    result.erase(out - begin);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
@@ -367,7 +367,7 @@ $(function(){initNavTree('path_8cc_source.html',''); initResizable(true); });
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}  <span class="comment">// namespace file</span></div>
 <div class="ttc" id="anamespacefile_1_1internal_html_a4676ff19f3ffc4e3961984580b163f9d"><div class="ttname"><a href="namespacefile_1_1internal.html#a4676ff19f3ffc4e3961984580b163f9d">file::internal::SplitBasename</a></div><div class="ttdeci">std::pair&lt; absl::string_view, absl::string_view &gt; SplitBasename(absl::string_view path)</div><div class="ttdef"><b>Definition</b> <a href="#l00079">path.cc:79</a></div></div>
 <div class="ttc" id="anamespacefile_1_1internal_html_ac0dc76c8c82a62da045c916e99ca6b51"><div class="ttname"><a href="namespacefile_1_1internal.html#ac0dc76c8c82a62da045c916e99ca6b51">file::internal::JoinPathImpl</a></div><div class="ttdeci">std::string JoinPathImpl(bool honor_abs, std::initializer_list&lt; absl::string_view &gt; paths)</div><div class="ttdoc">Not part of the public API.</div><div class="ttdef"><b>Definition</b> <a href="#l00041">path.cc:41</a></div></div>
-<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition</b> <a href="base_2file_8cc_source.html#l00155">file.cc:155</a></div></div>
+<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition</b> <a href="base_2file_8cc_source.html#l00169">file.cc:169</a></div></div>
 <div class="ttc" id="anamespacefile_html_a0b40c87010102b734da91d2591c7ab24"><div class="ttname"><a href="namespacefile.html#a0b40c87010102b734da91d2591c7ab24">file::AddSlash</a></div><div class="ttdeci">std::string AddSlash(absl::string_view path)</div><div class="ttdef"><b>Definition</b> <a href="#l00096">path.cc:96</a></div></div>
 <div class="ttc" id="anamespacefile_html_a14c2a26097307c73008d16a5ac7a3b46"><div class="ttname"><a href="namespacefile.html#a14c2a26097307c73008d16a5ac7a3b46">file::Extension</a></div><div class="ttdeci">absl::string_view Extension(absl::string_view path)</div><div class="ttdef"><b>Definition</b> <a href="#l00133">path.cc:133</a></div></div>
 <div class="ttc" id="anamespacefile_html_a1697439396cabce119fecf62e7aee476"><div class="ttname"><a href="namespacefile.html#a1697439396cabce119fecf62e7aee476">file::CleanPath</a></div><div class="ttdeci">std::string CleanPath(const absl::string_view unclean_path)</div><div class="ttdef"><b>Definition</b> <a href="#l00137">path.cc:137</a></div></div>
@@ -380,7 +380,6 @@ $(function(){initNavTree('path_8cc_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespacefile_html_af241b869bf9a9617d7ed2bf75ed29a57"><div class="ttname"><a href="namespacefile.html#af241b869bf9a9617d7ed2bf75ed29a57">file::CollapseSlashes</a></div><div class="ttdeci">std::string CollapseSlashes(absl::string_view path)</div><div class="ttdef"><b>Definition</b> <a href="#l00218">path.cc:218</a></div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition</b> <a href="connected__components_8h_source.html#l00145">connected_components.h:145</a></div></div>
 <div class="ttc" id="apath_8h_html"><div class="ttname"><a href="path_8h.html">path.h</a></div></div>
-<div class="ttc" id="astrong__vector_8h_html_aeeb2d4a0b8035603af696a5c1a73d100"><div class="ttname"><a href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a></div><div class="ttdeci">*vec begin()+0)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

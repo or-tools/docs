@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,8 +111,10 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1JumpTable.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a634b45c9bdda4e9e29830c159e39cd0f" id="r_a634b45c9bdda4e9e29830c159e39cd0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a634b45c9bdda4e9e29830c159e39cd0f">JumpTable</a> (absl::AnyInvocable&lt; std::pair&lt; int64_t, double &gt;(int)&gt; compute_jump)</td></tr>
-<tr class="separator:a634b45c9bdda4e9e29830c159e39cd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b59dc4c75e3affe502f8e9f680940e9" id="r_a9b59dc4c75e3affe502f8e9f680940e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b59dc4c75e3affe502f8e9f680940e9">JumpTable</a> ()=default</td></tr>
+<tr class="separator:a9b59dc4c75e3affe502f8e9f680940e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8516f6185b2882328731950ffd63109" id="r_aa8516f6185b2882328731950ffd63109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8516f6185b2882328731950ffd63109">SetComputeFunction</a> (absl::AnyInvocable&lt; std::pair&lt; int64_t, double &gt;(int) const &gt; compute_jump)</td></tr>
+<tr class="separator:aa8516f6185b2882328731950ffd63109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae500d94e85f28bc663b320afff4c71" id="r_a1ae500d94e85f28bc663b320afff4c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ae500d94e85f28bc663b320afff4c71">RecomputeAll</a> (int num_variables)</td></tr>
 <tr class="separator:a1ae500d94e85f28bc663b320afff4c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2767130bd3f9a87b273a6949d6051856" id="r_a2767130bd3f9a87b273a6949d6051856"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int64_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2767130bd3f9a87b273a6949d6051856">GetJump</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
@@ -123,25 +125,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a195dc160d84cc0886d8b447d628e2ad6" id="r_a195dc160d84cc0886d8b447d628e2ad6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a195dc160d84cc0886d8b447d628e2ad6">Recompute</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
 <tr class="memdesc:a195dc160d84cc0886d8b447d628e2ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompute the jump for <code>var</code> when <code>GetJump(var)</code> is next called.  <br /></td></tr>
 <tr class="separator:a195dc160d84cc0886d8b447d628e2ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1111916fe0344ee932a45f3d3d757bae" id="r_a1111916fe0344ee932a45f3d3d757bae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1111916fe0344ee932a45f3d3d757bae">PossiblyGood</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
-<tr class="memdesc:a1111916fe0344ee932a45f3d3d757bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the jump score for <code>var</code> might be negative.  <br /></td></tr>
-<tr class="separator:a1111916fe0344ee932a45f3d3d757bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad173a2681420c853c6fd88ee6708bad0" id="r_ad173a2681420c853c6fd88ee6708bad0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad173a2681420c853c6fd88ee6708bad0">NeedRecomputation</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:ad173a2681420c853c6fd88ee6708bad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d4c91958f5a280278450f7b97d1eff" id="r_a82d4c91958f5a280278450f7b97d1eff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d4c91958f5a280278450f7b97d1eff">Score</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:a82d4c91958f5a280278450f7b97d1eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0d751d753096fde9c83e8833de3a7e" id="r_a4e0d751d753096fde9c83e8833de3a7e"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e0d751d753096fde9c83e8833de3a7e">Deltas</a> () const</td></tr>
 <tr class="separator:a4e0d751d753096fde9c83e8833de3a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4385e881c52116ca984034d0e6978653" id="r_a4385e881c52116ca984034d0e6978653"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4385e881c52116ca984034d0e6978653">Scores</a> () const</td></tr>
 <tr class="separator:a4385e881c52116ca984034d0e6978653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbf699a0374097211feb92c4339b9c3" id="r_a9cbf699a0374097211feb92c4339b9c3"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cbf699a0374097211feb92c4339b9c3">MutableScores</a> ()</td></tr>
 <tr class="separator:a9cbf699a0374097211feb92c4339b9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389de4f60a6774727def1ef5037ef660" id="r_a389de4f60a6774727def1ef5037ef660"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a389de4f60a6774727def1ef5037ef660">JumpIsUpToDate</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>)</td></tr>
-<tr class="separator:a389de4f60a6774727def1ef5037ef660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae19adccc169b147499039873a81ab3" id="r_aeae19adccc169b147499039873a81ab3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae19adccc169b147499039873a81ab3">JumpIsUpToDate</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:aeae19adccc169b147499039873a81ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class lazily caches the results of <code>compute_jump(var)</code> which returns a &lt;delta, score&gt; pair. Variables' scores can be manually modified using MutableScores (if the optimal jump is known not to change), or marked for recomputation on the next call to GetJump(var) by calling Recompute. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00047">47</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00059">59</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a634b45c9bdda4e9e29830c159e39cd0f" name="a634b45c9bdda4e9e29830c159e39cd0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a634b45c9bdda4e9e29830c159e39cd0f">&#9670;&#160;</a></span>JumpTable()</h2>
+<a id="a9b59dc4c75e3affe502f8e9f680940e9" name="a9b59dc4c75e3affe502f8e9f680940e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b59dc4c75e3affe502f8e9f680940e9">&#9670;&#160;</a></span>JumpTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,18 +155,16 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">operations_research::sat::JumpTable::JumpTable </td>
           <td>(</td>
-          <td class="paramtype">absl::AnyInvocable&lt; std::pair&lt; int64_t, double &gt;(int)&gt;</td>          <td class="paramname"><span class="paramname"><em>compute_jump</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00060">60</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>
@@ -192,7 +193,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advanced usage, allows users to read possibly stale deltas for incremental score updates. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00065">65</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00084">84</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 
 </div>
 </div>
@@ -213,12 +214,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Gets the current jump delta and score, recomputing if necessary. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00097">97</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00094">94</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>
-<a id="a389de4f60a6774727def1ef5037ef660" name="a389de4f60a6774727def1ef5037ef660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a389de4f60a6774727def1ef5037ef660">&#9670;&#160;</a></span>JumpIsUpToDate()</h2>
+<a id="aeae19adccc169b147499039873a81ab3" name="aeae19adccc169b147499039873a81ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae19adccc169b147499039873a81ab3">&#9670;&#160;</a></span>JumpIsUpToDate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,13 +228,14 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool operations_research::sat::JumpTable::JumpIsUpToDate </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>For debugging and testing.</p>
 <p>Note if you have very high weights (e.g. when using decay), the tolerances in this function are likely too tight. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00082">82</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00079">79</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>
@@ -260,28 +262,34 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00072">72</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00091">91</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 
 </div>
 </div>
-<a id="a1111916fe0344ee932a45f3d3d757bae" name="a1111916fe0344ee932a45f3d3d757bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1111916fe0344ee932a45f3d3d757bae">&#9670;&#160;</a></span>PossiblyGood()</h2>
+<a id="ad173a2681420c853c6fd88ee6708bad0" name="ad173a2681420c853c6fd88ee6708bad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad173a2681420c853c6fd88ee6708bad0">&#9670;&#160;</a></span>NeedRecomputation()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool operations_research::sat::JumpTable::PossiblyGood </td>
+          <td class="memname">bool operations_research::sat::JumpTable::NeedRecomputation </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns true if the jump score for <code>var</code> might be negative. </p>
-
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00078">78</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00078">78</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +310,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Recompute the jump for <code>var</code> when <code>GetJump(var)</code> is next called. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00076">76</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00077">77</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>
@@ -321,7 +329,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00064">64</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00065">65</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+
+</div>
+</div>
+<a id="a82d4c91958f5a280278450f7b97d1eff" name="a82d4c91958f5a280278450f7b97d1eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d4c91958f5a280278450f7b97d1eff">&#9670;&#160;</a></span>Score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double operations_research::sat::JumpTable::Score </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00080">80</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +383,26 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00068">68</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00087">87</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+
+</div>
+</div>
+<a id="aa8516f6185b2882328731950ffd63109" name="aa8516f6185b2882328731950ffd63109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8516f6185b2882328731950ffd63109">&#9670;&#160;</a></span>SetComputeFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::JumpTable::SetComputeFunction </td>
+          <td>(</td>
+          <td class="paramtype">absl::AnyInvocable&lt; std::pair&lt; int64_t, double &gt;(int) const &gt;</td>          <td class="paramname"><span class="paramname"><em>compute_jump</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00060">60</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>
@@ -377,7 +431,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If the new optimum value and score is known, users can update it directly. e.g. after weight rescaling, or after changing a binary variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00070">70</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8cc_source.html#l00071">71</a> of file <a class="el" href="feasibility__jump_8cc_source.html">feasibility_jump.cc</a>.</p>
 
 </div>
 </div>

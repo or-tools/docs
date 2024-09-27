@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Propagates a * b = p.</p>
 <p>The bounds [min, max] of a and b will be propagated perfectly, but not the bounds on p as this require more complex arithmetics. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00270">270</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00283">283</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3365ac27ececed6e99dddba784ebf856" name="a3365ac27ececed6e99dddba784ebf856"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3365ac27ececed6e99dddba784ebf856">&#9670;&#160;</a></span>ProductPropagator() <span class="overload">[1/2]</span></h2>
@@ -174,7 +174,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00844">844</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l00847">847</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Public Member Functions</h2></td></tr>
 <p>In the most common case, we use better reasons even though the code below would propagate the same.</p>
 <p>This was done by CanonicalizeCases().</p>
 <p>Lets propagate on p_ first, the max/min is given by one of: max_a * max_b, max_a * min_b, min_a * max_b, min_a * min_b. This is true, because any product x * y, depending on the sign, is dominated by one of these.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001736">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001757">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
 <p>Lets propagate on a and b.</p>
 <p>We need a bit more propagation to avoid bad cases below.</p>
 <p>p = a * b, what is the min/max of a?</p>
@@ -269,7 +269,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01004">1004</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01007">1007</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01148">1148</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__expr_8cc_source.html#l01151">1151</a> of file <a class="el" href="integer__expr_8cc_source.html">integer_expr.cc</a>.</p>
 
 </div>
 </div>

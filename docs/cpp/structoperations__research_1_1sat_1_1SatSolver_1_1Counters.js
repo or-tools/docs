@@ -6,6 +6,7 @@ var structoperations__research_1_1sat_1_1SatSolver_1_1Counters =
     [ "minimization_num_reused", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#ac0e15e785551af2a32b207136587fea0", null ],
     [ "minimization_num_subsumed", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#aa9521c37d86b9150efdc26bd2650d69f", null ],
     [ "minimization_num_true", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#a0086cd9612886cd2beb9e9ab7eb4f0de", null ],
+    [ "num_backtracks", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#a21d7fbb6d1cec72636249a56e2eee018", null ],
     [ "num_branches", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#a51cdb82de3364f012257a6f727369a1e", null ],
     [ "num_failures", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#af85c4c4c9d28660dfc495dcc8ad249e8", null ],
     [ "num_learned_pb_literals", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html#af32ce4eebbc094a47b2a35c293ba06c4", null ],

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,7 +111,7 @@ $(function(){initNavTree('classoperations__research_1_1SavingsFilteredHeuristic_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afebbba96eac17b57f5a269416dfab6fd" id="r_afebbba96eac17b57f5a269416dfab6fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afebbba96eac17b57f5a269416dfab6fd">SavingsContainer</a> (const <a class="el" href="classoperations__research_1_1SavingsFilteredHeuristic.html">SavingsFilteredHeuristic</a> *savings_db, int vehicle_types)</td></tr>
 <tr class="separator:afebbba96eac17b57f5a269416dfab6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae32f5759c3e562be14604f60b89f27c" id="r_aae32f5759c3e562be14604f60b89f27c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae32f5759c3e562be14604f60b89f27c">InitializeContainer</a> (int64_t size, int64_t saving_neighbors)</td></tr>
+<tr class="memitem:aae32f5759c3e562be14604f60b89f27c" id="r_aae32f5759c3e562be14604f60b89f27c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae32f5759c3e562be14604f60b89f27c">InitializeContainer</a> (int64_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, int64_t saving_neighbors)</td></tr>
 <tr class="separator:aae32f5759c3e562be14604f60b89f27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a18c80da02054c4992773907b91b7ab" id="r_a1a18c80da02054c4992773907b91b7ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a18c80da02054c4992773907b91b7ab">AddNewSaving</a> (const <a class="el" href="structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html">Saving</a> &amp;saving, int64_t total_cost, int64_t before_node, int64_t after_node, int vehicle_type)</td></tr>
 <tr class="separator:a1a18c80da02054c4992773907b91b7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ template&lt;typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>For each arc, sort the savings by decreasing total cost start--&gt;a--&gt;b--&gt;end. The best saving for each arc is therefore the last of its vector.</p>
-<p>Insert all Savings for this arc with the lowest cost into sorted_savings_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000363">Todo</a></b></dt><dd>(user): Also do this when reiterating on next_savings_. </dd></dl>
+<p>Insert all Savings for this arc with the lowest cost into sorted_savings_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000381">Todo</a></b></dt><dd>(user): Also do this when reiterating on next_savings_. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l03180">3180</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 

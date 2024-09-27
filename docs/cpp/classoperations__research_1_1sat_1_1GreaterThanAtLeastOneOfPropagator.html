@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,6 +115,7 @@ Inheritance diagram for operations_research::sat::GreaterThanAtLeastOneOfPropaga
   <img src="classoperations__research_1_1sat_1_1GreaterThanAtLeastOneOfPropagator.png" usemap="#operations_5Fresearch::sat::GreaterThanAtLeastOneOfPropagator_map" alt=""/>
   <map id="operations_5Fresearch::sat::GreaterThanAtLeastOneOfPropagator_map" name="operations_5Fresearch::sat::GreaterThanAtLeastOneOfPropagator_map">
 <area href="classoperations__research_1_1sat_1_1PropagatorInterface.html" title="Base class for CP like propagators." alt="operations_research::sat::PropagatorInterface" shape="rect" coords="0,0,371,24"/>
+<area href="classoperations__research_1_1sat_1_1LazyReasonInterface.html" alt="operations_research::sat::LazyReasonInterface" shape="rect" coords="381,0,752,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -131,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b3ae77e1959c1da3c086669f8c28062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ec4555431c225f594ebf2e4fd68c36" id="r_a70ec4555431c225f594ebf2e4fd68c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ec4555431c225f594ebf2e4fd68c36">RegisterWith</a> (<a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html">GenericLiteralWatcher</a> *watcher)</td></tr>
 <tr class="separator:a70ec4555431c225f594ebf2e4fd68c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ee2dab5b47a3c04564b44d74c55ed3" id="r_a11ee2dab5b47a3c04564b44d74c55ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11ee2dab5b47a3c04564b44d74c55ed3">Explain</a> (int id, IntegerValue propagation_slack, IntegerVariable var_to_explain, int trail_index, std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; *literals_reason, std::vector&lt; int &gt; *trail_indices_reason) final</td></tr>
+<tr class="memdesc:a11ee2dab5b47a3c04564b44d74c55ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>.  <br /></td></tr>
+<tr class="separator:a11ee2dab5b47a3c04564b44d74c55ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html">operations_research::sat::PropagatorInterface</a></td></tr>
 <tr class="memitem:ac4586668025c78c5bc7d0f53b6dd8053 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_ac4586668025c78c5bc7d0f53b6dd8053"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#ac4586668025c78c5bc7d0f53b6dd8053">PropagatorInterface</a> ()=default</td></tr>
 <tr class="separator:ac4586668025c78c5bc7d0f53b6dd8053 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +142,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 <tr class="separator:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">operations_research::sat::LazyReasonInterface</a></td></tr>
+<tr class="memitem:a4f4dbe887545f9ffd60b061a10256554 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface" id="r_a4f4dbe887545f9ffd60b061a10256554"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#a4f4dbe887545f9ffd60b061a10256554">LazyReasonInterface</a> ()=default</td></tr>
+<tr class="separator:a4f4dbe887545f9ffd60b061a10256554 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a88e820766fd61a9cd852f0d10c55 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface" id="r_a0e6a88e820766fd61a9cd852f0d10c55"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#a0e6a88e820766fd61a9cd852f0d10c55">~LazyReasonInterface</a> ()=default</td></tr>
+<tr class="separator:a0e6a88e820766fd61a9cd852f0d10c55 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If we have:</p><ul>
@@ -215,6 +224,63 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a11ee2dab5b47a3c04564b44d74c55ed3" name="a11ee2dab5b47a3c04564b44d74c55ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ee2dab5b47a3c04564b44d74c55ed3">&#9670;&#160;</a></span>Explain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::GreaterThanAtLeastOneOfPropagator::Explain </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerValue</td>          <td class="paramname"><span class="paramname"><em>propagation_slack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerVariable</td>          <td class="paramname"><span class="paramname"><em>var_to_explain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>trail_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>literals_reason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>trail_indices_reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>. </p>
+<p>If the level zero bounds is good enough, no reason needed.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001150">Todo</a></b></dt><dd>(user): We could also skip this if we already have the reason for the expression being high enough in the current conflict. </dd></dl>
+
+<p>Implements <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#adc031164213fd9db6f79e99441240ded">operations_research::sat::LazyReasonInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="cp__constraints_8cc_source.html#l00092">92</a> of file <a class="el" href="cp__constraints_8cc_source.html">cp_constraints.cc</a>.</p>
+
+</div>
+</div>
 <a id="a10fe588eec50fc60c7bbe668c3877b62" name="a10fe588eec50fc60c7bbe668c3877b62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10fe588eec50fc60c7bbe668c3877b62">&#9670;&#160;</a></span>operator=()</h2>
 
@@ -263,15 +329,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001121">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
-<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001122">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001151">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
+<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001152">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
+<p>The permutation is needed to have proper lazy reason.</p>
 <p>Abort if we can't get a better bound.</p>
 <p>All false, conflit.</p>
-<p>If the level zero bounds is good enough, no reason needed.</p>
+<dl class="section note"><dt>Note</dt><dd>we use id/propagation_slack for other purpose.</dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__constraints_8cc_source.html#l00092">92</a> of file <a class="el" href="cp__constraints_8cc_source.html">cp_constraints.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__constraints_8cc_source.html#l00121">121</a> of file <a class="el" href="cp__constraints_8cc_source.html">cp_constraints.cc</a>.</p>
 
 </div>
 </div>
@@ -290,7 +357,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__constraints_8cc_source.html#l00141">141</a> of file <a class="el" href="cp__constraints_8cc_source.html">cp_constraints.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__constraints_8cc_source.html#l00171">171</a> of file <a class="el" href="cp__constraints_8cc_source.html">cp_constraints.cc</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>| / \ ^ </p>
-<p>Swaps active nodes from node alternatives in sequence. Considers chains of nodes with alternatives, builds a DAG from the chain, each "layer" of the DAG being composed of the set of alternatives of the node at a given rank in the chain, fully connected to the next layer. A neighbor is built from the shortest path starting from the node before the chain (source), through the DAG to the node following the chain. The path is valued with a given callback. Example: Alternative sets: {1,2} and {3,4} Current path: 0 -&gt; 1 -&gt; 3 -&gt; 5 DAG + source and sink: -&gt; 1 ---&gt; 3 &ndash; | \ / v Supposing the shortest path from 0 to 5 is 0, 2, 3, 5, the neighbor for the chain will be: 0 -&gt; 2 -&gt; 3 -&gt; 5. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000337">Todo</a></b></dt><dd>(user): Support vehicle-class-dependent arc_evaluators. </dd></dl>
+<p>Swaps active nodes from node alternatives in sequence. Considers chains of nodes with alternatives, builds a DAG from the chain, each "layer" of the DAG being composed of the set of alternatives of the node at a given rank in the chain, fully connected to the next layer. A neighbor is built from the shortest path starting from the node before the chain (source), through the DAG to the node following the chain. The path is valued with a given callback. Example: Alternative sets: {1,2} and {3,4} Current path: 0 -&gt; 1 -&gt; 3 -&gt; 5 DAG + source and sink: -&gt; 1 ---&gt; 3 &ndash; | \ / v Supposing the shortest path from 0 to 5 is 0, 2, 3, 5, the neighbor for the chain will be: 0 -&gt; 2 -&gt; 3 -&gt; 5. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000355">Todo</a></b></dt><dd>(user): Support vehicle-class-dependent arc_evaluators. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00114">114</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

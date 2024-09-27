@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,33 +118,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20ac696fea796a9f6d5c087faaac82e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570a2fb87c649eecbb375145317b2544" id="r_a570a2fb87c649eecbb375145317b2544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a570a2fb87c649eecbb375145317b2544">ReduceObjectiveBounds</a> (int64_t lb, int64_t ub)</td></tr>
 <tr class="separator:a570a2fb87c649eecbb375145317b2544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a295375a76a4e36d94182c3dec213ec81" id="r_a295375a76a4e36d94182c3dec213ec81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295375a76a4e36d94182c3dec213ec81">OverwriteCurrentSolution</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
-<tr class="memdesc:a295375a76a4e36d94182c3dec213ec81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the current solution.  <br /></td></tr>
-<tr class="separator:a295375a76a4e36d94182c3dec213ec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab33e8c692a1cd43cf9b8142a9849f5" id="r_abab33e8c692a1cd43cf9b8142a9849f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abab33e8c692a1cd43cf9b8142a9849f5">ComputeAllViolations</a> ()</td></tr>
-<tr class="memdesc:abab33e8c692a1cd43cf9b8142a9849f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the violations of all constraints.  <br /></td></tr>
-<tr class="separator:abab33e8c692a1cd43cf9b8142a9849f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e7dea0ff98030474ffcf54b3f200764" id="r_a1e7dea0ff98030474ffcf54b3f200764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e7dea0ff98030474ffcf54b3f200764">UpdateAllNonLinearViolations</a> ()</td></tr>
-<tr class="memdesc:a1e7dea0ff98030474ffcf54b3f200764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompute the violations of non linear constraints.  <br /></td></tr>
-<tr class="separator:a1e7dea0ff98030474ffcf54b3f200764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82de8c5233fc70abd3f94e4ad15fd773" id="r_a82de8c5233fc70abd3f94e4ad15fd773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82de8c5233fc70abd3f94e4ad15fd773">UpdateVariableValue</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t new_value)</td></tr>
-<tr class="separator:a82de8c5233fc70abd3f94e4ad15fd773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8531efbdd945be50ff72b91febafb238" id="r_a8531efbdd945be50ff72b91febafb238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8531efbdd945be50ff72b91febafb238">UpdateNonLinearViolations</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t new_value)</td></tr>
-<tr class="memdesc:a8531efbdd945be50ff72b91febafb238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the violations of all impacted non linear constraints.  <br /></td></tr>
-<tr class="separator:a8531efbdd945be50ff72b91febafb238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08fcf030bd9e2faeebb7a27b5aa42e9" id="r_ae08fcf030bd9e2faeebb7a27b5aa42e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08fcf030bd9e2faeebb7a27b5aa42e9">UpdateLinearScores</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>, absl::Span&lt; const double &gt; weights, absl::Span&lt; const int64_t &gt; jump_deltas, absl::Span&lt; double &gt; jump_scores)</td></tr>
-<tr class="memdesc:ae08fcf030bd9e2faeebb7a27b5aa42e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function specific to the linear only feasibility jump.  <br /></td></tr>
-<tr class="separator:ae08fcf030bd9e2faeebb7a27b5aa42e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c08f5143b3d99c39610d91c8180b1a4" id="r_a6c08f5143b3d99c39610d91c8180b1a4"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c08f5143b3d99c39610d91c8180b1a4">VariablesAffectedByLastLinearUpdate</a> () const</td></tr>
-<tr class="separator:a6c08f5143b3d99c39610d91c8180b1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3cfc7f317babfb9843bd0168224f9c" id="r_a4c3cfc7f317babfb9843bd0168224f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c3cfc7f317babfb9843bd0168224f9c">ComputeAllViolations</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
+<tr class="memdesc:a4c3cfc7f317babfb9843bd0168224f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the violations of all constraints (resp only non-linear one).  <br /></td></tr>
+<tr class="separator:a4c3cfc7f317babfb9843bd0168224f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb96c1c4a619b5119fbb5567d7bd0b3" id="r_a0fb96c1c4a619b5119fbb5567d7bd0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fb96c1c4a619b5119fbb5567d7bd0b3">ComputeAllNonLinearViolations</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
+<tr class="separator:a0fb96c1c4a619b5119fbb5567d7bd0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553d4390cec79e7066c492053c547e65" id="r_a553d4390cec79e7066c492053c547e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553d4390cec79e7066c492053c547e65">UpdateNonLinearViolations</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t old_value, absl::Span&lt; const int64_t &gt; new_solution)</td></tr>
+<tr class="memdesc:a553d4390cec79e7066c492053c547e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the violations of all impacted non linear constraints.  <br /></td></tr>
+<tr class="separator:a553d4390cec79e7066c492053c547e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ead9c9d468a8b815695bb5cafc42a6" id="r_a18ead9c9d468a8b815695bb5cafc42a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18ead9c9d468a8b815695bb5cafc42a6">UpdateLinearScores</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t old_value, int64_t new_value, absl::Span&lt; const double &gt; weights, absl::Span&lt; const int64_t &gt; jump_deltas, absl::Span&lt; double &gt; jump_scores)</td></tr>
+<tr class="memdesc:a18ead9c9d468a8b815695bb5cafc42a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function specific to the linear only feasibility jump.  <br /></td></tr>
+<tr class="separator:a18ead9c9d468a8b815695bb5cafc42a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8989d00bf6852afeb890b8a0583cda56" id="r_a8989d00bf6852afeb890b8a0583cda56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8989d00bf6852afeb890b8a0583cda56">UpdateViolatedList</a> ()</td></tr>
+<tr class="separator:a8989d00bf6852afeb890b8a0583cda56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730de0faa60e9dc6edfca13b1a7f3a1b" id="r_a730de0faa60e9dc6edfca13b1a7f3a1b"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a730de0faa60e9dc6edfca13b1a7f3a1b">VariablesAffectedByLastLinearUpdate</a> () const</td></tr>
+<tr class="separator:a730de0faa60e9dc6edfca13b1a7f3a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6215e9ec448bb331d68a7cf968a15e98" id="r_a6215e9ec448bb331d68a7cf968a15e98"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6215e9ec448bb331d68a7cf968a15e98">SumOfViolations</a> ()</td></tr>
 <tr class="memdesc:a6215e9ec448bb331d68a7cf968a15e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple summation metric for the constraint and objective violations.  <br /></td></tr>
 <tr class="separator:a6215e9ec448bb331d68a7cf968a15e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66bf6446b1e47fd03bea25895ff4ac38" id="r_a66bf6446b1e47fd03bea25895ff4ac38"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66bf6446b1e47fd03bea25895ff4ac38">ObjectiveActivity</a> () const</td></tr>
 <tr class="memdesc:a66bf6446b1e47fd03bea25895ff4ac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the objective activity in the current state.  <br /></td></tr>
 <tr class="separator:a66bf6446b1e47fd03bea25895ff4ac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3647917e9db4a72af6f965d8e83413fc" id="r_a3647917e9db4a72af6f965d8e83413fc"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3647917e9db4a72af6f965d8e83413fc">ObjectiveDelta</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>) const</td></tr>
-<tr class="separator:a3647917e9db4a72af6f965d8e83413fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15037fc8ef9c97dc5eec408960ebe6d" id="r_ad15037fc8ef9c97dc5eec408960ebe6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad15037fc8ef9c97dc5eec408960ebe6d">IsObjectiveConstraint</a> (int c) const</td></tr>
+<tr class="separator:ad15037fc8ef9c97dc5eec408960ebe6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672f07c64e8aaa51c602d714ec4e0170" id="r_a672f07c64e8aaa51c602d714ec4e0170"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a672f07c64e8aaa51c602d714ec4e0170">ObjectiveCoefficient</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="separator:a672f07c64e8aaa51c602d714ec4e0170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af62f150ab3a1fb2dc508d04238e742eb" id="r_af62f150ab3a1fb2dc508d04238e742eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af62f150ab3a1fb2dc508d04238e742eb">NumLinearConstraints</a> () const</td></tr>
 <tr class="separator:af62f150ab3a1fb2dc508d04238e742eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d1f30fc2e55a7385ce976fc67e09fe" id="r_aa7d1f30fc2e55a7385ce976fc67e09fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7d1f30fc2e55a7385ce976fc67e09fe">NumNonLinearConstraints</a> () const</td></tr>
@@ -159,32 +157,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67b8e9d11fb4348651018a45fcf08b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc6784c1a8a942dc9830e4c90f231dd" id="r_a0bc6784c1a8a942dc9830e4c90f231dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bc6784c1a8a942dc9830e4c90f231dd">WeightedViolation</a> (absl::Span&lt; const double &gt; weights) const</td></tr>
 <tr class="separator:a0bc6784c1a8a942dc9830e4c90f231dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320733b1ef446e22f0ac7334ecd2f9b4" id="r_a320733b1ef446e22f0ac7334ecd2f9b4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a320733b1ef446e22f0ac7334ecd2f9b4">WeightedViolationDelta</a> (absl::Span&lt; const double &gt; weights, int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>) const</td></tr>
-<tr class="separator:a320733b1ef446e22f0ac7334ecd2f9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecaba14ece4bfa71988c22b4deef767" id="r_a1ecaba14ece4bfa71988c22b4deef767"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ecaba14ece4bfa71988c22b4deef767">WeightedNonLinearViolationDelta</a> (absl::Span&lt; const double &gt; weights, int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>) const</td></tr>
-<tr class="memdesc:a1ecaba14ece4bfa71988c22b4deef767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignores the violations of the linear constraints.  <br /></td></tr>
-<tr class="separator:a1ecaba14ece4bfa71988c22b4deef767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c554a2c06db8258745c13c4c33ee5b" id="r_ac2c554a2c06db8258745c13c4c33ee5b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2c554a2c06db8258745c13c4c33ee5b">WeightedViolationDelta</a> (bool linear_only, absl::Span&lt; const double &gt; weights, int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>, absl::Span&lt; int64_t &gt; mutable_solution) const</td></tr>
+<tr class="separator:ac2c554a2c06db8258745c13c4c33ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111ada9d93626001c9b266614bc7b7ee" id="r_a111ada9d93626001c9b266614bc7b7ee"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html">LinearIncrementalEvaluator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a111ada9d93626001c9b266614bc7b7ee">LinearEvaluator</a> ()</td></tr>
 <tr class="separator:a111ada9d93626001c9b266614bc7b7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8091742881a802d406703adda53ce40" id="r_aa8091742881a802d406703adda53ce40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html">LinearIncrementalEvaluator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8091742881a802d406703adda53ce40">MutableLinearEvaluator</a> ()</td></tr>
 <tr class="separator:aa8091742881a802d406703adda53ce40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee5afb40ba106a0d274ca45069ef6d7" id="r_acee5afb40ba106a0d274ca45069ef6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acee5afb40ba106a0d274ca45069ef6d7">RecomputeViolatedList</a> (bool linear_only)</td></tr>
 <tr class="separator:acee5afb40ba106a0d274ca45069ef6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc4381609d729b9e2088c73b0429f0a" id="r_aabc4381609d729b9e2088c73b0429f0a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabc4381609d729b9e2088c73b0429f0a">ViolatedConstraints</a> () const</td></tr>
-<tr class="separator:aabc4381609d729b9e2088c73b0429f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f3c2e6393125633c1a676d6d44470cf" id="r_a9f3c2e6393125633c1a676d6d44470cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f3c2e6393125633c1a676d6d44470cf">NumViolatedConstraintsForVar</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
-<tr class="memdesc:a9f3c2e6393125633c1a676d6d44470cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of constraints in ViolatedConstraints containing <code>var</code>.  <br /></td></tr>
-<tr class="separator:a9f3c2e6393125633c1a676d6d44470cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8245cb50116e0aa777cdf0d594b338" id="r_a6f8245cb50116e0aa777cdf0d594b338"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8245cb50116e0aa777cdf0d594b338">ViolatedConstraints</a> () const</td></tr>
+<tr class="separator:a6f8245cb50116e0aa777cdf0d594b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1327541cb96dd7380e131a142f4d20" id="r_a0b1327541cb96dd7380e131a142f4d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b1327541cb96dd7380e131a142f4d20">NumViolatedConstraintsForVarIgnoringObjective</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
+<tr class="memdesc:a0b1327541cb96dd7380e131a142f4d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of constraints in ViolatedConstraints containing <code>var</code>.  <br /></td></tr>
+<tr class="separator:a0b1327541cb96dd7380e131a142f4d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5589e232d9e7ceb5f53380d44fae8f" id="r_a2d5589e232d9e7ceb5f53380d44fae8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d5589e232d9e7ceb5f53380d44fae8f">VariableOnlyInLinearConstraintWithConvexViolationChange</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
 <tr class="memdesc:a2d5589e232d9e7ceb5f53380d44fae8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the computed jump value is always the best choice.  <br /></td></tr>
 <tr class="separator:a2d5589e232d9e7ceb5f53380d44fae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c9e8376af6f74ce6d534f4a32fbbb9" id="r_a45c9e8376af6f74ce6d534f4a32fbbb9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45c9e8376af6f74ce6d534f4a32fbbb9">current_solution</a> () const</td></tr>
-<tr class="memdesc:a45c9e8376af6f74ce6d534f4a32fbbb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the solution stored.  <br /></td></tr>
-<tr class="separator:a45c9e8376af6f74ce6d534f4a32fbbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad639ddd5f69baff440457ad0d322aeca" id="r_ad639ddd5f69baff440457ad0d322aeca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad639ddd5f69baff440457ad0d322aeca">mutable_current_solution</a> ()</td></tr>
-<tr class="separator:ad639ddd5f69baff440457ad0d322aeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea434d817f3f331727fc84cc3cdde45" id="r_a2ea434d817f3f331727fc84cc3cdde45"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ea434d817f3f331727fc84cc3cdde45">last_update_violation_changes</a> () const</td></tr>
-<tr class="separator:a2ea434d817f3f331727fc84cc3cdde45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3edbae042ca29ff0c86f821b413dcf" id="r_aeb3edbae042ca29ff0c86f821b413dcf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3edbae042ca29ff0c86f821b413dcf">last_update_violation_changes</a> () const</td></tr>
+<tr class="separator:aeb3edbae042ca29ff0c86f821b413dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa003049be513be152d7b701f5e7ea084" id="r_aa003049be513be152d7b701f5e7ea084"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa003049be513be152d7b701f5e7ea084">ConstraintToVars</a> (int c) const</td></tr>
 <tr class="separator:aa003049be513be152d7b701f5e7ea084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa52626a611d3333d885154dcf038922" id="r_aaa52626a611d3333d885154dcf038922"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa52626a611d3333d885154dcf038922">VarToGeneralConstraints</a> (int <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>) const</td></tr>
@@ -196,10 +186,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Evaluation container for the local search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001119">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001147">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
 <p>Note(user): This class do not handle ALL constraint yet. So it is not because there is no violation here that the solution will be feasible. It is important to check feasibility once this is used. Note that in practice, we can be lucky, and feasible on a subset of hard constraint is enough. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00287">287</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00306">306</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab99f0619703886af1167ed5445457245" name="ab99f0619703886af1167ed5445457245"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab99f0619703886af1167ed5445457245">&#9670;&#160;</a></span>LsEvaluator() <span class="overload">[1/2]</span></h2>
@@ -223,7 +213,7 @@ Public Member Functions</h2></td></tr>
 <p>The cp_model must outlive this class. </p>
 <p>--&mdash; <a class="el" href="classoperations__research_1_1sat_1_1LsEvaluator.html">LsEvaluator</a> --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01384">1384</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01490">1490</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -256,13 +246,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01398">1398</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01505">1505</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abab33e8c692a1cd43cf9b8142a9849f5" name="abab33e8c692a1cd43cf9b8142a9849f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abab33e8c692a1cd43cf9b8142a9849f5">&#9670;&#160;</a></span>ComputeAllViolations()</h2>
+<a id="a0fb96c1c4a619b5119fbb5567d7bd0b3" name="a0fb96c1c4a619b5119fbb5567d7bd0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb96c1c4a619b5119fbb5567d7bd0b3">&#9670;&#160;</a></span>ComputeAllNonLinearViolations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::LsEvaluator::ComputeAllNonLinearViolations </td>
+          <td>(</td>
+          <td class="paramtype">absl::Span&lt; const int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em>solution</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generic constraints.</p>
+
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01868">1868</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a4c3cfc7f317babfb9843bd0168224f9c" name="a4c3cfc7f317babfb9843bd0168224f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3cfc7f317babfb9843bd0168224f9c">&#9670;&#160;</a></span>ComputeAllViolations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,17 +280,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::LsEvaluator::ComputeAllViolations </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">absl::Span&lt; const int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em>solution</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Computes the violations of all constraints. </p>
+<p>Recomputes the violations of all constraints (resp only non-linear one). </p>
 <p>Linear constraints.</p>
 <p>Generic constraints.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01700">1700</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01856">1856</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -307,36 +317,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00391">391</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
-
-</div>
-</div>
-<a id="a45c9e8376af6f74ce6d534f4a32fbbb9" name="a45c9e8376af6f74ce6d534f4a32fbbb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45c9e8376af6f74ce6d534f4a32fbbb9">&#9670;&#160;</a></span>current_solution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; int64_t &gt; &amp; operations_research::sat::LsEvaluator::current_solution </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Access the solution stored. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00378">378</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00408">408</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -362,9 +343,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001120">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001148">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00408">408</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00425">425</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +372,34 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00403">403</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00420">420</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+
+</div>
+</div>
+<a id="ad15037fc8ef9c97dc5eec408960ebe6d" name="ad15037fc8ef9c97dc5eec408960ebe6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15037fc8ef9c97dc5eec408960ebe6d">&#9670;&#160;</a></span>IsObjectiveConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::sat::LsEvaluator::IsObjectiveConstraint </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00346">346</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -410,12 +418,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01817">1817</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01970">1970</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a2ea434d817f3f331727fc84cc3cdde45" name="a2ea434d817f3f331727fc84cc3cdde45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ea434d817f3f331727fc84cc3cdde45">&#9670;&#160;</a></span>last_update_violation_changes()</h2>
+<a id="aeb3edbae042ca29ff0c86f821b413dcf" name="aeb3edbae042ca29ff0c86f821b413dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3edbae042ca29ff0c86f821b413dcf">&#9670;&#160;</a></span>last_update_violation_changes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +432,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::pair&lt; int, int64_t &gt; &gt; &amp; operations_research::sat::LsEvaluator::last_update_violation_changes </td>
+          <td class="memname">const std::vector&lt; int &gt; &amp; operations_research::sat::LsEvaluator::last_update_violation_changes </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -437,7 +445,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00386">386</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00404">404</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -464,34 +472,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00354">354</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
-
-</div>
-</div>
-<a id="ad639ddd5f69baff440457ad0d322aeca" name="ad639ddd5f69baff440457ad0d322aeca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad639ddd5f69baff440457ad0d322aeca">&#9670;&#160;</a></span>mutable_current_solution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; int64_t &gt; * operations_research::sat::LsEvaluator::mutable_current_solution </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00382">382</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00378">378</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +499,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00357">357</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00382">382</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +518,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01789">1789</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01942">1942</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -556,7 +537,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01794">1794</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01947">1947</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -576,7 +557,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The number of "internal" constraints in the evaluator. This might not be the same as the number of initial constraints of the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01781">1781</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01934">1934</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -595,12 +576,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01785">1785</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01938">1938</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a9f3c2e6393125633c1a676d6d44470cf" name="a9f3c2e6393125633c1a676d6d44470cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f3c2e6393125633c1a676d6d44470cf">&#9670;&#160;</a></span>NumViolatedConstraintsForVar()</h2>
+<a id="a0b1327541cb96dd7380e131a142f4d20" name="a0b1327541cb96dd7380e131a142f4d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1327541cb96dd7380e131a142f4d20">&#9670;&#160;</a></span>NumViolatedConstraintsForVarIgnoringObjective()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +590,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int operations_research::sat::LsEvaluator::NumViolatedConstraintsForVar </td>
+          <td class="memname">int operations_research::sat::LsEvaluator::NumViolatedConstraintsForVarIgnoringObjective </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
           <td> const</td>
@@ -624,7 +605,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the number of constraints in ViolatedConstraints containing <code>var</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00371">371</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00397">397</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -645,12 +626,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the objective activity in the current state. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01776">1776</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01929">1929</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a3647917e9db4a72af6f965d8e83413fc" name="a3647917e9db4a72af6f965d8e83413fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3647917e9db4a72af6f965d8e83413fc">&#9670;&#160;</a></span>ObjectiveDelta()</h2>
+<a id="a672f07c64e8aaa51c602d714ec4e0170" name="a672f07c64e8aaa51c602d714ec4e0170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672f07c64e8aaa51c602d714ec4e0170">&#9670;&#160;</a></span>ObjectiveCoefficient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,14 +640,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t operations_research::sat::LsEvaluator::ObjectiveDelta </td>
+          <td class="memname">int64_t operations_research::sat::LsEvaluator::ObjectiveCoefficient </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>delta</em></span>&#160;) const</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -676,28 +653,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00330">330</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
-
-</div>
-</div>
-<a id="a295375a76a4e36d94182c3dec213ec81" name="a295375a76a4e36d94182c3dec213ec81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a295375a76a4e36d94182c3dec213ec81">&#9670;&#160;</a></span>OverwriteCurrentSolution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void operations_research::sat::LsEvaluator::OverwriteCurrentSolution </td>
-          <td>(</td>
-          <td class="paramtype">absl::Span&lt; const int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em>solution</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Overwrites the current solution. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01696">1696</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00350">350</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -717,11 +673,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>List of the currently violated constraints.</p><ul>
 <li>It is initialized by <a class="el" href="#acee5afb40ba106a0d274ca45069ef6d7">RecomputeViolatedList()</a></li>
-<li>And incrementally maintained by <a class="el" href="#a82de8c5233fc70abd3f94e4ad15fd773">UpdateVariableValue()</a></li>
+<li>And incrementally maintained by UpdateVariableValue()</li>
 </ul>
 <p>The order depends on the algorithm used and shouldn't be relied on. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01869">1869</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l02024">2024</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -745,7 +701,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Intersects the domain of the objective with [lb..ub]. It returns true if a reduction of the domain took place. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01687">1687</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01847">1847</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -768,34 +724,12 @@ Public Member Functions</h2></td></tr>
 <p>Process the linear part.</p>
 <p>Process the generic constraint part.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01759">1759</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01912">1912</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a1e7dea0ff98030474ffcf54b3f200764" name="a1e7dea0ff98030474ffcf54b3f200764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e7dea0ff98030474ffcf54b3f200764">&#9670;&#160;</a></span>UpdateAllNonLinearViolations()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void operations_research::sat::LsEvaluator::UpdateAllNonLinearViolations </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Recompute the violations of non linear constraints. </p>
-<p>Generic constraints.</p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01712">1712</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
-
-</div>
-</div>
-<a id="ae08fcf030bd9e2faeebb7a27b5aa42e9" name="ae08fcf030bd9e2faeebb7a27b5aa42e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae08fcf030bd9e2faeebb7a27b5aa42e9">&#9670;&#160;</a></span>UpdateLinearScores()</h2>
+<a id="a18ead9c9d468a8b815695bb5cafc42a6" name="a18ead9c9d468a8b815695bb5cafc42a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ead9c9d468a8b815695bb5cafc42a6">&#9670;&#160;</a></span>UpdateLinearScores()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +742,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>old_value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -830,12 +769,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Function specific to the linear only feasibility jump. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01736">1736</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01890">1890</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a8531efbdd945be50ff72b91febafb238" name="a8531efbdd945be50ff72b91febafb238"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8531efbdd945be50ff72b91febafb238">&#9670;&#160;</a></span>UpdateNonLinearViolations()</h2>
+<a id="a553d4390cec79e7066c492053c547e65" name="a553d4390cec79e7066c492053c547e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553d4390cec79e7066c492053c547e65">&#9670;&#160;</a></span>UpdateNonLinearViolations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -848,39 +787,40 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>old_value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">absl::Span&lt; const int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em>new_solution</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Recomputes the violations of all impacted non linear constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01719">1719</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01876">1876</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a82de8c5233fc70abd3f94e4ad15fd773" name="a82de8c5233fc70abd3f94e4ad15fd773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82de8c5233fc70abd3f94e4ad15fd773">&#9670;&#160;</a></span>UpdateVariableValue()</h2>
+<a id="a8989d00bf6852afeb890b8a0583cda56" name="a8989d00bf6852afeb890b8a0583cda56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8989d00bf6852afeb890b8a0583cda56">&#9670;&#160;</a></span>UpdateViolatedList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void operations_research::sat::LsEvaluator::UpdateVariableValue </td>
+          <td class="memname">void operations_research::sat::LsEvaluator::UpdateViolatedList </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the value of the variable in the current solution. It must be called after <a class="el" href="#ae08fcf030bd9e2faeebb7a27b5aa42e9" title="Function specific to the linear only feasibility jump.">UpdateLinearScores()</a>. </p>
+<p>Must be called after <a class="el" href="#a18ead9c9d468a8b815695bb5cafc42a6" title="Function specific to the linear only feasibility jump.">UpdateLinearScores()</a> / <a class="el" href="#a553d4390cec79e7066c492053c547e65" title="Recomputes the violations of all impacted non linear constraints.">UpdateNonLinearViolations()</a> in order to update the <a class="el" href="#a6f8245cb50116e0aa777cdf0d594b338">ViolatedConstraints()</a>. </p>
 <p>Maintain the list of violated constraints.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01750">1750</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01904">1904</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -901,12 +841,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Indicates if the computed jump value is always the best choice. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01864">1864</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l02019">2019</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a6c08f5143b3d99c39610d91c8180b1a4" name="a6c08f5143b3d99c39610d91c8180b1a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c08f5143b3d99c39610d91c8180b1a4">&#9670;&#160;</a></span>VariablesAffectedByLastLinearUpdate()</h2>
+<a id="a730de0faa60e9dc6edfca13b1a7f3a1b" name="a730de0faa60e9dc6edfca13b1a7f3a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730de0faa60e9dc6edfca13b1a7f3a1b">&#9670;&#160;</a></span>VariablesAffectedByLastLinearUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -915,7 +855,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; operations_research::sat::LsEvaluator::VariablesAffectedByLastLinearUpdate </td>
+          <td class="memname">absl::Span&lt; const int &gt; operations_research::sat::LsEvaluator::VariablesAffectedByLastLinearUpdate </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -928,7 +868,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00320">320</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00336">336</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -956,12 +896,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>the constraint indexing is different here than in the other functions. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00400">400</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00417">417</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
-<a id="aabc4381609d729b9e2088c73b0429f0a" name="aabc4381609d729b9e2088c73b0429f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabc4381609d729b9e2088c73b0429f0a">&#9670;&#160;</a></span>ViolatedConstraints()</h2>
+<a id="a6f8245cb50116e0aa777cdf0d594b338" name="a6f8245cb50116e0aa777cdf0d594b338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8245cb50116e0aa777cdf0d594b338">&#9670;&#160;</a></span>ViolatedConstraints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -970,7 +910,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; operations_research::sat::LsEvaluator::ViolatedConstraints </td>
+          <td class="memname">absl::Span&lt; const int &gt; operations_research::sat::LsEvaluator::ViolatedConstraints </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -983,7 +923,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00367">367</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00392">392</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
 </div>
 </div>
@@ -1003,39 +943,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the weighted sum of violation. The weights must have the same size as <a class="el" href="#af9e3e50957cb8f1f4b7f3f015cfd0100">NumEvaluatorConstraints()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01809">1809</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
-
-</div>
-</div>
-<a id="a1ecaba14ece4bfa71988c22b4deef767" name="a1ecaba14ece4bfa71988c22b4deef767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ecaba14ece4bfa71988c22b4deef767">&#9670;&#160;</a></span>WeightedNonLinearViolationDelta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double operations_research::sat::LsEvaluator::WeightedNonLinearViolationDelta </td>
-          <td>(</td>
-          <td class="paramtype">absl::Span&lt; const double &gt;</td>          <td class="paramname"><span class="paramname"><em>weights</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>var</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>delta</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Ignores the violations of the linear constraints. </p>
-<p>We change the mutable solution here, are restore it after the evaluation.</p>
-<p>Restore.</p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01838">1838</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01962">1962</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
@@ -1054,12 +962,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01826">1826</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01979">1979</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>
-<a id="a320733b1ef446e22f0ac7334ecd2f9b4" name="a320733b1ef446e22f0ac7334ecd2f9b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320733b1ef446e22f0ac7334ecd2f9b4">&#9670;&#160;</a></span>WeightedViolationDelta()</h2>
+<a id="ac2c554a2c06db8258745c13c4c33ee5b" name="ac2c554a2c06db8258745c13c4c33ee5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c554a2c06db8258745c13c4c33ee5b">&#9670;&#160;</a></span>WeightedViolationDelta()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1067,6 +975,11 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">double operations_research::sat::LsEvaluator::WeightedViolationDelta </td>
           <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>linear_only</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">absl::Span&lt; const double &gt;</td>          <td class="paramname"><span class="paramname"><em>weights</em></span>, </td>
         </tr>
         <tr>
@@ -1077,12 +990,21 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>delta</em></span>&#160;) const</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>delta</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">absl::Span&lt; int64_t &gt;</td>          <td class="paramname"><span class="paramname"><em>mutable_solution</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the delta in weighted violation if solution[var] += delta. We need a temporary mutable solution to evaluate the violation of generic constraints. If linear_only is true, only the linear violation will be used. </p>
+<p>We change the mutable solution here, and restore it after the evaluation.</p>
+<p>We assume linear time delta computation in number of variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001145">Todo</a></b></dt><dd>(user): refine on a per constraint basis. </dd></dl>
+<p>Restore.</p>
 
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01857">1857</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l01991">1991</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
 </div>
 </div>

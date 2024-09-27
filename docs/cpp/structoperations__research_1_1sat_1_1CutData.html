@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,8 +115,8 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1CutData.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93b4b147f570385c7278ffa89e72d6d0" id="r_a93b4b147f570385c7278ffa89e72d6d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b4b147f570385c7278ffa89e72d6d0">FillFromLinearConstraint</a> (const <a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> &amp;base_ct, const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;lp_values, <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> *integer_trail)</td></tr>
-<tr class="separator:a93b4b147f570385c7278ffa89e72d6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390b79b7015f8d481f2903934db8d31d" id="r_a390b79b7015f8d481f2903934db8d31d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390b79b7015f8d481f2903934db8d31d">FillFromLinearConstraint</a> (const <a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> &amp;base_ct, const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;lp_values, <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> *integer_trail)</td></tr>
+<tr class="separator:a390b79b7015f8d481f2903934db8d31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e4704122bc89dcc10a3e35266ad94c0" id="r_a3e4704122bc89dcc10a3e35266ad94c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e4704122bc89dcc10a3e35266ad94c0">FillFromParallelVectors</a> (IntegerValue ub, absl::Span&lt; const IntegerVariable &gt; vars, absl::Span&lt; const IntegerValue &gt; coeffs, absl::Span&lt; const double &gt; lp_values, absl::Span&lt; const IntegerValue &gt; <a class="el" href="sat_2lp__utils_8cc.html#a561d7bf12fc7674b3fe0ad2ba2e175a0">lower_bounds</a>, absl::Span&lt; const IntegerValue &gt; <a class="el" href="sat_2lp__utils_8cc.html#a88215c8581662c40eec0fb8621c44af3">upper_bounds</a>)</td></tr>
 <tr class="separator:a3e4704122bc89dcc10a3e35266ad94c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e50fa08730b84968d724c05e63e739" id="r_ab6e50fa08730b84968d724c05e63e739"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6e50fa08730b84968d724c05e63e739">AppendOneTerm</a> (IntegerVariable <a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, IntegerValue coeff, double lp_value, IntegerValue lb, IntegerValue ub)</td></tr>
@@ -153,7 +153,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Our cut are always of the form linear_expression &lt;= rhs. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00102">102</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00110">110</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3b22695d0baccec394fbf5228c80eca0" name="a3b22695d0baccec394fbf5228c80eca0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b22695d0baccec394fbf5228c80eca0">&#9670;&#160;</a></span>AllCoefficientsArePositive()</h2>
@@ -172,7 +172,7 @@ Public Attributes</h2></td></tr>
 
 <p>These functions transform the cut by complementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00225">225</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00228">228</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Public Attributes</h2></td></tr>
 <p>X = -(UB - X) + UB</p>
 <p>C = (X - LB) + LB</p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00130">130</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00133">133</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Public Attributes</h2></td></tr>
 <p>This sorts terms and fill both num_relevant_entries and max_magnitude. </p>
 <p>Sort by larger lp_value first.</p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00232">232</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00235">235</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00211">211</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00214">214</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00218">218</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00221">221</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00259">259</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00262">262</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ Public Attributes</h2></td></tr>
 
 <p>Computes and returns the cut violation. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00251">251</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00254">254</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -339,8 +339,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a93b4b147f570385c7278ffa89e72d6d0" name="a93b4b147f570385c7278ffa89e72d6d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93b4b147f570385c7278ffa89e72d6d0">&#9670;&#160;</a></span>FillFromLinearConstraint()</h2>
+<a id="a390b79b7015f8d481f2903934db8d31d" name="a390b79b7015f8d481f2903934db8d31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390b79b7015f8d481f2903934db8d31d">&#9670;&#160;</a></span>FillFromLinearConstraint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +353,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lp_values</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; IntegerVariable, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lp_values</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -364,7 +364,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>We need level zero bounds and LP relaxation values to fill a <a class="el" href="structoperations__research_1_1sat_1_1CutData.html" title="Our cut are always of the form linear_expression &lt;= rhs.">CutData</a>. Returns false if we encounter any integer overflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00167">167</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00170">170</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00185">185</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00188">188</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00138">138</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00146">146</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00139">139</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00147">147</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>we use a 128 bit rhs so we can freely complement variable without running into overflow. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00133">133</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00141">141</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00134">134</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00142">142</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>

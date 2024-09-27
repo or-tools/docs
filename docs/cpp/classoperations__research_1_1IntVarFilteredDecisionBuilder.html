@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -166,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bd95fcee9e5856c6097b5dfae0b7076 inherit pub_methods_classoperations__research_1_1BaseObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1Decision.html">Decision</a> builder building a solution using heuristics with local search filters to evaluate its feasibility. This is very fast but can eventually fail when the solution is restored if filters did not detect all infeasiblities. More details: Using local search filters to build a solution. The approach is pretty straight-forward: have a general assignment storing the current solution, build delta assignment representing possible extensions to the current solution and validate them with filters. The tricky bit comes from using the assignment and filter APIs in a way which avoids the lazy creation of internal hash_maps between variables and indices. Generic filter-based decision builder using an <a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html" title="Generic filter-based heuristic applied to IntVars.">IntVarFilteredHeuristic</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000366">Todo</a></b></dt><dd>(user): Eventually move this to the core CP solver library when the code is mature enough. </dd></dl>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1Decision.html">Decision</a> builder building a solution using heuristics with local search filters to evaluate its feasibility. This is very fast but can eventually fail when the solution is restored if filters did not detect all infeasiblities. More details: Using local search filters to build a solution. The approach is pretty straight-forward: have a general assignment storing the current solution, build delta assignment representing possible extensions to the current solution and validate them with filters. The tricky bit comes from using the assignment and filter APIs in a way which avoids the lazy creation of internal hash_maps between variables and indices. Generic filter-based decision builder using an <a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html" title="Generic filter-based heuristic applied to IntVars.">IntVarFilteredHeuristic</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000384">Todo</a></b></dt><dd>(user): Eventually move this to the core CP solver library when the code is mature enough. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00154">154</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

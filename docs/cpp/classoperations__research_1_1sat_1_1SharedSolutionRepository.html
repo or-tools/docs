@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08645efbd9685f9a82751aa192abff50" id="r_a08645efbd9685f9a82751aa192abff50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html">Solution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08645efbd9685f9a82751aa192abff50">GetSolution</a> (int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) const</td></tr>
 <tr class="memdesc:a08645efbd9685f9a82751aa192abff50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the solution <a class="el" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> where i must be smaller than <a class="el" href="#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a>.  <br /></td></tr>
 <tr class="separator:a08645efbd9685f9a82751aa192abff50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87303578a74237f3dcd5f69293187a89" id="r_a87303578a74237f3dcd5f69293187a89"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87303578a74237f3dcd5f69293187a89">GetBestRank</a> () const</td></tr>
+<tr class="separator:a87303578a74237f3dcd5f69293187a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a24e84af2d22663286d72add786cc9" id="r_af0a24e84af2d22663286d72add786cc9"><td class="memItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0a24e84af2d22663286d72add786cc9">GetVariableValueInSolution</a> (int <a class="el" href="search_8cc.html#a3de5fd09893127e4ec08e3cbf9cbcb62">var_index</a>, int solution_index) const</td></tr>
 <tr class="separator:af0a24e84af2d22663286d72add786cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c764f4976d30e6f103b76a929402c87" id="r_a5c764f4976d30e6f103b76a929402c87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html">Solution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c764f4976d30e6f103b76a929402c87">GetRandomBiasedSolution</a> (absl::BitGenRef random) const</td></tr>
@@ -141,13 +143,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:adfb2b98325159bb82e31aaf4c97ae22c" id="r_adfb2b98325159bb82e31aaf4c97ae22c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfb2b98325159bb82e31aaf4c97ae22c">AddInternal</a> (const <a class="el" href="structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html">Solution</a> &amp;<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>) ABSL_EXCLUSIVE_LOCKS_REQUIRED(<a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a>)</td></tr>
-<tr class="memdesc:adfb2b98325159bb82e31aaf4c97ae22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for adding the solutions once the mutex is acquired.  <br /></td></tr>
-<tr class="separator:adfb2b98325159bb82e31aaf4c97ae22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a2815ede04e7d6e795cb25ff64ce06" id="r_a41a2815ede04e7d6e795cb25ff64ce06"><td class="memItemLeft" align="right" valign="top">int64_t num_added_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41a2815ede04e7d6e795cb25ff64ce06">ABSL_GUARDED_BY</a> (<a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a>)=0</td></tr>
 <tr class="separator:a41a2815ede04e7d6e795cb25ff64ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701fb3513b493967577a4ed9a4ee46c0" id="r_a701fb3513b493967577a4ed9a4ee46c0"><td class="memItemLeft" align="right" valign="top">int64_t num_ignored_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a701fb3513b493967577a4ed9a4ee46c0">ABSL_GUARDED_BY</a> (<a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a>)=0</td></tr>
-<tr class="separator:a701fb3513b493967577a4ed9a4ee46c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4324f90d78ed023452a043609042ebe1" id="r_a4324f90d78ed023452a043609042ebe1"><td class="memItemLeft" align="right" valign="top">int64_t num_queried_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4324f90d78ed023452a043609042ebe1">ABSL_GUARDED_BY</a> (<a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a>)=0</td></tr>
 <tr class="separator:a4324f90d78ed023452a043609042ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff5f17efefde3550b7c8a7d71a653390" id="r_aff5f17efefde3550b7c8a7d71a653390"><td class="memItemLeft" align="right" valign="top">int64_t num_synchronization_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff5f17efefde3550b7c8a7d71a653390">ABSL_GUARDED_BY</a> (<a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a>)=0</td></tr>
@@ -171,9 +168,9 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ValueType&gt;<br />
 class operations_research::sat::SharedSolutionRepository&lt; ValueType &gt;</div><p>Thread-safe. Keeps a set of n unique best solution found so far.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002334">Todo</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002367">Todo</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00056">56</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00058">58</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c0eedda28690ca436286776c6b81318" name="a9c0eedda28690ca436286776c6b81318"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c0eedda28690ca436286776c6b81318">&#9670;&#160;</a></span>SharedSolutionRepository()</h2>
@@ -204,13 +201,13 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00058">58</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00060">60</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a56154f0e41ed49140ee4780ca820a835" name="a56154f0e41ed49140ee4780ca820a835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56154f0e41ed49140ee4780ca820a835">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a56154f0e41ed49140ee4780ca820a835">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +235,7 @@ template&lt;typename ValueType &gt; </div>
 </div>
 </div>
 <a id="ab0767a42cd3240d1d1f50b4cc1f78eec" name="ab0767a42cd3240d1d1f50b4cc1f78eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0767a42cd3240d1d1f50b4cc1f78eec">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0767a42cd3240d1d1f50b4cc1f78eec">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +262,7 @@ template&lt;typename ValueType &gt; </div>
 </div>
 </div>
 <a id="aa1246228c0ec93b832e305cc4d7c66f7" name="aa1246228c0ec93b832e305cc4d7c66f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1246228c0ec93b832e305cc4d7c66f7">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1246228c0ec93b832e305cc4d7c66f7">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +289,7 @@ template&lt;typename ValueType &gt; </div>
 </div>
 </div>
 <a id="a41a2815ede04e7d6e795cb25ff64ce06" name="a41a2815ede04e7d6e795cb25ff64ce06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41a2815ede04e7d6e795cb25ff64ce06">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a2815ede04e7d6e795cb25ff64ce06">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,35 +315,8 @@ template&lt;typename ValueType &gt; </div>
 
 </div>
 </div>
-<a id="a701fb3513b493967577a4ed9a4ee46c0" name="a701fb3513b493967577a4ed9a4ee46c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a701fb3513b493967577a4ed9a4ee46c0">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[5/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ValueType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t num_ignored_ <a class="el" href="classoperations__research_1_1sat_1_1SharedSolutionRepository.html">operations_research::sat::SharedSolutionRepository</a>&lt; ValueType &gt;::ABSL_GUARDED_BY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a392e764db35244aa00c58db7bb70628d">mutex_</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4324f90d78ed023452a043609042ebe1" name="a4324f90d78ed023452a043609042ebe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4324f90d78ed023452a043609042ebe1">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4324f90d78ed023452a043609042ebe1">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +343,7 @@ template&lt;typename ValueType &gt; </div>
 </div>
 </div>
 <a id="aff5f17efefde3550b7c8a7d71a653390" name="aff5f17efefde3550b7c8a7d71a653390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff5f17efefde3550b7c8a7d71a653390">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5f17efefde3550b7c8a7d71a653390">&#9670;&#160;</a></span>ABSL_GUARDED_BY() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,42 +385,31 @@ template&lt;typename ValueType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new solution. Note that it will not be added to the pool of solution right away. One must call Synchronize for this to happen.</p>
-<p>Works in O(num_solutions_to_keep_). </p>
+<p>Add a new solution. Note that it will not be added to the pool of solution right away. One must call Synchronize for this to happen. In order to be deterministic, this will keep all solutions until <a class="el" href="#a902c7f2bb1e91b85d85bad84726bf89b">Synchronize()</a> is called, so we need to be careful not to generate too many solutions at once. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00695">695</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00837">837</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
-<a id="adfb2b98325159bb82e31aaf4c97ae22c" name="adfb2b98325159bb82e31aaf4c97ae22c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfb2b98325159bb82e31aaf4c97ae22c">&#9670;&#160;</a></span>AddInternal()</h2>
+<a id="a87303578a74237f3dcd5f69293187a89" name="a87303578a74237f3dcd5f69293187a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87303578a74237f3dcd5f69293187a89">&#9670;&#160;</a></span>GetBestRank()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ValueType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoperations__research_1_1sat_1_1SharedSolutionRepository.html">operations_research::sat::SharedSolutionRepository</a>&lt; ValueType &gt;::AddInternal </td>
+          <td class="memname">int64_t <a class="el" href="classoperations__research_1_1sat_1_1SharedSolutionRepository.html">operations_research::sat::SharedSolutionRepository</a>&lt; ValueType &gt;::GetBestRank </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html">Solution</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>solution</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<p>Returns the rank of the best known solution. You shouldn't call this if <a class="el" href="#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a> is zero. </p>
 
-<p>Helper method for adding the solutions once the mutex is acquired. </p>
-<p>Do not add identical solution.</p>
-
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00702">702</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00785">785</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -472,12 +431,12 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a random solution biased towards good solutions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002335">Todo</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002368">Todo</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
 <p>As long as we have solution with the best objective that haven't been explored too much, we select one uniformly. Otherwise, we select a solution from the pool uniformly.</p>
 <p>Note(user): Because of the increase of num_selected, this is dependent on the order of call. It should be fine for "determinism" because we do generate the task of a batch always in the same order.</p>
 <p>Select all the best solution with a low enough selection count.</p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00659">659</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00801">801</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +459,7 @@ template&lt;typename ValueType &gt; </div>
 
 <p>Returns the solution <a class="el" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> where i must be smaller than <a class="el" href="#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00643">643</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00778">778</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +485,7 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 <p>Returns the variable value of variable 'var_index' from solution 'solution_index' where solution_index must be smaller than <a class="el" href="#a9ec2e4d77b6c860bfa19e7982f39f2ab">NumSolutions()</a> and 'var_index' must be smaller than number of variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00650">650</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00792">792</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +507,7 @@ template&lt;typename ValueType &gt; </div>
 </div><div class="memdoc">
 <p>Returns the number of current solution in the pool. This will never decrease. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00636">636</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00771">771</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -571,9 +530,9 @@ template&lt;typename ValueType &gt; </div>
 <p>Updates the current pool of solution with the one recently added. Note that we use a stable ordering of solutions, so the final pool will be independent on the order of the calls to AddSolution() provided that the set of added solutions is the same.</p>
 <p>Works in O(num_solutions_to_keep_). </p>
 <p>We use a stable sort to keep the num_selected count for the already existing solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002336">Todo</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002369">Todo</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00724">724</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00845">845</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +561,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00122">122</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00128">128</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +588,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00137">137</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00138">138</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -655,7 +614,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00134">134</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00135">135</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +640,7 @@ template&lt;typename ValueType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00135">135</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00136">136</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,6 +119,7 @@ $(function(){initNavTree('sat__solver__utils_8cc.html',''); initResizable(true);
 <code>#include &quot;<a class="el" href="lp__types_8h_source.html">ortools/lp_data/lp_types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="lp__data_2proto__utils_8h_source.html">ortools/lp_data/proto_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
 </div>
 <p><a href="sat__solver__utils_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -135,7 +136,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a38cd9519fdea9ef6c87480955852a8c7" id="r_a38cd9519fdea9ef6c87480955852a8c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">glop::ProblemStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a38cd9519fdea9ef6c87480955852a8c7">operations_research::ApplyMipPresolveSteps</a> (const glop::GlopParameters &amp;glop_params, MPModelProto *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html">glop::Preprocessor</a> &gt; &gt; *for_postsolve, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:a38cd9519fdea9ef6c87480955852a8c7" id="r_a38cd9519fdea9ef6c87480955852a8c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#ae55e31423130ea1cddfe1fc1e592e004">glop::ProblemStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a38cd9519fdea9ef6c87480955852a8c7">operations_research::ApplyMipPresolveSteps</a> (const glop::GlopParameters &amp;glop_params, MPModelProto *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html">glop::Preprocessor</a> &gt; &gt; *for_postsolve, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="separator:a38cd9519fdea9ef6c87480955852a8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -157,7 +158,7 @@ Functions</h2></td></tr>
 <div class="line">  lp_preprocessors.push_back(std::make_unique&lt;name&gt;(&amp;glop_params));</div>
 <div class="ttc" id="adefault__search_8cc_html_ac673bc430bdc3fdaa09f7becf98ef267"><div class="ttname"><a href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a></div><div class="ttdeci">const std::string name</div><div class="ttdoc">A name for logging purposes.</div><div class="ttdef"><b>Definition</b> <a href="default__search_8cc_source.html#l00824">default_search.cc:824</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sat__solver__utils_8cc_source.html#l00031">31</a> of file <a class="el" href="sat__solver__utils_8cc_source.html">sat_solver_utils.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver__utils_8cc_source.html#l00032">32</a> of file <a class="el" href="sat__solver__utils_8cc_source.html">sat_solver_utils.cc</a>.</p>
 
 </div>
 </div>

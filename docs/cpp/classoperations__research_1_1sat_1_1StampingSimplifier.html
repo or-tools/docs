@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -186,7 +186,7 @@ Binary Implication Graphs", Marijn Heule, Matti Jarvisalo and Armin Biere.</p>
 <p>Failed literal detection. If the negation of top is in the same tree, we can fix the LCA of top and its negation to false.</p>
 <p>Find the LCA.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00743">743</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00748">748</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -205,9 +205,9 @@ Binary Implication Graphs", Marijn Heule, Matti Jarvisalo and Armin Biere.</p>
       </table>
 </div><div class="memdoc">
 <p>When we compute stamps, we might detect fixed variable (via failed literal probing in the implication graph). So it might make sense to do that until we have dealt with all fixed literals before calling <a class="el" href="#abf4ca83561578670ef702769097d29fd">DoOneRound()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002200">Todo</a></b></dt><dd>(user): compute some dtime, it is always zero currently. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002232">Todo</a></b></dt><dd>(user): compute some dtime, it is always zero currently. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00685">685</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00690">690</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -226,11 +226,11 @@ Binary Implication Graphs", Marijn Heule, Matti Jarvisalo and Armin Biere.</p>
       </table>
 </div><div class="memdoc">
 <p>This is "fast" (linear scan + sort of all clauses) so we always complete the full round.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002235">Todo</a></b></dt><dd>(user): To save one scan over all the clauses, we could do the fixed and equivalence variable cleaning here too. </dd></dl>
-<p>We need a DAG so that we don't have cycle while we sample the tree. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002199">Todo</a></b></dt><dd>(user): We could probably deal with it if needed so that we don't need to do equivalence detection each time we want to run this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002267">Todo</a></b></dt><dd>(user): To save one scan over all the clauses, we could do the fixed and equivalence variable cleaning here too. </dd></dl>
+<p>We need a DAG so that we don't have cycle while we sample the tree. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002231">Todo</a></b></dt><dd>(user): We could probably deal with it if needed so that we don't need to do equivalence detection each time we want to run this. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>num_removed_literals_ do not count the literals of the subsumed clauses.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00650">650</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00655">655</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -286,13 +286,13 @@ Binary Implication Graphs", Marijn Heule, Matti Jarvisalo and Armin Biere.</p>
 <p>Failed literal?</p>
 <p>not(span[i]) =&gt; span[i] so span[i] true. And the clause is satisfied (so we count as as subsumed).</p>
 <p>span[i] =&gt; not(span[i]) so span[i] false.</p>
-<p>not(a) =&gt; b : subsumption. a =&gt; not(b), we cannot deduce anything, but it might make sense to see if not(b) implies anything instead of just keeping top_entry. See </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo</a></b></dt><dd>below. </dd></dl>
+<p>not(a) =&gt; b : subsumption. a =&gt; not(b), we cannot deduce anything, but it might make sense to see if not(b) implies anything instead of just keeping top_entry. See </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002236">Todo</a></b></dt><dd>below. </dd></dl>
 <p>not(a) =&gt; not(b), we can remove b.</p>
 <p>a =&gt; b, we can remove a.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo</a></b></dt><dd>(user): Note that it is okay to still use top_entry, but we might miss the removal of b if b =&gt; c. Also the paper do things differently. Make sure we don't miss any simplification opportunites by not changing top_entry. Same in the other branches. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002237">Todo</a></b></dt><dd>(user): Note that it is okay to still use top_entry, but we might miss the removal of b if b =&gt; c. Also the paper do things differently. Make sure we don't miss any simplification opportunites by not changing top_entry. Same in the other branches. </dd></dl>
 <p>Strengthen the clause.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00828">828</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00833">833</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>
@@ -312,13 +312,13 @@ Binary Implication Graphs", Marijn Heule, Matti Jarvisalo and Armin Biere.</p>
 </div><div class="memdoc">
 
 <p>Visible for testing. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002201">Todo</a></b></dt><dd>(user): Better algo to not select redundant parent.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002202">Todo</a></b></dt><dd>(user): if parents_[x] = y, try not to have parents_[not(y)] = not(x) because this is not as useful for the simplification power.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): More generally, we could sample a parent while probing so that we consider all hyper binary implications (in the case we don't add them to the implication graph already). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002233">Todo</a></b></dt><dd>(user): Better algo to not select redundant parent.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002234">Todo</a></b></dt><dd>(user): if parents_[x] = y, try not to have parents_[not(y)] = not(x) because this is not as useful for the simplification power.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002235">Todo</a></b></dt><dd>(user): More generally, we could sample a parent while probing so that we consider all hyper binary implications (in the case we don't add them to the implication graph already). </dd></dl>
 <p>We look for a random lit that implies i. For that we take a random literal in the direct implications of not(i) and reverse it.</p>
 <p>We found an interesting parent.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00708">708</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8cc_source.html#l00713">713</a> of file <a class="el" href="sat__inprocessing_8cc_source.html">sat_inprocessing.cc</a>.</p>
 
 </div>
 </div>

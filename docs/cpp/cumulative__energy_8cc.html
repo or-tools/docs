@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -108,13 +108,23 @@ $(function(){initNavTree('cumulative__energy_8cc.html',''); initResizable(true);
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="cumulative__energy_8h_source.html">ortools/sat/cumulative_energy.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/inlined_vector.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="iterator__adaptors_8h_source.html">ortools/base/iterator_adaptors.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="2d__orthogonal__packing_8h_source.html">ortools/sat/2d_orthogonal_packing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="diffn__util_8h_source.html">ortools/sat/diffn_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="intervals_8h_source.html">ortools/sat/intervals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="synchronization_8h_source.html">ortools/sat/synchronization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="theta__tree_8h_source.html">ortools/sat/theta_tree.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
@@ -133,6 +143,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ae9833301c095ba1cd286e7be7ed2515e" id="r_ae9833301c095ba1cd286e7be7ed2515e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae9833301c095ba1cd286e7be7ed2515e">operations_research::sat::AddCumulativeOverloadChecker</a> (<a class="el" href="structoperations__research_1_1sat_1_1AffineExpression.html">AffineExpression</a> capacity, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *helper, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingDemandHelper.html">SchedulingDemandHelper</a> *demands, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="separator:ae9833301c095ba1cd286e7be7ed2515e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7364044e91bc377aa1c354e8fa892a" id="r_a6f7364044e91bc377aa1c354e8fa892a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6f7364044e91bc377aa1c354e8fa892a">operations_research::sat::AddCumulativeOverloadCheckerDff</a> (<a class="el" href="structoperations__research_1_1sat_1_1AffineExpression.html">AffineExpression</a> capacity, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *helper, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingDemandHelper.html">SchedulingDemandHelper</a> *demands, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a6f7364044e91bc377aa1c354e8fa892a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

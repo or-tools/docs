@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -153,54 +153,54 @@ $(function(){initNavTree('model__storage_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">namespace </span>math_opt {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>absl::StatusOr&lt;std::unique_ptr&lt;ModelStorage&gt;&gt; ModelStorage::FromModelProto(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> ModelProto&amp; model_proto) {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// We don&#39;t check names since ModelStorage does not do so before exporting</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="comment">// models. Thus a model built by ModelStorage can contain duplicated</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// names. And since we use FromModelProto() to implement Clone(), we must make</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// sure duplicated names don&#39;t fail.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ae60786fc37f2c7a432cfcdfbc466c41f">ValidateModel</a>(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>, <span class="comment">/*check_names=*/</span><span class="keyword">false</span>).<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>());</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_define" href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a>(<a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#ae60786fc37f2c7a432cfcdfbc466c41f">ValidateModel</a>(model_proto, <span class="comment">/*check_names=*/</span><span class="keyword">false</span>).<a class="code hl_variable" href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a>());</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">auto</span> storage = std::make_unique&lt;ModelStorage&gt;(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.name(),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                                <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.objective().name());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">auto</span> storage = std::make_unique&lt;ModelStorage&gt;(model_proto.name(),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                                model_proto.objective().name());</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// Add variables.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  storage-&gt;AddVariables(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.variables());</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  storage-&gt;AddVariables(model_proto.variables());</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// Set the objective.</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  storage-&gt;set_is_maximize(<a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                           <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.objective().maximize());</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                           model_proto.objective().maximize());</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  storage-&gt;set_objective_offset(<a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.objective().offset());</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                model_proto.objective().offset());</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  storage-&gt;UpdateLinearObjectiveCoefficients(</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>, <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.objective().linear_coefficients());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>, model_proto.objective().linear_coefficients());</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  storage-&gt;UpdateQuadraticObjectiveCoefficients(</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>, <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.objective().quadratic_coefficients());</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <a class="code hl_variable" href="namespaceoperations__research_1_1math__opt.html#a69593064bb44519e322c99d066c7e5f2">kPrimaryObjectiveId</a>, model_proto.objective().quadratic_coefficients());</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="comment">// Set the auxiliary objectives.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  storage-&gt;AddAuxiliaryObjectives(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.auxiliary_objectives());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  storage-&gt;AddAuxiliaryObjectives(model_proto.auxiliary_objectives());</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// Add linear constraints.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  storage-&gt;AddLinearConstraints(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.linear_constraints());</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  storage-&gt;AddLinearConstraints(model_proto.linear_constraints());</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// Set the linear constraints coefficients.</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  storage-&gt;UpdateLinearConstraintCoefficients(</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.linear_constraint_matrix());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      model_proto.linear_constraint_matrix());</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="comment">// Add quadratic constraints.</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  storage-&gt;quadratic_constraints_.AddConstraints(</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.quadratic_constraints());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      model_proto.quadratic_constraints());</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// Add SOC constraints.</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  storage-&gt;soc_constraints_.AddConstraints(</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.second_order_cone_constraints());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      model_proto.second_order_cone_constraints());</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Add SOS constraints.</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  storage-&gt;sos1_constraints_.AddConstraints(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.sos1_constraints());</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  storage-&gt;sos2_constraints_.AddConstraints(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.sos2_constraints());</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  storage-&gt;sos1_constraints_.AddConstraints(model_proto.sos1_constraints());</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  storage-&gt;sos2_constraints_.AddConstraints(model_proto.sos2_constraints());</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// Add indicator constraints.</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  storage-&gt;indicator_constraints_.AddConstraints(</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.indicator_constraints());</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      model_proto.indicator_constraints());</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> storage;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
@@ -250,12 +250,12 @@ $(function(){initNavTree('model__storage_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>std::unique_ptr&lt;ModelStorage&gt; ModelStorage::Clone(</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">const</span> std::optional&lt;absl::string_view&gt; new_name)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  ModelProto <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a> = ExportModel();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  ModelProto model_proto = ExportModel();</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordflow">if</span> (new_name.has_value()) {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>.set_name(std::string(*new_name));</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    model_proto.set_name(std::string(*new_name));</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  }</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  absl::StatusOr&lt;std::unique_ptr&lt;ModelStorage&gt;&gt; clone =</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      ModelStorage::FromModelProto(<a class="code hl_variable" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      ModelStorage::FromModelProto(model_proto);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="comment">// Unless there is a very serious bug, a model exported by ExportModel()</span></div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="comment">// should always be valid.</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  CHECK_OK(clone.status());</div>
@@ -691,7 +691,6 @@ $(function(){initNavTree('model__storage_8cc_source.html',''); initResizable(tru
 <div class="ttc" id="abase_2status__macros_8h_html"><div class="ttname"><a href="base_2status__macros_8h.html">status_macros.h</a></div></div>
 <div class="ttc" id="abase_2status__macros_8h_html_acdc223d8c59d5c591dc6b4e88257627b"><div class="ttname"><a href="base_2status__macros_8h.html#acdc223d8c59d5c591dc6b4e88257627b">RETURN_IF_ERROR</a></div><div class="ttdeci">#define RETURN_IF_ERROR(expr)</div><div class="ttdef"><b>Definition</b> <a href="base_2status__macros_8h_source.html#l00027">status_macros.h:27</a></div></div>
 <div class="ttc" id="acp__model__fz__solver_8cc_html_aed003f5eb5197bc586b7ef2c36a63da2"><div class="ttname"><a href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a></div><div class="ttdeci">CpModelProto proto</div><div class="ttdoc">The output proto.</div><div class="ttdef"><b>Definition</b> <a href="cp__model__fz__solver_8cc_source.html#l00128">cp_model_fz_solver.cc:128</a></div></div>
-<div class="ttc" id="acp__model__solver_8cc_html_ac3c7e255171970400b8e766957e73d85"><div class="ttname"><a href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a></div><div class="ttdeci">const CpModelProto *const model_proto</div><div class="ttdoc">These are never nullptr.</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02285">cp_model_solver.cc:2285</a></div></div>
 <div class="ttc" id="adefault__search_8cc_html_ac673bc430bdc3fdaa09f7becf98ef267"><div class="ttname"><a href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a></div><div class="ttdeci">const std::string name</div><div class="ttdoc">A name for logging purposes.</div><div class="ttdef"><b>Definition</b> <a href="default__search_8cc_source.html#l00824">default_search.cc:824</a></div></div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition</b> <a href="demon__profiler_8cc_source.html#l00046">demon_profiler.cc:46</a></div></div>
 <div class="ttc" id="ag__gurobi_8cc_html_a2237393c7ae7ad7344c9885066d5ab6d"><div class="ttname"><a href="g__gurobi_8cc.html#a2237393c7ae7ad7344c9885066d5ab6d">status</a></div><div class="ttdeci">absl::Status status</div><div class="ttdef"><b>Definition</b> <a href="g__gurobi_8cc_source.html#l00044">g_gurobi.cc:44</a></div></div>

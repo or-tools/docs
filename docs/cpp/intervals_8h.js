@@ -3,6 +3,7 @@ var intervals_8h =
     [ "operations_research::sat::IntervalsRepository", "classoperations__research_1_1sat_1_1IntervalsRepository.html", "classoperations__research_1_1sat_1_1IntervalsRepository" ],
     [ "operations_research::sat::IntervalsRepository::CumulativeHelper", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper" ],
     [ "operations_research::sat::TaskTime", "structoperations__research_1_1sat_1_1TaskTime.html", "structoperations__research_1_1sat_1_1TaskTime" ],
+    [ "operations_research::sat::CachedTaskBounds", "structoperations__research_1_1sat_1_1CachedTaskBounds.html", "structoperations__research_1_1sat_1_1CachedTaskBounds" ],
     [ "operations_research::sat::SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper" ],
     [ "operations_research::sat::SchedulingConstraintHelper::ProfileEvent", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent.html", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent" ],
     [ "operations_research::sat::SchedulingDemandHelper", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html", "classoperations__research_1_1sat_1_1SchedulingDemandHelper" ],

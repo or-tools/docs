@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -132,9 +132,9 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Holds a set of boolean linear constraints in canonical form:</p><ul>
 <li>The constraint is a linear sum of <a class="el" href="structoperations__research_1_1sat_1_1LiteralWithCoeff.html" title="Represents a term in a pseudo-Boolean formula.">LiteralWithCoeff</a> &lt;= rhs.</li>
 <li><p class="startli">The linear sum satisfies the properties described in <a class="el" href="namespaceoperations__research_1_1sat.html#afe0ad26c40a4024f160695f2a504ff0a">ComputeBooleanLinearExpressionCanonicalForm()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002031">Todo</a></b></dt><dd>(user): Simplify further the constraints.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002032">Todo</a></b></dt><dd>(user): Remove the duplication between this and what the sat solver is doing in <a class="el" href="#ad91fdf3c0b3d6b5f52ab35e1ea1cfd31">AddLinearConstraint()</a> which is basically the same.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002033">Todo</a></b></dt><dd>(user): Remove duplicate constraints? some problems have them, and this is not ideal for the symmetry computation since it leads to a lot of symmetries of the associated graph that are not useful. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002061">Todo</a></b></dt><dd>(user): Simplify further the constraints.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002062">Todo</a></b></dt><dd>(user): Remove the duplication between this and what the sat solver is doing in <a class="el" href="#ad91fdf3c0b3d6b5f52ab35e1ea1cfd31">AddLinearConstraint()</a> which is basically the same.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002063">Todo</a></b></dt><dd>(user): Remove duplicate constraints? some problems have them, and this is not ideal for the symmetry computation since it leads to a lot of symmetries of the associated graph that are not useful. </dd></dl>
 </li>
 </ul>
 
@@ -227,11 +227,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a new constraint to the problem. The bounds are inclusive. Returns false in case of a possible overflow or if the constraint is never satisfiable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002035">Todo</a></b></dt><dd>(user): Use a return status to distinguish errors if needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002065">Todo</a></b></dt><dd>(user): Use a return status to distinguish errors if needed. </dd></dl>
 <p>Canonicalize the linear expression of the constraint.</p>
 <p>We transform the constraint into an upper-bounded one.</p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00214">214</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00215">215</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>

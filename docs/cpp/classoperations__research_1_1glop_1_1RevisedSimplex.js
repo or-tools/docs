@@ -5,7 +5,7 @@ var classoperations__research_1_1glop_1_1RevisedSimplex =
     [ "ClearIntegralityScales", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a50cd75663101e37b6bbbf987e55b6f56", null ],
     [ "ClearStateForNextSolve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a5e353ae79c536da8360fc29132b8e145", null ],
     [ "ComputeBasicVariablesForState", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a79148b176583b2615e845e41e51f53bc", null ],
-    [ "ComputeDictionary", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac81a24729018987c4d0668b7dc92b7c7", null ],
+    [ "ComputeDictionary", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a642656ecb53b31a499007ad1d033652a", null ],
     [ "DeterministicTime", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ada2f59f7b385068f27d172f1f9bff72a", null ],
     [ "GetBasis", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a2047528fd6d61edebeab1111acef3dcc", null ],
     [ "GetBasisFactorization", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a8054f5d1de88659821f5c5288c5dbc55", null ],

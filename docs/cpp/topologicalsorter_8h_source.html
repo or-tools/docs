@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -889,9 +889,9 @@ $(function(){initNavTree('topologicalsorter_8h_source.html',''); initResizable(t
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>      dfs_stack.push_back(DfsState(child));</div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>      in_cur_stack[child] = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>      <span class="comment">// Verify that its adjacency list seems valid.</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>      <span class="keywordflow">if</span> (adj[child].size() &gt; std::numeric_limits&lt;int&gt;::max()) {</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>      <span class="keywordflow">if</span> (adj[child].<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>() &gt; std::numeric_limits&lt;int&gt;::max()) {</div>
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>        <span class="keywordflow">return</span> absl::InvalidArgumentError(absl::StrFormat(</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>            <span class="stringliteral">&quot;Invalid adj[%d].size() = %d&quot;</span>, child, adj[child].size()));</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>            <span class="stringliteral">&quot;Invalid adj[%d].size() = %d&quot;</span>, child, adj[child].<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>()));</div>
 <div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>      }</div>
 <div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    }</div>
 <div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  }</div>
@@ -904,6 +904,7 @@ $(function(){initNavTree('topologicalsorter_8h_source.html',''); initResizable(t
 <div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>}  <span class="comment">// namespace util</span></div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="preprocessor">#endif  </span><span class="comment">// UTIL_GRAPH_TOPOLOGICALSORTER_H__</span></div>
+<div class="ttc" id="a2d__rectangle__presolve_8cc_html_aa1cb4ce111532ea2035639aa02569f14"><div class="ttname"><a href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a></div><div class="ttdeci">IntegerValue size</div><div class="ttdef"><b>Definition</b> <a href="2d__rectangle__presolve_8cc_source.html#l00235">2d_rectangle_presolve.cc:235</a></div></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="aclassTopologicalSorter_html"><div class="ttname"><a href="classTopologicalSorter.html">TopologicalSorter</a></div><div class="ttdef"><b>Definition</b> <a href="#l00598">topologicalsorter.h:599</a></div></div>
 <div class="ttc" id="aclassutil_1_1StaticGraph_html"><div class="ttname"><a href="classutil_1_1StaticGraph.html">util::StaticGraph</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00408">graph.h:408</a></div></div>
@@ -941,7 +942,7 @@ $(function(){initNavTree('topologicalsorter_8h_source.html',''); initResizable(t
 <div class="ttc" id="agraph_8h_html"><div class="ttname"><a href="graph_8h.html">graph.h</a></div></div>
 <div class="ttc" id="amap__util_8h_html"><div class="ttname"><a href="map__util_8h.html">map_util.h</a></div></div>
 <div class="ttc" id="anamespacegtl_html_a252ef610941828aa417152c3230ca670"><div class="ttname"><a href="namespacegtl.html#a252ef610941828aa417152c3230ca670">gtl::LogContainer</a></div><div class="ttdeci">auto LogContainer(const ContainerT &amp;container, const PolicyT &amp;policy) -&gt; decltype(gtl::LogRange(container.begin(), container.end(), policy))</div><div class="ttdef"><b>Definition</b> <a href="container__logging_8h_source.html#l00275">container_logging.h:275</a></div></div>
-<div class="ttc" id="anamespacegtl_html_a523b266127b26ec3817cae4c5f41c391"><div class="ttname"><a href="namespacegtl.html#a523b266127b26ec3817cae4c5f41c391">gtl::LookupOrInsert</a></div><div class="ttdeci">Collection::value_type::second_type &amp; LookupOrInsert(Collection *const collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="map__util_8h_source.html#l00237">map_util.h:237</a></div></div>
+<div class="ttc" id="anamespacegtl_html_a523b266127b26ec3817cae4c5f41c391"><div class="ttname"><a href="namespacegtl.html#a523b266127b26ec3817cae4c5f41c391">gtl::LookupOrInsert</a></div><div class="ttdeci">Collection::value_type::second_type &amp; LookupOrInsert(Collection *const collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="map__util_8h_source.html#l00242">map_util.h:242</a></div></div>
 <div class="ttc" id="anamespacegtl_html_a8b11464d5e8c5f0bb36a15d53abb8cc7"><div class="ttname"><a href="namespacegtl.html#a8b11464d5e8c5f0bb36a15d53abb8cc7">gtl::STLClearHashIfBig</a></div><div class="ttdeci">void STLClearHashIfBig(T *obj, size_t limit)</div><div class="ttdef"><b>Definition</b> <a href="stl__util_8h_source.html#l00180">stl_util.h:180</a></div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition</b> <a href="connected__components_8h_source.html#l00145">connected_components.h:145</a></div></div>
 <div class="ttc" id="anamespaceutil_1_1graph_html_a0d7ab592842225bf80afd735048a0e0e"><div class="ttname"><a href="namespaceutil_1_1graph.html#a0d7ab592842225bf80afd735048a0e0e">util::graph::FastTopologicalSort</a></div><div class="ttdeci">absl::StatusOr&lt; std::vector&lt; int &gt; &gt; FastTopologicalSort(const AdjacencyLists &amp;adj)</div><div class="ttdef"><b>Definition</b> <a href="#l00618">topologicalsorter.h:618</a></div></div>

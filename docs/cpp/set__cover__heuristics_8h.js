@@ -9,6 +9,7 @@ var set__cover__heuristics_8h =
     [ "operations_research::SteepestSearch", "classoperations__research_1_1SteepestSearch.html", "classoperations__research_1_1SteepestSearch" ],
     [ "operations_research::TabuList< T >", "classoperations__research_1_1TabuList.html", "classoperations__research_1_1TabuList" ],
     [ "operations_research::GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html", "classoperations__research_1_1GuidedTabuSearch" ],
+    [ "operations_research::GuidedLocalSearch", "classoperations__research_1_1GuidedLocalSearch.html", "classoperations__research_1_1GuidedLocalSearch" ],
     [ "ClearMostCoveredElements", "set__cover__heuristics_8h.html#a784189c728d17f91325cd8dfd86f324e", null ],
     [ "ClearMostCoveredElements", "set__cover__heuristics_8h.html#a0e64fedd79537cb2057845d5bccd1363", null ],
     [ "ClearRandomSubsets", "set__cover__heuristics_8h.html#a1182d18a947e4c920cac63baea00c2a4", null ],

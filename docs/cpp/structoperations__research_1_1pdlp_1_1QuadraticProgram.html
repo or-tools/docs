@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -159,11 +159,12 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the quadratic program (QP): min_x (<code>objective_vector</code>^T x + (1/2) x^T <code>objective_matrix</code> x) s.t. <code>constraint_lower_bounds</code> &lt;= <code>constraint_matrix</code> x &lt;= <code>constraint_upper_bounds</code> <code>variable_lower_bounds</code> &lt;= x &lt;= <code>variable_upper_bounds</code></p>
 <p><code>constraint_lower_bounds</code> and <code>variable_lower_bounds</code> may include negative infinities. <code>constraint_upper_bounds</code> and <code>variable_upper_bounds</code> may contain positive infinities. Other than that all entries of all fields must be finite. The <code>objective_matrix</code> must be diagonal and non-negative.</p>
+<p><code>variable_lower_bounds</code>, <code>variable_upper_bounds</code>, <code>objective_vector</code>, <code>objective_matrix</code> (if it has a value), and <code>variable_names</code> (if it has a value) must all have the same size as the number of columns in <code>constraint_matrix</code>. <code>constraint_lower_bounds</code>, <code>constraint_upper_bounds</code>, and <code>constraint_names</code> (if it has a value) must all have the same size as the number of rows in <code>constraint_matrix</code>. Consistency of these values is checked by <code><a class="el" href="namespaceoperations__research_1_1pdlp.html#a29d607529c02f2842bdc5cb9c918bd1b">ValidateQuadraticProgramDimensions()</a></code>.</p>
 <p>For convenience, the struct also stores <code>scaling_factor</code> and <code>objective_offset</code>. These factors can be used to transform objective values based on the problem definition above into objective values that are meaningful for the user. See <code>ApplyObjectiveScalingAndOffset</code>.</p>
 <p>This struct is also intended for use with linear programs (LPs), which are QPs with a zero <code>objective_matrix</code>.</p>
 <p>The dual is documented at <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00053">53</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00061">61</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab7facb0468300221843cad3e702a50fa" name="ab7facb0468300221843cad3e702a50fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7facb0468300221843cad3e702a50fa">&#9670;&#160;</a></span>QuadraticProgram() <span class="overload">[1/4]</span></h2>
@@ -192,7 +193,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00054">54</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00062">62</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +220,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00057">57</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00065">65</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -272,7 +273,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00062">62</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00070">70</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +302,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns <code>objective_scaling_factor * (objective + objective_offset)</code>. <code>objective_scaling_factor</code> is useful for modeling maximization problems. For example, max c^T x = -1 * min (-c)^T x. <code>objective_offset</code> can be a by-product of presolve transformations that eliminate variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00122">122</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00130">130</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +354,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00077">77</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00085">85</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +386,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Initializes the quadratic program with <code>num_variables</code> variables and <code>num_constraints</code> constraints. Lower and upper bounds are set to negative and positive infinity, respectively. <code>objective_matrix</code> is cleared. All other matrices and vectors are set to zero. Resets the optional names (<code>program_name</code>, <code>variable_names</code>, and <code>constraint_names</code>). <code>objective_offset</code> is set to 0 and <code>objective_scaling_factor</code> is set to 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00099">99</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00107">107</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +403,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00131">131</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00139">139</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +419,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00130">130</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00138">138</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +435,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00136">136</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00144">144</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +451,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00131">131</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00139">139</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +468,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If this field isn't set, the <code>objective matrix</code> is interpreted to be zero, i.e., this is a linear programming problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00129">129</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00137">137</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +485,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>These fields are provided for convenience; they don't change the mathematical definition of the problem, but they change the objective values reported to the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00141">141</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00149">149</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +501,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00142">142</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00150">150</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +517,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00126">126</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00134">134</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +533,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00134">134</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00142">142</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +549,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00132">132</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00140">140</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +565,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00135">135</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00143">143</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +581,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00132">132</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00140">140</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
 
 </div>
 </div>

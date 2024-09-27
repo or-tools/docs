@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58d0dc825ac4d94daee28062423208e3" id="r_a58d0dc825ac4d94daee28062423208e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoperations__research_1_1sat_1_1CutData.html">CutData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d0dc825ac4d94daee28062423208e3">cut</a> () const</td></tr>
 <tr class="memdesc:a58d0dc825ac4d94daee28062423208e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If successful, info about the last generated cut.  <br /></td></tr>
 <tr class="separator:a58d0dc825ac4d94daee28062423208e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa0b7331e762ee55e778a96fd5b1da7" id="r_afaa0b7331e762ee55e778a96fd5b1da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaa0b7331e762ee55e778a96fd5b1da7">SetSharedStatistics</a> (<a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html">SharedStatistics</a> *<a class="el" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>)</td></tr>
+<tr class="memitem:afaa0b7331e762ee55e778a96fd5b1da7" id="r_afaa0b7331e762ee55e778a96fd5b1da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaa0b7331e762ee55e778a96fd5b1da7">SetSharedStatistics</a> (<a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html">SharedStatistics</a> *stats)</td></tr>
 <tr class="separator:afaa0b7331e762ee55e778a96fd5b1da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f3292cb1422998fb1f3cceb3bf4979" id="r_a60f3292cb1422998fb1f3cceb3bf4979"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f3292cb1422998fb1f3cceb3bf4979">Info</a> () const</td></tr>
 <tr class="memdesc:a60f3292cb1422998fb1f3cceb3bf4979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single line of text that we append to the cut log line.  <br /></td></tr>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00500">500</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00406">406</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a19ff9baa6e0092b883404bb00929e4fa" name="a19ff9baa6e0092b883404bb00929e4fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19ff9baa6e0092b883404bb00929e4fa">&#9670;&#160;</a></span>~IntegerRoundingCutHelper()</h2>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00610">610</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00646">646</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -174,19 +174,19 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true on success. The cut can be accessed via <a class="el" href="#a58d0dc825ac4d94daee28062423208e3" title="If successful, info about the last generated cut.">cut()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001545">Todo</a></b></dt><dd>(user): This is slow, 50% of run time on a2c1s1.pb.gz. Optimize! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001569">Todo</a></b></dt><dd>(user): This is slow, 50% of run time on a2c1s1.pb.gz. Optimize! </dd></dl>
 <p>Try IB before heuristic? This should be better except it can mess up the norm and the divisors.</p>
 <p>We complement the term before trying the implied bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001546">Todo</a></b></dt><dd>(user): We assume that this is called with and without the option use_ib_before_heuristic, so that we can abort if no IB has been applied since then we will redo the computation. This is not really clean. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001570">Todo</a></b></dt><dd>(user): We assume that this is called with and without the option use_ib_before_heuristic, so that we can abort if no IB has been applied since then we will redo the computation. This is not really clean. </dd></dl>
 <p>Our heuristic will try to generate a few different cuts, and we will keep the most violated one scaled by the l2 norm of the relevant position.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001547">Todo</a></b></dt><dd>(user): Experiment for the best value of this initial violation threshold. Note also that we use the l2 norm on the restricted position here. Maybe we should change that? On that note, the L2 norm usage seems a bit weird to me since it grows with the number of term in the cut. And often, we already have a good cut, and we make it stronger by adding extra terms that do not change its activity.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001571">Todo</a></b></dt><dd>(user): Experiment for the best value of this initial violation threshold. Note also that we use the l2 norm on the restricted position here. Maybe we should change that? On that note, the L2 norm usage seems a bit weird to me since it grows with the number of term in the cut. And often, we already have a good cut, and we make it stronger by adding extra terms that do not change its activity.</dd></dl>
 <p>The discussion above only concern the best_scaled_violation initial value. The remainder_threshold allows to not consider cuts for which the final efficacity is clearly lower than 1e-3 (it is a bound, so we could generate cuts with a lower efficacity than this).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001548">Todo</a></b></dt><dd>(user): If the rhs is small and close to zero, we might want to consider different way of complementing the variables. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001572">Todo</a></b></dt><dd>(user): If the rhs is small and close to zero, we might want to consider different way of complementing the variables. </dd></dl>
 <p>There is no point trying twice the same divisor or a divisor that is too small. Note that we use a higher threshold than the remainder_threshold because we can boost the remainder thanks to our adjusting heuristic below and also because this allows to have cuts with a small range of coefficients.</p>
 <dl class="section note"><dt>Note</dt><dd>because of the slacks, initial coeff are here too.</dd></dl>
 <p>If we have too many divisor to try, restrict to the first ones which should correspond to the highest lp values.</p>
 <dl class="section note"><dt>Note</dt><dd>most of the time is spend here since we call this function on many linear equation, and just a few of them have a good enough scaled violation. We can spend more time afterwards to tune the cut.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001549">Todo</a></b></dt><dd>(user): Avoid quadratic algorithm? Note that we are quadratic in relevant positions not the full cut size, but this is still too much on some problems. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001573">Todo</a></b></dt><dd>(user): Avoid quadratic algorithm? Note that we are quadratic in relevant positions not the full cut size, but this is still too much on some problems. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the function will abort right away if <a class="el" href="namespaceoperations__research_1_1sat.html#a83f714c395df7a814ed067125f567a0d">PositiveRemainder()</a> is not good enough, so it is quick for bad divisor.</dd></dl>
 <p>Try best_divisor divided by small number.</p>
 <p>Re try complementation on the transformed cut.</p>
@@ -204,10 +204,10 @@ Public Member Functions</h2></td></tr>
 <p>We will compare what happen when we apply f: [f(b) - f(a) * lp(X)] -&gt; [f(b - a * diff) - f(-a) * (diff - lp(X))].</p>
 <p>If lp(X) is zero, then the transformation is always worse. Because f(b - a * diff) &gt;= f(b) + f(-a) * diff by super-additivity.</p>
 <p>However the larger is X, the better it gets since at diff, we have f(b) &gt;= f(b - a * diff) + f(a * diff) &gt;= f(b - a * diff) + f(a) * diff.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001550">Todo</a></b></dt><dd>(user): It is still unclear if we have a * X + b * (1 - X) &lt;= rhs for a Boolean X, what is the best way to apply f and if we should merge the terms. If there is no other terms, best is probably f(rhs - a) * X + f(rhs - b) * (1 - X). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001574">Todo</a></b></dt><dd>(user): It is still unclear if we have a * X + b * (1 - X) &lt;= rhs for a Boolean X, what is the best way to apply f and if we should merge the terms. If there is no other terms, best is probably f(rhs - a) * X + f(rhs - b) * (1 - X). </dd></dl>
 <p>Avoid potential overflow here.</p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00748">748</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00785">785</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Public Member Functions</h2></td></tr>
 
 <p>If successful, info about the last generated cut. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00509">509</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00415">415</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Single line of text that we append to the cut log line. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00514">514</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00420">420</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00511">511</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00417">417</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>

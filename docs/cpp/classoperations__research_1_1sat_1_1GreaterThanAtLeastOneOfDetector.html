@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This collect all enforced linear of size 2 or 1 and detect if at least one of a subset touching the same variable must be true. When this is the case we add a new propagator to propagate that fact.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002078">Todo</a></b></dt><dd>(user): Shall we do that on the main thread before the workers are spawned? note that the probing version need the model to be loaded though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002108">Todo</a></b></dt><dd>(user): Shall we do that on the main thread before the workers are spawned? note that the probing version need the model to be loaded though. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00473">473</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00475">475</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afcac93e0dc2957497d6b749e80d7f4ca" name="afcac93e0dc2957497d6b749e80d7f4ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcac93e0dc2957497d6b749e80d7f4ca">&#9670;&#160;</a></span>Add()</h2>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds a relation lit =&gt; a + b \in [lhs, rhs]. </p>
 <p>We shall only consider positive variable here.</p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01100">1100</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01102">1102</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -183,10 +183,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Advanced usage. To be called once all the constraints have been added to the model. This will detect GreaterThanAtLeastOneOfConstraint(). Returns the number of added constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002090">Todo</a></b></dt><dd>(user): This can be quite slow, add some kind of deterministic limit so that we can use it all the time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002120">Todo</a></b></dt><dd>(user): This can be quite slow, add some kind of deterministic limit so that we can use it all the time. </dd></dl>
+<p>Initialize lit_to_relations_.</p>
 <p>We have two possible approaches. For now, we prefer the first one except if there is too many clauses in the problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002074">Todo</a></b></dt><dd>(user): Do more extensive experiment. Remove the second approach as it is more time consuming? or identify when it make sense. Note that the first approach also allows to use "incomplete" at least one between arcs. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002075">Todo</a></b></dt><dd>(user): This does not take into account clause of size 2 since they are stored in the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> instead. Some ideas specific to size 2:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002104">Todo</a></b></dt><dd>(user): Do more extensive experiment. Remove the second approach as it is more time consuming? or identify when it make sense. Note that the first approach also allows to use "incomplete" at least one between arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002105">Todo</a></b></dt><dd>(user): This does not take into account clause of size 2 since they are stored in the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> instead. Some ideas specific to size 2:<ul>
 <li>There can be a lot of such clauses, but it might be nice to consider them. we need to experiments.</li>
 <li>The automatic clause detection might be a better approach and it could be combined with probing. </li>
 </ul>
@@ -194,7 +195,7 @@ Public Member Functions</h2></td></tr>
 <p>It is common that there is only two alternatives to push a variable. In this case, our presolve most likely made sure that the two are controlled by a single Boolean. This allows to detect this and add the appropriate greater than at least one of.</p>
 <p>Release the memory, it is not longer needed.</p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01316">1316</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01312">1312</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>

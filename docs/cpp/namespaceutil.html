@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2bc3683e5d8f49f745bea0fa513f1675"><td class="memTemplItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2bc3683e5d8f49f745bea0fa513f1675">WriteGraphToFile</a> (const <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph, const std::string &amp;filename, bool directed, absl::Span&lt; const int &gt; num_nodes_with_color)</td></tr>
 <tr class="separator:a2bc3683e5d8f49f745bea0fa513f1675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4999be011343be06bd28753bf8ecc" id="r_a30a4999be011343be06bd28753bf8ecc"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
-<tr class="memitem:a30a4999be011343be06bd28753bf8ecc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>&lt; Iterator &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a30a4999be011343be06bd28753bf8ecc">BeginEndRange</a> (Iterator <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, Iterator <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
+<tr class="memitem:a30a4999be011343be06bd28753bf8ecc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>&lt; Iterator &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a30a4999be011343be06bd28753bf8ecc">BeginEndRange</a> (Iterator begin, Iterator <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
 <tr class="separator:a30a4999be011343be06bd28753bf8ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68be0ef9f4566f20fbf5238b24385216" id="r_a68be0ef9f4566f20fbf5238b24385216"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
 <tr class="memitem:a68be0ef9f4566f20fbf5238b24385216"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>&lt; Iterator &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a68be0ef9f4566f20fbf5238b24385216">BeginEndRange</a> (std::pair&lt; Iterator, Iterator &gt; begin_end)</td></tr>
@@ -365,7 +365,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a8a31111f9a74492f1de9238e463edd2a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8a31111f9a74492f1de9238e463edd2a">GetWeaklyConnectedComponents</a> (const <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph)</td></tr>
 <tr class="separator:a8a31111f9a74492f1de9238e463edd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aab823d80d85f004d3d2139cc4f6c2f" id="r_a0aab823d80d85f004d3d2139cc4f6c2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aab823d80d85f004d3d2139cc4f6c2f">IsValidPermutation</a> (absl::Span&lt; const int &gt; v)</td></tr>
-<tr class="memdesc:a0aab823d80d85f004d3d2139cc4f6c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the given vector is a permutation of [0..size()-1].  <br /></td></tr>
+<tr class="memdesc:a0aab823d80d85f004d3d2139cc4f6c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the given vector is a permutation of [0..<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>-1].  <br /></td></tr>
 <tr class="separator:a0aab823d80d85f004d3d2139cc4f6c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a06031908a024a50dbdddc394a22490" id="r_a8a06031908a024a50dbdddc394a22490"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt; </td></tr>
 <tr class="memitem:a8a06031908a024a50dbdddc394a22490"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8a06031908a024a50dbdddc394a22490">RemoveSelfArcsAndDuplicateArcs</a> (const <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph)</td></tr>
@@ -424,7 +424,7 @@ Functions</h2></td></tr>
 </ul>
 <p>Utility classes &amp; functions:</p><ul>
 <li><a class="el" href="#a8c227a057c1ce9d46b1185abf77ad91e">Permute()</a> to permute an array according to a given permutation.</li>
-<li>SVector&lt;&gt; vector with index range [-size(), size()) for ReverseArcGraph.</li>
+<li>SVector&lt;&gt; vector with index range [-<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>) for ReverseArcGraph.</li>
 </ul>
 <p>Basic usage: typedef ListGraph&lt;&gt; Graph; ///&lt; Choose a graph implementation. Graph graph; for (...) { graph.AddArc(tail, head); } ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { for (const int arc : graph.OutgoingArcs(node)) { head = graph.Head(arc); tail = node; ///&lt; or graph.Tail(arc) which is fast but not as much. } }</p>
 <p>Iteration over the arcs touching a node:</p>
@@ -1377,7 +1377,7 @@ template&lt;typename MultiMap &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000645">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
+<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000664">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00072">72</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
 
@@ -1882,7 +1882,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </table>
 </div><div class="memdoc">
 
-<p>Returns true iff the given vector is a permutation of [0..size()-1]. </p>
+<p>Returns true iff the given vector is a permutation of [0..<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00148">148</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
@@ -2074,7 +2074,7 @@ template&lt;class IntVector , class Array , class ElementType &gt; </div>
 </div><div class="memdoc">
 <p>Permutes the elements of array_to_permute: element #i will be moved to position permutation[i]. permutation must be either empty (in which case nothing happens), or a permutation of [0, permutation.size()).</p>
 <p>The algorithm is fast but need extra memory for a copy of the permuted part of array_to_permute.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000621">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
 <p>Some compiler do not know typeof(), so we have to use this extra function internally. </p>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00745">745</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
@@ -2129,7 +2129,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div><div class="memdoc">
 <p>Given an arc path, changes it to a sub-path with the same source and destination but without any cycle. Nothing happen if the path was already without cycle.</p>
 <p>The graph class should support Tail(arc) and Head(arc). They should both return an integer representing the corresponding tail/head of the passed arc.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000719">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000738">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
 <p>This maps each node to the latest arc in the given path that leaves it.</p>
 <p>Special case for the destination. </p><dl class="section note"><dt>Note</dt><dd>this requires that -1 is not a valid arc of Graph.</dd></dl>
 <p>Reconstruct the path by starting at the source and then following the "next" arcs. We override the given arc_path at the same time.</p>

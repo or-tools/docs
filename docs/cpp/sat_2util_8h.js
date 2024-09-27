@@ -2,6 +2,7 @@ var sat_2util_8h =
 [
     [ "operations_research::sat::IdentityMap< T >", "classoperations__research_1_1sat_1_1IdentityMap.html", "classoperations__research_1_1sat_1_1IdentityMap" ],
     [ "operations_research::sat::CompactVectorVector< K, V >", "classoperations__research_1_1sat_1_1CompactVectorVector.html", "classoperations__research_1_1sat_1_1CompactVectorVector" ],
+    [ "operations_research::sat::FixedCapacityVector< T >", "classoperations__research_1_1sat_1_1FixedCapacityVector.html", "classoperations__research_1_1sat_1_1FixedCapacityVector" ],
     [ "operations_research::sat::ModelRandomGenerator", "classoperations__research_1_1sat_1_1ModelRandomGenerator.html", "classoperations__research_1_1sat_1_1ModelRandomGenerator" ],
     [ "operations_research::sat::ModelSharedTimeLimit", "classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html", "classoperations__research_1_1sat_1_1ModelSharedTimeLimit" ],
     [ "operations_research::sat::MaxBoundedSubsetSum", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum" ],

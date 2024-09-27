@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -101,7 +101,6 @@ $(function(){initNavTree('solve_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -111,26 +110,19 @@ $(function(){initNavTree('solve_8h.html',''); initResizable(true); });
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="solver_8h_source.html">ortools/math_opt/core/solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="compute__infeasible__subsystem__arguments_8h_source.html">ortools/math_opt/cpp/compute_infeasible_subsystem_arguments.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="compute__infeasible__subsystem__result_8h_source.html">ortools/math_opt/cpp/compute_infeasible_subsystem_result.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="incremental__solver_8h_source.html">ortools/math_opt/cpp/incremental_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="math__opt_2cpp_2model_8h_source.html">ortools/math_opt/cpp/model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parameters_8h_source.html">ortools/math_opt/cpp/parameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solve__arguments_8h_source.html">ortools/math_opt/cpp/solve_arguments.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solve__result_8h_source.html">ortools/math_opt/cpp/solve_result.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solver__init__arguments_8h_source.html">ortools/math_opt/cpp/solver_init_arguments.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="update__result_8h_source.html">ortools/math_opt/cpp/update_result.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="update__tracker_8h_source.html">ortools/math_opt/cpp/update_tracker.h</a>&quot;</code><br />
 <code>#include &quot;ortools/math_opt/parameters.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="model__storage_8h_source.html">ortools/math_opt/storage/model_storage.h</a>&quot;</code><br />
 </div>
 <p><a href="solve_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">operations_research::math_opt::IncrementalSolver</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
@@ -149,8 +141,10 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a44e6832359d18377eaf7e3100d3a7c28" id="r_a44e6832359d18377eaf7e3100d3a7c28"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">operations_research::math_opt::Solve</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;solve_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a> &amp;init_args)</td></tr>
 <tr class="separator:a44e6832359d18377eaf7e3100d3a7c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4c3181a4452cca57ae434c134b59651" id="r_ab4c3181a4452cca57ae434c134b59651"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ab4c3181a4452cca57ae434c134b59651">operations_research::math_opt::ComputeInfeasibleSubsystem</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;infeasible_subsystem_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a> &amp;init_args)</td></tr>
-<tr class="separator:ab4c3181a4452cca57ae434c134b59651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94fa14dcb25fd52ccda173c3ffb5a60" id="r_aa94fa14dcb25fd52ccda173c3ffb5a60"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa94fa14dcb25fd52ccda173c3ffb5a60">operations_research::math_opt::ComputeInfeasibleSubsystem</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;compute_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a> &amp;init_args)</td></tr>
+<tr class="separator:aa94fa14dcb25fd52ccda173c3ffb5a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a1167e4dca26a88aac67eb7808e4d5" id="r_a62a1167e4dca26a88aac67eb7808e4d5"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a62a1167e4dca26a88aac67eb7808e4d5">operations_research::math_opt::NewIncrementalSolver</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a> arguments)</td></tr>
+<tr class="separator:a62a1167e4dca26a88aac67eb7808e4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

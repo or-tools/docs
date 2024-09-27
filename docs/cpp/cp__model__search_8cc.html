@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -109,6 +109,7 @@ $(function(){initNavTree('cp__model__search_8cc.html',''); initResizable(true); 
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="cp__model__search_8h_source.html">ortools/sat/cp_model_search.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -122,6 +123,7 @@ $(function(){initNavTree('cp__model__search_8cc.html',''); initResizable(true); 
 <code>#include &quot;absl/random/distributions.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__mapping_8h_source.html">ortools/sat/cp_model_mapping.h</a>&quot;</code><br />
@@ -153,8 +155,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5254d8329101ce8f7213c759d6ad56b4" id="r_a5254d8329101ce8f7213c759d6ad56b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5254d8329101ce8f7213c759d6ad56b4">ABSL_FLAG</a> (bool, cp_model_use_max_hs, false, &quot;Use max_hs in search portfolio.&quot;)</td></tr>
-<tr class="separator:a5254d8329101ce8f7213c759d6ad56b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab621abdbab919d365ca747aebdd2ff74" id="r_ab621abdbab919d365ca747aebdd2ff74"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab621abdbab919d365ca747aebdd2ff74">operations_research::sat::ConstructUserSearchStrategy</a> (const CpModelProto &amp;cp_model_proto, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="memdesc:ab621abdbab919d365ca747aebdd2ff74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the search strategy specified in the given CpModelProto.  <br /></td></tr>
 <tr class="separator:ab621abdbab919d365ca747aebdd2ff74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,53 +169,17 @@ Functions</h2></td></tr>
 <tr class="separator:a5465fbc93435e155dd99a36283155a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50803a36792e1ce5b1dfada9166766a7" id="r_a50803a36792e1ce5b1dfada9166766a7"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a50803a36792e1ce5b1dfada9166766a7">operations_research::sat::ConstructFixedSearchStrategy</a> (std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; user_search, std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; heuristic_search, std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; integer_completion)</td></tr>
 <tr class="separator:a50803a36792e1ce5b1dfada9166766a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5bbc7753cb2048be6a60ee8d37d880a" id="r_aa5bbc7753cb2048be6a60ee8d37d880a"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa5bbc7753cb2048be6a60ee8d37d880a">operations_research::sat::InstrumentSearchStrategy</a> (const CpModelProto &amp;cp_model_proto, const std::vector&lt; IntegerVariable &gt; &amp;variable_mapping, const std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; &amp;instrumented_strategy, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:aa5bbc7753cb2048be6a60ee8d37d880a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71e58eccbb3dd41273b24a37ea0bfd7" id="r_ad71e58eccbb3dd41273b24a37ea0bfd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ad71e58eccbb3dd41273b24a37ea0bfd7">operations_research::sat::ValidSumSeed</a> (int base_seed, int <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>)</td></tr>
-<tr class="separator:ad71e58eccbb3dd41273b24a37ea0bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3a6347c9f942af0cdca5180a9da297" id="r_aac3a6347c9f942af0cdca5180a9da297"><td class="memItemLeft" align="right" valign="top">absl::flat_hash_map&lt; std::string, SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aac3a6347c9f942af0cdca5180a9da297">operations_research::sat::GetNamedParameters</a> (const SatParameters &amp;base_params)</td></tr>
-<tr class="separator:aac3a6347c9f942af0cdca5180a9da297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da173a94bec567c831df465aae5c5e4" id="r_a5da173a94bec567c831df465aae5c5e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5da173a94bec567c831df465aae5c5e4">operations_research::sat::GetDiverseSetOfParameters</a> (const SatParameters &amp;base_params, const CpModelProto &amp;cp_model)</td></tr>
-<tr class="separator:a5da173a94bec567c831df465aae5c5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a042b29a93f47b3d872e4104643d481" id="r_a5a042b29a93f47b3d872e4104643d481"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a5a042b29a93f47b3d872e4104643d481">operations_research::sat::GetFirstSolutionParams</a> (const SatParameters &amp;base_params, const CpModelProto &amp;, int num_params_to_generate)</td></tr>
-<tr class="separator:a5a042b29a93f47b3d872e4104643d481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a09de9399643ba3302d007c4663ea2" id="r_a20a09de9399643ba3302d007c4663ea2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a20a09de9399643ba3302d007c4663ea2">operations_research::sat::GetWorkSharingParams</a> (const SatParameters &amp;base_params, const CpModelProto &amp;cp_model, int num_params_to_generate)</td></tr>
-<tr class="separator:a20a09de9399643ba3302d007c4663ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c1bbb9e91576cc78666dfddfb63e42" id="r_a85c1bbb9e91576cc78666dfddfb63e42"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a85c1bbb9e91576cc78666dfddfb63e42">operations_research::sat::InstrumentSearchStrategy</a> (const CpModelProto &amp;cp_model_proto, const std::vector&lt; IntegerVariable &gt; &amp;variable_mapping, std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt; instrumented_strategy, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="separator:a85c1bbb9e91576cc78666dfddfb63e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f0522b87e92a3a69cd92fe98af4be7" id="r_ae2f0522b87e92a3a69cd92fe98af4be7"><td class="memItemLeft" align="right" valign="top">absl::flat_hash_map&lt; std::string, SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae2f0522b87e92a3a69cd92fe98af4be7">operations_research::sat::GetNamedParameters</a> (SatParameters base_params)</td></tr>
+<tr class="separator:ae2f0522b87e92a3a69cd92fe98af4be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3beb2acf8977c52500de3ebe170d24" id="r_a2d3beb2acf8977c52500de3ebe170d24"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2d3beb2acf8977c52500de3ebe170d24">operations_research::sat::GetFullWorkerParameters</a> (const SatParameters &amp;base_params, const CpModelProto &amp;cp_model, int num_already_present, <a class="el" href="classoperations__research_1_1sat_1_1SubsolverNameFilter.html">SubsolverNameFilter</a> *filter)</td></tr>
+<tr class="separator:a2d3beb2acf8977c52500de3ebe170d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab3041ce22f8dfd13a0bab64f7fd6bb" id="r_a8ab3041ce22f8dfd13a0bab64f7fd6bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a8ab3041ce22f8dfd13a0bab64f7fd6bb">operations_research::sat::GetFirstSolutionBaseParams</a> (const SatParameters &amp;base_params)</td></tr>
+<tr class="separator:a8ab3041ce22f8dfd13a0bab64f7fd6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a1dd9bf60ce8490922e3f1148524e8" id="r_ab3a1dd9bf60ce8490922e3f1148524e8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SatParameters &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ab3a1dd9bf60ce8490922e3f1148524e8">operations_research::sat::RepeatParameters</a> (absl::Span&lt; const SatParameters &gt; base_params, int num_params_to_generate)</td></tr>
+<tr class="separator:ab3a1dd9bf60ce8490922e3f1148524e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a5254d8329101ce8f7213c759d6ad56b4" name="a5254d8329101ce8f7213c759d6ad56b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5254d8329101ce8f7213c759d6ad56b4">&#9670;&#160;</a></span>ABSL_FLAG()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ABSL_FLAG </td>
-          <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">cp_model_use_max_hs</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">false</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Use max_hs in search portfolio.&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001409">Todo</a></b></dt><dd>(user): remove this when the code is stable and does not use SCIP anymore. </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aedb3acb007b8cca8efc63eed08f45705" name="aedb3acb007b8cca8efc63eed08f45705"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedb3acb007b8cca8efc63eed08f45705">&#9670;&#160;</a></span>noise</h2>
@@ -229,7 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00172">172</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00171">171</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>
@@ -245,7 +209,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00171">171</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8cc_source.html#l00170">170</a> of file <a class="el" href="cp__model__search_8cc_source.html">cp_model_search.cc</a>.</p>
 
 </div>
 </div>

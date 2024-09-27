@@ -6,7 +6,7 @@ var classoperations__research_1_1sat_1_1DratProofHandler =
     [ "AddClause", "classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d", null ],
     [ "AddOneVariable", "classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db", null ],
     [ "AddProblemClause", "classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58", null ],
-    [ "ApplyMapping", "classoperations__research_1_1sat_1_1DratProofHandler.html#a024232f8972a7dcb6cbf91ec8fe36fb0", null ],
+    [ "ApplyMapping", "classoperations__research_1_1sat_1_1DratProofHandler.html#a8ceaa4570135a1216539fccb736088ca", null ],
     [ "Check", "classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb", null ],
     [ "DeleteClause", "classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1", null ],
     [ "SetNumVariables", "classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b", null ]

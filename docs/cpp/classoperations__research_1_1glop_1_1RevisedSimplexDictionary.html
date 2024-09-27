@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,7 +112,7 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1RevisedSimplexDic
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7cd20c5bc9a5af9f4fb98fcc33ccee95" id="r_a7cd20c5bc9a5af9f4fb98fcc33ccee95"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classabsl_1_1StrongVector.html#abff40e54c63e374eb8c6f147c3fcaa46">RowMajorSparseMatrix::const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cd20c5bc9a5af9f4fb98fcc33ccee95">ConstIterator</a></td></tr>
+<tr class="memitem:a7cd20c5bc9a5af9f4fb98fcc33ccee95" id="r_a7cd20c5bc9a5af9f4fb98fcc33ccee95"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classutil__intops_1_1StrongVector.html#a0dc14293642fb1be4826ea501119d6cc">RowMajorSparseMatrix::const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cd20c5bc9a5af9f4fb98fcc33ccee95">ConstIterator</a></td></tr>
 <tr class="separator:a7cd20c5bc9a5af9f4fb98fcc33ccee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classabsl_1_1StrongVector.html#abff40e54c63e374eb8c6f147c3fcaa46">RowMajorSparseMatrix::const_iterator</a> <a class="el" href="#a7cd20c5bc9a5af9f4fb98fcc33ccee95">operations_research::glop::RevisedSimplexDictionary::ConstIterator</a></td>
+          <td class="memname"><a class="el" href="classutil__intops_1_1StrongVector.html#a0dc14293642fb1be4826ea501119d6cc">RowMajorSparseMatrix::const_iterator</a> <a class="el" href="#a7cd20c5bc9a5af9f4fb98fcc33ccee95">operations_research::glop::RevisedSimplexDictionary::ConstIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1glop_1_1RevisedSimplex.html" title="Entry point of the revised simplex algorithm implementation.">RevisedSimplex</a> cannot be passed const because we have to call a non-const method ComputeDictionary. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000589">Todo</a></b></dt><dd>(user): Overload this to take RevisedSimplex* alone when the caller would normally pass a nullptr for col_scales so this and ComputeDictionary can take a const&amp; argument. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1glop_1_1RevisedSimplex.html" title="Entry point of the revised simplex algorithm implementation.">RevisedSimplex</a> cannot be passed const because we have to call a non-const method ComputeDictionary. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000608">Todo</a></b></dt><dd>(user): Overload this to take RevisedSimplex* alone when the caller would normally pass a nullptr for col_scales so this and ComputeDictionary can take a const&amp; argument. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00854">854</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
 
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000590">Todo</a></b></dt><dd>(user): This function is a better fit for the future custom iterator. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000609">Todo</a></b></dt><dd>(user): This function is a better fit for the future custom iterator. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00870">870</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
 

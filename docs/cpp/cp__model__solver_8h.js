@@ -6,7 +6,7 @@ var cp__model__solver_8h =
     [ "LoadAndSolveCpModelForTest", "cp__model__solver_8h.html#a277ebf478f1fa693dd01867071080203", null ],
     [ "NewBestBoundCallback", "cp__model__solver_8h.html#a9e8bc70ae581d62f20820eebbb17407e", null ],
     [ "NewFeasibleSolutionLogCallback", "cp__model__solver_8h.html#aa7e12611a48297771228ed1bb6971fe1", null ],
-    [ "NewFeasibleSolutionObserver", "cp__model__solver_8h.html#a0558490428f07c5db7b6ae292001375c", null ],
+    [ "NewFeasibleSolutionObserver", "cp__model__solver_8h.html#ad13630b39d297fb31cc3c151ff02dcc0", null ],
     [ "NewSatParameters", "cp__model__solver_8h.html#adbf4fa68898b3aaa2e6de2b5d3064580", null ],
     [ "NewSatParameters", "cp__model__solver_8h.html#a10700832ca6bc420f2931eb707957b0b", null ],
     [ "Solve", "cp__model__solver_8h.html#a09d851f944ab4f305c3d9f8df99b7bf8", null ],

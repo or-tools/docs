@@ -17,6 +17,6 @@ var searchData=
   ['stargraphbase_3c_20nodeindextype_2c_20arcindextype_2c_20ebertgraph_3c_20nodeindextype_2c_20arcindextype_20_3e_20_3e_14',['StarGraphBase&lt; NodeIndexType, ArcIndexType, EbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;',['../classoperations__research_1_1EbertGraph.html#a8b785fb3f60a942b9d82c48073f2d03b',1,'operations_research::EbertGraph']]],
   ['stargraphbase_3c_20nodeindextype_2c_20arcindextype_2c_20forwardebertgraph_3c_20nodeindextype_2c_20arcindextype_20_3e_20_3e_15',['StarGraphBase&lt; NodeIndexType, ArcIndexType, ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;',['../classoperations__research_1_1ForwardEbertGraph.html#a693f3f74a8aa4a10dbc5a040fd6c31eb',1,'operations_research::ForwardEbertGraph']]],
   ['stargraphbase_3c_20nodeindextype_2c_20arcindextype_2c_20forwardstaticgraph_3c_20nodeindextype_2c_20arcindextype_20_3e_20_3e_16',['StarGraphBase&lt; NodeIndexType, ArcIndexType, ForwardStaticGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;',['../classoperations__research_1_1ForwardStaticGraph.html#ad350bf8d35134f9fe0208292360cf2a5',1,'operations_research::ForwardStaticGraph']]],
-  ['swap_17',['swap',['../classabsl_1_1StrongVector.html#a6c23f3d659d0ad1e0170289648297627',1,'absl::StrongVector']]],
+  ['swap_17',['swap',['../classutil__intops_1_1StrongVector.html#a0e53c5192a5adafb4f00ff09b70e2042',1,'util_intops::StrongVector']]],
   ['symmetrymanager_18',['SymmetryManager',['../classoperations__research_1_1SymmetryBreaker.html#aa126bb367514a24cbd6e0b2c48fda9ee',1,'operations_research::SymmetryBreaker']]]
 ];

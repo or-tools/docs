@@ -2,7 +2,7 @@ var structoperations__research_1_1sat_1_1EnergyEvent =
 [
     [ "EnergyEvent", "structoperations__research_1_1sat_1_1EnergyEvent.html#a76b27e65981fb2007e8d40544ed2c38b", null ],
     [ "DebugString", "structoperations__research_1_1sat_1_1EnergyEvent.html#add7192aac71fb5ce85e56afd40071543", null ],
-    [ "FillEnergyLp", "structoperations__research_1_1sat_1_1EnergyEvent.html#a452fcd509e032fcb5b198aab3f9a36ba", null ],
+    [ "FillEnergyLp", "structoperations__research_1_1sat_1_1EnergyEvent.html#a9d4da016d3dcf503bc8f10d4a3681c6e", null ],
     [ "GetMinOverlap", "structoperations__research_1_1sat_1_1EnergyEvent.html#aac4f05fac77c947f2f11616813f92aa0", null ],
     [ "IsPresent", "structoperations__research_1_1sat_1_1EnergyEvent.html#aa18cad213110f9c560c787d2606bbc6e", null ],
     [ "energy_is_quadratic", "structoperations__research_1_1sat_1_1EnergyEvent.html#a4390a847dde4b573f50f5fd4930f204e", null ],

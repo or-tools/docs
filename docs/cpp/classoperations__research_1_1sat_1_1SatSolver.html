@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0174fd7221118d81a925d32aaed1cc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f805974da54c343a094962a8d709db3" id="r_a6f805974da54c343a094962a8d709db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f805974da54c343a094962a8d709db3">TrackBinaryClauses</a> (bool <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
 <tr class="separator:a6f805974da54c343a094962a8d709db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fa84a40c6ea30a7149aab5b09b43e18" id="r_a1fa84a40c6ea30a7149aab5b09b43e18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fa84a40c6ea30a7149aab5b09b43e18">AddBinaryClauses</a> (const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1BinaryClause.html">BinaryClause</a> &gt; &amp;<a class="el" href="cp__model__solver_8cc.html#ad4bbde7c22d1c840bf223499266397ff">clauses</a>)</td></tr>
+<tr class="memitem:a1fa84a40c6ea30a7149aab5b09b43e18" id="r_a1fa84a40c6ea30a7149aab5b09b43e18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fa84a40c6ea30a7149aab5b09b43e18">AddBinaryClauses</a> (const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1BinaryClause.html">BinaryClause</a> &gt; &amp;clauses)</td></tr>
 <tr class="separator:a1fa84a40c6ea30a7149aab5b09b43e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3087db3ee9aceca1a27369dff0d5ad61" id="r_a3087db3ee9aceca1a27369dff0d5ad61"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1BinaryClause.html">BinaryClause</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3087db3ee9aceca1a27369dff0d5ad61">NewlyAddedBinaryClauses</a> ()</td></tr>
 <tr class="separator:a3087db3ee9aceca1a27369dff0d5ad61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +237,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a75b31c338ba4d070b8880539bc9a09eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82dd736a0e48550f444665f4c9848be3" id="r_a82dd736a0e48550f444665f4c9848be3"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82dd736a0e48550f444665f4c9848be3">num_propagations</a> () const</td></tr>
 <tr class="separator:a82dd736a0e48550f444665f4c9848be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870d1a233165edaf4f2838f027f609cc" id="r_a870d1a233165edaf4f2838f027f609cc"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a870d1a233165edaf4f2838f027f609cc">num_backtracks</a> () const</td></tr>
+<tr class="separator:a870d1a233165edaf4f2838f027f609cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8e763148cc7f4b31e2efc3e3126cd4" id="r_a9f8e763148cc7f4b31e2efc3e3126cd4"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f8e763148cc7f4b31e2efc3e3126cd4">num_restarts</a> () const</td></tr>
 <tr class="separator:a9f8e763148cc7f4b31e2efc3e3126cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c9df3c27f93259f24d24ddd53a0bf2" id="r_ae9c9df3c27f93259f24d24ddd53a0bf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html">Counters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9c9df3c27f93259f24d24ddd53a0bf2">counters</a> () const</td></tr>
@@ -247,9 +249,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac7db73938c1101728cb3c7ed61dfd72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f52135ff20f7db013339dabb0d90765" id="r_a5f52135ff20f7db013339dabb0d90765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f52135ff20f7db013339dabb0d90765">LoadDebugSolution</a> (const std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; &amp;<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="separator:a5f52135ff20f7db013339dabb0d90765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65164219036d2b3a2155164145af413d" id="r_a65164219036d2b3a2155164145af413d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65164219036d2b3a2155164145af413d">ProblemIsPureSat</a> () const</td></tr>
-<tr class="memdesc:a65164219036d2b3a2155164145af413d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the loaded problem only contains clauses.  <br /></td></tr>
-<tr class="separator:a65164219036d2b3a2155164145af413d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1825b361bdf46ac399ff264a402b6c40" id="r_a1825b361bdf46ac399ff264a402b6c40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1825b361bdf46ac399ff264a402b6c40">SetDratProofHandler</a> (<a class="el" href="classoperations__research_1_1sat_1_1DratProofHandler.html">DratProofHandler</a> *drat_proof_handler)</td></tr>
 <tr class="separator:a1825b361bdf46ac399ff264a402b6c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61260f1f86d76b6605c82d69ad96186d" id="r_a61260f1f86d76b6605c82d69ad96186d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61260f1f86d76b6605c82d69ad96186d">NotifyThatModelIsUnsat</a> ()</td></tr>
@@ -320,7 +319,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00058">58</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00057">57</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -347,7 +346,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00064">64</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00063">63</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -393,7 +392,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00085">85</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00083">83</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -438,7 +437,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01072">1072</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01070">1070</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -457,9 +456,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a clause at any level of the tree and propagate any new deductions. Returns false if the model becomes UNSAT. Important: We currently do not support adding a clause that is already falsified at a positive decision level. Doing that will cause a check fail.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002281">Todo</a></b></dt><dd>(user): Backjump and propagate on a falsified clause? this is currently not needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002313">Todo</a></b></dt><dd>(user): Backjump and propagate on a falsified clause? this is currently not needed. </dd></dl>
 <p>Let filter clauses if we are at level zero</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002238">Todo</a></b></dt><dd>(user): We generate in some corner cases clauses with literals[0].Variable() == literals[1].Variable(). Avoid doing that and adding such binary clauses to the graph? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002270">Todo</a></b></dt><dd>(user): We generate in some corner cases clauses with literals[0].Variable() == literals[1].Variable(). Avoid doing that and adding such binary clauses to the graph? </dd></dl>
 <p>Tricky: Even if nothing new is propagated, calling <a class="el" href="#a9188c70cc1096900a623a26319a1d4b8">Propagate()</a> might, via the LP, deduce new things. This is problematic because some code assumes that when we create newly associated literals, nothing else changes.</p>
 
 <p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00159">159</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
@@ -481,7 +480,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00455">455</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00452">452</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -520,12 +519,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds a pseudo-Boolean constraint to the problem. Returns false if the problem is detected to be UNSAT. If the constraint is always true, this detects it and does nothing.</p>
 <p>Note(user): There is an optimization if the same constraint is added consecutively (even if the bounds are different). This is particularly useful for an optimization problem when we want to constrain the objective of the problem more and more. Just re-adding such constraint is relatively efficient.</p>
-<p>OVERFLOW: The sum of the absolute value of all the coefficients in the constraint must not overflow. This is currently CHECKed(). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002277">Todo</a></b></dt><dd>(user): Instead of failing, implement an error handling code. </dd></dl>
+<p>OVERFLOW: The sum of the absolute value of all the coefficients in the constraint must not overflow. This is currently CHECKed(). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002309">Todo</a></b></dt><dd>(user): Instead of failing, implement an error handling code. </dd></dl>
 <p>We need to "re-canonicalize" in case some literal were fixed while we processed one direction.</p>
 <p>We transform the constraint into an upper-bounded one.</p>
 <p>Tricky: The PropagationIsDone() condition shouldn't change anything for a pure SAT problem, however in the CP-SAT context, calling <a class="el" href="#a9188c70cc1096900a623a26319a1d4b8">Propagate()</a> can tigger computation (like the LP) even if no domain changed since the last call. We do not want to do that.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00357">357</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00355">355</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -548,7 +547,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a clause to the problem. Returns false if the problem is detected to be UNSAT. If is_safe is false, we will do some basic presolving like removing duplicate literals.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002276">Todo</a></b></dt><dd>(user): Rename this to AddClause(), also get rid of the specialized <a class="el" href="#aa16f8b671ca15b9f82ee69236880c176">AddUnitClause()</a>, <a class="el" href="#a6cb2ddde70037269943ce72ac1d5b163" title="Same as AddProblemClause() below, but for small clauses.">AddBinaryClause()</a> and <a class="el" href="#aa5e4956383538b097302c88080569a74">AddTernaryClause()</a> since they just end up calling this? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002308">Todo</a></b></dt><dd>(user): Rename this to AddClause(), also get rid of the specialized <a class="el" href="#aa16f8b671ca15b9f82ee69236880c176">AddUnitClause()</a>, <a class="el" href="#a6cb2ddde70037269943ce72ac1d5b163" title="Same as AddProblemClause() below, but for small clauses.">AddBinaryClause()</a> and <a class="el" href="#aa5e4956383538b097302c88080569a74">AddTernaryClause()</a> since they just end up calling this? </dd></dl>
 <p>Note(user): we assume there is no duplicate literals in the clauses added here if is_safe is true. Most of the code works, but some advanced algo might be wrong/suboptimal if this is the case. So even when presolve is off we need some "cleanup" to enforce this invariant. Alternatively we could have robut algo in all the stack, but that seems a worse design. </p>
 <p>Filter already assigned literals.</p>
 <p>Tricky: The PropagationIsDone() condition shouldn't change anything for a pure SAT problem, however in the CP-SAT context, calling <a class="el" href="#a9188c70cc1096900a623a26319a1d4b8">Propagate()</a> can tigger computation (like the LP) even if no domain changed since the last call. We do not want to do that.</p>
@@ -573,7 +572,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds and registers the given propagator with the sat solver. Note that during propagation, they will be called in the order they were added. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00447">447</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00445">445</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -649,7 +648,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advance the given time limit with all the deterministic time that was elapsed since last call. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00476">476</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00475">475</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
 </div>
 </div>
@@ -750,12 +749,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Restores the state to the given target decision level. The decision at that level and all its propagation will not be undone. But all the trail after this will be cleared. Calling this with 0 will revert all the decisions and only the fixed variables will be left on the trail. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002248">Todo</a></b></dt><dd>(user): The backtrack method should not be called when the model is unsat. Add a DCHECK to prevent that, but before fix the <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html">bop::BopOptimizerBase</a> architecture. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002280">Todo</a></b></dt><dd>(user): The backtrack method should not be called when the model is unsat. Add a DCHECK to prevent that, but before fix the <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html">bop::BopOptimizerBase</a> architecture. </dd></dl>
 <p>Do nothing if the <a class="el" href="#abf1b11c4b39c9745a264638dc0381914">CurrentDecisionLevel()</a> is already correct. This is needed, otherwise target_trail_index below will remain at zero and that will cause some problems. Note that we could forbid a user to call <a class="el" href="#a7c0c2912da716e49c8b5d84108e463d7">Backtrack()</a> with the current level, but that is annoying when you just want to reset the solver with Backtrack(0).</p>
 <p>Any backtrack to the root from a positive one is counted as a restart.</p>
 <p>Per the <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> interface, this is needed before calling Untrail.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01036">1036</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01032">1032</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -774,7 +773,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01086">1086</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01084">1084</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -801,7 +800,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00427">427</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00429">429</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +875,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A deterministic number that should be correlated with the time spent in the <a class="el" href="#a8a32f2b63a24749a0c9f6e34d068f1b0">Solve()</a> function. The order of magnitude should be close to the time in seconds. </p>
 <p>Each of these counters mesure really basic operations. The weight are just an estimate of the operation complexity. Note that these counters are never reset to zero once a <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> is created.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002237">Todo</a></b></dt><dd>(user): Find a better procedure to fix the weight than just educated guess. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002269">Todo</a></b></dt><dd>(user): Find a better procedure to fix the weight than just educated guess. </dd></dl>
 <p>Here there is a factor 2 because of the untrail.</p>
 
 <p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00115">115</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
@@ -907,7 +906,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>We should never enqueue before the assumptions_.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00561">561</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00557">557</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -934,7 +933,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns INFEASIBLE if the model was proven infeasible, ASSUMPTION_UNSAT if the current decision and the one we are trying to take are not compatible together and FEASIBLE if all decisions are taken.</p>
 <p>Note(user): This function can be called with an already assigned literal. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01007">1007</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01003">1003</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -955,7 +954,7 @@ Public Member Functions</h2></td></tr>
 <p>Tries to enqueue the given decision and performs the propagation. Returns true if no conflict occurred. Otherwise, returns false and restores the solver to the state just before this was called.</p>
 <p>Note(user): With this function, the solver doesn't learn anything. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01021">1021</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01017">1017</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -987,7 +986,7 @@ template&lt;typename Output &gt; </div>
 <li>void <a class="el" href="#a6cb2ddde70037269943ce72ac1d5b163" title="Same as AddProblemClause() below, but for small clauses.">AddBinaryClause(Literal a, Literal b)</a>;</li>
 <li>void AddClause(absl::Span&lt;const Literal&gt; clause);</li>
 </ul>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002280">Todo</a></b></dt><dd>(user): also copy the removable clauses? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002312">Todo</a></b></dt><dd>(user): also copy the removable clauses? </dd></dl>
 <p>It is important to process the newly fixed variables, so they are not present in the clauses we export.</p>
 <p>Note(user): Putting the binary clauses first help because the presolver currently process the clauses in order.</p>
 
@@ -1010,9 +1009,9 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Advanced usage. Finish the progation if it was interrupted. Note that this might run into conflict and will propagate again until a fixed point is reached or the model was proven UNSAT. Returns <a class="el" href="#a84e27e6cb848b3176ab5680292d116a8">IsModelUnsat()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002242">Todo</a></b></dt><dd>(user): Exiting like this might cause issue since the propagation is not "finished" but some code might assume it is. However since we already might repropagate in the LP constraint, most of the code should support "not finished propagation". </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002274">Todo</a></b></dt><dd>(user): Exiting like this might cause issue since the propagation is not "finished" but some code might assume it is. However since we already might repropagate in the LP constraint, most of the code should support "not finished propagation". </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00586">586</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00582">582</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1036,7 @@ template&lt;typename Output &gt; </div>
 <p>Marks all the literals of its reason.</p>
 <p>We reverse the assumptions so they are in the same order as the one in which the decision were made.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01508">1508</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01506">1506</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1062,7 @@ template&lt;typename Output &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002278">Todo</a></b></dt><dd>(user): remove this function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002310">Todo</a></b></dt><dd>(user): remove this function. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00150">150</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
@@ -1112,7 +1111,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>We should only call this with complete solution.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00492">492</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00488">488</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1132,7 @@ template&lt;typename Output &gt; </div>
 <p>Tricky: we don't want TryToMinimizeClause() to delete to_minimize while we are processing it.</p>
 <p>Note(user): In some corner cases, the function above might find a feasible assignment. I think it is okay to ignore this special case that should only happen on trivial problems and just reset the solver.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01470">1470</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01468">1468</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1158,7 @@ template&lt;typename Output &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002274">Todo</a></b></dt><dd>(user): Remove. This is temporary for accessing the model deep within some old code that didn't use the <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> object. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002306">Todo</a></b></dt><dd>(user): Remove. This is temporary for accessing the model deep within some old code that didn't use the <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> object. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00076">76</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
@@ -1219,7 +1218,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Hack to allow to temporarily disable logging if it is enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00493">493</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00492">492</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1266,7 +1265,7 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01082">1082</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01080">1080</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1293,26 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>This function is here to deal with the case where a SAT/CP model is found to be trivially UNSAT while the user is constructing the model. Instead of having to test the status of all the lines adding a constraint, one can just check if the solver is not UNSAT once the model is constructed. Note that we usually log a warning on the first constraint that caused a "trival" unsatisfiability. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00457">457</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00456">456</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+
+</div>
+</div>
+<a id="a870d1a233165edaf4f2838f027f609cc" name="a870d1a233165edaf4f2838f027f609cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870d1a233165edaf4f2838f027f609cc">&#9670;&#160;</a></span>num_backtracks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t operations_research::sat::SatSolver::num_backtracks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00111">111</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1333,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Some statistics since the creation of the solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00105">105</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00103">103</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1352,7 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00107">107</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00105">105</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1371,7 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00109">109</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00107">107</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1418,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00486">486</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00485">485</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1475,35 +1493,6 @@ template&lt;typename Output &gt; </div>
 
 </div>
 </div>
-<a id="a65164219036d2b3a2155164145af413d" name="a65164219036d2b3a2155164145af413d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65164219036d2b3a2155164145af413d">&#9670;&#160;</a></span>ProblemIsPureSat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operations_research::sat::SatSolver::ProblemIsPureSat </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true iff the loaded problem only contains clauses. </p>
-
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00443">443</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
-
-</div>
-</div>
 <a id="a3afed23ec8289b170f0a25ec4b10dd84" name="a3afed23ec8289b170f0a25ec4b10dd84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3afed23ec8289b170f0a25ec4b10dd84">&#9670;&#160;</a></span>ProcessCurrentConflict()</h2>
 
@@ -1522,35 +1511,35 @@ template&lt;typename Output &gt; </div>
 <p>This learns the conflict, backtracks, enqueues the consequence of the learned conflict and return. When handling assumptions, this might return false without backtracking in case of ASSUMPTIONS_UNSAT. This is only exposed to allow processing a conflict detected outside normal propagation. </p>
 <p>A conflict occurred, compute a nice reason for this failure.</p>
 <p>If the failing clause only contains literal at the assumptions level, we cannot use the ComputeFirstUIPConflict() code as we might have more than one decision.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002243">Todo</a></b></dt><dd>(user): We might still want to "learn" the clause, especially if it reduces to only one literal in which case we can just fix it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002275">Todo</a></b></dt><dd>(user): We might still want to "learn" the clause, especially if it reduces to only one literal in which case we can just fix it. </dd></dl>
 <p>An empty conflict means that the problem is UNSAT.</p>
 <p>Update the activity of all the variables in the first UIP clause. Also update the activity of the last level variables expanded (and thus discarded) during the first UIP computation. Note that both sets are disjoint.</p>
 <p>Bump the clause activities. </p><dl class="section note"><dt>Note</dt><dd>the activity of the learned clause will be bumped too by AddLearnedClauseAndEnqueueUnitPropagation().</dd></dl>
 <p>Decay the activities.</p>
 <p>Hack from Glucose that seems to perform well.</p>
 <p>PB resolution. There is no point using this if the conflict and all the reasons involved in its resolution were clauses.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002244">Todo</a></b></dt><dd>(user): Note that we use the clause above to update the variable activities and not the pb conflict. Experiment. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002276">Todo</a></b></dt><dd>(user): Note that we use the clause above to update the variable activities and not the pb conflict. Experiment. </dd></dl>
 <p>Generic clause case.</p>
 <p>We have a pseudo-Boolean conflict, so we start from there.</p>
 <p>Convert the conflict into the vector&lt;LiteralWithCoeff&gt; form.</p>
 <p>Check if the learned PB conflict is just a clause: all its coefficient must be 1, and the rhs must be its size minus 1.</p>
 <p>Use the PB conflict.</p>
 <p>Continue with the normal clause flow, but use the PB conflict clause if it has a lower backjump level.</p>
-<p>The minimization functions below expect the conflict to be marked! </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002245">Todo</a></b></dt><dd>(user): This is error prone, find a better way? </dd></dl>
+<p>The minimization functions below expect the conflict to be marked! </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002277">Todo</a></b></dt><dd>(user): This is error prone, find a better way? </dd></dl>
 <p>Minimizing the conflict with binary clauses first has two advantages. First, there is no need to compute a reason for the variables eliminated this way. Second, more variables may be marked (in is_marked_) and MinimizeConflict() can take advantage of that. Because of this, the LBD of the learned conflict can change.</p>
 <p>Minimize the learned conflict.</p>
 <p>Minimize it further with binary clauses?</p>
 <dl class="section note"><dt>Note</dt><dd>on the contrary to the MinimizeConflict() above that just uses the reason graph, this minimization can change the clause LBD and even the backtracking level.</dd></dl>
 <p>We notify the decision before backtracking so that we can save the phase. The current heuristic is to try to take a trail prefix for which there is currently no conflict (hence just before the last decision was taken).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002246">Todo</a></b></dt><dd>(user): It is unclear what the best heuristic is here. Both the current trail index or the trail before the current decision perform well, but using the full trail seems slightly better even though it will contain the current conflicting literal. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002278">Todo</a></b></dt><dd>(user): It is unclear what the best heuristic is here. Both the current trail index or the trail before the current decision perform well, but using the full trail seems slightly better even though it will contain the current conflicting literal. </dd></dl>
 <p>Backtrack and add the reason to the set of learned clause.</p>
 <dl class="section note"><dt>Note</dt><dd>we need to output the learned clause before cleaning the clause database. This is because we already backtracked and some of the clauses that were needed to infer the conflict may not be "reasons" anymore and may be deleted.</dd></dl>
 <p>Because we might change the conflict with this minimization algorithm, we cannot just subsume clauses with it blindly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002247">Todo</a></b></dt><dd>(user): Either remove that algorithm or support subsumption by just checking if it is okay to do so, or doing it on the fly while computing the first UIP. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002279">Todo</a></b></dt><dd>(user): Either remove that algorithm or support subsumption by just checking if it is okay to do so, or doing it on the fly while computing the first UIP. </dd></dl>
 <p>Detach any subsumed clause. They will actually be deleted on the next clause cleanup phase.</p>
 <p>Create and attach the new learned clause.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00690">690</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00686">686</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1565,7 @@ template&lt;typename Output &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>we will only delete the clauses during the next database cleanup.</dd></dl>
 <p>We also clean the binary implication graph. Tricky: If we added the first binary clauses above, the binary graph is not in "propagated" state as it should be, so we call <a class="el" href="#a9188c70cc1096900a623a26319a1d4b8">Propagate()</a> so all the checks are happy.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01792">1792</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01790">1790</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1595,14 +1584,14 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Performs propagation of the recently enqueued elements. Mainly visible for testing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002258">Todo</a></b></dt><dd>(user): Support propagating only the "first" propagators. That can be useful for probing/in-processing, so we can control if we do only the SAT part or the full integer part... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002290">Todo</a></b></dt><dd>(user): Support propagating only the "first" propagators. That can be useful for probing/in-processing, so we can control if we do only the SAT part or the full integer part... </dd></dl>
 <p>Because we might potentially iterate often on this list below, we remove empty propagators.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002259">Todo</a></b></dt><dd>(user): This might not really be needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002291">Todo</a></b></dt><dd>(user): This might not really be needed. </dd></dl>
 <p>The idea here is to abort the inspection as soon as at least one propagation occurs so we can loop over and test again the highest priority constraint types using the new information.</p>
 <dl class="section note"><dt>Note</dt><dd>the first propagators_ should be the binary_implication_graph_ and that its <a class="el" href="#a9188c70cc1096900a623a26319a1d4b8">Propagate()</a> functions will not abort on the first propagation to be slightly more efficient.</dd></dl>
 <p>In some corner cases, we might add new constraint during propagation, which might trigger new propagator addition or some propagator to become non-empty() now.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01863">1863</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01861">1861</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1629,7 +1618,7 @@ template&lt;typename Output &gt; </div>
 <p>Corner case: all assumptions are fixed at level zero, we ignore them.</p>
 <p>Now that everything is enqueued, we propagate.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00639">639</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00635">635</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1656,7 +1645,7 @@ template&lt;typename Output &gt; </div>
 <p>If, given these assumptions, the model is UNSAT, this returns the ASSUMPTIONS_UNSAT status. INFEASIBLE is reserved for the case where the model is proven to be unsat without any assumptions.</p>
 <p>If ASSUMPTIONS_UNSAT is returned, it is possible to get a "core" of unsat assumptions by calling <a class="el" href="#a69bfff1cfcd0f24e7a9ee2b583f594ea">GetLastIncompatibleDecisions()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01097">1097</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01095">1095</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +1692,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Like Backtrack(0) but make sure the propagation is finished and return false if unsat was detected. This also removes any assumptions level. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00614">614</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00610">610</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1715,7 @@ template&lt;typename Output &gt; </div>
 <p>Paper: "Speeding Up Assumption-Based SAT", Randy Hickey and Fahiem Bacchus <a href="http://www.maxhs.org/docs/Hickey-Bacchus2019_Chapter_SpeedingUpAssumption-BasedSAT.pdf">http://www.maxhs.org/docs/Hickey-Bacchus2019_Chapter_SpeedingUpAssumption-BasedSAT.pdf</a> </p>
 <p>For assumptions and core-based search, it is really important to add as many binary clauses as possible. This is because we do not wan to miss any early core of size 2.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00622">622</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00618">618</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1737,7 @@ template&lt;typename Output &gt; </div>
 <p>Without assumption (i.e. if <a class="el" href="#ac3bdb41422d29fd811705a62ffc41877">AssumptionLevel()</a> is 0), this will revert all decisions and make sure that all the fixed literals are propagated. In presence of assumptions, this will either backtrack to the assumption level or re-enqueue any assumptions that may have been backtracked over due to conflits resolution. In both cases, the propagation is finished.</p>
 <dl class="section note"><dt>Note</dt><dd>this may prove the model to be UNSAT or ASSUMPTION_UNSAT in which case it will return false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00576">576</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00572">572</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1768,7 +1757,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Only used for debugging. Save the current assignment in debug_assignment_. The idea is that if we know that a given assignment is satisfiable, then all the learned clauses or PB constraints must be satisfiable by it. In debug mode, and after this is called, all the learned clauses are tested to satisfy this saved assignment. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00484">484</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00480">480</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1799,7 +1788,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Wrapper around the same functions in <a class="el" href="classoperations__research_1_1sat_1_1SatDecisionPolicy.html">SatDecisionPolicy</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002279">Todo</a></b></dt><dd>(user): Clean this up by making clients directly talk to <a class="el" href="classoperations__research_1_1sat_1_1SatDecisionPolicy.html">SatDecisionPolicy</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002311">Todo</a></b></dt><dd>(user): Clean this up by making clients directly talk to <a class="el" href="classoperations__research_1_1sat_1_1SatDecisionPolicy.html">SatDecisionPolicy</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00164">164</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
@@ -1822,7 +1811,7 @@ template&lt;typename Output &gt; </div>
 <p>Changes the assumption level. All the decisions below this level will be treated as assumptions by the next <a class="el" href="#a8a32f2b63a24749a0c9f6e34d068f1b0">Solve()</a>. Note that this may impact some heuristics, like the LBD value of a clause. </p>
 <p>New assumption code.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01113">1113</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01111">1111</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1849,7 +1838,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00445">445</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8h_source.html#l00444">444</a> of file <a class="el" href="sat__solver_8h_source.html">sat_solver.h</a>.</p>
 
 </div>
 </div>
@@ -1868,10 +1857,10 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Increases the number of variables of the current problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002275">Todo</a></b></dt><dd>(user): Rename to IncreaseNumVariablesTo() until we support removing variables... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002307">Todo</a></b></dt><dd>(user): Rename to IncreaseNumVariablesTo() until we support removing variables... </dd></dl>
 <p>The +1 is a bit tricky, it is because in <a class="el" href="#a070d8cce319cec13c09f0089baebf746">EnqueueDecisionAndBacktrackOnConflict()</a> we artificially enqueue the decision before checking if it is not already assigned.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00087">87</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l00085">85</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1914,7 +1903,7 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01130">1130</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01128">1128</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -1934,7 +1923,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a8a32f2b63a24749a0c9f6e34d068f1b0">Solve()</a>, but with a given time limit. Note that this will not update the <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> singleton, but only the passed object instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01125">1125</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__solver_8cc_source.html#l01123">1123</a> of file <a class="el" href="sat__solver_8cc_source.html">sat_solver.cc</a>.</p>
 
 </div>
 </div>

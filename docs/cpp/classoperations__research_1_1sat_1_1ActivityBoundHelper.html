@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Try to get more precise min/max activity of a linear constraints using at most ones from the model. This is heuristic based but should be relatively fast.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002118">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002149">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00167">167</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -183,10 +183,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002113">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002144">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
 <p>a =&gt; b same as amo(a, not(b)).</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00283">283</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00284">284</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add it.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00262">262</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00263">263</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The at most one constraint must be added before linear constraint are processed. The functions below will still works, but do nothing more than compute trivial bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00257">257</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00258">258</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -259,10 +259,10 @@ Public Member Functions</h2></td></tr>
 <p>Computes the max/min activity of a linear expression involving only Booleans.</p>
 <p>Accepts a list of (literal, coefficient). Note that all literal will be interpreted as referring to [0, 1] variables. We use the CpModelProto convention for negated literal index.</p>
 <p>If conditional is not nullptr, then conditional[i][0/1] will give the max activity if the literal at position i is false/true. This can be used to fix variables or extract enforcement literal.</p>
-<p>Important: We shouldn't have duplicates or a lit and NegatedRef(lit) appearing both.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002121">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
+<p>Important: We shouldn't have duplicates or a lit and NegatedRef(lit) appearing both. </p><dl class="section note"><dt>Note</dt><dd>the result of this function is not exact (it uses an heuristic to detect AMOs), but it does not depend on the order of the input terms, so passing an input in non-deterministic order is fine.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002152">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00194">194</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00198">198</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00199">199</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00203">203</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns true iff the given literal are in at most one relationship. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00460">460</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00467">467</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns in how many amo var or Not(var) are part of. </p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00234">234</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00238">238</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Public Member Functions</h2></td></tr>
 <p>New element.</p>
 <p>We have the partition, lets construct the spans now.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00408">408</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00415">415</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -397,13 +397,13 @@ Public Member Functions</h2></td></tr>
 <p>Computes relevant info to presolve a constraint with enforcement using at most one information.</p>
 <p>This returns false iff the enforcement list cannot be satisfied. It filters the enforcement list if some are consequences of other. It fills the given set with the literal that must be true due to the enforcement. Note that only literals or negated literal appearing in ref are filled. </p>
 <p>If a previous enforcement literal implies this one, we can skip it.</p>
-<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002115">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
+<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002146">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
 <p>If some other literal is at one in this amo, literal must be false, and so the constraint cannot be enforced.</p>
 <p>Keep this enforcement.</p>
 <p>Skip already fixed.</p>
 <p>If some other literal is at one in this amo, literal must be false.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00532">532</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00539">539</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>
@@ -441,7 +441,7 @@ Public Member Functions</h2></td></tr>
 <p>This is not supposed to happen after <a class="el" href="#ad71179e60a9659f4899d68ad8472b679">PresolveEnforcement()</a>, so we just abort in this case.</p>
 <p>Similarly, this is not supposed to happen after <a class="el" href="#ad71179e60a9659f4899d68ad8472b679">PresolveEnforcement()</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00591">591</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00598">598</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
 
 </div>
 </div>

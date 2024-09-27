@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d313a70048976e4f57cf3a3c1e1ed1" id="r_af8d313a70048976e4f57cf3a3c1e1ed1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8d313a70048976e4f57cf3a3c1e1ed1">offset</a> () const</td></tr>
 <tr class="memdesc:af8d313a70048976e4f57cf3a3c1e1ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constant offset of the objective.  <br /></td></tr>
 <tr class="separator:af8d313a70048976e4f57cf3a3c1e1ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6939a4b17caaa6f6ef4ca3e8a95a60" id="r_aae6939a4b17caaa6f6ef4ca3e8a95a60"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6939a4b17caaa6f6ef4ca3e8a95a60">num_linear_terms</a> () const</td></tr>
+<tr class="memdesc:aae6939a4b17caaa6f6ef4ca3e8a95a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of linear terms in the objective.  <br /></td></tr>
+<tr class="separator:aae6939a4b17caaa6f6ef4ca3e8a95a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08113bd53bd8503adac529aa3100b30" id="r_ae08113bd53bd8503adac529aa3100b30"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08113bd53bd8503adac529aa3100b30">num_quadratic_terms</a> () const</td></tr>
+<tr class="memdesc:ae08113bd53bd8503adac529aa3100b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of quadratic terms in the objective.  <br /></td></tr>
+<tr class="separator:ae08113bd53bd8503adac529aa3100b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6ec92911d9915dfa67765c3c9e7230" id="r_a6d6ec92911d9915dfa67765c3c9e7230"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6ec92911d9915dfa67765c3c9e7230">coefficient</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> variable) const</td></tr>
 <tr class="memdesc:a6d6ec92911d9915dfa67765c3c9e7230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the linear coefficient for the variable in the model.  <br /></td></tr>
 <tr class="separator:a6d6ec92911d9915dfa67765c3c9e7230"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +188,10 @@ Friends</h2></td></tr>
 <tr class="separator:a66580dd8c358f2f389054f3575bba6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A value type that references an objective (either primary or auxiliary) from ModelStorage. Usually this type is passed by copy. </p>
+<div class="textblock"><p>A value type that references an objective (either primary or auxiliary) from ModelStorage. Usually this type is passed by copy.</p>
+<p>This type implements <a href="https://abseil.io/docs/cpp/guides/hash">https://abseil.io/docs/cpp/guides/hash</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00041">41</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00043">43</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a680d4af95825e7b3fe4c4413b3c2bdb5" name="a680d4af95825e7b3fe4c4413b3c2bdb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a680d4af95825e7b3fe4c4413b3c2bdb5">&#9670;&#160;</a></span>IdType</h2>
@@ -200,7 +207,7 @@ Friends</h2></td></tr>
 
 <p>The type used for ids. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00044">44</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00046">46</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +282,7 @@ Friends</h2></td></tr>
 
 <p>Returns an object that refers to an auxiliary objective of the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00208">208</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00224">224</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +315,7 @@ Friends</h2></td></tr>
 
 <p>Returns the quadratic coefficient for the pair of variables in the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00161">161</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00177">177</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -337,7 +344,7 @@ Friends</h2></td></tr>
 
 <p>Returns the linear coefficient for the variable in the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00155">155</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00171">171</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +373,7 @@ Friends</h2></td></tr>
 <p>Returns the raw integer ID associated with the objective: nullopt for the primary objective, a nonnegative int64_t for an auxiliary objective.</p>
 <p>Inline function implementations </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00127">127</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00135">135</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +405,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the pair of variables has a nonzero quadratic coefficient in the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00178">178</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00194">194</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +434,7 @@ Friends</h2></td></tr>
 
 <p>Returns true if the variable has a nonzero linear coefficient in the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00171">171</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00187">187</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -455,7 +462,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the ID corresponds to the primary objective, and false if it is an auxiliary objective. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00138">138</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00146">146</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +491,7 @@ Friends</h2></td></tr>
 
 <p>Returns true if the objective is the maximization sense. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00144">144</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00152">152</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +520,65 @@ Friends</h2></td></tr>
 
 <p>Returns the name of the objective. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00146">146</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00154">154</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+
+</div>
+</div>
+<a id="aae6939a4b17caaa6f6ef4ca3e8a95a60" name="aae6939a4b17caaa6f6ef4ca3e8a95a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6939a4b17caaa6f6ef4ca3e8a95a60">&#9670;&#160;</a></span>num_linear_terms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t operations_research::math_opt::Objective::num_linear_terms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of linear terms in the objective. </p>
+
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00167">167</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+
+</div>
+</div>
+<a id="ae08113bd53bd8503adac529aa3100b30" name="ae08113bd53bd8503adac529aa3100b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08113bd53bd8503adac529aa3100b30">&#9670;&#160;</a></span>num_quadratic_terms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t operations_research::math_opt::Objective::num_quadratic_terms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of quadratic terms in the objective. </p>
+
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00163">163</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +607,7 @@ Friends</h2></td></tr>
 
 <p>Returns the constant offset of the objective. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00153">153</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00161">161</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +636,7 @@ Friends</h2></td></tr>
 
 <p>Returns an object that refers to the primary objective of the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00204">204</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00220">220</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +665,7 @@ Friends</h2></td></tr>
 
 <p>Returns the priority (lower is more important) of the objective. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00140">140</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00148">148</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +694,7 @@ Friends</h2></td></tr>
 
 <p>Returns a const-pointer to the underlying storage object for the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00136">136</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00144">144</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +742,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the strong int ID associated with the objective: nullopt for the primary objective, an AuxiliaryObjectiveId for an auxiliary objective. </p>
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00134">134</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00142">142</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +776,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00197">197</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00213">213</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +807,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00192">192</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00208">208</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +838,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the objective, as registered upon objective creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000910">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000931">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="objective_8cc_source.html#l00061">61</a> of file <a class="el" href="objective_8cc_source.html">objective.cc</a>.</p>
 
@@ -806,7 +871,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00188">188</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="objective_8h_source.html#l00204">204</a> of file <a class="el" href="objective_8h_source.html">objective.h</a>.</p>
 
 </div>
 </div>

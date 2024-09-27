@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -118,8 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a196c898a417f522728967a7a99b255d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9e079ba191daebeff738fa832239443" id="r_ae9e079ba191daebeff738fa832239443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9e079ba191daebeff738fa832239443">NextSolution</a> (int num_iterations)</td></tr>
 <tr class="separator:ae9e079ba191daebeff738fa832239443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b432dccc848e7c957cfe8e4ebb3919a" id="r_a3b432dccc848e7c957cfe8e4ebb3919a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b432dccc848e7c957cfe8e4ebb3919a">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus, int num_iterations)</td></tr>
-<tr class="separator:a3b432dccc848e7c957cfe8e4ebb3919a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130652dacbe5fae193481444dcc4354f" id="r_a130652dacbe5fae193481444dcc4354f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a130652dacbe5fae193481444dcc4354f">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus, int num_iterations)</td></tr>
+<tr class="separator:a130652dacbe5fae193481444dcc4354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c0642c4e1e79feb0ff054f2379dc4c" id="r_aa6c0642c4e1e79feb0ff054f2379dc4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6c0642c4e1e79feb0ff054f2379dc4c">NextSolution</a> (const <a class="el" href="namespaceoperations__research.html#aa389108c5a70e4fae7e14d5ffd9a7902">SubsetBoolVector</a> &amp;in_focus, int num_iterations)</td></tr>
+<tr class="separator:aa6c0642c4e1e79feb0ff054f2379dc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276460a461462ece00e2b69a4ba0cc75" id="r_a276460a461462ece00e2b69a4ba0cc75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a276460a461462ece00e2b69a4ba0cc75">SetLagrangianFactor</a> (double factor)</td></tr>
 <tr class="separator:a276460a461462ece00e2b69a4ba0cc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42888e0253e0b3b84b5ef60621edc10e" id="r_a42888e0253e0b3b84b5ef60621edc10e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42888e0253e0b3b84b5ef60621edc10e">GetLagrangianFactor</a> () const</td></tr>
@@ -133,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a888e107a346d8edd7d81f63dca373796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709d533e9ff8f8fe8a24cbd270327e6b" id="r_a709d533e9ff8f8fe8a24cbd270327e6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a709d533e9ff8f8fe8a24cbd270327e6b">GetPenaltyFactor</a> () const</td></tr>
 <tr class="separator:a709d533e9ff8f8fe8a24cbd270327e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183ea908be227f682d45c5520905c37f" id="r_a183ea908be227f682d45c5520905c37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a183ea908be227f682d45c5520905c37f">SetTabuListSize</a> (int size)</td></tr>
+<tr class="memitem:a183ea908be227f682d45c5520905c37f" id="r_a183ea908be227f682d45c5520905c37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a183ea908be227f682d45c5520905c37f">SetTabuListSize</a> (int <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>)</td></tr>
 <tr class="separator:a183ea908be227f682d45c5520905c37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3541ddd32dcc6d7f65c77e1f6747b1de" id="r_a3541ddd32dcc6d7f65c77e1f6747b1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3541ddd32dcc6d7f65c77e1f6747b1de">GetTabuListSize</a> () const</td></tr>
 <tr class="separator:a3541ddd32dcc6d7f65c77e1f6747b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +149,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 <p>Tabu behaves like a short-term memory and is the intensification part of the local search metaheuristic.</p>
 <p>F. Glover (1989) "Tabu Search – Part 1". ORSA Journal on Computing. 1 (2):190–206. doi:10.1287/ijoc.1.3.190. F. Glover (1990) "Tabu Search – Part 2". ORSA Journal on Computing. 2 (1): 4–32. doi:10.1287/ijoc.2.1.4. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00305">305</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00321">321</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94429884370880b95beb23aa7a37b555" name="a94429884370880b95beb23aa7a37b555"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94429884370880b95beb23aa7a37b555">&#9670;&#160;</a></span>GuidedTabuSearch()</h2>
@@ -172,7 +174,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00307">307</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00323">323</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +202,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00336">336</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00354">354</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +229,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00333">333</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00351">351</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +256,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00340">340</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00358">358</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +283,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00343">343</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00361">361</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -303,12 +305,12 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 <p>Initializes the Guided Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> algorithm. </p>
 <p>Guided Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00323">323</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00321">321</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
-<a id="a3b432dccc848e7c957cfe8e4ebb3919a" name="a3b432dccc848e7c957cfe8e4ebb3919a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b432dccc848e7c957cfe8e4ebb3919a">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/2]</span></h2>
+<a id="a130652dacbe5fae193481444dcc4354f" name="a130652dacbe5fae193481444dcc4354f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130652dacbe5fae193481444dcc4354f">&#9670;&#160;</a></span>NextSolution() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +318,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
         <tr>
           <td class="memname">bool operations_research::GuidedTabuSearch::NextSolution </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const SubsetIndex &gt;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -331,14 +333,35 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 <p>it is not Tabu OR decreases the actual cost (aspiration):</p>
 <p>Try to use subset in solution, if its penalized delta is good.</p>
 <p>The limit kMaxPossibleCost is ill-defined, there is always a best_subset. Is it intended?</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo</a></b></dt><dd>(user): make the cost computation incremental. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo</a></b></dt><dd>(user): make the cost computation incremental. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00367">367</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00365">365</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa6c0642c4e1e79feb0ff054f2379dc4c" name="aa6c0642c4e1e79feb0ff054f2379dc4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c0642c4e1e79feb0ff054f2379dc4c">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::GuidedTabuSearch::NextSolution </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceoperations__research.html#aa389108c5a70e4fae7e14d5ffd9a7902">SubsetBoolVector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>in_focus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num_iterations</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ae9e079ba191daebeff738fa832239443" name="ae9e079ba191daebeff738fa832239443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9e079ba191daebeff738fa832239443">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e079ba191daebeff738fa832239443">&#9670;&#160;</a></span>NextSolution() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +376,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </div><div class="memdoc">
 <p>Returns the next solution by running the Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> algorithm for maximum num_iterations iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00363">363</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00361">361</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
@@ -380,7 +403,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00335">335</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00353">353</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -406,9 +429,9 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo</a></b></dt><dd>(user): re-introduce this is the code. It was used to favor subsets with the same marginal costs but that would cover more elements. But first, see if it makes sense to compute it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo</a></b></dt><dd>(user): re-introduce this is the code. It was used to favor subsets with the same marginal costs but that would cover more elements. But first, see if it makes sense to compute it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00332">332</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00350">350</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +460,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 
 <p>Setters and getters for the Guided Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> algorithm parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00339">339</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00357">357</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +487,7 @@ problems", PhD Thesis, University of Essex, Colchester, UK, July, 1997.</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00342">342</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00360">360</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>

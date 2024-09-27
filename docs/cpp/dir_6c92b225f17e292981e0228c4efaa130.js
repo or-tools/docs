@@ -1,5 +1,7 @@
 var dir_6c92b225f17e292981e0228c4efaa130 =
 [
+    [ "dualizer.cc", "dualizer_8cc.html", "dualizer_8cc" ],
+    [ "dualizer.h", "dualizer_8h.html", "dualizer_8h" ],
     [ "general_constraint_to_mip.cc", "general__constraint__to__mip_8cc.html", "general__constraint__to__mip_8cc" ],
     [ "general_constraint_to_mip.h", "general__constraint__to__mip_8h.html", "general__constraint__to__mip_8h" ],
     [ "linear_expr_util.cc", "linear__expr__util_8cc.html", "linear__expr__util_8cc" ],

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -231,7 +231,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001593">Todo</a></b></dt><dd>(user): double-check/revisit the algo for box of variable sizes. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001611">Todo</a></b></dt><dd>(user): double-check/revisit the algo for box of variable sizes. </dd></dl>
 <p>Our algo is quadratic, so we don't want to run it on really large problems.</p>
 <p>Avoid integer overflows if the area of the boxes get comparable with INT64_MAX</p>
 <p>We found a conflict, so we can afford to run the propagator again to search for a best explanation. This is specially the case since we only want to re-run it over the items that participate in the conflict, so it is a much smaller problem.</p>

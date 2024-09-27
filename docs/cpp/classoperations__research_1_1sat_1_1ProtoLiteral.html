@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -103,6 +103,7 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ProtoLiteral.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classoperations__research_1_1sat_1_1ProtoLiteral-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">operations_research::sat::ProtoLiteral Class Reference</div></div>
 </div><!--header-->
@@ -123,16 +124,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf22dafffa57ad9fea9086e187d35efb" id="r_adf22dafffa57ad9fea9086e187d35efb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf22dafffa57ad9fea9086e187d35efb">operator!=</a> (const <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &amp;other) const</td></tr>
 <tr class="separator:adf22dafffa57ad9fea9086e187d35efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9aa4c044436d01c725670f3e4135a0" id="r_a3c9aa4c044436d01c725670f3e4135a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c9aa4c044436d01c725670f3e4135a0">Decode</a> (<a class="el" href="classoperations__research_1_1sat_1_1CpModelMapping.html">CpModelMapping</a> *, <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> *) const</td></tr>
+<tr class="memdesc:a3c9aa4c044436d01c725670f3e4135a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note you should only decode integer literals at the root level.  <br /></td></tr>
 <tr class="separator:a3c9aa4c044436d01c725670f3e4135a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a07c8ae3fbccd5bc8f52663276351cd06" id="r_a07c8ae3fbccd5bc8f52663276351cd06"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c8ae3fbccd5bc8f52663276351cd06">Encode</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>, <a class="el" href="classoperations__research_1_1sat_1_1CpModelMapping.html">CpModelMapping</a> *, <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> *)</td></tr>
 <tr class="separator:a07c8ae3fbccd5bc8f52663276351cd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a29e0874d522795776c877afe0d400592" id="r_a29e0874d522795776c877afe0d400592"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:a29e0874d522795776c877afe0d400592"><td class="memTemplItemLeft" align="right" valign="top">H&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a29e0874d522795776c877afe0d400592">AbslHashValue</a> (H h, const <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &amp;<a class="el" href="linear__model_8cc.html#a6582b538eeea909324f67bfaac0e0958">literal</a>)</td></tr>
+<tr class="separator:a29e0874d522795776c877afe0d400592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00050">50</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00054">54</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add3bf51bd11c7b9b526fbe83a7dd4178" name="add3bf51bd11c7b9b526fbe83a7dd4178"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add3bf51bd11c7b9b526fbe83a7dd4178">&#9670;&#160;</a></span>ProtoLiteral() <span class="overload">[1/2]</span></h2>
@@ -186,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00053">53</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00057">57</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +218,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00077">77</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p>Note you should only decode integer literals at the root level. </p>
+
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00078">78</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -246,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00112">112</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00113">113</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -273,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00054">54</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00058">58</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>
@@ -300,7 +310,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00060">60</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00064">64</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>
@@ -327,7 +337,41 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00057">57</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00061">61</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a29e0874d522795776c877afe0d400592" name="a29e0874d522795776c877afe0d400592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e0874d522795776c877afe0d400592">&#9670;&#160;</a></span>AbslHashValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename H &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">H AbslHashValue </td>
+          <td>(</td>
+          <td class="paramtype">H</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>literal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00066">66</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>

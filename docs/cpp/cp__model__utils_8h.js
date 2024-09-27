@@ -8,6 +8,7 @@ var cp__model__utils_8h =
     [ "ApplyToAllIntervalIndices", "cp__model__utils_8h.html#a4659306bddf893dc09c5cd493f9a1fd4", null ],
     [ "ApplyToAllLiteralIndices", "cp__model__utils_8h.html#ac103fdbdb9184cf86d2cfadf95b0dd67", null ],
     [ "ApplyToAllVariableIndices", "cp__model__utils_8h.html#af703c0ffe9861cc773696e46ccff0a5f", null ],
+    [ "CombineSeed", "cp__model__utils_8h.html#a448193df35c1e481b2ad18e0fb097d8a", null ],
     [ "ComputeInnerObjective", "cp__model__utils_8h.html#a2979162c101d957e47f1ad97155a023e", null ],
     [ "ConstraintCaseName", "cp__model__utils_8h.html#ab77c8edd75ecda9e91f2a9a02af6adca", null ],
     [ "ConvertCpModelProtoToCnf", "cp__model__utils_8h.html#a6da39a32345d2a2c18a62bb356bfd3b3", null ],

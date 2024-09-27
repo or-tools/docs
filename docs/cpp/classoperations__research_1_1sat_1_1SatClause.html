@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -158,7 +158,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is how the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> stores a clause. A clause is just a disjunction of literals. In many places, we just use vector&lt;literal&gt; to encode one. But in the critical propagation code, we use this class to remove one memory indirection. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00052">52</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00053">53</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a75b67572772c75627a4e8ad0e1b9001b" name="a75b67572772c75627a4e8ad0e1b9001b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75b67572772c75627a4e8ad0e1b9001b">&#9670;&#160;</a></span>AsSpan()</h2>
@@ -185,7 +185,7 @@ Friends</h2></td></tr>
 
 <p>Returns a Span&lt;&gt; representation of the clause. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00096">96</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00097">97</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Friends</h2></td></tr>
 
 <p>Allows for range based iteration: for (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> literal : clause) {}. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00075">75</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00076">76</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Friends</h2></td></tr>
 <p>Creates a sat clause. There must be at least 2 literals. Clause with one literal fix variable directly and are never constructed. </p><dl class="section note"><dt>Note</dt><dd>in practice, we use <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> for the clause of size 2, so this is used for size at least 3.</dd></dl>
 <p>static </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02471">2471</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02479">2479</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02515">2515</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02523">2523</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00076">76</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00077">77</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the first and second literals. These are always the watched literals if the clause is attached in the LiteralWatchers. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00080">80</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00081">81</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>We re-use the size to lazily remove clause and notify that they need to be deleted. It is why this is not called empty() to emphasis that fact. Note that we never create an initially empty clause, so there is no confusion with an infeasible model with an empty clause inside. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00072">72</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00073">73</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the clause is satisfied for the given assignment. Note that the assignment may be partial, so false does not mean that the clause can't be satisfied by completing the assignment. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02508">2508</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02516">2516</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Friends</h2></td></tr>
 
 <p>Non-sized delete because this is a tail-padded class. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00061">61</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00062">62</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the literal that was propagated to true. This only works for a clause that just propagated this literal. Otherwise, this will just returns a literal of the clause. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00086">86</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00087">87</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the reason for the last unit propagation of this clause. The preconditions are the same as for <a class="el" href="#aa1437fb5a9385db008da219bbc1fb48b">PropagatedLiteral()</a>. Note that we don't need to include the propagated literal. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00091">91</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00092">92</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ Friends</h2></td></tr>
 <dd>
 for an attached clause, removing fixed literal is okay because if any of the watched literal is assigned, then the clause is necessarily true. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02484">2484</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02492">2492</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -502,7 +502,7 @@ for an attached clause, removing fixed literal is okay because if any of the wat
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00081">81</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00082">82</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +531,7 @@ for an attached clause, removing fixed literal is okay because if any of the wat
 
 <p>Number of literals in the clause. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00066">66</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00067">67</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ for an attached clause, removing fixed literal is okay because if any of the wat
 </div><div class="memdoc">
 <p>The manager needs to permute the order of literals in the clause and call Clear()/Rewrite. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00118">118</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00119">119</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>

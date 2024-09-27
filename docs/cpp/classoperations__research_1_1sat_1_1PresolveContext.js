@@ -40,7 +40,6 @@ var classoperations__research_1_1sat_1_1PresolveContext =
     [ "FixedValue", "classoperations__research_1_1sat_1_1PresolveContext.html#a34067a2486e93d9eac27e465f9524aca", null ],
     [ "GetAffineRelation", "classoperations__research_1_1sat_1_1PresolveContext.html#ab5d4fbe94ad2402fb6bad6225b423572", null ],
     [ "GetFalseLiteral", "classoperations__research_1_1sat_1_1PresolveContext.html#aa692158541395ad5e1f53a236de60ba5", null ],
-    [ "GetIntervalRepresentative", "classoperations__research_1_1sat_1_1PresolveContext.html#a774edac772d8f1e2c890e765f759db0e", null ],
     [ "GetLiteralRepresentative", "classoperations__research_1_1sat_1_1PresolveContext.html#aa08f3a483dad1815f8d9cfe1e4976f2a", null ],
     [ "GetOrCreateAffineValueEncoding", "classoperations__research_1_1sat_1_1PresolveContext.html#aa16ac390cb27a7c227504191d332a722", null ],
     [ "GetOrCreateReifiedPrecedenceLiteral", "classoperations__research_1_1sat_1_1PresolveContext.html#af6e5eb0b8b6161a63fecc9b3c9b25bd8", null ],

@@ -8,6 +8,7 @@ var dir_a3328a0ea67a2aaa160c2783ffbaa5dc =
     [ "bitset.h", "bitset_8h.html", "bitset_8h" ],
     [ "cached_log.cc", "cached__log_8cc.html", null ],
     [ "cached_log.h", "cached__log_8h.html", "cached__log_8h" ],
+    [ "dense_set.h", "dense__set_8h.html", "dense__set_8h" ],
     [ "file_util.cc", "file__util_8cc.html", "file__util_8cc" ],
     [ "file_util.h", "file__util_8h.html", "file__util_8h" ],
     [ "filelineiter.h", "filelineiter_8h.html", "filelineiter_8h" ],

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,19 +102,22 @@ $(function(){initNavTree('constraint__violation_8h.html',''); initResizable(true
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">constraint_violation.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
 <code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dense__set_8h_source.html">ortools/util/dense_set.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
 </div>
 <p><a href="constraint__violation_8h_source.html">Go to the source code of this file.</a></p>
@@ -124,6 +127,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html">operations_research::sat::LinearIncrementalEvaluator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledConstraint.html">operations_research::sat::CompiledConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">View of a generic (non linear) constraint for the <a class="el" href="classoperations__research_1_1sat_1_1LsEvaluator.html">LsEvaluator</a>.  <a href="classoperations__research_1_1sat_1_1CompiledConstraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledConstraintWithProto.html">operations_research::sat::CompiledConstraintWithProto</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LsEvaluator.html">operations_research::sat::LsEvaluator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,14 +146,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledAllDiffConstraint.html">operations_research::sat::CompiledAllDiffConstraint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html">operations_research::sat::CompiledNoOverlapConstraint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The violation of a no_overlap is the sum of overloads over time.  <a href="classoperations__research_1_1sat_1_1CompiledNoOverlapConstraint.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html">operations_research::sat::CompiledCumulativeConstraint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The violation of a cumulative is the sum of overloads over time.  <a href="classoperations__research_1_1sat_1_1CompiledCumulativeConstraint.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1NoOverlapBetweenTwoIntervals.html">operations_research::sat::NoOverlapBetweenTwoIntervals</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html">operations_research::sat::CompiledNoOverlap2dConstraint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The violation of a no_overlap is the sum of overloads over time.  <a href="classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1CompiledReservoirConstraint.html">operations_research::sat::CompiledReservoirConstraint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -157,11 +160,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a81059e67e158faf5b55f5ac49123901d" id="r_a81059e67e158faf5b55f5ac49123901d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a81059e67e158faf5b55f5ac49123901d">operations_research::sat::ExprValue</a> (const LinearExpressionProto &amp;expr, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
-<tr class="separator:a81059e67e158faf5b55f5ac49123901d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

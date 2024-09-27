@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the left inverse of the given unit row, and stores it in unit_row_left_inverse_. The result is computed only once if leaving_row do not change, this until the next <a class="el" href="#a707f9d0bc5f56a8d7fd39c650ce19720">Invalidate()</a> call. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000591">Todo</a></b></dt><dd>(user): Refactorize if the estimated accuracy is above a threshold. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000610">Todo</a></b></dt><dd>(user): Refactorize if the estimated accuracy is above a threshold. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="update__row_8cc_source.html#l00070">70</a> of file <a class="el" href="update__row_8cc_source.html">update_row.cc</a>.</p>
 
@@ -312,12 +312,12 @@ Public Member Functions</h2></td></tr>
 <p>Computes the relevant coefficients (See GetIsRelevantBitRow() in <a class="el" href="classoperations__research_1_1glop_1_1VariablesInfo.html">VariablesInfo</a>) of the update row. The result is only computed once if leaving_row do not change, this until the next <a class="el" href="#a707f9d0bc5f56a8d7fd39c650ce19720">Invalidate()</a> call. </p>
 <p>Number of entries that ComputeUpdatesRowWise() will need to look at.</p>
 <p>Because we are about to do an expensive matrix-vector product, we make sure we drop small entries in the vector for the row-wise algorithm. We also computes its non-zeros to simplify the code below.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000592">Todo</a></b></dt><dd>(user): So far we didn't generalize the use of drop tolerances everywhere in the solver, so we make sure to not modify unit_row_left_inverse_ that is also used elsewhere. However, because of that, we will not get the exact same result depending on the algortihm used below because the ComputeUpdatesColumnWise() will still use these small entries (no complexity changes). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000611">Todo</a></b></dt><dd>(user): So far we didn't generalize the use of drop tolerances everywhere in the solver, so we make sure to not modify unit_row_left_inverse_ that is also used elsewhere. However, because of that, we will not get the exact same result depending on the algortihm used below because the ComputeUpdatesColumnWise() will still use these small entries (no complexity changes). </dd></dl>
 <p>The case of size 1 happens often enough to deserve special code.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000593">Todo</a></b></dt><dd>(user): The impact is not as high as I hopped though, so not too important. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000612">Todo</a></b></dt><dd>(user): The impact is not as high as I hopped though, so not too important. </dd></dl>
 <p>Number of entries that ComputeUpdatesColumnWise() will need to look at.</p>
 <dl class="section note"><dt>Note</dt><dd>the thresholds were chosen (more or less) from the result of the microbenchmark tests of this file in September 2013. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000594">Todo</a></b></dt><dd>(user): automate the computation of these constants at run-time? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000613">Todo</a></b></dt><dd>(user): automate the computation of these constants at run-time? </dd></dl>
 <p>We use a multiplicative factor because these entries are often widely spread in memory. There is also some overhead to each fp operations.</p>
 
 <p class="definition">Definition at line <a class="el" href="update__row_8cc_source.html#l00087">87</a> of file <a class="el" href="update__row_8cc_source.html">update_row.cc</a>.</p>
@@ -419,7 +419,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the update coefficients and non-zero positions corresponding to the last call to <a class="el" href="#a87bff95c808ef1850684ba48f3bf044f">ComputeUpdateRow()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000596">Todo</a></b></dt><dd>(user): Consider returning a packed vector of coefficient parallel to <a class="el" href="#af51fb5a64ef2a242eef9d4d3742e770f">GetNonZeroPositions()</a> instead. It should be fast to compute and iteration later should be quicker. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000615">Todo</a></b></dt><dd>(user): Consider returning a packed vector of coefficient parallel to <a class="el" href="#af51fb5a64ef2a242eef9d4d3742e770f">GetNonZeroPositions()</a> instead. It should be fast to compute and iteration later should be quicker. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="update__row_8cc_source.html#l00194">194</a> of file <a class="el" href="update__row_8cc_source.html">update_row.cc</a>.</p>
 

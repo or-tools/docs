@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -156,8 +156,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a1181732aa2f4c08e28ea32b1c7c6f256" id="r_a1181732aa2f4c08e28ea32b1c7c6f256"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
 <tr class="memitem:a1181732aa2f4c08e28ea32b1c7c6f256"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1181732aa2f4c08e28ea32b1c7c6f256">operations_research::IsIntegerWithinTolerance</a> (FloatType <a class="el" href="qp__tests_8cc.html#aa751254149244b12d0ca1539ecd5f971">x</a>, FloatType tolerance)</td></tr>
 <tr class="separator:a1181732aa2f4c08e28ea32b1c7c6f256"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a838df3808f198b2cbc781e426a601b29" id="r_a838df3808f198b2cbc781e426a601b29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a838df3808f198b2cbc781e426a601b29">operations_research::GetBestScalingOfDoublesToInt64</a> (const std::vector&lt; double &gt; &amp;<a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, int64_t max_absolute_sum, double *scaling_factor, double *<a class="el" href="sat_2lp__utils_8cc.html#a2a1a02478d02cd8e42a1afece079d4a2">max_relative_coeff_error</a>)</td></tr>
-<tr class="separator:a838df3808f198b2cbc781e426a601b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b64e33d94a43d071d6faeedf8a9305" id="r_af8b64e33d94a43d071d6faeedf8a9305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af8b64e33d94a43d071d6faeedf8a9305">operations_research::GetBestScalingOfDoublesToInt64</a> (absl::Span&lt; const double &gt; <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, int64_t max_absolute_sum, double *scaling_factor, double *<a class="el" href="sat_2lp__utils_8cc.html#a2a1a02478d02cd8e42a1afece079d4a2">max_relative_coeff_error</a>)</td></tr>
+<tr class="separator:af8b64e33d94a43d071d6faeedf8a9305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f1b86022ab6b187d9e205fc308eb39" id="r_a20f1b86022ab6b187d9e205fc308eb39"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a20f1b86022ab6b187d9e205fc308eb39">operations_research::GetBestScalingOfDoublesToInt64</a> (absl::Span&lt; const double &gt; <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, absl::Span&lt; const double &gt; lb, absl::Span&lt; const double &gt; ub, int64_t max_absolute_sum)</td></tr>
 <tr class="separator:a20f1b86022ab6b187d9e205fc308eb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf20e043696e44c2ba09e4d6ee85e74e" id="r_aaf20e043696e44c2ba09e4d6ee85e74e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aaf20e043696e44c2ba09e4d6ee85e74e">operations_research::ComputeScalingErrors</a> (absl::Span&lt; const double &gt; <a class="el" href="parser_8yy_8cc.html#a5a634cf4429798b1c921a81de8250051">input</a>, absl::Span&lt; const double &gt; lb, absl::Span&lt; const double &gt; ub, double scaling_factor, double *<a class="el" href="sat_2lp__utils_8cc.html#a2a1a02478d02cd8e42a1afece079d4a2">max_relative_coeff_error</a>, double *max_scaled_sum_error)</td></tr>
@@ -203,10 +203,10 @@ Functions</h2></td></tr>
 <div class="line">      expected, obtained, epsilon, epsilon))                              \</div>
 <div class="line">      &lt;&lt; obtained &lt;&lt; <span class="stringliteral">&quot; != expected value &quot;</span> &lt;&lt; expected                    \</div>
 <div class="line">      &lt;&lt; <span class="stringliteral">&quot; within epsilon = &quot;</span> &lt;&lt; epsilon;</div>
-<div class="ttc" id="anamespaceoperations__research_html_a4175e34e3e7f573a9dd0187b199afc24"><div class="ttname"><a href="namespaceoperations__research.html#a4175e34e3e7f573a9dd0187b199afc24">operations_research::AreWithinAbsoluteOrRelativeTolerances</a></div><div class="ttdeci">bool AreWithinAbsoluteOrRelativeTolerances(FloatType x, FloatType y, FloatType relative_tolerance, FloatType absolute_tolerance)</div><div class="ttdef"><b>Definition</b> <a href="fp__utils_8h_source.html#l00125">fp_utils.h:125</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_html_a4175e34e3e7f573a9dd0187b199afc24"><div class="ttname"><a href="namespaceoperations__research.html#a4175e34e3e7f573a9dd0187b199afc24">operations_research::AreWithinAbsoluteOrRelativeTolerances</a></div><div class="ttdeci">bool AreWithinAbsoluteOrRelativeTolerances(FloatType x, FloatType y, FloatType relative_tolerance, FloatType absolute_tolerance)</div><div class="ttdef"><b>Definition</b> <a href="fp__utils_8h_source.html#l00126">fp_utils.h:126</a></div></div>
 </div><!-- fragment --><p>Handy alternatives to EXPECT_NEAR(), using relative and absolute tolerance instead of relative tolerance only, and with a proper support for infinity. </p>
 
-<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00174">174</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00175">175</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Functions</h2></td></tr>
 <div class="line">      &lt;&lt; obtained &lt;&lt; <span class="stringliteral">&quot; == expected value &quot;</span> &lt;&lt; expected                     \</div>
 <div class="line">      &lt;&lt; <span class="stringliteral">&quot; within epsilon = &quot;</span> &lt;&lt; epsilon;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00180">180</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00181">181</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
 
 </div>
 </div>

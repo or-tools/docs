@@ -6,6 +6,8 @@ var sparse__containers_8h =
     [ "LinearConstraintBasisToProto", "sparse__containers_8h.html#a8abcb7751279d6be7777d6a95087c0f1", null ],
     [ "LinearConstraintValuesFromProto", "sparse__containers_8h.html#a41c5a2411793d630d76351e83fa7f22a", null ],
     [ "LinearConstraintValuesToProto", "sparse__containers_8h.html#a36ff904fd1095b6c8588e2e7d25ccb2d", null ],
+    [ "QuadraticConstraintValuesFromProto", "sparse__containers_8h.html#a3d8a85f90347da97a0201fc474083eb0", null ],
+    [ "QuadraticConstraintValuesToProto", "sparse__containers_8h.html#aa7a237ed24686ac493b31ff8bdc7f887", null ],
     [ "VariableBasisFromProto", "sparse__containers_8h.html#ac5e18dd898517136444a5f6ec986102f", null ],
     [ "VariableBasisToProto", "sparse__containers_8h.html#a67a72267ba3c5cb04de3bcdcff15014d", null ],
     [ "VariableValuesFromProto", "sparse__containers_8h.html#a62b0640d4793cf31886de2a8956254cf", null ],

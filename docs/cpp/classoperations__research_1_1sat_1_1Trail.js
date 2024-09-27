@@ -25,7 +25,7 @@ var classoperations__research_1_1sat_1_1Trail =
     [ "NumVariables", "classoperations__research_1_1sat_1_1Trail.html#a267d011e386823c1c35777e7bb734896", null ],
     [ "operator=", "classoperations__research_1_1sat_1_1Trail.html#ab7efdd6d4d595708cf61f253c341f243", null ],
     [ "operator[]", "classoperations__research_1_1sat_1_1Trail.html#a3babe274f18efd551f20dc34905f74d9", null ],
-    [ "Reason", "classoperations__research_1_1sat_1_1Trail.html#a0f498f73dd7e8af8c779b19e8fbe7b87", null ],
+    [ "Reason", "classoperations__research_1_1sat_1_1Trail.html#a75021b0f5fa20444777d9d91b840e3ec", null ],
     [ "ReferenceVarWithSameReason", "classoperations__research_1_1sat_1_1Trail.html#a06ccb0196f95b00f319e76c0ec52754b", null ],
     [ "RegisterDebugChecker", "classoperations__research_1_1sat_1_1Trail.html#a7dfe16ee09d1bac2462db9b958d82647", null ],
     [ "RegisterPropagator", "classoperations__research_1_1sat_1_1Trail.html#aba6281f73e9164f603cf593db60da3ef", null ],

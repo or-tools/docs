@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,7 +117,9 @@ Inheritance diagram for operations_research::sat::SubSolver:</div>
   <map id="operations_5Fresearch::sat::SubSolver_map" name="operations_5Fresearch::sat::SubSolver_map">
 <area href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html" alt="operations_research::sat::FeasibilityJumpSolver" shape="rect" coords="0,56,332,80"/>
 <area href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html" alt="operations_research::sat::NeighborhoodGeneratorHelper" shape="rect" coords="342,56,674,80"/>
-<area href="classoperations__research_1_1sat_1_1SynchronizationPoint.html" title="A simple wrapper to add a synchronization point in the list of subsolvers." alt="operations_research::sat::SynchronizationPoint" shape="rect" coords="684,56,1016,80"/>
+<area href="classoperations__research_1_1sat_1_1ObjectiveShavingSolver.html" alt="operations_research::sat::ObjectiveShavingSolver" shape="rect" coords="684,56,1016,80"/>
+<area href="classoperations__research_1_1sat_1_1SynchronizationPoint.html" title="A simple wrapper to add a synchronization point in the list of subsolvers." alt="operations_research::sat::SynchronizationPoint" shape="rect" coords="1026,56,1358,80"/>
+<area href="classoperations__research_1_1sat_1_1VariablesShavingSolver.html" alt="operations_research::sat::VariablesShavingSolver" shape="rect" coords="1368,56,1700,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -353,7 +355,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002319">Todo</a></b></dt><dd>(user): remove trailing "\n" from ValueAsString(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002352">Todo</a></b></dt><dd>(user): remove trailing "\n" from ValueAsString(). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="subsolver_8h_source.html#l00123">123</a> of file <a class="el" href="subsolver_8h_source.html">subsolver.h</a>.</p>
 
@@ -382,10 +384,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a task to run. The task_id is just an ever increasing counter that correspond to the number of total calls to <a class="el" href="#a68765bc7ed07ce93ffeddbe61ad40d65">GenerateTask()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002317">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002350">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
 <p>This is only called by the main thread. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#adc255845d619b5cf9077d19faecb8762">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#abe2306fcdd142900312b26803df321dc">operations_research::sat::NeighborhoodGeneratorHelper</a>, and <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#a904115b90f31413f230bb6c663496976">operations_research::sat::SynchronizationPoint</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#adc255845d619b5cf9077d19faecb8762">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#abe2306fcdd142900312b26803df321dc">operations_research::sat::NeighborhoodGeneratorHelper</a>, <a class="el" href="classoperations__research_1_1sat_1_1ObjectiveShavingSolver.html#ae17a592e3035030d324cb0310cb93143">operations_research::sat::ObjectiveShavingSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#a904115b90f31413f230bb6c663496976">operations_research::sat::SynchronizationPoint</a>, and <a class="el" href="classoperations__research_1_1sat_1_1VariablesShavingSolver.html#a3cc8e4b12bc90a59de277d5668024754">operations_research::sat::VariablesShavingSolver</a>.</p>
 
 </div>
 </div>
@@ -476,7 +478,7 @@ Public Member Functions</h2></td></tr>
 <p>Note(user): The intended implementation for determinism is that tasks update asynchronously (and so non-deterministically) global "shared" classes, but this global state is incorporated by the Subsolver only when <a class="el" href="#af8c06db9a9bd5343d209963483b5f3e8">Synchronize()</a> is called.</p>
 <p>This is only called by the main thread in Subsolver creation order. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#a761ea8a79d15bff03bbe72b89f325b47">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a83668c50ed54cfcd6b559374579eeca7">operations_research::sat::NeighborhoodGeneratorHelper</a>, and <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#ab3600f90b27766a9e030bb40835f5c96">operations_research::sat::SynchronizationPoint</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#a761ea8a79d15bff03bbe72b89f325b47">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a83668c50ed54cfcd6b559374579eeca7">operations_research::sat::NeighborhoodGeneratorHelper</a>, <a class="el" href="classoperations__research_1_1sat_1_1ObjectiveShavingSolver.html#a7885d03789e15398197965ce723c3d59">operations_research::sat::ObjectiveShavingSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#ab3600f90b27766a9e030bb40835f5c96">operations_research::sat::SynchronizationPoint</a>, and <a class="el" href="classoperations__research_1_1sat_1_1VariablesShavingSolver.html#a47556b3f62e73d770547fc48f36ab420">operations_research::sat::VariablesShavingSolver</a>.</p>
 
 </div>
 </div>
@@ -504,7 +506,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true iff <a class="el" href="#a68765bc7ed07ce93ffeddbe61ad40d65">GenerateTask()</a> can be called. This is only called by the main thread in a sequential fashion. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#a2f729d9c934b655f534007cefbd95a47">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aeb4a3ff472c4d07e673cc9bd221a1801">operations_research::sat::NeighborhoodGeneratorHelper</a>, and <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#aef87d87f3fdc0ed8015e4f90e2af9061">operations_research::sat::SynchronizationPoint</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html#a2f729d9c934b655f534007cefbd95a47">operations_research::sat::FeasibilityJumpSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aeb4a3ff472c4d07e673cc9bd221a1801">operations_research::sat::NeighborhoodGeneratorHelper</a>, <a class="el" href="classoperations__research_1_1sat_1_1ObjectiveShavingSolver.html#ada5bd6eacde4e66b1a6c72a94b8b4a00">operations_research::sat::ObjectiveShavingSolver</a>, <a class="el" href="classoperations__research_1_1sat_1_1SynchronizationPoint.html#aef87d87f3fdc0ed8015e4f90e2af9061">operations_research::sat::SynchronizationPoint</a>, and <a class="el" href="classoperations__research_1_1sat_1_1VariablesShavingSolver.html#a3820e73bfc94bc900468e77c026621c1">operations_research::sat::VariablesShavingSolver</a>.</p>
 
 </div>
 </div>
@@ -530,7 +532,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002318">Todo</a></b></dt><dd>(user): remove trailing "\n" from ValueAsString() or just build the table line directly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002351">Todo</a></b></dt><dd>(user): remove trailing "\n" from ValueAsString() or just build the table line directly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="subsolver_8h_source.html#l00115">115</a> of file <a class="el" href="subsolver_8h_source.html">subsolver.h</a>.</p>
 

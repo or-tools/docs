@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea832eddec0e79fe6b428d8241905d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2af446e741c24d847d108ffabcc4887" id="r_ad2af446e741c24d847d108ffabcc4887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2af446e741c24d847d108ffabcc4887">~DratProofHandler</a> ()=default</td></tr>
 <tr class="separator:ad2af446e741c24d847d108ffabcc4887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a024232f8972a7dcb6cbf91ec8fe36fb0" id="r_a024232f8972a7dcb6cbf91ec8fe36fb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a024232f8972a7dcb6cbf91ec8fe36fb0">ApplyMapping</a> (const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</td></tr>
-<tr class="separator:a024232f8972a7dcb6cbf91ec8fe36fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceaa4570135a1216539fccb736088ca" id="r_a8ceaa4570135a1216539fccb736088ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ceaa4570135a1216539fccb736088ca">ApplyMapping</a> (const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</td></tr>
+<tr class="separator:a8ceaa4570135a1216539fccb736088ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad908319a5f675d11b62a215de112a12b" id="r_ad908319a5f675d11b62a215de112a12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad908319a5f675d11b62a215de112a12b">SetNumVariables</a> (int num_variables)</td></tr>
 <tr class="memdesc:ad908319a5f675d11b62a215de112a12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This need to be called when new variables are created.  <br /></td></tr>
 <tr class="separator:ad908319a5f675d11b62a215de112a12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +231,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Writes a new clause to the DRAT output. The output clause is sorted so that newer variables always comes first. This is needed because in the DRAT format, the clause is checked for the RAT property with only its first literal. Must not be called after <a class="el" href="#a25591b74f1390b569aab41955fa133cb">Check()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00080">80</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00081">81</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00070">70</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00071">71</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>
@@ -270,12 +270,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds a clause of the UNSAT problem. This must be called before any call to <a class="el" href="#abbd38da4cb95571c1e095f3a29a7bf0d">AddClause()</a> or <a class="el" href="#acb650459902c5ff95cc31f43f73e2fd1">DeleteClause()</a>, in order to be able to check the DRAT proof with the <a class="el" href="#a25591b74f1390b569aab41955fa133cb">Check()</a> method when it is complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00074">74</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00075">75</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>
-<a id="a024232f8972a7dcb6cbf91ec8fe36fb0" name="a024232f8972a7dcb6cbf91ec8fe36fb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a024232f8972a7dcb6cbf91ec8fe36fb0">&#9670;&#160;</a></span>ApplyMapping()</h2>
+<a id="a8ceaa4570135a1216539fccb736088ca" name="a8ceaa4570135a1216539fccb736088ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ceaa4570135a1216539fccb736088ca">&#9670;&#160;</a></span>ApplyMapping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,13 +283,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::DratProofHandler::ApplyMapping </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>During the presolve step, variable get deleted and the set of non-deleted variable is remaped in a dense set. This allows to keep track of that and always output the DRAT clauses in term of the original variables. Must be called before adding or deleting clauses <a class="el" href="#abbd38da4cb95571c1e095f3a29a7bf0d">AddClause()</a> or <a class="el" href="#acb650459902c5ff95cc31f43f73e2fd1">DeleteClause()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001633">Todo</a></b></dt><dd>(user): This is exactly the same mecanism as in the <a class="el" href="classoperations__research_1_1sat_1_1SatPostsolver.html">SatPostsolver</a> class. Factor out the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001653">Todo</a></b></dt><dd>(user): This is exactly the same mecanism as in the <a class="el" href="classoperations__research_1_1sat_1_1SatPostsolver.html">SatPostsolver</a> class. Factor out the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00046">46</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
@@ -313,7 +313,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>no new clause must be added or deleted after this method has been called. </dd></dl>
 <p>The empty clause is not explicitly added by the solver.</p>
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00100">100</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00101">101</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <p>Writes a "deletion" information about a clause that has been added before to the DRAT output. Note that it is also possible to delete a clause from the problem. Must not be called after <a class="el" href="#a25591b74f1390b569aab41955fa133cb">Check()</a>.</p>
 <p>Because of a limitation a the DRAT-trim tool, it seems the order of the literals during addition and deletion should be EXACTLY the same. Because of this we get warnings for problem clauses. </p>
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00090">90</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00091">91</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Public Member Functions</h2></td></tr>
 
 <p>This need to be called when new variables are created. </p>
 
-<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00063">63</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drat__proof__handler_8cc_source.html#l00064">64</a> of file <a class="el" href="drat__proof__handler_8cc_source.html">drat_proof_handler.cc</a>.</p>
 
 </div>
 </div>

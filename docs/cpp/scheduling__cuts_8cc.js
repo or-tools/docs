@@ -10,9 +10,9 @@ var scheduling__cuts_8cc =
     [ "CreateNoOverlapCompletionTimeCutGenerator", "scheduling__cuts_8cc.html#a8bb41d6a99bb282019a1a7efc6250ce5", null ],
     [ "CreateNoOverlapEnergyCutGenerator", "scheduling__cuts_8cc.html#ab20782292f65eff3a95731906141a718", null ],
     [ "CreateNoOverlapPrecedenceCutGenerator", "scheduling__cuts_8cc.html#abe41a207e47ea846654b9cb973c0b4b5", null ],
-    [ "GenerateCompletionTimeCutsWithEnergy", "scheduling__cuts_8cc.html#a40a7dc0d395ce5d73a04705001e71627", null ],
-    [ "GenerateCumulativeEnergeticCuts", "scheduling__cuts_8cc.html#a5639ced88667030a20e68a36dc849a43", null ],
-    [ "GenerateCumulativeEnergeticCutsWithMakespanAndFixedCapacity", "scheduling__cuts_8cc.html#a6517c71e66173c1ac5c27bad82353081", null ],
-    [ "GenerateCutsBetweenPairOfNonOverlappingTasks", "scheduling__cuts_8cc.html#a665ab2ec44ab925efdddcba815b99708", null ],
+    [ "GenerateCompletionTimeCutsWithEnergy", "scheduling__cuts_8cc.html#a0f8cabd3d98b36018d409338a6875acc", null ],
+    [ "GenerateCumulativeEnergeticCuts", "scheduling__cuts_8cc.html#ad9f2b16f4c1689aa6e197a46cb009320", null ],
+    [ "GenerateCumulativeEnergeticCutsWithMakespanAndFixedCapacity", "scheduling__cuts_8cc.html#a79c07c2911bf5d9a1225cd3789ff0499", null ],
+    [ "GenerateCutsBetweenPairOfNonOverlappingTasks", "scheduling__cuts_8cc.html#a24e2846c953a0da80fa787daddb78be7", null ],
     [ "GenerateShortCompletionTimeCutsWithExactBound", "scheduling__cuts_8cc.html#a53c4d8406e1afd37e5a99ed333207f32", null ]
 ];

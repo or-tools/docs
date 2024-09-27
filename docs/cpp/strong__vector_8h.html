@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,104 +102,28 @@ $(function(){initNavTree('strong__vector_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">strong_vector.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &lt;initializer_list&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="int__type_8h_source.html">ortools/base/int_type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="macros_8h_source.html">ortools/base/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__int_8h_source.html">ortools/base/strong_int.h</a>&quot;</code><br />
 </div>
 <p><a href="strong__vector_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt; IntType, T, Alloc &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">STL vector ---------------------------------------------------------------&mdash;.  <a href="classabsl_1_1StrongVector.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt; IntType, NativeType, Alloc &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceabsl.html">absl</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil__intops.html">util_intops</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aad82ec1ec5ab981e45a9f406c2574017" id="r_aad82ec1ec5ab981e45a9f406c2574017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad82ec1ec5ab981e45a9f406c2574017">OR_TOOLS_BASE_STRONG_VECTOR_H_</a></td></tr>
-<tr class="separator:aad82ec1ec5ab981e45a9f406c2574017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aeeb2d4a0b8035603af696a5c1a73d100" id="r_aeeb2d4a0b8035603af696a5c1a73d100"><td class="memItemLeft" align="right" valign="top">*vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb2d4a0b8035603af696a5c1a73d100">begin</a> ()+0)</td></tr>
-<tr class="separator:aeeb2d4a0b8035603af696a5c1a73d100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aad82ec1ec5ab981e45a9f406c2574017" name="aad82ec1ec5ab981e45a9f406c2574017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad82ec1ec5ab981e45a9f406c2574017">&#9670;&#160;</a></span>OR_TOOLS_BASE_STRONG_VECTOR_H_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OR_TOOLS_BASE_STRONG_VECTOR_H_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="strong__vector_8h_source.html#l00059">59</a> of file <a class="el" href="strong__vector_8h_source.html">strong_vector.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aeeb2d4a0b8035603af696a5c1a73d100" name="aeeb2d4a0b8035603af696a5c1a73d100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeb2d4a0b8035603af696a5c1a73d100">&#9670;&#160;</a></span>begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">*vec begin </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file provides the StrongVector container that wraps around the STL std::vector. The wrapper restricts indexing to a pre-specified type-safe integer type or IntType (see <a class="el" href="int__type_8h.html">int_type.h</a>). It prevents accidental indexing by different "logical" integer-like types (e.g. another IntType) or native integer types. The wrapper is useful as C++ and the standard template library allows the user to mix "logical" integral indices that might have a different role.</p>
-<p>The container can only be indexed by an instance of an IntType class, which can be declared as: </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(IntTypeName, IntTypeValueType);</div>
-<div class="ttc" id="aint__type_8h_html_a38b1a87de73c7c9bc9ff2bd0aa06536a"><div class="ttname"><a href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a></div><div class="ttdeci">#define DEFINE_INT_TYPE(int_type_name, value_type)</div><div class="ttdef"><b>Definition</b> <a href="int__type_8h_source.html#l00167">int_type.h:167</a></div></div>
-</div><!-- fragment --><p> where IntTypeName is the desired name for the "logical" integer-like type and the ValueType is a supported native integer type such as int or uint64_t (see <a class="el" href="int__type_8h.html">int_type.h</a> for details).</p>
-<p>The wrapper exposes all public methods of STL vector and behaves mostly as pass-through. The only method modified to ensure type-safety is the operator [] and the at() method.</p>
-<p>EXAMPLES -----------------------------------------------------------------&mdash; </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(PhysicalChildIndex, int32_t);</div>
-<div class="line"><a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;PhysicalChildIndex, ChildStats*&gt;</a> vec;</div>
-<div class="line"> </div>
-<div class="line">PhysicalChildIndex physical_index;</div>
-<div class="line">vec[physical_index] = ...;        &lt;-- <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> type match: compiles properly.</div>
-<div class="line">vec.at(physical_index) = ...;     &lt;-- <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> type match: compiles properly.</div>
-<div class="line"> </div>
-<div class="line">int32_t physical_index;</div>
-<div class="line">vec[physical_index] = ...;        &lt;-- fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile.</div>
-<div class="line">vec.at(physical_index) = ...;     &lt;-- fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile.</div>
-<div class="line"> </div>
-<div class="line">DEFINE_INT_TYPE(LogicalChildIndex, int32_t);</div>
-<div class="line">int32_t logical_index;</div>
-<div class="line">vec[logical_index] = ...;        &lt;-- fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile.</div>
-<div class="line">vec.at(logical_index) = ...;     &lt;-- fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile.</div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html"><div class="ttname"><a href="classabsl_1_1StrongVector.html">absl::StrongVector</a></div><div class="ttdoc">STL vector ---------------------------------------------------------------—.</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00076">strong_vector.h:76</a></div></div>
-<div class="ttc" id="alocal__search_8cc_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition</b> <a href="local__search_8cc_source.html#l02838">local_search.cc:2838</a></div></div>
-<div class="ttc" id="aone__tree__lower__bound_8h_html_a717d5dae07519577a5ed09ac24a4708b"><div class="ttname"><a href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a></div><div class="ttdeci">trees with all degrees equal to</div><div class="ttdef"><b>Definition</b> <a href="one__tree__lower__bound_8h_source.html#l00034">one_tree_lower_bound.h:34</a></div></div>
-</div><!-- fragment --><p> NB: Iterator arithmetic is not allowed as the iterators are not wrapped themselves. Therefore, the following caveat is possible: </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

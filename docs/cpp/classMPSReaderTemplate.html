@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -134,7 +134,7 @@ class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache L
 <p>For example: <code> NAME TESTPROB ROWS N COST L LIM1 G LIM2 E MYEQN COLUMNS XONE COST 1 LIM1 1 XONE LIM2 1 YTWO COST 4 LIM1 1 YTWO MYEQN -1 ZTHREE COST 9 LIM2 1 ZTHREE MYEQN 1 RHS RHS1 LIM1 5 LIM2 10 RHS1 MYEQN 7 BOUNDS UP BND1 XONE 4 LO BND1 YTWO -1 UP BND1 YTWO 1 ENDATA </code></p>
 <dl class="section note"><dt>Note</dt><dd>the example, and the previous paragraph, mention that data must start at given columns in the text. This is commonly referred to as 'fixed' (width) format. In this version of the format, variable and constraint names can contain white space, but they are limited to a maximum width of eight characters, and each <code>section</code> marker must start at column 1.</dd></dl>
 <p>A common alternative is the so-called <code>free</code> format; where names can have (in principle) arbitrary length, but no white space, and where each data or section line can start with or without white space. In both cases the number of fields in each line remain unchanged. This implementation supports both <code>fixed</code> and <code>free</code> (width) format.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo</a></b></dt><dd>(b/284163180): The current behavior is that in free format header lines do not start with white space, and data lines must start with at least one white space.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000875">Todo</a></b></dt><dd>(b/284163180): The current behavior is that in free format header lines do not start with white space, and data lines must start with at least one white space.</dd></dl>
 <p>Although there is no <code>one</code> format (as many solvers have expanded it over time to support their own generalizations to MIP; i.e. Mixed Integer (Linear) Programming; most support the sections shown in the previous example.</p>
 <p>In what follows, we describe the format and requirements for each of the supported sections. Note that sections must appear in the order in this description, and that optional sections can be skipped altogether, but if they do appear, the must do so in the order in this description.</p>
 <dl class="section note"><dt>Note</dt><dd>variables and constraints are declared in the order in which they appear in the file. Lines whose first character is '*' are considered comments and ignored; empty lines are also ignored.</dd></dl>
@@ -165,7 +165,7 @@ class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache L
 <p>/ Represents a single line of an MPS file (or string), and its corresponding / fields. class MPSLineInfo { public: / Creates an <code>MPSLineInfo</code> for <code>line</code>, which should outlive this object. If / the line is a comment line, does not split the line into fields. Returns / InvalidArgumentError if: / * <code>free_form == false</code> and <code>line</code> contains a forbidden character ('\t') / after stripping trailing whitespace, / * <code>free_form == false</code> and <code>line</code> is not in fixed format, or / * if when splitting the line into fields too many fields are detected. static absl::StatusOr&lt;MPSLineInfo&gt; Create(int64_t line_num, bool free_form,
                                             absl::string_view line);</p>
 <p>/ Returns a view of the line. absl::string_view GetLine() const { return line_; }</p>
-<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000857">Todo</a></b></dt><dd>(b/284163180): Fix handling of sections and data in <code>free_form</code>. / Returns true if the line defines a new section. bool IsNewSection() const { return line_[0] != '\0' &amp;&amp; line_[0] != ' '; }</dd></dl>
+<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000876">Todo</a></b></dt><dd>(b/284163180): Fix handling of sections and data in <code>free_form</code>. / Returns true if the line defines a new section. bool IsNewSection() const { return line_[0] != '\0' &amp;&amp; line_[0] != ' '; }</dd></dl>
 <p>/ Returns the number of fields in the line. What constitutes a 'field' / depends on the format (fixed or free) used at creation time. See the / previous description of MPS fixed and free formats for more details. int GetFieldsSize() const { return fields_.size(); }</p>
 <p>/ Returns the word starting at position 0 in the line. If the line is empty, / or if the line starts with a space, returns <code>""</code>. absl::string_view GetFirstWord() const;</p>
 <p>/ Returns true if the line contains a comment (starting with '*') or / if it is a blank line. bool IsCommentOrBlank() const;</p>
@@ -234,7 +234,7 @@ template&lt;class DataWrapper &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000862">Todo</a></b></dt><dd>(user): Support 'SI' (semi integer). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000881">Todo</a></b></dt><dd>(user): Support 'SI' (semi integer). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mps__reader__template_8h_source.html#l01144">1144</a> of file <a class="el" href="mps__reader__template_8h_source.html">mps_reader_template.h</a>.</p>
 

@@ -96,7 +96,7 @@ var namespaceoperations__research_1_1glop =
     [ "Index", "namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57", null ],
     [ "KahanSum", "namespaceoperations__research_1_1glop.html#a451faba66f544c02438a3ce062b69900", null ],
     [ "RowIndexVector", "namespaceoperations__research_1_1glop.html#a14b434d754a6be925d1115a07fae158f", null ],
-    [ "RowMajorSparseMatrix", "namespaceoperations__research_1_1glop.html#a1e5aec5ee10f1a37d89a9d930211c545", null ],
+    [ "RowMajorSparseMatrix", "namespaceoperations__research_1_1glop.html#a7c62a502aa5dca576a27f97664c2fd4f", null ],
     [ "RowMapping", "namespaceoperations__research_1_1glop.html#aa676a28a993a41d8b68479df24cd03ad", null ],
     [ "RowPermutation", "namespaceoperations__research_1_1glop.html#a393839f536c132b5dd2f2d2f53098096", null ],
     [ "RowToColMapping", "namespaceoperations__research_1_1glop.html#a0e49ecefcdcb381bc968c7c9941028b3", null ],

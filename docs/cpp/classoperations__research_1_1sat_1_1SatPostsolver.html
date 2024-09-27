@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -122,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87c0ac13adffe41e8a60811c45ab4bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad351af493e5b70fc12534bc0806cc444" id="r_ad351af493e5b70fc12534bc0806cc444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad351af493e5b70fc12534bc0806cc444">FixVariable</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> <a class="el" href="qp__tests_8cc.html#aa751254149244b12d0ca1539ecd5f971">x</a>)</td></tr>
 <tr class="separator:ad351af493e5b70fc12534bc0806cc444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7acf01a5d390a61cb0cf78765cc284d1" id="r_a7acf01a5d390a61cb0cf78765cc284d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7acf01a5d390a61cb0cf78765cc284d1">ApplyMapping</a> (const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</td></tr>
-<tr class="separator:a7acf01a5d390a61cb0cf78765cc284d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6183619d12d1709cfe94d8c33f8919b5" id="r_a6183619d12d1709cfe94d8c33f8919b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6183619d12d1709cfe94d8c33f8919b5">ApplyMapping</a> (const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</td></tr>
+<tr class="separator:a6183619d12d1709cfe94d8c33f8919b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93f48f967feffb48451bd7b4bf022f8" id="r_ab93f48f967feffb48451bd7b4bf022f8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93f48f967feffb48451bd7b4bf022f8">ExtractAndPostsolveSolution</a> (const <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> &amp;solver)</td></tr>
 <tr class="separator:ab93f48f967feffb48451bd7b4bf022f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572087bb791cbfcb082e327d09e0fadb" id="r_a572087bb791cbfcb082e327d09e0fadb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a572087bb791cbfcb082e327d09e0fadb">PostsolveSolution</a> (const std::vector&lt; bool &gt; &amp;<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
@@ -220,8 +220,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7acf01a5d390a61cb0cf78765cc284d1" name="a7acf01a5d390a61cb0cf78765cc284d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7acf01a5d390a61cb0cf78765cc284d1">&#9670;&#160;</a></span>ApplyMapping()</h2>
+<a id="a6183619d12d1709cfe94d8c33f8919b5" name="a6183619d12d1709cfe94d8c33f8919b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6183619d12d1709cfe94d8c33f8919b5">&#9670;&#160;</a></span>ApplyMapping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SatPostsolver::ApplyMapping </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; BooleanVariable, BooleanVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002313">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot juste use absl::Span&lt;Literal&gt; for instance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002346">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot juste use absl::Span&lt;Literal&gt; for instance. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00090">90</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
@@ -315,7 +315,7 @@ Public Member Functions</h2></td></tr>
 <p>Extracts the current assignment of the given solver and postsolve it.</p>
 <p>Node(fdid): This can currently be called only once (but this is easy to change since only some CHECK will fail). </p>
 
-<p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00140">140</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00141">141</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tells the postsolver that the given literal must be true in any solution. We currently check that the variable is not already fixed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002312">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002345">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00068">68</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 
@@ -408,7 +408,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00151">151</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00152">152</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 
 </div>
 </div>

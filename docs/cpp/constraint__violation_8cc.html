@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,9 +113,11 @@ $(function(){initNavTree('constraint__violation_8cc.html',''); initResizable(tru
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/algorithm/container.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
@@ -125,6 +127,7 @@ $(function(){initNavTree('constraint__violation_8cc.html',''); initResizable(tru
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dense__set_8h_source.html">ortools/util/dense_set.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
 </div>
@@ -146,14 +149,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a81059e67e158faf5b55f5ac49123901d" id="r_a81059e67e158faf5b55f5ac49123901d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a81059e67e158faf5b55f5ac49123901d">operations_research::sat::ExprValue</a> (const LinearExpressionProto &amp;expr, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
-<tr class="separator:a81059e67e158faf5b55f5ac49123901d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec52ec0d052711bb63e28af8124e0143" id="r_aec52ec0d052711bb63e28af8124e0143"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aec52ec0d052711bb63e28af8124e0143">operations_research::sat::ExprMin</a> (const LinearExpressionProto &amp;expr, const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:aec52ec0d052711bb63e28af8124e0143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2deae97b443814bd1392975f521649d5" id="r_a2deae97b443814bd1392975f521649d5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2deae97b443814bd1392975f521649d5">operations_research::sat::ExprMax</a> (const LinearExpressionProto &amp;expr, const CpModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
-<tr class="separator:a2deae97b443814bd1392975f521649d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38dc40dfd6c2b82ae958528bb7d9ba8c" id="r_a38dc40dfd6c2b82ae958528bb7d9ba8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a38dc40dfd6c2b82ae958528bb7d9ba8c">operations_research::sat::LiteralValue</a> (int <a class="el" href="linear__model_8cc.html#a2c015641fdf48f9e1627e4607b49195c">lit</a>, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
-<tr class="separator:a38dc40dfd6c2b82ae958528bb7d9ba8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2248f26fb2b8d0a4b25994f904c80150" id="r_a2248f26fb2b8d0a4b25994f904c80150"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a2248f26fb2b8d0a4b25994f904c80150">operations_research::sat::OverlapOfTwoIntervals</a> (const ConstraintProto &amp;interval1, const ConstraintProto &amp;interval2, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
+<tr class="memdesc:a2248f26fb2b8d0a4b25994f904c80150"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html">CompiledNoOverlap2dConstraint</a> --&mdash;  <br /></td></tr>
+<tr class="separator:a2248f26fb2b8d0a4b25994f904c80150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9543ecb1cf6d394e2919cedde21cf6ed" id="r_a9543ecb1cf6d394e2919cedde21cf6ed"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9543ecb1cf6d394e2919cedde21cf6ed">operations_research::sat::NoOverlapMinRepairDistance</a> (const ConstraintProto &amp;interval1, const ConstraintProto &amp;interval2, absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
+<tr class="separator:a9543ecb1cf6d394e2919cedde21cf6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe5bbe785cc30e5861b5e0e161a998c" id="r_a1fe5bbe785cc30e5861b5e0e161a998c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1fe5bbe785cc30e5861b5e0e161a998c">operations_research::sat::AddCircuitFlowConstraints</a> (<a class="el" href="classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html">LinearIncrementalEvaluator</a> &amp;linear_evaluator, const ConstraintProto &amp;ct_proto)</td></tr>
 <tr class="separator:a1fe5bbe785cc30e5861b5e0e161a998c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

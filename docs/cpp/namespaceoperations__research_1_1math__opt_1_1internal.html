@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,6 +102,7 @@ $(function(){initNavTree('namespaceoperations__research_1_1math__opt_1_1internal
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">operations_research::math_opt::internal Namespace Reference</div></div>
@@ -112,10 +113,18 @@ $(function(){initNavTree('namespaceoperations__research_1_1math__opt_1_1internal
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1ArrowOperatorProxy.html">ArrowOperatorProxy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html">IncrementalSolverImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incremental solve of a model.  <a href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html">SosConstraintData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality.html">VariablesEquality</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a964a8458134aae0c291804dea21c94d6" id="r_a964a8458134aae0c291804dea21c94d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a964a8458134aae0c291804dea21c94d6">BaseSolverFactory</a></td></tr>
+<tr class="separator:a964a8458134aae0c291804dea21c94d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -131,6 +140,10 @@ Functions</h2></td></tr>
 <tr class="separator:ab4c38cef9d1bbe8d0015e1c3075192dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbad223a486421fe656a8450c999183c" id="r_acbad223a486421fe656a8450c999183c"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbad223a486421fe656a8450c999183c">CheckModelStorage</a> (const ModelStorage *const storage, const ModelStorage *const expected_storage)</td></tr>
 <tr class="separator:acbad223a486421fe656a8450c999183c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04b3c536c009547e060457f611dffff" id="r_ae04b3c536c009547e060457f611dffff"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae04b3c536c009547e060457f611dffff">SolveImpl</a> (const <a class="el" href="#a964a8458134aae0c291804dea21c94d6">BaseSolverFactory</a> solver_factory, const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;solve_args, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *const user_canceller, const bool remove_names)</td></tr>
+<tr class="separator:ae04b3c536c009547e060457f611dffff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7cb456f45234efad79dcd0d75ce3ee" id="r_a1f7cb456f45234efad79dcd0d75ce3ee"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f7cb456f45234efad79dcd0d75ce3ee">ComputeInfeasibleSubsystemImpl</a> (const <a class="el" href="#a964a8458134aae0c291804dea21c94d6">BaseSolverFactory</a> solver_factory, const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> solver_type, const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;compute_args, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *const user_canceller, const bool remove_names)</td></tr>
+<tr class="separator:a1f7cb456f45234efad79dcd0d75ce3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4cb42a63b67b786373bd902d77ecfe" id="r_abc4cb42a63b67b786373bd902d77ecfe"><td class="memTemplParams" colspan="2">template&lt;typename LeftIterable , typename RightIterable , typename Expression &gt; </td></tr>
 <tr class="memitem:abc4cb42a63b67b786373bd902d77ecfe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abc4cb42a63b67b786373bd902d77ecfe">AddInnerProduct</a> (const LeftIterable &amp;left, const RightIterable &amp;right, Expression &amp;expr)</td></tr>
 <tr class="separator:abc4cb42a63b67b786373bd902d77ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,7 +174,35 @@ Variables</h2></td></tr>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 <p><a class="el" href="structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality.html">VariablesEquality</a></p>
 <p>Inlined functions </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a964a8458134aae0c291804dea21c94d6" name="a964a8458134aae0c291804dea21c94d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964a8458134aae0c291804dea21c94d6">&#9670;&#160;</a></span>BaseSolverFactory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a964a8458134aae0c291804dea21c94d6">operations_research::math_opt::internal::BaseSolverFactory</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">    absl::AnyInvocable&lt;absl::StatusOr&lt;std::unique_ptr&lt;BaseSolver&gt;&gt;(</div>
+<div class="line">        SolverTypeProto solver_type, ModelProto <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>,</div>
+<div class="line">        SolveInterrupter* local_canceller) <span class="keyword">const</span>&gt;</div>
+<div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition</b> <a href="gurobi__interface_8cc_source.html#l00300">gurobi_interface.cc:300</a></div></div>
+</div><!-- fragment --><p>A factory of solver.</p>
+<p>The local_canceller is a local interrupter that exists in the scope of <a class="el" href="#ae04b3c536c009547e060457f611dffff">SolveImpl()</a>, <a class="el" href="#a1f7cb456f45234efad79dcd0d75ce3ee">ComputeInfeasibleSubsystemImpl()</a> or <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html" title="Incremental solve of a model.">IncrementalSolverImpl</a>. It is triggered:</p><ul>
+<li>either when the user_canceller is triggered</li>
+<li>or when the <a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a96c1cc00526718fbec925feed46e9b4e" title="Callback function type for MIP/LP callbacks.">BaseSolver::Callback</a> returns an invalid CallbackResultProto; in that case a new CallbackResultProto with its <code>terminate</code> set to true is also returned instead.</li>
+</ul>
+<p>Solvers that don't support cancellation (i.e. in-process solving) should ignore the local_canceller: this use case won't have a user_canceller and the CallbackResultProto.terminate will terminate the solve as soon as possible if the CallbackResultProto is invalid. </p>
+
+<p class="definition">Definition at line <a class="el" href="solve__impl_8h_source.html#l00050">50</a> of file <a class="el" href="solve__impl_8h_source.html">solve_impl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="abc4cb42a63b67b786373bd902d77ecfe" name="abc4cb42a63b67b786373bd902d77ecfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc4cb42a63b67b786373bd902d77ecfe">&#9670;&#160;</a></span>AddInnerProduct()</h2>
 
@@ -188,7 +229,7 @@ template&lt;typename LeftIterable , typename RightIterable , typename Expression
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01678">1678</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01683">1683</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +247,7 @@ template&lt;typename LeftIterable , typename RightIterable , typename Expression
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000899">Todo</a></b></dt><dd>(b/232526223): this is an exact copy of CheckIdsRangeAndStrictlyIncreasing from <a class="el" href="ids__validator_8h.html">ids_validator.h</a>, find a way to share the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000919">Todo</a></b></dt><dd>(b/232526223): this is an exact copy of CheckIdsRangeAndStrictlyIncreasing from <a class="el" href="ids__validator_8h.html">ids_validator.h</a>, find a way to share the code. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is only exposed in the header because we need UpdateBiMapFromMappedData here for testing purposes. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="model__summary_8cc_source.html#l00040">40</a> of file <a class="el" href="model__summary_8cc_source.html">model_summary.cc</a>.</p>
@@ -246,6 +287,51 @@ template&lt;typename LeftIterable , typename RightIterable , typename Expression
 
 </div>
 </div>
+<a id="a1f7cb456f45234efad79dcd0d75ce3ee" name="a1f7cb456f45234efad79dcd0d75ce3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7cb456f45234efad79dcd0d75ce3ee">&#9670;&#160;</a></span>ComputeInfeasibleSubsystemImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt; operations_research::math_opt::internal::ComputeInfeasibleSubsystemImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a964a8458134aae0c291804dea21c94d6">BaseSolverFactory</a></td>          <td class="paramname"><span class="paramname"><em>solver_factory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>compute_args</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *</td>          <td class="paramname"><span class="paramname"><em>user_canceller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>remove_names</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ComputeInfeasibleSubsystems the input model in a subprocess.</p>
+<p>The <code>user_canceller</code> parameter is optional. </p>
+
+<p class="definition">Definition at line <a class="el" href="solve__impl_8cc_source.html#l00135">135</a> of file <a class="el" href="solve__impl_8cc_source.html">solve_impl.cc</a>.</p>
+
+</div>
+</div>
 <a id="a2e5175538003d79fa72d9c4cd075842e" name="a2e5175538003d79fa72d9c4cd075842e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e5175538003d79fa72d9c4cd075842e">&#9670;&#160;</a></span>EntriesToMatrixProto()</h2>
 
@@ -266,6 +352,51 @@ template&lt;typename RowId , typename ColumnId &gt; </div>
 <p>entries must have unique (row, column) values but can be in any order. </p>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00279">279</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
+
+</div>
+</div>
+<a id="ae04b3c536c009547e060457f611dffff" name="ae04b3c536c009547e060457f611dffff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04b3c536c009547e060457f611dffff">&#9670;&#160;</a></span>SolveImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::internal::SolveImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a964a8458134aae0c291804dea21c94d6">BaseSolverFactory</a></td>          <td class="paramname"><span class="paramname"><em>solver_factory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>solve_args</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *</td>          <td class="paramname"><span class="paramname"><em>user_canceller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>remove_names</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Solves the input model.</p>
+<p>The <code>user_canceller</code> parameter is optional. </p>
+
+<p class="definition">Definition at line <a class="el" href="solve__impl_8cc_source.html#l00121">121</a> of file <a class="el" href="solve__impl_8cc_source.html">solve_impl.cc</a>.</p>
 
 </div>
 </div>

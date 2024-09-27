@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -127,6 +127,7 @@ $(function(){initNavTree('file__format__flags_8cc.html',''); initResizable(true)
 <code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
 <code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="lp__converter_8h_source.html">ortools/math_opt/io/lp_converter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="math__opt_2io_2lp__parser_8h_source.html">ortools/math_opt/io/lp_parser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mps__converter_8h_source.html">ortools/math_opt/io/mps_converter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="proto__converter_8h_source.html">ortools/math_opt/io/proto_converter.h</a>&quot;</code><br />
 <code>#include &quot;ortools/math_opt/model.pb.h&quot;</code><br />
@@ -165,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="separator:aedbed3216bb73a870d2498f74582126b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaadd437e793cc0e460438b6da3fe3278" id="r_aaadd437e793cc0e460438b6da3fe3278"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::pair&lt; ModelProto, std::optional&lt; SolutionHintProto &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aaadd437e793cc0e460438b6da3fe3278">operations_research::math_opt::ReadModel</a> (const absl::string_view file_path, const <a class="el" href="file__format__flags_8h.html#aade2c77823f8e2bb631eec2d55f54acc">FileFormat</a> format)</td></tr>
 <tr class="separator:aaadd437e793cc0e460438b6da3fe3278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a875813eeb955fcb8ba3cb8cb6ea7d" id="r_a77a875813eeb955fcb8ba3cb8cb6ea7d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a77a875813eeb955fcb8ba3cb8cb6ea7d">operations_research::math_opt::WriteModel</a> (const absl::string_view file_path, const ModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>, const std::optional&lt; SolutionHintProto &gt; &amp;hint_proto, const <a class="el" href="file__format__flags_8h.html#aade2c77823f8e2bb631eec2d55f54acc">FileFormat</a> format)</td></tr>
+<tr class="memitem:a77a875813eeb955fcb8ba3cb8cb6ea7d" id="r_a77a875813eeb955fcb8ba3cb8cb6ea7d"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a77a875813eeb955fcb8ba3cb8cb6ea7d">operations_research::math_opt::WriteModel</a> (const absl::string_view file_path, const ModelProto &amp;model_proto, const std::optional&lt; SolutionHintProto &gt; &amp;hint_proto, const <a class="el" href="file__format__flags_8h.html#aade2c77823f8e2bb631eec2d55f54acc">FileFormat</a> format)</td></tr>
 <tr class="separator:a77a875813eeb955fcb8ba3cb8cb6ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -1,5 +1,6 @@
 var classoperations__research_1_1sat_1_1ProtoTrail =
 [
+    [ "AddImplication", "classoperations__research_1_1sat_1_1ProtoTrail.html#abfc3fbff47a8f3bb08edaa1c9138b6a1", null ],
     [ "Clear", "classoperations__research_1_1sat_1_1ProtoTrail.html#a4a93fa04a991843f164a663e655def97", null ],
     [ "Decision", "classoperations__research_1_1sat_1_1ProtoTrail.html#a5f1e4c63ee5f6c6b6d69b2ae3cc9fa1e", null ],
     [ "Implications", "classoperations__research_1_1sat_1_1ProtoTrail.html#a9d5343ac253600c3a36d7888ee4a9bce", null ],
@@ -9,5 +10,7 @@ var classoperations__research_1_1sat_1_1ProtoTrail =
     [ "ObjectiveLb", "classoperations__research_1_1sat_1_1ProtoTrail.html#ac0529ba22608d94a77500dbe5953099a", null ],
     [ "PushLevel", "classoperations__research_1_1sat_1_1ProtoTrail.html#acb182542c70b463aa3f0d5fe1fc5b071", null ],
     [ "SetLevelImplied", "classoperations__research_1_1sat_1_1ProtoTrail.html#afad8b1dce5058de4cfe9ca143e30cbb2", null ],
-    [ "SetObjectiveLb", "classoperations__research_1_1sat_1_1ProtoTrail.html#a72764603098035c4f44f1106e4cfbdaa", null ]
+    [ "SetObjectiveLb", "classoperations__research_1_1sat_1_1ProtoTrail.html#a72764603098035c4f44f1106e4cfbdaa", null ],
+    [ "SetPhase", "classoperations__research_1_1sat_1_1ProtoTrail.html#a446afa8ea6d9a5b0ee151f46e3013406", null ],
+    [ "TargetPhase", "classoperations__research_1_1sat_1_1ProtoTrail.html#ad4ac7c65b83362202d452f77a9ad11f1", null ]
 ];

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -256,7 +256,7 @@ Friends</h2></td></tr>
 <p>This class can be used to represent such set efficiently as a sorted and non-adjacent list of intervals. This is efficient as long as the size of such list stays reasonable.</p>
 <p>In the comments below, the domain of *this will always be written 'D'. Note that all the functions are safe with respect to integer overflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00088">88</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00087">87</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8026c98d5255e56fc3f224be687a07c3" name="a8026c98d5255e56fc3f224be687a07c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8026c98d5255e56fc3f224be687a07c3">&#9670;&#160;</a></span>Domain() <span class="overload">[1/5]</span></h2>
@@ -283,7 +283,7 @@ Friends</h2></td></tr>
 
 <p>By default, <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> will be empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00091">91</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00090">90</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Friends</h2></td></tr>
 
 <p>Copy constructor (mandatory as we define the move constructor). </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00095">95</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00094">94</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ Friends</h2></td></tr>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00104">104</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00103">103</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +414,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns {x ∈ Int64, ∃ a ∈ D, ∃ b ∈ domain, x = a + b}.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002429">Todo</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002468">Todo</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
 <p>The sort is not needed if one of the list is of size 1.</p>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00428">428</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
@@ -472,7 +472,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00477">477</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00476">476</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00479">479</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00478">478</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +518,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the value closest to the given point. If there is a tie, pick larger one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002427">Todo</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002466">Todo</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00252">252</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -622,7 +622,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the distance from the value to the domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002428">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002467">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00314">314</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -672,7 +672,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00482">482</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00481">481</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +880,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00476">476</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00475">475</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -908,7 +908,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the domain has just two values. This often mean a non-fixed Boolean variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00240">240</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00239">239</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1129,9 +1129,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Basic read-only std::vector&lt;&gt; wrapping to view a <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> as a sorted list of non-adjacent intervals. Note that we don't expose size() which might be confused with the number of values in the domain. </p>
+<p>Basic read-only std::vector&lt;&gt; wrapping to view a <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> as a sorted list of non-adjacent intervals. Note that we don't expose <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> which might be confused with the number of values in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00475">475</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00474">474</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1158,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00461">461</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00460">460</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ Friends</h2></td></tr>
 
 <p>Copy operator (mandatory as we define the move operator). </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00098">98</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00097">97</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1236,7 @@ Friends</h2></td></tr>
 
 <p>Move operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00107">107</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00106">106</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1263,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00457">457</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00456">456</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1290,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00478">478</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00477">477</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1575,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00220">220</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00219">219</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1602,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00221">221</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00220">220</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1636,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00466">466</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00465">465</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 
 </div>
 </div>

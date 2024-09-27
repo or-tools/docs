@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,11 +107,11 @@ $(function(){initNavTree('solver_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">solver.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;ortools/math_opt/callback.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base__solver_8h_source.html">ortools/math_opt/core/base_solver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="concurrent__calls__guard_8h_source.html">ortools/math_opt/core/concurrent_calls_guard.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model__summary_8h_source.html">ortools/math_opt/core/model_summary.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solver__interface_8h_source.html">ortools/math_opt/core/solver_interface.h</a>&quot;</code><br />
@@ -121,19 +121,12 @@ $(function(){initNavTree('solver_8h.html',''); initResizable(true); });
 <code>#include &quot;ortools/math_opt/model_update.pb.h&quot;</code><br />
 <code>#include &quot;ortools/math_opt/parameters.pb.h&quot;</code><br />
 <code>#include &quot;ortools/math_opt/result.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="solve__interrupter_8h_source.html">ortools/util/solve_interrupter.h</a>&quot;</code><br />
 </div>
 <p><a href="solver_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">operations_research::math_opt::Solver</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1Solver_1_1SolveArgs.html">operations_research::math_opt::Solver::SolveArgs</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments used when calling <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html#aa9c5136714d04b0c012116a57d64585f" title="Solves the current model (included all updates).">Solve()</a> to solve the problem.  <a href="structoperations__research_1_1math__opt_1_1Solver_1_1SolveArgs.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1math__opt_1_1Solver_1_1ComputeInfeasibleSubsystemArgs.html">operations_research::math_opt::Solver::ComputeInfeasibleSubsystemArgs</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments used when calling <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html#a64e491a7199e9fa3f6921b92f5662932" title="Computes an infeasible subsystem of model.">ComputeInfeasibleSubsystem()</a>.  <a href="structoperations__research_1_1math__opt_1_1Solver_1_1ComputeInfeasibleSubsystemArgs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>

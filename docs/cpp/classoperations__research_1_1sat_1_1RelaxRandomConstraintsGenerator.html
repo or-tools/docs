@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -171,9 +171,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pick a random subset of constraints and relax all the variables of these constraints. Note that to satisfy the difficulty, we might not relax all the variable of the "last" constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001183">Todo</a></b></dt><dd>(user): In the presence of connected components, this should just work on one of them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001216">Todo</a></b></dt><dd>(user): In the presence of connected components, this should just work on one of them. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00512">512</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00519">519</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad12612352de625497b7fb477e4683d94" name="ad12612352de625497b7fb477e4683d94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad12612352de625497b7fb477e4683d94">&#9670;&#160;</a></span>RelaxRandomConstraintsGenerator()</h2>
@@ -202,7 +202,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00514">514</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00521">521</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 
 </div>
 </div>
@@ -242,12 +242,12 @@ Additional Inherited Members</h2></td></tr>
 <p>The difficulty will be in [0, 1] and is related to the asked neighborhood size (and thus local problem difficulty). A difficulty of 0.0 means empty neighborhood and a difficulty of 1.0 means the full problem. The algorithm should try to generate a neighborhood according to this difficulty which will be dynamically adjusted depending on whether or not we can solve the subproblem in a given time limit.</p>
 <p>The given initial_solution should contain a feasible solution to the initial CpModelProto given to this class. Any solution to the returned CPModelProto should also be valid solution to the same initial model.</p>
 <p>This function should be thread-safe. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001171">Todo</a></b></dt><dd>(user): Clean-up when target_size == 0. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001172">Todo</a></b></dt><dd>(user): randomize order of variable addition when close to the limit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001204">Todo</a></b></dt><dd>(user): Clean-up when target_size == 0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001205">Todo</a></b></dt><dd>(user): randomize order of variable addition when close to the limit. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a27de7175d8eb3e120349bda6d36e00ec">operations_research::sat::NeighborhoodGenerator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01281">1281</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01289">1289</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>

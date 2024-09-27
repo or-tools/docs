@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -137,10 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad544b389a3046e12e340ffe9ab615669" id="r_ad544b389a3046e12e340ffe9ab615669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad544b389a3046e12e340ffe9ab615669">SetLevel</a> (int level) final</td></tr>
 <tr class="memdesc:ad544b389a3046e12e340ffe9ab615669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each time we change decision level.  <br /></td></tr>
 <tr class="separator:ad544b389a3046e12e340ffe9ab615669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bbb310cdf18b3d7faad6e15f99bbca" id="r_af1bbb310cdf18b3d7faad6e15f99bbca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1bbb310cdf18b3d7faad6e15f99bbca">ComputeFullPrecedences</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1FullIntegerPrecedence.html">FullIntegerPrecedence</a> &gt; *output)</td></tr>
-<tr class="separator:af1bbb310cdf18b3d7faad6e15f99bbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8544ee790f916e5d3cc54cf3d6daa7" id="r_a6b8544ee790f916e5d3cc54cf3d6daa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b8544ee790f916e5d3cc54cf3d6daa7">CollectPrecedences</a> (const std::vector&lt; IntegerVariable &gt; &amp;vars, std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1PrecedenceRelations_1_1PrecedenceData.html">PrecedenceData</a> &gt; *output)</td></tr>
-<tr class="separator:a6b8544ee790f916e5d3cc54cf3d6daa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc266b82a08891d9278284b41a66a9ce" id="r_acc266b82a08891d9278284b41a66a9ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc266b82a08891d9278284b41a66a9ce">ComputeFullPrecedences</a> (absl::Span&lt; const IntegerVariable &gt; vars, std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1FullIntegerPrecedence.html">FullIntegerPrecedence</a> &gt; *output)</td></tr>
+<tr class="separator:acc266b82a08891d9278284b41a66a9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7f15ab05754fc8752486cec193ef1e" id="r_a3c7f15ab05754fc8752486cec193ef1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c7f15ab05754fc8752486cec193ef1e">CollectPrecedences</a> (absl::Span&lt; const IntegerVariable &gt; vars, std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1PrecedenceRelations_1_1PrecedenceData.html">PrecedenceData</a> &gt; *output)</td></tr>
+<tr class="separator:a3c7f15ab05754fc8752486cec193ef1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0957ab3a7bfffcc707e302615001e0e" id="r_af0957ab3a7bfffcc707e302615001e0e"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0957ab3a7bfffcc707e302615001e0e">GetOffset</a> (IntegerVariable <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerVariable <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>) const</td></tr>
 <tr class="separator:af0957ab3a7bfffcc707e302615001e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab196764d3d6fc8d0027ab4944ba955b2" id="r_ab196764d3d6fc8d0027ab4944ba955b2"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab196764d3d6fc8d0027ab4944ba955b2">GetConditionalOffset</a> (IntegerVariable <a class="el" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, IntegerVariable <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>) const</td></tr>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores all the precedences relation of the form "tail_X + offset &lt;= head_X" that we could extract from the linear constraint of the model. These are stored in a directed graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002076">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002106">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
 <p class="interdd">(user): Support non-DAG like graph. </p>
 <p class="enddd">(user): Support variable offset that can be updated as search progress. </p>
 </dd></dl>
@@ -217,14 +217,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a relation tail + offset &lt;= head. Returns true if it was added and is considered "new". </p>
 <p>Ignore trivial relation: tail + offset &lt;= head.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002043">Todo</a></b></dt><dd>(user): Return infeasible if tail == head and offset &gt; 0. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002044">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002045">Todo</a></b></dt><dd>(user): if tail = Negation(head) also update <a class="el" href="classoperations__research_1_1Domain.html">Domain</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002073">Todo</a></b></dt><dd>(user): Return infeasible if tail == head and offset &gt; 0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002074">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002075">Todo</a></b></dt><dd>(user): if tail = Negation(head) also update <a class="el" href="classoperations__research_1_1Domain.html">Domain</a>. </dd></dl>
 <p>Add to root_relations_.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002046">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
-<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002047">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002076">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
+<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002077">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00052">52</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00054">54</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -243,22 +243,22 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The current code requires the internal data to be processed once all relations are loaded.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002085">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002115">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
 <p>We will construct a graph with the current relation from all_relations_. And use this to compute the "closure". </p><dl class="section note"><dt>Note</dt><dd>the non-determinism of the arcs order shouldn't matter.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002048">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002078">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if we only have &gt;= 0 ones, if we do have a cycle, we could make sure all variales are the same, and otherwise, we have a DAG or a conflict.</dd></dl>
 <p>We have two arcs.</p>
 <p>Is it a DAG? Get a topological order of the DAG formed by all the arcs that are present.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002049">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002050">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
-<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002051">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002079">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002080">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
+<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002081">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00206">206</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00208">208</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
-<a id="a6b8544ee790f916e5d3cc54cf3d6daa7" name="a6b8544ee790f916e5d3cc54cf3d6daa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8544ee790f916e5d3cc54cf3d6daa7">&#9670;&#160;</a></span>CollectPrecedences()</h2>
+<a id="a3c7f15ab05754fc8752486cec193ef1e" name="a3c7f15ab05754fc8752486cec193ef1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7f15ab05754fc8752486cec193ef1e">&#9670;&#160;</a></span>CollectPrecedences()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::PrecedenceRelations::CollectPrecedences </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; IntegerVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vars</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const IntegerVariable &gt;</td>          <td class="paramname"><span class="paramname"><em>vars</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -283,12 +283,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>it is okay to increase the -1 pos since they appear only once.</dd></dl>
 <p>Cleanup var_to_degree, note that we don't need to clean var_to_last_index_.</p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00404">404</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00406">406</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
-<a id="af1bbb310cdf18b3d7faad6e15f99bbca" name="af1bbb310cdf18b3d7faad6e15f99bbca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1bbb310cdf18b3d7faad6e15f99bbca">&#9670;&#160;</a></span>ComputeFullPrecedences()</h2>
+<a id="acc266b82a08891d9278284b41a66a9ce" name="acc266b82a08891d9278284b41a66a9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc266b82a08891d9278284b41a66a9ce">&#9670;&#160;</a></span>ComputeFullPrecedences()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::PrecedenceRelations::ComputeFullPrecedences </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; IntegerVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vars</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const IntegerVariable &gt;</td>          <td class="paramname"><span class="paramname"><em>vars</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -306,19 +306,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a set of relations var &gt;= max_i(vars[index[i]] + offsets[i]).</p>
-<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002081">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002082">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002083">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002084">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
+<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002111">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002112">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002113">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002114">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
 <p>Compute all precedences. We loop over the node in topological order, and we maintain for all variable we encounter, the list of "to_consider" variables that are before.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002052">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
-<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002053">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002082">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
+<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002083">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
 <p>No need to create an empty entry in this case.</p>
 <p>Small filtering heuristic: if we have (before) &lt; tail, and tail &lt; head, we really do not need to list (before, tail) &lt; head. We only need that if the list of variable before head contains some variable that are not already before tail.</p>
 <p>Extract the output for tail_var. Because of the topological ordering, the data for tail_var is already final now.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002054">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002084">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00310">310</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00312">312</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00176">176</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00178">178</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Public Member Functions</h2></td></tr>
 <p>We separate the two because usually the reason is only needed when we push, which happen less often, so we don't mind doing two hash lookups, and we really want to optimize the <a class="el" href="#ab196764d3d6fc8d0027ab4944ba955b2">GetConditionalOffset()</a> instead.</p>
 <p>Important: This doesn't contains the transitive closure. Important: The span is only valid in a narrow scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00195">195</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00197">197</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>If there are too many, this will NOT contain all relations.</dd></dl>
 <p>Returns kMinIntegerValue if there are none. Otherwise a + offset &lt;= b. </p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00167">167</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00169">169</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Public Member Functions</h2></td></tr>
 <p>We should only decrease because we ignored entry worse than the one in best_relations_.</p>
 <p>Update.</p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00081">81</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00083">83</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>
@@ -492,7 +492,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1ReversibleInterface.html#ae25ce6ee33b736226102678c3a14b1dd">operations_research::ReversibleInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00140">140</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00142">142</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -178,9 +178,9 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Each integer variable x will be associated with a set of literals encoding (x &gt;= v) for some values of v. This class maintains the relationship between the integer variables and such literals which can be created by a call to CreateAssociatedLiteral().</p>
 <p>The advantage of creating such Boolean variables is that the <a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a> which is driving the search can then take this variable as a decision and maintain these variables activity and so on. These variables can also be propagated directly by the learned clauses.</p>
 <p>This class also support a non-lazy full domain encoding which will create one literal per possible value in the domain. See <a class="el" href="#a44f7926d822f4f2f659be6f503090ac4">FullyEncodeVariable()</a>. This is meant to be called by constraints that directly work on the variable values like a table constraint or an all-diff constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001706">Todo</a></b></dt><dd>(user): We could also lazily create precedences Booleans between two arbitrary IntegerVariable. This is better done in the <a class="el" href="classoperations__research_1_1sat_1_1PrecedencesPropagator.html">PrecedencesPropagator</a> though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001725">Todo</a></b></dt><dd>(user): We could also lazily create precedences Booleans between two arbitrary IntegerVariable. This is better done in the <a class="el" href="classoperations__research_1_1sat_1_1PrecedencesPropagator.html">PrecedencesPropagator</a> though. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00470">470</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00471">471</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a56acaedd036489098fb1a9fffbf56299" name="a56acaedd036489098fb1a9fffbf56299"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56acaedd036489098fb1a9fffbf56299">&#9670;&#160;</a></span>IntegerEncoder() <span class="overload">[1/2]</span></h2>
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00472">472</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00473">473</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00483">483</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00484">484</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the "canonical" (i_lit, negation of i_lit) pair. This mainly deal with domain with initial hole like [1,2][5,6] so that if one ask for x &lt;= 3, this get canonicalized in the pair (x &lt;= 2, x &gt;= 5).</p>
 <dl class="section note"><dt>Note</dt><dd>it is an error to call this with a literal that is trivially true or trivially false according to the initial variable domain. This is CHECKed to make sure we don't create wasteful literal.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001713">Todo</a></b></dt><dd>(user): This is linear in the domain "complexity", we can do better if needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001732">Todo</a></b></dt><dd>(user): This is linear in the domain "complexity", we can do better if needed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00246">246</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -399,7 +399,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advanced usage. It is more efficient to create the associated literals in order, but it might be anoying to do so. Instead, you can first call <a class="el" href="#aeb35d5a03917142051ba332e5b8c4f47">DisableImplicationBetweenLiteral()</a> and when you are done creating all the associated literals, you can call (only at level zero) <a class="el" href="#a42e6e7891342273c5e080447a0d11d81">AddAllImplicationsBetweenAssociatedLiterals()</a> which will also turn back on the implications between literals for the one that will be added afterwards. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00579">579</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00580">580</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -442,9 +442,9 @@ Public Member Functions</h2></td></tr>
 <p>Fully encode a variable using its current initial domain. If the variable is already fully encoded, this does nothing.</p>
 <p>This creates new Booleans variables as needed: 1) num_values for the literals X == value. Except when there is just two value in which case only one variable is created. 2) num_values - 3 for the literals X &gt;= value or X &lt;= value (using their negation). The -3 comes from the fact that we can reuse the equality literals for the two extreme points.</p>
 <p>The encoding for NegationOf(var) is automatically created too. It reuses the same Boolean variable as the encoding of var.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001712">Todo</a></b></dt><dd>(user): It is currently only possible to call that at the decision level zero because we cannot add ternary clause in the middle of the search (for now). This is Checked. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001682">Todo</a></b></dt><dd>(user): Maybe we can optimize the literal creation order and their polarity as our default SAT heuristics initially depends on this.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001683">Todo</a></b></dt><dd>(user): Currently, in some corner cases, <a class="el" href="#af0a2aeea649e70334c5b44dca14a5ae2">GetOrCreateLiteralAssociatedToEquality()</a> might trigger some propagation that update the domain of var, so we need to cache the values to not read garbage. Note that it is okay to call the function on values no longer reachable, as this will just do nothing. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001731">Todo</a></b></dt><dd>(user): It is currently only possible to call that at the decision level zero because we cannot add ternary clause in the middle of the search (for now). This is Checked. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001702">Todo</a></b></dt><dd>(user): Maybe we can optimize the literal creation order and their polarity as our default SAT heuristics initially depends on this.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001703">Todo</a></b></dt><dd>(user): Currently, in some corner cases, <a class="el" href="#af0a2aeea649e70334c5b44dca14a5ae2">GetOrCreateLiteralAssociatedToEquality()</a> might trigger some propagation that update the domain of var, so we need to cache the values to not read garbage. Note that it is okay to call the function on values no longer reachable, as this will just do nothing. </dd></dl>
 <p>Mark var and Negation(var) as fully encoded.</p>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00079">79</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
@@ -475,7 +475,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns all the variables for which this literal is associated to either var &gt;= value or var == value. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00601">601</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00602">602</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001688">Todo</a></b></dt><dd>(user): Canonicalization might be slow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001708">Todo</a></b></dt><dd>(user): Canonicalization might be slow. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00540">540</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -546,7 +546,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the variable == value pairs that were associated with the given <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>. Note that only positive IntegerVariable appears here. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00592">592</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00593">593</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00653">653</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00654">654</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +602,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the IntegerLiterals that were associated with the given <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00583">583</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00584">584</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If it exists, returns a [0,1] integer variable which is equal to 1 iff the given literal is true. Returns kNoIntegerVariable if such variable does not exist. Note that one can create one by creating a new IntegerVariable and calling <a class="el" href="#a9bf605bfbb224230f6c65067fdd26c34">AssociateToIntegerEqualValue()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00617">617</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00618">618</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +656,7 @@ Public Member Functions</h2></td></tr>
 <p>This add the proper implications with the two "neighbor" literals of this one if they exist. This is the "list encoding" in: Thibaut Feydy, Peter J. Stuckey, "Lazy Clause Generation Reengineered", CP 2009. </p>
 <p>Remove trivial literal.</p>
 <p>Canonicalize and see if we have an equivalent literal already.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001686">Todo</a></b></dt><dd>(user): on some problem this happens. We should probably make sure that we don't create extra fixed Boolean variable for no reason. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001706">Todo</a></b></dt><dd>(user): on some problem this happens. We should probably make sure that we don't create extra fixed Boolean variable for no reason. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00273">273</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -681,7 +681,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check for trivial true/false literal to avoid creating variable for no reasons.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001687">Todo</a></b></dt><dd>(user): this happens on some problem. We should probably make sure that we don't create extra fixed Boolean variable for no reason. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001707">Todo</a></b></dt><dd>(user): this happens on some problem. We should probably make sure that we don't create extra fixed Boolean variable for no reason. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>here we could detect the case before creating the literal. The initial domain didn't contain it, but maybe the one of (&gt;= value) or (&lt;= value) is false?</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00327">327</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
@@ -712,9 +712,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the literal always set to true, make it if it does not exist. </p>
-<p>This might return false if we are already UNSAT. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001714">Todo</a></b></dt><dd>(user): Make sure we abort right away on unsat! </dd></dl>
+<p>This might return false if we are already UNSAT. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001733">Todo</a></b></dt><dd>(user): Make sure we abort right away on unsat! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00640">640</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00641">641</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Memory optimization: you can call this before encoding variables. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001681">Todo</a></b></dt><dd>(user): Reserve vector index by literals? It is trickier, as we might not know beforehand how many we will need. Consider alternatives to not waste space like using dequeue. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001701">Todo</a></b></dt><dd>(user): Reserve vector index by literals? It is trickier, as we might not know beforehand how many we will need. Consider alternatives to not waste space like using dequeue. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00073">73</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -931,9 +931,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if we know that PartialDomainEncoding(var) span the full domain of var. This is always true if FullyEncodeVariable(var) has been called. </p>
 <p>Once fully encoded, the status never changes.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001684">Todo</a></b></dt><dd>(user): Cache result as long as equality_by_var_[index] is unchanged? It might not be needed since if the variable is not fully encoded, then <a class="el" href="#a6d9c6e26e6872022a6eca84b4d551df5">PartialDomainEncoding()</a> will filter unreachable values, and so the size check will be false until further value have been encoded. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001704">Todo</a></b></dt><dd>(user): Cache result as long as equality_by_var_[index] is unchanged? It might not be needed since if the variable is not fully encoded, then <a class="el" href="#a6d9c6e26e6872022a6eca84b4d551df5">PartialDomainEncoding()</a> will filter unreachable values, and so the size check will be false until further value have been encoded. </dd></dl>
 <p>This cleans equality_by_var_[index] as a side effect and in particular, sorts it by values.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001685">Todo</a></b></dt><dd>(user): Comparing the size might be enough, but we want to be always valid even if either (*domains_[var]) or PartialDomainEncoding(var) are not properly synced because the propagation is not finished. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001705">Todo</a></b></dt><dd>(user): Comparing the size might be enough, but we want to be always valid even if either (*domains_[var]) or PartialDomainEncoding(var) are not properly synced because the propagation is not finished. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l00110">110</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 

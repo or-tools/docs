@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -1507,7 +1507,7 @@ template&lt;typename PairType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
+<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000171">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
 node2); it's currently way more complicated to implement. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1MakeChainInactiveOperator.html#a5a24007691a70bf1ef2d2f82ad7a3492">operations_research::MakeChainInactiveOperator</a>, <a class="el" href="classoperations__research_1_1MakePairActiveOperator.html#a4b184c695949f15d7b6439390c299175">operations_research::MakePairActiveOperator</a>, <a class="el" href="classoperations__research_1_1PairExchangeRelocateOperator.html#a3f419d17dc8fc746d1f09b7fcc92c925">operations_research::PairExchangeRelocateOperator</a>, <a class="el" href="classoperations__research_1_1PairNodeSwapActiveOperator.html#a65a6976495dc9ddcf679d7fa84e48c28">operations_research::PairNodeSwapActiveOperator&lt; swap_first &gt;</a>, <a class="el" href="classoperations__research_1_1PairRelocateOperator.html#afe2fda6c12118eeed3b1aa6bbaa12483">operations_research::PairRelocateOperator</a>, <a class="el" href="classoperations__research_1_1Relocate.html#ae02cdee6b40a123548504356a17fe543">operations_research::Relocate</a>, and <a class="el" href="classoperations__research_1_1TwoOpt.html#ae85f9c3bef4c6361ff26477a7cbadbc4">operations_research::TwoOpt</a>.</p>
@@ -1766,7 +1766,7 @@ node2); it's currently way more complicated to implement. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>When the operator is being synchronized with a new solution (when <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0">Start()</a> is called), returns true to restart the exploration of the neighborhood from the start of the last paths explored; returns false to restart the exploration at the last nodes visited. This is used to avoid restarting on base nodes which have changed paths, leading to potentially skipping neighbors. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000152">Todo</a></b></dt><dd>(user): remove this when automatic detection of such cases in done. </dd></dl>
+<p>When the operator is being synchronized with a new solution (when <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0">Start()</a> is called), returns true to restart the exploration of the neighborhood from the start of the last paths explored; returns false to restart the exploration at the last nodes visited. This is used to avoid restarting on base nodes which have changed paths, leading to potentially skipping neighbors. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000170">Todo</a></b></dt><dd>(user): remove this when automatic detection of such cases in done. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1MakePairActiveOperator.html#a77e9aa9f4c619b386919b734d6cbda90">operations_research::MakePairActiveOperator</a>, and <a class="el" href="classoperations__research_1_1PairNodeSwapActiveOperator.html#a0501b7d5bc01026d24c1e942432593ad">operations_research::PairNodeSwapActiveOperator&lt; swap_first &gt;</a>.</p>
 
@@ -1899,7 +1899,7 @@ node2); it's currently way more complicated to implement. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo</a></b></dt><dd>(user): Make the following methods protected. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000169">Todo</a></b></dt><dd>(user): Make the following methods protected. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a2154f378a4ba2697d824f5aa3cca8fa7">operations_research::IntVarLocalSearchOperator</a>.</p>
 

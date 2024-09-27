@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -337,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a46728a21c28eaf507a20bba345d9df8f inherit pro_attribs_classoperations__research_1_1PathOperator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Operator which moves a pair of nodes to another position where the first node of the pair must be before the second node on the same path. The default behavior of the operator is to insert the first node after the first node of another pair, and the second node after the other pair's second node. This results in a FIFO behavior. The behavior can be overridden for each path to enforce a LIFO behavior (the second node gets inserted before the other pair's second node). This is specified using the force_lifo callback which takes the start node of a path as argument; if the callback returns true then the LIFO behavior will be enforced, otherwise it's FIFO. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000339">Todo</a></b></dt><dd>(user): Add a version which inserts the first node before the other pair's first node; there are many redundant neighbors if done blindly. </dd></dl>
+<div class="textblock"><p>Operator which moves a pair of nodes to another position where the first node of the pair must be before the second node on the same path. The default behavior of the operator is to insert the first node after the first node of another pair, and the second node after the other pair's second node. This results in a FIFO behavior. The behavior can be overridden for each path to enforce a LIFO behavior (the second node gets inserted before the other pair's second node). This is specified using the force_lifo callback which takes the start node of a path as argument; if the callback returns true then the LIFO behavior will be enforced, otherwise it's FIFO. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000357">Todo</a></b></dt><dd>(user): Add a version which inserts the first node before the other pair's first node; there are many redundant neighbors if done blindly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00283">283</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -502,11 +502,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>MoveChain will return false if it is a no-op (moving the chain to its current position). However we want to accept the move if at least node or sibling gets moved to a new position. Therefore we want to be sure both MoveChains are called and at least one succeeds.</dd></dl>
-<p>Special case handling relocating the first node of a pair "before" the first node of another pair. Limiting this to relocating after the start of the path as other moves will be mostly equivalent to relocating "after". </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000332">Todo</a></b></dt><dd>(user): extend to relocating before the start of sub-tours (when all pairs have been matched). </dd></dl>
+<p>Special case handling relocating the first node of a pair "before" the first node of another pair. Limiting this to relocating after the start of the path as other moves will be mostly equivalent to relocating "after". </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000350">Todo</a></b></dt><dd>(user): extend to relocating before the start of sub-tours (when all pairs have been matched). </dd></dl>
 <p>Not inserting before a pair node: insert sibling after node.</p>
 <p>Depending on the lifo status of the path, insert sibling before or after destination_sibling since node is being inserted before <a class="el" href="constraint__solver_8cc.html#a395f613555f398dd389670bb4c2a4599">next(destination)</a>.</p>
 <p>Relocating the first node of a pair "after" the first node of another pair.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000333">Todo</a></b></dt><dd>(user): Add support for lifo for neighbor-based move. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000351">Todo</a></b></dt><dd>(user): Add support for lifo for neighbor-based move. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1PathOperator.html#abf884d7efc40fbf9932b64623604c23a">operations_research::PathOperator</a>.</p>
 

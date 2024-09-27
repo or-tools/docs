@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An helper class to share the code used by the different kind of search. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00269">269</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00270">270</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1edce26656a3005817e7729dc560dfc7" name="a1edce26656a3005817e7729dc560dfc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1edce26656a3005817e7729dc560dfc7">&#9670;&#160;</a></span>IntegerSearchHelper()</h2>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01318">1318</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01320">1320</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 <p>If we pushed root level deductions, we restart to incorporate them. </p><dl class="section note"><dt>Note</dt><dd>in the present of assumptions, it is important to return to the level zero first ! otherwise, the new deductions will not be incorporated and the solver will loop forever.</dd></dl>
 <p>The rest only trigger at level zero.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01331">1331</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01333">1333</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
 <p>Calls the decision heuristics and extract a non-fixed literal. </p><dl class="section note"><dt>Note</dt><dd>we do not want to copy the function here.</dd></dl>
 <p>Returns false if a conflict was found while trying to take a decision. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01385">1385</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01387">1387</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -225,12 +225,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Inner function used by <a class="el" href="#ac2d4796c1f43982c5c9f31174be82908">GetDecision()</a>. It will create a new associated literal if needed. </p>
 <p>Convert integer decision to literal one if needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001777">Todo</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currently hard to do so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001778">Todo</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentioned in a</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001779">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001780">Todo</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001799">Todo</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currently hard to do so. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001800">Todo</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentioned in a</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001801">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001802">Todo</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01360">1360</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01362">1362</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Functions passed to <a class="el" href="#ac2d4796c1f43982c5c9f31174be82908">GetDecision()</a> might call this to notify a conflict was detected. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00290">290</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00291">291</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <p>This function continues from the current state of the solver and loop until all variables are instantiated (i.e. the next decision is kNoLiteralIndex) or a search limit is reached. It uses the heuristic from the <a class="el" href="structoperations__research_1_1sat_1_1SearchHeuristics.html">SearchHeuristics</a> class in the model to decide when to restart and what next decision to take.</p>
 <p>Each time a restart happen, this increment the policy index modulo the number of heuristics to act as a portfolio search. </p>
 <dl class="section note"><dt>Note</dt><dd>it is important to do the level-zero propagation if it wasn't already done because EnqueueDecisionAndBackjumpOnConflict() assumes that the solver is in a "propagated" state.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001782">Todo</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001804">Todo</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
 <p>Main search loop.</p>
 <p>If needed, restart and switch decision_policy.</p>
 <dl class="section note"><dt>Note</dt><dd>to properly count the num_times, we do not want to move this function, but actually call that copy.</dd></dl>
@@ -289,11 +289,11 @@ Public Member Functions</h2></td></tr>
 <p>Save the current polarity of all Booleans in the solution. It will be followed for the next SAT decisions. This is known to be a good policy for optimization problem. Note that for decision problem we don't care since we are just done as soon as a solution is found.</p>
 <p>This idea is kind of "well known", see for instance the "LinSBPS" submission to the maxSAT 2018 competition by Emir Demirovic and Peter Stuckey where they show it is a good idea and provide more references.</p>
 <p>In multi-thread, we really only want to save the LP relaxation for thread with high linearization level to avoid to pollute the repository with sub-par lp solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001783">Todo</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001784">Todo</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001805">Todo</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001806">Todo</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>We can actually record LP solutions more frequently. However this process is time consuming and workers waste a lot of time doing this. To avoid this we don't record solutions after each decision.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01448">1448</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01450">1450</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -313,11 +313,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Tries to take the current decision, this might backjump. Returns false if the model is UNSAT. </p>
 <dl class="section note"><dt>Note</dt><dd>kUnsatTrailIndex might also mean ASSUMPTIONS_UNSAT.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001781">Todo</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001803">Todo</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
 <p>Update the implied bounds each time we enqueue a literal at level zero. This is "almost free", so we might as well do it.</p>
 <p>Update the pseudo costs.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01422">1422</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01424">1424</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -515,7 +515,7 @@ Friends</h2></td></tr>
 <p>Adds slack variables to the problem for all rows which don't have slack variables. The new slack variables have bounds set to opposite of the bounds of the corresponding constraint, and changes all constraints to equality constraints with both bounds set to 0.0. If a constraint uses only integer variables and all their coefficients are integer, it will mark the slack variable as integer too.</p>
 <p>It is an error to call <a class="el" href="#aebbd9bc56ceb4ac73eaaaf035533cb1d">CreateNewVariable()</a> or <a class="el" href="#abe9b2d55f9e0d9a5e593994e2d6b9e68">CreateNewConstraint()</a> on a linear program on which this method was called.</p>
 <dl class="section note"><dt>Note</dt><dd>many of the slack variables may not be useful at all, but in order not to recompute the matrix from one Solve() to the next, we always include all of them for a given lp matrix.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000842">Todo</a></b></dt><dd>(user): investigate the impact on the running time. It seems low because we almost never iterate on fixed variables. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000861">Todo</a></b></dt><dd>(user): investigate the impact on the running time. It seems low because we almost never iterate on fixed variables. </dd></dl>
 <p>Clean up the matrix. We're going to add entries, but we'll only be adding them to new columns, and only one entry per column, which does not invalidate the "cleanness" of the matrix.</p>
 <p>Detect which constraints produce an integer slack variable. A constraint has an integer slack variable, if it contains only integer variables with integer coefficients. We do not check the bounds of the constraints, because in such case, they will be tightened to integer values by the preprocessors.</p>
 <p>We don't use the transpose, because it might not be valid and it would be inefficient to update it and invalidate it again at the end of this preprocessor.</p>
@@ -909,7 +909,7 @@ constraints * number of variables)).</p>
 <p>Objective line.</p>
 <p>Constraints.</p>
 <p>Variables.</p>
-<p>Integer variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000837">Todo</a></b></dt><dd>(user): if needed provide similar output for binary variables. </dd></dl>
+<p>Integer variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo</a></b></dt><dd>(user): if needed provide similar output for binary variables. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_8cc_source.html#l00569">569</a> of file <a class="el" href="lp__data_8cc_source.html">lp_data.cc</a>.</p>
 
@@ -970,7 +970,7 @@ constraints * number of variables)).</p>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#aebbd9bc56ceb4ac73eaaaf035533cb1d">CreateNewVariable()</a> or <a class="el" href="#abe9b2d55f9e0d9a5e593994e2d6b9e68">CreateNewConstraint()</a> but also assign an immutable id to the variable or constraint so they can be retrieved later. By default, the name is also set to this id, but it can be changed later without changing the id.</p>
 <dl class="section note"><dt>Note</dt><dd>these ids are NOT copied over by the Populate*() functions.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000839">Todo</a></b></dt><dd>(user): Move these and the two corresponding hash_table into a new LinearProgramBuilder class to simplify the code of some functions like <a class="el" href="#a2710db8a0208f707f2d2dfacb059dd38">DeleteColumns()</a> here and make the behavior on copy clear? or simply remove them as it is almost as easy to maintain a hash_table on the client side. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000858">Todo</a></b></dt><dd>(user): Move these and the two corresponding hash_table into a new LinearProgramBuilder class to simplify the code of some functions like <a class="el" href="#a2710db8a0208f707f2d2dfacb059dd38">DeleteColumns()</a> here and make the behavior on copy clear? or simply remove them as it is almost as easy to maintain a hash_table on the client side. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_8cc_source.html#l00214">214</a> of file <a class="el" href="lp__data_8cc_source.html">lp_data.cc</a>.</p>
 
@@ -1114,7 +1114,7 @@ constraints * number of variables)).</p>
       </table>
 </div><div class="memdoc">
 <p>Returns a comma-separated string of numbers containing (in that order) fill rate, max number of entries (length) in a row, average row length, standard deviation of row length, max column length, average column length, standard deviation of column length Useful for profiling algorithms.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000841">Todo</a></b></dt><dd>(user): Theses are statistics about the underlying matrix and should be moved to <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000860">Todo</a></b></dt><dd>(user): Theses are statistics about the underlying matrix and should be moved to <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_8cc_source.html#l00697">697</a> of file <a class="el" href="lp__data_8cc_source.html">lp_data.cc</a>.</p>
 
@@ -1477,7 +1477,7 @@ This also returns false if any finite value has a magnitude larger than the give
 </div><div class="memdoc">
 
 <p>Returns whether the variable at column col must take binary values or not. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000836">Todo</a></b></dt><dd>(user): bounds of binary variables (and of integer ones) should be integer. Add a preprocessor for that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000855">Todo</a></b></dt><dd>(user): bounds of binary variables (and of integer ones) should be integer. Add a preprocessor for that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_8cc_source.html#l00309">309</a> of file <a class="el" href="lp__data_8cc_source.html">lp_data.cc</a>.</p>
 
@@ -1855,7 +1855,7 @@ This also returns false if any finite value has a magnitude larger than the give
 <p>If range constraints are present, each of the corresponding row is duplicated (with one becoming lower bounded and the other upper bounded). For such ranged row in the primal, duplicated_rows[row] is set to the column index in the dual of the corresponding column duplicate. For non-ranged row, duplicated_rows[row] is set to kInvalidCol.</p>
 <p>IMPORTANT: The linear_program argument must not have any free constraints.</p>
 <p>IMPORTANT: This function always interprets the argument in its minimization form. So the dual solution of the dual needs to be negated if we want to compute the solution of a maximization problem given as an argument.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000843">Todo</a></b></dt><dd>(user): Do not interpret as a minimization problem? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000862">Todo</a></b></dt><dd>(user): Do not interpret as a minimization problem? </dd></dl>
 <p>We always take the dual in its minimization form thanks to the <a class="el" href="#a34f83ba96fa59d73b4cd3449693c5e96">GetObjectiveCoefficientForMinimizationVersion()</a> below, so this will always be a maximization problem.</p>
 <p>Taking the dual does not change the offset nor the objective scaling factor.</p>
 <p>Create the dual variables y, with bounds depending on the type of constraints in the primal.</p>
@@ -2042,7 +2042,7 @@ This also returns false if any finite value has a magnitude larger than the give
 <p>While <a class="el" href="#a1a08072639a759f8cf7134407e4b0fac">Scale()</a> makes sure the coefficients inside the linear program matrix are in [-1, 1], the objective coefficients, variable bounds and constraint bounds can still take large values (originally or due to the matrix scaling).</p>
 <p>It makes a lot of sense to also scale them given that internally we use absolute tolerances, and that it is nice to have the same behavior if users scale their problems. For instance one could change the unit of ALL the variables from Bytes to MBytes if they denote memory quantities. Or express a cost in dollars instead of thousands of dollars.</p>
 <p>Here, we are quite prudent and just make sure that the range of the non-zeros magnitudes contains one. So for instance if all non-zeros costs are in [1e4, 1e6], we will divide them by 1e4 so that the new range is [1, 1e2].</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000844">Todo</a></b></dt><dd>(user): Another more aggressive idea is to set the median/mean/geomean of the magnitudes to one. Investigate if this leads to better results. It does look more robust.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000863">Todo</a></b></dt><dd>(user): Another more aggressive idea is to set the median/mean/geomean of the magnitudes to one. Investigate if this leads to better results. It does look more robust.</dd></dl>
 <p>Both functions update <a class="el" href="#ad007274fe2d94f55a00bf936772d7abc">objective_scaling_factor()</a>/objective_offset() and return the scaling coefficient so that:</p><ul>
 <li>For <a class="el" href="#a8c83436c29274ad2930e716a0032d708">ScaleObjective()</a>, the old coefficients can be retrieved by multiplying the new ones by the returned factor.</li>
 <li>For <a class="el" href="#a8194eeeee1d261be2efab1b22cd4a954">ScaleBounds()</a>, the old variable and constraint bounds can be retrieved by multiplying the new ones by the returned factor. </li>
@@ -2322,7 +2322,7 @@ This also returns false if any finite value has a magnitude larger than the give
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Functions to set the name of a variable or constraint. Note that you won't be able to find those named variables/constraints with FindOrCreate{Variable|Constraint}(). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000840">Todo</a></b></dt><dd>(user): Add PopulateIdsFromNames() so names added via <a class="el" href="classoperations__research_1_1Set.html">Set</a>{Variable|Constraint}Name() can be found. </dd></dl>
+<p>Functions to set the name of a variable or constraint. Note that you won't be able to find those named variables/constraints with FindOrCreate{Variable|Constraint}(). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000859">Todo</a></b></dt><dd>(user): Add PopulateIdsFromNames() so names added via <a class="el" href="classoperations__research_1_1Set.html">Set</a>{Variable|Constraint}Name() can be found. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_8cc_source.html#l00241">241</a> of file <a class="el" href="lp__data_8cc_source.html">lp_data.cc</a>.</p>
 

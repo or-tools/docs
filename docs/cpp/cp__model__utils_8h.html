@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a869d0ba93c0a19641fc4d0cdaf5b7233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sorted list of interval used by a constraint.  <br /></td></tr>
 <tr class="separator:a869d0ba93c0a19641fc4d0cdaf5b7233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef33ea83cc85c24b3cecb35ef00ac69" id="r_aeef33ea83cc85c24b3cecb35ef00ac69"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">Set</a> &gt; </td></tr>
-<tr class="memitem:aeef33ea83cc85c24b3cecb35ef00ac69"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aeef33ea83cc85c24b3cecb35ef00ac69">operations_research::sat::InsertVariablesFromConstraint</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>, int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>, <a class="el" href="classoperations__research_1_1Set.html">Set</a> &amp;output)</td></tr>
+<tr class="memitem:aeef33ea83cc85c24b3cecb35ef00ac69"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aeef33ea83cc85c24b3cecb35ef00ac69">operations_research::sat::InsertVariablesFromConstraint</a> (const CpModelProto &amp;model_proto, int <a class="el" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>, <a class="el" href="classoperations__research_1_1Set.html">Set</a> &amp;output)</td></tr>
 <tr class="memdesc:aeef33ea83cc85c24b3cecb35ef00ac69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert variables in a constraint into a set.  <br /></td></tr>
 <tr class="separator:aeef33ea83cc85c24b3cecb35ef00ac69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46540a899ab5e8fe1b55e12da55cbbe0" id="r_a46540a899ab5e8fe1b55e12da55cbbe0"><td class="memTemplParams" colspan="2">template&lt;typename ProtoWithDomain &gt; </td></tr>
@@ -231,11 +231,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab1263f7cb0bf4a69c2981e643af985f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1352f3fb2b6e1a4186a12473bb2b6d8e" id="r_a1352f3fb2b6e1a4186a12473bb2b6d8e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1352f3fb2b6e1a4186a12473bb2b6d8e"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1352f3fb2b6e1a4186a12473bb2b6d8e">operations_research::sat::FingerprintRepeatedField</a> (const google::protobuf::RepeatedField&lt; T &gt; &amp;sequence, uint64_t seed)</td></tr>
-<tr class="memdesc:a1352f3fb2b6e1a4186a12473bb2b6d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">T must be castable to uint64_t.  <br /></td></tr>
 <tr class="separator:a1352f3fb2b6e1a4186a12473bb2b6d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6494711186bdd07baa40f2f99718de24" id="r_a6494711186bdd07baa40f2f99718de24"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6494711186bdd07baa40f2f99718de24"><td class="memTemplItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6494711186bdd07baa40f2f99718de24">operations_research::sat::FingerprintSingleField</a> (const T &amp;field, uint64_t seed)</td></tr>
-<tr class="memdesc:a6494711186bdd07baa40f2f99718de24"><td class="mdescLeft">&#160;</td><td class="mdescRight">T must be castable to uint64_t.  <br /></td></tr>
 <tr class="separator:a6494711186bdd07baa40f2f99718de24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f1774c343aaebb5a3d9686e12e7f7e" id="r_a70f1774c343aaebb5a3d9686e12e7f7e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a70f1774c343aaebb5a3d9686e12e7f7e">operations_research::sat::FingerprintExpression</a> (const LinearExpressionProto &amp;lin, uint64_t seed)</td></tr>
 <tr class="memdesc:a70f1774c343aaebb5a3d9686e12e7f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a stable fingerprint of a linear expression.  <br /></td></tr>
@@ -260,6 +258,9 @@ Functions</h2></td></tr>
 <tr class="separator:a5fbce8f787bce863c63e07c6dd101be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6da39a32345d2a2c18a62bb356bfd3b3" id="r_a6da39a32345d2a2c18a62bb356bfd3b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a6da39a32345d2a2c18a62bb356bfd3b3">operations_research::sat::ConvertCpModelProtoToCnf</a> (const CpModelProto &amp;cp_model, std::string *out)</td></tr>
 <tr class="separator:a6da39a32345d2a2c18a62bb356bfd3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448193df35c1e481b2ad18e0fb097d8a" id="r_a448193df35c1e481b2ad18e0fb097d8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a448193df35c1e481b2ad18e0fb097d8a">operations_research::sat::CombineSeed</a> (int base_seed, int64_t <a class="el" href="resource_8cc.html#af12056bc2a8e3ec563f0940d87abbd2e">delta</a>)</td></tr>
+<tr class="memdesc:a448193df35c1e481b2ad18e0fb097d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">We assume delta &gt;= 0 and we only use the low bit of delta.  <br /></td></tr>
+<tr class="separator:a448193df35c1e481b2ad18e0fb097d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

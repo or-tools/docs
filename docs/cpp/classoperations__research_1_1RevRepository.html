@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 class operations_research::RevRepository&lt; T &gt;</div><p>A repository that maintains a set of reversible objects of type T. This is meant to be used for small types that are efficient to copy, like all the basic types, std::pair and things like this. </p>
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00046">46</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00048">48</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab1e418241e173b3affe588da9dc1362b" name="ab1e418241e173b3affe588da9dc1362b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1e418241e173b3affe588da9dc1362b">&#9670;&#160;</a></span>RevRepository()</h2>
@@ -167,7 +167,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00048">48</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00050">50</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00053">53</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00055">55</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Saves the given object value for the current level. If this is called multiple time by level, only the value of the first call matter. This is NOT optimized for many calls by level and should mainly be used just once for a given level. If a client cannot do that efficiently, it can use the <a class="el" href="#a3a297bbbed706b40b9b8e86baa4129b3">SaveStateWithStamp()</a> function below. </p>
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00060">60</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00062">62</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Calls <a class="el" href="#ac1a2c4a6f4565c480370691f97281f63">SaveState()</a> if the given stamp is not the same as the current one. This also sets the given stamp to the current one. The current stamp is maintained by this class and is updated on each level changes. The whole process make sure that only one SaveValue() par level will ever be called, so it is efficient to call this before each update to the object T. </p>
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00070">70</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00072">72</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="classoperations__research_1_1ReversibleInterface.html#ae25ce6ee33b736226102678c3a14b1dd">operations_research::ReversibleInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00133">133</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00135">135</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>

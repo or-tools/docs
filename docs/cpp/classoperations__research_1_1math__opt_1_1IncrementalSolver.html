@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,52 +102,77 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1IncrementalS
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classoperations__research_1_1math__opt_1_1IncrementalSolver-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">operations_research::math_opt::IncrementalSolver Class Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::math_opt::IncrementalSolver Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="solve_8h_source.html">solve.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for operations_research::math_opt::IncrementalSolver:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classoperations__research_1_1math__opt_1_1IncrementalSolver.png" usemap="#operations_5Fresearch::math_5Fopt::IncrementalSolver_map" alt=""/>
+  <map id="operations_5Fresearch::math_5Fopt::IncrementalSolver_map" name="operations_5Fresearch::math_5Fopt::IncrementalSolver_map">
+<area href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html" title="Incremental solve of a model." alt="operations_research::math_opt::internal::IncrementalSolverImpl" shape="rect" coords="0,56,363,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac52987b35a0c31f13e8b9216418efa45" id="r_ac52987b35a0c31f13e8b9216418efa45"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;arguments={})</td></tr>
-<tr class="separator:ac52987b35a0c31f13e8b9216418efa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c55e81345e38342756f961bc4a0bc57" id="r_a2c55e81345e38342756f961bc4a0bc57"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1UpdateResult.html">UpdateResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c55e81345e38342756f961bc4a0bc57">Update</a> ()</td></tr>
-<tr class="separator:a2c55e81345e38342756f961bc4a0bc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea1026cbaa608905097bfa7346c4d9f" id="r_a9ea1026cbaa608905097bfa7346c4d9f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ea1026cbaa608905097bfa7346c4d9f">SolveWithoutUpdate</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;arguments={}) const</td></tr>
-<tr class="separator:a9ea1026cbaa608905097bfa7346c4d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edd006d7c3fccc42b398803af5d8506" id="r_a1edd006d7c3fccc42b398803af5d8506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1edd006d7c3fccc42b398803af5d8506">solver_type</a> () const</td></tr>
-<tr class="separator:a1edd006d7c3fccc42b398803af5d8506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a969c472daa70e92e7c69151830d47be0" id="r_a969c472daa70e92e7c69151830d47be0"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a969c472daa70e92e7c69151830d47be0">New</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> <a class="el" href="#a1edd006d7c3fccc42b398803af5d8506">solver_type</a>, <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a> arguments={})</td></tr>
-<tr class="separator:a969c472daa70e92e7c69151830d47be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0c18cc15f2a31a95b0509ad41ad15a" id="r_a8d0c18cc15f2a31a95b0509ad41ad15a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d0c18cc15f2a31a95b0509ad41ad15a">IncrementalSolver</a> ()=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a31eab0685a86742ac6750e8e2812f0b0">default</a></td></tr>
+<tr class="separator:a8d0c18cc15f2a31a95b0509ad41ad15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8a258e3dde5d81a2d01025bf7308de" id="r_aac8a258e3dde5d81a2d01025bf7308de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8a258e3dde5d81a2d01025bf7308de">IncrementalSolver</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp;)=delete</td></tr>
+<tr class="separator:aac8a258e3dde5d81a2d01025bf7308de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea228c9b1f6820144897a01978e7763" id="r_aeea228c9b1f6820144897a01978e7763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeea228c9b1f6820144897a01978e7763">operator=</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp;)=delete</td></tr>
+<tr class="separator:aeea228c9b1f6820144897a01978e7763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae890565098acad5b67e63ae16888ad5b" id="r_ae890565098acad5b67e63ae16888ad5b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae890565098acad5b67e63ae16888ad5b">~IncrementalSolver</a> ()=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a31eab0685a86742ac6750e8e2812f0b0">default</a></td></tr>
+<tr class="separator:ae890565098acad5b67e63ae16888ad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acc343168813a3aededd590892599a8" id="r_a7acc343168813a3aededd590892599a8"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7acc343168813a3aededd590892599a8">Solve</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;arguments)=0</td></tr>
+<tr class="separator:a7acc343168813a3aededd590892599a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f10910447377d18d040d3c1a40ead4" id="r_a82f10910447377d18d040d3c1a40ead4"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve</a> ()</td></tr>
+<tr class="separator:a82f10910447377d18d040d3c1a40ead4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae584904080c16a484b633f9f8e3136a9" id="r_ae584904080c16a484b633f9f8e3136a9"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae584904080c16a484b633f9f8e3136a9">ComputeInfeasibleSubsystem</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;arguments)=0</td></tr>
+<tr class="separator:ae584904080c16a484b633f9f8e3136a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ca3ce7e00f79b683b2632a76c81d1f" id="r_ac1ca3ce7e00f79b683b2632a76c81d1f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1ca3ce7e00f79b683b2632a76c81d1f">ComputeInfeasibleSubsystem</a> ()</td></tr>
+<tr class="separator:ac1ca3ce7e00f79b683b2632a76c81d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3d39e71529fe7568d6ac736d136d64" id="r_a7e3d39e71529fe7568d6ac736d136d64"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1UpdateResult.html">UpdateResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update</a> ()=0</td></tr>
+<tr class="separator:a7e3d39e71529fe7568d6ac736d136d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274609a49df3de6de171ca62a47c34d7" id="r_a274609a49df3de6de171ca62a47c34d7"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274609a49df3de6de171ca62a47c34d7">SolveWithoutUpdate</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;arguments) const =0</td></tr>
+<tr class="separator:a274609a49df3de6de171ca62a47c34d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776d9c8996916371e5603cccce7da874" id="r_a776d9c8996916371e5603cccce7da874"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate</a> () const</td></tr>
+<tr class="separator:a776d9c8996916371e5603cccce7da874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859ce27f658d994eba4ae03747e9a61a" id="r_a859ce27f658d994eba4ae03747e9a61a"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a859ce27f658d994eba4ae03747e9a61a">ComputeInfeasibleSubsystemWithoutUpdate</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;arguments) const =0</td></tr>
+<tr class="separator:a859ce27f658d994eba4ae03747e9a61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1b80fa77604d413266fbbb5dfcf41f" id="r_a7d1b80fa77604d413266fbbb5dfcf41f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d1b80fa77604d413266fbbb5dfcf41f">ComputeInfeasibleSubsystemWithoutUpdate</a> () const</td></tr>
+<tr class="separator:a7d1b80fa77604d413266fbbb5dfcf41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac621ab2c36fcd1dcfb54b92b4f4d7544" id="r_ac621ab2c36fcd1dcfb54b92b4f4d7544"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac621ab2c36fcd1dcfb54b92b4f4d7544">solver_type</a> () const =0</td></tr>
+<tr class="memdesc:ac621ab2c36fcd1dcfb54b92b4f4d7544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying solver used.  <br /></td></tr>
+<tr class="separator:ac621ab2c36fcd1dcfb54b92b4f4d7544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Incremental solve of a model.</p>
-<p>This is a feature for advance users. Most users should only use the <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> function above.</p>
+<div class="textblock"><p>Interface for incrementally solving of a model.</p>
+<p>This is a feature for advance users. Most users should only use the non-incremental <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, SubprocessSolve(),... functions.</p>
 <p>Here incremental means that the we try to reuse the existing underlying solver internals between each solve. There is no guarantee though that the solver supports all possible model changes. Hence there is not guarantee that performances will be improved when using this class; this is solver dependent. Typically LPs have more to gain from incremental solve than MIPs. In both cases, even if the solver supports the model changes, incremental solve may actually be slower.</p>
-<p>The <a class="el" href="#a969c472daa70e92e7c69151830d47be0">New()</a> function instantiates the solver, setup it from the current state of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> and register on it to listen to changes. Calling <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> will update the underlying solver with latest model changes and solve this model.</p>
+<p>Implementation of this interface are returned by factories that can be found next to non-incremental solve functions. See <a class="el" href="namespaceoperations__research_1_1math__opt.html#a62a1167e4dca26a88aac67eb7808e4d5">NewIncrementalSolver()</a> in <a class="el" href="solve_8h.html">solve.h</a> and NewSubprocessIncrementalSolver() in subprocess_solve.h for example.</p>
+<p>Those factories function instantiates the solver, setup it from the current state of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> and register on it to listen to changes. Calling <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> will update the underlying solver with latest model changes and solve this model.</p>
 <p>Usage: <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> model = ...; <a class="el" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN(
     const std::unique_ptr&lt;IncrementalSolver&gt; incremental_solve,
-    IncrementalSolver::New(&amp;model, SolverType::kXxx))</a>;</p>
-<p>ASSIGN_OR_RETURN(const SolveResult result1, incremental_solve-&gt;<a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a>);</p>
+    NewIncrementalSolver(&amp;model, SolverType::kXxx))</a>;</p>
+<p>ASSIGN_OR_RETURN(const SolveResult result1, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
 <p>model.AddVariable(...); ...</p>
-<p>ASSIGN_OR_RETURN(const SolveResult result2, incremental_solve-&gt;<a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a>);</p>
+<p>ASSIGN_OR_RETURN(const SolveResult result2, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
 <p>...</p>
-<p>Lifecycle: The <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> is only keeping a std::weak_ref on <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>'s internal data and thus it returns an error if <a class="el" href="#a2c55e81345e38342756f961bc4a0bc57">Update()</a> or <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> are called after the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> has been destroyed. It is fine to destroy the <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> after the associated <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> though.</p>
-<p>Thread-safety: The <a class="el" href="#a969c472daa70e92e7c69151830d47be0">New()</a>, <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> and <a class="el" href="#a2c55e81345e38342756f961bc4a0bc57">Update()</a> methods must not be called while modifying the Model() (adding variables...). The user is expected to use proper synchronization primitives to serialize changes to the model and the use of this object. Note though that it is safe to call methods from different <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> instances on the same <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> concurrently. Same for calling <a class="el" href="#a969c472daa70e92e7c69151830d47be0">IncrementalSolver::New()</a>. The destructor is thread-safe and can be called even during a modification of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>.</p>
-<p>There is no problem calling <a class="el" href="namespaceoperations__research_1_1math__opt.html#a9ca1ff6e6dfb2dd2ec88ba8fe0153750">SolveWithoutUpdate()</a> concurrently on different instances of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> or while the model is being modified (unless of course the underlying solver itself is not thread-safe and can only be called from a single-thread).</p>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a>, <a class="el" href="#a2c55e81345e38342756f961bc4a0bc57">Update()</a> and <a class="el" href="namespaceoperations__research_1_1math__opt.html#a9ca1ff6e6dfb2dd2ec88ba8fe0153750">SolveWithoutUpdate()</a> are not reentrant so they should not be called concurrently on the same instance of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>.</dd></dl>
+<p>Lifecycle: The <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> is only keeping a std::weak_ref on <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>'s internal data and thus it returns an error if <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> or <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> are called after the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> has been destroyed. It is fine to destroy the <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> after the associated <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> though.</p>
+<p>Thread-safety: The New(), <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> and <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> methods must not be called while modifying the Model() (adding variables...). The user is expected to use proper synchronization primitives to serialize changes to the model and the use of this object. Note though that it is safe to call methods from different <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> instances on the same <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> concurrently. Same for calling factories of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>. The destructor is thread-safe and can be called even during a modification of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>.</p>
+<p>There is no problem calling <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> concurrently on different instances of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> or while the model is being modified (unless of course the underlying solver itself is not thread-safe and can only be called from a single-thread).</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> and <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> are not reentrant so they should not be called concurrently on the same instance of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>.</dd></dl>
 <p>Some solvers may add more restrictions regarding threading. Please see SolverType::kXxx documentation for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="solve_8h_source.html#l00168">168</a> of file <a class="el" href="solve_8h_source.html">solve.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a969c472daa70e92e7c69151830d47be0" name="a969c472daa70e92e7c69151830d47be0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a969c472daa70e92e7c69151830d47be0">&#9670;&#160;</a></span>New()</h2>
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00092">92</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8d0c18cc15f2a31a95b0509ad41ad15a" name="a8d0c18cc15f2a31a95b0509ad41ad15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0c18cc15f2a31a95b0509ad41ad15a">&#9670;&#160;</a></span>IncrementalSolver() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,63 +181,23 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &gt; &gt; operations_research::math_opt::IncrementalSolver::New </td>
+          <td class="memname">operations_research::math_opt::IncrementalSolver::IncrementalSolver </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> *</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a></td>          <td class="paramname"><span class="paramname"><em>arguments</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a new incremental solve for the given model. It may returns an error if the parameters are invalid (for example if the selected solver is not linked in the binary).</p>
-<p>The returned <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> keeps a copy of <code>arguments</code>. Thus the content of arguments.non_streamable (for example pointers to solver specific struct) must be valid until the destruction of the <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>. It also registers on the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> to keep track of updates (see class documentation for details). </p>
-
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2solve_8cc_source.html#l00136">136</a> of file <a class="el" href="math__opt_2cpp_2solve_8cc_source.html">solve.cc</a>.</p>
 
 </div>
 </div>
-<a id="ac52987b35a0c31f13e8b9216418efa45" name="ac52987b35a0c31f13e8b9216418efa45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac52987b35a0c31f13e8b9216418efa45">&#9670;&#160;</a></span>Solve()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::Solve </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Updates the underlying solver with latest model changes and runs the solve.</p>
-<p>A Status error will be returned if inputs are invalid or there is an unexpected failure in an underlying solver or for some internal <a class="el" href="namespaceoperations__research_1_1math__opt.html" title="An object oriented wrapper for quadratic constraints in ModelStorage.">math_opt</a> errors. Otherwise, check SolveResult::termination.reason to see if an optimal solution was found.</p>
-<p>Memory model: the returned SolveResult owns its own memory (for solutions, solve stats, etc.), EXPECT for a pointer back to the model. As a result:</p><ul>
-<li>Keep the model alive to access SolveResult,</li>
-<li>Avoid unnecessarily copying SolveResult,</li>
-<li>The result is generally accessible after mutating this, but some care is needed if variables or linear constraints are added or deleted.</li>
-</ul>
-<p>See <a class="el" href="callback_8h.html">callback.h</a> for documentation on arguments.callback and arguments.callback_registration. </p>
-
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2solve_8cc_source.html#l00164">164</a> of file <a class="el" href="math__opt_2cpp_2solve_8cc_source.html">solve.cc</a>.</p>
-
-</div>
-</div>
-<a id="a1edd006d7c3fccc42b398803af5d8506" name="a1edd006d7c3fccc42b398803af5d8506"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1edd006d7c3fccc42b398803af5d8506">&#9670;&#160;</a></span>solver_type()</h2>
+<a id="aac8a258e3dde5d81a2d01025bf7308de" name="aac8a258e3dde5d81a2d01025bf7308de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8a258e3dde5d81a2d01025bf7308de">&#9670;&#160;</a></span>IncrementalSolver() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +206,114 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> operations_research::math_opt::IncrementalSolver::solver_type </td>
+          <td class="memname">operations_research::math_opt::IncrementalSolver::IncrementalSolver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae890565098acad5b67e63ae16888ad5b" name="ae890565098acad5b67e63ae16888ad5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae890565098acad5b67e63ae16888ad5b">&#9670;&#160;</a></span>~IncrementalSolver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual operations_research::math_opt::IncrementalSolver::~IncrementalSolver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac1ca3ce7e00f79b683b2632a76c81d1f" name="ac1ca3ce7e00f79b683b2632a76c81d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ca3ce7e00f79b683b2632a76c81d1f">&#9670;&#160;</a></span>ComputeInfeasibleSubsystem() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt; operations_research::math_opt::IncrementalSolver::ComputeInfeasibleSubsystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00127">127</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
+
+</div>
+</div>
+<a id="ae584904080c16a484b633f9f8e3136a9" name="ae584904080c16a484b633f9f8e3136a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae584904080c16a484b633f9f8e3136a9">&#9670;&#160;</a></span>ComputeInfeasibleSubsystem() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt; operations_research::math_opt::IncrementalSolver::ComputeInfeasibleSubsystem </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the underlying solver with latest model changes and runs the computation.</p>
+<p>Same as <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> but compute the infeasible subsystem. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#a378d81b16d667bc8b2f534c6549000b2">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
+
+</div>
+</div>
+<a id="a7d1b80fa77604d413266fbbb5dfcf41f" name="a7d1b80fa77604d413266fbbb5dfcf41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1b80fa77604d413266fbbb5dfcf41f">&#9670;&#160;</a></span>ComputeInfeasibleSubsystemWithoutUpdate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt; operations_research::math_opt::IncrementalSolver::ComputeInfeasibleSubsystemWithoutUpdate </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -234,57 +326,244 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solve_8h_source.html#l00223">223</a> of file <a class="el" href="solve_8h_source.html">solve.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00166">166</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
 
 </div>
 </div>
-<a id="a9ea1026cbaa608905097bfa7346c4d9f" name="a9ea1026cbaa608905097bfa7346c4d9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ea1026cbaa608905097bfa7346c4d9f">&#9670;&#160;</a></span>SolveWithoutUpdate()</h2>
+<a id="a859ce27f658d994eba4ae03747e9a61a" name="a859ce27f658d994eba4ae03747e9a61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a859ce27f658d994eba4ae03747e9a61a">&#9670;&#160;</a></span>ComputeInfeasibleSubsystemWithoutUpdate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::SolveWithoutUpdate </td>
+          <td class="memname">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html">ComputeInfeasibleSubsystemResult</a> &gt; operations_research::math_opt::IncrementalSolver::ComputeInfeasibleSubsystemWithoutUpdate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html">ComputeInfeasibleSubsystemArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Same as <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> but does not update the underlying solver with the latest changes to the model.</p>
-<p>This is an advanced API, most users should use <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a>. </p>
+<p>Same as <a class="el" href="#ac1ca3ce7e00f79b683b2632a76c81d1f">ComputeInfeasibleSubsystem()</a> but does not update the underlying solver with the latest changes to the model.</p>
+<p>This is an advanced API, most users should use <a class="el" href="#ac1ca3ce7e00f79b683b2632a76c81d1f">ComputeInfeasibleSubsystem()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2solve_8cc_source.html#l00195">195</a> of file <a class="el" href="math__opt_2cpp_2solve_8cc_source.html">solve.cc</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#ae411aebc76f692bbca9c93ed22ab25d7">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
 
 </div>
 </div>
-<a id="a2c55e81345e38342756f961bc4a0bc57" name="a2c55e81345e38342756f961bc4a0bc57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c55e81345e38342756f961bc4a0bc57">&#9670;&#160;</a></span>Update()</h2>
+<a id="aeea228c9b1f6820144897a01978e7763" name="aeea228c9b1f6820144897a01978e7763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea228c9b1f6820144897a01978e7763">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1UpdateResult.html">UpdateResult</a> &gt; operations_research::math_opt::IncrementalSolver::Update </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp; operations_research::math_opt::IncrementalSolver::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82f10910447377d18d040d3c1a40ead4" name="a82f10910447377d18d040d3c1a40ead4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82f10910447377d18d040d3c1a40ead4">&#9670;&#160;</a></span>Solve() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::Solve </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00117">117</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
+
+</div>
+</div>
+<a id="a7acc343168813a3aededd590892599a8" name="a7acc343168813a3aededd590892599a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acc343168813a3aededd590892599a8">&#9670;&#160;</a></span>Solve() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::Solve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the underlying solver with latest model changes and runs the solve.</p>
+<p>A Status error will be returned if inputs are invalid or there is an unexpected failure in an underlying solver or for some internal <a class="el" href="namespaceoperations__research_1_1math__opt.html" title="An object oriented wrapper for quadratic constraints in ModelStorage.">math_opt</a> errors. Otherwise, check SolveResult::termination.reason to see if an optimal solution was found.</p>
+<p>Memory model: the returned SolveResult owns its own memory (for solutions, solve stats, etc.), EXPECT for a pointer back to the model. As a result:</p><ul>
+<li>Keep the model alive to access SolveResult,</li>
+<li>Avoid unnecessarily copying SolveResult,</li>
+<li>The result is generally accessible after mutating this, but some care is needed if variables or linear constraints are added or deleted.</li>
+</ul>
+<p>See <a class="el" href="callback_8h.html">callback.h</a> for documentation on arguments.callback and arguments.callback_registration. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#a07dcb34f0dd810e54bb83f85bb60b58c">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
+
+</div>
+</div>
+<a id="ac621ab2c36fcd1dcfb54b92b4f4d7544" name="ac621ab2c36fcd1dcfb54b92b4f4d7544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac621ab2c36fcd1dcfb54b92b4f4d7544">&#9670;&#160;</a></span>solver_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a> operations_research::math_opt::IncrementalSolver::solver_type </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the underlying solver used. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#a85aaecef4530c0f4d6373e59af648e6b">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
+
+</div>
+</div>
+<a id="a776d9c8996916371e5603cccce7da874" name="a776d9c8996916371e5603cccce7da874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776d9c8996916371e5603cccce7da874">&#9670;&#160;</a></span>SolveWithoutUpdate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::SolveWithoutUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00153">153</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
+
+</div>
+</div>
+<a id="a274609a49df3de6de171ca62a47c34d7" name="a274609a49df3de6de171ca62a47c34d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274609a49df3de6de171ca62a47c34d7">&#9670;&#160;</a></span>SolveWithoutUpdate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual absl::StatusOr&lt; SolveResult &gt; operations_research::math_opt::IncrementalSolver::SolveWithoutUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1SolveArguments.html">SolveArguments</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> but does not update the underlying solver with the latest changes to the model.</p>
+<p>This is an advanced API, most users should use <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>. </p>
+
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#a54daa57285b6a528ca4a7ee8175a254a">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
+
+</div>
+</div>
+<a id="a7e3d39e71529fe7568d6ac736d136d64" name="a7e3d39e71529fe7568d6ac736d136d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3d39e71529fe7568d6ac736d136d64">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1UpdateResult.html">UpdateResult</a> &gt; operations_research::math_opt::IncrementalSolver::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Updates the model to solve.</p>
-<p>This is an advanced API, most users should use <a class="el" href="#ac52987b35a0c31f13e8b9216418efa45">Solve()</a> above that does the update and before calling the solver. Calling this function is only useful for users that want to access to update data or users that need to use <a class="el" href="namespaceoperations__research_1_1math__opt.html#a9ca1ff6e6dfb2dd2ec88ba8fe0153750">SolveWithoutUpdate()</a> (which should not be common).</p>
+<p>This is an advanced API, most users should use <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> above that does the update and before calling the solver. Calling this function is only useful for users that want to access to update data or users that need to use <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> (which should not be common).</p>
 <p>The returned value indicates if the update was possible or if the solver had to be recreated from scratch (which may happen when the solver does not support this specific update or any update at all). It also contains the attempted update data.</p>
 <p>A status error will be returned if the underlying solver has an internal error. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2solve_8cc_source.html#l00170">170</a> of file <a class="el" href="math__opt_2cpp_2solve_8cc_source.html">solve.cc</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html#a36a242cc2d29b0ab2f0316b5b8f469be">operations_research::math_opt::internal::IncrementalSolverImpl</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>ortools/math_opt/cpp/<a class="el" href="solve_8h_source.html">solve.h</a></li>
-<li>ortools/math_opt/cpp/<a class="el" href="math__opt_2cpp_2solve_8cc_source.html">solve.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>ortools/math_opt/cpp/<a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,7 +111,7 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SharedBoundsManage
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae017b893b05588b21d8667976773544b" id="r_ae017b893b05588b21d8667976773544b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae017b893b05588b21d8667976773544b">SharedBoundsManager</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>)</td></tr>
+<tr class="memitem:ae017b893b05588b21d8667976773544b" id="r_ae017b893b05588b21d8667976773544b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae017b893b05588b21d8667976773544b">SharedBoundsManager</a> (const CpModelProto &amp;model_proto)</td></tr>
 <tr class="separator:ae017b893b05588b21d8667976773544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58f95aa33b844058c4253d0dbf7862b" id="r_af58f95aa33b844058c4253d0dbf7862b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af58f95aa33b844058c4253d0dbf7862b">ReportPotentialNewBounds</a> (const std::string &amp;worker_name, const std::vector&lt; int &gt; &amp;variables, const std::vector&lt; int64_t &gt; &amp;new_lower_bounds, const std::vector&lt; int64_t &gt; &amp;new_upper_bounds)</td></tr>
 <tr class="separator:af58f95aa33b844058c4253d0dbf7862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a300ea1072b4ebb4f7797e1f0196043c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588251f316c07272f1f172a25eed3c73" id="r_a588251f316c07272f1f172a25eed3c73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a588251f316c07272f1f172a25eed3c73">Synchronize</a> ()</td></tr>
 <tr class="separator:a588251f316c07272f1f172a25eed3c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d9b51fb79f844edf336b1d9a584110" id="r_a55d9b51fb79f844edf336b1d9a584110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d9b51fb79f844edf336b1d9a584110">LogStatistics</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:a55d9b51fb79f844edf336b1d9a584110" id="r_a55d9b51fb79f844edf336b1d9a584110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d9b51fb79f844edf336b1d9a584110">LogStatistics</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="separator:a55d9b51fb79f844edf336b1d9a584110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ff62f62bc0311cbf7bfe05d067889ac" id="r_a8ff62f62bc0311cbf7bfe05d067889ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff62f62bc0311cbf7bfe05d067889ac">NumBoundsExported</a> (const std::string &amp;worker_name)</td></tr>
 <tr class="separator:a8ff62f62bc0311cbf7bfe05d067889ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class manages a pool of lower and upper bounds on a set of variables in a parallel context. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00492">492</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00490">490</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae017b893b05588b21d8667976773544b" name="ae017b893b05588b21d8667976773544b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae017b893b05588b21d8667976773544b">&#9670;&#160;</a></span>SharedBoundsManager()</h2>
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If we solved a small independent component of the full problem, then we can in most situation fix the solution on this subspace.</p>
 <dl class="section note"><dt>Note</dt><dd>because there can be more than one optimal solution on an independent subproblem, it is important to do that in a locked fashion, and reject future incompatible fixing.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002332">Todo</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002365">Todo</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
 <p>Abort if incompatible. Note that we only check the position that we are about to fix. This should be enough. Otherwise we might never accept any solution because the base LNS solution was not the same in some of the variables that we fixed here.</p>
 <p>Fix the variables.</p>
 <p>This is problematic as we might find a different partial solution. To allow for further investigation, we currently fix it to the debug solution instead.</p>
@@ -256,7 +256,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If non-empty, we will check that all bounds update contains this solution. </p><dl class="section note"><dt>Note</dt><dd>this might fail once we reach optimality and we might have wrong bounds, but if it fail before that it can help find bugs. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00539">539</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00537">537</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Debug only. <a class="el" href="classoperations__research_1_1Set.html">Set</a> dump prefix for solutions written to file. </p>
 
-<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00544">544</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00542">542</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 
 </div>
 </div>

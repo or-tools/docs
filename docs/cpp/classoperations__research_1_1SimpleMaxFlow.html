@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -159,9 +159,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simple and efficient max-cost flow interface. This is as fast as GenericMaxFlow&lt;ReverseArcStaticGraph&gt;, which is the fastest, but uses more memory in order to hide the somewhat involved construction of the static graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000665">Todo</a></b></dt><dd>(user): If the need arises, extend this interface to support warm start. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000684">Todo</a></b></dt><dd>(user): If the need arises, extend this interface to support warm start. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00152">152</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00151">151</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8a7acde49c4d55f2eb42e2b6869cdb3d" name="a8a7acde49c4d55f2eb42e2b6869cdb3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a7acde49c4d55f2eb42e2b6869cdb3d">&#9670;&#160;</a></span>Status</h2>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da3b60465215ab4363dec64fd313771658" name="a8a7acde49c4d55f2eb42e2b6869cdb3da3b60465215ab4363dec64fd313771658"></a>OPTIMAL&#160;</td><td class="fielddoc"><p><a class="el" href="#a9ab115ebcfcc1281523de56099bf6bed">Solve()</a> was called and found an optimal solution. Note that <a class="el" href="#a553204b2dccf205ff9c00c3c589d309b">OptimalFlow()</a> may be 0 which means that the sink is not reachable from the source. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da18a3ff25435f10be68329d4b39de4700" name="a8a7acde49c4d55f2eb42e2b6869cdb3da18a3ff25435f10be68329d4b39de4700"></a>POSSIBLE_OVERFLOW&#160;</td><td class="fielddoc"><p>There is a flow &gt; std::numeric_limits&lt;FlowQuantity&gt;::max(). Note that in this case, the class will contain a solution with a flow reaching that bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000668">Todo</a></b></dt><dd>(user): rename POSSIBLE_OVERFLOW to INT_OVERFLOW and modify our clients. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000687">Todo</a></b></dt><dd>(user): rename POSSIBLE_OVERFLOW to INT_OVERFLOW and modify our clients. </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da2260e76ea3adc21a9cd21f46f232ebbc" name="a8a7acde49c4d55f2eb42e2b6869cdb3da2260e76ea3adc21a9cd21f46f232ebbc"></a>BAD_INPUT&#160;</td><td class="fielddoc"><p>The input is inconsistent (bad tail/head/capacity values). </p>
 </td></tr>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00186">186</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00185">185</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Change the capacity of an arc.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This looks like it enables incremental solves, but as of 2018-02, the next <a class="el" href="#a9ab115ebcfcc1281523de56099bf6bed">Solve()</a> will restart from scratch anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000667">Todo</a></b></dt><dd>(user): Support incrementality in the max flow implementation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000686">Todo</a></b></dt><dd>(user): Support incrementality in the max flow implementation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l00055">55</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
 

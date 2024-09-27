@@ -15,7 +15,7 @@ var classoperations__research_1_1glop_1_1VariableValues =
     [ "SetNonBasicVariableValueFromStatus", "classoperations__research_1_1glop_1_1VariableValues.html#af968830c599faba51d812122394ea523", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1VariableValues.html#a47d7aaf8c9743d151142cdc6a75276cf", null ],
     [ "UpdateDualPrices", "classoperations__research_1_1glop_1_1VariableValues.html#ad4e69e53b19bf5b13cbcd1a2192b73fe", null ],
-    [ "UpdateGivenNonBasicVariables", "classoperations__research_1_1glop_1_1VariableValues.html#a94f5942343034bef9f5fb8c93d443b27", null ],
+    [ "UpdateGivenNonBasicVariables", "classoperations__research_1_1glop_1_1VariableValues.html#a590355e95042b0ec12df5fee56be3315", null ],
     [ "UpdateOnPivoting", "classoperations__research_1_1glop_1_1VariableValues.html#a50f0262a19afea6d9be4039ccd2998b6", null ],
     [ "UpdatePrimalPhaseICosts", "classoperations__research_1_1glop_1_1VariableValues.html#a195fe5961a2f620eb08bf12c8db6b7b5", null ]
 ];

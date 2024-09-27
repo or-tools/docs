@@ -28,7 +28,7 @@ var namespaceoperations__research_1_1bop =
     [ "RelationGraphBasedNeighborhood", "classoperations__research_1_1bop_1_1RelationGraphBasedNeighborhood.html", "classoperations__research_1_1bop_1_1RelationGraphBasedNeighborhood" ],
     [ "SatCoreBasedOptimizer", "classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html", "classoperations__research_1_1bop_1_1SatCoreBasedOptimizer" ],
     [ "SatWrapper", "classoperations__research_1_1bop_1_1SatWrapper.html", "classoperations__research_1_1bop_1_1SatWrapper" ],
-    [ "BopConstraintTerms", "namespaceoperations__research_1_1bop.html#a7425f8db3eb0f3c07f7c9792ef15a41e", null ],
+    [ "BopConstraintTerms", "namespaceoperations__research_1_1bop.html#a420bbc055f061a057b24ff52fc738015", null ],
     [ "BopSolveStatus", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5", [
       [ "OPTIMAL_SOLUTION_FOUND", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5a4bd9906264b0d3d68d0a39c3536d9b66", null ],
       [ "FEASIBLE_SOLUTION_FOUND", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5af1b7de0cef3266eb7fad94409a745570", null ],

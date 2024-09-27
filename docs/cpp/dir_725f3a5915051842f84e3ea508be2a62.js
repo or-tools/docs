@@ -36,6 +36,7 @@ var dir_725f3a5915051842f84e3ea508be2a62 =
     [ "perfect_matching.h", "perfect__matching_8h.html", "perfect__matching_8h" ],
     [ "random_graph.cc", "random__graph_8cc.html", "random__graph_8cc" ],
     [ "random_graph.h", "random__graph_8h.html", "random__graph_8h" ],
+    [ "rooted_tree.h", "rooted__tree_8h.html", "rooted__tree_8h" ],
     [ "shortest_paths.cc", "shortest__paths_8cc.html", "shortest__paths_8cc" ],
     [ "shortest_paths.h", "shortest__paths_8h.html", "shortest__paths_8h" ],
     [ "shortest_paths_benchmarks.cc", "shortest__paths__benchmarks_8cc.html", null ],

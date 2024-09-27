@@ -7,5 +7,5 @@ var searchData=
   ['xpressiscorrectlyinstalled_4',['XpressIsCorrectlyInstalled',['../namespaceoperations__research.html#a8a407053b194dd9b1f6f23abc96c7db6',1,'operations_research']]],
   ['xpressmpcallbackcontext_5',['XpressMPCallbackContext',['../classoperations__research_1_1XpressMPCallbackContext.html#a70ee9c1898ee813ac16a08eec158d7b3',1,'operations_research::XpressMPCallbackContext']]],
   ['xpresssolveproto_6',['XPressSolveProto',['../namespaceoperations__research.html#aed477aae261752eb85ec65bfdb05b1e0',1,'operations_research']]],
-  ['xpresstompsolverbasisstatus_7',['XpressToMPSolverBasisStatus',['../namespaceoperations__research.html#a12dca8ac30758f65f985612ce87592ad',1,'operations_research']]]
+  ['xpresstompsolverbasisstatus_7',['XpressToMPSolverBasisStatus',['../namespaceoperations__research.html#a361e2b0edf22016e49d8e742fae42dd2',1,'operations_research']]]
 ];

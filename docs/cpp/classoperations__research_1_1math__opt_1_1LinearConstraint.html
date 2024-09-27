@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -156,9 +156,10 @@ Friends</h2></td></tr>
 <tr class="separator:ae2ca5a5b52d69c62346a91ba19effc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A value type that references a linear constraint from ModelStorage. Usually this type is passed by copy. </p>
+<div class="textblock"><p>A value type that references a linear constraint from ModelStorage. Usually this type is passed by copy.</p>
+<p>This type implements <a href="https://abseil.io/docs/cpp/guides/hash">https://abseil.io/docs/cpp/guides/hash</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00041">41</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00043">43</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2c31b25f50038d33559e154301f36de5" name="a2c31b25f50038d33559e154301f36de5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c31b25f50038d33559e154301f36de5">&#9670;&#160;</a></span>IdType</h2>
@@ -174,7 +175,7 @@ Friends</h2></td></tr>
 
 <p>The typed integer used for ids. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00044">44</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00046">46</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +207,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00187">187</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00189">189</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +239,7 @@ Friends</h2></td></tr>
 <p>const <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> c = model.AddLinearConstraint(3.2 &lt;= x + 1.0 &lt;= 4.2);</p>
 <p>///&lt; Here <code>e</code> will contain 3.2 - 1.0 &lt;= x &lt;= 4.2 - 1.0. const <a class="el" href="structoperations__research_1_1math__opt_1_1BoundedLinearExpression.html" title="A LinearExpression with upper and lower bounds.">BoundedLinearExpression</a> e = c.AsBoundedLinearExpression(); </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00140">140</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00142">142</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +268,7 @@ Friends</h2></td></tr>
 
 <p>Returns 0.0 if the variable is not used in the constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00134">134</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00136">136</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +296,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Inline function implementations </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00106">106</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00108">108</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +323,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00127">127</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00129">129</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +350,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00112">112</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00114">114</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +377,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00120">120</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00122">122</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +404,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00110">110</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00112">112</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +432,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a detailed string description of the contents of the constraint (not its name, use <code>&lt;&lt;</code> for that instead). </p>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00152">152</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00154">154</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +459,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00108">108</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00110">110</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +486,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00116">116</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00118">118</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +520,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00170">170</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00172">172</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +551,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00165">165</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00167">167</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -581,9 +582,9 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000903">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000923">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00175">175</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00177">177</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -614,7 +615,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00161">161</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html#l00163">163</a> of file <a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
 
 </div>
 </div>

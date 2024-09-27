@@ -61,5 +61,6 @@ var classoperations__research_1_1ModelBuilderHelper =
     [ "VarName", "classoperations__research_1_1ModelBuilderHelper.html#a451426d25128ed1b99fa250c761008af", null ],
     [ "VarObjectiveCoefficient", "classoperations__research_1_1ModelBuilderHelper.html#a859302a575d75b996ba46ca3629ac908", null ],
     [ "VarUpperBound", "classoperations__research_1_1ModelBuilderHelper.html#a7c3b256f85231919616f38872cc8fc8d", null ],
-    [ "WriteModelToProtoFile", "classoperations__research_1_1ModelBuilderHelper.html#af558451e70536e1b5c04f6b9fe3bb520", null ]
+    [ "WriteModelToProtoFile", "classoperations__research_1_1ModelBuilderHelper.html#af558451e70536e1b5c04f6b9fe3bb520", null ],
+    [ "WriteToMpsFile", "classoperations__research_1_1ModelBuilderHelper.html#ac0f07c45314dd9bbbdead4c752eb8f38", null ]
 ];

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -141,7 +141,7 @@ $(function(){initNavTree('deviation_8cc_source.html',''); initResizable(true); }
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            IntVar* <span class="keyword">const</span> deviation_var, int64_t total_sum)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      : Constraint(solver),</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_variable" href="alldiff__cst_8cc.html#a151248525a9e07eb3e6e60ea1c4995eb">vars_</a>(vars),</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        size_(vars.size()),</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        size_(vars.<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>()),</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        deviation_var_(deviation_var),</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        total_sum_(total_sum),</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        scaled_vars_assigned_value_(new int64_t[size_]),</div>
@@ -524,11 +524,12 @@ $(function(){initNavTree('deviation_8cc_source.html',''); initResizable(true); }
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}</div>
 </div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="ttc" id="a2d__rectangle__presolve_8cc_html_aa1cb4ce111532ea2035639aa02569f14"><div class="ttname"><a href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a></div><div class="ttdeci">IntegerValue size</div><div class="ttdef"><b>Definition</b> <a href="2d__rectangle__presolve_8cc_source.html#l00235">2d_rectangle_presolve.cc:235</a></div></div>
 <div class="ttc" id="aalldiff__cst_8cc_html_a151248525a9e07eb3e6e60ea1c4995eb"><div class="ttname"><a href="alldiff__cst_8cc.html#a151248525a9e07eb3e6e60ea1c4995eb">vars_</a></div><div class="ttdeci">const std::vector&lt; IntVar * &gt; vars_</div><div class="ttdef"><b>Definition</b> <a href="alldiff__cst_8cc_source.html#l00045">alldiff_cst.cc:45</a></div></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1Constraint_html"><div class="ttname"><a href="classoperations__research_1_1Constraint.html">operations_research::Constraint</a></div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_8h_source.html#l03847">constraint_solver.h:3847</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1IntVar_html"><div class="ttname"><a href="classoperations__research_1_1IntVar.html">operations_research::IntVar</a></div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_8h_source.html#l04278">constraint_solver.h:4278</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1MathUtil_html_acf683d3431397fcc5c5cab80f1c5e8db"><div class="ttname"><a href="classoperations__research_1_1MathUtil.html#acf683d3431397fcc5c5cab80f1c5e8db">operations_research::MathUtil::FloorOfRatio</a></div><div class="ttdeci">static IntegralType FloorOfRatio(IntegralType numerator, IntegralType denominator)</div><div class="ttdef"><b>Definition</b> <a href="mathutil_8h_source.html#l00052">mathutil.h:52</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MathUtil_html_acf683d3431397fcc5c5cab80f1c5e8db"><div class="ttname"><a href="classoperations__research_1_1MathUtil.html#acf683d3431397fcc5c5cab80f1c5e8db">operations_research::MathUtil::FloorOfRatio</a></div><div class="ttdeci">static IntegralType FloorOfRatio(IntegralType numerator, IntegralType denominator)</div><div class="ttdef"><b>Definition</b> <a href="mathutil_8h_source.html#l00054">mathutil.h:54</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1ModelVisitor_html_a2075ef405e2f03aabc0420352e714c10"><div class="ttname"><a href="classoperations__research_1_1ModelVisitor.html#a2075ef405e2f03aabc0420352e714c10">operations_research::ModelVisitor::kDeviation</a></div><div class="ttdeci">static const char kDeviation[]</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_8h_source.html#l03613">constraint_solver.h:3613</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1ModelVisitor_html_a64578e607ee4cd1e14208a78f5a7fb36"><div class="ttname"><a href="classoperations__research_1_1ModelVisitor.html#a64578e607ee4cd1e14208a78f5a7fb36">operations_research::ModelVisitor::kTargetArgument</a></div><div class="ttdeci">static const char kTargetArgument[]</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_8h_source.html#l03751">constraint_solver.h:3751</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1ModelVisitor_html_a7d375108c569631374e3248701fa1c4e"><div class="ttname"><a href="classoperations__research_1_1ModelVisitor.html#a7d375108c569631374e3248701fa1c4e">operations_research::ModelVisitor::kValueArgument</a></div><div class="ttdeci">static const char kValueArgument[]</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_8h_source.html#l03755">constraint_solver.h:3755</a></div></div>

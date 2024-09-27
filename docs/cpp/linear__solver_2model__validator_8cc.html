@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -123,6 +123,7 @@ $(function(){initNavTree('linear__solver_2model__validator_8cc.html',''); initRe
 <code>#include &quot;absl/strings/match.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
 <code>#include &quot;absl/types/optional.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="accurate__sum_8h_source.html">ortools/base/accurate_sum.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
@@ -152,9 +153,9 @@ Functions</h2></td></tr>
 <tr class="separator:a3f15a1b3b1e093ebe2375816984f938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa792f9cf1ccd18b44bbab30916f06745" id="r_aa792f9cf1ccd18b44bbab30916f06745"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa792f9cf1ccd18b44bbab30916f06745">operations_research::FindErrorInMPModelProto</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double abs_value_threshold, const bool accept_trivially_infeasible_bounds)</td></tr>
 <tr class="separator:aa792f9cf1ccd18b44bbab30916f06745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b0697babe569844931569546701b78" id="r_a18b0697babe569844931569546701b78"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a18b0697babe569844931569546701b78">operations_research::ExtractValidMPModelOrPopulateResponseStatus</a> (const MPModelRequest &amp;request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abacb2b9e02c9f6af3a8e28effac43758">response</a>)</td></tr>
+<tr class="memitem:a18b0697babe569844931569546701b78" id="r_a18b0697babe569844931569546701b78"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a18b0697babe569844931569546701b78">operations_research::ExtractValidMPModelOrPopulateResponseStatus</a> (const MPModelRequest &amp;request, MPSolutionResponse *response)</td></tr>
 <tr class="separator:a18b0697babe569844931569546701b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a970f43a1f64d48d4d15d84279bd8d101" id="r_a970f43a1f64d48d4d15d84279bd8d101"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a970f43a1f64d48d4d15d84279bd8d101">operations_research::GetMPModelOrPopulateResponse</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelRequest &gt; &amp;request, MPSolutionResponse *<a class="el" href="cp__model__solver_8cc.html#abacb2b9e02c9f6af3a8e28effac43758">response</a>)</td></tr>
+<tr class="memitem:a970f43a1f64d48d4d15d84279bd8d101" id="r_a970f43a1f64d48d4d15d84279bd8d101"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a970f43a1f64d48d4d15d84279bd8d101">operations_research::GetMPModelOrPopulateResponse</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelRequest &gt; &amp;request, MPSolutionResponse *response)</td></tr>
 <tr class="separator:a970f43a1f64d48d4d15d84279bd8d101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ee4d82cf625670cdc1f52197454654" id="r_ae4ee4d82cf625670cdc1f52197454654"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae4ee4d82cf625670cdc1f52197454654">operations_research::FindFeasibilityErrorInSolutionHint</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, double tolerance)</td></tr>
 <tr class="separator:ae4ee4d82cf625670cdc1f52197454654"><td class="memSeparator" colspan="2">&#160;</td></tr>

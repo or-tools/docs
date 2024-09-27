@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,15 +115,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45a94bbfb1c58b717b710e9b926699a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe235864c43f519c5ac9c0de3d870f4" id="r_abbe235864c43f519c5ac9c0de3d870f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbe235864c43f519c5ac9c0de3d870f4">NextSolution</a> ()</td></tr>
 <tr class="separator:abbe235864c43f519c5ac9c0de3d870f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2db5d80e1d553dd7b3c02d7ed5b9fc" id="r_a1e2db5d80e1d553dd7b3c02d7ed5b9fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e2db5d80e1d553dd7b3c02d7ed5b9fc">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus)</td></tr>
-<tr class="separator:a1e2db5d80e1d553dd7b3c02d7ed5b9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e0ca28931fabd554d5511a38816f24" id="r_a85e0ca28931fabd554d5511a38816f24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e0ca28931fabd554d5511a38816f24">NextSolution</a> (const std::vector&lt; SubsetIndex &gt; &amp;focus, const <a class="el" href="namespaceoperations__research.html#a4f740c94953f253d0a3b27ae3996e001">SubsetCostVector</a> &amp;costs)</td></tr>
-<tr class="separator:a85e0ca28931fabd554d5511a38816f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb859aa7d07597ea16254b2eb32a5743" id="r_afb859aa7d07597ea16254b2eb32a5743"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb859aa7d07597ea16254b2eb32a5743">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus)</td></tr>
+<tr class="separator:afb859aa7d07597ea16254b2eb32a5743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e33c5747ecb3fa8bd5c221df01fd57f" id="r_a0e33c5747ecb3fa8bd5c221df01fd57f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e33c5747ecb3fa8bd5c221df01fd57f">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus, const <a class="el" href="namespaceoperations__research.html#ad8d046d2df6f4830e98a61b2b4355246">SubsetCostVector</a> &amp;costs)</td></tr>
+<tr class="memdesc:a0e33c5747ecb3fa8bd5c221df01fd57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same with a different set of costs.  <br /></td></tr>
+<tr class="separator:a0e33c5747ecb3fa8bd5c221df01fd57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Solution generator based on the degree of elements. The degree of an element is the number of subsets covering it. The generator consists in iteratively choosing a non-covered element with the smallest degree, and selecting a subset that covers it with the least cost. The newly-covered elements degree are also updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00188">188</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00190">190</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a45a94bbfb1c58b717b710e9b926699a5" name="a45a94bbfb1c58b717b710e9b926699a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45a94bbfb1c58b717b710e9b926699a5">&#9670;&#160;</a></span>ElementDegreeSolutionGenerator()</h2>
@@ -148,7 +149,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00190">190</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00192">192</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -167,14 +168,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if a solution was found. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000049">Todo</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
+<p>Returns true if a solution was found. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1ElementDegreeSolutionGenerator.html">ElementDegreeSolutionGenerator</a>. There is no need to use a priority queue here, as the ratios are computed on-demand. Also elements are sorted based on degree once and for all and moved past when the elements become already covered. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00202">202</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00181">181</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
-<a id="a1e2db5d80e1d553dd7b3c02d7ed5b9fc" name="a1e2db5d80e1d553dd7b3c02d7ed5b9fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e2db5d80e1d553dd7b3c02d7ed5b9fc">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/3]</span></h2>
+<a id="afb859aa7d07597ea16254b2eb32a5743" name="afb859aa7d07597ea16254b2eb32a5743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb859aa7d07597ea16254b2eb32a5743">&#9670;&#160;</a></span>NextSolution() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,19 +184,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool operations_research::ElementDegreeSolutionGenerator::NextSolution </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span></td><td>)</td>
+          <td class="paramtype">absl::Span&lt; const SubsetIndex &gt;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the next partial solution considering only the subsets whose indices are in focus. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00207">207</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00187">187</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
-<a id="a85e0ca28931fabd554d5511a38816f24" name="a85e0ca28931fabd554d5511a38816f24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85e0ca28931fabd554d5511a38816f24">&#9670;&#160;</a></span>NextSolution() <span class="overload">[3/3]</span></h2>
+<a id="a0e33c5747ecb3fa8bd5c221df01fd57f" name="a0e33c5747ecb3fa8bd5c221df01fd57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e33c5747ecb3fa8bd5c221df01fd57f">&#9670;&#160;</a></span>NextSolution() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,19 +204,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool operations_research::ElementDegreeSolutionGenerator::NextSolution </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; SubsetIndex &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const SubsetIndex &gt;</td>          <td class="paramname"><span class="paramname"><em>focus</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceoperations__research.html#a4f740c94953f253d0a3b27ae3996e001">SubsetCostVector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>costs</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="namespaceoperations__research.html#ad8d046d2df6f4830e98a61b2b4355246">SubsetCostVector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>costs</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The priority queue maintains the non-covered element with the smallest degree.</p>
-<p>Don't expect the queue to be empty, because of the break in the while loop.</p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00212">212</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p>Same with a different set of costs. </p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00194">194</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>

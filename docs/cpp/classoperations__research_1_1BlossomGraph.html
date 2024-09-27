@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -208,10 +208,10 @@ Static Public Attributes</h2></td></tr>
 <p>A matched pair of free nodes: [0] === [0]</p>
 <p>A possible rooted tree: [+] &ndash; [-] ==== [+] \ [-] ==== [+] -&mdash; [-] === [+] \ [-] === [+]</p>
 <p>A single unmatched node is also a tree: [+]</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000703">Todo</a></b></dt><dd>(user): For now this class does not maintain a second graph of edges between the trees nor does it maintains priority queue of edges.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000704">Todo</a></b></dt><dd>(user): For now we use CHECKs in many places to facilitate development. Switch them to DCHECKs for speed once the code is more stable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000722">Todo</a></b></dt><dd>(user): For now this class does not maintain a second graph of edges between the trees nor does it maintains priority queue of edges.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000723">Todo</a></b></dt><dd>(user): For now we use CHECKs in many places to facilitate development. Switch them to DCHECKs for speed once the code is more stable. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00170">170</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00165">165</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8d41cc374203dfdbbfd514f00c2d6c2a" name="a8d41cc374203dfdbbfd514f00c2d6c2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d41cc374203dfdbbfd514f00c2d6c2a">&#9670;&#160;</a></span>BlossomGraph()</h2>
@@ -238,7 +238,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Creates a <a class="el" href="classoperations__research_1_1BlossomGraph.html">BlossomGraph</a> on the given number of nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00126">126</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00130">130</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Same comment as <a class="el" href="classoperations__research_1_1MinCostPerfectMatching.html#a6f94ee8ea8298d25de3607ed56d2d94e">MinCostPerfectMatching::AddEdgeWithCost()</a> applies. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00136">136</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00140">140</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -289,16 +289,16 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Merges two tree and augment the number of matched nodes by 1. This is the only functions that change the current matching. </p>
 <p>Compute the path from root_a to root_b.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000696">Todo</a></b></dt><dd>(user): Check all dual/slack same after primal op? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000715">Todo</a></b></dt><dd>(user): Check all dual/slack same after primal op? </dd></dl>
 <p>Make all the nodes from both trees free while keeping the current matching.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000697">Todo</a></b></dt><dd>(user): It seems that we may waste some computation since the part of the tree not in the path between roots can lead to the same <a class="el" href="#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a> operations later when one of its node is ratched to a new root.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000698">Todo</a></b></dt><dd>(user): Reduce this O(num_nodes) complexity. We might be able to even do O(num_node_in_path) with lazy updates. Note that this operation will only be performed at most num_initial_unmatched_nodes / 2 times though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000716">Todo</a></b></dt><dd>(user): It seems that we may waste some computation since the part of the tree not in the path between roots can lead to the same <a class="el" href="#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a> operations later when one of its node is ratched to a new root.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000717">Todo</a></b></dt><dd>(user): Reduce this O(num_nodes) complexity. We might be able to even do O(num_node_in_path) with lazy updates. Note that this operation will only be performed at most num_initial_unmatched_nodes / 2 times though. </dd></dl>
 <p>If the other end is not in one of the two trees, and it is a plus node, we add it the plus_free queue. All previous [+]&ndash;[0] and [+]&ndash;[+] edges need to be removed from the queues.</p>
 <p>Change the matching of nodes along node_path.</p>
 <p>Update unmatched_nodes_.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000699">Todo</a></b></dt><dd>(user): This could probably be optimized if needed. But we do usually iterate a lot more over it than we update it. Note that as long as we use the same delta for all trees, this is not even needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000718">Todo</a></b></dt><dd>(user): This could probably be optimized if needed. But we do usually iterate a lot more over it than we update it. Note that as long as we use the same delta for all trees, this is not even needed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00557">557</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00561">561</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -317,13 +317,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the maximum possible delta for <a class="el" href="#a115148d925e4f18f7b983502012a8c9d">UpdateAllTrees()</a> that keeps the dual feasibility. Dual update approach (2) from the paper. This also fills primal_update_edge_queue_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000693">Todo</a></b></dt><dd>(user): Avoid this linear loop. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000712">Todo</a></b></dt><dd>(user): Avoid this linear loop. </dd></dl>
 <p>This code only works because all tree_dual_delta are the same.</p>
 <p>This means infeasible, and returning zero will abort the search.</p>
 <p>Initialize primal_update_edge_queue_ with all the edges that will have a slack of zero once we apply the update.</p>
 <p>NOTE(user): If we want more "determinism" and be independent on the PQ algorithm, we could std::sort() the primal_update_edge_queue_ here.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00269">269</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00273">273</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Static Public Attributes</h2></td></tr>
 <p>Meant to only be used in DEBUG to make sure our queue in <a class="el" href="#a4e57765af9aa45f409d540937922cb15">PrimalUpdates()</a> do not miss any potential edges. </p>
 <p>Make sure tail is a plus node if possible.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00357">357</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00361">361</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Static Public Attributes</h2></td></tr>
 <p>The slack of all edge must be non-negative.</p>
 <p>The dual of all Blossom must be non-negative.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00460">460</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00464">464</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true iff this is an external edge with a slack of zero. An external edge is an edge between two external nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00473">473</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00477">477</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01213">1213</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01217">1217</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>In debug mode, we maintain the real slack of each edges and the real dual of each node via this function. Both <a class="el" href="#a697ff8e8af28e545bf07899f6acb1abc" title="Return the &quot;slack&quot; of the given edge.">Slack()</a> and <a class="el" href="#ac05091c97bcc47c65e4036237994e560" title="Returns the dual value of the given node (which might be a pseudo-node).">Dual()</a> checks in debug mode that the value computed is the correct one. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01224">1224</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01228">1228</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Display to VLOG(1) some statistic about the solve. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01277">1277</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01281">1281</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns the dual value of the given node (which might be a pseudo-node). </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01256">1256</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01260">1260</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the current dual objective which is always a valid lower-bound on the min-cost matching. Note that this is capped to kint64max in case of overflow. Because all of our cost are positive, this starts at zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01265">1265</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01269">1269</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -576,7 +576,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01203">1203</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01207">1207</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ Static Public Attributes</h2></td></tr>
 <p>Matches the free pair together.</p>
 <p>Mark all node as external. We do that last so we could easily detect old internal edges that are now external.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00855">855</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00859">859</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ Static Public Attributes</h2></td></tr>
 <p>This must be called at the end of the algorithm to recover the matching. </p>
 <p><a class="el" href="classoperations__research_1_1Queue.html">Queue</a> of blossoms to expand.</p>
 <p>When this is called, there should be no more trees.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000701">Todo</a></b></dt><dd>(user): remove duplication with expand? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000720">Todo</a></b></dt><dd>(user): remove duplication with expand? </dd></dl>
 <p>Find the edge used to match to_expand with Match(to_expand).</p>
 <p>Restore the saved data.</p>
 <p>Restore the edges Head()/Tail().</p>
@@ -653,7 +653,7 @@ Static Public Attributes</h2></td></tr>
 <p>Matches the free pair together.</p>
 <p>Now that the expansion is done, add to the queue any sub-blossoms.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01064">1064</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01068">1068</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -681,7 +681,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Getters to access node/edges from outside the class. Only used in tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00395">395</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00390">390</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>
@@ -708,7 +708,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00396">396</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00391">391</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +741,7 @@ Static Public Attributes</h2></td></tr>
 <p>The edge switch from [+] &ndash; [0] to [+] &ndash; [+].</p>
 <p>We have a new [+] &ndash; [0] edge.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00480">480</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00484">484</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -760,22 +760,22 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Heuristic to start with a dual-feasible solution and some matched edges. To be called once all edges are added. Returns false if the problem is detected to be INFEASIBLE.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000688">Todo</a></b></dt><dd>(user): Code the more advanced "Fractional matching initialization" heuristic.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000689">Todo</a></b></dt><dd>(user): Add a preprocessing step that performs the 'forced' matches? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000707">Todo</a></b></dt><dd>(user): Code the more advanced "Fractional matching initialization" heuristic.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000708">Todo</a></b></dt><dd>(user): Add a preprocessing step that performs the 'forced' matches? </dd></dl>
 <p>Initialize the dual of each nodes to min_cost / 2.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000690">Todo</a></b></dt><dd>(user): We might be able to do better for odd min_cost, but then we might need to scale by 4? think about it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000709">Todo</a></b></dt><dd>(user): We might be able to do better for odd min_cost, but then we might need to scale by 4? think about it. </dd></dl>
 <p>Starts with all nodes as tree roots.</p>
 <p>Update the slack of each edges now that nodes might have non-zero duals. </p><dl class="section note"><dt>Note</dt><dd>we made sure that all updated slacks are non-negative.</dd></dl>
 <p>After this greedy update, there will be at least an edge with a slack of zero.</p>
 <p>Match this node if possible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000691">Todo</a></b></dt><dd>(user): Optimize by merging this loop with the one above? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000710">Todo</a></b></dt><dd>(user): Optimize by merging this loop with the one above? </dd></dl>
 <p>Initialize unmatched_nodes_.</p>
 <p>Scale everything by 2 and update the dual cost. Note that we made sure that there cannot be an integer overflow at the beginning of Solve().</p>
 <p>This scaling allows to only have integer weights during the algorithm because the slack of [+] &ndash; [+] edges will always stay even.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000692">Todo</a></b></dt><dd>(user): Reduce the number of loops we do in the initialization. We could likely just scale the edge cost as we fill them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000711">Todo</a></b></dt><dd>(user): Reduce the number of loops we do in the initialization. We could likely just scale the edge cost as we fill them. </dd></dl>
 <p>Initialize the edge priority queues and the primal update queue. We only need to do that if we have unmatched nodes.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00153">153</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00157">157</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the node matched to the given one, or n if this node is not currently matched. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00346">346</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00350">350</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Display information for debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01187">1187</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01191">1191</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ Static Public Attributes</h2></td></tr>
 <p>Returns true iff this node is matched and is thus not a tree root. This cannot live in the <a class="el" href="structoperations__research_1_1BlossomGraph_1_1Node.html">Node</a> class because we need to know the NodeIndex. </p>
 <p>An unmatched node must be a tree root.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00339">339</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00343">343</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns the current number of matched nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00357">357</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00352">352</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>
@@ -886,15 +886,15 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enters a loop that perform one of <a class="el" href="#aecbc2d0c106b6ae7823eeda0a89fd70d">Grow()</a>/Augment()/Shrink()/Expand() until a fixed point is reached. </p>
 <p>Any Grow/Augment/Shrink/Expand operation can add new tight edges that need to be explored again.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000694">Todo</a></b></dt><dd>(user): avoid adding duplicates? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000713">Todo</a></b></dt><dd>(user): avoid adding duplicates? </dd></dl>
 <p>First, we Grow/Augment as much as possible.</p>
 <p>Because of the <a class="el" href="#ad210089a5165469377449a22257eb52a" title="Expands a Blossom into its component.">Expand()</a> operation, the edge may have become un-tight since it has been inserted in the tight edges queue. It's cheaper to detect it here and skip it than it would be to dynamically update the queue to only keep actually tight edges at all times.</p>
 <p>Shrink all potential Blossom.</p>
 <p>Delay expand if any blossom was created.</p>
 <p>Expand Blossom if any.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000695">Todo</a></b></dt><dd>(user): Avoid doing a O(num_nodes). Also expand all blossom recursively? I am not sure it is a good heuristic to expand all possible blossom before trying the other operations though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000714">Todo</a></b></dt><dd>(user): Avoid doing a O(num_nodes). Also expand all blossom recursively? I am not sure it is a good heuristic to expand all possible blossom before trying the other operations though. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00391">391</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00395">395</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -923,12 +923,12 @@ Static Public Attributes</h2></td></tr>
 <p>Skip edge that are already internal.</p>
 <p>This internal edge was already processed from its other end, so we can just skip it.</p>
 <p>This is a new-internal edge that we didn't process yet.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000700">Todo</a></b></dt><dd>(user): It would be nicer to not to have to read the memory of the other node at all. It might be possible once we store the parent edge instead of the parent node since then we will only need to know if this edges point to a new-internal node or not. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000719">Todo</a></b></dt><dd>(user): It would be nicer to not to have to read the memory of the other node at all. It might be possible once we store the parent edge instead of the parent node since then we will only need to know if this edges point to a new-internal node or not. </dd></dl>
 <p>Replace the parent of any child of n by lca_index.</p>
 <p>Adjust when the edge used to be connected to a [-] node now that we attach it to a [+] node. Note that if the node was [+] then the non-internal incident edges slack and type do not change.</p>
 <p>Add it to the correct PQ.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00660">660</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00664">664</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -949,7 +949,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Return the "slack" of the given edge. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01238">1238</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l01242">1242</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -970,7 +970,7 @@ Static Public Attributes</h2></td></tr>
 <p>Applies the same dual delta to all trees. Dual update approach (2) from the paper. </p>
 <p>Reminder: the tree roots are exactly the unmatched nodes.</p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00319">319</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8cc_source.html#l00323">323</a> of file <a class="el" href="perfect__matching_8cc_source.html">perfect_matching.cc</a>.</p>
 
 </div>
 </div>
@@ -997,7 +997,7 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    BlossomGraph::CostValue(std::numeric_limits&lt;int64_t&gt;::max())</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00182">182</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00177">177</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1023,7 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    BlossomGraph::EdgeIndex(-1)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00181">181</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00176">176</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1050,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">    BlossomGraph::NodeIndex(-1)</div>
 </div><!-- fragment --><p>Basic constants. NOTE(user): Those can't be constexpr because of the or-tools export, which complains for constexpr DEFINE_INT_TYPE. </p>
 
-<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00180">180</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="perfect__matching_8h_source.html#l00175">175</a> of file <a class="el" href="perfect__matching_8h_source.html">perfect_matching.h</a>.</p>
 
 </div>
 </div>

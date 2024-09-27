@@ -1,0 +1,25 @@
+var classoperations__research_1_1RootedTree =
+[
+    [ "RootedTree", "classoperations__research_1_1RootedTree.html#a4049f5904a26c840abc6bb431b550d03", null ],
+    [ "AllDepths", "classoperations__research_1_1RootedTree.html#a9a378d2c68082ff7b20e1344bb1192af", null ],
+    [ "AllDepths", "classoperations__research_1_1RootedTree.html#aa30050d5627e2c29f7bad2d94481acfb", null ],
+    [ "AllDistancesToRoot", "classoperations__research_1_1RootedTree.html#aa3d56158b298dd44e49875371d07d78c", null ],
+    [ "AllDistancesToRoot", "classoperations__research_1_1RootedTree.html#a8bd262d42955547a669b8be22ecfefa7", null ],
+    [ "Create", "classoperations__research_1_1RootedTree.html#ade974daabf3c2e52ea600e1189cfbc89", null ],
+    [ "Distance", "classoperations__research_1_1RootedTree.html#a3f7fb1272cf6a922bbffd9e62bf85b61", null ],
+    [ "DistanceAndPath", "classoperations__research_1_1RootedTree.html#a62f4634df539aa73b35ccd11c152ba31", null ],
+    [ "DistanceAndPathToRoot", "classoperations__research_1_1RootedTree.html#af1c3fc5deed861a90f45cce29fd20153", null ],
+    [ "DistanceOfPath", "classoperations__research_1_1RootedTree.html#ac0aff8514d3518186624924df30d967a", null ],
+    [ "DistanceToRoot", "classoperations__research_1_1RootedTree.html#a128a439860546245cdc85efb04b1c5e5", null ],
+    [ "Evert", "classoperations__research_1_1RootedTree.html#aebce6f41bf6a10d58d3c640a716ec3ee", null ],
+    [ "LowestCommonAncestorByDepth", "classoperations__research_1_1RootedTree.html#a7f18fab9aa4478128078cf0aea9c412b", null ],
+    [ "LowestCommonAncestorBySearch", "classoperations__research_1_1RootedTree.html#a81a2235124d31e08e8fe12ad5d43cbcf", null ],
+    [ "num_nodes", "classoperations__research_1_1RootedTree.html#aa5ab258d96a2a50808380b8a3f3b76cb", null ],
+    [ "parents", "classoperations__research_1_1RootedTree.html#a724c8698eccaca79def747e32e116bca", null ],
+    [ "Path", "classoperations__research_1_1RootedTree.html#af26ddfc79499d26ea845cf14c148caeb", null ],
+    [ "PathFromRoot", "classoperations__research_1_1RootedTree.html#ac7f5dabc41bfd43771c5f6762f3d3591", null ],
+    [ "PathToRoot", "classoperations__research_1_1RootedTree.html#a5fd4765096274b9231b2214bf57450e3", null ],
+    [ "root", "classoperations__research_1_1RootedTree.html#aa55ef899cfc8c9fd88225bdb049b515f", null ],
+    [ "TopologicalSort", "classoperations__research_1_1RootedTree.html#aa669a5f9743b25bc50baa66521c85471", null ],
+    [ "kNullParent", "classoperations__research_1_1RootedTree.html#a8dc5bcad8efdd72daa51fbec588deb0e", null ]
+];

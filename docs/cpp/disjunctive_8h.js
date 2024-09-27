@@ -2,7 +2,9 @@ var disjunctive_8h =
 [
     [ "operations_research::sat::TaskSet", "classoperations__research_1_1sat_1_1TaskSet.html", "classoperations__research_1_1sat_1_1TaskSet" ],
     [ "operations_research::sat::TaskSet::Entry", "structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html", "structoperations__research_1_1sat_1_1TaskSet_1_1Entry" ],
+    [ "operations_research::sat::PropagationStatistics", "structoperations__research_1_1sat_1_1PropagationStatistics.html", "structoperations__research_1_1sat_1_1PropagationStatistics" ],
     [ "operations_research::sat::DisjunctiveOverloadChecker", "classoperations__research_1_1sat_1_1DisjunctiveOverloadChecker.html", "classoperations__research_1_1sat_1_1DisjunctiveOverloadChecker" ],
+    [ "operations_research::sat::DisjunctiveSimplePrecedences", "classoperations__research_1_1sat_1_1DisjunctiveSimplePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctiveSimplePrecedences" ],
     [ "operations_research::sat::DisjunctiveDetectablePrecedences", "classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences" ],
     [ "operations_research::sat::AllIntervalsHelper", "classoperations__research_1_1sat_1_1AllIntervalsHelper.html", "classoperations__research_1_1sat_1_1AllIntervalsHelper" ],
     [ "operations_research::sat::CombinedDisjunctive< time_direction >", "classoperations__research_1_1sat_1_1CombinedDisjunctive.html", "classoperations__research_1_1sat_1_1CombinedDisjunctive" ],

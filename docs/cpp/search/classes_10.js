@@ -74,13 +74,14 @@ var searchData=
   ['propagationbaseobject_71',['PropagationBaseObject',['../classoperations__research_1_1PropagationBaseObject.html',1,'operations_research']]],
   ['propagationgraph_72',['PropagationGraph',['../classoperations__research_1_1sat_1_1PropagationGraph.html',1,'operations_research::sat']]],
   ['propagationmonitor_73',['PropagationMonitor',['../classoperations__research_1_1PropagationMonitor.html',1,'operations_research']]],
-  ['propagatorinterface_74',['PropagatorInterface',['../classoperations__research_1_1sat_1_1PropagatorInterface.html',1,'operations_research::sat']]],
-  ['proportionalcolumnpreprocessor_75',['ProportionalColumnPreprocessor',['../classoperations__research_1_1glop_1_1ProportionalColumnPreprocessor.html',1,'operations_research::glop']]],
-  ['proportionalrowpreprocessor_76',['ProportionalRowPreprocessor',['../classoperations__research_1_1glop_1_1ProportionalRowPreprocessor.html',1,'operations_research::glop']]],
-  ['protocomparison_77',['ProtoComparison',['../structtesting_1_1internal_1_1ProtoComparison.html',1,'testing::internal']]],
-  ['protoliteral_78',['ProtoLiteral',['../classoperations__research_1_1sat_1_1ProtoLiteral.html',1,'operations_research::sat']]],
-  ['protomatcher_79',['ProtoMatcher',['../classtesting_1_1internal_1_1ProtoMatcher.html',1,'testing::internal']]],
-  ['prototrail_80',['ProtoTrail',['../classoperations__research_1_1sat_1_1ProtoTrail.html',1,'operations_research::sat']]],
-  ['pruninghamiltoniansolver_81',['PruningHamiltonianSolver',['../classoperations__research_1_1PruningHamiltonianSolver.html',1,'operations_research']]],
-  ['pseudocosts_82',['PseudoCosts',['../classoperations__research_1_1sat_1_1PseudoCosts.html',1,'operations_research::sat']]]
+  ['propagationstatistics_74',['PropagationStatistics',['../structoperations__research_1_1sat_1_1PropagationStatistics.html',1,'operations_research::sat']]],
+  ['propagatorinterface_75',['PropagatorInterface',['../classoperations__research_1_1sat_1_1PropagatorInterface.html',1,'operations_research::sat']]],
+  ['proportionalcolumnpreprocessor_76',['ProportionalColumnPreprocessor',['../classoperations__research_1_1glop_1_1ProportionalColumnPreprocessor.html',1,'operations_research::glop']]],
+  ['proportionalrowpreprocessor_77',['ProportionalRowPreprocessor',['../classoperations__research_1_1glop_1_1ProportionalRowPreprocessor.html',1,'operations_research::glop']]],
+  ['protocomparison_78',['ProtoComparison',['../structtesting_1_1internal_1_1ProtoComparison.html',1,'testing::internal']]],
+  ['protoliteral_79',['ProtoLiteral',['../classoperations__research_1_1sat_1_1ProtoLiteral.html',1,'operations_research::sat']]],
+  ['protomatcher_80',['ProtoMatcher',['../classtesting_1_1internal_1_1ProtoMatcher.html',1,'testing::internal']]],
+  ['prototrail_81',['ProtoTrail',['../classoperations__research_1_1sat_1_1ProtoTrail.html',1,'operations_research::sat']]],
+  ['pruninghamiltoniansolver_82',['PruningHamiltonianSolver',['../classoperations__research_1_1PruningHamiltonianSolver.html',1,'operations_research']]],
+  ['pseudocosts_83',['PseudoCosts',['../classoperations__research_1_1sat_1_1PseudoCosts.html',1,'operations_research::sat']]]
 ];

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,21 +102,24 @@ $(function(){initNavTree('set__cover__invariant_8h.html',''); initResizable(true
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">set_cover_invariant.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;ortools/algorithms/set_cover.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="set__cover__model_8h_source.html">ortools/algorithms/set_cover_model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 </div>
 <p><a href="set__cover__invariant_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SetCoverDecision.html">operations_research::SetCoverDecision</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class used to store the decisions made during a search.  <a href="classoperations__research_1_1SetCoverDecision.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1SetCoverInvariant.html">operations_research::SetCoverInvariant</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -125,13 +128,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
 <tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a4178840a2b7e16b25fed88faecdde28f" id="r_a4178840a2b7e16b25fed88faecdde28f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4178840a2b7e16b25fed88faecdde28f">operations_research::SubsetCountVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;SubsetIndex, int&gt;</td></tr>
-<tr class="separator:a4178840a2b7e16b25fed88faecdde28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fab5cdfcb9ad25c385b21e28b9217f" id="r_aa3fab5cdfcb9ad25c385b21e28b9217f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa3fab5cdfcb9ad25c385b21e28b9217f">operations_research::SubsetBoolVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;SubsetIndex, bool&gt;</td></tr>
-<tr class="separator:aa3fab5cdfcb9ad25c385b21e28b9217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

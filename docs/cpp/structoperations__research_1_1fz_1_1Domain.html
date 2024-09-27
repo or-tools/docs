@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -212,11 +212,11 @@ Public Attributes</h2></td></tr>
 <li>an interval, in which case is_interval is true and values.size() == 2, and the interval is [values[0], values[1]].</li>
 <li>all integers, in which case values is empty, and is_interval is true. <dl class="section note"><dt>Note</dt><dd>semi-infinite intervals aren't supported.</dd></dl>
 </li>
-<li>a Boolean domain({ 0, 1 } with Boolean display tag). <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000406">Todo</a></b></dt><dd>(user): Rework domains, all int64_t should be kintmin..kint64max. It is a bit tricky though as we must take care of overflows. If is_a_set is true, then this domain has a set semantics. For a set variable, any subset of the initial set of values is a valid assignment, instead of exactly one value. </dd></dl>
+<li>a Boolean domain({ 0, 1 } with Boolean display tag). <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000424">Todo</a></b></dt><dd>(user): Rework domains, all int64_t should be kintmin..kint64max. It is a bit tricky though as we must take care of overflows. If is_a_set is true, then this domain has a set semantics. For a set variable, any subset of the initial set of values is a valid assignment, instead of exactly one value. </dd></dl>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00054">54</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00051">51</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a07da8a79a878b7d5192c14b27f6dc3c2" name="a07da8a79a878b7d5192c14b27f6dc3c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07da8a79a878b7d5192c14b27f6dc3c2">&#9670;&#160;</a></span>AllFloats()</h2>
@@ -457,7 +457,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000408">Todo</a></b></dt><dd>(user): Do we need SetOfFloats() ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000426">Todo</a></b></dt><dd>(user): Do we need SetOfFloats() ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l00331">331</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
@@ -605,7 +605,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Contiguous case.</p>
 <p>This also covers and invalid (empty) domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000402">Todo</a></b></dt><dd>(user): Investigate faster code for small arrays. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000420">Todo</a></b></dt><dd>(user): Investigate faster code for small arrays. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l00207">207</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
@@ -781,7 +781,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000403">Todo</a></b></dt><dd>(user): Better algorithm, sort and compare increasingly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000421">Todo</a></b></dt><dd>(user): Better algorithm, sort and compare increasingly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l00387">387</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
@@ -1001,7 +1001,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00112">112</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00109">109</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1017,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00117">117</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00114">114</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1035,7 @@ Public Attributes</h2></td></tr>
 
 <p>Indicates if the domain was created as a set domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00114">114</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00111">111</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -1053,7 +1053,7 @@ Public Attributes</h2></td></tr>
 
 <p>Float domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00116">116</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00113">113</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1069,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00111">111</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00108">108</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1087,7 @@ Public Attributes</h2></td></tr>
 
 <p>These should never be modified from outside the class. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00110">110</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00107">107</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>

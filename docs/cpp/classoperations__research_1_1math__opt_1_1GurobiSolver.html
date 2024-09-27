@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -187,7 +187,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000974">Todo</a></b></dt><dd>(b/277339044): Remove code duplication with <a class="el" href="#aa521c1122a7faae79b63abea4a039cd2">GurobiSolver::Solve()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000997">Todo</a></b></dt><dd>(b/277339044): Remove code duplication with <a class="el" href="#aa521c1122a7faae79b63abea4a039cd2">GurobiSolver::Solve()</a>. </dd></dl>
 <p>Need to run GRBupdatemodel before:</p><ol type="1">
 <li>setting parameters (to test if the problem is a MIP)</li>
 <li>registering callbacks (to test if the problem is a MIP),</li>
@@ -201,11 +201,11 @@ Additional Inherited Members</h2></td></tr>
 <p>The local interrupter can also be triggered by a callback returning a true <code>terminate</code>.</p>
 <p>Here we register the callback when we either have a message callback or a local interrupter. The rationale for doing so when we have only an interrupter is explained in <a class="el" href="namespaceoperations__research_1_1math__opt.html#aaa9f3c6eeac117a1480ccd05d8a35e38">GurobiCallbackImpl()</a>.</p>
 <p>We flush message callbacks before testing for <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> error in case where the unfinished line of message would help with the error.</p>
-<p>Reset <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> parameters. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000975">Todo</a></b></dt><dd>(b/277246682): ensure that resetting parameters does not degrade incrementalism performance. </dd></dl>
+<p>Reset <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> parameters. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000998">Todo</a></b></dt><dd>(b/277246682): ensure that resetting parameters does not degrade incrementalism performance. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#af7cb6066cb07d63bc4a186bcd4cc802d">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l03023">3023</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l03037">3037</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02701">2701</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02715">2715</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -308,11 +308,11 @@ Additional Inherited Members</h2></td></tr>
 <p>We select a value of "1" here, which means that the lazy constraints will be separated at feasible solutions, and that <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> has latitude to select which violated constraints to add to the model if multiple are violated. This seems like a reasonable default choice for us, but we may want to revisit later (or expose this choice to the user).</p>
 <p>Here we register the callback when we either have a user callback or a local interrupter. The rationale for doing so when we have only an interrupter is explained in <a class="el" href="namespaceoperations__research_1_1math__opt.html#aaa9f3c6eeac117a1480ccd05d8a35e38">GurobiCallbackImpl()</a>.</p>
 <p>We flush message callbacks before testing for <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> error in case where the unfinished line of message would help with the error.</p>
-<p>Reset <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> parameters. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000973">Todo</a></b></dt><dd>(b/277246682): ensure that resetting parameters does not degrade incrementalism performance. </dd></dl>
+<p>Reset <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> parameters. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000996">Todo</a></b></dt><dd>(b/277246682): ensure that resetting parameters does not degrade incrementalism performance. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a901a72259555138e63322b5bf6c3f097">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02891">2891</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02905">2905</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a6de754c2e507136a902230670f574c85">operations_research::math_opt::SolverInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02473">2473</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gurobi__solver_8cc_source.html#l02487">2487</a> of file <a class="el" href="gurobi__solver_8cc_source.html">gurobi_solver.cc</a>.</p>
 
 </div>
 </div>

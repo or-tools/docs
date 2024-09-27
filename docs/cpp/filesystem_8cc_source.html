@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -180,13 +180,27 @@ $(function(){initNavTree('filesystem_8cc_source.html',''); initResizable(true); 
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}  <span class="comment">// namespace file</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespacefile.html#ac60a42d1f2e2eb9c49d8b2bc29886fe5">   74</a></span>absl::Status <a class="code hl_function" href="namespacefile.html#ac60a42d1f2e2eb9c49d8b2bc29886fe5">RecursivelyCreateDir</a>(std::string_view path,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefile.html#a0add95c1cd4f3d86183e7428a1d03956">file::Options</a>&amp; options) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  (void)options;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::filesystem::create_directories(std::filesystem::path(path));</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> absl::OkStatus();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> absl::InvalidArgumentError(e.what());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}  <span class="comment">// namespace file</span></div>
 <div class="ttc" id="afilesystem_8cc_html_a9f01c84fd05e1e0de0526d1ace85a1ed"><div class="ttname"><a href="filesystem_8cc.html#a9f01c84fd05e1e0de0526d1ace85a1ed">SV_ABSL_TO_STD</a></div><div class="ttdeci">#define SV_ABSL_TO_STD(X)</div><div class="ttdoc">Converts a absl::string_view into an object compatible with std::filesystem.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">filesystem.cc:28</a></div></div>
 <div class="ttc" id="afilesystem_8h_html"><div class="ttname"><a href="filesystem_8h.html">filesystem.h</a></div></div>
-<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition</b> <a href="base_2file_8cc_source.html#l00155">file.cc:155</a></div></div>
+<div class="ttc" id="anamespacefile_html"><div class="ttname"><a href="namespacefile.html">file</a></div><div class="ttdef"><b>Definition</b> <a href="base_2file_8cc_source.html#l00169">file.cc:169</a></div></div>
 <div class="ttc" id="anamespacefile_html_a0add95c1cd4f3d86183e7428a1d03956"><div class="ttname"><a href="namespacefile.html#a0add95c1cd4f3d86183e7428a1d03956">file::Options</a></div><div class="ttdeci">int Options</div><div class="ttdef"><b>Definition</b> <a href="base_2file_8h_source.html#l00107">file.h:107</a></div></div>
 <div class="ttc" id="anamespacefile_html_a3a82554bc7842d9f22bd1299451122ef"><div class="ttname"><a href="namespacefile.html#a3a82554bc7842d9f22bd1299451122ef">file::Match</a></div><div class="ttdeci">absl::Status Match(std::string_view pattern, std::vector&lt; std::string &gt; *result, const file::Options &amp;options)</div><div class="ttdef"><b>Definition</b> <a href="#l00033">filesystem.cc:33</a></div></div>
 <div class="ttc" id="anamespacefile_html_abdb3d07f55edfadf171396daa63be2c8"><div class="ttname"><a href="namespacefile.html#abdb3d07f55edfadf171396daa63be2c8">file::IsDirectory</a></div><div class="ttdeci">absl::Status IsDirectory(std::string_view path, const file::Options &amp;options)</div><div class="ttdef"><b>Definition</b> <a href="#l00064">filesystem.cc:64</a></div></div>
+<div class="ttc" id="anamespacefile_html_ac60a42d1f2e2eb9c49d8b2bc29886fe5"><div class="ttname"><a href="namespacefile.html#ac60a42d1f2e2eb9c49d8b2bc29886fe5">file::RecursivelyCreateDir</a></div><div class="ttdeci">absl::Status RecursivelyCreateDir(std::string_view path, const file::Options &amp;options)</div><div class="ttdef"><b>Definition</b> <a href="#l00074">filesystem.cc:74</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

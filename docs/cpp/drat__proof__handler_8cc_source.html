@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -153,120 +153,120 @@ $(function(){initNavTree('drat__proof__handler_8cc_source.html',''); initResizab
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a024232f8972a7dcb6cbf91ec8fe36fb0">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a024232f8972a7dcb6cbf91ec8fe36fb0">DratProofHandler::ApplyMapping</a>(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;BooleanVariable, BooleanVariable&gt;</a>&amp; mapping) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;BooleanVariable, BooleanVariable&gt;</a> new_mapping;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">for</span> (BooleanVariable v(0); v &lt; mapping.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>(); ++v) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> BooleanVariable image = mapping[v];</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (image != <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">if</span> (image &gt;= new_mapping.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>())</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        new_mapping.<a class="code hl_function" href="classabsl_1_1StrongVector.html#aab9d243f2c2229e7dadabb1a17e21ac5">resize</a>(image.value() + 1, <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      CHECK_EQ(new_mapping[image], <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      new_mapping[image] =</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          v &lt; reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>() ? reverse_mapping_[v] : v;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      CHECK_NE(new_mapping[image], <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::swap(new_mapping, reverse_mapping_);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a8ceaa4570135a1216539fccb736088ca">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a8ceaa4570135a1216539fccb736088ca">DratProofHandler::ApplyMapping</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt;BooleanVariable, BooleanVariable&gt;</a>&amp;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        mapping) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt;BooleanVariable, BooleanVariable&gt;</a> new_mapping;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">for</span> (BooleanVariable v(0); v &lt; mapping.size(); ++v) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> BooleanVariable image = mapping[v];</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">if</span> (image != <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">if</span> (image &gt;= new_mapping.size())</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        new_mapping.<a class="code hl_function" href="classutil__intops_1_1StrongVector.html#aa44e9a8ff22279c37063993aa6f6009e">resize</a>(image.value() + 1, <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      CHECK_EQ(new_mapping[image], <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      new_mapping[image] =</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          v &lt; reverse_mapping_.size() ? reverse_mapping_[v] : v;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      CHECK_NE(new_mapping[image], <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#add67896a84f6372a648154c5770a0ae0">kNoBooleanVariable</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::swap(new_mapping, reverse_mapping_);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">   63</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">DratProofHandler::SetNumVariables</a>(<span class="keywordtype">int</span> num_variables) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  CHECK_GE(num_variables, reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>());</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">while</span> (reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>() &lt; num_variables) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#a9bad44b9510f86afb4e66779deb3e044">push_back</a>(BooleanVariable(variable_index_++));</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">DratProofHandler::SetNumVariables</a>(<span class="keywordtype">int</span> num_variables) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  CHECK_GE(num_variables, reverse_mapping_.size());</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordflow">while</span> (reverse_mapping_.size() &lt; num_variables) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    reverse_mapping_.<a class="code hl_function" href="classutil__intops_1_1StrongVector.html#a49cd029c10dcdc6b1cd9b3796c5657cd">push_back</a>(BooleanVariable(variable_index_++));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">   70</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">DratProofHandler::AddOneVariable</a>() {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#a9bad44b9510f86afb4e66779deb3e044">push_back</a>(BooleanVariable(variable_index_++));</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">   71</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">DratProofHandler::AddOneVariable</a>() {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  reverse_mapping_.<a class="code hl_function" href="classutil__intops_1_1StrongVector.html#a49cd029c10dcdc6b1cd9b3796c5657cd">push_back</a>(BooleanVariable(variable_index_++));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">   74</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">DratProofHandler::AddProblemClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    drat_checker_-&gt;AddProblemClause(clause);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">   75</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">DratProofHandler::AddProblemClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    drat_checker_-&gt;AddProblemClause(clause);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">   80</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">DratProofHandler::AddClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  MapClause(clause);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    drat_checker_-&gt;AddInferedClause(values_);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">if</span> (drat_writer_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    drat_writer_-&gt;AddClause(values_);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">   81</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">DratProofHandler::AddClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  MapClause(clause);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    drat_checker_-&gt;AddInferedClause(values_);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordflow">if</span> (drat_writer_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    drat_writer_-&gt;AddClause(values_);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">DratProofHandler::DeleteClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  MapClause(clause);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    drat_checker_-&gt;DeleteClause(values_);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordflow">if</span> (drat_writer_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    drat_writer_-&gt;DeleteClause(values_);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">   91</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">DratProofHandler::DeleteClause</a>(absl::Span&lt;const Literal&gt; clause) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  MapClause(clause);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    drat_checker_-&gt;DeleteClause(values_);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">if</span> (drat_writer_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    drat_writer_-&gt;DeleteClause(values_);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">  100</a></span><a class="code hl_enumeration" href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3">DratChecker::Status</a> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">DratProofHandler::Check</a>(<span class="keywordtype">double</span> max_time_in_seconds) {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// The empty clause is not explicitly added by the solver.</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    drat_checker_-&gt;AddInferedClause({});</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">return</span> drat_checker_-&gt;Check(max_time_in_seconds);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3ac23eb362d94850998d66868de9bb91a0">DratChecker::Status::UNKNOWN</a>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">  101</a></span><a class="code hl_enumeration" href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3">DratChecker::Status</a> <a class="code hl_function" href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">DratProofHandler::Check</a>(<span class="keywordtype">double</span> max_time_in_seconds) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">if</span> (drat_checker_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// The empty clause is not explicitly added by the solver.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    drat_checker_-&gt;AddInferedClause({});</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> drat_checker_-&gt;Check(max_time_in_seconds);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3ac23eb362d94850998d66868de9bb91a0">DratChecker::Status::UNKNOWN</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
 </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">void</span> DratProofHandler::MapClause(absl::Span&lt;const Literal&gt; clause) {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  values_.clear();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> l : clause) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    CHECK_LT(l.Variable(), reverse_mapping_.<a class="code hl_function" href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">size</a>());</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> original_literal =</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>(reverse_mapping_[l.Variable()], l.IsPositive());</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    values_.push_back(original_literal);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="comment">// The sorting is such that new variables appear first. This is important for</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="comment">// BVA since DRAT-trim only check the RAT property with respect to the first</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="comment">// variable of the clause.</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  std::sort(values_.begin(), values_.end(), [](Literal <a class="code hl_variable" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>) {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    return std::abs(a.SignedValue()) &gt; std::abs(b.SignedValue());</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  });</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}  <span class="comment">// namespace sat</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">void</span> DratProofHandler::MapClause(absl::Span&lt;const Literal&gt; clause) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  values_.clear();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> l : clause) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    CHECK_LT(l.Variable(), reverse_mapping_.size());</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> original_literal =</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_class" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>(reverse_mapping_[l.Variable()], l.IsPositive());</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    values_.push_back(original_literal);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="comment">// The sorting is such that new variables appear first. This is important for</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="comment">// BVA since DRAT-trim only check the RAT property with respect to the first</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="comment">// variable of the clause.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  std::sort(values_.begin(), values_.end(), [](Literal <a class="code hl_variable" href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a>, Literal <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    return std::abs(a.SignedValue()) &gt; std::abs(b.SignedValue());</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  });</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}  <span class="comment">// namespace sat</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="ttc" id="abase_2file_8h_html"><div class="ttname"><a href="base_2file_8h.html">file.h</a></div></div>
 <div class="ttc" id="aclassFile_html"><div class="ttname"><a href="classFile.html">File</a></div><div class="ttdef"><b>Definition</b> <a href="base_2file_8h_source.html#l00030">file.h:30</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html"><div class="ttname"><a href="classabsl_1_1StrongVector.html">absl::StrongVector</a></div><div class="ttdoc">STL vector ---------------------------------------------------------------—.</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00076">strong_vector.h:76</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html_a9bad44b9510f86afb4e66779deb3e044"><div class="ttname"><a href="classabsl_1_1StrongVector.html#a9bad44b9510f86afb4e66779deb3e044">absl::StrongVector::push_back</a></div><div class="ttdeci">void push_back(const value_type &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00165">strong_vector.h:165</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html_aab9d243f2c2229e7dadabb1a17e21ac5"><div class="ttname"><a href="classabsl_1_1StrongVector.html#aab9d243f2c2229e7dadabb1a17e21ac5">absl::StrongVector::resize</a></div><div class="ttdeci">void resize(size_type new_size)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00152">strong_vector.h:152</a></div></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html_ae07281e1285a25bea0102d894ad9b204"><div class="ttname"><a href="classabsl_1_1StrongVector.html#ae07281e1285a25bea0102d894ad9b204">absl::StrongVector::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00149">strong_vector.h:149</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html">operations_research::sat::DratChecker</a></div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8h_source.html#l00046">drat_checker.h:46</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_a0b1c77a2d9b42a612c9cbbb6a49c49a3"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3">operations_research::sat::DratChecker::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8h_source.html#l00082">drat_checker.h:82</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_a0b1c77a2d9b42a612c9cbbb6a49c49a3ac23eb362d94850998d66868de9bb91a0"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3ac23eb362d94850998d66868de9bb91a0">operations_research::sat::DratChecker::UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8h_source.html#l00083">drat_checker.h:83</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a024232f8972a7dcb6cbf91ec8fe36fb0"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a024232f8972a7dcb6cbf91ec8fe36fb0">operations_research::sat::DratProofHandler::ApplyMapping</a></div><div class="ttdeci">void ApplyMapping(const absl::StrongVector&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">drat_proof_handler.cc:46</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a25591b74f1390b569aab41955fa133cb"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">operations_research::sat::DratProofHandler::Check</a></div><div class="ttdeci">DratChecker::Status Check(double max_time_in_seconds)</div><div class="ttdef"><b>Definition</b> <a href="#l00100">drat_proof_handler.cc:100</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a7314171a36b9f155bfbf54bdb23fff58"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">operations_research::sat::DratProofHandler::AddProblemClause</a></div><div class="ttdeci">void AddProblemClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00074">drat_proof_handler.cc:74</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_abbd38da4cb95571c1e095f3a29a7bf0d"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">operations_research::sat::DratProofHandler::AddClause</a></div><div class="ttdeci">void AddClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00080">drat_proof_handler.cc:80</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_acb650459902c5ff95cc31f43f73e2fd1"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">operations_research::sat::DratProofHandler::DeleteClause</a></div><div class="ttdeci">void DeleteClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00090">drat_proof_handler.cc:90</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_ad1b48be54b97a9348215e08fb3faf6db"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">operations_research::sat::DratProofHandler::AddOneVariable</a></div><div class="ttdeci">void AddOneVariable()</div><div class="ttdef"><b>Definition</b> <a href="#l00070">drat_proof_handler.cc:70</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_ad908319a5f675d11b62a215de112a12b"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">operations_research::sat::DratProofHandler::SetNumVariables</a></div><div class="ttdeci">void SetNumVariables(int num_variables)</div><div class="ttdoc">This need to be called when new variables are created.</div><div class="ttdef"><b>Definition</b> <a href="#l00063">drat_proof_handler.cc:63</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a25591b74f1390b569aab41955fa133cb"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a25591b74f1390b569aab41955fa133cb">operations_research::sat::DratProofHandler::Check</a></div><div class="ttdeci">DratChecker::Status Check(double max_time_in_seconds)</div><div class="ttdef"><b>Definition</b> <a href="#l00101">drat_proof_handler.cc:101</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a7314171a36b9f155bfbf54bdb23fff58"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a7314171a36b9f155bfbf54bdb23fff58">operations_research::sat::DratProofHandler::AddProblemClause</a></div><div class="ttdeci">void AddProblemClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00075">drat_proof_handler.cc:75</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_a8ceaa4570135a1216539fccb736088ca"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#a8ceaa4570135a1216539fccb736088ca">operations_research::sat::DratProofHandler::ApplyMapping</a></div><div class="ttdeci">void ApplyMapping(const util_intops::StrongVector&lt; BooleanVariable, BooleanVariable &gt; &amp;mapping)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">drat_proof_handler.cc:46</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_abbd38da4cb95571c1e095f3a29a7bf0d"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#abbd38da4cb95571c1e095f3a29a7bf0d">operations_research::sat::DratProofHandler::AddClause</a></div><div class="ttdeci">void AddClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00081">drat_proof_handler.cc:81</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_acb650459902c5ff95cc31f43f73e2fd1"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#acb650459902c5ff95cc31f43f73e2fd1">operations_research::sat::DratProofHandler::DeleteClause</a></div><div class="ttdeci">void DeleteClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="#l00091">drat_proof_handler.cc:91</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_ad1b48be54b97a9348215e08fb3faf6db"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad1b48be54b97a9348215e08fb3faf6db">operations_research::sat::DratProofHandler::AddOneVariable</a></div><div class="ttdeci">void AddOneVariable()</div><div class="ttdef"><b>Definition</b> <a href="#l00071">drat_proof_handler.cc:71</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_ad908319a5f675d11b62a215de112a12b"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#ad908319a5f675d11b62a215de112a12b">operations_research::sat::DratProofHandler::SetNumVariables</a></div><div class="ttdeci">void SetNumVariables(int num_variables)</div><div class="ttdoc">This need to be called when new variables are created.</div><div class="ttdef"><b>Definition</b> <a href="#l00064">drat_proof_handler.cc:64</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratProofHandler_html_adde5164b94ab102ec7f7b56abfa9959a"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratProofHandler.html#adde5164b94ab102ec7f7b56abfa9959a">operations_research::sat::DratProofHandler::DratProofHandler</a></div><div class="ttdeci">DratProofHandler()</div><div class="ttdef"><b>Definition</b> <a href="#l00034">drat_proof_handler.cc:34</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratWriter_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratWriter.html">operations_research::sat::DratWriter</a></div><div class="ttdef"><b>Definition</b> <a href="drat__writer_8h_source.html#l00036">drat_writer.h:36</a></div></div>
-<div class="ttc" id="aclassoperations__research_1_1sat_1_1Literal_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1Literal.html">operations_research::sat::Literal</a></div><div class="ttdef"><b>Definition</b> <a href="sat__base_8h_source.html#l00068">sat_base.h:68</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1Literal_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1Literal.html">operations_research::sat::Literal</a></div><div class="ttdef"><b>Definition</b> <a href="sat__base_8h_source.html#l00066">sat_base.h:66</a></div></div>
+<div class="ttc" id="aclassutil__intops_1_1StrongVector_html"><div class="ttname"><a href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a></div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00075">strong_vector.h:75</a></div></div>
+<div class="ttc" id="aclassutil__intops_1_1StrongVector_html_a49cd029c10dcdc6b1cd9b3796c5657cd"><div class="ttname"><a href="classutil__intops_1_1StrongVector.html#a49cd029c10dcdc6b1cd9b3796c5657cd">util_intops::StrongVector::push_back</a></div><div class="ttdeci">void push_back(const value_type &amp;val)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00263">strong_vector.h:263</a></div></div>
+<div class="ttc" id="aclassutil__intops_1_1StrongVector_html_aa44e9a8ff22279c37063993aa6f6009e"><div class="ttname"><a href="classutil__intops_1_1StrongVector.html#aa44e9a8ff22279c37063993aa6f6009e">util_intops::StrongVector::resize</a></div><div class="ttdeci">void resize(size_type new_size)</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00279">strong_vector.h:279</a></div></div>
 <div class="ttc" id="aconstraint__solver_2table_8cc_html_acb18315d548212835cd8ed4287e6c0b6"><div class="ttname"><a href="constraint__solver_2table_8cc.html#acb18315d548212835cd8ed4287e6c0b6">a</a></div><div class="ttdeci">int64_t a</div><div class="ttdef"><b>Definition</b> <a href="constraint__solver_2table_8cc_source.html#l00044">table.cc:44</a></div></div>
 <div class="ttc" id="adrat__checker_8h_html"><div class="ttname"><a href="drat__checker_8h.html">drat_checker.h</a></div></div>
 <div class="ttc" id="adrat__proof__handler_8h_html"><div class="ttname"><a href="drat__proof__handler_8h.html">drat_proof_handler.h</a></div></div>

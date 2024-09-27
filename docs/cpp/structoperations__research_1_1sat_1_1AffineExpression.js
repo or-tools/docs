@@ -9,7 +9,7 @@ var structoperations__research_1_1sat_1_1AffineExpression =
     [ "GreaterOrEqual", "structoperations__research_1_1sat_1_1AffineExpression.html#a157e2c951f41591ed225239a382d72f3", null ],
     [ "IsConstant", "structoperations__research_1_1sat_1_1AffineExpression.html#a42037f087d2a61ef60c538ca8d705fd8", null ],
     [ "LowerOrEqual", "structoperations__research_1_1sat_1_1AffineExpression.html#afaaada754f6aa02c92aa40b6dafada47", null ],
-    [ "LpValue", "structoperations__research_1_1sat_1_1AffineExpression.html#a5e25ed062cd341311e5ea4f5861a3807", null ],
+    [ "LpValue", "structoperations__research_1_1sat_1_1AffineExpression.html#a82c42623c7dbf3b319358be1c8b278fa", null ],
     [ "MultipliedBy", "structoperations__research_1_1sat_1_1AffineExpression.html#a2ed8a4160264862750c3aaafe675adbb", null ],
     [ "Negated", "structoperations__research_1_1sat_1_1AffineExpression.html#a3e33ea840f00d9b44300589b1cdd2f50", null ],
     [ "operator==", "structoperations__research_1_1sat_1_1AffineExpression.html#a2af076abb950670ad523f42b576bf94e", null ],

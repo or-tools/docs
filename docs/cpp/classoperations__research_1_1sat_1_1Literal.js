@@ -15,5 +15,6 @@ var classoperations__research_1_1sat_1_1Literal =
     [ "operator<", "classoperations__research_1_1sat_1_1Literal.html#a0697b89f0664b243cc437f0cda23b11a", null ],
     [ "operator==", "classoperations__research_1_1sat_1_1Literal.html#acb19618cd547911afcd14bc408e9eb64", null ],
     [ "SignedValue", "classoperations__research_1_1sat_1_1Literal.html#a3bd8e23190a39971c5ceab0ca318bf58", null ],
-    [ "Variable", "classoperations__research_1_1sat_1_1Literal.html#aa72b4ac4edff764469349ac4301ef4e0", null ]
+    [ "Variable", "classoperations__research_1_1sat_1_1Literal.html#aa72b4ac4edff764469349ac4301ef4e0", null ],
+    [ "AbslHashValue", "classoperations__research_1_1sat_1_1Literal.html#a7050b75e152341682c23e787d9fcf942", null ]
 ];

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -269,7 +269,7 @@ $(function(){initNavTree('sparse__matrix_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="comment">// supported.</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    std::vector&lt;std::pair&lt;VariableId, double&gt;&gt; related = <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1SparseSymmetricMatrix.html#a4568f0449320e9203ed9969bad5d26dd">Terms</a>(v);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    absl::c_sort(related);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [other, <a class="code hl_variable" href="expr__array_8cc.html#abda708e4a6f0de72a842382f919a7c31">coef</a>] : related) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [other, <a class="code hl_variable" href="expr__array_8cc.html#abda708e4a6f0de72a842382f919a7c31">coef</a>] : related) {</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="keywordflow">if</span> (v &lt;= other) {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        result.add_row_ids(v.value());</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        result.add_column_ids(other.value());</div>
@@ -287,7 +287,7 @@ $(function(){initNavTree('sparse__matrix_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">const</span> absl::Span&lt;const VariableId&gt; new_variables,</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">const</span> absl::flat_hash_set&lt;std::pair&lt;VariableId, VariableId&gt;&gt;&amp; dirty)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  std::vector&lt;std::tuple&lt;VariableId, VariableId, double&gt;&gt; updates;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> std::pair&lt;VariableId, VariableId&gt; pair : dirty) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> std::pair&lt;VariableId, VariableId&gt;&amp; pair : dirty) {</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">// If either variable has been deleted, don&#39;t add it.</span></div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">if</span> (deleted_variables.contains(pair.first) ||</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        deleted_variables.contains(pair.second)) {</div>
@@ -299,7 +299,7 @@ $(function(){initNavTree('sparse__matrix_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> VariableId v : new_variables) {</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span> (related_variables_.contains(v)) {</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="comment">// TODO(b/233630053): do not allocate here.</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> [other, <a class="code hl_variable" href="expr__array_8cc.html#abda708e4a6f0de72a842382f919a7c31">coef</a>] : <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1SparseSymmetricMatrix.html#a4568f0449320e9203ed9969bad5d26dd">Terms</a>(v)) {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [other, <a class="code hl_variable" href="expr__array_8cc.html#abda708e4a6f0de72a842382f919a7c31">coef</a>] : <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1SparseSymmetricMatrix.html#a4568f0449320e9203ed9969bad5d26dd">Terms</a>(v)) {</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">if</span> (v &lt;= other) {</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>          updates.push_back({v, other, <a class="code hl_variable" href="expr__array_8cc.html#abda708e4a6f0de72a842382f919a7c31">coef</a>});</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (new_variables.empty() || other &lt; new_variables[0]) {</div>

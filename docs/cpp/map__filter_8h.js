@@ -6,5 +6,6 @@ var map__filter_8h =
     [ "MakeKeepKeysFilter", "map__filter_8h.html#a08dd9fe8b5d24b8b3e8252b821b6f043", null ],
     [ "MakeSkipAllFilter", "map__filter_8h.html#a265503b1e6487edd97097005f877865e", null ],
     [ "MakeSkipZerosFilter", "map__filter_8h.html#ae64873249e43b99f927d92c7a254441c", null ],
+    [ "QuadraticConstraintFilterFromProto", "map__filter_8h.html#aad1bc03f8a0259eea90722b2127627dc", null ],
     [ "VariableFilterFromProto", "map__filter_8h.html#afddf4547921d37bef501dbac002818e8", null ]
 ];

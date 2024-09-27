@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -116,6 +116,7 @@ $(function(){initNavTree('cp__model__postsolve_8cc.html',''); initResizable(true
 <code>#include &quot;<a class="el" href="port_2proto__utils_8h_source.html">ortools/port/proto_utils.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sorted__interval__list_8h_source.html">ortools/util/sorted_interval_list.h</a>&quot;</code><br />
 </div>
 <p><a href="cp__model__postsolve_8cc_source.html">Go to the source code of this file.</a></p>
@@ -148,6 +149,8 @@ Functions</h2></td></tr>
 <tr class="separator:aaf05e16c4d9a267526d3edaec410dd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2be878d255ed853ce6a36d52c899dd" id="r_a3e2be878d255ed853ce6a36d52c899dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3e2be878d255ed853ce6a36d52c899dd">operations_research::sat::PostsolveResponse</a> (const int64_t num_variables_in_original_model, const CpModelProto &amp;mapping_proto, const std::vector&lt; int &gt; &amp;postsolve_mapping, std::vector&lt; int64_t &gt; *<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="separator:a3e2be878d255ed853ce6a36d52c899dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225c1890d46b6f3fe4c8a15fccc1c047" id="r_a225c1890d46b6f3fe4c8a15fccc1c047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a225c1890d46b6f3fe4c8a15fccc1c047">operations_research::sat::FillTightenedDomainInResponse</a> (const CpModelProto &amp;original_model, const CpModelProto &amp;mapping_proto, const std::vector&lt; int &gt; &amp;postsolve_mapping, const std::vector&lt; <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &gt; &amp;search_domains, CpSolverResponse *response, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
+<tr class="separator:a225c1890d46b6f3fe4c8a15fccc1c047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

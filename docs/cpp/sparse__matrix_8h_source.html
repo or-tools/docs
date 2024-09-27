@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -454,7 +454,7 @@ $(function(){initNavTree('sparse__matrix_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keywordtype">double</span> <a class="code hl_function" href="classoperations__research_1_1math__opt_1_1SparseSymmetricMatrix.html#a91832954989b7d67f71c8678b0646d63">SparseSymmetricMatrix::get</a>(<span class="keyword">const</span> VariableId first,</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                                  <span class="keyword">const</span> VariableId second)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacegtl.html#a795ebdb62731938c8c31b221f0f074b4">gtl::FindWithDefault</a>(values_, make_key(first, second));</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacegtl.html#af9963984d2a72fa1d190a08b88219ace">gtl::FindWithDefault</a>(values_, make_key(first, second));</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>}</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
 </div>
@@ -818,7 +818,7 @@ $(function(){initNavTree('sparse__matrix_8h_source.html',''); initResizable(true
 <div class="ttc" id="amarkowitz_8cc_html_aa9d6c98fdf8d89b0e2321fda02adc82c"><div class="ttname"><a href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a></div><div class="ttdeci">ColIndex col</div><div class="ttdef"><b>Definition</b> <a href="markowitz_8cc_source.html#l00187">markowitz.cc:187</a></div></div>
 <div class="ttc" id="amarkowitz_8cc_html_aea35f36ba98d5bbd8d033382f50c9e52"><div class="ttname"><a href="markowitz_8cc.html#aea35f36ba98d5bbd8d033382f50c9e52">row</a></div><div class="ttdeci">RowIndex row</div><div class="ttdef"><b>Definition</b> <a href="markowitz_8cc_source.html#l00186">markowitz.cc:186</a></div></div>
 <div class="ttc" id="amodel__storage__types_8h_html"><div class="ttname"><a href="model__storage__types_8h.html">model_storage_types.h</a></div></div>
-<div class="ttc" id="anamespacegtl_html_a795ebdb62731938c8c31b221f0f074b4"><div class="ttname"><a href="namespacegtl.html#a795ebdb62731938c8c31b221f0f074b4">gtl::FindWithDefault</a></div><div class="ttdeci">const Collection::value_type::second_type &amp; FindWithDefault(const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="map__util_8h_source.html#l00029">map_util.h:29</a></div></div>
+<div class="ttc" id="anamespacegtl_html_af9963984d2a72fa1d190a08b88219ace"><div class="ttname"><a href="namespacegtl.html#af9963984d2a72fa1d190a08b88219ace">gtl::FindWithDefault</a></div><div class="ttdeci">const MapUtilMappedT&lt; Collection &gt; &amp; FindWithDefault(const Collection &amp;collection, const KeyType &amp;key, const MapUtilMappedT&lt; Collection &gt; &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="map__util_8h_source.html#l00036">map_util.h:36</a></div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition</b> <a href="connected__components_8h_source.html#l00145">connected_components.h:145</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_1_1internal_html_a0fd3be09e822d758e8abe91deb04dd7a"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt_1_1internal.html#a0fd3be09e822d758e8abe91deb04dd7a">operations_research::math_opt::internal::kZerosCleanup</a></div><div class="ttdeci">constexpr double kZerosCleanup</div><div class="ttdef"><b>Definition</b> <a href="#l00257">sparse_matrix.h:257</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_1_1internal_html_a2e5175538003d79fa72d9c4cd075842e"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt_1_1internal.html#a2e5175538003d79fa72d9c4cd075842e">operations_research::math_opt::internal::EntriesToMatrixProto</a></div><div class="ttdeci">SparseDoubleMatrixProto EntriesToMatrixProto(std::vector&lt; std::tuple&lt; RowId, ColumnId, double &gt; &gt; entries)</div><div class="ttdoc">entries must have unique (row, column) values but can be in any order.</div><div class="ttdef"><b>Definition</b> <a href="#l00279">sparse_matrix.h:279</a></div></div>

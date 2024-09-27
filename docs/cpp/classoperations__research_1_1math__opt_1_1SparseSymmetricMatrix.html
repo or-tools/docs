@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -303,7 +303,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000996">Todo</a></b></dt><dd>(b/233630053): reuse the allocation once an iterator API is supported. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001019">Todo</a></b></dt><dd>(b/233630053): reuse the allocation once an iterator API is supported. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00140">140</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>
 
@@ -324,7 +324,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the variables that have nonzero entries with <code>variable</code>.</p>
-<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001001">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001024">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00047">47</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>
 
@@ -382,7 +382,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns (x, y, c) tuples where variables x and y have nonzero coefficient c, and x &lt;= y.</p>
-<p>The return order is non-deterministic and not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001003">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is non-deterministic and not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001026">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00092">92</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>
 
@@ -403,7 +403,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the variable value pairs (x, c) where <code>variable</code> and x have nonzero coefficient c.</p>
-<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001002">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001025">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00076">76</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>
 
@@ -433,7 +433,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>If either variable has been deleted, don't add it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000997">Todo</a></b></dt><dd>(b/233630053): do not allocate here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001020">Todo</a></b></dt><dd>(b/233630053): do not allocate here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00165">165</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>
 
@@ -461,7 +461,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001004">Todo</a></b></dt><dd>(b/233630053): do not expose values_ directly, instead offer a way to iterate over all the nonzero entries. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001027">Todo</a></b></dt><dd>(b/233630053): do not expose values_ directly, instead offer a way to iterate over all the nonzero entries. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>this map will contain zeros. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00118">118</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
@@ -483,7 +483,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the variables with any nonzero in the matrix.</p>
-<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001000">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001023">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>we could make this more efficient in the presence of deletions by storing the actual number of neighbors in the value of related_variables_.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8cc_source.html#l00061">61</a> of file <a class="el" href="sparse__matrix_8cc_source.html">sparse_matrix.cc</a>.</p>

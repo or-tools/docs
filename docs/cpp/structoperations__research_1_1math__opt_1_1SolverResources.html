@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -133,7 +133,7 @@ Public Attributes</h2></td></tr>
 <p>When using RemoteSolve() and RemoteComputeInfeasibleSubsystem(), these hints are mostly optional as some defaults will be computed based on the other parameters.</p>
 <p>When using RemoteStreamingSolve() these hints are used to dimension the resources available during the execution of every action; thus it is recommended to set them. </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00038">38</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00041">41</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f8f8ae34d4e30a4b7694c47df768612" name="a3f8f8ae34d4e30a4b7694c47df768612"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f8f8ae34d4e30a4b7694c47df768612">&#9670;&#160;</a></span>FromProto()</h2>
@@ -199,7 +199,7 @@ Public Attributes</h2></td></tr>
 <p>This parameter is usually used in conjunction with <a class="el" href="structoperations__research_1_1math__opt_1_1SolveParameters.html#a8ec60a4f21e03172a31b4fc3643da6d0" title="If unset, use the solver default. If set, it must be &gt;= 1.">SolveParameters.threads</a>. For some solvers like <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> it makes sense to use <a class="el" href="#a2fb1c49f8d777a37aba5140188b7a152">SolverResources.cpu</a> = <a class="el" href="structoperations__research_1_1math__opt_1_1SolveParameters.html#a8ec60a4f21e03172a31b4fc3643da6d0" title="If unset, use the solver default. If set, it must be &gt;= 1.">SolveParameters.threads</a>. For other solvers like CP-SAT, it may makes sense to use a value lower than the number of threads as not all threads may be ready to be scheduled at the same time. It is better to consult each solver documentation to set this parameter.</p>
 <dl class="section note"><dt>Note</dt><dd>if the <a class="el" href="structoperations__research_1_1math__opt_1_1SolveParameters.html#a8ec60a4f21e03172a31b4fc3643da6d0" title="If unset, use the solver default. If set, it must be &gt;= 1.">SolveParameters.threads</a> is not set then this parameter should also be left unset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00059">59</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00062">62</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The limit of RAM for the solve in bytes. Must be finite and &gt;=1.0 (even though it should in practice be much larger). </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00063">63</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__resources_8h_source.html#l00066">66</a> of file <a class="el" href="solver__resources_8h_source.html">solver_resources.h</a>.</p>
 
 </div>
 </div>

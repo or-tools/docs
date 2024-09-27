@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a613e7df6c219782d523ed8f281b9bf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922e79e201ba66e10c4526037cc43b54" id="r_a922e79e201ba66e10c4526037cc43b54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a922e79e201ba66e10c4526037cc43b54">NeedsBasisRefactorization</a> () const</td></tr>
 <tr class="separator:a922e79e201ba66e10c4526037cc43b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1384b2a23ac28c00e4644e29d7a897" id="r_a1d1384b2a23ac28c00e4644e29d7a897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a5913128a85eac124919a5e8685202e33">DenseColumn::ConstView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1384b2a23ac28c00e4644e29d7a897">GetEdgeSquaredNorms</a> ()</td></tr>
+<tr class="memitem:a1d1384b2a23ac28c00e4644e29d7a897" id="r_a1d1384b2a23ac28c00e4644e29d7a897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#ab9dc07e6515e5977a15fef193025ec8f">DenseColumn::ConstView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1384b2a23ac28c00e4644e29d7a897">GetEdgeSquaredNorms</a> ()</td></tr>
 <tr class="separator:a1d1384b2a23ac28c00e4644e29d7a897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735c645bb6117aef6a8a52d193ec65aa" id="r_a735c645bb6117aef6a8a52d193ec65aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a735c645bb6117aef6a8a52d193ec65aa">UpdateDataOnBasisPermutation</a> (const <a class="el" href="namespaceoperations__research_1_1glop.html#a36234394df434c523865e56a738050d4">ColumnPermutation</a> &amp;col_perm)</td></tr>
 <tr class="memdesc:a735c645bb6117aef6a8a52d193ec65aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the norms if the columns of the basis where permuted.  <br /></td></tr>
@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#a5913128a85eac124919a5e8685202e33">DenseColumn::ConstView</a> operations_research::glop::DualEdgeNorms::GetEdgeSquaredNorms </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html#ab9dc07e6515e5977a15fef193025ec8f">DenseColumn::ConstView</a> operations_research::glop::DualEdgeNorms::GetEdgeSquaredNorms </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -434,7 +434,7 @@ Public Member Functions</h2></td></tr>
 <p>No need to update if we will recompute it from scratch later.</p>
 <p>Update the norm.</p>
 <dl class="section note"><dt>Note</dt><dd>the update formula used is important to maximize the precision. See Koberstein's PhD section 8.2.2.1.</dd></dl>
-<p>Avoid 0.0 norms (The 1e-4 is the value used by Koberstein). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000426">Todo</a></b></dt><dd>(user): use a more precise lower bound depending on the column norm? We can do that with Cauchy-Swartz inequality: (edge . leaving_column)^2 = 1.0 &lt; |<code>edge</code>|^2 * |<code>leaving_column</code>|^2 </dd></dl>
+<p>Avoid 0.0 norms (The 1e-4 is the value used by Koberstein). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000444">Todo</a></b></dt><dd>(user): use a more precise lower bound depending on the column norm? We can do that with Cauchy-Swartz inequality: (edge . leaving_column)^2 = 1.0 &lt; |<code>edge</code>|^2 * |<code>leaving_column</code>|^2 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="dual__edge__norms_8cc_source.html#l00082">82</a> of file <a class="el" href="dual__edge__norms_8cc_source.html">dual_edge_norms.cc</a>.</p>
 

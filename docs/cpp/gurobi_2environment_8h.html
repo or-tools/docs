@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -799,11 +799,11 @@ Macros</h2></td></tr>
 <tr class="separator:aab1c679e0ffa97a23f50330835989b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4625dc336e366f968931132446852b" id="r_aff4625dc336e366f968931132446852b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff4625dc336e366f968931132446852b">GRB_FEASRELAX_CARDINALITY</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:aff4625dc336e366f968931132446852b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeda0314230a4d6141ce93ee379460901" id="r_aeda0314230a4d6141ce93ee379460901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda0314230a4d6141ce93ee379460901">MALLOCCB_ARGS</a>&#160;&#160;&#160;size_t size, void *syscbusrdata</td></tr>
+<tr class="memitem:aeda0314230a4d6141ce93ee379460901" id="r_aeda0314230a4d6141ce93ee379460901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda0314230a4d6141ce93ee379460901">MALLOCCB_ARGS</a>&#160;&#160;&#160;size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td></tr>
 <tr class="separator:aeda0314230a4d6141ce93ee379460901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4029272666dfcff1fa54cf75875757b0" id="r_a4029272666dfcff1fa54cf75875757b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4029272666dfcff1fa54cf75875757b0">CALLOCCB_ARGS</a>&#160;&#160;&#160;size_t nmemb, size_t size, void *syscbusrdata</td></tr>
+<tr class="memitem:a4029272666dfcff1fa54cf75875757b0" id="r_a4029272666dfcff1fa54cf75875757b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4029272666dfcff1fa54cf75875757b0">CALLOCCB_ARGS</a>&#160;&#160;&#160;size_t nmemb, size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td></tr>
 <tr class="separator:a4029272666dfcff1fa54cf75875757b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae510fad67df1a4e9eb1755f963fd76" id="r_acae510fad67df1a4e9eb1755f963fd76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acae510fad67df1a4e9eb1755f963fd76">REALLOCCB_ARGS</a>&#160;&#160;&#160;void *ptr, size_t size, void *syscbusrdata</td></tr>
+<tr class="memitem:acae510fad67df1a4e9eb1755f963fd76" id="r_acae510fad67df1a4e9eb1755f963fd76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acae510fad67df1a4e9eb1755f963fd76">REALLOCCB_ARGS</a>&#160;&#160;&#160;void *ptr, size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td></tr>
 <tr class="separator:acae510fad67df1a4e9eb1755f963fd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e6093be90f69d1250ec6e95efe21e2" id="r_a44e6093be90f69d1250ec6e95efe21e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e6093be90f69d1250ec6e95efe21e2">FREECB_ARGS</a>&#160;&#160;&#160;void *ptr, void *syscbusrdata</td></tr>
 <tr class="separator:a44e6093be90f69d1250ec6e95efe21e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1346,7 +1346,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CALLOCCB_ARGS&#160;&#160;&#160;size_t nmemb, size_t size, void *syscbusrdata</td>
+          <td class="memname">#define CALLOCCB_ARGS&#160;&#160;&#160;size_t nmemb, size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10773,7 +10773,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MALLOCCB_ARGS&#160;&#160;&#160;size_t size, void *syscbusrdata</td>
+          <td class="memname">#define MALLOCCB_ARGS&#160;&#160;&#160;size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10805,7 +10805,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REALLOCCB_ARGS&#160;&#160;&#160;void *ptr, size_t size, void *syscbusrdata</td>
+          <td class="memname">#define REALLOCCB_ARGS&#160;&#160;&#160;void *ptr, size_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, void *syscbusrdata</td>
         </tr>
       </table>
 </div><div class="memdoc">

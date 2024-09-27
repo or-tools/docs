@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -1368,7 +1368,7 @@ Additional Inherited Members</h2></td></tr>
 <p>--&mdash; Solve --&mdash; Solves problem with specified parameter values. Returns true if the solution is optimal. </p>
 <p>"status_" may encode a variety of failure scenarios, many of which would correspond to another MPResultStatus than ABNORMAL, but since SCIP is a moving target, we use the most likely error code here (abnormalities, often numeric), and rely on the user enabling output to see more details.</p>
 <dl class="section note"><dt>Note</dt><dd>SCIP does not provide any incrementality. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000812">Todo</a></b></dt><dd>(user): Is that still true now (2018) ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000831">Todo</a></b></dt><dd>(user): Is that still true now (2018) ? </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> log level.</p>
 <p>Special case if the model is empty since SCIP expects a non-empty model.</p>
 <p>When the value of <code>callback_</code> is changed, <code>callback_reset_</code> is set and code above you call <a class="el" href="#a7d3e371e9120115b532055e40c970404">Reset()</a> that should have cleared <code>scip_constraint_handler_</code>. Here we assert that if this has not happened then <code>callback_</code> value has not changed.</p>
@@ -1378,13 +1378,13 @@ Additional Inherited Members</h2></td></tr>
 <p>We start by creating an empty partial solution.</p>
 <p>We start by creating the all-zero solution.</p>
 <p>Fill the other variables from the given solution hint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000813">Todo</a></b></dt><dd>(user): I more or less copied this from the SCIPreadSol() code that reads a solution from a file. I am not sure what SCIPisTransformed() is or what is the difference between the try and add version. In any case this seems to always call SCIPaddSolFree() for now and it works. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000832">Todo</a></b></dt><dd>(user): I more or less copied this from the SCIPreadSol() code that reads a solution from a file. I am not sure what SCIPisTransformed() is or what is the difference between the try and add version. In any case this seems to always call SCIPaddSolFree() for now and it works. </dd></dl>
 <p>Solve.</p>
 <p>Get the results.</p>
 <p>If optimal or feasible solution is found.</p>
 <p>Check the status: optimal, infeasible, etc.</p>
 <p>To be consistent with the other solvers.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000814">Todo</a></b></dt><dd>(user): We could introduce our own "infeasible or
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000833">Todo</a></b></dt><dd>(user): We could introduce our own "infeasible or
 unbounded" status. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#a99d3df0f2e02937e56473d9f3df68965">operations_research::MPSolverInterface</a>.</p>

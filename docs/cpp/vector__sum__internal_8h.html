@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -109,9 +109,11 @@ $(function(){initNavTree('vector__sum__internal_8h.html',''); initResizable(true
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
 <code>#include &quot;absl/base/attributes.h&quot;</code><br />
+<code>#include &quot;absl/base/optimization.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="aligned__memory_8h_source.html">ortools/util/aligned_memory.h</a>&quot;</code><br />
 </div>
@@ -134,7 +136,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0" id="r_a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplParams" colspan="2">template&lt;typename Value , size_t size&gt; </td></tr>
-<tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a44e028ca9c90fa8a5b020b09d4088ad0">operations_research::internal::AddInPlace</a> (<a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;out, const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;in)</td></tr>
+<tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a44e028ca9c90fa8a5b020b09d4088ad0">operations_research::internal::AddInPlace</a> (<a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;out, const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;in)</td></tr>
 <tr class="separator:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b65ebc72bdac409fae9ee093004ad3a" id="r_a5b65ebc72bdac409fae9ee093004ad3a"><td class="memTemplParams" colspan="2">template&lt;size_t block_size, size_t num_blocks_per_iteration, typename Value &gt; </td></tr>
 <tr class="memitem:a5b65ebc72bdac409fae9ee093004ad3a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, block_size &gt; ABSL_ATTRIBUTE_NOINLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a5b65ebc72bdac409fae9ee093004ad3a">operations_research::internal::AlignedBlockSum</a> (const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, block_size &gt; *blocks, size_t num_blocks)</td></tr>

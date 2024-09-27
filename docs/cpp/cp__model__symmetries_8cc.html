@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -110,11 +110,14 @@ $(function(){initNavTree('cp__model__symmetries_8cc.html',''); initResizable(tru
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/algorithm/container.h&quot;</code><br />
+<code>#include &quot;absl/container/btree_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
@@ -124,12 +127,14 @@ $(function(){initNavTree('cp__model__symmetries_8cc.html',''); initResizable(tru
 <code>#include &quot;absl/strings/str_join.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;google/protobuf/message.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="binary__search_8h_source.html">ortools/algorithms/binary_search.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="find__graph__symmetries_8h_source.html">ortools/algorithms/find_graph_symmetries.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sparse__permutation_8h_source.html">ortools/algorithms/sparse_permutation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hash_8h_source.html">ortools/base/hash.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="graph_8h_source.html">ortools/graph/graph.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cp__model__checker_8h_source.html">ortools/sat/cp_model_checker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__mapping_8h_source.html">ortools/sat/cp_model_mapping.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cp__model__utils_8h_source.html">ortools/sat/cp_model_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sat_2model_8h_source.html">ortools/sat/model.h</a>&quot;</code><br />
@@ -141,6 +146,7 @@ $(function(){initNavTree('cp__model__symmetries_8cc.html',''); initResizable(tru
 <code>#include &quot;<a class="el" href="sat_2util_8h_source.html">ortools/sat/util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="affine__relation_8h_source.html">ortools/util/affine_relation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_2logging_8h_source.html">ortools/util/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saturated__arithmetic_8h_source.html">ortools/util/saturated_arithmetic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="time__limit_8h_source.html">ortools/util/time_limit.h</a>&quot;</code><br />
 </div>
 <p><a href="cp__model__symmetries_8cc_source.html">Go to the source code of this file.</a></p>
@@ -155,9 +161,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae16bafcf3c5377ed905021a96f93bdcf" id="r_ae16bafcf3c5377ed905021a96f93bdcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae16bafcf3c5377ed905021a96f93bdcf">operations_research::sat::FindCpModelSymmetries</a> (const SatParameters &amp;params, const CpModelProto &amp;problem, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1SparsePermutation.html">SparsePermutation</a> &gt; &gt; *generators, double deterministic_limit, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:ae16bafcf3c5377ed905021a96f93bdcf" id="r_ae16bafcf3c5377ed905021a96f93bdcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#ae16bafcf3c5377ed905021a96f93bdcf">operations_research::sat::FindCpModelSymmetries</a> (const SatParameters &amp;params, const CpModelProto &amp;problem, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1SparsePermutation.html">SparsePermutation</a> &gt; &gt; *generators, double deterministic_limit, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="separator:ae16bafcf3c5377ed905021a96f93bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71dfa5c438ceb1f2474eea8ceb3c4ad" id="r_aa71dfa5c438ceb1f2474eea8ceb3c4ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa71dfa5c438ceb1f2474eea8ceb3c4ad">operations_research::sat::DetectAndAddSymmetryToProto</a> (const SatParameters &amp;params, CpModelProto *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:aa71dfa5c438ceb1f2474eea8ceb3c4ad" id="r_aa71dfa5c438ceb1f2474eea8ceb3c4ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#aa71dfa5c438ceb1f2474eea8ceb3c4ad">operations_research::sat::DetectAndAddSymmetryToProto</a> (const SatParameters &amp;params, CpModelProto *<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>, <a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="memdesc:aa71dfa5c438ceb1f2474eea8ceb3c4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects symmetries and fill the symmetry field.  <br /></td></tr>
 <tr class="separator:aa71dfa5c438ceb1f2474eea8ceb3c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3423c28a2a00161e74d9c6e0174bcbf6" id="r_a3423c28a2a00161e74d9c6e0174bcbf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a3423c28a2a00161e74d9c6e0174bcbf6">operations_research::sat::DetectAndExploitSymmetriesInPresolve</a> (<a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html">PresolveContext</a> *<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>)</td></tr>

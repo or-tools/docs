@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, size_t alignment_bytes, size_t misalignment_bytes&gt;<br />
 struct operations_research::internal::AllocatorWithAlignment&lt; T, alignment_bytes, misalignment_bytes &gt;</div>
-<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00028">28</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00029">29</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1d22f4811f9b6589bdaf469a8eabd9fa" name="a1d22f4811f9b6589bdaf469a8eabd9fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d22f4811f9b6589bdaf469a8eabd9fa">&#9670;&#160;</a></span>allocate() <span class="overload">[1/2]</span></h2>
@@ -168,7 +168,7 @@ template&lt;typename T , size_t alignment_bytes, size_t misalignment_bytes&gt; <
 
 <p>A version of <a class="el" href="#a1af6f60e987c053a6abb292aeeece242">allocate()</a> that takes a hint; we just ignore the hint. </p>
 
-<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00052">52</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00057">57</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ template&lt;typename T , size_t alignment_bytes, size_t misalignment_bytes&gt; <
 <p>Having misalignment_bytes &gt;= alignment_bytes is useless, because all misalignments are equivalent modulo <code>alignment_bytes</code>. Disallowing it allows us to simplify the code below.</p>
 <p><code>std::aligned_alloc(alignment, size)</code> requires that <code>size</code> is a multiple of <code>alignment</code>, and might return a nullptr when this is not respected. To be safe, we round the number of bytes up to alignment.</p>
 
-<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00032">32</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00033">33</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ template&lt;typename T , size_t alignment_bytes, size_t misalignment_bytes&gt; <
 
 <p>Frees memory allocated by <a class="el" href="#a1af6f60e987c053a6abb292aeeece242">allocate()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00055">55</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="aligned__memory__internal_8h_source.html#l00060">60</a> of file <a class="el" href="aligned__memory__internal_8h_source.html">aligned_memory_internal.h</a>.</p>
 
 </div>
 </div>

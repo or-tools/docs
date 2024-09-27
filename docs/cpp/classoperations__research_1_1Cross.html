@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -461,7 +461,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Tricky: In all cases we want to connect node0 to neighbor. If we are crossing path starts, node0 is the end of a chain and neighbor is the the first node after the other chain ending at node1, therefore node1 = prev(neighbor). If we are crossing path ends, node0 is the start of a chain and neighbor is the last node before the other chain starting at node1, therefore node1 = <a class="el" href="constraint__solver_8cc.html#a395f613555f398dd389670bb4c2a4599">next(neighbor)</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000213">Todo</a></b></dt><dd>(user): When neighbors are considered, explore if having two versions of <a class="el" href="classoperations__research_1_1Cross.html" title="--— Cross --—">Cross</a> makes sense, one exchanging path starts, the other path ends. Rationale: neighborhoods might not be symmetric. In practice, in particular when used through RoutingModel, neighborhoods are actually symmetric. </dd></dl>
+<p>Tricky: In all cases we want to connect node0 to neighbor. If we are crossing path starts, node0 is the end of a chain and neighbor is the the first node after the other chain ending at node1, therefore node1 = prev(neighbor). If we are crossing path ends, node0 is the start of a chain and neighbor is the last node before the other chain starting at node1, therefore node1 = <a class="el" href="constraint__solver_8cc.html#a395f613555f398dd389670bb4c2a4599">next(neighbor)</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000231">Todo</a></b></dt><dd>(user): When neighbors are considered, explore if having two versions of <a class="el" href="classoperations__research_1_1Cross.html" title="--— Cross --—">Cross</a> makes sense, one exchanging path starts, the other path ends. Rationale: neighborhoods might not be symmetric. In practice, in particular when used through RoutingModel, neighborhoods are actually symmetric. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Cross.html" title="--— Cross --—">Cross</a> path starts. If two paths are equivalent don't exchange the full paths.</p>
 <p><a class="el" href="classoperations__research_1_1Cross.html" title="--— Cross --—">Cross</a> path ends. If paths are equivalent, every end crossing has a corresponding start crossing, we don't generate those symmetric neighbors.</p>
 <p>Never exchange full paths, equivalent or not. Full path exchange is only performed when start0 &lt; start1.</p>

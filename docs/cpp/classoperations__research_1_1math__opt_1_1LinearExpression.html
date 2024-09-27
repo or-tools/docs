@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -196,12 +196,12 @@ Friends</h2></td></tr>
 <div class="textblock"><p>This class represents a sum of variables multiplied by coefficient and an optional offset constant. For example: "3*x + 2*y + 5".</p>
 <p>All operations, including constructor, will raise an assertion if the operands involve variables from different <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> objects.</p>
 <p>Contrary to <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> type, expressions owns the linear expression their represent. Hence they are usually passed by reference to prevent unnecessary copies.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000919">Todo</a></b></dt><dd><p class="startdd">(b/169415098): add a function to remove zero terms. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000943">Todo</a></b></dt><dd><p class="startdd">(b/169415098): add a function to remove zero terms. </p>
 <p class="interdd">(b/169415834): study if exact zeros should be automatically removed. </p>
 <p class="enddd">(b/169415103): add tests that some expressions don't compile. </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00226">226</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00229">229</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab40bda31432b9d93edbb11d74ad3be61" name="ab40bda31432b9d93edbb11d74ad3be61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab40bda31432b9d93edbb11d74ad3be61">&#9670;&#160;</a></span>LinearExpression() <span class="overload">[1/7]</span></h2>
@@ -278,7 +278,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>We have to define a custom move constructor as we need to reset storage_ to nullptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01385">1385</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01390">1390</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ Friends</h2></td></tr>
 <p>Usually users should use the overloads of operators to build linear expressions. For example, assuming <code>x</code> and <code>y</code> are <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>, then <code>x + 2*y / + 5</code> will build a <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> automatically. </p>
 <p>The same variable may appear multiple times in the input list; we must accumulate the coefficients.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01404">1404</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01409">1409</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01418">1418</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01423">1423</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01421">1421</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01426">1426</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01424">1424</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01429">1429</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </div><div class="memdoc">
 <p>} In particular, the multiplication will be performed on the types of the elements in left and right (take care with low precision types), but the addition will always use double precision. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01698">1698</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01703">1703</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ template&lt;typename Iterable &gt; </div>
 
 <p>} </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01657">1657</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01662">1662</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </div><div class="memdoc">
 <p>Creates a new <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> object equal to the inner product. The implementation is equivalent to: <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expr; expr.AddInnerProduct(left, right); </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01704">1704</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01709">1709</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01719">1719</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01724">1724</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01640">1640</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01645">1645</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +616,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </div><div class="memdoc">
 <p>Here we know that each key in other.terms_ has already been checked and thus we don't need to compare in the loop. Of course this only applies if the other has terms.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01582">1582</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01587">1587</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01596">1596</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01601">1601</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -670,7 +670,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01607">1607</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01612">1612</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01602">1602</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01607">1607</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </div><div class="memdoc">
 <p>See operator+=.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01612">1612</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01617">1617</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +752,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01624">1624</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01629">1629</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01635">1635</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01640">1640</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01630">1630</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01635">1635</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01648">1648</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01653">1653</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </div><div class="memdoc">
 <p>We have to define a custom move assignment operator as we need to reset storage_ to nullptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01395">1395</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01400">1400</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +913,7 @@ template&lt;typename LeftIterable , typename RightIterable &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01721">1721</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01726">1726</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +943,7 @@ template&lt;typename Iterable &gt; </div>
 </div><div class="memdoc">
 <p>Creates a new <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> object equal to the sum. The implementation is equivalent to: <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expr; expr.AddSum(items); </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01664">1664</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01669">1669</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -972,7 +972,7 @@ template&lt;typename Iterable &gt; </div>
 
 <p>Returns the terms in this expression. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01717">1717</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01722">1722</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1001,7 @@ template&lt;typename Iterable &gt; </div>
 </div><div class="memdoc">
 <p>We intentionally pass one of the <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> argument by value so that we don't make unnecessary copies of temporary objects by using the move constructor and the returned values optimization (RVO). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01427">1427</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01432">1432</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1031,7 @@ template&lt;typename Iterable &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000917">Todo</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000941">Todo</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
 <li>make sure to quote the variable name so that we support: </li>
 </ul>
 </dd></dl>
@@ -1056,7 +1056,7 @@ template&lt;typename Iterable &gt; </div>
 <p>Specifically, letting (i_1, i_2, ..., i_n) = items adds i_1 + i_2 + ... + i_n to this.</p>
 <p>Example: const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> a = ...; const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> b = ...; const std::vector&lt;Variable&gt; vars = {a, b}; <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expr(8.0); expr.AddSum(vars); Results in expr having the value a + b + 8.0.</p>
 <p>Compile time requirements:</p><ul>
-<li>Iterable is a sequence (an array or object with <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin()</a> and <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end()</a>).</li>
+<li>Iterable is a sequence (an array or object with begin() and <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end()</a>).</li>
 <li>The type of an element of items is one of double, <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>, <a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html" title="A term in an sum of variables multiplied by coefficients.">LinearTerm</a> or <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> (or is implicitly convertible to one of these types, e.g. int).</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The implementation is equivalent to: for(const auto item : items) {</dd></dl>
@@ -1064,14 +1064,14 @@ template&lt;typename Iterable &gt; </div>
 <p>Specifically, letting (l_1, l_2 ..., l_n) = left, (r_1, r_2, ..., r_n) = right, adds l_1 * r_1 + l_2 * r_2 + ... + l_n * r_n to this.</p>
 <p>Example: const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> a = ...; const <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> b = ...; const std::vector&lt;Variable&gt; left = {a, b}; const std::vector&lt;double&gt; right = {10.0, 2.0}; <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> expr(3.0); expr.AddInnerProduct(left, right) Results in expr having the value 10.0 * a + 2.0 * b + 3.0.</p>
 <p>Compile time requirements:</p><ul>
-<li>LeftIterable and RightIterable are both sequences (arrays or objects with <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin()</a> and <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end()</a>)</li>
+<li>LeftIterable and RightIterable are both sequences (arrays or objects with begin() and <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end()</a>)</li>
 <li>For both left and right, their elements a type of either double, <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>, <a class="el" href="structoperations__research_1_1math__opt_1_1LinearTerm.html" title="A term in an sum of variables multiplied by coefficients.">LinearTerm</a> or <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> (or type implicitly convertible to one of these types, e.g. int).</li>
 <li>At least one of left or right has elements with type double (or a type implicitly convertible, e.g. int). Runtime requirements (or CHECK fails):</li>
 <li>left and right have an equal number of elements.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The implementation is equivalent to the following pseudocode: for(const auto&amp; [l, r] : zip(left, right)) { </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00289">289</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00292">292</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>

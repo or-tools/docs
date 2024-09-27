@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,9 +119,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c14d7dfcbdb6bee9cbf3b8a3a8f60c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50ed391140451c9af7a373db0609e7d" id="r_ac50ed391140451c9af7a373db0609e7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50ed391140451c9af7a373db0609e7d">NumNodes</a> () const ABSL_LOCKS_EXCLUDED(mu_)</td></tr>
 <tr class="separator:ac50ed391140451c9af7a373db0609e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c62a6cf809cd8ef5c6216aa9e74dc7" id="r_a21c62a6cf809cd8ef5c6216aa9e74dc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21c62a6cf809cd8ef5c6216aa9e74dc7">SplitsToGeneratePerWorker</a> () const</td></tr>
-<tr class="memdesc:a21c62a6cf809cd8ef5c6216aa9e74dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of splits each worker should propose this restart.  <br /></td></tr>
-<tr class="separator:a21c62a6cf809cd8ef5c6216aa9e74dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f8c1d2193b8efee25516929875e5a3" id="r_ab8f8c1d2193b8efee25516929875e5a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8f8c1d2193b8efee25516929875e5a3">SyncTree</a> (<a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> &amp;path) ABSL_LOCKS_EXCLUDED(mu_)</td></tr>
 <tr class="separator:ab8f8c1d2193b8efee25516929875e5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d71bb864a47eaeb3edb91b97819686" id="r_aa6d71bb864a47eaeb3edb91b97819686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6d71bb864a47eaeb3edb91b97819686">ReplaceTree</a> (<a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> &amp;path)</td></tr>
@@ -137,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Experimental thread-safe class for managing work assignments between workers. This API is intended to investigate Graeme Gange &amp; Peter Stuckey's proposal "Scalable Parallelization of Learning Solvers". The core idea of this implementation is that workers can maintain several ProtoTrails, and periodically replace the "worst" one. With 1 assignment per worker, this leads to something very similar to Embarassingly Parallel <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00141">141</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00176">176</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a8937d96dfd35ba99536d2c91d491ee" name="a8a8937d96dfd35ba99536d2c91d491ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a8937d96dfd35ba99536d2c91d491ee">&#9670;&#160;</a></span>SharedTreeManager() <span class="overload">[1/2]</span></h2>
@@ -163,7 +160,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Create the root node with a fake literal.</p>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00191">191</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00210">210</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -213,7 +210,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Asserts that the subtree in path up to <code>level</code> contains no improving solutions. Clears path. </p>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00472">472</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00515">515</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -232,7 +229,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00211">211</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00230">230</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -259,7 +256,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00146">146</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00181">181</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>
@@ -282,9 +279,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Called by workers in order to split the shared tree. <code>path</code> may or may not be extended by one level, branching on <code>decision</code>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002395">Todo</a></b></dt><dd>(user): Need to write up the shape this creates. This rule will allow twice as many leaves in the preferred subtree. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002433">Todo</a></b></dt><dd>(user): Need to write up the shape this creates. This rule will allow twice as many leaves in the preferred subtree. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00269">269</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00278">278</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -304,9 +301,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Assigns a path prefix that the worker should explore. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002396">Todo</a></b></dt><dd>(user): Investigate assigning a random leaf so workers can still improve shared tree bounds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002434">Todo</a></b></dt><dd>(user): Investigate assigning a random leaf so workers can still improve shared tree bounds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00335">335</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00344">344</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>
@@ -333,30 +330,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00168">168</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
-
-</div>
-</div>
-<a id="a21c62a6cf809cd8ef5c6216aa9e74dc7" name="a21c62a6cf809cd8ef5c6216aa9e74dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21c62a6cf809cd8ef5c6216aa9e74dc7">&#9670;&#160;</a></span>SplitsToGeneratePerWorker()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int operations_research::sat::SharedTreeManager::SplitsToGeneratePerWorker </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of splits each worker should propose this restart. </p>
-<p>Each split generates 2 nodes, so divide by 2, rounding up.</p>
-<p>We want workers to propose too many splits as we expect to reject some, and it's more efficient to generate several splits on the same worker restart so we don't want to divide by num_workers_. But we also don't want more than half the splits to come from a single restart on a single worker so we divide by 2.</p>
-
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00216">216</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00200">200</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +353,7 @@ Public Member Functions</h2></td></tr>
 <p>Restart after processing updates - we might learn a new objective bound.</p>
 <p>Sync lower bounds and implications from the shared tree to <code>path</code>.</p>
 
-<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00231">231</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="work__assignment_8cc_source.html#l00235">235</a> of file <a class="el" href="work__assignment_8cc_source.html">work_assignment.cc</a>.</p>
 
 </div>
 </div>

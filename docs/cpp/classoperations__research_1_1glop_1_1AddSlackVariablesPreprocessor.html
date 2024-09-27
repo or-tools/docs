@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -103,7 +103,7 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1AddSlackVariables
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classoperations__research_1_1glop_1_1AddSlackVariablesPreprocessor-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">operations_research::glop::AddSlackVariablesPreprocessor Class Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::glop::AddSlackVariablesPreprocessor Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -173,7 +173,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Changing the bounds of all constraints to (0, 0) to make them an equality.</li>
 </ol>
 <p>As a consequence, the matrix of the linear program always has full row rank after this preprocessor. Note that the slack variables are always added last, so that the rightmost square sub-matrix is always the identity matrix.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000510">Todo</a></b></dt><dd>(user): Do not require this step to talk to the revised simplex. On large LPs like supportcase11.mps, this step alone can add 1.5 GB to the solver peak memory for no good reason. The internal matrix representation used in glop is a lot more efficient, and there is no point keeping the slacks in <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. It is also bad for incrementaly modifying the LP. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000528">Todo</a></b></dt><dd>(user): Do not require this step to talk to the revised simplex. On large LPs like supportcase11.mps, this step alone can add 1.5 GB to the solver peak memory for no good reason. The internal matrix representation used in glop is a lot more efficient, and there is no point keeping the slacks in <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. It is also bad for incrementaly modifying the LP. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="preprocessor_8h_source.html#l01093">1093</a> of file <a class="el" href="preprocessor_8h_source.html">preprocessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

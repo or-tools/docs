@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -107,10 +107,11 @@ $(function(){initNavTree('map__filter_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">map_filter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;initializer_list&gt;</code><br />
+<div class="textblock"><code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &quot;absl/algorithm/container.h&quot;</code><br />
+<code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="key__types_8h_source.html">ortools/math_opt/cpp/key_types.h</a>&quot;</code><br />
@@ -142,6 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:afddf4547921d37bef501dbac002818e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673c4f57f93632f039ed8f8692e193c8" id="r_a673c4f57f93632f039ed8f8692e193c8"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1MapFilter.html">MapFilter</a>&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a673c4f57f93632f039ed8f8692e193c8">operations_research::math_opt::LinearConstraintFilterFromProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseVectorFilterProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
 <tr class="separator:a673c4f57f93632f039ed8f8692e193c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1bc03f8a0259eea90722b2127627dc" id="r_aad1bc03f8a0259eea90722b2127627dc"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1MapFilter.html">MapFilter</a>&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticConstraint.html">QuadraticConstraint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aad1bc03f8a0259eea90722b2127627dc">operations_research::math_opt::QuadraticConstraintFilterFromProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseVectorFilterProto &amp;<a class="el" href="cp__model__fz__solver_8cc.html#aed003f5eb5197bc586b7ef2c36a63da2">proto</a>)</td></tr>
+<tr class="separator:aad1bc03f8a0259eea90722b2127627dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265503b1e6487edd97097005f877865e" id="r_a265503b1e6487edd97097005f877865e"><td class="memTemplParams" colspan="2">template&lt;typename KeyType &gt; </td></tr>
 <tr class="memitem:a265503b1e6487edd97097005f877865e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1MapFilter.html">MapFilter</a>&lt; KeyType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a265503b1e6487edd97097005f877865e">operations_research::math_opt::MakeSkipAllFilter</a> ()</td></tr>
 <tr class="separator:a265503b1e6487edd97097005f877865e"><td class="memSeparator" colspan="2">&#160;</td></tr>

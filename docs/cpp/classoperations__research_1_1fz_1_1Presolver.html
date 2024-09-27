@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,14 +111,14 @@ $(function(){initNavTree('classoperations__research_1_1fz_1_1Presolver.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55124d04b15410790b5e833fbb70ee80" id="r_a55124d04b15410790b5e833fbb70ee80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55124d04b15410790b5e833fbb70ee80">Presolver</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:a55124d04b15410790b5e833fbb70ee80" id="r_a55124d04b15410790b5e833fbb70ee80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55124d04b15410790b5e833fbb70ee80">Presolver</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="separator:a55124d04b15410790b5e833fbb70ee80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea3cebd5d8310058c5718158b09cc7c" id="r_a6ea3cebd5d8310058c5718158b09cc7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea3cebd5d8310058c5718158b09cc7c">Run</a> (<a class="el" href="classoperations__research_1_1fz_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="separator:a6ea3cebd5d8310058c5718158b09cc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classoperations__research_1_1fz_1_1Presolver.html">Presolver</a> "pre-solves" a <a class="el" href="classoperations__research_1_1fz_1_1Model.html">Model</a> by applying some iterative transformations to it, which may simplify and/or shrink the model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000420">Todo</a></b></dt><dd>(user): Error reporting of unfeasible models. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000438">Todo</a></b></dt><dd>(user): Error reporting of unfeasible models. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve_8h_source.html#l00038">38</a> of file <a class="el" href="presolve_8h_source.html">presolve.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -177,9 +177,10 @@ Public Member Functions</h2></td></tr>
 <p>First pass.</p>
 <p>Some new substitutions were introduced. Let's process them.</p>
 <p>Second pass.</p>
+<p>Third pass: process objective with floating point coefficients.</p>
 <p>Report presolve rules statistics.</p>
 
-<p class="definition">Definition at line <a class="el" href="presolve_8cc_source.html#l00367">367</a> of file <a class="el" href="presolve_8cc_source.html">presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="presolve_8cc_source.html#l00380">380</a> of file <a class="el" href="presolve_8cc_source.html">presolve.cc</a>.</p>
 
 </div>
 </div>

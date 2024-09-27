@@ -3,7 +3,7 @@ var boolean__problem_8cc =
     [ "ABSL_FLAG", "boolean__problem_8cc.html#aa76db68d1f81b1cfd98995e3d0ac26f4", null ],
     [ "AddObjectiveConstraint", "boolean__problem_8cc.html#a02aa66ad3013c6ba16dda49461da34ef", null ],
     [ "AddObjectiveUpperBound", "boolean__problem_8cc.html#a5f424cb0f7d850405f57f24fd74c9304", null ],
-    [ "ApplyLiteralMappingToBooleanProblem", "boolean__problem_8cc.html#ab3f18aece2e354382532b24b02e0ca81", null ],
+    [ "ApplyLiteralMappingToBooleanProblem", "boolean__problem_8cc.html#a1133b1086a2b84ebae1661a744df5a50", null ],
     [ "BooleanProblemToCpModelproto", "boolean__problem_8cc.html#a7a27047f906404c42b0f59a34ec50377", null ],
     [ "ChangeOptimizationDirection", "boolean__problem_8cc.html#a67d84927df689473b8cf695784f58140", null ],
     [ "ComputeObjectiveValue", "boolean__problem_8cc.html#ad8a94daf3536dd065dd3d6660e14ae43", null ],

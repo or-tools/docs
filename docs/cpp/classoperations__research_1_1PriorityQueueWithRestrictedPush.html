@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 class operations_research::PriorityQueueWithRestrictedPush&lt; Element, IntegerPriority &gt;</div><p>Specific but efficient priority queue implementation. The priority type must be an integer. The queue allows to retrieve the element with highest priority but only allows pushes with a priority greater or equal to the highest priority in the queue minus one. All operations are in O(1) and the memory is in O(num elements in the queue). Elements with the same priority are retrieved with LIFO order.</p>
 <p>Note(user): As far as I know, this is an original idea and is the only code that use this in the Maximum Flow context. Papers usually refer to an height-indexed array of simple linked lists of active node with the same height. Even worse, sometimes they use double-linked list to allow arbitrary height update in order to detect missing height (used for the Gap heuristic). But this can actually be implemented a lot more efficiently by just maintaining the height distribution of all the node in the graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00268">268</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00267">267</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5a37cc35af8067c734810424d4f395d" name="ab5a37cc35af8067c734810424d4f395d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5a37cc35af8067c734810424d4f395d">&#9670;&#160;</a></span>PriorityQueueWithRestrictedPush() <span class="overload">[1/2]</span></h2>
@@ -161,7 +161,7 @@ template&lt;typename Element , typename IntegerPriority &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00270">270</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00269">269</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ template&lt;typename Element , typename IntegerPriority &gt; </div>
 
 <p>Clears the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00701">701</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00700">700</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +237,7 @@ template&lt;typename Element , typename IntegerPriority &gt; </div>
 
 <p>Is the queue empty? </p>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00695">695</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00694">694</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ template&lt;typename Element , typename IntegerPriority &gt; </div>
 </div><div class="memdoc">
 <p>Returns the element with highest priority and remove it from the queue. <a class="el" href="#a0fa26c84168a6d71010556b0d6541a1f" title="Is the queue empty?">IsEmpty()</a> must be false, this condition is DCHECKed. </p>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00726">726</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00725">725</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename Element , typename IntegerPriority &gt; </div>
 <p>Since users may rely on it, we DCHECK the exact condition.</p>
 <dl class="section note"><dt>Note</dt><dd>the DCHECK() below are less restrictive than the ones above but check a necessary and sufficient condition for the priority queue to behave as expected.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00707">707</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00706">706</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
 
 </div>
 </div>

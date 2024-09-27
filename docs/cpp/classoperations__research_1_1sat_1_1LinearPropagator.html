@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -114,8 +114,9 @@ Inheritance diagram for operations_research::sat::LinearPropagator:</div>
  <div class="center">
   <img src="classoperations__research_1_1sat_1_1LinearPropagator.png" usemap="#operations_5Fresearch::sat::LinearPropagator_map" alt=""/>
   <map id="operations_5Fresearch::sat::LinearPropagator_map" name="operations_5Fresearch::sat::LinearPropagator_map">
-<area href="classoperations__research_1_1sat_1_1PropagatorInterface.html" title="Base class for CP like propagators." alt="operations_research::sat::PropagatorInterface" shape="rect" coords="0,0,270,24"/>
-<area href="classoperations__research_1_1ReversibleInterface.html" alt="operations_research::ReversibleInterface" shape="rect" coords="280,0,550,24"/>
+<area href="classoperations__research_1_1sat_1_1PropagatorInterface.html" title="Base class for CP like propagators." alt="operations_research::sat::PropagatorInterface" shape="rect" coords="0,0,276,24"/>
+<area href="classoperations__research_1_1ReversibleInterface.html" alt="operations_research::ReversibleInterface" shape="rect" coords="286,0,562,24"/>
+<area href="classoperations__research_1_1sat_1_1LazyReasonInterface.html" alt="operations_research::sat::LazyReasonInterface" shape="rect" coords="572,0,848,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -132,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b4adf9e4a241637f5dee4cc9ea43adc" id="r_a6b4adf9e4a241637f5dee4cc9ea43adc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b4adf9e4a241637f5dee4cc9ea43adc">AddConstraint</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; enforcement_literals, absl::Span&lt; const IntegerVariable &gt; vars, absl::Span&lt; const IntegerValue &gt; coeffs, IntegerValue <a class="el" href="gscip__solver_8cc.html#a1ba5ca0f61f2fa13bd23bf0f89004f35">upper_bound</a>)</td></tr>
 <tr class="memdesc:a6b4adf9e4a241637f5dee4cc9ea43adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new constraint to the propagator.  <br /></td></tr>
 <tr class="separator:a6b4adf9e4a241637f5dee4cc9ea43adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1700dfb73c734248609055d534231e" id="r_abd1700dfb73c734248609055d534231e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd1700dfb73c734248609055d534231e">Explain</a> (int id, IntegerValue propagation_slack, IntegerVariable var_to_explain, int trail_index, std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; *literals_reason, std::vector&lt; int &gt; *trail_indices_reason) final</td></tr>
+<tr class="memdesc:abd1700dfb73c734248609055d534231e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>.  <br /></td></tr>
+<tr class="separator:abd1700dfb73c734248609055d534231e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html">operations_research::sat::PropagatorInterface</a></td></tr>
 <tr class="memitem:ac4586668025c78c5bc7d0f53b6dd8053 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_ac4586668025c78c5bc7d0f53b6dd8053"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#ac4586668025c78c5bc7d0f53b6dd8053">PropagatorInterface</a> ()=default</td></tr>
 <tr class="separator:ac4586668025c78c5bc7d0f53b6dd8053 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +146,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is meant to supersede both IntegerSumLE and the PrecedencePropagator.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001926">Todo</a></b></dt><dd>(user): This is a work in progress and is currently incomplete:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001956">Todo</a></b></dt><dd>(user): This is a work in progress and is currently incomplete:<ul>
 <li>Lack more incremental support for faster propag.</li>
 <li>Lack detection and propagation of at least one of these linear is true which can be used to propagate more bound if a variable appear in all these constraint. </li>
 </ul>
@@ -173,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>we need this class always in sync.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001903">Todo</a></b></dt><dd>(user): When we start to push too much (Cycle?) we should see what other propagator says before repropagating this one, system for call later? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001933">Todo</a></b></dt><dd>(user): When we start to push too much (Cycle?) we should see what other propagator says before repropagating this one, system for call later? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__propagation_8cc_source.html#l00358">358</a> of file <a class="el" href="linear__propagation_8cc_source.html">linear_propagation.cc</a>.</p>
 
@@ -243,18 +247,73 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>Make sure max_variations_ is of correct size. </p><dl class="section note"><dt>Note</dt><dd>we also have a hard limit of 1 &lt;&lt; 29 on the size.</dd></dl>
 <p>Initialize constraint data.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001908">Todo</a></b></dt><dd>(user): we still waste the space in coeffs_buffer_ so that the start are aligned with the variables_buffer_. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001938">Todo</a></b></dt><dd>(user): we still waste the space in coeffs_buffer_ so that the start are aligned with the variables_buffer_. </dd></dl>
 <p>Initialize watchers. Initialy we want everything to be propagated at least once.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001909">Todo</a></b></dt><dd>(user): With some care, when we cannot propagate or the constraint is not enforced, we could leave in_queue_[] at true but not put the constraint in the queue. </dd></dl>
-<p>When a conditional precedence becomes enforced, add it. Note that we cannot just use rev_size == 2 since we might miss some explanation if a longer constraint only have 2 non-fixed variable now.. It is however okay not to push precedence involving a fixed variable, since these should be reflected in the variable domain anyway.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001910">Todo</a></b></dt><dd>(user): Shall we register root level precedence from here rather than separately? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001939">Todo</a></b></dt><dd>(user): With some care, when we cannot propagate or the constraint is not enforced, we could leave in_queue_[] at true but not put the constraint in the queue. </dd></dl>
+<p>When a conditional precedence becomes enforced, add it. </p><dl class="section note"><dt>Note</dt><dd>we only look at relation that were a "precedence" from the start, note the one currently of size 2 if we ignore fixed variables.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001940">Todo</a></b></dt><dd>(user): Shall we register root level precedence from here rather than separately? </dd></dl>
 <p>Transposed graph to know which constraint to wake up.</p>
 <p>We need both the var entry and its negation to be allocated.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001911">Todo</a></b></dt><dd>(user): Shall we decide on some ordering here? maybe big coeff first so that we get the largest change in slack? the idea being to propagate large change first in case of cycles. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001941">Todo</a></b></dt><dd>(user): Shall we decide on some ordering here? maybe big coeff first so that we get the largest change in slack? the idea being to propagate large change first in case of cycles. </dd></dl>
 <p>We need to be registered to the watcher so <a class="el" href="#a74432b1f2031ef1a7257cf98913c7390">Propagate()</a> is called at the proper priority. But then we rely on modified_vars_.</p>
-<p>Propagate this new constraint. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001912">Todo</a></b></dt><dd>(user): Do we want to do that? </dd></dl>
+<p>Propagate this new constraint. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001942">Todo</a></b></dt><dd>(user): Do we want to do that? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__propagation_8cc_source.html#l00576">576</a> of file <a class="el" href="linear__propagation_8cc_source.html">linear_propagation.cc</a>.</p>
+
+</div>
+</div>
+<a id="abd1700dfb73c734248609055d534231e" name="abd1700dfb73c734248609055d534231e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1700dfb73c734248609055d534231e">&#9670;&#160;</a></span>Explain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::LinearPropagator::Explain </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerValue</td>          <td class="paramname"><span class="paramname"><em>propagation_slack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerVariable</td>          <td class="paramname"><span class="paramname"><em>var_to_explain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>trail_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>literals_reason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>trail_indices_reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>. </p>
+
+<p>Implements <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#adc031164213fd9db6f79e99441240ded">operations_research::sat::LazyReasonInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="linear__propagation_8cc_source.html#l00888">888</a> of file <a class="el" href="linear__propagation_8cc_source.html">linear_propagation.cc</a>.</p>
 
 </div>
 </div>
@@ -285,13 +344,13 @@ Public Member Functions</h2></td></tr>
 <p>We will clear modified_vars_ on exit since everything we propagate here is handled by PropagateOneConstraint().</p>
 <p>Cleanup.</p>
 <p>We abort this propagator as soon as a Boolean is propagated, so that we always finish the Boolean propagation first. This can happen when we push a bound that has associated Booleans or push enforcement to false. The idea is to resume from our current state when we are called again. Note however that we have to clear the propagated_by_ info has other propagator might have pushed the same variable further.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001904">Todo</a></b></dt><dd>(user): More than the propagation speed, I think it is important to have proper explanation, so if A pushes B, but later on the queue we have C that push A that push B again, that might be bad? We can try to avoid this even further, by organizing the queue in passes:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001934">Todo</a></b></dt><dd>(user): More than the propagation speed, I think it is important to have proper explanation, so if A pushes B, but later on the queue we have C that push A that push B again, that might be bad? We can try to avoid this even further, by organizing the queue in passes:<ul>
 <li>Scan all relevant constraints, remember who pushes but DO NOT push yet!</li>
 <li>If no cycle, do not pushes constraint whose slack will changes due to other pushes.</li>
 <li>consider the new constraint that need to be scanned and repeat. I think it is okay to scan twice the constraints that push something in order to get better explanation. We tend to diverge from the class shortest path algo in this regard.</li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001905">Todo</a></b></dt><dd>(user): If we push the idea further, can we first compute the fix point without pushing anything, then compute a good order of constraints for the explanations? what is tricky is that we might need to "scan" more than once a constraint I think. ex: Y, Z, T &gt;=0<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001935">Todo</a></b></dt><dd>(user): If we push the idea further, can we first compute the fix point without pushing anything, then compute a good order of constraints for the explanations? what is tricky is that we might need to "scan" more than once a constraint I think. ex: Y, Z, T &gt;=0<ul>
 <li>2 * Y + Z + T &lt;= 11 ==&gt; Y &lt;= 5, Z &lt;= 11, T &lt;= 11 (1)</li>
 <li>Z + Y &gt;= 6 ==&gt; Z &gt;= 1</li>
 <li>(1) again to push T &lt;= 10 and reach the propagation fixed point. </li>
@@ -300,10 +359,10 @@ Public Member Functions</h2></td></tr>
 <p>We always process the whole queue in FIFO order. </p><dl class="section note"><dt>Note</dt><dd>the order really only matter for infeasible constraint so it shouldn't have a big impact.</dd></dl>
 <p>This is either a conflict or an enforcement propagation. We do it right away.</p>
 <p>We abort after the first pushed boolean. We could abort later too, it is unclear what works best.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001906">Todo</a></b></dt><dd>(user): Maybe we should "update" explanation if we have a shorter one to be less reliant on the propagation order. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001936">Todo</a></b></dt><dd>(user): Maybe we should "update" explanation if we have a shorter one to be less reliant on the propagation order. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the last constraint added in to_propagate_ should never be "skipped" and have any variable marked as var_will_change_.</dd></dl>
 <p>We can probably save the AnalyzeConstraint() cost, but then we only do that when the constraint propagate, and the context might have change since we computed it above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001907">Todo</a></b></dt><dd>(user): This do not seems always good, especially since we pushed Boolean with a really small explanation, maybe we want to push more of these rather than go back to pure-binary propagation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001937">Todo</a></b></dt><dd>(user): This do not seems always good, especially since we pushed Boolean with a really small explanation, maybe we want to push more of these rather than go back to pure-binary propagation. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

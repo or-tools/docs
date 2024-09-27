@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -287,11 +287,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Tries to infer more information about the problem state, i.e. reduces the gap by increasing the lower bound or finding a better solution. Returns SOLUTION_FOUND when a new solution with a better objective cost is found before a time limit. The learned information is cleared and the filled with any new information about the problem, e.g. a new lower bound.</p>
 <p>Preconditions: <a class="el" href="#a4211b7713500fe98359d2bf2cac7f03a">ShouldBeRun()</a> must returns true. </p>
 <p>ABORT means that this optimizer can't be run until we found a new solution.</p>
-<p>The gain is defined as 1 for the first solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo</a></b></dt><dd>(user): Is 1 the right value? It might be better to use a percentage of the gap, or use the same gain as for the second solution. </dd></dl>
+<p>The gain is defined as 1 for the first solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo</a></b></dt><dd>(user): Is 1 the right value? It might be better to use a percentage of the gap, or use the same gain as for the second solution. </dd></dl>
 <p>Stop the portfolio optimizer after too many unsuccessful calls.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo</a></b></dt><dd>(user): don't penalize the <a class="el" href="classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html">SatCoreBasedOptimizer</a> or the <a class="el" href="classoperations__research_1_1bop_1_1LinearRelaxation.html">LinearRelaxation</a> when they improve the lower bound. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000099">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo</a></b></dt><dd>(user): Do we want to re-order the optimizers in the selector when the status is <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63ab5cd6094ad1ef99cfb1c8e77da1f59b1">BopOptimizerBase::INFORMATION_FOUND</a>? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo</a></b></dt><dd>(user): don't penalize the <a class="el" href="classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html">SatCoreBasedOptimizer</a> or the <a class="el" href="classoperations__research_1_1bop_1_1LinearRelaxation.html">LinearRelaxation</a> when they improve the lower bound. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo</a></b></dt><dd>(user): Do we want to re-order the optimizers in the selector when the status is <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63ab5cd6094ad1ef99cfb1c8e77da1f59b1">BopOptimizerBase::INFORMATION_FOUND</a>? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a73892ece560eb1d202823c65ba5aaeaa">operations_research::bop::BopOptimizerBase</a>.</p>
 

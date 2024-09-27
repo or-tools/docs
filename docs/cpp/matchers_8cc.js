@@ -13,6 +13,7 @@ var matchers_8cc =
     [ "IsIdentical", "matchers_8cc.html#a2dd254537f93a1139596809f67e98818", null ],
     [ "IsInfeasible", "matchers_8cc.html#a4921ef59b58534d4ca5341d7c2c8a808", null ],
     [ "IsNear", "matchers_8cc.html#a38b76048819b9bc3cae8561530f7ccb3", null ],
+    [ "IsNear", "matchers_8cc.html#a10dccc438f51380c8d81bfd8357a59ce", null ],
     [ "IsNear", "matchers_8cc.html#aa76f5a7668ad6e757a3b294603273851", null ],
     [ "IsNear", "matchers_8cc.html#af963482fd41ffbf7112cc33fde2f195f", null ],
     [ "IsNear", "matchers_8cc.html#aaa095165e642db369e875d94352491ad", null ],
@@ -22,9 +23,11 @@ var matchers_8cc =
     [ "IsNear", "matchers_8cc.html#aa6dacb7b46f7a6aaee8f1c9331c6980e", null ],
     [ "IsNearlyEquivalent", "matchers_8cc.html#a4abebaf97a1b6104044426bf1f84bbfc", null ],
     [ "IsNearlySubsetOf", "matchers_8cc.html#a8a4286b5e342d11738058afcdb8dca9a", null ],
+    [ "IsNearlySubsetOf", "matchers_8cc.html#a9a076bad50e4eb9b3bb22fbc770aa707", null ],
     [ "IsNearlySubsetOf", "matchers_8cc.html#a494e4d79d22ed0855076ff6ee6eb2aba", null ],
     [ "IsNearlySubsetOf", "matchers_8cc.html#aae0cc4e633f7f2876f9ba5903ab3c60c", null ],
     [ "IsOptimal", "matchers_8cc.html#af9843a1d7731647c94c6a7ae14cdd2da", null ],
+    [ "IsOptimalWithDualSolution", "matchers_8cc.html#acb0edebd83070be26bfc2c86e2bf3507", null ],
     [ "IsOptimalWithDualSolution", "matchers_8cc.html#ac07c655a672408284a938ea21fc24857", null ],
     [ "IsOptimalWithSolution", "matchers_8cc.html#a002cb1c2bf8f6f11a99ca05113a169fd", null ],
     [ "IsUndetermined", "matchers_8cc.html#ae824380396d2cbb7f7322a45eb39097e", null ],
@@ -54,6 +57,6 @@ var matchers_8cc =
     [ "TerminatesWithReasonNoSolutionFound", "matchers_8cc.html#afc45ad929c26a9e9f767ca7e32a3cff3", null ],
     [ "TerminationIsIgnoreDetail", "matchers_8cc.html#a5e54d7db7d45e11fd0b19d89b72b3573", null ],
     [ "TerminationIsOptimal", "matchers_8cc.html#a0a00bbc4e49c869f3601139c92b74819", null ],
-    [ "TerminationIsOptimal", "matchers_8cc.html#a052c46ca2fe153ac4306daa0aaa0db16", null ],
+    [ "TerminationIsOptimal", "matchers_8cc.html#afbdeaa030b9c5d0ec247b3665010f7be", null ],
     [ "value", "matchers_8cc.html#a0b6f3694312803de4bea1fe97896294f", null ]
 ];

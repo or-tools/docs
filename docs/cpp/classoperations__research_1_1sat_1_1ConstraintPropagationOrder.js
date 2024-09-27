@@ -15,7 +15,7 @@ var classoperations__research_1_1sat_1_1ConstraintPropagationOrder =
     [ "start_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#af9e206104892a2c1485aa00248a30938", null ],
     [ "to_clear_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a7fb1de631854a8d38ce4c66117ef590f", null ],
     [ "var_has_entry_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a5adb7647f26f3e03cff4786ac2541970", null ],
-    [ "var_to_id_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#af0910909cdb36d4e4b231de9aefad27f", null ],
-    [ "var_to_lb_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#aee8a9849fb94d80112c7dda488a6a9cb", null ],
-    [ "var_to_pos_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a0ea1c0a8794686d6c63d2a9397f36810", null ]
+    [ "var_to_id_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#ad4360b2c59a96cd4b678926e0e4d0528", null ],
+    [ "var_to_lb_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a717ce6288d282696759d2eb802177afb", null ],
+    [ "var_to_pos_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#afa26e15d85de4968bcf53c7ecc6fd742", null ]
 ];

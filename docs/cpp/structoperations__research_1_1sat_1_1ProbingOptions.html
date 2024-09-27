@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -180,12 +180,12 @@ Hyper Binary Resolution" Marijn J. H. Heule, Matti Jarvisalo, Armin Biere, <a hr
 <p>The probing will consume all this deterministic time or stop if nothing else can be deduced and everything has been probed until fix-point. The fix point depend on the extract_binay_clauses option:</p><ul>
 <li>If false, we will just stop when no more failed literal can be found.</li>
 <li><p class="startli">If true, we will do more work and stop when all failed literal have been found and all hyper binary resolution have been performed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002137">Todo</a></b></dt><dd>(user): We can also provide a middle ground and probe all failed literal but do not extract all binary clauses.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002168">Todo</a></b></dt><dd>(user): We can also provide a middle ground and probe all failed literal but do not extract all binary clauses.</dd></dl>
 </li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>the fix-point is unique, modulo the equivalent literal detection we do. And if we add binary clauses, modulo the transitive reduction of the binary implication graph.</dd></dl>
 <p>To be fast, we only use the binary clauses in the binary implication graph for the equivalence detection. So the power of the equivalence detection changes if the extract_binay_clauses option is true or not.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002138">Todo</a></b></dt><dd>(user): The fix point is not yet reached since we don't currently simplify non-binary clauses with these equivalence, but we will. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002169">Todo</a></b></dt><dd>(user): The fix point is not yet reached since we don't currently simplify non-binary clauses with these equivalence, but we will. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00185">185</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 
@@ -204,7 +204,7 @@ Hyper Binary Resolution" Marijn J. H. Heule, Matti Jarvisalo, Armin Biere, <a hr
 </div><div class="memdoc">
 <p>This is also called hyper binary resolution. Basically, we make sure that the binary implication graph is augmented with all the implication of the form a =&gt; b that can be derived by fixing 'a' at level zero and doing a propagation using all constraints. Note that we only add clauses that cannot be derived by the current implication graph.</p>
 <p>With these extra clause the power of the equivalence literal detection using only the binary implication graph with increase. Note that it is possible to do exactly the same thing without adding these binary clause first. This is what is done by yet another probing algorithm (currently in <a class="el" href="simplification_8cc.html">simplification.cc</a>).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo</a></b></dt><dd>(user): Note that adding binary clause before/during the SAT presolve is currently not always a good idea. This is because we don't simplify the other clause as much as we could. Also, there can be up to a quadratic number of clauses added this way, which might slow down things a lot. But then because of the deterministic limit, we usually cannot add too much clauses, even for huge problems, since we will reach the limit before that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002170">Todo</a></b></dt><dd>(user): Note that adding binary clause before/during the SAT presolve is currently not always a good idea. This is because we don't simplify the other clause as much as we could. Also, there can be up to a quadratic number of clauses added this way, which might slow down things a lot. But then because of the deterministic limit, we usually cannot add too much clauses, even for huge problems, since we will reach the limit before that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00205">205</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 
@@ -257,7 +257,7 @@ Hyper Binary Resolution" Marijn J. H. Heule, Matti Jarvisalo, Armin Biere, <a hr
       </table>
 </div><div class="memdoc">
 <p>There is two slightly different implementation of the tree-look algo.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002140">Todo</a></b></dt><dd>(user): Decide which one is better, currently the difference seems small but the queue seems slightly faster. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002171">Todo</a></b></dt><dd>(user): Decide which one is better, currently the difference seems small but the queue seems slightly faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="probing_8h_source.html#l00218">218</a> of file <a class="el" href="probing_8h_source.html">probing.h</a>.</p>
 

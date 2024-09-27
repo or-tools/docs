@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,10 +112,12 @@ $(function(){initNavTree('linear__solver_2solve_8cc.html',''); initResizable(tru
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;absl/flags/declare.h&quot;</code><br />
 <code>#include &quot;absl/flags/flag.h&quot;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;absl/strings/match.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;absl/time/time.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2file_8h_source.html">ortools/base/file.h</a>&quot;</code><br />
@@ -125,7 +127,8 @@ $(function(){initNavTree('linear__solver_2solve_8cc.html',''); initResizable(tru
 <code>#include &quot;<a class="el" href="options_8h_source.html">ortools/base/options.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="linear__solver_8h_source.html">ortools/linear_solver/linear_solver.h</a>&quot;</code><br />
 <code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="lp__parser_8h_source.html">ortools/lp_data/lp_parser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="model__exporter_8h_source.html">ortools/linear_solver/model_exporter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lp__data_2lp__parser_8h_source.html">ortools/lp_data/lp_parser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mps__reader_8h_source.html">ortools/lp_data/mps_reader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sol__reader_8h_source.html">ortools/lp_data/sol_reader.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/cp_model.pb.h&quot;</code><br />
@@ -169,6 +172,8 @@ Functions</h2></td></tr>
 <tr class="separator:a025b42dd0b8acd58ce3757786867f317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4aba44c512cb96950965dfb856930e9" id="r_ac4aba44c512cb96950965dfb856930e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4aba44c512cb96950965dfb856930e9">ABSL_FLAG</a> (std::string, sol_file, &quot;&quot;, &quot;If non-empty, output the best <a class="el" href="multi__objective__tests_8cc.html#aa7c89656021a2dec75f3ecb6209fdc51">solution</a> in Miplib .sol format.&quot;)</td></tr>
 <tr class="separator:ac4aba44c512cb96950965dfb856930e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ccb9929c18f711a54331cb45e519c5" id="r_a71ccb9929c18f711a54331cb45e519c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71ccb9929c18f711a54331cb45e519c5">ABSL_FLAG</a> (std::string, dump_mps, &quot;&quot;, &quot;If non-empty, dumps the <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> in mps format there.&quot;)</td></tr>
+<tr class="separator:a71ccb9929c18f711a54331cb45e519c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab186ca69e49c059b83292894fbc870" id="r_a7ab186ca69e49c059b83292894fbc870"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ab186ca69e49c059b83292894fbc870">ABSL_DECLARE_FLAG</a> (bool, verify_solution)</td></tr>
 <tr class="separator:a7ab186ca69e49c059b83292894fbc870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d0d5aecc4c21263782ddcb0acd6ad5" id="r_a85d0d5aecc4c21263782ddcb0acd6ad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85d0d5aecc4c21263782ddcb0acd6ad5">ABSL_DECLARE_FLAG</a> (bool, log_verification_errors)</td></tr>
@@ -250,7 +255,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5f0699d94047fe31639bc440f6e5dea8" name="a5f0699d94047fe31639bc440f6e5dea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f0699d94047fe31639bc440f6e5dea8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0699d94047fe31639bc440f6e5dea8">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[1/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +286,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="abb8bc68ae6b71f6a950b0c1acf1e18e5" name="abb8bc68ae6b71f6a950b0c1acf1e18e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb8bc68ae6b71f6a950b0c1acf1e18e5">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8bc68ae6b71f6a950b0c1acf1e18e5">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +317,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a23f254156929d9f5bb78887e7e419196" name="a23f254156929d9f5bb78887e7e419196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f254156929d9f5bb78887e7e419196">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f254156929d9f5bb78887e7e419196">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +348,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ac03ae50fb38aae1081dfe7b60736bebe" name="ac03ae50fb38aae1081dfe7b60736bebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac03ae50fb38aae1081dfe7b60736bebe">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03ae50fb38aae1081dfe7b60736bebe">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +434,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a6091dc5430b99e651295a1f0a08cc3af" name="a6091dc5430b99e651295a1f0a08cc3af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6091dc5430b99e651295a1f0a08cc3af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6091dc5430b99e651295a1f0a08cc3af">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,7 +485,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a7b56cd1ffc63f38ab5b72ffe18830427" name="a7b56cd1ffc63f38ab5b72ffe18830427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b56cd1ffc63f38ab5b72ffe18830427">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b56cd1ffc63f38ab5b72ffe18830427">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[6/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,8 +520,44 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a71ccb9929c18f711a54331cb45e519c5" name="a71ccb9929c18f711a54331cb45e519c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ccb9929c18f711a54331cb45e519c5">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ABSL_FLAG </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dump_mps</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;If non-</td>          <td class="paramname"><span class="paramname"><em>empty</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dumps the <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a> in mps format there.&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acbb22ee89a335e38ad8b1a84f987da78" name="acbb22ee89a335e38ad8b1a84f987da78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb22ee89a335e38ad8b1a84f987da78">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[7/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb22ee89a335e38ad8b1a84f987da78">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +593,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a025b42dd0b8acd58ce3757786867f317" name="a025b42dd0b8acd58ce3757786867f317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a025b42dd0b8acd58ce3757786867f317">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[8/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a025b42dd0b8acd58ce3757786867f317">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +629,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="aa0fe6472666d181bc3f4df8475777412" name="aa0fe6472666d181bc3f4df8475777412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0fe6472666d181bc3f4df8475777412">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[9/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fe6472666d181bc3f4df8475777412">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,7 +665,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ac095771d002bf658d032ec1ef381ce8e" name="ac095771d002bf658d032ec1ef381ce8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac095771d002bf658d032ec1ef381ce8e">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[10/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac095771d002bf658d032ec1ef381ce8e">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,7 +696,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a7603cd565de6afb9e3fa2e8702e0e772" name="a7603cd565de6afb9e3fa2e8702e0e772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7603cd565de6afb9e3fa2e8702e0e772">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[11/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7603cd565de6afb9e3fa2e8702e0e772">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,7 +732,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ac4aba44c512cb96950965dfb856930e9" name="ac4aba44c512cb96950965dfb856930e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4aba44c512cb96950965dfb856930e9">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[12/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4aba44c512cb96950965dfb856930e9">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -727,7 +768,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a352d09a7a2b872ac94084b3d6f9f239f" name="a352d09a7a2b872ac94084b3d6f9f239f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352d09a7a2b872ac94084b3d6f9f239f">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[13/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a352d09a7a2b872ac94084b3d6f9f239f">&#9670;&#160;</a></span>ABSL_FLAG() <span class="overload">[14/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -776,7 +817,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00410">410</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00420">420</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
 
 </div>
 </div>
@@ -806,7 +847,7 @@ Variables</h2></td></tr>
 <div class="line">    <span class="stringliteral">&quot;  - an MPModelProto (binary or text, possibly gzipped),\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;  - an MPModelRequest (binary or text, possibly gzipped).&quot;</span></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00125">125</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__solver_2solve_8cc_source.html#l00130">130</a> of file <a class="el" href="linear__solver_2solve_8cc_source.html">solve.cc</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,6 +102,7 @@ $(function(){initNavTree('map__util_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">map_util.h File Reference</div></div>
 </div><!--header-->
@@ -116,14 +117,26 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtl.html">gtl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a59ed1cd6cc3bf668ef6f0795b2dcda1d" id="r_a59ed1cd6cc3bf668ef6f0795b2dcda1d"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a59ed1cd6cc3bf668ef6f0795b2dcda1d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a59ed1cd6cc3bf668ef6f0795b2dcda1d">gtl::MapUtilValueT</a> = typename M::value_type</td></tr>
+<tr class="separator:a59ed1cd6cc3bf668ef6f0795b2dcda1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eeb5d2cf4ca6778fcb499c00dc14f1b" id="r_a2eeb5d2cf4ca6778fcb499c00dc14f1b"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a2eeb5d2cf4ca6778fcb499c00dc14f1b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a2eeb5d2cf4ca6778fcb499c00dc14f1b">gtl::MapUtilKeyT</a> = typename <a class="el" href="namespacegtl.html#a59ed1cd6cc3bf668ef6f0795b2dcda1d">MapUtilValueT</a>&lt;M&gt;::first_type</td></tr>
+<tr class="separator:a2eeb5d2cf4ca6778fcb499c00dc14f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097dd7396a491fc40b73b380eb4fd07e" id="r_a097dd7396a491fc40b73b380eb4fd07e"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
+<tr class="memitem:a097dd7396a491fc40b73b380eb4fd07e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a097dd7396a491fc40b73b380eb4fd07e">gtl::MapUtilMappedT</a> = typename <a class="el" href="namespacegtl.html#a59ed1cd6cc3bf668ef6f0795b2dcda1d">MapUtilValueT</a>&lt;M&gt;::second_type</td></tr>
+<tr class="separator:a097dd7396a491fc40b73b380eb4fd07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a795ebdb62731938c8c31b221f0f074b4" id="r_a795ebdb62731938c8c31b221f0f074b4"><td class="memTemplParams" colspan="2">template&lt;class Collection &gt; </td></tr>
-<tr class="memitem:a795ebdb62731938c8c31b221f0f074b4"><td class="memTemplItemLeft" align="right" valign="top">const Collection::value_type::second_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a795ebdb62731938c8c31b221f0f074b4">gtl::FindWithDefault</a> (const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key, const typename Collection::value_type::second_type &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
-<tr class="separator:a795ebdb62731938c8c31b221f0f074b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85658bbe1373f2a6acda2663582dd33f" id="r_a85658bbe1373f2a6acda2663582dd33f"><td class="memTemplParams" colspan="2">template&lt;class Collection &gt; </td></tr>
-<tr class="memitem:a85658bbe1373f2a6acda2663582dd33f"><td class="memTemplItemLeft" align="right" valign="top">const Collection::value_type::second_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a85658bbe1373f2a6acda2663582dd33f">gtl::FindWithDefault</a> (const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key)</td></tr>
-<tr class="separator:a85658bbe1373f2a6acda2663582dd33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9963984d2a72fa1d190a08b88219ace" id="r_af9963984d2a72fa1d190a08b88219ace"><td class="memTemplParams" colspan="2">template&lt;typename Collection , typename KeyType  = MapUtilKeyT&lt;Collection&gt;&gt; </td></tr>
+<tr class="memitem:af9963984d2a72fa1d190a08b88219ace"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="namespacegtl.html#a097dd7396a491fc40b73b380eb4fd07e">MapUtilMappedT</a>&lt; Collection &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#af9963984d2a72fa1d190a08b88219ace">gtl::FindWithDefault</a> (const Collection &amp;collection, const KeyType &amp;key, const <a class="el" href="namespacegtl.html#a097dd7396a491fc40b73b380eb4fd07e">MapUtilMappedT</a>&lt; Collection &gt; &amp;<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
+<tr class="separator:af9963984d2a72fa1d190a08b88219ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c6788e61bca1b78a9256eaeaaa4df2" id="r_ad8c6788e61bca1b78a9256eaeaaa4df2"><td class="memTemplParams" colspan="2">template&lt;class Collection , typename KeyType  = MapUtilKeyT&lt;Collection&gt;&gt; </td></tr>
+<tr class="memitem:ad8c6788e61bca1b78a9256eaeaaa4df2"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="namespacegtl.html#a097dd7396a491fc40b73b380eb4fd07e">MapUtilMappedT</a>&lt; Collection &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#ad8c6788e61bca1b78a9256eaeaaa4df2">gtl::FindWithDefault</a> (const Collection &amp;collection, const KeyType &amp;key)</td></tr>
+<tr class="separator:ad8c6788e61bca1b78a9256eaeaaa4df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f74dcd1ec00022462cbf110edaafc6d" id="r_a9f74dcd1ec00022462cbf110edaafc6d"><td class="memTemplParams" colspan="2">template&lt;class Collection &gt; </td></tr>
 <tr class="memitem:a9f74dcd1ec00022462cbf110edaafc6d"><td class="memTemplItemLeft" align="right" valign="top">const Collection::value_type::second_type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtl.html#a9f74dcd1ec00022462cbf110edaafc6d">gtl::FindOrNull</a> (const Collection &amp;collection, const typename Collection::value_type::first_type &amp;key)</td></tr>
 <tr class="separator:a9f74dcd1ec00022462cbf110edaafc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>

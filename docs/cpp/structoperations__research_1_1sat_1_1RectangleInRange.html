@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -126,6 +126,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aed62a99c9dcb245b59967644bcaf3485" id="r_aed62a99c9dcb245b59967644bcaf3485"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed62a99c9dcb245b59967644bcaf3485">GetAtCorner</a> (<a class="el" href="#aa3c02f7f6b301b677f3713f181dbc84f">Corner</a> p) const</td></tr>
 <tr class="separator:aed62a99c9dcb245b59967644bcaf3485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca4750e0be332069562da9d95980139" id="r_a5ca4750e0be332069562da9d95980139"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ca4750e0be332069562da9d95980139">GetBoudingBox</a> () const</td></tr>
+<tr class="separator:a5ca4750e0be332069562da9d95980139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e24c517c9a95e270ba0aff639fed28" id="r_a23e24c517c9a95e270ba0aff639fed28"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23e24c517c9a95e270ba0aff639fed28">GetMinimumIntersection</a> (const Rectangle &amp;containing_area) const</td></tr>
 <tr class="memdesc:a23e24c517c9a95e270ba0aff639fed28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an empty rectangle if it is possible for no intersection to happen.  <br /></td></tr>
 <tr class="separator:a23e24c517c9a95e270ba0aff639fed28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +159,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A rectangle of size (<code>x_size</code>, <code>y_size</code>) that can freely move inside the <code>bounding_area</code> rectangle. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00362">362</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00367">367</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aa3c02f7f6b301b677f3713f181dbc84f" name="aa3c02f7f6b301b677f3713f181dbc84f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3c02f7f6b301b677f3713f181dbc84f">&#9670;&#160;</a></span>Corner</h2>
@@ -177,7 +179,7 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="aa3c02f7f6b301b677f3713f181dbc84fad9e971cf969d193ecf46fb03fb805f55" name="aa3c02f7f6b301b677f3713f181dbc84fad9e971cf969d193ecf46fb03fb805f55"></a>TOP_RIGHT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00368">368</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00373">373</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +223,7 @@ Friends</h2></td></tr>
 <p>We cannot intersect more units than the whole item.</p>
 <p>Units that can <em>not</em> intersect per dimension.</p>
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00431">431</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00438">438</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +251,34 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the position of the rectangle fixed to one of the corner of its range. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00377">377</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00382">382</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+
+</div>
+</div>
+<a id="a5ca4750e0be332069562da9d95980139" name="a5ca4750e0be332069562da9d95980139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca4750e0be332069562da9d95980139">&#9670;&#160;</a></span>GetBoudingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle operations_research::sat::RectangleInRange::GetBoudingBox </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00407">407</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +307,7 @@ Friends</h2></td></tr>
 
 <p>Returns an empty rectangle if it is possible for no intersection to happen. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00403">403</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00410">410</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +334,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00421">421</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00428">428</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +368,7 @@ template&lt;typename Sink &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00460">460</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00467">467</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +385,7 @@ template&lt;typename Sink &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00364">364</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00369">369</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +401,7 @@ template&lt;typename Sink &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00363">363</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00368">368</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +417,7 @@ template&lt;typename Sink &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00365">365</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00370">370</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +433,7 @@ template&lt;typename Sink &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00366">366</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00371">371</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
 
 </div>
 </div>

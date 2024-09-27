@@ -4,7 +4,7 @@ var integer__search_8cc =
     [ "AtMinValue", "integer__search_8cc.html#a6bb183ffafc072d9fd0d52c6cc355993", null ],
     [ "BoolPseudoCostHeuristic", "integer__search_8cc.html#a417435f5c8fe96aa65045dd286a33503", null ],
     [ "ChooseBestObjectiveValue", "integer__search_8cc.html#adc31ecce24797c08bdc3c1cf8cd8454e", null ],
-    [ "CompleteHeuristics", "integer__search_8cc.html#a156a51d1b695cc9ac26e512d43b60028", null ],
+    [ "CompleteHeuristics", "integer__search_8cc.html#a37db01bf814ae23bd4a029c9cee80992", null ],
     [ "ConfigureSearchHeuristics", "integer__search_8cc.html#a08ac4c44a4524b21806a1ae9839bc5bd", null ],
     [ "CumulativePrecedenceSearchHeuristic", "integer__search_8cc.html#af421daf12e0e45a0bb3cc7655cd443cc", null ],
     [ "DisjunctivePrecedenceSearchHeuristic", "integer__search_8cc.html#a33798fe85208035f149a5c124b89b7b4", null ],

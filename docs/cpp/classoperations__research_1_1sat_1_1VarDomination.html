@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -150,7 +150,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A variable X is say to dominate a variable Y if, from any feasible solution, doing X++ and Y&ndash; is also feasible (modulo the domain of X and Y) and has the same or a better objective value.</p>
 <dl class="section note"><dt>Note</dt><dd>we also look for dominance between the negation of the variables. So we detect all (X++, Y++), (X&ndash;, Y&ndash;), (X++, Y&ndash;) and (X&ndash;, Y++) cases. We reuse both ref / Negated(ref) and translate that to IntegerVariable for indexing vectors.</dd></dl>
 <p>Once detected, dominance relation can lead to more propagation. Note however, that we will loose feasible solution that are dominated by better solutions. In particular, in a linear constraint sum coeff * Xi &lt;= rhs with positive coeff, if an X is dominated by a set of other variable in the constraint, then its upper bound can be propagated assuming the dominating variables are at their upper bound. This can in many case result in X being fixed to its lower bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002393">Todo</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002431">Todo</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00052">52</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -406,9 +406,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> must be called once all constraints have been processed once. One then needs to redo the calls to <a class="el" href="#a916b708397a6873c225eebae2d033241">ActivityShouldNotIncrease()</a> and <a class="el" href="#aeac9827a72865e95037801d56db841b1">ActivityShouldNotDecrease()</a>. And finally call <a class="el" href="#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a> before querying the domination information.</p>
 <p>If <a class="el" href="#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> return false, there is no point continuing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002374">Todo</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002408">Todo</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
 <p>Some initial lists ar too long and will be cropped to this size. We will handle them slightly differently.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002375">Todo</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002409">Todo</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
 <p>Fill the initial domination candidates.</p>
 <p>Two modes, either we scan the full list, or a small subset of it. Not that low variable indices should appear first, so it is better not to randomize.</p>
 <p>Heuristic: To try not to remove domination relations corresponding to short lists during transposition (see <a class="el" href="#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a>), we fill the cropped list with the transpose of the short list relations. This helps finding more relation in the presence of cropped lists.</p>
@@ -416,7 +416,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Copy into a new buffer.</p>
 <p>Fill the free spaces with transposed values. But do not use new values !</p>
 <p>Remove any duplicates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002376">Todo</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002410">Todo</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
 <p>We no longer need the first phase memory.</p>
 <p>A second phase is only needed if there are some potential dominance relations.</p>
 

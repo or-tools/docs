@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -133,18 +133,22 @@ $(function(){initNavTree('mps__converter_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// should not be exported.</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>absl::StatusOr&lt;std::string&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a9086e61d78ad92624b963ff069dfa9a3">ModelProtoToMps</a>(<span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Reads an MPS file and converts it to a ModelProto (like MpsToModelProto</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// above, but takes a file name instead of the file contents and reads the file.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// The file can be stored as plain text or gzipped (with the .gz extension).</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a835fbb14f80767e6a11b8c1a1bd78eae">ReadMpsFile</a>(absl::string_view filename);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_IO_MPS_CONVERTER_H_</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Converts a string with the contents of an MPS file into a ModelProto.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a59c72b22d18b6868b033418306ef54ec">MpsToModelProto</a>(absl::string_view mps_data);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Reads an MPS file and converts it to a ModelProto (like MpsToModelProto</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// above, but takes a file name instead of the file contents and reads the file.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// The file can be stored as plain text or gzipped (with the .gz extension).</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>absl::StatusOr&lt;ModelProto&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a835fbb14f80767e6a11b8c1a1bd78eae">ReadMpsFile</a>(absl::string_view filename);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_IO_MPS_CONVERTER_H_</span></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition</b> <a href="gurobi__interface_8cc_source.html#l00300">gurobi_interface.cc:300</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition</b> <a href="gurobi__isv_8cc_source.html#l00028">gurobi_isv.cc:28</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a59c72b22d18b6868b033418306ef54ec"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a59c72b22d18b6868b033418306ef54ec">operations_research::math_opt::MpsToModelProto</a></div><div class="ttdeci">absl::StatusOr&lt; ModelProto &gt; MpsToModelProto(absl::string_view mps_data)</div><div class="ttdoc">Converts a string with the contents of an MPS file into a ModelProto.</div><div class="ttdef"><b>Definition</b> <a href="mps__converter_8cc_source.html#l00043">mps_converter.cc:43</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a835fbb14f80767e6a11b8c1a1bd78eae"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a835fbb14f80767e6a11b8c1a1bd78eae">operations_research::math_opt::ReadMpsFile</a></div><div class="ttdeci">absl::StatusOr&lt; ModelProto &gt; ReadMpsFile(const absl::string_view filename)</div><div class="ttdef"><b>Definition</b> <a href="mps__converter_8cc_source.html#l00036">mps_converter.cc:36</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a9086e61d78ad92624b963ff069dfa9a3"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a9086e61d78ad92624b963ff069dfa9a3">operations_research::math_opt::ModelProtoToMps</a></div><div class="ttdeci">absl::StatusOr&lt; std::string &gt; ModelProtoToMps(const ModelProto &amp;model)</div><div class="ttdef"><b>Definition</b> <a href="mps__converter_8cc_source.html#l00029">mps_converter.cc:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

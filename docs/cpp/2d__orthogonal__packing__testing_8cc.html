@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,6 +113,7 @@ $(function(){initNavTree('2d__orthogonal__packing__testing_8cc.html',''); initRe
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/random/bit_gen_ref.h&quot;</code><br />
 <code>#include &quot;absl/random/distributions.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="diffn__util_8h_source.html">ortools/sat/diffn_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
 </div>
@@ -130,8 +131,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1ea8930e8c4adb6e5ffbf8a747049423" id="r_a1ea8930e8c4adb6e5ffbf8a747049423"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Rectangle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a1ea8930e8c4adb6e5ffbf8a747049423">operations_research::sat::GenerateNonConflictingRectangles</a> (int num_rectangles, absl::BitGenRef random)</td></tr>
 <tr class="separator:a1ea8930e8c4adb6e5ffbf8a747049423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650915cbe4a4af1e8620135a1774bb60" id="r_a650915cbe4a4af1e8620135a1774bb60"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1RectangleInRange.html">RectangleInRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a650915cbe4a4af1e8620135a1774bb60">operations_research::sat::MakeItemsFromRectangles</a> (const std::vector&lt; Rectangle &gt; &amp;rectangles, double slack_factor, absl::BitGenRef random)</td></tr>
-<tr class="separator:a650915cbe4a4af1e8620135a1774bb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e031be8d985befef7e59fe56356746" id="r_af0e031be8d985befef7e59fe56356746"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1RectangleInRange.html">RectangleInRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#af0e031be8d985befef7e59fe56356746">operations_research::sat::MakeItemsFromRectangles</a> (absl::Span&lt; const Rectangle &gt; rectangles, double slack_factor, absl::BitGenRef random)</td></tr>
+<tr class="separator:af0e031be8d985befef7e59fe56356746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3db8f247ceb2a9ef47a62ceb68fe85" id="r_a9a3db8f247ceb2a9ef47a62ceb68fe85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1ItemForPairwiseRestriction.html">ItemForPairwiseRestriction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a9a3db8f247ceb2a9ef47a62ceb68fe85">operations_research::sat::GenerateItemsRectanglesWithNoPairwiseConflict</a> (const std::vector&lt; Rectangle &gt; &amp;rectangles, double slack_factor, absl::BitGenRef random)</td></tr>
 <tr class="separator:a9a3db8f247ceb2a9ef47a62ceb68fe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c5c414f3050895b17c91c0143fb1a3" id="r_a74c5c414f3050895b17c91c0143fb1a3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1ItemForPairwiseRestriction.html">ItemForPairwiseRestriction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1sat.html#a74c5c414f3050895b17c91c0143fb1a3">operations_research::sat::GenerateItemsRectanglesWithNoPairwisePropagation</a> (int num_rectangles, double slack_factor, absl::BitGenRef random)</td></tr>

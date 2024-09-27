@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,36 +111,36 @@ $(function(){initNavTree('structoperations__research_1_1ArcWithLength.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acfc8c6b3b3132bb61c5b8613aedfbac2" id="r_acfc8c6b3b3132bb61c5b8613aedfbac2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc8c6b3b3132bb61c5b8613aedfbac2">tail</a> = 0</td></tr>
-<tr class="separator:acfc8c6b3b3132bb61c5b8613aedfbac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10e8f8c9c68554c3bad413f97d4bff1f" id="r_a10e8f8c9c68554c3bad413f97d4bff1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e8f8c9c68554c3bad413f97d4bff1f">head</a> = 0</td></tr>
-<tr class="separator:a10e8f8c9c68554c3bad413f97d4bff1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a534f05b7635ecd9921bd0ac47e634" id="r_a61a534f05b7635ecd9921bd0ac47e634"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a534f05b7635ecd9921bd0ac47e634">from</a> = 0</td></tr>
+<tr class="separator:a61a534f05b7635ecd9921bd0ac47e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7bae5017cef1f68e7a08826e3cc58b" id="r_afd7bae5017cef1f68e7a08826e3cc58b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7bae5017cef1f68e7a08826e3cc58b">to</a> = 0</td></tr>
+<tr class="separator:afd7bae5017cef1f68e7a08826e3cc58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82577b1dec8765d1cb5f08408d0e546" id="r_ae82577b1dec8765d1cb5f08408d0e546"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82577b1dec8765d1cb5f08408d0e546">length</a> = 0.0</td></tr>
 <tr class="separator:ae82577b1dec8765d1cb5f08408d0e546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000614">Todo</a></b></dt><dd><p class="startdd">(b/332475231): extend to non-floating lengths. </p>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000633">Todo</a></b></dt><dd><p class="startdd">(b/332475231): extend to non-floating lengths. </p>
 <p class="enddd">(b/332476147): extend to allow for length functor. </p>
 </dd></dl>
 <p>This library provides a few APIs to compute the shortest path on a given directed acyclic graph (DAG).</p>
 <p>In the DAG, multiple arcs between the same pair of nodes is allowed. However, self-loop arcs are not allowed.</p>
-<dl class="section note"><dt>Note</dt><dd>we use the length formalism here, but the arc lengths can represent any numeric physical quantity. A shortest path will just be a path minimizing this quantity where the length of a path is the sum of the length of its arcs. An arc length can be negative, or +inf (indicating that it should not be used). An arc length cannot be -inf or nan. Basic API. <code>tail</code> and <code>head</code> should both be in [0, num_nodes) If the length is +inf, then the arc should not be used. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>we use the length formalism here, but the arc lengths can represent any numeric physical quantity. A shortest path will just be a path minimizing this quantity where the length of a path is the sum of the length of its arcs. An arc length can be negative, or +inf (indicating that it should not be used). An arc length cannot be -inf or nan. Basic API. <code>from</code> and <code>to</code> should both be in [0, num_nodes). If the length is +inf, then the arc should not be used. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00056">56</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a10e8f8c9c68554c3bad413f97d4bff1f" name="a10e8f8c9c68554c3bad413f97d4bff1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10e8f8c9c68554c3bad413f97d4bff1f">&#9670;&#160;</a></span>head</h2>
+<a id="a61a534f05b7635ecd9921bd0ac47e634" name="a61a534f05b7635ecd9921bd0ac47e634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a534f05b7635ecd9921bd0ac47e634">&#9670;&#160;</a></span>from</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int operations_research::ArcWithLength::head = 0</td>
+          <td class="memname">int operations_research::ArcWithLength::from = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00058">58</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00057">57</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
 
 </div>
 </div>
@@ -160,19 +160,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acfc8c6b3b3132bb61c5b8613aedfbac2" name="acfc8c6b3b3132bb61c5b8613aedfbac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfc8c6b3b3132bb61c5b8613aedfbac2">&#9670;&#160;</a></span>tail</h2>
+<a id="afd7bae5017cef1f68e7a08826e3cc58b" name="afd7bae5017cef1f68e7a08826e3cc58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7bae5017cef1f68e7a08826e3cc58b">&#9670;&#160;</a></span>to</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int operations_research::ArcWithLength::tail = 0</td>
+          <td class="memname">int operations_research::ArcWithLength::to = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00057">57</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00058">58</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
 
 </div>
 </div>

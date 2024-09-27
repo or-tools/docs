@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a46728a21c28eaf507a20bba345d9df8f inherit pro_attribs_classoperations__research_1_1PathOperator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Pair-based neighborhood operators, designed to move nodes by pairs (pairs are static and given). These neighborhoods are very useful for Pickup and Delivery problems where pickup and delivery nodes must remain on the same route. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000338">Todo</a></b></dt><dd><p class="startdd">(user): Add option to prune neighbords where the order of node pairs is violated (ie precedence between pickup and delivery nodes). </p>
+<div class="textblock"><p>Pair-based neighborhood operators, designed to move nodes by pairs (pairs are static and given). These neighborhoods are very useful for Pickup and Delivery problems where pickup and delivery nodes must remain on the same route. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000356">Todo</a></b></dt><dd><p class="startdd">(user): Add option to prune neighbords where the order of node pairs is violated (ie precedence between pickup and delivery nodes). </p>
 <p class="interdd">(user): Move this to <a class="el" href="local__search_8cc.html">local_search.cc</a> if it's generic enough. </p>
 <p class="enddd">(user): Detect pairs automatically by parsing the constraint model; we could then get rid of the pair API in the RoutingModel class. </p>
 </dd></dl>
@@ -520,8 +520,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a new neighbor. It returns false when the neighborhood is completely explored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo</a></b></dt><dd>(user): make it pure virtual, implies porting all apps overriding <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a5bc78fdde6b4e5a6ad9c3b00a6d47d65" title="--— Base operator class for operators manipulating IntVars --—">MakeNextNeighbor()</a> in a subclass of <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html">IntVarLocalSearchOperator</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000211">Todo</a></b></dt><dd>(user): Make this a pure virtual. </dd></dl>
+<p>Creates a new neighbor. It returns false when the neighborhood is completely explored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000168">Todo</a></b></dt><dd>(user): make it pure virtual, implies porting all apps overriding <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a5bc78fdde6b4e5a6ad9c3b00a6d47d65" title="--— Base operator class for operators manipulating IntVars --—">MakeNextNeighbor()</a> in a subclass of <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html">IntVarLocalSearchOperator</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000229">Todo</a></b></dt><dd>(user): Make this a pure virtual. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#ac8bc688def85b27b6aa66e1f099050a4">operations_research::IntVarLocalSearchOperator</a>.</p>
 
@@ -551,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
+<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000171">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
 node2); it's currently way more complicated to implement. </dd></dl>
 <p>Both base nodes have to be on the same path since they represent the nodes after which unactive node pairs will be moved.</p>
 

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,6 +115,7 @@ $(function(){initNavTree('model__exporter_8cc.html',''); initResizable(true); })
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_set.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
 <code>#include &quot;absl/strings/ascii.h&quot;</code><br />
@@ -122,11 +123,11 @@ $(function(){initNavTree('model__exporter_8cc.html',''); initResizable(true); })
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_format.h&quot;</code><br />
 <code>#include &quot;absl/strings/string_view.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="commandlineflags_8h_source.html">ortools/base/commandlineflags.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="helpers_8h_source.html">ortools/base/helpers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="map__util_8h_source.html">ortools/base/map_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="options_8h_source.html">ortools/base/options.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
 <code>#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="fp__utils_8h_source.html">ortools/util/fp_utils.h</a>&quot;</code><br />
 </div>
 <p><a href="model__exporter_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -138,22 +139,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0198cf82f6ffb8734509542f49c8c587" id="r_a0198cf82f6ffb8734509542f49c8c587"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0198cf82f6ffb8734509542f49c8c587">ABSL_FLAG</a> (bool, lp_log_invalid_name, false, &quot;DEPRECATED.&quot;)</td></tr>
-<tr class="separator:a0198cf82f6ffb8734509542f49c8c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4588d506946aa0eb4c3368a8812f0fa2" id="r_a4588d506946aa0eb4c3368a8812f0fa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4588d506946aa0eb4c3368a8812f0fa2">ABSL_RETIRED_FLAG</a> (bool, lp_log_invalid_name, false, &quot;DEPRECATED.&quot;)</td></tr>
+<tr class="separator:a4588d506946aa0eb4c3368a8812f0fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cc4c08db61ffc7e0c9f56e9c35b73d" id="r_a48cc4c08db61ffc7e0c9f56e9c35b73d"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a48cc4c08db61ffc7e0c9f56e9c35b73d">operations_research::ExportModelAsLpFormat</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="structoperations__research_1_1MPModelExportOptions.html">MPModelExportOptions</a> &amp;options)</td></tr>
 <tr class="separator:a48cc4c08db61ffc7e0c9f56e9c35b73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acebfb8cbfabec5f558012dafcb7abadb" id="r_acebfb8cbfabec5f558012dafcb7abadb"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acebfb8cbfabec5f558012dafcb7abadb">operations_research::ExportModelAsMpsFormat</a> (const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="structoperations__research_1_1MPModelExportOptions.html">MPModelExportOptions</a> &amp;options)</td></tr>
 <tr class="separator:acebfb8cbfabec5f558012dafcb7abadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1868512867d3c8f11f4c481de79b07c3" id="r_a1868512867d3c8f11f4c481de79b07c3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a1868512867d3c8f11f4c481de79b07c3">operations_research::WriteModelToMpsFile</a> (absl::string_view filename, const MPModelProto &amp;<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const <a class="el" href="structoperations__research_1_1MPModelExportOptions.html">MPModelExportOptions</a> &amp;options)</td></tr>
+<tr class="separator:a1868512867d3c8f11f4c481de79b07c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0198cf82f6ffb8734509542f49c8c587" name="a0198cf82f6ffb8734509542f49c8c587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0198cf82f6ffb8734509542f49c8c587">&#9670;&#160;</a></span>ABSL_FLAG()</h2>
+<a id="a4588d506946aa0eb4c3368a8812f0fa2" name="a4588d506946aa0eb4c3368a8812f0fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4588d506946aa0eb4c3368a8812f0fa2">&#9670;&#160;</a></span>ABSL_RETIRED_FLAG()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ABSL_FLAG </td>
+          <td class="memname">ABSL_RETIRED_FLAG </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>

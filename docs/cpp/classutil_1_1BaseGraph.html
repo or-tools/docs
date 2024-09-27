@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -387,7 +387,7 @@ template&lt;typename NodeIndexType , typename ArcIndexType , bool HasReverseArcs
 </div><div class="memdoc">
 
 <p>Capacity reserved for future arcs, always &gt;= num_arcs_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000623">Todo</a></b></dt><dd>(user): Same questions as the ones in <a class="el" href="#a463d57480c9563a7a707c5d0928c9946" title="Capacity reserved for future nodes, always &gt;= num_nodes_.">node_capacity()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000642">Todo</a></b></dt><dd>(user): Same questions as the ones in <a class="el" href="#a463d57480c9563a7a707c5d0928c9946" title="Capacity reserved for future nodes, always &gt;= num_nodes_.">node_capacity()</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00999">999</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
@@ -491,7 +491,7 @@ template&lt;typename NodeIndexType , typename ArcIndexType , bool HasReverseArcs
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="#aa3bd051d1e141b09dda17aa9b5f24f69">FreezeCapacities()</a> makes any future attempt to change the graph capacities crash in DEBUG mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000624">Todo</a></b></dt><dd>(user): Only define this in debug mode at the cost of having a lot of ifndef NDEBUG all over the place? remove the function completely ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000643">Todo</a></b></dt><dd>(user): Only define this in debug mode at the cost of having a lot of ifndef NDEBUG all over the place? remove the function completely ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01006">1006</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
@@ -527,7 +527,7 @@ template&lt;typename A , typename B &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000626">Todo</a></b></dt><dd>(user): remove the public functions below. They are just here during the transition from the old ebert_graph api to this new graph api. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000645">Todo</a></b></dt><dd>(user): remove the public functions below. They are just here during the transition from the old ebert_graph api to this new graph api. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00275">275</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
@@ -641,7 +641,7 @@ template&lt;typename NodeIndexType , typename ArcIndexType , bool HasReverseArcs
 </div><div class="memdoc">
 
 <p>Capacity reserved for future nodes, always &gt;= num_nodes_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000622">Todo</a></b></dt><dd>(user): Is it needed? remove completely? return the real capacities at the cost of having a different implementation for each graphs? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000641">Todo</a></b></dt><dd>(user): Is it needed? remove completely? return the real capacities at the cost of having a different implementation for each graphs? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00991">991</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
@@ -702,7 +702,7 @@ template&lt;typename NodeIndexType  = int32_t, typename ArcIndexType  = int32_t,
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of valid nodes in the graph. Prefer using <a class="el" href="#a0f551c921fa0b5aaa334a6e36f61db4a">num_nodes()</a>: the <a class="el" href="#ae80cc75ad113d0a791c9d11c33cbde49">size()</a> API is here to make Graph and vector&lt;vector&lt;int&gt;&gt; more alike. </p>
+<p>Returns the number of valid nodes in the graph. Prefer using <a class="el" href="#a0f551c921fa0b5aaa334a6e36f61db4a">num_nodes()</a>: the <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> API is here to make Graph and vector&lt;vector&lt;int&gt;&gt; more alike. </p>
 
 <p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00211">211</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 

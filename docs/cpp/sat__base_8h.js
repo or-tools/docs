@@ -14,6 +14,7 @@ var sat__base_8h =
     [ "kNoBooleanVariable", "sat__base_8h.html#add67896a84f6372a648154c5770a0ae0", null ],
     [ "kNoLiteralIndex", "sat__base_8h.html#a2dbcb7017d468a17bdb30252af5c6c31", null ],
     [ "kTrueLiteralIndex", "sat__base_8h.html#a7ab45c5256e605ee3da3bf3abd1df2e1", null ],
+    [ "Literals", "sat__base_8h.html#a9af49d12cb0a07cd82e3498380f43a2e", null ],
     [ "operator<<", "sat__base_8h.html#a38ddf9ebf6ced32e8fef8475caa357c2", null ],
     [ "operator<<", "sat__base_8h.html#aac642826c64ada206ceeec3c813a803a", null ]
 ];

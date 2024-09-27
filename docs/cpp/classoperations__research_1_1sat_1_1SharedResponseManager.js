@@ -32,8 +32,6 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
     [ "SetUpdateGapIntegralOnEachChange", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a2dfb61868b953587dec0310b216284dd", null ],
     [ "SolutionsRepository", "classoperations__research_1_1sat_1_1SharedResponseManager.html#adced5642953bfbf93598fa8b2cbb0809", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1SharedResponseManager.html#ac3d4888bd876546e4b1275ce8004da1d", null ],
-    [ "SynchronizedInnerObjectiveLowerBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#aab532fd40f53ea7a1e1f2045d8cb033c", null ],
-    [ "SynchronizedInnerObjectiveUpperBound", "classoperations__research_1_1sat_1_1SharedResponseManager.html#af6b7153114fbac01f305a97e9a559c97", null ],
     [ "UnregisterBestBoundCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a8cd61eded7509c965d19e648213987f9", null ],
     [ "UnregisterCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a8507584a3e508275aa43a8094a13ec41", null ],
     [ "UnregisterLogCallback", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a651a59a266fa9311cda8a61847d664be", null ],

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic adaptive [0.0, 1.0] parameter that can be increased or decreased with a step that get smaller and smaller with the number of updates.</p>
 <p>After a while, if the probability of getting a <a class="el" href="#a81a806df6fbdd9d528b597d133a7b907">Decrease()</a> vs <a class="el" href="#a252d7fea93cdb62dd0473418e614c504">Increase()</a> when running at a given value is f(value), then this should converge towards a value such that f(value) = 0.5 provided f is a non-decreasing function over [0.0, 1.0].</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002402">Todo</a></b></dt><dd>(user): The current logic work well in practice, but has no strong theoretical foundation. We should be able to come up with a better understood formula that converge way faster. It will also be nice to generalize the 0.5 above to a target probability p. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002441">Todo</a></b></dt><dd>(user): The current logic work well in practice, but has no strong theoretical foundation. We should be able to come up with a better understood formula that converge way faster. It will also be nice to generalize the 0.5 above to a target probability p. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="adaptative__parameter__value_8h_source.html#l00035">35</a> of file <a class="el" href="adaptative__parameter__value_8h_source.html">adaptative_parameter_value.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

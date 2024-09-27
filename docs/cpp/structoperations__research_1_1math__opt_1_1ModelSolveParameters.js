@@ -13,6 +13,7 @@ var structoperations__research_1_1math__opt_1_1ModelSolveParameters =
     [ "initial_basis", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a89d3cb0f810d8dfe3d559f32425b0a9e", null ],
     [ "lazy_linear_constraints", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#ae21912a2306651c9a3716ecfc5d70fb5", null ],
     [ "objective_parameters", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a80b845958accc613cceb6004e4f5d856", null ],
+    [ "quadratic_dual_values_filter", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a27de352ec09f361baba82831c6a1a6c7", null ],
     [ "reduced_costs_filter", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#adcc57b73362d84ec8557f424c2b8e197", null ],
     [ "solution_hints", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#afa4c925ed35fa875dcff8a408fdbf44c", null ],
     [ "variable_values_filter", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a69916636e62d6a66733b783418634ff7", null ]

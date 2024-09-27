@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -144,7 +144,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 </ul>
 <p>The basic solution for this basis is the unique solution of A * x = b that has all variables with status AT_LOWER fixed to their lower bounds (all zero). The resulting solution is called a basic feasible solution if it also satisfies x &gt;= 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00208">208</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00215">215</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06f26db7af187263a04125edaba59a64" name="a06f26db7af187263a04125edaba59a64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06f26db7af187263a04125edaba59a64">&#9670;&#160;</a></span>CheckModelStorage()</h2>
@@ -162,7 +162,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 </div><div class="memdoc">
 <p>Returns a failure if the referenced variables don't belong to the input expected_storage (which must not be nullptr). </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00195">195</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00199">199</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 <li>LinearConstraintBasisFromProto(basis_proto.constraint_status) fails. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00179">179</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00183">183</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
 
 </div>
 </div>
@@ -219,7 +219,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 <p>Returns the proto equivalent of this object.</p>
 <p>The caller should use <a class="el" href="#a06f26db7af187263a04125edaba59a64">CheckModelStorage()</a> as this function does not check internal consistency of the referenced variables and constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00212">212</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00216">216</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
 
 </div>
 </div>
@@ -239,7 +239,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
 <p>For single-sided LPs it should be equal to the feasibility status of the associated dual solution. For two-sided LPs it may be different in some edge cases (e.g. incomplete solves with primal simplex).</p>
 <p>If you are providing a starting basis via <code><a class="el" href="structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a89d3cb0f810d8dfe3d559f32425b0a9e">ModelSolveParameters.initial_basis</a></code>, this value is ignored. It is only relevant for the basis returned by <code><a class="el" href="structoperations__research_1_1math__opt_1_1Solution.html#a335fe361c63f38a774cbe4b4b67908fb">Solution.basis</a></code>, and it is is always populated in a <a class="el" href="structoperations__research_1_1math__opt_1_1Basis.html">Basis</a> returned by a call to <a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">Solve()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00242">242</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00249">249</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00227">227</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00234">234</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +271,7 @@ feasible solution" which can be described combinatorially as a <a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00228">228</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00235">235</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -152,7 +152,7 @@ class operations_research::sat::InclusionDetector&lt; Storage &gt;</div><p>An he
 <p>All set contents will be accessed via storage_[index]. This can be used with a vector&lt;vector&lt;&gt;&gt; or our <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">CompactVectorVector</a> that we use in a few place. But it can also be anything that support:</p><ul>
 <li>storage_.size()</li>
 <li>range iteration over storage_[index]</li>
-<li>storage_[index].size() </li>
+<li>storage_[index].<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> </li>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="inclusion_8h_source.html#l00054">54</a> of file <a class="el" href="inclusion_8h_source.html">inclusion.h</a>.</p>
@@ -310,7 +310,7 @@ template&lt;typename Storage &gt; </div>
 <p>Bitset should be cleared.</p>
 <p>Find any subset included in current superset.</p>
 <p>We make a copy because process() might alter the content of the storage when it returns "stop_with_current_superset_" and we need to clean is_in_superset_ properly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001680">Todo</a></b></dt><dd>(user): Alternatively, we could clean is_in_superset_ in the call to <a class="el" href="#a92864c2bbaea1ebb25e7007ae28d1f85">StopProcessingCurrentSuperset()</a> and force client to call it before altering the superset content. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001700">Todo</a></b></dt><dd>(user): Alternatively, we could clean is_in_superset_ in the call to <a class="el" href="#a92864c2bbaea1ebb25e7007ae28d1f85">StopProcessingCurrentSuperset()</a> and force client to call it before altering the superset content. </dd></dl>
 <p>Quick check with signature.</p>
 <p>Long check with bitset.</p>
 <p>Remove from the watcher list.</p>

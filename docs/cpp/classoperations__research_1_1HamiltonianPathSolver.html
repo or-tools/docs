@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -155,7 +155,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename CostType, typename CostFunction&gt;<br />
 class operations_research::HamiltonianPathSolver&lt; CostType, CostFunction &gt;</div>
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00454">454</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00452">452</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3f13afbdf8f0e7c748ba80de7859e803" name="a3f13afbdf8f0e7c748ba80de7859e803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f13afbdf8f0e7c748ba80de7859e803">&#9670;&#160;</a></span>Integer</h2>
@@ -170,9 +170,9 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type NodeSet to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000641">Todo</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type NodeSet to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000660">Todo</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00476">476</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00474">474</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00477">477</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00475">475</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00607">607</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00605">605</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00612">612</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00610">610</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 </div><div class="memdoc">
 <p>Returns the end-node that yields the shortest Hamiltonian path of all shortest Hamiltonian path from 0 to end-node (end-node != 0). </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00832">832</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00830">830</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Replaces the cost matrix while avoiding re-allocating memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00628">628</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00626">626</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00634">634</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00632">632</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Returns the cost of the Hamiltonian path from 0 to end_node. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00838">838</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00836">836</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Returns the shortest Hamiltonian path from 0 to end_node. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00845">845</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00843">843</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>API. Stores HamiltonianPath(BestHamiltonianPathEndNode()) into *path. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00852">852</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00850">850</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 <p>We compute the min and max for the cost matrix.</p>
 <p>We determine if the range of the cost matrix is going to make the algorithm not robust because of precision issues.</p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00786">786</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00784">784</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +431,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Returns the cost of the TSP tour. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00859">859</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00857">857</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +454,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Returns the TSP tour in the vector pointed to by the argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00866">866</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00864">864</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated</a></b></dt><dd>API. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00872">872</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00870">870</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ template&lt;typename CostType , typename CostFunction &gt; </div>
 
 <p>Returns true if the cost matrix verifies the triangle inequality. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00811">811</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00809">809</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>

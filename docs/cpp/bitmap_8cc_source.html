@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -123,27 +123,28 @@ $(function(){initNavTree('bitmap_8cc_source.html',''); initResizable(true); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research.html">operations_research</a> {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classoperations__research_1_1Bitmap.html#a10079c77d15fd313c09b89b46756d4e3">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1Bitmap.html#a10079c77d15fd313c09b89b46756d4e3">Bitmap::Resize</a>(uint32_t size, <span class="keywordtype">bool</span> fill) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">const</span> uint32_t new_array_size = <a class="code hl_function" href="namespaceoperations__research_1_1internal.html#a1b41253a72594759082e0c72eaa1e284">internal::BitLength64</a>(size);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classoperations__research_1_1Bitmap.html#a10079c77d15fd313c09b89b46756d4e3">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1Bitmap.html#a10079c77d15fd313c09b89b46756d4e3">Bitmap::Resize</a>(uint32_t <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, <span class="keywordtype">bool</span> fill) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">const</span> uint32_t new_array_size = <a class="code hl_function" href="namespaceoperations__research_1_1internal.html#a1b41253a72594759082e0c72eaa1e284">internal::BitLength64</a>(<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">const</span> uint32_t old_max_size = max_size_;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">if</span> (new_array_size &lt;= array_size_) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    max_size_ = size;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    max_size_ = <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> uint32_t old_array_size = array_size_;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    array_size_ = new_array_size;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    max_size_ = size;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    max_size_ = <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    uint64_t* new_map = <span class="keyword">new</span> uint64_t[array_size_];</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    memcpy(new_map, map_, old_array_size * <span class="keyword">sizeof</span>(*map_));</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">delete</span>[] map_;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    map_ = new_map;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// TODO(user) : optimize next loop.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordflow">for</span> (uint32_t <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> = old_max_size; <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> &lt; size; ++<a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordflow">for</span> (uint32_t <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> = old_max_size; <a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> &lt; <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>; ++<a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="classoperations__research_1_1Bitmap.html#a7fda05e5115d0918f26b5b5800e64142">Set</a>(<a class="code hl_variable" href="local__search_8cc.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>, fill);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="ttc" id="a2d__rectangle__presolve_8cc_html_aa1cb4ce111532ea2035639aa02569f14"><div class="ttname"><a href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a></div><div class="ttdeci">IntegerValue size</div><div class="ttdef"><b>Definition</b> <a href="2d__rectangle__presolve_8cc_source.html#l00235">2d_rectangle_presolve.cc:235</a></div></div>
 <div class="ttc" id="abitmap_8h_html"><div class="ttname"><a href="bitmap_8h.html">bitmap.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1Bitmap_html_a10079c77d15fd313c09b89b46756d4e3"><div class="ttname"><a href="classoperations__research_1_1Bitmap.html#a10079c77d15fd313c09b89b46756d4e3">operations_research::Bitmap::Resize</a></div><div class="ttdeci">void Resize(uint32_t size, bool fill=false)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">bitmap.cc:20</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1Bitmap_html_a7fda05e5115d0918f26b5b5800e64142"><div class="ttname"><a href="classoperations__research_1_1Bitmap.html#a7fda05e5115d0918f26b5b5800e64142">operations_research::Bitmap::Set</a></div><div class="ttdeci">void Set(uint32_t index, bool value)</div><div class="ttdef"><b>Definition</b> <a href="bitmap_8h_source.html#l00062">bitmap.h:62</a></div></div>

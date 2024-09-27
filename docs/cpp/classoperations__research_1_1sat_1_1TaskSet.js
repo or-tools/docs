@@ -11,5 +11,5 @@ var classoperations__research_1_1sat_1_1TaskSet =
     [ "GetCriticalIndex", "classoperations__research_1_1sat_1_1TaskSet.html#a500cd9616f68b1ce66da186c95e3215d", null ],
     [ "NotifyEntryIsNowLastIfPresent", "classoperations__research_1_1sat_1_1TaskSet.html#a1fcafddbf0d76d0fe79b4750dd714838", null ],
     [ "Sort", "classoperations__research_1_1sat_1_1TaskSet.html#aabb8db7b7f9ce12b218827742620aeb4", null ],
-    [ "SortedTasks", "classoperations__research_1_1sat_1_1TaskSet.html#ac777249b373b2762872472285952ec1a", null ]
+    [ "SortedTasks", "classoperations__research_1_1sat_1_1TaskSet.html#ac180f4623a36f59c3c358e93b6006628", null ]
 ];

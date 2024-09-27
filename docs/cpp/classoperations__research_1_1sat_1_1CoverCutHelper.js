@@ -1,6 +1,7 @@
 var classoperations__research_1_1sat_1_1CoverCutHelper =
 [
     [ "~CoverCutHelper", "classoperations__research_1_1sat_1_1CoverCutHelper.html#a09cc8fae3200990815f75ae5c73fceeb", null ],
+    [ "ClearCache", "classoperations__research_1_1sat_1_1CoverCutHelper.html#ac9f009459bd90b1ecb38de1288df4e72", null ],
     [ "cut", "classoperations__research_1_1sat_1_1CoverCutHelper.html#a0c964d3599c7a44306db4c65811c4072", null ],
     [ "Info", "classoperations__research_1_1sat_1_1CoverCutHelper.html#a523a708724f4a38ca618ec3d662978c6", null ],
     [ "SetSharedStatistics", "classoperations__research_1_1sat_1_1CoverCutHelper.html#aae7caad9a51c4b64d554f9c0ebdc2300", null ],

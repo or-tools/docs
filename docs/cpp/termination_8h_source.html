@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -162,7 +162,7 @@ $(function(){initNavTree('termination_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// `cumulative_kkt_matrix_passes`) are the only ones accessed. If returning a</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// termination reason, the `PointType` will be set to `POINT_TYPE_NONE`.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>std::optional&lt;TerminationReasonAndPointType&gt; <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#a02fd964babbc05f32fd088b1005215dc">CheckSimpleTerminationCriteria</a>(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> TerminationCriteria&amp; criteria, <span class="keyword">const</span> IterationStats&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> TerminationCriteria&amp; criteria, <span class="keyword">const</span> IterationStats&amp; stats,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> std::atomic&lt;bool&gt;* interrupt_solve = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// Checks if any iterate-based termination criteria (i.e., the criteria not</span></div>
@@ -181,14 +181,14 @@ $(function(){initNavTree('termination_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// primal and dual variable bounds; see</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// https://developers.google.com/optimization/lp/pdlp_math#dual_variable_bounds.</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>std::optional&lt;TerminationReasonAndPointType&gt; <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#a915b4c9c60210eb50bbb836643aba393">CheckIterateTerminationCriteria</a>(</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">const</span> TerminationCriteria&amp; criteria, <span class="keyword">const</span> IterationStats&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">const</span> TerminationCriteria&amp; criteria, <span class="keyword">const</span> IterationStats&amp; stats,</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html">QuadraticProgramBoundNorms</a>&amp; bound_norms,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">bool</span> force_numerical_termination = <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// Extracts the norms needed for the termination criteria from the full problem</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// `stats`.</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><a class="code hl_struct" href="structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html">QuadraticProgramBoundNorms</a> <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#a58c3bece6c277a26a34c825c2b4e4509">BoundNormsFromProblemStats</a>(</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> QuadraticProgramStats&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> QuadraticProgramStats&amp; stats);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// Returns `epsilon_absolute / epsilon_relative`, returning 1.0 if</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// `epsilon_absolute` and `epsilon_relative` are equal (even if they are both</span></div>
@@ -227,23 +227,22 @@ $(function(){initNavTree('termination_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><a class="code hl_struct" href="structoperations__research_1_1pdlp_1_1RelativeConvergenceInformation.html">RelativeConvergenceInformation</a> <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#afabaaef8b32ae92f1331599732ac99d1">ComputeRelativeResiduals</a>(</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> TerminationCriteria::DetailedOptimalityCriteria&amp; optimality_criteria,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> ConvergenceInformation&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> ConvergenceInformation&amp; stats,</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html">QuadraticProgramBoundNorms</a>&amp; bound_norms);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#ad05b31a796e1009f7087884df50815fc">ObjectiveGapMet</a>(</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">const</span> TerminationCriteria::DetailedOptimalityCriteria&amp; optimality_criteria,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">const</span> ConvergenceInformation&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">const</span> ConvergenceInformation&amp; stats);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// Determines if the optimality criteria are met.</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1pdlp.html#aa473ed1679cf7844c7a65548cabe8599">OptimalityCriteriaMet</a>(</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">const</span> TerminationCriteria::DetailedOptimalityCriteria&amp; optimality_criteria,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> ConvergenceInformation&amp; <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>, OptimalityNorm optimality_norm,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> ConvergenceInformation&amp; stats, OptimalityNorm optimality_norm,</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html">QuadraticProgramBoundNorms</a>&amp; bound_norms);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}  <span class="comment">// namespace operations_research::pdlp</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif  </span><span class="comment">// PDLP_TERMINATION_H_</span></div>
-<div class="ttc" id="acp__model__solver_8cc_html_a722aa9bdb68fa67c8c25fe72e44d7044"><div class="ttname"><a href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a></div><div class="ttdeci">SharedStatistics *const stats</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02289">cp_model_solver.cc:2289</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1pdlp_html"><div class="ttname"><a href="namespaceoperations__research_1_1pdlp.html">operations_research::pdlp</a></div><div class="ttdoc">Validation utilities for solvers.proto.</div><div class="ttdef"><b>Definition</b> <a href="iteration__stats_8cc_source.html#l00036">iteration_stats.cc:36</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1pdlp_html_a02fd964babbc05f32fd088b1005215dc"><div class="ttname"><a href="namespaceoperations__research_1_1pdlp.html#a02fd964babbc05f32fd088b1005215dc">operations_research::pdlp::CheckSimpleTerminationCriteria</a></div><div class="ttdeci">std::optional&lt; TerminationReasonAndPointType &gt; CheckSimpleTerminationCriteria(const TerminationCriteria &amp;criteria, const IterationStats &amp;stats, const std::atomic&lt; bool &gt; *interrupt_solve)</div><div class="ttdef"><b>Definition</b> <a href="termination_8cc_source.html#l00161">termination.cc:161</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1pdlp_html_a3a5acb887ad53db5411c34545980f993"><div class="ttname"><a href="namespaceoperations__research_1_1pdlp.html#a3a5acb887ad53db5411c34545980f993">operations_research::pdlp::EffectiveOptimalityCriteria</a></div><div class="ttdeci">TerminationCriteria::DetailedOptimalityCriteria EffectiveOptimalityCriteria(const TerminationCriteria &amp;termination_criteria)</div><div class="ttdoc">Computes the effective optimality criteria for a TerminationCriteria.</div><div class="ttdef"><b>Definition</b> <a href="termination_8cc_source.html#l00126">termination.cc:126</a></div></div>

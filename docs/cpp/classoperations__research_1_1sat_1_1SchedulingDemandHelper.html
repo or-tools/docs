@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,10 +117,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad982c9066b160f4e5709d37fa14e0dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f159895c30a080b45ddfa3158120ec1" id="r_a8f159895c30a080b45ddfa3158120ec1"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f159895c30a080b45ddfa3158120ec1">DemandMax</a> (int t) const</td></tr>
 <tr class="separator:a8f159895c30a080b45ddfa3158120ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5201308247cf35fbde198648e731216a" id="r_a5201308247cf35fbde198648e731216a"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5201308247cf35fbde198648e731216a">LevelZeroDemandMin</a> (int t) const</td></tr>
+<tr class="separator:a5201308247cf35fbde198648e731216a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173f8935978453db2cfe8c88b85f3087" id="r_a173f8935978453db2cfe8c88b85f3087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a173f8935978453db2cfe8c88b85f3087">DemandIsFixed</a> (int t) const</td></tr>
 <tr class="separator:a173f8935978453db2cfe8c88b85f3087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b9dc1948c03888012b556a81f2ae56" id="r_a02b9dc1948c03888012b556a81f2ae56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b9dc1948c03888012b556a81f2ae56">AddDemandMinReason</a> (int t)</td></tr>
 <tr class="separator:a02b9dc1948c03888012b556a81f2ae56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c63d2e676f0f86ea9cb0ff441d1b00" id="r_ae3c63d2e676f0f86ea9cb0ff441d1b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3c63d2e676f0f86ea9cb0ff441d1b00">AddDemandMinReason</a> (int t, IntegerValue min_demand)</td></tr>
+<tr class="separator:ae3c63d2e676f0f86ea9cb0ff441d1b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51077fdb19a9fd40f1b8cb7c0e3187e" id="r_ad51077fdb19a9fd40f1b8cb7c0e3187e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1AffineExpression.html">AffineExpression</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51077fdb19a9fd40f1b8cb7c0e3187e">Demands</a> () const</td></tr>
 <tr class="separator:ad51077fdb19a9fd40f1b8cb7c0e3187e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b2b278613b06ecd7a1542c38cdd235" id="r_ae2b2b278613b06ecd7a1542c38cdd235"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2b2b278613b06ecd7a1542c38cdd235">AddLinearizedDemand</a> (int t, <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintBuilder.html">LinearConstraintBuilder</a> *builder) const</td></tr>
@@ -156,9 +160,9 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class for cumulative constraint to wrap demands and expose concept like energy.</p>
 <p>In a cumulative constraint, an interval always has a size and a demand, but it can also have a set of "selector" literals each associated with a fixed size / fixed demands. This allows more precise energy estimation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001801">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001823">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00603">603</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00632">632</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab6c175f039dfda7d9c6701bd842e73fa" name="ab6c175f039dfda7d9c6701bd842e73fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6c175f039dfda7d9c6701bd842e73fa">&#9670;&#160;</a></span>SchedulingDemandHelper()</h2>
@@ -186,13 +190,13 @@ Public Member Functions</h2></td></tr>
 <p>Hack: this can be called with and empty demand vector as long as OverrideEnergies() is called to define the energies. </p>
 <p>We try to init decomposed energies. This is needed for the cuts that are created after we call InitAllDecomposedEnergies().</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00883">883</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00896">896</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a02b9dc1948c03888012b556a81f2ae56" name="a02b9dc1948c03888012b556a81f2ae56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02b9dc1948c03888012b556a81f2ae56">&#9670;&#160;</a></span>AddDemandMinReason()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b9dc1948c03888012b556a81f2ae56">&#9670;&#160;</a></span>AddDemandMinReason() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +210,30 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01035">1035</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01048">1048</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae3c63d2e676f0f86ea9cb0ff441d1b00" name="ae3c63d2e676f0f86ea9cb0ff441d1b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3c63d2e676f0f86ea9cb0ff441d1b00">&#9670;&#160;</a></span>AddDemandMinReason() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::SchedulingDemandHelper::AddDemandMinReason </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntegerValue</td>          <td class="paramname"><span class="paramname"><em>min_demand</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01056">1056</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -235,10 +262,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Since we usually ask way less often for the reason, we redo the computation here. </p>
 <p>Return simple reason right away if there is no decomposition or the simple energy is enough.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001800">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001821">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
 <p>Should be the same in most cases.</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01137">1137</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01159">1159</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -258,7 +285,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>We prefer these reason in order.</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01043">1043</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01065">1065</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -282,7 +309,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds the linearized demand (either the affine demand expression, or the demand part of the decomposed energy if present) to the builder. It returns false and do not add any term to the builder.if any literal involved has no integer view. </p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01071">1071</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01093">1093</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -301,12 +328,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The "energy" is usually size * demand, but in some non-conventional usage it might have a more complex formula. In all case, the energy is assumed to be only consumed during the interval duration.</p>
-<p>IMPORTANT: One must call <a class="el" href="#a9019a263126e78ddf332f696649fda87">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001806">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001807">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
+<p>IMPORTANT: One must call <a class="el" href="#a9019a263126e78ddf332f696649fda87">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001828">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001829">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
 <p>At level 0, it will filter false literals from decomposed energies. </p>
 <p>Try to reduce the size of the decomposed energy vector.</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00963">963</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00976">976</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -335,7 +362,7 @@ Public Member Functions</h2></td></tr>
 <p>Different optional representation of the energy of an interval.</p>
 <p>Important: first value is size, second value is demand. </p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00661">661</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00694">694</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -358,9 +385,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Important: This might not do anything depending on the representation of the energy we have. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001799">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001820">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01005">1005</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01018">1018</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -379,7 +406,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01001">1001</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01014">1014</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -398,7 +425,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00996">996</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01009">1009</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -418,7 +445,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>When defined, the interval will consume this much demand during its whole duration. Some propagator only relies on the "energy" and thus never uses this. </p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00991">991</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01004">1004</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -445,7 +472,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00617">617</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00650">650</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +499,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00642">642</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00675">675</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +526,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00641">641</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00674">674</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +553,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00640">640</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00673">673</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +583,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns the energy min in [start, end].</p>
 <p>Note(user): These functions are not in O(1) if the decomposition is used, so we have to be careful in not calling them too often. </p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01127">1127</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01149">1149</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -579,7 +606,7 @@ Public Member Functions</h2></td></tr>
 <p>CacheAllEnergyValues has already filtered false literals.</p>
 <p>Scan and filter false literals.</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01104">1104</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01126">1126</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -600,7 +627,34 @@ Public Member Functions</h2></td></tr>
 <p>Init all decomposed energies. It needs probing to be finished. This happens after the creation of the helper. </p>
 <p>For the special case were demands is empty.</p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00904">904</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00917">917</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5201308247cf35fbde198648e731216a" name="a5201308247cf35fbde198648e731216a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5201308247cf35fbde198648e731216a">&#9670;&#160;</a></span>LevelZeroDemandMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntegerValue operations_research::sat::SchedulingDemandHelper::LevelZeroDemandMin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00644">644</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +673,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01121">1121</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01143">1143</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>
@@ -640,7 +694,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Visible for testing. </p>
 
-<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01089">1089</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l01111">1111</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 
 </div>
 </div>

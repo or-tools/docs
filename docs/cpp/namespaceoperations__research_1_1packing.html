@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -122,15 +122,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2f68b5f8308b27e642c0c0660f7fa47c" id="r_a2f68b5f8308b27e642c0c0660f7fa47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1packing_1_1ArcFlowGraph.html">ArcFlowGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f68b5f8308b27e642c0c0660f7fa47c">BuildArcFlowGraph</a> (const std::vector&lt; int &gt; &amp;bin_dimensions, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;item_dimensions_by_type, const std::vector&lt; int &gt; &amp;demand_by_type)</td></tr>
-<tr class="memdesc:a2f68b5f8308b27e642c0c0660f7fa47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method.  <br /></td></tr>
-<tr class="separator:a2f68b5f8308b27e642c0c0660f7fa47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d95ea0871932f9ee06297b053ffaef" id="r_a48d95ea0871932f9ee06297b053ffaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1packing_1_1ArcFlowGraph.html">ArcFlowGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d95ea0871932f9ee06297b053ffaef">BuildArcFlowGraph</a> (const std::vector&lt; int &gt; &amp;bin_dimensions, absl::Span&lt; const std::vector&lt; int &gt; &gt; item_dimensions_by_type, absl::Span&lt; const int &gt; demand_by_type)</td></tr>
+<tr class="memdesc:a48d95ea0871932f9ee06297b053ffaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method.  <br /></td></tr>
+<tr class="separator:a48d95ea0871932f9ee06297b053ffaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eec7de3e003c677b8a29f4121f1637f" id="r_a3eec7de3e003c677b8a29f4121f1637f"><td class="memItemLeft" align="right" valign="top">vbp::VectorBinPackingSolution&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eec7de3e003c677b8a29f4121f1637f">SolveVectorBinPackingWithArcFlow</a> (const vbp::VectorBinPackingProblem &amp;problem, <a class="el" href="classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2">MPSolver::OptimizationProblemType</a> solver_type, const std::string &amp;mip_params, double <a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>, int num_threads, int max_bins)</td></tr>
 <tr class="separator:a3eec7de3e003c677b8a29f4121f1637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2f68b5f8308b27e642c0c0660f7fa47c" name="a2f68b5f8308b27e642c0c0660f7fa47c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f68b5f8308b27e642c0c0660f7fa47c">&#9670;&#160;</a></span>BuildArcFlowGraph()</h2>
+<a id="a48d95ea0871932f9ee06297b053ffaef" name="a48d95ea0871932f9ee06297b053ffaef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d95ea0871932f9ee06297b053ffaef">&#9670;&#160;</a></span>BuildArcFlowGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,12 +143,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>item_dimensions_by_type</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const std::vector&lt; int &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>item_dimensions_by_type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>demand_by_type</em></span>&#160;)</td>
+          <td class="paramtype">absl::Span&lt; const int &gt;</td>          <td class="paramname"><span class="paramname"><em>demand_by_type</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <p>Main method. </p>
 <p><a class="el" href="classoperations__research_1_1Arc.html">Arc</a> flow builder. The input must enforce the following constraints:</p><ul>
 <li>item_dimensions_by_type.size() == demand_by_type.size() == num types</li>
-<li>for each type t: item_dimensions_by_type[t].size() == bin_dimensions.size() == num_dimensions </li>
+<li>for each type t: item_dimensions_by_type[t].<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> == bin_dimensions.size() == num_dimensions </li>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="arc__flow__builder_8cc_source.html#l00403">403</a> of file <a class="el" href="arc__flow__builder_8cc_source.html">arc_flow_builder.cc</a>.</p>

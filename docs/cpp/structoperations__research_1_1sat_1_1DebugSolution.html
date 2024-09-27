@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,47 +113,47 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1DebugSolution.htm
 Public Attributes</h2></td></tr>
 <tr class="memitem:a584d95960e3f1d50a246a8d219e645cc" id="r_a584d95960e3f1d50a246a8d219e645cc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a584d95960e3f1d50a246a8d219e645cc">proto_values</a></td></tr>
 <tr class="separator:a584d95960e3f1d50a246a8d219e645cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a5eb5425c964642cf9be0cfb6b6c7b" id="r_a75a5eb5425c964642cf9be0cfb6b6c7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75a5eb5425c964642cf9be0cfb6b6c7b">ivar_has_value</a></td></tr>
-<tr class="separator:a75a5eb5425c964642cf9be0cfb6b6c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ddde91b78637f0f529abeb7aad8b71" id="r_ad7ddde91b78637f0f529abeb7aad8b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; IntegerVariable, IntegerValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7ddde91b78637f0f529abeb7aad8b71">ivar_values</a></td></tr>
-<tr class="separator:ad7ddde91b78637f0f529abeb7aad8b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cff986a172f5615625e27f2c084fc07" id="r_a5cff986a172f5615625e27f2c084fc07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; IntegerVariable, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cff986a172f5615625e27f2c084fc07">ivar_has_value</a></td></tr>
+<tr class="separator:a5cff986a172f5615625e27f2c084fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b4fb7ec5169f3c9d8ec467084331a8" id="r_ad1b4fb7ec5169f3c9d8ec467084331a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; IntegerVariable, IntegerValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1b4fb7ec5169f3c9d8ec467084331a8">ivar_values</a></td></tr>
+<tr class="separator:ad1b4fb7ec5169f3c9d8ec467084331a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A model singleton used for debugging. If this is set in the model, then we can check that various derived constraint do not exclude this solution (if it is a known optimal solution for instance). </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00380">380</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00381">381</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a75a5eb5425c964642cf9be0cfb6b6c7b" name="a75a5eb5425c964642cf9be0cfb6b6c7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a5eb5425c964642cf9be0cfb6b6c7b">&#9670;&#160;</a></span>ivar_has_value</h2>
+<a id="a5cff986a172f5615625e27f2c084fc07" name="a5cff986a172f5615625e27f2c084fc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cff986a172f5615625e27f2c084fc07">&#9670;&#160;</a></span>ivar_has_value</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt;IntegerVariable, bool&gt; operations_research::sat::DebugSolution::ivar_has_value</td>
+          <td class="memname"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;IntegerVariable, bool&gt; operations_research::sat::DebugSolution::ivar_has_value</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This is filled from proto_values at load-time, and using the cp_model_mapping, we cache the solution of the integer variables that are mapped. Note that it is possible that not all integer variable are mapped.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001711">Todo</a></b></dt><dd>(user): When this happen we should be able to infer the value of these derived variable in the solution. For now, we only do that for the objective variable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001730">Todo</a></b></dt><dd>(user): When this happen we should be able to infer the value of these derived variable in the solution. For now, we only do that for the objective variable. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00393">393</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00394">394</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
-<a id="ad7ddde91b78637f0f529abeb7aad8b71" name="ad7ddde91b78637f0f529abeb7aad8b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ddde91b78637f0f529abeb7aad8b71">&#9670;&#160;</a></span>ivar_values</h2>
+<a id="ad1b4fb7ec5169f3c9d8ec467084331a8" name="ad1b4fb7ec5169f3c9d8ec467084331a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b4fb7ec5169f3c9d8ec467084331a8">&#9670;&#160;</a></span>ivar_values</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt;IntegerVariable, IntegerValue&gt; operations_research::sat::DebugSolution::ivar_values</td>
+          <td class="memname"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;IntegerVariable, IntegerValue&gt; operations_research::sat::DebugSolution::ivar_values</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00394">394</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00395">395</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +170,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>This is the value of all proto variables. It should be of the same size of the PRESOLVED model and should correspond to a solution to the presolved model. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00384">384</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00385">385</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var linear__constraint_8cc =
 [
     [ "CanonicalizeExpr", "linear__constraint_8cc.html#a83443be9bcc967eec871d47ead6bfb73", null ],
-    [ "ComputeActivity", "linear__constraint_8cc.html#a6916f5386d6fce09719e427e69b6591f", null ],
+    [ "ComputeActivity", "linear__constraint_8cc.html#a03415c6fcb9dedc9b88bb92ae45b46a8", null ],
     [ "ComputeInfinityNorm", "linear__constraint_8cc.html#a3be9ba98c31d692caf42401992a0b4c3", null ],
     [ "ComputeL2Norm", "linear__constraint_8cc.html#a268155d48da53ccd81c49ee890c8e75f", null ],
     [ "DivideByGCD", "linear__constraint_8cc.html#a0f0ece2fd7a5f1c4ff26f8caade0d798", null ],

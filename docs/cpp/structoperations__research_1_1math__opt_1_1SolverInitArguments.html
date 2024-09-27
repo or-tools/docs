@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,14 +119,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8aead22d53da0524a93e11db1c2d4b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Arguments passed to <a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">Solve()</a> and <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a969c472daa70e92e7c69151830d47be0">IncrementalSolver::New()</a> to control the instantiation of the solver.</p>
+<div class="textblock"><p>Arguments passed to <a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">Solve()</a> and <a class="el" href="namespaceoperations__research_1_1math__opt.html#a62a1167e4dca26a88aac67eb7808e4d5">NewIncrementalSolver()</a> to control the instantiation of the solver.</p>
 <p>Usage with streamable arguments:</p>
 <p>Solve(model, SOLVER_TYPE_GUROBI, /*solver_args=*&zwj;/{}, <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a>{ .streamable = { .gurobi = <a class="el" href="structoperations__research_1_1math__opt_1_1StreamableGurobiInitArguments.html" title="Streamable Gurobi specific parameters for solver instantiation.">StreamableGurobiInitArguments</a>{ .isv_key = <a class="el" href="structoperations__research_1_1math__opt_1_1GurobiISVKey.html">GurobiISVKey</a>{ .name = "some name", .application_name = "some app name", .expiration = -1, .key = "random", } } } });</p>
 <p>Usage with non-streamable arguments:</p>
 <p><a class="el" href="structoperations__research_1_1math__opt_1_1NonStreamableGurobiInitArguments.html">NonStreamableGurobiInitArguments</a> gurobi_args; gurobi_args.primary_env = primary_env.get();</p>
 <p>Solve(model, SOLVER_TYPE_GUROBI, /*solver_args=*&zwj;/{}, <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInitArguments.html">SolverInitArguments</a>{.non_streamable = gurobi_args}); </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00054">54</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00052">52</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="acdfdf6a93a0e53813d3bbc9845a41b8f" name="acdfdf6a93a0e53813d3bbc9845a41b8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdfdf6a93a0e53813d3bbc9845a41b8f">&#9670;&#160;</a></span>non_streamable</h2>
@@ -142,7 +142,7 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> specific initialization parameters that can't be streamed. This should either be the solver specific class or be unset.</p>
 <p>Solvers will fail (by returning an absl::Status) if called with arguments for another solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00064">64</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00062">62</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
 
 </div>
 </div>
@@ -159,7 +159,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If true, the names of variables and constraints are discarded before sending them to the solver. This is particularly useful for models that need to be serialized and are near the two gigabyte limit in proto form. </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00069">69</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00067">67</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +176,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> initialization parameters that can be streamed to be exchanged with another process. </p>
 
-<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00057">57</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solver__init__arguments_8h_source.html#l00055">55</a> of file <a class="el" href="solver__init__arguments_8h_source.html">solver_init_arguments.h</a>.</p>
 
 </div>
 </div>

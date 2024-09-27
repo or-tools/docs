@@ -12,6 +12,8 @@ var classoperations__research_1_1math__opt_1_1Objective =
     [ "is_primary", "classoperations__research_1_1math__opt_1_1Objective.html#aa0390c49493181059f078a428c13b10c", null ],
     [ "maximize", "classoperations__research_1_1math__opt_1_1Objective.html#a85071c896f485813d3418c922512ef97", null ],
     [ "name", "classoperations__research_1_1math__opt_1_1Objective.html#ad84c7323455dea61557172ebff3df4c3", null ],
+    [ "num_linear_terms", "classoperations__research_1_1math__opt_1_1Objective.html#aae6939a4b17caaa6f6ef4ca3e8a95a60", null ],
+    [ "num_quadratic_terms", "classoperations__research_1_1math__opt_1_1Objective.html#ae08113bd53bd8503adac529aa3100b30", null ],
     [ "offset", "classoperations__research_1_1math__opt_1_1Objective.html#af8d313a70048976e4f57cf3a3c1e1ed1", null ],
     [ "Primary", "classoperations__research_1_1math__opt_1_1Objective.html#a3e62c012dd96e4a23c9859d27c14e80e", null ],
     [ "priority", "classoperations__research_1_1math__opt_1_1Objective.html#acf3a34e1c33e2dc0a46a8b05f8bb99db", null ],

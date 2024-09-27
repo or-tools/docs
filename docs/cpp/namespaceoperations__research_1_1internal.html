@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <tr class="separator:a642d0ef30f0099a44aef96c27d84b090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcce32287e5f9346df470cc3a0e6c169" id="r_afcce32287e5f9346df470cc3a0e6c169"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcce32287e5f9346df470cc3a0e6c169">BitOffset64</a> (uint64_t pos)</td></tr>
 <tr class="separator:afcce32287e5f9346df470cc3a0e6c169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b41253a72594759082e0c72eaa1e284" id="r_a1b41253a72594759082e0c72eaa1e284"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b41253a72594759082e0c72eaa1e284">BitLength64</a> (uint64_t size)</td></tr>
+<tr class="memitem:a1b41253a72594759082e0c72eaa1e284" id="r_a1b41253a72594759082e0c72eaa1e284"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b41253a72594759082e0c72eaa1e284">BitLength64</a> (uint64_t <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>)</td></tr>
 <tr class="separator:a1b41253a72594759082e0c72eaa1e284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8254b0157656b65e18e2db918d462e5a" id="r_a8254b0157656b65e18e2db918d462e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8254b0157656b65e18e2db918d462e5a">IsBitSet64</a> (const uint64_t *const bitset, uint64_t pos)</td></tr>
 <tr class="separator:a8254b0157656b65e18e2db918d462e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +196,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a330aa4abcb2cc54174d90968235473af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a330aa4abcb2cc54174d90968235473af">ComputePathLength</a> (const GraphType &amp;<a class="el" href="dag__shortest__path_8cc.html#ae4666512ca9ca3bba65f08f8ae8a1ba0">graph</a>, const absl::Span&lt; const <a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a> &gt; <a class="el" href="dag__shortest__path_8cc.html#aa9ad2ed96a191f4b22ec8622c4929b26">arc_lengths</a>, const absl::Span&lt; const <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; path)</td></tr>
 <tr class="memdesc:a330aa4abcb2cc54174d90968235473af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total length of a path.  <br /></td></tr>
 <tr class="separator:a330aa4abcb2cc54174d90968235473af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b6232d76132334f033dd24fdb993ce" id="r_a70b6232d76132334f033dd24fdb993ce"><td class="memTemplParams" colspan="2">template&lt;typename NodeType &gt; </td></tr>
+<tr class="memitem:a70b6232d76132334f033dd24fdb993ce"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a70b6232d76132334f033dd24fdb993ce">IsValidParent</a> (const NodeType node, const NodeType num_tree_nodes)</td></tr>
+<tr class="separator:a70b6232d76132334f033dd24fdb993ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb02751a008f9814d9b296c462d7b068" id="r_afb02751a008f9814d9b296c462d7b068"><td class="memTemplParams" colspan="2">template&lt;typename NodeType &gt; </td></tr>
+<tr class="memitem:afb02751a008f9814d9b296c462d7b068"><td class="memTemplItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afb02751a008f9814d9b296c462d7b068">IsValidNode</a> (const NodeType node, const NodeType num_tree_nodes)</td></tr>
+<tr class="separator:afb02751a008f9814d9b296c462d7b068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c0d4e529a5474c5fda9d4e042b27c6" id="r_ab7c0d4e529a5474c5fda9d4e042b27c6"><td class="memTemplParams" colspan="2">template&lt;typename NodeType &gt; </td></tr>
+<tr class="memitem:ab7c0d4e529a5474c5fda9d4e042b27c6"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab7c0d4e529a5474c5fda9d4e042b27c6">ExtractCycle</a> (absl::Span&lt; const NodeType &gt; parents, const NodeType node_in_cycle)</td></tr>
+<tr class="separator:ab7c0d4e529a5474c5fda9d4e042b27c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f497c22e9d139c5dd480036bb97fcd0" id="r_a6f497c22e9d139c5dd480036bb97fcd0"><td class="memTemplParams" colspan="2">template&lt;typename NodeType &gt; </td></tr>
+<tr class="memitem:a6f497c22e9d139c5dd480036bb97fcd0"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6f497c22e9d139c5dd480036bb97fcd0">CycleErrorMessage</a> (absl::Span&lt; const NodeType &gt; cycle)</td></tr>
+<tr class="separator:a6f497c22e9d139c5dd480036bb97fcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf545c840f28ee041207a1741314bb5" id="r_addf545c840f28ee041207a1741314bb5"><td class="memTemplParams" colspan="2">template&lt;typename NodeType &gt; </td></tr>
+<tr class="memitem:addf545c840f28ee041207a1741314bb5"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; NodeType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#addf545c840f28ee041207a1741314bb5">CheckForCycle</a> (absl::Span&lt; const NodeType &gt; parents, std::vector&lt; NodeType &gt; *<a class="el" href="dag__shortest__path_8cc.html#a532598a2f9b95a1e714053bb66f4b78e">topological_order</a>)</td></tr>
+<tr class="separator:addf545c840f28ee041207a1741314bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8528c1947f16a5c6178ac8f3e7e5b7a5" id="r_a8528c1947f16a5c6178ac8f3e7e5b7a5"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8528c1947f16a5c6178ac8f3e7e5b7a5">RegisterConstraintHandler</a> (GScip *gscip, std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html">UntypedGScipConstraintHandler</a> &gt; constraint_handler)</td></tr>
 <tr class="separator:a8528c1947f16a5c6178ac8f3e7e5b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b61d637f83941aa9acb03aef639410" id="r_a30b61d637f83941aa9acb03aef639410"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SCIP_CONS * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30b61d637f83941aa9acb03aef639410">AddCallbackConstraint</a> (GScip *gscip, const std::string &amp;handler_name, const std::string &amp;constraint_name, void *constraint_data, const GScipConstraintOptions &amp;options)</td></tr>
@@ -220,7 +235,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4c502cb057a0c067c38aff7673965727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ditto, taking a filename as argument.  <br /></td></tr>
 <tr class="separator:a4c502cb057a0c067c38aff7673965727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0" id="r_a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplParams" colspan="2">template&lt;typename Value , size_t size&gt; </td></tr>
-<tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a44e028ca9c90fa8a5b020b09d4088ad0">AddInPlace</a> (<a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;out, const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;in)</td></tr>
+<tr class="memitem:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a44e028ca9c90fa8a5b020b09d4088ad0">AddInPlace</a> (<a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;out, const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;in)</td></tr>
 <tr class="separator:a44e028ca9c90fa8a5b020b09d4088ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b65ebc72bdac409fae9ee093004ad3a" id="r_a5b65ebc72bdac409fae9ee093004ad3a"><td class="memTemplParams" colspan="2">template&lt;size_t block_size, size_t num_blocks_per_iteration, typename Value &gt; </td></tr>
 <tr class="memitem:a5b65ebc72bdac409fae9ee093004ad3a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, block_size &gt; ABSL_ATTRIBUTE_NOINLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5b65ebc72bdac409fae9ee093004ad3a">AlignedBlockSum</a> (const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, block_size &gt; *blocks, size_t num_blocks)</td></tr>
@@ -246,7 +261,8 @@ Variables</h2></td></tr>
 </dd></dl>
 <hr  />
 <p> The rest of this .h is the implementation of the above templates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000648">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000667">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
+<p>Template implementations</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -404,18 +420,18 @@ template&lt;typename Value , size_t size&gt; </div>
         <tr>
           <td class="memname">void operations_research::internal::AddInPlace </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, size &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a>&lt; Value, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>In-place addition for two <a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a> values. Adds <code>in</code> to <code>out</code>, storing the value in <code>out</code>. Unless something steps in, this compiles into a single <code>*addp*</code> instruction. </p>
 
-<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00052">52</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00054">54</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +466,7 @@ template&lt;size_t block_size, size_t num_blocks_per_iteration, typename Value &
 <p>Phase 2: Semi-parallel sum of the remaining up to num_blocks_per_iteration - 1 blocks.</p>
 <p>Phase 3: Reduce the accumulator blocks to a single block. NOTE(user): When this code is auto-vectorized correctly, the initial copy is a no-op, and the for loop below translates to num_blocks_per_iteration - 1 vector add instructions. In 2023-05, I experimented with other versions (e.g. using sum[0] as the target or making res a const reference to sum[0], but in most cases they broke vectorization of the whole function).</p>
 
-<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00082">82</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00084">84</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +491,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00154">154</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00153">153</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
 
 </div>
 </div>
@@ -580,6 +596,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="addf545c840f28ee041207a1741314bb5" name="addf545c840f28ee041207a1741314bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf545c840f28ee041207a1741314bb5">&#9670;&#160;</a></span>CheckForCycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NodeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; NodeType &gt; operations_research::internal::CheckForCycle </td>
+          <td>(</td>
+          <td class="paramtype">absl::Span&lt; const NodeType &gt;</td>          <td class="paramname"><span class="paramname"><em>parents</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; NodeType &gt; *</td>          <td class="paramname"><span class="paramname"><em>topological_order</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Every element of parents must be in {kNullParent} union [0..parents.size()), otherwise UB. </p>
+
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00390">390</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
+
+</div>
+</div>
 <a id="aa04bf52dc3de549e6ddc4c823bd5ab5e" name="aa04bf52dc3de549e6ddc4c823bd5ab5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa04bf52dc3de549e6ddc4c823bd5ab5e">&#9670;&#160;</a></span>ClearBit64()</h2>
 
@@ -639,7 +681,7 @@ template&lt;class GraphType &gt; </div>
 
 <p>Computes the total length of a path. </p>
 
-<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00175">175</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00182">182</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +718,53 @@ template&lt;class GraphType &gt; </div>
 <p>Determines the shortest path from the given source and destination, returns a tuple with the path (as a vector of node indices) and its cost. </p>
 <p>There are shortest paths in this graph, just not from the source to this destination. This case only happens when some arcs have an infinite length (i.e. larger than <code>kMaxDistance</code>): <code><a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html#a64d47fb522e095cf23053dbecad28c9d">BoundedDijkstraWrapper::NodePathTo</a></code> fails to return a path, even empty.</p>
 
-<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00148">148</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00155">155</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f497c22e9d139c5dd480036bb97fcd0" name="a6f497c22e9d139c5dd480036bb97fcd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f497c22e9d139c5dd480036bb97fcd0">&#9670;&#160;</a></span>CycleErrorMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NodeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string operations_research::internal::CycleErrorMessage </td>
+          <td>(</td>
+          <td class="paramtype">absl::Span&lt; const NodeType &gt;</td>          <td class="paramname"><span class="paramname"><em>cycle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00372">372</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
+
+</div>
+</div>
+<a id="ab7c0d4e529a5474c5fda9d4e042b27c6" name="ab7c0d4e529a5474c5fda9d4e042b27c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c0d4e529a5474c5fda9d4e042b27c6">&#9670;&#160;</a></span>ExtractCycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NodeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; NodeType &gt; operations_research::internal::ExtractCycle </td>
+          <td>(</td>
+          <td class="paramtype">absl::Span&lt; const NodeType &gt;</td>          <td class="paramname"><span class="paramname"><em>parents</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NodeType</td>          <td class="paramname"><span class="paramname"><em>node_in_cycle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00352">352</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +797,7 @@ template&lt;class GraphType &gt; </div>
 <p>This operation requires iterating through the set of outgoing arcs from the source node, which might be expensive.</p>
 <p>In a multigraph, this function returns an index for one of the edges between the source and the destination. </p>
 
-<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00134">134</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00141">141</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +880,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00145">145</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00144">144</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +909,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00141">141</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00140">140</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +938,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00149">149</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00148">148</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
 
 </div>
 </div>
@@ -871,7 +959,57 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00136">136</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00135">135</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+
+</div>
+</div>
+<a id="afb02751a008f9814d9b296c462d7b068" name="afb02751a008f9814d9b296c462d7b068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb02751a008f9814d9b296c462d7b068">&#9670;&#160;</a></span>IsValidNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NodeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Status operations_research::internal::IsValidNode </td>
+          <td>(</td>
+          <td class="paramtype">const NodeType</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NodeType</td>          <td class="paramname"><span class="paramname"><em>num_tree_nodes</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00342">342</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
+
+</div>
+</div>
+<a id="a70b6232d76132334f033dd24fdb993ce" name="a70b6232d76132334f033dd24fdb993ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b6232d76132334f033dd24fdb993ce">&#9670;&#160;</a></span>IsValidParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NodeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operations_research::internal::IsValidParent </td>
+          <td>(</td>
+          <td class="paramtype">const NodeType</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NodeType</td>          <td class="paramname"><span class="paramname"><em>num_tree_nodes</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00336">336</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
 
 </div>
 </div>
@@ -948,7 +1086,7 @@ template&lt;typename Proto &gt; </div>
 
 <p>Ditto, taking a filename as argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="file__util_8h_source.html#l00107">107</a> of file <a class="el" href="file__util_8h_source.html">file_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__util_8h_source.html#l00106">106</a> of file <a class="el" href="file__util_8h_source.html">file_util.h</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1112,7 @@ template&lt;typename Proto &gt; </div>
 </div><div class="memdoc">
 <p>General method to read expected_num_records from a file. If expected_num_records is -1, then reads all records from the file. If not, dies if the file doesn't contain exactly expected_num_records. </p>
 
-<p class="definition">Definition at line <a class="el" href="file__util_8h_source.html#l00080">80</a> of file <a class="el" href="file__util_8h_source.html">file_util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="file__util_8h_source.html#l00079">79</a> of file <a class="el" href="file__util_8h_source.html">file_util.h</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1238,7 @@ template&lt;typename IntT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00167">167</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__search_8h_source.html#l00166">166</a> of file <a class="el" href="binary__search_8h_source.html">binary_search.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1261,7 @@ template&lt;size_t block_size = 4, size_t num_blocks_per_iteration = 4, bool ass
 <p>Computes the sum of values in <code>values</code>, by adding <code>num_blocks_per_iteration</code> blocks of <code>block_size</code> values. By default, the sum does not make any assumptions about the size or alignment of <code>values</code>. When the first item of <code>values</code> is known to be aligned to <code>block_size * sizeof(Value)</code> bytes, <code>assume_aligned_at_start</code> can be used to save a small amount of time. </p>
 <p>With less than two blocks, there's not a lot to vectorize, and a simple sequential sum is usually faster.</p>
 
-<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00136">136</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vector__sum__internal_8h_source.html#l00138">138</a> of file <a class="el" href="vector__sum__internal_8h_source.html">vector_sum_internal.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1280,7 @@ template&lt;size_t block_size = 4, size_t num_blocks_per_iteration = 4, bool ass
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    std::numeric_limits&lt;PathDistance&gt;::max()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00123">123</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00130">130</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1296,7 @@ template&lt;size_t block_size = 4, size_t num_blocks_per_iteration = 4, bool ass
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00122">122</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00129">129</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
 
 </div>
 </div>

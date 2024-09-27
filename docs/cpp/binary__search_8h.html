@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,15 +106,14 @@ $(function(){initNavTree('binary__search_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">binary_search.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &quot;absl/functional/function_ref.h&quot;</code><br />
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/numeric/int128.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="dump__vars_8h_source.html">ortools/base/dump_vars.h</a>&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 </div>
 <p><a href="binary__search_8h_source.html">Go to the source code of this file.</a></p>
@@ -143,11 +142,11 @@ Functions</h2></td></tr>
 <tr class="memitem:af8470fb6a8ba7558235e9e99f467b379"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Point, Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af8470fb6a8ba7558235e9e99f467b379">operations_research::ConvexMinimum</a> (bool is_to_the_right, std::pair&lt; Point, Value &gt; current_min, absl::Span&lt; const Point &gt; sorted_points, std::function&lt; Value(Point)&gt; f)</td></tr>
 <tr class="separator:af8470fb6a8ba7558235e9e99f467b379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795fdfe0fd13d1d1479c874374820a3c" id="r_a795fdfe0fd13d1d1479c874374820a3c"><td class="memTemplParams" colspan="2">template&lt;class Point , class Value &gt; </td></tr>
-<tr class="memitem:a795fdfe0fd13d1d1479c874374820a3c"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Point, Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a795fdfe0fd13d1d1479c874374820a3c">operations_research::RangeConvexMinimum</a> (Point <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, Point <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>, absl::FunctionRef&lt; Value(Point)&gt; f)</td></tr>
+<tr class="memitem:a795fdfe0fd13d1d1479c874374820a3c"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Point, Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a795fdfe0fd13d1d1479c874374820a3c">operations_research::RangeConvexMinimum</a> (Point begin, Point <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>, absl::FunctionRef&lt; Value(Point)&gt; f)</td></tr>
 <tr class="memdesc:a795fdfe0fd13d1d1479c874374820a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches in the range [begin, end), where Point supports basic arithmetic.  <br /></td></tr>
 <tr class="separator:a795fdfe0fd13d1d1479c874374820a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405a76b3441a6930bc0096bbf7c9fbd0" id="r_a405a76b3441a6930bc0096bbf7c9fbd0"><td class="memTemplParams" colspan="2">template&lt;class Point , class Value &gt; </td></tr>
-<tr class="memitem:a405a76b3441a6930bc0096bbf7c9fbd0"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Point, Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a405a76b3441a6930bc0096bbf7c9fbd0">operations_research::RangeConvexMinimum</a> (std::pair&lt; Point, Value &gt; current_min, Point <a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, Point <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>, absl::FunctionRef&lt; Value(Point)&gt; f)</td></tr>
+<tr class="memitem:a405a76b3441a6930bc0096bbf7c9fbd0"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Point, Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a405a76b3441a6930bc0096bbf7c9fbd0">operations_research::RangeConvexMinimum</a> (std::pair&lt; Point, Value &gt; current_min, Point begin, Point <a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>, absl::FunctionRef&lt; Value(Point)&gt; f)</td></tr>
 <tr class="separator:a405a76b3441a6930bc0096bbf7c9fbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac87dfca178d5e2c93e4913c3c8a4d9" id="r_a3ac87dfca178d5e2c93e4913c3c8a4d9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a3ac87dfca178d5e2c93e4913c3c8a4d9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a3ac87dfca178d5e2c93e4913c3c8a4d9">operations_research::internal::IsNanGeneric</a> (const T &amp;)</td></tr>

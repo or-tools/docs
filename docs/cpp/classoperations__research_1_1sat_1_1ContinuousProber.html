@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,7 +111,7 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ContinuousProber.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e83f97c78745b456678edb911c2147c" id="r_a1e83f97c78745b456678edb911c2147c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e83f97c78745b456678edb911c2147c">ContinuousProber</a> (const CpModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
+<tr class="memitem:a1e83f97c78745b456678edb911c2147c" id="r_a1e83f97c78745b456678edb911c2147c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e83f97c78745b456678edb911c2147c">ContinuousProber</a> (const CpModelProto &amp;model_proto, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>)</td></tr>
 <tr class="memdesc:a1e83f97c78745b456678edb911c2147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The model_proto is just used to construct the lists of variable to probe.  <br /></td></tr>
 <tr class="separator:a1e83f97c78745b456678edb911c2147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de4d4b22a2717e58b2444683a806d22" id="r_a1de4d4b22a2717e58b2444683a806d22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1de4d4b22a2717e58b2444683a806d22">Probe</a> ()</td></tr>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class will loop continuously on model variables and try to probe/shave its bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00328">328</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00329">329</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1e83f97c78745b456678edb911c2147c" name="a1e83f97c78745b456678edb911c2147c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e83f97c78745b456678edb911c2147c">&#9670;&#160;</a></span>ContinuousProber()</h2>
@@ -142,9 +142,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The model_proto is just used to construct the lists of variable to probe. </p>
-<p>Build variable lists. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001785">Todo</a></b></dt><dd>(user): Ideally, we should scan the internal model. But there can be a large blowup of variables during loading, which slows down the probing part. Using model variables is a good heuristic to select 'impactful' Boolean variables. </dd></dl>
+<p>Build variable lists. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001807">Todo</a></b></dt><dd>(user): Ideally, we should scan the internal model. But there can be a large blowup of variables during loading, which slows down the probing part. Using model variables is a good heuristic to select 'impactful' Boolean variables. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01603">1603</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01605">1605</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <li><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352a7a6b4bc49d7cd2f0e797b2223c1e605b">SatSolver::FEASIBLE</a> when a feasible solution is found</li>
 <li><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352a71fe77dfe8a6957ad06c36275d7fcd62">SatSolver::LIMIT_REACHED</a> if the limit stored in the model is reached Calling <a class="el" href="#a1de4d4b22a2717e58b2444683a806d22">Probe()</a> after it has returned FEASIBLE or LIMIT_REACHED will resume probing from its previous state.</li>
 </ul>
-<p>Continuous probing procedure. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001786">Todo</a></b></dt><dd>(user):<ul>
+<p>Continuous probing procedure. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001808">Todo</a></b></dt><dd>(user):<ul>
 <li>sort variables before the iteration (statically or dynamically)</li>
 <li>compress clause databases regularly (especially the implication graph)</li>
 <li>better interleaving of the probing and shaving phases</li>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
 </dd></dl>
 <p>Backtrack to level 0 in case we are not there.</p>
 <p>Store current statistics to detect an iteration without any improvement.</p>
-<p>Probe variable bounds. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001787">Todo</a></b></dt><dd>(user): Probe optional variables. </dd></dl>
+<p>Probe variable bounds. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001809">Todo</a></b></dt><dd>(user): Probe optional variables. </dd></dl>
 <p>Probe Boolean variables from the model.</p>
 <p>Probe clauses of the SAT model.</p>
 <p>Probe at_most_ones of the SAT model.</p>
@@ -187,11 +187,11 @@ Public Member Functions</h2></td></tr>
 <p>We use a limit to make sure we do not overflow.</p>
 <p>Adjust the active_limit.</p>
 <p>Reset all counters.</p>
-<p>Update the use_shaving_ parameter. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001788">Todo</a></b></dt><dd>(user): Currently, the heuristics is that we alternate shaving and not shaving, unless use_shaving_in_probing_search is false. </dd></dl>
+<p>Update the use_shaving_ parameter. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001810">Todo</a></b></dt><dd>(user): Currently, the heuristics is that we alternate shaving and not shaving, unless use_shaving_in_probing_search is false. </dd></dl>
 <p>Remove fixed Boolean variables.</p>
 <p>Remove fixed integer variables.</p>
 
-<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01659">1659</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01661">1661</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -227,8 +227,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>HiGHS issues a warning if lp.integrality_ is nonempty but all variables are continuous. It would be nice to disable this warning, as we should always just set this, otherwise incrementalism is just more complicated.</dd></dl>
 <p>See <a href="https://github.com/ERGO-Code/HiGHS/blob/master/src/lp_data/HighsLpUtils.cpp#L535">https://github.com/ERGO-Code/HiGHS/blob/master/src/lp_data/HighsLpUtils.cpp#L535</a></p>
-<p>If the bounds are crossed, we give an error at solve time (unless they are uncrossed before the solve begins). Passing crossed bounds to HiGHS here causes Highs:passModel() below to fail, but we don't want to fail in <a class="el" href="#a2ae5ff0de74ce55a8dc383175021d11b">New()</a>. So we pass dummy values instead temporarily. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000980">Todo</a></b></dt><dd>(b/271595607): once HiGHS is updated, check if the unrounded bounds cross instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000981">Todo</a></b></dt><dd>(b/271595607): once HiGHS is updated, pass the original bound, not the rounded bound. </dd></dl>
+<p>If the bounds are crossed, we give an error at solve time (unless they are uncrossed before the solve begins). Passing crossed bounds to HiGHS here causes Highs:passModel() below to fail, but we don't want to fail in <a class="el" href="#a2ae5ff0de74ce55a8dc383175021d11b">New()</a>. So we pass dummy values instead temporarily. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001003">Todo</a></b></dt><dd>(b/271595607): once HiGHS is updated, check if the unrounded bounds cross instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001004">Todo</a></b></dt><dd>(b/271595607): once HiGHS is updated, pass the original bound, not the rounded bound. </dd></dl>
 <p>See comment above for the case when a variable lb &gt; ub, we need to avoid an immediate error in <a class="el" href="#a2ae5ff0de74ce55a8dc383175021d11b">New()</a>.</p>
 <p>Disable output immediately, calling passModel() below will generate output otherwise.</p>
 
@@ -288,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 <p>When parameter <code>message_cb</code> is not null the value of parameters.enable_output should be ignored the solver should behave as it is was false (i.e. not print anything).</p>
 <p>When parameter <code>message_cb</code> is not null and the underlying solver does not supports message callbacks, it should ignore it.</p>
 <p>Solvers should return a InvalidArgumentError when called with events on callback_registration that are not supported by the solver for the type of model being solved (for example MIP events if the model is an LP, or events that are not emitted by the solver). Solvers should use <a class="el" href="namespaceoperations__research_1_1math__opt.html#a7b6416ee129e11e10bd16560d739c7e9">CheckRegisteredCallbackEvents()</a> to implement that. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000982">Todo</a></b></dt><dd>(b/271595607): delete this code once we upgrade HiGHS, if HiGHS does return a proper infeasibility status for models with empty integer bounds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001005">Todo</a></b></dt><dd>(b/271595607): delete this code once we upgrade HiGHS, if HiGHS does return a proper infeasibility status for models with empty integer bounds. </dd></dl>
 <p>As of March 6th, 2023, this code never returns an error (see the HiGHS source). If we really want to be able to recover from errors, more care is needed, as we need to prevent HiGHS from invoking the user callback after this function, since it will not be alive (e.g. wrap the user callback in a new callback that is guarded by an atomic bool that we disable here). Further, to propagate this error, we need a class instead of absl::Cleanup.</p>
 <dl class="section note"><dt>Note</dt><dd>lp_.integrality_ may be empty if the problem is an LP.</dd></dl>
 <p>When the model is empty, highs_-&gt;getInfo() is invalid, so we bail out.</p>

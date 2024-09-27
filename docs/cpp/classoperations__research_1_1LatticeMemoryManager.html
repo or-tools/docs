@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">Set</a>, typename CostType&gt;<br />
 class operations_research::LatticeMemoryManager&lt; Set, CostType &gt;</div><p>The Dynamic Programming (DP) algorithm memorizes the values f(set, node) for node in set, for all the subsets of cardinality &lt;= max_card_. <a class="el" href="classoperations__research_1_1LatticeMemoryManager.html">LatticeMemoryManager</a> manages the storage of f(set, node) so that the DP iteration access memory in increasing addresses. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00292">292</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00290">290</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4f81eab503a836cab0e35f7cffdf9331" name="a4f81eab503a836cab0e35f7cffdf9331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f81eab503a836cab0e35f7cffdf9331">&#9670;&#160;</a></span>LatticeMemoryManager()</h2>
@@ -163,7 +163,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00294">294</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00292">292</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -196,11 +196,11 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the base offset in memory for f(s, node), with node contained in s. This is useful in the Dynamic Programming iterations. Note(user): inlining this function gains about 5%. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo</a></b></dt><dd>(user): Investigate how to compute BaseOffset(card - 1, s \ { n }) from BaseOffset(card, n) to speed up the DP iteration. </dd></dl>
+<p>Returns the base offset in memory for f(s, node), with node contained in s. This is useful in the Dynamic Programming iterations. Note(user): inlining this function gains about 5%. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000659">Todo</a></b></dt><dd>(user): Investigate how to compute BaseOffset(card - 1, s \ { n }) from BaseOffset(card, n) to speed up the DP iteration. </dd></dl>
 <p>There are binomial_coefficients_[node][node_rank + 1] sets which have node at node_rank.</p>
-<p>Note(user): It is possible to get rid of base_offset_[card] by using a 2-D array. It would also make it possible to free all the memory but the layer being constructed and the preceding one, if another lattice of paths is constructed. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000635">Todo</a></b></dt><dd>(user): Evaluate the interest of the above. There are 'card' f(set, j) to store. That is why we need to multiply local_offset by card before adding it to the corresponding base_offset_. </dd></dl>
+<p>Note(user): It is possible to get rid of base_offset_[card] by using a 2-D array. It would also make it possible to free all the memory but the layer being constructed and the preceding one, if another lattice of paths is constructed. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000654">Todo</a></b></dt><dd>(user): Evaluate the interest of the above. There are 'card' f(set, j) to store. That is why we need to multiply local_offset by card before adding it to the corresponding base_offset_. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00408">408</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00406">406</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 <p>Extend to (n, n + 1) to minimize branchings in <a class="el" href="#a4f81eab503a836cab0e35f7cffdf9331">LatticeMemoryManager()</a>. This also makes the recurrence above work for k = n.</p>
 <p>There are k * binomial_coefficients_[max_card_][k] f(S,j) values to store for each group of f(S,j), with card(S) = k. Update base_offset[k] accordingly.</p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00358">358</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00356">356</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 
 <p>Returns the offset in memory for f(s, node), with node contained in s. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00432">432</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00430">430</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </div><div class="memdoc">
 <p>Returns the offset delta for a set of cardinality 'card', to which node 'removed_node' is replaced by 'added_node' at 'rank' </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00311">311</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00309">309</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </div><div class="memdoc">
 <p>Memorizes the value = f(s, node) at the correct offset. This is favored in all other uses than the Dynamic Programming iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00444">444</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00442">442</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </div><div class="memdoc">
 <p>Memorizes 'value' at 'offset'. This is useful in the Dynamic Programming iterations where we want to avoid compute the offset of a pair (set, node). </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00324">324</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00322">322</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </div><div class="memdoc">
 <p>Returns the memorized value f(s, node) with node in s. This is favored in all other uses than the Dynamic Programming iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00438">438</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00436">436</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1Set.html">
 </div><div class="memdoc">
 <p>Returns the memorized value at 'offset'. This is useful in the Dynamic Programming iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00334">334</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00332">332</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 
 </div>
 </div>

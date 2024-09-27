@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -220,7 +220,7 @@ template&lt;class GraphType &gt; </div>
 <p>Validity of arcs and topological order are CHECKed if compiled in DEBUG mode.</p>
 <p>SUBTLE: You can modify the graph, the arc lengths or the topological order between calls to the <code><a class="el" href="#a4da2cd80ac3b10aa0b03b79a0985bb6b">RunKShortestPathOnDag()</a></code> function. That's fine. Doing so will obviously invalidate the result API of the last shortest path run, which could return an upper bound, junk, or crash.</p>
 <p><a class="el" href="classoperations__research_1_1KShortestPathsOnDagWrapper.html">KShortestPathsOnDagWrapper</a> implementation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000616">Todo</a></b></dt><dd>(b/332475713): Optimize if reverse graph is already provided in <code>GraphType</code>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000635">Todo</a></b></dt><dd>(b/332475713): Optimize if reverse graph is already provided in <code>GraphType</code>. </dd></dl>
 <p>Memory allocation is done here and only once in order to avoid reallocation at each call of <code><a class="el" href="#a4da2cd80ac3b10aa0b03b79a0985bb6b">RunKShortestPathOnDag()</a></code> for better performance.</p>
 
 <p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00492">492</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>

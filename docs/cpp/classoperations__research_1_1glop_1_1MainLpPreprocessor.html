@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a89d594c9524e06ba31356cb2d5840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a8924f068fb4346f8147ab68f60b83" id="r_a53a8924f068fb4346f8147ab68f60b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a8924f068fb4346f8147ab68f60b83">DestructiveRecoverSolution</a> (<a class="el" href="structoperations__research_1_1glop_1_1ProblemSolution.html">ProblemSolution</a> *<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="separator:a53a8924f068fb4346f8147ab68f60b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474a8c2c34b04bae17235f572f9f1361" id="r_a474a8c2c34b04bae17235f572f9f1361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474a8c2c34b04bae17235f572f9f1361">SetLogger</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *<a class="el" href="cp__model__solver_8cc.html#a7841b0b9808c040e4d71d010a999b845">logger</a>)</td></tr>
+<tr class="memitem:a474a8c2c34b04bae17235f572f9f1361" id="r_a474a8c2c34b04bae17235f572f9f1361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474a8c2c34b04bae17235f572f9f1361">SetLogger</a> (<a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *logger)</td></tr>
 <tr class="separator:a474a8c2c34b04bae17235f572f9f1361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1glop_1_1Preprocessor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1glop_1_1Preprocessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html">operations_research::glop::Preprocessor</a></td></tr>
 <tr class="memitem:a3d6b9fa4caae50ce5a35c587ca1f8c1d inherit pub_methods_classoperations__research_1_1glop_1_1Preprocessor" id="r_a3d6b9fa4caae50ce5a35c587ca1f8c1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a3d6b9fa4caae50ce5a35c587ca1f8c1d">Preprocessor</a> (const GlopParameters *<a class="el" href="cp__model__fz__solver_8cc.html#a10a1eab179b472c030bdc2a2efef7219">parameters</a>)</td></tr>
@@ -355,9 +355,9 @@ Additional Inherited Members</h2></td></tr>
 <p>We run it a few times because running one preprocessor may allow another one to remove more stuff.</p>
 <p>Abort early if none of the preprocessors did something. Technically this is true if none of the preprocessors above needs postsolving, which has exactly the same meaning for these particular preprocessors.</p>
 <p>We use i here because the last pass did nothing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000467">Todo</a></b></dt><dd>(user): Run them in the loop above if the effect on the running time is good. This needs more investigation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000485">Todo</a></b></dt><dd>(user): Run them in the loop above if the effect on the running time is good. This needs more investigation. </dd></dl>
 <p>If <a class="el" href="classoperations__research_1_1glop_1_1DualizerPreprocessor.html">DualizerPreprocessor</a> was run, we need to do some extra preprocessing. This is because it currently adds a lot of zero-cost singleton columns.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000468">Todo</a></b></dt><dd>(user): We probably want to scale the costs before and after this preprocessor so that the rhs/objective of the dual are with a good magnitude. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000486">Todo</a></b></dt><dd>(user): We probably want to scale the costs before and after this preprocessor so that the rhs/objective of the dual are with a good magnitude. </dd></dl>
 <p>The scaling is controlled by use_scaling, not use_preprocessing.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>

@@ -8,6 +8,7 @@ var structoperations__research_1_1sat_1_1RectangleInRange =
     ] ],
     [ "BiggestWithMinIntersection", "structoperations__research_1_1sat_1_1RectangleInRange.html#ab5a33da0a04f0b6446159d7c1e01e59b", null ],
     [ "GetAtCorner", "structoperations__research_1_1sat_1_1RectangleInRange.html#aed62a99c9dcb245b59967644bcaf3485", null ],
+    [ "GetBoudingBox", "structoperations__research_1_1sat_1_1RectangleInRange.html#a5ca4750e0be332069562da9d95980139", null ],
     [ "GetMinimumIntersection", "structoperations__research_1_1sat_1_1RectangleInRange.html#a23e24c517c9a95e270ba0aff639fed28", null ],
     [ "GetMinimumIntersectionArea", "structoperations__research_1_1sat_1_1RectangleInRange.html#a78205f42a0969603f47ea8a34ebcb464", null ],
     [ "AbslStringify", "structoperations__research_1_1sat_1_1RectangleInRange.html#aaf97627323a19661f83909121ce5097a", null ],

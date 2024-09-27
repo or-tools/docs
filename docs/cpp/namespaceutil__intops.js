@@ -2,6 +2,8 @@ var namespaceutil__intops =
 [
     [ "StrongInt", "classutil__intops_1_1StrongInt.html", "classutil__intops_1_1StrongInt" ],
     [ "StrongIntRange", "classutil__intops_1_1StrongIntRange.html", "classutil__intops_1_1StrongIntRange" ],
+    [ "StrongVector", "classutil__intops_1_1StrongVector.html", "classutil__intops_1_1StrongVector" ],
+    [ "AbslStringify", "namespaceutil__intops.html#a7809510c31a8dec74b84adce71ad0e34", null ],
     [ "MakeStrongIntRange", "namespaceutil__intops.html#ab0851b91d7906bc4f19d02f7ba26af68", null ],
     [ "MakeStrongIntRange", "namespaceutil__intops.html#a62bb673edc756211f0a5318473d9754e", null ],
     [ "operator<<", "namespaceutil__intops.html#a95593bc7c1b8e0a1bf5e7b017a732fd9", null ],

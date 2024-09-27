@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,16 +113,18 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ModelCopy.html',''
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa20f53d5c18d877d3e12c8580d84f8a0" id="r_aa20f53d5c18d877d3e12c8580d84f8a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa20f53d5c18d877d3e12c8580d84f8a0">ModelCopy</a> (<a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html">PresolveContext</a> *<a class="el" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>)</td></tr>
 <tr class="separator:aa20f53d5c18d877d3e12c8580d84f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71276685b3bdc30f73c319014c8ce26" id="r_aa71276685b3bdc30f73c319014c8ce26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa71276685b3bdc30f73c319014c8ce26">ImportAndSimplifyConstraints</a> (const CpModelProto &amp;in_model, bool first_copy=false)</td></tr>
-<tr class="separator:aa71276685b3bdc30f73c319014c8ce26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6485d6a1464dec0bb052ecbf1db3da9" id="r_ac6485d6a1464dec0bb052ecbf1db3da9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6485d6a1464dec0bb052ecbf1db3da9">ImportAndSimplifyConstraints</a> (const CpModelProto &amp;in_model, bool first_copy=false, std::function&lt; bool(int)&gt; active_constraints=nullptr)</td></tr>
+<tr class="separator:ac6485d6a1464dec0bb052ecbf1db3da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7e400a59852f44676136012b01dcf9" id="r_a0d7e400a59852f44676136012b01dcf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7e400a59852f44676136012b01dcf9">ImportVariablesAndMaybeIgnoreNames</a> (const CpModelProto &amp;in_model)</td></tr>
 <tr class="separator:a0d7e400a59852f44676136012b01dcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cbcda54de2e3bc97352970dfaf7edd" id="r_a58cbcda54de2e3bc97352970dfaf7edd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58cbcda54de2e3bc97352970dfaf7edd">CreateVariablesFromDomains</a> (const std::vector&lt; <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &gt; &amp;domains)</td></tr>
+<tr class="separator:a58cbcda54de2e3bc97352970dfaf7edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This helper class perform copy with simplification from a model and a partial assignment to another model. The purpose is to miminize the size of the copied model, as well as to reduce the pressure on the memory sub-system.</p>
+<div class="textblock"><p>This helper class perform copy with simplification from a model and a partial assignment to another model. The purpose is to minimize the size of the copied model, as well as to reduce the pressure on the memory sub-system.</p>
 <p>It is currently used by the LNS part, but could be used with any other scheme that generates partial assignments. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8h_source.html#l00352">352</a> of file <a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8h_source.html#l00379">379</a> of file <a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa20f53d5c18d877d3e12c8580d84f8a0" name="aa20f53d5c18d877d3e12c8580d84f8a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa20f53d5c18d877d3e12c8580d84f8a0">&#9670;&#160;</a></span>ModelCopy()</h2>
@@ -147,13 +149,33 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11541">11541</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11778">11778</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa71276685b3bdc30f73c319014c8ce26" name="aa71276685b3bdc30f73c319014c8ce26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71276685b3bdc30f73c319014c8ce26">&#9670;&#160;</a></span>ImportAndSimplifyConstraints()</h2>
+<a id="a58cbcda54de2e3bc97352970dfaf7edd" name="a58cbcda54de2e3bc97352970dfaf7edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cbcda54de2e3bc97352970dfaf7edd">&#9670;&#160;</a></span>CreateVariablesFromDomains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::ModelCopy::CreateVariablesFromDomains </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>domains</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setup new variables from a vector of domains. Inactive variables will be fixed to their lower bound. </p>
+
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11795">11795</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+
+</div>
+</div>
+<a id="ac6485d6a1464dec0bb052ecbf1db3da9" name="ac6485d6a1464dec0bb052ecbf1db3da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6485d6a1464dec0bb052ecbf1db3da9">&#9670;&#160;</a></span>ImportAndSimplifyConstraints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +188,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>first_copy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>first_copy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; bool(int)&gt;</td>          <td class="paramname"><span class="paramname"><em>active_constraints</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -175,14 +202,14 @@ Public Member Functions</h2></td></tr>
 <p>It returns false iff the model is proven infeasible.</p>
 <p>It does not clear the constraints part of the working model of the context.</p>
 <p>Note(user): If first_copy is true, we will reorder the scheduling constraint so that they only use reference to previously defined intervals. This allow to be more efficient later in a few preprocessing steps.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001377">Todo</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001378">Todo</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001411">Todo</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001412">Todo</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
 <p>If first_copy is true, we reorder the scheduling constraint to be sure they refer to interval before them.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001379">Todo</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001380">Todo</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001413">Todo</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001414">Todo</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
 <p>This should be empty if first_copy is false.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11563">11563</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11806">11806</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>
@@ -202,7 +229,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Copy variables from the in_model to the working model. It reads the 'ignore_names' parameters from the context, and keeps or deletes names accordingly. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11543">11543</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l11780">11780</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
 </div>
 </div>

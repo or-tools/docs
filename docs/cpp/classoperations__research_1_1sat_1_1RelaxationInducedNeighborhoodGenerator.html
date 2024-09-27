@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -120,7 +120,7 @@ Inheritance diagram for operations_research::sat::RelaxationInducedNeighborhoodG
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ab128d8bb90a5859f8bfb18fb9b86e2" id="r_a6ab128d8bb90a5859f8bfb18fb9b86e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab128d8bb90a5859f8bfb18fb9b86e2">RelaxationInducedNeighborhoodGenerator</a> (<a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> const *helper, const <a class="el" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a> *response_manager, const <a class="el" href="classoperations__research_1_1sat_1_1SharedLPSolutionRepository.html">SharedLPSolutionRepository</a> *<a class="el" href="cp__model__solver_8cc.html#a38063a69b2d517039816124b9c52b30d">lp_solutions</a>, <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> *<a class="el" href="cp__model__solver_8cc.html#ac521d907368c48c98e367c417484d598">incomplete_solutions</a>, absl::string_view <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a44c29a622542cfd748afd64cdd3bed3b">name</a>)</td></tr>
+<tr class="memitem:a6ab128d8bb90a5859f8bfb18fb9b86e2" id="r_a6ab128d8bb90a5859f8bfb18fb9b86e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab128d8bb90a5859f8bfb18fb9b86e2">RelaxationInducedNeighborhoodGenerator</a> (<a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> const *helper, const <a class="el" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a> *response_manager, const <a class="el" href="classoperations__research_1_1sat_1_1SharedLPSolutionRepository.html">SharedLPSolutionRepository</a> *lp_solutions, <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> *incomplete_solutions, absl::string_view <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a44c29a622542cfd748afd64cdd3bed3b">name</a>)</td></tr>
 <tr class="separator:a6ab128d8bb90a5859f8bfb18fb9b86e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4724e62d610d139a8ae7197f1004823" id="r_aa4724e62d610d139a8ae7197f1004823"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4724e62d610d139a8ae7197f1004823">Generate</a> (const CpSolverResponse &amp;initial_solution, double <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a6354badc7e0dc2e359ad2f40d2757d51">difficulty</a>, absl::BitGenRef random) final</td></tr>
 <tr class="memdesc:aa4724e62d610d139a8ae7197f1004823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both initial solution and difficulty values are ignored.  <br /></td></tr>
@@ -177,7 +177,7 @@ relaxation induced neighborhoods to improve MIP solutions" 2004 by E. Danna et.<
 <p>Otherwise, if response_manager is not provided, this generates a neighborhood using only the linear/general relaxation values. The domain of the variables are reduced to the integer values around their lp solution/relaxation solution values. This was published in "RENS – The Relaxation Enforced
 Neighborhood" 2009 by Timo Berthold. </p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00784">784</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00791">791</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ab128d8bb90a5859f8bfb18fb9b86e2" name="a6ab128d8bb90a5859f8bfb18fb9b86e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ab128d8bb90a5859f8bfb18fb9b86e2">&#9670;&#160;</a></span>RelaxationInducedNeighborhoodGenerator()</h2>
@@ -221,7 +221,7 @@ Neighborhood" 2009 by Timo Berthold. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00786">786</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00793">793</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 
 </div>
 </div>
@@ -260,11 +260,11 @@ Neighborhood" 2009 by Timo Berthold. </p>
 
 <p>Both initial solution and difficulty values are ignored. </p>
 <p>Fix the variables in the local model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001176">Todo</a></b></dt><dd>(user): Instead of aborting, pick the closest point in the domain? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001209">Todo</a></b></dt><dd>(user): Instead of aborting, pick the closest point in the domain? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a27de7175d8eb3e120349bda6d36e00ec">operations_research::sat::NeighborhoodGenerator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l02307">2307</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l02315">2315</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Neighborhood" 2009 by Timo Berthold. </p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a1cd3bd852b21a083f0aca48c6acaa87f">operations_research::sat::NeighborhoodGenerator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l02302">2302</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l02310">2310</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>

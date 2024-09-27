@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -162,7 +162,7 @@ $(function(){initNavTree('symmetry__util_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">int</span> best = -1;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">int</span> best_score = 0;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> = 0; <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> &lt; num_cycles_to_2cyclers.size(); ++<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (num_cycles_to_2cyclers[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>].size() &gt; 1) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (num_cycles_to_2cyclers[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>].<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>() &gt; 1) {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keyword">const</span> <span class="keywordtype">int</span> num_perms = num_cycles_to_2cyclers[<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>].size() + 1;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      VLOG(1) &lt;&lt; <span class="stringliteral">&quot;Potential orbitope: &quot;</span> &lt;&lt; <a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a> &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; num_perms;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keyword">const</span> int64_t score = std::min(<a class="code hl_variable" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>, num_perms);</div>
@@ -307,6 +307,7 @@ $(function(){initNavTree('symmetry__util_8cc_source.html',''); initResizable(tru
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}  <span class="comment">// namespace sat</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="ttc" id="a2d__rectangle__presolve_8cc_html_aa1cb4ce111532ea2035639aa02569f14"><div class="ttname"><a href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a></div><div class="ttdeci">IntegerValue size</div><div class="ttdef"><b>Definition</b> <a href="2d__rectangle__presolve_8cc_source.html#l00235">2d_rectangle_presolve.cc:235</a></div></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1MergingPartition_html"><div class="ttname"><a href="classoperations__research_1_1MergingPartition.html">operations_research::MergingPartition</a></div><div class="ttdef"><b>Definition</b> <a href="dynamic__partition_8h_source.html#l00199">dynamic_partition.h:199</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1MergingPartition_html_a154e7e5b242aa754c41d709d3bc351c1"><div class="ttname"><a href="classoperations__research_1_1MergingPartition.html#a154e7e5b242aa754c41d709d3bc351c1">operations_research::MergingPartition::NumNodesInSamePartAs</a></div><div class="ttdeci">int NumNodesInSamePartAs(int node)</div><div class="ttdef"><b>Definition</b> <a href="dynamic__partition_8h_source.html#l00247">dynamic_partition.h:247</a></div></div>

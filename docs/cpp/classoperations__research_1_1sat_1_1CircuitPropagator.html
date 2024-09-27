@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Circuit/sub-circuit constraint.</p>
-<p>Nodes that are not in the unique allowed sub-circuit must point to themseves. A nodes that has no self-arc must thus be inside the sub-circuit. If there is no self-arc at all, then this constaint forces the circuit to go through all the nodes. Multi-arcs are NOT supported.</p>
+<p>Nodes that are not in the unique allowed sub-circuit must point to themseves. A nodes that has no self-arc must thus be inside the sub-circuit. If there is no self-arc at all, then this constraint forces the circuit to go through all the nodes. Multi-arcs are NOT supported.</p>
 <p>Important: for correctness, this constraint requires that "exactly one" constraints have been added for all the incoming (resp. outgoing) arcs of each node. Also, such constraint must propagate before this one. </p>
 
 <p class="definition">Definition at line <a class="el" href="circuit_8h_source.html#l00046">46</a> of file <a class="el" href="circuit_8h_source.html">circuit.h</a>.</p>
@@ -189,6 +189,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The constraints take a sparse representation of a graph on [0, n). Each arc being present when the given literal is true. </p>
+<p>Temporary data to fill watch_index_to_arcs_.</p>
 <p>Tricky: For self-arc, we watch instead when the arc become false.</p>
 <p>For the multiple_subcircuit_through_zero case, must_be_in_cycle_ will be const and only contains zero.</p>
 
@@ -257,7 +258,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00162">162</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00170">170</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
 </div>
 </div>
@@ -309,9 +310,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This function assumes that next_, prev_, next_literal_ and must_be_in_cycle_ are all up to date. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001063">Todo</a></b></dt><dd>(user): both this and the loop on must_be_in_cycle_ might take some time on large graph. Optimize if this become an issue. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001087">Todo</a></b></dt><dd>(user): both this and the loop on must_be_in_cycle_ might take some time on large graph. Optimize if this become an issue. </dd></dl>
 <p>Find the start and end of the path containing node n. If this is a circuit, we will have start_node == end_node.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001064">Todo</a></b></dt><dd>(user): we can fail early in more case, like no more possible path to any of the mandatory node. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001088">Todo</a></b></dt><dd>(user): we can fail early in more case, like no more possible path to any of the mandatory node. </dd></dl>
 <p>Any cycle must contain zero.</p>
 <p>An incomplete path cannot be closed except if one of the end-points is zero.</p>
 <p>None of the other propagation below are valid in case of multiple circuits.</p>
@@ -325,7 +326,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00206">206</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00214">214</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
 </div>
 </div>
@@ -344,9 +345,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is needed in case a <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> is used for more than one arc, we may propagate it to false/true here, and it might trigger more propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001062">Todo</a></b></dt><dd>(user): come up with a test that fail when this is not here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001086">Todo</a></b></dt><dd>(user): come up with a test that fail when this is not here. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00102">102</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00110">110</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
 </div>
 </div>
@@ -378,7 +379,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1ReversibleInterface.html#ae25ce6ee33b736226102678c3a14b1dd">operations_research::ReversibleInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00117">117</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00125">125</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
 </div>
 </div>

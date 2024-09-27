@@ -9,6 +9,7 @@ var dir_7cc48880791e3dd695dbfc2349101d28 =
     [ "quadratic_program.h", "quadratic__program_8h.html", "quadratic__program_8h" ],
     [ "quadratic_program_io.cc", "quadratic__program__io_8cc.html", "quadratic__program__io_8cc" ],
     [ "quadratic_program_io.h", "quadratic__program__io_8h.html", "quadratic__program__io_8h" ],
+    [ "scheduler.h", "scheduler_8h.html", "scheduler_8h" ],
     [ "sharded_optimization_utils.cc", "sharded__optimization__utils_8cc.html", "sharded__optimization__utils_8cc" ],
     [ "sharded_optimization_utils.h", "sharded__optimization__utils_8h.html", "sharded__optimization__utils_8h" ],
     [ "sharded_quadratic_program.cc", "sharded__quadratic__program_8cc.html", null ],

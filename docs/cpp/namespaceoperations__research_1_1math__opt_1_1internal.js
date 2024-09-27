@@ -1,12 +1,16 @@
 var namespaceoperations__research_1_1math__opt_1_1internal =
 [
     [ "ArrowOperatorProxy", "classoperations__research_1_1math__opt_1_1internal_1_1ArrowOperatorProxy.html", "classoperations__research_1_1math__opt_1_1internal_1_1ArrowOperatorProxy" ],
+    [ "IncrementalSolverImpl", "classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html", "classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl" ],
     [ "SosConstraintData", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData" ],
     [ "VariablesEquality", "structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality.html", "structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality" ],
+    [ "BaseSolverFactory", "namespaceoperations__research_1_1math__opt_1_1internal.html#a964a8458134aae0c291804dea21c94d6", null ],
     [ "AddInnerProduct", "namespaceoperations__research_1_1math__opt_1_1internal.html#abc4cb42a63b67b786373bd902d77ecfe", null ],
     [ "CheckIdsRangeAndStrictlyIncreasing2", "namespaceoperations__research_1_1math__opt_1_1internal.html#aa5b5865fba481a062135fc78e632b85c", null ],
     [ "CheckModelStorage", "namespaceoperations__research_1_1math__opt_1_1internal.html#acbad223a486421fe656a8450c999183c", null ],
+    [ "ComputeInfeasibleSubsystemImpl", "namespaceoperations__research_1_1math__opt_1_1internal.html#a1f7cb456f45234efad79dcd0d75ce3ee", null ],
     [ "EntriesToMatrixProto", "namespaceoperations__research_1_1math__opt_1_1internal.html#a2e5175538003d79fa72d9c4cd075842e", null ],
+    [ "SolveImpl", "namespaceoperations__research_1_1math__opt_1_1internal.html#ae04b3c536c009547e060457f611dffff", null ],
     [ "SosConstraintToString", "namespaceoperations__research_1_1math__opt_1_1internal.html#a1c07e26a98e63bedc2e2552246fd3a6a", null ],
     [ "UpdateBiMapFromMappedData", "namespaceoperations__research_1_1math__opt_1_1internal.html#a7b9042332a16f7303661b5c6c039d094", null ],
     [ "ValidateInitArgs", "namespaceoperations__research_1_1math__opt_1_1internal.html#ab4c38cef9d1bbe8d0015e1c3075192dd", null ],

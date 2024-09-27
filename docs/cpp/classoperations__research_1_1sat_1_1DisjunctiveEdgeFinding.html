@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -120,8 +120,8 @@ Inheritance diagram for operations_research::sat::DisjunctiveEdgeFinding:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16a2ada1c087305ad0a10eeb30161f4b" id="r_a16a2ada1c087305ad0a10eeb30161f4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a2ada1c087305ad0a10eeb30161f4b">DisjunctiveEdgeFinding</a> (bool time_direction, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *helper)</td></tr>
-<tr class="separator:a16a2ada1c087305ad0a10eeb30161f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6041ad54b292eb883ba18dac92cc4577" id="r_a6041ad54b292eb883ba18dac92cc4577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6041ad54b292eb883ba18dac92cc4577">DisjunctiveEdgeFinding</a> (bool time_direction, <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *helper, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *<a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>=nullptr)</td></tr>
+<tr class="separator:a6041ad54b292eb883ba18dac92cc4577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad47ec6625c38943f5bfc395b867ee572" id="r_ad47ec6625c38943f5bfc395b867ee572"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad47ec6625c38943f5bfc395b867ee572">Propagate</a> () final</td></tr>
 <tr class="separator:ad47ec6625c38943f5bfc395b867ee572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096c3ef7906bb786ac71dc82bc2a5343" id="r_a096c3ef7906bb786ac71dc82bc2a5343"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096c3ef7906bb786ac71dc82bc2a5343">RegisterWith</a> (<a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html">GenericLiteralWatcher</a> *watcher)</td></tr>
@@ -136,10 +136,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00234">234</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00315">315</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a16a2ada1c087305ad0a10eeb30161f4b" name="a16a2ada1c087305ad0a10eeb30161f4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a2ada1c087305ad0a10eeb30161f4b">&#9670;&#160;</a></span>DisjunctiveEdgeFinding()</h2>
+<a id="a6041ad54b292eb883ba18dac92cc4577" name="a6041ad54b292eb883ba18dac92cc4577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6041ad54b292eb883ba18dac92cc4577">&#9670;&#160;</a></span>DisjunctiveEdgeFinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +155,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *</td>          <td class="paramname"><span class="paramname"><em>helper</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> *</td>          <td class="paramname"><span class="paramname"><em>helper</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *</td>          <td class="paramname"><span class="paramname"><em>model</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -165,7 +170,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00236">236</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00317">317</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +204,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l01314">1314</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l01529">1529</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +223,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l01581">1581</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l01805">1805</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>

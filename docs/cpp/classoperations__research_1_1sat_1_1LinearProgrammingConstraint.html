@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -191,6 +191,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73398c79fbf12ad106377a20880483e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae40e7eee1618e73ca6edfc1d37f452" id="r_a1ae40e7eee1618e73ca6edfc1d37f452"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ae40e7eee1618e73ca6edfc1d37f452">num_scaling_issues</a> () const</td></tr>
 <tr class="separator:a1ae40e7eee1618e73ca6edfc1d37f452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3f664e0d4932206d7fc94e2db50b06" id="r_a2a3f664e0d4932206d7fc94e2db50b06"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a3f664e0d4932206d7fc94e2db50b06">num_lp_changes</a> () const</td></tr>
+<tr class="memdesc:a2a3f664e0d4932206d7fc94e2db50b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can serve as a timestamp to know if a saved basis is out of date.  <br /></td></tr>
+<tr class="separator:a2a3f664e0d4932206d7fc94e2db50b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af46c3c349e221eaeb47db0adcc578fc1" id="r_af46c3c349e221eaeb47db0adcc578fc1"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af46c3c349e221eaeb47db0adcc578fc1">num_solves_by_status</a> () const</td></tr>
 <tr class="separator:af46c3c349e221eaeb47db0adcc578fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166e428fd79240889d3886de39ddb677" id="r_a166e428fd79240889d3886de39ddb677"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintManager.html">LinearConstraintManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166e428fd79240889d3886de39ddb677">constraint_manager</a> () const</td></tr>
@@ -204,6 +207,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a363d3cd3131240c51278a565a26f8b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84062c4b9f7ed97bc3372faf09c50571" id="r_a84062c4b9f7ed97bc3372faf09c50571"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84062c4b9f7ed97bc3372faf09c50571">PropagationIsEnabled</a> () const</td></tr>
 <tr class="separator:a84062c4b9f7ed97bc3372faf09c50571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665fadb7c750676b300a345d490ed22f" id="r_a665fadb7c750676b300a345d490ed22f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoperations__research_1_1glop_1_1BasisState.html">glop::BasisState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a665fadb7c750676b300a345d490ed22f">GetBasisState</a> () const</td></tr>
+<tr class="separator:a665fadb7c750676b300a345d490ed22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bfb6355685413bff3b6837e94d534d" id="r_a55bfb6355685413bff3b6837e94d534d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55bfb6355685413bff3b6837e94d534d">LoadBasisState</a> (const <a class="el" href="structoperations__research_1_1glop_1_1BasisState.html">glop::BasisState</a> &amp;state)</td></tr>
+<tr class="separator:a55bfb6355685413bff3b6837e94d534d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5923685a1ae258852e564eff198eba" id="r_a2f5923685a1ae258852e564eff198eba"><td class="memTemplParams" colspan="2">template&lt;bool check_overflow&gt; </td></tr>
 <tr class="memitem:a2f5923685a1ae258852e564eff198eba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2f5923685a1ae258852e564eff198eba">ComputeNewLinearConstraint</a> (absl::Span&lt; const std::pair&lt; RowIndex, IntegerValue &gt; &gt; integer_multipliers, <a class="el" href="classoperations__research_1_1sat_1_1ScatteredIntegerVector.html">ScatteredIntegerVector</a> *scattered_vector, IntegerValue *<a class="el" href="gscip__solver_8cc.html#a1ba5ca0f61f2fa13bd23bf0f89004f35">upper_bound</a>) const</td></tr>
 <tr class="separator:a2f5923685a1ae258852e564eff198eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +260,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Each linear programming constraint works on a fixed set of variables. We expect the set of variable to be sorted in increasing order.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001851">Todo</a></b></dt><dd>(user): make SatParameters singleton too, otherwise changing them after a constraint was added will have no effect on this class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001878">Todo</a></b></dt><dd>(user): make SatParameters singleton too, otherwise changing them after a constraint was added will have no effect on this class. </dd></dl>
 <p>Tweak the default parameters to make the solve incremental.</p>
 <p>Register our local rev int repository.</p>
 <p>Register <a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html" title="Simple class to add statistics by name and print them at the end.">SharedStatistics</a> with the cut helpers.</p>
@@ -281,7 +288,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Register a new cut generator with this constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00583">583</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00585">585</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -393,7 +400,7 @@ template&lt;bool check_overflow&gt; </div>
 <p>Update the constraint.</p>
 <p>Update the upper bound.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l01945">1945</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l01993">1993</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -420,7 +427,7 @@ template&lt;bool check_overflow&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00226">226</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00229">229</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +482,34 @@ template&lt;bool check_overflow&gt; </div>
 </div><div class="memdoc">
 <p>This api allows to temporarily disable the LP propagator which can be costly during probing or other heavy propagation phase. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00243">243</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00246">246</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+
+</div>
+</div>
+<a id="a665fadb7c750676b300a345d490ed22f" name="a665fadb7c750676b300a345d490ed22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665fadb7c750676b300a345d490ed22f">&#9670;&#160;</a></span>GetBasisState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structoperations__research_1_1glop_1_1BasisState.html">glop::BasisState</a> &amp; operations_research::sat::LinearProgrammingConstraint::GetBasisState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00252">252</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +528,7 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00653">653</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00661">661</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -513,7 +547,7 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00648">648</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00656">656</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -563,7 +597,7 @@ template&lt;bool check_overflow&gt; </div>
 <p>Returns a <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a> guided by the underlying LP constraints.</p>
 <p>This computes the mean of reduced costs over successive calls, and tries to fix the variable which has the highest reduced cost. Tie-breaking is done using the variable natural order. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l02456">2456</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l02504">2504</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -599,12 +633,13 @@ template&lt;bool check_overflow&gt; </div>
 <p>We only propagate if we use less that 100 times the number of current integer literal enqueued.</p>
 <p>At level zero, if there is still a chance to add cuts or lazy constraints, we re-run the LP.</p>
 <p>Check whether the change breaks the current LP solution. If it does, call <a class="el" href="#a7ff29ebe58aca89b537dc833cc1c45de" title="PropagatorInterface API.">Propagate()</a> on the current LP.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001861">Todo</a></b></dt><dd>(user): The saved lp solution is still valid given the current variable bounds, so the LP optimal didn't change. However we might still want to add new cuts or new lazy constraints?</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001862">Todo</a></b></dt><dd>(user): Propagate the last optimal_constraint? Note that we need to be careful since the reversible int in IntegerSumLE are not registered. However, because we delete "optimalconstraints" on backtrack, we might not care. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001890">Todo</a></b></dt><dd>(user): The saved lp solution is still valid given the current variable bounds, so the LP optimal didn't change. However we might still want to add new cuts or new lazy constraints?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001891">Todo</a></b></dt><dd>(user): Propagate the last optimal_constraint? Note that we need to be careful since the reversible int in IntegerSumLE are not registered. However, because we delete "optimalconstraints" on backtrack, we might not care.</dd></dl>
+<p>Remark: Note that if we do the sequence SetBasis() / <a class="el" href="#a7ff29ebe58aca89b537dc833cc1c45de" title="PropagatorInterface API.">Propagate()</a> / GetAndSaveBasis() and we are in the case where the solution is still optimal, we should get the basis from when the lp solution was set which should be what we want. Even if we set garbage during SetBasis() it should be ignored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001892">Todo</a></b></dt><dd>(user): We might still have problem at level zero. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00587">587</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00589">589</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -660,7 +695,34 @@ template&lt;bool check_overflow&gt; </div>
 
 <p>Important: this is only temporarily valid. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00231">231</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00234">234</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+
+</div>
+</div>
+<a id="a55bfb6355685413bff3b6837e94d534d" name="a55bfb6355685413bff3b6837e94d534d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bfb6355685413bff3b6837e94d534d">&#9670;&#160;</a></span>LoadBasisState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::LinearProgrammingConstraint::LoadBasisState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoperations__research_1_1glop_1_1BasisState.html">glop::BasisState</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00253">253</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -745,6 +807,35 @@ template&lt;bool check_overflow&gt; </div>
 
 </div>
 </div>
+<a id="a2a3f664e0d4932206d7fc94e2db50b06" name="a2a3f664e0d4932206d7fc94e2db50b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3f664e0d4932206d7fc94e2db50b06">&#9670;&#160;</a></span>num_lp_changes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t operations_research::sat::LinearProgrammingConstraint::num_lp_changes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This can serve as a timestamp to know if a saved basis is out of date. </p>
+
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00223">223</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+
+</div>
+</div>
 <a id="a1ae40e7eee1618e73ca6edfc1d37f452" name="a1ae40e7eee1618e73ca6edfc1d37f452"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ae40e7eee1618e73ca6edfc1d37f452">&#9670;&#160;</a></span>num_scaling_issues()</h2>
 
@@ -822,7 +913,7 @@ template&lt;bool check_overflow&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00222">222</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00225">225</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -930,7 +1021,7 @@ template&lt;bool check_overflow&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00236">236</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00239">239</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1049,7 @@ template&lt;bool check_overflow&gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html" title="Base class for CP like propagators.">PropagatorInterface</a> API. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001890">Todo</a></b></dt><dd>(user): It seems the time we loose by not stopping early might be worth it because we end up with a better explanation at optimality. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001920">Todo</a></b></dt><dd>(user): It seems the time we loose by not stopping early might be worth it because we end up with a better explanation at optimality. </dd></dl>
 <p>We put a limit on the dual objective since there is no point increasing it past our current objective upper-bound (we will already fail as soon as we pass it). Note that this limit is properly transformed using the objective scaling factor and offset stored in lp_data_.</p>
 <dl class="section note"><dt>Note</dt><dd>we use a bigger epsilon here to be sure that if we abort because of this, we will report a conflict.</dd></dl>
 <p>Put an iteration limit on the work we do in the simplex for this call. Note that because we are "incremental", even if we don't solve it this time we will make progress towards a solve in the lower node of the tree search.</p>
@@ -966,13 +1057,13 @@ template&lt;bool check_overflow&gt; </div>
 <p>We wait for the first batch of problem constraints to be added before we begin to generate cuts. Note that we rely on num_solves_ since on some problems there is no other constraints than the cuts.</p>
 <p>This must be called first.</p>
 <p>The "generic" cuts are currently part of this class as they are using data from the current LP.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001891">Todo</a></b></dt><dd>(user): Refactor so that they are just normal cut generators? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001921">Todo</a></b></dt><dd>(user): Refactor so that they are just normal cut generators? </dd></dl>
 <p>Try to add cuts.</p>
 <p>If we didn't add any new constraint, we delay the next <a class="el" href="namespaceoperations__research_1_1sat.html#a09d851f944ab4f305c3d9f8df99b7bf8" title="Solves the given CpModelProto and returns an instance of CpSolverResponse.">Solve()</a> since likely the optimal didn't change.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l01703">1703</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l01749">1749</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1090,7 @@ template&lt;bool check_overflow&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00244">244</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00250">250</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
 
 </div>
 </div>
@@ -1052,13 +1143,15 @@ template&lt;bool check_overflow&gt; </div>
 <p><a class="el" href="classoperations__research_1_1ReversibleInterface.html">ReversibleInterface</a> API. </p>
 <p>Get rid of all optimal constraint each time we go back to level zero.</p>
 <p>Special case for level zero, we "reload" any previously known optimal solution from that level.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001858">Todo</a></b></dt><dd>(user): Keep all optimal solution in the current branch? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001859">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001860">Todo</a></b></dt><dd>(user): Still try to add cuts/constraints though! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001885">Todo</a></b></dt><dd>(user): Keep all optimal solution in the current branch? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001886">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001887">Todo</a></b></dt><dd>(user): Still try to add cuts/constraints though! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001888">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001889">Todo</a></b></dt><dd>(user): Reload the basis? This might cause issue with the basis saving/loading code in lb_tree_search. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1ReversibleInterface.html#ae25ce6ee33b736226102678c3a14b1dd">operations_research::ReversibleInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00552">552</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8cc_source.html#l00551">551</a> of file <a class="el" href="linear__programming__constraint_8cc_source.html">linear_programming_constraint.cc</a>.</p>
 
 </div>
 </div>

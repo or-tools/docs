@@ -1,7 +1,7 @@
 var lp__types_8h =
 [
     [ "operations_research::glop::StrictITISpan< IntType, T >", "classoperations__research_1_1glop_1_1StrictITISpan.html", "classoperations__research_1_1glop_1_1StrictITISpan" ],
-    [ "operations_research::glop::StrictITIVector< IntType, T >", "classoperations__research_1_1glop_1_1StrictITIVector.html", "classoperations__research_1_1glop_1_1StrictITIVector" ],
+    [ "operations_research::glop::StrictITIVector< IntType, T, Alloc >", "classoperations__research_1_1glop_1_1StrictITIVector.html", "classoperations__research_1_1glop_1_1StrictITIVector" ],
     [ "operations_research::glop::VectorIterator< EntryType >", "classoperations__research_1_1glop_1_1VectorIterator.html", "classoperations__research_1_1glop_1_1VectorIterator" ],
     [ "ColIndexVector", "lp__types_8h.html#a295e4600b9b815bc4896861615a94766", null ],
     [ "ColMapping", "lp__types_8h.html#a314e1ea9ba4b7c999b4ab2dd4fd1f69c", null ],

@@ -1,6 +1,6 @@
 var classoperations__research_1_1bop_1_1OptimizerSelector =
 [
-    [ "OptimizerSelector", "classoperations__research_1_1bop_1_1OptimizerSelector.html#afb277b0530bd3cc33829708fd9449b8c", null ],
+    [ "OptimizerSelector", "classoperations__research_1_1bop_1_1OptimizerSelector.html#ae5a93e37a3176b4fc982baa3a5c1df80", null ],
     [ "DebugPrint", "classoperations__research_1_1bop_1_1OptimizerSelector.html#ad04d04c020ce718f1967ba5a8c31072b", null ],
     [ "NumCallsForOptimizer", "classoperations__research_1_1bop_1_1OptimizerSelector.html#ace88ad49affa80956545f4b2a6cb6505", null ],
     [ "PrintStats", "classoperations__research_1_1bop_1_1OptimizerSelector.html#a43896e1731a0c1128f7d337e44909ee8", null ],

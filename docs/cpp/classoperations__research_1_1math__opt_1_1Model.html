@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -552,7 +552,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a21eb56179113cece2f939ed2552edcb8" id="r_a21eb56179113cece2f939ed2552edcb8"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21eb56179113cece2f939ed2552edcb8">FromModelProto</a> (const ModelProto &amp;<a class="el" href="cp__model__solver_8cc.html#ac3c7e255171970400b8e766957e73d85">model_proto</a>)</td></tr>
+<tr class="memitem:a21eb56179113cece2f939ed2552edcb8" id="r_a21eb56179113cece2f939ed2552edcb8"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21eb56179113cece2f939ed2552edcb8">FromModelProto</a> (const ModelProto &amp;model_proto)</td></tr>
 <tr class="separator:a21eb56179113cece2f939ed2552edcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -5276,7 +5276,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000908">Todo</a></b></dt><dd>(user): expose a way to efficiently iterate through the nonzeros of the linear constraint matrix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000929">Todo</a></b></dt><dd>(user): expose a way to efficiently iterate through the nonzeros of the linear constraint matrix. </dd></dl>
 <p>Returns a pointer to the underlying model storage.</p>
 <p>This API is for internal use only and regular users should have no need for it. </p>
 
@@ -5365,7 +5365,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns an error if <code>linear_constraint</code> is from another model or the id is not in this model (typically, if it was deleted). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000907">Todo</a></b></dt><dd>(b/239810718): use &lt;&lt; for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> once it does not CHECK. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000928">Todo</a></b></dt><dd>(b/239810718): use &lt;&lt; for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> once it does not CHECK. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2model_8h_source.html#l01134">1134</a> of file <a class="el" href="math__opt_2cpp_2model_8h_source.html">model.h</a>.</p>
 
@@ -5396,7 +5396,7 @@ Friends</h2></td></tr>
 
 <p>-----------------------&mdash; Linear constraints ----------------------------&mdash; </p>
 <p>Returns an error if <code>variable</code> is from another model or the id is not in this model (typically, if it was deleted). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000906">Todo</a></b></dt><dd>(b/239810718): use &lt;&lt; for <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> once it does not CHECK. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000927">Todo</a></b></dt><dd>(b/239810718): use &lt;&lt; for <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> once it does not CHECK. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt_2cpp_2model_8h_source.html#l01048">1048</a> of file <a class="el" href="math__opt_2cpp_2model_8h_source.html">model.h</a>.</p>
 

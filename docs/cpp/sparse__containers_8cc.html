@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -115,9 +115,11 @@ $(function(){initNavTree('sparse__containers_8cc.html',''); initResizable(true);
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/status/status.h&quot;</code><br />
 <code>#include &quot;absl/status/statusor.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;google/protobuf/map.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="status__builder_8h_source.html">ortools/base/status_builder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="base_2status__macros_8h_source.html">ortools/base/status_macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="quadratic__constraint_8h_source.html">ortools/math_opt/constraints/quadratic/quadratic_constraint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sparse__vector__view_8h_source.html">ortools/math_opt/core/sparse_vector_view.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="basis__status_8h_source.html">ortools/math_opt/cpp/basis_status.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="math__opt_2cpp_2linear__constraint_8h_source.html">ortools/math_opt/cpp/linear_constraint.h</a>&quot;</code><br />
@@ -125,6 +127,7 @@ $(function(){initNavTree('sparse__containers_8cc.html',''); initResizable(true);
 <code>#include &quot;<a class="el" href="variable__and__expressions_8h_source.html">ortools/math_opt/cpp/variable_and_expressions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model__storage_8h_source.html">ortools/math_opt/storage/model_storage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model__storage__types_8h_source.html">ortools/math_opt/storage/model_storage_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sparse__vector__validator_8h_source.html">ortools/math_opt/validators/sparse_vector_validator.h</a>&quot;</code><br />
 </div>
 <p><a href="sparse__containers_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -155,6 +158,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a36ff904fd1095b6c8588e2e7d25ccb2d" id="r_a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a36ff904fd1095b6c8588e2e7d25ccb2d">operations_research::math_opt::LinearConstraintValuesToProto</a> (const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2bf3bb209c08aed390ae19fec019d943">LinearConstraintMap</a>&lt; double &gt; &amp;linear_constraint_values)</td></tr>
 <tr class="memdesc:a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of linear_constraint_values.  <br /></td></tr>
 <tr class="separator:a36ff904fd1095b6c8588e2e7d25ccb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8a85f90347da97a0201fc474083eb0" id="r_a3d8a85f90347da97a0201fc474083eb0"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; absl::flat_hash_map&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticConstraint.html">QuadraticConstraint</a>, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a3d8a85f90347da97a0201fc474083eb0">operations_research::math_opt::QuadraticConstraintValuesFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseDoubleVectorProto &amp;quad_cons_proto)</td></tr>
+<tr class="separator:a3d8a85f90347da97a0201fc474083eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a237ed24686ac493b31ff8bdc7f887" id="r_aa7a237ed24686ac493b31ff8bdc7f887"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#aa7a237ed24686ac493b31ff8bdc7f887">operations_research::math_opt::QuadraticConstraintValuesToProto</a> (const absl::flat_hash_map&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticConstraint.html">QuadraticConstraint</a>, double &gt; &amp;quadratic_constraint_values)</td></tr>
+<tr class="memdesc:aa7a237ed24686ac493b31ff8bdc7f887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of quadratic_constraint_values.  <br /></td></tr>
+<tr class="separator:aa7a237ed24686ac493b31ff8bdc7f887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e18dd898517136444a5f6ec986102f" id="r_ac5e18dd898517136444a5f6ec986102f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">BasisStatus</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac5e18dd898517136444a5f6ec986102f">operations_research::math_opt::VariableBasisFromProto</a> (const ModelStorage *const <a class="el" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>, const SparseBasisStatusVector &amp;basis_proto)</td></tr>
 <tr class="separator:ac5e18dd898517136444a5f6ec986102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67a72267ba3c5cb04de3bcdcff15014d" id="r_a67a72267ba3c5cb04de3bcdcff15014d"><td class="memItemLeft" align="right" valign="top">SparseBasisStatusVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a67a72267ba3c5cb04de3bcdcff15014d">operations_research::math_opt::VariableBasisToProto</a> (const <a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a836d2a9c146fcff03cda7c88c0b3ffb5">BasisStatus</a> &gt; &amp;basis_values)</td></tr>

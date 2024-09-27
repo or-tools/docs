@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,7 +117,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4ee5c7df12fcaeb042a8c52654569bd" id="r_ab4ee5c7df12fcaeb042a8c52654569bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ee5c7df12fcaeb042a8c52654569bd">SparsePermutation</a> (int size)</td></tr>
+<tr class="memitem:ab4ee5c7df12fcaeb042a8c52654569bd" id="r_ab4ee5c7df12fcaeb042a8c52654569bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ee5c7df12fcaeb042a8c52654569bd">SparsePermutation</a> (int <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>)</td></tr>
 <tr class="separator:ab4ee5c7df12fcaeb042a8c52654569bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff385d18c768ffa364c5dccb5fb35c0a" id="r_aff385d18c768ffa364c5dccb5fb35c0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff385d18c768ffa364c5dccb5fb35c0a">Size</a> () const</td></tr>
 <tr class="separator:aff385d18c768ffa364c5dccb5fb35c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
 <p>Output all non-identity cycles of the permutation, sorted lexicographically (each cycle is described starting by its smallest element; and all cycles are sorted lexicographically against each other). This isn't efficient; use for debugging only. Example: "(1 4 3) (5 9) (6 8 7)". </p>
 <p>Find the minimum.</p>
 
-<p class="definition">Definition at line <a class="el" href="sparse__permutation_8cc_source.html#l00055">55</a> of file <a class="el" href="sparse__permutation_8cc_source.html">sparse_permutation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__permutation_8cc_source.html#l00056">56</a> of file <a class="el" href="sparse__permutation_8cc_source.html">sparse_permutation.cc</a>.</p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This is useful for iterating over the pair {element, image} of a permutation:</p>
 <p>for (int c = 0; c &lt; perm.NumCycles(); ++c) { int element = LastElementInCycle(c); for (int image : perm.Cycle(c)) { ///&lt; The pair is (element, image). ... element = image; } }</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000059">Todo</a></b></dt><dd>(user): Provide a full iterator for this? Note that we have more information with the loop above. Not sure it is needed though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo</a></b></dt><dd>(user): Provide a full iterator for this? Note that we have more information with the loop above. Not sure it is needed though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00125">125</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
 
@@ -346,9 +346,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Removes the cycles with given indices from the permutation. This works in O(K) for a permutation displacing K elements. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo</a></b></dt><dd>(user): make this a class member to avoid allocation if the complexity becomes an issue. In this case, also optimize the loop below by not copying the first cycles. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000075">Todo</a></b></dt><dd>(user): make this a class member to avoid allocation if the complexity becomes an issue. In this case, also optimize the loop below by not copying the first cycles. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sparse__permutation_8cc_source.html#l00026">26</a> of file <a class="el" href="sparse__permutation_8cc_source.html">sparse_permutation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__permutation_8cc_source.html#l00027">27</a> of file <a class="el" href="sparse__permutation_8cc_source.html">sparse_permutation.cc</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000058">Todo</a></b></dt><dd>(user): complete the reader API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000076">Todo</a></b></dt><dd>(user): complete the reader API. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00033">33</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
 

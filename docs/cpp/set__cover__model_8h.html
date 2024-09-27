@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -104,7 +104,8 @@ $(function(){initNavTree('set__cover__model_8h.html',''); initResizable(true); }
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">set_cover_model.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -114,8 +115,9 @@ $(function(){initNavTree('set__cover__model_8h.html',''); initResizable(true); }
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;ortools/algorithms/set_cover.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="lp__types_8h_source.html">ortools/lp_data/lp_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="strong__integers_8h_source.html">ortools/util/strong_integers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__int_8h_source.html">ortools/base/strong_int.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="aligned__memory_8h_source.html">ortools/util/aligned_memory.h</a>&quot;</code><br />
 </div>
 <p><a href="set__cover__model_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,6 +128,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1SetCoverModel_1_1Stats.html">operations_research::SetCoverModel::Stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntersectingSubsetsIterator.html">operations_research::IntersectingSubsetsIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -135,35 +139,60 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:acd268ddbf6d3e61f2769f5872ca97755" id="r_acd268ddbf6d3e61f2769f5872ca97755"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acd268ddbf6d3e61f2769f5872ca97755">operations_research::Cost</a></td></tr>
-<tr class="memdesc:acd268ddbf6d3e61f2769f5872ca97755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic non-strict type for cost.  <br /></td></tr>
-<tr class="separator:acd268ddbf6d3e61f2769f5872ca97755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f740c94953f253d0a3b27ae3996e001" id="r_a4f740c94953f253d0a3b27ae3996e001"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4f740c94953f253d0a3b27ae3996e001">operations_research::SubsetCostVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;SubsetIndex, <a class="el" href="namespaceoperations__research.html#acd268ddbf6d3e61f2769f5872ca97755">Cost</a>&gt;</td></tr>
-<tr class="separator:a4f740c94953f253d0a3b27ae3996e001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d342b7be03346c2ceb4605c22796bc" id="r_a20d342b7be03346c2ceb4605c22796bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a20d342b7be03346c2ceb4605c22796bc">operations_research::ElementCostVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;ElementIndex, <a class="el" href="namespaceoperations__research.html#acd268ddbf6d3e61f2769f5872ca97755">Cost</a>&gt;</td></tr>
-<tr class="separator:a20d342b7be03346c2ceb4605c22796bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0634dddeaa14b01726f53a931b504382" id="r_a0634dddeaa14b01726f53a931b504382"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a0634dddeaa14b01726f53a931b504382">operations_research::SparseColumn</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;EntryIndex, ElementIndex&gt;</td></tr>
-<tr class="separator:a0634dddeaa14b01726f53a931b504382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c20323495382742233af82d178d1e7" id="r_a54c20323495382742233af82d178d1e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a54c20323495382742233af82d178d1e7">operations_research::SparseRow</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;EntryIndex, SubsetIndex&gt;</td></tr>
-<tr class="separator:a54c20323495382742233af82d178d1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8faddd4bf14c649526ea9416aa577f0c" id="r_a8faddd4bf14c649526ea9416aa577f0c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8faddd4bf14c649526ea9416aa577f0c">operations_research::SparseColumnView</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;SubsetIndex, <a class="el" href="namespaceoperations__research.html#a0634dddeaa14b01726f53a931b504382">SparseColumn</a>&gt;</td></tr>
-<tr class="separator:a8faddd4bf14c649526ea9416aa577f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fd303b81d10259beb506d8e25864e1" id="r_ac2fd303b81d10259beb506d8e25864e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ac2fd303b81d10259beb506d8e25864e1">operations_research::SparseRowView</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;ElementIndex, <a class="el" href="namespaceoperations__research.html#a54c20323495382742233af82d178d1e7">SparseRow</a>&gt;</td></tr>
-<tr class="separator:ac2fd303b81d10259beb506d8e25864e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52f309c7b47ac2d814174a49bc92920" id="r_ae52f309c7b47ac2d814174a49bc92920"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae52f309c7b47ac2d814174a49bc92920">operations_research::ElementToSubsetVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;ElementIndex, SubsetIndex&gt;</td></tr>
-<tr class="separator:ae52f309c7b47ac2d814174a49bc92920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9782d2c32d9a0494389aec57d971219" id="r_aa9782d2c32d9a0494389aec57d971219"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa9782d2c32d9a0494389aec57d971219">operations_research::SubsetToElementVector</a> = <a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">glop::StrictITIVector</a>&lt;SubsetIndex, ElementIndex&gt;</td></tr>
-<tr class="separator:aa9782d2c32d9a0494389aec57d971219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5c7a4ad74bfad377c54998b6446534" id="r_acb5c7a4ad74bfad377c54998b6446534"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#acb5c7a4ad74bfad377c54998b6446534">operations_research::Cost</a> = double</td></tr>
+<tr class="memdesc:acb5c7a4ad74bfad377c54998b6446534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic non-strict type for cost. The speed penalty for using double is ~2%.  <br /></td></tr>
+<tr class="separator:acb5c7a4ad74bfad377c54998b6446534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ebd83f427bac8f8f9febfe6c92a68a" id="r_ad9ebd83f427bac8f8f9febfe6c92a68a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">operations_research::BaseInt</a> = int</td></tr>
+<tr class="separator:ad9ebd83f427bac8f8f9febfe6c92a68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c418a9760ab71b6cd397fe06846e2c" id="r_a49c418a9760ab71b6cd397fe06846e2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a49c418a9760ab71b6cd397fe06846e2c">operations_research::SubsetRange</a> = <a class="el" href="classutil__intops_1_1StrongIntRange.html">util_intops::StrongIntRange</a>&lt;SubsetIndex&gt;</td></tr>
+<tr class="separator:a49c418a9760ab71b6cd397fe06846e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ddac89feb28bb002cd85c495c367ca" id="r_ad9ddac89feb28bb002cd85c495c367ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad9ddac89feb28bb002cd85c495c367ca">operations_research::ElementRange</a> = <a class="el" href="classutil__intops_1_1StrongIntRange.html">util_intops::StrongIntRange</a>&lt;ElementIndex&gt;</td></tr>
+<tr class="separator:ad9ddac89feb28bb002cd85c495c367ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794f9969185a82ebeb8419834826ac00" id="r_a794f9969185a82ebeb8419834826ac00"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a794f9969185a82ebeb8419834826ac00">operations_research::ColumnEntryRange</a> = <a class="el" href="classutil__intops_1_1StrongIntRange.html">util_intops::StrongIntRange</a>&lt;ColumnEntryIndex&gt;</td></tr>
+<tr class="separator:a794f9969185a82ebeb8419834826ac00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6892672ab571dbe798d2e8dd6740a5b2" id="r_a6892672ab571dbe798d2e8dd6740a5b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6892672ab571dbe798d2e8dd6740a5b2">operations_research::CostAllocator</a> = <a class="el" href="namespaceoperations__research.html#a16816edb31aa37ec8606d2865bbe7ebb">AlignedAllocator</a>&lt;<a class="el" href="namespaceoperations__research.html#acb5c7a4ad74bfad377c54998b6446534">Cost</a>, <a class="el" href="namespaceoperations__research.html#ab9fe416cbd44278b17d42994d948b84d">kSetCoverAlignmentInBytes</a>&gt;</td></tr>
+<tr class="separator:a6892672ab571dbe798d2e8dd6740a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab258026b7491c5edf8b9dc26f10bc127" id="r_ab258026b7491c5edf8b9dc26f10bc127"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab258026b7491c5edf8b9dc26f10bc127">operations_research::ElementAllocator</a></td></tr>
+<tr class="separator:ab258026b7491c5edf8b9dc26f10bc127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8824e4b4230c050f94883e7fa6f6e39" id="r_ad8824e4b4230c050f94883e7fa6f6e39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad8824e4b4230c050f94883e7fa6f6e39">operations_research::SubsetAllocator</a></td></tr>
+<tr class="separator:ad8824e4b4230c050f94883e7fa6f6e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d046d2df6f4830e98a61b2b4355246" id="r_ad8d046d2df6f4830e98a61b2b4355246"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ad8d046d2df6f4830e98a61b2b4355246">operations_research::SubsetCostVector</a></td></tr>
+<tr class="separator:ad8d046d2df6f4830e98a61b2b4355246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eedf58f77e76be31bfed78cdfa5f13d" id="r_a3eedf58f77e76be31bfed78cdfa5f13d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a3eedf58f77e76be31bfed78cdfa5f13d">operations_research::ElementCostVector</a></td></tr>
+<tr class="separator:a3eedf58f77e76be31bfed78cdfa5f13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15faa547ab0ede77dc0bbe186928eae8" id="r_a15faa547ab0ede77dc0bbe186928eae8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a15faa547ab0ede77dc0bbe186928eae8">operations_research::SparseColumn</a></td></tr>
+<tr class="separator:a15faa547ab0ede77dc0bbe186928eae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add56562a3fe22bc4d1615395b2231628" id="r_add56562a3fe22bc4d1615395b2231628"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#add56562a3fe22bc4d1615395b2231628">operations_research::SparseRow</a></td></tr>
+<tr class="separator:add56562a3fe22bc4d1615395b2231628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4e7212ad29d5839eee45805a3808ab" id="r_a5f4e7212ad29d5839eee45805a3808ab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a5f4e7212ad29d5839eee45805a3808ab">operations_research::IntAllocator</a> = <a class="el" href="namespaceoperations__research.html#a16816edb31aa37ec8606d2865bbe7ebb">AlignedAllocator</a>&lt;<a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">BaseInt</a>, <a class="el" href="namespaceoperations__research.html#ab9fe416cbd44278b17d42994d948b84d">kSetCoverAlignmentInBytes</a>&gt;</td></tr>
+<tr class="separator:a5f4e7212ad29d5839eee45805a3808ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bde4b2c8339be033d39dc32782149e3" id="r_a7bde4b2c8339be033d39dc32782149e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a7bde4b2c8339be033d39dc32782149e3">operations_research::ElementToIntVector</a></td></tr>
+<tr class="separator:a7bde4b2c8339be033d39dc32782149e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472ce341e06437abcf779a20ee5fcb4a" id="r_a472ce341e06437abcf779a20ee5fcb4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a472ce341e06437abcf779a20ee5fcb4a">operations_research::SubsetToIntVector</a></td></tr>
+<tr class="separator:a472ce341e06437abcf779a20ee5fcb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8c435e5a4efa4fdc9073497abd91be" id="r_aab8c435e5a4efa4fdc9073497abd91be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aab8c435e5a4efa4fdc9073497abd91be">operations_research::SparseColumnView</a> = <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;SubsetIndex, <a class="el" href="namespaceoperations__research.html#a15faa547ab0ede77dc0bbe186928eae8">SparseColumn</a>&gt;</td></tr>
+<tr class="separator:aab8c435e5a4efa4fdc9073497abd91be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479350f3f71795d0e9316a09e70a987" id="r_af479350f3f71795d0e9316a09e70a987"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af479350f3f71795d0e9316a09e70a987">operations_research::SparseRowView</a> = <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;ElementIndex, <a class="el" href="namespaceoperations__research.html#add56562a3fe22bc4d1615395b2231628">SparseRow</a>&gt;</td></tr>
+<tr class="separator:af479350f3f71795d0e9316a09e70a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa389108c5a70e4fae7e14d5ffd9a7902" id="r_aa389108c5a70e4fae7e14d5ffd9a7902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa389108c5a70e4fae7e14d5ffd9a7902">operations_research::SubsetBoolVector</a> = <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt;SubsetIndex, bool&gt;</td></tr>
+<tr class="separator:aa389108c5a70e4fae7e14d5ffd9a7902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6672fb967195d68519fb48935aa73fd6" id="r_a6672fb967195d68519fb48935aa73fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a6672fb967195d68519fb48935aa73fd6">operations_research::DEFINE_STRONG_INDEX_TYPE</a> (SubsetIndex)</td></tr>
-<tr class="separator:a6672fb967195d68519fb48935aa73fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8546b2dfde8386cd8d290f77cf28cba" id="r_ab8546b2dfde8386cd8d290f77cf28cba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab8546b2dfde8386cd8d290f77cf28cba">operations_research::DEFINE_STRONG_INDEX_TYPE</a> (ElementIndex)</td></tr>
-<tr class="memdesc:ab8546b2dfde8386cd8d290f77cf28cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element index.  <br /></td></tr>
-<tr class="separator:ab8546b2dfde8386cd8d290f77cf28cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdcfa84f50ba3417c3ed2ed5d2f01167" id="r_abdcfa84f50ba3417c3ed2ed5d2f01167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#abdcfa84f50ba3417c3ed2ed5d2f01167">operations_research::DEFINE_STRONG_INDEX_TYPE</a> (EntryIndex)</td></tr>
-<tr class="separator:abdcfa84f50ba3417c3ed2ed5d2f01167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4261dd10a9fd537266be2d22b8411fca" id="r_a4261dd10a9fd537266be2d22b8411fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a4261dd10a9fd537266be2d22b8411fca">operations_research::DEFINE_STRONG_INT_TYPE</a> (SubsetIndex, <a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">BaseInt</a>)</td></tr>
+<tr class="separator:a4261dd10a9fd537266be2d22b8411fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed370bc04bd6a0a2dcf90f4fd79facc4" id="r_aed370bc04bd6a0a2dcf90f4fd79facc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aed370bc04bd6a0a2dcf90f4fd79facc4">operations_research::DEFINE_STRONG_INT_TYPE</a> (ElementIndex, <a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">BaseInt</a>)</td></tr>
+<tr class="memdesc:aed370bc04bd6a0a2dcf90f4fd79facc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element index.  <br /></td></tr>
+<tr class="separator:aed370bc04bd6a0a2dcf90f4fd79facc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03edbcc047fb3068bc6821308a16fd95" id="r_a03edbcc047fb3068bc6821308a16fd95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a03edbcc047fb3068bc6821308a16fd95">operations_research::DEFINE_STRONG_INT_TYPE</a> (ColumnEntryIndex, <a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">BaseInt</a>)</td></tr>
+<tr class="separator:a03edbcc047fb3068bc6821308a16fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c20f428d0dce690bc5e310f7383f1fa" id="r_a8c20f428d0dce690bc5e310f7383f1fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a8c20f428d0dce690bc5e310f7383f1fa">operations_research::DEFINE_STRONG_INT_TYPE</a> (RowEntryIndex, <a class="el" href="namespaceoperations__research.html#ad9ebd83f427bac8f8f9febfe6c92a68a">BaseInt</a>)</td></tr>
+<tr class="separator:a8c20f428d0dce690bc5e310f7383f1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab9fe416cbd44278b17d42994d948b84d" id="r_ab9fe416cbd44278b17d42994d948b84d"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ab9fe416cbd44278b17d42994d948b84d">operations_research::kSetCoverAlignmentInBytes</a> = 64</td></tr>
+<tr class="separator:ab9fe416cbd44278b17d42994d948b84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

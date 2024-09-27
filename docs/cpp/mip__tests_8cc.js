@@ -2,10 +2,10 @@ var mip__tests_8cc =
 [
     [ "ASSERT_THAT", "mip__tests_8cc.html#a6d1f4bfd4db8175fa39484d206b0548c", null ],
     [ "ASSERT_THAT", "mip__tests_8cc.html#a348517db81974ffe3a2db9033858ca36", null ],
-    [ "IsOkAndHolds", "mip__tests_8cc.html#a435e1519feeffce2d22fc1ff4f94d55b", null ],
+    [ "IsOkAndHolds", "mip__tests_8cc.html#a21e956f6359150274d6053320d2ce867", null ],
     [ "Minimize", "mip__tests_8cc.html#a3d893a0e966152540799e728ada030c2", null ],
     [ "operator<<", "mip__tests_8cc.html#a5fc72eb0039df5b65318a39f0d994467", null ],
-    [ "SolveWithoutUpdate", "mip__tests_8cc.html#a9ca1ff6e6dfb2dd2ec88ba8fe0153750", null ],
+    [ "SolveWithoutUpdate", "mip__tests_8cc.html#a23972a12b0adf4bd068b93ba6d3145b6", null ],
     [ "TEST_P", "mip__tests_8cc.html#a79d2693ab59b16e7c56c6e21e608cc25", null ],
     [ "TEST_P", "mip__tests_8cc.html#ae38acfb58ce50489b2ce61f6ac93062d", null ],
     [ "TEST_P", "mip__tests_8cc.html#a38ef364687fc110f7b75c17061423059", null ],

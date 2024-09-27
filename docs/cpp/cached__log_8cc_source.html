@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -137,11 +137,11 @@ $(function(){initNavTree('cached__log_8cc_source.html',''); initResizable(true);
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}  <span class="comment">// namespace</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classoperations__research_1_1CachedLog.html#ad009f67eec9101b1998e74cc57e19117">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1CachedLog.html#ad009f67eec9101b1998e74cc57e19117">CachedLog::Init</a>(<span class="keywordtype">int</span> size) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classoperations__research_1_1CachedLog.html#ad009f67eec9101b1998e74cc57e19117">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1CachedLog.html#ad009f67eec9101b1998e74cc57e19117">CachedLog::Init</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  CHECK(cache_.empty());</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  CHECK_GT(size, 0);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  cache_.resize(size, 0.0);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  CHECK_GT(<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, 0);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  cache_.resize(<a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>, 0.0);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>; ++i) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    cache_[i] = FastLog2(i + 1);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
@@ -159,6 +159,7 @@ $(function(){initNavTree('cached__log_8cc_source.html',''); initResizable(true);
 </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="ttc" id="a2d__rectangle__presolve_8cc_html_aa1cb4ce111532ea2035639aa02569f14"><div class="ttname"><a href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a></div><div class="ttdeci">IntegerValue size</div><div class="ttdef"><b>Definition</b> <a href="2d__rectangle__presolve_8cc_source.html#l00235">2d_rectangle_presolve.cc:235</a></div></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="acached__log_8h_html"><div class="ttname"><a href="cached__log_8h.html">cached_log.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1CachedLog_html_a7aeb82a0c7ad13b4bb5b6e1b20786a74"><div class="ttname"><a href="classoperations__research_1_1CachedLog.html#a7aeb82a0c7ad13b4bb5b6e1b20786a74">operations_research::CachedLog::Log2</a></div><div class="ttdeci">double Log2(int64_t input) const</div><div class="ttdoc">Returns the log2 of 'input'.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">cached_log.cc:43</a></div></div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -155,8 +155,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a109ea2adc2c40917f6c5dcd503df477b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5814c9741a24c248f05aa866a6a51a" id="r_abf5814c9741a24c248f05aa866a6a51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf5814c9741a24c248f05aa866a6a51a">objective</a> () const</td></tr>
 <tr class="separator:abf5814c9741a24c248f05aa866a6a51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a39e304e05a594593af8b5c7149a3a" id="r_a32a39e304e05a594593af8b5c7149a3a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32a39e304e05a594593af8b5c7149a3a">float_objective_variables</a> () const</td></tr>
+<tr class="separator:a32a39e304e05a594593af8b5c7149a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268302a0ccaadbf24d19a88a99d78e23" id="r_a268302a0ccaadbf24d19a88a99d78e23"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a268302a0ccaadbf24d19a88a99d78e23">float_objective_coefficients</a> () const</td></tr>
+<tr class="separator:a268302a0ccaadbf24d19a88a99d78e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa128ff1334a7dceddcc39ed5892ca1f5" id="r_aa128ff1334a7dceddcc39ed5892ca1f5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa128ff1334a7dceddcc39ed5892ca1f5">float_objective_offset</a> () const</td></tr>
+<tr class="separator:aa128ff1334a7dceddcc39ed5892ca1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4413d27877548240883dec8ccc956a41" id="r_a4413d27877548240883dec8ccc956a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4413d27877548240883dec8ccc956a41">SetObjective</a> (<a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> *obj)</td></tr>
 <tr class="separator:a4413d27877548240883dec8ccc956a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada647b98e5ed7479384049c0741440ec" id="r_ada647b98e5ed7479384049c0741440ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada647b98e5ed7479384049c0741440ec">ClearObjective</a> ()</td></tr>
+<tr class="separator:ada647b98e5ed7479384049c0741440ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f56c877934cde3224322df989dbd36" id="r_a29f56c877934cde3224322df989dbd36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f56c877934cde3224322df989dbd36">AddFloatingPointObjectiveTerm</a> (<a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> *<a class="el" href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a>, double coeff)</td></tr>
+<tr class="separator:a29f56c877934cde3224322df989dbd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a766816f82effdb797651c2969a478" id="r_a49a766816f82effdb797651c2969a478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a766816f82effdb797651c2969a478">SetFloatingPointObjectiveOffset</a> (double offset)</td></tr>
+<tr class="separator:a49a766816f82effdb797651c2969a478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c8ce06f9a2a790eb3e8921108ed2cd" id="r_a91c8ce06f9a2a790eb3e8921108ed2cd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c8ce06f9a2a790eb3e8921108ed2cd">DebugString</a> () const</td></tr>
 <tr class="memdesc:a91c8ce06f9a2a790eb3e8921108ed2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Services.  <br /></td></tr>
 <tr class="separator:a91c8ce06f9a2a790eb3e8921108ed2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00344">344</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00341">341</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3e80ac09610aa2bebedb0dbeff9bc019" name="a3e80ac09610aa2bebedb0dbeff9bc019"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e80ac09610aa2bebedb0dbeff9bc019">&#9670;&#160;</a></span>Model()</h2>
@@ -190,7 +202,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00346">346</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00343">343</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +223,7 @@ Public Member Functions</h2></td></tr>
 
 <p>--&mdash; <a class="el" href="classoperations__research_1_1fz_1_1Model.html">Model</a> --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01017">1017</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01020">1020</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -230,9 +242,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000405">Todo</a></b></dt><dd>(user): Create only once constant per value. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000423">Todo</a></b></dt><dd>(user): Create only once constant per value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01030">1030</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01033">1033</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -255,7 +267,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01051">1051</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01054">1054</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -285,7 +297,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Creates and add a constraint to the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01044">1044</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01047">1047</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -304,7 +316,38 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01037">1037</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01040">1040</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+
+</div>
+</div>
+<a id="a29f56c877934cde3224322df989dbd36" name="a29f56c877934cde3224322df989dbd36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f56c877934cde3224322df989dbd36">&#9670;&#160;</a></span>AddFloatingPointObjectiveTerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::fz::Model::AddFloatingPointObjectiveTerm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> *</td>          <td class="paramname"><span class="paramname"><em>var</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coeff</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00399">399</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +366,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01056">1056</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01059">1059</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -354,7 +397,34 @@ Public Member Functions</h2></td></tr>
 <p>--&mdash; Builder methods --&mdash; </p>
 <p>The objects returned by <a class="el" href="#ae161d113b4285009d27e0097ddde59b9" title="--— Builder methods --—">AddVariable()</a>, <a class="el" href="#affdfad9a0c88744ef4cfe7c80adc4fb1">AddConstant()</a>, and <a class="el" href="#a262c359e03406e19a4dbd09de891b047" title="Creates and add a constraint to the model.">AddConstraint()</a> are owned by the model and will remain live for its lifetime. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01022">1022</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01025">1025</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+
+</div>
+</div>
+<a id="ada647b98e5ed7479384049c0741440ec" name="ada647b98e5ed7479384049c0741440ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada647b98e5ed7479384049c0741440ec">&#9670;&#160;</a></span>ClearObjective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::fz::Model::ClearObjective </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00398">398</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +451,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00376">376</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00373">373</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +472,88 @@ Public Member Functions</h2></td></tr>
 
 <p>Services. </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01079">1079</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01082">1082</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+
+</div>
+</div>
+<a id="a268302a0ccaadbf24d19a88a99d78e23" name="a268302a0ccaadbf24d19a88a99d78e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268302a0ccaadbf24d19a88a99d78e23">&#9670;&#160;</a></span>float_objective_coefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; double &gt; &amp; operations_research::fz::Model::float_objective_coefficients </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00393">393</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+
+</div>
+</div>
+<a id="aa128ff1334a7dceddcc39ed5892ca1f5" name="aa128ff1334a7dceddcc39ed5892ca1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa128ff1334a7dceddcc39ed5892ca1f5">&#9670;&#160;</a></span>float_objective_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double operations_research::fz::Model::float_objective_offset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00396">396</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+
+</div>
+</div>
+<a id="a32a39e304e05a594593af8b5c7149a3a" name="a32a39e304e05a594593af8b5c7149a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a39e304e05a594593af8b5c7149a3a">&#9670;&#160;</a></span>float_objective_variables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structoperations__research_1_1fz_1_1Variable.html">Variable</a> * &gt; &amp; operations_research::fz::Model::float_objective_variables </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00390">390</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +572,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01106">1106</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01117">1117</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -444,7 +595,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01072">1072</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01075">1075</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -471,7 +622,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00391">391</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00388">388</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +645,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01065">1065</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01068">1068</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -521,7 +672,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00387">387</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00384">384</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +699,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00381">381</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00378">378</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +726,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00398">398</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00410">410</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +753,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00392">392</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00389">389</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +780,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00385">385</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00382">382</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +800,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> the search annotations and the objective: either simply satisfy the problem, or minimize or maximize the given variable (which must have been added with <a class="el" href="#ae161d113b4285009d27e0097ddde59b9" title="--— Builder methods --—">AddVariable()</a> already). </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01060">1060</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8cc_source.html#l01063">1063</a> of file <a class="el" href="flatzinc_2model_8cc_source.html">model.cc</a>.</p>
 
 </div>
 </div>
@@ -676,7 +827,34 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00377">377</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00374">374</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+
+</div>
+</div>
+<a id="a49a766816f82effdb797651c2969a478" name="a49a766816f82effdb797651c2969a478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a766816f82effdb797651c2969a478">&#9670;&#160;</a></span>SetFloatingPointObjectiveOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::fz::Model::SetFloatingPointObjectiveOffset </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>offset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00403">403</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +881,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00393">393</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00397">397</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
@@ -732,7 +910,7 @@ Public Member Functions</h2></td></tr>
 
 <p>--&mdash; Accessors and mutators --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00375">375</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flatzinc_2model_8h_source.html#l00372">372</a> of file <a class="el" href="flatzinc_2model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>

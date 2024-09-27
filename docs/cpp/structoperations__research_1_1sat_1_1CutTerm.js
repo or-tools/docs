@@ -9,6 +9,8 @@ var structoperations__research_1_1sat_1_1CutTerm =
     [ "LpDistToMaxValue", "structoperations__research_1_1sat_1_1CutTerm.html#a2f2ce5ee67bc18942053f7a84b824f97", null ],
     [ "ReplaceExpressionByLiteral", "structoperations__research_1_1sat_1_1CutTerm.html#a455cdeb71870a2fc0be6feb480d60b8e", null ],
     [ "bound_diff", "structoperations__research_1_1sat_1_1CutTerm.html#af120c33233e22541cb99e9f9a910e6b8", null ],
+    [ "cached_implied_lb", "structoperations__research_1_1sat_1_1CutTerm.html#a233138a84379f37aa99b20b8120ea44c", null ],
+    [ "cached_implied_ub", "structoperations__research_1_1sat_1_1CutTerm.html#a25471047498d8ca5e6b0559dda27ea37", null ],
     [ "coeff", "structoperations__research_1_1sat_1_1CutTerm.html#af2e45785e95b9891d9a7ffa298cb809a", null ],
     [ "expr_coeffs", "structoperations__research_1_1sat_1_1CutTerm.html#ae272a22a65def8adb390f9658b4b6816", null ],
     [ "expr_offset", "structoperations__research_1_1sat_1_1CutTerm.html#a302409b0ad6af0cc718fab498bcdadde", null ],

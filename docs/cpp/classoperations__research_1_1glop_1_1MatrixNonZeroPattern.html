@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -591,9 +591,9 @@ Public Member Functions</h2></td></tr>
 <p>We only need to merge the row for the position with a coefficient different from 0.0. Note that the column must contain all the symbolic non-zeros for the row degree to be updated correctly. Note also that decreasing the row degrees due to the deletion of pivot_col will happen outside this function.</p>
 <p>If the row is fully dense, there is nothing to do (the merge below will not change anything). This is a small price to pay for a huge gain when the matrix becomes dense.</p>
 <p>We only clean row_non_zero_[row] if there are more than 4 entries to delete. Note(user): the 4 is somewhat arbitrary, but gives good results on the Netlib (23/04/2013). Note that calling <a class="el" href="#ac2c4ac0a7a85d90004dc9ddf25514592">RemoveDeletedColumnsFromRow()</a> is not mandatory and does not change the LU decomposition, so we could call it all the time or never and the algorithm would still work.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000462">Todo</a></b></dt><dd>(user): Special case if row_non_zero_[pivot_row].size() == 1? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000480">Todo</a></b></dt><dd>(user): Special case if row_non_zero_[pivot_row].<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> == 1? </dd></dl>
 <p>This is currently not used, but kept as an alternative algorithm to investigate. The performance is really similar, but the final L.U is different. Note that when this is used, there is no need to modify bool_scratchpad_ at the beginning of this function.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000463">Todo</a></b></dt><dd>(user): Add unit tests before using this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000481">Todo</a></b></dt><dd>(user): Add unit tests before using this. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="markowitz_8cc_source.html#l00682">682</a> of file <a class="el" href="markowitz_8cc_source.html">markowitz.cc</a>.</p>
 

@@ -8,5 +8,6 @@ var quadratic__program_8h =
     [ "QpToMpModelProto", "quadratic__program_8h.html#a03fc89d57cdfcdd70d122ffc32fb015d", null ],
     [ "SetEigenMatrixFromTriplets", "quadratic__program_8h.html#ab5bf48ca920aa5abf755b21a3a938e72", null ],
     [ "TestableCanFitInMpModelProto", "quadratic__program_8h.html#a3a4af057398587a279c61b6b4a6edf13", null ],
+    [ "ToString", "quadratic__program_8h.html#a9c8124ffb313ef7566aec4a6cd14dfdf", null ],
     [ "ValidateQuadraticProgramDimensions", "quadratic__program_8h.html#a29d607529c02f2842bdc5cb9c918bd1b", null ]
 ];

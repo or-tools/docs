@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -147,9 +147,10 @@ Friends</h2></td></tr>
 <tr class="separator:a18f9c882c0c3593c60da2bc0b9470044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A value type that references a variable from ModelStorage. Usually this type is passed by copy. </p>
+<div class="textblock"><p>A value type that references a variable from ModelStorage. Usually this type is passed by copy.</p>
+<p>This type implements <a href="https://abseil.io/docs/cpp/guides/hash">https://abseil.io/docs/cpp/guides/hash</a> (see VariablesEquality for details about how operator== works). </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00121">121</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00124">124</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a34eb91d16b7d1422e09aa630fa9c493a" name="a34eb91d16b7d1422e09aa630fa9c493a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34eb91d16b7d1422e09aa630fa9c493a">&#9670;&#160;</a></span>IdType</h2>
@@ -165,7 +166,7 @@ Friends</h2></td></tr>
 
 <p>The typed integer used for ids. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00124">124</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00127">127</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +200,7 @@ Friends</h2></td></tr>
 <p>Usually users will obtain variables using <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html#a846c86921d8f5714eae36aca13764361" title="Adds a variable to the model and returns a reference to it.">Model::AddVariable()</a>. There should be little for users to build this object from an ModelStorage.</p>
 <p>Inline function implementations ///////////////////////////////////////////// <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01272">1272</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01277">1277</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +229,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Each call to AddVariable will produce Variables <a class="el" href="#ad6a4396976ef2972f143ac9923c84916">id()</a> increasing by one, starting at zero. Deleted ids are NOT reused. Thus, if no variables are deleted, the ids in the model will be consecutive. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01277">1277</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01282">1282</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +256,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01291">1291</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01296">1296</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +283,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01283">1283</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01288">1288</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +310,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01293">1293</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01298">1298</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -336,7 +337,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01316">1316</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01321">1321</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +364,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01281">1281</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01286">1286</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +391,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01279">1279</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01284">1284</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +418,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01287">1287</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01292">1292</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +452,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01301">1301</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01306">1306</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -481,9 +482,9 @@ template&lt;typename H &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000920">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000944">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01305">1305</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l01310">1310</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>

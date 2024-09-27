@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -172,9 +172,9 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The idea here is to try to generate a random neighborhood incrementally in such a way that we have at various point a "minimum connection" in term of constraints or variable to the outside world.</p>
 <p>This is inspired by what would be a good neighborhood if one where to use a tree decomposition of the constraint-variable graph with small treewidth.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001184">Todo</a></b></dt><dd>(user): Doing the full heuristic treewidth decomposition is probably better because when we grow the current neighborhood, just using local connection to the current candidate is probably not enough to orient the search towards a good final neighborhood. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001217">Todo</a></b></dt><dd>(user): Doing the full heuristic treewidth decomposition is probably better because when we grow the current neighborhood, just using local connection to the current candidate is probably not enough to orient the search towards a good final neighborhood. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00572">572</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00579">579</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeb57137e838802a6ead109975f053d88" name="aeb57137e838802a6ead109975f053d88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb57137e838802a6ead109975f053d88">&#9670;&#160;</a></span>DecompositionGraphNeighborhoodGenerator()</h2>
@@ -203,7 +203,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00574">574</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00581">581</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Initialize elements.</p>
 <p>We start by a random active variable.</p>
 <dl class="section note"><dt>Note</dt><dd>while num_vars contains all variables, all the fixed variable will have no associated constraint, so we don't want to start from a random variable.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001174">Todo</a></b></dt><dd>(user): Does starting by a constraint make sense too? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001207">Todo</a></b></dt><dd>(user): Does starting by a constraint make sense too? </dd></dl>
 <p>Pop max-degree from queue and update.</p>
 <p>Just for logging.</p>
 <p>When the score is zero, we don't need to update anything since the frontier does not grow.</p>
@@ -259,7 +259,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a27de7175d8eb3e120349bda6d36e00ec">operations_research::sat::NeighborhoodGenerator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01550">1550</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01558">1558</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
 </div>
 </div>

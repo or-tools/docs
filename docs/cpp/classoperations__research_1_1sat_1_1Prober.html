@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -265,10 +265,10 @@ Public Member Functions</h2></td></tr>
 <li>Tighten the bounds of integer variables. If we probe the two possible values of a Boolean (b=0 and b=1), we get for each integer variables two propagated domain D_0 and D_1. The level zero domain can then be intersected with D_0 U D_1. This can restrict the lower/upper bounds of a variable, but it can also create holes in the domain! This will detect common cases like an integer variable in [0, 10] that actually only take two values [0] or [10] depending on one Boolean.</li>
 </ul>
 <p>Returns false if the problem was proved INFEASIBLE during probing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002133">Todo</a></b></dt><dd>(user): For now we process the Boolean in their natural order, this is not the most efficient.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002134">Todo</a></b></dt><dd>(user): This might generate a lot of new direct implications. We might not want to add them directly to the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> and could instead use them directly to detect equivalent literal like in <a class="el" href="namespaceoperations__research_1_1sat.html#aa9cd7652ef26e6d69565e1e7e1db3f07">ProbeAndFindEquivalentLiteral()</a>. The situation is not clear.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002135">Todo</a></b></dt><dd>(user): More generally, we might want to register any literal =&gt; bound in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a>. This would allow to remember them and use them in other part of the solver (cuts, lifting, ...).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002136">Todo</a></b></dt><dd>(user): Rename to include Integer in the name and distinguish better from FailedLiteralProbing() below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002164">Todo</a></b></dt><dd>(user): For now we process the Boolean in their natural order, this is not the most efficient.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo</a></b></dt><dd>(user): This might generate a lot of new direct implications. We might not want to add them directly to the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> and could instead use them directly to detect equivalent literal like in <a class="el" href="namespaceoperations__research_1_1sat.html#a76af37fab5c93f2f256ff65457866fb4">ProbeAndFindEquivalentLiteral()</a>. The situation is not clear.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002166">Todo</a></b></dt><dd>(user): More generally, we might want to register any literal =&gt; bound in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a>. This would allow to remember them and use them in other part of the solver (cuts, lifting, ...).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002167">Todo</a></b></dt><dd>(user): Rename to include Integer in the name and distinguish better from FailedLiteralProbing() below. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="probing_8cc_source.html#l00059">59</a> of file <a class="el" href="probing_8cc_source.html">probing.cc</a>.</p>
 
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
 <p>Reset statistics.</p>
 <p>Resize the propagated sparse bitset.</p>
 <p>Reset the solver in case it was already used.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002125">Todo</a></b></dt><dd>(user): Instead of an hard deterministic limit, we should probably use a lower one, but reset it each time we have found something useful. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002156">Todo</a></b></dt><dd>(user): Instead of an hard deterministic limit, we should probably use a lower one, but reset it each time we have found something useful. </dd></dl>
 <p>Propagate b=1 and then b=0.</p>
 <p>Update stats.</p>
 <p>Display stats.</p>
@@ -327,7 +327,7 @@ Public Member Functions</h2></td></tr>
 <p>Reset the solver in case it was already used.</p>
 <p>We can exit safely as nothing will be propagated.</p>
 <p>If the literal has been pushed without any conflict, the level should have been increased.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002126">Todo</a></b></dt><dd>(user): Can we use the callback_? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002157">Todo</a></b></dt><dd>(user): Can we use the callback_? </dd></dl>
 <p>Process propagated literals.</p>
 <p>Process propagated integer bounds.</p>
 <p>Fix literals implied by the dnf.</p>

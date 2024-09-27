@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -127,7 +127,6 @@ Inheritance diagram for operations_research::ReversibleInterface:</div>
 <area href="classoperations__research_1_1sat_1_1LinearPropagator.html" alt="operations_research::sat::LinearPropagator" shape="rect" coords="354,616,698,640"/>
 <area href="classoperations__research_1_1sat_1_1NoCyclePropagator.html" title="Enforce the fact that there is no cycle in the given directed graph." alt="operations_research::sat::NoCyclePropagator" shape="rect" coords="354,672,698,696"/>
 <area href="classoperations__research_1_1sat_1_1PrecedenceRelations.html" alt="operations_research::sat::PrecedenceRelations" shape="rect" coords="354,728,698,752"/>
-<area href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html" alt="operations_research::sat::SchedulingConstraintHelper" shape="rect" coords="354,784,698,808"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -143,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for reversible objects used to maintain them in sync with a tree search organized by decision levels. </p>
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00028">28</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00030">30</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb9aa4096803957a1de5b1ae6145b8dd" name="adb9aa4096803957a1de5b1ae6145b8dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb9aa4096803957a1de5b1ae6145b8dd">&#9670;&#160;</a></span>ReversibleInterface()</h2>
@@ -168,7 +167,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00030">30</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00032">32</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +194,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00031">31</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rev_8h_source.html#l00033">33</a> of file <a class="el" href="rev_8h_source.html">rev.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +224,7 @@ Public Member Functions</h2></td></tr>
 <p>Initially a reversible class starts at level zero. Increasing the level saves the state of the current old level. Decreasing the level restores the state to what it was at this level and all higher levels are forgotten. Everything done at level zero cannot be backtracked over.</p>
 <p>The level is assumed to be non-negative. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1RevGrowingMultiMap.html#a5f1137c527f98a767d217b476d3431de">operations_research::RevGrowingMultiMap&lt; Key, Value &gt;</a>, <a class="el" href="classoperations__research_1_1RevMap.html#a97d4721e8b1519838e03ae8f58ba7e29">operations_research::RevMap&lt; Map &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; T &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; int &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; IntegerValue &gt;</a>, <a class="el" href="classoperations__research_1_1RevVector.html#a960b55628484d1ef4ce943ddd6d069c2">operations_research::RevVector&lt; IndexType, T &gt;</a>, <a class="el" href="classoperations__research_1_1RevVector.html#a960b55628484d1ef4ce943ddd6d069c2">operations_research::RevVector&lt; IdType, int &gt;</a>, <a class="el" href="classoperations__research_1_1sat_1_1CircuitCoveringPropagator.html#a74fc65caf66ce3e0f0efbba5ada09e03">operations_research::sat::CircuitCoveringPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1CircuitPropagator.html#a6d362dbd4ad6186aebe22c6c7ddc9be6">operations_research::sat::CircuitPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6f4001652e985a2165ad4d6602eae29b">operations_research::sat::LinearProgrammingConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearPropagator.html#a6a9ff6befb3551950d650b1778643710">operations_research::sat::LinearPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1NoCyclePropagator.html#afb0b5f04a57a147793f45f44a3dfb4d9">operations_research::sat::NoCyclePropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1PrecedenceRelations.html#ad544b389a3046e12e340ffe9ab615669">operations_research::sat::PrecedenceRelations</a>, and <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#aac6715a4e5f01196e19399a749218d13">operations_research::sat::SchedulingConstraintHelper</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1RevGrowingMultiMap.html#a5f1137c527f98a767d217b476d3431de">operations_research::RevGrowingMultiMap&lt; Key, Value &gt;</a>, <a class="el" href="classoperations__research_1_1RevMap.html#a97d4721e8b1519838e03ae8f58ba7e29">operations_research::RevMap&lt; Map &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; T &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; int &gt;</a>, <a class="el" href="classoperations__research_1_1RevRepository.html#a209b8d3d42f3cabae06d7f129bcbdbfa">operations_research::RevRepository&lt; IntegerValue &gt;</a>, <a class="el" href="classoperations__research_1_1RevVector.html#a960b55628484d1ef4ce943ddd6d069c2">operations_research::RevVector&lt; IndexType, T &gt;</a>, <a class="el" href="classoperations__research_1_1RevVector.html#a960b55628484d1ef4ce943ddd6d069c2">operations_research::RevVector&lt; IdType, int &gt;</a>, <a class="el" href="classoperations__research_1_1sat_1_1CircuitCoveringPropagator.html#a74fc65caf66ce3e0f0efbba5ada09e03">operations_research::sat::CircuitCoveringPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1CircuitPropagator.html#a6d362dbd4ad6186aebe22c6c7ddc9be6">operations_research::sat::CircuitPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6f4001652e985a2165ad4d6602eae29b">operations_research::sat::LinearProgrammingConstraint</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearPropagator.html#a6a9ff6befb3551950d650b1778643710">operations_research::sat::LinearPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1NoCyclePropagator.html#afb0b5f04a57a147793f45f44a3dfb4d9">operations_research::sat::NoCyclePropagator</a>, and <a class="el" href="classoperations__research_1_1sat_1_1PrecedenceRelations.html#ad544b389a3046e12e340ffe9ab615669">operations_research::sat::PrecedenceRelations</a>.</p>
 
 </div>
 </div>

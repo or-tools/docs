@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pseudo cost of a variable is measured as average observed change in the objective bounds per unit change in the variable bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00035">35</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00037">37</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1cead3f67d73e65b395cfadabd9f3be9" name="a1cead3f67d73e65b395cfadabd9f3be9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cead3f67d73e65b395cfadabd9f3be9">&#9670;&#160;</a></span>PseudoCosts()</h2>
@@ -200,10 +200,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Updates the pseudo costs for the given decision given to <a class="el" href="#a5d87c4b19460969cea75f7051db3809e">BeforeTakingDecision()</a>. </p>
-<p>We store a pseudo cost for this literal. We prefer the pure LP version, but revert to integer version if there is no lp. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002141">Todo</a></b></dt><dd>(user): tune that.</dd></dl>
+<p>We store a pseudo cost for this literal. We prefer the pure LP version, but revert to integer version if there is no lp. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002172">Todo</a></b></dt><dd>(user): tune that.</dd></dl>
 <p>We only collect lp increase when the lp is at optimal, otherwise it might just be the "artificial" continuing of the current lp solve that create the increase.</p>
 <p>Update the average unit increases.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002142">Todo</a></b></dt><dd>(user): Handle this case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002173">Todo</a></b></dt><dd>(user): Handle this case. </dd></dl>
 <p>We also store one for any associated IntegerVariable.</p>
 <p>Create space for new variable and its negation.</p>
 
@@ -319,10 +319,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the variable with best reliable pseudo cost that is not fixed. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002143">Todo</a></b></dt><dd><p class="startdd">(user): Supports search randomization tolerance. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002174">Todo</a></b></dt><dd><p class="startdd">(user): Supports search randomization tolerance. </p>
 <p class="enddd">(user): Implement generic class to choose the randomized solution, and supports sub-linear variable selection. </p>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002144">Todo</a></b></dt><dd>(user): Avoid the O(num_relevant_variable) loop. In practice since a variable only become relevant after 100 records, this list might be small compared to the number of variable though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002175">Todo</a></b></dt><dd>(user): Avoid the O(num_relevant_variable) loop. In practice since a variable only become relevant after 100 records, this list might be small compared to the number of variable though. </dd></dl>
 <p>Pick the direction with best pseudo cost.</p>
 
 <p class="definition">Definition at line <a class="el" href="pseudo__costs_8cc_source.html#l00259">259</a> of file <a class="el" href="pseudo__costs_8cc_source.html">pseudo_costs.cc</a>.</p>
@@ -379,7 +379,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the pseudo cost of given variable. Currently used for testing only. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00057">57</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00059">59</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Visible for testing. Returns the number of recordings of given variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00064">64</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__costs_8h_source.html#l00066">66</a> of file <a class="el" href="pseudo__costs_8h_source.html">pseudo_costs.h</a>.</p>
 
 </div>
 </div>

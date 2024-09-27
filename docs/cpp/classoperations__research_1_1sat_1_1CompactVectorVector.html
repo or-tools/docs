@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -112,7 +112,7 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CompactVectorVecto
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f644ab0bc97480a2ce865aa3ff16d96" id="r_a8f644ab0bc97480a2ce865aa3ff16d96"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f644ab0bc97480a2ce865aa3ff16d96">size</a> () const</td></tr>
-<tr class="memdesc:a8f644ab0bc97480a2ce865aa3ff16d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the "key" space, always in [0, <a class="el" href="#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a>).  <br /></td></tr>
+<tr class="memdesc:a8f644ab0bc97480a2ce865aa3ff16d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the "key" space, always in [0, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>).  <br /></td></tr>
 <tr class="separator:a8f644ab0bc97480a2ce865aa3ff16d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00071f2ce69ce4fc8ab93d40f6e6ff26" id="r_a00071f2ce69ce4fc8ab93d40f6e6ff26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00071f2ce69ce4fc8ab93d40f6e6ff26">empty</a> () const</td></tr>
 <tr class="separator:a00071f2ce69ce4fc8ab93d40f6e6ff26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a814d00e3726f045b83529b5f3fe5d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6251316ca762e96668f876d7012d63c1" id="r_a6251316ca762e96668f876d7012d63c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6251316ca762e96668f876d7012d63c1">ReplaceValuesBySmallerSet</a> (K key, absl::Span&lt; const V &gt; values)</td></tr>
 <tr class="separator:a6251316ca762e96668f876d7012d63c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4250c7d53624f0eb012af04dce59aad4" id="r_a4250c7d53624f0eb012af04dce59aad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4250c7d53624f0eb012af04dce59aad4">emplace_back</a> (V const *<a class="el" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, V const *<a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
+<tr class="memitem:a4250c7d53624f0eb012af04dce59aad4" id="r_a4250c7d53624f0eb012af04dce59aad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4250c7d53624f0eb012af04dce59aad4">emplace_back</a> (V const *begin, V const *<a class="el" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>)</td></tr>
 <tr class="separator:a4250c7d53624f0eb012af04dce59aad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -154,7 +154,7 @@ class operations_research::sat::CompactVectorVector&lt; K, V &gt;</div><p>Small 
 <p>This is a lot more compact memorywise and thus faster than vector&lt;vector&lt;&gt;&gt;. </p><dl class="section note"><dt>Note</dt><dd>we implement a really small subset of the vector&lt;vector&lt;&gt;&gt; API.</dd></dl>
 <p>We support int and StrongType for key K and any copyable type for value V. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00067">67</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00069">69</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab457f5467d82b7cd8c542d4d5fab148c" name="ab457f5467d82b7cd8c542d4d5fab148c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab457f5467d82b7cd8c542d4d5fab148c">&#9670;&#160;</a></span>Add()</h2>
@@ -180,9 +180,9 @@ template&lt;typename K , typename V &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Append a new entry. Returns the previous <a class="el" href="#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a> as this is convenient for how we use it. </p>
+<p>Append a new entry. Returns the previous <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a> as this is convenient for how we use it. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00702">702</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00739">739</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ template&lt;typename L &gt; </div>
 </div><div class="memdoc">
 <p>Hacky: same as <a class="el" href="#ab457f5467d82b7cd8c542d4d5fab148c">Add()</a> but for <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">sat::Literal</a> or any type from which we can get a value type V via L.Index().<a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00721">721</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00758">758</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ template&lt;typename K , typename V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00766">766</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00803">803</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ template&lt;typename K , typename V &gt; </div>
 
 <p>Restore to empty vector&lt;vector&lt;&gt;&gt;. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00775">775</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00812">812</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ template&lt;typename K  = int, typename V  = int&gt; </div>
 </div><div class="memdoc">
 <p>Interface so this can be used as an output of <a class="el" href="strongly__connected__components_8h.html#aafab5785b250e1013c13511ce478f36b" title="Simple wrapper function for most usage.">FindStronglyConnectedComponents()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00142">142</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00144">144</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ template&lt;typename K , typename V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00787">787</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00824">824</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ template&lt;typename K , typename V &gt; </div>
 <p>Getters, either via [] or via a wrapping to be compatible with older api.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Spans are only valid until the next modification! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00754">754</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00791">791</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ template&lt;typename K , typename V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00743">743</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00780">780</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ template&lt;typename K  = int, typename V  = int&gt; </div>
 <p>We lied when we said this is a pure read-only class :) It is possible to shrink inner vectors with not much cost.</p>
 <p>Removes the element at index from this[key] by swapping it with this[key].back() and then decreasing this key size. It is an error to call this on an empty inner vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00128">128</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00130">130</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -466,7 +466,7 @@ template&lt;typename K , typename V &gt; </div>
 </div><div class="memdoc">
 <p>Replace the values at the given key. This will crash if there are more values than before. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00711">711</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00748">748</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ template&lt;typename K  = int, typename V  = int&gt; </div>
 
 <p>Reserve memory if it is already known or tightly estimated. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00084">84</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00086">86</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +530,7 @@ template&lt;typename K  = int, typename V  = int&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00088">88</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00090">90</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ template&lt;typename Keys , typename Values &gt; </div>
 <p>Copy data and uses starts as temporary indices.</p>
 <p>Restore starts_.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00793">793</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00830">830</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +615,7 @@ template&lt;typename K , typename V &gt; </div>
 <p>Copy data and uses starts as temporary indices.</p>
 <p>Restore starts_.</p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00830">830</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00867">867</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -644,9 +644,9 @@ template&lt;typename K , typename V &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Size of the "key" space, always in [0, <a class="el" href="#a8f644ab0bc97480a2ce865aa3ff16d96" title="Size of the &quot;key&quot; space, always in [0, size()).">size()</a>). </p>
+<p>Size of the "key" space, always in [0, <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>). </p>
 
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00782">782</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00819">819</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -126,6 +126,8 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a25e1af8440a242128f5f1eb4f1913aea" id="r_a25e1af8440a242128f5f1eb4f1913aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2bf3bb209c08aed390ae19fec019d943">LinearConstraintMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25e1af8440a242128f5f1eb4f1913aea">dual_values</a></td></tr>
 <tr class="separator:a25e1af8440a242128f5f1eb4f1913aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41e3eb9a191f75dcd8c0002f25b1903" id="r_aa41e3eb9a191f75dcd8c0002f25b1903"><td class="memItemLeft" align="right" valign="top">absl::flat_hash_map&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticConstraint.html">QuadraticConstraint</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa41e3eb9a191f75dcd8c0002f25b1903">quadratic_dual_values</a></td></tr>
+<tr class="separator:aa41e3eb9a191f75dcd8c0002f25b1903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3dd9a54aeae299ec3a1b2515b14a1ef" id="r_af3dd9a54aeae299ec3a1b2515b14a1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3dd9a54aeae299ec3a1b2515b14a1ef">reduced_costs</a></td></tr>
 <tr class="separator:af3dd9a54aeae299ec3a1b2515b14a1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba11d32713ea6094ea51da5a7c012d4c" id="r_aba11d32713ea6094ea51da5a7c012d4c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba11d32713ea6094ea51da5a7c012d4c">objective_value</a></td></tr>
@@ -138,7 +140,7 @@ Public Attributes</h2></td></tr>
 <p>E.g. consider the primal dual pair linear program pair: (Primal) (Dual) min c * x max b * y s.t. A * x &gt;= b s.t. y * A + r = c x &gt;= 0 y, r &gt;= 0. The dual solution is the pair (y, r). It is feasible if it satisfies the constraints from (Dual) above.</p>
 <p>Below, y is dual_values, r is reduced_costs, and b * y is objective value. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00132">132</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00134">134</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a107c83bfb6863ada340cc3ce06d22925" name="a107c83bfb6863ada340cc3ce06d22925"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a107c83bfb6863ada340cc3ce06d22925">&#9670;&#160;</a></span>FromProto()</h2>
@@ -173,7 +175,7 @@ Public Attributes</h2></td></tr>
 <li>dual_solution_proto.feasibility_status is not specified. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00124">124</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00122">122</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
 
 </div>
 </div>
@@ -194,7 +196,7 @@ Public Attributes</h2></td></tr>
 
 <p>Returns the proto equivalent of this. </p>
 
-<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00147">147</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8cc_source.html#l00149">149</a> of file <a class="el" href="solution_8cc_source.html">solution.cc</a>.</p>
 
 </div>
 </div>
@@ -211,7 +213,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00145">145</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00147">147</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +229,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00149">149</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00156">156</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +245,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00147">147</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00154">154</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+
+</div>
+</div>
+<a id="aa41e3eb9a191f75dcd8c0002f25b1903" name="aa41e3eb9a191f75dcd8c0002f25b1903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41e3eb9a191f75dcd8c0002f25b1903">&#9670;&#160;</a></span>quadratic_dual_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::flat_hash_map&lt;<a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticConstraint.html">QuadraticConstraint</a>, double&gt; operations_research::math_opt::DualSolution::quadratic_dual_values</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>Some solvers only return quadratic constraint duals when a solver-specific parameter is set (see go/mathopt-qcqp-dual#solver-specific). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00152">152</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +278,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00146">146</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00153">153</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
 
 </div>
 </div>

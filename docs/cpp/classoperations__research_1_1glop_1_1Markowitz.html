@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class that computes either the actual L.U decomposition, or the permutation P and Q such that P.B.Q^{-1} will have a sparse L.U decomposition. </p>
 
-<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00285">285</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00286">286</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b7f2e291834a8bebb46d1d9ae47cdad" name="a3b7f2e291834a8bebb46d1d9ae47cdad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b7f2e291834a8bebb46d1d9ae47cdad">&#9670;&#160;</a></span>Markowitz() <span class="overload">[1/2]</span></h2>
@@ -286,10 +286,10 @@ Public Member Functions</h2></td></tr>
 <p>Start by moving the singleton columns to the front and by putting their non-zero coefficient on the diagonal. The general algorithm below would have the same effect, but this function is a lot faster.</p>
 <p>Initialize residual_matrix_non_zero_ with the submatrix left after we removed the singleton and residual singleton columns.</p>
 <p>Perform Gaussian elimination.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000453">Todo</a></b></dt><dd>(user): If we don't need L and U, we can abort when the residual matrix becomes dense (i.e. when its density factor is above a certain threshold). The residual size is 'end_index - index' and the density can either be computed exactly or estimated from min_markowitz. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000471">Todo</a></b></dt><dd>(user): If we don't need L and U, we can abort when the residual matrix becomes dense (i.e. when its density factor is above a certain threshold). The residual size is 'end_index - index' and the density can either be computed exactly or estimated from min_markowitz. </dd></dl>
 <p>Singular matrix? No pivot will be selected if a column has no entries. If a column has some entries, then we are sure that a pivot will be selected but its magnitude can be really close to zero. In both cases, we report the singularity of the matrix.</p>
-<p>Update residual_matrix_non_zero_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000454">Todo</a></b></dt><dd>(user): This step can be skipped, once a fully dense matrix is obtained. But note that permuted_lower_column_needs_solve_ needs to be updated. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000455">Todo</a></b></dt><dd>(user): Note that in some rare cases, because of numerical cancellation, the column degree may actually be smaller than pivot_col_degree. Exploit that better? </dd></dl>
+<p>Update residual_matrix_non_zero_. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000472">Todo</a></b></dt><dd>(user): This step can be skipped, once a fully dense matrix is obtained. But note that permuted_lower_column_needs_solve_ needs to be updated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000473">Todo</a></b></dt><dd>(user): Note that in some rare cases, because of numerical cancellation, the column degree may actually be smaller than pivot_col_degree. Exploit that better? </dd></dl>
 <p>Update the permutations.</p>
 <p>To get a better deterministic time, we add a factor that depend on the final number of entries in the result.</p>
 
@@ -368,7 +368,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the current parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00329">329</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00330">330</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns a string containing the statistics for this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00326">326</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00327">327</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
 
 </div>
 </div>

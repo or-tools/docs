@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -103,7 +103,7 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1DoubletonFreeColu
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classoperations__research_1_1glop_1_1DoubletonFreeColumnPreprocessor-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">operations_research::glop::DoubletonFreeColumnPreprocessor Class Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::glop::DoubletonFreeColumnPreprocessor Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -340,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Only consider doubleton free columns.</p>
 <p>Collect the two column items. Note that we skip a column involving a deleted row since it is no longer a doubleton then.</p>
 <p>Since the column didn't touch any previously deleted row, we are sure that the coefficients were left untouched.</p>
-<p>We prefer deleting the row with the larger coefficient magnitude because we will divide by this magnitude. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000478">Todo</a></b></dt><dd>(user): Impact? </dd></dl>
+<p>We prefer deleting the row with the larger coefficient magnitude because we will divide by this magnitude. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000496">Todo</a></b></dt><dd>(user): Impact? </dd></dl>
 <p>Save the deleted row for postsolve. Note that we remove it from the transpose at the same time. This last operation is not strictly needed, but it is faster to do it this way (both here and later when we will take the transpose of the final transpose matrix).</p>
 <p>Move the bound of the deleted constraint to the initially free variable.</p>
 <p>Add a multiple of the deleted row to the modified row except on column r.col where the coefficient will be left unchanged.</p>

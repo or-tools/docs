@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -134,9 +134,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This detects variables that can move freely in one direction, or that can move freely as long as their value do not cross a bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002394">Todo</a></b></dt><dd>(user): This is actually an important step to do before scaling as it can usually reduce really large bounds! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002432">Todo</a></b></dt><dd>(user): This is actually an important step to do before scaling as it can usually reduce really large bounds! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00221">221</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00223">223</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a19828a65b8b23fc0070664bf10834df3" name="a19828a65b8b23fc0070664bf10834df3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19828a65b8b23fc0070664bf10834df3">&#9670;&#160;</a></span>CanFreelyDecreaseUntil()</h2>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The given ref can always freely decrease until the returned value. </p><dl class="section note"><dt>Note</dt><dd>this does not take into account the domain of the variable. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00254">254</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00256">256</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>All constraints should be mapped to one of more call to these functions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002377">Todo</a></b></dt><dd>(user): No need to set locking_ct_index_[var] if num_locks_[var] &gt; 1 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002411">Todo</a></b></dt><dd>(user): No need to set locking_ct_index_[var] if num_locks_[var] &gt; 1 </dd></dl>
 <p>Optim: We cache pointers to avoid refetching them in the loop.</p>
 
 <p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00560">560</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>
@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reset on each <a class="el" href="#a162bcb064138a579ee8192ffb9c244cb">Strengthen()</a> call. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00259">259</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00261">261</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ template&lt;typename LinearProto &gt; </div>
 </div><div class="memdoc">
 <p>Reset the class to a clean state. This must be called before processing the constraints. </p>
 
-<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00225">225</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00227">227</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
 
 </div>
 </div>
@@ -370,10 +370,10 @@ template&lt;typename LinearProto &gt; </div>
 <p>Here we can reduce the domain, but we must be careful when the domain has holes.</p>
 <p>For detecting near-duplicate constraint that can be made equivalent. hash -&gt; (ct_index, modified ref).</p>
 <p>If there is only one blocking constraint, we can simplify the problem in a few situation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002378">Todo</a></b></dt><dd>(user): Cover all the cases. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002379">Todo</a></b></dt><dd>(user): Fix variable right away rather than waiting for next call. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002412">Todo</a></b></dt><dd>(user): Cover all the cases. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002413">Todo</a></b></dt><dd>(user): Fix variable right away rather than waiting for next call. </dd></dl>
 <p>If we have an enforcement literal then we can always add the implication "not enforced" =&gt; var at its lower bound. If we also had enforced =&gt; fixed var, then var is in affine relation with the enforced literal and we can remove one variable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002380">Todo</a></b></dt><dd>(user): We can also deal with more than one enforcement. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002414">Todo</a></b></dt><dd>(user): We can also deal with more than one enforcement. </dd></dl>
 <p>Corner case.</p>
 <p>Note(user): If we have enforced =&gt; var fixed, we could actually just have removed var from the constraint it was implied by another constraint. If not, because of the new affine relation we could remove it right away.</p>
 <p>positive_ref = enf * implied + (1 - enf) * bound.</p>
@@ -383,8 +383,8 @@ template&lt;typename LinearProto &gt; </div>
 <p>We can make enf equivalent to the constraint instead of just =&gt;. This seems useful since internally we always use fully reified encoding.</p>
 <p>If it is different, we have an equivalence now, and we can remove the constraint.</p>
 <p>If we have two Booleans, each with a single blocking constraint that is the same if we "swap" the Booleans reference, then we can make the Booleans equivalent. This is because they will be forced to their bad value only if it is needed by the other part of their respective blocking constraints. This is related to the FindAlmostIdenticalLinearConstraints() except that here we can deal with non-equality or enforced constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002381">Todo</a></b></dt><dd>(user): Generalize to non-Boolean. Also for Boolean, we might miss some possible reduction if replacing X by 1 - X make a constraint near-duplicate of another.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002382">Todo</a></b></dt><dd>(user): We can generalize to non-linear constraint.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002415">Todo</a></b></dt><dd>(user): Generalize to non-Boolean. Also for Boolean, we might miss some possible reduction if replacing X by 1 - X make a constraint near-duplicate of another.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002416">Todo</a></b></dt><dd>(user): We can generalize to non-linear constraint.</dd></dl>
 <p>Optimization: Skip if this constraint was already used as a single blocking constraint of another variable. If this is the case, it cannot be equivalent to another constraint with "var" substituted, since otherwise var would have two blocking constraint. We can safely skip it. this make sure this is in O(num_entries) and not more.</p>
 <p>Already present!</p>
 <p>We have a true equality. The two ref can be made equivalent.</p>
@@ -392,7 +392,7 @@ template&lt;typename LinearProto &gt; </div>
 <p>Other potential cases?</p>
 <p>If (a =&gt; b) is the only constraint blocking a literal a in the up direction, then we can set a == b !</p>
 <p>Recover a =&gt; b where a is having an unique up_lock (i.e this constraint). </p><dl class="section note"><dt>Note</dt><dd>if many implications are encoded in the same bool_and, we have to be careful that a is appearing in just one of them.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002383">Todo</a></b></dt><dd>(user): Make sure implication graph is transitively reduced to not miss such reduction. More generally, this might only use the graph rather than the encoding into bool_and / at_most_one ? Basically if a =&gt; all_direct_deduction, we can transform it into a &lt;=&gt; all_direct_deduction if that is interesting. This could always be done on a max-2sat problem in one of the two direction. Also think about max-2sat specific presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002417">Todo</a></b></dt><dd>(user): Make sure implication graph is transitively reduced to not miss such reduction. More generally, this might only use the graph rather than the encoding into bool_and / at_most_one ? Basically if a =&gt; all_direct_deduction, we can transform it into a &lt;=&gt; all_direct_deduction if that is interesting. This could always be done on a max-2sat problem in one of the two direction. Also think about max-2sat specific presolve. </dd></dl>
 <p>Here, we can only add the equivalence if the literal is the only on the lhs, otherwise there is actually more lock.</p>
 
 <p class="definition">Definition at line <a class="el" href="var__domination_8cc_source.html#l00721">721</a> of file <a class="el" href="var__domination_8cc_source.html">var_domination.cc</a>.</p>

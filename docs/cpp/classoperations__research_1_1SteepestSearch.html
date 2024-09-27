@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,13 +117,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7b76a69a07f9abf4e7cd0ff88925208d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab77c98c498245068d689a6e63fd0c750" id="r_ab77c98c498245068d689a6e63fd0c750"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab77c98c498245068d689a6e63fd0c750">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus, int num_iterations)</td></tr>
 <tr class="separator:ab77c98c498245068d689a6e63fd0c750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aaf0be5c1e6c6502c1f0a585f04e8b8" id="r_a0aaf0be5c1e6c6502c1f0a585f04e8b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aaf0be5c1e6c6502c1f0a585f04e8b8">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus, const <a class="el" href="namespaceoperations__research.html#a4f740c94953f253d0a3b27ae3996e001">SubsetCostVector</a> &amp;costs, int num_iterations)</td></tr>
+<tr class="memitem:a0aaf0be5c1e6c6502c1f0a585f04e8b8" id="r_a0aaf0be5c1e6c6502c1f0a585f04e8b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aaf0be5c1e6c6502c1f0a585f04e8b8">NextSolution</a> (absl::Span&lt; const SubsetIndex &gt; focus, const <a class="el" href="namespaceoperations__research.html#ad8d046d2df6f4830e98a61b2b4355246">SubsetCostVector</a> &amp;costs, int num_iterations)</td></tr>
+<tr class="memdesc:a0aaf0be5c1e6c6502c1f0a585f04e8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, with a different set of costs.  <br /></td></tr>
 <tr class="separator:a0aaf0be5c1e6c6502c1f0a585f04e8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Once we have a first solution to the problem, there may be (most often, there are) elements in S that are covered several times. To decrease the total cost, <a class="el" href="classoperations__research_1_1SteepestSearch.html">SteepestSearch</a> tries to eliminate some redundant T_j's from the solution or equivalently, to flip some x_j's from 1 to 0. the algorithm gets its name because it goes in the steepest immediate direction, taking the T_j with the largest total cost. </p>
+<div class="textblock"><p>Once we have a first solution to the problem, there may be (most often, there are) elements in E that are covered several times. To decrease the total cost, <a class="el" href="classoperations__research_1_1SteepestSearch.html">SteepestSearch</a> tries to eliminate some redundant S_j's from the solution or equivalently, to flip some x_j's from 1 to 0. the algorithm gets its name because it goes in the steepest immediate direction, taking the S_j with the largest total cost. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00214">214</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00222">222</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeffee1c4ebba5ae28bfd43436d01ee43" name="aeffee1c4ebba5ae28bfd43436d01ee43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeffee1c4ebba5ae28bfd43436d01ee43">&#9670;&#160;</a></span>SteepestSearch()</h2>
@@ -148,7 +149,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00216">216</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8h_source.html#l00224">224</a> of file <a class="el" href="set__cover__heuristics_8h_source.html">set_cover_heuristics.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +168,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceoperations__research.html#a4f740c94953f253d0a3b27ae3996e001">SubsetCostVector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>costs</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="namespaceoperations__research.html#ad8d046d2df6f4830e98a61b2b4355246">SubsetCostVector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>costs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -176,10 +177,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return false if inv_ contains no solution.</p>
-<p>Create priority queue with cost of using a subset, by decreasing order. Do it only for selected AND removable subsets.</p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00279">279</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p>Same as above, with a different set of costs. </p>
+
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00259">259</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
@@ -201,8 +202,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the next partial solution considering only the subsets whose indices are in focus. </p>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00274">274</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00252">252</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>
@@ -220,9 +222,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if a solution was found within num_iterations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000050">Todo</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
+<p>Returns true if a solution was found within num_iterations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000052">Todo</a></b></dt><dd>(user): Add time-outs and exit with a partial solution. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00269">269</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00246">246</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
 
 </div>
 </div>

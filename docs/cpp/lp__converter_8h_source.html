@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,16 +131,20 @@ $(function(){initNavTree('lp__converter_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// The RemoveNames() function can be used on the model to remove names if they</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// should not be exported.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// For more information about the different LP file formats:</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// http://lpsolve.sourceforge.net/5.5/lp-format.htm</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// http://lpsolve.sourceforge.net/5.5/CPLEX-format.htm</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// https://www.ibm.com/docs/en/icos/12.8.0.0?topic=cplex-lp-file-format-algebraic-representation</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// http://www.gurobi.com/documentation/5.1/reference-manual/node871</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>absl::StatusOr&lt;std::string&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a16b804d2124767162c0a118677cdb5e0">ModelProtoToLp</a>(<span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_IO_LP_CONVERTER_H_</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Warning: LP format does not support &quot;range constraints&quot; (linear constraints</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// with both upper and lower bounds). An equivalent model without range</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// constraints is exported instead.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// For more information about the different LP file formats:</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// http://lpsolve.sourceforge.net/5.5/lp-format.htm</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// http://lpsolve.sourceforge.net/5.5/CPLEX-format.htm</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// https://www.ibm.com/docs/en/icos/12.8.0.0?topic=cplex-lp-file-format-algebraic-representation</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// http://www.gurobi.com/documentation/5.1/reference-manual/node871</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>absl::StatusOr&lt;std::string&gt; <a class="code hl_function" href="namespaceoperations__research_1_1math__opt.html#a16b804d2124767162c0a118677cdb5e0">ModelProtoToLp</a>(<span class="keyword">const</span> ModelProto&amp; <a class="code hl_variable" href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}  <span class="comment">// namespace operations_research::math_opt</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_MATH_OPT_IO_LP_CONVERTER_H_</span></div>
 <div class="ttc" id="agurobi__interface_8cc_html_a0728f23c9a47655d38e0bf1a2f200bcf"><div class="ttname"><a href="gurobi__interface_8cc.html#a0728f23c9a47655d38e0bf1a2f200bcf">model</a></div><div class="ttdeci">GRBmodel * model</div><div class="ttdef"><b>Definition</b> <a href="gurobi__interface_8cc_source.html#l00300">gurobi_interface.cc:300</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_html"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html">operations_research::math_opt</a></div><div class="ttdoc">An object oriented wrapper for quadratic constraints in ModelStorage.</div><div class="ttdef"><b>Definition</b> <a href="gurobi__isv_8cc_source.html#l00028">gurobi_isv.cc:28</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1math__opt_html_a16b804d2124767162c0a118677cdb5e0"><div class="ttname"><a href="namespaceoperations__research_1_1math__opt.html#a16b804d2124767162c0a118677cdb5e0">operations_research::math_opt::ModelProtoToLp</a></div><div class="ttdeci">absl::StatusOr&lt; std::string &gt; ModelProtoToLp(const ModelProto &amp;model)</div><div class="ttdef"><b>Definition</b> <a href="lp__converter_8cc_source.html#l00027">lp_converter.cc:27</a></div></div>

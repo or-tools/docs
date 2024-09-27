@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -803,7 +803,7 @@ $(function(){initNavTree('cp__model_8proto_source.html',''); initResizable(true)
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  // An optimal feasible solution has been found.</div>
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  //</div>
 <div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  // More generally, this status represent a success. So we also return OPTIMAL</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  // if we find a solution for a pure feasiblity problem or if a gap limit has</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  // if we find a solution for a pure feasibility problem or if a gap limit has</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  // been specified and we return a solution within this limit. In the case</div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  // where we need to return all the feasible solution, this status will only be</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  // returned if we enumerated all of them; If we stopped before, we will return</div>
@@ -857,76 +857,80 @@ $(function(){initNavTree('cp__model_8proto_source.html',''); initResizable(true)
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>  // is only filled with the info derived during a normal search and we do not</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>  // have any dedicated algorithm to improve it.</div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>  //</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  // If the problem is a feasibility problem, then these bounds will be valid</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>  // for any feasible solution. If the problem is an optimization problem, then</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  // these bounds will only be valid for any OPTIMAL solutions, it can exclude</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>  // sub-optimal feasible ones.</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>  repeated IntegerVariableProto tightened_variables = 21;</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span> </div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>  // A subset of the model &quot;assumptions&quot; field. This will only be filled if the</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>  // status is INFEASIBLE. This subset of assumption will be enough to still get</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>  // an infeasible problem.</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>  //</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>  // This is related to what is called the irreducible inconsistent subsystem or</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>  // IIS. Except one is only concerned by the provided assumptions. There is</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>  // also no guarantee that we return an irreducible (aka minimal subset).</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>  // However, this is based on SAT explanation and there is a good chance it is</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>  // not too large.</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>  //</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>  // If you really want a minimal subset, a possible way to get one is by</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>  // changing your model to minimize the number of assumptions at false, but</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>  // this is likely an harder problem to solve.</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  // Warning: if you didn&#39;t set keep_all_feasible_solutions_in_presolve, then</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>  // these domains might exclude valid feasible solution. Otherwise for a</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  // feasibility problem, all feasible solution should be there.</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>  //</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>  // Warning: For an optimization problem, these will correspond to valid bounds</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>  // for the problem of finding an improving solution to the best one found so</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>  // far. It might be better to solve a feasibility version if one just want to</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>  // explore the feasible region.</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>  repeated IntegerVariableProto tightened_variables = 21;</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>  // A subset of the model &quot;assumptions&quot; field. This will only be filled if the</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>  // status is INFEASIBLE. This subset of assumption will be enough to still get</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>  // an infeasible problem.</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>  //</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>  // This is related to what is called the irreducible inconsistent subsystem or</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>  // IIS. Except one is only concerned by the provided assumptions. There is</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>  // also no guarantee that we return an irreducible (aka minimal subset).</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>  // However, this is based on SAT explanation and there is a good chance it is</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>  // not too large.</div>
 <div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>  //</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>  // Important: Currently, this is minimized only in single-thread and if the</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  // problem is not an optimization problem, otherwise, it will always include</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>  // all the assumptions.</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>  // If you really want a minimal subset, a possible way to get one is by</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  // changing your model to minimize the number of assumptions at false, but</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>  // this is likely an harder problem to solve.</div>
 <div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>  //</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  // TODO(user): Allows for returning multiple core at once.</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  repeated int32 sufficient_assumptions_for_infeasibility = 23;</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  // Contains the integer objective optimized internally. This is only filled if</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  // the problem had a floating point objective, and on the final response, not</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  // the ones given to callbacks.</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  CpObjectiveProto integer_objective = 28;</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  // Advanced usage.</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  //</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  // A lower bound on the inner integer expression of the objective. This is</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  // either a bound on the expression in the returned integer_objective or on</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  // the integer expression of the original objective if the problem already has</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  // an integer objective.</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  int64 inner_objective_lower_bound = 29;</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  // Some statistics about the solve.</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  //</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  // Important: in multithread, this correspond the statistics of the first</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>  // subsolver. Which is usually the one with the user defined parameters. Or</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  // the default-search if none are specified.</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>  int64 num_integers = 30;</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  int64 num_booleans = 10;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>  int64 num_conflicts = 11;</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>  int64 num_branches = 12;</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  int64 num_binary_propagations = 13;</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  int64 num_integer_propagations = 14;</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  int64 num_restarts = 24;</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  int64 num_lp_iterations = 25;</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  // The time counted from the beginning of the Solve() call.</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  double wall_time = 15;</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  double user_time = 16;</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>  double deterministic_time = 17;</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>  // The integral of log(1 + absolute_objective_gap) over time.</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  double gap_integral = 22;</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>  // Additional information about how the solution was found. It also stores</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>  // model or parameters errors that caused the model to be invalid.</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>  string solution_info = 20;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  // Important: Currently, this is minimized only in single-thread and if the</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  // problem is not an optimization problem, otherwise, it will always include</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>  // all the assumptions.</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  //</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  // TODO(user): Allows for returning multiple core at once.</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  repeated int32 sufficient_assumptions_for_infeasibility = 23;</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  // Contains the integer objective optimized internally. This is only filled if</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  // the problem had a floating point objective, and on the final response, not</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  // the ones given to callbacks.</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  CpObjectiveProto integer_objective = 28;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  // Advanced usage.</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  //</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  // A lower bound on the inner integer expression of the objective. This is</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  // either a bound on the expression in the returned integer_objective or on</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  // the integer expression of the original objective if the problem already has</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  // an integer objective.</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  int64 inner_objective_lower_bound = 29;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  // Some statistics about the solve.</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>  //</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  // Important: in multithread, this correspond the statistics of the first</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>  // subsolver. Which is usually the one with the user defined parameters. Or</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>  // the default-search if none are specified.</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  int64 num_integers = 30;</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  int64 num_booleans = 10;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  int64 num_conflicts = 11;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  int64 num_branches = 12;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  int64 num_binary_propagations = 13;</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  int64 num_integer_propagations = 14;</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  int64 num_restarts = 24;</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  int64 num_lp_iterations = 25;</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  // The time counted from the beginning of the Solve() call.</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>  double wall_time = 15;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  double user_time = 16;</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  double deterministic_time = 17;</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span> </div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>  // The integral of log(1 + absolute_objective_gap) over time.</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>  double gap_integral = 22;</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  // The solve log will be filled if the parameter log_to_response is set to</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>  // true.</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>  string solve_log = 26;</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>}</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  // Additional information about how the solution was found. It also stores</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>  // model or parameters errors that caused the model to be invalid.</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>  string solution_info = 20;</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>  // The solve log will be filled if the parameter log_to_response is set to</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  // true.</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>  string solve_log = 26;</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

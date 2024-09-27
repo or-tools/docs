@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements the all different bound consistent propagator with explanation. That is, given n affine expressions that must take different values, this propagates the bounds of each expression as much as possible. The key is to detect the so called Hall interval which are interval of size k that contains the domain of k expressinos. Because all the variables must take different values, we can deduce that the domain of the other variables cannot contains such Hall interval.</p>
 <p>We use a "fast" O(n log n) algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001052">Todo</a></b></dt><dd>(user): It might be difficult to find something faster than what is implemented here. Some related reference: <a href="https://cs.uwaterloo.ca/~vanbeek/Publications/ijcai03_TR.pdf">https://cs.uwaterloo.ca/~vanbeek/Publications/ijcai03_TR.pdf</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001076">Todo</a></b></dt><dd>(user): It might be difficult to find something faster than what is implemented here. Some related reference: <a href="https://cs.uwaterloo.ca/~vanbeek/Publications/ijcai03_TR.pdf">https://cs.uwaterloo.ca/~vanbeek/Publications/ijcai03_TR.pdf</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="all__different_8h_source.html#l00153">153</a> of file <a class="el" href="all__different_8h_source.html">all_different.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
 <dl class="section note"><dt>Note</dt><dd>it is not required to swap back bounds_ and negated_bounds_. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001051">Todo</a></b></dt><dd>(user): investigate the impact. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001075">Todo</a></b></dt><dd>(user): investigate the impact. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

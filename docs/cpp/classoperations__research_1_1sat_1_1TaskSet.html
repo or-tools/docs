@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab11b88fadeabec68f02c09a97a1cc5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500cd9616f68b1ce66da186c95e3215d" id="r_a500cd9616f68b1ce66da186c95e3215d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a500cd9616f68b1ce66da186c95e3215d">GetCriticalIndex</a> () const</td></tr>
 <tr class="separator:a500cd9616f68b1ce66da186c95e3215d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac777249b373b2762872472285952ec1a" id="r_ac777249b373b2762872472285952ec1a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html">Entry</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac777249b373b2762872472285952ec1a">SortedTasks</a> () const</td></tr>
-<tr class="separator:ac777249b373b2762872472285952ec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac180f4623a36f59c3c358e93b6006628" id="r_ac180f4623a36f59c3c358e93b6006628"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac180f4623a36f59c3c358e93b6006628">SortedTasks</a> () const</td></tr>
+<tr class="separator:ac180f4623a36f59c3c358e93b6006628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class to compute the end-min of a set of tasks given their start-min and size-min. In Petr Vilim's PhD "Global Constraints in Scheduling", this corresponds to his Theta-tree except that we use a O(n) implementation for most of the function here, not a O(log(n)) one. </p>
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If the task is added after optimized_restart_, we know that we don't need to scan the task before optimized_restart_ in the next <a class="el" href="#ab11b88fadeabec68f02c09a97a1cc5b9">ComputeEndMin()</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00158">158</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00165">165</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as AddEntry({t, helper-&gt;ShiftedStartMin(t), helper-&gt;SizeMin(t)}). This is a minor optimization to not call SizeMin(t) twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00173">173</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00180">180</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00194">194</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00204">204</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -314,16 +314,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the end-min for the task in the set. The time profile of the tasks packed to the left will always be a set of contiguous tasks separated by empty space:</p>
 <p>[Bunch of tasks] ... [Bunch of tasks] ... [critical tasks].</p>
-<p>We call "critical tasks" the last group. These tasks will be solely responsible for the end-min of the whole set. The returned critical_index will be the index of the first critical task in <a class="el" href="#ac777249b373b2762872472285952ec1a">SortedTasks()</a>.</p>
+<p>We call "critical tasks" the last group. These tasks will be solely responsible for the end-min of the whole set. The returned critical_index will be the index of the first critical task in <a class="el" href="#ac180f4623a36f59c3c358e93b6006628">SortedTasks()</a>.</p>
 <p>A reason for the min end is:</p><ul>
 <li>The size-min of all the critical tasks.</li>
-<li>The fact that all critical tasks have a start-min greater or equal to the first of them, that is <a class="el" href="#ac777249b373b2762872472285952ec1a">SortedTasks()</a>[critical_index].start_min.</li>
+<li>The fact that all critical tasks have a start-min greater or equal to the first of them, that is <a class="el" href="#ac180f4623a36f59c3c358e93b6006628">SortedTasks()</a>[critical_index].start_min.</li>
 </ul>
 <p>It is possible to behave like if one task was not in the set by setting task_to_ignore to the id of this task. This returns 0 if the set is empty in which case critical_index will be left unchanged. </p>
 <p>The order in which we process tasks with the same start-min doesn't matter.</p>
 <p>If the ignored task is last and was the start of the critical block, then we need to reset optimized_restart_.</p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00210">210</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00220">220</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Advanced usage, if the entry is present, this assumes that its start_min is &gt;= the end min without it, and update the datastructure accordingly. </p>
 
-<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00179">179</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="disjunctive_8cc_source.html#l00186">186</a> of file <a class="el" href="disjunctive_8cc_source.html">disjunctive.cc</a>.</p>
 
 </div>
 </div>
@@ -402,8 +402,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac777249b373b2762872472285952ec1a" name="ac777249b373b2762872472285952ec1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac777249b373b2762872472285952ec1a">&#9670;&#160;</a></span>SortedTasks()</h2>
+<a id="ac180f4623a36f59c3c358e93b6006628" name="ac180f4623a36f59c3c358e93b6006628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac180f4623a36f59c3c358e93b6006628">&#9670;&#160;</a></span>SortedTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +412,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html">Entry</a> &gt; &amp; operations_research::sat::TaskSet::SortedTasks </td>
+          <td class="memname">absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html">Entry</a> &gt; operations_research::sat::TaskSet::SortedTasks </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

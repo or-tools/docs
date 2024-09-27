@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -142,6 +142,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a67a23b474b3322d64f85882b50f17318" id="r_a67a23b474b3322d64f85882b50f17318"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67a23b474b3322d64f85882b50f17318">Activity</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> l) const</td></tr>
 <tr class="memdesc:a67a23b474b3322d64f85882b50f17318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current activity of a BooleanVariable.  <br /></td></tr>
 <tr class="separator:a67a23b474b3322d64f85882b50f17318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8114c3c4f8fc748ba2a4ae31e6aeee" id="r_a5c8114c3c4f8fc748ba2a4ae31e6aeee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c8114c3c4f8fc748ba2a4ae31e6aeee">SetTargetPolarity</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> l)</td></tr>
+<tr class="memdesc:a5c8114c3c4f8fc748ba2a4ae31e6aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="#a2b8daf97b17136a35e4e19524c5209d9">SetAssignmentPreference()</a> but it can be overridden by phase-saving.  <br /></td></tr>
+<tr class="separator:a5c8114c3c4f8fc748ba2a4ae31e6aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9120711c93f256dfd029eb60d556b5fa" id="r_a9120711c93f256dfd029eb60d556b5fa"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9120711c93f256dfd029eb60d556b5fa">GetBestPartialAssignment</a> () const</td></tr>
+<tr class="separator:a9120711c93f256dfd029eb60d556b5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5bcc05246d68121908dbb2e8b7a713" id="r_a6d5bcc05246d68121908dbb2e8b7a713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d5bcc05246d68121908dbb2e8b7a713">ClearBestPartialAssignment</a> ()</td></tr>
+<tr class="separator:a6d5bcc05246d68121908dbb2e8b7a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implement the SAT branching policy responsible for deciding the next Boolean variable to branch on, and its polarity (true or false). </p>
@@ -221,7 +228,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the vector of the current assignment preferences. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002168">Todo</a></b></dt><dd>(user): we currently assume that if the tie_breaker is zero then no preference was set (which is not 100% correct). Fix that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002199">Todo</a></b></dt><dd>(user): we currently assume that if the tie_breaker is zero then no preference was set (which is not 100% correct). Fix that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__decision_8cc_source.html#l00264">264</a> of file <a class="el" href="sat__decision_8cc_source.html">sat_decision.cc</a>.</p>
 
@@ -265,6 +272,60 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>we don't really need to bump level 0 variables since they will never be backtracked over. However it is faster to simply bump them.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__decision_8cc_source.html#l00278">278</a> of file <a class="el" href="sat__decision_8cc_source.html">sat_decision.cc</a>.</p>
+
+</div>
+</div>
+<a id="a6d5bcc05246d68121908dbb2e8b7a713" name="a6d5bcc05246d68121908dbb2e8b7a713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5bcc05246d68121908dbb2e8b7a713">&#9670;&#160;</a></span>ClearBestPartialAssignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::SatDecisionPolicy::ClearBestPartialAssignment </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sat__decision_8h_source.html#l00116">116</a> of file <a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>.</p>
+
+</div>
+</div>
+<a id="a9120711c93f256dfd029eb60d556b5fa" name="a9120711c93f256dfd029eb60d556b5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9120711c93f256dfd029eb60d556b5fa">&#9670;&#160;</a></span>GetBestPartialAssignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; operations_research::sat::SatDecisionPolicy::GetBestPartialAssignment </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sat__decision_8h_source.html#l00113">113</a> of file <a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +422,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns next decision to branch upon. This shouldn't be called if all the variables are assigned. </p>
 <p>Lazily initialize var_ordering_ if needed.</p>
 <p>Choose the variable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002169">Todo</a></b></dt><dd>(user): This may not be super efficient if almost all the variables are assigned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002200">Todo</a></b></dt><dd>(user): This may not be super efficient if almost all the variables are assigned. </dd></dl>
 <p>The loop is done this way in order to leave the final choice in the heap.</p>
 <p>Choose its polarity (i.e. True of False).</p>
 
@@ -444,6 +505,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5c8114c3c4f8fc748ba2a4ae31e6aeee" name="a5c8114c3c4f8fc748ba2a4ae31e6aeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8114c3c4f8fc748ba2a4ae31e6aeee">&#9670;&#160;</a></span>SetTargetPolarity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operations_research::sat::SatDecisionPolicy::SetTargetPolarity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a></td>          <td class="paramname"><span class="paramname"><em>l</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like <a class="el" href="#a2b8daf97b17136a35e4e19524c5209d9">SetAssignmentPreference()</a> but it can be overridden by phase-saving. </p>
+
+<p class="definition">Definition at line <a class="el" href="sat__decision_8h_source.html#l00110">110</a> of file <a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>.</p>
+
+</div>
+</div>
 <a id="a9f05bb03afa86725c194d50e613f2593" name="a9f05bb03afa86725c194d50e613f2593"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f05bb03afa86725c194d50e613f2593">&#9670;&#160;</a></span>Untrail()</h2>
 
@@ -460,10 +550,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called on <a class="el" href="#a9f05bb03afa86725c194d50e613f2593" title="Called on Untrail() so that we can update the set of possible decisions.">Untrail()</a> so that we can update the set of possible decisions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002170">Todo</a></b></dt><dd>(user): avoid looping twice over the trail? </dd></dl>
-<p>The ERWA parameter between the new estimation of the learning rate and the old one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002171">Todo</a></b></dt><dd>(user): Expose parameters for these values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002201">Todo</a></b></dt><dd>(user): avoid looping twice over the trail? </dd></dl>
+<p>The ERWA parameter between the new estimation of the learning rate and the old one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002202">Todo</a></b></dt><dd>(user): Expose parameters for these values. </dd></dl>
 <p>This counts the number of conflicts since the assignment of the variable at the current trail_index that we are about to untrail.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002172">Todo</a></b></dt><dd>(user): This heuristic can make this code quite slow because all the untrailed variable will cause a priority queue update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): This heuristic can make this code quite slow because all the untrailed variable will cause a priority queue update. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> index of the next variable that will need a priority queue update.</p>
 <p>Invariant.</p>
 

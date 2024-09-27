@@ -19,10 +19,10 @@ var routing__lp__scheduling_8h =
       [ "SMALLER_THAN_LOWER_BOUND", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a22bbece1018a83f21d324ddd6dd5a3d7", null ],
       [ "LARGER_THAN_UPPER_BOUND", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a6c1ac68d8f8e4b6e53fdf0a416de99d1", null ]
     ] ],
-    [ "ComputeBestVehicleToResourceAssignment", "routing__lp__scheduling_8h.html#acd8c2650d76099e5f8ae5789d977ccc6", null ],
+    [ "ComputeBestVehicleToResourceAssignment", "routing__lp__scheduling_8h.html#aeea0630c4c4d9c745b9166bdfc8a61c4", null ],
     [ "ComputeConvexPiecewiseLinearFormulationValue", "routing__lp__scheduling_8h.html#a7d1b6b3b49dede4ad90e825de5dde248", null ],
     [ "ComputePiecewiseLinearFormulationValue", "routing__lp__scheduling_8h.html#a698864e6dce7e9203910ca91dbbe1a3d", null ],
-    [ "ComputeVehicleToResourceClassAssignmentCosts", "routing__lp__scheduling_8h.html#aeb57ef0f11414bf09419ff0b59143f0f", null ],
+    [ "ComputeVehicleToResourceClassAssignmentCosts", "routing__lp__scheduling_8h.html#a8ecf2ad28c783e5bb4f7d92f04ad7b82", null ],
     [ "PiecewiseLinearFormulationToSlopeAndYIntercept", "routing__lp__scheduling_8h.html#ad7736710d8a5b2865c2c3c7106549abe", null ],
     [ "SlopeAndYInterceptToConvexityRegions", "routing__lp__scheduling_8h.html#a77aacf46d2ed10050888e33a7042d92c", null ]
 ];

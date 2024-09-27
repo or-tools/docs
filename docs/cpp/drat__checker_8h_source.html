@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -327,7 +327,7 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// proof. The result is undefined if Check() was not previously called, or did</span></div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="comment">// not return true.</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  std::vector&lt;std::vector&lt;Literal&gt;&gt; GetClausesNeededForProof(</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      ClauseIndex <a class="code hl_function" href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a>, ClauseIndex <a class="code hl_variable" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      ClauseIndex begin, ClauseIndex <a class="code hl_variable" href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">void</span> LogStatistics(int64_t duration_nanos) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
@@ -336,7 +336,7 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  ClauseIndex first_infered_clause_index_;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="comment">// The problem clauses, followed by the infered clauses.</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;ClauseIndex, Clause&gt;</a> clauses_;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt;ClauseIndex, Clause&gt;</a> clauses_;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="comment">// A content addressable set of the non-deleted clauses in clauses_. After</span></div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="comment">// adding a clause to clauses_, this set can be used to find if the same</span></div>
@@ -363,7 +363,7 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="comment">// For each variable, the index of the unit clause that caused its assignment,</span></div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="comment">// or kNoClauseIndex if the variable is not assigned, or was assigned to</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="comment">// falsify the clause that is currently being checked.</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;BooleanVariable, ClauseIndex&gt;</a> assignment_source_;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt;BooleanVariable, ClauseIndex&gt;</a> assignment_source_;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="comment">// The stack of literals that remain to be assigned to true during boolean</span></div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="comment">// constraint propagation, with high priority (unit clauses which are already</span></div>
@@ -386,75 +386,75 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="comment">// satisfied (in more details: if a clause c is contained in</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="comment">// &#39;watched_literals_[l]&#39; for literal l, then either c is satisfied with</span></div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="comment">// &#39;assignment_&#39;, or l is unassigned or assigned to true).</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <a class="code hl_class" href="classabsl_1_1StrongVector.html">absl::StrongVector&lt;LiteralIndex, std::vector&lt;ClauseIndex&gt;</a>&gt; watched_literals_;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="comment">// The list of clauses with only one literal. This is needed for boolean</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="comment">// constraint propagation, in addition to watched literals, because watched</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">// literals can only be used with clauses having at least two literals.</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  std::vector&lt;ClauseIndex&gt; single_literal_clauses_;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="comment">// The stack of clauses that have become unit during boolean constraint</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">// propagation, in HasRupProperty().</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  std::vector&lt;ClauseIndex&gt; unit_stack_;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="comment">// A temporary assignment, always fully unassigned except in Resolve().</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  VariablesAssignment tmp_assignment_;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// Statistics</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="comment">// The number of infered clauses having the RAT property (but not the RUP</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="comment">// property).</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordtype">int</span> num_rat_checks_;</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>};</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">// Returns true if the given clause contains the given literal. This works in</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector&lt;LiteralIndex, std::vector&lt;ClauseIndex&gt;</a>&gt;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>      watched_literals_;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="comment">// The list of clauses with only one literal. This is needed for boolean</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">// constraint propagation, in addition to watched literals, because watched</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="comment">// literals can only be used with clauses having at least two literals.</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  std::vector&lt;ClauseIndex&gt; single_literal_clauses_;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">// The stack of clauses that have become unit during boolean constraint</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="comment">// propagation, in HasRupProperty().</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  std::vector&lt;ClauseIndex&gt; unit_stack_;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  <span class="comment">// A temporary assignment, always fully unassigned except in Resolve().</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  VariablesAssignment tmp_assignment_;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="comment">// Statistics</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="comment">// The number of infered clauses having the RAT property (but not the RUP</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="comment">// property).</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="keywordtype">int</span> num_rat_checks_;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>};</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// Returns true if the given clause contains the given literal. This works in</span></div>
 </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// O(clause.size()).</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ac63affeaff6ccd82933aa13529338857">ContainsLiteral</a>(absl::Span&lt;const Literal&gt; clause, Literal <a class="code hl_variable" href="linear__model_8cc.html#a6582b538eeea909324f67bfaac0e0958">literal</a>);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="comment">// Returns true if &#39;complementary_literal&#39; is the unique complementary literal</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment">// in the two given clauses. If so the resolvent of these clauses (i.e. their</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">// union with &#39;complementary_literal&#39; and its negation removed) is set in</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// &#39;resolvent&#39;. &#39;clause&#39; must contain &#39;complementary_literal&#39;, while</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">// &#39;other_clause&#39; must contain its negation. &#39;assignment&#39; must have at least as</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// many variables as each clause, and they must all be unassigned. They are</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">// still unassigned upon return.</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a3518eef034832dda8fbc0df67737c35b">Resolve</a>(absl::Span&lt;const Literal&gt; clause,</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>             absl::Span&lt;const Literal&gt; other_clause,</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>             Literal complementary_literal, VariablesAssignment* assignment,</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>             std::vector&lt;Literal&gt;* resolvent);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">// Adds to the given drat checker the problem clauses from the file at the given</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">// path, which must be in DIMACS format. Returns true iff the file was</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment">// successfully parsed.</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a23349cb008ced3bcc44ff0213b12a656">AddProblemClauses</a>(<span class="keyword">const</span> std::string&amp; file_path, DratChecker* drat_checker);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">// Adds to the given drat checker the infered and deleted clauses from the file</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">// at the given path, which must be in DRAT format. Returns true iff the file</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">// was successfully parsed.</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a1fd62b999813ebc36c91f4d49d06aff4">AddInferedAndDeletedClauses</a>(<span class="keyword">const</span> std::string&amp; file_path,</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                                 DratChecker* drat_checker);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">// The file formats that can be used to save a list of clauses.</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">SatFormat</a> {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">DIMACS</a>,</div>
-<div class="foldopen" id="foldopen00333" data-start="{" data-end="};">
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">  333</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">DRAT</a>,</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">  334</a></span>};</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">  335</a></span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">// Prints the given clauses in the file at the given path, using the given file</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">// O(clause.size()).</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ac63affeaff6ccd82933aa13529338857">ContainsLiteral</a>(absl::Span&lt;const Literal&gt; clause, Literal <a class="code hl_variable" href="linear__model_8cc.html#a6582b538eeea909324f67bfaac0e0958">literal</a>);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment">// Returns true if &#39;complementary_literal&#39; is the unique complementary literal</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">// in the two given clauses. If so the resolvent of these clauses (i.e. their</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// union with &#39;complementary_literal&#39; and its negation removed) is set in</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">// &#39;resolvent&#39;. &#39;clause&#39; must contain &#39;complementary_literal&#39;, while</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// &#39;other_clause&#39; must contain its negation. &#39;assignment&#39; must have at least as</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">// many variables as each clause, and they must all be unassigned. They are</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">// still unassigned upon return.</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a3518eef034832dda8fbc0df67737c35b">Resolve</a>(absl::Span&lt;const Literal&gt; clause,</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>             absl::Span&lt;const Literal&gt; other_clause,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>             Literal complementary_literal, VariablesAssignment* assignment,</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>             std::vector&lt;Literal&gt;* resolvent);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">// Adds to the given drat checker the problem clauses from the file at the given</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment">// path, which must be in DIMACS format. Returns true iff the file was</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">// successfully parsed.</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a23349cb008ced3bcc44ff0213b12a656">AddProblemClauses</a>(<span class="keyword">const</span> std::string&amp; file_path, DratChecker* drat_checker);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">// Adds to the given drat checker the infered and deleted clauses from the file</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">// at the given path, which must be in DRAT format. Returns true iff the file</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">// was successfully parsed.</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a1fd62b999813ebc36c91f4d49d06aff4">AddInferedAndDeletedClauses</a>(<span class="keyword">const</span> std::string&amp; file_path,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                                 DratChecker* drat_checker);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">// The file formats that can be used to save a list of clauses.</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">SatFormat</a> {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">DIMACS</a>,</div>
+<div class="foldopen" id="foldopen00334" data-start="{" data-end="};">
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">  334</a></span>  <a class="code hl_enumvalue" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">DRAT</a>,</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">  335</a></span>};</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">  336</a></span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">// Prints the given clauses in the file at the given path, using the given file</span></div>
 </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">// format. Returns true iff the file was successfully written.</span></div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a89916cb29dee74465f5d966707a34845">PrintClauses</a>(<span class="keyword">const</span> std::string&amp; file_path, <a class="code hl_enumeration" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">SatFormat</a> format,</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                  absl::Span&lt;<span class="keyword">const</span> std::vector&lt;Literal&gt;&gt; <a class="code hl_variable" href="cp__model__solver_8cc.html#ad4bbde7c22d1c840bf223499266397ff">clauses</a>,</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                  <span class="keywordtype">int</span> num_variables);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>}  <span class="comment">// namespace sat</span></div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}  <span class="comment">// namespace operations_research</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_SAT_DRAT_CHECKER_H_</span></div>
-<div class="ttc" id="aclassabsl_1_1StrongVector_html"><div class="ttname"><a href="classabsl_1_1StrongVector.html">absl::StrongVector</a></div><div class="ttdoc">STL vector ---------------------------------------------------------------—.</div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00076">strong_vector.h:76</a></div></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">// format. Returns true iff the file was successfully written.</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a89916cb29dee74465f5d966707a34845">PrintClauses</a>(<span class="keyword">const</span> std::string&amp; file_path, <a class="code hl_enumeration" href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">SatFormat</a> format,</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                  absl::Span&lt;<span class="keyword">const</span> std::vector&lt;Literal&gt;&gt; clauses,</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                  <span class="keywordtype">int</span> num_variables);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}  <span class="comment">// namespace sat</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_SAT_DRAT_CHECKER_H_</span></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html">operations_research::sat::DratChecker</a></div><div class="ttdef"><b>Definition</b> <a href="#l00046">drat_checker.h:46</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_a0628cd183c424dce1314e3458faf9a83"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#a0628cd183c424dce1314e3458faf9a83">operations_research::sat::DratChecker::AddProblemClause</a></div><div class="ttdeci">void AddProblemClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00070">drat_checker.cc:70</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_a0b1c77a2d9b42a612c9cbbb6a49c49a3"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3">operations_research::sat::DratChecker::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition</b> <a href="#l00082">drat_checker.h:82</a></div></div>
@@ -469,15 +469,15 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_aab5c71c5d07b84e2cfb729d5e09f7a64"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#aab5c71c5d07b84e2cfb729d5e09f7a64">operations_research::sat::DratChecker::AddInferedClause</a></div><div class="ttdeci">void AddInferedClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00083">drat_checker.cc:83</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_af13f339dabc5b919996d625db92ff9ac"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#af13f339dabc5b919996d625db92ff9ac">operations_research::sat::DratChecker::DeleteClause</a></div><div class="ttdeci">void DeleteClause(absl::Span&lt; const Literal &gt; clause)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00125">drat_checker.cc:125</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1DratChecker_html_afebc0fb2af65734383c5182161717ed0"><div class="ttname"><a href="classoperations__research_1_1sat_1_1DratChecker.html#afebc0fb2af65734383c5182161717ed0">operations_research::sat::DratChecker::num_variables</a></div><div class="ttdeci">int num_variables() const</div><div class="ttdef"><b>Definition</b> <a href="#l00053">drat_checker.h:53</a></div></div>
-<div class="ttc" id="acp__model__solver_8cc_html_ad4bbde7c22d1c840bf223499266397ff"><div class="ttname"><a href="cp__model__solver_8cc.html#ad4bbde7c22d1c840bf223499266397ff">clauses</a></div><div class="ttdeci">std::unique_ptr&lt; SharedClausesManager &gt; clauses</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02297">cp_model_solver.cc:2297</a></div></div>
+<div class="ttc" id="aclassutil__intops_1_1StrongVector_html"><div class="ttname"><a href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a></div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00075">strong_vector.h:75</a></div></div>
 <div class="ttc" id="alinear__model_8cc_html_a6582b538eeea909324f67bfaac0e0958"><div class="ttname"><a href="linear__model_8cc.html#a6582b538eeea909324f67bfaac0e0958">literal</a></div><div class="ttdeci">int literal</div><div class="ttdef"><b>Definition</b> <a href="linear__model_8cc_source.html#l00038">linear_model.cc:38</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a1fd62b999813ebc36c91f4d49d06aff4"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a1fd62b999813ebc36c91f4d49d06aff4">operations_research::sat::AddInferedAndDeletedClauses</a></div><div class="ttdeci">bool AddInferedAndDeletedClauses(const std::string &amp;file_path, DratChecker *drat_checker)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00564">drat_checker.cc:564</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a23349cb008ced3bcc44ff0213b12a656"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a23349cb008ced3bcc44ff0213b12a656">operations_research::sat::AddProblemClauses</a></div><div class="ttdeci">bool AddProblemClauses(const std::string &amp;file_path, DratChecker *drat_checker)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00515">drat_checker.cc:515</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a2dbcb7017d468a17bdb30252af5c6c31"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a2dbcb7017d468a17bdb30252af5c6c31">operations_research::sat::kNoLiteralIndex</a></div><div class="ttdeci">const LiteralIndex kNoLiteralIndex(-1)</div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a3518eef034832dda8fbc0df67737c35b"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a3518eef034832dda8fbc0df67737c35b">operations_research::sat::Resolve</a></div><div class="ttdeci">bool Resolve(absl::Span&lt; const Literal &gt; clause, absl::Span&lt; const Literal &gt; other_clause, Literal complementary_literal, VariablesAssignment *assignment, std::vector&lt; Literal &gt; *resolvent)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00478">drat_checker.cc:478</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51ce"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">operations_research::sat::SatFormat</a></div><div class="ttdeci">SatFormat</div><div class="ttdoc">The file formats that can be used to save a list of clauses.</div><div class="ttdef"><b>Definition</b> <a href="#l00333">drat_checker.h:333</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">operations_research::sat::DRAT</a></div><div class="ttdeci">@ DRAT</div><div class="ttdef"><b>Definition</b> <a href="#l00335">drat_checker.h:335</a></div></div>
-<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">operations_research::sat::DIMACS</a></div><div class="ttdeci">@ DIMACS</div><div class="ttdef"><b>Definition</b> <a href="#l00334">drat_checker.h:334</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51ce"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ce">operations_research::sat::SatFormat</a></div><div class="ttdeci">SatFormat</div><div class="ttdoc">The file formats that can be used to save a list of clauses.</div><div class="ttdef"><b>Definition</b> <a href="#l00334">drat_checker.h:334</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51cea3dbd66c668bbf5fe6e580ad1ac38c9d8">operations_research::sat::DRAT</a></div><div class="ttdeci">@ DRAT</div><div class="ttdef"><b>Definition</b> <a href="#l00336">drat_checker.h:336</a></div></div>
+<div class="ttc" id="anamespaceoperations__research_1_1sat_html_a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a6cd6f4cf7fb7b9e5d8788c7bb25b51ceafb2fc4a1eedd6bb627ed650068e1d808">operations_research::sat::DIMACS</a></div><div class="ttdeci">@ DIMACS</div><div class="ttdef"><b>Definition</b> <a href="#l00335">drat_checker.h:335</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a89916cb29dee74465f5d966707a34845"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a89916cb29dee74465f5d966707a34845">operations_research::sat::PrintClauses</a></div><div class="ttdeci">bool PrintClauses(const std::string &amp;file_path, SatFormat format, absl::Span&lt; const std::vector&lt; Literal &gt; &gt; clauses, int num_variables)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00606">drat_checker.cc:606</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_ac63affeaff6ccd82933aa13529338857"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ac63affeaff6ccd82933aa13529338857">operations_research::sat::ContainsLiteral</a></div><div class="ttdeci">bool ContainsLiteral(absl::Span&lt; const Literal &gt; clause, Literal literal)</div><div class="ttdef"><b>Definition</b> <a href="drat__checker_8cc_source.html#l00474">drat_checker.cc:474</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_affcb42181de5b23ba7b5df37fe1676a3"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#affcb42181de5b23ba7b5df37fe1676a3">operations_research::sat::kNoClauseIndex</a></div><div class="ttdeci">const ClauseIndex kNoClauseIndex(-1)</div></div>
@@ -485,9 +485,8 @@ $(function(){initNavTree('drat__checker_8h_source.html',''); initResizable(true)
 <div class="ttc" id="asat__base_8h_html"><div class="ttname"><a href="sat__base_8h.html">sat_base.h</a></div></div>
 <div class="ttc" id="asparse__submatrix_8cc_html_a4d53eac2ef2732c28fa9fb663e0c19a7"><div class="ttname"><a href="sparse__submatrix_8cc.html#a4d53eac2ef2732c28fa9fb663e0c19a7">end</a></div><div class="ttdeci">std::optional&lt; int64_t &gt; end</div><div class="ttdef"><b>Definition</b> <a href="sparse__submatrix_8cc_source.html#l00037">sparse_submatrix.cc:37</a></div></div>
 <div class="ttc" id="astrong__integers_8h_html"><div class="ttname"><a href="strong__integers_8h.html">strong_integers.h</a></div></div>
-<div class="ttc" id="astrong__integers_8h_html_a79edede25cc7390299371435bbd9a8d3"><div class="ttname"><a href="strong__integers_8h.html#a79edede25cc7390299371435bbd9a8d3">DEFINE_STRONG_INDEX_TYPE</a></div><div class="ttdeci">#define DEFINE_STRONG_INDEX_TYPE(index_type_name)</div><div class="ttdef"><b>Definition</b> <a href="strong__integers_8h_source.html#l00069">strong_integers.h:69</a></div></div>
+<div class="ttc" id="astrong__integers_8h_html_a79edede25cc7390299371435bbd9a8d3"><div class="ttname"><a href="strong__integers_8h.html#a79edede25cc7390299371435bbd9a8d3">DEFINE_STRONG_INDEX_TYPE</a></div><div class="ttdeci">#define DEFINE_STRONG_INDEX_TYPE(index_type_name)</div><div class="ttdef"><b>Definition</b> <a href="strong__integers_8h_source.html#l00071">strong_integers.h:71</a></div></div>
 <div class="ttc" id="astrong__vector_8h_html"><div class="ttname"><a href="strong__vector_8h.html">strong_vector.h</a></div></div>
-<div class="ttc" id="astrong__vector_8h_html_aeeb2d4a0b8035603af696a5c1a73d100"><div class="ttname"><a href="strong__vector_8h.html#aeeb2d4a0b8035603af696a5c1a73d100">begin</a></div><div class="ttdeci">*vec begin()+0)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

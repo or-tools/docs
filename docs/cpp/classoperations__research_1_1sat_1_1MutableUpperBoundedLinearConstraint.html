@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -270,9 +270,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Reset the constraint to 0 &lt;= 0. </p><dl class="section note"><dt>Note</dt><dd>the constraint size stays the same. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002020">Todo</a></b></dt><dd>(user): We could be more efficient and have only one loop here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002050">Todo</a></b></dt><dd>(user): We could be more efficient and have only one loop here. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00263">263</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00264">264</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This must be called before any other functions is used with an higher variable index. </p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00252">252</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00253">253</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -315,9 +315,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Compute the constraint slack assuming that only the variables with index &lt; trail_index are assigned.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002022">Todo</a></b></dt><dd>(user): Keep this for DCHECK(), but maintain the slack incrementally instead of recomputing it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002052">Todo</a></b></dt><dd>(user): Keep this for DCHECK(), but maintain the slack incrementally instead of recomputing it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00303">303</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00304">304</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Copies this constraint into a vector&lt;LiteralWithCoeff&gt; representation. </p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00383">383</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00384">384</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns a string representation of the constraint. </p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00290">290</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00291">291</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -491,9 +491,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If we have a lower bounded constraint sum terms &gt;= rhs, then it is trivial to see that the coefficient of any term can be reduced to rhs if it is bigger. This does exactly this operation, but on the upper bounded representation.</p>
 <p>If we take a constraint sum ci.xi &lt;= rhs, take its negation and add max_sum on both side, we have sum ci.(1 - xi) &gt;= max_sum - rhs So every ci &gt; (max_sum - rhs) can be replacend by (max_sum - rhs). Not that this operation also change the original rhs of the constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002021">Todo</a></b></dt><dd>(user): Also reduce the trivially false literal when coeff &gt; rhs_ ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002051">Todo</a></b></dt><dd>(user): Also reduce the trivially false literal when coeff &gt; rhs_ ? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00274">274</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00275">275</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -517,10 +517,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a467eaf21318efb233670a0035a2eae34">ReduceCoefficients()</a> followed by <a class="el" href="#a56db11b9d396d13e4cff87b74b086d81">ComputeSlackForTrailPrefix()</a>. It allows to loop only once over all the terms of the constraint instead of doing it twice. This helps since doing that can be the main bottleneck.</p>
 <dl class="section note"><dt>Note</dt><dd>this function assumes that the returned slack will be negative. This allow to DCHECK some assumptions on what coefficients can be reduced or not.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002036">Todo</a></b></dt><dd>(user): Ideally the slack should be maitainable incrementally. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002066">Todo</a></b></dt><dd>(user): Ideally the slack should be maitainable incrementally. </dd></dl>
 <p>Because we assume the slack (rhs - activity) to be negative, we have coeff + rhs - max_sum_ &lt;= coeff + rhs - (activity + coeff) &lt;= slack &lt; 0</p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00316">316</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00317">317</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>
@@ -597,7 +597,7 @@ Public Member Functions</h2></td></tr>
 <p>Nothing to do if the slack is already target.</p>
 <p>Applies the algorithm described in the .h</p>
 
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00346">346</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00347">347</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
 </div>
 </div>

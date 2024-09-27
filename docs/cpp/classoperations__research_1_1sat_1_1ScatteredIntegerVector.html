@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,7 +111,7 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ScatteredIntegerVe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1e904346caea39d60fba87e4b47fc0d" id="r_ab1e904346caea39d60fba87e4b47fc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e904346caea39d60fba87e4b47fc0d">ClearAndResize</a> (int size)</td></tr>
+<tr class="memitem:ab1e904346caea39d60fba87e4b47fc0d" id="r_ab1e904346caea39d60fba87e4b47fc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e904346caea39d60fba87e4b47fc0d">ClearAndResize</a> (int <a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size</a>)</td></tr>
 <tr class="separator:ab1e904346caea39d60fba87e4b47fc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57cd5a9cb4155be237671c19743942ca" id="r_a57cd5a9cb4155be237671c19743942ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57cd5a9cb4155be237671c19743942ca">Add</a> (glop::ColIndex <a class="el" href="markowitz_8cc.html#aa9d6c98fdf8d89b0e2321fda02adc82c">col</a>, IntegerValue <a class="el" href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a>)</td></tr>
 <tr class="memdesc:a57cd5a9cb4155be237671c19743942ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does vector[col] += value and return false in case of overflow.  <br /></td></tr>
@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4fd40cfd57730483aade0d4e44d3b68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d028844e2ffb568bbc68185f7cb6260" id="r_a5d028844e2ffb568bbc68185f7cb6260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d028844e2ffb568bbc68185f7cb6260">ConvertToLinearConstraint</a> (absl::Span&lt; const IntegerVariable &gt; integer_variables, IntegerValue <a class="el" href="gscip__solver_8cc.html#a1ba5ca0f61f2fa13bd23bf0f89004f35">upper_bound</a>, std::optional&lt; std::pair&lt; IntegerVariable, IntegerValue &gt; &gt; extra_term=std::nullopt)</td></tr>
 <tr class="separator:a5d028844e2ffb568bbc68185f7cb6260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af46a871a0118f4caa89a5eced7b460f6" id="r_af46a871a0118f4caa89a5eced7b460f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af46a871a0118f4caa89a5eced7b460f6">ConvertToCutData</a> (absl::int128 rhs, const std::vector&lt; IntegerVariable &gt; &amp;integer_variables, const std::vector&lt; double &gt; &amp;lp_solution, <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> *integer_trail, <a class="el" href="structoperations__research_1_1sat_1_1CutData.html">CutData</a> *result)</td></tr>
-<tr class="separator:af46a871a0118f4caa89a5eced7b460f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73125ec7cafae4147d0d0706795b5c87" id="r_a73125ec7cafae4147d0d0706795b5c87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73125ec7cafae4147d0d0706795b5c87">ConvertToCutData</a> (absl::int128 rhs, absl::Span&lt; const IntegerVariable &gt; integer_variables, absl::Span&lt; const double &gt; lp_solution, <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> *integer_trail, <a class="el" href="structoperations__research_1_1sat_1_1CutData.html">CutData</a> *result)</td></tr>
+<tr class="separator:a73125ec7cafae4147d0d0706795b5c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a394ae921bc450785db0c4fcbfd1b1e" id="r_a8a394ae921bc450785db0c4fcbfd1b1e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; glop::ColIndex, IntegerValue &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a394ae921bc450785db0c4fcbfd1b1e">GetTerms</a> ()</td></tr>
 <tr class="memdesc:a8a394ae921bc450785db0c4fcbfd1b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="#a5d028844e2ffb568bbc68185f7cb6260">ConvertToLinearConstraint()</a>.  <br /></td></tr>
 <tr class="separator:a8a394ae921bc450785db0c4fcbfd1b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +214,8 @@ template&lt;bool check_overflow&gt; </div>
 
 </div>
 </div>
-<a id="af46a871a0118f4caa89a5eced7b460f6" name="af46a871a0118f4caa89a5eced7b460f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af46a871a0118f4caa89a5eced7b460f6">&#9670;&#160;</a></span>ConvertToCutData()</h2>
+<a id="a73125ec7cafae4147d0d0706795b5c87" name="a73125ec7cafae4147d0d0706795b5c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73125ec7cafae4147d0d0706795b5c87">&#9670;&#160;</a></span>ConvertToCutData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,12 +228,12 @@ template&lt;bool check_overflow&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; IntegerVariable &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>integer_variables</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const IntegerVariable &gt;</td>          <td class="paramname"><span class="paramname"><em>integer_variables</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lp_solution</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const double &gt;</td>          <td class="paramname"><span class="paramname"><em>lp_solution</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -276,7 +276,7 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>This is not const only because non_zeros is sorted. Note that sorting the non-zeros make the result deterministic whether or not we were in sparse mode.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001900">Todo</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001930">Todo</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
 <p>We first do one pass to compute the exact size and not overallocate.</p>
 <p>Allocate once.</p>
 <p>Copy terms.</p>

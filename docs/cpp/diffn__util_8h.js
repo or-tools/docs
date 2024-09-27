@@ -18,13 +18,14 @@ var diffn__util_8h =
     [ "BoxesAreInEnergyConflict", "diffn__util_8h.html#a3b855792c88d6555dacbd8f060a93435", null ],
     [ "ConstructOverlappingSets", "diffn__util_8h.html#a461d44370c54b18a0d36fd5683352eb0", null ],
     [ "FilterBoxesAndRandomize", "diffn__util_8h.html#a3f0be3244a48d1875afbbb1fa690d743", null ],
-    [ "FilterBoxesThatAreTooLarge", "diffn__util_8h.html#aa65c80ff34cbdd8c2155991d7d891564", null ],
+    [ "FilterBoxesThatAreTooLarge", "diffn__util_8h.html#a56f440f63eee04ede634a116041adf7b", null ],
+    [ "FindEmptySpaces", "diffn__util_8h.html#a557dbf01937df17542da0144682913cd", null ],
     [ "FindRectanglesWithEnergyConflictMC", "diffn__util_8h.html#a9c95d68b46f17e3aa215ce63ea446514", null ],
     [ "GetIntervalArticulationPoints", "diffn__util_8h.html#a632e976a0e61c8dc649c0fcb4d3cc324", null ],
     [ "GetOverlappingIntervalComponents", "diffn__util_8h.html#ada6c4aa7b48dc203f11f4be4581dbdd6", null ],
     [ "GetOverlappingRectangleComponents", "diffn__util_8h.html#a92f6f3c573f3242e0c7ef91d0bed86e0", null ],
     [ "operator<<", "diffn__util_8h.html#ab57313c8750510a4590d95a0c71ce41c", null ],
-    [ "RenderDot", "diffn__util_8h.html#a99d1707525b3533931be02c4897dfd00", null ],
+    [ "RenderDot", "diffn__util_8h.html#a87ce71893fd117910c4e2d88421633f2", null ],
     [ "ReportEnergyConflict", "diffn__util_8h.html#a89dc2fa5d4896cd17270cf7d40099e08", null ],
     [ "Smallest1DIntersection", "diffn__util_8h.html#ad6111749765bdc417d6faab8b21bebe1", null ]
 ];

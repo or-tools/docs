@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -109,14 +109,19 @@ $(function(){initNavTree('time__limit_8h.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/base/thread_annotations.h&quot;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/flags/declare.h&quot;</code><br />
+<code>#include &quot;absl/flags/flag.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
 <code>#include &quot;absl/time/clock.h&quot;</code><br />
+<code>#include &quot;absl/time/time.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">ortools/base/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="running__stat_8h_source.html">ortools/util/running_stat.h</a>&quot;</code><br />

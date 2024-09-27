@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -350,8 +350,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the "deterministic time" since the creation of the solver. Note That this time is only increased when some operations take place in this class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000448">Todo</a></b></dt><dd>(user): Currently, this is only modified when the simplex code is executed.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000449">Todo</a></b></dt><dd>(user): Improve the correlation with the running time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000466">Todo</a></b></dt><dd>(user): Currently, this is only modified when the simplex code is executed.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000467">Todo</a></b></dt><dd>(user): Improve the correlation with the running time. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__solver_8cc_source.html#l00547">547</a> of file <a class="el" href="lp__solver_8cc_source.html">lp_solver.cc</a>.</p>
 
@@ -576,7 +576,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This loads a given solution and computes related quantities so that the getters below will refer to it.</p>
 <p>Depending on the given solution status, this also checks the solution feasibility or optimality. The exact behavior and tolerances are controlled by the solver parameters. Because of this, the returned ProblemStatus may be changed from the one passed in the <a class="el" href="structoperations__research_1_1glop_1_1ProblemSolution.html" title="Contains the solution of a LinearProgram as returned by a preprocessor.">ProblemSolution</a> to ABNORMAL or IMPRECISE. Note that this is the same logic as the one used by <a class="el" href="#aef12fcf2ff38e2268f7629fe61e5258b">Solve()</a> to verify the solver solution.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000435">Todo</a></b></dt><dd>(user): Try to also check the precision of an INFEASIBLE or UNBOUNDED return status. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000453">Todo</a></b></dt><dd>(user): Try to also check the precision of an INFEASIBLE or UNBOUNDED return status. </dd></dl>
 <p>Load the solution.</p>
 <p>Objective before eventually moving the primal/dual values inside their bounds.</p>
 <p>Eventually move the primal/dual values inside their bounds.</p>
@@ -588,7 +588,7 @@ Static Public Member Functions</h2></td></tr>
 <li>tolerance for an infeasible dual value (because the limit is always 0.0).</li>
 </ul>
 <p>Computes all the infeasiblities and update the Booleans above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000436">Todo</a></b></dt><dd>(user): the name is not really consistent since in practice those are the "residual" since the primal/dual infeasibility are zero when parameters_.provide_strong_optimal_guarantee() is true. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000454">Todo</a></b></dt><dd>(user): the name is not really consistent since in practice those are the "residual" since the primal/dual infeasibility are zero when parameters_.provide_strong_optimal_guarantee() is true. </dd></dl>
 <p>Now that all the relevant quantities are computed, we check the precision and optimality of the result. See Chvatal pp. 61-62. If any of the tests fail, we return the IMPRECISE status.</p>
 <p>If the primal/dual values were moved to the bounds, then the primal/dual infeasibilities should be exactly zero (but not the residuals).</p>
 <dl class="section note"><dt>Note</dt><dd>we compare the values without offset nor scaling. We also need to compare them before we move the primal/dual values, otherwise we lose some precision since the values are modified independently of each other.</dd></dl>
@@ -612,7 +612,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if the solution status was OPTIMAL and it seems that there is more than one basic optimal solution. Note that this solver always returns an optimal BASIC solution and that there is only a finite number of them. Moreover, given one basic solution, since the basis is always refactorized at optimality before reporting the numerical result, then all the quantities (even the floating point ones) should be always the same.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000447">Todo</a></b></dt><dd>(user): Test this behavior extensively if a client relies on it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000465">Todo</a></b></dt><dd>(user): Test this behavior extensively if a client relies on it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__solver_8cc_source.html#l00539">539</a> of file <a class="el" href="lp__solver_8cc_source.html">lp_solver.cc</a>.</p>
 
@@ -791,11 +791,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Setup the logger.</p>
 <p>Log some initial info about the input model.</p>
 <p>Check some preconditions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000433">Todo</a></b></dt><dd>(user): Unfortunately we are not really helpful with the error message here. We could do a better job. However most client should talk to glop via an input protocol buffer which should have better validation messages. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000451">Todo</a></b></dt><dd>(user): Unfortunately we are not really helpful with the error message here. We could do a better job. However most client should talk to glop via an input protocol buffer which should have better validation messages. </dd></dl>
 <p>Make an internal copy of the problem for the preprocessing.</p>
 <p>Remove small entries even if presolve is off. This is mainly here to avoid floating point underflow. Keeping them can break many invariant like a * b == 0 iff a == 0 or b == 0.</p>
 <dl class="section note"><dt>Note</dt><dd>our presolve/scaling can potentially create smaller entries than this, but the scale should stay reasonable.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000434">Todo</a></b></dt><dd>(user): If speed matter, we could do that as we copy the program. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000452">Todo</a></b></dt><dd>(user): If speed matter, we could do that as we copy the program. </dd></dl>
 <p>Preprocess.</p>
 <p>At this point, we need to initialize a <a class="el" href="structoperations__research_1_1glop_1_1ProblemSolution.html" title="Contains the solution of a LinearProgram as returned by a preprocessor.">ProblemSolution</a> with the correct size and status.</p>
 <p><a class="el" href="#ae525d5598b932514635be5f0329610a4">LoadAndVerifySolution()</a> below updates primal_values_, dual_values_, variable_statuses_ and constraint_statuses_ with the values stored in solution by RunPrimalDualPathFollowingMethodIfNeeded() and RunRevisedSimplexIfNeeded(), and hence clears any results stored in them from a previous run. In contrast, primal_ray_, constraints_dual_ray_, and variable_bounds_dual_ray_ are modified directly by RunRevisedSimplexIfNeeded(), so we explicitly clear them from previous run results.</p>

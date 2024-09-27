@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,7 +131,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information about a variable assignment. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00230">230</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00242">242</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5fd5c5c2291d29802813860e346b7a33" name="a5fd5c5c2291d29802813860e346b7a33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fd5c5c2291d29802813860e346b7a33">&#9670;&#160;</a></span>DebugString()</h2>
@@ -156,7 +156,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00253">253</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00265">265</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -173,10 +173,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The decision level at which this assignment was made. This starts at 0 and increases each time the solver takes a search decision.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002162">Todo</a></b></dt><dd>(user): We may be able to get rid of that for faster enqueues. Most of the code only need to know if this is 0 or the highest level, and for the LBD computation, the literal of the conflict are already ordered by level, so we could do it fairly efficiently.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002163">Todo</a></b></dt><dd>(user): We currently don't support more than 2^28 decision levels. That should be enough for most practical problem, but we should fail properly if this limit is reached. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo</a></b></dt><dd>(user): We may be able to get rid of that for faster enqueues. Most of the code only need to know if this is 0 or the highest level, and for the LBD computation, the literal of the conflict are already ordered by level, so we could do it fairly efficiently.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo</a></b></dt><dd>(user): We currently don't support more than 2^28 decision levels. That should be enough for most practical problem, but we should fail properly if this limit is reached. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00242">242</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00254">254</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Public Attributes</h2></td></tr>
 
 <p>The index of this assignment in the trail. </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00251">251</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00263">263</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ Public Attributes</h2></td></tr>
 <p>The type of assignment (see <a class="el" href="structoperations__research_1_1sat_1_1AssignmentType.html">AssignmentType</a> below).</p>
 <p>Note(user): We currently don't support more than 16 types of assignment. This is checked in RegisterPropagator(). </p>
 
-<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00248">248</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00260">260</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 
 </div>
 </div>

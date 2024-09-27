@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33a5d176dddf3a86e0b08a9d94195d46" id="r_a33a5d176dddf3a86e0b08a9d94195d46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33a5d176dddf3a86e0b08a9d94195d46">Propagate</a> (<a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> *trail) final</td></tr>
 <tr class="memdesc:a33a5d176dddf3a86e0b08a9d94195d46"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> interface.  <br /></td></tr>
 <tr class="separator:a33a5d176dddf3a86e0b08a9d94195d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb76657b65cc3ae9aed6d1e38444a083" id="r_abb76657b65cc3ae9aed6d1e38444a083"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb76657b65cc3ae9aed6d1e38444a083">Reason</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;trail, int trail_index) const final</td></tr>
-<tr class="separator:abb76657b65cc3ae9aed6d1e38444a083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1b212ca89bf9ac55030e640acd8b08" id="r_abd1b212ca89bf9ac55030e640acd8b08"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd1b212ca89bf9ac55030e640acd8b08">Reason</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;trail, int trail_index, int64_t conflict_id) const final</td></tr>
+<tr class="separator:abd1b212ca89bf9ac55030e640acd8b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e21fcb1c0adc1356d2d04102fe920af" id="r_a1e21fcb1c0adc1356d2d04102fe920af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e21fcb1c0adc1356d2d04102fe920af">Resize</a> (int num_variables)</td></tr>
 <tr class="memdesc:a1e21fcb1c0adc1356d2d04102fe920af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the data structure.  <br /></td></tr>
 <tr class="separator:a1e21fcb1c0adc1356d2d04102fe920af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,10 +230,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adfe87170234d2d0464fca7dddd5194d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2377211a723ddb7ec81fd5580ba44c65" id="r_a2377211a723ddb7ec81fd5580ba44c65"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2377211a723ddb7ec81fd5580ba44c65">WorkDone</a> () const</td></tr>
 <tr class="separator:a2377211a723ddb7ec81fd5580ba44c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff075acd922c509794c24578979715f" id="r_aeff075acd922c509794c24578979715f"><td class="memTemplParams" colspan="2">template&lt;bool use_weight = true&gt; </td></tr>
-<tr class="memitem:aeff075acd922c509794c24578979715f"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeff075acd922c509794c24578979715f">ExpandAtMostOneWithWeight</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; at_most_one, const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; LiteralIndex, bool &gt; &amp;can_be_included, const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; LiteralIndex, double &gt; &amp;expanded_lp_values)</td></tr>
-<tr class="memdesc:aeff075acd922c509794c24578979715f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as ExpandAtMostOne() but try to maximize the weight in the clique.  <br /></td></tr>
-<tr class="separator:aeff075acd922c509794c24578979715f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe6d50a70a991f77ef32d80afc5e3ae" id="r_a3fe6d50a70a991f77ef32d80afc5e3ae"><td class="memTemplParams" colspan="2">template&lt;bool use_weight = true&gt; </td></tr>
+<tr class="memitem:a3fe6d50a70a991f77ef32d80afc5e3ae"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3fe6d50a70a991f77ef32d80afc5e3ae">ExpandAtMostOneWithWeight</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; at_most_one, const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; LiteralIndex, bool &gt; &amp;can_be_included, const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; LiteralIndex, double &gt; &amp;expanded_lp_values)</td></tr>
+<tr class="memdesc:a3fe6d50a70a991f77ef32d80afc5e3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as ExpandAtMostOne() but try to maximize the weight in the clique.  <br /></td></tr>
+<tr class="separator:a3fe6d50a70a991f77ef32d80afc5e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0599b52783f1a3731d2b28b457506d0a" id="r_a0599b52783f1a3731d2b28b457506d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0599b52783f1a3731d2b28b457506d0a">ResetAtMostOneIterator</a> ()</td></tr>
 <tr class="memdesc:a0599b52783f1a3731d2b28b457506d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restarts the at_most_one iterator.  <br /></td></tr>
 <tr class="separator:a0599b52783f1a3731d2b28b457506d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,8 +258,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5876a992300dcbcf936d11d9b9dd0512 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5afb5d4be1ac4f9c4f0758fb8dc40d inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator" id="r_a2e5afb5d4be1ac4f9c4f0758fb8dc40d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a2e5afb5d4be1ac4f9c4f0758fb8dc40d">PropagatorId</a> () const</td></tr>
 <tr class="separator:a2e5afb5d4be1ac4f9c4f0758fb8dc40d inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68acada7af835c9c6870ceb876dc2d9c inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator" id="r_a68acada7af835c9c6870ceb876dc2d9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a68acada7af835c9c6870ceb876dc2d9c">Untrail</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;trail, int trail_index)</td></tr>
-<tr class="separator:a68acada7af835c9c6870ceb876dc2d9c inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f04df27e81298743cf658683344b0a0 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator" id="r_a5f04df27e81298743cf658683344b0a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5f04df27e81298743cf658683344b0a0">Untrail</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;, int trail_index)</td></tr>
+<tr class="separator:a5f04df27e81298743cf658683344b0a0 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bde4f8c3d7c6326050ac164391bf2a7 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator" id="r_a2bde4f8c3d7c6326050ac164391bf2a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a2bde4f8c3d7c6326050ac164391bf2a7">PropagatePreconditionsAreSatisfied</a> (const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;trail) const</td></tr>
 <tr class="memdesc:a2bde4f8c3d7c6326050ac164391bf2a7 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="mdescLeft">&#160;</td><td class="mdescRight">######################## Implementations below ########################  <br /></td></tr>
 <tr class="separator:a2bde4f8c3d7c6326050ac164391bf2a7 inherit pub_methods_classoperations__research_1_1sat_1_1SatPropagator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +279,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special class to store and propagate clauses of size 2 (i.e. implication). Such clauses are never deleted. Together, they represent the 2-SAT part of the problem. Note that 2-SAT satisfiability is a polynomial problem, but W2SAT (weighted 2-SAT) is NP-complete.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001100">Todo</a></b></dt><dd>(user): Most of the note below are done, but we currently only applies the reduction before the solve. We should consider doing more in-processing. The code could probably still be improved too.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001124">Todo</a></b></dt><dd>(user): Most of the note below are done, but we currently only applies the reduction before the solve. We should consider doing more in-processing. The code could probably still be improved too.</dd></dl>
 <p>Note(user): All the variables in a strongly connected component are equivalent and can be thus merged as one. This is relatively cheap to compute from time to time (linear complexity). We will also get contradiction (a &lt;=&gt; not a) this way. This is done by <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a>.</p>
 <p>Note(user): An implication (a =&gt; not a) implies that a is false. I am not sure it is worth detecting that because if the solver assign a to true, it will learn that right away. I don't think we can do it faster.</p>
 <p>Note(user): The implication graph can be pruned. This is called the transitive reduction of a graph. For instance If a =&gt; {b,c} and b =&gt; {c}, then there is no need to store a =&gt; {c}. The transitive reduction is unique on an acyclic graph. Computing it will allow for a faster propagation and memory reduction. It is however not cheap. Maybe simple lazy heuristics to remove redundant arcs are better. Note that all the learned clauses we add will never be redundant (but they could introduce cycles). This is done by <a class="el" href="#a07e88e219614208bf02f4bed078504f9">ComputeTransitiveReduction()</a>.</p>
@@ -292,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
   Simplification Based on Binary Implication Graphs", Theory and Applications of Satisfiability Testing - SAT 2011, Lecture Notes in Computer Science Volume 6695, 2011, pp 201-215 <a href="http://www.cs.helsinki.fi/u/mjarvisa/papers/heule-jarvisalo-biere.sat11.pdf">http://www.cs.helsinki.fi/u/mjarvisa/papers/heule-jarvisalo-biere.sat11.pdf</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00469">469</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00480">480</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a86ea320dad04144939131e7e12dc8659" name="a86ea320dad04144939131e7e12dc8659"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86ea320dad04144939131e7e12dc8659">&#9670;&#160;</a></span>BinaryImplicationGraph() <span class="overload">[1/2]</span></h2>
@@ -317,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00471">471</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00482">482</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00487">487</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00498">498</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -392,11 +392,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>An at most one constraint of size n is a compact way to encode n * (n - 1) implications. This must only be called at level zero.</p>
 <p>Returns false if this creates a conflict. Currently this can only happens if there is duplicate literal already assigned to true in this constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001104">Todo</a></b></dt><dd>(user): Our algorithm could generalize easily to at_most_ones + a list of literals that will be false if one of the literal in the amo is at one. It is a way to merge common list of implications.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001128">Todo</a></b></dt><dd>(user): Our algorithm could generalize easily to at_most_ones + a list of literals that will be false if one of the literal in the amo is at one. It is a way to merge common list of implications.</dd></dl>
 <p>If the final AMO size is smaller than at_most_one_expansion_size parameters, we fully expand it. </p>
 <p>Temporarily copy the at_most_one constraint at the end of at_most_one_buffer_. It will be cleaned up and added by CleanUpAndAddAtMostOnes().</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00586">586</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00591">591</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -422,13 +422,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Preconditions:</p><ul>
 <li>If we are at root node, then none of the literal should be assigned. This is Checked and is there to track inefficiency as we do not need a clause in this case.</li>
 <li><p class="startli">If we are at a positive decision level, we will propagate something if we can. However, if both literal are false, we will just return false and do nothing. In all other case, we will return true.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001077">Todo</a></b></dt><dd>(user): Not all of the solver knows about representative literal, do use them here to maintains invariant? Explore this when we start cleaning our clauses using equivalence during search. We can easily do it for every conflict we learn instead of here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001101">Todo</a></b></dt><dd>(user): Not all of the solver knows about representative literal, do use them here to maintains invariant? Explore this when we start cleaning our clauses using equivalence during search. We can easily do it for every conflict we learn instead of here. </dd></dl>
 </li>
 </ul>
 <p>Tricky: If this is the first clause, the propagator will be added and assumed to be in a "propagated" state. This makes sure this is the case.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001078">Todo</a></b></dt><dd>(user): Like this we will duplicate all binary clause from the problem. However this leads to a simpler API (since we don't need to special case the loading of the original clauses) and we mainly use drat proof for testing anyway. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001102">Todo</a></b></dt><dd>(user): Like this we will duplicate all binary clause from the problem. However this leads to a simpler API (since we don't need to special case the loading of the original clauses) and we mainly use drat proof for testing anyway. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00528">528</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00531">531</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00518">518</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00529">529</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +491,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Changes the reason of the variable at trail index to a binary reason. </p><dl class="section note"><dt>Note</dt><dd>the implication "new_reason =&gt; trail_[trail_index]" should be part of the implication graph. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00724">724</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00734">734</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +513,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Clean-up at most ones.</p>
 <dl class="section note"><dt>Note</dt><dd>to please the invariant() we also removed fixed literal above.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02322">2322</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02330">2330</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -535,14 +535,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>this can be slow (num_literals graph traversals), so we abort early if we start doing too much work.</dd></dl>
 <p>Returns false if the model is detected to be UNSAT (this needs to call <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a> if not already done).</p>
 <dl class="section note"><dt>Note</dt><dd>as a side effect this also do a full "failed literal probing" using the binary implication graph only.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001088">Todo</a></b></dt><dd>(user): Track which literal have new implications, and only process the antecedants of these. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001089">Todo</a></b></dt><dd>(user): the situation with fixed variable is not really "clean". Simplify the code so we are sure we don't run into issue or have to deal with any of that here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001112">Todo</a></b></dt><dd>(user): Track which literal have new implications, and only process the antecedants of these. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001113">Todo</a></b></dt><dd>(user): the situation with fixed variable is not really "clean". Simplify the code so we are sure we don't run into issue or have to deal with any of that here. </dd></dl>
 <p>For each node we do a graph traversal and only keep the literals at maximum distance 1. This only works because we have a DAG when ignoring the "redundant" literal marked by <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a>. Note that we also need no duplicates in the implications list for correctness which is also guaranteed by <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001090">Todo</a></b></dt><dd>(user): We should be able to reuse some propagation like it is done for tree-look. Once a node is processed, we just need to process a node that implies it. Test if we can make this faster. Alternatively, only clear a part of is_marked_ (after the first child of root in reverse topo order).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001091">Todo</a></b></dt><dd>(user): Can we exploit the fact that the implication graph is a skew-symmetric graph (isomorphic to its transposed) so that we do less work? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001114">Todo</a></b></dt><dd>(user): We should be able to reuse some propagation like it is done for tree-look. Once a node is processed, we just need to process a node that implies it. Test if we can make this faster. Alternatively, only clear a part of is_marked_ (after the first child of root in reverse topo order).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001115">Todo</a></b></dt><dd>(user): Can we exploit the fact that the implication graph is a skew-symmetric graph (isomorphic to its transposed) so that we do less work? </dd></dl>
 <p>In most situation reverse_topological_order_ contains no redundant, fixed or removed variables. But the reverse_topological_order_ is only recomputed when new binary are added to the graph, not when new variable are fixed.</p>
 <p>This is a "poor" version of the tree look stuff, but it does show good improvement. If we just processed one of the child of root, we don't need to re-explore it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001092">Todo</a></b></dt><dd>(user): Another optim we can do is that we never need to expand any node with a reverse topo order smaller or equal to the min of the ones in this list. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001116">Todo</a></b></dt><dd>(user): Another optim we can do is that we never need to expand any node with a reverse topo order smaller or equal to the min of the ones in this list. </dd></dl>
 <p>This is a corner case where because of equivalent literal, root appear in implications_[root], we will remove it below.</p>
 <p>When this happens, then root must be false, we handle this just after the loop.</p>
 <p>We have a DAG, so direct_child could only be marked first.</p>
@@ -555,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Abort if the computation involved is too big.</p>
 <p>If we aborted early, we might no longer have both a=&gt;b and not(b)=&gt;not(a). This is not desirable has some algo relies on this invariant. We fix this here.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01436">1436</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01441">1441</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -574,10 +574,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns false if the model is unsat, otherwise detects equivalent variable (with respect to the implications only) and reorganize the propagation lists accordingly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001105">Todo</a></b></dt><dd>(user): Completely get rid of such literal instead? it might not be reasonable code-wise to remap our literals in all of our constraints though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001129">Todo</a></b></dt><dd>(user): Completely get rid of such literal instead? it might not be reasonable code-wise to remap our literals in all of our constraints though. </dd></dl>
 <p>This was already called, and no new constraint where added. Note that new fixed variable cannot create new equivalence, only new binary clauses do.</p>
 <p>Lets remove all fixed variables first.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001087">Todo</a></b></dt><dd>(user): We could just do it directly though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001111">Todo</a></b></dt><dd>(user): We could just do it directly though. </dd></dl>
 <p>The old values will still be valid.</p>
 <p>If one is fixed then all must be fixed. Note that the reason why the propagation didn't already do that and we don't always get fixed component of size 1 is because of the potential newly fixed literals above.</p>
 <p>In any case, all fixed literals are marked as redundant.</p>
@@ -592,7 +592,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Remark: this relation do not need to be added to a DRAT proof since the redundant variables should never be used again for a pure SAT problem.</p>
 <p>Remap all at most ones. Remove fixed variables, process duplicates. Note that this might result in more implications when we expand small at most one.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01243">1243</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01248">1248</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -612,13 +612,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>The literals that are "directly" implied when literal is set to true. This is not a full "reachability". It includes at most ones propagation. The set of all direct implications is enough to describe the implications graph completely.</p>
 <p>When doing blocked clause elimination of bounded variable elimination, one only need to consider this list and not the full reachability.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001098">Todo</a></b></dt><dd><p class="startdd">(user): lazy cleanup the lists on is_removed_? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001122">Todo</a></b></dt><dd><p class="startdd">(user): lazy cleanup the lists on is_removed_? </p>
 <p class="enddd">(user): Mark fixed variable as is_removed_ for faster iteration? </p>
 </dd></dl>
 <p>Clear old state.</p>
 <p>Fill new state.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02132">2132</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02140">2140</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -644,9 +644,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A proxy for <a class="el" href="#ab589014979b15460c0cb295527097731">DirectImplications()</a>.size(), However we currently do not maintain it perfectly. It is exact each time <a class="el" href="#ab589014979b15460c0cb295527097731">DirectImplications()</a> is called, and we update it in some situation but we don't deal with fixed variables, at_most ones and duplicates implications for now. </p>
+<p>A proxy for <a class="el" href="#ab589014979b15460c0cb295527097731">DirectImplications()</a>.<a class="el" href="2d__rectangle__presolve_8cc.html#aa1cb4ce111532ea2035639aa02569f14">size()</a>, However we currently do not maintain it perfectly. It is exact each time <a class="el" href="#ab589014979b15460c0cb295527097731">DirectImplications()</a> is called, and we update it in some situation but we don't deal with fixed variables, at_most ones and duplicates implications for now. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00748">748</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00758">758</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -674,14 +674,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>When set, the callback will be called on ALL newly added binary clauses.</p>
 <p>The <a class="el" href="#af82f4ac499358536858b414345c0b13e">EnableSharing()</a> function can be used to disable sharing temporarily for the clauses that are imported from the Shared repository already.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001103">Todo</a></b></dt><dd>(user): this is meant to share clause between workers, hopefully the contention will not be too high. Double check and maybe add a batch version were we keep new implication and add them in batches. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001127">Todo</a></b></dt><dd>(user): this is meant to share clause between workers, hopefully the contention will not be too high. Double check and maybe add a batch version were we keep new implication and add them in batches. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00530">530</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00541">541</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
-<a id="aeff075acd922c509794c24578979715f" name="aeff075acd922c509794c24578979715f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeff075acd922c509794c24578979715f">&#9670;&#160;</a></span>ExpandAtMostOneWithWeight()</h2>
+<a id="a3fe6d50a70a991f77ef32d80afc5e3ae" name="a3fe6d50a70a991f77ef32d80afc5e3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe6d50a70a991f77ef32d80afc5e3ae">&#9670;&#160;</a></span>ExpandAtMostOneWithWeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,12 +696,12 @@ template&lt;bool use_weight&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; LiteralIndex, bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>can_be_included</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; LiteralIndex, bool &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>can_be_included</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classabsl_1_1StrongVector.html">absl::StrongVector</a>&lt; LiteralIndex, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>expanded_lp_values</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; LiteralIndex, double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>expanded_lp_values</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -714,7 +714,7 @@ template&lt;bool use_weight&gt; </div>
 <p>Heuristic: use literal with largest lp value. We randomize slightly.</p>
 <p>If we don't use weight, we prefer variable that comes first.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01797">1797</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01802">1802</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -744,11 +744,11 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Extract all the binary clauses managed by this class. The Output type must support an <a class="el" href="#a76cf257e080c0b1fa5fd4b76f908e51c">AddBinaryClause(Literal a, Literal b)</a> function.</p>
 <p>Important: This currently does NOT include at most one constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): When extracting to <a class="el" href="cp__model_8proto.html">cp_model.proto</a> we could be more efficient by extracting bool_and constraint with many lhs terms. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001109">Todo</a></b></dt><dd>(user): Ideally we should just never have duplicate clauses in this class. But it seems we do in some corner cases, so lets not output them twice. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001132">Todo</a></b></dt><dd>(user): When extracting to <a class="el" href="cp__model_8proto.html">cp_model.proto</a> we could be more efficient by extracting bool_and constraint with many lhs terms. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001133">Todo</a></b></dt><dd>(user): Ideally we should just never have duplicate clauses in this class. But it seems we do in some corner cases, so lets not output them twice. </dd></dl>
 <p>Note(user): We almost always have both a =&gt; b and not(b) =&gt; not(a) in our implications_ database. Except if <a class="el" href="#a07e88e219614208bf02f4bed078504f9">ComputeTransitiveReduction()</a> was aborted early, but in this case, if only one is present, the other could be removed, so we shouldn't need to output it.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00697">697</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00707">707</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +773,7 @@ template&lt;typename Output &gt; </div>
 <p>Variable elimination by replacing everything of the form a =&gt; var =&gt; b by a =&gt; b. We ignore any a =&gt; a so the number of new implications is not always just the product of the two direct implication list of var and not(var). However, if a =&gt; var =&gt; a, then a and var are equivalent, so this case will be removed if one run <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a> before this. Similarly, if a =&gt; var =&gt; not(a) then a must be false and this is detected and dealt with by <a class="el" href="#ad3d4a6613825674f5a0e494343c5976f">FindFailedLiteralAroundVar()</a>. </p>
 <p>not(l) =&gt; literal =&gt; l.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02204">2204</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02212">2212</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -797,7 +797,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>LP clique cut heuristic. Returns a set of "at most one" constraints on the given literals or their negation that are violated by the current LP solution. Note that this assumes that lp_value(lit) = 1 - lp_value(lit.Negated()).</p>
 <p>The literal and lp_values vector are in one to one correspondence. We will only generate clique with these literals or their negation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001106">Todo</a></b></dt><dd>(user): Refine the heuristic and unit test! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001130">Todo</a></b></dt><dd>(user): Refine the heuristic and unit test! </dd></dl>
 <p>We only want to generate a cut with literals from the LP, not extra ones.</p>
 <p>We want highest sum first.</p>
 <p>First heuristic. Currently we only consider violated at most one of size 2, and extend them. Right now, the code is a bit slow to try too many at every LP node so it is why we are defensive like this. Note also that because we currently still statically add the initial implications, this will only add cut based on newly learned binary clause. Or the one that were not added to the relaxation in the first place.</p>
@@ -805,7 +805,7 @@ template&lt;typename Output &gt; </div>
 <p>Do not genate too many cut at once.</p>
 <p>Expand to a maximal at most one each candidates before returning them. </p><dl class="section note"><dt>Note</dt><dd>we only expand using literal from the LP.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01887">1887</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01894">1894</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -824,8 +824,8 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Heuristically identify "at most one" between the given literals, swap them around and return these amo as span inside the literals vector.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): Add a limit to make sure this do not take too much time. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001095">Todo</a></b></dt><dd><p class="startdd">(user): Use deterministic limit. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001131">Todo</a></b></dt><dd>(user): Add a limit to make sure this do not take too much time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001119">Todo</a></b></dt><dd><p class="startdd">(user): Use deterministic limit. </p>
 <p class="enddd">(user): Explore the graph instead of just looking at full amo, especially since we expand small ones. </p>
 </dd></dl>
 <p>Priority queue of (intersection_size, start_of_amo).</p>
@@ -838,7 +838,7 @@ template&lt;typename Output &gt; </div>
 <p>Mark the literal of that at most one at false.</p>
 <p>Extract the intersection by moving it in [num_processed, num_processed + intersection_size).</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01975">1975</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01983">1983</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Returns the list of literal "directly" implied by l. Beware that this can easily change behind your back if you modify the solver state. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00597">597</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00607">607</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +894,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Returns true if <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a> has been called and no new binary clauses have been added since then. When this is true then there is no cycle in the binary implication graph (modulo the redundant literals that form a cycle with their representative). </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00586">586</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00596">596</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -925,7 +925,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#ab639102372f03758b18523b613ae69e1">operations_research::sat::SatPropagator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00503">503</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00514">514</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +954,7 @@ template&lt;typename Output &gt; </div>
 <p>Returns true if this literal is fixed or is equivalent to another literal. This means that it can just be ignored in most situation.</p>
 <dl class="section note"><dt>Note</dt><dd>the set (and thus number) of redundant literal can only grow over time. This is because we always use the lowest index as representative of an equivalent class, so a redundant literal will stay that way. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00671">671</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00681">681</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +981,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00763">763</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00773">773</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1008,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00687">687</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00697">697</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1030,11 +1030,11 @@ template&lt;typename Output &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001084">Todo</a></b></dt><dd>(user): Also consider at most one? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): Also consider at most one? </dd></dl>
 <p>Identify and remove the redundant literals from the given conflict. 1/ If a -&gt; b then a can be removed from the conflict clause. This is because not b -&gt; not a. 2/ a -&gt; b can only happen if level(a) &lt;= level(b). 3/ Because of 2/, cycles can appear only at the same level. The vector is_simplified_ is used to avoid removing all elements of a cycle. Note that this is not optimal in the sense that we may not remove a literal that can be removed.</p>
 <dl class="section note"><dt>Note</dt><dd>there is no need to explore the unique literal of the highest decision level since it can't be removed. Because this is a conflict, such literal is always at position 0, so we start directly at 1.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01020">1020</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01025">1025</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1062,9 +1062,9 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a3cbe67b46860621bfa57c87f5247a385">MinimizeConflictWithReachability()</a> but also mark (in the given <a class="el" href="classoperations__research_1_1SparseBitset.html">SparseBitset</a>) the reachable literal already assigned to false. These literals will be implied if the 1-UIP literal is assigned to false, and the classic minimization algorithm can take advantage of that. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001083">Todo</a></b></dt><dd>(user): if this is false, then we actually have a conflict of size 2. This can only happen if the binary clause was not propagated properly if for instance we do chronological bactracking without re-enqueing the consequence of a binary clause. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): if this is false, then we actually have a conflict of size 2. This can only happen if the binary clause was not propagated properly if for instance we do chronological bactracking without re-enqueing the consequence of a binary clause. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00936">936</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00941">941</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ template&lt;typename Output &gt; </div>
 <p>The randomization allow to find more redundant implication since to find a =&gt; b and remove b, a must be before b in direct_implications. Note that a std::reverse() could work too. But randomization seems to work better. Probably because it has other impact on the search tree.</p>
 <p>The literal is already marked! so it must be implied by one of the previous literal in the direct_implications list. We can safely remove it.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00958">958</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00963">963</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1116,9 +1116,9 @@ template&lt;typename Output &gt; </div>
 <p>Uses the binary implication graph to minimize the given conflict by removing literals that implies others. The idea is that if a and b are two literals from the given conflict and a =&gt; b (which is the same as not(b) =&gt; not(a)) then a is redundant and can be removed.</p>
 <dl class="section note"><dt>Note</dt><dd>removing as many literals as possible is too time consuming, so we use different heuristics/algorithms to do this minimization. See the binary_minimization_algorithm SAT parameter and the .cc for more details about the different algorithms.</dd></dl>
 <p>Here, we remove all the literal whose negation are implied by the negation of the 1-UIP literal (which always appear first in the given conflict). Note that this algorithm is "optimal" in the sense that it leads to a minimized conflict with a backjump level as low as possible. However, not all possible literals are removed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001081">Todo</a></b></dt><dd>(user): Also consider at most one? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001105">Todo</a></b></dt><dd>(user): Also consider at most one? </dd></dl>
 <p>Compute the reachability from the literal "not(conflict-&gt;front())" using an iterative dfs.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001082">Todo</a></b></dt><dd>(user): This sounds like a good idea, but somehow it seems better not to do that even though it is almost for free. Investigate more.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001106">Todo</a></b></dt><dd>(user): This sounds like a good idea, but somehow it seems better not to do that even though it is almost for free. Investigate more.</dd></dl>
 <p>The idea here is that since we already compute the reachability from the root literal, we can use this computation to remove any implication root_literal =&gt; b if there is already root_literal =&gt; a and b is reachable from a.</p>
 <p>We treat the direct implications differently so we can also remove the redundant implications from this list at the same time.</p>
 <p>The "trick" is to unmark 'l'. This way, if we explore it twice, it means that this l is reachable from some other 'l' from the direct implication list. Remarks:</p><ul>
@@ -1127,7 +1127,7 @@ template&lt;typename Output &gt; </div>
 </ul>
 <p>Now we can prune the direct implications list and make sure are the literals there are marked.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00859">859</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00864">864</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1148,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Returns the next at_most_one, or a span of size 0 when finished. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02458">2458</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02466">2466</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1176,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Returns the number of current implications. Note that a =&gt; b and not(b) =&gt; not(a) are counted separately since they appear separately in our propagation lists. The number of size 2 clauses that represent the same thing is half this number. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00686">686</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00696">696</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1205,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Number of literals inspected by this class during propagation. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00659">659</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00669">669</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1232,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00663">663</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00673">673</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1261,7 @@ template&lt;typename Output &gt; </div>
 
 <p>MinimizeClause() stats. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00662">662</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00672">672</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1290,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Number of literal propagated by this class (including conflicts). </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00656">656</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00666">666</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1319,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Number of implications removed by transitive reduction. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00678">678</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00688">688</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1346,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00672">672</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00682">682</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1367,7 @@ template&lt;typename Output &gt; </div>
 <p>We should have dealt with that in <a class="el" href="#ad3d4a6613825674f5a0e494343c5976f">FindFailedLiteralAroundVar()</a>.</p>
 <p>l =&gt; literal =&gt; l: equivalent variable!</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02229">2229</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02237">2237</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1423,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a8417cfbc49d425aac62ce622b058b018">operations_research::sat::SatPropagator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00834">834</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00839">839</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1444,12 +1444,12 @@ template&lt;typename Output &gt; </div>
 <p>Returns a random literal in DirectImplications(lhs). Note that this is biased if lhs appear in some most one, but it is constant time, which is a lot faster than computing <a class="el" href="#ab589014979b15460c0cb295527097731">DirectImplications()</a> and then sampling from it. </p>
 <p>We are unlucky and just picked the wrong literal: take a different one.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02177">2177</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02185">2185</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
-<a id="abb76657b65cc3ae9aed6d1e38444a083" name="abb76657b65cc3ae9aed6d1e38444a083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb76657b65cc3ae9aed6d1e38444a083">&#9670;&#160;</a></span>Reason()</h2>
+<a id="abd1b212ca89bf9ac55030e640acd8b08" name="abd1b212ca89bf9ac55030e640acd8b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1b212ca89bf9ac55030e640acd8b08">&#9670;&#160;</a></span>Reason()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1460,12 +1460,17 @@ template&lt;typename Output &gt; </div>
         <tr>
           <td class="memname">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt; operations_research::sat::BinaryImplicationGraph::Reason </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>trail</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -1476,11 +1481,12 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Explains why the literal at given trail_index was propagated by returning a reason for this propagation. This will only be called for literals that are on the trail and were propagated by this class.</p>
 <p>The interpretation is that because all the literals of a reason were assigned to false, we could deduce the assignment of the given variable.</p>
-<p>The returned Span has to be valid until the literal is untrailed. A client can use trail_.GetEmptyVectorToStoreReason() if it doesn't have a memory location that already contains the reason. </p>
+<p>The returned Span has to be valid until the literal is untrailed. A client can use trail_.GetEmptyVectorToStoreReason() if it doesn't have a memory location that already contains the reason.</p>
+<p>If conlict id is positive, then this is called during first UIP resolution and we will backtrack over this literal right away, so we don't need to have a span that survive more than once. </p>
 
-<p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#ae623c1e4b5cc13194317411f19eff4ac">operations_research::sat::SatPropagator</a>.</p>
+<p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a11b358d3d2536ee257858d6131c0aff1">operations_research::sat::SatPropagator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00847">847</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00852">852</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1505,7 @@ template&lt;typename Output &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02300">2300</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02308">2308</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1532,7 @@ template&lt;typename Output &gt; </div>
 <p>Notify the deletion to the proof checker and the postsolve. </p><dl class="section note"><dt>Note</dt><dd>we want var first in these clauses for the postsolve.</dd></dl>
 <p>We need to remove any occurrence of var in our implication lists, this will be delayed to the CleanupAllRemovedVariables() call.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02249">2249</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l02257">2257</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1547,7 +1553,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Clean up implications list that might have duplicates. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00516">516</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00519">519</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1572,11 +1578,11 @@ template&lt;typename Output &gt; </div>
 <p>Nothing to do if nothing changed since last call.</p>
 <p>The code assumes that everything is already propagated. Otherwise we will remove implications that didn't propagate yet!</p>
 <p>If b is true and a -&gt; b then because not b -&gt; not a, all the implications list that contains b will be marked by this process. And the ones that contains not(b) should correspond to a false literal!</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001085">Todo</a></b></dt><dd>(user): This might not be true if we remove implication by transitive reduction and the process was aborted due to the computation limit. I think it will be good to maintain that invariant though, otherwise fixed literals might never be removed from these lists... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001109">Todo</a></b></dt><dd>(user): This might not be true if we remove implication by transitive reduction and the process was aborted due to the computation limit. I think it will be good to maintain that invariant though, otherwise fixed literals might never be removed from these lists... </dd></dl>
 <p>We mark its representative instead.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001086">Todo</a></b></dt><dd>(user): This might be a bit slow. Do not call all the time if needed, this shouldn't change the correctness of the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001110">Todo</a></b></dt><dd>(user): This might be a bit slow. Do not call all the time if needed, this shouldn't change the correctness of the code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01071">1071</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01076">1076</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1610,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>Returns the representative of the equivalence class of l (or l itself if it is on its own). Note that <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a> should have been called to get any non-trival results. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00604">604</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00614">614</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1633,7 +1639,7 @@ template&lt;typename Output &gt; </div>
 
 <p>Restarts the at_most_one iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00781">781</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00792">792</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1665,9 @@ template&lt;typename Output &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="#aeff075acd922c509794c24578979715f" title="Same as ExpandAtMostOne() but try to maximize the weight in the clique.">ExpandAtMostOneWithWeight()</a> will increase this, so a client can put a limit on this possibly expansive operation. </p>
+<p><a class="el" href="#a3fe6d50a70a991f77ef32d80afc5e3ae" title="Same as ExpandAtMostOne() but try to maximize the weight in the clique.">ExpandAtMostOneWithWeight()</a> will increase this, so a client can put a limit on this possibly expansive operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00770">770</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00780">780</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1683,7 +1689,7 @@ template&lt;typename Output &gt; </div>
 <p>Resizes the data structure. </p>
 <p>--&mdash; <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00498">498</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00501">501</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1711,7 +1717,7 @@ template&lt;typename Output &gt; </div>
 </div><div class="memdoc">
 <p>One must call <a class="el" href="#aa80bafd5aaf59cc6c7a67176c6304239">DetectEquivalences()</a> first, this is CHECKed. Returns a list so that if x =&gt; y, then x is after y. </p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00590">590</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00600">600</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1744,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00531">531</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00542">542</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1765,7 +1771,7 @@ template&lt;typename Output &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00717">717</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00727">727</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>
@@ -1797,9 +1803,9 @@ most one" constraints, each forming a max-clique in the incompatibility graph. T
 <p>Note(user): Because we always use literal with the smallest variable indices as representative, this make sure that if possible, we express the clique in term of user provided variable (that are always created first).</p>
 <p>Remap the clique to only use representative.</p>
 <p>We skip anything that can be presolved further as the code below do not handle duplicate well.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001093">Todo</a></b></dt><dd>(user): Shall we presolve it here? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001117">Todo</a></b></dt><dd>(user): Shall we presolve it here? </dd></dl>
 <p>Special case for clique of size 2, we don't expand them if they are included in an already added clique.</p>
-<p>Save the non-extended version as possible subset. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001094">Todo</a></b></dt><dd>(user): Detect on the fly is superset already exist. </dd></dl>
+<p>Save the non-extended version as possible subset. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001118">Todo</a></b></dt><dd>(user): Detect on the fly is superset already exist. </dd></dl>
 <p>We only expand the clique as long as we didn't spend too much time.</p>
 <p>Save the extended version as possible superset.</p>
 <p>Also index clique for size 2 quick lookup.</p>
@@ -1807,7 +1813,7 @@ most one" constraints, each forming a max-clique in the incompatibility graph. T
 <p>Abort if one was already deleted.</p>
 <p>If an extended clique already cover a deleted one, we cannot try to remove it by looking at its non-extended version.</p>
 
-<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01653">1653</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01658">1658</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1840,7 @@ most one" constraints, each forming a max-clique in the incompatibility graph. T
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00771">771</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00781">781</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
 
 </div>
 </div>

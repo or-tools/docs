@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -252,7 +252,7 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>GScipCallbackStats GetCallbackStats(GScip* gscip) {</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <a class="code hl_enumvalue" href="namespaceoperations__research.html#ae8871cc80d22901d60efe296f7a2c69fa709a86df491b3c4de41f88407e26a3f8">SCIP</a>* scip = gscip-&gt;scip();</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keyword">const</span> SCIP_STAGE stage = SCIPgetStage(scip);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  GScipCallbackStats <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  GScipCallbackStats stats;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keywordflow">switch</span> (stage) {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">case</span> SCIP_STAGE_PROBLEM:</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">case</span> SCIP_STAGE_TRANSFORMING:</div>
@@ -266,8 +266,8 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVED:</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">case</span> SCIP_STAGE_EXITSOLVE:</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">case</span> SCIP_STAGE_FREETRANS:</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes = SCIPgetNNodes(scip);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes_total = SCIPgetNTotalNodes(scip);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      stats.num_processed_nodes = SCIPgetNNodes(scip);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      stats.num_processed_nodes_total = SCIPgetNTotalNodes(scip);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      <span class="keywordflow">break</span>;</div>
@@ -279,11 +279,11 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">case</span> SCIP_STAGE_EXITPRESOLVE:</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVING: {</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      SCIP_NODE* node = SCIPgetCurrentNode(scip);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.current_node_id = node == <span class="keyword">nullptr</span> ? -1 : node-&gt;number;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      stats.current_node_id = node == <span class="keyword">nullptr</span> ? -1 : node-&gt;number;</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.current_node_id = <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      stats.current_node_id = stats.num_processed_nodes;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordflow">switch</span> (stage) {</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">case</span> SCIP_STAGE_TRANSFORMED:</div>
@@ -295,11 +295,11 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVING:</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVED:</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">case</span> SCIP_STAGE_EXITSOLVE:</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.primal_bound = gscip-&gt;ScipInfUnclamp(SCIPgetPrimalbound(scip));</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.dual_bound = gscip-&gt;ScipInfUnclamp(SCIPgetDualbound(scip));</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      stats.primal_bound = gscip-&gt;ScipInfUnclamp(SCIPgetPrimalbound(scip));</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      stats.dual_bound = gscip-&gt;ScipInfUnclamp(SCIPgetDualbound(scip));</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="comment">// Note: SCIPgetNLimSolsFound() docs claim it can be called in more</span></div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      <span class="comment">// stages, but that appears to be a typo in the docs.</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_solutions_found = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(SCIPgetNLimSolsFound(scip));</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      stats.num_solutions_found = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(SCIPgetNLimSolsFound(scip));</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">default</span>:</div>
@@ -310,9 +310,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">case</span> SCIP_STAGE_PRESOLVED:</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVING:</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVED:</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.primal_simplex_iterations = SCIPgetNPrimalLPIterations(scip);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.dual_simplex_iterations = SCIPgetNDualLPIterations(scip);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_nodes_left = SCIPgetNNodesLeft(scip);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      stats.primal_simplex_iterations = SCIPgetNPrimalLPIterations(scip);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      stats.dual_simplex_iterations = SCIPgetNDualLPIterations(scip);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      stats.num_nodes_left = SCIPgetNNodesLeft(scip);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <span class="keywordflow">break</span>;</div>
@@ -320,22 +320,22 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// SCIP counts the focus node (the current node) as explored, but to be</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="comment">// consistent with gurobi, we want to count it as open instead. In particular,</span></div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="comment">// for callbacks at the root, we want num_processed_nodes=0</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes &gt; 0) {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes--;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_processed_nodes_total--;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_nodes_left++;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordflow">if</span> (stats.num_processed_nodes &gt; 0) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    stats.num_processed_nodes--;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    stats.num_processed_nodes_total--;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    stats.num_nodes_left++;</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">switch</span> (stage) {</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVING:</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">case</span> SCIP_STAGE_SOLVED:</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keywordflow">case</span> SCIP_STAGE_EXITSOLVE:</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>.num_cuts_in_lp = SCIPgetNPoolCuts(scip);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      stats.num_cuts_in_lp = SCIPgetNPoolCuts(scip);</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  }</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordflow">return</span> stats;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>GScipConstraintOptions CallbackLazyConstraintOptions(<span class="keyword">const</span> <span class="keywordtype">bool</span> local,</div>
@@ -553,9 +553,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  SCIP_CONSHDLRDATA* scip_handler_data = SCIPconshdlrGetData(conshdlr);</div>
 <div class="foldopen" id="foldopen00415" data-start="{" data-end="}">
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="gscip__constraint__handler_8cc.html#a875439e224114d05fb4ea2e4f0e07b3b">  415</a></span>  operations_research::GScip* gscip = scip_handler_data-&gt;gscip;</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a> =</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> stats =</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>      operations_research::GetCallbackStats(gscip);</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;stats,</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>                                                             conshdlr, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> solution_known_infeasible = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(solinfeasible);</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>  <a class="code hl_class" href="classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html">GScipHandler</a>* gscip_handler = scip_handler_data-&gt;gscip_handler.get();</div>
@@ -580,9 +580,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  SCIP_CONSHDLRDATA* scip_handler_data = SCIPconshdlrGetData(conshdlr);</div>
 <div class="foldopen" id="foldopen00440" data-start="{" data-end="}">
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno"><a class="line" href="gscip__constraint__handler_8cc.html#a55103a9413973772f122a9c3dfef5030">  440</a></span>  operations_research::GScip* gscip = scip_handler_data-&gt;gscip;</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a> =</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> stats =</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>      operations_research::GetCallbackStats(gscip);</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;stats,</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>                                                             conshdlr, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> solution_known_infeasible = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(solinfeasible);</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> solution_infeasible_by_objective =</div>
@@ -610,9 +610,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>  SCIP_CONSHDLRDATA* scip_handler_data = SCIPconshdlrGetData(conshdlr);</div>
 <div class="foldopen" id="foldopen00468" data-start="{" data-end="}">
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="gscip__constraint__handler_8cc.html#ae5cc41357bffc84dee6ba5e059a30ca5">  468</a></span>  operations_research::GScip* gscip = scip_handler_data-&gt;gscip;</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a> =</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> stats =</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>      operations_research::GetCallbackStats(gscip);</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;stats,</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>                                                             conshdlr, sol);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> check_integrality = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(checkintegrality);</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> check_lp_rows = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(checklprows);</div>
@@ -641,9 +641,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>  SCIP_CONSHDLRDATA* scip_handler_data = SCIPconshdlrGetData(conshdlr);</div>
 <div class="foldopen" id="foldopen00497" data-start="{" data-end="}">
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno"><a class="line" href="gscip__constraint__handler_8cc.html#a5caadc079262052801b3e95ef2e6dd9b">  497</a></span>  operations_research::GScip* gscip = scip_handler_data-&gt;gscip;</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a> =</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> stats =</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>      operations_research::GetCallbackStats(gscip);</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;stats,</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                                                             conshdlr, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  <a class="code hl_class" href="classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html">GScipHandler</a>* gscip_handler = scip_handler_data-&gt;gscip_handler.get();</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>  <span class="keyword">auto</span> DoSeparateLp = [=](<span class="keywordtype">void</span>* constraint_data) {</div>
@@ -666,9 +666,9 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>  SCIP_CONSHDLRDATA* scip_handler_data = SCIPconshdlrGetData(conshdlr);</div>
 <div class="foldopen" id="foldopen00520" data-start="{" data-end="}">
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="gscip__constraint__handler_8cc.html#a3a6d6acbad469426278fb8293fc83cdf">  520</a></span>  operations_research::GScip* gscip = scip_handler_data-&gt;gscip;</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> <a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a> =</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  <a class="code hl_struct" href="structoperations__research_1_1GScipCallbackStats.html">operations_research::GScipCallbackStats</a> stats =</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>      operations_research::GetCallbackStats(gscip);</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;<a class="code hl_variable" href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a>,</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <a class="code hl_class" href="classoperations__research_1_1GScipConstraintHandlerContext.html">operations_research::GScipConstraintHandlerContext</a> <a class="code hl_variable" href="gurobi__interface_8cc.html#a5f287b83a753915ae862fed64f8640a6">context</a>(gscip, &amp;stats,</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                                                             conshdlr, sol);</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  <a class="code hl_class" href="classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html">GScipHandler</a>* gscip_handler = scip_handler_data-&gt;gscip_handler.get();</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>  <span class="keyword">auto</span> DoSeparateSolution = [=](<span class="keywordtype">void</span>* constraint_data) {</div>
@@ -813,7 +813,6 @@ $(function(){initNavTree('gscip__constraint__handler_8cc_source.html',''); initR
 <div class="ttc" id="aclassoperations__research_1_1GScipConstraintHandler_html_aca585294c96d500adcd76c273f682b06"><div class="ttname"><a href="classoperations__research_1_1GScipConstraintHandler.html#aca585294c96d500adcd76c273f682b06">operations_research::GScipConstraintHandler::CallSeparateLp</a></div><div class="ttdeci">GScipCallbackResult CallSeparateLp(GScipConstraintHandlerContext context, const ConstraintData &amp;constraint_data)</div><div class="ttdef"><b>Definition</b> <a href="gscip__constraint__handler_8h_source.html#l00706">gscip_constraint_handler.h:706</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1GScipConstraintHandler_html_acbd81eb75c4d3f4df10dd5aec32b4c54"><div class="ttname"><a href="classoperations__research_1_1GScipConstraintHandler.html#acbd81eb75c4d3f4df10dd5aec32b4c54">operations_research::GScipConstraintHandler::CallSeparateSolution</a></div><div class="ttdeci">GScipCallbackResult CallSeparateSolution(GScipConstraintHandlerContext context, const ConstraintData &amp;constraint_data)</div><div class="ttdef"><b>Definition</b> <a href="gscip__constraint__handler_8h_source.html#l00715">gscip_constraint_handler.h:715</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1internal_1_1UntypedGScipConstraintHandler_html"><div class="ttname"><a href="classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html">operations_research::internal::UntypedGScipConstraintHandler</a></div><div class="ttdef"><b>Definition</b> <a href="gscip__constraint__handler_8h_source.html#l00496">gscip_constraint_handler.h:496</a></div></div>
-<div class="ttc" id="acp__model__solver_8cc_html_a722aa9bdb68fa67c8c25fe72e44d7044"><div class="ttname"><a href="cp__model__solver_8cc.html#a722aa9bdb68fa67c8c25fe72e44d7044">stats</a></div><div class="ttdeci">SharedStatistics *const stats</div><div class="ttdef"><b>Definition</b> <a href="cp__model__solver_8cc_source.html#l02289">cp_model_solver.cc:2289</a></div></div>
 <div class="ttc" id="adefault__search_8cc_html_ac673bc430bdc3fdaa09f7becf98ef267"><div class="ttname"><a href="default__search_8cc.html#ac673bc430bdc3fdaa09f7becf98ef267">name</a></div><div class="ttdeci">const std::string name</div><div class="ttdoc">A name for logging purposes.</div><div class="ttdef"><b>Definition</b> <a href="default__search_8cc_source.html#l00824">default_search.cc:824</a></div></div>
 <div class="ttc" id="ademon__profiler_8cc_html_ac072af30c4ffbc834bb4c681f6ecb514"><div class="ttname"><a href="demon__profiler_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514">value</a></div><div class="ttdeci">int64_t value</div><div class="ttdef"><b>Definition</b> <a href="demon__profiler_8cc_source.html#l00046">demon_profiler.cc:46</a></div></div>
 <div class="ttc" id="aexpr__array_8cc_html_a472a99923cbe11ae7b5a5d157d9ad465"><div class="ttname"><a href="expr__array_8cc.html#a472a99923cbe11ae7b5a5d157d9ad465">var</a></div><div class="ttdeci">IntVar * var</div><div class="ttdef"><b>Definition</b> <a href="expr__array_8cc_source.html#l01876">expr_array.cc:1876</a></div></div>

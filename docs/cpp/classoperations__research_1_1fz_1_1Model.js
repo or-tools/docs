@@ -6,10 +6,15 @@ var classoperations__research_1_1fz_1_1Model =
     [ "AddConstraint", "classoperations__research_1_1fz_1_1Model.html#a53460bb33eb04fd15ab789014938675f", null ],
     [ "AddConstraint", "classoperations__research_1_1fz_1_1Model.html#a262c359e03406e19a4dbd09de891b047", null ],
     [ "AddFloatConstant", "classoperations__research_1_1fz_1_1Model.html#a8d0479951b20c84e010c3997e36f18c0", null ],
+    [ "AddFloatingPointObjectiveTerm", "classoperations__research_1_1fz_1_1Model.html#a29f56c877934cde3224322df989dbd36", null ],
     [ "AddOutput", "classoperations__research_1_1fz_1_1Model.html#a993968692c5939e07d4688c6e535326f", null ],
     [ "AddVariable", "classoperations__research_1_1fz_1_1Model.html#ae161d113b4285009d27e0097ddde59b9", null ],
+    [ "ClearObjective", "classoperations__research_1_1fz_1_1Model.html#ada647b98e5ed7479384049c0741440ec", null ],
     [ "constraints", "classoperations__research_1_1fz_1_1Model.html#a40dc2d2b6d589c2e19093852ba71d01b", null ],
     [ "DebugString", "classoperations__research_1_1fz_1_1Model.html#a91c8ce06f9a2a790eb3e8921108ed2cd", null ],
+    [ "float_objective_coefficients", "classoperations__research_1_1fz_1_1Model.html#a268302a0ccaadbf24d19a88a99d78e23", null ],
+    [ "float_objective_offset", "classoperations__research_1_1fz_1_1Model.html#aa128ff1334a7dceddcc39ed5892ca1f5", null ],
+    [ "float_objective_variables", "classoperations__research_1_1fz_1_1Model.html#a32a39e304e05a594593af8b5c7149a3a", null ],
     [ "IsInconsistent", "classoperations__research_1_1fz_1_1Model.html#af2b08a483eabbb0000144a9cc1f7e326", null ],
     [ "Maximize", "classoperations__research_1_1fz_1_1Model.html#a9ba290ee4c45a75df6d2667ae1f67c2b", null ],
     [ "maximize", "classoperations__research_1_1fz_1_1Model.html#a109ea2adc2c40917f6c5dcd503df477b", null ],
@@ -21,6 +26,7 @@ var classoperations__research_1_1fz_1_1Model =
     [ "output", "classoperations__research_1_1fz_1_1Model.html#a6c767b3a55d03d644750e56200c2aee4", null ],
     [ "Satisfy", "classoperations__research_1_1fz_1_1Model.html#aa3ac64ffa8b140576210431ab380fa4e", null ],
     [ "search_annotations", "classoperations__research_1_1fz_1_1Model.html#ab7458429f4b55f54a5983a483f09cd5a", null ],
+    [ "SetFloatingPointObjectiveOffset", "classoperations__research_1_1fz_1_1Model.html#a49a766816f82effdb797651c2969a478", null ],
     [ "SetObjective", "classoperations__research_1_1fz_1_1Model.html#a4413d27877548240883dec8ccc956a41", null ],
     [ "variables", "classoperations__research_1_1fz_1_1Model.html#a7f1cfb09eb38612384fd453fbd743649", null ]
 ];

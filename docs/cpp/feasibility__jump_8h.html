@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -106,7 +106,9 @@ $(function(){initNavTree('feasibility__jump_8h.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">feasibility_jump.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -114,11 +116,21 @@ $(function(){initNavTree('feasibility__jump_8h.html',''); initResizable(true); }
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
 <code>#include &quot;absl/functional/any_invocable.h&quot;</code><br />
 <code>#include &quot;absl/functional/bind_front.h&quot;</code><br />
+<code>#include &quot;absl/hash/hash.h&quot;</code><br />
+<code>#include &quot;absl/log/check.h&quot;</code><br />
+<code>#include &quot;absl/random/distributions.h&quot;</code><br />
+<code>#include &quot;absl/strings/str_join.h&quot;</code><br />
+<code>#include &quot;absl/strings/string_view.h&quot;</code><br />
+<code>#include &quot;absl/synchronization/mutex.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="base_2logging_8h_source.html">ortools/base/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constraint__violation_8h_source.html">ortools/sat/constraint_violation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="integer_8h_source.html">ortools/sat/integer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="linear__model_8h_source.html">ortools/sat/linear_model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="restart_8h_source.html">ortools/sat/restart.h</a>&quot;</code><br />
 <code>#include &quot;ortools/sat/sat_parameters.pb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="stat__tables_8h_source.html">ortools/sat/stat_tables.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="subsolver_8h_source.html">ortools/sat/subsolver.h</a>&quot;</code><br />
@@ -131,6 +143,18 @@ $(function(){initNavTree('feasibility__jump_8h.html',''); initResizable(true); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1JumpTable.html">operations_research::sat::JumpTable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1VarDomainWrapper.html">operations_research::sat::VarDomainWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1LsCounters.html">operations_research::sat::LsCounters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1LsOptions.html">operations_research::sat::LsOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameters used by the local search code.  <a href="structoperations__research_1_1sat_1_1LsOptions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1LsState.html">operations_research::sat::LsState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SharedLsStates.html">operations_research::sat::SharedLsStates</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared set of local search states that we work on.  <a href="classoperations__research_1_1sat_1_1SharedLsStates.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html">operations_research::sat::FeasibilityJumpSolver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

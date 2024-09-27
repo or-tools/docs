@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -548,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Clears a constraint from all its terms. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000755">Todo</a></b></dt><dd>(user): this is difficult to make incremental, like <a class="el" href="#a937c9e7503e0bc746f8fa40c7591f16a" title="Modify bounds of an extracted variable.">SetConstraintBounds()</a>, because of the auxiliary Gurobi variables that range constraints introduce. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000774">Todo</a></b></dt><dd>(user): this is difficult to make incremental, like <a class="el" href="#a937c9e7503e0bc746f8fa40c7591f16a" title="Modify bounds of an extracted variable.">SetConstraintBounds()</a>, because of the auxiliary Gurobi variables that range constraints introduce. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#ad3bf9661342852e6567dd0614b14d554">operations_research::MPSolverInterface</a>.</p>
 
@@ -641,7 +641,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Computes exact condition number. Only available for continuous problems and only implemented in GLPK. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000758">Todo</a></b></dt><dd>(user): Not yet working. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000777">Todo</a></b></dt><dd>(user): Not yet working. </dd></dl>
 <p>double cond = 0.0; const int status = <a class="el" href="namespaceoperations__research.html#a0a8a594aa881173453fc9444fafeb6c1">GRBgetdblattr(model_, GRB_DBL_ATTR_KAPPA, &amp;cond)</a>; if (0 == status) { return cond; } else { LOG(DFATAL) &lt;&lt; "Condition number only available for " &lt;&lt; "continuous problems"; return 0.0; }</p>
 <p>Override this method in interfaces that actually support it.</p>
 
@@ -964,7 +964,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Next solution only supported for MIP</p>
 <p>Make sure we have successfully solved the problem and not modified it.</p>
 <p>Check if we are out of solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000757">Todo</a></b></dt><dd>(user): This reset may not be necessary, investigate. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000776">Todo</a></b></dt><dd>(user): This reset may not be necessary, investigate. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1MPSolverInterface.html#a7f6e6fc6c25a04f49e3b95b7510c8369">operations_research::MPSolverInterface</a>.</p>
 
@@ -1031,7 +1031,7 @@ Additional Inherited Members</h2></td></tr>
 <p>We hold calls to <a class="el" href="namespaceoperations__research.html#aeb619744eff82f7f95e58c517f63bc3c">GRBterminate()</a> until the new model_ is ready.</p>
 <p>Copy all existing parameters from the previous model to the new one. This ensures that if a user calls multiple times SetSolverSpecificParametersAsString() and then <a class="el" href="#a7862478121ae29647bf0a12ff9ef5ed7" title="---— Model modifications and extraction --—">Reset()</a> is called, we still take into account all parameters.</p>
 <p>The current code only reapplies the parameters stored in solver_specific_parameter_string_ at the start of the solve; other parameters set by previous calls are only kept in the Gurobi model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000752">Todo</a></b></dt><dd><ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000771">Todo</a></b></dt><dd><ul>
 <li>b/328604189: Fix logging issue upstream, switch to a different API for copying parameters, or avoid calling <a class="el" href="#a7862478121ae29647bf0a12ff9ef5ed7" title="---— Model modifications and extraction --—">Reset()</a> in more places. </li>
 </ul>
 </dd></dl>
@@ -1143,7 +1143,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Changes a coefficient in a constraint. </p>
 <p>Cannot be const, GRBchgcoeffs needs non-const pointer.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000754">Todo</a></b></dt><dd>(user): investigate if this has bad performance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000773">Todo</a></b></dt><dd>(user): investigate if this has bad performance. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#a5d6fbe7405ab0a6a2deb6205968eb071">operations_research::MPSolverInterface</a>.</p>
 
@@ -1184,7 +1184,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modify bounds of an extracted variable. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000753">Todo</a></b></dt><dd>(user): this is nontrivial to make incremental:<ol type="1">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000772">Todo</a></b></dt><dd>(user): this is nontrivial to make incremental:<ol type="1">
 <li>Make sure it is a linear constraint (not an indicator or indicator range constraint).</li>
 <li>Check if the sense of the constraint changes. If it was previously a range constraint, we can do nothing, and if it becomes a range constraint, we can do nothing. We could support range constraints if we tracked the auxiliary variable that is added with range constraints. </li>
 </ol>
@@ -1400,7 +1400,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Logs all parameters not at default values in the model environment.</p>
 <p>Solve</p>
 <p>Get the status.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000756">Todo</a></b></dt><dd>(user): We could introduce our own "infeasible or
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000775">Todo</a></b></dt><dd>(user): We could introduce our own "infeasible or
 unbounded" status. </dd></dl>
 <p>Get the results.</p>
 

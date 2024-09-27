@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndex, typename Graph, typename SccOutput&gt;<br />
 class StronglyConnectedComponentsFinder&lt; NodeIndex, Graph, SccOutput &gt;</div><p>This implementation is slightly different than a classical iterative version of Tarjan's strongly connected components algorithm. But basically it is still an iterative DFS. We use a class so memory can be reused if one needs to compute many SCC in a row. It also allows more complex behavior in the Graph or SccOutput class that might inspect the current state of the algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000717">Todo</a></b></dt><dd>(user): Possible optimizations:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000736">Todo</a></b></dt><dd>(user): Possible optimizations:<ul>
 <li>Try to reserve the vectors which sizes are bounded by num_nodes.</li>
 <li>Use an index rather than doing push_back(), pop_back() on them. </li>
 </ul>

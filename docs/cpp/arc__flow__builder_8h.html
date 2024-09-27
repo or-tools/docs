@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -111,6 +111,7 @@ $(function(){initNavTree('arc__flow__builder_8h.html',''); initResizable(true); 
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/container/flat_hash_map.h&quot;</code><br />
+<code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">ortools/base/types.h</a>&quot;</code><br />
 </div>
 <p><a href="arc__flow__builder_8h_source.html">Go to the source code of this file.</a></p>
@@ -132,9 +133,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2f68b5f8308b27e642c0c0660f7fa47c" id="r_a2f68b5f8308b27e642c0c0660f7fa47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1packing_1_1ArcFlowGraph.html">ArcFlowGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1packing.html#a2f68b5f8308b27e642c0c0660f7fa47c">operations_research::packing::BuildArcFlowGraph</a> (const std::vector&lt; int &gt; &amp;bin_dimensions, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;item_dimensions_by_type, const std::vector&lt; int &gt; &amp;demand_by_type)</td></tr>
-<tr class="memdesc:a2f68b5f8308b27e642c0c0660f7fa47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method.  <br /></td></tr>
-<tr class="separator:a2f68b5f8308b27e642c0c0660f7fa47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d95ea0871932f9ee06297b053ffaef" id="r_a48d95ea0871932f9ee06297b053ffaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1packing_1_1ArcFlowGraph.html">ArcFlowGraph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1packing.html#a48d95ea0871932f9ee06297b053ffaef">operations_research::packing::BuildArcFlowGraph</a> (const std::vector&lt; int &gt; &amp;bin_dimensions, absl::Span&lt; const std::vector&lt; int &gt; &gt; item_dimensions_by_type, absl::Span&lt; const int &gt; demand_by_type)</td></tr>
+<tr class="memdesc:a48d95ea0871932f9ee06297b053ffaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method.  <br /></td></tr>
+<tr class="separator:a48d95ea0871932f9ee06297b053ffaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

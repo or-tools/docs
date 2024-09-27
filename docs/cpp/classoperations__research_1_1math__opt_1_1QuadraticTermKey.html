@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -141,10 +141,11 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Couples a QuadraticProductId with a ModelStorage, for use with IdMaps. Namely, this key type satisfies the requirements stated in <a class="el" href="key__types_8h.html">key_types.h</a>. Invariant:</p><ul>
-<li>variable_ids_.first &lt;= variable_ids_.second. The constructor will silently correct this if not satisfied by the inputs. </li>
+<li>variable_ids_.first &lt;= variable_ids_.second. The constructor will silently correct this if not satisfied by the inputs.</li>
 </ul>
+<p>This type can be used as a key in ABSL hash containers. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00645">645</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00650">650</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae8b789d62b3cdb1bc3ab937d07c09265" name="ae8b789d62b3cdb1bc3ab937d07c09265"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8b789d62b3cdb1bc3ab937d07c09265">&#9670;&#160;</a></span>IdType</h2>
@@ -159,7 +160,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>this definition is for use by IdMap; clients should not rely upon it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00648">648</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00653">653</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +195,7 @@ Friends</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTermKey.html">QuadraticTermKey</a> </p>
 <p>See <a href="https://en.cppreference.com/w/cpp/named_req/Swappable">https://en.cppreference.com/w/cpp/named_req/Swappable</a> for details.</p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02069">2069</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02074">2074</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +227,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>This constructor will CHECK fail if the variable models do not agree, i.e. first_variable.storage() != second_variable.storage(). It will also silently re-order the passed id so that, upon exiting the constructor, variable_ids_.first &lt;= variable_ids_.second. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02079">2079</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02084">2084</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +257,7 @@ Friends</h2></td></tr>
 
 <p>Returns the <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> with the smallest id. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00663">663</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00668">668</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +286,7 @@ Friends</h2></td></tr>
 
 <p>Returns the <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a> the largest id. </p>
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00666">666</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00671">671</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +313,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02089">2089</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02094">2094</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +340,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02087">2087</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02092">2092</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +374,7 @@ template&lt;typename H &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02092">2092</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l02097">2097</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
 
 </div>
 </div>

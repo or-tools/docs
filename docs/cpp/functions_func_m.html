@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -179,6 +179,7 @@ $(function(){initNavTree('functions_func_m.html',''); initResizable(true); });
 <li>MakeFixedDurationStartSyncedOnEndIntervalVar()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#a29ff164c41dc3fe1ea6ed8d032321e60">operations_research::Solver</a></li>
 <li>MakeFixedDurationStartSyncedOnStartIntervalVar()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#ae449a5e83cbcffe07c0f72e9f38c7996">operations_research::Solver</a></li>
 <li>MakeFixedInterval()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#a8cecdea137e96a37f8ee446068991635">operations_research::Solver</a></li>
+<li>MakeFullyUpdated()&#160;:&#160;<a class="el" href="classoperations__research_1_1SetCoverInvariant.html#a5b01b9e2e6cbb767de5012d58501fb74">operations_research::SetCoverInvariant</a></li>
 <li>MakeGenericTabuSearch()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#ae091c4a8a5611b5baadd6be67289132f">operations_research::Solver</a></li>
 <li>MakeGreater()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#a880b5ec7b79b188c924db87adbf6a34c">operations_research::Solver</a></li>
 <li>MakeGreaterOrEqual()&#160;:&#160;<a class="el" href="classoperations__research_1_1Solver.html#a38076da60ea873cf03a5205e2c4977b8">operations_research::Solver</a></li>
@@ -378,7 +379,7 @@ $(function(){initNavTree('functions_func_m.html',''); initResizable(true); });
 <li>max_index()&#160;:&#160;<a class="el" href="classoperations__research_1_1ZVector.html#aab16247556f3db712565051ad9cc1bd1">operations_research::ZVector&lt; T &gt;</a></li>
 <li>max_num_arcs()&#160;:&#160;<a class="el" href="classoperations__research_1_1StarGraphBase.html#a8aad937029f57b70efe059b908241685">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></li>
 <li>max_num_nodes()&#160;:&#160;<a class="el" href="classoperations__research_1_1StarGraphBase.html#a51a5033049b63ee5ce35b531b8474f0a">operations_research::StarGraphBase&lt; NodeIndexType, ArcIndexType, DerivedGraph &gt;</a></li>
-<li>max_size()&#160;:&#160;<a class="el" href="classabsl_1_1StrongVector.html#a19c931529657aaebd6871727f86f6e9a">absl::StrongVector&lt; IntType, T, Alloc &gt;</a>, <a class="el" href="classgtl_1_1linked__hash__map.html#a6e2698f7e99180cce29206465fe879cd">gtl::linked_hash_map&lt; Key, Value, KeyHash, KeyEq, Alloc &gt;</a>, <a class="el" href="classutil_1_1SVector.html#add718a46fe9ba1db673f69b2c02ec2a2">util::SVector&lt; T &gt;</a></li>
+<li>max_size()&#160;:&#160;<a class="el" href="classgtl_1_1linked__hash__map.html#a6e2698f7e99180cce29206465fe879cd">gtl::linked_hash_map&lt; Key, Value, KeyHash, KeyEq, Alloc &gt;</a>, <a class="el" href="classutil_1_1SVector.html#add718a46fe9ba1db673f69b2c02ec2a2">util::SVector&lt; T &gt;</a></li>
 <li>MaxBoundedSubsetSum()&#160;:&#160;<a class="el" href="classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#a8893f719085ea04d5abb0114f8aeae4b">operations_research::sat::MaxBoundedSubsetSum</a></li>
 <li>MaxElements()&#160;:&#160;<a class="el" href="structgtl_1_1LogLegacy.html#a30448cc398a299acd17975ec35b93b64">gtl::LogLegacy</a>, <a class="el" href="structgtl_1_1LogLegacyUpTo100.html#af1bb484e57dfe73c4858c1fb954ee4cb">gtl::LogLegacyUpTo100</a>, <a class="el" href="structgtl_1_1LogMultiline.html#a952699e49ad8863eafcefe326e44e72a">gtl::LogMultiline</a>, <a class="el" href="classgtl_1_1LogMultilineUpToN.html#a22cf6e7848be0e87c85c4128bafd90b6">gtl::LogMultilineUpToN</a>, <a class="el" href="structgtl_1_1LogShort.html#aedf432a54c469a00bdea7ec68e4bda64">gtl::LogShort</a>, <a class="el" href="classgtl_1_1LogShortUpToN.html#a08724284e1b0950b5b1d6c78c586a0ff">gtl::LogShortUpToN</a></li>
 <li>MaxFlow()&#160;:&#160;<a class="el" href="classoperations__research_1_1MaxFlow.html#a13a87ef36714bce2a634ff7b45b11e12">operations_research::MaxFlow</a></li>
@@ -485,8 +486,7 @@ $(function(){initNavTree('functions_func_m.html',''); initResizable(true); });
 <li>mutable_column()&#160;:&#160;<a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html#a60ce4a23868124c58373eb9b054afd74">operations_research::glop::SparseMatrix</a>, <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrixWithReusableColumnMemory.html#ad2134157b70e462d4413ab8af704bbe9">operations_research::glop::SparseMatrixWithReusableColumnMemory</a></li>
 <li>mutable_constraint_lower_bounds()&#160;:&#160;<a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html#a8187e934f869befd4e7a928192f7e9ae">operations_research::glop::LinearProgram</a></li>
 <li>mutable_constraint_upper_bounds()&#160;:&#160;<a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html#a48be8ba6500465f5e1aab82663a5561c">operations_research::glop::LinearProgram</a></li>
-<li>mutable_current_solution()&#160;:&#160;<a class="el" href="classoperations__research_1_1sat_1_1LsEvaluator.html#ad639ddd5f69baff440457ad0d322aeca">operations_research::sat::LsEvaluator</a></li>
-<li>mutable_get()&#160;:&#160;<a class="el" href="classabsl_1_1StrongVector.html#a35df7bbb04ba7c01a7617ad768ae261d">absl::StrongVector&lt; IntType, T, Alloc &gt;</a></li>
+<li>mutable_get()&#160;:&#160;<a class="el" href="classutil__intops_1_1StrongVector.html#ac4b23130792113493a71db978c30160f">util_intops::StrongVector&lt; IntType, NativeType, Alloc &gt;</a></li>
 <li>mutable_logger()&#160;:&#160;<a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a4cb1a5ce3dfe14d0ed05da23b66bff2a">operations_research::sat::SatSolver</a></li>
 <li>mutable_model()&#160;:&#160;<a class="el" href="classoperations__research_1_1ModelBuilderHelper.html#af2926d10544f7d9178b03f38ab558ee9">operations_research::ModelBuilderHelper</a></li>
 <li>mutable_nodes()&#160;:&#160;<a class="el" href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#a2b4788e4a407d84241c915ba24a79c30">operations_research::sat::ObjectiveEncoder</a></li>

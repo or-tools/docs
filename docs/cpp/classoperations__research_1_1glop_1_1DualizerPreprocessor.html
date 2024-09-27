@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -103,7 +103,7 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1DualizerPreproces
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classoperations__research_1_1glop_1_1DualizerPreprocessor-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">operations_research::glop::DualizerPreprocessor Class Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::glop::DualizerPreprocessor Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -369,12 +369,12 @@ Additional Inherited Members</h2></td></tr>
 <p>If we need to decide whether or not to take the dual, we only take it when the matrix has more rows than columns. The number of rows of a linear program gives the size of the square matrices we need to invert and the order of iterations of the simplex method. So solving a program with less rows is likely a better alternative. Note that the number of row of the dual is the number of column of the primal.</p>
 <p>Note however that the default is a conservative factor because if the user gives us a primal program, we assume he knows what he is doing and sometimes a problem is a lot faster to solve in a given formulation even if its dimension would say otherwise.</p>
 <p>Another reason to be conservative, is that the number of columns of the dual is the number of rows of the primal plus up to two times the number of columns of the primal.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000500">Todo</a></b></dt><dd>(user): This effect can be lowered if we use some of the extra variables as slack variable which we are not doing at this point. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000518">Todo</a></b></dt><dd>(user): This effect can be lowered if we use some of the extra variables as slack variable which we are not doing at this point. </dd></dl>
 <p>Save the linear program bounds. Also make sure that all the bounded variable have at least one bound set to zero. This will be needed to post-solve a dual-basic solution into a primal-basic one.</p>
 <p>We need to shift one of the bound to zero.</p>
 <p>Fill the information that will be needed during postsolve.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000501">Todo</a></b></dt><dd>(user): This will break if PopulateFromDual() is changed. so document the convention or make the function fill these vectors? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000502">Todo</a></b></dt><dd>(user): There are two different ways to deal with ranged rows when taking the dual. The default way is to duplicate such rows, see PopulateFromDual() for details. Another way is to call lp-&gt;AddSlackVariablesForFreeAndBoxedRows() before calling PopulateFromDual(). Adds an option to switch between the two as this may change the running time?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000519">Todo</a></b></dt><dd>(user): This will break if PopulateFromDual() is changed. so document the convention or make the function fill these vectors? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000520">Todo</a></b></dt><dd>(user): There are two different ways to deal with ranged rows when taking the dual. The default way is to duplicate such rows, see PopulateFromDual() for details. Another way is to call lp-&gt;AddSlackVariablesForFreeAndBoxedRows() before calling PopulateFromDual(). Adds an option to switch between the two as this may change the running time?</dd></dl>
 <p>Note however that the default algorithm is likely to result in a faster solving time because the dual program will have less rows.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1glop_1_1Preprocessor.html#a54e4124bf8c5a4988bf8c4f702f64dad">operations_research::glop::Preprocessor</a>.</p>

@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -143,6 +143,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6c2bf420a8d53be2fc195325984744d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae272a22a65def8adb390f9658b4b6816" id="r_ae272a22a65def8adb390f9658b4b6816"><td class="memItemLeft" align="right" valign="top">std::array&lt; IntegerValue, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae272a22a65def8adb390f9658b4b6816">expr_coeffs</a></td></tr>
 <tr class="separator:ae272a22a65def8adb390f9658b4b6816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233138a84379f37aa99b20b8120ea44c" id="r_a233138a84379f37aa99b20b8120ea44c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a233138a84379f37aa99b20b8120ea44c">cached_implied_lb</a> = -1</td></tr>
+<tr class="memdesc:a233138a84379f37aa99b20b8120ea44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to cached_data_ in <a class="el" href="classoperations__research_1_1sat_1_1ImpliedBoundsProcessor.html">ImpliedBoundsProcessor</a>.  <br /></td></tr>
+<tr class="separator:a233138a84379f37aa99b20b8120ea44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25471047498d8ca5e6b0559dda27ea37" id="r_a25471047498d8ca5e6b0559dda27ea37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25471047498d8ca5e6b0559dda27ea37">cached_implied_ub</a> = -1</td></tr>
+<tr class="separator:a25471047498d8ca5e6b0559dda27ea37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>To simplify cut generation code, we use a more complex data structure than just a <a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> to represent a cut with shifted/complemented variable and implied bound substitution. </p>
@@ -168,6 +173,7 @@ Public Attributes</h2></td></tr>
 <p>We replace coeff * X by coeff * (X - bound_diff + bound_diff) which gives -coeff * complement(X) + coeff * bound_diff;</p>
 <p>We keep the same expression variable.</p>
 <dl class="section note"><dt>Note</dt><dd>this is not involutive because of floating point error. Fix?</dd></dl>
+<p>Swap the implied bound info.</p>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00080">80</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
@@ -208,7 +214,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If the term correspond to literal_view or (1 - literal_view) return the integer variable representation of that literal. Returns kNoIntegerVariable if this is not the case. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00110">110</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00113">113</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -336,7 +342,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>This assumes bound_diff == 1. It replaces the inner expression by either var or 1 - var depending on the positiveness of var. </p>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00096">96</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00099">99</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 
 </div>
 </div>
@@ -354,6 +360,40 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00091">91</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+
+</div>
+</div>
+<a id="a233138a84379f37aa99b20b8120ea44c" name="a233138a84379f37aa99b20b8120ea44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233138a84379f37aa99b20b8120ea44c">&#9670;&#160;</a></span>cached_implied_lb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operations_research::sat::CutTerm::cached_implied_lb = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refer to cached_data_ in <a class="el" href="classoperations__research_1_1sat_1_1ImpliedBoundsProcessor.html">ImpliedBoundsProcessor</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00105">105</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+
+</div>
+</div>
+<a id="a25471047498d8ca5e6b0559dda27ea37" name="a25471047498d8ca5e6b0559dda27ea37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25471047498d8ca5e6b0559dda27ea37">&#9670;&#160;</a></span>cached_implied_ub</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operations_research::sat::CutTerm::cached_implied_ub = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00106">106</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +425,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00098">98</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00102">102</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -400,9 +440,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>X = the given <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression.html">LinearExpression</a>. We only support size 1 or 2 here which allow to inline the memory. When a coefficient is zero, we don't care about the variable. </p>
+<p>X = the given <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression.html">LinearExpression</a>. We only support size 1 or 2 here which allow to inline the memory. When a coefficient is zero, we don't care about the variable.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001609">Todo</a></b></dt><dd>(user): We might want to store that elsewhere, as sorting <a class="el" href="structoperations__research_1_1sat_1_1CutTerm.html">CutTerm</a> is a bit slow and we don't need to look at that in most places. Same for the cached_implied_lb/ub below. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00096">96</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00100">100</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +459,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00097">97</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00101">101</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
 
 </div>
 </div>

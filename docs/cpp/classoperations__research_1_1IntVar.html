@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -435,7 +435,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1IntExpr.html#ad8e52d0dd0cdc55fb3faf75776424818">operations_research::IntExpr</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07378">7378</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07383">7383</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -857,10 +857,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This method remove the values from the domain of the variable. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000181">Todo</a></b></dt><dd>(user): Check and maybe inline this code. </dd></dl>
-<p>4 values, let's start doing some more clever things. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo</a></b></dt><dd>(user) : Sort values! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000199">Todo</a></b></dt><dd>(user): Check and maybe inline this code. </dd></dl>
+<p>4 values, let's start doing some more clever things. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000200">Todo</a></b></dt><dd>(user) : Sort values! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07326">7326</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07331">7331</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -888,15 +888,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This method intersects the current domain with the values in the array. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo</a></b></dt><dd>(user): use a clean and safe SortedUniqueCopy() class that uses a global, static shared (and locked) storage. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000184">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000185">Todo</a></b></dt><dd>(user): [optional] consider porting STLSortAndRemoveDuplicates from <a class="el" href="stl__util_8h.html">ortools/base/stl_util.h</a> to the existing <a class="el" href="stl__util_8h.html">base/stl_util.h</a> and using it here. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000186">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000187">Todo</a></b></dt><dd>(user): We could filter out values not in the var. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000188">Todo</a></b></dt><dd>(user) : We could find the first position &gt;= vmin by dichotomy. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000201">Todo</a></b></dt><dd>(user): use a clean and safe SortedUniqueCopy() class that uses a global, static shared (and locked) storage. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000202">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000203">Todo</a></b></dt><dd>(user): [optional] consider porting STLSortAndRemoveDuplicates from <a class="el" href="stl__util_8h.html">ortools/base/stl_util.h</a> to the existing <a class="el" href="stl__util_8h.html">base/stl_util.h</a> and using it here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo</a></b></dt><dd>(user): We could filter out values not in the var. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000206">Todo</a></b></dt><dd>(user) : We could find the first position &gt;= vmin by dichotomy. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>last &gt;= first implies tmp[last] &gt;= vmin.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07383">7383</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07388">7388</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1BooleanVar.html#aecaf73027230c4b1822c9570dfb57d8d">operations_research::BooleanVar</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07324">7324</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07329">7329</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
