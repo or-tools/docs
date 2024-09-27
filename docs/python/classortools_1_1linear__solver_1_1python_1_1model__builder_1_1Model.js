@@ -52,6 +52,7 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model =
     [ "objective_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ab6b5d44c4dbd89b4d6aa3fb3ab9acd7f", null ],
     [ "objective_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ae7928653a2663b0bcfc8cb76d746eb35", null ],
     [ "var_from_index", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a2072183bcfe9e5e1b8d9207daa3b8953", null ],
+    [ "write_to_mps_file", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ad8082ef2a9ea530529a58a34e80203ee", null ],
     [ "helper", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a22b99fd285a0866411edb3a88a501836", null ],
     [ "num_constraints", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#adcbf73202483216e1774820b3dfb9d10", null ],
     [ "num_variables", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a3798e6f250442525a968383a13164713", null ]

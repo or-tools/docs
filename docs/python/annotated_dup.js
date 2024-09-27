@@ -114,6 +114,10 @@ var annotated_dup =
             [ "ModelSubset", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset.html", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset" ],
             [ "ModelSubsetBounds", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds.html", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds" ]
           ] ],
+          [ "errors", "namespaceortools_1_1math__opt_1_1python_1_1errors.html", [
+            [ "_StatusCode", "classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode.html", "classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode" ],
+            [ "InternalMathOptError", "classortools_1_1math__opt_1_1python_1_1errors_1_1InternalMathOptError.html", null ]
+          ] ],
           [ "hash_model_storage", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage.html", [
             [ "_LinearConstraintStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage" ],
             [ "_QuadraticTermStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage" ],

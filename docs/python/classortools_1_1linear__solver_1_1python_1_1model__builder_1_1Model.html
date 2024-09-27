@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -179,6 +179,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade316ee2d417f58c914ab7a0eb079cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb87b6432f83a7b6f86276c7272634c" id="r_a9bb87b6432f83a7b6f86276c7272634c"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb87b6432f83a7b6f86276c7272634c">export_to_mps_string</a> (self, bool obfuscate=False)</td></tr>
 <tr class="separator:a9bb87b6432f83a7b6f86276c7272634c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8082ef2a9ea530529a58a34e80203ee" id="r_ad8082ef2a9ea530529a58a34e80203ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8082ef2a9ea530529a58a34e80203ee">write_to_mps_file</a> (self, str filename, bool obfuscate=False)</td></tr>
+<tr class="separator:ad8082ef2a9ea530529a58a34e80203ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7a0540f919586edb887ff553595a5e" id="r_aaa7a0540f919586edb887ff553595a5e"><td class="memItemLeft" align="right" valign="top">linear_solver_pb2.MPModelProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7a0540f919586edb887ff553595a5e">export_to_proto</a> (self)</td></tr>
 <tr class="separator:aaa7a0540f919586edb887ff553595a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f73518660f6e42d7727ff757469200" id="r_a70f73518660f6e42d7727ff757469200"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70f73518660f6e42d7727ff757469200">import_from_mps_string</a> (self, str mps_string)</td></tr>
@@ -798,7 +800,7 @@ Note that variables must not appear more than once in the list of hints.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Exports the optimization model to a ProtoBuf format.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01584">1584</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01589">1589</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -821,7 +823,7 @@ Note that variables must not appear more than once in the list of hints.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Writes a model to a proto file.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01608">1608</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01613">1613</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1059,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the model builder helper.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01634">1634</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01639">1639</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1082,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Reads a model from a .lp file.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01600">1600</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01605">1605</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1105,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Reads a model from a LP string.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01596">1596</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01601">1601</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1128,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Reads a model from a .mps file.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01592">1592</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01597">1597</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1151,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Reads a model from a MPS string.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01588">1588</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01593">1593</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1174,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Reads a model from a proto file.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01604">1604</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01609">1609</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1262,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">The name of the model.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01625">1625</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01630">1630</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1285,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01630">1630</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01635">1635</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +1711,7 @@ Raises:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">The number of constraints in the model.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01620">1620</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01625">1625</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1728,7 +1730,7 @@ Raises:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the number of variables in the model.</pre> 
-<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01615">1615</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01620">1620</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>
@@ -1813,6 +1815,34 @@ Raises:
 </div><div class="memdoc">
 <pre class="fragment">Rebuilds a variable object from the model and its index.</pre> 
 <p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01319">1319</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
+
+</div>
+</div>
+<a id="ad8082ef2a9ea530529a58a34e80203ee" name="ad8082ef2a9ea530529a58a34e80203ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8082ef2a9ea530529a58a34e80203ee">&#9670;&#160;</a></span>write_to_mps_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool ortools.linear_solver.python.model_builder.Model.write_to_mps_file </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool </td>          <td class="paramname"><span class="paramname"><em>obfuscate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="model__builder_8py_source.html#l01584">1584</a> of file <a class="el" href="model__builder_8py_source.html">model_builder.py</a>.</p>
 
 </div>
 </div>

@@ -2,6 +2,7 @@ var namespaceortools_1_1math__opt_1_1python =
 [
     [ "callback", "namespaceortools_1_1math__opt_1_1python_1_1callback.html", "namespaceortools_1_1math__opt_1_1python_1_1callback" ],
     [ "compute_infeasible_subsystem_result", "namespaceortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result.html", "namespaceortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result" ],
+    [ "errors", "namespaceortools_1_1math__opt_1_1python_1_1errors.html", "namespaceortools_1_1math__opt_1_1python_1_1errors" ],
     [ "expressions", "namespaceortools_1_1math__opt_1_1python_1_1expressions.html", [
       [ "evaluate_expression", "namespaceortools_1_1math__opt_1_1python_1_1expressions.html#a5277539fce017b9d10a26aafbdfb8c02", null ],
       [ "fast_sum", "namespaceortools_1_1math__opt_1_1python_1_1expressions.html#ae58db597022dc773b124f1c436244e79", null ],

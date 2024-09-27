@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -102,6 +102,7 @@ $(function(){initNavTree('classortools_1_1math__opt_1_1python_1_1model_1_1Linear
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ortools.math_opt.python.model.LinearConstraint Class Reference</div></div>
@@ -132,10 +133,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a938523f88a30aeb6969b07dceb991d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af24ac5fd992e6cc3311d89720a41845d" id="r_af24ac5fd992e6cc3311d89720a41845d"><td class="memItemLeft" align="right" valign="top">Iterator[<a class="el" href="classortools_1_1math__opt_1_1python_1_1model_1_1LinearTerm.html">LinearTerm</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af24ac5fd992e6cc3311d89720a41845d">terms</a> (self)</td></tr>
 <tr class="separator:af24ac5fd992e6cc3311d89720a41845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fcd677bb5f20851325237f3d3f0bcb" id="r_ab4fcd677bb5f20851325237f3d3f0bcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html">BoundedLinearExpression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4fcd677bb5f20851325237f3d3f0bcb">as_bounded_linear_expression</a> (self)</td></tr>
+<tr class="separator:ab4fcd677bb5f20851325237f3d3f0bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1722bbbf613abc34f5ae80cf5615a908" id="r_a1722bbbf613abc34f5ae80cf5615a908"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1722bbbf613abc34f5ae80cf5615a908">__str__</a> (self)</td></tr>
 <tr class="separator:a1722bbbf613abc34f5ae80cf5615a908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f687e8ffe6bc0248e90167f5469af9" id="r_ae3f687e8ffe6bc0248e90167f5469af9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3f687e8ffe6bc0248e90167f5469af9">__repr__</a> (self)</td></tr>
 <tr class="separator:ae3f687e8ffe6bc0248e90167f5469af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4ebaec4408b6ada75de232bd28204bfc" id="r_a4ebaec4408b6ada75de232bd28204bfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ebaec4408b6ada75de232bd28204bfc">lower_bound</a></td></tr>
+<tr class="separator:a4ebaec4408b6ada75de232bd28204bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -217,7 +225,7 @@ LinearConstraint directly, use Model.add_linear_constraint() instead.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01286">1286</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01292">1292</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
 
 </div>
 </div>
@@ -236,6 +244,25 @@ LinearConstraint directly, use Model.add_linear_constraint() instead.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Returns the name, or a string containing the id if the name is empty.</pre> 
+<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01288">1288</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
+
+</div>
+</div>
+<a id="ab4fcd677bb5f20851325237f3d3f0bcb" name="ab4fcd677bb5f20851325237f3d3f0bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fcd677bb5f20851325237f3d3f0bcb">&#9670;&#160;</a></span>as_bounded_linear_expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html">BoundedLinearExpression</a> ortools.math_opt.python.model.LinearConstraint.as_bounded_linear_expression </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Returns the bounded expression from lower_bound, upper_bound and terms.</pre> 
 <p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01282">1282</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
 
 </div>
@@ -497,6 +524,22 @@ LinearConstraint directly, use Model.add_linear_constraint() instead.
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01229">1229</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
+
+</div>
+</div>
+<a id="a4ebaec4408b6ada75de232bd28204bfc" name="a4ebaec4408b6ada75de232bd28204bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebaec4408b6ada75de232bd28204bfc">&#9670;&#160;</a></span>lower_bound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ortools.math_opt.python.model.LinearConstraint.lower_bound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l01285">1285</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
 
 </div>
 </div>

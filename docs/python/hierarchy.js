@@ -50,6 +50,7 @@ var hierarchy =
     [ "ortools.math_opt.python.callback.CallbackData", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html", null ],
     [ "ortools.math_opt.python.callback.CallbackRegistration", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration.html", null ],
     [ "ortools.math_opt.python.callback.CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", null ],
+    [ "ortools.sat.colab.visualization.ColorManager", "classortools_1_1sat_1_1colab_1_1visualization_1_1ColorManager.html", null ],
     [ "ortools.math_opt.python.compute_infeasible_subsystem_result.ComputeInfeasibleSubsystemResult", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ComputeInfeasibleSubsystemResult.html", null ],
     [ "ortools.sat.python.cp_model.Constraint", "classortools_1_1sat_1_1python_1_1cp__model_1_1Constraint.html", null ],
     [ "ortools.sat.python.cp_model.CpModel", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html", null ],
@@ -59,6 +60,7 @@ var hierarchy =
     [ "ortools.linear_solver.python.model_builder.EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", null ],
     [ "enum.Enum", null, [
       [ "ortools.math_opt.python.callback.Event", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event.html", null ],
+      [ "ortools.math_opt.python.errors._StatusCode", "classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode.html", null ],
       [ "ortools.math_opt.python.parameters.Emphasis", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html", null ],
       [ "ortools.math_opt.python.parameters.LPAlgorithm", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html", null ],
       [ "ortools.math_opt.python.parameters.SolverType", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType.html", null ],
@@ -198,9 +200,7 @@ var hierarchy =
       [ "ortools.linear_solver.pywraplp.ModelExportOptions", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html", null ],
       [ "ortools.linear_solver.pywraplp.Objective", "classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html", null ],
       [ "ortools.linear_solver.pywraplp.Solver", "classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html", null ],
-      [ "ortools.linear_solver.pywraplp.Variable", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html", null ],
-      [ "ortools.sat.colab.visualization.ColorManager", "classortools_1_1sat_1_1colab_1_1visualization_1_1ColorManager.html", null ],
-      [ "ortools.sat.colab.visualization.SvgWrapper", "classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html", null ]
+      [ "ortools.linear_solver.pywraplp.Variable", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html", null ]
     ] ],
     [ "ortools.math_opt.python.model.Objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html", null ],
     [ "ortools.math_opt.python.result.ObjectiveBounds", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html", null ],
@@ -212,6 +212,7 @@ var hierarchy =
     [ "ortools.math_opt.python.model.QuadraticTermKey", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTermKey.html", null ],
     [ "ortools.math_opt.python.statistics.Range", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html", null ],
     [ "RuntimeError", null, [
+      [ "ortools.math_opt.python.errors.InternalMathOptError", "classortools_1_1math__opt_1_1python_1_1errors_1_1InternalMathOptError.html", null ],
       [ "ortools.math_opt.python.model_storage.UsedUpdateTrackerAfterRemovalError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError.html", null ]
     ] ],
     [ "ortools.math_opt.python.solution.Solution", "classortools_1_1math__opt_1_1python_1_1solution_1_1Solution.html", null ],
@@ -228,6 +229,7 @@ var hierarchy =
     [ "ortools.math_opt.python.result.SolveResult", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html", null ],
     [ "ortools.math_opt.python.solver_resources.SolverResources", "classortools_1_1math__opt_1_1python_1_1solver__resources_1_1SolverResources.html", null ],
     [ "ortools.math_opt.python.result.SolveStats", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html", null ],
+    [ "ortools.sat.colab.visualization.SvgWrapper", "classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html", null ],
     [ "ortools.math_opt.python.result.Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", null ],
     [ "unittest.TestCase", null, [
       [ "ortools.math_opt.python.testing.compare_proto.MathOptProtoAssertions", "classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html", null ]

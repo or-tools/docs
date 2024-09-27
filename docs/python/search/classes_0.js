@@ -10,12 +10,13 @@ var searchData=
   ['_5fproductcst_7',['_ProductCst',['../classortools_1_1sat_1_1python_1_1cp__model_1_1__ProductCst.html',1,'ortools::sat::python::cp_model']]],
   ['_5fquadraticprocessedelements_8',['_QuadraticProcessedElements',['../classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements.html',1,'ortools::math_opt::python::model']]],
   ['_5fquadratictermstorage_9',['_QuadraticTermStorage',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage.html',1,'ortools::math_opt::python::hash_model_storage']]],
-  ['_5fsum_10',['_Sum',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum.html',1,'ortools.linear_solver.python.model_builder._Sum'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1__Sum.html',1,'ortools.sat.python.cp_model._Sum']]],
-  ['_5fsumarray_11',['_SumArray',['../classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html',1,'ortools::sat::python::cp_model']]],
-  ['_5fswignondynamicmeta_12',['_SwigNonDynamicMeta',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1__SwigNonDynamicMeta.html',1,'ortools.constraint_solver.pywrapcp._SwigNonDynamicMeta'],['../classortools_1_1linear__solver_1_1pywraplp_1_1__SwigNonDynamicMeta.html',1,'ortools.linear_solver.pywraplp._SwigNonDynamicMeta']]],
-  ['_5ftoprocesselements_13',['_ToProcessElements',['../classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html',1,'ortools::math_opt::python::model']]],
-  ['_5ftoprocesselementsimplementation_14',['_ToProcessElementsImplementation',['../classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html',1,'ortools::math_opt::python::model']]],
-  ['_5fupdatetracker_15',['_UpdateTracker',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html',1,'ortools::math_opt::python::hash_model_storage']]],
-  ['_5fvariablestorage_16',['_VariableStorage',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage.html',1,'ortools::math_opt::python::hash_model_storage']]],
-  ['_5fweightedsum_17',['_WeightedSum',['../classortools_1_1sat_1_1python_1_1cp__model_1_1__WeightedSum.html',1,'ortools::sat::python::cp_model']]]
+  ['_5fstatuscode_10',['_StatusCode',['../classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode.html',1,'ortools::math_opt::python::errors']]],
+  ['_5fsum_11',['_Sum',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum.html',1,'ortools.linear_solver.python.model_builder._Sum'],['../classortools_1_1sat_1_1python_1_1cp__model_1_1__Sum.html',1,'ortools.sat.python.cp_model._Sum']]],
+  ['_5fsumarray_12',['_SumArray',['../classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html',1,'ortools::sat::python::cp_model']]],
+  ['_5fswignondynamicmeta_13',['_SwigNonDynamicMeta',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1__SwigNonDynamicMeta.html',1,'ortools.constraint_solver.pywrapcp._SwigNonDynamicMeta'],['../classortools_1_1linear__solver_1_1pywraplp_1_1__SwigNonDynamicMeta.html',1,'ortools.linear_solver.pywraplp._SwigNonDynamicMeta']]],
+  ['_5ftoprocesselements_14',['_ToProcessElements',['../classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html',1,'ortools::math_opt::python::model']]],
+  ['_5ftoprocesselementsimplementation_15',['_ToProcessElementsImplementation',['../classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html',1,'ortools::math_opt::python::model']]],
+  ['_5fupdatetracker_16',['_UpdateTracker',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html',1,'ortools::math_opt::python::hash_model_storage']]],
+  ['_5fvariablestorage_17',['_VariableStorage',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage.html',1,'ortools::math_opt::python::hash_model_storage']]],
+  ['_5fweightedsum_18',['_WeightedSum',['../classortools_1_1sat_1_1python_1_1cp__model_1_1__WeightedSum.html',1,'ortools::sat::python::cp_model']]]
 ];

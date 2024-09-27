@@ -5,6 +5,7 @@ var dir_24dd42b960e460ced030dfb541483d00 =
     [ "__init__.py", "math__opt_2python_2____init_____8py.html", null ],
     [ "callback.py", "callback_8py.html", "callback_8py" ],
     [ "compute_infeasible_subsystem_result.py", "compute__infeasible__subsystem__result_8py.html", "compute__infeasible__subsystem__result_8py" ],
+    [ "errors.py", "errors_8py.html", "errors_8py" ],
     [ "expressions.py", "expressions_8py.html", "expressions_8py" ],
     [ "hash_model_storage.py", "hash__model__storage_8py.html", "hash__model__storage_8py" ],
     [ "mathopt.py", "mathopt_8py.html", null ],
