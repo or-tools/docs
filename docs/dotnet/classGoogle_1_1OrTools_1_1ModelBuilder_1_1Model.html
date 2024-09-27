@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -186,6 +186,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a201a89de42865313d7c12d114e6d9126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c4bbb68a9383011ec781c68559954f" id="r_a99c4bbb68a9383011ec781c68559954f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c4bbb68a9383011ec781c68559954f">ExportToLpString</a> (bool obfuscate)</td></tr>
 <tr class="separator:a99c4bbb68a9383011ec781c68559954f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98755b3c04f6797dd5ea6d6dcb142a58" id="r_a98755b3c04f6797dd5ea6d6dcb142a58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98755b3c04f6797dd5ea6d6dcb142a58">WriteToMpsFile</a> (String filename, bool obfuscate)</td></tr>
+<tr class="separator:a98755b3c04f6797dd5ea6d6dcb142a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef190ab29f9bb42b8abf4a7d1da85ab" id="r_abef190ab29f9bb42b8abf4a7d1da85ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abef190ab29f9bb42b8abf4a7d1da85ab">ImportFromMpsString</a> (String mpsString)</td></tr>
 <tr class="separator:abef190ab29f9bb42b8abf4a7d1da85ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae8a47616f86cd03ef766aa0621af08" id="r_a7ae8a47616f86cd03ef766aa0621af08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae8a47616f86cd03ef766aa0621af08">ImportFromMpsFile</a> (String mpsFile)</td></tr>
@@ -772,7 +774,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00418">418</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00423">423</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
 
 </div>
 </div>
@@ -799,7 +801,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00413">413</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00418">418</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
 
 </div>
 </div>
@@ -826,7 +828,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00408">408</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00413">413</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
 
 </div>
 </div>
@@ -853,7 +855,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00403">403</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00408">408</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
 
 </div>
 </div>
@@ -1246,6 +1248,37 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a98755b3c04f6797dd5ea6d6dcb142a58" name="a98755b3c04f6797dd5ea6d6dcb142a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98755b3c04f6797dd5ea6d6dcb142a58">&#9670;&#160;</a></span>WriteToMpsFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Google.OrTools.ModelBuilder.Model.WriteToMpsFile </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>obfuscate</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00403">403</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="aeb7c40542df5a512225f55c8c89017ed" name="aeb7c40542df5a512225f55c8c89017ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb7c40542df5a512225f55c8c89017ed">&#9670;&#160;</a></span>Helper</h2>
@@ -1269,7 +1302,7 @@ Properties</h2></td></tr>
 
 <p>The model builder helper. </p>
 
-<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00426">426</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ModelBuilder_8cs_source.html#l00431">431</a> of file <a class="el" href="ModelBuilder_8cs_source.html">ModelBuilder.cs</a>.</p>
 
 </div>
 </div>

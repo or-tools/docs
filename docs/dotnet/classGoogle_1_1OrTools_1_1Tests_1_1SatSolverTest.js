@@ -1,8 +1,10 @@
 var classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest =
 [
+    [ "SatSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a7120bab8a2570e28d541b89381a0d744", null ],
     [ "CaptureLog", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a6e8bc16f7910274ed9f5dca12fa3a4ba", null ],
     [ "Division", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a684e8d6f8dbaeba6ee304eddfcca0fa6", null ],
     [ "ExportModel", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#ac2117ff23f8f1bf4b94b66e4fb329f58", null ],
+    [ "FalseLiteralAsExpressionTest", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a8ddebeaed3ac0556511ca323f0e2a7cc", null ],
     [ "LargeWeightedSumBuilder", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a41eba4f14a91a7b26daf42451a54bedb", null ],
     [ "LargeWeightedSumExpr", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a316202f25b2e0f68efcc72c651b70cba", null ],
     [ "LargeWeightedSumInt", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#ac1e5e9b8ac58ac12429a96dc5332cbd1", null ],
@@ -21,5 +23,7 @@ var classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest =
     [ "SimpleLinearModelProto", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#aef8575130297ba035c7661afa91b39bc", null ],
     [ "SimpleLinearModelProto2", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#ab07a4a892e12d7979af697e6e775c2d0", null ],
     [ "SolveFromString", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a795f1803a0355e8fe7c15b8dbfdb833d", null ],
-    [ "TestInterval", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#af3f8fb8586a445c18f7caa26efab32f2", null ]
+    [ "TestHint", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#a84ea4b7b8d864a4807a0bab6b1b07bb9", null ],
+    [ "TestInterval", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#af3f8fb8586a445c18f7caa26efab32f2", null ],
+    [ "TrueLiteralAsExpressionTest", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html#aaf05cd7ef8ff6586cff7a3bfbfd88f80", null ]
 ];

@@ -338,5 +338,8 @@ var annotated_dup =
       [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", "classOperationsResearch_1_1SetCoverProto" ],
       [ "SetCoverReflection", "classOperationsResearch_1_1SetCoverReflection.html", "classOperationsResearch_1_1SetCoverReflection" ],
       [ "SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", "classOperationsResearch_1_1SetCoverSolutionResponse" ]
-    ] ]
+    ] ],
+    [ "SolutionCounter", "classSolutionCounter.html", "classSolutionCounter" ],
+    [ "SolutionDivisionCounter", "classSolutionDivisionCounter.html", "classSolutionDivisionCounter" ],
+    [ "SolutionModuloCounter", "classSolutionModuloCounter.html", "classSolutionModuloCounter" ]
 ];

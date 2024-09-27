@@ -65,5 +65,6 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper =
     [ "VarObjectiveCoefficient", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ad87475aa3ef6474c91e1604e4098f897", null ],
     [ "VarUpperBound", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a186790287fbb1cbd11566df173a26922", null ],
     [ "WriteModelToProtoFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#ab96009c7fd20e6009443702a18fd8429", null ],
+    [ "WriteToMpsFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a3200ec5376c56abbbbf51d58a1cae2c9", null ],
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a6ff4e80ef37a6b050d4a2185ff440667", null ]
 ];

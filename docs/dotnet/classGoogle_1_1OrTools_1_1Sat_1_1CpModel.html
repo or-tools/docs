@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -176,6 +176,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab54e39e04bdcbfcbd64e86353bde0ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a reservoir constraint with optional refill/emptying events.  <br /></td></tr>
 <tr class="separator:ab54e39e04bdcbfcbd64e86353bde0ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e48bcce9dfe78b6921dde4403bebefd" id="r_a2e48bcce9dfe78b6921dde4403bebefd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e48bcce9dfe78b6921dde4403bebefd">AddMapDomain</a> (<a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntVar.html">IntVar</a> var, IEnumerable&lt; <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntVar.html">IntVar</a> &gt; bool_vars, long offset=0)</td></tr>
+<tr class="memdesc:a2e48bcce9dfe78b6921dde4403bebefd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>var == i + offset ⇔ bool_vars[i] == true for all i</code>.  <br /></td></tr>
 <tr class="separator:a2e48bcce9dfe78b6921dde4403bebefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d7f8a276d1718fcc92ca1ad70fa8e7" id="r_ae0d7f8a276d1718fcc92ca1ad70fa8e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1Constraint.html">Constraint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0d7f8a276d1718fcc92ca1ad70fa8e7">AddImplication</a> (<a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html">ILiteral</a> a, <a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html">ILiteral</a> b)</td></tr>
 <tr class="memdesc:ae0d7f8a276d1718fcc92ca1ad70fa8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>a ⇒ b</code>.  <br /></td></tr>
@@ -251,6 +252,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e204f26fa1b36b08e6930f002330efb" id="r_a6e204f26fa1b36b08e6930f002330efb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e204f26fa1b36b08e6930f002330efb">AddHint</a> (<a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntVar.html">IntVar</a> var, long value)</td></tr>
 <tr class="memdesc:a6e204f26fa1b36b08e6930f002330efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds variable hinting to the model.  <br /></td></tr>
 <tr class="separator:a6e204f26fa1b36b08e6930f002330efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c6bd25f2fde4bd7a60e9ff3e78e142" id="r_a10c6bd25f2fde4bd7a60e9ff3e78e142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c6bd25f2fde4bd7a60e9ff3e78e142">AddHint</a> (<a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html">ILiteral</a> lit, bool value)</td></tr>
+<tr class="memdesc:a10c6bd25f2fde4bd7a60e9ff3e78e142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds variable hinting to the model.  <br /></td></tr>
+<tr class="separator:a10c6bd25f2fde4bd7a60e9ff3e78e142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7e704a0fe71fdac76b7b06237df09e" id="r_a5c7e704a0fe71fdac76b7b06237df09e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c7e704a0fe71fdac76b7b06237df09e">ClearHints</a> ()</td></tr>
 <tr class="memdesc:a5c7e704a0fe71fdac76b7b06237df09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all hinting from the model.  <br /></td></tr>
 <tr class="separator:a5c7e704a0fe71fdac76b7b06237df09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,7 +374,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == abs(expr)</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00729">729</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00734">734</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -465,7 +469,7 @@ Properties</h2></td></tr>
 
 <p>Adds a literal to the model as assumption. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01052">1052</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01074">1074</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -494,7 +498,7 @@ Properties</h2></td></tr>
 
 <p>Adds multiple literals to the model as assumptions. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01058">1058</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01080">1080</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -523,7 +527,7 @@ Properties</h2></td></tr>
 
 <p>Same as AddBoolOr: <code>∑(literals) ≥ 1</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00585">585</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00590">590</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -552,7 +556,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code> AtMostOne(literals): ∑(literals) ≤ 1</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00595">595</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00600">600</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -632,7 +636,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>And(literals) == true</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00633">633</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00638">638</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -661,7 +665,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>Or(literals) == true</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00566">566</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00571">571</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -690,7 +694,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>XOr(literals) == true</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00652">652</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00657">657</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -759,7 +763,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an instance of the <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1CumulativeConstraint.html" title="Specialized cumulative constraint.">CumulativeConstraint</a> class. this class allows adding (interval, demand) pairs incrementally </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00979">979</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00984">984</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -798,7 +802,7 @@ Properties</h2></td></tr>
 <p>Search Decision. </p>
 <p>Adds <code> DecisionStrategy(variables, var_str, dom_str)</code>.. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01019">1019</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01024">1024</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -836,7 +840,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == num / denom</code> (integer division rounded towards 0). </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00711">711</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00716">716</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -979,7 +983,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code> ExactlyOne(literals): ∑(literals) == 1</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00614">614</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00619">619</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1020,8 +1024,41 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a10c6bd25f2fde4bd7a60e9ff3e78e142" name="a10c6bd25f2fde4bd7a60e9ff3e78e142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c6bd25f2fde4bd7a60e9ff3e78e142">&#9670;&#160;</a></span>AddHint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Google.OrTools.Sat.CpModel.AddHint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html">ILiteral</a></td>          <td class="paramname"><span class="paramname"><em>lit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds variable hinting to the model. </p>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01051">1051</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+
+</div>
+</div>
 <a id="a6e204f26fa1b36b08e6930f002330efb" name="a6e204f26fa1b36b08e6930f002330efb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e204f26fa1b36b08e6930f002330efb">&#9670;&#160;</a></span>AddHint()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e204f26fa1b36b08e6930f002330efb">&#9670;&#160;</a></span>AddHint() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1086,7 @@ Properties</h2></td></tr>
 
 <p>Adds variable hinting to the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01038">1038</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01043">1043</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1119,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>a ⇒ b</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00549">549</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00554">554</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1268,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00504">504</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p>Adds <code>var == i + offset ⇔ bool_vars[i] == true for all i</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00509">509</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1303,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == Max(exprs)</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00691">691</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00696">696</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1336,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == Min(exprs)</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00671">671</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00676">676</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1335,7 +1374,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == v % m</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00747">747</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00752">752</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1437,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == ∏(exprs)</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00765">765</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00770">770</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1475,7 @@ Properties</h2></td></tr>
 
 <p>Adds <code>target == left * right</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00785">785</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00790">790</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1511,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an instance of the <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1Constraint.html" title="Wrapper around a ConstraintProto.">Constraint</a> class</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00923">923</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00928">928</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1543,7 @@ Properties</h2></td></tr>
 <p>Furthermore, one box is optional if at least one of the x or y interval is optional. </p>
 <dl class="section return"><dt>Returns</dt><dd>an instance of the <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1NoOverlap2dConstraint.html" title="Specialized NoOverlap2D constraint.">NoOverlap2dConstraint</a> class. This class allows adding rectangles incrementally</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00953">953</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00958">958</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1616,7 @@ Properties</h2></td></tr>
 
 <p>Clears all assumptions from the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01067">1067</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01089">1089</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1645,7 @@ Properties</h2></td></tr>
 
 <p>Clears all hinting from the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01046">1046</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01068">1068</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1681,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the model was correctly written </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01144">1144</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01166">1166</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1739,7 @@ Properties</h2></td></tr>
 
 <p>Adds a maximization objective of a linear expression. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00999">999</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01004">1004</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +1769,7 @@ Properties</h2></td></tr>
 <p>Objective. </p>
 <p>Adds a minimization objective of a linear expression. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00993">993</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00998">998</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1759,7 +1798,7 @@ Properties</h2></td></tr>
 
 <p>Returns some statistics on model as a string. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01129">1129</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01151">1151</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +1904,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntervalVar.html" title="An interval variable.">IntervalVar</a> object</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00842">842</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00847">847</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -1920,7 +1959,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntervalVar.html" title="An interval variable.">IntervalVar</a> object</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00815">815</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00820">820</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -2063,7 +2102,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntervalVar.html" title="An interval variable.">IntervalVar</a> object</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00902">902</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00907">907</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2162,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1IntervalVar.html" title="An interval variable.">IntervalVar</a> object</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00872">872</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l00877">877</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>
@@ -2181,7 +2220,7 @@ Properties</h2></td></tr>
 
 <p>Returns a non empty string explaining the issue if the model is invalid. </p>
 
-<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01154">1154</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CpModel_8cs_source.html#l01176">1176</a> of file <a class="el" href="CpModel_8cs_source.html">CpModel.cs</a>.</p>
 
 </div>
 </div>

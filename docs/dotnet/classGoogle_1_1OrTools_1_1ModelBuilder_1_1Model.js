@@ -29,6 +29,7 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model =
     [ "Optimize", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a1345ab944e07125d1c917180d97813db", null ],
     [ "VarFromIndex", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a1931e7235b676699a2d532c8d17cf593", null ],
     [ "VariablesCount", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#afe6cecbe955fe247a624437519320566", null ],
+    [ "WriteToMpsFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a98755b3c04f6797dd5ea6d6dcb142a58", null ],
     [ "Helper", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#aeb7c40542df5a512225f55c8c89017ed", null ],
     [ "Name", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a003b835e69a6afe87d1514cdb278e8ee", null ],
     [ "ObjectiveOffset", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Model.html#a6b38f13a6fd5123c5d9885001c043136", null ]

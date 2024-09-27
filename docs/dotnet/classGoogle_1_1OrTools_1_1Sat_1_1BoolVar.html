@@ -30,7 +30,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.10</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.11</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e102f0c1c5c501c7c081a5ae90ae017" id="r_a7e102f0c1c5c501c7c081a5ae90ae017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html">ILiteral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e102f0c1c5c501c7c081a5ae90ae017">Not</a> ()</td></tr>
 <tr class="memdesc:a7e102f0c1c5c501c7c081a5ae90ae017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Boolean negation of that variable.  <br /></td></tr>
 <tr class="separator:a7e102f0c1c5c501c7c081a5ae90ae017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1069bcdba6caa3e407353e629d6733" id="r_acf1069bcdba6caa3e407353e629d6733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1LinearExpr.html">LinearExpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf1069bcdba6caa3e407353e629d6733">AsExpr</a> ()</td></tr>
+<tr class="memdesc:acf1069bcdba6caa3e407353e629d6733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the literal as a linear expression.  <br /></td></tr>
+<tr class="separator:acf1069bcdba6caa3e407353e629d6733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7fc720bad6f3f0635b81cc1b42665b4" id="r_ab7fc720bad6f3f0635b81cc1b42665b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1LinearExpr.html">LinearExpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7fc720bad6f3f0635b81cc1b42665b4">NotAsExpr</a> ()</td></tr>
 <tr class="memdesc:ab7fc720bad6f3f0635b81cc1b42665b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Boolean negation of that variable as a linear expression.  <br /></td></tr>
 <tr class="separator:ab7fc720bad6f3f0635b81cc1b42665b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +276,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Holds a Boolean variable. </p>
 <p>This class must be constructed from the <a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html" title="Wrapper class around the cp_model proto.">CpModel</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00789">789</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00803">803</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0d58dfb2cd3aaa877f03ff04be08bd1c" name="a0d58dfb2cd3aaa877f03ff04be08bd1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d58dfb2cd3aaa877f03ff04be08bd1c">&#9670;&#160;</a></span>BoolVar() <span class="overload">[1/2]</span></h2>
@@ -302,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00792">792</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00806">806</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
 
 </div>
 </div>
@@ -333,11 +336,42 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00796">796</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00810">810</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf1069bcdba6caa3e407353e629d6733" name="acf1069bcdba6caa3e407353e629d6733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1069bcdba6caa3e407353e629d6733">&#9670;&#160;</a></span>AsExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGoogle_1_1OrTools_1_1Sat_1_1LinearExpr.html">LinearExpr</a> Google.OrTools.Sat.BoolVar.AsExpr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the literal as a linear expression. </p>
+
+<p>Implements <a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html#a73b8c5eb71f19a4e3aacc2990c7f25c0">Google.OrTools.Sat.ILiteral</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00821">821</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+
+</div>
+</div>
 <a id="a7e102f0c1c5c501c7c081a5ae90ae017" name="a7e102f0c1c5c501c7c081a5ae90ae017"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e102f0c1c5c501c7c081a5ae90ae017">&#9670;&#160;</a></span>Not()</h2>
 
@@ -365,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html#aa34f6efc2973853b28232f01513d0b04">Google.OrTools.Sat.ILiteral</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00801">801</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00815">815</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
 
 </div>
 </div>
@@ -396,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceGoogle_1_1OrTools_1_1Sat_1_1ILiteral.html#a5bcfaa5a5ed034828eccdeff12028e05">Google.OrTools.Sat.ILiteral</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00807">807</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IntegerExpressions_8cs_source.html#l00827">827</a> of file <a class="el" href="IntegerExpressions_8cs_source.html">IntegerExpressions.cs</a>.</p>
 
 </div>
 </div>

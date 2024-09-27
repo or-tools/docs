@@ -22,6 +22,7 @@ var classGoogle_1_1OrTools_1_1Sat_1_1CpModel =
     [ "AddElement", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#a7921cbfa039e057eba5b2378ba9bc8aa", null ],
     [ "AddExactlyOne", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#a4b91133c4e8be2c1f033e68b6fbdecd2", null ],
     [ "AddForbiddenAssignments", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#aa1adad3e3228f4746f914b1f6f0189a7", null ],
+    [ "AddHint", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#a10c6bd25f2fde4bd7a60e9ff3e78e142", null ],
     [ "AddHint", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#a6e204f26fa1b36b08e6930f002330efb", null ],
     [ "AddImplication", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#ae0d7f8a276d1718fcc92ca1ad70fa8e7", null ],
     [ "AddInverse", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html#a78072df8906d1348abd1b4564d93a36e", null ],

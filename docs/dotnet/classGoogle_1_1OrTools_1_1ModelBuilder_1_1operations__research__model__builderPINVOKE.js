@@ -118,6 +118,7 @@ var classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__build
     [ "ModelBuilderHelper_VarObjectiveCoefficient", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#a0c7174933e955702ef783ed7ee2c4431", null ],
     [ "ModelBuilderHelper_VarUpperBound", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#a0c5dec97ef919220b46c55b8c87b6371", null ],
     [ "ModelBuilderHelper_WriteModelToProtoFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#a776c91abdf3f75f7d805e4c720e611f6", null ],
+    [ "ModelBuilderHelper_WriteToMpsFile", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#acfbac70e85b947d711325cae567740d2", null ],
     [ "ModelSolverHelper_Activity", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#ac32eedccaa9ae3a28c92cf096ed93a82", null ],
     [ "ModelSolverHelper_BestObjectiveBound", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#a837b61971844339dc309bc6c27221418", null ],
     [ "ModelSolverHelper_ClearLogCallback", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#ac32f20dccc2712d6a7ec2be4302d3393", null ],

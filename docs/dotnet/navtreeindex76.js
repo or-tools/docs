@@ -1,5 +1,11 @@
 var NAVTREEINDEX76 =
 {
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5231571c06ead1661ea1a0fab04b255a":[4,0,1,0,8,12,0,1,2],
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5c48149a2fc02f59e71c4f3430852842":[3,0,1,0,8,12,0,1,9],
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5c48149a2fc02f59e71c4f3430852842":[4,0,1,0,8,12,0,1,9],
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5d9d79411c3b95d09daad0119e7a25c5":[3,0,1,0,8,12,0,1,11],
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5d9d79411c3b95d09daad0119e7a25c5":[4,0,1,0,8,12,0,1,11],
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a67d90c7da4087c090cb5654d96703a8e":[3,0,1,0,8,12,0,1,10],
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a67d90c7da4087c090cb5654d96703a8e":[4,0,1,0,8,12,0,1,10],
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a6e992ccd9477c05b414ea8ad440aa655":[3,0,1,0,8,12,0,1,17],
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a6e992ccd9477c05b414ea8ad440aa655":[4,0,1,0,8,12,0,1,17],
@@ -175,10 +181,12 @@ var NAVTREEINDEX76 =
 "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html":[4,0,1,0,9,8],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a0d58dfb2cd3aaa877f03ff04be08bd1c":[3,0,1,0,9,8,0],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a0d58dfb2cd3aaa877f03ff04be08bd1c":[4,0,1,0,9,8,0],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a7e102f0c1c5c501c7c081a5ae90ae017":[3,0,1,0,9,8,2],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a7e102f0c1c5c501c7c081a5ae90ae017":[4,0,1,0,9,8,2],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#ab7fc720bad6f3f0635b81cc1b42665b4":[3,0,1,0,9,8,3],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#ab7fc720bad6f3f0635b81cc1b42665b4":[4,0,1,0,9,8,3],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a7e102f0c1c5c501c7c081a5ae90ae017":[3,0,1,0,9,8,3],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#a7e102f0c1c5c501c7c081a5ae90ae017":[4,0,1,0,9,8,3],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#ab7fc720bad6f3f0635b81cc1b42665b4":[3,0,1,0,9,8,4],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#ab7fc720bad6f3f0635b81cc1b42665b4":[4,0,1,0,9,8,4],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#acf1069bcdba6caa3e407353e629d6733":[3,0,1,0,9,8,2],
+"classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#acf1069bcdba6caa3e407353e629d6733":[4,0,1,0,9,8,2],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#aea3b2e7aa1294a6f0431ff48ae629e13":[3,0,1,0,9,8,1],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoolVar.html#aea3b2e7aa1294a6f0431ff48ae629e13":[4,0,1,0,9,8,1],
 "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html":[3,0,1,0,9,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX76 =
 "classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a45666cd181a60d4baf35c7f1a00a5ece":[4,0,1,0,9,9,11],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a59c1be6dd1d2173d98bf0093db70fe22":[3,0,1,0,9,9,5],
 "classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a59c1be6dd1d2173d98bf0093db70fe22":[4,0,1,0,9,9,5],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5a58b9ebdab6378c337adde13f73d08e":[3,0,1,0,9,9,14],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5a58b9ebdab6378c337adde13f73d08e":[4,0,1,0,9,9,14],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5b40e4efdb8620ca5a3633fbed5ee8d8":[3,0,1,0,9,9,10],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5b40e4efdb8620ca5a3633fbed5ee8d8":[4,0,1,0,9,9,10],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5ed474cbd7d2dffe8cfeef21a61b47b2":[3,0,1,0,9,9,1],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5ed474cbd7d2dffe8cfeef21a61b47b2":[4,0,1,0,9,9,1],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a7cc54d5aaaab9e6939250e1fe8220f91":[3,0,1,0,9,9,4],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a7cc54d5aaaab9e6939250e1fe8220f91":[4,0,1,0,9,9,4],
-"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a7eb962759604eeac30f209282e2728f2":[3,0,1,0,9,9,12]
+"classGoogle_1_1OrTools_1_1Sat_1_1BoundedLinearExpression.html#a5a58b9ebdab6378c337adde13f73d08e":[3,0,1,0,9,9,14]
 };

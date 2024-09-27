@@ -50,7 +50,7 @@ var searchData=
   ['linearrelaxation_47',['LinearRelaxation',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod_1_1Types.html#a1932e76c998b262c3e3745f4d93c3cffac39cc75d0760df10bfcdfebe3f1a4e20',1,'Google::OrTools::Bop::BopOptimizerMethod::Types']]],
   ['linearsolver_2epb_2ecs_48',['LinearSolver.pb.cs',['../LinearSolver_8pb_8cs.html',1,'']]],
   ['linearsolverreflection_49',['LinearSolverReflection',['../classOperationsResearch_1_1LinearSolverReflection.html',1,'OperationsResearch']]],
-  ['linearsolvertest_50',['LinearSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1LinearSolverTest.html',1,'Google::OrTools::Tests']]],
+  ['linearsolvertest_50',['LinearSolverTest',['../classGoogle_1_1OrTools_1_1Tests_1_1LinearSolverTest.html',1,'Google.OrTools.Tests.LinearSolverTest'],['../classGoogle_1_1OrTools_1_1Tests_1_1LinearSolverTest.html#a230faabfcf3130ac830e969423367184',1,'Google.OrTools.Tests.LinearSolverTest.LinearSolverTest()']]],
   ['linearsolvertests_2ecs_51',['LinearSolverTests.cs',['../LinearSolverTests_8cs.html',1,'']]],
   ['linearsplitsize_52',['LinearSplitSize',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ac8baa8829b6f01f826d8fc7a61094f86',1,'Google::OrTools::Sat::SatParameters']]],
   ['linearsplitsizefieldnumber_53',['LinearSplitSizeFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a7772400a9cca99d09b8320fdd66be4b0',1,'Google::OrTools::Sat::SatParameters']]],

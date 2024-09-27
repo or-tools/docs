@@ -1,5 +1,11 @@
 var NAVTREEINDEX70 =
 {
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#aebb38970aab549cf14b7ea213f26385e":[4,0,1,0,7,12,45],
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#aed9055d16cdcb41217f2d13db2dd18e7":[3,0,1,0,7,12,74],
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#aed9055d16cdcb41217f2d13db2dd18e7":[4,0,1,0,7,12,74],
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af01dc5380e643ea38a853ab89ab8cd81":[3,0,1,0,7,12,140],
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af01dc5380e643ea38a853ab89ab8cd81":[4,0,1,0,7,12,140],
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af11a6fdcced5bef44d67bc7c3f6482ef":[3,0,1,0,7,12,84],
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af11a6fdcced5bef44d67bc7c3f6482ef":[4,0,1,0,7,12,84],
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af6c70929544a96f559782feabfe0e289":[3,0,1,0,7,12,77],
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE.html#af6c70929544a96f559782feabfe0e289":[4,0,1,0,7,12,77],
@@ -243,11 +249,5 @@ var NAVTREEINDEX70 =
 "classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a21413476a24b313ed338b6956405524d":[4,0,1,0,8,2,7],
 "classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a23f784f4d2f1fa0212162c511ee85c81":[3,0,1,0,8,2,5],
 "classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a23f784f4d2f1fa0212162c511ee85c81":[4,0,1,0,8,2,5],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a2f9cb70205cccee3524e6f1a7ff95ad1":[3,0,1,0,8,2,32],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a2f9cb70205cccee3524e6f1a7ff95ad1":[4,0,1,0,8,2,32],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a3412810f0a50b990c73731c4cfdffa0a":[3,0,1,0,8,2,36],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a3412810f0a50b990c73731c4cfdffa0a":[4,0,1,0,8,2,36],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a3afff43eec86dfdf9d88fba5ff72281b":[3,0,1,0,8,2,23],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a3afff43eec86dfdf9d88fba5ff72281b":[4,0,1,0,8,2,23],
-"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a3b807c6bb73e28fa95a2635ee99e0a9e":[3,0,1,0,8,2,10]
+"classGoogle_1_1OrTools_1_1PDLP_1_1FeasibilityPolishingDetails.html#a2f9cb70205cccee3524e6f1a7ff95ad1":[3,0,1,0,8,2,32]
 };

@@ -623,7 +623,11 @@ var hierarchy =
       ] ],
       [ "Google.OrTools.Sat.SolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolutionCallback.html", [
         [ "Google.OrTools.Sat.CpSolverSolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolutionCallback.html", [
-          [ "Google.OrTools.Sat.ObjectiveSolutionPrinter", "classGoogle_1_1OrTools_1_1Sat_1_1ObjectiveSolutionPrinter.html", null ]
+          [ "Google.OrTools.Sat.ObjectiveSolutionPrinter", "classGoogle_1_1OrTools_1_1Sat_1_1ObjectiveSolutionPrinter.html", null ],
+          [ "SolutionCounter", "classSolutionCounter.html", [
+            [ "SolutionDivisionCounter", "classSolutionDivisionCounter.html", null ],
+            [ "SolutionModuloCounter", "classSolutionModuloCounter.html", null ]
+          ] ]
         ] ]
       ] ],
       [ "Google.OrTools.Sat.SolveWrapper", "classGoogle_1_1OrTools_1_1Sat_1_1SolveWrapper.html", null ],

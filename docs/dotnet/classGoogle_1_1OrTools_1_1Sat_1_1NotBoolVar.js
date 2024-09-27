@@ -1,6 +1,7 @@
 var classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar =
 [
     [ "NotBoolVar", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html#ab594607c0f30f8fa9c4ec4a1252d1026", null ],
+    [ "AsExpr", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html#a73b5dc374bab837a196f3bf113db4846", null ],
     [ "GetIndex", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html#aac576f91e6f4e93a6de3dabaa6208264", null ],
     [ "Not", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html#adec257a12c06d93fbadc2cce656b962c", null ],
     [ "NotAsExpr", "classGoogle_1_1OrTools_1_1Sat_1_1NotBoolVar.html#a95ceb68a3532747d36fe7250c0bd73b8", null ],

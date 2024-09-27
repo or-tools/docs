@@ -1,5 +1,11 @@
 var NAVTREEINDEX75 =
 {
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9fc5fe36e124441d5bcb1ad2499b9ef0":[4,0,1,0,8,9,14],
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9ff008a7a0c0e203b9ef3dab76562794":[3,0,1,0,8,9,10],
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9ff008a7a0c0e203b9ef3dab76562794":[4,0,1,0,8,9,10],
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa1f9246684236dd5830ce1bce2852b6b":[3,0,1,0,8,9,47],
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa1f9246684236dd5830ce1bce2852b6b":[4,0,1,0,8,9,47],
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa2040c5ca953f8f19b06cb16c1097ff4":[3,0,1,0,8,9,51],
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa2040c5ca953f8f19b06cb16c1097ff4":[4,0,1,0,8,9,51],
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa20ac94328f3a8f9d8f269ffa3d58376":[3,0,1,0,8,9,13],
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa20ac94328f3a8f9d8f269ffa3d58376":[4,0,1,0,8,9,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX75 =
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a4bc20da9e5bd1bdf84d4d46e023458a3":[4,0,1,0,8,12,0,1,20],
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a50fe6e356ee27b5add8bb177e600e688":[3,0,1,0,8,12,0,1,18],
 "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a50fe6e356ee27b5add8bb177e600e688":[4,0,1,0,8,12,0,1,18],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5231571c06ead1661ea1a0fab04b255a":[3,0,1,0,8,12,0,1,2],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5231571c06ead1661ea1a0fab04b255a":[4,0,1,0,8,12,0,1,2],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5c48149a2fc02f59e71c4f3430852842":[3,0,1,0,8,12,0,1,9],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5c48149a2fc02f59e71c4f3430852842":[4,0,1,0,8,12,0,1,9],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5d9d79411c3b95d09daad0119e7a25c5":[3,0,1,0,8,12,0,1,11],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5d9d79411c3b95d09daad0119e7a25c5":[4,0,1,0,8,12,0,1,11],
-"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a67d90c7da4087c090cb5654d96703a8e":[3,0,1,0,8,12,0,1,10]
+"classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html#a5231571c06ead1661ea1a0fab04b255a":[3,0,1,0,8,12,0,1,2]
 };

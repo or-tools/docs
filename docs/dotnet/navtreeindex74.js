@@ -1,5 +1,11 @@
 var NAVTREEINDEX74 =
 {
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a44e034d773cde9ba5ee40adc8acc7074":[4,0,1,0,8,8,8],
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a48a935bc987ba9824225a668a6776df1":[3,0,1,0,8,8,65],
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a48a935bc987ba9824225a668a6776df1":[4,0,1,0,8,8,65],
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a49eb9cea47518e56667d876407793583":[3,0,1,0,8,8,52],
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a49eb9cea47518e56667d876407793583":[4,0,1,0,8,8,52],
+"classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a4a1e67c30c1918bed670ebc0b54a98fe":[3,0,1,0,8,8,95],
 "classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a4a1e67c30c1918bed670ebc0b54a98fe":[4,0,1,0,8,8,95],
 "classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a5162d3728256a7a3ea48baa09602fd1a":[3,0,1,0,8,8,56],
 "classGoogle_1_1OrTools_1_1PDLP_1_1QuadraticProgramStats.html#a5162d3728256a7a3ea48baa09602fd1a":[4,0,1,0,8,8,56],
@@ -243,11 +249,5 @@ var NAVTREEINDEX74 =
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9bb9fa6cb7dc284bede322b1d5e0641c":[4,0,1,0,8,9,5],
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9d516cecbaffacb5f3558cbdb85e2db5":[3,0,1,0,8,9,48],
 "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9d516cecbaffacb5f3558cbdb85e2db5":[4,0,1,0,8,9,48],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9fc5fe36e124441d5bcb1ad2499b9ef0":[3,0,1,0,8,9,14],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9fc5fe36e124441d5bcb1ad2499b9ef0":[4,0,1,0,8,9,14],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9ff008a7a0c0e203b9ef3dab76562794":[3,0,1,0,8,9,10],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9ff008a7a0c0e203b9ef3dab76562794":[4,0,1,0,8,9,10],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa1f9246684236dd5830ce1bce2852b6b":[3,0,1,0,8,9,47],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa1f9246684236dd5830ce1bce2852b6b":[4,0,1,0,8,9,47],
-"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#aa2040c5ca953f8f19b06cb16c1097ff4":[3,0,1,0,8,9,51]
+"classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a9fc5fe36e124441d5bcb1ad2499b9ef0":[3,0,1,0,8,9,14]
 };
