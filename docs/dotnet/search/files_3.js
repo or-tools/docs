@@ -7,6 +7,6 @@ var searchData=
   ['defaultphaseparameters_2ecs_4',['DefaultPhaseParameters.cs',['../DefaultPhaseParameters_8cs.html',1,'']]],
   ['demon_2ecs_5',['Demon.cs',['../Demon_8cs.html',1,'']]],
   ['disjunctiveconstraint_2ecs_6',['DisjunctiveConstraint.cs',['../DisjunctiveConstraint_8cs.html',1,'']]],
-  ['domain_2ecs_7',['Domain.cs',['../constraint__solver_2Domain_8cs.html',1,'(Global Namespace)'],['../util_2Domain_8cs.html',1,'(Global Namespace)']]],
+  ['domain_2ecs_7',['Domain.cs',['../Domain_8cs.html',1,'']]],
   ['doublevector_2ecs_8',['DoubleVector.cs',['../linear__solver_2DoubleVector_8cs.html',1,'(Global Namespace)'],['../model__builder_2DoubleVector_8cs.html',1,'(Global Namespace)']]]
 ];

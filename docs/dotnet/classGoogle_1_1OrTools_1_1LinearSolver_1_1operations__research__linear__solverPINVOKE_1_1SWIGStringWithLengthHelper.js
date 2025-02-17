@@ -1,0 +1,5 @@
+var classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringWithLengthHelper =
+[
+    [ "SWIG_c_to_csharp_string", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringWithLengthHelper.html#ac120d580d0b95877bdda748f959ea94f", null ],
+    [ "SWIG_csharp_string_to_c", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringWithLengthHelper.html#af353041f28ceae532466fc2db5a9f1d3", null ]
+];

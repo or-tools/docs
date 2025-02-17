@@ -3,6 +3,7 @@ var classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINV
     [ "SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGExceptionHelper" ],
     [ "SWIGPendingException", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGPendingException.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGPendingException" ],
     [ "SWIGStringHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringHelper" ],
+    [ "SWIGStringWithLengthHelper", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringWithLengthHelper.html", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE_1_1SWIGStringWithLengthHelper" ],
     [ "delete_Int64Matrix", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html#afc205bb0d5bf50cb5e8bb7be9b22b826", null ],
     [ "delete_Int64Vector", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html#acbfcd93b71ba8d4777e23d7f9df191b1", null ],
     [ "delete_KnapsackSolver", "classGoogle_1_1OrTools_1_1Algorithms_1_1operations__research__algorithmsPINVOKE.html#a1f776b9f61a5d44caf48d4f04f2af44b", null ],

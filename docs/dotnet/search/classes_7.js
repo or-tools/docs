@@ -41,6 +41,6 @@ var searchData=
   ['intvectorvector_38',['IntVectorVector',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVectorVector.html',1,'Google::OrTools::ConstraintSolver']]],
   ['intvectorvectorenumerator_39',['IntVectorVectorEnumerator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVectorVector_1_1IntVectorVectorEnumerator.html',1,'Google::OrTools::ConstraintSolver::IntVectorVector']]],
   ['inverseconstraintproto_40',['InverseConstraintProto',['../classGoogle_1_1OrTools_1_1Sat_1_1InverseConstraintProto.html',1,'Google::OrTools::Sat']]],
-  ['iteratedlocalsearchparameters_41',['IteratedLocalSearchParameters',['../classOperationsResearch_1_1IteratedLocalSearchParameters.html',1,'OperationsResearch']]],
+  ['iteratedlocalsearchparameters_41',['IteratedLocalSearchParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html',1,'Google::OrTools::ConstraintSolver']]],
   ['iterationstats_42',['IterationStats',['../classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html',1,'Google::OrTools::PDLP']]]
 ];

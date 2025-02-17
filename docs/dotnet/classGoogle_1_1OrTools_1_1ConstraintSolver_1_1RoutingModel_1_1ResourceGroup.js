@@ -7,6 +7,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup 
     [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#ad78f751231bb65335a5552eb2bb9e3cf", null ],
     [ "Dispose", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#abd77f09a90e21ee2747ef7cfa2ea42a8", null ],
     [ "GetAffectedDimensionIndices", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#a0c413d51327a0bdf9537e11c7003c23f", null ],
+    [ "GetDimensionAttributesForClass", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#a7947b7792263b1d9517ebf77a9897983", null ],
     [ "GetResource", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#a0330ad019ccf5ad95e4cbc00eaf55357", null ],
     [ "GetResourceClassesCount", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#a001b2d7694a47b4b969b20c8968abdfa", null ],
     [ "GetResourceClassIndex", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1ResourceGroup.html#ad1112d3f781980f02a5b0d9da141080c", null ],

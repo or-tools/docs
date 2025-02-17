@@ -1,0 +1,5 @@
+var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGStringWithLengthHelper =
+[
+    [ "SWIG_c_to_csharp_string", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGStringWithLengthHelper.html#ada6dbff539745ea57cefdf5cb4fc79d0", null ],
+    [ "SWIG_csharp_string_to_c", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE_1_1SWIGStringWithLengthHelper.html#a57ac79f8d722e405e332cfbce8b3caa2", null ]
+];

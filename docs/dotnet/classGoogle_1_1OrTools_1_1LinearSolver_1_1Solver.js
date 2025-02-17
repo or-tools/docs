@@ -97,5 +97,6 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver =
     [ "variables", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#adb011eaf70ce2c434ba946a58efa0f8d", null ],
     [ "VerifySolution", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a2b51356c3901b64176e46a3155b5d783", null ],
     [ "WallTime", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#a752f943d6ec5143f9d94d68dffc62e4d", null ],
+    [ "WriteModelToMpsFile", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#ad9595eea31c4a1795568757b31004cc3", null ],
     [ "swigCMemOwn", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Solver.html#aa7c6dcd807aff4c3a7f907539867fd28", null ]
 ];

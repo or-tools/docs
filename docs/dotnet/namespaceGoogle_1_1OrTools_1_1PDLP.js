@@ -39,6 +39,11 @@ var namespaceGoogle_1_1OrTools_1_1PDLP =
       [ "WeightedAverageReset", "namespaceGoogle_1_1OrTools_1_1PDLP.html#acd24e3ddeda099ba72206197d734dba3a47bc834b529ebb870ca7a7200a00fa0f", null ],
       [ "RestartToAverage", "namespaceGoogle_1_1OrTools_1_1PDLP.html#acd24e3ddeda099ba72206197d734dba3a479fef6705494f920ad418026ec956c0", null ]
     ] ],
+    [ "SchedulerType", "namespaceGoogle_1_1OrTools_1_1PDLP.html#ae4c2d07b6701892d6d1ad0b3b65da58d", [
+      [ "Unspecified", "namespaceGoogle_1_1OrTools_1_1PDLP.html#ae4c2d07b6701892d6d1ad0b3b65da58da6fcdc090caeade09d0efd6253932b6f5", null ],
+      [ "GoogleThreadpool", "namespaceGoogle_1_1OrTools_1_1PDLP.html#ae4c2d07b6701892d6d1ad0b3b65da58da581b1d36f1eb6b866157166ec6df0903", null ],
+      [ "EigenThreadpool", "namespaceGoogle_1_1OrTools_1_1PDLP.html#ae4c2d07b6701892d6d1ad0b3b65da58da9f84868f263b5046e5bef119d3bf0884", null ]
+    ] ],
     [ "TerminationReason", "namespaceGoogle_1_1OrTools_1_1PDLP.html#a1ae8303887d3649feead1b21e9849ddf", [
       [ "Unspecified", "namespaceGoogle_1_1OrTools_1_1PDLP.html#a1ae8303887d3649feead1b21e9849ddfa6fcdc090caeade09d0efd6253932b6f5", null ],
       [ "Optimal", "namespaceGoogle_1_1OrTools_1_1PDLP.html#a1ae8303887d3649feead1b21e9849ddfacb61fef1e5e79e07a80421cb9a073a80", null ],

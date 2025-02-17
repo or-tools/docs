@@ -14,5 +14,6 @@ var searchData=
   ['boolxorfieldnumber_11',['BoolXorFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a60474d637f48550b3b84d7f6ff102b98',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['branchesfieldnumber_12',['BranchesFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimitParameters.html#aeeeefe9f7a53525359f872085f4631c5',1,'Google::OrTools::ConstraintSolver::RegularLimitParameters']]],
   ['branchingpriorityfieldnumber_13',['BranchingPriorityFieldNumber',['../classOperationsResearch_1_1MPVariableProto.html#a578cc53ec8462885a641df4f1cbe4083',1,'OperationsResearch::MPVariableProto']]],
-  ['bytesusedfieldnumber_14',['BytesUsedFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html#af6b71711becd1fc729cc25aae80b36a0',1,'Google::OrTools::ConstraintSolver::ConstraintSolverStatistics']]]
+  ['bypassfactorfieldnumber_14',['BypassFactorFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a032d3e8fe85a2f8aa7775a564c51579d',1,'Google::OrTools::ConstraintSolver::SISRRuinStrategy']]],
+  ['bytesusedfieldnumber_15',['BytesUsedFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html#af6b71711becd1fc729cc25aae80b36a0',1,'Google::OrTools::ConstraintSolver::ConstraintSolverStatistics']]]
 ];

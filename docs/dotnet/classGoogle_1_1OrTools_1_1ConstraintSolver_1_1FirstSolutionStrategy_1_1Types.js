@@ -7,6 +7,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types
       [ "PathMostConstrainedArc", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa1e0911afce171548016e1262ca4cfc78", null ],
       [ "EvaluatorStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132faa5ffc082c74d7f8c702155a6efce4cf4", null ],
       [ "Savings", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132faab0da0e987457927aebb5111d5d32c12", null ],
+      [ "ParallelSavings", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa578c38e3c763f72e18893cc69ee5ce89", null ],
       [ "Sweep", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa8e9014ddfce21beb1b3cd7da888cbdea", null ],
       [ "Christofides", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa6c8581a1eb3b87228f884a7c05f0c34e", null ],
       [ "AllUnperformed", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1FirstSolutionStrategy_1_1Types.html#a46b0af629b907cebcfdee6028dc7132fa1d6156004a7044ffd2929ad295beb903", null ],

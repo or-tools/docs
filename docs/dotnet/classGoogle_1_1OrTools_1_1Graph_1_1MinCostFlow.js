@@ -12,6 +12,7 @@ var classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow =
     [ "NumArcs", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#a9e5519380dc01518b2b578c149d8e610", null ],
     [ "NumNodes", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#a613c3a7c4663c1ccfdea1fb890808160", null ],
     [ "OptimalCost", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#aed38ca2f02daac746d5e2daf24b63255", null ],
+    [ "SetArcCapacity", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#afac4b9004e4332ac0e2e34031de34f07", null ],
     [ "SetNodeSupply", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#a775dc0ebf9ab30a1fad0addf962c9cb4", null ],
     [ "Solve", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#a46a09be23d24c97a629ec7c3b25921dd", null ],
     [ "SolveMaxFlowWithMinCost", "classGoogle_1_1OrTools_1_1Graph_1_1MinCostFlow.html#acc3d938f7344af6cdc3d293fff11a8a5", null ],

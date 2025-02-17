@@ -14,5 +14,6 @@ var searchData=
   ['bound_11',['bound',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BoundCost.html#a627104bea5c162c20c0e6cdd43918c3f',1,'Google::OrTools::ConstraintSolver::BoundCost']]],
   ['branches_12',['Branches',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RegularLimitParameters.html#a50555385eead7eaa919d1fab0d322c13',1,'Google::OrTools::ConstraintSolver::RegularLimitParameters']]],
   ['branchingpriority_13',['BranchingPriority',['../classOperationsResearch_1_1MPVariableProto.html#a4106953a4b1366f09f53f231421d54e2',1,'OperationsResearch::MPVariableProto']]],
-  ['bytesused_14',['BytesUsed',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html#a6a7cf6fdb59e9d8ea50dcbb19bfde8ca',1,'Google::OrTools::ConstraintSolver::ConstraintSolverStatistics']]]
+  ['bypassfactor_14',['BypassFactor',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#aed388a20feb3daa54ad6c804e05479dc',1,'Google::OrTools::ConstraintSolver::SISRRuinStrategy']]],
+  ['bytesused_15',['BytesUsed',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html#a6a7cf6fdb59e9d8ea50dcbb19bfde8ca',1,'Google::OrTools::ConstraintSolver::ConstraintSolverStatistics']]]
 ];

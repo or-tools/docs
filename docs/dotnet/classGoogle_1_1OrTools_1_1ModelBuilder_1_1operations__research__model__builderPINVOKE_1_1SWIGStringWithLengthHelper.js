@@ -1,0 +1,5 @@
+var classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE_1_1SWIGStringWithLengthHelper =
+[
+    [ "SWIG_c_to_csharp_string", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE_1_1SWIGStringWithLengthHelper.html#a3eb4ad32119be53b352b7a7305ebcc6c", null ],
+    [ "SWIG_csharp_string_to_c", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1operations__research__model__builderPINVOKE_1_1SWIGStringWithLengthHelper.html#ab62fdb812337db66285defb2b2150827", null ]
+];

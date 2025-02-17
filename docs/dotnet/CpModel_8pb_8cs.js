@@ -31,11 +31,11 @@ var CpModel_8pb_8cs =
     [ "Google.OrTools.Sat.CpModelProto", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelProto" ],
     [ "Google.OrTools.Sat.CpSolverSolution", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolution.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolution" ],
     [ "Google.OrTools.Sat.CpSolverResponse", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse.html", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolverResponse" ],
-    [ "CpSolverStatus", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040", [
-      [ "Unknown", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
-      [ "ModelInvalid", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040aa1cc2f9a5c97bd1133373ebbc79fd554", null ],
-      [ "Feasible", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040a8d5e8c47cdc7636fcebc73dda4c595f7", null ],
-      [ "Infeasible", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040a54def92f4c562f166a6abbcbceadeb46", null ],
-      [ "Optimal", "CpModel_8pb_8cs.html#aa595d3031f0d84a540d17c50a43ad040acb61fef1e5e79e07a80421cb9a073a80", null ]
+    [ "Google.OrTools.Sat.CpSolverStatus", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040", [
+      [ "Google.OrTools.Sat.CpSolverStatus.Unknown", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "Google.OrTools.Sat.CpSolverStatus.ModelInvalid", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040aa1cc2f9a5c97bd1133373ebbc79fd554", null ],
+      [ "Google.OrTools.Sat.CpSolverStatus.Feasible", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040a8d5e8c47cdc7636fcebc73dda4c595f7", null ],
+      [ "Google.OrTools.Sat.CpSolverStatus.Infeasible", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040a54def92f4c562f166a6abbcbceadeb46", null ],
+      [ "Google.OrTools.Sat.CpSolverStatus.Optimal", "namespaceGoogle_1_1OrTools_1_1Sat.html#aa595d3031f0d84a540d17c50a43ad040acb61fef1e5e79e07a80421cb9a073a80", null ]
     ] ]
 ];

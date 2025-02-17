@@ -3,6 +3,7 @@ var classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE =
     [ "SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGExceptionHelper.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGExceptionHelper" ],
     [ "SWIGPendingException", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGPendingException.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGPendingException" ],
     [ "SWIGStringHelper", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringHelper" ],
+    [ "SWIGStringWithLengthHelper", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringWithLengthHelper.html", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE_1_1SWIGStringWithLengthHelper" ],
     [ "CppBridge_DeleteByteArray", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html#a5f62091bed243afec721a1b7ca9e6e74", null ],
     [ "CppBridge_InitLogging", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html#a7133473fa8d8dc35c2b152ddfffb8923", null ],
     [ "CppBridge_LoadGurobiSharedLibrary", "classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html#a393a4e3e60f7f299617267ab3a78fcb2", null ],

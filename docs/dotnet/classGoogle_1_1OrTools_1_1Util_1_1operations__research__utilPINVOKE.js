@@ -3,6 +3,7 @@ var classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE =
     [ "SWIGExceptionHelper", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGExceptionHelper.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGExceptionHelper" ],
     [ "SWIGPendingException", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGPendingException.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGPendingException" ],
     [ "SWIGStringHelper", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGStringHelper" ],
+    [ "SWIGStringWithLengthHelper", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGStringWithLengthHelper.html", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE_1_1SWIGStringWithLengthHelper" ],
     [ "delete_Domain", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html#a6a58244bd49487e2feacf1b50615a236", null ],
     [ "delete_Int64Vector", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html#a21953b5ed3f91dcff635547a450186d4", null ],
     [ "delete_Int64VectorVector", "classGoogle_1_1OrTools_1_1Util_1_1operations__research__utilPINVOKE.html#ac378bcec373241bab097c4965cc30a70", null ],

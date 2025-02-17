@@ -13,8 +13,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics =
     [ "WriteTo", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#aa03a38476e3994903cd200ccea321a75", null ],
     [ "ConstraintSolverStatisticsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#a29d38e885aab8338b70bb40b5f7e5c08", null ],
     [ "LocalSearchStatisticsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#ae209ecb3de28d569bc20086d271cad76", null ],
-    [ "ConstraintSolverStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#a8c78022ad220419d26d3ed53bcc81414", null ],
+    [ "ConstraintSolverStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#aa3441a49ee6842957d769bad284315be", null ],
     [ "Descriptor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#acfc2408506368ade676a126a6bde3b37", null ],
-    [ "LocalSearchStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#af9b9da244d27b7902790bf26ff4cf793", null ],
+    [ "LocalSearchStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#aacea6058eb3fa21f40d3cd202814ca57", null ],
     [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html#af705fb9aaae87513284171aac7c65638", null ]
 ];

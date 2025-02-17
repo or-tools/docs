@@ -26,20 +26,20 @@ var LinearSolver_8pb_8cs =
     [ "OperationsResearch.MPSolution", "classOperationsResearch_1_1MPSolution.html", "classOperationsResearch_1_1MPSolution" ],
     [ "OperationsResearch.MPSolveInfo", "classOperationsResearch_1_1MPSolveInfo.html", "classOperationsResearch_1_1MPSolveInfo" ],
     [ "OperationsResearch.MPSolutionResponse", "classOperationsResearch_1_1MPSolutionResponse.html", "classOperationsResearch_1_1MPSolutionResponse" ],
-    [ "MPSolverResponseStatus", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6", [
-      [ "MpsolverOptimal", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a8d5cc50fccb1a695ddbb5e7450c31c3b", null ],
-      [ "MpsolverFeasible", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6addf4c361d2611834af061a4b4200e18b", null ],
-      [ "MpsolverInfeasible", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a6eed15562abe0810b84965a12854d7f3", null ],
-      [ "MpsolverUnbounded", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a41f7040b1b79a2040ed1a67af49a0c63", null ],
-      [ "MpsolverAbnormal", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a896c5613bd58f47605a894a956c068d7", null ],
-      [ "MpsolverNotSolved", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6ad4bade7c21d598733cc0851647fc258d", null ],
-      [ "MpsolverModelIsValid", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a556f02b6fe6b147d4d814966f8ad2ccd", null ],
-      [ "MpsolverCancelledByUser", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a08d0e553f013d756c6e5574e18631370", null ],
-      [ "MpsolverUnknownStatus", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a6881882ba6236d78e55a1d8dce6eb51b", null ],
-      [ "MpsolverModelInvalid", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a4bbd80969899f7ee0c7e7d46d75d3df4", null ],
-      [ "MpsolverModelInvalidSolutionHint", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a7051376a5107c2ab0680a2cce364bb73", null ],
-      [ "MpsolverModelInvalidSolverParameters", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a6682fb0ce92883870c75c3797ca53176", null ],
-      [ "MpsolverSolverTypeUnavailable", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6aa11fc54dfd3033418cc4ecde2b2c6c26", null ],
-      [ "MpsolverIncompatibleOptions", "LinearSolver_8pb_8cs.html#ae0ee8df7360e804cab9dd33a9a4316f6a17bb2d27c5c555c057f8e6c8c5ca3d1b", null ]
+    [ "OperationsResearch.MPSolverResponseStatus", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6", [
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverOptimal", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a8d5cc50fccb1a695ddbb5e7450c31c3b", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverFeasible", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6addf4c361d2611834af061a4b4200e18b", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverInfeasible", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a6eed15562abe0810b84965a12854d7f3", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverUnbounded", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a41f7040b1b79a2040ed1a67af49a0c63", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverAbnormal", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a896c5613bd58f47605a894a956c068d7", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverNotSolved", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6ad4bade7c21d598733cc0851647fc258d", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverModelIsValid", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a556f02b6fe6b147d4d814966f8ad2ccd", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverCancelledByUser", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a08d0e553f013d756c6e5574e18631370", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverUnknownStatus", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a6881882ba6236d78e55a1d8dce6eb51b", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverModelInvalid", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a4bbd80969899f7ee0c7e7d46d75d3df4", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverModelInvalidSolutionHint", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a7051376a5107c2ab0680a2cce364bb73", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverModelInvalidSolverParameters", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a6682fb0ce92883870c75c3797ca53176", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverSolverTypeUnavailable", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6aa11fc54dfd3033418cc4ecde2b2c6c26", null ],
+      [ "OperationsResearch.MPSolverResponseStatus.MpsolverIncompatibleOptions", "namespaceOperationsResearch.html#ae0ee8df7360e804cab9dd33a9a4316f6a17bb2d27c5c555c057f8e6c8c5ca3d1b", null ]
     ] ]
 ];

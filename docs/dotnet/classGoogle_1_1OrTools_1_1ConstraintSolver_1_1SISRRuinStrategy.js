@@ -1,0 +1,28 @@
+var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy =
+[
+    [ "SISRRuinStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ad4a7ae3e0705846592e2efd49b71f7be", null ],
+    [ "SISRRuinStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a99d9737b1d01333ffd63ed3257da9db2", null ],
+    [ "CalculateSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a6d5ced1a1632b55fc77f9e1c18778a74", null ],
+    [ "ClearAvgNumRemovedVisits", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a5df21f45178a6c0a339d74e4ce668bfd", null ],
+    [ "ClearBypassFactor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a14ff5661a871cd09bda443dd6c18f967", null ],
+    [ "ClearMaxRemovedSequenceSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ac20767563636f6c0c3809733baf919b5", null ],
+    [ "Clone", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a67cb759678e2c4e4d6cf40dfadc0657e", null ],
+    [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a3a93de7d35a27a3c24ae80b6846ac98c", null ],
+    [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ab5b88259d73ff2a5f4062b38eb7adeb6", null ],
+    [ "GetHashCode", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a6fc37b1a2218371526524d7a997773a7", null ],
+    [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ac6bd34d99215249c28ad21cc0fb62565", null ],
+    [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#aca81ee1328bdb45d5771adf2fb6fd506", null ],
+    [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ae311412a63f39a4de12c6abf1cb24e15", null ],
+    [ "WriteTo", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#ab685ba5e0daf6dbdd6a97eff94aa1b40", null ],
+    [ "AvgNumRemovedVisitsFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a29a0f90f4de4a4a6998c73ce8a0b0870", null ],
+    [ "BypassFactorFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a032d3e8fe85a2f8aa7775a564c51579d", null ],
+    [ "MaxRemovedSequenceSizeFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a68da76cf5ace329801ceee2354121617", null ],
+    [ "AvgNumRemovedVisits", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#acbed99fe8b44734910bed7fb0a681358", null ],
+    [ "BypassFactor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#aed388a20feb3daa54ad6c804e05479dc", null ],
+    [ "Descriptor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a4e6dfd8d38c05655a4eddf0a9783ceb9", null ],
+    [ "HasAvgNumRemovedVisits", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a8b3ec526d220cf4c62aaac6329fcb9c7", null ],
+    [ "HasBypassFactor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a416607d266b18b67d8271b0d0fe73c4e", null ],
+    [ "HasMaxRemovedSequenceSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a2fcbfe536270ee60614b99dc0cf7a0fa", null ],
+    [ "MaxRemovedSequenceSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a419d0a650b22d992f6c4ec8a11c1afb8", null ],
+    [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SISRRuinStrategy.html#a6c5b9a53fc3d958e6ee8ab86d285fa9f", null ]
+];
