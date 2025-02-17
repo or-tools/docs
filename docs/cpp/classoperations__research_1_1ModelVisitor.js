@@ -79,6 +79,7 @@ var classoperations__research_1_1ModelVisitor =
     [ "kGreater", "classoperations__research_1_1ModelVisitor.html#ac9deb5675c83c9622c16d5ea83348dae", null ],
     [ "kGreaterOrEqual", "classoperations__research_1_1ModelVisitor.html#a0f8ad9f298e615c31b81f617d5c56238", null ],
     [ "kIndex2Argument", "classoperations__research_1_1ModelVisitor.html#abb758de7b8748842781922b4283ce95f", null ],
+    [ "kIndex3Argument", "classoperations__research_1_1ModelVisitor.html#ae36d90f3f93bdf35ecddbb8e26116305", null ],
     [ "kIndexArgument", "classoperations__research_1_1ModelVisitor.html#aa1e297c6fb5caf00d9232b13b1802882", null ],
     [ "kIndexOf", "classoperations__research_1_1ModelVisitor.html#a1ec00fb0aaebeb6915eee4d25c5c26b8", null ],
     [ "kInitialState", "classoperations__research_1_1ModelVisitor.html#a2ce107313ce7196e785f2959020b74f2", null ],

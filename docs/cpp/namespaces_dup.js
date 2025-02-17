@@ -8,6 +8,9 @@ var namespaces_dup =
       [ "UTF8StrLen", "namespaceEncodingUtils.html#ae397adfcdd91726ac01af6fb4e9b8d97", null ]
     ] ],
     [ "file", "namespacefile.html", "namespacefile" ],
+    [ "fuzztest", "namespacefuzztest.html", [
+      [ "ReadFilesFromDirectory", "namespacefuzztest.html#a7f0075df5786ebead11edc3cd2856738", null ]
+    ] ],
     [ "google", "namespacegoogle.html", "namespacegoogle" ],
     [ "gtl", "namespacegtl.html", "namespacegtl" ],
     [ "internal", "namespaceinternal.html", "namespaceinternal" ],

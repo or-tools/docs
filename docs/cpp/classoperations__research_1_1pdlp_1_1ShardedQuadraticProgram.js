@@ -1,6 +1,6 @@
 var classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram =
 [
-    [ "ShardedQuadraticProgram", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a8f648635877886119d2326f482f1fc3d", null ],
+    [ "ShardedQuadraticProgram", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#ac4cac29637dd2a356badb2a3ceee3783", null ],
     [ "ShardedQuadraticProgram", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a870a699dbdedbd4997c58be8af83a5e6", null ],
     [ "ShardedQuadraticProgram", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a013dd22fd0d2ae6a3e91f5434c9a4613", null ],
     [ "ConstraintMatrixSharder", "classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html#a214a8a058aaf1203bf7dfab16376c4b5", null ],

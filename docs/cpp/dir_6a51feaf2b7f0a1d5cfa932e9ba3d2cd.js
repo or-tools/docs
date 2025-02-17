@@ -3,12 +3,13 @@ var dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd =
     [ "glpk", "dir_d8a97bf120d490e03e94cbe3ff4f2652.html", "dir_d8a97bf120d490e03e94cbe3ff4f2652" ],
     [ "gscip", "dir_9ee781c998bdfc601dae8db2d063ade4.html", "dir_9ee781c998bdfc601dae8db2d063ade4" ],
     [ "gurobi", "dir_b9b54577022d88f35102b88111db6b9b.html", "dir_b9b54577022d88f35102b88111db6b9b" ],
+    [ "xpress", "dir_36151dbfebe88fc48ad3c15cc73d4206.html", "dir_36151dbfebe88fc48ad3c15cc73d4206" ],
     [ "cp_sat_solver.cc", "cp__sat__solver_8cc.html", "cp__sat__solver_8cc" ],
     [ "cp_sat_solver.h", "cp__sat__solver_8h.html", "cp__sat__solver_8h" ],
     [ "glop_solver.cc", "glop__solver_8cc.html", "glop__solver_8cc" ],
     [ "glop_solver.h", "glop__solver_8h.html", "glop__solver_8h" ],
     [ "glpk.proto", "glpk_8proto.html", null ],
-    [ "glpk_solver.cc", "glpk__solver_8cc.html", "glpk__solver_8cc" ],
+    [ "glpk_solver.cc", "glpk__solver_8cc.html", null ],
     [ "glpk_solver.h", "glpk__solver_8h.html", "glpk__solver_8h" ],
     [ "gscip_solver.cc", "gscip__solver_8cc.html", "gscip__solver_8cc" ],
     [ "gscip_solver.h", "gscip__solver_8h.html", "gscip__solver_8h" ],
@@ -28,5 +29,7 @@ var dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd =
     [ "pdlp_bridge.cc", "pdlp__bridge_8cc.html", null ],
     [ "pdlp_bridge.h", "pdlp__bridge_8h.html", "pdlp__bridge_8h" ],
     [ "pdlp_solver.cc", "pdlp__solver_8cc.html", "pdlp__solver_8cc" ],
-    [ "pdlp_solver.h", "pdlp__solver_8h.html", "pdlp__solver_8h" ]
+    [ "pdlp_solver.h", "pdlp__solver_8h.html", "pdlp__solver_8h" ],
+    [ "xpress_solver.cc", "xpress__solver_8cc.html", "xpress__solver_8cc" ],
+    [ "xpress_solver.h", "xpress__solver_8h.html", "xpress__solver_8h" ]
 ];

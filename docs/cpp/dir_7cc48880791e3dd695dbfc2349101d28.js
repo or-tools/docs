@@ -9,6 +9,7 @@ var dir_7cc48880791e3dd695dbfc2349101d28 =
     [ "quadratic_program.h", "quadratic__program_8h.html", "quadratic__program_8h" ],
     [ "quadratic_program_io.cc", "quadratic__program__io_8cc.html", "quadratic__program__io_8cc" ],
     [ "quadratic_program_io.h", "quadratic__program__io_8h.html", "quadratic__program__io_8h" ],
+    [ "scheduler.cc", "scheduler_8cc.html", "scheduler_8cc" ],
     [ "scheduler.h", "scheduler_8h.html", "scheduler_8h" ],
     [ "sharded_optimization_utils.cc", "sharded__optimization__utils_8cc.html", "sharded__optimization__utils_8cc" ],
     [ "sharded_optimization_utils.h", "sharded__optimization__utils_8h.html", "sharded__optimization__utils_8h" ],
@@ -23,7 +24,7 @@ var dir_7cc48880791e3dd695dbfc2349101d28 =
     [ "termination.cc", "termination_8cc.html", "termination_8cc" ],
     [ "termination.h", "termination_8h.html", "termination_8h" ],
     [ "test_util.cc", "test__util_8cc.html", "test__util_8cc" ],
-    [ "test_util.h", "test__util_8h.html", "test__util_8h" ],
+    [ "test_util.h", "pdlp_2test__util_8h.html", "pdlp_2test__util_8h" ],
     [ "trust_region.cc", "trust__region_8cc.html", "trust__region_8cc" ],
     [ "trust_region.h", "trust__region_8h.html", "trust__region_8h" ]
 ];

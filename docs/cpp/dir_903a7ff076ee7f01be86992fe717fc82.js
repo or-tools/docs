@@ -30,7 +30,7 @@ var dir_903a7ff076ee7f01be86992fe717fc82 =
     [ "scattered_vector.h", "scattered__vector_8h.html", "scattered__vector_8h" ],
     [ "sol_reader.cc", "sol__reader_8cc.html", "sol__reader_8cc" ],
     [ "sol_reader.h", "sol__reader_8h.html", "sol__reader_8h" ],
-    [ "sparse.cc", "sparse_8cc.html", null ],
+    [ "sparse.cc", "sparse_8cc.html", "sparse_8cc" ],
     [ "sparse.h", "sparse_8h.html", "sparse_8h" ],
     [ "sparse_column.cc", "sparse__column_8cc.html", null ],
     [ "sparse_column.h", "sparse__column_8h.html", "sparse__column_8h" ],

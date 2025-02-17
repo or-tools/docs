@@ -1,6 +1,6 @@
 var structoperations__research_1_1sat_1_1DiffnEnergyEvent =
 [
-    [ "DiffnEnergyEvent", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html#a9e4a4fdea1366ae674ee00029150f854", null ],
+    [ "DiffnEnergyEvent", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html#a2077d1a0cd4d00030e0ef22fcb7e33d3", null ],
     [ "DebugString", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html#a016193b5fb7097dd74c0e4e35905ce89", null ],
     [ "FillEnergyLp", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html#ae052174d11a51dd3e2e23209a009e54f", null ],
     [ "GetMinOverlap", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html#ac9668cd568e7e398b4ac972587d9a029", null ],

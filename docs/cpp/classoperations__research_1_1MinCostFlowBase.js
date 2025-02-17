@@ -7,6 +7,7 @@ var classoperations__research_1_1MinCostFlowBase =
       [ "INFEASIBLE", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457af323941c683086f71ce1e7cae7a0a1b3", null ],
       [ "UNBALANCED", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457ad79843de8fcdec97ba2ce9b83d6cf3c1", null ],
       [ "BAD_RESULT", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457a030d97dcea9960e3d1f127024b0e2168", null ],
-      [ "BAD_COST_RANGE", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457a41523b94852c3cb55c86ce0e291e3719", null ]
+      [ "BAD_COST_RANGE", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457a41523b94852c3cb55c86ce0e291e3719", null ],
+      [ "BAD_CAPACITY_RANGE", "classoperations__research_1_1MinCostFlowBase.html#ae5cad0c7d9c3eddbc7c3aefbee060457a3c1e555eb1251e00c277908c08018638", null ]
     ] ]
 ];

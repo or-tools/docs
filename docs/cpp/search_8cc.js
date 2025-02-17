@@ -1,29 +1,9 @@
 var search_8cc =
 [
+    [ "operations_research::RoundRobinCompoundObjectiveMonitor", "classoperations__research_1_1RoundRobinCompoundObjectiveMonitor.html", "classoperations__research_1_1RoundRobinCompoundObjectiveMonitor" ],
     [ "operations_research::SymmetryManager", "classoperations__research_1_1SymmetryManager.html", "classoperations__research_1_1SymmetryManager" ],
     [ "ABSL_FLAG", "search_8cc.html#ab31a551e11c50cf1ec89282555478f87", null ],
     [ "ABSL_FLAG", "search_8cc.html#a81a9d3639953160f110d3e47c52a7169", null ],
     [ "ABSL_FLAG", "search_8cc.html#aa2c90fd44766d1dbcc0af1fcd2993987", null ],
-    [ "ChooseMode", "search_8cc.html#af7dae3ea7fbd3c3a43dd7d5a28ca544b", null ],
-    [ "assignment_penalized_value_", "search_8cc.html#a04d23c96b3a7905eaf9215f574c163ea", null ],
-    [ "builders_", "search_8cc.html#a1f3b0ef727d0f9930c2177b4e3e945ea", null ],
-    [ "evaluator_", "search_8cc.html#ab8e7cdbcc8db4792b2ca9b8d4f5b0772", null ],
-    [ "first_unbound_", "search_8cc.html#aa0378264d91ea4b2dc1122c465cf5013", null ],
-    [ "incremental_", "search_8cc.html#ac8f969ce45179d0fd0a42ccf7735bcd6", null ],
-    [ "last_unbound_", "search_8cc.html#aad4ded3db2a399fa52581ee3a7f96436", null ],
-    [ "mode_", "search_8cc.html#afe4345441b876a15541007d399b047f1", null ],
-    [ "num_vars_", "search_8cc.html#acd5c59a87c17644d68dc138ce89f7426", null ],
-    [ "old_penalized_value_", "search_8cc.html#ac8936c999b2b5e0dae172345fabe3f64", null ],
-    [ "penalized_objective_", "search_8cc.html#a82f4c8d4970a96af27990c13d66a2fe3", null ],
-    [ "penalized_values_", "search_8cc.html#a6883e03e88c9111408378e4c49a440e2", null ],
-    [ "penalty_factor_", "search_8cc.html#a0b1795e10c65e7f1062da14c6e63e569", null ],
-    [ "reset_penalties_on_new_best_solution_", "search_8cc.html#a75d68001fdd7a0e272ef11c07f888c6f", null ],
-    [ "selector_", "search_8cc.html#a55ed096f6ff13bef2f7e921ffe4dda27", null ],
-    [ "solver_", "search_8cc.html#abd6bfbf6753a5deb0ce273fad6408e1e", null ],
-    [ "stamp", "search_8cc.html#a0de845646ed304ef563229f2f606d899", null ],
-    [ "value", "search_8cc.html#ac072af30c4ffbc834bb4c681f6ecb514", null ],
-    [ "var", "search_8cc.html#a7b137f8db5d9cd79d1cd5a4541a0cfc0", null ],
-    [ "var_index", "search_8cc.html#a3de5fd09893127e4ec08e3cbf9cbcb62", null ],
-    [ "var_index_to_local_index_", "search_8cc.html#a416da10b07f89f5c1da16f3d601fca1f", null ],
-    [ "vars_", "search_8cc.html#a9b229f7e8aa2b819b08a9eef9b39df61", null ]
+    [ "operations_research::ChooseMode", "namespaceoperations__research.html#af7dae3ea7fbd3c3a43dd7d5a28ca544b", null ]
 ];

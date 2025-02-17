@@ -17,7 +17,5 @@ var mathopt__solve_8cc =
     [ "ABSL_FLAG", "mathopt__solve_8cc.html#aa4812122bd5585658638b7d44e1f6756", null ],
     [ "ABSL_FLAG", "mathopt__solve_8cc.html#aa888276c8e68d97baff97c2448e9a08c", null ],
     [ "ABSL_FLAG", "mathopt__solve_8cc.html#afc285fd3d5b5c32a7508e141ce60a50b", null ],
-    [ "main", "mathopt__solve_8cc.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
-    [ "hint", "mathopt__solve_8cc.html#ac800b7ae4ecfef086c40e66fa7d1f030", null ],
-    [ "model", "mathopt__solve_8cc.html#a57aa5e8dcf6ae065125db38e2b64e7b4", null ]
+    [ "main", "mathopt__solve_8cc.html#a0ddf1224851353fc92bfbff6f499fa97", null ]
 ];

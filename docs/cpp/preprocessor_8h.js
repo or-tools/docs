@@ -26,5 +26,5 @@ var preprocessor_8h =
     [ "operations_research::glop::ScalingPreprocessor", "classoperations__research_1_1glop_1_1ScalingPreprocessor.html", "classoperations__research_1_1glop_1_1ScalingPreprocessor" ],
     [ "operations_research::glop::ToMinimizationPreprocessor", "classoperations__research_1_1glop_1_1ToMinimizationPreprocessor.html", "classoperations__research_1_1glop_1_1ToMinimizationPreprocessor" ],
     [ "operations_research::glop::AddSlackVariablesPreprocessor", "classoperations__research_1_1glop_1_1AddSlackVariablesPreprocessor.html", "classoperations__research_1_1glop_1_1AddSlackVariablesPreprocessor" ],
-    [ "FixConstraintWithFixedStatuses", "preprocessor_8h.html#ac55fddbd6cdae02b8a88e2c845f0d4d7", null ]
+    [ "operations_research::glop::FixConstraintWithFixedStatuses", "namespaceoperations__research_1_1glop.html#ac55fddbd6cdae02b8a88e2c845f0d4d7", null ]
 ];

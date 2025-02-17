@@ -14,11 +14,11 @@ var container__logging_8h =
     [ "gtl::LogLegacy", "structgtl_1_1LogLegacy.html", "structgtl_1_1LogLegacy" ],
     [ "gtl::detail::RangeLogger< IteratorT, PolicyT >", "classgtl_1_1detail_1_1RangeLogger.html", "classgtl_1_1detail_1_1RangeLogger" ],
     [ "gtl::detail::EnumLogger< E >", "classgtl_1_1detail_1_1EnumLogger.html", "classgtl_1_1detail_1_1EnumLogger" ],
-    [ "LogDefault", "container__logging_8h.html#a4f663b315f1f56d575e32524a9d06313", null ],
-    [ "LogContainer", "container__logging_8h.html#a6ef4d25cc294b5d4bec3549469b560e2", null ],
-    [ "LogContainer", "container__logging_8h.html#a252ef610941828aa417152c3230ca670", null ],
-    [ "LogEnum", "container__logging_8h.html#a7b33b6e58e54dbc05433bc83268ae138", null ],
-    [ "LogRange", "container__logging_8h.html#a56f025bbd76056e4b95662c1adf0c754", null ],
-    [ "LogRange", "container__logging_8h.html#a829be4587c2fbc742294381e89b71570", null ],
-    [ "LogRangeToStream", "container__logging_8h.html#ae771af59e42d532c50c13eac05ffc725", null ]
+    [ "gtl::LogDefault", "namespacegtl.html#a4f663b315f1f56d575e32524a9d06313", null ],
+    [ "gtl::LogContainer", "namespacegtl.html#a6ef4d25cc294b5d4bec3549469b560e2", null ],
+    [ "gtl::LogContainer", "namespacegtl.html#a252ef610941828aa417152c3230ca670", null ],
+    [ "gtl::LogEnum", "namespacegtl.html#a7b33b6e58e54dbc05433bc83268ae138", null ],
+    [ "gtl::LogRange", "namespacegtl.html#a56f025bbd76056e4b95662c1adf0c754", null ],
+    [ "gtl::LogRange", "namespacegtl.html#a829be4587c2fbc742294381e89b71570", null ],
+    [ "gtl::LogRangeToStream", "namespacegtl.html#ae771af59e42d532c50c13eac05ffc725", null ]
 ];

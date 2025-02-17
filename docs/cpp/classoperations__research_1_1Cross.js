@@ -1,7 +1,7 @@
 var classoperations__research_1_1Cross =
 [
-    [ "Cross", "classoperations__research_1_1Cross.html#a2cd3050efb48e0497204c6cc3cc7fab8", null ],
-    [ "~Cross", "classoperations__research_1_1Cross.html#a483e5a80eabe5e555c2e45d8fc952e6e", null ],
-    [ "DebugString", "classoperations__research_1_1Cross.html#aaf0013222a12e0d744ae05fef3d45297", null ],
-    [ "MakeNeighbor", "classoperations__research_1_1Cross.html#aebc322e8525f142b40271ce61f2db26f", null ]
+    [ "Cross", "classoperations__research_1_1Cross.html#adef334a0ed1b4fde9bdddfc4d99d6728", null ],
+    [ "~Cross", "classoperations__research_1_1Cross.html#afcd4dfaae0160da91c9c70fb0953796a", null ],
+    [ "DebugString", "classoperations__research_1_1Cross.html#ac83e18f7ab58087dc0c5ebe0c4dea5c5", null ],
+    [ "MakeNeighbor", "classoperations__research_1_1Cross.html#a96e126a48c482f6db90273d1b4033044", null ]
 ];

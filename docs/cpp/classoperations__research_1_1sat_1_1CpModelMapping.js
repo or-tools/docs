@@ -4,6 +4,7 @@ var classoperations__research_1_1sat_1_1CpModelMapping =
     [ "Affines", "classoperations__research_1_1sat_1_1CpModelMapping.html#adc26436f6b8e54c313eb8b3e224af018", null ],
     [ "ConstraintIsAlreadyLoaded", "classoperations__research_1_1sat_1_1CpModelMapping.html#a8d7fa5597cf7f1924d26beb05b477eb5", null ],
     [ "GetExprFromProto", "classoperations__research_1_1sat_1_1CpModelMapping.html#ab612ad30bfefef6301f83a2bd661662c", null ],
+    [ "GetProtoLiteralFromLiteral", "classoperations__research_1_1sat_1_1CpModelMapping.html#a884207b156fe025d8176429d7128a469", null ],
     [ "GetProtoVariableFromBooleanVariable", "classoperations__research_1_1sat_1_1CpModelMapping.html#a80348275984a3c29fd5125beaabcbe16", null ],
     [ "GetProtoVariableFromIntegerVariable", "classoperations__research_1_1sat_1_1CpModelMapping.html#aae19f2739b2818ee2c391e363b46999a", null ],
     [ "GetVariableMapping", "classoperations__research_1_1sat_1_1CpModelMapping.html#af84cb76ba64ccd2c3d161a2441b43aa7", null ],

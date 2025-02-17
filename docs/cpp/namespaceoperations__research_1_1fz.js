@@ -9,7 +9,6 @@ var namespaceoperations__research_1_1fz =
     [ "Model", "classoperations__research_1_1fz_1_1Model.html", "classoperations__research_1_1fz_1_1Model" ],
     [ "ModelStatistics", "classoperations__research_1_1fz_1_1ModelStatistics.html", "classoperations__research_1_1fz_1_1ModelStatistics" ],
     [ "ParserContext", "structoperations__research_1_1fz_1_1ParserContext.html", "structoperations__research_1_1fz_1_1ParserContext" ],
-    [ "Presolver", "classoperations__research_1_1fz_1_1Presolver.html", "classoperations__research_1_1fz_1_1Presolver" ],
     [ "SolutionOutputSpecs", "structoperations__research_1_1fz_1_1SolutionOutputSpecs.html", "structoperations__research_1_1fz_1_1SolutionOutputSpecs" ],
     [ "Variable", "structoperations__research_1_1fz_1_1Variable.html", "structoperations__research_1_1fz_1_1Variable" ],
     [ "VarRefOrValue", "structoperations__research_1_1fz_1_1VarRefOrValue.html", "structoperations__research_1_1fz_1_1VarRefOrValue" ],
@@ -21,8 +20,8 @@ var namespaceoperations__research_1_1fz =
     [ "FlattenAnnotations", "namespaceoperations__research_1_1fz.html#a826741e681059159db25fac4c14c4dbb", null ],
     [ "LogInFlatzincFormat", "namespaceoperations__research_1_1fz.html#a0724c962c80f03371955db3aa4767fda", null ],
     [ "Lookup", "namespaceoperations__research_1_1fz.html#a0d0d1d18eea7879af81671f8395b8b1d", null ],
-    [ "ParseFile", "namespaceoperations__research_1_1fz.html#aa4ede24d17a1022306de513318d00045", null ],
+    [ "ParseFile", "namespaceoperations__research_1_1fz.html#a60e570a97b0a6452fe7ac6f1cb7da961", null ],
     [ "ParseFlatzincFile", "namespaceoperations__research_1_1fz.html#ac00baf9686aa5a3fab90c827d737e881", null ],
-    [ "ParseFlatzincModel", "namespaceoperations__research_1_1fz.html#af21f55c8ac992181c81331ece1779c16", null ],
+    [ "ParseFlatzincModel", "namespaceoperations__research_1_1fz.html#a47293de264a3952b143b65e84cf9ef34", null ],
     [ "ParseFlatzincString", "namespaceoperations__research_1_1fz.html#aa41416f89957c612045dcae8af9444b5", null ]
 ];

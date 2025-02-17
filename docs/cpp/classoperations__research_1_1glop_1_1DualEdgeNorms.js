@@ -8,6 +8,7 @@ var classoperations__research_1_1glop_1_1DualEdgeNorms =
     [ "operator=", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#a4330f14c0b48875eb367fd5e4d9250c6", null ],
     [ "ResizeOnNewRows", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#a613e7df6c219782d523ed8f281b9bf38", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#ad3f5b12c01e5702b4a7b9efb9113f581", null ],
+    [ "SetTimeLimit", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#ac3722c1f495bb5c75a9764e917ae858b", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#a6f72fb35a40c74c46d6ddcd94b275b5d", null ],
     [ "TestPrecision", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#aedbe0bcaabf11e457c3ae514f2c3aed3", null ],
     [ "UpdateBeforeBasisPivot", "classoperations__research_1_1glop_1_1DualEdgeNorms.html#ab9c06f7b3b7e0337da531ca86c3fd43c", null ],

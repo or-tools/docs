@@ -12,7 +12,7 @@ var dir_747248fa8ec2ebcb4d8ad85ced34db0b =
     [ "lp_solver.h", "lp__solver_8h.html", "lp__solver_8h" ],
     [ "lu_factorization.cc", "lu__factorization_8cc.html", null ],
     [ "lu_factorization.h", "lu__factorization_8h.html", "lu__factorization_8h" ],
-    [ "markowitz.cc", "markowitz_8cc.html", "markowitz_8cc" ],
+    [ "markowitz.cc", "markowitz_8cc.html", null ],
     [ "markowitz.h", "markowitz_8h.html", "markowitz_8h" ],
     [ "parameters.proto", "glop_2parameters_8proto.html", null ],
     [ "parameters_validation.cc", "glop_2parameters__validation_8cc.html", "glop_2parameters__validation_8cc" ],

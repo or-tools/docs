@@ -1,10 +1,11 @@
 var classoperations__research_1_1StrongInt64 =
 [
-    [ "ThisType", "classoperations__research_1_1StrongInt64.html#afecae6dca913ec8cf20f70bafb60ecbe", null ],
-    [ "ValueType", "classoperations__research_1_1StrongInt64.html#a24d49cdd748e48d571a0bf6a1d2da0b4", null ],
+    [ "ThisType", "classoperations__research_1_1StrongInt64.html#a2221e4f287493cc581593ba28de53ed5", null ],
+    [ "ValueType", "classoperations__research_1_1StrongInt64.html#af21846d4e036d016d901f6f13a2fc810", null ],
     [ "StrongInt64", "classoperations__research_1_1StrongInt64.html#a406ecec2fee74785e16a8b0e88c9cc6b", null ],
     [ "StrongInt64", "classoperations__research_1_1StrongInt64.html#a2d28495dbf5449358910b6f0d02f280e", null ],
     [ "ABSL_DEPRECATED", "classoperations__research_1_1StrongInt64.html#ae36f0fdf7e04daffc224aebe8ddfb2a3", null ],
+    [ "mutable_value", "classoperations__research_1_1StrongInt64.html#af0dec5d562bd2eb3508d361178d0ec57", null ],
     [ "operator+", "classoperations__research_1_1StrongInt64.html#aed853354f07dc3dbdd20a6a443f60087", null ],
     [ "operator-", "classoperations__research_1_1StrongInt64.html#a3b0c3a7cc0e48f9b89ba69a5e954034e", null ],
     [ "operator=", "classoperations__research_1_1StrongInt64.html#aeff2eda6779013138ebbd13c54c8dd94", null ],

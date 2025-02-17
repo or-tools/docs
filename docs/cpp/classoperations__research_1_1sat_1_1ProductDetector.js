@@ -5,7 +5,7 @@ var classoperations__research_1_1sat_1_1ProductDetector =
     [ "BoolRLTCandidates", "classoperations__research_1_1sat_1_1ProductDetector.html#acc1b5774baf63c8bfe5de90e1c83309e", null ],
     [ "GetProduct", "classoperations__research_1_1sat_1_1ProductDetector.html#a0860ae148aaf7c58eec94d5390c0126d", null ],
     [ "GetProduct", "classoperations__research_1_1sat_1_1ProductDetector.html#a332d857e96008895515824c8b2ad8f94", null ],
-    [ "InitializeBooleanRLTCuts", "classoperations__research_1_1sat_1_1ProductDetector.html#ace823645f22af035730ca72f27174de9", null ],
+    [ "InitializeBooleanRLTCuts", "classoperations__research_1_1sat_1_1ProductDetector.html#a03747fb4560f490b6db42ffb749c8f2e", null ],
     [ "LinearizeProduct", "classoperations__research_1_1sat_1_1ProductDetector.html#a3a17220935c42077613be222734fef7a", null ],
     [ "LiteralProductUpperBound", "classoperations__research_1_1sat_1_1ProductDetector.html#aa2805e3940f24c7d3d7742297236ed9e", null ],
     [ "ProcessBinaryClause", "classoperations__research_1_1sat_1_1ProductDetector.html#af7fe2b019ee2556cd2b2813b34877945", null ],

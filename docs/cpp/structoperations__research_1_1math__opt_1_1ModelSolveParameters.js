@@ -7,7 +7,7 @@ var structoperations__research_1_1math__opt_1_1ModelSolveParameters =
     [ "OnlyPrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#ac229a7f787a33221ecec9da4f99ac81a", null ],
     [ "OnlySomePrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#aa62634bda415d389f3305c025422586b", null ],
     [ "OnlySomePrimalVariables", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a7eb9a9ce2bd54001d1e26bf00b47434f", null ],
-    [ "Proto", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a7f2865236a76bb6d14d3ac4accae433c", null ],
+    [ "Proto", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#ad0eeac04ea9c977961d68931e29e6442", null ],
     [ "branching_priorities", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#aa79db10062adfba23448b56b171a055e", null ],
     [ "dual_values_filter", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a372f4a72a7810ed91d53909cda306d08", null ],
     [ "initial_basis", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html#a89d3cb0f810d8dfe3d559f32425b0a9e", null ],

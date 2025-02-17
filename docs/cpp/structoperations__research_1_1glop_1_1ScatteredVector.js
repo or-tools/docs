@@ -13,7 +13,7 @@ var structoperations__research_1_1glop_1_1ScatteredVector =
     [ "ShouldUseDenseIteration", "structoperations__research_1_1glop_1_1ScatteredVector.html#ae174e1542f516eac2424985905f5b7d1", null ],
     [ "ShouldUseDenseIteration", "structoperations__research_1_1glop_1_1ScatteredVector.html#ac3a182ad65f3f79920ce311226e5747d", null ],
     [ "SortNonZerosIfNeeded", "structoperations__research_1_1glop_1_1ScatteredVector.html#a9700023caf1eb72a0cab7a1f9dad119f", null ],
-    [ "is_non_zero", "structoperations__research_1_1glop_1_1ScatteredVector.html#af280f072c85dce31a5b4742ea4e6927b", null ],
+    [ "is_non_zero", "structoperations__research_1_1glop_1_1ScatteredVector.html#aa3c8a44ad48f86c1c472e02983736660", null ],
     [ "kDefaultRatioForUsingDenseIteration", "structoperations__research_1_1glop_1_1ScatteredVector.html#a1863a881c8165a5b4217f58e70dcbc97", null ],
     [ "non_zeros", "structoperations__research_1_1glop_1_1ScatteredVector.html#acaf0ebefa70eaac5399e19a235222f74", null ],
     [ "non_zeros_are_sorted", "structoperations__research_1_1glop_1_1ScatteredVector.html#aa4279dee77dfadafb94c7a31d4113e50", null ],

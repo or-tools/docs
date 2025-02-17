@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ebertgraphbase_3c_20nodeindextype_2c_20arcindextype_2c_20ebertgraph_3c_20nodeindextype_2c_20arcindextype_20_3e_20_3e_0',['EbertGraphBase&lt; NodeIndexType, ArcIndexType, EbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;',['../classoperations__research_1_1EbertGraph.html#a73dbd9f38775b3bd2727594c935502c3',1,'operations_research::EbertGraph']]],
-  ['ebertgraphbase_3c_20nodeindextype_2c_20arcindextype_2c_20forwardebertgraph_3c_20nodeindextype_2c_20arcindextype_20_3e_20_3e_1',['EbertGraphBase&lt; NodeIndexType, ArcIndexType, ForwardEbertGraph&lt; NodeIndexType, ArcIndexType &gt; &gt;',['../classoperations__research_1_1ForwardEbertGraph.html#a8fdd2d0396c7ec0609a4351f716aef5f',1,'operations_research::ForwardEbertGraph']]],
-  ['extractencoding_2',['ExtractEncoding',['../classoperations__research_1_1sat_1_1CpModelMapping.html#ad78bf6fcea4b54f750e2457e47b4f46a',1,'operations_research::sat::CpModelMapping']]]
+  ['enumeratedprotoenumview_3c_20e_20_3e_0',['EnumeratedProtoEnumView&lt; E &gt;',['../classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1ProtoEnumIterator.html#a6ec6455d3740618a3cdec11ce3abc225',1,'google::protobuf::contrib::utils::ProtoEnumIterator']]],
+  ['extractencoding_1',['ExtractEncoding',['../classoperations__research_1_1sat_1_1CpModelMapping.html#ad78bf6fcea4b54f750e2457e47b4f46a',1,'operations_research::sat::CpModelMapping']]]
 ];

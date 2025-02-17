@@ -48,6 +48,7 @@ var classoperations__research_1_1Domain =
     [ "PartAroundZero", "classoperations__research_1_1Domain.html#ae6c1e0b5c2bf1adc663c7f8b2c8f912f", null ],
     [ "PositiveDivisionBySuperset", "classoperations__research_1_1Domain.html#aae1848a7fb08fe19a8300eaaa296603f", null ],
     [ "PositiveModuloBySuperset", "classoperations__research_1_1Domain.html#a62fcc9912334c4cc8b4958518ae4cd73", null ],
+    [ "QuadraticSuperset", "classoperations__research_1_1Domain.html#a4ec73a653ae62ee118d079b54f1591f3", null ],
     [ "RelaxIfTooComplex", "classoperations__research_1_1Domain.html#ab06560137156458393e8f44acfd01712", null ],
     [ "SimplifyUsingImpliedDomain", "classoperations__research_1_1Domain.html#a0217b50fb7a5dc20f697ef3d0b14ec41", null ],
     [ "Size", "classoperations__research_1_1Domain.html#a8c2299a700db833477971d661fdc56e8", null ],

@@ -8,9 +8,9 @@ var classoperations__research_1_1bop_1_1IntegralSolver =
     [ "operator=", "classoperations__research_1_1bop_1_1IntegralSolver.html#a5f266485a0e673730b3bdbedc0735b86", null ],
     [ "parameters", "classoperations__research_1_1bop_1_1IntegralSolver.html#a23f76a1a592a2bf6b9140da87a658bed", null ],
     [ "SetParameters", "classoperations__research_1_1bop_1_1IntegralSolver.html#aa92fb1d175448a646af91adccd648627", null ],
-    [ "Solve", "classoperations__research_1_1bop_1_1IntegralSolver.html#adb59bf670fd51c4fd701f34200bb371b", null ],
-    [ "Solve", "classoperations__research_1_1bop_1_1IntegralSolver.html#ade95d98b233882c2b9004ec144ded32e", null ],
-    [ "SolveWithTimeLimit", "classoperations__research_1_1bop_1_1IntegralSolver.html#a7cd87f02b39100f30feac9cd5300f548", null ],
-    [ "SolveWithTimeLimit", "classoperations__research_1_1bop_1_1IntegralSolver.html#a90d6a066605950273fc5aad76339b18d", null ],
+    [ "Solve", "classoperations__research_1_1bop_1_1IntegralSolver.html#ae9cac08f1ac99542b75ac0a3237f55f4", null ],
+    [ "Solve", "classoperations__research_1_1bop_1_1IntegralSolver.html#a23ff330a4dd1b9066e1f23078323ef9b", null ],
+    [ "SolveWithTimeLimit", "classoperations__research_1_1bop_1_1IntegralSolver.html#ad69fd85b0ed6b49ae0fa0e00c9982ac0", null ],
+    [ "SolveWithTimeLimit", "classoperations__research_1_1bop_1_1IntegralSolver.html#abc56e2f14be11bf9ef4d7ebc42b9e6f5", null ],
     [ "variable_values", "classoperations__research_1_1bop_1_1IntegralSolver.html#a14167ddc9012e15e3f91d0cb976684d7", null ]
 ];

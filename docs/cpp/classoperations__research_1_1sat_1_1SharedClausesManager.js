@@ -7,6 +7,6 @@ var classoperations__research_1_1sat_1_1SharedClausesManager =
     [ "GetUnseenClauses", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a7b79336ed6c8b47cb8f4cfea2c985c5d", null ],
     [ "LogStatistics", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a4046c7b70d9cb4de9e59f29ab24fbf1d", null ],
     [ "RegisterNewId", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a089a13e3aa37086807dde0429507020c", null ],
-    [ "SetWorkerNameForId", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a56bea8ae926c5bebbd51b97185d4178f", null ],
+    [ "SetWorkerNameForId", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a12a34e9b90c8fdb1879e8fd554af5bd4", null ],
     [ "Synchronize", "classoperations__research_1_1sat_1_1SharedClausesManager.html#a3ebbcf2be803ef7f2cbad87a044dc4ec", null ]
 ];

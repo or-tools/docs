@@ -5,6 +5,7 @@ var classoperations__research_1_1RoutingCPSatWrapper =
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#a06a6d50c0adbd65c97dc7dbf672ebb88", null ],
     [ "AddObjectiveConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#a0fa3ec59b6409721d433ca0ba3ef5b75", null ],
     [ "AddProductConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#ac83b9498b798e17ed117ce1d1851aaf4", null ],
+    [ "AddRoute", "classoperations__research_1_1RoutingCPSatWrapper.html#aaeb7b51f2b7556170f4088325b453244", null ],
     [ "Clear", "classoperations__research_1_1RoutingCPSatWrapper.html#ae38c4a1addb8c0672e434388aecbcc4f", null ],
     [ "ClearObjective", "classoperations__research_1_1RoutingCPSatWrapper.html#a93e006c6b1522312c12751ecb2d6b3bb", null ],
     [ "CreateNewConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#a41958f5dbaf39397e607c13527897d0e", null ],

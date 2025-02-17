@@ -1,4 +1,6 @@
 var lp__parameter__tests_8cc =
 [
-    [ "operator<<", "lp__parameter__tests_8cc.html#a03c692615ea8b6b67fa6505ff9153cb3", null ]
+    [ "operations_research::math_opt::IsOkAndHolds", "namespaceoperations__research_1_1math__opt.html#ae8bd3c01fc52a20835d9711f7760f6d2", null ],
+    [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#a03c692615ea8b6b67fa6505ff9153cb3", null ],
+    [ "operations_research::math_opt::StatusIs", "namespaceoperations__research_1_1math__opt.html#ad6d54724a3ccc7c58e29b6afc253d975", null ]
 ];

@@ -7,6 +7,6 @@ var hamiltonian__path_8h =
     [ "operations_research::LatticeMemoryManager< Set, CostType >", "classoperations__research_1_1LatticeMemoryManager.html", "classoperations__research_1_1LatticeMemoryManager" ],
     [ "operations_research::HamiltonianPathSolver< CostType, CostFunction >", "classoperations__research_1_1HamiltonianPathSolver.html", "classoperations__research_1_1HamiltonianPathSolver" ],
     [ "operations_research::PruningHamiltonianSolver< CostType, CostFunction >", "classoperations__research_1_1PruningHamiltonianSolver.html", "classoperations__research_1_1PruningHamiltonianSolver" ],
-    [ "PathNodeIndex", "hamiltonian__path_8h.html#a09767b3634289e432c3ce1d7c649666a", null ],
-    [ "MakeHamiltonianPathSolver", "hamiltonian__path_8h.html#ae3fee0d3bb89e4913ad2269f8a1be421", null ]
+    [ "operations_research::PathNodeIndex", "namespaceoperations__research.html#a09767b3634289e432c3ce1d7c649666a", null ],
+    [ "operations_research::MakeHamiltonianPathSolver", "namespaceoperations__research.html#ae3fee0d3bb89e4913ad2269f8a1be421", null ]
 ];

@@ -12,6 +12,5 @@ var searchData=
   ['quadraticprogramboundnorms_9',['QuadraticProgramBoundNorms',['../structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html',1,'operations_research::pdlp']]],
   ['quadraticterm_10',['QuadraticTerm',['../classoperations__research_1_1math__opt_1_1QuadraticTerm.html',1,'operations_research::math_opt']]],
   ['quadratictermkey_11',['QuadraticTermKey',['../classoperations__research_1_1math__opt_1_1QuadraticTermKey.html',1,'operations_research::math_opt']]],
-  ['queue_12',['Queue',['../classoperations__research_1_1Queue.html',1,'operations_research']]],
-  ['quicksmalldivision_13',['QuickSmallDivision',['../classoperations__research_1_1sat_1_1QuickSmallDivision.html',1,'operations_research::sat']]]
+  ['queue_12',['Queue',['../classoperations__research_1_1Queue.html',1,'operations_research']]]
 ];

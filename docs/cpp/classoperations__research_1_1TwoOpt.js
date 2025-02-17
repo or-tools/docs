@@ -1,11 +1,11 @@
 var classoperations__research_1_1TwoOpt =
 [
-    [ "TwoOpt", "classoperations__research_1_1TwoOpt.html#a735032304a3c9a9bd38be6b427540d62", null ],
-    [ "~TwoOpt", "classoperations__research_1_1TwoOpt.html#a0ee00f2fd43dda869006bdc10a8a409e", null ],
-    [ "DebugString", "classoperations__research_1_1TwoOpt.html#a500b8a50d3bf7d46f45936653e87d7b4", null ],
-    [ "GetBaseNodeRestartPosition", "classoperations__research_1_1TwoOpt.html#a3b56773954ef497252721f3948beb691", null ],
-    [ "IsIncremental", "classoperations__research_1_1TwoOpt.html#aa55abfe4c2d455db336b26d93f238b08", null ],
-    [ "MakeNeighbor", "classoperations__research_1_1TwoOpt.html#a839988b1aa3a6c8d3c0d6036ad4dbb20", null ],
-    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1TwoOpt.html#ae85f9c3bef4c6361ff26477a7cbadbc4", null ],
-    [ "Reset", "classoperations__research_1_1TwoOpt.html#aaa9bf29f11b35539ad4f2600bab7178b", null ]
+    [ "TwoOpt", "classoperations__research_1_1TwoOpt.html#ac5f357bda47a73d66e8b43afcbd05e92", null ],
+    [ "~TwoOpt", "classoperations__research_1_1TwoOpt.html#a3d9521d80930063ebcd763d7431686b1", null ],
+    [ "DebugString", "classoperations__research_1_1TwoOpt.html#aa71b2fb02fb0e69c4c1e10c5c03402a5", null ],
+    [ "GetBaseNodeRestartPosition", "classoperations__research_1_1TwoOpt.html#a161adb12de40dd03b1d4cf9f88efed53", null ],
+    [ "IsIncremental", "classoperations__research_1_1TwoOpt.html#a0824f8d37cad70149a0166d087a83c33", null ],
+    [ "MakeNeighbor", "classoperations__research_1_1TwoOpt.html#acc041abbc4018050d8df0b9b8618aaaa", null ],
+    [ "OnSamePathAsPreviousBase", "classoperations__research_1_1TwoOpt.html#a0dbaf4421e3ced5107c318da66b6adca", null ],
+    [ "ResetIncrementalism", "classoperations__research_1_1TwoOpt.html#a095f55925bc9f7a93e4028d2f9ebc5f7", null ]
 ];

@@ -1,8 +1,8 @@
 var classgtl_1_1IntType =
 [
     [ "Hasher", "structgtl_1_1IntType_1_1Hasher.html", "structgtl_1_1IntType_1_1Hasher" ],
-    [ "ThisType", "classgtl_1_1IntType.html#ae937102b619efbd70f9c205eda2a74a8", null ],
-    [ "ValueType", "classgtl_1_1IntType.html#acefc46a8be3e10717486c16a8fc3de25", null ],
+    [ "ThisType", "classgtl_1_1IntType.html#adff81c62ec6fce3a1724bbeb642f8d24", null ],
+    [ "ValueType", "classgtl_1_1IntType.html#a3b34c2bce041517531030e71011aca4b", null ],
     [ "IntType", "classgtl_1_1IntType.html#ab75fc97f4f0658bfc107d5e66aabb289", null ],
     [ "IntType", "classgtl_1_1IntType.html#aaed46753785f26221da7d0438b539756", null ],
     [ "INT_TYPE_ASSIGNMENT_OP", "classgtl_1_1IntType.html#a36ab6a8867d37c7a9fb90e70b12fa8a6", null ],

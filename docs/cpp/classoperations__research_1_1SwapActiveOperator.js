@@ -1,7 +1,7 @@
 var classoperations__research_1_1SwapActiveOperator =
 [
-    [ "SwapActiveOperator", "classoperations__research_1_1SwapActiveOperator.html#a655dd80456f6c15549af3c99ce321bf7", null ],
-    [ "~SwapActiveOperator", "classoperations__research_1_1SwapActiveOperator.html#a4979bdd98ba315f66ee833340fd7cc94", null ],
-    [ "DebugString", "classoperations__research_1_1SwapActiveOperator.html#a65098368c63f56e47bdc8797de3e27ee", null ],
-    [ "MakeNeighbor", "classoperations__research_1_1SwapActiveOperator.html#a99b4f53191e020d7ab766bd4625b9f2e", null ]
+    [ "SwapActiveOperator", "classoperations__research_1_1SwapActiveOperator.html#a877791ca6fe27786aea57ff282dcf00d", null ],
+    [ "~SwapActiveOperator", "classoperations__research_1_1SwapActiveOperator.html#a45760015c39b2f4d9af2b64705a0dd82", null ],
+    [ "DebugString", "classoperations__research_1_1SwapActiveOperator.html#aef7dea8af22795e36991a7bb1af40b04", null ],
+    [ "MakeNeighbor", "classoperations__research_1_1SwapActiveOperator.html#a9d3bfe2c9b09df4b943960ee84b36c12", null ]
 ];

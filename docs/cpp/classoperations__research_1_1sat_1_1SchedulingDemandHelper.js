@@ -6,7 +6,7 @@ var classoperations__research_1_1sat_1_1SchedulingDemandHelper =
     [ "AddEnergyMinInWindowReason", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a8b7226d12b17723e0174250fd2024f46", null ],
     [ "AddEnergyMinReason", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a72e74d1eb6cd7b0c6c6d0aa59cdce69e", null ],
     [ "AddLinearizedDemand", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#ae2b2b278613b06ecd7a1542c38cdd235", null ],
-    [ "CacheAllEnergyValues", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a9019a263126e78ddf332f696649fda87", null ],
+    [ "CacheAllEnergyValues", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a2d1174d156b8b53adca37b7a29e021f4", null ],
     [ "DecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a5d1548238543390fa8663caf279f8866", null ],
     [ "DecreaseEnergyMax", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#ad690f09e6894f8f9e9b01642fa1fc822", null ],
     [ "DemandIsFixed", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a173f8935978453db2cfe8c88b85f3087", null ],
@@ -20,6 +20,5 @@ var classoperations__research_1_1sat_1_1SchedulingDemandHelper =
     [ "FilteredDecomposedEnergy", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a13f1d8d8c111c44c2b38b445dd4a2212", null ],
     [ "InitDecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a8aa9f56ef8a1e2f49e7b07e441b9e418", null ],
     [ "LevelZeroDemandMin", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a5201308247cf35fbde198648e731216a", null ],
-    [ "OverrideDecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#abe6d5aa91c66af113b1d9b04c9745f95", null ],
-    [ "OverrideLinearizedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#a5d1ce25352abb8a484139619fbb9b9c4", null ]
+    [ "OverrideDecomposedEnergies", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html#abe6d5aa91c66af113b1d9b04c9745f95", null ]
 ];

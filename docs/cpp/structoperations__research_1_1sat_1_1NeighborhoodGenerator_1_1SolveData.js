@@ -7,5 +7,6 @@ var structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData =
     [ "difficulty", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#a52eb4ff02c57dd43422551c1016b1065", null ],
     [ "initial_best_objective", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#a456f84da24b40a77602241bf533f4f23", null ],
     [ "new_objective", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#a45c11ad1d1c6502a46b6e7e59b38c780", null ],
-    [ "status", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#a8f73f83099d26fa914eb541f1a52b77d", null ]
+    [ "status", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#a8f73f83099d26fa914eb541f1a52b77d", null ],
+    [ "task_id", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html#aaf06982a4c05b501ee9f0fc0446e0ddb", null ]
 ];

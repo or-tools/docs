@@ -1,5 +1,5 @@
 var cp__model__postsolve_8h =
 [
-    [ "FillTightenedDomainInResponse", "cp__model__postsolve_8h.html#a225c1890d46b6f3fe4c8a15fccc1c047", null ],
-    [ "PostsolveResponse", "cp__model__postsolve_8h.html#a3e2be878d255ed853ce6a36d52c899dd", null ]
+    [ "operations_research::sat::FillTightenedDomainInResponse", "namespaceoperations__research_1_1sat.html#aee030f8f392170e436c92454e2a7fbc5", null ],
+    [ "operations_research::sat::PostsolveResponse", "namespaceoperations__research_1_1sat.html#aba206d3b30a8812e9fae0e74c7277ad9", null ]
 ];

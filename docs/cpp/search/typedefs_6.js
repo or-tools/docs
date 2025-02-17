@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['graph_0',['Graph',['../classoperations__research_1_1GraphSymmetryFinder.html#ae100408848c570296588d2ecbd5e48e9',1,'operations_research::GraphSymmetryFinder::Graph'],['../structoperations__research_1_1Graphs_3_01operations__research_1_1StarGraph_01_4.html#aeb4dc1ef31430f9c31da4a74d17f7775',1,'operations_research::Graphs&lt; operations_research::StarGraph &gt;::Graph'],['../namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda',1,'util::Graph'],['../namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220',1,'operations_research::Graph']]],
+  ['graph_0',['Graph',['../classoperations__research_1_1GraphSymmetryFinder.html#aeabd870fd44ae7ee75a3341b86e140a6',1,'operations_research::GraphSymmetryFinder::Graph'],['../namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda',1,'util::Graph'],['../namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220',1,'operations_research::Graph']]],
   ['grbenv_1',['GRBenv',['../gurobi_2environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3',1,'environment.h']]],
   ['grbenvuniqueptr_2',['GRBenvUniquePtr',['../namespaceoperations__research_1_1math__opt.html#ab3a66a3ac926686d298e6c8ce5ca4491',1,'operations_research::math_opt']]],
   ['grbmodel_3',['GRBmodel',['../gurobi_2environment_8h.html#a865e461c79c88bc5c0d5f56087ae4876',1,'environment.h']]],

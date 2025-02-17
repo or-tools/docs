@@ -14,7 +14,5 @@ var dir_92d538196d04323bb571488ea744da84 =
     [ "parser.yy.cc", "parser_8yy_8cc.html", "parser_8yy_8cc" ],
     [ "parser_main.cc", "parser__main_8cc.html", "parser__main_8cc" ],
     [ "parser_util.cc", "parser__util_8cc.html", "parser__util_8cc" ],
-    [ "parser_util.h", "parser__util_8h.html", "parser__util_8h" ],
-    [ "presolve.cc", "presolve_8cc.html", "presolve_8cc" ],
-    [ "presolve.h", "presolve_8h.html", "presolve_8h" ]
+    [ "parser_util.h", "parser__util_8h.html", "parser__util_8h" ]
 ];

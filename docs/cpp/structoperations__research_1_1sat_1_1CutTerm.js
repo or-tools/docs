@@ -5,6 +5,7 @@ var structoperations__research_1_1sat_1_1CutTerm =
     [ "GetUnderlyingLiteralOrNone", "structoperations__research_1_1sat_1_1CutTerm.html#a01d05c4e92332f1adf08389aacac384f", null ],
     [ "HasRelevantLpValue", "structoperations__research_1_1sat_1_1CutTerm.html#aeacc3cc5eae6b87e70e13b8513e3081b", null ],
     [ "IsBoolean", "structoperations__research_1_1sat_1_1CutTerm.html#a1c6bcf0efdfe6927a649641f8ec7f043", null ],
+    [ "IsFractional", "structoperations__research_1_1sat_1_1CutTerm.html#aeb47617a82969b48d6461e2a28360cee", null ],
     [ "IsSimple", "structoperations__research_1_1sat_1_1CutTerm.html#af80e5ef95d5743bd6ab6ac47b664c77a", null ],
     [ "LpDistToMaxValue", "structoperations__research_1_1sat_1_1CutTerm.html#a2f2ce5ee67bc18942053f7a84b824f97", null ],
     [ "ReplaceExpressionByLiteral", "structoperations__research_1_1sat_1_1CutTerm.html#a455cdeb71870a2fc0be6feb480d60b8e", null ],

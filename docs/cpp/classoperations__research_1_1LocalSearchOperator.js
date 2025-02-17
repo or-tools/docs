@@ -2,6 +2,7 @@ var classoperations__research_1_1LocalSearchOperator =
 [
     [ "LocalSearchOperator", "classoperations__research_1_1LocalSearchOperator.html#af23505cc80b48f7de0c2e6a8d8424c5e", null ],
     [ "~LocalSearchOperator", "classoperations__research_1_1LocalSearchOperator.html#a82deb7603d974196eaeee831422b105c", null ],
+    [ "EnterSearch", "classoperations__research_1_1LocalSearchOperator.html#a7b202de57a7aead83b20571765b4bfb9", null ],
     [ "HasFragments", "classoperations__research_1_1LocalSearchOperator.html#a7ce368143e93d9d49b6e087c53800e73", null ],
     [ "HoldsDelta", "classoperations__research_1_1LocalSearchOperator.html#a2288c9bfc7b3d9ad8e06c346c675b2b0", null ],
     [ "MakeNextNeighbor", "classoperations__research_1_1LocalSearchOperator.html#a2951ae57e5fd3fce7d4f9b831594b460", null ],

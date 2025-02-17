@@ -2,6 +2,7 @@ var cp__model__lns_8h =
 [
     [ "operations_research::sat::Neighborhood", "structoperations__research_1_1sat_1_1Neighborhood.html", "structoperations__research_1_1sat_1_1Neighborhood" ],
     [ "operations_research::sat::NeighborhoodGeneratorHelper", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper" ],
+    [ "operations_research::sat::NeighborhoodGeneratorHelper::ActiveRectangle", "structoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper_1_1ActiveRectangle.html", "structoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper_1_1ActiveRectangle" ],
     [ "operations_research::sat::NeighborhoodGenerator", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1NeighborhoodGenerator" ],
     [ "operations_research::sat::NeighborhoodGenerator::SolveData", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html", "structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData" ],
     [ "operations_research::sat::RelaxRandomVariablesGenerator", "classoperations__research_1_1sat_1_1RelaxRandomVariablesGenerator.html", "classoperations__research_1_1sat_1_1RelaxRandomVariablesGenerator" ],
@@ -16,12 +17,14 @@ var cp__model__lns_8h =
     [ "operations_research::sat::SchedulingTimeWindowNeighborhoodGenerator", "classoperations__research_1_1sat_1_1SchedulingTimeWindowNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1SchedulingTimeWindowNeighborhoodGenerator" ],
     [ "operations_research::sat::SchedulingResourceWindowsNeighborhoodGenerator", "classoperations__research_1_1sat_1_1SchedulingResourceWindowsNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1SchedulingResourceWindowsNeighborhoodGenerator" ],
     [ "operations_research::sat::RandomRectanglesPackingNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RandomRectanglesPackingNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RandomRectanglesPackingNeighborhoodGenerator" ],
+    [ "operations_research::sat::RectanglesPackingRelaxOneNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RectanglesPackingRelaxOneNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RectanglesPackingRelaxOneNeighborhoodGenerator" ],
+    [ "operations_research::sat::RectanglesPackingRelaxTwoNeighborhoodsGenerator", "classoperations__research_1_1sat_1_1RectanglesPackingRelaxTwoNeighborhoodsGenerator.html", "classoperations__research_1_1sat_1_1RectanglesPackingRelaxTwoNeighborhoodsGenerator" ],
     [ "operations_research::sat::RandomPrecedencesPackingNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RandomPrecedencesPackingNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RandomPrecedencesPackingNeighborhoodGenerator" ],
     [ "operations_research::sat::SlicePackingNeighborhoodGenerator", "classoperations__research_1_1sat_1_1SlicePackingNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1SlicePackingNeighborhoodGenerator" ],
     [ "operations_research::sat::RoutingRandomNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RoutingRandomNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RoutingRandomNeighborhoodGenerator" ],
     [ "operations_research::sat::RoutingPathNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RoutingPathNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RoutingPathNeighborhoodGenerator" ],
     [ "operations_research::sat::RoutingFullPathNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RoutingFullPathNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RoutingFullPathNeighborhoodGenerator" ],
     [ "operations_research::sat::RelaxationInducedNeighborhoodGenerator", "classoperations__research_1_1sat_1_1RelaxationInducedNeighborhoodGenerator.html", "classoperations__research_1_1sat_1_1RelaxationInducedNeighborhoodGenerator" ],
-    [ "GenerateSchedulingNeighborhoodFromIntervalPrecedences", "cp__model__lns_8h.html#a4f6fa507fbbee0406152f493e0dfb95b", null ],
-    [ "GenerateSchedulingNeighborhoodFromRelaxedIntervals", "cp__model__lns_8h.html#a6078c1c54d29bceb642ec436017a3093", null ]
+    [ "operations_research::sat::GenerateSchedulingNeighborhoodFromIntervalPrecedences", "namespaceoperations__research_1_1sat.html#a4f6fa507fbbee0406152f493e0dfb95b", null ],
+    [ "operations_research::sat::GenerateSchedulingNeighborhoodFromRelaxedIntervals", "namespaceoperations__research_1_1sat.html#a6078c1c54d29bceb642ec436017a3093", null ]
 ];

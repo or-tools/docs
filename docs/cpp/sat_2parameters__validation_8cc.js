@@ -5,5 +5,5 @@ var sat_2parameters__validation_8cc =
     [ "TEST_NON_NEGATIVE", "sat_2parameters__validation_8cc.html#ae1de38ef8cb1bb080aebe1d3acd7f751", null ],
     [ "TEST_NOT_NAN", "sat_2parameters__validation_8cc.html#ae759f7f39e136673d3bbd265cb814619", null ],
     [ "TEST_POSITIVE", "sat_2parameters__validation_8cc.html#ae5d37bed4f9f4eb063baf7430c06bc2f", null ],
-    [ "ValidateParameters", "sat_2parameters__validation_8cc.html#a80f1b6bbf960239725bec385f09a5b14", null ]
+    [ "operations_research::sat::ValidateParameters", "namespaceoperations__research_1_1sat.html#a80f1b6bbf960239725bec385f09a5b14", null ]
 ];

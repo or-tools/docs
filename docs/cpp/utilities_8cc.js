@@ -1,4 +1,4 @@
 var utilities_8cc =
 [
-    [ "ToInt64Vector", "utilities_8cc.html#aa9ef36940950625d5a6745caf0000a78", null ]
+    [ "operations_research::ToInt64Vector", "namespaceoperations__research.html#aa9ef36940950625d5a6745caf0000a78", null ]
 ];

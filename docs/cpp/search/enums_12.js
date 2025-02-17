@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xprs_5fbasis_5fstatus_0',['XPRS_BASIS_STATUS',['../namespaceoperations__research.html#ad251f74c31aa079f98e49bd3814d8be6',1,'operations_research']]]
+  ['yysymbol_5fkind_5ft_0',['yysymbol_kind_t',['../parser_8tab_8cc.html#a20a769e9b8f129abf35d03d3904ec0e5',1,'parser.tab.cc']]]
 ];

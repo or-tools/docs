@@ -1,6 +1,7 @@
 var classoperations__research_1_1MathUtil =
 [
     [ "Abs", "classoperations__research_1_1MathUtil.html#aa94e8b5685fac8034bfcdbb3ae43c5ef", null ],
+    [ "AlmostEquals", "classoperations__research_1_1MathUtil.html#af5666779856d83babac1856a91a58751", null ],
     [ "CeilOfRatio", "classoperations__research_1_1MathUtil.html#accab22ea7fbbe01e20d5416e4b67414a", null ],
     [ "FastInt64Round", "classoperations__research_1_1MathUtil.html#a6f6aef702b2d22c08e33f907ccf44774", null ],
     [ "FloorOfRatio", "classoperations__research_1_1MathUtil.html#acf683d3431397fcc5c5cab80f1c5e8db", null ],

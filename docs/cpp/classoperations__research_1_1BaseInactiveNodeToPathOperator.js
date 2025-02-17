@@ -1,7 +1,7 @@
 var classoperations__research_1_1BaseInactiveNodeToPathOperator =
 [
-    [ "BaseInactiveNodeToPathOperator", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a609668ce9159e0233d2ea4a6c97f9569", null ],
-    [ "~BaseInactiveNodeToPathOperator", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#aea934e89be41f4f54f7a9b0ecbc4d901", null ],
-    [ "GetInactiveNode", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a97a69bced19319416b7198de71def68f", null ],
-    [ "MakeOneNeighbor", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a04a662cdfcb2a9fb0bf919b3110cfe0f", null ]
+    [ "BaseInactiveNodeToPathOperator", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a09991032846835af48e3d7e767e1b336", null ],
+    [ "~BaseInactiveNodeToPathOperator", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a1ed20d27c1e9e4ec4077ee13bd42581f", null ],
+    [ "GetInactiveNode", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#a40f2aa4399ad016abcb5424e2622dcc3", null ],
+    [ "MakeOneNeighbor", "classoperations__research_1_1BaseInactiveNodeToPathOperator.html#aa1851f3bf3d9080c737f104a051e7990", null ]
 ];

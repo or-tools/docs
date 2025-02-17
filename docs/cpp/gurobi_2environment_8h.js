@@ -598,7 +598,7 @@ var gurobi_2environment_8h =
     [ "GRBenv", "gurobi_2environment_8h.html#a2963ba0c46b86ac4680fb3bb4ca8b2f3", null ],
     [ "GRBmodel", "gurobi_2environment_8h.html#a865e461c79c88bc5c0d5f56087ae4876", null ],
     [ "GRBsvec", "gurobi_2environment_8h.html#a4693c3de94ce296b16879ff4dc71c0fa", null ],
-    [ "GetGurobiEnv", "gurobi_2environment_8h.html#ac440f77ffb776982f70553abfd042d38", null ],
-    [ "GurobiIsCorrectlyInstalled", "gurobi_2environment_8h.html#a4a6b9d1e57ed3500a6446b87bf4e6b46", null ],
-    [ "LoadGurobiDynamicLibrary", "gurobi_2environment_8h.html#a3c14625c2c0ced9455b630179cab55f0", null ]
+    [ "operations_research::GetGurobiEnv", "namespaceoperations__research.html#ac440f77ffb776982f70553abfd042d38", null ],
+    [ "operations_research::GurobiIsCorrectlyInstalled", "namespaceoperations__research.html#a4a6b9d1e57ed3500a6446b87bf4e6b46", null ],
+    [ "operations_research::LoadGurobiDynamicLibrary", "namespaceoperations__research.html#a3c14625c2c0ced9455b630179cab55f0", null ]
 ];

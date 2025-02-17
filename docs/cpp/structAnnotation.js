@@ -1,0 +1,36 @@
+var structAnnotation =
+[
+    [ "Type", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7", [
+      [ "ANNOTATION_LIST", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7a2670ba3a8ab96ffd31c8bf0338853ec8", null ],
+      [ "IDENTIFIER", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7af673091fd8c1c77346cd145bab3522f3", null ],
+      [ "FUNCTION_CALL", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7acc39468a33ae72da5515e5611478d62f", null ],
+      [ "INT_VALUE", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7a4dd429d24ddb8c90b2eda44d750aa0af", null ],
+      [ "INT_LIST", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7a2454446dbce01ad0ca38b93bf1291418", null ],
+      [ "INTERVAL", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7ac251413fdefa19ddfeda68ce9c3b7a69", null ],
+      [ "VAR_REF", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7aed6aacf63948459768224062a07a9e81", null ],
+      [ "VAR_REF_ARRAY", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7aacca0b6ceaba39eecae82f9742bd96a6", null ],
+      [ "STRING_VALUE", "structAnnotation.html#a8d4cdb8d82e279dd1c5ca6d3c84911f7adb5607cf7eb4d9c5dca3af6b39380f6c", null ]
+    ] ],
+    [ "AnnotationList", "structAnnotation.html#a70cb8978515c7227bc81acf83882588c", null ],
+    [ "AppendAllVariables", "structAnnotation.html#a27ed05dc61e9424a47799ec60cdde004", null ],
+    [ "DebugString", "structAnnotation.html#af085e0e4a2dd7dd33e09fb1582a38914", null ],
+    [ "Empty", "structAnnotation.html#a679b47b720ec7dbec5a39bd8da6f3c47", null ],
+    [ "FunctionCall", "structAnnotation.html#a204083bca1cba64918731b8a8249b033", null ],
+    [ "FunctionCallWithArguments", "structAnnotation.html#a5d18033d94b9827e8592eec1c18227dc", null ],
+    [ "Identifier", "structAnnotation.html#a892a605a368375120793d13bf1d253f8", null ],
+    [ "IntegerList", "structAnnotation.html#a73a4bda39d0f78bdf086f091f6c836fc", null ],
+    [ "IntegerValue", "structAnnotation.html#aa201ffadcdf018baea0a044e57591019", null ],
+    [ "Interval", "structAnnotation.html#aabc5a937f563a795ea5e18a4ceb10de4", null ],
+    [ "IsFunctionCallWithIdentifier", "structAnnotation.html#a92994326afba2385a6389e5016e1aa81", null ],
+    [ "String", "structAnnotation.html#a07b992b36b277c271724cc9fb2ac5c61", null ],
+    [ "VarRef", "structAnnotation.html#a9ad77b2a59a88d6a7056006f48e5cdba", null ],
+    [ "VarRefArray", "structAnnotation.html#a7e7cec7d10a8c3c38edea938db6af18a", null ],
+    [ "annotations", "structAnnotation.html#aaff05fcfa7e022aae2b0def18b22c595", null ],
+    [ "id", "structAnnotation.html#a4392e3c39ca549673dcec6c894c3f656", null ],
+    [ "interval_max", "structAnnotation.html#a8a2f7a27635efa843a920ddfae27f12e", null ],
+    [ "interval_min", "structAnnotation.html#abcaff072dd0d93606c827e0c8b0d160d", null ],
+    [ "string_value", "structAnnotation.html#adc0758d51dc938d3d19fe9015405dc52", null ],
+    [ "type", "structAnnotation.html#a397f75de6f32898fd21f2f71617c373c", null ],
+    [ "values", "structAnnotation.html#a8c7096d1e5c3519cb0a9afbc955798a5", null ],
+    [ "variables", "structAnnotation.html#a8a201482b83de28e7e6f414a0e471128", null ]
+];

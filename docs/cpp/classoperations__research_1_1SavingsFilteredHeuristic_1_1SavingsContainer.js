@@ -1,14 +1,14 @@
 var classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer =
 [
-    [ "SavingsContainer", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#afebbba96eac17b57f5a269416dfab6fd", null ],
-    [ "AddNewSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a1a18c80da02054c4992773907b91b7ab", null ],
-    [ "GetSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a3e57130bbe5f209c4c57fb5b5fa7134b", null ],
-    [ "GetSortedSavingsForVehicleType", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#ad1111ab68351448394338f0f8d510bb3", null ],
-    [ "HasSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#af209a289aebf53d3037790dc5c0a978c", null ],
-    [ "InitializeContainer", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#aae32f5759c3e562be14604f60b89f27c", null ],
-    [ "ReinjectSkippedSavingsEndingAt", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a81e3b008f52ab0fbe5c02a47cba4d8d2", null ],
-    [ "ReinjectSkippedSavingsStartingAt", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a05ab5bea4ae01aca6f474354a3b567c9", null ],
-    [ "Sort", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#aaaec4a18edcb597c52f8084e47e7f206", null ],
-    [ "Update", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a21208d2d7a4af7e60ba607e908e21a03", null ],
-    [ "UpdateWithType", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#ab951e6b178e98d1797b61f01cb1c0d20", null ]
+    [ "SavingsContainer", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a9bacefaa2268805bb1336702b9783e5a", null ],
+    [ "AddNewSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a90b2b5950e4d49f9b141aa91a96c73e9", null ],
+    [ "GetSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a8073c9e0a0e0d73724f373a2a54e3033", null ],
+    [ "GetSortedSavingsForVehicleType", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a404f156b3ced54649b6f10a0b8881843", null ],
+    [ "HasSaving", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a6cde655e1881b2788f7dfe034f9934a7", null ],
+    [ "InitializeContainer", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a5f28f507eef4d2a3389abc20e56fb77f", null ],
+    [ "ReinjectSkippedSavingsEndingAt", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#aaae52a28c21763faf737f404249a83f8", null ],
+    [ "ReinjectSkippedSavingsStartingAt", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#ab2acb39717ace377432db96e1225d29a", null ],
+    [ "Sort", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a540b8ac71e4a7b1341ec7451e0a3df83", null ],
+    [ "Update", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a864666426a30d271f6bca62b98f18c5f", null ],
+    [ "UpdateWithType", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html#a9f716101c919be80fbb52e73f346a53b", null ]
 ];

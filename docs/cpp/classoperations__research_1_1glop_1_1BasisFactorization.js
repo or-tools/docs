@@ -21,6 +21,7 @@ var classoperations__research_1_1glop_1_1BasisFactorization =
     [ "IsRefactorized", "classoperations__research_1_1glop_1_1BasisFactorization.html#a4b00fb2ee4010a6e8b5710316e008a0e", null ],
     [ "LeftSolve", "classoperations__research_1_1glop_1_1BasisFactorization.html#ab551189dd36773dbdbf300521e8cc460", null ],
     [ "LeftSolveForUnitRow", "classoperations__research_1_1glop_1_1BasisFactorization.html#a36047a395ef9ba14a16af98774b0bb26", null ],
+    [ "NumberOfEntriesInLU", "classoperations__research_1_1glop_1_1BasisFactorization.html#a752efff1d8ead2ba186994a036bbc0d9", null ],
     [ "NumUpdates", "classoperations__research_1_1glop_1_1BasisFactorization.html#a3414407e34d02446d293801e4159a0ae", null ],
     [ "operator=", "classoperations__research_1_1glop_1_1BasisFactorization.html#a99c3f146a62ba96496dcee7047f587dc", null ],
     [ "Refactorize", "classoperations__research_1_1glop_1_1BasisFactorization.html#aad0102712226c873c131f1fc01ecafc3", null ],

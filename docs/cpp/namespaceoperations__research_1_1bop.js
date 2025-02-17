@@ -14,9 +14,11 @@ var namespaceoperations__research_1_1bop =
     [ "GuidedSatFirstSolutionGenerator", "classoperations__research_1_1bop_1_1GuidedSatFirstSolutionGenerator.html", "classoperations__research_1_1bop_1_1GuidedSatFirstSolutionGenerator" ],
     [ "IntegralSolver", "classoperations__research_1_1bop_1_1IntegralSolver.html", "classoperations__research_1_1bop_1_1IntegralSolver" ],
     [ "LearnedInfo", "structoperations__research_1_1bop_1_1LearnedInfo.html", "structoperations__research_1_1bop_1_1LearnedInfo" ],
+    [ "LinearProgram", "classoperations__research_1_1bop_1_1LinearProgram.html", "classoperations__research_1_1bop_1_1LinearProgram" ],
     [ "LinearRelaxation", "classoperations__research_1_1bop_1_1LinearRelaxation.html", "classoperations__research_1_1bop_1_1LinearRelaxation" ],
     [ "LocalSearchAssignmentIterator", "classoperations__research_1_1bop_1_1LocalSearchAssignmentIterator.html", "classoperations__research_1_1bop_1_1LocalSearchAssignmentIterator" ],
     [ "LocalSearchOptimizer", "classoperations__research_1_1bop_1_1LocalSearchOptimizer.html", "classoperations__research_1_1bop_1_1LocalSearchOptimizer" ],
+    [ "LPDecomposer", "classoperations__research_1_1bop_1_1LPDecomposer.html", "classoperations__research_1_1bop_1_1LPDecomposer" ],
     [ "LubyAdaptiveParameterValue", "classoperations__research_1_1bop_1_1LubyAdaptiveParameterValue.html", "classoperations__research_1_1bop_1_1LubyAdaptiveParameterValue" ],
     [ "NeighborhoodGenerator", "classoperations__research_1_1bop_1_1NeighborhoodGenerator.html", "classoperations__research_1_1bop_1_1NeighborhoodGenerator" ],
     [ "NonOrderedSetHasher", "classoperations__research_1_1bop_1_1NonOrderedSetHasher.html", "classoperations__research_1_1bop_1_1NonOrderedSetHasher" ],
@@ -28,7 +30,14 @@ var namespaceoperations__research_1_1bop =
     [ "RelationGraphBasedNeighborhood", "classoperations__research_1_1bop_1_1RelationGraphBasedNeighborhood.html", "classoperations__research_1_1bop_1_1RelationGraphBasedNeighborhood" ],
     [ "SatCoreBasedOptimizer", "classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html", "classoperations__research_1_1bop_1_1SatCoreBasedOptimizer" ],
     [ "SatWrapper", "classoperations__research_1_1bop_1_1SatWrapper.html", "classoperations__research_1_1bop_1_1SatWrapper" ],
+    [ "SparseColumn", "classoperations__research_1_1bop_1_1SparseColumn.html", "classoperations__research_1_1bop_1_1SparseColumn" ],
+    [ "SparseMatrix", "classoperations__research_1_1bop_1_1SparseMatrix.html", "classoperations__research_1_1bop_1_1SparseMatrix" ],
     [ "BopConstraintTerms", "namespaceoperations__research_1_1bop.html#a420bbc055f061a057b24ff52fc738015", null ],
+    [ "DenseRow", "namespaceoperations__research_1_1bop.html#ada5d5cfd458bdd48f90015baf1f280d4", null ],
+    [ "DenseRow", "namespaceoperations__research_1_1bop.html#ada5d5cfd458bdd48f90015baf1f280d4", null ],
+    [ "DenseRow", "namespaceoperations__research_1_1bop.html#ada5d5cfd458bdd48f90015baf1f280d4", null ],
+    [ "DenseRow", "namespaceoperations__research_1_1bop.html#ada5d5cfd458bdd48f90015baf1f280d4", null ],
+    [ "Fractional", "namespaceoperations__research_1_1bop.html#a0cac235bd48eb39d15cc101516dc1e90", null ],
     [ "BopSolveStatus", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5", [
       [ "OPTIMAL_SOLUTION_FOUND", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5a4bd9906264b0d3d68d0a39c3536d9b66", null ],
       [ "FEASIBLE_SOLUTION_FOUND", "namespaceoperations__research_1_1bop.html#a9c702bbc17154be06c4071e28069fba5af1b7de0cef3266eb7fad94409a745570", null ],
@@ -50,5 +59,6 @@ var namespaceoperations__research_1_1bop =
     [ "LoadStateProblemToSatSolver", "namespaceoperations__research_1_1bop.html#a162e6cada123fbaaf3ce5cd2de8d2a15", null ],
     [ "operator<<", "namespaceoperations__research_1_1bop.html#a5842cf5724426c4f547842ce54d6e3a4", null ],
     [ "operator<<", "namespaceoperations__research_1_1bop.html#a4f2fe1248f71d91875c1fa8ede6d4f7a", null ],
-    [ "SatAssignmentToBopSolution", "namespaceoperations__research_1_1bop.html#a8947f07c684c6172313bfabf0e0ce6af", null ]
+    [ "SatAssignmentToBopSolution", "namespaceoperations__research_1_1bop.html#a8947f07c684c6172313bfabf0e0ce6af", null ],
+    [ "kInfinity", "namespaceoperations__research_1_1bop.html#a073868a91ec87d04bc963609af7806b6", null ]
 ];

@@ -1,7 +1,7 @@
 var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
 [
     [ "ProfileEvent", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent.html", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent" ],
-    [ "SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a3e7ffb0e41b9e4bc01f0aa0c5c9bd373", null ],
+    [ "SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a9bdd04da3355e5f68ff83e8ef53c22bb", null ],
     [ "SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a230beffeb33f166d27bc233bed77237a", null ],
     [ "AddAbsenceReason", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#afb57e98b9c4fc8982cf30e82c3e6e0f9", null ],
     [ "AddEndMaxReason", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a7c8ce527cdaf789ed6c62824bad8247c", null ],
@@ -27,6 +27,7 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "Ends", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a7ca478240e28e021f96dfe844fc8a7d8", null ],
     [ "GetCurrentMinDistanceBetweenTasks", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#acbf45814a5a4f7554173a02e61970fa8", null ],
     [ "GetEnergyProfile", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a648ff007cfc81bd0a4369701a7048a27", null ],
+    [ "GetIntervalDefinition", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a1407807a06a4222ae19a25bfdc8a4411", null ],
     [ "GetMinOverlap", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#acd02f1cda8b4493923a7ab371ef8332b", null ],
     [ "HasOtherHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#abf860234269c7f0178b213112b481d40", null ],
     [ "ImportOtherReasons", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ac715433d9fec139352b9fd470e170994", null ],
@@ -34,7 +35,6 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "IncreaseStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a90133d39ef2d7a0a80e25505b1d8c348", null ],
     [ "IncrementalPropagate", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a0792f61000a604dc0b8e08ada3e16eef", null ],
     [ "InPropagationLoop", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a98e816cae622855fe8eae0766b4e0aaf", null ],
-    [ "IntervalVariables", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#acbdafcbac5fc2fc719a724fd1941fda4", null ],
     [ "IsAbsent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ab73c9ec781569bf57f059ba95d6a0c27", null ],
     [ "IsAbsent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a40b08ef3c5e8826363c64b976ffce824", null ],
     [ "IsOptional", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ac25da1d0b7b591b48f807fd813979400", null ],
@@ -42,6 +42,7 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "IsPresent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a666e937bf7e30e12c4dbb7f3c7d742cd", null ],
     [ "IsPresent", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a763c0bc72a6e9db21a00ccf426d26505", null ],
     [ "LevelZeroEndMax", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#acbf90657bd79cdff2e34e438e2e1a014", null ],
+    [ "LevelZeroSizeMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a40529613defbbf4615bfb5300c20a28a", null ],
     [ "LevelZeroStartMax", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a9db6ad300be760b6dad4ce68f0dabdec", null ],
     [ "LevelZeroStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ae967c1f42a6a9d248e6f3c8ea18d12c5", null ],
     [ "MutableIntegerReason", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a2b846a8273354f67ef67b2cf77ceaf9a", null ],
@@ -77,5 +78,5 @@ var classoperations__research_1_1sat_1_1SchedulingConstraintHelper =
     [ "TaskByIncreasingShiftedStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#aa30f6511877711c0f8cbfa5b110ace6a", null ],
     [ "TaskByIncreasingStartMin", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a0829ed1b078db163e11c4114f71758c3", null ],
     [ "TaskDebugString", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#ac4a94ed9fceee20b59fd52be217b44ac", null ],
-    [ "WatchAllTasks", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a0c02d573c7cda3eccf728fc2abaf7831", null ]
+    [ "WatchAllTasks", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html#a26201ea3bc2b3fadff13f574507be55c", null ]
 ];

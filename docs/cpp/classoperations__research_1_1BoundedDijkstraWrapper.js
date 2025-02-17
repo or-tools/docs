@@ -1,7 +1,7 @@
 var classoperations__research_1_1BoundedDijkstraWrapper =
 [
-    [ "distance_type", "classoperations__research_1_1BoundedDijkstraWrapper.html#a3eacef16c95563a50220cede1d9add29", null ],
-    [ "node_type", "classoperations__research_1_1BoundedDijkstraWrapper.html#a70a20b46c364ed14cd58b705ff722e89", null ],
+    [ "distance_type", "classoperations__research_1_1BoundedDijkstraWrapper.html#ac4e8032a82d25ca2f775e9a093e1a395", null ],
+    [ "node_type", "classoperations__research_1_1BoundedDijkstraWrapper.html#a0180f80309bfa8c0d33f809268f6dcab", null ],
     [ "BoundedDijkstraWrapper", "classoperations__research_1_1BoundedDijkstraWrapper.html#a376d86404f9ed75669df838e59dc8945", null ],
     [ "BoundedDijkstraWrapper", "classoperations__research_1_1BoundedDijkstraWrapper.html#a0989e02e7da79436f19eaaf6036c7001", null ],
     [ "arc_from_source", "classoperations__research_1_1BoundedDijkstraWrapper.html#a24ea25a402b78f9e90e1bda5a53e2468", null ],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['machine_5fcount_5fread_0',['MACHINE_COUNT_READ',['../classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html#ad935bcd7ea1cf2f9f88d155cd4f90317a5215b77bb94679e115004dfd638e415f',1,'operations_research::scheduling::jssp::JsspParser']]],
   ['machine_5fread_1',['MACHINE_READ',['../classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html#ad935bcd7ea1cf2f9f88d155cd4f90317adaa02d858fa91c4a0c31c722085ec973',1,'operations_research::scheduling::jssp::JsspParser']]],
-  ['make_5fconstraint_5fan_5fequality_2',['MAKE_CONSTRAINT_AN_EQUALITY',['../classoperations__research_1_1glop_1_1SingletonUndo.html#a1b6623658dabcf1d56c86a6f3f473e73a05cf27fd49439be43346bb8dee52d202',1,'operations_research::glop::SingletonUndo']]],
+  ['make_5fconstraint_5fan_5fequality_2',['MAKE_CONSTRAINT_AN_EQUALITY',['../classoperations__research_1_1glop_1_1SingletonUndo.html#ac7306068e34715b168e8ee7d3cf086c5a05cf27fd49439be43346bb8dee52d202',1,'operations_research::glop::SingletonUndo']]],
   ['makeactive_3',['MAKEACTIVE',['../classoperations__research_1_1Solver.html#ac3c5b22fad8060ca1a66bd928182d8a4a41dc08543fce010d8ce65df80935ff38',1,'operations_research::Solver']]],
   ['makechaininactive_4',['MAKECHAININACTIVE',['../classoperations__research_1_1Solver.html#ac3c5b22fad8060ca1a66bd928182d8a4aa2d880da72318dcffa237e4f2100c58c',1,'operations_research::Solver']]],
   ['makeinactive_5',['MAKEINACTIVE',['../classoperations__research_1_1Solver.html#ac3c5b22fad8060ca1a66bd928182d8a4a1a2beb32468f536c96644b3faa9c8d6e',1,'operations_research::Solver']]],
@@ -13,8 +13,8 @@ var searchData=
   ['minimize_10',['MINIMIZE',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69a3758306c4779769024bd3257595ea040',1,'MINIMIZE:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69a3758306c4779769024bd3257595ea040',1,'MINIMIZE:&#160;parser.tab.hh']]],
   ['minimum_5fweight_5fmatching_11',['MINIMUM_WEIGHT_MATCHING',['../classoperations__research_1_1ChristofidesPathSolver.html#ad44822002f75a6f478a62e107d880018ab66d0823917c9351a4cb68dff77f445a',1,'operations_research::ChristofidesPathSolver']]],
   ['minimum_5fweight_5fmatching_5fwith_5fmip_12',['MINIMUM_WEIGHT_MATCHING_WITH_MIP',['../classoperations__research_1_1ChristofidesPathSolver.html#ad44822002f75a6f478a62e107d880018a201b88f6589fa1271207fe29f583dc96',1,'operations_research::ChristofidesPathSolver']]],
-  ['model_5finvalid_13',['MODEL_INVALID',['../classoperations__research_1_1MPSolver.html#a16bca30fdb1b048d987631b757c63192a0ce4e033c6bca973cb026780cdb7daa2',1,'operations_research::MPSolver::MODEL_INVALID'],['../namespaceoperations__research.html#ab132fd63742d9e8f11c0dcfd66b6964aa87af3e4468d2c662948079385daae1b5',1,'operations_research::MODEL_INVALID']]],
-  ['model_5fis_5fvalid_14',['MODEL_IS_VALID',['../namespaceoperations__research.html#ab132fd63742d9e8f11c0dcfd66b6964aa3fe9738c4955a25d7bd76a4040f0def9',1,'operations_research']]],
+  ['model_5finvalid_13',['MODEL_INVALID',['../classoperations__research_1_1MPSolver.html#a16bca30fdb1b048d987631b757c63192a0ce4e033c6bca973cb026780cdb7daa2',1,'operations_research::MPSolver::MODEL_INVALID'],['../namespaceoperations__research_1_1mb.html#a2b7111e55f315cfb7bc2696f2f92a4b9a1ede4a1d32bd1ca87f3ee7d6e6d53b5f',1,'operations_research::mb::MODEL_INVALID']]],
+  ['model_5fis_5fvalid_14',['MODEL_IS_VALID',['../namespaceoperations__research_1_1mb.html#a2b7111e55f315cfb7bc2696f2f92a4b9ac9a9f7a22de9c1fcbd942b111580c95a',1,'operations_research::mb']]],
   ['model_5fsynchronized_15',['MODEL_SYNCHRONIZED',['../classoperations__research_1_1MPSolverInterface.html#a912394f09fe0aee694df2e9c962853a0abb904e2bd71f6c8f7612f5bb41a0b8f0',1,'operations_research::MPSolverInterface']]],
   ['must_5freload_16',['MUST_RELOAD',['../classoperations__research_1_1MPSolverInterface.html#a912394f09fe0aee694df2e9c962853a0a5e5dccb6be46f13fd046ebf8dd63fc0b',1,'operations_research::MPSolverInterface']]]
 ];

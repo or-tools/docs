@@ -1,5 +1,6 @@
 var structoperations__research_1_1sat_1_1LsState =
 [
+    [ "base_solution", "structoperations__research_1_1sat_1_1LsState.html#aab44c7b618ed41d3afda162aec37298c", null ],
     [ "bump_value", "structoperations__research_1_1sat_1_1LsState.html#a0ded472f2458f6c408c75c324aa0e4ef", null ],
     [ "compound_move_max_discrepancy", "structoperations__research_1_1sat_1_1LsState.html#aa646408f9293387220f75ae0f942ab46", null ],
     [ "compound_weight_changed", "structoperations__research_1_1sat_1_1LsState.html#afa4e6ae3be8c84c881bc99e1884abfb8", null ],

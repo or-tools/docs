@@ -29,9 +29,9 @@ var dump__vars_8h =
     [ "DUMP_STRINGIZE", "dump__vars_8h.html#abca9bce4a0a5d443a9bc32bd39b4a593", null ],
     [ "DUMP_VARS", "dump__vars_8h.html#a7f47f1b526f076743c5ffd6f4dc3141b", null ],
     [ "DUMP_VARS_WITH_BINDINGS", "dump__vars_8h.html#a3b5579e301c3a5f751c05909afa0a94f", null ],
-    [ "DumpNames", "dump__vars_8h.html#a5a26a9bad596c6c0e7f7acd47a8cd8a4", null ],
-    [ "make_dump_vars", "dump__vars_8h.html#a2a50d8fbac3b4ec14bed81cf60f063fd", null ],
-    [ "operator<<", "dump__vars_8h.html#a4d936a9395957e5383dc8a26ee7c47ef", null ],
-    [ "operator<<", "dump__vars_8h.html#a1ebb40dff0c0a17819aca629d1ceebd9", null ],
-    [ "operator<<", "dump__vars_8h.html#aca4accb327b8ce8294c9e0e716f82354", null ]
+    [ "operations_research::base::internal_dump_vars::DumpNames", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a5a26a9bad596c6c0e7f7acd47a8cd8a4", null ],
+    [ "operations_research::base::internal_dump_vars::make_dump_vars", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a2a50d8fbac3b4ec14bed81cf60f063fd", null ],
+    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a4d936a9395957e5383dc8a26ee7c47ef", null ],
+    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a1ebb40dff0c0a17819aca629d1ceebd9", null ],
+    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#aca4accb327b8ce8294c9e0e716f82354", null ]
 ];

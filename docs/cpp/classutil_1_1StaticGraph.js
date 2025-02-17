@@ -10,7 +10,7 @@ var classutil_1_1StaticGraph =
     [ "FromArcs", "classutil_1_1StaticGraph.html#a219fbb29804ebd4598ea4c0f4c8331a7", null ],
     [ "FromArcs", "classutil_1_1StaticGraph.html#a5136829ae2355f5293e2c6b862304b2a", null ],
     [ "Head", "classutil_1_1StaticGraph.html#aefeec121033f3271585a059f0b5fbd3c", null ],
-    [ "IsArcValid", "classutil_1_1StaticGraph.html#a2097ccda3b1ad27e2c82166979018bda", null ],
+    [ "IsArcValid", "classutil_1_1StaticGraph.html#a25c9575618b50e4d6f9a1ec8355f1e9c", null ],
     [ "operator[]", "classutil_1_1StaticGraph.html#a0f27e484e271375f04468ab911ee4c4d", null ],
     [ "OutDegree", "classutil_1_1StaticGraph.html#a7241e6e63df39df439a5ebb4fe28773e", null ],
     [ "OutgoingArcs", "classutil_1_1StaticGraph.html#a2a6d76caf967e60533b7fbd0e8423993", null ],

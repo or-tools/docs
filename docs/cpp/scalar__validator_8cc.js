@@ -1,5 +1,5 @@
 var scalar__validator_8cc =
 [
-    [ "CheckScalar", "scalar__validator_8cc.html#aa03361e5a746d513915a7bdb23bf0a4b", null ],
-    [ "CheckScalarNoNanNoInf", "scalar__validator_8cc.html#abf86a50e73baef523b848a22201e2dff", null ]
+    [ "operations_research::math_opt::CheckScalar", "namespaceoperations__research_1_1math__opt.html#aa03361e5a746d513915a7bdb23bf0a4b", null ],
+    [ "operations_research::math_opt::CheckScalarNoNanNoInf", "namespaceoperations__research_1_1math__opt.html#abf86a50e73baef523b848a22201e2dff", null ]
 ];

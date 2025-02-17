@@ -1,7 +1,7 @@
 var structoperations__research_1_1DynamicPartition_1_1IterablePart =
 [
-    [ "const_iterator", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#afd299a2c2d18bfcc5d2b1ebc602039a4", null ],
-    [ "value_type", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#a5c949fb45b3b204e89d9ba5fb52508b1", null ],
+    [ "const_iterator", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#a449c15b1c8a64ef6572463e2f21ae174", null ],
+    [ "value_type", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#ae0d65370bdf691912b56f25f52a4561e", null ],
     [ "IterablePart", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#a77ddeff7531dbc91f9cf6f27429c4c56", null ],
     [ "IterablePart", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#ae05724f38a9dbde27efff486cfde1e81", null ],
     [ "begin", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html#ae3ce438f028699093a2f0cd8777be42a", null ],

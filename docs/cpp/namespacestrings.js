@@ -14,6 +14,7 @@ var namespacestrings =
     [ "GetAsciiCapitalization", "namespacestrings.html#aab6a9ddde96095d1be8e8d2c724aca96", null ],
     [ "MakeAsciiTitlecase", "namespacestrings.html#a92b181e8d43f997eea5875f93f6ad0fb", null ],
     [ "MakeAsciiTitlecase", "namespacestrings.html#a506b00ee955f3510bd9eebe4128ac278", null ],
+    [ "memdup", "namespacestrings.html#a8f40e3ef24ce22631414c538945bee4c", null ],
     [ "operator<<", "namespacestrings.html#a0464ec2222a214754d2681b2408750fb", null ],
     [ "ParseLeadingBoolValue", "namespacestrings.html#ac55ca5d40ce0a70fa7792fd9c226166e", null ],
     [ "ParseLeadingBoolValue", "namespacestrings.html#af99a3403f697fb75a2cd7f1b2e921cfb", null ],

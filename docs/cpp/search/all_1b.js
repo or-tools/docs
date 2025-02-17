@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['z_0',['z',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html#aab5f4f78999bc12ecb1ac7ac9ecc965d',1,'operations_research::math_opt::NontrivialInfeasibleIp::z'],['../structoperations__research_1_1Coordinates3.html#aa787b24bd2500fb44fa036d8e385b825',1,'operations_research::Coordinates3::z']]],
+  ['z_0',['z',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html#aab5f4f78999bc12ecb1ac7ac9ecc965d',1,'operations_research::math_opt::NontrivialInfeasibleIp::z'],['../structoperations__research_1_1routing_1_1Coordinates3.html#ab7f4787c173e49f871378e0721484a64',1,'operations_research::routing::Coordinates3::z']]],
   ['zero_1',['Zero',['../classoperations__research_1_1Set.html#aefb0e201200674e13de471b57bd73bf9',1,'operations_research::Set::Zero'],['../namespaceoperations__research.html#a5a9881f8a07b166ef2cbde572cea27b6',1,'operations_research::Zero()']]],
   ['zero_5f_2',['zero_',['../classoperations__research_1_1math__opt_1_1IncrementalLpTest.html#ad2cc98217a6c5185962df8bdca55ec53',1,'operations_research::math_opt::IncrementalLpTest']]],
-  ['zero_5fcost_5fsingleton_5fcolumn_3',['ZERO_COST_SINGLETON_COLUMN',['../classoperations__research_1_1glop_1_1SingletonUndo.html#a1b6623658dabcf1d56c86a6f3f473e73aee68188093b684e0f1739ace3ab2df71',1,'operations_research::glop::SingletonUndo']]],
+  ['zero_5fcost_5fsingleton_5fcolumn_3',['ZERO_COST_SINGLETON_COLUMN',['../classoperations__research_1_1glop_1_1SingletonUndo.html#ac7306068e34715b168e8ee7d3cf086c5aee68188093b684e0f1739ace3ab2df71',1,'operations_research::glop::SingletonUndo']]],
   ['zero_5fhalf_5fcuts_2ecc_4',['zero_half_cuts.cc',['../zero__half__cuts_8cc.html',1,'']]],
   ['zero_5fhalf_5fcuts_2eh_5',['zero_half_cuts.h',['../zero__half__cuts_8h.html',1,'']]],
   ['zerohalfcuthelper_6',['ZeroHalfCutHelper',['../classoperations__research_1_1sat_1_1ZeroHalfCutHelper.html',1,'operations_research::sat']]],
@@ -17,11 +17,15 @@ var searchData=
   ['zipfileoptions_14',['ZipFileOptions',['../structzipfile_1_1ZipFileOptions.html',1,'zipfile']]],
   ['zvector_15',['ZVector',['../classoperations__research_1_1ZVector.html',1,'operations_research::ZVector&lt; T &gt;'],['../classoperations__research_1_1ZVector.html#afd7f2e1ecad067af86f8087d9b9764d3',1,'operations_research::ZVector::ZVector()'],['../classoperations__research_1_1ZVector.html#a0c50136788e0c9b166ca700ed9a97c32',1,'operations_research::ZVector::ZVector(int64_t min_index, int64_t max_index)']]],
   ['zvector_2eh_16',['zvector.h',['../zvector_8h.html',1,'']]],
-  ['zvector_3c_20arcindex_20_3e_17',['ZVector&lt; ArcIndex &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20arcindextype_20_3e_18',['ZVector&lt; ArcIndexType &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20costvalue_20_3e_19',['ZVector&lt; CostValue &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20flowquantity_20_3e_20',['ZVector&lt; FlowQuantity &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20nodeheight_20_3e_21',['ZVector&lt; NodeHeight &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20nodeindex_20_3e_22',['ZVector&lt; NodeIndex &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
-  ['zvector_3c_20nodeindextype_20_3e_23',['ZVector&lt; NodeIndexType &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]]
+  ['zvector_3c_20arcflowtype_20_3e_17',['ZVector&lt; ArcFlowType &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20arcindex_20_3e_18',['ZVector&lt; ArcIndex &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20int16_5ft_20_3e_19',['ZVector&lt; int16_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20int32_5ft_20_3e_20',['ZVector&lt; int32_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20int64_5ft_20_3e_21',['ZVector&lt; int64_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20int8_5ft_20_3e_22',['ZVector&lt; int8_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20nodeindex_20_3e_23',['ZVector&lt; NodeIndex &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20uint16_5ft_20_3e_24',['ZVector&lt; uint16_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20uint32_5ft_20_3e_25',['ZVector&lt; uint32_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20uint64_5ft_20_3e_26',['ZVector&lt; uint64_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]],
+  ['zvector_3c_20uint8_5ft_20_3e_27',['ZVector&lt; uint8_t &gt;',['../classoperations__research_1_1ZVector.html',1,'operations_research']]]
 ];

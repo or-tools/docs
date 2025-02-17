@@ -1,7 +1,8 @@
 var classoperations__research_1_1RoutingFilteredHeuristic =
 [
     [ "RoutingFilteredHeuristic", "classoperations__research_1_1RoutingFilteredHeuristic.html#a80091875adef60d1708c0a65da684701", null ],
-    [ "~RoutingFilteredHeuristic", "classoperations__research_1_1RoutingFilteredHeuristic.html#a9efe17f70d1c42350644ef87fa2a5d49", null ],
+    [ "~RoutingFilteredHeuristic", "classoperations__research_1_1RoutingFilteredHeuristic.html#a5a1ced5d656a73c1c192cf804520bb5c", null ],
+    [ "AddUnassignedNodesToEmptyVehicles", "classoperations__research_1_1RoutingFilteredHeuristic.html#ac5032981b0d998f23d41289f5c3fdbf4", null ],
     [ "BuildSolutionFromRoutes", "classoperations__research_1_1RoutingFilteredHeuristic.html#a4750ee241db6e7a1f880dfaf6c0c978e", null ],
     [ "GetEndChainStart", "classoperations__research_1_1RoutingFilteredHeuristic.html#a00341004be7fe16747cee460a39ce3ab", null ],
     [ "GetStartChainEnd", "classoperations__research_1_1RoutingFilteredHeuristic.html#a984ac40e9fee22ad58b7c87ac3005226", null ],

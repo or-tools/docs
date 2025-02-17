@@ -1,7 +1,8 @@
 var 2d__orthogonal__packing__testing_8h =
 [
-    [ "GenerateItemsRectanglesWithNoPairwiseConflict", "2d__orthogonal__packing__testing_8h.html#a9a3db8f247ceb2a9ef47a62ceb68fe85", null ],
-    [ "GenerateItemsRectanglesWithNoPairwisePropagation", "2d__orthogonal__packing__testing_8h.html#a74c5c414f3050895b17c91c0143fb1a3", null ],
-    [ "GenerateNonConflictingRectangles", "2d__orthogonal__packing__testing_8h.html#a1ea8930e8c4adb6e5ffbf8a747049423", null ],
-    [ "MakeItemsFromRectangles", "2d__orthogonal__packing__testing_8h.html#af0e031be8d985befef7e59fe56356746", null ]
+    [ "operations_research::sat::GenerateItemsRectanglesWithNoPairwiseConflict", "namespaceoperations__research_1_1sat.html#ac47a8fc574385d4cfed0a85234e8d0fd", null ],
+    [ "operations_research::sat::GenerateItemsRectanglesWithNoPairwisePropagation", "namespaceoperations__research_1_1sat.html#ab98d2da0f736d2f7782c371adc0ff004", null ],
+    [ "operations_research::sat::GenerateNonConflictingRectangles", "namespaceoperations__research_1_1sat.html#a1ea8930e8c4adb6e5ffbf8a747049423", null ],
+    [ "operations_research::sat::GenerateNonConflictingRectanglesWithPacking", "namespaceoperations__research_1_1sat.html#a40d194228f8d909459b83d199ba60493", null ],
+    [ "operations_research::sat::MakeItemsFromRectangles", "namespaceoperations__research_1_1sat.html#af0e031be8d985befef7e59fe56356746", null ]
 ];

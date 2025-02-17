@@ -20,7 +20,7 @@ var classoperations__research_1_1IntVarLocalSearchOperator =
     [ "RevertChanges", "classoperations__research_1_1IntVarLocalSearchOperator.html#a593a6a345e6be2be8b3174f7af46f732", null ],
     [ "SetValue", "classoperations__research_1_1IntVarLocalSearchOperator.html#a4a9a373fa881f173a00be5e111b69251", null ],
     [ "Size", "classoperations__research_1_1IntVarLocalSearchOperator.html#a1b453c3dc27fb0beea13b062b06f3a73", null ],
-    [ "SkipUnchanged", "classoperations__research_1_1IntVarLocalSearchOperator.html#a2154f378a4ba2697d824f5aa3cca8fa7", null ],
+    [ "SkipUnchanged", "classoperations__research_1_1IntVarLocalSearchOperator.html#a1098504a1de97ab45c9b63740fb998f5", null ],
     [ "Start", "classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0", null ],
     [ "Value", "classoperations__research_1_1IntVarLocalSearchOperator.html#a6d13c8ea0d07e33c1bb07e4a0538d165", null ],
     [ "Var", "classoperations__research_1_1IntVarLocalSearchOperator.html#a6c1a9922aeefbac551152a38f9667063", null ]

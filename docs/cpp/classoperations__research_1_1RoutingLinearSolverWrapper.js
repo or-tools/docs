@@ -1,11 +1,12 @@
 var classoperations__research_1_1RoutingLinearSolverWrapper =
 [
-    [ "~RoutingLinearSolverWrapper", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a12851db29ebd7a0772b8d97901a198e2", null ],
+    [ "~RoutingLinearSolverWrapper", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a3b1c5d4aa6c6cf2791193067a6e0f09a", null ],
     [ "AddLinearConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a40627d30439a7f35241569136abf6abb", null ],
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ac48deed1b69acb79c2e9a323e4b5e91a", null ],
     [ "AddObjectiveConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ace52f57cb3289eb9c5960dc7e98a15fd", null ],
     [ "AddProductConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a6d5fd86f7bbc7053a60ca6e3804916b4", null ],
     [ "AddReifiedLinearConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a99f69d2859ea39c688d75b55ea8fc8db", null ],
+    [ "AddRoute", "classoperations__research_1_1RoutingLinearSolverWrapper.html#aa0bdc1ad0269dd7b8d19d23a291b781c", null ],
     [ "AddVariable", "classoperations__research_1_1RoutingLinearSolverWrapper.html#af52f1d3c53a7ee1d2b916a3cfee5522a", null ],
     [ "Clear", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a4c2fdd56c662305c1e62d1959a05749a", null ],
     [ "ClearObjective", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ab87d40b2ab92997531361dfb87a127b6", null ],
@@ -28,5 +29,6 @@ var classoperations__research_1_1RoutingLinearSolverWrapper =
     [ "SetVariableDisjointBounds", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a99e7d8d64e1826536568aeb2f8c241ea", null ],
     [ "SetVariableName", "classoperations__research_1_1RoutingLinearSolverWrapper.html#acd06cb513bcc99df2a239d0b64ceb147", null ],
     [ "SolutionIsInteger", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a6267db73058365ff8b8c0b5023e80b78", null ],
-    [ "Solve", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a24ed4a6d6a4588099bdcca07f8a7487a", null ]
+    [ "Solve", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a24ed4a6d6a4588099bdcca07f8a7487a", null ],
+    [ "kNoConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ab42cc5ada76679bb3c7f759115c3d40b", null ]
 ];

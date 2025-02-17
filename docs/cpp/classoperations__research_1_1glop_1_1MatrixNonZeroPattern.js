@@ -9,7 +9,7 @@ var classoperations__research_1_1glop_1_1MatrixNonZeroPattern =
     [ "DecreaseRowDegree", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a634cf4bb7a79b8daaf32ab350131b1df", null ],
     [ "DeleteRowAndColumn", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a997dfe088b5b3342b8640bc43bb80b03", null ],
     [ "GetFirstNonDeletedColumnFromRow", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a4f144cc7e90050a059801ad47da02780", null ],
-    [ "InitializeFromMatrixSubset", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#af5e73004e6a64e77d34c6850941dba97", null ],
+    [ "InitializeFromMatrixSubset", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a394469aa18975a6b09dc407bcd4ca8dd", null ],
     [ "IsColumnDeleted", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a0a9f10b2d46cdaf846408d1b429098d1", null ],
     [ "operator=", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#a6bbc003cb557fb851ffd3d43113f3d52", null ],
     [ "RemoveDeletedColumnsFromRow", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html#ac2c4ac0a7a85d90004dc9ddf25514592", null ],

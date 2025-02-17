@@ -1,8 +1,8 @@
 var classoperations__research_1_1TSPLns =
 [
-    [ "TSPLns", "classoperations__research_1_1TSPLns.html#a3dac11c057e441428b81779ac331d92d", null ],
-    [ "~TSPLns", "classoperations__research_1_1TSPLns.html#aad4151747a2392c7dfc6c4f7fdaf7f35", null ],
-    [ "DebugString", "classoperations__research_1_1TSPLns.html#ad6d962c75edc47c92eb8cabe0ad1240c", null ],
-    [ "MakeNeighbor", "classoperations__research_1_1TSPLns.html#a7aa848329ff7cbe5c88924b2cd65994f", null ],
-    [ "MakeOneNeighbor", "classoperations__research_1_1TSPLns.html#a59def3bfd2114df102027caa76f9aa95", null ]
+    [ "TSPLns", "classoperations__research_1_1TSPLns.html#ad1c29bd2e1cf55271ff7bd30a35c8b96", null ],
+    [ "~TSPLns", "classoperations__research_1_1TSPLns.html#a346bb152a624f531d96062f5e6999eeb", null ],
+    [ "DebugString", "classoperations__research_1_1TSPLns.html#a80a32853753aaecbeeb38a4865a42785", null ],
+    [ "MakeNeighbor", "classoperations__research_1_1TSPLns.html#aaf0b50a17301aa6ff0a91008babb6151", null ],
+    [ "MakeOneNeighbor", "classoperations__research_1_1TSPLns.html#ac158ae7a6c998661c7cb7524e0126646", null ]
 ];

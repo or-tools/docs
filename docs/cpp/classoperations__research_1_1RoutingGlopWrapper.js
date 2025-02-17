@@ -4,6 +4,7 @@ var classoperations__research_1_1RoutingGlopWrapper =
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#a92819ee4717d4f3be3c881441aa86074", null ],
     [ "AddObjectiveConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#a95cb138c3b9a16a600857fd691b8fe57", null ],
     [ "AddProductConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#afa1a954348bd5d97c512e2a24b928e9e", null ],
+    [ "AddRoute", "classoperations__research_1_1RoutingGlopWrapper.html#a683bd5708a1c3ddc33f1f53358d497f4", null ],
     [ "Clear", "classoperations__research_1_1RoutingGlopWrapper.html#a9dafd21ca264c033296ec9cc96e6397f", null ],
     [ "ClearObjective", "classoperations__research_1_1RoutingGlopWrapper.html#a13a93fd95cf718455589dbd0c5a5cfa4", null ],
     [ "CreateNewConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#af7372b52813a40787785681952631890", null ],

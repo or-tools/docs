@@ -8,5 +8,5 @@ var vector__bin__packing__main_8cc =
     [ "ABSL_FLAG", "vector__bin__packing__main_8cc.html#ae8b42827198e90e9b4c4033849906f99", null ],
     [ "ABSL_FLAG", "vector__bin__packing__main_8cc.html#a764d27ea5119ab877b6fc536b78fd990", null ],
     [ "main", "vector__bin__packing__main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
-    [ "ParseAndSolve", "vector__bin__packing__main_8cc.html#ad269bb3141acc83c2ebe88b1f57b1f95", null ]
+    [ "operations_research::ParseAndSolve", "namespaceoperations__research.html#ad269bb3141acc83c2ebe88b1f57b1f95", null ]
 ];

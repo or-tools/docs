@@ -1,6 +1,6 @@
 var classoperations__research_1_1Set =
 [
-    [ "IntegerType", "classoperations__research_1_1Set.html#a356bc7e3232f43918587407b7f39db19", null ],
+    [ "IntegerType", "classoperations__research_1_1Set.html#a2eb0206e8f324178feddb08668851373", null ],
     [ "Set", "classoperations__research_1_1Set.html#a1af4b8873ead26e8375650d7cbd80ff9", null ],
     [ "AddElement", "classoperations__research_1_1Set.html#aa0c538f9b81cb0081a115b5ea51b9d6e", null ],
     [ "begin", "classoperations__research_1_1Set.html#a64407274970e2aac4bc78acd8bd520c9", null ],

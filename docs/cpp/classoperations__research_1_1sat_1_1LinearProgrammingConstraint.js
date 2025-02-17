@@ -1,9 +1,9 @@
 var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
 [
-    [ "ConstraintIndex", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#abf361ba682cd7655299753525736d687", null ],
+    [ "ConstraintIndex", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a8fe544f4c772d8b90d4c4eff81533b70", null ],
     [ "LinearProgrammingConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#ac305ae4d90e003c68c190a412f9879de", null ],
     [ "AddCutGenerator", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6fcb3c581c8d5c59ce05d3bb52ab30c7", null ],
-    [ "AddLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a72b2d1b80da67159738ee0a4b9138948", null ],
+    [ "AddLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a70a3957a10e9d5de078b8d7100c413df", null ],
     [ "AtOptimal", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a86aefc1266220f6351747f080a9ffa20", null ],
     [ "average_degeneracy", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#af3341d5cb4ed691b8d43004af49cd250", null ],
     [ "ComputeNewLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a2f5923685a1ae258852e564eff198eba", null ],
@@ -11,7 +11,6 @@ var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
     [ "DimensionString", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a256dd9942e5cd0e3c377f15a5c869cf7", null ],
     [ "EnablePropagation", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a363d3cd3131240c51278a565a26f8b6d", null ],
     [ "GetBasisState", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a665fadb7c750676b300a345d490ed22f", null ],
-    [ "GetSolutionReducedCost", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a32e016898924a63ceaa034428cfba88b", null ],
     [ "GetSolutionValue", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#ac1c2c26c1722526ebd4e7a223c88836e", null ],
     [ "HasSolution", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a886af31ffacd47b74919d1de7f6f5ed2", null ],
     [ "HeuristicLpReducedCostAverageBranching", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#abf4522ba63d97a87183de380a0336eec", null ],

@@ -2,9 +2,9 @@ var dir_749f8352630e023f1ab8040461e5d795 =
 [
     [ "bop_base.cc", "bop__base_8cc.html", null ],
     [ "bop_base.h", "bop__base_8h.html", "bop__base_8h" ],
-    [ "bop_fs.cc", "bop__fs_8cc.html", null ],
+    [ "bop_fs.cc", "bop__fs_8cc.html", "bop__fs_8cc" ],
     [ "bop_fs.h", "bop__fs_8h.html", "bop__fs_8h" ],
-    [ "bop_lns.cc", "bop__lns_8cc.html", null ],
+    [ "bop_lns.cc", "bop__lns_8cc.html", "bop__lns_8cc" ],
     [ "bop_lns.h", "bop__lns_8h.html", "bop__lns_8h" ],
     [ "bop_ls.cc", "bop__ls_8cc.html", null ],
     [ "bop_ls.h", "bop__ls_8h.html", "bop__ls_8h" ],
@@ -13,13 +13,13 @@ var dir_749f8352630e023f1ab8040461e5d795 =
     [ "bop_portfolio.h", "bop__portfolio_8h.html", "bop__portfolio_8h" ],
     [ "bop_solution.cc", "bop__solution_8cc.html", null ],
     [ "bop_solution.h", "bop__solution_8h.html", "bop__solution_8h" ],
-    [ "bop_solver.cc", "bop__solver_8cc.html", null ],
+    [ "bop_solver.cc", "bop__solver_8cc.html", "bop__solver_8cc" ],
     [ "bop_solver.h", "bop__solver_8h.html", "bop__solver_8h" ],
     [ "bop_types.h", "bop__types_8h.html", "bop__types_8h" ],
     [ "bop_util.cc", "bop__util_8cc.html", "bop__util_8cc" ],
     [ "bop_util.h", "bop__util_8h.html", "bop__util_8h" ],
     [ "complete_optimizer.cc", "complete__optimizer_8cc.html", null ],
     [ "complete_optimizer.h", "complete__optimizer_8h.html", "complete__optimizer_8h" ],
-    [ "integral_solver.cc", "integral__solver_8cc.html", null ],
+    [ "integral_solver.cc", "integral__solver_8cc.html", "integral__solver_8cc" ],
     [ "integral_solver.h", "integral__solver_8h.html", "integral__solver_8h" ]
 ];

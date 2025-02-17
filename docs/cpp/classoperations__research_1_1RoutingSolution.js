@@ -1,18 +1,15 @@
 var classoperations__research_1_1RoutingSolution =
 [
-    [ "Event", "structoperations__research_1_1RoutingSolution_1_1Event.html", "structoperations__research_1_1RoutingSolution_1_1Event" ],
-    [ "Route", "classoperations__research_1_1RoutingSolution.html#ac84a4e29cbcc9df74c0ea7fdda23cd6a", null ],
-    [ "RoutingSolution", "classoperations__research_1_1RoutingSolution.html#a91d3c2cc9bbdab7d2bc322514b03208f", null ],
-    [ "FromSplitRoutes", "classoperations__research_1_1RoutingSolution.html#a2ec0bed5815b55e52e945c112819be4b", null ],
-    [ "operator!=", "classoperations__research_1_1RoutingSolution.html#ae946eb85b7c47df2a4dcf283707471cd", null ],
-    [ "operator==", "classoperations__research_1_1RoutingSolution.html#a8b95b3f25976cc271d3def4fcb8b0831", null ],
-    [ "SerializeToSolutionFile", "classoperations__research_1_1RoutingSolution.html#a9af0044e1009abaa61abfcf894ac6313", null ],
-    [ "SerializeToString", "classoperations__research_1_1RoutingSolution.html#a5037eb6810f908c11d91e38f06d6c4c2", null ],
-    [ "SetAuthors", "classoperations__research_1_1RoutingSolution.html#aa05a50829a5786ddc837b5c746844646", null ],
-    [ "SetName", "classoperations__research_1_1RoutingSolution.html#a3d8ce732c0a87db2799afe5821f2fc4a", null ],
-    [ "SetTotalCost", "classoperations__research_1_1RoutingSolution.html#a3dd4e22926f8f8bec710e5c69f2bc9b2", null ],
-    [ "SetTotalDistance", "classoperations__research_1_1RoutingSolution.html#a466d602e6af9950a03727c9b39f67836", null ],
-    [ "SetTotalTime", "classoperations__research_1_1RoutingSolution.html#a1e88ab6f54b4bde769a86fb5ee42556a", null ],
-    [ "SplitRoutes", "classoperations__research_1_1RoutingSolution.html#aa05e9025b77ccabfa21714f6e7a091fc", null ],
-    [ "WriteToSolutionFile", "classoperations__research_1_1RoutingSolution.html#a7493bbb90d508bb6c82156ae58d8d5f8", null ]
+    [ "RoutingSolution", "classoperations__research_1_1RoutingSolution.html#a9b06c4d8e4a905533bd2b79293c1ee72", null ],
+    [ "BelongsToInitializedRoute", "classoperations__research_1_1RoutingSolution.html#ae671d852e4acd5695f273f7806a741cc", null ],
+    [ "CanBeRemoved", "classoperations__research_1_1RoutingSolution.html#a304aa47b1ee110d26ff5e61a0e9e94dd", null ],
+    [ "GetInitializedPrevNodeIndex", "classoperations__research_1_1RoutingSolution.html#a062f06bb32ebd1a63d4ccffb54e37254", null ],
+    [ "GetNextNodeIndex", "classoperations__research_1_1RoutingSolution.html#aaef4d3c536d52c6ceded9076efa1e90a", null ],
+    [ "GetRandomAdjacentVisit", "classoperations__research_1_1RoutingSolution.html#a73baf201ca4af8979ef846e8724feb19", null ],
+    [ "GetRandomSequenceOfVisits", "classoperations__research_1_1RoutingSolution.html#a93f14bf0ba7eb98f4f6d712ac12bef7e", null ],
+    [ "GetRouteSize", "classoperations__research_1_1RoutingSolution.html#ac99e4e36670a544a32050eb95ff30fdc", null ],
+    [ "InitializeRouteInfoIfNeeded", "classoperations__research_1_1RoutingSolution.html#a7cccc784e220939f409472ce1feaabed", null ],
+    [ "RemoveNode", "classoperations__research_1_1RoutingSolution.html#a5e9663cea3e07483c8c8d56e46b2979d", null ],
+    [ "RemovePerformedPickupDeliverySibling", "classoperations__research_1_1RoutingSolution.html#a650d9c8220f3df21b2f1ceb85fa6ecba", null ],
+    [ "Reset", "classoperations__research_1_1RoutingSolution.html#a701bb2d0b439bff16cbb7bc24b191726", null ]
 ];

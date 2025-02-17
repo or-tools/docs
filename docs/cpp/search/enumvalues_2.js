@@ -2,7 +2,7 @@ var searchData=
 [
   ['callback_5fexception_0',['CALLBACK_EXCEPTION',['../namespaceoperations__research.html#a3034f6b39a820d2e6485af47015c9999ad4cfe034c6a9f8698560c121a4e3848f',1,'operations_research']]],
   ['can_5fpropagate_1',['CAN_PROPAGATE',['../namespaceoperations__research_1_1sat.html#aa4a62b204187763884e737d2f51aad8aadfc44107d47903d2049d949e3b75065b',1,'operations_research::sat']]],
-  ['cancelled_5fby_5fuser_2',['CANCELLED_BY_USER',['../namespaceoperations__research.html#ab132fd63742d9e8f11c0dcfd66b6964aa1eef41237ce6a1e5f93f26b7f0fa6daa',1,'operations_research']]],
+  ['cancelled_5fby_5fuser_2',['CANCELLED_BY_USER',['../namespaceoperations__research_1_1mb.html#a2b7111e55f315cfb7bc2696f2f92a4b9a371cf8850699995336160bfd65dcb71c',1,'operations_research::mb']]],
   ['cannot_5fpropagate_3',['CANNOT_PROPAGATE',['../namespaceoperations__research_1_1sat.html#aa4a62b204187763884e737d2f51aad8aace72848e83395346e4d3f58ccc6443d6',1,'operations_research::sat']]],
   ['cbc_5fmixed_5finteger_5fprogramming_4',['CBC_MIXED_INTEGER_PROGRAMMING',['../classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2a6f8b8f9d64ae299e8cfccf4917bf5282',1,'operations_research::MPSolver']]],
   ['choice_5fpoint_5',['CHOICE_POINT',['../classoperations__research_1_1Solver.html#ae6dee2b402434520635e66e9d58a6215a68e4780981758b35943123d19ea5c070',1,'operations_research::Solver']]],
@@ -41,5 +41,5 @@ var searchData=
   ['cross_38',['CROSS',['../classoperations__research_1_1Solver.html#ac3c5b22fad8060ca1a66bd928182d8a4a5dcd871e02933eb704b45ea8ea68a852',1,'operations_research::Solver']]],
   ['cross_5fdate_39',['CROSS_DATE',['../classoperations__research_1_1Solver.html#a83e14be9c6bba9abdd1949c25c32a60da79c510d187e0d3ef01df628731231ec1',1,'operations_research::Solver']]],
   ['cst_5fsub_5fvar_40',['CST_SUB_VAR',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba93697c551d06ce8d37be776116f23f66',1,'operations_research']]],
-  ['cvrp_41',['CVRP',['../classoperations__research_1_1TspLibParser.html#ae85742c923dc556430d2a5740456264fa602c661b8c404c87c36f5814bd644eee',1,'operations_research::TspLibParser']]]
+  ['cvrp_41',['CVRP',['../classoperations__research_1_1routing_1_1TspLibParser.html#a594be2cd183e9a489f2fcd0ab0782e5ba856ed780359c6b06043f6e11d1df4196',1,'operations_research::routing::TspLibParser']]]
 ];

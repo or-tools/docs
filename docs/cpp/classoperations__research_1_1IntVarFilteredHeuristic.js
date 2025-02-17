@@ -1,13 +1,13 @@
 var classoperations__research_1_1IntVarFilteredHeuristic =
 [
     [ "IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1f629e6e098bd249a06971d8dd432aaa", null ],
-    [ "~IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#ae69611d92c98665d83a57b5cb3955bc1", null ],
+    [ "~IntVarFilteredHeuristic", "classoperations__research_1_1IntVarFilteredHeuristic.html#a4cf67ac2eef096974bcd9474bfcd49ad", null ],
     [ "BuildSolution", "classoperations__research_1_1IntVarFilteredHeuristic.html#a8dd4e5ae74b5e0b2a6d63ef4eb7cd2c5", null ],
     [ "BuildSolutionInternal", "classoperations__research_1_1IntVarFilteredHeuristic.html#a2bb6eaa2c29bcf1894e96e9cae332ff7", null ],
     [ "Contains", "classoperations__research_1_1IntVarFilteredHeuristic.html#a5dd521044231a1083849c076db73fa65", null ],
     [ "DebugString", "classoperations__research_1_1IntVarFilteredHeuristic.html#a1ce9faf8459bb3be7918cbc3d6327404", null ],
     [ "delta_indices", "classoperations__research_1_1IntVarFilteredHeuristic.html#ad8e4271c00e755cd578f7f5a155d4527", null ],
-    [ "Evaluate", "classoperations__research_1_1IntVarFilteredHeuristic.html#ade4e61c3bfed33f3a9c90679c9098689", null ],
+    [ "Evaluate", "classoperations__research_1_1IntVarFilteredHeuristic.html#af9df8e6c1c6c93595ecca0858b89e7f5", null ],
     [ "HasSecondaryVars", "classoperations__research_1_1IntVarFilteredHeuristic.html#a0a13e44044b388408dfbdd17423aa39d", null ],
     [ "Initialize", "classoperations__research_1_1IntVarFilteredHeuristic.html#a87c243d990d578cee83354a443405b48", null ],
     [ "InitializeSolution", "classoperations__research_1_1IntVarFilteredHeuristic.html#ac9b4ef3473007f1ad76ca1d7dfeeedfc", null ],

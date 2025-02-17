@@ -14,6 +14,7 @@ var classoperations__research_1_1sat_1_1ClauseManager =
     [ "DeleteRemovedClauses", "classoperations__research_1_1sat_1_1ClauseManager.html#a65d15a1a1d08387cb9f9e58e0e153540", null ],
     [ "Detach", "classoperations__research_1_1sat_1_1ClauseManager.html#a4bb2615bf56f39aa7a070d8f4b2b8d03", null ],
     [ "DetachAllClauses", "classoperations__research_1_1sat_1_1ClauseManager.html#a40ece7cea9f21086262ae87e52fc6de8", null ],
+    [ "EnsureNewClauseIndexInitialized", "classoperations__research_1_1sat_1_1ClauseManager.html#ab9b512a10c5d8132b8cedc30301ba5ec", null ],
     [ "InprocessingAddClause", "classoperations__research_1_1sat_1_1ClauseManager.html#a00f87aaf6e3bf62d2de2f2c21f3f9d0b", null ],
     [ "InprocessingFixLiteral", "classoperations__research_1_1sat_1_1ClauseManager.html#ad50ac50e7697b1f7dbbaa750fd94cffa", null ],
     [ "InprocessingRemoveClause", "classoperations__research_1_1sat_1_1ClauseManager.html#a19e5abfaaedf626fcfd0d44dd827fc24", null ],
@@ -24,6 +25,7 @@ var classoperations__research_1_1sat_1_1ClauseManager =
     [ "mutable_clauses_info", "classoperations__research_1_1sat_1_1ClauseManager.html#ac81d60e917a23db256151c2067085ba6", null ],
     [ "NextClauseToMinimize", "classoperations__research_1_1sat_1_1ClauseManager.html#a2615c732b9c2b3c898f353fd68892c38", null ],
     [ "NextClauseToProbe", "classoperations__research_1_1sat_1_1ClauseManager.html#a9ae2e9e3a447b03a0eb9ac17643bb93e", null ],
+    [ "NextNewClauseToMinimize", "classoperations__research_1_1sat_1_1ClauseManager.html#ad89d1c78ac3ff43397dc0427869c3391", null ],
     [ "num_clauses", "classoperations__research_1_1sat_1_1ClauseManager.html#a3ddf6b09866db1a2316b14c0b28a45cd", null ],
     [ "num_inspected_clause_literals", "classoperations__research_1_1sat_1_1ClauseManager.html#a8aad240b67b5ef309104889706c66160", null ],
     [ "num_inspected_clauses", "classoperations__research_1_1sat_1_1ClauseManager.html#a6f27d697dd0df4f7a2fe548be9286600", null ],
@@ -38,5 +40,6 @@ var classoperations__research_1_1sat_1_1ClauseManager =
     [ "Resize", "classoperations__research_1_1sat_1_1ClauseManager.html#ad16db1ebdc840428c58e651a0597da68", null ],
     [ "SetAddClauseCallback", "classoperations__research_1_1sat_1_1ClauseManager.html#ac58b4696051b7bfb8050afc8f898091c", null ],
     [ "SetDratProofHandler", "classoperations__research_1_1sat_1_1ClauseManager.html#aa2733a3cc2cfc180ec7bf7a2f78c05d7", null ],
+    [ "TakeAddClauseCallback", "classoperations__research_1_1sat_1_1ClauseManager.html#a9dc8c18a7285cb3cfe7fe5a594afabd4", null ],
     [ "WatcherListOnFalse", "classoperations__research_1_1sat_1_1ClauseManager.html#aebbfa2c26581f864877336bd4d21828c", null ]
 ];

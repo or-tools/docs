@@ -13,6 +13,7 @@ var classoperations__research_1_1glop_1_1PrimalEdgeNorms =
     [ "operator=", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a1d2dc380cfeac8d86b6da0d096300bdc", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#ae45f1261ac4e8da05692bdfc534f9843", null ],
     [ "SetPricingRule", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a8657f53ffb61cd7c171a3173d4f11cea", null ],
+    [ "SetTimeLimit", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a395644380c9e136041b0f0734d440b4f", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a518d4575c17902c9a2a99600e5cd71a6", null ],
     [ "TestEnteringEdgeNormPrecision", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a92823db81881fd2d749efd9e1f654bfb", null ],
     [ "UpdateBeforeBasisPivot", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html#a52cef33322fe2a759bc0bac59fc4e83f", null ]

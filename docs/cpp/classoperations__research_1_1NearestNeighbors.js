@@ -1,10 +1,10 @@
 var classoperations__research_1_1NearestNeighbors =
 [
-    [ "NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#a66b5befc40263f11a42ca90436da6d06", null ],
-    [ "NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#a5f6c45d2c0b6ac08025b98e115d71f97", null ],
-    [ "~NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#ab348b1e49e130de069ce321f051cf04d", null ],
-    [ "DebugString", "classoperations__research_1_1NearestNeighbors.html#aa1f60e5bdecb4cb0aa021048adfef2e6", null ],
-    [ "Initialize", "classoperations__research_1_1NearestNeighbors.html#af61cd5ece87302a1054745def342cf71", null ],
-    [ "Neighbors", "classoperations__research_1_1NearestNeighbors.html#a48e8ea503aefd86b5b127d6f6dbbd4cc", null ],
-    [ "operator=", "classoperations__research_1_1NearestNeighbors.html#adcf715e99d24ff6f444f7b523011dacc", null ]
+    [ "NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#afaca8890cd35f09a9f10a4e539f399a5", null ],
+    [ "NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#af6d3706b4c527f85f986805494b313d4", null ],
+    [ "~NearestNeighbors", "classoperations__research_1_1NearestNeighbors.html#a9bbbbf841b4f1bf7800d76ed33540195", null ],
+    [ "DebugString", "classoperations__research_1_1NearestNeighbors.html#add62d1eca32b0fcc6398d4a5f5dcddf7", null ],
+    [ "Initialize", "classoperations__research_1_1NearestNeighbors.html#afe5822af658cffa38febae6e99e0c893", null ],
+    [ "Neighbors", "classoperations__research_1_1NearestNeighbors.html#a4ec11d78c65ce97db8744382e76babf0", null ],
+    [ "operator=", "classoperations__research_1_1NearestNeighbors.html#ab065b9df1d954faf4ad4ada7ed4f1b3d", null ]
 ];

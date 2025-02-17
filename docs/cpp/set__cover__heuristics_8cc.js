@@ -1,10 +1,11 @@
 var set__cover__heuristics_8cc =
 [
-    [ "ClearMostCoveredElements", "set__cover__heuristics_8cc.html#a784189c728d17f91325cd8dfd86f324e", null ],
-    [ "ClearMostCoveredElements", "set__cover__heuristics_8cc.html#a0e64fedd79537cb2057845d5bccd1363", null ],
-    [ "ClearRandomSubsets", "set__cover__heuristics_8cc.html#a1182d18a947e4c920cac63baea00c2a4", null ],
-    [ "ClearRandomSubsets", "set__cover__heuristics_8cc.html#aa65171a8ab12f7abd69e76f49b70ef0d", null ],
-    [ "kNotFound", "set__cover__heuristics_8cc.html#a0dea6b74a905cbb0a3aa0fc168541f83", null ],
-    [ "kInfinity", "set__cover__heuristics_8cc.html#a262d6a7a2dcd6f4600e11a08b2b05340", null ],
-    [ "kMaxPossibleCost", "set__cover__heuristics_8cc.html#a49af75faf52bc4b344fd61127971b43a", null ]
+    [ "operations_research::CL", "namespaceoperations__research.html#a3a4a63b47b937f8fb32e0ad23a30e792", null ],
+    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#a847f0d17543462778951c488a176ea7e", null ],
+    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#a83bba640c0d87bf715b181f315052c30", null ],
+    [ "operations_research::ClearRandomSubsets", "namespaceoperations__research.html#a9b023dc4bac44d145ac25be56c9cf5e2", null ],
+    [ "operations_research::ClearRandomSubsets", "namespaceoperations__research.html#a3c48e9727ea29de201d8c81fc1ca0502", null ],
+    [ "operations_research::kNotFound", "namespaceoperations__research.html#a0dea6b74a905cbb0a3aa0fc168541f83", null ],
+    [ "operations_research::kInfinity", "namespaceoperations__research.html#a262d6a7a2dcd6f4600e11a08b2b05340", null ],
+    [ "operations_research::kMaxPossibleCost", "namespaceoperations__research.html#a49af75faf52bc4b344fd61127971b43a", null ]
 ];

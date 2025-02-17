@@ -1,0 +1,28 @@
+var classoperations__research_1_1DimensionValues =
+[
+    [ "Interval", "structoperations__research_1_1DimensionValues_1_1Interval.html", "structoperations__research_1_1DimensionValues_1_1Interval" ],
+    [ "VehicleBreak", "structoperations__research_1_1DimensionValues_1_1VehicleBreak.html", "structoperations__research_1_1DimensionValues_1_1VehicleBreak" ],
+    [ "DimensionValues", "classoperations__research_1_1DimensionValues.html#a42eafdc49ebb212fae93d5d9d19d17d9", null ],
+    [ "ChangedPaths", "classoperations__research_1_1DimensionValues.html#a6fd510c7da6fd74281cae9b55a01f059", null ],
+    [ "Commit", "classoperations__research_1_1DimensionValues.html#a8371a59ccd5d36d1f072c98860d9a18a", null ],
+    [ "CommittedNodes", "classoperations__research_1_1DimensionValues.html#af31379208e4999d1076138631facc98f", null ],
+    [ "Cumuls", "classoperations__research_1_1DimensionValues.html#a3afc8ebf98e8d4d7c39fc1630c3829e5", null ],
+    [ "MakePathFromNewNodes", "classoperations__research_1_1DimensionValues.html#a69e8fb7d2efef5eeb3236e09dd8f1022", null ],
+    [ "MutableCumuls", "classoperations__research_1_1DimensionValues.html#a0b831c3ecb78104fd302ff83be675895", null ],
+    [ "MutableSpan", "classoperations__research_1_1DimensionValues.html#aa4d3b588454fe1749a45f61825d04154", null ],
+    [ "MutableTransits", "classoperations__research_1_1DimensionValues.html#a95865422a9eb2a8d425930333a9f0faa", null ],
+    [ "MutableTravels", "classoperations__research_1_1DimensionValues.html#ac9ef66b975404d4426bba1ca584a02ee", null ],
+    [ "MutableTravelSums", "classoperations__research_1_1DimensionValues.html#abe0586910d00cfe847462c43dd8c08a9", null ],
+    [ "MutableVehicleBreaks", "classoperations__research_1_1DimensionValues.html#ad1012a82256b3e992c9ec533c5a3ef50", null ],
+    [ "Nodes", "classoperations__research_1_1DimensionValues.html#a8a2ceed67200bab119c056af75baf875", null ],
+    [ "NumNodes", "classoperations__research_1_1DimensionValues.html#a2cddb39b843b7c947b72cae13f73d7d4", null ],
+    [ "PathHasChanged", "classoperations__research_1_1DimensionValues.html#ad02b2c5f63e0ddc41b28be92fd3fa226", null ],
+    [ "PushNode", "classoperations__research_1_1DimensionValues.html#ae7a7a35c7096c0226b9ec08d1e88e529", null ],
+    [ "Reset", "classoperations__research_1_1DimensionValues.html#a004569c3a1ac2eec951a523acb066f44", null ],
+    [ "Revert", "classoperations__research_1_1DimensionValues.html#a7c6dd3249fd7f81bab05759d55c46265", null ],
+    [ "Span", "classoperations__research_1_1DimensionValues.html#ad3065aa05424b370cb855fb462b27d65", null ],
+    [ "Transits", "classoperations__research_1_1DimensionValues.html#a80ac83188d8cacc6c18b9dc23d10be33", null ],
+    [ "Travels", "classoperations__research_1_1DimensionValues.html#a32cab6659d83320cc5c3b6fe069c7d8a", null ],
+    [ "TravelSums", "classoperations__research_1_1DimensionValues.html#afcc0d4c3cd84a5e3132d2fca04da87bd", null ],
+    [ "VehicleBreaks", "classoperations__research_1_1DimensionValues.html#a6739d22ccc2aca6d65003f05e824b9f4", null ]
+];

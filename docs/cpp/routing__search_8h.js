@@ -28,8 +28,11 @@ var routing__search_8h =
     [ "operations_research::ParallelSavingsFilteredHeuristic", "classoperations__research_1_1ParallelSavingsFilteredHeuristic.html", "classoperations__research_1_1ParallelSavingsFilteredHeuristic" ],
     [ "operations_research::ChristofidesFilteredHeuristic", "classoperations__research_1_1ChristofidesFilteredHeuristic.html", "classoperations__research_1_1ChristofidesFilteredHeuristic" ],
     [ "operations_research::SweepArranger", "classoperations__research_1_1SweepArranger.html", "classoperations__research_1_1SweepArranger" ],
-    [ "AutomaticFirstSolutionStrategy", "routing__search_8h.html#a270548116df8ad74e03d376c40025566", null ],
-    [ "ComputeVehicleEndChainStarts", "routing__search_8h.html#a3612f98ca854e853c3e232b9517c9701", null ],
-    [ "MakeAllUnperformed", "routing__search_8h.html#a0f93915e843433755b9ac673fbe78f7c", null ],
-    [ "MakeSweepDecisionBuilder", "routing__search_8h.html#abcfddf7e2bc62dbfcd1fd3f22a860f65", null ]
+    [ "operations_research::AutomaticFirstSolutionStrategy", "namespaceoperations__research.html#a270548116df8ad74e03d376c40025566", null ],
+    [ "operations_research::ComputeVehicleEndChainStarts", "namespaceoperations__research.html#a3612f98ca854e853c3e232b9517c9701", null ],
+    [ "operations_research::MakeAllUnperformed", "namespaceoperations__research.html#a0f93915e843433755b9ac673fbe78f7c", null ],
+    [ "operations_research::MakeSweepDecisionBuilder", "namespaceoperations__research.html#abcfddf7e2bc62dbfcd1fd3f22a860f65", null ],
+    [ "operations_research::SolveFromAssignmentWithAlternativeSolvers", "namespaceoperations__research.html#a7ac996fa516eff446d61b3650e51cf62", null ],
+    [ "operations_research::SolveFromAssignmentWithAlternativeSolversAndParameters", "namespaceoperations__research.html#a0e4560b3dd453377ef8c29372e7e75e1", null ],
+    [ "operations_research::SolveWithAlternativeSolvers", "namespaceoperations__research.html#aec0a1432f35c101cf94319828d2e13a7", null ]
 ];

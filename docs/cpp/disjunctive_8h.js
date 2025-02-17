@@ -6,12 +6,11 @@ var disjunctive_8h =
     [ "operations_research::sat::DisjunctiveOverloadChecker", "classoperations__research_1_1sat_1_1DisjunctiveOverloadChecker.html", "classoperations__research_1_1sat_1_1DisjunctiveOverloadChecker" ],
     [ "operations_research::sat::DisjunctiveSimplePrecedences", "classoperations__research_1_1sat_1_1DisjunctiveSimplePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctiveSimplePrecedences" ],
     [ "operations_research::sat::DisjunctiveDetectablePrecedences", "classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctiveDetectablePrecedences" ],
-    [ "operations_research::sat::AllIntervalsHelper", "classoperations__research_1_1sat_1_1AllIntervalsHelper.html", "classoperations__research_1_1sat_1_1AllIntervalsHelper" ],
     [ "operations_research::sat::CombinedDisjunctive< time_direction >", "classoperations__research_1_1sat_1_1CombinedDisjunctive.html", "classoperations__research_1_1sat_1_1CombinedDisjunctive" ],
     [ "operations_research::sat::DisjunctiveNotLast", "classoperations__research_1_1sat_1_1DisjunctiveNotLast.html", "classoperations__research_1_1sat_1_1DisjunctiveNotLast" ],
     [ "operations_research::sat::DisjunctiveEdgeFinding", "classoperations__research_1_1sat_1_1DisjunctiveEdgeFinding.html", "classoperations__research_1_1sat_1_1DisjunctiveEdgeFinding" ],
     [ "operations_research::sat::DisjunctivePrecedences", "classoperations__research_1_1sat_1_1DisjunctivePrecedences.html", "classoperations__research_1_1sat_1_1DisjunctivePrecedences" ],
     [ "operations_research::sat::DisjunctiveWithTwoItems", "classoperations__research_1_1sat_1_1DisjunctiveWithTwoItems.html", "classoperations__research_1_1sat_1_1DisjunctiveWithTwoItems" ],
-    [ "AddDisjunctive", "disjunctive_8h.html#a9ab304db27f5c4170f35583c69269394", null ],
-    [ "AddDisjunctiveWithBooleanPrecedencesOnly", "disjunctive_8h.html#a6f5d90e7de4e0877e0abff9cb2467bdd", null ]
+    [ "operations_research::sat::AddDisjunctive", "namespaceoperations__research_1_1sat.html#a9ab304db27f5c4170f35583c69269394", null ],
+    [ "operations_research::sat::AddDisjunctiveWithBooleanPrecedencesOnly", "namespaceoperations__research_1_1sat.html#ae66c711944582345e467efd1d25eb48e", null ]
 ];

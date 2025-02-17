@@ -1,6 +1,6 @@
 var cumulative_8h =
 [
-    [ "Cumulative", "cumulative_8h.html#a692069c042245ee1df0d7e2631fe9a39", null ],
-    [ "CumulativeTimeDecomposition", "cumulative_8h.html#a1ca61df07c6383b9387d402abc4e1f8d", null ],
-    [ "CumulativeUsingReservoir", "cumulative_8h.html#a0e0845f358a4b8a1d934f863c55bd5c2", null ]
+    [ "operations_research::sat::Cumulative", "namespaceoperations__research_1_1sat.html#ace9a3f85b1ced1ed86954a6d4d620fbd", null ],
+    [ "operations_research::sat::CumulativeTimeDecomposition", "namespaceoperations__research_1_1sat.html#adadd474f9fa4e5ea4cb65ec7d38c5018", null ],
+    [ "operations_research::sat::CumulativeUsingReservoir", "namespaceoperations__research_1_1sat.html#a19cda77b951e195fa78d14b3afd30578", null ]
 ];

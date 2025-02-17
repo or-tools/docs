@@ -8,21 +8,14 @@ var routing__lp__scheduling_8h =
     [ "operations_research::LocalDimensionCumulOptimizer", "classoperations__research_1_1LocalDimensionCumulOptimizer.html", "classoperations__research_1_1LocalDimensionCumulOptimizer" ],
     [ "operations_research::GlobalDimensionCumulOptimizer", "classoperations__research_1_1GlobalDimensionCumulOptimizer.html", "classoperations__research_1_1GlobalDimensionCumulOptimizer" ],
     [ "operations_research::SlopeAndYIntercept", "structoperations__research_1_1SlopeAndYIntercept.html", "structoperations__research_1_1SlopeAndYIntercept" ],
-    [ "DimensionSchedulingStatus", "routing__lp__scheduling_8h.html#a37370d0a3f5455c3ddbef524fbbfe659", [
-      [ "OPTIMAL", "routing__lp__scheduling_8h.html#a37370d0a3f5455c3ddbef524fbbfe659af00c8dbdd6e1f11bdae06be94277d293", null ],
-      [ "RELAXED_OPTIMAL_ONLY", "routing__lp__scheduling_8h.html#a37370d0a3f5455c3ddbef524fbbfe659af8cfb2115ef7ab822bca8edd1edac285", null ],
-      [ "INFEASIBLE", "routing__lp__scheduling_8h.html#a37370d0a3f5455c3ddbef524fbbfe659a6faaca695f728b47f47dd389f31e4a93", null ]
+    [ "operations_research::DimensionSchedulingStatus", "namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659", [
+      [ "operations_research::DimensionSchedulingStatus::OPTIMAL", "namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659af00c8dbdd6e1f11bdae06be94277d293", null ],
+      [ "operations_research::DimensionSchedulingStatus::RELAXED_OPTIMAL_ONLY", "namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659af8cfb2115ef7ab822bca8edd1edac285", null ],
+      [ "operations_research::DimensionSchedulingStatus::FEASIBLE", "namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659ad8be64d186c48f18e82bdf0501e42f72", null ],
+      [ "operations_research::DimensionSchedulingStatus::INFEASIBLE", "namespaceoperations__research.html#a37370d0a3f5455c3ddbef524fbbfe659a6faaca695f728b47f47dd389f31e4a93", null ]
     ] ],
-    [ "PiecewiseEvaluationStatus", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6", [
-      [ "UNSPECIFIED", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a1c04cc3823d476c3017238679a0fdf52", null ],
-      [ "WITHIN_BOUNDS", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a99d128310ac0172001628728d463785a", null ],
-      [ "SMALLER_THAN_LOWER_BOUND", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a22bbece1018a83f21d324ddd6dd5a3d7", null ],
-      [ "LARGER_THAN_UPPER_BOUND", "routing__lp__scheduling_8h.html#a742d32c28ffdeb85920745c9d57117f6a6c1ac68d8f8e4b6e53fdf0a416de99d1", null ]
-    ] ],
-    [ "ComputeBestVehicleToResourceAssignment", "routing__lp__scheduling_8h.html#aeea0630c4c4d9c745b9166bdfc8a61c4", null ],
-    [ "ComputeConvexPiecewiseLinearFormulationValue", "routing__lp__scheduling_8h.html#a7d1b6b3b49dede4ad90e825de5dde248", null ],
-    [ "ComputePiecewiseLinearFormulationValue", "routing__lp__scheduling_8h.html#a698864e6dce7e9203910ca91dbbe1a3d", null ],
-    [ "ComputeVehicleToResourceClassAssignmentCosts", "routing__lp__scheduling_8h.html#a8ecf2ad28c783e5bb4f7d92f04ad7b82", null ],
-    [ "PiecewiseLinearFormulationToSlopeAndYIntercept", "routing__lp__scheduling_8h.html#ad7736710d8a5b2865c2c3c7106549abe", null ],
-    [ "SlopeAndYInterceptToConvexityRegions", "routing__lp__scheduling_8h.html#a77aacf46d2ed10050888e33a7042d92c", null ]
+    [ "operations_research::ComputeBestVehicleToResourceAssignment", "namespaceoperations__research.html#a363306a4b777170af573682b4df9c293", null ],
+    [ "operations_research::ComputeVehicleToResourceClassAssignmentCosts", "namespaceoperations__research.html#a969aa345992c190b15a82c8ccb95326a", null ],
+    [ "operations_research::PiecewiseLinearFunctionToSlopeAndYIntercept", "namespaceoperations__research.html#adb4766c06fff29c31c59bbccbc5ee83b", null ],
+    [ "operations_research::SlopeAndYInterceptToConvexityRegions", "namespaceoperations__research.html#a4c8d97e978fc8bd88318840561a74b2c", null ]
 ];

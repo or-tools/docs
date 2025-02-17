@@ -1,6 +1,6 @@
 var classoperations__research_1_1MakePairInactiveOperator =
 [
-    [ "MakePairInactiveOperator", "classoperations__research_1_1MakePairInactiveOperator.html#af0586ccd49aeaf29aefdc64ef0050a6d", null ],
-    [ "DebugString", "classoperations__research_1_1MakePairInactiveOperator.html#aad7e91452b315d47ff25a9873f438316", null ],
-    [ "MakeNeighbor", "classoperations__research_1_1MakePairInactiveOperator.html#a772a3dc510a540342e0e010d7fa6f7ac", null ]
+    [ "MakePairInactiveOperator", "classoperations__research_1_1MakePairInactiveOperator.html#a2199597e0acd80cbc7b48495cdb6ef5e", null ],
+    [ "DebugString", "classoperations__research_1_1MakePairInactiveOperator.html#a2732c69b861b4afdfe9cafcf659904d2", null ],
+    [ "MakeNeighbor", "classoperations__research_1_1MakePairInactiveOperator.html#a2e34f6e6be7f582a592c2d9a878fa7b0", null ]
 ];

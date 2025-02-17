@@ -1,6 +1,6 @@
 var structoperations__research_1_1sat_1_1DiffnBaseEvent =
 [
-    [ "DiffnBaseEvent", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html#aa5ecba88bd4228ba4bb474f7a8589107", null ],
+    [ "DiffnBaseEvent", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html#a4bc26a65f62ff9969cec99e5f98adc9f", null ],
     [ "decomposed_energy", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html#a05be10c15d588514e753be4302af19e8", null ],
     [ "energy_min", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html#abee473d1457d93821a807cda62681ca1", null ],
     [ "x_end_max", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html#abf73f86be73deebd4e80384e423049b0", null ],

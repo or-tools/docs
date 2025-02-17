@@ -9,5 +9,5 @@ var flatzinc_2model_8h =
     [ "operations_research::fz::SolutionOutputSpecs::Bounds", "structoperations__research_1_1fz_1_1SolutionOutputSpecs_1_1Bounds.html", "structoperations__research_1_1fz_1_1SolutionOutputSpecs_1_1Bounds" ],
     [ "operations_research::fz::Model", "classoperations__research_1_1fz_1_1Model.html", "classoperations__research_1_1fz_1_1Model" ],
     [ "operations_research::fz::ModelStatistics", "classoperations__research_1_1fz_1_1ModelStatistics.html", "classoperations__research_1_1fz_1_1ModelStatistics" ],
-    [ "FlattenAnnotations", "flatzinc_2model_8h.html#a826741e681059159db25fac4c14c4dbb", null ]
+    [ "operations_research::fz::FlattenAnnotations", "namespaceoperations__research_1_1fz.html#a826741e681059159db25fac4c14c4dbb", null ]
 ];
