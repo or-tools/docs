@@ -31,6 +31,8 @@ var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_
     [ "LOCAL_CHEAPEST_INSERTION_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a0647d255edd7b4ff475e559bd23ad38d", null ],
     [ "PARALLEL_CHEAPEST_INSERTION", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a2a2435b38ec2eb24819126e9fdd4d500", null ],
     [ "PARALLEL_CHEAPEST_INSERTION_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a5e7e9a1f952017f0ab6bc47d54b2eea7", null ],
+    [ "PARALLEL_SAVINGS", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#adc97bc5736bd762d2f17a74f65d6a0aa", null ],
+    [ "PARALLEL_SAVINGS_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#ad2dcd72c060b5820e4e9a85fbffc134b", null ],
     [ "PATH_CHEAPEST_ARC", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a36bae5ade0433aa2bdfd57daf1374a3c", null ],
     [ "PATH_CHEAPEST_ARC_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a1b6543d2d629a343cea5cb8400ae5e77", null ],
     [ "PATH_MOST_CONSTRAINED_ARC", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html#a7a20f205c4c7daf258cbcd60b049f850", null ],

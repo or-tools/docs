@@ -15,9 +15,8 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver =
     [ "delete", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a53e59bef7809ee702ddb3168e33940df", null ],
     [ "enableOutput", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a6a8a894b9be78043a9376298ddf70eea", null ],
     [ "exportModelAsLpFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a1ec3573250cc47fe0f754b3c53fc23cb", null ],
-    [ "exportModelAsLpFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a744532f7dd9fea3c59b2e172773fb8a3", null ],
-    [ "exportModelAsMpsFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a67a134f1480f09569367c1e3ba73a1ee", null ],
-    [ "exportModelAsMpsFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a63c6315351a54436ede85ec73a9559f2", null ],
+    [ "exportModelAsLpFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#af403a2810d67d8e36d142f55708661eb", null ],
+    [ "exportModelAsMpsFormat", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a6c854027622f14c06951f9ed86f41b45", null ],
     [ "exportModelToProto", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a858ee88954dd038239a77370d03a8ab0", null ],
     [ "finalize", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#aab4118d5847faa375cce9f3ceb3f2c92", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a4d6c5eee1ce0399aa85bbaa063953948", null ],
@@ -69,5 +68,6 @@ var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver =
     [ "verifySolution", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a2e87b3e192b81d1df9f79055efedeceb", null ],
     [ "wallTime", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a421429bb3274ee3b0a9aa73de0ae0abe", null ],
     [ "write", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a1cc68d4403d73332516ed194d2e263e9", null ],
+    [ "writeModelToMpsFile", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#ab2c9ba6011b8d515e66e9549cad0afb0", null ],
     [ "swigCMemOwn", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a0c09f1e0f4d378b22b804b96117b81eb", null ]
 ];

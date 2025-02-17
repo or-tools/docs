@@ -18,6 +18,7 @@ var classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow =
     [ "getSupply", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a0d33c3904319e807c36e6849d95ddffd", null ],
     [ "getTail", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#ad1d596d03974911dc0a63f9bd0594424", null ],
     [ "getUnitCost", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a0d36983c7cb8288cdfeb40183fc2c9f6", null ],
+    [ "setArcCapacity", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a4723e4703d594cf4119e5cc889abf44e", null ],
     [ "setNodeSupply", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#a9e1183c7be8da35a772b826548740b66", null ],
     [ "solve", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#afe8e3af7fd7cd59374eb5357176f777e", null ],
     [ "solveMaxFlowWithMinCost", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlow.html#abffcd0f8f5749092b5687b0a16ad6d6e", null ],

@@ -20,7 +20,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperat
     [ "RevertChanges", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a7d8684917bcd910f91687f665b9d7fae", null ],
     [ "setValue", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#af16cf386d83f87c4a813ca5b52521991", null ],
     [ "size", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a5c8ba826f356fdebd18926b5a913d794", null ],
-    [ "SkipUnchanged", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a99c2dc7341abe7539218c72641ab43cc", null ],
+    [ "SkipUnchanged", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#afa56f5e532f336f0305a19e9547ebdbd", null ],
     [ "start", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a6752667211d303a8527ff7bf9b13edd4", null ],
     [ "swigDirectorDisconnect", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a051cb591b8fa6038020c07df01ff86c9", null ],
     [ "swigRelease", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntVarLocalSearchOperator.html#a288d8ef07b4d76e9dfe2de72fa7fe573", null ],

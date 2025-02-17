@@ -1,0 +1,4 @@
+var IteratedLocalSearchParametersOrBuilder_8java =
+[
+    [ "com.google.ortools.constraintsolver.IteratedLocalSearchParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParametersOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParametersOrBuilder" ]
+];

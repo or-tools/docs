@@ -66,6 +66,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor =
     [ "getKGreater", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a69d2a9002d88631b840d1abba76939b5", null ],
     [ "getKGreaterOrEqual", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a4a19e5d6d5cb1d8ff2b472c30eeee3d0", null ],
     [ "getKIndex2Argument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#abd8ede7cdf7602eb545ecf9573a1290c", null ],
+    [ "getKIndex3Argument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#a24c4bbc2b1c8e685fcb99c976081cccd", null ],
     [ "getKIndexArgument", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#ab5d2d17f42233917573f6b0967020d64", null ],
     [ "getKIndexOf", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#ab14fec5803fbb0478ddeda76e9fbd88d", null ],
     [ "getKInitialState", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ModelVisitor.html#afac8072f076341ddb5eef1c45157c2bf", null ],

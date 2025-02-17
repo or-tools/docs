@@ -1,8 +1,10 @@
 var interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder =
 [
+    [ "getAcceptNeighborDurationSeconds", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a118c26aa0792691ed6e3a3a2e0207a61", null ],
     [ "getDurationSeconds", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#aa566bbb453bff01d3d457ea1fc52aec1", null ],
     [ "getLocalSearchOperator", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a547f4422ffc40f7015e18b8016303f83", null ],
     [ "getLocalSearchOperatorBytes", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a012475f3ec19130cf30e2c0e55d51c85", null ],
+    [ "getMakeNextNeighborDurationSeconds", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a27561c56628c0fec802af0cb3464d708", null ],
     [ "getNumAcceptedNeighbors", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#abd66c21bec14f5c09efeceed2edf0284", null ],
     [ "getNumFilteredNeighbors", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a851c05f7722758710f4a83ecce84b3fa", null ],
     [ "getNumNeighbors", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatisticsOrBuilder.html#a4ee607f9e360da390d763f07f4c12f52", null ]

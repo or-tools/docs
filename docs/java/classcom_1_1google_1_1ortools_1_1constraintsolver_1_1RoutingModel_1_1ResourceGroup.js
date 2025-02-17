@@ -9,6 +9,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1Resourc
     [ "finalize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a22757448206d061d088ffd16358a0c2b", null ],
     [ "GetAffectedDimensionIndices", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a82c2571e54bcc998f44b5feaee5ecd15", null ],
     [ "getCPtr", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a5c731ac07c9d761b28b867990abd6ce2", null ],
+    [ "GetDimensionAttributesForClass", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#ab47b7eb19ad4dbbe3e2ccdd76e02f66a", null ],
     [ "GetResource", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a08d6c4fdf58fb514a7b25d01dee45790", null ],
     [ "GetResourceClassesCount", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a2ff71ebb98011a954de5c90f89588711", null ],
     [ "GetResourceClassIndex", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1ResourceGroup.html#a035d5ca78abc8fcbf22901994a9fae1a", null ],

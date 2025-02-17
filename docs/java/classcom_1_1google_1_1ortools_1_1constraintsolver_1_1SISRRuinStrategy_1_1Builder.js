@@ -1,0 +1,26 @@
+var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder =
+[
+    [ "build", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#afccd10a7764b73bcbcd4797a332f0c66", null ],
+    [ "buildPartial", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a3302bc820a16e8ac8205215e89d823af", null ],
+    [ "clear", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#af22d1e8bd629d19e98dc933c9d769142", null ],
+    [ "clearAvgNumRemovedVisits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#ab7841fa3ce55626f7214a8e32fa42bdb", null ],
+    [ "clearBypassFactor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a96c7c3f8fefeb567510fc872a3cecd90", null ],
+    [ "clearMaxRemovedSequenceSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#abaa35b675c5623f9076da136ec44f877", null ],
+    [ "getAvgNumRemovedVisits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#ab9dc21714e2b4ba94728e6bb43af409b", null ],
+    [ "getBypassFactor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#afd570874e66f41511bfa4281164d6bcc", null ],
+    [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a5705b911698ae0af75bfbeeb755e2975", null ],
+    [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#adf68efab953c9752916847cbdbbaad9c", null ],
+    [ "getDescriptorForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a9649871c57b5e817f48fa5cac1f99bc1", null ],
+    [ "getMaxRemovedSequenceSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#aa4cf0df20f5d602444e414ddc4634caf", null ],
+    [ "hasAvgNumRemovedVisits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a750d631c72b812798a3ed1248b7f9a87", null ],
+    [ "hasBypassFactor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a0cfc8c7e1262c76e62b5ec83d93e5820", null ],
+    [ "hasMaxRemovedSequenceSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#af9274137e7975250ebd133449f630f4d", null ],
+    [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a546adf834a122e5016aa8ab39c5251de", null ],
+    [ "isInitialized", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a87c4c3b35974b3afeb068c5b496c6df2", null ],
+    [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a0855425d550f629a868a6d4bc35adc96", null ],
+    [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#ab5e85fa6aa338708382affa4562df1f6", null ],
+    [ "mergeFrom", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#aef5e7f10b5747f7e0feae33bce4f6900", null ],
+    [ "setAvgNumRemovedVisits", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a47c735c3f272b96e6e0badcf8095f3fe", null ],
+    [ "setBypassFactor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#a4e451b1a1cf178d1e6deb9be1e4e5192", null ],
+    [ "setMaxRemovedSequenceSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html#ac55ca1ab8bbdb3f1fe2ddde81a8efec3", null ]
+];

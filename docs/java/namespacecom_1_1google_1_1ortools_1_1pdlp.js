@@ -22,6 +22,7 @@ var namespacecom_1_1google_1_1ortools_1_1pdlp =
     [ "QuadraticProgramStats", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats" ],
     [ "QuadraticProgramStatsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStatsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStatsOrBuilder" ],
     [ "RestartChoice", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice" ],
+    [ "SchedulerType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1SchedulerType.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1SchedulerType" ],
     [ "SolveLog", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog" ],
     [ "SolveLogOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOrBuilder" ],
     [ "SolveLogOuterClass", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass" ],

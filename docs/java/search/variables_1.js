@@ -46,5 +46,6 @@ var searchData=
   ['bop_5finteger_5fprogramming_5fvalue_43',['BOP_INTEGER_PROGRAMMING_VALUE',['../enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1SolverType.html#a4f5efd4cff25539c59e5bae1d4dd052d',1,'com::google::ortools::linearsolver::MPModelRequest::SolverType']]],
   ['branches_5ffield_5fnumber_44',['BRANCHES_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimitParameters.html#a41e4e0e07249161248db432d67c049d2',1,'com::google::ortools::constraintsolver::RegularLimitParameters']]],
   ['branching_5fpriority_5ffield_5fnumber_45',['BRANCHING_PRIORITY_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPVariableProto.html#ae0131d251eeb39221811217780599b8f',1,'com::google::ortools::linearsolver::MPVariableProto']]],
-  ['bytes_5fused_5ffield_5fnumber_46',['BYTES_USED_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverStatistics.html#a865fe43e09467ba5c58a6a55a2d72135',1,'com::google::ortools::constraintsolver::ConstraintSolverStatistics']]]
+  ['bypass_5ffactor_5ffield_5fnumber_46',['BYPASS_FACTOR_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy.html#af54a77191f2134be8514e75dcc106c2f',1,'com::google::ortools::constraintsolver::SISRRuinStrategy']]],
+  ['bytes_5fused_5ffield_5fnumber_47',['BYTES_USED_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverStatistics.html#a865fe43e09467ba5c58a6a55a2d72135',1,'com::google::ortools::constraintsolver::ConstraintSolverStatistics']]]
 ];

@@ -1,5 +1,10 @@
 var interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder =
 [
+    [ "getExprs", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#a9430a4d069a391463520956d7e803a3e", null ],
+    [ "getExprsCount", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#ae220213850c44ae8f32790ba6f6b8b8c", null ],
+    [ "getExprsList", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#ab23d60515277dc5f137a3ab88bcb2d20", null ],
+    [ "getExprsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#ad20ce29f118e83fbf4fb8323f690f0e9", null ],
+    [ "getExprsOrBuilderList", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#acd8ed9a94d27b0206571ca24099a12ae", null ],
     [ "getFinalStates", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#a3341acb8553b7c3aa414fb8317dec355", null ],
     [ "getFinalStatesCount", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#a3a64cfab41c8580f03668628250aa298", null ],
     [ "getFinalStatesList", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html#ab281291675d80fc7beff0de952870191", null ],

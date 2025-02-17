@@ -15,6 +15,7 @@ var interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder =
     [ "getNumBooleans", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a3fb647bf57711db1a127ccfffaa043d9", null ],
     [ "getNumBranches", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#af732bb8af2a9aabc3ed994d971000452", null ],
     [ "getNumConflicts", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a18e98e461bb90c3da64479b1acc0c613", null ],
+    [ "getNumFixedBooleans", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a77f5ae25d0e076dd9cbb4d66927fe4cd", null ],
     [ "getNumIntegerPropagations", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a069438d9327733788cd37258fa5b97e2", null ],
     [ "getNumIntegers", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a2cb1f2ddef3cc3d10fb8b18fc6c090f9", null ],
     [ "getNumLpIterations", "interfacecom_1_1google_1_1ortools_1_1sat_1_1CpSolverResponseOrBuilder.html#a2dd5aca538b4b0e910a6af42d89cfb50", null ],

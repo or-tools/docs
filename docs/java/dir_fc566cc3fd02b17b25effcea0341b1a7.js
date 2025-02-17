@@ -22,6 +22,7 @@ var dir_fc566cc3fd02b17b25effcea0341b1a7 =
     [ "QuadraticProgramStats.java", "QuadraticProgramStats_8java.html", "QuadraticProgramStats_8java" ],
     [ "QuadraticProgramStatsOrBuilder.java", "QuadraticProgramStatsOrBuilder_8java.html", "QuadraticProgramStatsOrBuilder_8java" ],
     [ "RestartChoice.java", "RestartChoice_8java.html", "RestartChoice_8java" ],
+    [ "SchedulerType.java", "SchedulerType_8java.html", "SchedulerType_8java" ],
     [ "SolveLog.java", "SolveLog_8java.html", "SolveLog_8java" ],
     [ "SolveLogOrBuilder.java", "SolveLogOrBuilder_8java.html", "SolveLogOrBuilder_8java" ],
     [ "SolveLogOuterClass.java", "SolveLogOuterClass_8java.html", "SolveLogOuterClass_8java" ],

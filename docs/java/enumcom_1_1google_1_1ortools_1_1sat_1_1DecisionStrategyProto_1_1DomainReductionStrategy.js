@@ -17,6 +17,8 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReduct
     [ "SELECT_MEDIAN_VALUE_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#af1b5034c518624f7e3977d97e6d15bee", null ],
     [ "SELECT_MIN_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a122969bda1eb2568cbe2c91443b7da20", null ],
     [ "SELECT_MIN_VALUE_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a5f6a9135e0f03ddcedacd2e3a64c5a01", null ],
+    [ "SELECT_RANDOM_HALF", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a515daccb8dccd6efc592b94974e33c95", null ],
+    [ "SELECT_RANDOM_HALF_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#ad4265978a450475e3243f64f7238f738", null ],
     [ "SELECT_UPPER_HALF", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a9547df137657b41e074bc198a185f9bd", null ],
     [ "SELECT_UPPER_HALF_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#a665abccc52aa92deae2b1bbea1e138fb", null ],
     [ "UNRECOGNIZED", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html#ab118e72f9fa1599807d13bfb00a53f65", null ]

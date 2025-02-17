@@ -23,6 +23,8 @@ var searchData=
   ['intvarlocalsearchoperator_2ejava_20',['IntVarLocalSearchOperator.java',['../IntVarLocalSearchOperator_8java.html',1,'']]],
   ['inverseconstraintproto_2ejava_21',['InverseConstraintProto.java',['../InverseConstraintProto_8java.html',1,'']]],
   ['inverseconstraintprotoorbuilder_2ejava_22',['InverseConstraintProtoOrBuilder.java',['../InverseConstraintProtoOrBuilder_8java.html',1,'']]],
-  ['iterationstats_2ejava_23',['IterationStats.java',['../IterationStats_8java.html',1,'']]],
-  ['iterationstatsorbuilder_2ejava_24',['IterationStatsOrBuilder.java',['../IterationStatsOrBuilder_8java.html',1,'']]]
+  ['iteratedlocalsearchparameters_2ejava_23',['IteratedLocalSearchParameters.java',['../IteratedLocalSearchParameters_8java.html',1,'']]],
+  ['iteratedlocalsearchparametersorbuilder_2ejava_24',['IteratedLocalSearchParametersOrBuilder.java',['../IteratedLocalSearchParametersOrBuilder_8java.html',1,'']]],
+  ['iterationstats_2ejava_25',['IterationStats.java',['../IterationStats_8java.html',1,'']]],
+  ['iterationstatsorbuilder_2ejava_26',['IterationStatsOrBuilder.java',['../IterationStatsOrBuilder_8java.html',1,'']]]
 ];
