@@ -16,7 +16,5 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback =
     [ "stop_search", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#ae360e101ac8c783c3868df439d129ed7", null ],
     [ "user_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#abd18b1d8c860a55eaf72127c3f1beb75", null ],
     [ "value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a1e9fc75c0faaffccd73ec1a83954f379", null ],
-    [ "wall_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a9b335caf511bc787977332b19cc57b84", null ],
-    [ "BooleanValue", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#ae685427776e3cea179643ea1868be7da", null ],
-    [ "Value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a9f69ab6de9c251c49f2fe401809002f0", null ]
+    [ "wall_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a9b335caf511bc787977332b19cc57b84", null ]
 ];

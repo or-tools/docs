@@ -12,11 +12,10 @@ var searchData=
   ['bool_5ffalse_9',['BOOL_FALSE',['../namespaceortools_1_1constraint__solver_1_1pywrapcp.html#ace640016649ae71901e5d7414ac7208d',1,'ortools::constraint_solver::pywrapcp']]],
   ['bool_5ftrue_10',['BOOL_TRUE',['../namespaceortools_1_1constraint__solver_1_1pywrapcp.html#a9493062a037deee6fb27297c68eb22ab',1,'ortools::constraint_solver::pywrapcp']]],
   ['bool_5funspecified_11',['BOOL_UNSPECIFIED',['../namespaceortools_1_1constraint__solver_1_1pywrapcp.html#a3b33445ecbd01098154b51d5bc9b682f',1,'ortools::constraint_solver::pywrapcp']]],
-  ['booleanvalue_12',['BooleanValue',['../classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#ae685427776e3cea179643ea1868be7da',1,'ortools::sat::python::cp_model::CpSolverSolutionCallback']]],
-  ['boolvart_13',['BoolVarT',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a834239251a31120e47dce06c873ff244',1,'ortools::sat::python::cp_model']]],
-  ['bop_5finteger_5fprogramming_14',['BOP_INTEGER_PROGRAMMING',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a8e8696ae30a1d8e573e0de65cdcd1db9',1,'ortools::linear_solver::pywraplp::Solver']]],
-  ['boundedlinearexprt_15',['BoundedLinearExprT',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a1425595d0c8225318f9bd529f5f14a9f',1,'ortools::sat::python::cp_model']]],
-  ['boundedlineartypes_16',['BoundedLinearTypes',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a80ba500094caed2855607e4afb367980',1,'ortools::math_opt::python::model']]],
-  ['boundedlineartypeslist_17',['BoundedLinearTypesList',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a635315964b51cad0ef1bdcbe36993567',1,'ortools::math_opt::python::model']]],
-  ['branching_5fpriorities_18',['branching_priorities',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html#ae06aaeabbd325fa18e3f04984b4c2066',1,'ortools::math_opt::python::model_parameters::ModelSolveParameters']]]
+  ['boolvart_12',['BoolVarT',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a834239251a31120e47dce06c873ff244',1,'ortools::sat::python::cp_model']]],
+  ['bop_5finteger_5fprogramming_13',['BOP_INTEGER_PROGRAMMING',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a8e8696ae30a1d8e573e0de65cdcd1db9',1,'ortools::linear_solver::pywraplp::Solver']]],
+  ['boundedlinearexpression_14',['BoundedLinearExpression',['../namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html#af6bf53438e5469fede648d26788f4d93',1,'ortools.linear_solver.python.model_builder.BoundedLinearExpression'],['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a18382f602a400dcf440194925eaee769',1,'ortools.sat.python.cp_model.BoundedLinearExpression']]],
+  ['boundedlineartypes_15',['BoundedLinearTypes',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a80ba500094caed2855607e4afb367980',1,'ortools::math_opt::python::model']]],
+  ['boundedlineartypeslist_16',['BoundedLinearTypesList',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a635315964b51cad0ef1bdcbe36993567',1,'ortools::math_opt::python::model']]],
+  ['branching_5fpriorities_17',['branching_priorities',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html#ae06aaeabbd325fa18e3f04984b4c2066',1,'ortools::math_opt::python::model_parameters::ModelSolveParameters']]]
 ];

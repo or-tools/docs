@@ -19,16 +19,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "abc.ABCMeta", null, [
-      [ "ortools.linear_solver.python.model_builder.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html", [
-        [ "ortools.linear_solver.python.model_builder.Variable", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html", null ],
-        [ "ortools.linear_solver.python.model_builder._LinearExpression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html", null ],
-        [ "ortools.linear_solver.python.model_builder._Product", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Product.html", null ],
-        [ "ortools.linear_solver.python.model_builder._Sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum.html", null ]
-      ] ],
-      [ "ortools.linear_solver.python.model_builder._BoundedLinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html", [
-        [ "ortools.linear_solver.python.model_builder.BoundedLinearExpression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html", null ],
-        [ "ortools.linear_solver.python.model_builder.VarEqVar", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html", null ]
-      ] ],
       [ "ortools.math_opt.python.model.LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", [
         [ "ortools.math_opt.python.model.LinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html", null ],
         [ "ortools.math_opt.python.model.LinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html", null ],
@@ -44,9 +34,11 @@ var hierarchy =
         [ "ortools.math_opt.python.model.QuadraticTerm", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTerm.html", null ]
       ] ]
     ] ],
+    [ "cmh.BaseIntVar", null, [
+      [ "ortools.sat.python.cp_model.IntVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html", null ]
+    ] ],
     [ "ortools.math_opt.python.solution.Basis", "classortools_1_1math__opt_1_1python_1_1solution_1_1Basis.html", null ],
     [ "ortools.math_opt.python.model.BoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html", null ],
-    [ "ortools.sat.python.cp_model.BoundedLinearExpression", "classortools_1_1sat_1_1python_1_1cp__model_1_1BoundedLinearExpression.html", null ],
     [ "ortools.math_opt.python.callback.CallbackData", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html", null ],
     [ "ortools.math_opt.python.callback.CallbackRegistration", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration.html", null ],
     [ "ortools.math_opt.python.callback.CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", null ],
@@ -74,7 +66,12 @@ var hierarchy =
       [ "ortools.math_opt.python.ipc.remote_http_solve.OptimizationServiceError", "classortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve_1_1OptimizationServiceError.html", null ]
     ] ],
     [ "ortools.math_opt.python.callback.GeneratedConstraint", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint.html", null ],
+    [ "Generic", null, [
+      [ "ortools.math_opt.python.model._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html", null ],
+      [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ]
+    ] ],
     [ "ortools.math_opt.python.parameters.GlpkParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters.html", null ],
+    [ "ortools.math_opt.python.init_arguments.GurobiISVKey", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1GurobiISVKey.html", null ],
     [ "ortools.math_opt.python.parameters.GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", null ],
     [ "ortools.math_opt.python.solve.IncrementalSolver", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html", null ],
     [ "ortools.sat.python.cp_model.IntervalVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html", null ],
@@ -88,14 +85,6 @@ var hierarchy =
       [ "ortools.linear_solver.python.linear_solver_natural_api.SumArray", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html", null ],
       [ "ortools.linear_solver.python.linear_solver_natural_api.VariableExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html", null ]
     ] ],
-    [ "ortools.sat.python.cp_model.LinearExpr", "classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html", [
-      [ "ortools.sat.python.cp_model.IntVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html", null ],
-      [ "ortools.sat.python.cp_model._NotBooleanVariable", "classortools_1_1sat_1_1python_1_1cp__model_1_1__NotBooleanVariable.html", null ],
-      [ "ortools.sat.python.cp_model._ProductCst", "classortools_1_1sat_1_1python_1_1cp__model_1_1__ProductCst.html", null ],
-      [ "ortools.sat.python.cp_model._Sum", "classortools_1_1sat_1_1python_1_1cp__model_1_1__Sum.html", null ],
-      [ "ortools.sat.python.cp_model._SumArray", "classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html", null ],
-      [ "ortools.sat.python.cp_model._WeightedSum", "classortools_1_1sat_1_1python_1_1cp__model_1_1__WeightedSum.html", null ]
-    ] ],
     [ "ortools.math_opt.python.model_storage.LinearObjectiveEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html", null ],
     [ "LookupError", null, [
       [ "ortools.math_opt.python.model_storage.BadLinearConstraintIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError.html", null ],
@@ -104,8 +93,6 @@ var hierarchy =
     [ "ortools.math_opt.python.model.LowerBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression.html", null ],
     [ "ortools.math_opt.python.testing.proto_matcher.MathOptProtoEquivMatcher", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher.html", null ],
     [ "metaclass", null, [
-      [ "ortools.linear_solver.python.model_builder.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html", null ],
-      [ "ortools.linear_solver.python.model_builder._BoundedLinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html", null ],
       [ "ortools.math_opt.python.model.LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", null ],
       [ "ortools.math_opt.python.model.QuadraticBase", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticBase.html", null ]
     ] ],
@@ -115,6 +102,9 @@ var hierarchy =
     [ "ortools.math_opt.python.model_parameters.ModelSolveParameters", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html", null ],
     [ "ortools.math_opt.python.compute_infeasible_subsystem_result.ModelSubset", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset.html", null ],
     [ "ortools.math_opt.python.compute_infeasible_subsystem_result.ModelSubsetBounds", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds.html", null ],
+    [ "NamedTuple", null, [
+      [ "ortools.math_opt.python.model.LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", null ]
+    ] ],
     [ "ortools.math_opt.python.model.NormalizedLinearInequality", "classortools_1_1math__opt_1_1python_1_1model_1_1NormalizedLinearInequality.html", null ],
     [ "ortools.sat.colab.flags.NotebookBoolFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookBoolFlag.html", null ],
     [ "ortools.sat.colab.flags.NotebookFloatFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html", null ],
@@ -146,8 +136,7 @@ var hierarchy =
         [ "ortools.constraint_solver.pywrapcp.LocalSearchOperator", "classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html", [
           [ "ortools.constraint_solver.pywrapcp.IntVarLocalSearchOperator", "classortools_1_1constraint__solver_1_1pywrapcp_1_1IntVarLocalSearchOperator.html", [
             [ "ortools.constraint_solver.pywrapcp.BaseLns", "classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseLns.html", null ],
-            [ "ortools.constraint_solver.pywrapcp.ChangeValue", "classortools_1_1constraint__solver_1_1pywrapcp_1_1ChangeValue.html", null ],
-            [ "ortools.constraint_solver.pywrapcp.PathOperator", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PathOperator.html", null ]
+            [ "ortools.constraint_solver.pywrapcp.ChangeValue", "classortools_1_1constraint__solver_1_1pywrapcp_1_1ChangeValue.html", null ]
           ] ]
         ] ],
         [ "ortools.constraint_solver.pywrapcp.PropagationBaseObject", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PropagationBaseObject.html", [
@@ -188,6 +177,7 @@ var hierarchy =
       [ "ortools.constraint_solver.pywrapcp.RoutingDimension", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html", null ],
       [ "ortools.constraint_solver.pywrapcp.RoutingIndexManager", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingIndexManager.html", null ],
       [ "ortools.constraint_solver.pywrapcp.RoutingModel", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html", null ],
+      [ "ortools.constraint_solver.pywrapcp.RoutingSearchStatus", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStatus.html", null ],
       [ "ortools.constraint_solver.pywrapcp.SequenceVarContainer", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVarContainer.html", null ],
       [ "ortools.constraint_solver.pywrapcp.SimpleBoundCosts", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SimpleBoundCosts.html", null ],
       [ "ortools.constraint_solver.pywrapcp.Solver", "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html", null ],
@@ -207,6 +197,9 @@ var hierarchy =
     [ "ortools.math_opt.python.solution.PrimalRay", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalRay.html", null ],
     [ "ortools.math_opt.python.solution.PrimalSolution", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalSolution.html", null ],
     [ "ortools.math_opt.python.result.ProblemStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus.html", null ],
+    [ "Protocol", null, [
+      [ "ortools.math_opt.python.model._ToProcessElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html", null ]
+    ] ],
     [ "ortools.math_opt.python.model_storage.QuadraticEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html", null ],
     [ "ortools.math_opt.python.model_storage.QuadraticTermIdKey", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey.html", null ],
     [ "ortools.math_opt.python.model.QuadraticTermKey", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTermKey.html", null ],
@@ -216,7 +209,7 @@ var hierarchy =
       [ "ortools.math_opt.python.model_storage.UsedUpdateTrackerAfterRemovalError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1UsedUpdateTrackerAfterRemovalError.html", null ]
     ] ],
     [ "ortools.math_opt.python.solution.Solution", "classortools_1_1math__opt_1_1python_1_1solution_1_1Solution.html", null ],
-    [ "swig_helper.SolutionCallback", null, [
+    [ "cmh.SolutionCallback", null, [
       [ "ortools.sat.python.cp_model.CpSolverSolutionCallback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html", [
         [ "ortools.sat.python.cp_model.ObjectiveSolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1ObjectiveSolutionPrinter.html", null ],
         [ "ortools.sat.python.cp_model.VarArrayAndObjectiveSolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArrayAndObjectiveSolutionPrinter.html", null ],
@@ -229,6 +222,18 @@ var hierarchy =
     [ "ortools.math_opt.python.result.SolveResult", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html", null ],
     [ "ortools.math_opt.python.solver_resources.SolverResources", "classortools_1_1math__opt_1_1python_1_1solver__resources_1_1SolverResources.html", null ],
     [ "ortools.math_opt.python.result.SolveStats", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableCpSatInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableCpSatInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableEcosInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableEcosInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableGlopInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlopInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableGlpkInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlpkInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableGScipInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGScipInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableGurobiInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGurobiInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableHighsInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableHighsInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableOsqpInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableOsqpInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamablePdlpInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamablePdlpInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableSantoriniInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSantoriniInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableScsInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableScsInitArguments.html", null ],
+    [ "ortools.math_opt.python.init_arguments.StreamableSolverInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html", null ],
     [ "ortools.sat.colab.visualization.SvgWrapper", "classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html", null ],
     [ "ortools.math_opt.python.result.Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", null ],
     [ "unittest.TestCase", null, [
@@ -241,16 +246,7 @@ var hierarchy =
     [ "ortools.math_opt.python.model.UpdateTracker", "classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker.html", null ],
     [ "ortools.math_opt.python.model.UpperBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1UpperBoundedLinearExpression.html", null ],
     [ "ortools.math_opt.python.model.VarEqVar", "classortools_1_1math__opt_1_1python_1_1model_1_1VarEqVar.html", null ],
-    [ "Generic", null, [
-      [ "ortools.math_opt.python.model._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html", null ],
-      [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ]
-    ] ],
-    [ "NamedTuple", null, [
-      [ "ortools.math_opt.python.model.LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", null ]
-    ] ],
-    [ "Protocol", null, [
-      [ "ortools.math_opt.python.model._ToProcessElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html", null ]
-    ] ],
+    [ "ortools.sat.python.cp_model.VariableList", "classortools_1_1sat_1_1python_1_1cp__model_1_1VariableList.html", null ],
     [ "VarOrConstraintType", null, [
       [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ]
     ] ]

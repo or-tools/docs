@@ -5,6 +5,6 @@ var searchData=
   ['heuristics_2',['heuristics',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a1670ad9100cbe3662d7dc58afae7af29',1,'ortools::math_opt::python::parameters::SolveParameters']]],
   ['high_3',['HIGH',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html#a2dba8df234af0d3c5244b2cbe2b30910',1,'ortools::math_opt::python::parameters::Emphasis']]],
   ['highs_4',['HIGHS',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType.html#a1cb9dbf1be7d23dd700c159804316a81',1,'ortools::math_opt::python::parameters::SolverType']]],
-  ['highs_5',['highs',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a2a97c4ed078d52913bcec7adfba4c614',1,'ortools::math_opt::python::parameters::SolveParameters']]],
+  ['highs_5',['highs',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html#a1293100feb5467fe3919772cb70a4b73',1,'ortools.math_opt.python.init_arguments.StreamableSolverInitArguments.highs'],['../classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html#a2a97c4ed078d52913bcec7adfba4c614',1,'ortools.math_opt.python.parameters.SolveParameters.highs']]],
   ['hint_5fsearch_6',['HINT_SEARCH',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#a602c00ce5efdec39b35d80dece832e4b',1,'ortools::sat::python::cp_model']]]
 ];

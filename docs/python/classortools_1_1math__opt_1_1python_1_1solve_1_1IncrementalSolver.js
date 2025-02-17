@@ -1,6 +1,6 @@
 var classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver =
 [
-    [ "__init__", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html#a13de9f7c41351ed026746aca6ab0b19d", null ],
+    [ "__init__", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html#a8246f60b06d94e324c81237fced7489e", null ],
     [ "__enter__", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html#a3f708f29c8aca2e83e1faa5a1964fb8b", null ],
     [ "__exit__", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html#aaaad542e3a8396b54ee0e9761a294ff4", null ],
     [ "close", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html#a86edd2b5fcfcfbf806866b99c2d93bf8", null ],

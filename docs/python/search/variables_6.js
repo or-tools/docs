@@ -8,6 +8,9 @@ var searchData=
   ['first_5forder_5fiterations_5',['first_order_iterations',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html#aedef239eaa9fa5134c26235a7f07d4dc',1,'ortools::math_opt::python::result::SolveStats']]],
   ['fixed_5fsearch_6',['FIXED_SEARCH',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#ad97296bce4450fe6edcc6c49b5568c17',1,'ortools::sat::python::cp_model']]],
   ['fixed_5fvalue_7',['FIXED_VALUE',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a1c4cd651790879c8d0cca74081650727',1,'ortools.linear_solver.pywraplp.Solver.FIXED_VALUE'],['../classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus.html#aa47708e8bec1fab981e3acaf6bb22378',1,'ortools.math_opt.python.solution.BasisStatus.FIXED_VALUE']]],
-  ['free_8',['FREE',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a855af8820856d16c138d2224d7729fd7',1,'ortools.linear_solver.pywraplp.Solver.FREE'],['../classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus.html#a10816cebb828294ab84b93a79ba4d78e',1,'ortools.math_opt.python.solution.BasisStatus.FREE']]],
-  ['fullpathlns_9',['FULLPATHLNS',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a59f12e0960809e9ed17861db791e7688',1,'ortools::constraint_solver::pywrapcp::Solver']]]
+  ['flatexpr_8',['FlatExpr',['../namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html#a2481f342f190a830d645cc20e148f27a',1,'ortools::linear_solver::python::model_builder']]],
+  ['flatfloatexpr_9',['FlatFloatExpr',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#aa1c677ea7c97bd68040d1057d7c6b6e0',1,'ortools::sat::python::cp_model']]],
+  ['flatintexpr_10',['FlatIntExpr',['../namespaceortools_1_1sat_1_1python_1_1cp__model.html#ad7e6bc84e6281209cfe111d28eef65f8',1,'ortools::sat::python::cp_model']]],
+  ['free_11',['FREE',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a855af8820856d16c138d2224d7729fd7',1,'ortools.linear_solver.pywraplp.Solver.FREE'],['../classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus.html#a10816cebb828294ab84b93a79ba4d78e',1,'ortools.math_opt.python.solution.BasisStatus.FREE']]],
+  ['fullpathlns_12',['FULLPATHLNS',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a59f12e0960809e9ed17861db791e7688',1,'ortools::constraint_solver::pywrapcp::Solver']]]
 ];

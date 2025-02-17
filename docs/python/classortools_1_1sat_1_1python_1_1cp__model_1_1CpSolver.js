@@ -1,7 +1,7 @@
 var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
 [
     [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a29ff9045a7c9a47e612c54d2abf0b407", null ],
-    [ "_solution", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a94bcce9649d986f30be7b3a56b550540", null ],
+    [ "_checked_response", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a8871d49af5302f6d112203e15653b7fd", null ],
     [ "best_objective_bound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af55a3ea4148cd755b89d7154584e1745", null ],
     [ "BestObjectiveBound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a53600e30823260b56e64722b687e638b", null ],
     [ "boolean_value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a73b6afa11cebf9f870633b46ece8a7c7", null ],
@@ -40,7 +40,6 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
     [ "values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af755b4ae5abfa1d1437f148cc3733443", null ],
     [ "wall_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a23b9b02f598f62933dcbc198ec5426af", null ],
     [ "WallTime", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#abb928190f3301b1277fa7f7a957a74cd", null ],
-    [ "_solution", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a718eca5c48c93d5b962ca2ba9069d922", null ],
     [ "best_bound_callback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#af1dcd041edb3fc2a4b0be52f217c1b12", null ],
     [ "log_callback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#ad1754db98e40672449de629d7f2a8771", null ],
     [ "parameters", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a566bee874a11750a6b583f88836e27bb", null ]

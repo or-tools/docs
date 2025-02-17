@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa18a1d39917bd0cb2d31ec42c85af9a4":[1,0,0,2,1,54,215],
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa18a1d39917bd0cb2d31ec42c85af9a4":[2,0,0,0,0,54,215],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa208afe51cb494cf079fe6d5d05bf31f":[1,0,0,2,1,54,58],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa208afe51cb494cf079fe6d5d05bf31f":[2,0,0,0,0,54,58],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#aa3162066e980a885587d7657f013dc23":[1,0,0,2,1,54,74],
@@ -64,8 +62,6 @@ var NAVTREEINDEX9 =
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#acb530cbf8db25f0fd57dc1403d82bf17":[2,0,0,0,0,54,9],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#acb867f43a9520a4080fbcc5a47c1b823":[1,0,0,2,1,54,118],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#acb867f43a9520a4080fbcc5a47c1b823":[2,0,0,0,0,54,118],
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#acbde2be10438fe1e9a0388388f0e2fb1":[1,0,0,2,1,54,65],
-"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#acbde2be10438fe1e9a0388388f0e2fb1":[2,0,0,0,0,54,65],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#accac9a37d08896fea21e1901c79ec341":[1,0,0,2,1,54,88],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#accac9a37d08896fea21e1901c79ec341":[2,0,0,0,0,54,88],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#ace1831246ed8e38d7d6b6d9264186663":[1,0,0,2,1,54,115],
@@ -144,6 +140,8 @@ var NAVTREEINDEX9 =
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af0a1d2e568ad238ef5c0399f6c71e0a4":[2,0,0,0,0,54,91],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af0d7ecc1b22e4b3a791f2945d6d5511a":[1,0,0,2,1,54,172],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af0d7ecc1b22e4b3a791f2945d6d5511a":[2,0,0,0,0,54,172],
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af3d6b1d22c43f12da549440604babd47":[1,0,0,2,1,54,65],
+"classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af3d6b1d22c43f12da549440604babd47":[2,0,0,0,0,54,65],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af59eeeb3b9ac8368de3d77da680553bc":[1,0,0,2,1,54,152],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af59eeeb3b9ac8368de3d77da680553bc":[2,0,0,0,0,54,152],
 "classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#af663892f08809fec29e0dd7cc1ec055f":[1,0,0,2,1,54,16],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#abfc42abf638c266c42d6ef4f525cd34a":[1,0,0,7,1,0,3,16],
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#abfc42abf638c266c42d6ef4f525cd34a":[2,0,0,1,0,0,3,16],
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#ad8c0551a51d1aca44453382354a5577b":[1,0,0,7,1,0,3,10],
-"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#ad8c0551a51d1aca44453382354a5577b":[2,0,0,1,0,0,3,10]
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#ad8c0551a51d1aca44453382354a5577b":[2,0,0,1,0,0,3,10],
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af07ece1b12e750ad07b817dafedffa9c":[1,0,0,7,1,0,3,4],
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af07ece1b12e750ad07b817dafedffa9c":[2,0,0,1,0,0,3,4]
 };

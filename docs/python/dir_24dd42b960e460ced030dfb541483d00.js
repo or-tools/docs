@@ -8,6 +8,7 @@ var dir_24dd42b960e460ced030dfb541483d00 =
     [ "errors.py", "errors_8py.html", "errors_8py" ],
     [ "expressions.py", "expressions_8py.html", "expressions_8py" ],
     [ "hash_model_storage.py", "hash__model__storage_8py.html", "hash__model__storage_8py" ],
+    [ "init_arguments.py", "init__arguments_8py.html", "init__arguments_8py" ],
     [ "mathopt.py", "mathopt_8py.html", null ],
     [ "message_callback.py", "message__callback_8py.html", "message__callback_8py" ],
     [ "model.py", "model_8py.html", "model_8py" ],

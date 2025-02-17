@@ -6,5 +6,6 @@ var searchData=
   ['routingdimension_3',['RoutingDimension',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html',1,'ortools::constraint_solver::pywrapcp']]],
   ['routingindexmanager_4',['RoutingIndexManager',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingIndexManager.html',1,'ortools::constraint_solver::pywrapcp']]],
   ['routingmodel_5',['RoutingModel',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['routingmodelvisitor_6',['RoutingModelVisitor',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModelVisitor.html',1,'ortools::constraint_solver::pywrapcp']]]
+  ['routingmodelvisitor_6',['RoutingModelVisitor',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModelVisitor.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingsearchstatus_7',['RoutingSearchStatus',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStatus.html',1,'ortools::constraint_solver::pywrapcp']]]
 ];

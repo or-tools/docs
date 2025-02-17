@@ -45,6 +45,15 @@ var namespaceortools_1_1service_1_1v1_1_1mathopt =
       [ "_sym_db", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#a5db2beafdce9d7a83362382d98d629d3", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solution__pb2.html#af8fb397d81e7a399a4c3118451558426", null ]
     ] ],
+    [ "solver_resources_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html", [
+      [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#a824e2c7424c21f55aeafdbc00e23f9ce", null ],
+      [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#a1f3a159e40eeebf88b4fdee746cf74b2", null ],
+      [ "_serialized_end", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#a30866d8c10cba69fc10ecafb31b01a9d", null ],
+      [ "_serialized_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#ae23029ee977762009abff4e32c46ecd4", null ],
+      [ "_serialized_start", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#ab7cff9b7a9cc3b1c7f212c55183946e7", null ],
+      [ "_sym_db", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#a8937df00429218faad9be77d1e271565", null ],
+      [ "DESCRIPTOR", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1solver__resources__pb2.html#a204e28b29a636da1c5ebaad9563bf0be", null ]
+    ] ],
     [ "sparse_containers_pb2", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html", [
       [ "_globals", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a10f84c6cf7e7ef76ba565c243dbcc5f6", null ],
       [ "_loaded_options", "namespaceortools_1_1service_1_1v1_1_1mathopt_1_1sparse__containers__pb2.html#a3f9daa02517e0247090d81ed024ba80f", null ],

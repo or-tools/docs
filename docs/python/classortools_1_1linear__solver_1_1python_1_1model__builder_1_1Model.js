@@ -48,7 +48,7 @@ var classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model =
     [ "new_var_series", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a809882a882dcf35a6440df46440f8a5e", null ],
     [ "num_constraints", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a50d8b5b528b704a87d6aaf316117beb8", null ],
     [ "num_variables", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a989c802b45f94d4f122f15dcc3a1189f", null ],
-    [ "objective_expression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a106db8cb749ec4a76ba059017a58aa4e", null ],
+    [ "objective_expression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a4908a7bd0b76f73feb015d9bed9e451c", null ],
     [ "objective_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ab6b5d44c4dbd89b4d6aa3fb3ab9acd7f", null ],
     [ "objective_offset", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#ae7928653a2663b0bcfc8cb76d746eb35", null ],
     [ "var_from_index", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html#a2072183bcfe9e5e1b8d9207daa3b8953", null ],

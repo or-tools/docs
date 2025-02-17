@@ -18,6 +18,18 @@ var searchData=
   ['solvestats_15',['SolveStats',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html',1,'ortools::math_opt::python::result']]],
   ['sparsevectorfilter_16',['SparseVectorFilter',['../classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html',1,'ortools::math_opt::python::sparse_containers']]],
   ['storageupdatetracker_17',['StorageUpdateTracker',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1StorageUpdateTracker.html',1,'ortools::math_opt::python::model_storage']]],
-  ['sumarray_18',['SumArray',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
-  ['svgwrapper_19',['SvgWrapper',['../classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html',1,'ortools::sat::colab::visualization']]]
+  ['streamablecpsatinitarguments_18',['StreamableCpSatInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableCpSatInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamableecosinitarguments_19',['StreamableEcosInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableEcosInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamableglopinitarguments_20',['StreamableGlopInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlopInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamableglpkinitarguments_21',['StreamableGlpkInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlpkInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablegscipinitarguments_22',['StreamableGScipInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGScipInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablegurobiinitarguments_23',['StreamableGurobiInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGurobiInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablehighsinitarguments_24',['StreamableHighsInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableHighsInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamableosqpinitarguments_25',['StreamableOsqpInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableOsqpInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablepdlpinitarguments_26',['StreamablePdlpInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamablePdlpInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablesantoriniinitarguments_27',['StreamableSantoriniInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSantoriniInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablescsinitarguments_28',['StreamableScsInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableScsInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['streamablesolverinitarguments_29',['StreamableSolverInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
+  ['sumarray_30',['SumArray',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
+  ['svgwrapper_31',['SvgWrapper',['../classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html',1,'ortools::sat::colab::visualization']]]
 ];

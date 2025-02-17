@@ -14,5 +14,6 @@ var namespaceortools =
     [ "sat", "namespaceortools_1_1sat.html", "namespaceortools_1_1sat" ],
     [ "scheduling", "namespaceortools_1_1scheduling.html", "namespaceortools_1_1scheduling" ],
     [ "service", "namespaceortools_1_1service.html", "namespaceortools_1_1service" ],
-    [ "util", "namespaceortools_1_1util.html", "namespaceortools_1_1util" ]
+    [ "util", "namespaceortools_1_1util.html", "namespaceortools_1_1util" ],
+    [ "_load_ortools_libs", "namespaceortools.html#ace999c65181fb1fc8302d92cc4d828ea", null ]
 ];

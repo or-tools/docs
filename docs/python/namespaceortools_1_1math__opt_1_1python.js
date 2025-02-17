@@ -10,6 +10,7 @@ var namespaceortools_1_1math__opt_1_1python =
       [ "fast_sum", "namespaceortools_1_1math__opt_1_1python_1_1expressions.html#a257fe1b87c41dadfd0a7bafbfbdd007b", null ]
     ] ],
     [ "hash_model_storage", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage.html", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage" ],
+    [ "init_arguments", "namespaceortools_1_1math__opt_1_1python_1_1init__arguments.html", "namespaceortools_1_1math__opt_1_1python_1_1init__arguments" ],
     [ "ipc", "namespaceortools_1_1math__opt_1_1python_1_1ipc.html", "namespaceortools_1_1math__opt_1_1python_1_1ipc" ],
     [ "mathopt", "namespaceortools_1_1math__opt_1_1python_1_1mathopt.html", null ],
     [ "message_callback", "namespaceortools_1_1math__opt_1_1python_1_1message__callback.html", [

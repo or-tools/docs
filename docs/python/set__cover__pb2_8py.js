@@ -1,10 +1,10 @@
 var set__cover__pb2_8py =
 [
-    [ "_globals", "set__cover__pb2_8py.html#a685710f084ce9078a46eed79aa70c002", null ],
-    [ "_loaded_options", "set__cover__pb2_8py.html#a00235a850d900a7fe9344909a296eb92", null ],
-    [ "_serialized_end", "set__cover__pb2_8py.html#a19f239bdc79c66183eafca0d682a9b47", null ],
-    [ "_serialized_options", "set__cover__pb2_8py.html#a3c8c6866f9d8d02040d8ece90aa5c15d", null ],
-    [ "_serialized_start", "set__cover__pb2_8py.html#aed9c963a76702c6c4055a5761b248d25", null ],
-    [ "_sym_db", "set__cover__pb2_8py.html#a37fc0ae088f6a2f75d107abdc43a2182", null ],
-    [ "DESCRIPTOR", "set__cover__pb2_8py.html#a6daf2a2e248cbc109d5593a3274f94f9", null ]
+    [ "ortools.algorithms.set_cover_pb2._globals", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a685710f084ce9078a46eed79aa70c002", null ],
+    [ "ortools.algorithms.set_cover_pb2._loaded_options", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a00235a850d900a7fe9344909a296eb92", null ],
+    [ "ortools.algorithms.set_cover_pb2._serialized_end", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a19f239bdc79c66183eafca0d682a9b47", null ],
+    [ "ortools.algorithms.set_cover_pb2._serialized_options", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a3c8c6866f9d8d02040d8ece90aa5c15d", null ],
+    [ "ortools.algorithms.set_cover_pb2._serialized_start", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#aed9c963a76702c6c4055a5761b248d25", null ],
+    [ "ortools.algorithms.set_cover_pb2._sym_db", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a37fc0ae088f6a2f75d107abdc43a2182", null ],
+    [ "ortools.algorithms.set_cover_pb2.DESCRIPTOR", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a6daf2a2e248cbc109d5593a3274f94f9", null ]
 ];

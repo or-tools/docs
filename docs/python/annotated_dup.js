@@ -36,7 +36,6 @@ var annotated_dup =
           [ "NumericalRevInteger", "classortools_1_1constraint__solver_1_1pywrapcp_1_1NumericalRevInteger.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1NumericalRevInteger" ],
           [ "OptimizeVar", "classortools_1_1constraint__solver_1_1pywrapcp_1_1OptimizeVar.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1OptimizeVar" ],
           [ "Pack", "classortools_1_1constraint__solver_1_1pywrapcp_1_1Pack.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1Pack" ],
-          [ "PathOperator", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PathOperator.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PathOperator" ],
           [ "PathsMetadata", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PathsMetadata.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PathsMetadata" ],
           [ "PropagationBaseObject", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PropagationBaseObject.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PropagationBaseObject" ],
           [ "PyConstraint", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PyConstraint.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1PyConstraint" ],
@@ -50,6 +49,7 @@ var annotated_dup =
           [ "RoutingIndexManager", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingIndexManager.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingIndexManager" ],
           [ "RoutingModel", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel" ],
           [ "RoutingModelVisitor", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModelVisitor.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModelVisitor" ],
+          [ "RoutingSearchStatus", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStatus.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStatus" ],
           [ "SearchLimit", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchLimit.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchLimit" ],
           [ "SearchMonitor", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor" ],
           [ "SequenceVar", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVar.html", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SequenceVar" ],
@@ -76,18 +76,10 @@ var annotated_dup =
             [ "VariableExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr.html", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1VariableExpr" ]
           ] ],
           [ "model_builder", "namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html", [
-            [ "_BoundedLinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__BoundedLinearExpr" ],
-            [ "_LinearExpression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__LinearExpression" ],
-            [ "_Product", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Product.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Product" ],
-            [ "_Sum", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1__Sum" ],
-            [ "BoundedLinearExpression", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1BoundedLinearExpression" ],
             [ "EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint" ],
             [ "LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint" ],
-            [ "LinearExpr", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearExpr" ],
             [ "Model", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model" ],
-            [ "Solver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver" ],
-            [ "VarEqVar", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1VarEqVar" ],
-            [ "Variable", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Variable" ]
+            [ "Solver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver" ]
           ] ]
         ] ],
         [ "pywraplp", "namespaceortools_1_1linear__solver_1_1pywraplp.html", [
@@ -124,6 +116,21 @@ var annotated_dup =
             [ "_UpdateTracker", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker" ],
             [ "_VariableStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage" ],
             [ "HashModelStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage.html", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1HashModelStorage" ]
+          ] ],
+          [ "init_arguments", "namespaceortools_1_1math__opt_1_1python_1_1init__arguments.html", [
+            [ "GurobiISVKey", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1GurobiISVKey.html", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1GurobiISVKey" ],
+            [ "StreamableCpSatInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableCpSatInitArguments.html", null ],
+            [ "StreamableEcosInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableEcosInitArguments.html", null ],
+            [ "StreamableGlopInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlopInitArguments.html", null ],
+            [ "StreamableGlpkInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGlpkInitArguments.html", null ],
+            [ "StreamableGScipInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGScipInitArguments.html", null ],
+            [ "StreamableGurobiInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGurobiInitArguments.html", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableGurobiInitArguments" ],
+            [ "StreamableHighsInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableHighsInitArguments.html", null ],
+            [ "StreamableOsqpInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableOsqpInitArguments.html", null ],
+            [ "StreamablePdlpInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamablePdlpInitArguments.html", null ],
+            [ "StreamableSantoriniInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSantoriniInitArguments.html", null ],
+            [ "StreamableScsInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableScsInitArguments.html", null ],
+            [ "StreamableSolverInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments" ]
           ] ],
           [ "ipc", "namespaceortools_1_1math__opt_1_1python_1_1ipc.html", [
             [ "remote_http_solve", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html", [
@@ -240,22 +247,16 @@ var annotated_dup =
         ] ],
         [ "python", "namespaceortools_1_1sat_1_1python.html", [
           [ "cp_model", "namespaceortools_1_1sat_1_1python_1_1cp__model.html", [
-            [ "_NotBooleanVariable", "classortools_1_1sat_1_1python_1_1cp__model_1_1__NotBooleanVariable.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1__NotBooleanVariable" ],
-            [ "_ProductCst", "classortools_1_1sat_1_1python_1_1cp__model_1_1__ProductCst.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1__ProductCst" ],
-            [ "_Sum", "classortools_1_1sat_1_1python_1_1cp__model_1_1__Sum.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1__Sum" ],
-            [ "_SumArray", "classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1__SumArray" ],
-            [ "_WeightedSum", "classortools_1_1sat_1_1python_1_1cp__model_1_1__WeightedSum.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1__WeightedSum" ],
-            [ "BoundedLinearExpression", "classortools_1_1sat_1_1python_1_1cp__model_1_1BoundedLinearExpression.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1BoundedLinearExpression" ],
             [ "Constraint", "classortools_1_1sat_1_1python_1_1cp__model_1_1Constraint.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1Constraint" ],
             [ "CpModel", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel" ],
             [ "CpSolver", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver" ],
             [ "CpSolverSolutionCallback", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback" ],
             [ "IntervalVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar" ],
             [ "IntVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar" ],
-            [ "LinearExpr", "classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1LinearExpr" ],
             [ "ObjectiveSolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1ObjectiveSolutionPrinter.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1ObjectiveSolutionPrinter" ],
             [ "VarArrayAndObjectiveSolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArrayAndObjectiveSolutionPrinter.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArrayAndObjectiveSolutionPrinter" ],
-            [ "VarArraySolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter" ]
+            [ "VarArraySolutionPrinter", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1VarArraySolutionPrinter" ],
+            [ "VariableList", "classortools_1_1sat_1_1python_1_1cp__model_1_1VariableList.html", "classortools_1_1sat_1_1python_1_1cp__model_1_1VariableList" ]
           ] ]
         ] ]
       ] ]

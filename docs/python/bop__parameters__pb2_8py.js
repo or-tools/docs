@@ -1,10 +1,10 @@
 var bop__parameters__pb2_8py =
 [
-    [ "_globals", "bop__parameters__pb2_8py.html#ad056a0a4fb9bd02302a33077d13e998b", null ],
-    [ "_loaded_options", "bop__parameters__pb2_8py.html#a4c80faf94545c8d141a5a71ccf53df51", null ],
-    [ "_serialized_end", "bop__parameters__pb2_8py.html#a671765e93c2948cd51d089d8a29f346c", null ],
-    [ "_serialized_options", "bop__parameters__pb2_8py.html#afa0d047305b164ed02ae9d3d80894d7c", null ],
-    [ "_serialized_start", "bop__parameters__pb2_8py.html#a0fdf04ef8f1fc4538a76733a66321666", null ],
-    [ "_sym_db", "bop__parameters__pb2_8py.html#aaba14bd792716351a3e7c300860f0a44", null ],
-    [ "DESCRIPTOR", "bop__parameters__pb2_8py.html#a955a4dea35c7f42d1f494186e9a34a2a", null ]
+    [ "ortools.bop.bop_parameters_pb2._globals", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#ad056a0a4fb9bd02302a33077d13e998b", null ],
+    [ "ortools.bop.bop_parameters_pb2._loaded_options", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#a4c80faf94545c8d141a5a71ccf53df51", null ],
+    [ "ortools.bop.bop_parameters_pb2._serialized_end", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#a671765e93c2948cd51d089d8a29f346c", null ],
+    [ "ortools.bop.bop_parameters_pb2._serialized_options", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#afa0d047305b164ed02ae9d3d80894d7c", null ],
+    [ "ortools.bop.bop_parameters_pb2._serialized_start", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#a0fdf04ef8f1fc4538a76733a66321666", null ],
+    [ "ortools.bop.bop_parameters_pb2._sym_db", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#aaba14bd792716351a3e7c300860f0a44", null ],
+    [ "ortools.bop.bop_parameters_pb2.DESCRIPTOR", "namespaceortools_1_1bop_1_1bop__parameters__pb2.html#a955a4dea35c7f42d1f494186e9a34a2a", null ]
 ];
