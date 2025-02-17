@@ -17,8 +17,11 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache swig
 
 # Install .Net
-# ref: https://learn.microsoft.com/en-us/dotnet/core/install/linux-alpine#install-net-6
-RUN apk add --no-cache dotnet6-sdk
+# see: https://learn.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
+RUN apk add --no-cache bash icu-libs
+RUN wget -q "https://dot.net/v1/dotnet-install.sh" \
+&& chmod a+x dotnet-install.sh \
+&& ./dotnet-install.sh -c 6.0 -i /usr/local/bin
 # Trigger first run experience by running arbitrary cmd
 RUN dotnet --info
 
