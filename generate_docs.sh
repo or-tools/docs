@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euxo pipefail
+set -euo pipefail
 
 function assert_defined(){
   if [[ -z "${!1}" ]]; then
@@ -134,9 +134,12 @@ $0 all"
 # Main
 function main() {
   case ${1} in
-    -h | --help)
+    cpp | dotnet | java | python | all) ;;
+    -h | --help | *)
       usage; exit ;;
   esac
+  # log all cmd
+  set -x
 
   # shellcheck disable=SC2155
   declare -r ROOT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
@@ -159,13 +162,17 @@ function main() {
       gen_cpp
       exit ;;
     dotnet)
-      gen_dotnet;;
+      gen_dotnet
+      exit ;;
     java)
-      gen_java ;;
+      gen_java
+      exit ;;
     python)
-      gen_python ;;
-    *)
-      gen_all ;;
+      gen_python
+      exit ;;
+    all)
+      gen_all
+      exit ;;
   esac
 }
 
