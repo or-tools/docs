@@ -7,8 +7,7 @@ FROM alpine:edge AS env
 #############
 ENV PATH=/usr/local/bin:$PATH
 RUN apk add --no-cache \
- wget git \
- linux-headers build-base xfce4-dev-tools cmake \
+ wget git build-base linux-headers cmake xfce4-dev-tools \
  doxygen
 ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["/bin/sh"]
@@ -16,12 +15,8 @@ CMD ["/bin/sh"]
 # Install Swig
 RUN apk add --no-cache swig
 
-# Install .Net
-# see: https://learn.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
-RUN apk add --no-cache bash icu-libs
-RUN wget -q "https://dot.net/v1/dotnet-install.sh" \
-&& chmod a+x dotnet-install.sh \
-&& ./dotnet-install.sh -c 6.0 -i /usr/local/bin
+# .NET install
+RUN apk add --no-cache dotnet8-sdk
 # Trigger first run experience by running arbitrary cmd
 RUN dotnet --info
 
@@ -32,8 +27,8 @@ RUN apk add --no-cache openjdk8 maven
 # Install Python
 RUN apk add --no-cache python3-dev py3-pip py3-wheel \
  py3-numpy py3-pandas py3-matplotlib py3-scipy
-RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED
-RUN python3 -m pip install absl-py mypy mypy-protobuf pdoc immutabledict
+RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED \
+&& python3 -m pip install absl-py mypy mypy-protobuf pdoc immutabledict
 
 ################
 ##  OR-TOOLS  ##
