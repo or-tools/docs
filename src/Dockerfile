@@ -1,41 +1,40 @@
 # Create a virtual environment with all tools installed
-# ref: https://hub.docker.com/_/alpine
-FROM alpine:edge AS env
+# ref: https://hub.docker.com/_/archlinux/
+FROM archlinux:latest AS env
 
 #############
 ##  SETUP  ##
 #############
 ENV PATH=/usr/local/bin:$PATH
-RUN apk add --no-cache \
- wget git build-base linux-headers cmake xfce4-dev-tools \
- doxygen
-ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["/bin/sh"]
+RUN pacman -Syu --noconfirm git base-devel cmake doxygen
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD [ "/bin/bash" ]
 
 # Install Swig
-RUN apk add --no-cache swig
+RUN pacman -Syu --noconfirm swig
 
-# .NET install
-RUN apk add --no-cache dotnet8-sdk
+# Install .Net
+RUN pacman -Syu --noconfirm dotnet-sdk
 # Trigger first run experience by running arbitrary cmd
 RUN dotnet --info
 
 # Install Java
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-RUN apk add --no-cache openjdk8 maven
+RUN pacman -Syu --noconfirm jdk-openjdk maven
+ENV JAVA_HOME=/usr/lib/jvm/default
 
 # Install Python
-RUN apk add --no-cache python3-dev py3-pip py3-wheel \
- py3-numpy py3-pandas py3-matplotlib py3-scipy
-RUN rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED \
-&& python3 -m pip install absl-py mypy mypy-protobuf pdoc immutabledict
+RUN pacman -Syu --noconfirm python python-pip \
+ python-wheel python-virtualenv python-setuptools \
+ python-numpy python-pandas
+RUN python -m pip install --break-system-package \
+ absl-py mypy mypy-protobuf pdoc immutabledict
 
 ################
 ##  OR-TOOLS  ##
 ################
 FROM env AS devel
 WORKDIR /root
-ENV DISTRIBUTION=alpine-edge
+ENV DISTRIBUTION=archlinux
 
 # Download sources
 # use SRC_GIT_SHA1 to modify the command
