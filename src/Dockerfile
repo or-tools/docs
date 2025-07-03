@@ -25,16 +25,19 @@ ENV JAVA_HOME=/usr/lib/jvm/default
 # Install Python
 RUN pacman -Syu --noconfirm python python-pip \
  python-wheel python-virtualenv python-setuptools \
- python-numpy python-pandas
+ python-numpy python-pandas python-matplotlib \
+ python-immutabledict python-scipy python-requests \
+ pdoc
 RUN python -m pip install --break-system-package \
- absl-py mypy mypy-protobuf pdoc immutabledict
+ absl-py mypy mypy-protobuf
 
 ################
 ##  OR-TOOLS  ##
 ################
 FROM env AS devel
-WORKDIR /root
 ENV DISTRIBUTION=archlinux
+
+WORKDIR /root
 
 # Download sources
 # use SRC_GIT_SHA1 to modify the command
