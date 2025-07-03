@@ -76,7 +76,7 @@ var lp__types_8h =
     [ "operations_research::glop::RowToIntIndex", "namespaceoperations__research_1_1glop.html#af2ae3ca10438618ca2fc81f38dcb80e1", null ],
     [ "operations_research::glop::ToDouble", "namespaceoperations__research_1_1glop.html#afd6d278f9d061a91716c6770f2d723e8", null ],
     [ "operations_research::glop::VariableToConstraintStatus", "namespaceoperations__research_1_1glop.html#ae705f98e76f1fc4564880c29c8f4631f", null ],
-    [ "operations_research::glop::kEpsilon", "namespaceoperations__research_1_1glop.html#acfbafbe0d29ec4744f0a01d846597889", null ],
-    [ "operations_research::glop::kInfinity", "namespaceoperations__research_1_1glop.html#a073868a91ec87d04bc963609af7806b6", null ],
-    [ "operations_research::glop::kRangeMax", "namespaceoperations__research_1_1glop.html#a7e4e367d4a9e34c40612fcd3cf439270", null ]
+    [ "operations_research::glop::kEpsilon", "namespaceoperations__research_1_1glop.html#a7b2a07b1d9a17ba167384a840c3f598a", null ],
+    [ "operations_research::glop::kInfinity", "namespaceoperations__research_1_1glop.html#ace2ccc178c5fb1acaeead771ad53aeb6", null ],
+    [ "operations_research::glop::kRangeMax", "namespaceoperations__research_1_1glop.html#af470cd5411deb0798321f0901d4e72d8", null ]
 ];

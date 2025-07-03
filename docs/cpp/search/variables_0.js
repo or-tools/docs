@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_0',['a',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html#a9dbcc6cf48e226b4254fe1934ca4ef27',1,'operations_research::math_opt::NontrivialInfeasibleIp::a'],['../structoperations__research_1_1sat_1_1BinaryClause.html#a838e4aacc4da33547b1a5f398d3f4b03',1,'operations_research::sat::BinaryClause::a'],['../structoperations__research_1_1sat_1_1Relation.html#aa4dceb1d3944b3b7f81a96d15d504fca',1,'operations_research::sat::Relation::a']]],
-  ['absl_5fattribute_5fpacked_1',['ABSL_ATTRIBUTE_PACKED',['../namespacegtl.html#afce6b52584bb29e142d51b262b8451e5',1,'gtl::ABSL_ATTRIBUTE_PACKED'],['../namespaceutil__intops.html#aed4b386c849431b2129c8b0a4d70b3d7',1,'util_intops::ABSL_ATTRIBUTE_PACKED']]],
+  ['absl_5fattribute_5fpacked_1',['ABSL_ATTRIBUTE_PACKED',['../namespacegtl.html#afce6b52584bb29e142d51b262b8451e5',1,'gtl']]],
   ['absolute_5fconstraint_5ftolerance_2',['absolute_constraint_tolerance',['../structoperations__research_1_1math__opt_1_1FeasibilityCheckerOptions.html#ae8653b9cd833f9916bb5c4c6591d362a',1,'operations_research::math_opt::FeasibilityCheckerOptions']]],
   ['absolute_5fgap_5ftolerance_3',['absolute_gap_tolerance',['../structoperations__research_1_1math__opt_1_1SolveParameters.html#a76df9d12c357b51919b0187930763565',1,'operations_research::math_opt::SolveParameters']]],
   ['accept_5fpath_5fend_5fbase_4',['accept_path_end_base',['../structoperations__research_1_1PathOperator_1_1IterationParameters.html#a114469f96221d2cc98afbbd15cbffb1a',1,'operations_research::PathOperator::IterationParameters']]],
@@ -33,7 +33,7 @@ var searchData=
   ['arc_5fcapacity_5f_30',['arc_capacity_',['../classutil_1_1BaseGraph.html#a58fd651211672a6783b14b0da1b68b43',1,'util::BaseGraph']]],
   ['arc_5fcoefficient_31',['arc_coefficient',['../structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters.html#a4f3c4095fdf29cd2399d6820f2455ebe',1,'operations_research::SavingsFilteredHeuristic::SavingsParameters']]],
   ['arc_5fname_32',['arc_name',['../structoperations__research_1_1routing_1_1RoutingSolution_1_1Event.html#a2ee694f8f83c734cb0541149e1591e9d',1,'operations_research::routing::RoutingSolution::Event']]],
-  ['arc_5fpath_33',['arc_path',['../structoperations__research_1_1PathWithLength.html#a8b3d384f84f3d7022e78b233785ea475',1,'operations_research::PathWithLength']]],
+  ['arc_5fpath_33',['arc_path',['../structoperations__research_1_1GraphPathWithLength.html#a0ce8d40b496b2530b8bb84719fe999f6',1,'operations_research::GraphPathWithLength::arc_path'],['../structoperations__research_1_1PathWithLength.html#a8b3d384f84f3d7022e78b233785ea475',1,'operations_research::PathWithLength::arc_path']]],
   ['arcs_34',['arcs',['../structoperations__research_1_1packing_1_1ArcFlowGraph.html#a4b8a163a8f2a3de70308d2b5eb066730',1,'operations_research::packing::ArcFlowGraph']]],
   ['area_5findex_35',['area_index',['../structoperations__research_1_1sat_1_1SolutionCrush_1_1BoxInAreaLiteral.html#ad2e240f354f6aaaf57eb0829bf16cfbf',1,'operations_research::sat::SolutionCrush::BoxInAreaLiteral']]],
   ['arena_36',['arena',['../structoperations__research_1_1sat_1_1Neighborhood.html#aadc05507cd154b179af96e1cb024d84a',1,'operations_research::sat::Neighborhood']]],
@@ -41,9 +41,11 @@ var searchData=
   ['args_38',['args',['../structoperations__research_1_1fz_1_1LexerInfo.html#a4dab0f57032f672f76cbcecc394b06b4',1,'operations_research::fz::LexerInfo']]],
   ['arguments_39',['arguments',['../structoperations__research_1_1fz_1_1Constraint.html#aca50724582be7d061048a739d4e1dc94',1,'operations_research::fz::Constraint::arguments'],['../structConstraint.html#aca50724582be7d061048a739d4e1dc94',1,'Constraint::arguments']]],
   ['arguments_5fto_5fnorm_40',['arguments_to_norm',['../structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#a2cd210a4cf5bca7b708a7f95237eef2c',1,'operations_research::math_opt::SecondOrderConeConstraintData']]],
-  ['assignment_5f_41',['assignment_',['../classoperations__research_1_1IntVarFilteredHeuristic.html#a1a48f614cbb0c665f5908c04536742e1',1,'operations_research::IntVarFilteredHeuristic']]],
-  ['at_5fmost_5fones_42',['at_most_ones',['../structoperations__research_1_1sat_1_1LinearRelaxation.html#ada8c49430a53760567c270c2164f6ed2',1,'operations_research::sat::LinearRelaxation']]],
-  ['auxiliary_5fobjective_5fvalues_43',['auxiliary_objective_values',['../structoperations__research_1_1math__opt_1_1PrimalSolution.html#a09e69ec90607b0c560924e1f72624c37',1,'operations_research::math_opt::PrimalSolution']]],
-  ['auxiliary_5fobjectives_44',['auxiliary_objectives',['../structoperations__research_1_1math__opt_1_1ModelSummary.html#a9ed22214fc5b3001ebe9823481543d8f',1,'operations_research::math_opt::ModelSummary']]],
-  ['average_5f_45',['average_',['../classoperations__research_1_1DistributionStat.html#a5d0a36ede0aeab011d6cf0eb9f84eef1',1,'operations_research::DistributionStat']]]
+  ['assigned_5fends_5f_41',['assigned_ends_',['../classoperations__research_1_1sat_1_1CtExhaustiveHelper.html#a2222e0f5bc94d206bbd303576bfda37c',1,'operations_research::sat::CtExhaustiveHelper']]],
+  ['assignment_5f_42',['assignment_',['../classoperations__research_1_1IntVarFilteredHeuristic.html#a1a48f614cbb0c665f5908c04536742e1',1,'operations_research::IntVarFilteredHeuristic']]],
+  ['at_5fmost_5fones_43',['at_most_ones',['../structoperations__research_1_1sat_1_1LinearRelaxation.html#ada8c49430a53760567c270c2164f6ed2',1,'operations_research::sat::LinearRelaxation']]],
+  ['attribute_5fnames_44',['attribute_names',['../structoperations__research_1_1math__opt_1_1codegen_1_1CodegenAttrTypeDescriptor.html#aa9ce1028ab3d00e7c4410a18f6a048ba',1,'operations_research::math_opt::codegen::CodegenAttrTypeDescriptor']]],
+  ['auxiliary_5fobjective_5fvalues_45',['auxiliary_objective_values',['../structoperations__research_1_1math__opt_1_1PrimalSolution.html#a09e69ec90607b0c560924e1f72624c37',1,'operations_research::math_opt::PrimalSolution']]],
+  ['auxiliary_5fobjectives_46',['auxiliary_objectives',['../structoperations__research_1_1math__opt_1_1ModelSummary.html#a9ed22214fc5b3001ebe9823481543d8f',1,'operations_research::math_opt::ModelSummary']]],
+  ['average_5f_47',['average_',['../classoperations__research_1_1DistributionStat.html#a5d0a36ede0aeab011d6cf0eb9f84eef1',1,'operations_research::DistributionStat']]]
 ];

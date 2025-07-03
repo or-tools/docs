@@ -19,5 +19,6 @@ var classoperations__research_1_1sat_1_1LinearConstraintBuilder =
     [ "BuildExpression", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a0eb0256f292f450e1ef73d2c9cff626d", null ],
     [ "BuildIntoConstraintAndCheckOverflow", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#ac1071eab8aefd516cd4666a16ffeafa8", null ],
     [ "Clear", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a9fc77dc884625e11ae7939952ecf0a7c", null ],
+    [ "NumTerms", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a94db618e6c4bdd820241d4673ec3c0d2", null ],
     [ "ResetBounds", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html#a71dd7f4069fe6046fcd778b9a45fa2f5", null ]
 ];

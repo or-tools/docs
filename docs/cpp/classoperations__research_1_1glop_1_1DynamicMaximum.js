@@ -7,6 +7,7 @@ var classoperations__research_1_1glop_1_1DynamicMaximum =
     [ "DenseAddOrUpdate", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a33f525a4047c57a59794815697a5db58", null ],
     [ "GetMaximum", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a5a1cf0bc9507c1dfcef22b8d89d2d9f0", null ],
     [ "Remove", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a49948cf4fa45585c375e80365627b037", null ],
+    [ "SetRandom", "classoperations__research_1_1glop_1_1DynamicMaximum.html#af9f033968eaf3d623d98103cbc605060", null ],
     [ "Size", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a1583d527152e6addbcfb48fb03826c53", null ],
     [ "StartDenseUpdates", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a7367f4a7d744660c44d2789eaa10d964", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1DynamicMaximum.html#a2c8ac403f3cbdea167c1095313305499", null ]

@@ -36,6 +36,7 @@ var namespaceoperations__research_1_1glop =
     [ "MatrixEntry", "structoperations__research_1_1glop_1_1MatrixEntry.html", "structoperations__research_1_1glop_1_1MatrixEntry" ],
     [ "MatrixNonZeroPattern", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern.html", "classoperations__research_1_1glop_1_1MatrixNonZeroPattern" ],
     [ "MatrixView", "classoperations__research_1_1glop_1_1MatrixView.html", "classoperations__research_1_1glop_1_1MatrixView" ],
+    [ "ParsedConstraint", "structoperations__research_1_1glop_1_1ParsedConstraint.html", "structoperations__research_1_1glop_1_1ParsedConstraint" ],
     [ "Permutation", "classoperations__research_1_1glop_1_1Permutation.html", "classoperations__research_1_1glop_1_1Permutation" ],
     [ "Preprocessor", "classoperations__research_1_1glop_1_1Preprocessor.html", "classoperations__research_1_1glop_1_1Preprocessor" ],
     [ "PrimalEdgeNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html", "classoperations__research_1_1glop_1_1PrimalEdgeNorms" ],
@@ -191,6 +192,8 @@ var namespaceoperations__research_1_1glop =
     [ "operator<<", "namespaceoperations__research_1_1glop.html#addda381da89d90f0b0efb7b4036ee76e", null ],
     [ "operator<<", "namespaceoperations__research_1_1glop.html#a5c295be1c2eb37b74c966598f03e4aea", null ],
     [ "operator<<", "namespaceoperations__research_1_1glop.html#aecf3deb4ede6cfe7f5bb48faa28caf3d", null ],
+    [ "ParseConstraint", "namespaceoperations__research_1_1glop.html#a72d046aba555bd980257b006e18be116", null ],
+    [ "ParseLp", "namespaceoperations__research_1_1glop.html#a5e469d7b560acfeff86f84e91cdf5477", null ],
     [ "PartialScalarProduct", "namespaceoperations__research_1_1glop.html#ad2cb64ef0c88350c1ad4c731e0b7e183", null ],
     [ "PermuteWithKnownNonZeros", "namespaceoperations__research_1_1glop.html#a6a2019fc6c15a0413896d3f35057a070", null ],
     [ "PermuteWithScratchpad", "namespaceoperations__research_1_1glop.html#a08d7a83791c6677d1008336cacf3d591", null ],
@@ -232,7 +235,7 @@ var namespaceoperations__research_1_1glop =
     [ "VariableToConstraintStatus", "namespaceoperations__research_1_1glop.html#ae705f98e76f1fc4564880c29c8f4631f", null ],
     [ "e_", "namespaceoperations__research_1_1glop.html#a48ecbb1ab764defb22cb2fb54cc4487e", null ],
     [ "kDeterministicSeed", "namespaceoperations__research_1_1glop.html#a77a1280f4ed61e3b9cb3bed30e929613", null ],
-    [ "kEpsilon", "namespaceoperations__research_1_1glop.html#acfbafbe0d29ec4744f0a01d846597889", null ],
-    [ "kInfinity", "namespaceoperations__research_1_1glop.html#a073868a91ec87d04bc963609af7806b6", null ],
-    [ "kRangeMax", "namespaceoperations__research_1_1glop.html#a7e4e367d4a9e34c40612fcd3cf439270", null ]
+    [ "kEpsilon", "namespaceoperations__research_1_1glop.html#a7b2a07b1d9a17ba167384a840c3f598a", null ],
+    [ "kInfinity", "namespaceoperations__research_1_1glop.html#ace2ccc178c5fb1acaeead771ad53aeb6", null ],
+    [ "kRangeMax", "namespaceoperations__research_1_1glop.html#af470cd5411deb0798321f0901d4e72d8", null ]
 ];

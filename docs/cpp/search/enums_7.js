@@ -6,5 +6,6 @@ var searchData=
   ['intervalstrategy_3',['IntervalStrategy',['../classoperations__research_1_1Solver.html#ae21b3786b7770dc880343e4a1445b424',1,'operations_research::Solver']]],
   ['intvaluestrategy_4',['IntValueStrategy',['../classoperations__research_1_1Solver.html#ae63acd77b8c2ee40387795051298f659',1,'operations_research::Solver']]],
   ['intvarstrategy_5',['IntVarStrategy',['../classoperations__research_1_1Solver.html#a8bda7ed6e7e533cca4c44eba6efffc8b',1,'operations_research::Solver']]],
-  ['iterationtype_6',['IterationType',['../namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caea',1,'operations_research::pdlp']]]
+  ['itemorbintype_6',['ItemOrBinType',['../classoperations__research_1_1sat_1_1SpecialBinPackingHelper.html#abc9c0b0c4ec031f169334e573c1cf607',1,'operations_research::sat::SpecialBinPackingHelper']]],
+  ['iterationtype_7',['IterationType',['../namespaceoperations__research_1_1pdlp.html#afe5252c7e11352b2fd773332db49caea',1,'operations_research::pdlp']]]
 ];

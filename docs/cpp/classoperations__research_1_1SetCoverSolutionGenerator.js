@@ -1,0 +1,26 @@
+var classoperations__research_1_1SetCoverSolutionGenerator =
+[
+    [ "SetCoverSolutionGenerator", "classoperations__research_1_1SetCoverSolutionGenerator.html#af769bf6260032229d0e72b563815ff46", null ],
+    [ "~SetCoverSolutionGenerator", "classoperations__research_1_1SetCoverSolutionGenerator.html#a53de4aefbf5fa55c79af0fa7262bdc08", null ],
+    [ "CheckInvariantConsistency", "classoperations__research_1_1SetCoverSolutionGenerator.html#afb54a2fd5b9774845edc3621d50ce4c8", null ],
+    [ "class_name", "classoperations__research_1_1SetCoverSolutionGenerator.html#af263decbf0e3c89048f76c9af19817a2", null ],
+    [ "cost", "classoperations__research_1_1SetCoverSolutionGenerator.html#ac6570dd8b9cda7ee5c39a1c9a0986f60", null ],
+    [ "inv", "classoperations__research_1_1SetCoverSolutionGenerator.html#aa031f7b1130ba569a18b84cf0e387503", null ],
+    [ "max_iterations", "classoperations__research_1_1SetCoverSolutionGenerator.html#a4cf6f12a89bcba4e83c416c4899b309d", null ],
+    [ "model", "classoperations__research_1_1SetCoverSolutionGenerator.html#a97605f8327297e14664c146ceb13a7ae", null ],
+    [ "name", "classoperations__research_1_1SetCoverSolutionGenerator.html#abc31df82a19e143dbf98393acae79413", null ],
+    [ "NextSolution", "classoperations__research_1_1SetCoverSolutionGenerator.html#a7c1c8ebe1ca3f5039a0653c0162ed062", null ],
+    [ "NextSolution", "classoperations__research_1_1SetCoverSolutionGenerator.html#aa427ff1e6fda2f64e6eddd04a926bcf1", null ],
+    [ "NextSolution", "classoperations__research_1_1SetCoverSolutionGenerator.html#ae3fd690ce46b0a442bba0821ef5d37d2", null ],
+    [ "num_subsets", "classoperations__research_1_1SetCoverSolutionGenerator.html#a432b37670f55c5e5466a59e951cd6c75", null ],
+    [ "ResetLimits", "classoperations__research_1_1SetCoverSolutionGenerator.html#a1fb03216e5ef28f0304b9b223b334570", null ],
+    [ "run_time", "classoperations__research_1_1SetCoverSolutionGenerator.html#ac6ec702eda278e70e31a39dafc7f1f7c", null ],
+    [ "run_time_in_microseconds", "classoperations__research_1_1SetCoverSolutionGenerator.html#a2e12c61b0ce5def18be3ed9a1978c4b9", null ],
+    [ "run_time_in_seconds", "classoperations__research_1_1SetCoverSolutionGenerator.html#a0748fe25dd1a742f46f7d126c530b31b", null ],
+    [ "SetMaxIterations", "classoperations__research_1_1SetCoverSolutionGenerator.html#afd6a5ae1fcd77f5b61269aa75c50193e", null ],
+    [ "SetName", "classoperations__research_1_1SetCoverSolutionGenerator.html#a00631af643aa1c32a4daf55e5a5d9e7e", null ],
+    [ "SetTimeLimitInSeconds", "classoperations__research_1_1SetCoverSolutionGenerator.html#ae35a0594e91355ead406d03be0e7d001", null ],
+    [ "time_limit_in_seconds", "classoperations__research_1_1SetCoverSolutionGenerator.html#aef06f31f2d55f9be07ab6b3085ed91b4", null ],
+    [ "consistency_level_", "classoperations__research_1_1SetCoverSolutionGenerator.html#a3b47b695cdbdbe239f72e26a9dc71925", null ],
+    [ "run_time_", "classoperations__research_1_1SetCoverSolutionGenerator.html#a7d46d884ebc54720d599636062bbf37d", null ]
+];

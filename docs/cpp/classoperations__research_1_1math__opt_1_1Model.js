@@ -1,7 +1,7 @@
 var classoperations__research_1_1math__opt_1_1Model =
 [
     [ "Model", "classoperations__research_1_1math__opt_1_1Model.html#add57a326a4db39be75750e0b28f568f2", null ],
-    [ "Model", "classoperations__research_1_1math__opt_1_1Model.html#a7e7f7e68ecf91fe8c55c9018fe7295e2", null ],
+    [ "Model", "classoperations__research_1_1math__opt_1_1Model.html#a215f0f10d53ae7629965b23e1ab5c4db", null ],
     [ "Model", "classoperations__research_1_1math__opt_1_1Model.html#aa6563b44d68b59f725f4e1a8a9fa1d9a", null ],
     [ "AddAuxiliaryObjective", "classoperations__research_1_1math__opt_1_1Model.html#aeaa280954cca28aef823260198299222", null ],
     [ "AddAuxiliaryObjective", "classoperations__research_1_1math__opt_1_1Model.html#a8833ade2c06013b36a6cf2d66e0b2a6a", null ],
@@ -31,7 +31,7 @@ var classoperations__research_1_1math__opt_1_1Model =
     [ "auxiliary_objective", "classoperations__research_1_1math__opt_1_1Model.html#a055de53778301aa0568e9f3d281cc77c", null ],
     [ "AuxiliaryObjectives", "classoperations__research_1_1math__opt_1_1Model.html#a63b923506aa976b4d4d82bebee87c60e", null ],
     [ "clear_objective", "classoperations__research_1_1math__opt_1_1Model.html#a12995e354c15cf9c68cc5899c07972a9", null ],
-    [ "Clone", "classoperations__research_1_1math__opt_1_1Model.html#a78815ea28a03a7230fea13de291921e2", null ],
+    [ "Clone", "classoperations__research_1_1math__opt_1_1Model.html#ad0707b8817d03fd8f1d4b51834c09307", null ],
     [ "coefficient", "classoperations__research_1_1math__opt_1_1Model.html#ad17a02a6e80f15af927d5d45acedcf07", null ],
     [ "ColumnNonzeros", "classoperations__research_1_1math__opt_1_1Model.html#a9a4eafd5d4c8fe10d5391f2e1bf59545", null ],
     [ "DeleteAuxiliaryObjective", "classoperations__research_1_1math__opt_1_1Model.html#a89af6f5188ad5077db9bf2ec1c362e37", null ],
@@ -162,8 +162,8 @@ var classoperations__research_1_1math__opt_1_1Model =
     [ "sos2_constraint", "classoperations__research_1_1math__opt_1_1Model.html#ae98b995c999efff98630cdce87f3e57c", null ],
     [ "sos2_constraint", "classoperations__research_1_1math__opt_1_1Model.html#a537699b3ea265824a8c38bb8bea81479", null ],
     [ "Sos2Constraints", "classoperations__research_1_1math__opt_1_1Model.html#ad66a0f7f65d7d2c8ac4d7753f56a7317", null ],
-    [ "storage", "classoperations__research_1_1math__opt_1_1Model.html#a66c765c6530269e8c6eb86c1d0c9b061", null ],
-    [ "storage", "classoperations__research_1_1math__opt_1_1Model.html#a06cd12d3df5d04b34fde1050692bc46a", null ],
+    [ "storage", "classoperations__research_1_1math__opt_1_1Model.html#adfcae99326e9c114283d22d732ed9e22", null ],
+    [ "storage", "classoperations__research_1_1math__opt_1_1Model.html#a8ffbc1ff27f77aced1e414ef31b141fa", null ],
     [ "upper_bound", "classoperations__research_1_1math__opt_1_1Model.html#af73982d3840d5f58042ca55b45fb4e8e", null ],
     [ "upper_bound", "classoperations__research_1_1math__opt_1_1Model.html#ac814c5023faf99eb74956148f9eff384", null ],
     [ "ValidateExistingLinearConstraintOfThisModel", "classoperations__research_1_1math__opt_1_1Model.html#a737b42a14db864ac3afa891ecb212688", null ],

@@ -1,11 +1,15 @@
 var set__cover__heuristics_8h =
 [
+    [ "operations_research::SetCoverSolutionGenerator", "classoperations__research_1_1SetCoverSolutionGenerator.html", "classoperations__research_1_1SetCoverSolutionGenerator" ],
+    [ "operations_research::SubsetListBasedSolutionGenerator", "classoperations__research_1_1SubsetListBasedSolutionGenerator.html", "classoperations__research_1_1SubsetListBasedSolutionGenerator" ],
+    [ "operations_research::BoolVectorBasedSolutionGenerator", "classoperations__research_1_1BoolVectorBasedSolutionGenerator.html", "classoperations__research_1_1BoolVectorBasedSolutionGenerator" ],
     [ "operations_research::TrivialSolutionGenerator", "classoperations__research_1_1TrivialSolutionGenerator.html", "classoperations__research_1_1TrivialSolutionGenerator" ],
     [ "operations_research::RandomSolutionGenerator", "classoperations__research_1_1RandomSolutionGenerator.html", "classoperations__research_1_1RandomSolutionGenerator" ],
     [ "operations_research::GreedySolutionGenerator", "classoperations__research_1_1GreedySolutionGenerator.html", "classoperations__research_1_1GreedySolutionGenerator" ],
     [ "operations_research::ElementDegreeSolutionGenerator", "classoperations__research_1_1ElementDegreeSolutionGenerator.html", "classoperations__research_1_1ElementDegreeSolutionGenerator" ],
     [ "operations_research::LazyElementDegreeSolutionGenerator", "classoperations__research_1_1LazyElementDegreeSolutionGenerator.html", "classoperations__research_1_1LazyElementDegreeSolutionGenerator" ],
     [ "operations_research::SteepestSearch", "classoperations__research_1_1SteepestSearch.html", "classoperations__research_1_1SteepestSearch" ],
+    [ "operations_research::LazySteepestSearch", "classoperations__research_1_1LazySteepestSearch.html", "classoperations__research_1_1LazySteepestSearch" ],
     [ "operations_research::TabuList< T >", "classoperations__research_1_1TabuList.html", "classoperations__research_1_1TabuList" ],
     [ "operations_research::GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html", "classoperations__research_1_1GuidedTabuSearch" ],
     [ "operations_research::GuidedLocalSearch", "classoperations__research_1_1GuidedLocalSearch.html", "classoperations__research_1_1GuidedLocalSearch" ],

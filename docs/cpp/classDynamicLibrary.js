@@ -7,5 +7,5 @@ var classDynamicLibrary =
     [ "GetFunction", "classDynamicLibrary.html#a7b6a9de62489ca92260c789fcdd1a5da", null ],
     [ "GetFunction", "classDynamicLibrary.html#a660f545ae9413d4b85846399c6c21420", null ],
     [ "LibraryIsLoaded", "classDynamicLibrary.html#a70fdb94f90303a5b643cb866412a3290", null ],
-    [ "TryToLoad", "classDynamicLibrary.html#ae7b7e17a7dd1ce62820456f5cdfc03c8", null ]
+    [ "TryToLoad", "classDynamicLibrary.html#af80f8bade5275155c42ddec1f6ef0a1b", null ]
 ];

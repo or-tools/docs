@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1CpModelMapping =
 [
     [ "Affine", "classoperations__research_1_1sat_1_1CpModelMapping.html#a58809f5b0a739fa62cf923b2ed919df5", null ],
     [ "Affines", "classoperations__research_1_1sat_1_1CpModelMapping.html#adc26436f6b8e54c313eb8b3e224af018", null ],
+    [ "ComputeMinMaxActivity", "classoperations__research_1_1sat_1_1CpModelMapping.html#a70b78ef31b7722a46c5ec8ca8e767daa", null ],
     [ "ConstraintIsAlreadyLoaded", "classoperations__research_1_1sat_1_1CpModelMapping.html#a8d7fa5597cf7f1924d26beb05b477eb5", null ],
     [ "GetExprFromProto", "classoperations__research_1_1sat_1_1CpModelMapping.html#ab612ad30bfefef6301f83a2bd661662c", null ],
     [ "GetProtoLiteralFromLiteral", "classoperations__research_1_1sat_1_1CpModelMapping.html#a884207b156fe025d8176429d7128a469", null ],

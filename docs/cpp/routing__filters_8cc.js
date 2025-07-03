@@ -3,6 +3,8 @@ var routing__filters_8cc =
     [ "ABSL_FLAG", "routing__filters_8cc.html#a60696653bee60d2186d1ea5850f64567", null ],
     [ "operations_research::AppendDimensionCumulFilters", "namespaceoperations__research.html#ab4518cd5b1e2a5efa6574eb485e81e38", null ],
     [ "operations_research::AppendLightWeightDimensionFilters", "namespaceoperations__research.html#a2de52d6625b60cdc32d493e175cc7bff", null ],
+    [ "operations_research::FillDimensionValuesFromRoutingDimension", "namespaceoperations__research.html#a13eb7c1f7cc910a5e58711ff531e90f0", null ],
+    [ "operations_research::FillPrePostVisitValues", "namespaceoperations__research.html#a517c147cce9bef1bedd69452e9d9f428", null ],
     [ "operations_research::MakeActiveNodeGroupFilter", "namespaceoperations__research.html#adbe826707b4ada0e2188e962bc0cadea", null ],
     [ "operations_research::MakeCPFeasibilityFilter", "namespaceoperations__research.html#a8d1785e51c6d58bbeeee8ac839acd600", null ],
     [ "operations_research::MakeCumulBoundsPropagatorFilter", "namespaceoperations__research.html#a5d9a3c909cbe141449e6ea5a37a2802c", null ],

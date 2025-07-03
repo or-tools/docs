@@ -7,6 +7,7 @@ var precedences_8h =
     [ "operations_research::sat::LinearTerm", "structoperations__research_1_1sat_1_1LinearTerm.html", "structoperations__research_1_1sat_1_1LinearTerm" ],
     [ "operations_research::sat::Relation", "structoperations__research_1_1sat_1_1Relation.html", "structoperations__research_1_1sat_1_1Relation" ],
     [ "operations_research::sat::BinaryRelationRepository", "classoperations__research_1_1sat_1_1BinaryRelationRepository.html", "classoperations__research_1_1sat_1_1BinaryRelationRepository" ],
+    [ "operations_research::sat::BinaryRelationsMaps", "classoperations__research_1_1sat_1_1BinaryRelationsMaps.html", "classoperations__research_1_1sat_1_1BinaryRelationsMaps" ],
     [ "operations_research::sat::GreaterThanAtLeastOneOfDetector", "classoperations__research_1_1sat_1_1GreaterThanAtLeastOneOfDetector.html", "classoperations__research_1_1sat_1_1GreaterThanAtLeastOneOfDetector" ],
     [ "operations_research::sat::AddConditionalSum2LowerOrEqual", "namespaceoperations__research_1_1sat.html#af6541cdba8310f4fcbc8d8737cd29afa", null ],
     [ "operations_research::sat::AddConditionalSum3LowerOrEqual", "namespaceoperations__research_1_1sat.html#ad3913e8754c767cf5b0be9282bd4c6fe", null ],

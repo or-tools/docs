@@ -1,7 +1,7 @@
 var searchData=
 [
   ['z_0',['z',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html#aab5f4f78999bc12ecb1ac7ac9ecc965d',1,'operations_research::math_opt::NontrivialInfeasibleIp::z'],['../structoperations__research_1_1routing_1_1Coordinates3.html#ab7f4787c173e49f871378e0721484a64',1,'operations_research::routing::Coordinates3::z']]],
-  ['zero_1',['Zero',['../classoperations__research_1_1Set.html#aefb0e201200674e13de471b57bd73bf9',1,'operations_research::Set::Zero'],['../namespaceoperations__research.html#a5a9881f8a07b166ef2cbde572cea27b6',1,'operations_research::Zero()']]],
+  ['zero_1',['Zero',['../namespaceoperations__research.html#a5a9881f8a07b166ef2cbde572cea27b6',1,'operations_research']]],
   ['zero_5f_2',['zero_',['../classoperations__research_1_1math__opt_1_1IncrementalLpTest.html#ad2cc98217a6c5185962df8bdca55ec53',1,'operations_research::math_opt::IncrementalLpTest']]],
   ['zero_5fcost_5fsingleton_5fcolumn_3',['ZERO_COST_SINGLETON_COLUMN',['../classoperations__research_1_1glop_1_1SingletonUndo.html#ac7306068e34715b168e8ee7d3cf086c5aee68188093b684e0f1739ace3ab2df71',1,'operations_research::glop::SingletonUndo']]],
   ['zero_5fhalf_5fcuts_2ecc_4',['zero_half_cuts.cc',['../zero__half__cuts_8cc.html',1,'']]],

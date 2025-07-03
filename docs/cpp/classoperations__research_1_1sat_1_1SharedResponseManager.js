@@ -23,7 +23,7 @@ var classoperations__research_1_1sat_1_1SharedResponseManager =
     [ "LoadDebugSolution", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a72f0b8efa0039f148f6ad458f9461d17", null ],
     [ "LoggingIsEnabled", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a9b45d90b9745cbffac23e655d21de28a", null ],
     [ "LogMessage", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a47074be355f4f009c04f85574f51193c", null ],
-    [ "LogMessageWithThrottling", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a28e725ce8d133a29edf39797ff364cfd", null ],
+    [ "LogMessageWithThrottling", "classoperations__research_1_1sat_1_1SharedResponseManager.html#af39045e8cf06581854311bb443fc4da3", null ],
     [ "MutableSolutionsRepository", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a376cd71387f7c437b7cbcd784999800c", null ],
     [ "NewSolution", "classoperations__research_1_1sat_1_1SharedResponseManager.html#a3587b8bb2d0877d7f43b138749b887d2", null ],
     [ "NotifyThatImprovingProblemIsInfeasible", "classoperations__research_1_1sat_1_1SharedResponseManager.html#ac453d51a2c75e8c5f65cb455cda7f345", null ],

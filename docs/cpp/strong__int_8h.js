@@ -1,26 +1,8 @@
 var strong__int_8h =
 [
-    [ "util_intops::StrongInt< StrongIntName, _ValueType >", "classutil__intops_1_1StrongInt.html", "classutil__intops_1_1StrongInt" ],
-    [ "util_intops::StrongInt< StrongIntName, _ValueType >::Hasher", "structutil__intops_1_1StrongInt_1_1Hasher.html", "structutil__intops_1_1StrongInt_1_1Hasher" ],
-    [ "util_intops::StrongIntRange< IntType >", "classutil__intops_1_1StrongIntRange.html", "classutil__intops_1_1StrongIntRange" ],
-    [ "util_intops::StrongIntRange< IntType >::StrongIntRangeIterator", "classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator.html", "classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator" ],
-    [ "std::hash< util_intops::StrongInt< StrongIntName, ValueType > >", "structstd_1_1hash_3_01util__intops_1_1StrongInt_3_01StrongIntName_00_01ValueType_01_4_01_4.html", null ],
-    [ "DEFINE_STRONG_INT_TYPE", "strong__int_8h.html#a382737ba620573d644e36820b1e2f33b", null ],
-    [ "STRONG_INT_TYPE_ARITHMETIC_OP", "strong__int_8h.html#ab9cbfc83a4f33d12ef0aebc41f982322", null ],
-    [ "STRONG_INT_TYPE_ASSIGNMENT_OP", "strong__int_8h.html#a25327aa090469c1d220f44104a587360", null ],
-    [ "STRONG_INT_TYPE_COMPARISON_OP", "strong__int_8h.html#a94e8edd112f420522b16f100780a4f13", null ],
-    [ "util_intops::AbslStringify", "namespaceutil__intops.html#a7809510c31a8dec74b84adce71ad0e34", null ],
-    [ "util_intops::MakeStrongIntRange", "namespaceutil__intops.html#ab0851b91d7906bc4f19d02f7ba26af68", null ],
-    [ "util_intops::MakeStrongIntRange", "namespaceutil__intops.html#a62bb673edc756211f0a5318473d9754e", null ],
-    [ "util_intops::operator<<", "namespaceutil__intops.html#a95593bc7c1b8e0a1bf5e7b017a732fd9", null ],
-    [ "util_intops::STRONG_INT_TYPE_ARITHMETIC_OP", "namespaceutil__intops.html#a1ae221a3860ff81cef894cdb5ecc205a", null ],
-    [ "util_intops::STRONG_INT_TYPE_ARITHMETIC_OP", "namespaceutil__intops.html#a4c52d77b438769172c6903e31f73db74", null ],
-    [ "util_intops::STRONG_INT_TYPE_ARITHMETIC_OP", "namespaceutil__intops.html#abefeaeef49cf198a9c882ea15918be7d", null ],
-    [ "util_intops::STRONG_INT_TYPE_ARITHMETIC_OP", "namespaceutil__intops.html#a565de6df5cca3901657193e0500ae5dc", null ],
-    [ "util_intops::STRONG_INT_TYPE_ARITHMETIC_OP", "namespaceutil__intops.html#ae66b360e3719b1df268366d65a92f245", null ],
-    [ "util_intops::STRONG_INT_TYPE_COMPARISON_OP", "namespaceutil__intops.html#afda037478f741d02bef5e3db3473c0e6", null ],
-    [ "util_intops::STRONG_INT_TYPE_COMPARISON_OP", "namespaceutil__intops.html#a6af2799a78dacf8b27618fe54da7848b", null ],
-    [ "util_intops::STRONG_INT_TYPE_COMPARISON_OP", "namespaceutil__intops.html#a3f485a6b70e397cb983c86d56897a0a9", null ],
-    [ "util_intops::STRONG_INT_TYPE_COMPARISON_OP", "namespaceutil__intops.html#a5f05912f3569730a32864c7992dfc5ea", null ],
-    [ "util_intops::ABSL_ATTRIBUTE_PACKED", "namespaceutil__intops.html#aed4b386c849431b2129c8b0a4d70b3d7", null ]
+    [ "DEFINE_STRONG_INT_TYPE", "strong__int_8h.html#aa8ff296a01be358cc1e8d0b66e9ac0a4", null ],
+    [ "NUMERIC_VS_STRONG_INT_BINARY_OP", "strong__int_8h.html#a2bcb89aaf897f46a368245e1e2647398", null ],
+    [ "STRONG_INT_COMPARISON_OP", "strong__int_8h.html#ad563794aae2c88fcfe788cb80966ed7b", null ],
+    [ "STRONG_INT_VS_NUMERIC_BINARY_OP", "strong__int_8h.html#afd9b58f3a46cdffb2fd4765f1c3ed85c", null ],
+    [ "STRONG_INT_VS_STRONG_INT_BINARY_OP", "strong__int_8h.html#aa3fb77c14ece4a469144d238300e79d2", null ]
 ];

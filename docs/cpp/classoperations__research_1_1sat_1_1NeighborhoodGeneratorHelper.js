@@ -1,7 +1,7 @@
 var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
 [
     [ "ActiveRectangle", "structoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper_1_1ActiveRectangle.html", "structoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper_1_1ActiveRectangle" ],
-    [ "NeighborhoodGeneratorHelper", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a886e79589e8730685213bd910b60a309", null ],
+    [ "NeighborhoodGeneratorHelper", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#afa1c264297bd7a19b83665d742bb956e", null ],
     [ "ActiveObjectiveVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#af32c1c41f47d0403b5f3e70e43bb9c79", null ],
     [ "ActiveObjectiveVariablesWhileHoldingLock", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#ab7b9f19f645f40e907192529652377a9", null ],
     [ "ActiveVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a88b2df5e975fddd01a6857409cc94365", null ],
@@ -18,6 +18,7 @@ var classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper =
     [ "GetRoutingPathBooleanVariables", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a357ddaadbb035b3985cafe6d5064f20f", null ],
     [ "GetSchedulingPrecedences", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aca0952c56878d9ecc6a8557bd42d170e", null ],
     [ "GetUniqueIntervalSets", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a95e747811a348dcd5c8e0419b4156af2", null ],
+    [ "ImprovableObjectiveVariablesWhileHoldingLock", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a0a86c140b6bbc528902cf428e73f11f4", null ],
     [ "IsActive", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#a131c26490547085cade57780099f34c0", null ],
     [ "KeepActiveIntervals", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#afe15f3b2fc8d4858aa06c06a3236472b", null ],
     [ "ModelProto", "classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html#aa6ec3e4643746db3d8211a1b5ca6d4af", null ],

@@ -1,10 +1,12 @@
 var classutil_1_1ReverseArcListGraph =
 [
-    [ "IncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1IncomingArcIterator.html", "classutil_1_1ReverseArcListGraph_1_1IncomingArcIterator" ],
-    [ "OppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OppositeIncomingArcIterator.html", "classutil_1_1ReverseArcListGraph_1_1OppositeIncomingArcIterator" ],
-    [ "OutgoingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingArcIterator.html", "classutil_1_1ReverseArcListGraph_1_1OutgoingArcIterator" ],
-    [ "OutgoingHeadIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingHeadIterator.html", "classutil_1_1ReverseArcListGraph_1_1OutgoingHeadIterator" ],
+    [ "OppositeIncomingArcIteratorTag", "structutil_1_1ReverseArcListGraph_1_1OppositeIncomingArcIteratorTag.html", null ],
+    [ "OutgoingArcIteratorTag", "structutil_1_1ReverseArcListGraph_1_1OutgoingArcIteratorTag.html", null ],
     [ "OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", "classutil_1_1ReverseArcListGraph_1_1OutgoingOrOppositeIncomingArcIterator" ],
+    [ "IncomingArcIterator", "classutil_1_1ReverseArcListGraph.html#a967fbccefbd2f6f22ae49db52a95409d", null ],
+    [ "OppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph.html#acd29acab7f62d7983b242419acc0601a", null ],
+    [ "OutgoingArcIterator", "classutil_1_1ReverseArcListGraph.html#a437596489d46692e53baffa82fdff8dc", null ],
+    [ "OutgoingHeadIterator", "classutil_1_1ReverseArcListGraph.html#aee527333c76ff5ba91d312390e2d6631", null ],
     [ "ReverseArcListGraph", "classutil_1_1ReverseArcListGraph.html#ac553bb63399815ac609976e5a3bd8732", null ],
     [ "ReverseArcListGraph", "classutil_1_1ReverseArcListGraph.html#a885571656abd56593b2edbebb451d67f", null ],
     [ "AddArc", "classutil_1_1ReverseArcListGraph.html#a79291a548af693328d0e4e8f64cdc745", null ],

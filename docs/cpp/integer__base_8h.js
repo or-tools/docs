@@ -1,13 +1,22 @@
 var integer__base_8h =
 [
+    [ "operations_research::sat::LevelZeroCallbackHelper", "structoperations__research_1_1sat_1_1LevelZeroCallbackHelper.html", "structoperations__research_1_1sat_1_1LevelZeroCallbackHelper" ],
     [ "operations_research::sat::IntegerLiteral", "structoperations__research_1_1sat_1_1IntegerLiteral.html", "structoperations__research_1_1sat_1_1IntegerLiteral" ],
     [ "operations_research::sat::AffineExpression", "structoperations__research_1_1sat_1_1AffineExpression.html", "structoperations__research_1_1sat_1_1AffineExpression" ],
+    [ "operations_research::sat::LinearExpression2", "structoperations__research_1_1sat_1_1LinearExpression2.html", "structoperations__research_1_1sat_1_1LinearExpression2" ],
+    [ "operations_research::sat::BestBinaryRelationBounds", "classoperations__research_1_1sat_1_1BestBinaryRelationBounds.html", "classoperations__research_1_1sat_1_1BestBinaryRelationBounds" ],
     [ "operations_research::sat::IntegerDomains", "structoperations__research_1_1sat_1_1IntegerDomains.html", null ],
     [ "operations_research::sat::DebugSolution", "structoperations__research_1_1sat_1_1DebugSolution.html", "structoperations__research_1_1sat_1_1DebugSolution" ],
     [ "operations_research::sat::ValueLiteralPair", "structoperations__research_1_1sat_1_1ValueLiteralPair.html", "structoperations__research_1_1sat_1_1ValueLiteralPair" ],
     [ "operations_research::sat::ValueLiteralPair::CompareByLiteral", "structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByLiteral.html", "structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByLiteral" ],
     [ "operations_research::sat::ValueLiteralPair::CompareByValue", "structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByValue.html", "structoperations__research_1_1sat_1_1ValueLiteralPair_1_1CompareByValue" ],
+    [ "operations_research::sat::RelationStatus", "namespaceoperations__research_1_1sat.html#a0339d2ea1e5c44cf3aea629f9f40f917", [
+      [ "operations_research::sat::RelationStatus::IS_TRUE", "namespaceoperations__research_1_1sat.html#a0339d2ea1e5c44cf3aea629f9f40f917a23cd5ba5c6eed3d82ba0c6c0526df429", null ],
+      [ "operations_research::sat::RelationStatus::IS_FALSE", "namespaceoperations__research_1_1sat.html#a0339d2ea1e5c44cf3aea629f9f40f917adeab83d56dee7ab418359a59b4ff2eb0", null ],
+      [ "operations_research::sat::RelationStatus::IS_UNKNOWN", "namespaceoperations__research_1_1sat.html#a0339d2ea1e5c44cf3aea629f9f40f917a723d46ced1074f7f8e39c13fd6fb8e29", null ]
+    ] ],
     [ "operations_research::sat::AbslHashValue", "namespaceoperations__research_1_1sat.html#ac160d1b2e1f1e1291af8c4dc333e3007", null ],
+    [ "operations_research::sat::AbslHashValue", "namespaceoperations__research_1_1sat.html#a1c52260ec43b56cd30fea98e77e49e3e", null ],
     [ "operations_research::sat::AddProductTo", "namespaceoperations__research_1_1sat.html#a0c9e8fab437ba44c91b0493a74cde263", null ],
     [ "operations_research::sat::AddSquareTo", "namespaceoperations__research_1_1sat.html#a0223d339c204a71da3ff69acf246e355", null ],
     [ "operations_research::sat::AddTo", "namespaceoperations__research_1_1sat.html#a19454de69c01843c000fbf4f96fc99f1", null ],
@@ -31,6 +40,7 @@ var integer__base_8h =
     [ "operations_research::sat::NegationOf", "namespaceoperations__research_1_1sat.html#a437aa190248b2ee0c2971fa058512f71", null ],
     [ "operations_research::sat::NegationOf", "namespaceoperations__research_1_1sat.html#a829dfffce41f532b7ca32665750a1ec2", null ],
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#a646ee3cd14af2a14066c6cd56f7f242b", null ],
+    [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#a77ef6145f64d2e78d00ddfb90bb7f4c2", null ],
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#ad4f0092047d7e82e9fdb7f6b1235947c", null ],
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#a0af861617ac8f6ef74fe77c789248b86", null ],
     [ "operations_research::sat::PositiveRemainder", "namespaceoperations__research_1_1sat.html#a83f714c395df7a814ed067125f567a0d", null ],

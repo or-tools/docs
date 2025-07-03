@@ -12,5 +12,6 @@ var classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData =
     [ "num_expressions", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#ae887d1539ebf7d7c4e2776d39c733b19", null ],
     [ "Proto", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#a8f659953521dedbc322c4997fa9a7e53", null ],
     [ "RelatedVariables", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#aadf87d3fa303485718b7f48d46ee1c37", null ],
-    [ "weight", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#a4a0c31d961c901c4a575151c7e2cdec9", null ]
+    [ "weight", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#a4a0c31d961c901c4a575151c7e2cdec9", null ],
+    [ "kSupportsElemental", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html#a53b3c28c582c1ab6815a9c8bcd07e80d", null ]
 ];

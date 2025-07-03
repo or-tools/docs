@@ -60,5 +60,5 @@ var namespaceoperations__research_1_1bop =
     [ "operator<<", "namespaceoperations__research_1_1bop.html#a5842cf5724426c4f547842ce54d6e3a4", null ],
     [ "operator<<", "namespaceoperations__research_1_1bop.html#a4f2fe1248f71d91875c1fa8ede6d4f7a", null ],
     [ "SatAssignmentToBopSolution", "namespaceoperations__research_1_1bop.html#a8947f07c684c6172313bfabf0e0ce6af", null ],
-    [ "kInfinity", "namespaceoperations__research_1_1bop.html#a073868a91ec87d04bc963609af7806b6", null ]
+    [ "kInfinity", "namespaceoperations__research_1_1bop.html#ace2ccc178c5fb1acaeead771ad53aeb6", null ]
 ];

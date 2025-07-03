@@ -3,6 +3,8 @@ var dir_8f9dc966244f4c6e9b2fa0dee1e4ef1a =
     [ "accurate_sum.h", "accurate__sum_8h.html", "accurate__sum_8h" ],
     [ "adjustable_priority_queue-inl.h", "adjustable__priority__queue-inl_8h.html", null ],
     [ "adjustable_priority_queue.h", "adjustable__priority__queue_8h.html", "adjustable__priority__queue_8h" ],
+    [ "array.h", "array_8h.html", "array_8h" ],
+    [ "array_internal.h", "array__internal_8h.html", "array__internal_8h" ],
     [ "base_export.h", "base__export_8h.html", "base__export_8h" ],
     [ "basictypes.h", "basictypes_8h.html", "basictypes_8h" ],
     [ "bitmap.cc", "bitmap_8cc.html", null ],

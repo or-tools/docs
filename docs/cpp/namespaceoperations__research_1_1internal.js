@@ -33,6 +33,7 @@ var namespaceoperations__research_1_1internal =
     [ "CycleErrorMessage", "namespaceoperations__research_1_1internal.html#a6f497c22e9d139c5dd480036bb97fcd0", null ],
     [ "ExtractCycle", "namespaceoperations__research_1_1internal.html#ab7c0d4e529a5474c5fda9d4e042b27c6", null ],
     [ "FindArcIndex", "namespaceoperations__research_1_1internal.html#ab1942550b24debfcb0dcf5b69ba18a5f", null ],
+    [ "GetInversePermutation", "namespaceoperations__research_1_1internal.html#a8e85ae72811f90203c44a5759ca5f0c9", null ],
     [ "GraphIsConnected", "namespaceoperations__research_1_1internal.html#adeaf341ffaa35e9a3478aeb95f2c580a", null ],
     [ "IsBitSet64", "namespaceoperations__research_1_1internal.html#a8254b0157656b65e18e2db918d462e5a", null ],
     [ "IsNanGeneric", "namespaceoperations__research_1_1internal.html#a6a3c9b831bd054a90c48a31ef1b6f1aa", null ],

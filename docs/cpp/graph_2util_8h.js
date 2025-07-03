@@ -15,5 +15,6 @@ var graph_2util_8h =
     [ "util::PathHasCycle", "namespaceutil.html#a34114d206959f75a472b167c806da2cb", null ],
     [ "util::RemapGraph", "namespaceutil.html#a88c65bcf51a7c679ad0159e09ecfb3fc", null ],
     [ "util::RemoveCyclesFromPath", "namespaceutil.html#a06fa201576c927d92657e090fa86bfdb", null ],
-    [ "util::RemoveSelfArcsAndDuplicateArcs", "namespaceutil.html#a8a06031908a024a50dbdddc394a22490", null ]
+    [ "util::RemoveSelfArcsAndDuplicateArcs", "namespaceutil.html#a8a06031908a024a50dbdddc394a22490", null ],
+    [ "util::UndirectedAdjacencyListsOfDirectedGraph", "namespaceutil.html#a173ab031550819a346851e58683eb3ae", null ]
 ];

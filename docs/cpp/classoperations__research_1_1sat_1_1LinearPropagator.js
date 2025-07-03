@@ -5,5 +5,6 @@ var classoperations__research_1_1sat_1_1LinearPropagator =
     [ "AddConstraint", "classoperations__research_1_1sat_1_1LinearPropagator.html#a6b4adf9e4a241637f5dee4cc9ea43adc", null ],
     [ "Explain", "classoperations__research_1_1sat_1_1LinearPropagator.html#abd1700dfb73c734248609055d534231e", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1LinearPropagator.html#a74432b1f2031ef1a7257cf98913c7390", null ],
-    [ "SetLevel", "classoperations__research_1_1sat_1_1LinearPropagator.html#a6a9ff6befb3551950d650b1778643710", null ]
+    [ "SetLevel", "classoperations__research_1_1sat_1_1LinearPropagator.html#a6a9ff6befb3551950d650b1778643710", null ],
+    [ "SetPushAffineUbForBinaryRelation", "classoperations__research_1_1sat_1_1LinearPropagator.html#af66b6ba2f0c987a977fc141876469a94", null ]
 ];

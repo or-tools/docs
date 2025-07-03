@@ -4,5 +4,6 @@ var classoperations__research_1_1RunningMax =
     [ "RunningMax", "classoperations__research_1_1RunningMax.html#ae26b1bfc1818677cd81ac0ae877dc13e", null ],
     [ "Add", "classoperations__research_1_1RunningMax.html#a875bd386cbdb6586616a1b3fef945610", null ],
     [ "GetCurrentMax", "classoperations__research_1_1RunningMax.html#a5b69cee2508a9c27e2686c8f81b827a8", null ],
-    [ "operator=", "classoperations__research_1_1RunningMax.html#ac8cf36bf21329cf49e7ec7465b4e0484", null ]
+    [ "operator=", "classoperations__research_1_1RunningMax.html#ac8cf36bf21329cf49e7ec7465b4e0484", null ],
+    [ "Reset", "classoperations__research_1_1RunningMax.html#a06cfccf5253ab1358294fe576bec6d10", null ]
 ];

@@ -45,6 +45,7 @@ var dir_a3328a0ea67a2aaa160c2783ffbaa5dc =
     [ "rev.h", "rev_8h.html", "rev_8h" ],
     [ "running_stat.h", "running__stat_8h.html", "running__stat_8h" ],
     [ "saturated_arithmetic.h", "saturated__arithmetic_8h.html", "saturated__arithmetic_8h" ],
+    [ "scheduling.h", "scheduling_8h.html", "scheduling_8h" ],
     [ "sigint.cc", "sigint_8cc.html", null ],
     [ "sigint.h", "sigint_8h.html", "sigint_8h" ],
     [ "solve_interrupter.cc", "solve__interrupter_8cc.html", null ],

@@ -15,7 +15,7 @@ var searchData=
   ['nodedistance_12',['NodeDistance',['../structoperations__research_1_1BidirectionalDijkstra_1_1NodeDistance.html',1,'operations_research::BidirectionalDijkstra']]],
   ['nodeentry_13',['NodeEntry',['../classoperations__research_1_1NodeEntry.html',1,'operations_research']]],
   ['nodeentryqueue_14',['NodeEntryQueue',['../classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue.html',1,'operations_research::GlobalCheapestInsertionFilteredHeuristic']]],
-  ['nodeinsertion_15',['NodeInsertion',['../structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html',1,'operations_research::CheapestInsertionFilteredHeuristic']]],
+  ['nodeexpression_15',['NodeExpression',['../structoperations__research_1_1sat_1_1NodeExpression.html',1,'operations_research::sat']]],
   ['nodeneighboriterator_16',['NodeNeighborIterator',['../classoperations__research_1_1NodeNeighborIterator.html',1,'operations_research']]],
   ['noderange_17',['NodeRange',['../classoperations__research_1_1PathState_1_1NodeRange.html',1,'operations_research::PathState']]],
   ['nonorderedsethasher_18',['NonOrderedSetHasher',['../classoperations__research_1_1bop_1_1NonOrderedSetHasher.html',1,'operations_research::bop']]],
@@ -30,10 +30,11 @@ var searchData=
   ['nontrivialinfeasibleip_27',['NontrivialInfeasibleIp',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html',1,'operations_research::math_opt']]],
   ['nooverlap2dconstraint_28',['NoOverlap2DConstraint',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraint.html',1,'operations_research::sat']]],
   ['nooverlap2dconstrainthelper_29',['NoOverlap2DConstraintHelper',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraintHelper.html',1,'operations_research::sat']]],
-  ['nooverlapbetweentwointervals_30',['NoOverlapBetweenTwoIntervals',['../classoperations__research_1_1sat_1_1NoOverlapBetweenTwoIntervals.html',1,'operations_research::sat']]],
-  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongindex_3c_20tag_20_3e_20_3e_31',['numeric_limits&lt; operations_research::StrongIndex&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html',1,'std']]],
-  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongint64_3c_20tag_20_3e_20_3e_32',['numeric_limits&lt; operations_research::StrongInt64&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html',1,'std']]],
-  ['numericalrev_33',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrev_3c_20int_20_3e_34',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrevarray_35',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
+  ['nosymmetry_30',['NoSymmetry',['../structoperations__research_1_1math__opt_1_1NoSymmetry.html',1,'operations_research::math_opt']]],
+  ['notransform_31',['NoTransform',['../structutil__intops_1_1NoTransform.html',1,'util_intops']]],
+  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongindex_3c_20tag_20_3e_20_3e_32',['numeric_limits&lt; operations_research::StrongIndex&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html',1,'std']]],
+  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongint64_3c_20tag_20_3e_20_3e_33',['numeric_limits&lt; operations_research::StrongInt64&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html',1,'std']]],
+  ['numericalrev_34',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrev_3c_20int_20_3e_35',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrevarray_36',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
 ];

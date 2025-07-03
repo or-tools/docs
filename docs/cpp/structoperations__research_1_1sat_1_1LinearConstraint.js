@@ -5,6 +5,7 @@ var structoperations__research_1_1sat_1_1LinearConstraint =
     [ "CoeffsAsSpan", "structoperations__research_1_1sat_1_1LinearConstraint.html#a6b269babeca468ba881143b907e06d65", null ],
     [ "DebugString", "structoperations__research_1_1sat_1_1LinearConstraint.html#a83db1afda4add1e0977a3cc913336491", null ],
     [ "IsEqualIgnoringBounds", "structoperations__research_1_1sat_1_1LinearConstraint.html#aa51fdf3e80917d9b14cacfe2f5ea35b3", null ],
+    [ "NormalizedViolation", "structoperations__research_1_1sat_1_1LinearConstraint.html#af32db93ff589de421f231dbf367f2fbd", null ],
     [ "operator==", "structoperations__research_1_1sat_1_1LinearConstraint.html#ac4e2c0f498c29936b9674480bd808b79", null ],
     [ "resize", "structoperations__research_1_1sat_1_1LinearConstraint.html#a5fbbfb6d7f3eedf80f8e6af664904b3b", null ],
     [ "VarsAsSpan", "structoperations__research_1_1sat_1_1LinearConstraint.html#a8718b3198ea3590056d64e8453b714fa", null ],

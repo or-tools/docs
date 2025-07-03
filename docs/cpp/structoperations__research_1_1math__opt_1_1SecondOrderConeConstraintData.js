@@ -8,6 +8,7 @@ var structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData =
     [ "Proto", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#a9bdc3470e392164d8d416a4f4280902a", null ],
     [ "RelatedVariables", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#afade21c7487c720255d6a1d65b6d6e51", null ],
     [ "arguments_to_norm", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#a2cd210a4cf5bca7b708a7f95237eef2c", null ],
+    [ "kSupportsElemental", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#a57e8603e36018206f9eb1a9807e9608f", null ],
     [ "name", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#aa379bfc270d86b149f53f2a684c7ebc7", null ],
     [ "upper_bound", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html#a29732e578a58c978fe33fcc01a126e69", null ]
 ];

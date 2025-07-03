@@ -1,7 +1,7 @@
 var structoperations__research_1_1math__opt_1_1CallbackData =
 [
     [ "CallbackData", "structoperations__research_1_1math__opt_1_1CallbackData.html#ace631502697d91916bc6258d9dbf331d", null ],
-    [ "CallbackData", "structoperations__research_1_1math__opt_1_1CallbackData.html#a564caab83f392c928cde8e1bd54ed291", null ],
+    [ "CallbackData", "structoperations__research_1_1math__opt_1_1CallbackData.html#ae5fe36b6ec1f7cc0e3ae01c14bef4922", null ],
     [ "barrier_stats", "structoperations__research_1_1math__opt_1_1CallbackData.html#aa49646eb1d790b667b515f66c57dc8ac", null ],
     [ "event", "structoperations__research_1_1math__opt_1_1CallbackData.html#acea803b57c6aa2e92da56e6d59104c1e", null ],
     [ "mip_stats", "structoperations__research_1_1math__opt_1_1CallbackData.html#ab6f701b528270b8ba4cc9789cfebe0cf", null ],

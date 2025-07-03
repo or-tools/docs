@@ -15,6 +15,8 @@ var sat_2util_8h =
     [ "operations_research::sat::ExponentialMovingAverage", "classoperations__research_1_1sat_1_1ExponentialMovingAverage.html", "classoperations__research_1_1sat_1_1ExponentialMovingAverage" ],
     [ "operations_research::sat::Percentile", "classoperations__research_1_1sat_1_1Percentile.html", "classoperations__research_1_1sat_1_1Percentile" ],
     [ "operations_research::sat::TopN< Element, Score >", "classoperations__research_1_1sat_1_1TopN.html", "classoperations__research_1_1sat_1_1TopN" ],
+    [ "operations_research::sat::DagTopologicalSortIterator", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator.html", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator" ],
+    [ "operations_research::sat::DagTopologicalSortIterator::Iterator", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator_1_1Iterator.html", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator_1_1Iterator" ],
     [ "operations_research::sat::AtMostOneDecomposition", "namespaceoperations__research_1_1sat.html#adce32567c40d90f074ff693fa483ba9c", null ],
     [ "operations_research::sat::CeilSquareRoot", "namespaceoperations__research_1_1sat.html#a3f5064fe335d0bd2f67a8c9e3e132b4f", null ],
     [ "operations_research::sat::ClosestMultiple", "namespaceoperations__research_1_1sat.html#ab45b9df04a0d18b7a12d062c2e7982c6", null ],

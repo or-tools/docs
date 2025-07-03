@@ -390,6 +390,7 @@ var xpress_2environment_8h =
     [ "XPRS_TYPE_NOTDEFINED", "xpress_2environment_8h.html#a17cfe46e5fdf4bcc4b0eeda3eabfc8df", null ],
     [ "XPRS_TYPE_STRING", "xpress_2environment_8h.html#a5e80c9da29455641a9838db5c8879d20", null ],
     [ "XPRS_USERSOLHEURISTIC", "xpress_2environment_8h.html#a4735ba57a7c600d6c58553187c3d166f", null ],
+    [ "XPRS_UUID", "xpress_2environment_8h.html#a76e36c3ac289f71b8b7f54e614eb8d69", null ],
     [ "XPRS_VARSELECTION", "xpress_2environment_8h.html#a28100cd3133696b4452b5e097e2a6c8e", null ],
     [ "XPRS_VERSION", "xpress_2environment_8h.html#a6fc4e5e469116149861a56e4ec9f2ecd", null ],
     [ "XPRSint64", "xpress_2environment_8h.html#a4a06f33ef4884c21e57dacdceda7a540", null ],

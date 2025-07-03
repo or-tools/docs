@@ -1,6 +1,6 @@
 var classoperations__research_1_1sat_1_1ConstraintPropagationOrder =
 [
-    [ "ConstraintPropagationOrder", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#ae2d405dd59059f91b6e7f0a0d31eacbf", null ],
+    [ "ConstraintPropagationOrder", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a546639fd90de3ef2116ae08c483b6da2", null ],
     [ "Clear", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#ab2cd2e9f90a20c3fbe80a90ecf7028a0", null ],
     [ "IsEmpty", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a63818142068c58844e73f147ec94f8fb", null ],
     [ "NextId", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a71728e275e36bbedaaa8007d56131730", null ],
@@ -13,6 +13,7 @@ var classoperations__research_1_1sat_1_1ConstraintPropagationOrder =
     [ "in_ids_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#ab0e63e9b4a024214173825efcec79dac", null ],
     [ "random_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a73c95532cac648cdfb6358e8fd7075cc", null ],
     [ "start_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#af9e206104892a2c1485aa00248a30938", null ],
+    [ "time_limit_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a08ead1a80f1d0fb9e7694c2829d905b2", null ],
     [ "to_clear_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a7fb1de631854a8d38ce4c66117ef590f", null ],
     [ "var_has_entry_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#a5adb7647f26f3e03cff4786ac2541970", null ],
     [ "var_to_id_", "classoperations__research_1_1sat_1_1ConstraintPropagationOrder.html#ad4360b2c59a96cd4b678926e0e4d0528", null ],

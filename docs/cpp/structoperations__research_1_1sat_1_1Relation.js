@@ -1,5 +1,6 @@
 var structoperations__research_1_1sat_1_1Relation =
 [
+    [ "operator==", "structoperations__research_1_1sat_1_1Relation.html#a5003cf51d02bb1c6d46d7ba4ec4b9006", null ],
     [ "a", "structoperations__research_1_1sat_1_1Relation.html#aa4dceb1d3944b3b7f81a96d15d504fca", null ],
     [ "b", "structoperations__research_1_1sat_1_1Relation.html#a89793381b576ef2325dd035276bbbaa0", null ],
     [ "enforcement", "structoperations__research_1_1sat_1_1Relation.html#a69d316979c1bc675e2fda197e3b1b1c3", null ],

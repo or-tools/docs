@@ -24,6 +24,8 @@ var classoperations__research_1_1mb_1_1ModelBuilderHelper =
     [ "EnforcedIndicatorVariableIndex", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#a8f651099a3405f220bcbffbc40e102cd", null ],
     [ "ExportToLpString", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#af93973048da461fd77a84c81c3f3166c", null ],
     [ "ExportToMpsString", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#a51079ad7b2a238877fc9c2aa49c65e86", null ],
+    [ "ImportFromLpFile", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#ac6c3b8e125abb40aa58a8e68238b7bfd", null ],
+    [ "ImportFromLpString", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#abfe18f8661fddee6dcbc1d78187fecb5", null ],
     [ "ImportFromMpsFile", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#a81f45bca3c3995424dc74c5770ee79a3", null ],
     [ "ImportFromMpsString", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#ab7b48d0ebd04eb68e3783fb1dc1a95c7", null ],
     [ "IsEnforcedConstraint", "classoperations__research_1_1mb_1_1ModelBuilderHelper.html#abf87774a4611e5cae75d61e166924751", null ],

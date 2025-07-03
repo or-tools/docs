@@ -8,7 +8,7 @@ var boolean__problem_8h =
     [ "operations_research::sat::ChangeOptimizationDirection", "namespaceoperations__research_1_1sat.html#a67d84927df689473b8cf695784f58140", null ],
     [ "operations_research::sat::ComputeObjectiveValue", "namespaceoperations__research_1_1sat.html#ad8a94daf3536dd065dd3d6660e14ae43", null ],
     [ "operations_research::sat::ExtractAssignment", "namespaceoperations__research_1_1sat.html#a2df0c7e4537cd6479226c6262db24f18", null ],
-    [ "operations_research::sat::ExtractSubproblem", "namespaceoperations__research_1_1sat.html#a443952c1a8ca3d057c079644f71dc0fd", null ],
+    [ "operations_research::sat::ExtractSubproblem", "namespaceoperations__research_1_1sat.html#aba8757d7c3baca3636de91dd007c6336", null ],
     [ "operations_research::sat::FindLinearBooleanProblemSymmetries", "namespaceoperations__research_1_1sat.html#a75271e8da6c6cb4c5c87226e150d47d7", null ],
     [ "operations_research::sat::IsAssignmentValid", "namespaceoperations__research_1_1sat.html#abe5488433478bfcf730825b9221e2d5e", null ],
     [ "operations_research::sat::LinearBooleanProblemToCnfString", "namespaceoperations__research_1_1sat.html#a18679d8902d037df4ad5371ab25ad435", null ],

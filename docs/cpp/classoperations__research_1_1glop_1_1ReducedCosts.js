@@ -25,6 +25,7 @@ var classoperations__research_1_1glop_1_1ReducedCosts =
     [ "ResetForNewObjective", "classoperations__research_1_1glop_1_1ReducedCosts.html#aff28f5583010fa97cc7b50a8c0c5644f", null ],
     [ "SetNonBasicVariableCostToZero", "classoperations__research_1_1glop_1_1ReducedCosts.html#a481334671b65826c6994e0b36774e042", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1ReducedCosts.html#a5b696f7532379887c8e3ad38cd20a492", null ],
+    [ "SetRandom", "classoperations__research_1_1glop_1_1ReducedCosts.html#a430fcdcb41f2eb67f4a0033de9d1eb2f", null ],
     [ "ShiftCostIfNeeded", "classoperations__research_1_1glop_1_1ReducedCosts.html#aadf74de70294a71884071df39e3f13a5", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1ReducedCosts.html#a4302f077a816a62a34f69fdfd7c055cb", null ],
     [ "StepIsDualDegenerate", "classoperations__research_1_1glop_1_1ReducedCosts.html#a60c1e197d1182cfd435833e8070384c2", null ],

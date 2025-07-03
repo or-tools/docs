@@ -19,8 +19,6 @@ var classModel =
     [ "Maximize", "classModel.html#a9ba290ee4c45a75df6d2667ae1f67c2b", null ],
     [ "maximize", "classModel.html#a109ea2adc2c40917f6c5dcd503df477b", null ],
     [ "Minimize", "classModel.html#afdf650a9b34da8d51ea75019625e9e86", null ],
-    [ "mutable_output", "classModel.html#a360b094ff806c2589803bd7fa2a23dd6", null ],
-    [ "mutable_search_annotations", "classModel.html#af491e221441eb1c27dc520064c5a1522", null ],
     [ "name", "classModel.html#ab6dca6d660153b390fe7144508cd9fd1", null ],
     [ "objective", "classModel.html#abf5814c9741a24c248f05aa866a6a51a", null ],
     [ "output", "classModel.html#a6c767b3a55d03d644750e56200c2aee4", null ],

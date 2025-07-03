@@ -1,0 +1,9 @@
+var classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4 =
+[
+    [ "ElemId", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#a834fc6585b078490c7fb97048a8c636b", null ],
+    [ "Key", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#ad78a331f20f0ae47934e82e2722c7315", null ],
+    [ "Clear", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#a38818d4dc23590335f50f2e6c36b7329", null ],
+    [ "GetKeysReferencing", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#a9274626b351edabd4f10686b464daefe", null ],
+    [ "Track", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#ad0900f0537a13ce1b8733cd4e75f1977", null ],
+    [ "Untrack", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html#a8b78db87cdf76ef218e5da8e06456d1c", null ]
+];

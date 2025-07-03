@@ -20,7 +20,7 @@ var classoperations__research_1_1Set =
     [ "SmallestElement", "classoperations__research_1_1Set.html#a889df263b365f74c6998ba9c171481dd", null ],
     [ "SmallestSingleton", "classoperations__research_1_1Set.html#aafdb1b510571bc337d0dee99f4ef7dea", null ],
     [ "value", "classoperations__research_1_1Set.html#ad84aaa6dd878e39e09b522f9dd7653eb", null ],
-    [ "MaxCardinality", "classoperations__research_1_1Set.html#acf527d4f2a9de5310586b357f76ef408", null ],
-    [ "One", "classoperations__research_1_1Set.html#a5a987287922c08db57c5dee12c509079", null ],
-    [ "Zero", "classoperations__research_1_1Set.html#aefb0e201200674e13de471b57bd73bf9", null ]
+    [ "kMaxCardinality", "classoperations__research_1_1Set.html#aa9e9f4fce22fc341dfbc146825e5b1e7", null ],
+    [ "kOne", "classoperations__research_1_1Set.html#ad94ae63ab4a38a52a1fc755f8b4606b4", null ],
+    [ "kZero", "classoperations__research_1_1Set.html#abaa5c118742f3eca372d06fcaf80b4cf", null ]
 ];

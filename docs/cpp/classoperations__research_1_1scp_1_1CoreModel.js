@@ -1,0 +1,28 @@
+var classoperations__research_1_1scp_1_1CoreModel =
+[
+    [ "CoreModel", "classoperations__research_1_1scp_1_1CoreModel.html#a5a099819eaed09f3da689cac8ad227c9", null ],
+    [ "CoreModel", "classoperations__research_1_1scp_1_1CoreModel.html#a372b62f8d13c7983768ee4f95d801947", null ],
+    [ "CoreModel", "classoperations__research_1_1scp_1_1CoreModel.html#a37bf0e9e81014fba44226c5214ba2a25", null ],
+    [ "~CoreModel", "classoperations__research_1_1scp_1_1CoreModel.html#ac4b41daac5bcddcc5fbd2c54509a6d8d", null ],
+    [ "column_size", "classoperations__research_1_1scp_1_1CoreModel.html#ad0846dd358b35629850270f454407a91", null ],
+    [ "columns", "classoperations__research_1_1scp_1_1CoreModel.html#af53524357a61f43d1da9e0f439e1fb13", null ],
+    [ "ElementRange", "classoperations__research_1_1scp_1_1CoreModel.html#a3b12476fbc5f29f532b66c71d787140c", null ],
+    [ "fixed_columns", "classoperations__research_1_1scp_1_1CoreModel.html#a4f48a393a44166df7bdde497aae2b85b", null ],
+    [ "fixed_cost", "classoperations__research_1_1scp_1_1CoreModel.html#ae9a66e49f3a7c92e1f2fb356476c8a4b", null ],
+    [ "FixMoreColumns", "classoperations__research_1_1scp_1_1CoreModel.html#af787681900920a3aea67cadc9e53ec6a", null ],
+    [ "MapCoreToFullElementIndex", "classoperations__research_1_1scp_1_1CoreModel.html#a681fc7e18c1ee6a7ee31b6749ea6e183", null ],
+    [ "MapCoreToFullSubsetIndex", "classoperations__research_1_1scp_1_1CoreModel.html#acf1e18ddaffdba09b90b57cf1beaa09d", null ],
+    [ "MapFullToCoreElementIndex", "classoperations__research_1_1scp_1_1CoreModel.html#a8c08aaef77c9e65af8d82622be5e9bea", null ],
+    [ "num_elements", "classoperations__research_1_1scp_1_1CoreModel.html#af4c18f3dea44625fa0b5bbcbdf3a9910", null ],
+    [ "num_focus_elements", "classoperations__research_1_1scp_1_1CoreModel.html#a47fd079dd063231563c8a571befbc533", null ],
+    [ "num_focus_subsets", "classoperations__research_1_1scp_1_1CoreModel.html#a31391fdca99e7d6f22ccd9f5e118cdb2", null ],
+    [ "num_subsets", "classoperations__research_1_1scp_1_1CoreModel.html#afad77f8e000b3d4b85dc11bfe8b99aad", null ],
+    [ "ResetColumnFixing", "classoperations__research_1_1scp_1_1CoreModel.html#a1f7e3723afb846da194e3c70a211757e", null ],
+    [ "row_size", "classoperations__research_1_1scp_1_1CoreModel.html#aed14d557c261dd809a2b050639da8151", null ],
+    [ "rows", "classoperations__research_1_1scp_1_1CoreModel.html#a4fb5d4301f2c8917462e4b8e4b6e08dc", null ],
+    [ "SetFocus", "classoperations__research_1_1scp_1_1CoreModel.html#a406bf2c635111cce07f73afdbfb7e8a3", null ],
+    [ "StrongTypedFullModelView", "classoperations__research_1_1scp_1_1CoreModel.html#a7fbb977521fe7b19d0c6565b904cd719", null ],
+    [ "subset_costs", "classoperations__research_1_1scp_1_1CoreModel.html#ad5d90253113f00b966e2155ef1e3c1ea", null ],
+    [ "SubsetRange", "classoperations__research_1_1scp_1_1CoreModel.html#a96dbccb5cbf60f1681ef08e41b8f4f9d", null ],
+    [ "UpdateCore", "classoperations__research_1_1scp_1_1CoreModel.html#ada16ab42169b2e1f3dcd151384609bd2", null ]
+];

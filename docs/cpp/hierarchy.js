@@ -11,6 +11,7 @@ var hierarchy =
     [ "operations_research::sat::AffineExpression", "structoperations__research_1_1sat_1_1AffineExpression.html", null ],
     [ "operations_research::AffineRelation", "classoperations__research_1_1AffineRelation.html", null ],
     [ "operations_research::internal::AlignedBlock< Value, size, alignment >", "structoperations__research_1_1internal_1_1AlignedBlock.html", null ],
+    [ "operations_research::math_opt::AllAttrs", "structoperations__research_1_1math__opt_1_1AllAttrs.html", null ],
     [ "std::allocator< T >", null, [
       [ "operations_research::internal::AllocatorWithAlignment< T, alignment_bytes, 0 >", "structoperations__research_1_1internal_1_1AllocatorWithAlignment.html", null ],
       [ "operations_research::internal::AllocatorWithAlignment< U, alignment_bytes, misalignment_bytes >", "structoperations__research_1_1internal_1_1AllocatorWithAlignment.html", null ],
@@ -18,6 +19,7 @@ var hierarchy =
     ] ],
     [ "operations_research::math_opt::AllSolversRegistry", "classoperations__research_1_1math__opt_1_1AllSolversRegistry.html", null ],
     [ "operations_research::AlternativeNodeIterator", "classoperations__research_1_1AlternativeNodeIterator.html", null ],
+    [ "operations_research::math_opt::Elemental::AlwaysOk", "structoperations__research_1_1math__opt_1_1Elemental_1_1AlwaysOk.html", null ],
     [ "Annotation", "structAnnotation.html", null ],
     [ "operations_research::fz::Annotation", "structoperations__research_1_1fz_1_1Annotation.html", null ],
     [ "operations_research::packing::ArcFlowGraph::Arc", "structoperations__research_1_1packing_1_1ArcFlowGraph_1_1Arc.html", null ],
@@ -54,14 +56,50 @@ var hierarchy =
     [ "operations_research::math_opt::AtomicConstraintTraits< SecondOrderConeConstraintId >", "structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01SecondOrderConeConstraintId_01_4.html", null ],
     [ "operations_research::math_opt::AtomicConstraintTraits< Sos1ConstraintId >", "structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos1ConstraintId_01_4.html", null ],
     [ "operations_research::math_opt::AtomicConstraintTraits< Sos2ConstraintId >", "structoperations__research_1_1math__opt_1_1AtomicConstraintTraits_3_01Sos2ConstraintId_01_4.html", null ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< ValueTypeT, n, SymmetryT, Impl >::AttrDescriptor", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor_1_1AttrDescriptor.html", null ],
+    [ "operations_research::math_opt::AttrDiff< n, Symmetry >", "classoperations__research_1_1math__opt_1_1AttrDiff.html", null ],
+    [ "operations_research::math_opt::ElementalDifference::AttributeDifference< AttrType >", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1AttributeDifference.html", null ],
+    [ "operations_research::math_opt::AttrKey< n, Symmetry >", "classoperations__research_1_1math__opt_1_1AttrKey.html", null ],
+    [ "operations_research::math_opt::detail::AttrKey0RawSet< Symmetry, V >", "classoperations__research_1_1math__opt_1_1detail_1_1AttrKey0RawSet.html", null ],
+    [ "operations_research::math_opt::AttrMap< ValueType >", "classoperations__research_1_1math__opt_1_1AttrMap.html", null ],
+    [ "operations_research::math_opt::AttrOp< AttrType >", "structoperations__research_1_1math__opt_1_1AttrOp.html", null ],
+    [ "operations_research::math_opt::codegen::AttrOpFunctionInfo", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo.html", null ],
+    [ "operations_research::math_opt::AttrStorage< V, n, Symmetry >", "classoperations__research_1_1math__opt_1_1AttrStorage.html", null ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< ValueTypeT, n, SymmetryT, Impl >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", null ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< bool, 0, NoSymmetry, BoolAttr0TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::BoolAttr0TypeDescriptor", "structoperations__research_1_1math__opt_1_1BoolAttr0TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< bool, 1, NoSymmetry, BoolAttr1TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::BoolAttr1TypeDescriptor", "structoperations__research_1_1math__opt_1_1BoolAttr1TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< double, 0, NoSymmetry, DoubleAttr0TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::DoubleAttr0TypeDescriptor", "structoperations__research_1_1math__opt_1_1DoubleAttr0TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< double, 1, NoSymmetry, DoubleAttr1TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::DoubleAttr1TypeDescriptor", "structoperations__research_1_1math__opt_1_1DoubleAttr1TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< double, 2, ElementSymmetry< 0, 1 >, SymmetricDoubleAttr2TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::SymmetricDoubleAttr2TypeDescriptor", "structoperations__research_1_1math__opt_1_1SymmetricDoubleAttr2TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< double, 2, NoSymmetry, DoubleAttr2TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::DoubleAttr2TypeDescriptor", "structoperations__research_1_1math__opt_1_1DoubleAttr2TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< double, 3, ElementSymmetry< 1, 2 >, SymmetricDoubleAttr3TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::SymmetricDoubleAttr3TypeDescriptor", "structoperations__research_1_1math__opt_1_1SymmetricDoubleAttr3TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< int64_t, 0, NoSymmetry, IntAttr0TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::IntAttr0TypeDescriptor", "structoperations__research_1_1math__opt_1_1IntAttr0TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< int64_t, 1, NoSymmetry, IntAttr1TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::IntAttr1TypeDescriptor", "structoperations__research_1_1math__opt_1_1IntAttr1TypeDescriptor.html", null ]
+    ] ],
+    [ "operations_research::math_opt::AttrTypeDescriptor< VariableId, 1, NoSymmetry, VariableAttr1TypeDescriptor >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", [
+      [ "operations_research::math_opt::VariableAttr1TypeDescriptor", "structoperations__research_1_1math__opt_1_1VariableAttr1TypeDescriptor.html", null ]
+    ] ],
     [ "operations_research::bop::BacktrackableIntegerSet< IntType >", "classoperations__research_1_1bop_1_1BacktrackableIntegerSet.html", null ],
     [ "gtl::BaseDeleter", "classgtl_1_1BaseDeleter.html", [
       [ "gtl::TemplatedElementDeleter< STLContainer >", "classgtl_1_1TemplatedElementDeleter.html", null ],
       [ "gtl::TemplatedValueDeleter< STLContainer >", "classgtl_1_1TemplatedValueDeleter.html", null ]
-    ] ],
-    [ "operations_research::sat::BaseEvent", "structoperations__research_1_1sat_1_1BaseEvent.html", [
-      [ "operations_research::sat::CtEvent", "structoperations__research_1_1sat_1_1CtEvent.html", null ],
-      [ "operations_research::sat::EnergyEvent", "structoperations__research_1_1sat_1_1EnergyEvent.html", null ]
     ] ],
     [ "util::BaseGraph< NodeIndexType, ArcIndexType, HasNegativeReverseArcs >", "classutil_1_1BaseGraph.html", [
       [ "util::ReverseArcStaticGraph< NodeIndex, ArcIndex >", "classutil_1_1ReverseArcStaticGraph.html", null ]
@@ -75,37 +113,10 @@ var hierarchy =
     ] ],
     [ "util::BaseGraph< int32_t, int32_t, true >", "classutil_1_1BaseGraph.html", [
       [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >", "classutil_1_1ReverseArcListGraph.html", null ],
-      [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >", "classutil_1_1ReverseArcMixedGraph.html", null ],
       [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >", "classutil_1_1ReverseArcStaticGraph.html", null ]
     ] ],
     [ "util::BaseGraph< int32_t, int64_t, false >", "classutil_1_1BaseGraph.html", [
       [ "util::CompleteGraph< int32_t, int64_t >", "classutil_1_1CompleteGraph.html", null ]
-    ] ],
-    [ "util::BaseGraph< NodeIndexType, ArcIndexType, false >", "classutil_1_1BaseGraph.html", [
-      [ "util::ListGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1ListGraph_1_1OutgoingArcIterator.html", null ],
-      [ "util::ListGraph< NodeIndexType, ArcIndexType >::OutgoingHeadIterator", "classutil_1_1ListGraph_1_1OutgoingHeadIterator.html", null ],
-      [ "util::StaticGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1StaticGraph_1_1OutgoingArcIterator.html", null ]
-    ] ],
-    [ "util::BaseGraph< NodeIndexType, ArcIndexType, true >", "classutil_1_1BaseGraph.html", [
-      [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1IncomingArcIterator.html", null ],
-      [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OppositeIncomingArcIterator.html", [
-        [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1IncomingArcIterator.html", null ]
-      ] ],
-      [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingArcIterator.html", null ],
-      [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OutgoingHeadIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingHeadIterator.html", null ],
-      [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", null ],
-      [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcMixedGraph_1_1IncomingArcIterator.html", null ],
-      [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >::OppositeIncomingArcIterator", "classutil_1_1ReverseArcMixedGraph_1_1OppositeIncomingArcIterator.html", [
-        [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcMixedGraph_1_1IncomingArcIterator.html", null ]
-      ] ],
-      [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1ReverseArcMixedGraph_1_1OutgoingArcIterator.html", null ],
-      [ "util::ReverseArcMixedGraph< NodeIndexType, ArcIndexType >::OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcMixedGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", null ],
-      [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1IncomingArcIterator.html", null ],
-      [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::OppositeIncomingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1OppositeIncomingArcIterator.html", [
-        [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::IncomingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1IncomingArcIterator.html", null ]
-      ] ],
-      [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1OutgoingArcIterator.html", null ],
-      [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", null ]
     ] ],
     [ "operations_research::BaseKnapsackSolver", "classoperations__research_1_1BaseKnapsackSolver.html", [
       [ "operations_research::Knapsack64ItemsSolver", "classoperations__research_1_1Knapsack64ItemsSolver.html", null ],
@@ -266,6 +277,8 @@ var hierarchy =
     [ "util::BeginEndWrapper< IntegerRangeIterator< IntegerType > >", "classutil_1_1BeginEndWrapper.html", [
       [ "util::IntegerRange< IntegerType >", "classutil_1_1IntegerRange.html", null ]
     ] ],
+    [ "operations_research::sat::BestBinaryRelationBounds", "classoperations__research_1_1sat_1_1BestBinaryRelationBounds.html", null ],
+    [ "operations_research::sat::BestBoundHelper", "classoperations__research_1_1sat_1_1BestBoundHelper.html", null ],
     [ "operations_research::sat::ImpliedBoundsProcessor::BestImpliedBoundInfo", "structoperations__research_1_1sat_1_1ImpliedBoundsProcessor_1_1BestImpliedBoundInfo.html", null ],
     [ "operations_research::BidirectionalDijkstra< GraphType, DistanceType >", "classoperations__research_1_1BidirectionalDijkstra.html", null ],
     [ "operations_research::sat::Disjoint2dPackingResult::Bin", "structoperations__research_1_1sat_1_1Disjoint2dPackingResult_1_1Bin.html", null ],
@@ -273,6 +286,7 @@ var hierarchy =
     [ "operations_research::sat::BinaryClauseManager", "classoperations__research_1_1sat_1_1BinaryClauseManager.html", null ],
     [ "operations_research::BinaryIndexedTree< T >", "classoperations__research_1_1BinaryIndexedTree.html", null ],
     [ "operations_research::sat::BinaryRelationRepository", "classoperations__research_1_1sat_1_1BinaryRelationRepository.html", null ],
+    [ "operations_research::sat::BinaryRelationsMaps", "classoperations__research_1_1sat_1_1BinaryRelationsMaps.html", null ],
     [ "operations_research::sat::BinaryTreeNode", "structoperations__research_1_1sat_1_1BinaryTreeNode.html", null ],
     [ "operations_research::BinCapacities", "classoperations__research_1_1BinCapacities.html", null ],
     [ "operations_research::packing::BinPacking2dParser", "classoperations__research_1_1packing_1_1BinPacking2dParser.html", null ],
@@ -309,6 +323,7 @@ var hierarchy =
     [ "operations_research::fz::SolutionOutputSpecs::Bounds", "structoperations__research_1_1fz_1_1SolutionOutputSpecs_1_1Bounds.html", null ],
     [ "operations_research::math_opt::ModelSubset::Bounds", "structoperations__research_1_1math__opt_1_1ModelSubset_1_1Bounds.html", null ],
     [ "SolutionOutputSpecs::Bounds", "structSolutionOutputSpecs_1_1Bounds.html", null ],
+    [ "operations_research::sat::CompiledNoOverlap2dWithTwoBoxes< has_enforcement >::Box", "structoperations__research_1_1sat_1_1CompiledNoOverlap2dWithTwoBoxes_1_1Box.html", null ],
     [ "operations_research::sat::SolutionCrush::BoxInAreaLiteral", "structoperations__research_1_1sat_1_1SolutionCrush_1_1BoxInAreaLiteral.html", null ],
     [ "operations_research::sat::PseudoCosts::BranchingInfo", "structoperations__research_1_1sat_1_1PseudoCosts_1_1BranchingInfo.html", null ],
     [ "operations_research::math_opt::BranchPrioritiesTestParams", "structoperations__research_1_1math__opt_1_1BranchPrioritiesTestParams.html", null ],
@@ -326,6 +341,8 @@ var hierarchy =
     [ "operations_research::CallbackSetup", "structoperations__research_1_1CallbackSetup.html", null ],
     [ "operations_research::math_opt::CallbackTestParams", "structoperations__research_1_1math__opt_1_1CallbackTestParams.html", null ],
     [ "operations_research::sat::CanonicalBooleanLinearProblem", "classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html", null ],
+    [ "operations_research::CapacityInvariant", "classoperations__research_1_1CapacityInvariant.html", null ],
+    [ "operations_research::CapacityModel", "classoperations__research_1_1CapacityModel.html", null ],
     [ "operations_research::sat::CapacityProfile", "classoperations__research_1_1sat_1_1CapacityProfile.html", null ],
     [ "operations_research::routing::CarpParser", "classoperations__research_1_1routing_1_1CarpParser.html", null ],
     [ "operations_research::PathState::Chain", "classoperations__research_1_1PathState_1_1Chain.html", null ],
@@ -335,6 +352,8 @@ var hierarchy =
     [ "operations_research::sat::ClauseInfo", "structoperations__research_1_1sat_1_1ClauseInfo.html", null ],
     [ "operations_research::sat::ClauseWithOneMissingHasher", "classoperations__research_1_1sat_1_1ClauseWithOneMissingHasher.html", null ],
     [ "operations_research::ClosedInterval", "structoperations__research_1_1ClosedInterval.html", null ],
+    [ "operations_research::math_opt::codegen::CodegenAttrTypeDescriptor", "structoperations__research_1_1math__opt_1_1codegen_1_1CodegenAttrTypeDescriptor.html", null ],
+    [ "operations_research::math_opt::codegen::CodeGenerator", "classoperations__research_1_1math__opt_1_1codegen_1_1CodeGenerator.html", null ],
     [ "operations_research::glop::DoubletonEqualityRowPreprocessor::RestoreInfo::ColChoiceAndStatus", "structoperations__research_1_1glop_1_1DoubletonEqualityRowPreprocessor_1_1RestoreInfo_1_1ColChoiceAndStatus.html", null ],
     [ "operations_research::glop::ColumnDeletionHelper", "classoperations__research_1_1glop_1_1ColumnDeletionHelper.html", null ],
     [ "operations_research::sat::ColumnEqForDuplicateDetection", "structoperations__research_1_1sat_1_1ColumnEqForDuplicateDetection.html", null ],
@@ -343,8 +362,8 @@ var hierarchy =
     [ "operations_research::glop::ColumnsSaver", "classoperations__research_1_1glop_1_1ColumnsSaver.html", null ],
     [ "operations_research::glop::ColumnView", "classoperations__research_1_1glop_1_1ColumnView.html", null ],
     [ "operations_research::sat::ZeroHalfCutHelper::CombinationOfRows", "structoperations__research_1_1sat_1_1ZeroHalfCutHelper_1_1CombinationOfRows.html", null ],
+    [ "operations_research::CommittableArray< T >", "classoperations__research_1_1CommittableArray.html", null ],
     [ "operations_research::CommittableValue< T >", "classoperations__research_1_1CommittableValue.html", null ],
-    [ "operations_research::CommittableVector< T >", "classoperations__research_1_1CommittableVector.html", null ],
     [ "operations_research::glop::CompactSparseMatrix", "classoperations__research_1_1glop_1_1CompactSparseMatrix.html", [
       [ "operations_research::glop::TriangularMatrix", "classoperations__research_1_1glop_1_1TriangularMatrix.html", null ]
     ] ],
@@ -366,11 +385,15 @@ var hierarchy =
         [ "operations_research::sat::CompiledLinMaxConstraint", "classoperations__research_1_1sat_1_1CompiledLinMaxConstraint.html", null ],
         [ "operations_research::sat::CompiledNoOverlap2dConstraint", "classoperations__research_1_1sat_1_1CompiledNoOverlap2dConstraint.html", null ]
       ] ],
-      [ "operations_research::sat::CompiledReservoirConstraint", "classoperations__research_1_1sat_1_1CompiledReservoirConstraint.html", null ],
-      [ "operations_research::sat::NoOverlapBetweenTwoIntervals", "classoperations__research_1_1sat_1_1NoOverlapBetweenTwoIntervals.html", null ]
+      [ "operations_research::sat::CompiledNoOverlap2dWithTwoBoxes< has_enforcement >", "classoperations__research_1_1sat_1_1CompiledNoOverlap2dWithTwoBoxes.html", null ],
+      [ "operations_research::sat::CompiledNoOverlapWithTwoIntervals< has_enforcement >", "classoperations__research_1_1sat_1_1CompiledNoOverlapWithTwoIntervals.html", null ],
+      [ "operations_research::sat::CompiledReservoirConstraint", "classoperations__research_1_1sat_1_1CompiledReservoirConstraint.html", null ]
     ] ],
+    [ "operations_research::sat::CompletionTimeEvent", "structoperations__research_1_1sat_1_1CompletionTimeEvent.html", null ],
     [ "operations_research::CompositeRuinProcedure::CompositionStrategy", "classoperations__research_1_1CompositeRuinProcedure_1_1CompositionStrategy.html", null ],
     [ "operations_research::sat::CompoundMoveBuilder", "classoperations__research_1_1sat_1_1CompoundMoveBuilder.html", null ],
+    [ "operations_research::CompressedStrongVector< EntryIndex, Index >", "classoperations__research_1_1CompressedStrongVector.html", null ],
+    [ "operations_research::CompressedStrongVectorIterator< EntryIndex, Index >", "classoperations__research_1_1CompressedStrongVectorIterator.html", null ],
     [ "operations_research::math_opt::BaseSolver::ComputeInfeasibleSubsystemArgs", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html", null ],
     [ "operations_research::math_opt::ComputeInfeasibleSubsystemArguments", "structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemArguments.html", null ],
     [ "operations_research::math_opt::ComputeInfeasibleSubsystemResult", "structoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResult.html", null ],
@@ -426,6 +449,7 @@ var hierarchy =
     [ "operations_research::sat::CpModelView", "classoperations__research_1_1sat_1_1CpModelView.html", null ],
     [ "operations_research::CppBridge", "classoperations__research_1_1CppBridge.html", null ],
     [ "operations_research::CppFlags", "structoperations__research_1_1CppFlags.html", null ],
+    [ "operations_research::sat::CtExhaustiveHelper", "classoperations__research_1_1sat_1_1CtExhaustiveHelper.html", null ],
     [ "operations_research::sat::IntervalsRepository::CumulativeHelper", "structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html", null ],
     [ "operations_research::CumulBoundsPropagator", "classoperations__research_1_1CumulBoundsPropagator.html", null ],
     [ "operations_research::sat::CutData", "structoperations__research_1_1sat_1_1CutData.html", null ],
@@ -434,6 +458,7 @@ var hierarchy =
     [ "operations_research::sat::CutTerm", "structoperations__research_1_1sat_1_1CutTerm.html", null ],
     [ "operations_research::routing::CVRPToursParser", "classoperations__research_1_1routing_1_1CVRPToursParser.html", null ],
     [ "CycleTimerBase", "classCycleTimerBase.html", null ],
+    [ "operations_research::sat::DagTopologicalSortIterator", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator.html", null ],
     [ "operations_research::glop::DataWrapper< Data >", "classoperations__research_1_1glop_1_1DataWrapper.html", null ],
     [ "operations_research::glop::DataWrapper< LinearProgram >", "classoperations__research_1_1glop_1_1DataWrapper_3_01LinearProgram_01_4.html", null ],
     [ "operations_research::glop::DataWrapper< MPModelProto >", "classoperations__research_1_1glop_1_1DataWrapper_3_01MPModelProto_01_4.html", null ],
@@ -444,16 +469,21 @@ var hierarchy =
     [ "operations_research::sat::DelayedRootLevelDeduction", "structoperations__research_1_1sat_1_1DelayedRootLevelDeduction.html", null ],
     [ "DenseConnectedComponentsFinder", "classDenseConnectedComponentsFinder.html", null ],
     [ "operations_research::DenseDoublyLinkedList", "classoperations__research_1_1DenseDoublyLinkedList.html", null ],
+    [ "operations_research::math_opt::detail::DenseElementStorage", "classoperations__research_1_1math__opt_1_1detail_1_1DenseElementStorage.html", null ],
     [ "operations_research::DenseIntDuplicateRemover", "classoperations__research_1_1DenseIntDuplicateRemover.html", null ],
     [ "util::internal::DenseIntTopologicalSorterTpl< stable_sort >", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html", null ],
+    [ "operations_research::math_opt::detail::DenseKeySet< n >", "classoperations__research_1_1math__opt_1_1detail_1_1DenseKeySet.html", null ],
     [ "operations_research::DenseSet< T, auto_resize >", "classoperations__research_1_1DenseSet.html", null ],
     [ "operations_research::LocalSearchState::DependencyGraph::Dependency", "structoperations__research_1_1LocalSearchState_1_1DependencyGraph_1_1Dependency.html", null ],
     [ "operations_research::sat::DFFComposedF2F0", "classoperations__research_1_1sat_1_1DFFComposedF2F0.html", null ],
     [ "operations_research::pdlp::DiagonalTrustRegionProblem", "classoperations__research_1_1pdlp_1_1DiagonalTrustRegionProblem.html", null ],
+    [ "operations_research::math_opt::Elemental::DiePolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1DiePolicy.html", null ],
     [ "operations_research::math_opt::AtomicConstraintStorage< ConstraintData >::Diff", "structoperations__research_1_1math__opt_1_1AtomicConstraintStorage_1_1Diff.html", null ],
+    [ "operations_research::math_opt::Diff", "classoperations__research_1_1math__opt_1_1Diff.html", null ],
     [ "operations_research::math_opt::LinearConstraintStorage::Diff", "structoperations__research_1_1math__opt_1_1LinearConstraintStorage_1_1Diff.html", null ],
     [ "operations_research::math_opt::ObjectiveStorage::Diff", "structoperations__research_1_1math__opt_1_1ObjectiveStorage_1_1Diff.html", null ],
     [ "operations_research::math_opt::VariableStorage::Diff", "structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html", null ],
+    [ "operations_research::math_opt::Elemental::DiffHandle", "classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html", null ],
     [ "operations_research::sat::DiffnBaseEvent", "structoperations__research_1_1sat_1_1DiffnBaseEvent.html", [
       [ "operations_research::sat::DiffnCtEvent", "structoperations__research_1_1sat_1_1DiffnCtEvent.html", null ],
       [ "operations_research::sat::DiffnEnergyEvent", "structoperations__research_1_1sat_1_1DiffnEnergyEvent.html", null ]
@@ -462,8 +492,8 @@ var hierarchy =
     [ "operations_research::DimensionCumulOptimizerCore", "classoperations__research_1_1DimensionCumulOptimizerCore.html", null ],
     [ "operations_research::DimensionValues", "classoperations__research_1_1DimensionValues.html", null ],
     [ "operations_research::sat::DiophantineSolution", "structoperations__research_1_1sat_1_1DiophantineSolution.html", null ],
-    [ "operations_research::DisabledScopedInstructionCounter", "classoperations__research_1_1DisabledScopedInstructionCounter.html", null ],
     [ "operations_research::DisabledScopedTimeDistributionUpdater", "classoperations__research_1_1DisabledScopedTimeDistributionUpdater.html", null ],
+    [ "operations_research::DisabledScopedTimeStats", "classoperations__research_1_1DisabledScopedTimeStats.html", null ],
     [ "operations_research::sat::Disjoint2dPackingResult", "structoperations__research_1_1sat_1_1Disjoint2dPackingResult.html", null ],
     [ "operations_research::DistanceAndParentArc< DistanceType >", "structoperations__research_1_1DistanceAndParentArc.html", null ],
     [ "Domain", "structDomain.html", null ],
@@ -483,6 +513,7 @@ var hierarchy =
     [ "operations_research::sat::DualFeasibleFunctionF0", "classoperations__research_1_1sat_1_1DualFeasibleFunctionF0.html", null ],
     [ "operations_research::math_opt::DualRay", "structoperations__research_1_1math__opt_1_1DualRay.html", null ],
     [ "operations_research::math_opt::DualSolution", "structoperations__research_1_1math__opt_1_1DualSolution.html", null ],
+    [ "operations_research::scp::DualState", "classoperations__research_1_1scp_1_1DualState.html", null ],
     [ "operations_research::pdlp::internal::DualTrustRegionProblem", "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html", null ],
     [ "operations_research::base::internal_dump_vars::Dump< F >", "classoperations__research_1_1base_1_1internal__dump__vars_1_1Dump.html", null ],
     [ "DynamicLibrary", "classDynamicLibrary.html", null ],
@@ -491,11 +522,23 @@ var hierarchy =
     [ "operations_research::DynamicPermutation", "classoperations__research_1_1DynamicPermutation.html", null ],
     [ "operations_research::BlossomGraph::Edge", "structoperations__research_1_1BlossomGraph_1_1Edge.html", null ],
     [ "operations_research::routing::Edge", "classoperations__research_1_1routing_1_1Edge.html", null ],
-    [ "operations_research::ElementDegreeSolutionGenerator", "classoperations__research_1_1ElementDegreeSolutionGenerator.html", null ],
+    [ "operations_research::math_opt::Elemental", "classoperations__research_1_1math__opt_1_1Elemental.html", null ],
+    [ "operations_research::math_opt::ElementalDifference", "classoperations__research_1_1math__opt_1_1ElementalDifference.html", null ],
+    [ "operations_research::math_opt::ElementalDifferenceOptions", "structoperations__research_1_1math__opt_1_1ElementalDifferenceOptions.html", null ],
+    [ "operations_research::math_opt::ElementalMatcher", "classoperations__research_1_1math__opt_1_1ElementalMatcher.html", null ],
     [ "gtl::ElementDeleter", "classgtl_1_1ElementDeleter.html", null ],
+    [ "operations_research::math_opt::ElementDiff", "classoperations__research_1_1math__opt_1_1ElementDiff.html", null ],
+    [ "operations_research::math_opt::ElementalDifference::ElementDifference", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1ElementDifference.html", null ],
     [ "operations_research::sat::ElementEncodings", "classoperations__research_1_1sat_1_1ElementEncodings.html", null ],
     [ "operations_research::ElementGetter< T >", "classoperations__research_1_1ElementGetter.html", null ],
+    [ "operations_research::math_opt::ElementId< element_type >", "classoperations__research_1_1math__opt_1_1ElementId.html", null ],
+    [ "operations_research::math_opt::ElementIdsConstView< element_type, Container >", "classoperations__research_1_1math__opt_1_1ElementIdsConstView.html", null ],
+    [ "operations_research::math_opt::ElementIdsVector< element_type >", "classoperations__research_1_1math__opt_1_1ElementIdsVector.html", null ],
     [ "operations_research::ElementIterator< Set >", "classoperations__research_1_1ElementIterator.html", null ],
+    [ "operations_research::math_opt::ElementRefTracker< ValueType, n, Symmetry >", "classoperations__research_1_1math__opt_1_1ElementRefTracker.html", null ],
+    [ "operations_research::math_opt::ElementRefTracker< ElementId< element_type >, n, Symmetry >", "classoperations__research_1_1math__opt_1_1ElementRefTracker_3_01ElementId_3_01element__type_01_4_00_01n_00_01Symmetry_01_4.html", null ],
+    [ "operations_research::math_opt::ElementStorage", "classoperations__research_1_1math__opt_1_1ElementStorage.html", null ],
+    [ "operations_research::math_opt::ElementSymmetry< i, j >", "structoperations__research_1_1math__opt_1_1ElementSymmetry.html", null ],
     [ "std::enable_shared_from_this", null, [
       [ "operations_research::mb::LinearExpr", "classoperations__research_1_1mb_1_1LinearExpr.html", [
         [ "operations_research::mb::AffineExpr", "classoperations__research_1_1mb_1_1AffineExpr.html", null ],
@@ -507,9 +550,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "operations_research::EnabledScopedTimeDistributionUpdater", "classoperations__research_1_1EnabledScopedTimeDistributionUpdater.html", null ],
+    [ "operations_research::EnabledScopedTimeStats", "classoperations__research_1_1EnabledScopedTimeStats.html", null ],
     [ "operations_research::sat::EncodingNode", "classoperations__research_1_1sat_1_1EncodingNode.html", null ],
     [ "operations_research::PathEnergyCostChecker::EnergyCost", "structoperations__research_1_1PathEnergyCostChecker_1_1EnergyCost.html", null ],
     [ "operations_research::Solver::PathEnergyCostConstraintSpecification::EnergyCost", "structoperations__research_1_1Solver_1_1PathEnergyCostConstraintSpecification_1_1EnergyCost.html", null ],
+    [ "operations_research::sat::EnergyEvent", "structoperations__research_1_1sat_1_1EnergyEvent.html", null ],
     [ "operations_research::glop::EnteringVariable", "classoperations__research_1_1glop_1_1EnteringVariable.html", null ],
     [ "Entry", null, [
       [ "operations_research::glop::VectorIterator< Entry >", "classoperations__research_1_1glop_1_1VectorIterator.html", null ]
@@ -521,10 +566,12 @@ var hierarchy =
     ] ],
     [ "operations_research::math_opt::Enum< E >", "structoperations__research_1_1math__opt_1_1Enum.html", null ],
     [ "google::protobuf::contrib::utils::EnumeratedProtoEnumView< E >", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1EnumeratedProtoEnumView.html", null ],
+    [ "operations_research::math_opt::EnumeratedTupleCpp17Helper< ValueType >", "structoperations__research_1_1math__opt_1_1EnumeratedTupleCpp17Helper.html", null ],
     [ "gtl::detail::EnumLogger< E >", "classgtl_1_1detail_1_1EnumLogger.html", null ],
     [ "operations_research::math_opt::EnumProto< P >", "structoperations__research_1_1math__opt_1_1EnumProto.html", null ],
     [ "gtl::internal::Equiv< LessFunc >", "classgtl_1_1internal_1_1Equiv.html", null ],
     [ "operations_research::glop::EtaFactorization", "classoperations__research_1_1glop_1_1EtaFactorization.html", null ],
+    [ "operations_research::CheapestInsertionFilteredHeuristic::EvaluatorCache", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1EvaluatorCache.html", null ],
     [ "operations_research::routing::RoutingSolution::Event", "structoperations__research_1_1routing_1_1RoutingSolution_1_1Event.html", null ],
     [ "operations_research::sat::ExponentialMovingAverage", "classoperations__research_1_1sat_1_1ExponentialMovingAverage.html", null ],
     [ "operations_research::mb::ExprVisitor", "classoperations__research_1_1mb_1_1ExprVisitor.html", [
@@ -532,11 +579,16 @@ var hierarchy =
       [ "operations_research::mb::ExprFlattener", "classoperations__research_1_1mb_1_1ExprFlattener.html", null ]
     ] ],
     [ "operations_research::DimensionChecker::ExtendedInterval", "structoperations__research_1_1DimensionChecker_1_1ExtendedInterval.html", null ],
+    [ "operations_research::math_opt::codegen::AttrOpFunctionInfo::ExtraParameter", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo_1_1ExtraParameter.html", null ],
     [ "std::false_type", null, [
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1hasher_01_4_01_4.html", null ],
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher >, absl::void_t< typename T::reverse_iterator > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1has874eac94230b485ac83db5fd43f88c46.html", null ],
+      [ "operations_research::math_opt::is_attr_key< AttrKey< n, Symmetry > >", "structoperations__research_1_1math__opt_1_1is__attr__key_3_01AttrKey_3_01n_00_01Symmetry_01_4_01_4.html", null ],
+      [ "operations_research::math_opt::is_element_id< ElementId< element_type > >", "structoperations__research_1_1math__opt_1_1is__element__id_3_01ElementId_3_01element__type_01_4_01_4.html", null ],
       [ "gtl::stl_util_internal::Unordered< typename, typename, typename >", "structgtl_1_1stl__util__internal_1_1Unordered.html", null ],
-      [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher >, absl::void_t< typename T::reverse_iterator > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1has874eac94230b485ac83db5fd43f88c46.html", null ]
+      [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher >, absl::void_t< typename T::reverse_iterator > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1has874eac94230b485ac83db5fd43f88c46.html", null ],
+      [ "operations_research::math_opt::is_attr_key< T >", "structoperations__research_1_1math__opt_1_1is__attr__key.html", null ],
+      [ "operations_research::math_opt::is_element_id< T >", "structoperations__research_1_1math__opt_1_1is__element__id.html", null ]
     ] ],
     [ "operations_research::math_opt::FeasibilityCheckerOptions", "structoperations__research_1_1math__opt_1_1FeasibilityCheckerOptions.html", null ],
     [ "operations_research::sat::FeasibilityPump", "classoperations__research_1_1sat_1_1FeasibilityPump.html", null ],
@@ -544,6 +596,8 @@ var hierarchy =
     [ "FileLineIterator", "classFileLineIterator.html", null ],
     [ "FileLines", "classFileLines.html", null ],
     [ "operations_research::LocalSearchFilterManager::FilterEvent", "structoperations__research_1_1LocalSearchFilterManager_1_1FilterEvent.html", null ],
+    [ "util_intops::FilterIndexRangeView< IntT, EnableVectorT >", "classutil__intops_1_1FilterIndexRangeView.html", null ],
+    [ "operations_research::FilterModelView", "classoperations__research_1_1FilterModelView.html", null ],
     [ "operations_research::FinalizerVariables", "classoperations__research_1_1FinalizerVariables.html", null ],
     [ "operations_research::sat::FindRectanglesResult", "structoperations__research_1_1sat_1_1FindRectanglesResult.html", null ],
     [ "operations_research::sat::FirstFewValues< n >", "classoperations__research_1_1sat_1_1FirstFewValues.html", null ],
@@ -566,9 +620,10 @@ var hierarchy =
     [ "operations_research::math_opt::GlpkParameters", "structoperations__research_1_1math__opt_1_1GlpkParameters.html", null ],
     [ "operations_research::math_opt::GlpkRay", "structoperations__research_1_1math__opt_1_1GlpkRay.html", null ],
     [ "operations_research::math_opt::GlpkSparseVector", "classoperations__research_1_1math__opt_1_1GlpkSparseVector.html", null ],
+    [ "operations_research::GraphPathWithLength< GraphType >", "structoperations__research_1_1GraphPathWithLength.html", null ],
     [ "operations_research::GraphSymmetryFinder", "classoperations__research_1_1GraphSymmetryFinder.html", null ],
+    [ "util::GraphTraits< Graph >", "structutil_1_1GraphTraits.html", null ],
     [ "operations_research::sat::GreaterThanAtLeastOneOfDetector", "classoperations__research_1_1sat_1_1GreaterThanAtLeastOneOfDetector.html", null ],
-    [ "operations_research::GreedySolutionGenerator", "classoperations__research_1_1GreedySolutionGenerator.html", null ],
     [ "operations_research::GScipCallbackStats", "structoperations__research_1_1GScipCallbackStats.html", null ],
     [ "operations_research::GScipConstraintHandler< ConstraintData >", "classoperations__research_1_1GScipConstraintHandler.html", null ],
     [ "operations_research::GScipConstraintHandler< GScipSolverConstraintData >", "classoperations__research_1_1GScipConstraintHandler.html", [
@@ -589,8 +644,6 @@ var hierarchy =
     [ "operations_research::GScipLazyConstraintOptions", "structoperations__research_1_1GScipLazyConstraintOptions.html", null ],
     [ "operations_research::GScipLinearExpr", "structoperations__research_1_1GScipLinearExpr.html", null ],
     [ "operations_research::math_opt::GScipSolverConstraintData", "structoperations__research_1_1math__opt_1_1GScipSolverConstraintData.html", null ],
-    [ "operations_research::GuidedLocalSearch", "classoperations__research_1_1GuidedLocalSearch.html", null ],
-    [ "operations_research::GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html", null ],
     [ "operations_research::math_opt::Gurobi", "classoperations__research_1_1math__opt_1_1Gurobi.html", null ],
     [ "operations_research::math_opt::GurobiCallbackInput", "structoperations__research_1_1math__opt_1_1GurobiCallbackInput.html", null ],
     [ "operations_research::math_opt::GurobiFreeEnv", "structoperations__research_1_1math__opt_1_1GurobiFreeEnv.html", null ],
@@ -598,18 +651,14 @@ var hierarchy =
     [ "operations_research::math_opt::GurobiIsvKey", "structoperations__research_1_1math__opt_1_1GurobiIsvKey.html", null ],
     [ "operations_research::math_opt::GurobiParameters", "structoperations__research_1_1math__opt_1_1GurobiParameters.html", null ],
     [ "operations_research::HamiltonianPathSolver< CostType, CostFunction >", "classoperations__research_1_1HamiltonianPathSolver.html", null ],
-    [ "gtl::IntType< IntTypeName, _ValueType >::Hasher", "structgtl_1_1IntType_1_1Hasher.html", [
-      [ "std::hash< gtl::IntType< IntTypeName, ValueType > >", "structstd_1_1hash_3_01gtl_1_1IntType_3_01IntTypeName_00_01ValueType_01_4_01_4.html", null ]
-    ] ],
+    [ "gtl::IntType< IntTypeName, _ValueType >::Hasher", "structgtl_1_1IntType_1_1Hasher.html", null ],
     [ "operations_research::StrongIndex< StrongIndexName >::Hasher", null, [
       [ "std::hash< operations_research::StrongIndex< Tag > >", "structstd_1_1hash_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html", null ]
     ] ],
     [ "operations_research::StrongInt64< StrongIntegerName >::Hasher", null, [
       [ "std::hash< operations_research::StrongInt64< Tag > >", "structstd_1_1hash_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html", null ]
     ] ],
-    [ "util_intops::StrongInt< StrongIntName, _ValueType >::Hasher", "structutil__intops_1_1StrongInt_1_1Hasher.html", [
-      [ "std::hash< util_intops::StrongInt< StrongIntName, ValueType > >", "structstd_1_1hash_3_01util__intops_1_1StrongInt_3_01StrongIntName_00_01ValueType_01_4_01_4.html", null ]
-    ] ],
+    [ "operations_research::sat::RouteRelationsHelper::HeadMinusTailBounds", "structoperations__research_1_1sat_1_1RouteRelationsHelper_1_1HeadMinusTailBounds.html", null ],
     [ "operations_research::sat::HittingSetOptimizer", "classoperations__research_1_1sat_1_1HittingSetOptimizer.html", null ],
     [ "operations_research::HungarianOptimizer", "classoperations__research_1_1HungarianOptimizer.html", null ],
     [ "operations_research::sat::IdentityMap< T >", "classoperations__research_1_1sat_1_1IdentityMap.html", null ],
@@ -623,8 +672,14 @@ var hierarchy =
       [ "operations_research::math_opt::internal::IncrementalSolverImpl", "classoperations__research_1_1math__opt_1_1internal_1_1IncrementalSolverImpl.html", null ]
     ] ],
     [ "operations_research::sat::IndexedInterval", "structoperations__research_1_1sat_1_1IndexedInterval.html", null ],
+    [ "util_intops::IndexFilterView< ValueT, EnableVectorT >", "classutil__intops_1_1IndexFilterView.html", null ],
+    [ "operations_research::IndexListModelView", "classoperations__research_1_1IndexListModelView.html", [
+      [ "operations_research::scp::SubModelView", "classoperations__research_1_1scp_1_1SubModelView.html", null ]
+    ] ],
+    [ "util_intops::IndexListView< ValueT, IndexT >", "classutil__intops_1_1IndexListView.html", null ],
+    [ "operations_research::IndexRange< Index >", "structoperations__research_1_1IndexRange.html", null ],
+    [ "operations_research::IndexRangeIterator< Index >", "classoperations__research_1_1IndexRangeIterator.html", null ],
     [ "operations_research::sat::IndexReferences", "structoperations__research_1_1sat_1_1IndexReferences.html", null ],
-    [ "operations_research::math_opt::IndicatorConstraint", "classoperations__research_1_1math__opt_1_1IndicatorConstraint.html", null ],
     [ "operations_research::math_opt::IndicatorConstraintData", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html", null ],
     [ "operations_research::math_opt::InfeasibleSubsystemSupport", "structoperations__research_1_1math__opt_1_1InfeasibleSubsystemSupport.html", null ],
     [ "operations_research::math_opt::InfeasibleSubsystemTestParameters", "structoperations__research_1_1math__opt_1_1InfeasibleSubsystemTestParameters.html", null ],
@@ -646,8 +701,10 @@ var hierarchy =
     [ "operations_research::bop::IntegralSolver", "classoperations__research_1_1bop_1_1IntegralSolver.html", null ],
     [ "operations_research::LightVehicleBreaksChecker::InterbreakLimit", "structoperations__research_1_1LightVehicleBreaksChecker_1_1InterbreakLimit.html", null ],
     [ "operations_research::IntersectingSubsetsIterator", "classoperations__research_1_1IntersectingSubsetsIterator.html", null ],
+    [ "operations_research::IntersectingSubsetsRange", "classoperations__research_1_1IntersectingSubsetsRange.html", null ],
     [ "operations_research::DimensionChecker::Interval", "structoperations__research_1_1DimensionChecker_1_1Interval.html", null ],
     [ "operations_research::DimensionValues::Interval", "structoperations__research_1_1DimensionValues_1_1Interval.html", null ],
+    [ "operations_research::sat::CompiledNoOverlapWithTwoIntervals< has_enforcement >::Interval", "structoperations__research_1_1sat_1_1CompiledNoOverlapWithTwoIntervals_1_1Interval.html", null ],
     [ "operations_research::sat::ItemWithVariableSize::Interval", "structoperations__research_1_1sat_1_1ItemWithVariableSize_1_1Interval.html", null ],
     [ "operations_research::SortedDisjointIntervalList::IntervalComparator", "structoperations__research_1_1SortedDisjointIntervalList_1_1IntervalComparator.html", null ],
     [ "operations_research::sat::IntervalDefinition", "structoperations__research_1_1sat_1_1IntervalDefinition.html", null ],
@@ -679,28 +736,63 @@ var hierarchy =
     [ "operations_research::math_opt::InvertedBounds", "structoperations__research_1_1math__opt_1_1InvertedBounds.html", null ],
     [ "operations_research::math_opt::IpMultipleSolutionsTestParams", "structoperations__research_1_1math__opt_1_1IpMultipleSolutionsTestParams.html", null ],
     [ "operations_research::math_opt::IpParameterTestParameters", "structoperations__research_1_1math__opt_1_1IpParameterTestParameters.html", null ],
+    [ "operations_research::math_opt::is_model_storage_element< T >", "structoperations__research_1_1math__opt_1_1is__model__storage__element.html", null ],
     [ "testing::status::internal::IsOkAndHoldsMatcher< InnerMatcher >", "classtesting_1_1status_1_1internal_1_1IsOkAndHoldsMatcher.html", null ],
     [ "testing::status::internal::IsOkMatcher", "classtesting_1_1status_1_1internal_1_1IsOkMatcher.html", null ],
     [ "operations_research::sat::OrthogonalPackingResult::Item", "structoperations__research_1_1sat_1_1OrthogonalPackingResult_1_1Item.html", null ],
+    [ "operations_research::sat::SpecialBinPackingHelper::ItemOrBin", "structoperations__research_1_1sat_1_1SpecialBinPackingHelper_1_1ItemOrBin.html", null ],
     [ "operations_research::sat::ItemWithVariableSize", "structoperations__research_1_1sat_1_1ItemWithVariableSize.html", null ],
+    [ "operations_research::IterableContainerBase< T, Derived >", "classoperations__research_1_1IterableContainerBase.html", null ],
+    [ "operations_research::IterableContainerBase< T, IterableContainer< T > >", "classoperations__research_1_1IterableContainerBase.html", [
+      [ "operations_research::IterableContainer< T >", "classoperations__research_1_1IterableContainer.html", null ]
+    ] ],
     [ "operations_research::DynamicPartition::IterablePart", "structoperations__research_1_1DynamicPartition_1_1IterablePart.html", null ],
     [ "operations_research::pdlp::IterationCallbackInfo", "structoperations__research_1_1pdlp_1_1IterationCallbackInfo.html", null ],
     [ "operations_research::PathOperator< ignore_path_vars >::IterationParameters", "structoperations__research_1_1PathOperator_1_1IterationParameters.html", null ],
     [ "operations_research::Bitset64< IndexType >::Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", null ],
+    [ "operations_research::ClosedInterval::Iterator", "classoperations__research_1_1ClosedInterval_1_1Iterator.html", null ],
     [ "operations_research::InitAndGetValues::Iterator", "structoperations__research_1_1InitAndGetValues_1_1Iterator.html", null ],
     [ "operations_research::PathState::Chain::Iterator", "classoperations__research_1_1PathState_1_1Chain_1_1Iterator.html", null ],
     [ "operations_research::PathState::ChainRange::Iterator", "classoperations__research_1_1PathState_1_1ChainRange_1_1Iterator.html", null ],
     [ "operations_research::PathState::NodeRange::Iterator", "classoperations__research_1_1PathState_1_1NodeRange_1_1Iterator.html", null ],
+    [ "operations_research::sat::DagTopologicalSortIterator::Iterator", "classoperations__research_1_1sat_1_1DagTopologicalSortIterator_1_1Iterator.html", null ],
     [ "operations_research::SimpleRevFIFO< T >::Iterator", "classoperations__research_1_1SimpleRevFIFO_1_1Iterator.html", null ],
     [ "operations_research::SparsePermutation::Iterator", "structoperations__research_1_1SparsePermutation_1_1Iterator.html", null ],
-    [ "util::MutableVectorIteration< T >::Iterator", "structutil_1_1MutableVectorIteration_1_1Iterator.html", null ],
     [ "std::iterator", null, [
+      [ "util::ArcPropertyIterator< Graph, ArcIterator, typename Graph::NodeIndex, &Graph::Head >", "classutil_1_1ArcPropertyIterator.html", null ],
+      [ "util::ArcPropertyIterator< Graph, ArcIterator, typename Graph::ArcIndex, &Graph::OppositeArc >", "classutil_1_1ArcPropertyIterator.html", null ],
+      [ "util::ChasingIterator< ArcIndexType, Base::kNilArc, OutgoingArcIteratorTag >", "classutil_1_1ChasingIterator.html", null ],
+      [ "util::ChasingIterator< ArcIndexType, Base::kNilArc, OppositeIncomingArcIteratorTag >", "classutil_1_1ChasingIterator.html", null ],
+      [ "util::IntegerRangeIterator< ArcIndexType >", "classutil_1_1IntegerRangeIterator.html", null ],
       [ "google::protobuf::contrib::utils::internal::RepeatedEnumView< E >::Iterator", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html", null ],
+      [ "util::ArcPropertyIterator< Graph, ArcIterator, PropertyT, property >", "classutil_1_1ArcPropertyIterator.html", null ],
+      [ "util::ChasingIterator< IndexT, sentinel, Tag >", "classutil_1_1ChasingIterator.html", null ],
       [ "util::IntegerRangeIterator< IntegerType >", "classutil_1_1IntegerRangeIterator.html", null ]
     ] ],
     [ "operations_research::math_opt::iterator_range< IteratorT >", "classoperations__research_1_1math__opt_1_1iterator__range.html", null ],
+    [ "util_intops::util::IteratorCRTP< IterT, ValueT >", "structutil__intops_1_1util_1_1IteratorCRTP.html", null ],
+    [ "util_intops::util::IteratorCRTP< FilterIndicesViewIterator, IntT >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::FilterIndexRangeView< IntT, EnableVectorT >::FilterIndicesViewIterator", "structutil__intops_1_1FilterIndexRangeView_1_1FilterIndicesViewIterator.html", null ]
+    ] ],
+    [ "util_intops::util::IteratorCRTP< IndexFilterViewIterator, value_type >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::IndexFilterView< ValueT, EnableVectorT >::IndexFilterViewIterator", "structutil__intops_1_1IndexFilterView_1_1IndexFilterViewIterator.html", null ]
+    ] ],
+    [ "util_intops::util::IteratorCRTP< IndexListViewIterator, value_type >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::IndexListView< ValueT, IndexT >::IndexListViewIterator", "structutil__intops_1_1IndexListView_1_1IndexListViewIterator.html", null ]
+    ] ],
+    [ "util_intops::util::IteratorCRTP< TransformViewIterator, value_type >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::TransformView< ValueT, IndexT, ValueTransformT >::TransformViewIterator", "structutil__intops_1_1TransformView_1_1TransformViewIterator.html", null ]
+    ] ],
+    [ "util_intops::util::IteratorCRTP< TwoLevelsViewIterator, level2_type >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::TwoLevelsView< Lvl1ViewT, EnableVectorT >::TwoLevelsViewIterator", "structutil__intops_1_1TwoLevelsView_1_1TwoLevelsViewIterator.html", null ]
+    ] ],
+    [ "util_intops::util::IteratorCRTP< ValueFilterViewIterator, value_type >", "structutil__intops_1_1util_1_1IteratorCRTP.html", [
+      [ "util_intops::ValueFilterView< ValueT, EnableVectorT >::ValueFilterViewIterator", "structutil__intops_1_1ValueFilterView_1_1ValueFilterViewIterator.html", null ]
+    ] ],
+    [ "operations_research::math_opt::detail::AttrKey0RawSet< Symmetry, V >::IteratorImpl< ValueT >", "classoperations__research_1_1math__opt_1_1detail_1_1AttrKey0RawSet_1_1IteratorImpl.html", null ],
     [ "operations_research::scheduling::jssp::JsspParser", "classoperations__research_1_1scheduling_1_1jssp_1_1JsspParser.html", null ],
     [ "operations_research::sat::JumpTable", "classoperations__research_1_1sat_1_1JumpTable.html", null ],
+    [ "operations_research::math_opt::detail::KeySet< n >", "classoperations__research_1_1math__opt_1_1detail_1_1KeySet.html", null ],
     [ "operations_research::KnapsackAssignment", "structoperations__research_1_1KnapsackAssignment.html", null ],
     [ "operations_research::KnapsackItem", "structoperations__research_1_1KnapsackItem.html", null ],
     [ "operations_research::KnapsackItemWithEfficiency", "structoperations__research_1_1KnapsackItemWithEfficiency.html", null ],
@@ -712,12 +804,11 @@ var hierarchy =
     [ "operations_research::KnapsackSolver", "classoperations__research_1_1KnapsackSolver.html", null ],
     [ "operations_research::KnapsackState", "classoperations__research_1_1KnapsackState.html", null ],
     [ "operations_research::KShortestPaths< GraphType >", "structoperations__research_1_1KShortestPaths.html", null ],
-    [ "operations_research::KShortestPathsOnDagWrapper< GraphType >", "classoperations__research_1_1KShortestPathsOnDagWrapper.html", null ],
+    [ "operations_research::KShortestPathsOnDagWrapper< GraphType, ArcLengthContainer >", "classoperations__research_1_1KShortestPathsOnDagWrapper.html", null ],
     [ "operations_research::pdlp::LagrangianPart", "structoperations__research_1_1pdlp_1_1LagrangianPart.html", null ],
     [ "operations_research::math_opt::LargeInstanceTestParams", "structoperations__research_1_1math__opt_1_1LargeInstanceTestParams.html", null ],
     [ "operations_research::LatticeMemoryManager< Set, CostType >", "classoperations__research_1_1LatticeMemoryManager.html", null ],
     [ "operations_research::math_opt::LazyConstraintsTestParams", "structoperations__research_1_1math__opt_1_1LazyConstraintsTestParams.html", null ],
-    [ "operations_research::LazyElementDegreeSolutionGenerator", "classoperations__research_1_1LazyElementDegreeSolutionGenerator.html", null ],
     [ "operations_research::LazyMutableCopy< T >", "classoperations__research_1_1LazyMutableCopy.html", null ],
     [ "operations_research::sat::LazyReasonInterface", "classoperations__research_1_1sat_1_1LazyReasonInterface.html", [
       [ "operations_research::sat::LinearConstraintPropagator< false >", "classoperations__research_1_1sat_1_1LinearConstraintPropagator.html", null ],
@@ -735,7 +826,6 @@ var hierarchy =
     [ "operations_research::LightVehicleBreaksChecker", "classoperations__research_1_1LightVehicleBreaksChecker.html", null ],
     [ "operations_research::routing::LiLimParser", "classoperations__research_1_1routing_1_1LiLimParser.html", null ],
     [ "operations_research::sat::LinearBooleanProblemWrapper", "classoperations__research_1_1sat_1_1LinearBooleanProblemWrapper.html", null ],
-    [ "operations_research::math_opt::LinearConstraint", "classoperations__research_1_1math__opt_1_1LinearConstraint.html", null ],
     [ "operations_research::sat::LinearConstraint", "structoperations__research_1_1sat_1_1LinearConstraint.html", null ],
     [ "operations_research::sat::LinearConstraintBuilder", "classoperations__research_1_1sat_1_1LinearConstraintBuilder.html", null ],
     [ "operations_research::sat::LinearConstraintManager", "classoperations__research_1_1sat_1_1LinearConstraintManager.html", null ],
@@ -743,8 +833,8 @@ var hierarchy =
     [ "operations_research::sat::LinearConstraintSymmetrizer", "classoperations__research_1_1sat_1_1LinearConstraintSymmetrizer.html", null ],
     [ "operations_research::LinearExpr", "classoperations__research_1_1LinearExpr.html", null ],
     [ "operations_research::sat::LinearExpr", "classoperations__research_1_1sat_1_1LinearExpr.html", null ],
-    [ "operations_research::math_opt::LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html", null ],
     [ "operations_research::sat::LinearExpression", "structoperations__research_1_1sat_1_1LinearExpression.html", null ],
+    [ "operations_research::sat::LinearExpression2", "structoperations__research_1_1sat_1_1LinearExpression2.html", null ],
     [ "operations_research::math_opt::LinearExpressionData", "structoperations__research_1_1math__opt_1_1LinearExpressionData.html", null ],
     [ "operations_research::sat::LinearIncrementalEvaluator", "classoperations__research_1_1sat_1_1LinearIncrementalEvaluator.html", null ],
     [ "operations_research::sat::LinearModel", "classoperations__research_1_1sat_1_1LinearModel.html", null ],
@@ -802,6 +892,9 @@ var hierarchy =
     [ "operations_research::sat::LsState", "structoperations__research_1_1sat_1_1LsState.html", null ],
     [ "operations_research::bop::LubyAdaptiveParameterValue", "classoperations__research_1_1bop_1_1LubyAdaptiveParameterValue.html", null ],
     [ "operations_research::glop::LuFactorization", "classoperations__research_1_1glop_1_1LuFactorization.html", null ],
+    [ "Lvl1ViewT", null, [
+      [ "util_intops::TwoLevelsView< Lvl1ViewT, EnableVectorT >", "classutil__intops_1_1TwoLevelsView.html", null ]
+    ] ],
     [ "std::make_unsigned", null, [
       [ "operations_research::internal::ToUInt< double >", "structoperations__research_1_1internal_1_1ToUInt_3_01double_01_4.html", null ],
       [ "operations_research::internal::ToUInt< float >", "structoperations__research_1_1internal_1_1ToUInt_3_01float_01_4.html", null ],
@@ -854,6 +947,31 @@ var hierarchy =
     [ "operations_research::math_opt::ModelSolveParameters", "structoperations__research_1_1math__opt_1_1ModelSolveParameters.html", null ],
     [ "operations_research::mb::ModelSolverHelper", "classoperations__research_1_1mb_1_1ModelSolverHelper.html", null ],
     [ "operations_research::fz::ModelStatistics", "classoperations__research_1_1fz_1_1ModelStatistics.html", null ],
+    [ "operations_research::math_opt::ModelStorageItem", "classoperations__research_1_1math__opt_1_1ModelStorageItem.html", [
+      [ "operations_research::math_opt::ModelStorageElement< ElementType::kIndicatorConstraint, IndicatorConstraint >", "classoperations__research_1_1math__opt_1_1ModelStorageElement.html", [
+        [ "operations_research::math_opt::IndicatorConstraint", "classoperations__research_1_1math__opt_1_1IndicatorConstraint.html", null ]
+      ] ],
+      [ "operations_research::math_opt::ModelStorageElement< ElementType::kLinearConstraint, LinearConstraint >", "classoperations__research_1_1math__opt_1_1ModelStorageElement.html", [
+        [ "operations_research::math_opt::LinearConstraint", "classoperations__research_1_1math__opt_1_1LinearConstraint.html", null ]
+      ] ],
+      [ "operations_research::math_opt::ModelStorageElement< ElementType::kQuadraticConstraint, QuadraticConstraint >", "classoperations__research_1_1math__opt_1_1ModelStorageElement.html", [
+        [ "operations_research::math_opt::QuadraticConstraint", "classoperations__research_1_1math__opt_1_1QuadraticConstraint.html", null ]
+      ] ],
+      [ "operations_research::math_opt::ModelStorageElement< ElementType::kVariable, Variable, ModelStorageElementEquality::kWithoutEquality >", "classoperations__research_1_1math__opt_1_1ModelStorageElement.html", [
+        [ "operations_research::math_opt::Variable", "classoperations__research_1_1math__opt_1_1Variable.html", null ]
+      ] ],
+      [ "operations_research::math_opt::ModelStorageElement< element_type, Derived, generate_equality >", "classoperations__research_1_1math__opt_1_1ModelStorageElement.html", null ],
+      [ "operations_research::math_opt::Objective", "classoperations__research_1_1math__opt_1_1Objective.html", null ],
+      [ "operations_research::math_opt::QuadraticTermKey", "classoperations__research_1_1math__opt_1_1QuadraticTermKey.html", null ],
+      [ "operations_research::math_opt::SecondOrderConeConstraint", "classoperations__research_1_1math__opt_1_1SecondOrderConeConstraint.html", null ],
+      [ "operations_research::math_opt::Sos1Constraint", "classoperations__research_1_1math__opt_1_1Sos1Constraint.html", null ],
+      [ "operations_research::math_opt::Sos2Constraint", "classoperations__research_1_1math__opt_1_1Sos2Constraint.html", null ]
+    ] ],
+    [ "operations_research::math_opt::ModelStorageItemContainer", "classoperations__research_1_1math__opt_1_1ModelStorageItemContainer.html", [
+      [ "operations_research::math_opt::LinearExpression", "classoperations__research_1_1math__opt_1_1LinearExpression.html", null ],
+      [ "operations_research::math_opt::QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html", null ]
+    ] ],
+    [ "operations_research::math_opt::ModelStorageV2", "classoperations__research_1_1math__opt_1_1ModelStorageV2.html", null ],
     [ "operations_research::math_opt::ModelSubset", "structoperations__research_1_1math__opt_1_1ModelSubset.html", null ],
     [ "operations_research::math_opt::ModelSummary", "structoperations__research_1_1math__opt_1_1ModelSummary.html", null ],
     [ "operations_research::MonoidOperationTree< T >", "classoperations__research_1_1MonoidOperationTree.html", null ],
@@ -890,7 +1008,6 @@ var hierarchy =
     [ "operations_research::MPVariable", "classoperations__research_1_1MPVariable.html", null ],
     [ "operations_research::math_opt::MultiObjectiveTestParameters", "structoperations__research_1_1math__opt_1_1MultiObjectiveTestParameters.html", null ],
     [ "operations_research::sat::MutableUpperBoundedLinearConstraint", "classoperations__research_1_1sat_1_1MutableUpperBoundedLinearConstraint.html", null ],
-    [ "util::MutableVectorIteration< T >", "structutil_1_1MutableVectorIteration.html", null ],
     [ "operations_research::NearestNeighbors< ignore_path_vars >", "classoperations__research_1_1NearestNeighbors.html", null ],
     [ "operations_research::routing::NearpParser", "classoperations__research_1_1routing_1_1NearpParser.html", null ],
     [ "operations_research::PathOperator< ignore_path_vars >::Neighbor", "structoperations__research_1_1PathOperator_1_1Neighbor.html", null ],
@@ -929,7 +1046,7 @@ var hierarchy =
     [ "operations_research::BidirectionalDijkstra< GraphType, DistanceType >::NodeDistance", "structoperations__research_1_1BidirectionalDijkstra_1_1NodeDistance.html", null ],
     [ "operations_research::NodeEntry< NodeIndex, kNilNode >", "classoperations__research_1_1NodeEntry.html", null ],
     [ "operations_research::GlobalCheapestInsertionFilteredHeuristic::NodeEntryQueue", "classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1NodeEntryQueue.html", null ],
-    [ "operations_research::CheapestInsertionFilteredHeuristic::NodeInsertion", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1NodeInsertion.html", null ],
+    [ "operations_research::sat::NodeExpression", "structoperations__research_1_1sat_1_1NodeExpression.html", null ],
     [ "operations_research::NodeNeighborIterator", "classoperations__research_1_1NodeNeighborIterator.html", null ],
     [ "operations_research::PathState::NodeRange", "classoperations__research_1_1PathState_1_1NodeRange.html", null ],
     [ "operations_research::bop::NonOrderedSetHasher< IntType >", "classoperations__research_1_1bop_1_1NonOrderedSetHasher.html", null ],
@@ -941,9 +1058,10 @@ var hierarchy =
     ] ],
     [ "operations_research::math_opt::NonStreamableSolverInitArgumentsValue", "classoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsValue.html", null ],
     [ "operations_research::math_opt::NontrivialInfeasibleIp", "structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html", null ],
+    [ "operations_research::math_opt::NoSymmetry", "structoperations__research_1_1math__opt_1_1NoSymmetry.html", null ],
+    [ "util_intops::NoTransform", "structutil__intops_1_1NoTransform.html", null ],
     [ "std::numeric_limits< operations_research::StrongIndex< Tag > >", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html", null ],
     [ "std::numeric_limits< operations_research::StrongInt64< Tag > >", "structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html", null ],
-    [ "operations_research::math_opt::Objective", "classoperations__research_1_1math__opt_1_1Objective.html", null ],
     [ "operations_research::math_opt::ObjectiveBounds", "structoperations__research_1_1math__opt_1_1ObjectiveBounds.html", null ],
     [ "operations_research::sat::ObjectiveDefinition", "structoperations__research_1_1sat_1_1ObjectiveDefinition.html", null ],
     [ "operations_research::sat::ObjectiveEncoder", "classoperations__research_1_1sat_1_1ObjectiveEncoder.html", null ],
@@ -951,6 +1069,7 @@ var hierarchy =
     [ "operations_research::math_opt::ObjectiveStorage", "classoperations__research_1_1math__opt_1_1ObjectiveStorage.html", null ],
     [ "operations_research::bop::OneFlipConstraintRepairer", "classoperations__research_1_1bop_1_1OneFlipConstraintRepairer.html", null ],
     [ "operations_research::sat::OpbReader", "classoperations__research_1_1sat_1_1OpbReader.html", null ],
+    [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OppositeIncomingArcIteratorTag", "structutil_1_1ReverseArcListGraph_1_1OppositeIncomingArcIteratorTag.html", null ],
     [ "operations_research::bop::OptimizerSelector", "classoperations__research_1_1bop_1_1OptimizerSelector.html", null ],
     [ "optional", "unionoptional.html", null ],
     [ "operations_research::sat::CircuitPropagator::Options", "structoperations__research_1_1sat_1_1CircuitPropagator_1_1Options.html", null ],
@@ -958,10 +1077,14 @@ var hierarchy =
     [ "operations_research::sat::OrthogonalPackingOptions", "structoperations__research_1_1sat_1_1OrthogonalPackingOptions.html", null ],
     [ "operations_research::sat::OrthogonalPackingResult", "classoperations__research_1_1sat_1_1OrthogonalPackingResult.html", null ],
     [ "operations_research::OrToolsVersion", "classoperations__research_1_1OrToolsVersion.html", null ],
-    [ "util::CompleteBipartiteGraph< NodeIndexType, ArcIndexType >::OutgoingArcIterator", "classutil_1_1CompleteBipartiteGraph_1_1OutgoingArcIterator.html", null ],
+    [ "util::ListGraph< NodeIndexType, ArcIndexType >::OutgoingArcIteratorTag", "structutil_1_1ListGraph_1_1OutgoingArcIteratorTag.html", null ],
+    [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OutgoingArcIteratorTag", "structutil_1_1ReverseArcListGraph_1_1OutgoingArcIteratorTag.html", null ],
+    [ "util::ReverseArcListGraph< NodeIndexType, ArcIndexType >::OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcListGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", null ],
+    [ "util::ReverseArcStaticGraph< NodeIndexType, ArcIndexType >::OutgoingOrOppositeIncomingArcIterator", "classutil_1_1ReverseArcStaticGraph_1_1OutgoingOrOppositeIncomingArcIterator.html", null ],
     [ "operations_research::sat::PairwiseRestriction", "structoperations__research_1_1sat_1_1PairwiseRestriction.html", null ],
     [ "operations_research::math_opt::ParameterSupport", "structoperations__research_1_1math__opt_1_1ParameterSupport.html", null ],
     [ "operations_research::math_opt::ParamName", "structoperations__research_1_1math__opt_1_1ParamName.html", null ],
+    [ "operations_research::glop::ParsedConstraint", "structoperations__research_1_1glop_1_1ParsedConstraint.html", null ],
     [ "google::protobuf::contrib::parse_proto::parse_proto_internal::ParseProtoHelper", "classgoogle_1_1protobuf_1_1contrib_1_1parse__proto_1_1parse__proto__internal_1_1ParseProtoHelper.html", null ],
     [ "google::protobuf::contrib::parse_proto::text_proto_internal::ParseProtoHelper", "classgoogle_1_1protobuf_1_1contrib_1_1parse__proto_1_1text__proto__internal_1_1ParseProtoHelper.html", null ],
     [ "operations_research::fz::ParserContext", "structoperations__research_1_1fz_1_1ParserContext.html", null ],
@@ -984,7 +1107,6 @@ var hierarchy =
     [ "operations_research::math_opt::PdlpBridge", "classoperations__research_1_1math__opt_1_1PdlpBridge.html", null ],
     [ "operations_research::routing::PdTspParser", "classoperations__research_1_1routing_1_1PdTspParser.html", null ],
     [ "operations_research::sat::Percentile", "classoperations__research_1_1sat_1_1Percentile.html", null ],
-    [ "operations_research::sat::PermutableEvent", "structoperations__research_1_1sat_1_1PermutableEvent.html", null ],
     [ "operations_research::sat::PermutableItem", "structoperations__research_1_1sat_1_1PermutableItem.html", null ],
     [ "operations_research::glop::Permutation< IndexType >", "classoperations__research_1_1glop_1_1Permutation.html", null ],
     [ "operations_research::PermutationApplier< IndexType >", "classoperations__research_1_1PermutationApplier.html", null ],
@@ -1001,6 +1123,7 @@ var hierarchy =
     [ "operations_research::PiecewiseSegment", "classoperations__research_1_1PiecewiseSegment.html", null ],
     [ "operations_research::sat::PostsolveClauses", "structoperations__research_1_1sat_1_1PostsolveClauses.html", null ],
     [ "operations_research::sat::PrecedenceRelations::PrecedenceData", "structoperations__research_1_1sat_1_1PrecedenceRelations_1_1PrecedenceData.html", null ],
+    [ "operations_research::PrePostVisitValues", "classoperations__research_1_1PrePostVisitValues.html", null ],
     [ "operations_research::glop::Preprocessor", "classoperations__research_1_1glop_1_1Preprocessor.html", [
       [ "operations_research::glop::AddSlackVariablesPreprocessor", "classoperations__research_1_1glop_1_1AddSlackVariablesPreprocessor.html", null ],
       [ "operations_research::glop::DoubletonEqualityRowPreprocessor", "classoperations__research_1_1glop_1_1DoubletonEqualityRowPreprocessor.html", null ],
@@ -1026,6 +1149,7 @@ var hierarchy =
     [ "operations_research::sat::PresolveTimer", "classoperations__research_1_1sat_1_1PresolveTimer.html", null ],
     [ "operations_research::math_opt::PrimalAndDualSolution", "structoperations__research_1_1math__opt_1_1PrimalAndDualSolution.html", null ],
     [ "operations_research::pdlp::PrimalAndDualSolution", "structoperations__research_1_1pdlp_1_1PrimalAndDualSolution.html", null ],
+    [ "operations_research::scp::PrimalDualState", "structoperations__research_1_1scp_1_1PrimalDualState.html", null ],
     [ "operations_research::glop::PrimalEdgeNorms", "classoperations__research_1_1glop_1_1PrimalEdgeNorms.html", null ],
     [ "operations_research::glop::PrimalPrices", "classoperations__research_1_1glop_1_1PrimalPrices.html", null ],
     [ "operations_research::math_opt::PrimalRay", "structoperations__research_1_1math__opt_1_1PrimalRay.html", null ],
@@ -1078,6 +1202,7 @@ var hierarchy =
       [ "operations_research::sat::NoOverlap2DConstraintHelper", "classoperations__research_1_1sat_1_1NoOverlap2DConstraintHelper.html", null ],
       [ "operations_research::sat::NonOverlappingRectanglesDisjunctivePropagator", "classoperations__research_1_1sat_1_1NonOverlappingRectanglesDisjunctivePropagator.html", null ],
       [ "operations_research::sat::NonOverlappingRectanglesEnergyPropagator", "classoperations__research_1_1sat_1_1NonOverlappingRectanglesEnergyPropagator.html", null ],
+      [ "operations_research::sat::Precedences2DPropagator", "classoperations__research_1_1sat_1_1Precedences2DPropagator.html", null ],
       [ "operations_research::sat::PrecedencesPropagator", "classoperations__research_1_1sat_1_1PrecedencesPropagator.html", null ],
       [ "operations_research::sat::ProductPropagator", "classoperations__research_1_1sat_1_1ProductPropagator.html", null ],
       [ "operations_research::sat::RectanglePairwisePropagator", "classoperations__research_1_1sat_1_1RectanglePairwisePropagator.html", null ],
@@ -1099,17 +1224,13 @@ var hierarchy =
     [ "operations_research::QapProblem", "structoperations__research_1_1QapProblem.html", null ],
     [ "operations_research::math_opt::QcTestParameters", "structoperations__research_1_1math__opt_1_1QcTestParameters.html", null ],
     [ "operations_research::math_opt::QpTestParameters", "structoperations__research_1_1math__opt_1_1QpTestParameters.html", null ],
-    [ "operations_research::math_opt::QuadraticConstraint", "classoperations__research_1_1math__opt_1_1QuadraticConstraint.html", null ],
     [ "operations_research::math_opt::QuadraticConstraintData", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html", null ],
-    [ "operations_research::math_opt::QuadraticExpression", "classoperations__research_1_1math__opt_1_1QuadraticExpression.html", null ],
     [ "operations_research::pdlp::QuadraticProgram", "structoperations__research_1_1pdlp_1_1QuadraticProgram.html", null ],
     [ "operations_research::pdlp::QuadraticProgramBoundNorms", "structoperations__research_1_1pdlp_1_1QuadraticProgramBoundNorms.html", null ],
     [ "operations_research::math_opt::QuadraticTerm", "classoperations__research_1_1math__opt_1_1QuadraticTerm.html", null ],
-    [ "operations_research::math_opt::QuadraticTermKey", "classoperations__research_1_1math__opt_1_1QuadraticTermKey.html", null ],
     [ "operations_research::Queue", "classoperations__research_1_1Queue.html", null ],
     [ "operations_research::glop::RandomAccessSparseColumn", "classoperations__research_1_1glop_1_1RandomAccessSparseColumn.html", null ],
     [ "operations_research::RandomDemand", "classoperations__research_1_1RandomDemand.html", null ],
-    [ "operations_research::RandomSolutionGenerator", "classoperations__research_1_1RandomSolutionGenerator.html", null ],
     [ "operations_research::RangeIntToIntFunction", "classoperations__research_1_1RangeIntToIntFunction.html", null ],
     [ "gtl::detail::RangeLogger< IteratorT, PolicyT >", "classgtl_1_1detail_1_1RangeLogger.html", null ],
     [ "operations_research::RangeMinimumIndexQuery< T, Compare >", "classoperations__research_1_1RangeMinimumIndexQuery.html", null ],
@@ -1182,6 +1303,8 @@ var hierarchy =
     [ "operations_research::sat::RoundingDualFeasibleFunctionPowerOfTwo", "classoperations__research_1_1sat_1_1RoundingDualFeasibleFunctionPowerOfTwo.html", null ],
     [ "operations_research::sat::RoundingOptions", "structoperations__research_1_1sat_1_1RoundingOptions.html", null ],
     [ "operations_research::RoundTripDoubleFormat", "classoperations__research_1_1RoundTripDoubleFormat.html", null ],
+    [ "operations_research::sat::RouteRelationsHelper", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html", null ],
+    [ "operations_research::sat::RoutingCumulExpressions", "structoperations__research_1_1sat_1_1RoutingCumulExpressions.html", null ],
     [ "operations_research::RoutingIndexManager", "classoperations__research_1_1RoutingIndexManager.html", null ],
     [ "operations_research::RoutingLinearSolverWrapper", "classoperations__research_1_1RoutingLinearSolverWrapper.html", [
       [ "operations_research::RoutingCPSatWrapper", "classoperations__research_1_1RoutingCPSatWrapper.html", null ],
@@ -1263,7 +1386,6 @@ var hierarchy =
     [ "operations_research::ScipConstraintHandlerContext", "classoperations__research_1_1ScipConstraintHandlerContext.html", null ],
     [ "operations_research::ScipConstraintHandlerDescription", "structoperations__research_1_1ScipConstraintHandlerDescription.html", null ],
     [ "operations_research::ScopedFloatingPointEnv", "classoperations__research_1_1ScopedFloatingPointEnv.html", null ],
-    [ "operations_research::ScopedLocale", "structoperations__research_1_1ScopedLocale.html", null ],
     [ "operations_research::internal::ScopedSCIPMessageHandlerDisabler", "classoperations__research_1_1internal_1_1ScopedSCIPMessageHandlerDisabler.html", null ],
     [ "operations_research::ScopedSolveInterrupterCallback", "classoperations__research_1_1ScopedSolveInterrupterCallback.html", null ],
     [ "ScopedWallTime", "classScopedWallTime.html", null ],
@@ -1271,7 +1393,6 @@ var hierarchy =
     [ "operations_research::sat::SearchHeuristics", "structoperations__research_1_1sat_1_1SearchHeuristics.html", null ],
     [ "operations_research::Solver::SearchLogParameters", "structoperations__research_1_1Solver_1_1SearchLogParameters.html", null ],
     [ "operations_research::NeighborAcceptanceCriterion::SearchState", "structoperations__research_1_1NeighborAcceptanceCriterion_1_1SearchState.html", null ],
-    [ "operations_research::math_opt::SecondOrderConeConstraint", "classoperations__research_1_1math__opt_1_1SecondOrderConeConstraint.html", null ],
     [ "operations_research::math_opt::SecondOrderConeConstraintData", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintData.html", null ],
     [ "operations_research::math_opt::SecondOrderConeTestParameters", "structoperations__research_1_1math__opt_1_1SecondOrderConeTestParameters.html", null ],
     [ "operations_research::CheapestInsertionFilteredHeuristic::Seed", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html", null ],
@@ -1281,12 +1402,32 @@ var hierarchy =
     [ "internal::ConnectedComponentsTypeHelper< T, CompareOrHashT, Eq >::SelectContainer< U, V, absl::enable_if_t< std::is_integral< decltype(std::declval< const U & >()(std::declval< const T & >()))>::value &&std::is_same_v< V, void > > >", "structinternal_1_1ConnectedComponentsTypeHelper_1_1SelectContainer_3_01U_00_01V_00_01absl_1_1ena3430d9eb66750f462beed2c1b3ca6ecc.html", null ],
     [ "operations_research::ServiceTimePlusTransition", "classoperations__research_1_1ServiceTimePlusTransition.html", null ],
     [ "operations_research::Set< Integer >", "classoperations__research_1_1Set.html", null ],
+    [ "operations_research::SetCoverAssignment", "classoperations__research_1_1SetCoverAssignment.html", null ],
     [ "operations_research::SetCoverDecision", "classoperations__research_1_1SetCoverDecision.html", null ],
     [ "operations_research::SetCoverInvariant", "classoperations__research_1_1SetCoverInvariant.html", null ],
-    [ "operations_research::SetCoverLagrangian", "classoperations__research_1_1SetCoverLagrangian.html", null ],
-    [ "operations_research::SetCoverMip", "classoperations__research_1_1SetCoverMip.html", null ],
-    [ "operations_research::SetCoverModel", "classoperations__research_1_1SetCoverModel.html", null ],
+    [ "operations_research::SetCoverModel", "classoperations__research_1_1SetCoverModel.html", [
+      [ "operations_research::scp::CoreModel", "classoperations__research_1_1scp_1_1CoreModel.html", [
+        [ "operations_research::scp::FullToCoreModel", "classoperations__research_1_1scp_1_1FullToCoreModel.html", null ]
+      ] ]
+    ] ],
     [ "operations_research::SetCoverReader", "classoperations__research_1_1SetCoverReader.html", null ],
+    [ "operations_research::SetCoverSolutionGenerator", "classoperations__research_1_1SetCoverSolutionGenerator.html", [
+      [ "operations_research::BoolVectorBasedSolutionGenerator", "classoperations__research_1_1BoolVectorBasedSolutionGenerator.html", [
+        [ "operations_research::ElementDegreeSolutionGenerator", "classoperations__research_1_1ElementDegreeSolutionGenerator.html", null ],
+        [ "operations_research::LazyElementDegreeSolutionGenerator", "classoperations__research_1_1LazyElementDegreeSolutionGenerator.html", null ],
+        [ "operations_research::LazySteepestSearch", "classoperations__research_1_1LazySteepestSearch.html", null ],
+        [ "operations_research::SteepestSearch", "classoperations__research_1_1SteepestSearch.html", null ]
+      ] ],
+      [ "operations_research::SubsetListBasedSolutionGenerator", "classoperations__research_1_1SubsetListBasedSolutionGenerator.html", [
+        [ "operations_research::GreedySolutionGenerator", "classoperations__research_1_1GreedySolutionGenerator.html", null ],
+        [ "operations_research::GuidedLocalSearch", "classoperations__research_1_1GuidedLocalSearch.html", null ],
+        [ "operations_research::GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html", null ],
+        [ "operations_research::RandomSolutionGenerator", "classoperations__research_1_1RandomSolutionGenerator.html", null ],
+        [ "operations_research::SetCoverLagrangian", "classoperations__research_1_1SetCoverLagrangian.html", null ],
+        [ "operations_research::SetCoverMip", "classoperations__research_1_1SetCoverMip.html", null ],
+        [ "operations_research::TrivialSolutionGenerator", "classoperations__research_1_1TrivialSolutionGenerator.html", null ]
+      ] ]
+    ] ],
     [ "operations_research::SetRangeIterator< SetRange >", "classoperations__research_1_1SetRangeIterator.html", null ],
     [ "operations_research::SetRangeWithCardinality< Set >", "classoperations__research_1_1SetRangeWithCardinality.html", null ],
     [ "operations_research::sat::ShapePath", "structoperations__research_1_1sat_1_1ShapePath.html", null ],
@@ -1315,7 +1456,7 @@ var hierarchy =
     [ "operations_research::sat::SharedTreeManager", "classoperations__research_1_1sat_1_1SharedTreeManager.html", null ],
     [ "operations_research::sat::SharedTreeWorker", "classoperations__research_1_1sat_1_1SharedTreeWorker.html", null ],
     [ "operations_research::ShortestPathOnAlternatives", "classoperations__research_1_1ShortestPathOnAlternatives.html", null ],
-    [ "operations_research::ShortestPathsOnDagWrapper< GraphType >", "classoperations__research_1_1ShortestPathsOnDagWrapper.html", null ],
+    [ "operations_research::ShortestPathsOnDagWrapper< GraphType, ArcLengthContainer >", "classoperations__research_1_1ShortestPathsOnDagWrapper.html", null ],
     [ "operations_research::SigintHandler", "classoperations__research_1_1SigintHandler.html", null ],
     [ "operations_research::SimpleDynamicPartition", "classoperations__research_1_1SimpleDynamicPartition.html", null ],
     [ "operations_research::SimpleLinearSumAssignment", "classoperations__research_1_1SimpleLinearSumAssignment.html", null ],
@@ -1328,12 +1469,15 @@ var hierarchy =
     [ "operations_research::sat::SingleShape", "structoperations__research_1_1sat_1_1SingleShape.html", null ],
     [ "operations_research::glop::SingletonUndo", "classoperations__research_1_1glop_1_1SingletonUndo.html", null ],
     [ "operations_research::pdlp::SingularValueAndIterations", "structoperations__research_1_1pdlp_1_1SingularValueAndIterations.html", null ],
+    [ "operations_research::math_opt::detail::SlicingSupport< n, Symmetry, typename >", "classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html", null ],
+    [ "operations_research::math_opt::detail::SlicingSupport< n, Symmetry, std::enable_if_t<(n< 2), std::void_t<> > >", "structoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport_3_01n_00_01Symmetry_00_01std824ffa5f146467c7aa0b9e36ca07289f.html", null ],
     [ "operations_research::SlopeAndYIntercept", "structoperations__research_1_1SlopeAndYIntercept.html", null ],
     [ "operations_research::SmallRevBitSet", "classoperations__research_1_1SmallRevBitSet.html", null ],
     [ "operations_research::routing::SolomonParser", "classoperations__research_1_1routing_1_1SolomonParser.html", null ],
     [ "operations_research::routing::SolomonSolutionParser", "classoperations__research_1_1routing_1_1SolomonSolutionParser.html", null ],
     [ "operations_research::math_opt::Solution", "structoperations__research_1_1math__opt_1_1Solution.html", null ],
     [ "operations_research::sat::SharedSolutionRepository< ValueType >::Solution", "structoperations__research_1_1sat_1_1SharedSolutionRepository_1_1Solution.html", null ],
+    [ "operations_research::scp::Solution", "classoperations__research_1_1scp_1_1Solution.html", null ],
     [ "operations_research::sat::SolutionCrush", "classoperations__research_1_1sat_1_1SolutionCrush.html", null ],
     [ "operations_research::SolutionCollector::SolutionData", "structoperations__research_1_1SolutionCollector_1_1SolutionData.html", null ],
     [ "operations_research::math_opt::ModelSolveParameters::SolutionHint", "structoperations__research_1_1math__opt_1_1ModelSolveParameters_1_1SolutionHint.html", null ],
@@ -1369,12 +1513,12 @@ var hierarchy =
     [ "operations_research::math_opt::SolveStats", "structoperations__research_1_1math__opt_1_1SolveStats.html", null ],
     [ "operations_research::SortedDisjointIntervalList", "classoperations__research_1_1SortedDisjointIntervalList.html", null ],
     [ "operations_research::sat::SortedSubsetSums", "classoperations__research_1_1sat_1_1SortedSubsetSums.html", null ],
-    [ "operations_research::math_opt::Sos1Constraint", "classoperations__research_1_1math__opt_1_1Sos1Constraint.html", null ],
-    [ "operations_research::math_opt::Sos2Constraint", "classoperations__research_1_1math__opt_1_1Sos2Constraint.html", null ],
     [ "operations_research::math_opt::internal::SosConstraintData< ConstraintId >", "classoperations__research_1_1math__opt_1_1internal_1_1SosConstraintData.html", null ],
     [ "absl::SourceLocation", "classabsl_1_1SourceLocation.html", null ],
     [ "operations_research::SparseBitset< IntegerType >", "classoperations__research_1_1SparseBitset.html", null ],
     [ "operations_research::math_opt::SparseCoefficientMap", "classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html", null ],
+    [ "operations_research::math_opt::detail::SparseElementStorage", "classoperations__research_1_1math__opt_1_1detail_1_1SparseElementStorage.html", null ],
+    [ "operations_research::math_opt::detail::SparseKeySet< n >", "classoperations__research_1_1math__opt_1_1detail_1_1SparseKeySet.html", null ],
     [ "operations_research::math_opt::Gurobi::SparseMat", "structoperations__research_1_1math__opt_1_1Gurobi_1_1SparseMat.html", null ],
     [ "operations_research::bop::SparseMatrix", "classoperations__research_1_1bop_1_1SparseMatrix.html", null ],
     [ "operations_research::glop::SparseMatrix", "classoperations__research_1_1glop_1_1SparseMatrix.html", null ],
@@ -1404,6 +1548,7 @@ var hierarchy =
     ] ],
     [ "operations_research::math_opt::SparseVectorFilterPredicate", "classoperations__research_1_1math__opt_1_1SparseVectorFilterPredicate.html", null ],
     [ "operations_research::math_opt::SparseVectorView< T >", "classoperations__research_1_1math__opt_1_1SparseVectorView.html", null ],
+    [ "operations_research::sat::SpecialBinPackingHelper", "classoperations__research_1_1sat_1_1SpecialBinPackingHelper.html", null ],
     [ "operations_research::sat::StampingSimplifier", "classoperations__research_1_1sat_1_1StampingSimplifier.html", null ],
     [ "operations_research::CheapestInsertionFilteredHeuristic::StartEndValue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html", null ],
     [ "operations_research::Stat", "classoperations__research_1_1Stat.html", [
@@ -1424,11 +1569,12 @@ var hierarchy =
     [ "util::StatusBuilder", "classutil_1_1StatusBuilder.html", null ],
     [ "testing::status::internal::StatusIsMatcher", "classtesting_1_1status_1_1internal_1_1StatusIsMatcher.html", null ],
     [ "testing::status::internal::StatusIsMatcherCommonImpl", "classtesting_1_1status_1_1internal_1_1StatusIsMatcherCommonImpl.html", null ],
+    [ "operations_research::math_opt::Elemental::StatusPolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1StatusPolicy.html", null ],
     [ "operations_research::math_opt::StatusTestParameters", "structoperations__research_1_1math__opt_1_1StatusTestParameters.html", null ],
-    [ "operations_research::SteepestSearch", "classoperations__research_1_1SteepestSearch.html", null ],
     [ "gtl::STLElementDeleter< STLContainer >", "classgtl_1_1STLElementDeleter.html", null ],
     [ "gtl::STLValueDeleter< STLContainer >", "classgtl_1_1STLValueDeleter.html", null ],
     [ "operations_research::StopServiceTimePlusTransition", "classoperations__research_1_1StopServiceTimePlusTransition.html", null ],
+    [ "operations_research::StopWatch", "classoperations__research_1_1StopWatch.html", null ],
     [ "operations_research::math_opt::StreamableCpSatInitArguments", "structoperations__research_1_1math__opt_1_1StreamableCpSatInitArguments.html", null ],
     [ "operations_research::math_opt::StreamableGlopInitArguments", "structoperations__research_1_1math__opt_1_1StreamableGlopInitArguments.html", null ],
     [ "operations_research::math_opt::StreamableGlpkInitArguments", "structoperations__research_1_1math__opt_1_1StreamableGlpkInitArguments.html", null ],
@@ -1438,12 +1584,15 @@ var hierarchy =
     [ "operations_research::math_opt::StreamableSolverInitArguments", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html", null ],
     [ "operations_research::glop::StrictITISpan< IntType, T >", "classoperations__research_1_1glop_1_1StrictITISpan.html", null ],
     [ "operations_research::StrongIndex< StrongIndexName >", "classoperations__research_1_1StrongIndex.html", null ],
-    [ "util_intops::StrongInt< StrongIntName, _ValueType >", "classutil__intops_1_1StrongInt.html", null ],
     [ "operations_research::StrongInt64< StrongIntegerName >", "classoperations__research_1_1StrongInt64.html", null ],
-    [ "util_intops::StrongIntRange< IntType >", "classutil__intops_1_1StrongIntRange.html", null ],
-    [ "util_intops::StrongIntRange< IntType >::StrongIntRangeIterator", "classutil__intops_1_1StrongIntRange_1_1StrongIntRangeIterator.html", null ],
     [ "StronglyConnectedComponentsFinder< NodeIndex, Graph, SccOutput >", "classStronglyConnectedComponentsFinder.html", null ],
+    [ "operations_research::StrongModelView", "classoperations__research_1_1StrongModelView.html", null ],
     [ "operations_research::SubDagComputer", "classoperations__research_1_1SubDagComputer.html", null ],
+    [ "operations_research::scp::SubgradientCBs", "classoperations__research_1_1scp_1_1SubgradientCBs.html", [
+      [ "operations_research::scp::BoundCBs", "classoperations__research_1_1scp_1_1BoundCBs.html", null ],
+      [ "operations_research::scp::HeuristicCBs", "classoperations__research_1_1scp_1_1HeuristicCBs.html", null ]
+    ] ],
+    [ "operations_research::scp::SubgradientContext", "structoperations__research_1_1scp_1_1SubgradientContext.html", null ],
     [ "operations_research::sat::SubsetsDetector< Storage >", "classoperations__research_1_1sat_1_1SubsetsDetector.html", null ],
     [ "operations_research::sat::SubSolver", "classoperations__research_1_1sat_1_1SubSolver.html", [
       [ "operations_research::sat::FeasibilityJumpSolver", "classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html", null ],
@@ -1456,9 +1605,10 @@ var hierarchy =
     [ "operations_research::sat::SumOfAllDiffLowerBounder", "classoperations__research_1_1sat_1_1SumOfAllDiffLowerBounder.html", null ],
     [ "operations_research::glop::SumWithOneMissing< supported_infinity_is_positive >", "classoperations__research_1_1glop_1_1SumWithOneMissing.html", null ],
     [ "operations_research::math_opt::SupportedProblemStructures", "structoperations__research_1_1math__opt_1_1SupportedProblemStructures.html", null ],
-    [ "util::SVector< T >", "classutil_1_1SVector.html", null ],
+    [ "util::internal::SVector< IndexT, T >", "classutil_1_1internal_1_1SVector.html", null ],
     [ "operations_research::SweepArranger", "classoperations__research_1_1SweepArranger.html", null ],
     [ "operations_research::sat::SweepLineIntervalTree", "structoperations__research_1_1sat_1_1SweepLineIntervalTree.html", null ],
+    [ "operations_research::math_opt::SymmetricDifference< T >", "structoperations__research_1_1math__opt_1_1SymmetricDifference.html", null ],
     [ "T", null, [
       [ "gtl::small_map< T >", "classgtl_1_1small__map.html", null ]
     ] ],
@@ -1508,9 +1658,11 @@ var hierarchy =
       [ "operations_research::math_opt::StatusTest", "classoperations__research_1_1math__opt_1_1StatusTest.html", null ],
       [ "operations_research::math_opt::TimeLimitTest", "classoperations__research_1_1math__opt_1_1TimeLimitTest.html", null ]
     ] ],
-    [ "operations_research::sat::ThetaLambdaTree< IntegerType >", "classoperations__research_1_1sat_1_1ThetaLambdaTree.html", null ],
+    [ "operations_research::ThetaLambdaTree< IntegerType >", "classoperations__research_1_1ThetaLambdaTree.html", null ],
     [ "operations_research::ThreadPool", "classoperations__research_1_1ThreadPool.html", null ],
+    [ "operations_research::math_opt::ThreadSafeIdMap< V >", "classoperations__research_1_1math__opt_1_1ThreadSafeIdMap.html", null ],
     [ "operations_research::TimeLimit", "classoperations__research_1_1TimeLimit.html", null ],
+    [ "operations_research::TimeLimitCheckEveryNCalls", "classoperations__research_1_1TimeLimitCheckEveryNCalls.html", null ],
     [ "operations_research::math_opt::TimeLimitTestParameters", "structoperations__research_1_1math__opt_1_1TimeLimitTestParameters.html", null ],
     [ "operations_research::gtl::TopN< T, Cmp >", "classoperations__research_1_1gtl_1_1TopN.html", null ],
     [ "operations_research::sat::TopN< Element, Score >", "classoperations__research_1_1sat_1_1TopN.html", null ],
@@ -1521,16 +1673,21 @@ var hierarchy =
     [ "operations_research::math_opt::ConcurrentCallsGuard::Tracker", "classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard_1_1Tracker.html", null ],
     [ "operations_research::sat::Trail", "classoperations__research_1_1sat_1_1Trail.html", null ],
     [ "operations_research::Trail", "structoperations__research_1_1Trail.html", null ],
+    [ "util_intops::TransformView< ValueT, IndexT, ValueTransformT >", "classutil__intops_1_1TransformView.html", null ],
     [ "operations_research::sat::SolutionCrush::TransitionVar", "structoperations__research_1_1sat_1_1SolutionCrush_1_1TransitionVar.html", null ],
     [ "gtl::stl_util_internal::TransparentLess", "structgtl_1_1stl__util__internal_1_1TransparentLess.html", null ],
-    [ "operations_research::TrivialSolutionGenerator", "classoperations__research_1_1TrivialSolutionGenerator.html", null ],
     [ "std::true_type", null, [
-      [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1hasher_01_4_01_4.html", null ]
+      [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1hasher_01_4_01_4.html", null ],
+      [ "operations_research::math_opt::is_attr_key< AttrKey< n, Symmetry > >", "structoperations__research_1_1math__opt_1_1is__attr__key_3_01AttrKey_3_01n_00_01Symmetry_01_4_01_4.html", null ],
+      [ "operations_research::math_opt::is_element_id< ElementId< element_type > >", "structoperations__research_1_1math__opt_1_1is__element__id_3_01ElementId_3_01element__type_01_4_01_4.html", null ]
     ] ],
     [ "operations_research::pdlp::TrustRegionResult", "structoperations__research_1_1pdlp_1_1TrustRegionResult.html", null ],
     [ "operations_research::routing::TspLibParser", "classoperations__research_1_1routing_1_1TspLibParser.html", null ],
     [ "operations_research::routing::TspLibTourParser", "classoperations__research_1_1routing_1_1TspLibTourParser.html", null ],
     [ "operations_research::routing::TspTWParser", "classoperations__research_1_1routing_1_1TspTWParser.html", null ],
+    [ "operations_research::math_opt::codegen::Type", "classoperations__research_1_1math__opt_1_1codegen_1_1Type.html", null ],
+    [ "util_intops::TypeCastTransform< FromT, ToT >", "structutil__intops_1_1TypeCastTransform.html", null ],
+    [ "operations_research::math_opt::Elemental::UBPolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1UBPolicy.html", null ],
     [ "operations_research::internal::UnderlyingContainerAdapter< Container >", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter.html", null ],
     [ "util::UndirectedAdjacencyListsOfDirectedGraph< Graph >", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.html", null ],
     [ "operations_research::unique_ptr< T >", "classoperations__research_1_1unique__ptr.html", null ],
@@ -1547,16 +1704,17 @@ var hierarchy =
     [ "operations_research::math_opt::UpperBoundedLinearExpression", "structoperations__research_1_1math__opt_1_1UpperBoundedLinearExpression.html", null ],
     [ "operations_research::math_opt::UpperBoundedQuadraticExpression", "structoperations__research_1_1math__opt_1_1UpperBoundedQuadraticExpression.html", null ],
     [ "gtl::ValueDeleter", "classgtl_1_1ValueDeleter.html", null ],
+    [ "util_intops::ValueFilterView< ValueT, EnableVectorT >", "classutil__intops_1_1ValueFilterView.html", null ],
     [ "operations_research::sat::ValueLiteralPair", "structoperations__research_1_1sat_1_1ValueLiteralPair.html", null ],
     [ "operations_research::sat::VarDomainWrapper", "classoperations__research_1_1sat_1_1VarDomainWrapper.html", null ],
     [ "operations_research::sat::VarDomination", "classoperations__research_1_1sat_1_1VarDomination.html", null ],
     [ "operations_research::fz::Variable", "structoperations__research_1_1fz_1_1Variable.html", null ],
     [ "operations_research::LocalSearchState::Variable", "classoperations__research_1_1LocalSearchState_1_1Variable.html", null ],
-    [ "operations_research::math_opt::Variable", "classoperations__research_1_1math__opt_1_1Variable.html", null ],
     [ "Variable", "structVariable.html", null ],
     [ "operations_research::math_opt::InvalidIndicators::VariableAndConstraint", "structoperations__research_1_1math__opt_1_1InvalidIndicators_1_1VariableAndConstraint.html", null ],
     [ "operations_research::sat::PseudoCosts::VariableBoundChange", "structoperations__research_1_1sat_1_1PseudoCosts_1_1VariableBoundChange.html", null ],
     [ "operations_research::mb::VariableComparator", "structoperations__research_1_1mb_1_1VariableComparator.html", null ],
+    [ "operations_research::sat::VariableRelationships", "structoperations__research_1_1sat_1_1VariableRelationships.html", null ],
     [ "operations_research::sat::VariablesAssignment", "classoperations__research_1_1sat_1_1VariablesAssignment.html", null ],
     [ "operations_research::math_opt::internal::VariablesEquality", "structoperations__research_1_1math__opt_1_1internal_1_1VariablesEquality.html", null ],
     [ "operations_research::glop::VariablesInfo", "classoperations__research_1_1glop_1_1VariablesInfo.html", null ],
@@ -1568,6 +1726,10 @@ var hierarchy =
     [ "operations_research::sat::VarValue", "structoperations__research_1_1sat_1_1VarValue.html", null ],
     [ "operations_research::packing::vbp::VbpParser", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser.html", null ],
     [ "std::vector< T >", null, [
+      [ "util::internal::Vector< int32_t, int32_t >", "classutil_1_1internal_1_1Vector.html", null ],
+      [ "util_intops::StrongVector< SparseIndex, BopConstraintTerm >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< IntType, T, Alloc >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< RowIndex, SparseRow >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< SubsetIndex, Cost >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< ElementIndex, Cost >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< ColumnEntryIndex, ElementIndex >", "classutil__intops_1_1StrongVector.html", null ],
@@ -1578,11 +1740,22 @@ var hierarchy =
       [ "util_intops::StrongVector< ElementIndex, SparseRow >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< SubsetIndex, bool >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< ElementIndex, bool >", "classutil__intops_1_1StrongVector.html", null ],
-      [ "util_intops::StrongVector< ElementIndex, ElementIndex >", "classutil__intops_1_1StrongVector.html", null ],
-      [ "util_intops::StrongVector< SubsetIndex, SubsetIndex >", "classutil__intops_1_1StrongVector.html", null ],
-      [ "util_intops::StrongVector< SparseIndex, BopConstraintTerm >", "classutil__intops_1_1StrongVector.html", null ],
-      [ "util_intops::StrongVector< IntType, T, Alloc >", "classutil__intops_1_1StrongVector.html", null ],
-      [ "util_intops::StrongVector< RowIndex, SparseRow >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< ElementIndex, SubsetIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< SubsetIndex, CompressedColumn >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< ElementIndex, CompressedRow >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< CapacityTermIndex, ElementIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< CapacityTermIndex, SubsetIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< CapacityTermIndex, CapacityWeight >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullElementIndex, Cost >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullSubsetIndex, Cost >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullElementIndex, bool >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullSubsetIndex, bool >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullElementIndex, BaseInt >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullSubsetIndex, BaseInt >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullElementIndex, ElementIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< ElementIndex, FullElementIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< FullSubsetIndex, SubsetIndex >", "classutil__intops_1_1StrongVector.html", null ],
+      [ "util_intops::StrongVector< SubsetIndex, FullSubsetIndex >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< IntType, T, std::allocator< T > >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< PositiveOnlyIndex, Domain >", "classutil__intops_1_1StrongVector.html", [
         [ "operations_research::sat::IntegerDomains", "structoperations__research_1_1sat_1_1IntegerDomains.html", null ]
@@ -1675,8 +1848,8 @@ var hierarchy =
       [ "util_intops::StrongVector< IntegerVariable, uint64_t >", "classutil__intops_1_1StrongVector.html", null ],
       [ "util_intops::StrongVector< IntegerVariable, IntegerVariableSpan >", "classutil__intops_1_1StrongVector.html", null ],
       [ "operations_research::sat::LinearProgrammingConstraintCollection", "classoperations__research_1_1sat_1_1LinearProgrammingConstraintCollection.html", null ],
+      [ "util::internal::Vector< IndexT, T >", "classutil_1_1internal_1_1Vector.html", null ],
       [ "util_intops::StrongVector< IntType, NativeType, Alloc >", "classutil__intops_1_1StrongVector.html", [
-        [ "operations_research::glop::StrictITIVector< IndexType, ValueType >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< ColIndex, Fractional >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< ColIndex, bool >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< ColIndex, ColIndex >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
@@ -1689,6 +1862,7 @@ var hierarchy =
         [ "operations_research::glop::StrictITIVector< RowIndex, ColIndex >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< RowIndex, ConstraintStatus >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< Index, Fractional >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
+        [ "operations_research::glop::StrictITIVector< IndexType, ValueType >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< ColIndex, int32_t >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< EntryIndex, Fractional >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
         [ "operations_research::glop::StrictITIVector< EntryIndex, RowIndex >", "classoperations__research_1_1glop_1_1StrictITIVector.html", null ],
@@ -1793,6 +1967,7 @@ var hierarchy =
     [ "operations_research::VehicleTypeCurator", "classoperations__research_1_1VehicleTypeCurator.html", null ],
     [ "operations_research::Bitset64< IndexType >::View", "classoperations__research_1_1Bitset64_1_1View.html", null ],
     [ "operations_research::sat::VectorWithSparseUsage< T >::View", "classoperations__research_1_1sat_1_1VectorWithSparseUsage_1_1View.html", null ],
+    [ "operations_research::sat::ViewOfAffineLinearExpressionProto", "structoperations__research_1_1sat_1_1ViewOfAffineLinearExpressionProto.html", null ],
     [ "WallTimer", "classWallTimer.html", [
       [ "CycleTimer", "classCycleTimer.html", null ]
     ] ],

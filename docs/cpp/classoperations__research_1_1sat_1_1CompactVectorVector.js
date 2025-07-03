@@ -15,7 +15,7 @@ var classoperations__research_1_1sat_1_1CompactVectorVector =
     [ "ReplaceValuesBySmallerSet", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a6251316ca762e96668f876d7012d63c1", null ],
     [ "reserve", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a98c7c636a2ce6f8d0131e9f05fe0c829", null ],
     [ "reserve", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a17a7b63894d252aa9d5add66995bc56d", null ],
-    [ "ResetFromFlatMapping", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a01fb752b2ff521010114d2d240b94d62", null ],
+    [ "ResetFromFlatMapping", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a149f5bf7e2d52bff36388312799c38db", null ],
     [ "ResetFromPairs", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a0bbe561c8c47f85791c82e5d0dcb6a85", null ],
     [ "ResetFromTranspose", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a0862b0c61000ddc2d0497af649029fed", null ],
     [ "size", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96", null ]

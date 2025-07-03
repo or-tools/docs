@@ -1,9 +1,9 @@
 var structoperations__research_1_1math__opt_1_1ModelSubset =
 [
     [ "Bounds", "structoperations__research_1_1math__opt_1_1ModelSubset_1_1Bounds.html", "structoperations__research_1_1math__opt_1_1ModelSubset_1_1Bounds" ],
-    [ "CheckModelStorage", "structoperations__research_1_1math__opt_1_1ModelSubset.html#a71b4aa576980e35b02c89394a66f638f", null ],
+    [ "CheckModelStorage", "structoperations__research_1_1math__opt_1_1ModelSubset.html#adb0961ff5d6c87ef8098436b87b7ff82", null ],
     [ "empty", "structoperations__research_1_1math__opt_1_1ModelSubset.html#a367abb08bb3f34dee3b7079dfe1dbd3a", null ],
-    [ "FromProto", "structoperations__research_1_1math__opt_1_1ModelSubset.html#ad58c192a9893a46dfc83ca6e60f08856", null ],
+    [ "FromProto", "structoperations__research_1_1math__opt_1_1ModelSubset.html#a71ee3ecea9c1086ae66ed942e9e1d4cc", null ],
     [ "Proto", "structoperations__research_1_1math__opt_1_1ModelSubset.html#a50c185da6805c14423020ff9442e41f7", null ],
     [ "ToString", "structoperations__research_1_1math__opt_1_1ModelSubset.html#aa69bfa0cb951a4879b1dc8ad7dd84050", null ],
     [ "indicator_constraints", "structoperations__research_1_1math__opt_1_1ModelSubset.html#ab3cbe47b9264ef247f00755aa8379217", null ],

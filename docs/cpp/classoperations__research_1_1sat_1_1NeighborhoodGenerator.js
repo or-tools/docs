@@ -15,7 +15,7 @@ var classoperations__research_1_1sat_1_1NeighborhoodGenerator =
     [ "num_fully_solved_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#ac19b89ccd5e11c32dff36d42f42a758b", null ],
     [ "num_improving_calls", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a34c5c94a2e81585503c140609fd0b065", null ],
     [ "ReadyToGenerate", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a1cd3bd852b21a083f0aca48c6acaa87f", null ],
-    [ "Synchronize", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#ac8a7ed70ccae23b555deecf09756273f", null ],
+    [ "Synchronize", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a6f82f28a220f6ac0aa5f64bf41f45dd9", null ],
     [ "deterministic_limit_", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a3a284dd4da0a49875c9752e14056cdac", null ],
     [ "generator_mutex_", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a5e4b5d1b4d12d3b92f1b91ecc279b8cb", null ],
     [ "helper_", "classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#aa48b19b3798f9c7c6f124894cd495f9f", null ],

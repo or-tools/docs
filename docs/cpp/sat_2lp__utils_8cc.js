@@ -15,5 +15,5 @@ var sat_2lp__utils_8cc =
     [ "operations_research::sat::RemoveNearZeroTerms", "namespaceoperations__research_1_1sat.html#a7d8d6bd2036aaa59c3719954e5262c5a", null ],
     [ "operations_research::sat::ScaleAndSetObjective", "namespaceoperations__research_1_1sat.html#a628fdf755d7e7ca380fce027615b10dc", null ],
     [ "operations_research::sat::ScaleContinuousVariables", "namespaceoperations__research_1_1sat.html#ad6d384c7c56f3027894875278e4b9526", null ],
-    [ "operations_research::sat::kInfinity", "namespaceoperations__research_1_1sat.html#a073868a91ec87d04bc963609af7806b6", null ]
+    [ "operations_research::sat::kInfinity", "namespaceoperations__research_1_1sat.html#ace2ccc178c5fb1acaeead771ad53aeb6", null ]
 ];

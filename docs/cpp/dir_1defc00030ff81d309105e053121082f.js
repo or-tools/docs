@@ -3,6 +3,7 @@ var dir_1defc00030ff81d309105e053121082f =
     [ "constraints", "dir_0a5367693520ddd163b6ef6281edcb8d.html", "dir_0a5367693520ddd163b6ef6281edcb8d" ],
     [ "core", "dir_d5b95ec3710e8b09bb3a6564ed5074d8.html", "dir_d5b95ec3710e8b09bb3a6564ed5074d8" ],
     [ "cpp", "dir_dd5645fbbabcdccb47d1d6db92f0f35b.html", "dir_dd5645fbbabcdccb47d1d6db92f0f35b" ],
+    [ "elemental", "dir_78e1f3ebf34c14be764f39595d93aebf.html", "dir_78e1f3ebf34c14be764f39595d93aebf" ],
     [ "io", "dir_4d7c648e40ee0b5f305e13a998004c47.html", "dir_4d7c648e40ee0b5f305e13a998004c47" ],
     [ "labs", "dir_6c92b225f17e292981e0228c4efaa130.html", "dir_6c92b225f17e292981e0228c4efaa130" ],
     [ "solver_tests", "dir_b6f64a3dcafefc754a950fbee64fd6ea.html", "dir_b6f64a3dcafefc754a950fbee64fd6ea" ],

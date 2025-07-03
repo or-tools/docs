@@ -1,7 +1,7 @@
 var binary__search_8h =
 [
     [ "operations_research::internal::AreNumbersOfSameSign", "namespaceoperations__research_1_1internal.html#a300448d239a68c88a6ddd7e2e775a150", null ],
-    [ "operations_research::BinarySearch", "namespaceoperations__research.html#acae5e8c25b7c121bcfae8e59c7d01624", null ],
+    [ "operations_research::BinarySearch", "namespaceoperations__research.html#a90983c05623a3f7f7853bca391e4ed40", null ],
     [ "operations_research::BinarySearchMidpoint", "namespaceoperations__research.html#a34a390913c98e3f47f76d74e7e612826", null ],
     [ "operations_research::ConvexMinimum", "namespaceoperations__research.html#acb9df89a57d7e6c160136db67b224b88", null ],
     [ "operations_research::ConvexMinimum", "namespaceoperations__research.html#af8470fb6a8ba7558235e9e99f467b379", null ],

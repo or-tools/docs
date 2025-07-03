@@ -1,10 +1,6 @@
 var cp__model__solver__helpers_8h =
 [
     [ "operations_research::sat::SharedClasses", "structoperations__research_1_1sat_1_1SharedClasses.html", "structoperations__research_1_1sat_1_1SharedClasses" ],
-    [ "ABSL_DECLARE_FLAG", "cp__model__solver__helpers_8h.html#a57205a4d55aaf7a0ecee4a6915706765", null ],
-    [ "ABSL_DECLARE_FLAG", "cp__model__solver__helpers_8h.html#af43eb04b585352c5f5a3115ac36e722f", null ],
-    [ "ABSL_DECLARE_FLAG", "cp__model__solver__helpers_8h.html#a04531631951c6333824287f2b6d5b0a1", null ],
-    [ "ABSL_DECLARE_FLAG", "cp__model__solver__helpers_8h.html#a65dfd445e90600e43ae7dd48be69c024", null ],
     [ "operations_research::sat::AdaptGlobalParameters", "namespaceoperations__research_1_1sat.html#a9de52a1eb284f2cf6e20a2a0e713f092", null ],
     [ "operations_research::sat::LoadCpModel", "namespaceoperations__research_1_1sat.html#ad81c56ee655b074e6d565cd223a70024", null ],
     [ "operations_research::sat::LoadDebugSolution", "namespaceoperations__research_1_1sat.html#aba7deb7ec52ad9f39b76e7c44200af8c", null ],

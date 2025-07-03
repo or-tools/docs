@@ -2,7 +2,6 @@ var integer__search_8h =
 [
     [ "operations_research::sat::BooleanOrIntegerLiteral", "structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html", "structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral" ],
     [ "operations_research::sat::SearchHeuristics", "structoperations__research_1_1sat_1_1SearchHeuristics.html", "structoperations__research_1_1sat_1_1SearchHeuristics" ],
-    [ "operations_research::sat::LevelZeroCallbackHelper", "structoperations__research_1_1sat_1_1LevelZeroCallbackHelper.html", "structoperations__research_1_1sat_1_1LevelZeroCallbackHelper" ],
     [ "operations_research::sat::BooleanOrIntegerVariable", "structoperations__research_1_1sat_1_1BooleanOrIntegerVariable.html", "structoperations__research_1_1sat_1_1BooleanOrIntegerVariable" ],
     [ "operations_research::sat::IntegerSearchHelper", "classoperations__research_1_1sat_1_1IntegerSearchHelper.html", "classoperations__research_1_1sat_1_1IntegerSearchHelper" ],
     [ "operations_research::sat::ContinuousProber", "classoperations__research_1_1sat_1_1ContinuousProber.html", "classoperations__research_1_1sat_1_1ContinuousProber" ],

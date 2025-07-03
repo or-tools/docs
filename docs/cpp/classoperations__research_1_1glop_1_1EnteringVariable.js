@@ -7,5 +7,6 @@ var classoperations__research_1_1glop_1_1EnteringVariable =
     [ "DualPhaseIChooseEnteringColumn", "classoperations__research_1_1glop_1_1EnteringVariable.html#ad20764201d083354bdf18a8def790e4a", null ],
     [ "operator=", "classoperations__research_1_1glop_1_1EnteringVariable.html#a50a9cafbc55458d92c12553e421a939d", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1EnteringVariable.html#a21abe5a79cd507c9b1269437dc1a9ee3", null ],
+    [ "SetRandom", "classoperations__research_1_1glop_1_1EnteringVariable.html#a9e79fbbf83d4ffb4a5d162600348cc21", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1EnteringVariable.html#a7b5d3e87027b1664326d4e18d00c5454", null ]
 ];

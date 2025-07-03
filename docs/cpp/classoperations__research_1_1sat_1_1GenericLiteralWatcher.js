@@ -4,6 +4,7 @@ var classoperations__research_1_1sat_1_1GenericLiteralWatcher =
     [ "GenericLiteralWatcher", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#ad12aa838d6b94b1c4f9852e3759decda", null ],
     [ "~GenericLiteralWatcher", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a6b03393e149254852822e70ad7b14ce8", null ],
     [ "AlwaysCallAtLevelZero", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#aed4a58985279f8f0bd5d8da0539b789a", null ],
+    [ "CallAgainDuringThisPropagation", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#ad22ae3597b40f61923d0399d0dba25ab", null ],
     [ "CallOnNextPropagate", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#accbcbb33fd35eeb038d31b0ca292a876", null ],
     [ "GetCurrentId", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a15eae9ac4110da5b30ac109b6edb5347", null ],
     [ "NotifyThatPropagatorMayNotReachFixedPointInOnePass", "classoperations__research_1_1sat_1_1GenericLiteralWatcher.html#a48471033fdfb6ebad637c7359deaee2b", null ],

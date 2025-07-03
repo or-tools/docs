@@ -9,6 +9,8 @@ var structoperations__research_1_1math__opt_1_1IndicatorConstraintData =
     [ "RelatedVariables", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#ab18db5a580889d3a418a16220543c175", null ],
     [ "activate_on_zero", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#a17ed1100013311f1c90e6f701a5f30ed", null ],
     [ "indicator", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#aa5fd867b45d0247fa33866c45cf0d622", null ],
+    [ "kElementType", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#a60c0f04776df72b6819038738b0a08df", null ],
+    [ "kSupportsElemental", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#a8885ba97482cc0c27c5f4c521c8016d2", null ],
     [ "linear_terms", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#a6371c196106a646c4f28b2d1282bb11a", null ],
     [ "lower_bound", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#a6107d05bbe45df98ab2c9fe8c77d480a", null ],
     [ "name", "structoperations__research_1_1math__opt_1_1IndicatorConstraintData.html#ae5fbc6c9a8aaecf1e2a460ebdb68d467", null ],

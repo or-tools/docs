@@ -12,7 +12,8 @@ var searchData=
   ['solutionbooleanvalue_9',['SolutionBooleanValue',['../classoperations__research_1_1sat_1_1BoolVar.html#a8391a20c25890ccbf3f5e3982afed236',1,'operations_research::sat::BoolVar']]],
   ['solutionintegervalue_10',['SolutionIntegerValue',['../classoperations__research_1_1sat_1_1IntVar.html#ac2624925d8e44eb29065efd632d49e90',1,'operations_research::sat::IntVar']]],
   ['solver_11',['Solver',['../structoperations__research_1_1StateMarker.html#a16432758b314f3cedad3fba81c895417',1,'operations_research::StateMarker::Solver()'],['../classoperations__research_1_1Search.html#a16432758b314f3cedad3fba81c895417',1,'operations_research::Search::Solver()'],['../classoperations__research_1_1ObjectiveMonitor.html#a16432758b314f3cedad3fba81c895417',1,'operations_research::ObjectiveMonitor::Solver()']]],
-  ['sparsevectorview_12',['SparseVectorView',['../classoperations__research_1_1math__opt_1_1SparseVectorView_1_1const__iterator.html#aec9b692ba1b8edac6cca4dc53fce14a3',1,'operations_research::math_opt::SparseVectorView::const_iterator']]],
-  ['swap_13',['swap',['../classutil__intops_1_1StrongVector.html#a0e53c5192a5adafb4f00ff09b70e2042',1,'util_intops::StrongVector']]],
-  ['symmetrymanager_14',['SymmetryManager',['../classoperations__research_1_1SymmetryBreaker.html#aa126bb367514a24cbd6e0b2c48fda9ee',1,'operations_research::SymmetryBreaker']]]
+  ['sparseelementstorage_12',['SparseElementStorage',['../classoperations__research_1_1math__opt_1_1detail_1_1DenseElementStorage.html#a772448e61ecd0555c6b643070b2c102f',1,'operations_research::math_opt::detail::DenseElementStorage']]],
+  ['sparsevectorview_13',['SparseVectorView',['../classoperations__research_1_1math__opt_1_1SparseVectorView_1_1const__iterator.html#aec9b692ba1b8edac6cca4dc53fce14a3',1,'operations_research::math_opt::SparseVectorView::const_iterator']]],
+  ['swap_14',['swap',['../classutil__intops_1_1StrongVector.html#a0e53c5192a5adafb4f00ff09b70e2042',1,'util_intops::StrongVector']]],
+  ['symmetrymanager_15',['SymmetryManager',['../classoperations__research_1_1SymmetryBreaker.html#aa126bb367514a24cbd6e0b2c48fda9ee',1,'operations_research::SymmetryBreaker']]]
 ];

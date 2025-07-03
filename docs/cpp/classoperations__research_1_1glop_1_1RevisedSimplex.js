@@ -41,6 +41,7 @@ var classoperations__research_1_1glop_1_1RevisedSimplex =
     [ "SetIntegralityScale", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a0a067456421796bf9d92cfb485e1bdbf", null ],
     [ "SetLogger", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac2d81ff6f6c035f6cd5ba5e1ae93823b", null ],
     [ "SetParameters", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac03a15f3bedf70df3203d2ecafac4f3d", null ],
+    [ "SetRandom", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ae416a0156bef9162d9ffa1d863b5b4ae", null ],
     [ "SetStartingVariableValuesForNextSolve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#af08e9beceddab67848a91dcff1978b28", null ],
     [ "Solve", "classoperations__research_1_1glop_1_1RevisedSimplex.html#ac08f8edb988e06b034fa6f9516913368", null ],
     [ "StatString", "classoperations__research_1_1glop_1_1RevisedSimplex.html#a7e0b23fec162239ba5fb0380aadd4e8a", null ]

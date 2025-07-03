@@ -7,6 +7,8 @@ var structoperations__research_1_1math__opt_1_1QuadraticConstraintData =
     [ "FromProto", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a966e85017a1137995fde57545a8fcf5a", null ],
     [ "Proto", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#aa29bf419aada653f6cf8469b70610047", null ],
     [ "RelatedVariables", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#af307879fe0390ada1f7649c13b53d838", null ],
+    [ "kElementType", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a8753f9b3ba26c2ee610e96cdf3366791", null ],
+    [ "kSupportsElemental", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a2fe9954c31a76019942395add196aa41", null ],
     [ "linear_terms", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a786c70d183a6135672b2240f69ee861d", null ],
     [ "lower_bound", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a8ea169b93eb6fca16b729eb9d8fb40f7", null ],
     [ "name", "structoperations__research_1_1math__opt_1_1QuadraticConstraintData.html#a17d67ff392d1d10e8eee0c647d82ac2c", null ],

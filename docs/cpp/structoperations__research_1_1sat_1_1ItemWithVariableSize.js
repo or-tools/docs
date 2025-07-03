@@ -1,6 +1,7 @@
 var structoperations__research_1_1sat_1_1ItemWithVariableSize =
 [
     [ "Interval", "structoperations__research_1_1sat_1_1ItemWithVariableSize_1_1Interval.html", "structoperations__research_1_1sat_1_1ItemWithVariableSize_1_1Interval" ],
+    [ "IsFixed", "structoperations__research_1_1sat_1_1ItemWithVariableSize.html#a9dac250f45387894e20a0a16b68b13e0", null ],
     [ "AbslStringify", "structoperations__research_1_1sat_1_1ItemWithVariableSize.html#ae95e8111b3913f7073b828998bb4d2e6", null ],
     [ "index", "structoperations__research_1_1sat_1_1ItemWithVariableSize.html#a8e283726011f4f92936955bef0aa1821", null ],
     [ "x", "structoperations__research_1_1sat_1_1ItemWithVariableSize.html#a34950ecfb82c5a7239199a9e2786b10c", null ],

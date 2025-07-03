@@ -21,5 +21,6 @@ var searchData=
   ['vector_5fsum_5finternal_2eh_18',['vector_sum_internal.h',['../vector__sum__internal_8h.html',1,'']]],
   ['version_2ecc_19',['version.cc',['../version_8cc.html',1,'']]],
   ['version_2eh_20',['version.h',['../version_8h.html',1,'']]],
-  ['visitor_2ecc_21',['visitor.cc',['../visitor_8cc.html',1,'']]]
+  ['views_2eh_21',['views.h',['../views_8h.html',1,'']]],
+  ['visitor_2ecc_22',['visitor.cc',['../visitor_8cc.html',1,'']]]
 ];

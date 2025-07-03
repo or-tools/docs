@@ -1,6 +1,6 @@
 var structoperations__research_1_1math__opt_1_1SolveArguments =
 [
-    [ "CheckModelStorageAndCallback", "structoperations__research_1_1math__opt_1_1SolveArguments.html#a7e44ac9fc675d5877b589b71cafde335", null ],
+    [ "CheckModelStorageAndCallback", "structoperations__research_1_1math__opt_1_1SolveArguments.html#a1e0e538eb3d59c1d72c32ff41e23eac7", null ],
     [ "callback", "structoperations__research_1_1math__opt_1_1SolveArguments.html#ad592b1fd2199b4cad5c302e0bc07b4b1", null ],
     [ "callback_registration", "structoperations__research_1_1math__opt_1_1SolveArguments.html#ae7e91f614c9ed42916490ceb05d02af3", null ],
     [ "interrupter", "structoperations__research_1_1math__opt_1_1SolveArguments.html#aeef6d79055ae61cb9c091635d7ed88c2", null ],
