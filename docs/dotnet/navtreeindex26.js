@@ -215,6 +215,8 @@ var NAVTREEINDEX26 =
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a5a0b40d1cc807319b815ffaf833c42e3":[4,0,1,0,2,95,0,2,0],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a6389d6ff7c7ee32972ca1553b2b77c2b":[3,0,1,0,2,95,0,2,3],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a6389d6ff7c7ee32972ca1553b2b77c2b":[4,0,1,0,2,95,0,2,3],
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a9156c95a89bc5bb5192097441af4e4e5":[3,0,1,0,2,95,0,2,8],
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a9156c95a89bc5bb5192097441af4e4e5":[4,0,1,0,2,95,0,2,8],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89ab4cfce75869572c6a6b9d992a98f30c0":[3,0,1,0,2,95,0,2,5],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89ab4cfce75869572c6a6b9d992a98f30c0":[4,0,1,0,2,95,0,2,5],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89aba69953b4083cfd8b8eb1729235b4e5e":[3,0,1,0,2,95,0,2,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a1104870b6483f5b1ba62c75335d2063c":[4,0,1,0,2,95,0,0,6],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a20c15d4596a5584dd17e857882dee27b":[3,0,1,0,2,95,0,0,4],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a20c15d4596a5584dd17e857882dee27b":[4,0,1,0,2,95,0,0,4],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a2bbba60c347c0c694409d5fafe0bb3c0":[3,0,1,0,2,95,0,0,15],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a2bbba60c347c0c694409d5fafe0bb3c0":[4,0,1,0,2,95,0,0,15],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a3ecf3dba5dca5eb7c80b7dcf865daa8a":[3,0,1,0,2,95,0,0,13]
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a2bbba60c347c0c694409d5fafe0bb3c0":[3,0,1,0,2,95,0,0,15]
 };

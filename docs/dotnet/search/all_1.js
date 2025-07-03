@@ -100,7 +100,7 @@ var searchData=
   ['booleanencodinglevelfieldnumber_97',['BooleanEncodingLevelFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ad99a833eab961c53862aa1ccdc3c2747',1,'Google::OrTools::Sat::SatParameters']]],
   ['booleanproblem_2epb_2ecs_98',['BooleanProblem.pb.cs',['../BooleanProblem_8pb_8cs.html',1,'']]],
   ['booleanproblemreflection_99',['BooleanProblemReflection',['../classGoogle_1_1OrTools_1_1Sat_1_1BooleanProblemReflection.html',1,'Google::OrTools::Sat']]],
-  ['booleanvalue_100',['BooleanValue',['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#abf532b0903adf8363ad2cfb0d3a4b929',1,'Google.OrTools.Sat.CpSolver.BooleanValue()'],['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolutionCallback.html#a1e329c00be8a46032b3edfb455e4631d',1,'Google.OrTools.Sat.CpSolverSolutionCallback.BooleanValue()']]],
+  ['booleanvalue_100',['BooleanValue',['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#ad875903cbc8307f4d259d13b4a2ebfe0',1,'Google.OrTools.Sat.CpSolver.BooleanValue()'],['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolverSolutionCallback.html#a1e329c00be8a46032b3edfb455e4631d',1,'Google.OrTools.Sat.CpSolverSolutionCallback.BooleanValue()']]],
   ['booleanvar_101',['BooleanVar',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BooleanVar.html',1,'Google::OrTools::ConstraintSolver']]],
   ['booleanvar_2ecs_102',['BooleanVar.cs',['../BooleanVar_8cs.html',1,'']]],
   ['booleanvar_5fbasename_103',['BooleanVar_BaseName',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a2d189ba8b7cf02c1f1b930f617b82c91',1,'Google::OrTools::ConstraintSolver::operations_research_constraint_solverPINVOKE']]],

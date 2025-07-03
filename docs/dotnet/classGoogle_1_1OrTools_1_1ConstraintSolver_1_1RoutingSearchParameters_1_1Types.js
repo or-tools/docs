@@ -10,7 +10,8 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Typ
       [ "SortingPropertyHighestAvgArcCostToVehicleStartEnds", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a53258171339c24e97c2184d82eca12b7", null ],
       [ "SortingPropertyLowestAvgArcCostToVehicleStartEnds", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89ab4cfce75869572c6a6b9d992a98f30c0", null ],
       [ "SortingPropertyLowestMinArcCostToVehicleStartEnds", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89aba69953b4083cfd8b8eb1729235b4e5e", null ],
-      [ "SortingPropertyHighestDimensionUsage", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89ae063c72ce0092709fc2af318c1c8a325", null ]
+      [ "SortingPropertyHighestDimensionUsage", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89ae063c72ce0092709fc2af318c1c8a325", null ],
+      [ "SortingPropertyRandom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#a073aa5f3714cf62438c2286a2554ea89a9156c95a89bc5bb5192097441af4e4e5", null ]
     ] ],
     [ "PairInsertionStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#af2092eee84978f2a15d36380f9f55147", [
       [ "Automatic", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types.html#af2092eee84978f2a15d36380f9f55147a086247a9b57fde6eefee2a0c4752242d", null ],

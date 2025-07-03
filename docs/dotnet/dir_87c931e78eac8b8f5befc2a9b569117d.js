@@ -8,6 +8,7 @@ var dir_87c931e78eac8b8f5befc2a9b569117d =
     [ "LogCallback.cs", "LogCallback_8cs.html", "LogCallback_8cs" ],
     [ "operations_research_sat.cs", "operations__research__sat_8cs.html", "operations__research__sat_8cs" ],
     [ "operations_research_satPINVOKE.cs", "operations__research__satPINVOKE_8cs.html", "operations__research__satPINVOKE_8cs" ],
+    [ "RoutesSupportGraph.pb.cs", "RoutesSupportGraph_8pb_8cs.html", "RoutesSupportGraph_8pb_8cs" ],
     [ "SatParameters.pb.cs", "SatParameters_8pb_8cs.html", "SatParameters_8pb_8cs" ],
     [ "SolutionCallback.cs", "SolutionCallback_8cs.html", "SolutionCallback_8cs" ],
     [ "SolveWrapper.cs", "SolveWrapper_8cs.html", "SolveWrapper_8cs" ]

@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a2bbba60c347c0c694409d5fafe0bb3c0":[4,0,1,0,2,95,0,0,15],
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a3ecf3dba5dca5eb7c80b7dcf865daa8a":[3,0,1,0,2,95,0,0,13],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a3ecf3dba5dca5eb7c80b7dcf865daa8a":[4,0,1,0,2,95,0,0,13],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a5a4fd808554850315c4beff5c452f4bf":[3,0,1,0,2,95,0,0,7],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters_1_1Types_1_1ImprovementSearchLimitParameters.html#a5a4fd808554850315c4beff5c452f4bf":[4,0,1,0,2,95,0,0,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a3aea622af98b9575c3be672e3846bae0":[4,0,1,0,2,96,0,0,3],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a7d20fe8d35584ffc28adfae699f9d3df":[3,0,1,0,2,96,0,0,6],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a7d20fe8d35584ffc28adfae699f9d3df":[4,0,1,0,2,96,0,0,6],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a9e9cb27b3d77dd264787c0e7e7d74133":[3,0,1,0,2,96,0,0,4],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a9e9cb27b3d77dd264787c0e7e7d74133":[4,0,1,0,2,96,0,0,4],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5aaf9270fcf1501cf8d13879bf6f00a548":[3,0,1,0,2,96,0,0,2]
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchStatus_1_1Types.html#a1248de82346328cb4b60fb5f37f181c5a9e9cb27b3d77dd264787c0e7e7d74133":[3,0,1,0,2,96,0,0,4]
 };

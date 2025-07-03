@@ -57,7 +57,8 @@ var searchData=
   ['lpdualtolerance_54',['LpDualTolerance',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aa2bd3f5f9d8bc09d6ecf36c8d06a6e56',1,'Google::OrTools::Sat::SatParameters']]],
   ['lpmaxdeterministictime_55',['LpMaxDeterministicTime',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html#abc2a7fa8468c9598ae673078af37d1a8',1,'Google::OrTools::Bop::BopParameters']]],
   ['lpprimaltolerance_56',['LpPrimalTolerance',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ac0464a13e507ca1cec05af6da17ea0bc',1,'Google::OrTools::Sat::SatParameters']]],
-  ['lsoperatorminneighbors_57',['LsOperatorMinNeighbors',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a4a19fa3d5e49d8e61720f6b2c52172f2',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['lsoperatorneighborsratio_58',['LsOperatorNeighborsRatio',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a36e386cb68392293615f316885c994a6',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['lufactorizationpivotthreshold_59',['LuFactorizationPivotThreshold',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#ab3f8d0813687310f9e72629fa3653498',1,'Google::OrTools::Glop::GlopParameters']]]
+  ['lpvalue_57',['LpValue',['../classOperationsResearch_1_1Sat_1_1ArcLpValue.html#a4fd91401b71d82d3a3530436453249f5',1,'OperationsResearch::Sat::ArcLpValue']]],
+  ['lsoperatorminneighbors_58',['LsOperatorMinNeighbors',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a4a19fa3d5e49d8e61720f6b2c52172f2',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['lsoperatorneighborsratio_59',['LsOperatorNeighborsRatio',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a36e386cb68392293615f316885c994a6',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['lufactorizationpivotthreshold_60',['LuFactorizationPivotThreshold',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#ab3f8d0813687310f9e72629fa3653498',1,'Google::OrTools::Glop::GlopParameters']]]
 ];

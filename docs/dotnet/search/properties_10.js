@@ -26,7 +26,7 @@ var searchData=
   ['repairhint_23',['RepairHint',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aaf2d811813862cc1ec99e048e7fe4ad3',1,'Google::OrTools::Sat::SatParameters']]],
   ['reportintermediatecpsatsolutions_24',['ReportIntermediateCpSatSolutions',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#affe266a7526c6723bbda11b0fa9ba82c',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
   ['reservoir_25',['Reservoir',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1a5ea8b538da3a37aeeb3a9f7c9ad776',1,'Google::OrTools::Sat::ConstraintProto']]],
-  ['response_26',['Response',['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#a94cfcba6558289b803cf766accd899f0',1,'Google::OrTools::Sat::CpSolver']]],
+  ['response_26',['Response',['../classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html#aae206de5db0ebdf39344da8de194bbe9',1,'Google::OrTools::Sat::CpSolver']]],
   ['restartalgorithms_27',['RestartAlgorithms',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a595876a6404cfd0f1d1758f9e48a80d4',1,'Google::OrTools::Sat::SatParameters']]],
   ['restartdlaverageratio_28',['RestartDlAverageRatio',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#abdbee112006dee171cc451f06784e6cc',1,'Google::OrTools::Sat::SatParameters']]],
   ['restartlbdaverageratio_29',['RestartLbdAverageRatio',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ac1aa429582cfbeda86628c795f3439b5',1,'Google::OrTools::Sat::SatParameters']]],
@@ -42,10 +42,13 @@ var searchData=
   ['routeselectionminneighbors_39',['RouteSelectionMinNeighbors',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a5eaaee70db446745ccad2d63b71b4fa3',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
   ['routeselectionneighborsratio_40',['RouteSelectionNeighborsRatio',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a7019bebf18b4987437e75aa9c0c25eb2',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
   ['routingcutdpeffort_41',['RoutingCutDpEffort',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#acf191921679f7af06ee447d8cd9208c6',1,'Google::OrTools::Sat::SatParameters']]],
-  ['routingcutsubsetsizeforbinaryrelationbound_42',['RoutingCutSubsetSizeForBinaryRelationBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a0178b00401a492c6e3cdc22fab10f714',1,'Google::OrTools::Sat::SatParameters']]],
-  ['routingcutsubsetsizefortightbinaryrelationbound_43',['RoutingCutSubsetSizeForTightBinaryRelationBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a707324404a7b14e48c7ee3296821b4d1',1,'Google::OrTools::Sat::SatParameters']]],
-  ['ruincompositionstrategy_44',['RuinCompositionStrategy',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a8a6c2a7389793af67d61dab4e23ae033',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
-  ['ruinrecreateparameters_45',['RuinRecreateParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a9db52edb8010bd1a26203b8d27b846e0',1,'Google::OrTools::ConstraintSolver::IteratedLocalSearchParameters']]],
-  ['ruinstrategies_46',['RuinStrategies',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a80b57bd122251997862cf2c7ed7bdd84',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
-  ['run_5fall_5fheuristics_47',['run_all_heuristics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DefaultPhaseParameters.html#aec13e59243785348480347f4e9f1012a',1,'Google::OrTools::ConstraintSolver::DefaultPhaseParameters']]]
+  ['routingcutmaxinfeasiblepathlength_42',['RoutingCutMaxInfeasiblePathLength',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a2efe355af1b6310569aad671b51d9750',1,'Google::OrTools::Sat::SatParameters']]],
+  ['routingcutsubsetsizeforbinaryrelationbound_43',['RoutingCutSubsetSizeForBinaryRelationBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a0178b00401a492c6e3cdc22fab10f714',1,'Google::OrTools::Sat::SatParameters']]],
+  ['routingcutsubsetsizeforexactbinaryrelationbound_44',['RoutingCutSubsetSizeForExactBinaryRelationBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ad0e58ad05171edfbf3ce2a5f59b2120c',1,'Google::OrTools::Sat::SatParameters']]],
+  ['routingcutsubsetsizeforshortestpathsbound_45',['RoutingCutSubsetSizeForShortestPathsBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a35a53148b28ec8a456b9afd51a77c9fb',1,'Google::OrTools::Sat::SatParameters']]],
+  ['routingcutsubsetsizefortightbinaryrelationbound_46',['RoutingCutSubsetSizeForTightBinaryRelationBound',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a707324404a7b14e48c7ee3296821b4d1',1,'Google::OrTools::Sat::SatParameters']]],
+  ['ruincompositionstrategy_47',['RuinCompositionStrategy',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a8a6c2a7389793af67d61dab4e23ae033',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
+  ['ruinrecreateparameters_48',['RuinRecreateParameters',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a9db52edb8010bd1a26203b8d27b846e0',1,'Google::OrTools::ConstraintSolver::IteratedLocalSearchParameters']]],
+  ['ruinstrategies_49',['RuinStrategies',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a80b57bd122251997862cf2c7ed7bdd84',1,'Google::OrTools::ConstraintSolver::RuinRecreateParameters']]],
+  ['run_5fall_5fheuristics_50',['run_all_heuristics',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1DefaultPhaseParameters.html#aec13e59243785348480347f4e9f1012a',1,'Google::OrTools::ConstraintSolver::DefaultPhaseParameters']]]
 ];

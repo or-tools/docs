@@ -323,6 +323,11 @@ var annotated_dup =
       ] ]
     ] ],
     [ "OperationsResearch", "namespaceOperationsResearch.html", [
+      [ "Sat", "namespaceOperationsResearch_1_1Sat.html", [
+        [ "ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", "classOperationsResearch_1_1Sat_1_1ArcLpValue" ],
+        [ "RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto" ],
+        [ "RoutesSupportGraphReflection", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection.html", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection" ]
+      ] ],
       [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],
       [ "MPAbsConstraint", "classOperationsResearch_1_1MPAbsConstraint.html", "classOperationsResearch_1_1MPAbsConstraint" ],
       [ "MPArrayConstraint", "classOperationsResearch_1_1MPArrayConstraint.html", "classOperationsResearch_1_1MPArrayConstraint" ],
@@ -342,10 +347,7 @@ var annotated_dup =
       [ "MPSosConstraint", "classOperationsResearch_1_1MPSosConstraint.html", "classOperationsResearch_1_1MPSosConstraint" ],
       [ "MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", "classOperationsResearch_1_1MPVariableProto" ],
       [ "OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", "classOperationsResearch_1_1OptionalDouble" ],
-      [ "PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", "classOperationsResearch_1_1PartialVariableAssignment" ],
-      [ "SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", "classOperationsResearch_1_1SetCoverProto" ],
-      [ "SetCoverReflection", "classOperationsResearch_1_1SetCoverReflection.html", "classOperationsResearch_1_1SetCoverReflection" ],
-      [ "SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", "classOperationsResearch_1_1SetCoverSolutionResponse" ]
+      [ "PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", "classOperationsResearch_1_1PartialVariableAssignment" ]
     ] ],
     [ "SolutionCounter", "classSolutionCounter.html", "classSolutionCounter" ],
     [ "SolutionDivisionCounter", "classSolutionDivisionCounter.html", "classSolutionDivisionCounter" ],

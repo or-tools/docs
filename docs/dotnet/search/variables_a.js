@@ -55,7 +55,8 @@ var searchData=
   ['lpdualtolerancefieldnumber_52',['LpDualToleranceFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aebe2cd53856314af2a9c0280df0651d2',1,'Google::OrTools::Sat::SatParameters']]],
   ['lpmaxdeterministictimefieldnumber_53',['LpMaxDeterministicTimeFieldNumber',['../classGoogle_1_1OrTools_1_1Bop_1_1BopParameters.html#a0d3e7c78fb5ca99145eacd5f32537498',1,'Google::OrTools::Bop::BopParameters']]],
   ['lpprimaltolerancefieldnumber_54',['LpPrimalToleranceFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#ae1fec2d0af43068712bf009404e9d7f9',1,'Google::OrTools::Sat::SatParameters']]],
-  ['lsoperatorminneighborsfieldnumber_55',['LsOperatorMinNeighborsFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#ad6b2856d9a50047913289082498b714f',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['lsoperatorneighborsratiofieldnumber_56',['LsOperatorNeighborsRatioFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a5fb6a7cf0358bf1c4fbaea60ddcf2e21',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['lufactorizationpivotthresholdfieldnumber_57',['LuFactorizationPivotThresholdFieldNumber',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#a3283f197b6d2a5ece229f8bb771db72e',1,'Google::OrTools::Glop::GlopParameters']]]
+  ['lpvaluefieldnumber_55',['LpValueFieldNumber',['../classOperationsResearch_1_1Sat_1_1ArcLpValue.html#ae7b73716bcc9cc4c4aae74d9dc2dc6f7',1,'OperationsResearch::Sat::ArcLpValue']]],
+  ['lsoperatorminneighborsfieldnumber_56',['LsOperatorMinNeighborsFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#ad6b2856d9a50047913289082498b714f',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['lsoperatorneighborsratiofieldnumber_57',['LsOperatorNeighborsRatioFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a5fb6a7cf0358bf1c4fbaea60ddcf2e21',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
+  ['lufactorizationpivotthresholdfieldnumber_58',['LuFactorizationPivotThresholdFieldNumber',['../classGoogle_1_1OrTools_1_1Glop_1_1GlopParameters.html#a3283f197b6d2a5ece229f8bb771db72e',1,'Google::OrTools::Glop::GlopParameters']]]
 ];

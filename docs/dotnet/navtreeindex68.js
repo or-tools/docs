@@ -1,5 +1,15 @@
 var NAVTREEINDEX68 =
 {
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ad843cb197bca7963e67057c6a02fb570":[4,0,1,0,6,11,115],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ad8ae7c52e5780838e5bb1000a05b337b":[3,0,1,0,6,11,69],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ad8ae7c52e5780838e5bb1000a05b337b":[4,0,1,0,6,11,69],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#adeddad24dd21de7e223a830e2a8996a7":[3,0,1,0,6,11,19],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#adeddad24dd21de7e223a830e2a8996a7":[4,0,1,0,6,11,19],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#adf4e51088713a046e33f275081981ae7":[3,0,1,0,6,11,137],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#adf4e51088713a046e33f275081981ae7":[4,0,1,0,6,11,137],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae009104652768b2ce4319c83b3a79d19":[3,0,1,0,6,11,80],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae009104652768b2ce4319c83b3a79d19":[4,0,1,0,6,11,80],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae07d1d850eacda2062cf485c5177a1a3":[3,0,1,0,6,11,114],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae07d1d850eacda2062cf485c5177a1a3":[4,0,1,0,6,11,114],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae36b02d4cbe0abc2caeb203d62fe434c":[3,0,1,0,6,11,9],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ae36b02d4cbe0abc2caeb203d62fe434c":[4,0,1,0,6,11,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX68 =
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a048494e6fca8bc74dd404c8d5b7ee243":[4,0,1,0,7,3,7],
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a070b20bddb96205a1aa7acb672549078":[3,0,1,0,7,3,5],
 "classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a070b20bddb96205a1aa7acb672549078":[4,0,1,0,7,3,5],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a07aa0c7bde4ad5bfeceb46ad82382fe1":[3,0,1,0,7,3,21],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a07aa0c7bde4ad5bfeceb46ad82382fe1":[4,0,1,0,7,3,21],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a12236ce4a5dfb9a31758c3c0aa6428c2":[3,0,1,0,7,3,28],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a12236ce4a5dfb9a31758c3c0aa6428c2":[4,0,1,0,7,3,28],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a15a9349327b22eee54c8268d40bbd7a4":[3,0,1,0,7,3,18],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a15a9349327b22eee54c8268d40bbd7a4":[4,0,1,0,7,3,18],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a181308e1a41e643213c530c2220ddeeb":[3,0,1,0,7,3,35],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a181308e1a41e643213c530c2220ddeeb":[4,0,1,0,7,3,35],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a1ec6129c1e510e3534248c8e40c0045c":[3,0,1,0,7,3,23],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a1ec6129c1e510e3534248c8e40c0045c":[4,0,1,0,7,3,23],
-"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a23293df6676a80ea4b9988b862ff59d6":[3,0,1,0,7,3,30]
+"classGoogle_1_1OrTools_1_1ModelBuilder_1_1IntVector.html#a07aa0c7bde4ad5bfeceb46ad82382fe1":[3,0,1,0,7,3,21]
 };

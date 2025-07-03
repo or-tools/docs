@@ -1,5 +1,15 @@
 var NAVTREEINDEX73 =
 {
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad2394f0efee42408621f5c7daed5d5f3":[4,0,1,0,8,1,64],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad25f43195e0c1938f7d6692944f847dd":[3,0,1,0,8,1,32],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad25f43195e0c1938f7d6692944f847dd":[4,0,1,0,8,1,32],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad44b89e49ec8032595b8080059d12287":[3,0,1,0,8,1,34],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad44b89e49ec8032595b8080059d12287":[4,0,1,0,8,1,34],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad72f54bbbc6f8605f0d36118bfb658dd":[3,0,1,0,8,1,12],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ad72f54bbbc6f8605f0d36118bfb658dd":[4,0,1,0,8,1,12],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ada6865d3b218145731df3f179061c310":[3,0,1,0,8,1,47],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ada6865d3b218145731df3f179061c310":[4,0,1,0,8,1,47],
+"classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#adbce7bf54011114e6c96eb9cbaca4b33":[3,0,1,0,8,1,48],
 "classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#adbce7bf54011114e6c96eb9cbaca4b33":[4,0,1,0,8,1,48],
 "classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ae1ae74e1d56ec612138f136a40ff54c2":[3,0,1,0,8,1,19],
 "classGoogle_1_1OrTools_1_1PDLP_1_1ConvergenceInformation.html#ae1ae74e1d56ec612138f136a40ff54c2":[4,0,1,0,8,1,19],
@@ -239,15 +249,5 @@ var NAVTREEINDEX73 =
 "classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#a9e77236209fd2e5f1f53a021cedb90e7":[4,0,1,0,8,4,2],
 "classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa0f57624670df5f7617a586b60c1f5f7":[3,0,1,0,8,4,32],
 "classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa0f57624670df5f7617a586b60c1f5f7":[4,0,1,0,8,4,32],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa206767ff0ca52664dafcd9f9f1f8bb6":[3,0,1,0,8,4,44],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa206767ff0ca52664dafcd9f9f1f8bb6":[4,0,1,0,8,4,44],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa4245b9ef9dcfa3742ded9fbd0220ad2":[3,0,1,0,8,4,24],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa4245b9ef9dcfa3742ded9fbd0220ad2":[4,0,1,0,8,4,24],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aad2036e9a63edbb58ac992848ebe3b50":[3,0,1,0,8,4,31],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aad2036e9a63edbb58ac992848ebe3b50":[4,0,1,0,8,4,31],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#ab03daf9c5f8425c8e14d9f0312e50f3f":[3,0,1,0,8,4,0],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#ab03daf9c5f8425c8e14d9f0312e50f3f":[4,0,1,0,8,4,0],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#abcf4199a8e99712339472e7f8ef2d738":[3,0,1,0,8,4,7],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#abcf4199a8e99712339472e7f8ef2d738":[4,0,1,0,8,4,7],
-"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#ac6a223b4c526c16fc4b69e4e4facc54a":[3,0,1,0,8,4,22]
+"classGoogle_1_1OrTools_1_1PDLP_1_1IterationStats.html#aa206767ff0ca52664dafcd9f9f1f8bb6":[3,0,1,0,8,4,44]
 };

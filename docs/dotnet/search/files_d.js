@@ -4,12 +4,13 @@ var searchData=
   ['revbool_2ecs_1',['RevBool.cs',['../RevBool_8cs.html',1,'']]],
   ['revinteger_2ecs_2',['RevInteger.cs',['../RevInteger_8cs.html',1,'']]],
   ['revpartialsequence_2ecs_3',['RevPartialSequence.cs',['../RevPartialSequence_8cs.html',1,'']]],
-  ['routingdimension_2ecs_4',['RoutingDimension.cs',['../RoutingDimension_8cs.html',1,'']]],
-  ['routingenums_2epb_2ecs_5',['RoutingEnums.pb.cs',['../RoutingEnums_8pb_8cs.html',1,'']]],
-  ['routingils_2epb_2ecs_6',['RoutingIls.pb.cs',['../RoutingIls_8pb_8cs.html',1,'']]],
-  ['routingindexmanager_2ecs_7',['RoutingIndexManager.cs',['../RoutingIndexManager_8cs.html',1,'']]],
-  ['routingmodel_2ecs_8',['RoutingModel.cs',['../RoutingModel_8cs.html',1,'']]],
-  ['routingmodelvisitor_2ecs_9',['RoutingModelVisitor.cs',['../RoutingModelVisitor_8cs.html',1,'']]],
-  ['routingparameters_2epb_2ecs_10',['RoutingParameters.pb.cs',['../RoutingParameters_8pb_8cs.html',1,'']]],
-  ['routingsolvertests_2ecs_11',['RoutingSolverTests.cs',['../RoutingSolverTests_8cs.html',1,'']]]
+  ['routessupportgraph_2epb_2ecs_4',['RoutesSupportGraph.pb.cs',['../RoutesSupportGraph_8pb_8cs.html',1,'']]],
+  ['routingdimension_2ecs_5',['RoutingDimension.cs',['../RoutingDimension_8cs.html',1,'']]],
+  ['routingenums_2epb_2ecs_6',['RoutingEnums.pb.cs',['../RoutingEnums_8pb_8cs.html',1,'']]],
+  ['routingils_2epb_2ecs_7',['RoutingIls.pb.cs',['../RoutingIls_8pb_8cs.html',1,'']]],
+  ['routingindexmanager_2ecs_8',['RoutingIndexManager.cs',['../RoutingIndexManager_8cs.html',1,'']]],
+  ['routingmodel_2ecs_9',['RoutingModel.cs',['../RoutingModel_8cs.html',1,'']]],
+  ['routingmodelvisitor_2ecs_10',['RoutingModelVisitor.cs',['../RoutingModelVisitor_8cs.html',1,'']]],
+  ['routingparameters_2epb_2ecs_11',['RoutingParameters.pb.cs',['../RoutingParameters_8pb_8cs.html',1,'']]],
+  ['routingsolvertests_2ecs_12',['RoutingSolverTests.cs',['../RoutingSolverTests_8cs.html',1,'']]]
 ];

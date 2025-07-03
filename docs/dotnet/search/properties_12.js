@@ -2,7 +2,7 @@ var searchData=
 [
   ['table_0',['Table',['../classGoogle_1_1OrTools_1_1Sat_1_1ConstraintProto.html#a1c238de1ea039e89f9245abd42437069',1,'Google::OrTools::Sat::ConstraintProto']]],
   ['tablecompressionlevel_1',['TableCompressionLevel',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a0c17154fcb71fe8f160b2184f50accf8',1,'Google::OrTools::Sat::SatParameters']]],
-  ['tail_2',['Tail',['../classGoogle_1_1OrTools_1_1Graph_1_1FlowArcProto.html#a16fee4635b3f461542ea10d37a94b7fe',1,'Google::OrTools::Graph::FlowArcProto']]],
+  ['tail_2',['Tail',['../classGoogle_1_1OrTools_1_1Graph_1_1FlowArcProto.html#a16fee4635b3f461542ea10d37a94b7fe',1,'Google.OrTools.Graph.FlowArcProto.Tail'],['../classOperationsResearch_1_1Sat_1_1ArcLpValue.html#a6d56d8c212e4a8c92ce96a08bfb6b38b',1,'OperationsResearch.Sat.ArcLpValue.Tail']]],
   ['tails_3',['Tails',['../classGoogle_1_1OrTools_1_1Sat_1_1CircuitConstraintProto.html#a84c0d1e4514d3d95d8561347cbc151ca',1,'Google.OrTools.Sat.CircuitConstraintProto.Tails'],['../classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#addb09b15074fc8dceb4b96dd370be223',1,'Google.OrTools.Sat.RoutesConstraintProto.Tails']]],
   ['target_4',['Target',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearArgumentProto.html#ad527488c9544be00d0bb6faeb5b7f31d',1,'Google.OrTools.Sat.LinearArgumentProto.Target'],['../classGoogle_1_1OrTools_1_1Sat_1_1ElementConstraintProto.html#a11c113927931e883c0a86133171805e9',1,'Google.OrTools.Sat.ElementConstraintProto.Target']]],
   ['targetindex_5',['TargetIndex',['../classOperationsResearch_1_1MPModelProto_1_1Types_1_1Annotation.html#a7fb8dbfc70e6538e4491792f30d01426',1,'OperationsResearch::MPModelProto::Types::Annotation']]],

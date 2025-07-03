@@ -1,5 +1,15 @@
 var NAVTREEINDEX64 =
 {
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a043c8d9fa3dd8654a42ace5fb229587b":[4,0,1,0,6,4,9],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a0d7076dc1a013690be532cb4cbc3d6cd":[3,0,1,0,6,4,6],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a0d7076dc1a013690be532cb4cbc3d6cd":[4,0,1,0,6,4,6],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a28c1108075014da78214096c5a83735e":[3,0,1,0,6,4,14],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a28c1108075014da78214096c5a83735e":[4,0,1,0,6,4,14],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a30fc97dcd8f3c2722f354d998fc69310":[3,0,1,0,6,4,4],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a30fc97dcd8f3c2722f354d998fc69310":[4,0,1,0,6,4,4],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a5b56505a5c0513ff190b6d7d77e9cdd9":[3,0,1,0,6,4,12],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a5b56505a5c0513ff190b6d7d77e9cdd9":[4,0,1,0,6,4,12],
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a5e6dae7dfaa903a96b2362dd3bb1a5a1":[3,0,1,0,6,4,3],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a5e6dae7dfaa903a96b2362dd3bb1a5a1":[4,0,1,0,6,4,3],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a60a5b87eed78c91082498ae9d4733ebc":[3,0,1,0,6,4,19],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1LinearExpr.html#a60a5b87eed78c91082498ae9d4733ebc":[4,0,1,0,6,4,19],
@@ -239,15 +249,5 @@ var NAVTREEINDEX64 =
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a80b4b27ed10d48cf21927fcd0b242e95":[4,0,1,0,6,8,10],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a84bf08a9994a0a12bb7a05ff76443312":[3,0,1,0,6,8,29],
 "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a84bf08a9994a0a12bb7a05ff76443312":[4,0,1,0,6,8,29],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a89592f4c57b162f25dd8b073eea4a041":[3,0,1,0,6,8,12],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a89592f4c57b162f25dd8b073eea4a041":[4,0,1,0,6,8,12],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a8d4b02911eabd37ed6867fbb95c82f78":[3,0,1,0,6,8,14],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a8d4b02911eabd37ed6867fbb95c82f78":[4,0,1,0,6,8,14],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a8e26f65a8ecbb1db8360b585b0747d6a":[3,0,1,0,6,8,8],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a8e26f65a8ecbb1db8360b585b0747d6a":[4,0,1,0,6,8,8],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a90669a045d6d9998460225de2dc8efc1":[3,0,1,0,6,8,13],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a90669a045d6d9998460225de2dc8efc1":[4,0,1,0,6,8,13],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a93d17b04c4d1751c7a054cd9c1de8276":[3,0,1,0,6,8,20],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a93d17b04c4d1751c7a054cd9c1de8276":[4,0,1,0,6,8,20],
-"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a9b9a64ab0ebbd2bea6c2fc74aba79eac":[3,0,1,0,6,8,3]
+"classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html#a89592f4c57b162f25dd8b073eea4a041":[3,0,1,0,6,8,12]
 };

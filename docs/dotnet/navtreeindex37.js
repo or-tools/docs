@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#ad690d04c95aeeb2e1ca194b7df44c8b6":[4,0,1,0,2,119,13],
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#ada00d5090bce7698ed0dbaa6db93b37b":[3,0,1,0,2,119,18],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#ada00d5090bce7698ed0dbaa6db93b37b":[4,0,1,0,2,119,18],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#aeeb0ee490b95b869d439ed4830fdddb3":[3,0,1,0,2,119,6],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html#aeeb0ee490b95b869d439ed4830fdddb3":[4,0,1,0,2,119,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0417191ec8391aee644940de3c507e9a":[4,0,1,0,2,73,245],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0432f946259f7dba531b71f838cec4b0":[3,0,1,0,2,73,1754],
 "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0432f946259f7dba531b71f838cec4b0":[4,0,1,0,2,73,1754],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0449397dbe3663d21c4e27a0f28d96b6":[3,0,1,0,2,73,1103],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0449397dbe3663d21c4e27a0f28d96b6":[4,0,1,0,2,73,1103],
-"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0456445d2400a8c389314ed0e6d38ed7":[3,0,1,0,2,73,273]
+"classGoogle_1_1OrTools_1_1ConstraintSolver_1_1operations__research__constraint__solverPINVOKE.html#a0449397dbe3663d21c4e27a0f28d96b6":[3,0,1,0,2,73,1103]
 };

@@ -18,7 +18,6 @@ var hierarchy =
     [ "Google.OrTools.Sat.CpModel", "classGoogle_1_1OrTools_1_1Sat_1_1CpModel.html", null ],
     [ "Google.OrTools.Sat.CpModelReflection", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelReflection.html", null ],
     [ "Google.OrTools.Sat.CpModelServiceReflection", "classGoogle_1_1OrTools_1_1Sat_1_1CpModelServiceReflection.html", null ],
-    [ "Google.OrTools.Sat.CpSolver", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html", null ],
     [ "Google.OrTools.ModelBuilder.EnforcedLinearConstraint", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1EnforcedLinearConstraint.html", null ],
     [ "Google.OrTools.Graph.FlowProblemReflection", "classGoogle_1_1OrTools_1_1Graph_1_1FlowProblemReflection.html", null ],
     [ "Google.OrTools.Tests.FlowTest", "classGoogle_1_1OrTools_1_1Tests_1_1FlowTest.html", null ],
@@ -101,6 +100,7 @@ var hierarchy =
       [ "Google.OrTools.Sat.PartialVariableAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment.html", null ],
       [ "Google.OrTools.Sat.ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", null ],
+      [ "Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions.html", null ],
       [ "Google.OrTools.Sat.SatParameters", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html", null ],
       [ "Google.OrTools.Sat.SparsePermutationProto", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto.html", null ],
       [ "Google.OrTools.Sat.SymmetryProto", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html", null ],
@@ -126,9 +126,8 @@ var hierarchy =
       [ "OperationsResearch.MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", null ],
       [ "OperationsResearch.OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", null ],
       [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
-      [ "OperationsResearch.SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", null ],
-      [ "OperationsResearch.SetCoverProto.Types.Subset", "classOperationsResearch_1_1SetCoverProto_1_1Types_1_1Subset.html", null ],
-      [ "OperationsResearch.SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", null ]
+      [ "OperationsResearch.Sat.ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", null ],
+      [ "OperationsResearch.Sat.RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", null ]
     ] ],
     [ "Google.OrTools.ConstraintSolver.IConstraintWithStatus", "interfaceGoogle_1_1OrTools_1_1ConstraintSolver_1_1IConstraintWithStatus.html", [
       [ "Google.OrTools.ConstraintSolver.BaseEquality", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseEquality.html", [
@@ -157,7 +156,8 @@ var hierarchy =
       [ "Google.OrTools.ConstraintSolver.Solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html", null ],
       [ "Google.OrTools.ConstraintSolver.SymmetryBreakerVector", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SymmetryBreakerVector.html", null ],
       [ "Google.OrTools.LinearSolver.MPConstraintVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPConstraintVector.html", null ],
-      [ "Google.OrTools.LinearSolver.MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", null ]
+      [ "Google.OrTools.LinearSolver.MPVariableVector", "classGoogle_1_1OrTools_1_1LinearSolver_1_1MPVariableVector.html", null ],
+      [ "Google.OrTools.Sat.CpSolver", "classGoogle_1_1OrTools_1_1Sat_1_1CpSolver.html", null ]
     ] ],
     [ "global.SystemCollections.Generic.IEnumerable", null, [
       [ "Google.OrTools.Algorithms.Int64Matrix", "classGoogle_1_1OrTools_1_1Algorithms_1_1Int64Matrix.html", null ],
@@ -365,6 +365,7 @@ var hierarchy =
       [ "Google.OrTools.Sat.PartialVariableAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1PartialVariableAssignment.html", null ],
       [ "Google.OrTools.Sat.ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", null ],
+      [ "Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions.html", null ],
       [ "Google.OrTools.Sat.SatParameters", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html", null ],
       [ "Google.OrTools.Sat.SparsePermutationProto", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto.html", null ],
       [ "Google.OrTools.Sat.SymmetryProto", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html", null ],
@@ -390,9 +391,8 @@ var hierarchy =
       [ "OperationsResearch.MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", null ],
       [ "OperationsResearch.OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", null ],
       [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
-      [ "OperationsResearch.SetCoverProto", "classOperationsResearch_1_1SetCoverProto.html", null ],
-      [ "OperationsResearch.SetCoverProto.Types.Subset", "classOperationsResearch_1_1SetCoverProto_1_1Types_1_1Subset.html", null ],
-      [ "OperationsResearch.SetCoverSolutionResponse", "classOperationsResearch_1_1SetCoverSolutionResponse.html", null ]
+      [ "OperationsResearch.Sat.ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", null ],
+      [ "OperationsResearch.Sat.RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", null ]
     ] ],
     [ "Google.OrTools.Tests.InitTest", "classGoogle_1_1OrTools_1_1Tests_1_1InitTest.html", null ],
     [ "Google.OrTools.Util.Int128Reflection", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection.html", null ],
@@ -452,6 +452,7 @@ var hierarchy =
     [ "Google.OrTools.Glop.ParametersReflection", "classGoogle_1_1OrTools_1_1Glop_1_1ParametersReflection.html", null ],
     [ "CreateSigningKey.Program", "classCreateSigningKey_1_1Program.html", null ],
     [ "Google.OrTools.ProtoHelper", "classGoogle_1_1OrTools_1_1ProtoHelper.html", null ],
+    [ "OperationsResearch.Sat.RoutesSupportGraphReflection", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection.html", null ],
     [ "Google.OrTools.Tests.RoutingDimensionTest", "classGoogle_1_1OrTools_1_1Tests_1_1RoutingDimensionTest.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingEnumsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingEnumsReflection.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingIlsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingIlsReflection.html", null ],
@@ -461,7 +462,6 @@ var hierarchy =
     [ "Google.OrTools.Tests.SatSolverTest", "classGoogle_1_1OrTools_1_1Tests_1_1SatSolverTest.html", null ],
     [ "Google.OrTools.ConstraintSolver.SearchLimitReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchLimitReflection.html", null ],
     [ "Google.OrTools.ConstraintSolver.SearchStatsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatsReflection.html", null ],
-    [ "OperationsResearch.SetCoverReflection", "classOperationsResearch_1_1SetCoverReflection.html", null ],
     [ "Google.OrTools.PDLP.SolveLogReflection", "classGoogle_1_1OrTools_1_1PDLP_1_1SolveLogReflection.html", null ],
     [ "Google.OrTools.ModelBuilder.Solver", "classGoogle_1_1OrTools_1_1ModelBuilder_1_1Solver.html", null ],
     [ "Google.OrTools.ConstraintSolver.SolverParametersReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SolverParametersReflection.html", null ],
@@ -676,12 +676,11 @@ var hierarchy =
     [ "Google.OrTools.PDLP.PrimalDualHybridGradientParams.Types", "classGoogle_1_1OrTools_1_1PDLP_1_1PrimalDualHybridGradientParams_1_1Types.html", null ],
     [ "Google.OrTools.PDLP.TerminationCriteria.Types", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types.html", null ],
     [ "Google.OrTools.Sat.DecisionStrategyProto.Types", "classGoogle_1_1OrTools_1_1Sat_1_1DecisionStrategyProto_1_1Types.html", null ],
+    [ "Google.OrTools.Sat.RoutesConstraintProto.Types", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types.html", null ],
     [ "Google.OrTools.Sat.SatParameters.Types", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html", null ],
     [ "OperationsResearch.MPModelProto.Types", "classOperationsResearch_1_1MPModelProto_1_1Types.html", null ],
     [ "OperationsResearch.MPModelProto.Types.Annotation.Types", "classOperationsResearch_1_1MPModelProto_1_1Types_1_1Annotation_1_1Types.html", null ],
     [ "OperationsResearch.MPModelRequest.Types", "classOperationsResearch_1_1MPModelRequest_1_1Types.html", null ],
     [ "OperationsResearch.MPSolverCommonParameters.Types", "classOperationsResearch_1_1MPSolverCommonParameters_1_1Types.html", null ],
-    [ "OperationsResearch.MPSosConstraint.Types", "classOperationsResearch_1_1MPSosConstraint_1_1Types.html", null ],
-    [ "OperationsResearch.SetCoverProto.Types", "classOperationsResearch_1_1SetCoverProto_1_1Types.html", null ],
-    [ "OperationsResearch.SetCoverSolutionResponse.Types", "classOperationsResearch_1_1SetCoverSolutionResponse_1_1Types.html", null ]
+    [ "OperationsResearch.MPSosConstraint.Types", "classOperationsResearch_1_1MPSosConstraint_1_1Types.html", null ]
 ];

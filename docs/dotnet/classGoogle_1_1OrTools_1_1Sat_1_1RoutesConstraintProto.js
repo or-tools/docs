@@ -1,5 +1,6 @@
 var classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto =
 [
+    [ "Types", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types" ],
     [ "RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#af8e7a087a79251b28e66075c95fc5161", null ],
     [ "RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a9f1870227e707b629965c4bf7e927187", null ],
     [ "CalculateSize", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a636fdad30d64974ea8d6c4fe4f16da89", null ],
@@ -13,12 +14,14 @@ var classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto =
     [ "WriteTo", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a043bb6233f635cce4af30401c97b5e2b", null ],
     [ "CapacityFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a75b77b5d0188554ad8da9fea7bb3a6e8", null ],
     [ "DemandsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a258267249b4d6b113362954ec98b8497", null ],
+    [ "DimensionsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a9f884edfb2b809f4c76a3121d0fd3e34", null ],
     [ "HeadsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a09e73cb8bb7dbe38e12c0e7d0249ce74", null ],
     [ "LiteralsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a51e6a1191b1f899011c4c3de7c625320", null ],
     [ "TailsFieldNumber", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a5076b790234a4ed0bd002d1b5dd5dd6b", null ],
     [ "Capacity", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a18e5bb329a3073a174ecd29490521b3d", null ],
     [ "Demands", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a412b3606791f6e626ebbc8d01ea44475", null ],
     [ "Descriptor", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a1e4be44364d464a2c713018bff8ec99c", null ],
+    [ "Dimensions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#afcb4dbf6da95debde4d8e982fb838384", null ],
     [ "Heads", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#ab72c90cec4e76b5cf1555eddeb18e90b", null ],
     [ "Literals", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#ac85e1011add3bb3a882301ed3787511a", null ],
     [ "Parser", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html#a3fdfe415ad16e3e57613762c268813e3", null ],

@@ -15,6 +15,8 @@ var CpModel_8pb_8cs =
     [ "Google.OrTools.Sat.ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto" ],
     [ "Google.OrTools.Sat.CircuitConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1CircuitConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1CircuitConstraintProto" ],
     [ "Google.OrTools.Sat.RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto" ],
+    [ "Google.OrTools.Sat.RoutesConstraintProto.Types", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types" ],
+    [ "Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions" ],
     [ "Google.OrTools.Sat.TableConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1TableConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1TableConstraintProto" ],
     [ "Google.OrTools.Sat.InverseConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1InverseConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1InverseConstraintProto" ],
     [ "Google.OrTools.Sat.AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto" ],
