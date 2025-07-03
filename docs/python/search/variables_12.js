@@ -41,11 +41,7 @@ var searchData=
   ['split_5flower_5fhalf_38',['SPLIT_LOWER_HALF',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#adda912d68f3954b6cf7b5a000c62ddb3',1,'ortools::constraint_solver::pywrapcp::Solver']]],
   ['split_5fupper_5fhalf_39',['SPLIT_UPPER_HALF',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#afc53b41b3c71ba1019317c4242ad32e8',1,'ortools::constraint_solver::pywrapcp::Solver']]],
   ['startexpr_40',['StartExpr',['../classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html#aa2003e40c6d8aab933d1c25a0ae168dd',1,'ortools::sat::python::cp_model::IntervalVar']]],
-  ['storage_41',['Storage',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a9c35f0c8219c8dc50797aecd297086a8',1,'ortools::math_opt::python::model']]],
-  ['storage_42',['storage',['../classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#ad51d7daee96213c0889ceaeda9fbea79',1,'ortools::math_opt::python::model::Model']]],
-  ['storage_5fupdate_5ftracker_43',['storage_update_tracker',['../classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker.html#a8624eb9b2f1ed984e1a052b147b43895',1,'ortools::math_opt::python::model::UpdateTracker']]],
-  ['storageclass_44',['StorageClass',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#a42926c2116eb97312607e8c1d5a3fc5e',1,'ortools::math_opt::python::model']]],
-  ['suggested_5fsolutions_45',['suggested_solutions',['../classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html#a5429cbc444a371d50a3d0f4828490d4c',1,'ortools::math_opt::python::callback::CallbackResult']]],
-  ['sumcst_46',['SumCst',['../namespaceortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api.html#a5cec6b40f8a0950fa20feb95e89b34c6',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
-  ['swapactive_47',['SWAPACTIVE',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a84ff5004d2b4ea93d6b6c33c330c2391',1,'ortools::constraint_solver::pywrapcp::Solver']]]
+  ['suggested_5fsolutions_41',['suggested_solutions',['../classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html#a5429cbc444a371d50a3d0f4828490d4c',1,'ortools::math_opt::python::callback::CallbackResult']]],
+  ['sumcst_42',['SumCst',['../namespaceortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api.html#a5cec6b40f8a0950fa20feb95e89b34c6',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
+  ['swapactive_43',['SWAPACTIVE',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a84ff5004d2b4ea93d6b6c33c330c2391',1,'ortools::constraint_solver::pywrapcp::Solver']]]
 ];

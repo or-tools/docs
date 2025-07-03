@@ -8,6 +8,8 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver =
     [ "boolean_values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a524a2940940d731ad55966ea4b670461", null ],
     [ "BooleanValue", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a9c729298d80e283a6d9326a4890d7146", null ],
     [ "BooleanValues", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a0f4e4bbab96b3a5fd2c195d97362d31e", null ],
+    [ "float_value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a1347c4910705220cc018d8267cb2ae13", null ],
+    [ "float_values", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#ad401ae3b5b5e176e05d3f436f6ba1f5a", null ],
     [ "num_booleans", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#ae4c95b1c97dfc796369124220af352aa", null ],
     [ "num_branches", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a4d10c0e1c01744f4cb48d45c08a0741f", null ],
     [ "num_conflicts", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolver.html#a70b209521b1fc3497ba2cb21a07e1e33", null ],

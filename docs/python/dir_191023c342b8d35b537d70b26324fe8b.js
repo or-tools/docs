@@ -6,5 +6,6 @@ var dir_191023c342b8d35b537d70b26324fe8b =
     [ "boolean_problem_pb2.py", "boolean__problem__pb2_8py.html", "boolean__problem__pb2_8py" ],
     [ "cp_model_pb2.py", "cp__model__pb2_8py.html", "cp__model__pb2_8py" ],
     [ "cp_model_service_pb2.py", "cp__model__service__pb2_8py.html", "cp__model__service__pb2_8py" ],
+    [ "routes_support_graph_pb2.py", "routes__support__graph__pb2_8py.html", "routes__support__graph__pb2_8py" ],
     [ "sat_parameters_pb2.py", "sat__parameters__pb2_8py.html", "sat__parameters__pb2_8py" ]
 ];

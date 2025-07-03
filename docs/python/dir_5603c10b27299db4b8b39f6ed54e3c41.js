@@ -1,6 +1,8 @@
 var dir_5603c10b27299db4b8b39f6ed54e3c41 =
 [
     [ "core", "dir_fed26848b1c297fa850c25eccef16428.html", "dir_fed26848b1c297fa850c25eccef16428" ],
+    [ "elemental", "dir_42e2aac9659991c4d6a0aab2a7a5425f.html", "dir_42e2aac9659991c4d6a0aab2a7a5425f" ],
+    [ "io", "dir_1e539defb5e0c0f453a3b71943c225a5.html", "dir_1e539defb5e0c0f453a3b71943c225a5" ],
     [ "python", "dir_24dd42b960e460ced030dfb541483d00.html", "dir_24dd42b960e460ced030dfb541483d00" ],
     [ "solvers", "dir_122c9ced5aefaff521c0ea154d932c67.html", "dir_122c9ced5aefaff521c0ea154d932c67" ],
     [ "__init__.py", "math__opt_2____init_____8py.html", null ],

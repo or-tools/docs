@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#ad8c0551a51d1aca44453382354a5577b":[1,0,0,7,1,0,3,10],
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#ad8c0551a51d1aca44453382354a5577b":[2,0,0,1,0,0,3,10],
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af07ece1b12e750ad07b817dafedffa9c":[1,0,0,7,1,0,3,4],
+"classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af07ece1b12e750ad07b817dafedffa9c":[2,0,0,1,0,0,3,4],
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af4bd0d57748429263c64a0bfec60400d":[1,0,0,7,1,0,3,15],
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#af4bd0d57748429263c64a0bfec60400d":[2,0,0,1,0,0,3,15],
 "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html#afafa27fc754e4b4155b74e9d8c8f6c9f":[1,0,0,7,1,0,3,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#a6b9b0d376e5919ce199d5ff1ac306117":[1,0,0,7,1,1,3,5],
 "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#a6b9b0d376e5919ce199d5ff1ac306117":[2,0,0,1,0,1,3,5],
 "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#aa1a22c90d1e3762ae6e26c2c4fff80b7":[1,0,0,7,1,1,3,14],
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#aa1a22c90d1e3762ae6e26c2c4fff80b7":[2,0,0,1,0,1,3,14],
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#aa7d1816a6da7bec9584ea074920134cc":[1,0,0,7,1,1,3,2],
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#aa7d1816a6da7bec9584ea074920134cc":[2,0,0,1,0,1,3,2],
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#ab31afe3922880bd00672d7446c77aa25":[1,0,0,7,1,1,3,10],
-"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#ab31afe3922880bd00672d7446c77aa25":[2,0,0,1,0,1,3,10]
+"classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html#aa1a22c90d1e3762ae6e26c2c4fff80b7":[2,0,0,1,0,1,3,14]
 };

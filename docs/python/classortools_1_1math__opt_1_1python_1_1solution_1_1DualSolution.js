@@ -4,5 +4,6 @@ var classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution =
     [ "dual_values", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#aae2711a5fc338aa50df45e3eb56d7792", null ],
     [ "feasibility_status", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a4ab16d43c5b9dd849a324108b03731ec", null ],
     [ "objective_value", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a2a39bab1079f573c16aece83ca8dc94f", null ],
+    [ "quadratic_dual_values", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a9cdd2cf9df5ba57c5fe3bb6f7a14b100", null ],
     [ "reduced_costs", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a1e5262231c9e9af44f70a686e5084cd0", null ]
 ];

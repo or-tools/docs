@@ -13,7 +13,7 @@ var result_8py =
     [ "ortools.math_opt.python.result._upgrade_termination", "namespaceortools_1_1math__opt_1_1python_1_1result.html#aadb7d5aa998512d84a074ee1662a252d", null ],
     [ "ortools.math_opt.python.result.parse_objective_bounds", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a537b3a1b6bc642dcc3ff039b73e60a32", null ],
     [ "ortools.math_opt.python.result.parse_problem_status", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a3dcd502dda0f20e3081de9c09e2f033c", null ],
-    [ "ortools.math_opt.python.result.parse_solve_result", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a5aabb55c807fa0d4dddf607116788bc7", null ],
+    [ "ortools.math_opt.python.result.parse_solve_result", "namespaceortools_1_1math__opt_1_1python_1_1result.html#abf50bd12beaf4e15fd1c1c3b89ac5719", null ],
     [ "ortools.math_opt.python.result.parse_solve_stats", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a78fea3063561bcd6d9df74ceae69225a", null ],
     [ "ortools.math_opt.python.result.parse_termination", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a4db54b558e1559767828eefd740c47b0", null ],
     [ "ortools.math_opt.python.result._NO_BASIS_ERROR", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a5c353bec37121379e4bb3b4522d6eee5", null ],

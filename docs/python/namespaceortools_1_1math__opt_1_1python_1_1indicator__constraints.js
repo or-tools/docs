@@ -1,0 +1,4 @@
+var namespaceortools_1_1math__opt_1_1python_1_1indicator__constraints =
+[
+    [ "IndicatorConstraint", "classortools_1_1math__opt_1_1python_1_1indicator__constraints_1_1IndicatorConstraint.html", "classortools_1_1math__opt_1_1python_1_1indicator__constraints_1_1IndicatorConstraint" ]
+];

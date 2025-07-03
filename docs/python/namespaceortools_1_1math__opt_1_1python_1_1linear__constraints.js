@@ -1,0 +1,5 @@
+var namespaceortools_1_1math__opt_1_1python_1_1linear__constraints =
+[
+    [ "LinearConstraint", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraint.html", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraint" ],
+    [ "LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraintMatrixEntry.html", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraintMatrixEntry" ]
+];

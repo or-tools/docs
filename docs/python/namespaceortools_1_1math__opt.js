@@ -10,6 +10,7 @@ var namespaceortools_1_1math__opt =
       [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1callback__pb2.html#a4e80a69086c62e9270491704f9441e32", null ]
     ] ],
     [ "core", "namespaceortools_1_1math__opt_1_1core.html", "namespaceortools_1_1math__opt_1_1core" ],
+    [ "elemental", "namespaceortools_1_1math__opt_1_1elemental.html", "namespaceortools_1_1math__opt_1_1elemental" ],
     [ "infeasible_subsystem_pb2", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#aa78600af16b6db77430e289c9ffdc560", null ],
       [ "_loaded_options", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a71b332b9c6c03b8707625ffa6b37b39a", null ],
@@ -19,6 +20,7 @@ var namespaceortools_1_1math__opt =
       [ "_sym_db", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#ad00b435eac9e3e9bb58c6deee6c79a3f", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1infeasible__subsystem__pb2.html#a188e663e2f767972b53fa170cf3c74eb", null ]
     ] ],
+    [ "io", "namespaceortools_1_1math__opt_1_1io.html", "namespaceortools_1_1math__opt_1_1io" ],
     [ "model_parameters_pb2", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#abb39cce193c5b383242de3544583fd08", null ],
       [ "_loaded_options", "namespaceortools_1_1math__opt_1_1model__parameters__pb2.html#acc4c828464741d03b04b2667a3958d58", null ],

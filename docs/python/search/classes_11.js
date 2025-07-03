@@ -31,5 +31,7 @@ var searchData=
   ['streamablescsinitarguments_28',['StreamableScsInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableScsInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
   ['streamablesolverinitarguments_29',['StreamableSolverInitArguments',['../classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html',1,'ortools::math_opt::python::init_arguments']]],
   ['sumarray_30',['SumArray',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1SumArray.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
-  ['svgwrapper_31',['SvgWrapper',['../classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html',1,'ortools::sat::colab::visualization']]]
+  ['svgwrapper_31',['SvgWrapper',['../classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html',1,'ortools::sat::colab::visualization']]],
+  ['symmetricdoubleattr2_32',['SymmetricDoubleAttr2',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html',1,'ortools::math_opt::elemental::python::enums']]],
+  ['symmetricdoubleattr3_33',['SymmetricDoubleAttr3',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html',1,'ortools::math_opt::elemental::python::enums']]]
 ];

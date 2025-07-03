@@ -1,10 +1,10 @@
 var set__cover__pb2_8py =
 [
-    [ "ortools.algorithms.set_cover_pb2._globals", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a685710f084ce9078a46eed79aa70c002", null ],
-    [ "ortools.algorithms.set_cover_pb2._loaded_options", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a00235a850d900a7fe9344909a296eb92", null ],
-    [ "ortools.algorithms.set_cover_pb2._serialized_end", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a19f239bdc79c66183eafca0d682a9b47", null ],
-    [ "ortools.algorithms.set_cover_pb2._serialized_options", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a3c8c6866f9d8d02040d8ece90aa5c15d", null ],
-    [ "ortools.algorithms.set_cover_pb2._serialized_start", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#aed9c963a76702c6c4055a5761b248d25", null ],
-    [ "ortools.algorithms.set_cover_pb2._sym_db", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a37fc0ae088f6a2f75d107abdc43a2182", null ],
-    [ "ortools.algorithms.set_cover_pb2.DESCRIPTOR", "namespaceortools_1_1algorithms_1_1set__cover__pb2.html#a6daf2a2e248cbc109d5593a3274f94f9", null ]
+    [ "ortools.set_cover.set_cover_pb2._globals", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#a605b92a17d80c44a3eb8f0cf30a949d6", null ],
+    [ "ortools.set_cover.set_cover_pb2._loaded_options", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#a494fa69d35589348ee61caba81e28d3e", null ],
+    [ "ortools.set_cover.set_cover_pb2._serialized_end", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#a0ec56e939e2744e7475d4d80daa38963", null ],
+    [ "ortools.set_cover.set_cover_pb2._serialized_options", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#a7209644edeee470e5524995324acb13a", null ],
+    [ "ortools.set_cover.set_cover_pb2._serialized_start", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#ae5f71775912a11b5acab3250bc53201d", null ],
+    [ "ortools.set_cover.set_cover_pb2._sym_db", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#a220d45b25b42a27c4945255283a54d61", null ],
+    [ "ortools.set_cover.set_cover_pb2.DESCRIPTOR", "namespaceortools_1_1set__cover_1_1set__cover__pb2.html#af9656a516c6c0852948bc27c8841c2db", null ]
 ];

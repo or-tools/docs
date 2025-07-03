@@ -4,6 +4,7 @@ var classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback =
     [ "best_objective_bound", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a24c2d0c9ada7f665830b3a3a4d4f7043", null ],
     [ "boolean_value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a0747c687d1ab4734b5ed62f9746fa624", null ],
     [ "deterministic_time", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a1db89c3a2d5eb09810b4d2ee1eb761ac", null ],
+    [ "float_value", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a2ebdf35c8a5f2f907bb8eb70d6279d0d", null ],
     [ "has_response", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a8ac66a235d40f8d9d07f304b39be19fa", null ],
     [ "num_boolean_propagations", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#acf8f2edba755aa6ff501e8cc0ea13433", null ],
     [ "num_booleans", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpSolverSolutionCallback.html#a6b3f8e59d528dbfedd3ebc4a20526790", null ],

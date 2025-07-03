@@ -1,6 +1,15 @@
 var searchData=
 [
-  ['quadratic_5fobjective_5fcoefficients_0',['quadratic_objective_coefficients',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html#a660999a944d1978c35828d0755119988',1,'ortools::math_opt::python::hash_model_storage::_UpdateTracker']]],
-  ['quadratic_5fterms_1',['quadratic_terms',['../classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements.html#a5140841d5fd3ce677dbb1d2a790db35e',1,'ortools::math_opt::python::model::_QuadraticProcessedElements']]],
-  ['quadratictypes_2',['QuadraticTypes',['../namespaceortools_1_1math__opt_1_1python_1_1model.html#aee813a95b23d168258e3224c0df81d5f',1,'ortools::math_opt::python::model']]]
+  ['quadratic_5fcoefficients_0',['quadratic_coefficients',['../classortools_1_1math__opt_1_1python_1_1normalized__inequality_1_1NormalizedQuadraticInequality.html#ae1732289412db8221c3720ba515af6c4',1,'ortools::math_opt::python::normalized_inequality::NormalizedQuadraticInequality']]],
+  ['quadratic_5fconstraint_1',['QUADRATIC_CONSTRAINT',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1ElementType.html#a321f90a618ced19e30aa810df6c20ab3',1,'ortools::math_opt::elemental::python::enums::ElementType']]],
+  ['quadratic_5fconstraint_5flinear_5fcoefficient_2',['QUADRATIC_CONSTRAINT_LINEAR_COEFFICIENT',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html#a15748ba12d9e599d40a33dd6c546106b',1,'ortools::math_opt::elemental::python::enums::DoubleAttr2']]],
+  ['quadratic_5fconstraint_5flower_5fbound_3',['QUADRATIC_CONSTRAINT_LOWER_BOUND',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html#ab1ee5d787a99ae929541b33a98821996',1,'ortools::math_opt::elemental::python::enums::DoubleAttr1']]],
+  ['quadratic_5fconstraint_5fquadratic_5fcoefficient_4',['QUADRATIC_CONSTRAINT_QUADRATIC_COEFFICIENT',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html#acf491171ce53ff64303e1a4a4773c0d9',1,'ortools::math_opt::elemental::python::enums::SymmetricDoubleAttr3']]],
+  ['quadratic_5fconstraint_5fupper_5fbound_5',['QUADRATIC_CONSTRAINT_UPPER_BOUND',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html#aee88fa73344ebaebcae8ade8962fb0a4',1,'ortools::math_opt::elemental::python::enums::DoubleAttr1']]],
+  ['quadratic_5fdual_5fvalues_6',['quadratic_dual_values',['../classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a9cdd2cf9df5ba57c5fe3bb6f7a14b100',1,'ortools::math_opt::python::solution::DualSolution']]],
+  ['quadratic_5fdual_5fvalues_5ffilter_7',['quadratic_dual_values_filter',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html#a64cd38fc689fb6bc030449ddc5eae1cf',1,'ortools::math_opt::python::model_parameters::ModelSolveParameters']]],
+  ['quadratic_5fobjective_5fcoefficients_8',['quadratic_objective_coefficients',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html#a660999a944d1978c35828d0755119988',1,'ortools::math_opt::python::hash_model_storage::_UpdateTracker']]],
+  ['quadratic_5fterms_9',['quadratic_terms',['../classortools_1_1math__opt_1_1python_1_1variables_1_1__QuadraticProcessedElements.html#aa27d46cf00647b5530d91c3f0e414a92',1,'ortools::math_opt::python::variables::_QuadraticProcessedElements']]],
+  ['quadraticconstraintfilter_10',['QuadraticConstraintFilter',['../namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#a2daa83fe147bf7405f87b64e495571a9',1,'ortools::math_opt::python::sparse_containers']]],
+  ['quadratictypes_11',['QuadraticTypes',['../namespaceortools_1_1math__opt_1_1python_1_1variables.html#abdae9b83a96581cfaf7f21626591f2bc',1,'ortools::math_opt::python::variables']]]
 ];

@@ -1,9 +1,12 @@
 var classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar =
 [
     [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a7cfb276e3bad91f394f3f1f85d27f360", null ],
+    [ "__copy__", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a23d7f709ea8f6e4ec21a7e46094c772d", null ],
+    [ "__deepcopy__", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a97cc307167df04a21022b72931f052e5", null ],
     [ "__repr__", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a13144be6d3046b4a21cae128d10d2cd4", null ],
     [ "__str__", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a6f1672c48c8861cdeb5716ed8e86a8f1", null ],
     [ "is_equal_to", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a813d94825adadcfdfbc5f36f8053bb32", null ],
+    [ "model_proto", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#ad850c2618fe21fc8baa1abf7ece17dbe", null ],
     [ "Name", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#aca1421e5eeb57c27e56162de12e63fad", null ],
     [ "name", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a334fecc715baf5c22883b7cf9242a88b", null ],
     [ "Proto", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a7a4e28c0f25f3169fcd260602720eea6", null ],

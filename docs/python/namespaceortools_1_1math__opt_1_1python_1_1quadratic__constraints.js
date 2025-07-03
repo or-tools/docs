@@ -1,0 +1,4 @@
+var namespaceortools_1_1math__opt_1_1python_1_1quadratic__constraints =
+[
+    [ "QuadraticConstraint", "classortools_1_1math__opt_1_1python_1_1quadratic__constraints_1_1QuadraticConstraint.html", "classortools_1_1math__opt_1_1python_1_1quadratic__constraints_1_1QuadraticConstraint" ]
+];

@@ -22,5 +22,6 @@ var searchData=
   ['bounded_19',['bounded',['../classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html#ac4acd8807db5ff64066e8141599433f5',1,'ortools::math_opt::python::result::SolveResult']]],
   ['branches_20',['Branches',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#ae79f973f9ddd747dff958b02f939b092',1,'ortools.constraint_solver.pywrapcp.Solver.Branches()'],['../classortools_1_1constraint__solver_1_1pywrapcp_1_1SolutionCollector.html#a350eb00a0954db6d58cb253f6a19baeb',1,'ortools.constraint_solver.pywrapcp.SolutionCollector.Branches()']]],
   ['brancheslimit_21',['BranchesLimit',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a909ca69e61e6243c171cfe75d0d911cb',1,'ortools::constraint_solver::pywrapcp::Solver']]],
-  ['branching_5fpriority_22',['branching_priority',['../classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a2452b08d54d478fe6ff309e5bb6087b3',1,'ortools::linear_solver::pywraplp::Variable']]]
+  ['branching_5fpriority_22',['branching_priority',['../classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html#a2452b08d54d478fe6ff309e5bb6087b3',1,'ortools::linear_solver::pywraplp::Variable']]],
+  ['bulk_5fis_5fattr_5fnon_5fdefault_23',['bulk_is_attr_non_default',['../classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html#a6ac1e0e93dc38a03ddec78c971222841',1,'ortools::math_opt::python::elemental::elemental::Elemental']]]
 ];

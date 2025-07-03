@@ -2,12 +2,12 @@ var hierarchy =
 [
     [ "ortools.linear_solver.python.linear_solver_natural_api._FakeMPVariableRepresentingTheConstantOffset", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1__FakeMPVariableRepresentingTheConstantOffset.html", null ],
     [ "ortools.math_opt.python.hash_model_storage._LinearConstraintStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__LinearConstraintStorage.html", null ],
-    [ "ortools.math_opt.python.model._ProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ProcessedElements.html", [
-      [ "ortools.math_opt.python.model._QuadraticProcessedElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__QuadraticProcessedElements.html", null ]
+    [ "ortools.math_opt.python.variables._ProcessedElements", "classortools_1_1math__opt_1_1python_1_1variables_1_1__ProcessedElements.html", [
+      [ "ortools.math_opt.python.variables._QuadraticProcessedElements", "classortools_1_1math__opt_1_1python_1_1variables_1_1__QuadraticProcessedElements.html", null ]
     ] ],
     [ "ortools.math_opt.python.hash_model_storage._QuadraticTermStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__QuadraticTermStorage.html", null ],
     [ "_T", null, [
-      [ "ortools.math_opt.python.model._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html", null ]
+      [ "ortools.math_opt.python.variables._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1variables_1_1__ToProcessElementsImplementation.html", null ]
     ] ],
     [ "ortools.math_opt.python.hash_model_storage._VariableStorage", "classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__VariableStorage.html", null ],
     [ "abc.ABC", null, [
@@ -19,26 +19,65 @@ var hierarchy =
       ] ]
     ] ],
     [ "abc.ABCMeta", null, [
-      [ "ortools.math_opt.python.model.LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", [
-        [ "ortools.math_opt.python.model.LinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearExpression.html", null ],
-        [ "ortools.math_opt.python.model.LinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearProduct.html", null ],
-        [ "ortools.math_opt.python.model.LinearSum", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearSum.html", null ],
-        [ "ortools.math_opt.python.model.LinearTerm", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearTerm.html", null ],
-        [ "ortools.math_opt.python.model.Variable", "classortools_1_1math__opt_1_1python_1_1model_1_1Variable.html", null ]
+      [ "ortools.math_opt.python.objectives.Objective", "classortools_1_1math__opt_1_1python_1_1objectives_1_1Objective.html", [
+        [ "ortools.math_opt.python.objectives.AuxiliaryObjective", "classortools_1_1math__opt_1_1python_1_1objectives_1_1AuxiliaryObjective.html", null ],
+        [ "ortools.math_opt.python.objectives.PrimaryObjective", "classortools_1_1math__opt_1_1python_1_1objectives_1_1PrimaryObjective.html", null ]
       ] ],
-      [ "ortools.math_opt.python.model.QuadraticBase", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticBase.html", [
-        [ "ortools.math_opt.python.model.LinearLinearProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearLinearProduct.html", null ],
-        [ "ortools.math_opt.python.model.QuadraticExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticExpression.html", null ],
-        [ "ortools.math_opt.python.model.QuadraticProduct", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticProduct.html", null ],
-        [ "ortools.math_opt.python.model.QuadraticSum", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticSum.html", null ],
-        [ "ortools.math_opt.python.model.QuadraticTerm", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTerm.html", null ]
+      [ "ortools.math_opt.python.variables.LinearBase", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearBase.html", [
+        [ "ortools.math_opt.python.variables.LinearExpression", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearExpression.html", null ],
+        [ "ortools.math_opt.python.variables.LinearProduct", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearProduct.html", null ],
+        [ "ortools.math_opt.python.variables.LinearSum", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearSum.html", null ],
+        [ "ortools.math_opt.python.variables.LinearTerm", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearTerm.html", null ],
+        [ "ortools.math_opt.python.variables.Variable", "classortools_1_1math__opt_1_1python_1_1variables_1_1Variable.html", null ]
+      ] ],
+      [ "ortools.math_opt.python.variables.QuadraticBase", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticBase.html", [
+        [ "ortools.math_opt.python.variables.LinearLinearProduct", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearLinearProduct.html", null ],
+        [ "ortools.math_opt.python.variables.QuadraticExpression", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticExpression.html", null ],
+        [ "ortools.math_opt.python.variables.QuadraticProduct", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticProduct.html", null ],
+        [ "ortools.math_opt.python.variables.QuadraticSum", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticSum.html", null ],
+        [ "ortools.math_opt.python.variables.QuadraticTerm", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticTerm.html", null ]
+      ] ]
+    ] ],
+    [ "AttrPyValueType", null, [
+      [ "ortools.math_opt.elemental.python.enums.PyAttr", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1PyAttr.html", [
+        [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ]
+      ] ]
+    ] ],
+    [ "AttrValueType", null, [
+      [ "ortools.math_opt.elemental.python.enums.Attr", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1Attr.html", [
+        [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ],
+        [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ]
       ] ]
     ] ],
     [ "cmh.BaseIntVar", null, [
       [ "ortools.sat.python.cp_model.IntVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html", null ]
     ] ],
     [ "ortools.math_opt.python.solution.Basis", "classortools_1_1math__opt_1_1python_1_1solution_1_1Basis.html", null ],
-    [ "ortools.math_opt.python.model.BoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1BoundedLinearExpression.html", null ],
+    [ "bool", null, [
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ]
+    ] ],
+    [ "np.bool_", null, [
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ]
+    ] ],
     [ "ortools.math_opt.python.callback.CallbackData", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html", null ],
     [ "ortools.math_opt.python.callback.CallbackRegistration", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration.html", null ],
     [ "ortools.math_opt.python.callback.CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", null ],
@@ -51,6 +90,17 @@ var hierarchy =
     [ "ortools.math_opt.python.solution.DualSolution", "classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html", null ],
     [ "ortools.linear_solver.python.model_builder.EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", null ],
     [ "enum.Enum", null, [
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.ElementType", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1ElementType.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ],
       [ "ortools.math_opt.python.callback.Event", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event.html", null ],
       [ "ortools.math_opt.python.errors._StatusCode", "classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode.html", null ],
       [ "ortools.math_opt.python.parameters.Emphasis", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html", null ],
@@ -65,19 +115,57 @@ var hierarchy =
     [ "Exception", null, [
       [ "ortools.math_opt.python.ipc.remote_http_solve.OptimizationServiceError", "classortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve_1_1OptimizationServiceError.html", null ]
     ] ],
+    [ "float", null, [
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ]
+    ] ],
+    [ "np.float64", null, [
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ]
+    ] ],
     [ "ortools.math_opt.python.callback.GeneratedConstraint", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint.html", null ],
     [ "Generic", null, [
-      [ "ortools.math_opt.python.model._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElementsImplementation.html", null ],
-      [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ]
+      [ "ortools.math_opt.elemental.python.enums.Attr", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1Attr.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.PyAttr", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1PyAttr.html", null ],
+      [ "ortools.math_opt.python.bounded_expressions.BoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1BoundedExpression.html", null ],
+      [ "ortools.math_opt.python.bounded_expressions.LowerBoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1LowerBoundedExpression.html", null ],
+      [ "ortools.math_opt.python.bounded_expressions.UpperBoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1UpperBoundedExpression.html", null ],
+      [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ],
+      [ "ortools.math_opt.python.variables._ToProcessElementsImplementation", "classortools_1_1math__opt_1_1python_1_1variables_1_1__ToProcessElementsImplementation.html", null ]
     ] ],
     [ "ortools.math_opt.python.parameters.GlpkParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters.html", null ],
     [ "ortools.math_opt.python.init_arguments.GurobiISVKey", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1GurobiISVKey.html", null ],
     [ "ortools.math_opt.python.parameters.GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", null ],
     [ "ortools.math_opt.python.solve.IncrementalSolver", "classortools_1_1math__opt_1_1python_1_1solve_1_1IncrementalSolver.html", null ],
+    [ "int", null, [
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.BoolAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1BoolAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.DoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr2", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr2.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.SymmetricDoubleAttr3", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ]
+    ] ],
+    [ "np.int64", null, [
+      [ "ortools.math_opt.elemental.python.enums.IntAttr0", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr0.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.IntAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1IntAttr1.html", null ],
+      [ "ortools.math_opt.elemental.python.enums.VariableAttr1", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1VariableAttr1.html", null ]
+    ] ],
     [ "ortools.sat.python.cp_model.IntervalVar", "classortools_1_1sat_1_1python_1_1cp__model_1_1IntervalVar.html", null ],
     [ "ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html", null ],
     [ "ortools.linear_solver.python.model_builder.LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", null ],
-    [ "ortools.math_opt.python.model.LinearConstraint", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraint.html", null ],
     [ "ortools.math_opt.python.model_storage.LinearConstraintMatrixIdEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html", null ],
     [ "ortools.linear_solver.python.linear_solver_natural_api.LinearExpr", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html", [
       [ "ortools.linear_solver.python.linear_solver_natural_api.Constant", "classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1Constant.html", null ],
@@ -90,11 +178,11 @@ var hierarchy =
       [ "ortools.math_opt.python.model_storage.BadLinearConstraintIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadLinearConstraintIdError.html", null ],
       [ "ortools.math_opt.python.model_storage.BadVariableIdError", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1BadVariableIdError.html", null ]
     ] ],
-    [ "ortools.math_opt.python.model.LowerBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1LowerBoundedLinearExpression.html", null ],
     [ "ortools.math_opt.python.testing.proto_matcher.MathOptProtoEquivMatcher", "classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher.html", null ],
     [ "metaclass", null, [
-      [ "ortools.math_opt.python.model.LinearBase", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearBase.html", null ],
-      [ "ortools.math_opt.python.model.QuadraticBase", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticBase.html", null ]
+      [ "ortools.math_opt.python.objectives.Objective", "classortools_1_1math__opt_1_1python_1_1objectives_1_1Objective.html", null ],
+      [ "ortools.math_opt.python.variables.LinearBase", "classortools_1_1math__opt_1_1python_1_1variables_1_1LinearBase.html", null ],
+      [ "ortools.math_opt.python.variables.QuadraticBase", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticBase.html", null ]
     ] ],
     [ "ortools.linear_solver.python.model_builder.Model", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html", null ],
     [ "ortools.math_opt.python.model.Model", "classortools_1_1math__opt_1_1python_1_1model_1_1Model.html", null ],
@@ -103,9 +191,10 @@ var hierarchy =
     [ "ortools.math_opt.python.compute_infeasible_subsystem_result.ModelSubset", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset.html", null ],
     [ "ortools.math_opt.python.compute_infeasible_subsystem_result.ModelSubsetBounds", "classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds.html", null ],
     [ "NamedTuple", null, [
-      [ "ortools.math_opt.python.model.LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1model_1_1LinearConstraintMatrixEntry.html", null ]
+      [ "ortools.math_opt.python.linear_constraints.LinearConstraintMatrixEntry", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraintMatrixEntry.html", null ]
     ] ],
-    [ "ortools.math_opt.python.model.NormalizedLinearInequality", "classortools_1_1math__opt_1_1python_1_1model_1_1NormalizedLinearInequality.html", null ],
+    [ "ortools.math_opt.python.normalized_inequality.NormalizedLinearInequality", "classortools_1_1math__opt_1_1python_1_1normalized__inequality_1_1NormalizedLinearInequality.html", null ],
+    [ "ortools.math_opt.python.normalized_inequality.NormalizedQuadraticInequality", "classortools_1_1math__opt_1_1python_1_1normalized__inequality_1_1NormalizedQuadraticInequality.html", null ],
     [ "ortools.sat.colab.flags.NotebookBoolFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookBoolFlag.html", null ],
     [ "ortools.sat.colab.flags.NotebookFloatFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookFloatFlag.html", null ],
     [ "ortools.sat.colab.flags.NotebookIntFlag", "classortools_1_1sat_1_1colab_1_1flags_1_1NotebookIntFlag.html", null ],
@@ -192,17 +281,25 @@ var hierarchy =
       [ "ortools.linear_solver.pywraplp.Solver", "classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html", null ],
       [ "ortools.linear_solver.pywraplp.Variable", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html", null ]
     ] ],
-    [ "ortools.math_opt.python.model.Objective", "classortools_1_1math__opt_1_1python_1_1model_1_1Objective.html", null ],
     [ "ortools.math_opt.python.result.ObjectiveBounds", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html", null ],
+    [ "ortools.math_opt.python.model_parameters.ObjectiveParameters", "classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ObjectiveParameters.html", null ],
     [ "ortools.math_opt.python.solution.PrimalRay", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalRay.html", null ],
     [ "ortools.math_opt.python.solution.PrimalSolution", "classortools_1_1math__opt_1_1python_1_1solution_1_1PrimalSolution.html", null ],
     [ "ortools.math_opt.python.result.ProblemStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus.html", null ],
     [ "Protocol", null, [
-      [ "ortools.math_opt.python.model._ToProcessElements", "classortools_1_1math__opt_1_1python_1_1model_1_1__ToProcessElements.html", null ]
+      [ "ortools.math_opt.python.elemental.elemental.Elemental", "classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html", null ],
+      [ "ortools.math_opt.python.from_model.FromModel", "classortools_1_1math__opt_1_1python_1_1from__model_1_1FromModel.html", [
+        [ "ortools.math_opt.python.indicator_constraints.IndicatorConstraint", "classortools_1_1math__opt_1_1python_1_1indicator__constraints_1_1IndicatorConstraint.html", null ],
+        [ "ortools.math_opt.python.linear_constraints.LinearConstraint", "classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraint.html", null ],
+        [ "ortools.math_opt.python.objectives.Objective", "classortools_1_1math__opt_1_1python_1_1objectives_1_1Objective.html", null ],
+        [ "ortools.math_opt.python.quadratic_constraints.QuadraticConstraint", "classortools_1_1math__opt_1_1python_1_1quadratic__constraints_1_1QuadraticConstraint.html", null ],
+        [ "ortools.math_opt.python.variables.Variable", "classortools_1_1math__opt_1_1python_1_1variables_1_1Variable.html", null ]
+      ] ],
+      [ "ortools.math_opt.python.variables._ToProcessElements", "classortools_1_1math__opt_1_1python_1_1variables_1_1__ToProcessElements.html", null ]
     ] ],
     [ "ortools.math_opt.python.model_storage.QuadraticEntry", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html", null ],
     [ "ortools.math_opt.python.model_storage.QuadraticTermIdKey", "classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey.html", null ],
-    [ "ortools.math_opt.python.model.QuadraticTermKey", "classortools_1_1math__opt_1_1python_1_1model_1_1QuadraticTermKey.html", null ],
+    [ "ortools.math_opt.python.variables.QuadraticTermKey", "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticTermKey.html", null ],
     [ "ortools.math_opt.python.statistics.Range", "classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html", null ],
     [ "RuntimeError", null, [
       [ "ortools.math_opt.python.errors.InternalMathOptError", "classortools_1_1math__opt_1_1python_1_1errors_1_1InternalMathOptError.html", null ],
@@ -235,6 +332,11 @@ var hierarchy =
     [ "ortools.math_opt.python.init_arguments.StreamableScsInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableScsInitArguments.html", null ],
     [ "ortools.math_opt.python.init_arguments.StreamableSolverInitArguments", "classortools_1_1math__opt_1_1python_1_1init__arguments_1_1StreamableSolverInitArguments.html", null ],
     [ "ortools.sat.colab.visualization.SvgWrapper", "classortools_1_1sat_1_1colab_1_1visualization_1_1SvgWrapper.html", null ],
+    [ "T", null, [
+      [ "ortools.math_opt.python.bounded_expressions.BoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1BoundedExpression.html", null ],
+      [ "ortools.math_opt.python.bounded_expressions.LowerBoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1LowerBoundedExpression.html", null ],
+      [ "ortools.math_opt.python.bounded_expressions.UpperBoundedExpression", "classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1UpperBoundedExpression.html", null ]
+    ] ],
     [ "ortools.math_opt.python.result.Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", null ],
     [ "unittest.TestCase", null, [
       [ "ortools.math_opt.python.testing.compare_proto.MathOptProtoAssertions", "classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html", null ]
@@ -244,8 +346,7 @@ var hierarchy =
       [ "ortools.linear_solver.pywraplp._SwigNonDynamicMeta", "classortools_1_1linear__solver_1_1pywraplp_1_1__SwigNonDynamicMeta.html", null ]
     ] ],
     [ "ortools.math_opt.python.model.UpdateTracker", "classortools_1_1math__opt_1_1python_1_1model_1_1UpdateTracker.html", null ],
-    [ "ortools.math_opt.python.model.UpperBoundedLinearExpression", "classortools_1_1math__opt_1_1python_1_1model_1_1UpperBoundedLinearExpression.html", null ],
-    [ "ortools.math_opt.python.model.VarEqVar", "classortools_1_1math__opt_1_1python_1_1model_1_1VarEqVar.html", null ],
+    [ "ortools.math_opt.python.variables.VarEqVar", "classortools_1_1math__opt_1_1python_1_1variables_1_1VarEqVar.html", null ],
     [ "ortools.sat.python.cp_model.VariableList", "classortools_1_1sat_1_1python_1_1cp__model_1_1VariableList.html", null ],
     [ "VarOrConstraintType", null, [
       [ "ortools.math_opt.python.sparse_containers.SparseVectorFilter", "classortools_1_1math__opt_1_1python_1_1sparse__containers_1_1SparseVectorFilter.html", null ]

@@ -1,8 +1,6 @@
 var classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel =
 [
     [ "__init__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#ac33ffd5dd4da451b93f86df190035ad8", null ],
-    [ "__copy__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#a4f1c44ef2160144e1a567b08d1c020db", null ],
-    [ "__deepcopy__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#aa56d0e5b249ce8cb93581b3296b67b4a", null ],
     [ "__str__", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#a4381bdf5e5c903b93d73277b35e62c44", null ],
     [ "_append_int_var", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#aff82d05c26612f6c5ebb4160b39c0360", null ],
     [ "_get_int_var", "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#a30d02ef9d5247a687e8b141c65703f9a", null ],

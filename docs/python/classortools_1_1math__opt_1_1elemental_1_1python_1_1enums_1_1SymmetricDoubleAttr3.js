@@ -1,0 +1,4 @@
+var classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3 =
+[
+    [ "QUADRATIC_CONSTRAINT_QUADRATIC_COEFFICIENT", "classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1SymmetricDoubleAttr3.html#acf491171ce53ff64303e1a4a4773c0d9", null ]
+];
