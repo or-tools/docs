@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type =
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#a0201c86b0a23297a2a431441bf08394f", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#aa65acd72a0f88b31064d04a92e49f74e", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#ae98a19c4a81148b516c0feb80a8a42d0", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#a7ceb89c890120911be26e12dc7a87280", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#ae7a45c96bc77ff772f1ad144b62914f5", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#a57034ce479c8baea133e21cef129eb3f", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html#aa3e7fd1bb3bfa86cbae8a1469d618e7e", null ],

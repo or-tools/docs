@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice =
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#aee84d56c4655a11bb3f1d1d083fcfdef", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#afba5c28f15dfa6d475b91bf577ce75f9", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#a2f2ea3a06334fb205e061b410b43f9af", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#adbdbf1ec836aa4958bfa0adc1f41b6f7", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#a51c01745102536e512a7fe80759bc0c1", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#a8d6a4b887a50d639830c0d201896eba9", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1RestartChoice.html#a4a5d4f85fbe4a65525f8428365880cb1", null ],

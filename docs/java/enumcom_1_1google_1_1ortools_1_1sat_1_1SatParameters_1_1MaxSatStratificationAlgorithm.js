@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratification
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#ab1329220abdb52b7c637b67fd87c7935", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#ac0ef58eb5440205818cc2634bb062069", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#af806833f59a8a770cc29809f343305ed", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#a7ee369e68a0ee01f724d3dd4d7a8b001", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#a6139111dabd701c540d5645afc68ca87", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#a1f468845cb35b6af30a907dfd58427d9", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatStratificationAlgorithm.html#a6135d6819c2ae58f98941412dd98fe19", null ],

@@ -1,6 +1,8 @@
 var classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto =
 [
     [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1Builder" ],
+    [ "NodeExpressions", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressions.html", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressions" ],
+    [ "NodeExpressionsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressionsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressionsOrBuilder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a145656280396bd3d5b1735ed14cea13a", null ],
     [ "getCapacity", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#afab3d41a3f4bab7fd7be62dbfb2bd4a3", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a0ef1e4475d2ce6e21e784fe879275079", null ],
@@ -9,6 +11,11 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto =
     [ "getDemandsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#aabbdc6a1f34c2b816c65af9a876aa295", null ],
     [ "getDemandsList", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a58c708bf2fd90a6bee772e8bde6b1ef2", null ],
     [ "getDescriptor", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#af9800537b09c5fb4cf16341be84c9115", null ],
+    [ "getDimensions", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a395f3d10f616aadf4b05d0d2676490f2", null ],
+    [ "getDimensionsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a9092baf199224d85d229de40a1859af5", null ],
+    [ "getDimensionsList", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a2af4c7ea1637d953d36588c65dabe7c9", null ],
+    [ "getDimensionsOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#abc04bba26d1c64b7864c64f3d2e9b372", null ],
+    [ "getDimensionsOrBuilderList", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a98cd74d86f53a73a7dcbbb944d1858d2", null ],
     [ "getHeads", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#ac74e48e894e39e21a637237c86d23ae8", null ],
     [ "getHeadsCount", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a7d4d7d15a36bfa708a57f053970a5add", null ],
     [ "getHeadsList", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a326723ca7f58ef20e05cd2490cc3b4d0", null ],
@@ -44,6 +51,7 @@ var classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto =
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a33df91e5731abcbdfb60a2330af65447", null ],
     [ "CAPACITY_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a35db7659d865aa188013bbc155620f0b", null ],
     [ "DEMANDS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a4d27addb43fc069315c0c14cd950efaa", null ],
+    [ "DIMENSIONS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a96b37fcd12737c82991317de1eeb6ad0", null ],
     [ "HEADS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a91492237afb223b105b0fda9e46a40c3", null ],
     [ "LITERALS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a4633505971ab7311dc03a633da19c0a5", null ],
     [ "TAILS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html#a1e8925f4e8a6d299c3de3597b92299d7", null ]

@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Re
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a419d23aa8729b475363b3c4088aa2fef", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a67be7161d4b41e6ab7e0196d6d0f5e48", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a8346e8ad48b5115c629664d1934c0dd8", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a0eadbfdb4b3d1f1b28e40eb259822505", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#af4f9fe0d0bc2d9d7b9f9fd5133af0d13", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a9bde9e21642b74dcc7299480d5db7dca", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html#a483c47f75735b10cb70030d9df31ba56", null ],

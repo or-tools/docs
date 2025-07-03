@@ -2,6 +2,8 @@ var interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsO
 [
     [ "getAdaptiveLinesearchParameters", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a6bef0b41d896576ba920e240ac30a65a", null ],
     [ "getAdaptiveLinesearchParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a26c0b95b093a05e4176f798116688dbb", null ],
+    [ "getApplyFeasibilityPolishingAfterLimitsReached", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a6a987016decacb756d1b98da3bf344fd", null ],
+    [ "getApplyFeasibilityPolishingIfSolverIsInterrupted", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#afdc629c4e8d7e84c7c83022b76057d4d", null ],
     [ "getDiagonalQpTrustRegionSolverTolerance", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#adbdf11b4d560698212e4e293be9e12fd", null ],
     [ "getHandleSomePrimalGradientsOnFiniteBoundsAsResiduals", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a50d34d288a33d6587a0d38f7741933b1", null ],
     [ "getInfiniteConstraintBoundThreshold", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a2c9c20d40e023f657d7caf25a442acb0", null ],
@@ -34,6 +36,8 @@ var interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsO
     [ "getUseFeasibilityPolishing", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a74a8fe3f0a1fcfcfd77573669ecdd484", null ],
     [ "getVerbosityLevel", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a92a32be03abb158c891e2cea7461fbb5", null ],
     [ "hasAdaptiveLinesearchParameters", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#ac48f618854017f04a8c3ddd5ca8f13b7", null ],
+    [ "hasApplyFeasibilityPolishingAfterLimitsReached", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#af6c0b5a3ff981b47c352bae655705557", null ],
+    [ "hasApplyFeasibilityPolishingIfSolverIsInterrupted", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#ac1c7401893a1545ac0a3cbb0eec9cb96", null ],
     [ "hasDiagonalQpTrustRegionSolverTolerance", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#ad32b0583667159e08b5c105ce35b6464", null ],
     [ "hasHandleSomePrimalGradientsOnFiniteBoundsAsResiduals", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a94e5a16fadc2c4857e1e930d80c4447b", null ],
     [ "hasInfiniteConstraintBoundThreshold", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParamsOrBuilder.html#a3ff94ff87224c451b3c6cb295d3909fb", null ],

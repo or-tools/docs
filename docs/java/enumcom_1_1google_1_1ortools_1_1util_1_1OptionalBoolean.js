@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean =
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#ab914bc674a6eb38e5e76e47c007727c7", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#ab0c8724a6accf0641867fcc940d7c73f", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#a5a51a3a537c86557f24ce915f993db20", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#aacd41ae16bcad5a85625dcd6c1516368", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#a44eafb359a6ace1c7a23667370fd4895", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#a4d438f86335e3fab682b18cc60183763", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolean.html#a63efbbb009e3413347bd0d4b4a85e457", null ],

@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching =
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#ad543a6af1e0ab191b46184ea81ac886e", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a67ec2b5b933156340c67f582893e251b", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a03ccf4b3fb53b53e3a717ca6985de7ac", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a19933cbccf84e1746193ac6f9066cda2", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a98183afad1177beab2d3971aa1303cec", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a649958eb6bddbda844c1e04696b42e0b", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1SearchBranching.html#a12cde173bc921f2f7cb58d8ea7ccec92", null ],

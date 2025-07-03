@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm =
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a765cd44cfa4f7b4b3ab6e50732d95de7", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a038a08969eb9f9bcfd220305af2feefd", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a890c8612e13279058614c41583b4162e", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a684fd00ee6c22a824856a414f68edbd4", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#ac022fdf259003bca0b7ac22ebe26caea", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a37892c15079cab2f0c7ab02d405e3882", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1OptimalityNorm.html#a15464db55bf064f1f33396123d04055d", null ],

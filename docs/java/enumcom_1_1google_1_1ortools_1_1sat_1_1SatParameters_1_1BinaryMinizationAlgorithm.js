@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgo
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a20ea7d2c53bf4209efbeffac52399bfb", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#af4f95d4b7e310e9a8ea70449cf2b3772", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a51861432bf634dbfba721c7b26314011", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a2c0003dcf34809f62d69dbebe24b2d07", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#ae677e00cdcf23d241df1e32d47d236fe", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a166712d08e6b084a809610b6797e728b", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a514c2589160af20d976e1ecc54aa2e5b", null ],

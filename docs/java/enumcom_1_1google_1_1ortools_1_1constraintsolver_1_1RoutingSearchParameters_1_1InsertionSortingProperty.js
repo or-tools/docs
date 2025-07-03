@@ -2,7 +2,7 @@ var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_
 [
     [ "[static initializer]", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#aa8613683889b1363b854077941a16d89", null ],
     [ "forNumber", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a1b174036f0acec47fc59acba35567e1c", null ],
-    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a7ff97cd5a8190fd037da8710fe5274c4", null ],
+    [ "getDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#af78063e97dd3fcecb2e094f601dd9f8d", null ],
     [ "getDescriptorForType", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#addc6a9eb32d60c28e3721d3263165789", null ],
     [ "getNumber", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#ac02e996f5eee88cab687c70fe6290a40", null ],
     [ "getValueDescriptor", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#aeee031abaa48c280b31accdf4d19e3d2", null ],
@@ -23,6 +23,8 @@ var enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_
     [ "SORTING_PROPERTY_PENALTY_OVER_ALLOWED_VEHICLES_RATIO", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#ad9d822b382158d2c625431006ff93a41", null ],
     [ "SORTING_PROPERTY_PENALTY_OVER_ALLOWED_VEHICLES_RATIO_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a0501c6d927e0c0c0437cce4653ebaf96", null ],
     [ "SORTING_PROPERTY_PENALTY_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a42aa582f36d26e3d19e49314665a0bda", null ],
+    [ "SORTING_PROPERTY_RANDOM", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a632f2a97e7449e4b23d48c3c866dd990", null ],
+    [ "SORTING_PROPERTY_RANDOM_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#adb0781e91b77a572596dd389d325f9e9", null ],
     [ "SORTING_PROPERTY_UNSPECIFIED", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a0b0019f1576ca12ce8a0d00318b1d330", null ],
     [ "SORTING_PROPERTY_UNSPECIFIED_VALUE", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#afc7cf0516784cd8756d32fd82bd315d6", null ],
     [ "UNRECOGNIZED", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html#a5b6a5e99e2998598f400b2cb70d0e65a", null ]
