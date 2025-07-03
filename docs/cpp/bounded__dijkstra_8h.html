@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -96,8 +96,10 @@ $(function(){initNavTree('bounded__dijkstra_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;absl/algorithm/container.h&quot;</code><br />
@@ -105,6 +107,8 @@ $(function(){initNavTree('bounded__dijkstra_8h.html','',''); });
 <code>#include &quot;absl/log/check.h&quot;</code><br />
 <code>#include &quot;absl/types/span.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="iterator__adaptors_8h_source.html">ortools/base/iterator_adaptors.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__int_8h_source.html">ortools/base/strong_int.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="strong__vector_8h_source.html">ortools/base/strong_vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="top__n_8h_source.html">ortools/base/top_n.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="graph_8h_source.html">ortools/graph/graph.h</a>&quot;</code><br />
 </div>
@@ -112,18 +116,27 @@ $(function(){initNavTree('bounded__dijkstra_8h.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:operations_5Fresearch_3A_3AElementGetter_3C_20T_20_3E" id="r_operations_5Fresearch_3A_3AElementGetter_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ElementGetter.html">operations_research::ElementGetter&lt; T &gt;</a></td></tr>
+<tr class="memitem:operations_5Fresearch_3A_3Ainternal_3A_3Ais_5Fstrong_5Fint_3C_20T_20_3E" id="r_operations_5Fresearch_3A_3Ainternal_3A_3Ais_5Fstrong_5Fint_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1is__strong__int.html">operations_research::internal::is_strong_int&lt; T &gt;</a></td></tr>
+<tr class="memitem:operations_5Fresearch_3A_3Ainternal_3A_3Ais_5Fstrong_5Fint_3C_3A_3Autil_5Fintops_3A_3AStrongInt_3C_20Tag_2C_20Native_2C_20Validator_20_3E_20_3E" id="r_operations_5Fresearch_3A_3Ainternal_3A_3Ais_5Fstrong_5Fint_3C_3A_3Autil_5Fintops_3A_3AStrongInt_3C_20Tag_2C_20Native_2C_20Validator_20_3E_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html">operations_research::internal::is_strong_int&lt;::util_intops::StrongInt&lt; Tag, Native, Validator &gt; &gt;</a></td></tr>
+<tr class="memitem:operations_5Fresearch_3A_3Ainternal_3A_3AElementGetter_3C_20T_2C_20ArcIndex_20_3E" id="r_operations_5Fresearch_3A_3Ainternal_3A_3AElementGetter_3C_20T_2C_20ArcIndex_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1internal_1_1ElementGetter.html">operations_research::internal::ElementGetter&lt; T, ArcIndex &gt;</a></td></tr>
 <tr class="memitem:operations_5Fresearch_3A_3ABoundedDijkstraWrapper_3C_20GraphType_2C_20DistanceType_2C_20ArcLengthFunctor_20_3E" id="r_operations_5Fresearch_3A_3ABoundedDijkstraWrapper_3C_20GraphType_2C_20DistanceType_2C_20ArcLengthFunctor_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper&lt; GraphType, DistanceType, ArcLengthFunctor &gt;</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:operations_5Fresearch" id="r_operations_5Fresearch"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html">operations_research</a></td></tr>
 <tr class="memdesc:namespaceoperations__research"><td class="mdescLeft">&#160;</td><td class="mdescRight">In SWIG mode, we don't want anything besides these top-level includes. <br /></td></tr>
+<tr class="memitem:operations_5Fresearch_3A_3Ainternal" id="r_operations_5Fresearch_3A_3Ainternal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html">operations_research::internal</a></td></tr>
+<tr class="memdesc:namespaceoperations__research_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of the interface. Below is the implementation. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0af9c6de04b858727a278d36a2eb5597" id="r_a0af9c6de04b858727a278d36a2eb5597"><td class="memTemplParams" colspan="2">template&lt;typename IndexType, typename ValueType&gt; </td></tr>
+<tr class="memitem:a0af9c6de04b858727a278d36a2eb5597 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">operations_research::internal::IndexedVector</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af94e999e6f803fa039fde7529067f29c" id="r_af94e999e6f803fa039fde7529067f29c"><td class="memTemplParams" colspan="2">template&lt;typename DistanceType&gt; </td></tr>
-<tr class="memitem:af94e999e6f803fa039fde7529067f29c template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; DistanceType, std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#af94e999e6f803fa039fde7529067f29c">operations_research::SimpleOneToOneShortestPath</a> (int source, int destination, absl::Span&lt; const int &gt; tails, absl::Span&lt; const int &gt; heads, absl::Span&lt; const DistanceType &gt; lengths, DistanceType limit=std::numeric_limits&lt; DistanceType &gt;::max())</td></tr>
+<tr class="memitem:aa65c91205765186852e0ca9a0b35245a" id="r_aa65c91205765186852e0ca9a0b35245a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a>, typename DistanceType&gt; </td></tr>
+<tr class="memitem:aa65c91205765186852e0ca9a0b35245a template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; DistanceType, std::vector&lt; <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#aa65c91205765186852e0ca9a0b35245a">operations_research::SimpleOneToOneShortestPath</a> (<a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> source, <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> destination, absl::Span&lt; const <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; tails, absl::Span&lt; const <a class="el" href="namespaceoperations__research.html#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; heads, absl::Span&lt; const DistanceType &gt; lengths, DistanceType limit=std::numeric_limits&lt; DistanceType &gt;::max())</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

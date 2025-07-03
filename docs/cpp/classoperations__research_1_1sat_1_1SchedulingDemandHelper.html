@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class for cumulative constraint to wrap demands and expose concept like energy.</p>
 <p>In a cumulative constraint, an interval always has a size and a demand, but it can also have a set of "selector" literals each associated with a fixed size / fixed demands. This allows more precise energy estimation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002425">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002427">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00487">487</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -228,7 +228,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Since we usually ask way less often for the reason, we redo the computation here. </p>
 <p>Return simple reason right away if there is no decomposition or the simple energy is enough.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002423">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002425">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
 <p>Should be the same in most cases.</p>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00958">958</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
@@ -295,8 +295,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The "energy" is usually size * demand, but in some non-conventional usage it might have a more complex formula. In all case, the energy is assumed to be only consumed during the interval duration.</p>
 <p>Returns false if the energy can overflow and was not computed.</p>
-<p>IMPORTANT: One must call <a class="el" href="#a2d1174d156b8b53adca37b7a29e021f4">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002430">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002431">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
+<p>IMPORTANT: One must call <a class="el" href="#a2d1174d156b8b53adca37b7a29e021f4">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002432">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002433">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
 <p>At level 0, it will filter false literals from decomposed energies. </p>
 <p>Try to reduce the size of the decomposed energy vector.</p>
 
@@ -355,7 +355,7 @@ Public Member Functions</h2></td></tr>
 <p><span class="tt">lit</span> encodes that the energy is higher than value. So either lit must be false or the task must be absent.</p>
 <p>Task must be absent.</p>
 <p>Task is present, <span class="tt">lit</span> must be false.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002422">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002424">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00836">836</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 

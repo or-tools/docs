@@ -1,5 +1,11 @@
 var NAVTREEINDEX75 =
 {
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6426c3fb5f862deadff7649e960c72d2":[3,0,8,8,172,25],
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6426c3fb5f862deadff7649e960c72d2":[4,0,4,7,172,25],
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6731a8b26d00c9229be2843aa3db295a":[3,0,8,8,172,31],
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6731a8b26d00c9229be2843aa3db295a":[4,0,4,7,172,31],
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a69c14fa43a7e78a659bf2d5420df16c7":[3,0,8,8,172,12],
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a69c14fa43a7e78a659bf2d5420df16c7":[4,0,4,7,172,12],
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6d4c5702a2768e8dcb0e228476fad2cc":[3,0,8,8,172,2],
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6d4c5702a2768e8dcb0e228476fad2cc":[4,0,4,7,172,2],
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a72c10a9f44e1334b578389bfda465a63":[3,0,8,8,172,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX75 =
 "classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aea4ad3113e205d7cf5e5f1f9b422ce31":[3,0,8,8,202,4],
 "classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aea4ad3113e205d7cf5e5f1f9b422ce31":[4,0,4,7,202,4],
 "classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aee28cb6d77174d4f48fd3375eba7ba10":[3,0,8,8,202,0],
-"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aee28cb6d77174d4f48fd3375eba7ba10":[4,0,4,7,202,0],
-"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aff7ff9b61bd01ddca9e123f2a0c934bb":[3,0,8,8,202,6],
-"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aff7ff9b61bd01ddca9e123f2a0c934bb":[4,0,4,7,202,6],
-"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html":[3,0,8,8,203],
-"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html":[4,0,4,7,203],
-"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a08fdc7b4e313a5765bbac692f274551c":[3,0,8,8,203,0],
-"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a08fdc7b4e313a5765bbac692f274551c":[4,0,4,7,203,0]
+"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aee28cb6d77174d4f48fd3375eba7ba10":[4,0,4,7,202,0]
 };

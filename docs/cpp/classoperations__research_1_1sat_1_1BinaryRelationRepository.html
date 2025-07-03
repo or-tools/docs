@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A repository of all the enforced linear constraints of size 1 or 2, and of all the non-enforced linear constraints of size 2.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002168">Todo</a></b></dt><dd>(user): This is not always needed, find a way to clean this once we don't need it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002169">Todo</a></b></dt><dd>(user): This is not always needed, find a way to clean this once we don't need it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00516">516</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -326,7 +326,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns false if the new bounds are infeasible at level zero.</p>
 <p>Important: by default this does not call output-&gt;clear() so we can take the max with already inferred bounds. </p>
 <p>lb(b.y) &lt;= b.y &lt;= ub(b.y) and lhs &lt;= a.x + b.y &lt;= rhs imply ceil((lhs - ub(b.y)) / a) &lt;= x &lt;= floor((rhs - lb(b.y)) / a)</p>
-<p>Check feasibility. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002157">Todo</a></b></dt><dd>(user): we might do that earlier? </dd></dl>
+<p>Check feasibility. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002158">Todo</a></b></dt><dd>(user): we might do that earlier? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01220">1220</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 

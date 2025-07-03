@@ -1,5 +1,11 @@
 var NAVTREEINDEX99 =
 {
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html":[3,0,8,13,254],
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html":[4,0,4,12,254],
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a05ff0c7ea3c2c9e3a2682381e75be021":[3,0,8,13,254,13],
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a05ff0c7ea3c2c9e3a2682381e75be021":[4,0,4,12,254,13],
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a0f5e8234151b6409b1bf416ccaf36701":[3,0,8,13,254,4],
+"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a0f5e8234151b6409b1bf416ccaf36701":[4,0,4,12,254,4],
 "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a118a1b216d1e79a4b9c250f3030adda7":[3,0,8,13,254,2],
 "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a118a1b216d1e79a4b9c250f3030adda7":[4,0,4,12,254,2],
 "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a2b8daf97b17136a35e4e19524c5209d9":[3,0,8,13,254,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX99 =
 "classoperations__research_1_1sat_1_1SatSolver.html#ab044c123d6e5222d758c78d5a1cb9f18":[3,0,8,13,259,50],
 "classoperations__research_1_1sat_1_1SatSolver.html#ab044c123d6e5222d758c78d5a1cb9f18":[4,0,4,12,259,50],
 "classoperations__research_1_1sat_1_1SatSolver.html#ab19f21598928ec3f2515db06515cb7c9":[3,0,8,13,259,16],
-"classoperations__research_1_1sat_1_1SatSolver.html#ab19f21598928ec3f2515db06515cb7c9":[4,0,4,12,259,16],
-"classoperations__research_1_1sat_1_1SatSolver.html#ab20cec16641434c61d9185a0edef37a7":[3,0,8,13,259,56],
-"classoperations__research_1_1sat_1_1SatSolver.html#ab20cec16641434c61d9185a0edef37a7":[4,0,4,12,259,56],
-"classoperations__research_1_1sat_1_1SatSolver.html#abae9d5e427bdd44a6e581f3a06b7f703":[3,0,8,13,259,18],
-"classoperations__research_1_1sat_1_1SatSolver.html#abae9d5e427bdd44a6e581f3a06b7f703":[4,0,4,12,259,18],
-"classoperations__research_1_1sat_1_1SatSolver.html#abf1b11c4b39c9745a264638dc0381914":[3,0,8,13,259,23],
-"classoperations__research_1_1sat_1_1SatSolver.html#abf1b11c4b39c9745a264638dc0381914":[4,0,4,12,259,23]
+"classoperations__research_1_1sat_1_1SatSolver.html#ab19f21598928ec3f2515db06515cb7c9":[4,0,4,12,259,16]
 };

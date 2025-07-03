@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -258,18 +258,18 @@ Bilinear Products", Ksenia Bestuzheva, Ambros Gleixner, Tobias Achterberg, <a hr
 </div><div class="memdoc">
 
 <p>Tries RLT separation of the input constraint. Returns true on success. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001647">Todo</a></b></dt><dd>(user): do less work, add more stats. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001648">Todo</a></b></dt><dd>(user): do less work, add more stats. </dd></dl>
 <p>We will list the interesting "factor" to try to multiply + linearize the input constraint with.</p>
 <p>We can look at the linearized factor * term and bound the activity delta rescaled by 1 / factor.</p>
 <p>CASE linearized_term delta = term/factor - previous</p>
 <p>DROP, 0 0 - X MC_CORMICK, factor * ub - (ub - X) (ub - X) * (1 - 1/factor) &lt;= 0 SQUARE, factor=X 1 - X RLT, factor - P 1 - X - P/X &lt;= 1 - X</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001648">Todo</a></b></dt><dd>(user): detect earlier that a factor is not worth checking because we already loose too much with the DROP/MC_CORMICK cases ? Filter more ? I think we can probably evaluate the factor efficiency during the first loop which usually have a small complexity compared to num_factor_to_try times num filtered terms. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001649">Todo</a></b></dt><dd>(user): detect earlier that a factor is not worth checking because we already loose too much with the DROP/MC_CORMICK cases ? Filter more ? I think we can probably evaluate the factor efficiency during the first loop which usually have a small complexity compared to num_factor_to_try times num filtered terms. </dd></dl>
 <p>The only options are DROP or MC_CORMICK, but the later will unlikely win.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001649">Todo</a></b></dt><dd>(user): we never use factor with lp value &lt; 1e-4, but we could use a factor equal to 1.0 I think. Double check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001650">Todo</a></b></dt><dd>(user): we never use factor with lp value &lt; 1e-4, but we could use a factor equal to 1.0 I think. Double check. </dd></dl>
 <p>Here the MC_CORMICK will not loose much. And SQUARE or RLT cannot win much, so we can assume there is no loss and just look for violated subconstraint.</p>
 <p>Convert to var or -var (to mean 1 - var).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001650">Todo</a></b></dt><dd>(user): We could keep for each factor the max gain, so that we can decided if it is not even worth trying a factor. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001651">Todo</a></b></dt><dd>(user): Avoid constructing the cut just to evaluate its efficacy. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001651">Todo</a></b></dt><dd>(user): We could keep for each factor the max gain, so that we can decided if it is not even worth trying a factor. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001652">Todo</a></b></dt><dd>(user): Avoid constructing the cut just to evaluate its efficacy. </dd></dl>
 <p>If we found a good factor, applies it to the non-filtered base constraint.</p>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l01677">1677</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>

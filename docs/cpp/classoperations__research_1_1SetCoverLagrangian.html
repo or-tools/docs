@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -270,7 +270,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the gap between the current solution and the optimal solution. This is the sum of the multipliers for the elements that are not covered by the current solution. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002581">Todo</a></b></dt><dd>(user): Parallelize this, if need be. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002583">Todo</a></b></dt><dd>(user): Parallelize this, if need be. </dd></dl>
 <p>gap += std::abs(reduced_costs[subset]); We know the sign of rhs.</p>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__lagrangian_8cc_source.html#l00353">353</a> of file <a class="el" href="set__cover__lagrangian_8cc_source.html">set_cover_lagrangian.cc</a>.</p>
@@ -404,10 +404,10 @@ Additional Inherited Members</h2></td></tr>
 <li>the median algorithm is already in the STL (nth_element). Denoted as u in [1], it is a dual vector: a column vector of nonnegative (zero is included) multipliers for the different constraints. A deterministic way to compute a feasible (non-optimal) u: For all element indices i, u_i = min {j \in J_i} c_j / <span class="tt">I_j</span>, where <span class="tt">I_j</span> denotes the number of elements covered by subset j.</li>
 </ul>
 <p>Concerning the fundamental ideas behind this approach, one may refer to [2]. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002576">Todo</a></b></dt><dd>(user): Parallelize this. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002577">Todo</a></b></dt><dd>(user): Parallelize this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002578">Todo</a></b></dt><dd>(user): Parallelize this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002579">Todo</a></b></dt><dd>(user): Parallelize this. </dd></dl>
 <p>Minimum marginal cost to cover this element.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002578">Todo</a></b></dt><dd>(user): use std::min_element on rows[element] with a custom comparator that gets marginal_costs[subset]. Check performance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002580">Todo</a></b></dt><dd>(user): use std::min_element on rows[element] with a custom comparator that gets marginal_costs[subset]. Check performance. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__lagrangian_8cc_source.html#l00048">48</a> of file <a class="el" href="set__cover__lagrangian_8cc_source.html">set_cover_lagrangian.cc</a>.</p>
 
@@ -553,7 +553,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Computes the reduced costs for all subsets in parallel using <a class="el" href="classoperations__research_1_1ThreadPool.html">ThreadPool</a>. </p>
 <p>Same as above, but parallelized, using the number of threads specified in the constructor. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002579">Todo</a></b></dt><dd>(user): compute a close-to-optimal k-subset partitioning of the columns based on their sizes. [***] </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002581">Todo</a></b></dt><dd>(user): compute a close-to-optimal k-subset partitioning of the columns based on their sizes. [***] </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__lagrangian_8cc_source.html#l00109">109</a> of file <a class="el" href="set__cover__lagrangian_8cc_source.html">set_cover_lagrangian.cc</a>.</p>
 
@@ -574,7 +574,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as above, but parallelized, using the number of threads specified in the constructor. </p>
-<p>The subgradient has one component per element, each thread processes several subsets. Hence, have one vector per thread to avoid data races. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002580">Todo</a></b></dt><dd>(user): it may be better to split the elements among the threads, although this might be less well-balanced. </dd></dl>
+<p>The subgradient has one component per element, each thread processes several subsets. Hence, have one vector per thread to avoid data races. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002582">Todo</a></b></dt><dd>(user): it may be better to split the elements among the threads, although this might be less well-balanced. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__lagrangian_8cc_source.html#l00181">181</a> of file <a class="el" href="set__cover__lagrangian_8cc_source.html">set_cover_lagrangian.cc</a>.</p>
 

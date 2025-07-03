@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -189,7 +189,7 @@ class operations_research::glop::SparseVector&lt; IndexType, IteratorType &gt;</
 <p>This class uses strong integer types (i.e. no implicit cast to/from other integer types) for both:</p><ul>
 <li>the index of entries (eg. SparseVector&lt;RowIndex&gt; is a <a class="el" href="classoperations__research_1_1glop_1_1SparseColumn.html">SparseColumn</a>, see ./sparse_column.h).</li>
 <li><p class="startli">the <em>internal</em> indices of entries in the internal storage, which is an entirely different type: EntryType. This class can be extended with a custom iterator/entry type for the iterator-based API. This can be used to extend the interface with additional methods for the entries returned by the iterators; for an example of such extension, see <a class="el" href="classoperations__research_1_1glop_1_1SparseColumnEntry.html">SparseColumnEntry</a> in <a class="el" href="sparse__column_8h.html">sparse_column.h</a>. The custom entries and iterators should be derived from <a class="el" href="classoperations__research_1_1glop_1_1SparseVectorEntry.html">SparseVectorEntry</a> and SparseVectorIterator, or at least provide the same public and protected interface.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000889">Todo</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
 </li>
 </ul>
 
@@ -516,7 +516,7 @@ template&lt;typename IndexType, typename IteratorType = VectorIterator&lt;Sparse
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000894">Todo</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
+<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000895">Todo</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00306">306</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -684,7 +684,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Cleans the vector, i.e. removes zero-values entries, removes duplicates entries and sorts remaining entries in increasing index order. Runs in O(num_entries * log(num_entries)). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000891">Todo</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00552">552</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1156,7 +1156,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the coefficient at position index. Call with care: runs in O(number-of-entries) as entries may not be sorted. </p>
-<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000893">Todo</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
+<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000894">Todo</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00999">999</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1228,7 +1228,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
 </div><div class="memdoc">
 <p>Removes the entries for which index_perm[index] is non-negative and appends them to output. Note that the index of the entries are NOT permuted. </p>
 <dl class="section note"><dt>Note</dt><dd>this function is called many times, so performance does matter and it is why we optimized the "nothing to do" case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000892">Todo</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000893">Todo</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00969">969</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 

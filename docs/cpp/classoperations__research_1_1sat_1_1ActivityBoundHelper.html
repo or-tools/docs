@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Try to get more precise min/max activity of a linear constraints using at most ones from the model. This is heuristic based but should be relatively fast.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002213">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002214">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00220">220</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002207">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002208">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
 <p>a =&gt; b same as amo(a, not(b)).</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00283">283</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <p>If conditional is not nullptr, then conditional[i][0/1] will give the max activity if the literal at position i is false/true. This can be used to fix variables or extract enforcement literal.</p>
 <p>Important: We shouldn't have duplicates or a lit and NegatedRef(lit) appearing both.</p>
 <dl class="section note"><dt>Note</dt><dd>the result of this function is not exact (it uses an heuristic to detect AMOs), but it does not depend on the order of the input terms, so passing an input in non-deterministic order is fine.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002216">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002217">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00251">251</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
@@ -377,7 +377,7 @@ Public Member Functions</h2></td></tr>
 <p>Computes relevant info to presolve a constraint with enforcement using at most one information.</p>
 <p>This returns false iff the enforcement list cannot be satisfied. It filters the enforcement list if some are consequences of other. It fills the given set with the literal that must be true due to the enforcement. Note that only literals or negated literal appearing in ref are filled. </p>
 <p>If a previous enforcement literal implies this one, we can skip it.</p>
-<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002209">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
+<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002210">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
 <p>If some other literal is at one in this amo, literal must be false, and so the constraint cannot be enforced.</p>
 <p>Keep this enforcement.</p>
 <p>Skip already fixed.</p>

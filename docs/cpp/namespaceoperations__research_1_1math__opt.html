@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -1507,7 +1507,7 @@ Variables</h2></td></tr>
 <li>K has a function with signature <span class="tt">K::IdType K::typed_id() const</span>.</li>
 <li>K has a function with signature <span class="tt"><a class="el" href="#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> K::storage() const</span>.</li>
 <li>K::IdType is a valid key for absl::flat_hash_map or absl::flat_hash_set (supports hash and ==).</li>
-<li>the is_key_type_v&lt;&gt; below should include them. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000911">Todo</a></b></dt><dd>(b/396580721): Those requirements are those of <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span>. Once we've migrated most key types to <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span>, we should be able to simplify this code. </dd></dl>
+<li>the is_key_type_v&lt;&gt; below should include them. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000912">Todo</a></b></dt><dd>(b/396580721): Those requirements are those of <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span>. Once we've migrated most key types to <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span>, we should be able to simplify this code. </dd></dl>
 </li>
 </ul>
 <p>Printing</p>
@@ -1533,7 +1533,7 @@ Variables</h2></td></tr>
 <p>Why in labs? Lots of users seem to need this (e.g. for big-M calculations), but there are several possible algorithms, and it is not clear what, if anything, would be used widely. The function also makes many assumptions on the input that are not easy to verify and can lead to confusing errors, it is worth seeing if the API can be hardened a bit.</p>
 <p><a class="el" href="classoperations__research_1_1math__opt_1_1LargeInstanceIpParameterTest.html">LargeInstanceIpParameterTest</a></p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000958">Todo</a></b></dt><dd>(b/178702980): this should not be needed IWYU pragma: no_include &lt;type_traits&gt; </dd></dl>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000959">Todo</a></b></dt><dd>(b/178702980): this should not be needed IWYU pragma: no_include &lt;type_traits&gt; </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This header defines primal/dual unboundness ray computation functions for GLPK solver. They use the index space of the computation form of the model as defined in operations_research/glpk/glpk_computational_form.h.</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -1553,7 +1553,7 @@ Variables</h2></td></tr>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Unimplemented features:</p><ul>
 <li>Quadratic objective</li>
-<li><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000995">Todo</a></b></dt><dd>(b/272767311): initial basis, more precise returned basis.</dd></dl>
+<li><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000996">Todo</a></b></dt><dd>(b/272767311): initial basis, more precise returned basis.</dd></dl>
 </li>
 </ul>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -2958,7 +2958,7 @@ template&lt;typename V&gt; </div>
 <p>The entire model is an IIS. </p>
 <p>x is integer</p>
 <p>The model is: min 0 s.t. x ≥ 1 (linear constraint)</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000944">Todo</a></b></dt><dd>(b/227217735): Test ranged quadratic constraints when supported. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000945">Todo</a></b></dt><dd>(b/227217735): Test ranged quadratic constraints when supported. </dd></dl>
 <p>The model is: min 0 s.t. x² ≥ 1</p>
 <p>The model is: min 0 s.t. ||{x}||₂ ≤ 1 An IIS is: ||{x}||₂ ≤ 1</p>
 <p>The model is: min 0 s.t. ||{2x}||₂ ≤ 1 An IIS is: ||{2x}||₂ ≤ 1</p>
@@ -3637,7 +3637,7 @@ template&lt;typename Sink&gt; </div>
 </div><div class="memdoc">
 <p>Applies the primal, dual and reduced costs filters from model_solve_params to the primal solution variable values, dual solution dual values, and dual solution reduced costs, respectively, and overwriting these values with the results.</p>
 <dl class="section warning"><dt>Warning</dt><dd>solution is modified in place.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000902">Todo</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000903">Todo</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00121">121</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -4207,7 +4207,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Checks that the elements of ids are a subset of universe. Elements of ids do not need to be sorted or distinct. If upper_bound is set, elements must be strictly less than upper_bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001038">Todo</a></b></dt><dd>(b/232526223): try merge this with the CheckIdsSubset overload below, or at least have one call the other. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001039">Todo</a></b></dt><dd>(b/232526223): try merge this with the CheckIdsSubset overload below, or at least have one call the other. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ids__validator_8cc_source.html#l00055">55</a> of file <a class="el" href="ids__validator_8cc_source.html">ids_validator.cc</a>.</p>
 
@@ -5142,7 +5142,7 @@ template&lt;typename E&gt; </div>
 <p>finite_primal_objective should be finite and limit should not be LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead).</p>
 <p>Assumes dual solution exists iff optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value). If set the dual status is set to FEASIBILITY_STATUS_FEASIBLE, else it is FEASIBILITY_STATUS_UNDETERMINED.</p>
 <p>It sets the primal bound based on the primal objective. The dual bound is either set to the optional_dual_objective if set, else to a trivial value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000905">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000906">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00346">346</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5232,7 +5232,7 @@ template&lt;typename IndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Applies filter to each element of input and returns the elements that remain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000901">Todo</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000902">Todo</a></b></dt><dd>(b/261603235): this function is not very efficient, decide if this matters. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00107">107</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5772,7 +5772,7 @@ template&lt;typename AttrT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns solve_result.termination.objective_bounds if present. Otherwise, it builds ObjectiveBoundsProto from solve_result.solve_stats.best_primal/dual_bound </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000899">Todo</a></b></dt><dd>(b/290091715): Remove once solve_stats.best_primal/dual_bound is removed and we know termination.objective_bounds will always be present. </dd></dl>
+<p>Returns solve_result.termination.objective_bounds if present. Otherwise, it builds ObjectiveBoundsProto from solve_result.solve_stats.best_primal/dual_bound </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000900">Todo</a></b></dt><dd>(b/290091715): Remove once solve_stats.best_primal/dual_bound is removed and we know termination.objective_bounds will always be present. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00047">47</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -5792,7 +5792,7 @@ template&lt;typename AttrT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns solve_result.termination.problem_status if present. Otherwise, it returns solve_result.solve_stats.problem_status </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000900">Todo</a></b></dt><dd>(b/290091715): Remove once solve_stats.problem_status is removed and we know termination.problem_status will always be present. </dd></dl>
+<p>Returns solve_result.termination.problem_status if present. Otherwise, it returns solve_result.solve_stats.problem_status </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000901">Todo</a></b></dt><dd>(b/290091715): Remove once solve_stats.problem_status is removed and we know termination.problem_status will always be present. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00058">58</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -7054,7 +7054,7 @@ template&lt;typename InnerMatcher&gt; </div>
 </div><div class="memdoc">
 <p>Matchers for a SolveResult Checks the following:</p><ul>
 <li>The termination reason is optimal.</li>
-<li>If expected_primal_objective contains a value, there is at least one primal feasible solution and that solution has an objective value within tolerance of expected_objective. However, primal and dual bounds are not checked. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000913">Todo</a></b></dt><dd>(b/309658404): Note the bounds should be at least finite once we validate this. </dd></dl>
+<li>If expected_primal_objective contains a value, there is at least one primal feasible solution and that solution has an objective value within tolerance of expected_objective. However, primal and dual bounds are not checked. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000914">Todo</a></b></dt><dd>(b/309658404): Note the bounds should be at least finite once we validate this. </dd></dl>
 </li>
 </ul>
 
@@ -7205,7 +7205,7 @@ template&lt;typename InnerMatcher&gt; </div>
 <li>If the optional <span class="tt">detail_matcher</span> is provided, it matches the <span class="tt">detail</span>.</li>
 </ul>
 <p>See <a class="el" href="#a84139f68357a24dc2bdc06a31b30c475">TerminatesWithLimit()</a> for a similar matcher for SolveResult.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000912">Todo</a></b></dt><dd>: b/343234961 - Maybe change the name and sync the signatures/features. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000913">Todo</a></b></dt><dd>: b/343234961 - Maybe change the name and sync the signatures/features. </dd></dl>
 
 </div>
 </div>
@@ -7308,7 +7308,7 @@ template&lt;typename InnerMatcher&gt; </div>
 <p>Returns either a TERMINATION_REASON_FEASIBLE or TERMINATION_REASON_NO_SOLUTION_FOUND termination depending on primal_objective being finite or not. That is it assumes there is a primal feasible solution iff primal_objective is finite.</p>
 <p>If claim_dual_feasible_solution_exists is true, the dual_status is set as FEASIBILITY_STATUS_FEASIBLE, else FEASIBILITY_STATUS_UNDETERMINED.</p>
 <p>This function assumes dual solution exists if claim_dual_feasible_solution_exists is true even if dual_objective is infinite (some solvers return feasible dual solutions without an objective value). If dual_objective is finite then claim_dual_feasible_solution_exists must be true for a valid termination to be returned.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000906">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000907">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00286">286</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -8253,7 +8253,7 @@ template&lt;typename MatcherType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000939">Todo</a></b></dt><dd>(user): use the constraint iterator from scip_solver.cc here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000940">Todo</a></b></dt><dd>(user): use the constraint iterator from scip_solver.cc here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="proto__converter_8cc_source.html#l00389">389</a> of file <a class="el" href="proto__converter_8cc_source.html">proto_converter.cc</a>.</p>
 
@@ -8548,7 +8548,7 @@ template&lt;typename V, typename C&gt; </div>
 <p>The variables' values are changed in the direction that improves the objective. Variables that are not in the objective are not modified.</p>
 <p>This function is typically useful when solving MIP with a non-zero gap or when the time limit interrupts the solve early. In those cases a MIP solver can return a solution where some variables can trivially be changed to improve the objective but since the solution fits in the termination criteria (either the gap or the time limit) the solver did not do it. </p>
 <p>Validate the inputs.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000940">Todo</a></b></dt><dd>(b/193121090): here we build the proto as the APIs of MathOpt only works with the proto and can't use the C++ <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> (or ModelStorage). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000941">Todo</a></b></dt><dd>(b/193121090): here we build the proto as the APIs of MathOpt only works with the proto and can't use the C++ <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> (or ModelStorage). </dd></dl>
 <p>We maintain a solution with updated value for each variable in the order of traversal.</p>
 <p>Invariant: values are finite.</p>
 <p>We also maintain the values of each constraint in sync with the values in new_solution.</p>
@@ -8814,7 +8814,7 @@ template&lt;typename V, typename C&gt; </div>
 <p>Returns a TERMINATION_REASON_NO_SOLUTION_FOUND termination with FEASIBILITY_STATUS_UNDETERMINED primal status.</p>
 <p>Assumes dual solution exists iff optional_dual_objective is set even if infinite (some solvers return feasible dual solutions without an objective value). optional_dual_objective should not be set when limit is LIMIT_CUTOFF for a valid TerminationProto to be returned (use LimitCutoffTerminationProto() below instead).</p>
 <p>It sets a trivial primal bound. The dual bound is either set to the optional_dual_objective if set, else to a trivial value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000904">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000905">Todo</a></b></dt><dd>(b/290359402): Consider improving to require a finite dual bound when dual feasible solutions are returned. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00323">323</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -12358,7 +12358,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000929">Todo</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000930">Todo</a></b></dt><dd>(b/169415597): improve linear expression format:<ul>
 <li>make sure to quote the variable name so that we support: </li>
 </ul>
 </dd></dl>
@@ -12410,7 +12410,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
       </table>
 </div><div class="memdoc">
 <p>Streams the name of the objective, as registered upon objective creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000919">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000920">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="objective_8cc_source.html#l00061">61</a> of file <a class="el" href="objective_8cc_source.html">objective.cc</a>.</p>
 
@@ -12503,7 +12503,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000930">Todo</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000931">Todo</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variable__and__expressions_8cc_source.html#l00160">160</a> of file <a class="el" href="variable__and__expressions_8cc_source.html">variable_and_expressions.cc</a>.</p>
 
@@ -12567,7 +12567,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000895">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000896">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="second__order__cone__constraint_8h_source.html#l00125">125</a> of file <a class="el" href="second__order__cone__constraint_8h_source.html">second_order_cone_constraint.h</a>.</p>
 
@@ -12646,7 +12646,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000896">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000897">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sos1__constraint_8h_source.html#l00127">127</a> of file <a class="el" href="sos1__constraint_8h_source.html">sos1_constraint.h</a>.</p>
 
@@ -12679,7 +12679,7 @@ template&lt;<a class="el" href="#ad3370d09dba5b26336925eb89634eb4f">ElementType<
 </table>
 </div><div class="memdoc">
 <p>Streams the name of the constraint, as registered upon constraint creation, or a short default if none was provided. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000897">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000898">Todo</a></b></dt><dd>(b/170992529): handle quoting of invalid characters in the name. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sos2__constraint_8h_source.html#l00127">127</a> of file <a class="el" href="sos2__constraint_8h_source.html">sos2_constraint.h</a>.</p>
 
@@ -17204,7 +17204,7 @@ template&lt;typename E, typename = std::enable_if_t&lt;Enum&lt;E&gt;::kIsImpleme
 </div><div class="memdoc">
 <p>Returns a TERMINATION_REASON_OPTIMAL termination with the provided objective bounds and FEASIBILITY_STATUS_FEASIBLE primal and dual statuses.</p>
 <p>finite_primal_objective must be finite for a valid TerminationProto to be returned.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000903">Todo</a></b></dt><dd>(b/290359402): additionally require dual_objective to be finite. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000904">Todo</a></b></dt><dd>(b/290359402): additionally require dual_objective to be finite. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="math__opt__proto__utils_8cc_source.html#l00222">222</a> of file <a class="el" href="math__opt__proto__utils_8cc_source.html">math_opt_proto_utils.cc</a>.</p>
 
@@ -20543,8 +20543,8 @@ template&lt;typename IndexType&gt; </div>
 </div><div class="memdoc">
 
 <p>Validates the input result. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001040">Todo</a></b></dt><dd>(b/290091715): Remove once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001041">Todo</a></b></dt><dd>(b/290091715): Replace by TerminationProto termination = result.termination(); once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001041">Todo</a></b></dt><dd>(b/290091715): Remove once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001042">Todo</a></b></dt><dd>(b/290091715): Replace by TerminationProto termination = result.termination(); once problem_status and objective bounds are removed from solve_stats and their presence is guaranteed in termination. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="result__validator_8cc_source.html#l00278">278</a> of file <a class="el" href="result__validator_8cc_source.html">result_validator.cc</a>.</p>
 
@@ -20573,7 +20573,7 @@ template&lt;typename IndexType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001043">Todo</a></b></dt><dd>(b/204457524): consider checking equality of statuses for single-sided LPs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001044">Todo</a></b></dt><dd>(b/204457524): consider checking equality of statuses for single-sided LPs. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="solution__validator_8cc_source.html#l00119">119</a> of file <a class="el" href="solution__validator_8cc_source.html">solution_validator.cc</a>.</p>
 
@@ -20603,7 +20603,7 @@ template&lt;typename IndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Validate individual solutions</p>
-<p>Validate solution order. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001039">Todo</a></b></dt><dd>(b/204457524): check objective ordering when possible. </dd></dl>
+<p>Validate solution order. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001040">Todo</a></b></dt><dd>(b/204457524): check objective ordering when possible. </dd></dl>
 <p>Primal-feasible solutions must appear first.</p>
 <p>Dual-feasible solutions must appear first within the groups of primal-feasible and other solutions. Equivalently, a dual-feasible solution must be preceded by a dual-feasible solution, except when we switch from the group of primal-feasible solutions to the group of other solutions.</p>
 
@@ -20625,7 +20625,7 @@ template&lt;typename IndexType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001045">Todo</a></b></dt><dd>(b/213697045): some parameters are still not validated. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001046">Todo</a></b></dt><dd>(b/213697045): some parameters are still not validated. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="solve__parameters__validator_8cc_source.html#l00048">48</a> of file <a class="el" href="solve__parameters__validator_8cc_source.html">solve_parameters_validator.cc</a>.</p>
 

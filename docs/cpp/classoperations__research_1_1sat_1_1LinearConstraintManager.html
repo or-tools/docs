@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Because sometimes we split a == constraint in two (&gt;= and &lt;=), it makes sense to detect duplicate constraints and merge bounds. This is also relevant if we regenerate identical cuts for some reason. </p>
-<p>If configured, store instead the folded version of this constraint. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001915">Todo</a></b></dt><dd>(user): Shall we simplify again? </dd></dl>
+<p>If configured, store instead the folded version of this constraint. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001916">Todo</a></b></dt><dd>(user): Shall we simplify again? </dd></dl>
 <p>If an identical constraint exists, only updates its bound.</p>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00309">309</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
@@ -270,9 +270,9 @@ Public Member Functions</h2></td></tr>
 <p>Returns true if a new cut was added and false if this cut is not efficacious or if it is a duplicate of an already existing one.</p>
 <p>Same as <a class="el" href="#a42364a248af8f1f81b89bf607243f28a">Add()</a>, but logs some information about the newly added constraint. Cuts are also handled slightly differently than normal constraints. </p>
 <p>Only add cut with sufficient efficacy.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001916">Todo</a></b></dt><dd>(user): We could prevent overflow by dividing more. Note that mainly happen with super large variable domain since we usually restrict the size of the generated coefficients in our cuts. So it shouldn't be that important. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001917">Todo</a></b></dt><dd>(user): We could prevent overflow by dividing more. Note that mainly happen with super large variable domain since we usually restrict the size of the generated coefficients in our cuts. So it shouldn't be that important. </dd></dl>
 <p>We only mark the constraint as a cut if it is not an update of an already existing one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001917">Todo</a></b></dt><dd>(user): Use better heuristic here for detecting good cuts and mark them undeletable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001918">Todo</a></b></dt><dd>(user): Use better heuristic here for detecting good cuts and mark them undeletable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00420">420</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
 
@@ -331,24 +331,24 @@ Public Member Functions</h2></td></tr>
 <p>We keep any constraints that is already present, and otherwise, we add the ones that are currently not satisfied by at least "tolerance" to the set of potential new constraints.</p>
 <p><a class="el" href="classoperations__research_1_1sat_1_1Inprocessing.html">Inprocessing</a> of the constraint.</p>
 <dl class="section note"><dt>Note</dt><dd>the canonicalization shouldn't be needed since the order of the variable is not changed by the simplification, and we only reduce the coefficients at both end of the spectrum.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001921">Todo</a></b></dt><dd>(user): Because we simplified this constraint, it is possible that it is now a duplicate of another one. Merge them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001922">Todo</a></b></dt><dd>(user): Because we simplified this constraint, it is possible that it is now a duplicate of another one. Merge them. </dd></dl>
 <p><a class="el" href="namespaceoperations__research_1_1sat.html#a03415c6fcb9dedc9b88bb92ae45b46a8">ComputeActivity()</a> often represent the bulk of the time spent in ChangeLP().</p>
 <p>Bump activities of active constraints in LP.</p>
 <p>Update the increment counter.</p>
 <p>Remove constraints from the current LP that have been inactive for a while. We do that after we computed new_constraints so we do not need to iterate over the just deleted constraints.</p>
 <dl class="section note"><dt>Note</dt><dd>the algo below is in O(limit * new_constraint). In order to limit spending too much time on this, we first sort all the constraints with an imprecise score (no orthogonality), then limit the size of the vector of constraints to precisely score, then we do the actual scoring.</dd></dl>
 <p>On problem crossword_opt_grid-19.05_dict-80_sat with linearization_level=2, new_constraint.size() &gt; 1.5M.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001922">Todo</a></b></dt><dd>(user): This blowup factor could be adaptative w.r.t. the constraint limit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001923">Todo</a></b></dt><dd>(user): This blowup factor could be adaptative w.r.t. the constraint limit. </dd></dl>
 <p>Iterate through all new constraints and select the one with the best score.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001923">Todo</a></b></dt><dd>(user): find better algo, this does 1000 * 4000 scalar product! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001924">Todo</a></b></dt><dd>(user): find better algo, this does 1000 * 4000 scalar product! </dd></dl>
 <p>Checks the time limit, and returns if the lp has changed.</p>
 <p>NOTE(user): It is safe to not add this constraint as the constraint that is almost parallel to this constraint is present in the LP or is inactive for a long time and is removed from the LP. In either case, this constraint is not adding significant value and is only making the LP larger.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001924">Todo</a></b></dt><dd>(user): Experiment with different weights or different functions for computing score. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001925">Todo</a></b></dt><dd>(user): Experiment with different weights or different functions for computing score. </dd></dl>
 <p>Add the best constraint in the LP.</p>
 <dl class="section note"><dt>Note</dt><dd>it is important for LP incremental solving that the old constraints stays at the same position in this list (and thus in the returned GetLp()).</dd></dl>
 <p>Abort the addition loop.</p>
 <p>We update the solution sate to match the new LP size.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001925">Todo</a></b></dt><dd>(user): Instead of comparing num_deletable_constraints with cut limit, compare number of deletable constraints not in lp against the limit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001926">Todo</a></b></dt><dd>(user): Instead of comparing num_deletable_constraints with cut limit, compare number of deletable constraints not in lp against the limit. </dd></dl>
 <p>The LP changed only if we added new constraints or if some constraints already inside changed (simplification or tighter bounds).</p>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00702">702</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>

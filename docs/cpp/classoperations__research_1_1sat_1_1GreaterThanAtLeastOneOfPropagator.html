@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -251,7 +251,7 @@ Public Member Functions</h2></td></tr>
 
 <p>For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>. </p>
 <p>If the level zero bounds is good enough, no reason needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001167">Todo</a></b></dt><dd>(user): We could also skip this if we already have the reason for the expression being high enough in the current conflict. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001168">Todo</a></b></dt><dd>(user): We could also skip this if we already have the reason for the expression being high enough in the current conflict. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#adc031164213fd9db6f79e99441240ded">operations_research::sat::LazyReasonInterface</a>.</p>
 
@@ -307,8 +307,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001168">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
-<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001169">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001169">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
+<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001170">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
 <p>The permutation is needed to have proper lazy reason.</p>
 <p>Abort if we can't get a better bound.</p>
 <p>All false, conflit.</p>

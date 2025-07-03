@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -275,7 +275,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the minimum flow going out of <span class="tt">subset</span>, based on a conservative estimate of the maximum number of nodes of a feasible path inside this subset. <span class="tt">subset</span> must not be empty and must not contain the depot (node 0). Paths are approximated by their length and their last node, and can thus contain cycles. The complexity is O(subset.size() ^ 3). </p>
-<p>Conservatively assume that each subset node is reachable from outside. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002251">Todo</a></b></dt><dd>(user): use has_incoming_arcs_from_outside_[] to be more precise. </dd></dl>
+<p>Conservatively assume that each subset node is reachable from outside. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002252">Todo</a></b></dt><dd>(user): use has_incoming_arcs_from_outside_[] to be more precise. </dd></dl>
 <p>Maximum number of nodes of a feasible path inside the subset.</p>
 <p>If this arc cannot be taken skip.</p>
 <p>This is the first arc that reach this node.</p>
@@ -302,7 +302,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as above, but uses less conservative estimates (paths are approximated by their set of nodes and their last node &ndash; hence they can't contain cycles). The complexity is O(2 ^ subset.size()). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002253">Todo</a></b></dt><dd>(user): use has_incoming_arcs_from_outside_[] to skip some nodes. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002254">Todo</a></b></dt><dd>(user): use has_incoming_arcs_from_outside_[] to skip some nodes. </dd></dl>
 <p>We remove it from the hash_map since this entry should no longer be used as we create path of increasing length.</p>
 <p>We have found a feasible path, update the path length statistics...</p>
 <p>... and try to extend the path with each arc going out of its last node.</p>
@@ -388,10 +388,10 @@ Public Member Functions</h2></td></tr>
 <li>End at this special_node if use_forward_direction = false</li>
 </ul>
 <p>If the <a class="el" href="classoperations__research_1_1sat_1_1RouteRelationsHelper.html">RouteRelationsHelper</a> is non null, then we will use "shortest path" bounds instead of recomputing them from the binary relation of the model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002277">Todo</a></b></dt><dd>(user): the complexity also depends on the longest route and improves if routes fail quickly. Give a better estimate? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002278">Todo</a></b></dt><dd>(user): the complexity also depends on the longest route and improves if routes fail quickly. Give a better estimate? </dd></dl>
 <p>If we have a "special node" from which we must start, make sure it is always first. This simplifies the code a bit, and we don't care about the order of nodes in subset.</p>
 <p>Make the span point to the new order.</p>
-<p>We need a special graph here to handle both options. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002254">Todo</a></b></dt><dd>(user): Maybe we should abstract that in a better way. </dd></dl>
+<p>We need a special graph here to handle both options. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002255">Todo</a></b></dt><dd>(user): Maybe we should abstract that in a better way. </dd></dl>
 <p>Bit i is set iif node subset[i] is in one of the current routes.</p>
 <p>The last nodes of each of the k routes. If the hamming weight is less that k, then at least one route is still empty.</p>
 <p>Valid lower bounds for this state.</p>

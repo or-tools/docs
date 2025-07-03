@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -245,7 +245,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return -1 if there is none. This returns a constraint with min degree.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002016">Todo</a></b></dt><dd>(user): fix quadratic or even linear algo? We can use var_to_ids_func_() to maintain the degree. But note that since we reorder constraints and because we expect mainly degree zero, this seems to be faster. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002017">Todo</a></b></dt><dd>(user): fix quadratic or even linear algo? We can use var_to_ids_func_() to maintain the degree. But note that since we reorder constraints and because we expect mainly degree zero, this seems to be faster. </dd></dl>
 <p>By degree, we mean the number of variables of the constraint that do not have yet their lower bounds up to date; they will be pushed by other constraints as we propagate them. If possible, we want to delay the propagation of a constraint with positive degree until all involved lower bounds are up to date (i.e. degree == 0).</p>
 <p>We have two constraints, this one (id) push NegationOf(var), and var_to_id_[var] push var. So whichever order we choose, the first constraint will need to be scanned at least twice. Lets not count this situation in the degree.</p>
 <p>We select the min-degree and prefer lower constraint size. We however stop at the first degree zero.</p>

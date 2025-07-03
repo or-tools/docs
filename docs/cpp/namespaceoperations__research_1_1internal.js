@@ -2,6 +2,9 @@ var namespaceoperations__research_1_1internal =
 [
     [ "AlignedBlock", "structoperations__research_1_1internal_1_1AlignedBlock.html", "structoperations__research_1_1internal_1_1AlignedBlock" ],
     [ "AllocatorWithAlignment", "structoperations__research_1_1internal_1_1AllocatorWithAlignment.html", "structoperations__research_1_1internal_1_1AllocatorWithAlignment" ],
+    [ "ElementGetter", "classoperations__research_1_1internal_1_1ElementGetter.html", "classoperations__research_1_1internal_1_1ElementGetter" ],
+    [ "is_strong_int", "structoperations__research_1_1internal_1_1is__strong__int.html", null ],
+    [ "is_strong_int<::util_intops::StrongInt< Tag, Native, Validator > >", "structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html", null ],
     [ "PathContainerImpl", "classoperations__research_1_1internal_1_1PathContainerImpl.html", null ],
     [ "PathWithPriority", "classoperations__research_1_1internal_1_1PathWithPriority.html", "classoperations__research_1_1internal_1_1PathWithPriority" ],
     [ "ReleaseSCIPMessageHandler", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler.html", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler" ],
@@ -14,6 +17,7 @@ var namespaceoperations__research_1_1internal =
     [ "UnderlyingContainerAdapter", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter.html", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter" ],
     [ "UntypedGScipConstraintHandler", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler" ],
     [ "UntypedGScipConstraintHandlerImpl", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl" ],
+    [ "IndexedVector", "namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597", null ],
     [ "MessageHandlerPtr", "namespaceoperations__research_1_1internal.html#af00491471902054c58b10873703119a1", null ],
     [ "to_uint", "namespaceoperations__research_1_1internal.html#aa7930aa4689479c09dbc61f1ec4f4626", null ],
     [ "AddCallbackConstraint", "namespaceoperations__research_1_1internal.html#a30b61d637f83941aa9acb03aef639410", null ],

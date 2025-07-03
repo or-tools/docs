@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -327,7 +327,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds an empty subset with a cost to the problem. In matrix terms, this adds a column to the matrix. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002586">Todo</a></b></dt><dd>(user): refine the logic for is_unicost_ and is_unicost_valid_. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002588">Todo</a></b></dt><dd>(user): refine the logic for is_unicost_ and is_unicost_valid_. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__model_8cc_source.html#l00244">244</a> of file <a class="el" href="set__cover__model_8cc_source.html">set_cover_model.cc</a>.</p>
 
@@ -613,7 +613,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Computes basic statistics on the deltas of the row and column elements and returns a <a class="el" href="structoperations__research_1_1SetCoverModel_1_1Stats.html">Stats</a> structure. The deltas are computed as the difference between two consecutive indices in rows or columns. The number of bytes computed is meant using a variable-length base-128 encoding. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002588">Todo</a></b></dt><dd>(user): actually use this to compress the rows and columns. </dd></dl>
+<p>Computes basic statistics on the deltas of the row and column elements and returns a <a class="el" href="structoperations__research_1_1SetCoverModel_1_1Stats.html">Stats</a> structure. The deltas are computed as the difference between two consecutive indices in rows or columns. The number of bytes computed is meant using a variable-length base-128 encoding. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002590">Todo</a></b></dt><dd>(user): actually use this to compress the rows and columns. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__model_8cc_source.html#l00747">747</a> of file <a class="el" href="set__cover__model_8cc_source.html">set_cover_model.cc</a>.</p>
 
@@ -910,7 +910,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Choose an element that is not yet in the subset at random with a distribution that is proportional to the degree of the element.</p>
 <p>It can happen &ndash; rarely in practice &ndash; that some of the elements cannot be covered. Let's add them to randomly chosen subsets.</p>
 <p>The method is the same as above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002585">Todo</a></b></dt><dd>(user): if necessary, use a better distribution for the costs. The generation of the costs is done in two steps. First, compute the minimum and maximum costs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002587">Todo</a></b></dt><dd>(user): if necessary, use a better distribution for the costs. The generation of the costs is done in two steps. First, compute the minimum and maximum costs. </dd></dl>
 <p>Then, generate random numbers in [min_cost, min_cost + cost_range], where cost_range is defined as:</p>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__model_8cc_source.html#l00090">90</a> of file <a class="el" href="set__cover__model_8cc_source.html">set_cover_model.cc</a>.</p>
@@ -1325,7 +1325,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets 'cost' to an already existing 'subset'. This will CHECK-fail if cost is infinite or a NaN. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002587">Todo</a></b></dt><dd>(user): refine the logic for is_unicost_ and is_unicost_valid_. NOMUTANTS &ndash; this is a performance optimization. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002589">Todo</a></b></dt><dd>(user): refine the logic for is_unicost_ and is_unicost_valid_. NOMUTANTS &ndash; this is a performance optimization. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__model_8cc_source.html#l00271">271</a> of file <a class="el" href="set__cover__model_8cc_source.html">set_cover_model.cc</a>.</p>
 

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -459,16 +459,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the LNS fragment where the given variables are fixed to the value they take in the given solution. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001221">Todo</a></b></dt><dd>(user): Maybe relax all variables in the objective when the number is small or negligible compared to the number of variables. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001222">Todo</a></b></dt><dd>(user): Maybe relax all variables in the objective when the number is small or negligible compared to the number of variables. </dd></dl>
 <p>Fill in neighborhood.delta all variable domains.</p>
 <p>We only copy the name in debug mode.</p>
 <p>Note the use of <a class="el" href="namespaceoperations__research_1_1sat.html#a46540a899ab5e8fe1b55e12da55cbbe0">DomainInProtoContains()</a> instead of <a class="el" href="namespaceoperations__research_1_1sat.html#ab1240060466ba48a36a4b36379bce26a" title="Reads a Domain from the domain field of a proto.">ReadDomainFromProto()</a> as the later is slower and allocate memory.</p>
 <p>If under the updated domain, the base solution is no longer valid, We should probably regenerate this neighborhood. But for now we just do a best effort and take the closest value.</p>
 <p>Fill some statistic fields and detect if we cover a full component.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001222">Todo</a></b></dt><dd>(user): If there is just one component, we can skip some computation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001223">Todo</a></b></dt><dd>(user): If there is just one component, we can skip some computation. </dd></dl>
 <p>If the objective domain might cut the optimal solution, we cannot exploit the connected components. We compute this outside the mutex to avoid any deadlock risk.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001223">Todo</a></b></dt><dd>(user): We could handle some complex domain (size &gt; 2). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001224">Todo</a></b></dt><dd>(user): force better objective? Note that this is already done when the hint above is successfully loaded (i.e. if it passes the presolve correctly) since the solver will try to find better solution than the current one. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001224">Todo</a></b></dt><dd>(user): We could handle some complex domain (size &gt; 2). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001225">Todo</a></b></dt><dd>(user): force better objective? Note that this is already done when the hint above is successfully loaded (i.e. if it passes the presolve correctly) since the solver will try to find better solution than the current one. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01068">1068</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
@@ -518,7 +518,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a task to run. The task_id is just an ever increasing counter that correspond to the number of total calls to <a class="el" href="#abe2306fcdd142900312b26803df321dc">GenerateTask()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002461">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002463">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
 <p>This is only called by the main thread. </p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a68765bc7ed07ce93ffeddbe61ad40d65">operations_research::sat::SubSolver</a>.</p>
@@ -618,8 +618,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns all precedences extracted from the scheduling constraint and the initial solution. The precedences will be sorted by the natural order the pairs of integers.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001219">Todo</a></b></dt><dd>(user): We could scan for model precedences and add them to the list of precedences. This could enable more simplifications in the transitive reduction phase. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001220">Todo</a></b></dt><dd>(user): Reduce precedence graph </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001220">Todo</a></b></dt><dd>(user): We could scan for model precedences and add them to the list of precedences. This could enable more simplifications in the transitive reduction phase. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001221">Todo</a></b></dt><dd>(user): Reduce precedence graph </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l00957">957</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>
 
@@ -916,7 +916,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is only called by the main thread in Subsolver creation order. </p>
 <p>This can mean two things: 1/ This variable is a normal one and the problem is UNSAT or 2/ This variable is optional, and its associated literal must be set to false.</p>
 <p>Currently, we wait for any full solver to pick the crossing bounds and do the correct stuff on their own. We do not want to have empty domain in the proto as this would means INFEASIBLE. So we just ignore such bounds here.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001206">Todo</a></b></dt><dd>(user): We could set the optional literal to false directly in the bound sharing manager. We do have to be careful that all the different solvers have the same optionality definition though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001207">Todo</a></b></dt><dd>(user): We could set the optional literal to false directly in the bound sharing manager. We do have to be careful that all the different solvers have the same optionality definition though. </dd></dl>
 <p>Only trigger the computation if needed.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#af8c06db9a9bd5343d209963483b5f3e8">operations_research::sat::SubSolver</a>.</p>
@@ -1053,7 +1053,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001249">Todo</a></b></dt><dd>(user): Refactor the class to be thread-safe instead, it should be safer and more easily maintainable. Some complication with accessing the variable&lt;-&gt;constraint graph efficiently though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001250">Todo</a></b></dt><dd>(user): Refactor the class to be thread-safe instead, it should be safer and more easily maintainable. Some complication with accessing the variable&lt;-&gt;constraint graph efficiently though. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This mutex needs to be public for thread annotations. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00292">292</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>

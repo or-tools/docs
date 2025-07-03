@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -170,12 +170,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4f1c7c8153d3d3ef062a2bb08c0c310 template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; NodeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4f1c7c8153d3d3ef062a2bb08c0c310">GetConnectedComponentsTpl</a> (NodeType num_nodes, const UndirectedGraph &amp;graph)</td></tr>
 <tr class="memitem:a13f0e8f7e15873600cf8e395958c71e1" id="r_a13f0e8f7e15873600cf8e395958c71e1"><td class="memTemplParams" colspan="2">template&lt;class UndirectedGraph&gt; </td></tr>
 <tr class="memitem:a13f0e8f7e15873600cf8e395958c71e1 template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13f0e8f7e15873600cf8e395958c71e1">GetConnectedComponents</a> (int num_nodes, const UndirectedGraph &amp;graph)</td></tr>
-<tr class="memitem:a6c08971b79823b898dceb552c91f3d0c" id="r_a6c08971b79823b898dceb552c91f3d0c"><td class="memTemplParams" colspan="2">template&lt;class IntVector, class Array, class ElementType&gt; </td></tr>
-<tr class="memitem:a6c08971b79823b898dceb552c91f3d0c template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c08971b79823b898dceb552c91f3d0c">PermuteWithExplicitElementType</a> (const IntVector &amp;permutation, Array &amp;array_to_permute, ElementType unused)</td></tr>
 <tr class="memitem:a8c227a057c1ce9d46b1185abf77ad91e" id="r_a8c227a057c1ce9d46b1185abf77ad91e"><td class="memTemplParams" colspan="2">template&lt;class IntVector, class Array&gt; </td></tr>
 <tr class="memitem:a8c227a057c1ce9d46b1185abf77ad91e template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c227a057c1ce9d46b1185abf77ad91e">Permute</a> (const IntVector &amp;permutation, Array *array_to_permute)</td></tr>
-<tr class="memitem:ac497881c4166bc694adc4bee62746118" id="r_ac497881c4166bc694adc4bee62746118"><td class="memTemplParams" colspan="2">template&lt;class IntVector&gt; </td></tr>
-<tr class="memitem:ac497881c4166bc694adc4bee62746118 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac497881c4166bc694adc4bee62746118">Permute</a> (const IntVector &amp;permutation, std::vector&lt; bool &gt; *array_to_permute)</td></tr>
 <tr class="memitem:ad08398f12eb94e794d43a1045faf7e60" id="r_ad08398f12eb94e794d43a1045faf7e60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad08398f12eb94e794d43a1045faf7e60">DEFINE_RANGE_BASED_ARC_ITERATION</a> (<a class="el" href="classutil_1_1ReverseArcListGraph.html">ReverseArcListGraph</a>, OutgoingOrOppositeIncoming)</td></tr>
 <tr class="memdesc:ad08398f12eb94e794d43a1045faf7e60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classutil_1_1ReverseArcListGraph.html">ReverseArcListGraph</a> implementation ---------------------------------------&mdash;.  <br /></td></tr>
 <tr class="memitem:a62d5cbf5cffa2a95ccd65c153548d111" id="r_a62d5cbf5cffa2a95ccd65c153548d111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62d5cbf5cffa2a95ccd65c153548d111">DEFINE_RANGE_BASED_ARC_ITERATION</a> (<a class="el" href="classutil_1_1ReverseArcStaticGraph.html">ReverseArcStaticGraph</a>, OutgoingOrOppositeIncoming)</td></tr>
@@ -339,7 +335,7 @@ Software Libraries" Daniel Lemire, Owen Kaser, Nathan Kurz arXiv:1902.01961</p>
 </ul>
 <p>Note on iteration efficiency: When re-indexing the arcs it is not possible to have both the outgoing arcs and the incoming ones form a consecutive range.</p>
 <p>Iterators are invalidated by any operation that changes the graph (e.g. <span class="tt">AddArc()</span>).</p>
-<p>It is however possible to do so for the outgoing arcs and the opposite incoming arcs. It is why the OutgoingOrOppositeIncomingArcs() and OutgoingArcs() iterations are more efficient than the IncomingArcs() one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000652">Todo</a></b></dt><dd>(b/385094969): Once we no longer use <span class="tt"><a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>/Ok()</span> for iterators, we can get rid of <span class="tt">limit_</span>, which will make iteration much more efficient.</dd></dl>
+<p>It is however possible to do so for the outgoing arcs and the opposite incoming arcs. It is why the OutgoingOrOppositeIncomingArcs() and OutgoingArcs() iterations are more efficient than the IncomingArcs() one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000653">Todo</a></b></dt><dd>(b/385094969): Once we no longer use <span class="tt"><a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>/Ok()</span> for iterators, we can get rid of <span class="tt">limit_</span>, which will make iteration much more efficient.</dd></dl>
 <p>If you know the graph size in advance, this already set the number of nodes, reserve space for the arcs and check in DEBUG mode that you don't go over the bounds: <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes, arc_capacity)</a>;</p>
 <p>Storing and using node annotations: vector&lt;bool&gt; is_visited(graph.num_nodes(), false); ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { if (!is_visited[node]) ... }</p>
 <p>Storing and using arc annotations: vector&lt;int&gt; weights; for (...) { graph.AddArc(tail, head); weights.push_back(arc_weight); } ... for (const int arc : graph.OutgoingArcs(node)) { ... weights[arc] ...; }</p>
@@ -380,8 +376,8 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 <div class="line">                        &amp;<a class="code hl_function" href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">Graph::Head</a>&gt;</div>
 <div class="ttc" id="aclassutil_1_1ArcPropertyIterator_html"><div class="ttname"><a href="classutil_1_1ArcPropertyIterator.html">util::ArcPropertyIterator</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00317">graph.h:321</a></div></div>
 <div class="ttc" id="aclassutil_1_1BaseGraph_html_af79cd652ad4b1e7142c1acbec35b01a6"><div class="ttname"><a href="classutil_1_1BaseGraph.html#af79cd652ad4b1e7142c1acbec35b01a6">util::BaseGraph&lt; int32_t, int32_t, false &gt;::NodeIndex</a></div><div class="ttdeci">int32_t NodeIndex</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00213">graph.h:213</a></div></div>
-<div class="ttc" id="aclassutil_1_1ListGraph_html_ad7d3d076d3c154d89f1eda855a34b487"><div class="ttname"><a href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">util::ListGraph::Head</a></div><div class="ttdeci">NodeIndexType Head(ArcIndexType arc) const</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l01321">graph.h:1321</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02063">graph.h:2063</a></div></div>
+<div class="ttc" id="aclassutil_1_1ListGraph_html_ad7d3d076d3c154d89f1eda855a34b487"><div class="ttname"><a href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">util::ListGraph::Head</a></div><div class="ttdeci">NodeIndexType Head(ArcIndexType arc) const</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l01307">graph.h:1307</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02049">graph.h:2049</a></div></div>
 </div><!-- fragment -->
 <p>An iterator that iterates on the heads of the arcs of another iterator. </p>
 
@@ -461,7 +457,7 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 
 <p>Defining the simplest <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> interface as <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> for convenience. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l02063">2063</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l02049">2049</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1024,7 @@ template&lt;typename MultiMap&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000674">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
+<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000675">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00088">88</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
 
@@ -1643,7 +1639,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div>
 </div>
 <a id="a8c227a057c1ce9d46b1185abf77ad91e" name="a8c227a057c1ce9d46b1185abf77ad91e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c227a057c1ce9d46b1185abf77ad91e">&#9670;&#160;</a></span>Permute() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c227a057c1ce9d46b1185abf77ad91e">&#9670;&#160;</a></span>Permute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1662,68 +1658,11 @@ template&lt;class IntVector, class Array&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01111">1111</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
-
-</div>
-</div>
-<a id="ac497881c4166bc694adc4bee62746118" name="ac497881c4166bc694adc4bee62746118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac497881c4166bc694adc4bee62746118">&#9670;&#160;</a></span>Permute() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class IntVector&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void util::Permute </td>
-          <td>(</td>
-          <td class="paramtype">const IntVector &amp;</td>          <td class="paramname"><span class="paramname"><em>permutation</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>array_to_permute</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>We need a specialization for vector&lt;bool&gt;, because the default code uses (*array_to_permute)[0] as ElementType, which isn't 'bool' in that case. </p>
-
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01122">1122</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
-
-</div>
-</div>
-<a id="a6c08971b79823b898dceb552c91f3d0c" name="a6c08971b79823b898dceb552c91f3d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c08971b79823b898dceb552c91f3d0c">&#9670;&#160;</a></span>PermuteWithExplicitElementType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class IntVector, class Array, class ElementType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void util::PermuteWithExplicitElementType </td>
-          <td>(</td>
-          <td class="paramtype">const IntVector &amp;</td>          <td class="paramname"><span class="paramname"><em>permutation</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Array &amp;</td>          <td class="paramname"><span class="paramname"><em>array_to_permute</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ElementType</td>          <td class="paramname"><span class="paramname"><em>unused</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 <p>Permutes the elements of array_to_permute: element #i will be moved to position permutation[i]. permutation must be either empty (in which case nothing happens), or a permutation of [0, permutation.size()).</p>
 <p>The algorithm is fast but need extra memory for a copy of the permuted part of array_to_permute.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000653">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
-<p>Some compiler do not know typeof(), so we have to use this extra function internally. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000654">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01098">1098</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01101">1101</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1714,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div><div class="memdoc">
 <p>Given an arc path, changes it to a sub-path with the same source and destination but without any cycle. Nothing happen if the path was already without cycle.</p>
 <p>The graph class should support Tail(arc) and Head(arc). They should both return an integer representing the corresponding tail/head of the passed arc.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000733">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000734">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
 <p>This maps each node to the latest arc in the given path that leaves it.</p>
 <p>Special case for the destination. </p><dl class="section note"><dt>Note</dt><dd>this requires that -1 is not a valid arc of <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>.</dd></dl>
 <p>Reconstruct the path by starting at the source and then following the "next" arcs. We override the given arc_path at the same time.</p>

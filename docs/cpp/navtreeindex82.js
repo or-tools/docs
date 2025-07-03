@@ -1,5 +1,11 @@
 var NAVTREEINDEX82 =
 {
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a7e125f47e9f6864cb8c42141f035d3c5":[3,0,8,12,9,7],
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a7e125f47e9f6864cb8c42141f035d3c5":[4,0,4,11,9,7],
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a8d6a8df117ce2be035987776037d605e":[3,0,8,12,9,3],
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a8d6a8df117ce2be035987776037d605e":[4,0,4,11,9,3],
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a90099a82247b7dc2f63aa5c9707ecbe5":[3,0,8,12,9,5],
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a90099a82247b7dc2f63aa5c9707ecbe5":[4,0,4,11,9,5],
 "classoperations__research_1_1routing_1_1RoutingSolution.html#a9fac308c472eff6970852c894a545d57":[3,0,8,12,9,9],
 "classoperations__research_1_1routing_1_1RoutingSolution.html#a9fac308c472eff6970852c894a545d57":[4,0,4,11,9,9],
 "classoperations__research_1_1routing_1_1RoutingSolution.html#abc8efac6224aa86f2a896eeaf62b4fcf":[3,0,8,12,9,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX82 =
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html":[3,0,8,13,14],
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html":[4,0,4,12,14],
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html#a50ec8487ff8970d298623cd593e00888":[3,0,8,13,14,5],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a50ec8487ff8970d298623cd593e00888":[4,0,4,12,14,5],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a5fcf0a3be0ec10f20bd75dc147643bd5":[3,0,8,13,14,3],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a5fcf0a3be0ec10f20bd75dc147643bd5":[4,0,4,12,14,3],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a66af3ad0c8ff8ee0ca2b8f8765de79ac":[3,0,8,13,14,4],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a66af3ad0c8ff8ee0ca2b8f8765de79ac":[4,0,4,12,14,4],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#ac205308d805c7c08ebcc85b5c5751aa7":[3,0,8,13,14,0],
-"classoperations__research_1_1sat_1_1BinaryClauseManager.html#ac205308d805c7c08ebcc85b5c5751aa7":[4,0,4,12,14,0]
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a50ec8487ff8970d298623cd593e00888":[4,0,4,12,14,5]
 };

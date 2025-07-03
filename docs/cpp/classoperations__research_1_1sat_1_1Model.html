@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -405,7 +405,7 @@ template&lt;typename T&gt; </div>
 <p>Returns an object of type T that is unique to this model (like a "local" singleton). This returns an already created instance or create a new one if needed using the T(Model* model) constructor if it exist or T() otherwise.</p>
 <p>This works a bit like in a dependency injection framework and allows to really easily wire all the classes that make up a solver together. For instance a constraint can depends on the LiteralTrail, or the <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> or both, it can depend on a Watcher class to register itself in order to be called when needed and so on.</p>
 <p>IMPORTANT: the Model* constructor functions shouldn't form a cycle between each other, otherwise this will crash the program. </p>
-<p>New element. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002071">Todo</a></b></dt><dd>(user): directly store std::unique_ptr&lt;&gt; in singletons_? </dd></dl>
+<p>New element. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002072">Todo</a></b></dt><dd>(user): directly store std::unique_ptr&lt;&gt; in singletons_? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat_2model_8h_source.html#l00112">112</a> of file <a class="el" href="sat_2model_8h_source.html">model.h</a>.</p>
 

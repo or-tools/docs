@@ -1,5 +1,11 @@
 var NAVTREEINDEX83 =
 {
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a5fcf0a3be0ec10f20bd75dc147643bd5":[3,0,8,13,14,3],
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a5fcf0a3be0ec10f20bd75dc147643bd5":[4,0,4,12,14,3],
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a66af3ad0c8ff8ee0ca2b8f8765de79ac":[3,0,8,13,14,4],
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#a66af3ad0c8ff8ee0ca2b8f8765de79ac":[4,0,4,12,14,4],
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#ac205308d805c7c08ebcc85b5c5751aa7":[3,0,8,13,14,0],
+"classoperations__research_1_1sat_1_1BinaryClauseManager.html#ac205308d805c7c08ebcc85b5c5751aa7":[4,0,4,12,14,0],
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html#ad2ba1793e1fecf10a5ac5d1e18cb33f2":[3,0,8,13,14,1],
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html#ad2ba1793e1fecf10a5ac5d1e18cb33f2":[4,0,4,12,14,1],
 "classoperations__research_1_1sat_1_1BinaryClauseManager.html#ad79b2b2680cc96bec2cfe21c2f5140d1":[3,0,8,13,14,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX83 =
 "classoperations__research_1_1sat_1_1BoundedVariableElimination.html":[3,0,8,13,25],
 "classoperations__research_1_1sat_1_1BoundedVariableElimination.html":[4,0,4,12,25],
 "classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a55f5dae5179ae4f88c9ee04b51a43c78":[3,0,8,13,25,0],
-"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a55f5dae5179ae4f88c9ee04b51a43c78":[4,0,4,12,25,0],
-"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a8d5a5e9f809d97c6dc3cbc5d948f4a51":[3,0,8,13,25,1],
-"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a8d5a5e9f809d97c6dc3cbc5d948f4a51":[4,0,4,12,25,1],
-"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html":[3,0,8,13,29],
-"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html":[4,0,4,12,29],
-"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a3da1cf349d7c5b9ddec2e042b38f040b":[3,0,8,13,29,4],
-"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a3da1cf349d7c5b9ddec2e042b38f040b":[4,0,4,12,29,4]
+"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a55f5dae5179ae4f88c9ee04b51a43c78":[4,0,4,12,25,0]
 };

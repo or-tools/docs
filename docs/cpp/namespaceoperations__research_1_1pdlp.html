@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -1735,7 +1735,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Finds an approximately optimal scaling factor for the solution of the trust region subproblem, which can be passed on to <span class="tt">ProjectedCoordinate()</span> to find an approximately optimal solution to the trust region subproblem. The value returned is guaranteed to be within <span class="tt">solve_tol</span> * max(1, s*) of the optimal scaling s*. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001067">Todo</a></b></dt><dd>(user): figure out what accuracy is useful to callers and redo the stopping criterion accordingly. </dd></dl>
+<p>Finds an approximately optimal scaling factor for the solution of the trust region subproblem, which can be passed on to <span class="tt">ProjectedCoordinate()</span> to find an approximately optimal solution to the trust region subproblem. The value returned is guaranteed to be within <span class="tt">solve_tol</span> * max(1, s*) of the optimal scaling s*. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001068">Todo</a></b></dt><dd>(user): figure out what accuracy is useful to callers and redo the stopping criterion accordingly. </dd></dl>
 <p>Determine a search interval using monotonicity of the squared norm of the candidate solution with respect to the scaling factor.</p>
 <p>Invariant: <span class="tt">scaling_factor_upper_bound &gt;= scaling_factor_lower_bound</span>.</p>
 <p>Norm is monotonically non-increasing as a function of scaling_factor.</p>
@@ -2522,7 +2522,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001064">Todo</a></b></dt><dd>(user): Investigate whether it is more efficient to use .cwiseMax() + .cwiseMin() with unaryExpr(s) that map upper_bound_shard and lower_bound_shard to appropriate values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001065">Todo</a></b></dt><dd>(user): Investigate whether it is more efficient to use .cwiseMax() + .cwiseMin() with unaryExpr(s) that map upper_bound_shard and lower_bound_shard to appropriate values. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sharded__optimization__utils_8cc_source.html#l00749">749</a> of file <a class="el" href="sharded__optimization__utils_8cc_source.html">sharded_optimization_utils.cc</a>.</p>
 
@@ -2728,7 +2728,7 @@ template&lt;typename <a class="el" href="classoperations__research_1_1pdlp_1_1Di
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001062">Todo</a></b></dt><dd>(user): Update internal helper functions to use references instead of pointers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001063">Todo</a></b></dt><dd>(user): Update internal helper functions to use references instead of pointers. </dd></dl>
 <p>Reads a quadratic program, determining the type based on the filename's suffix: *.mps, *.mps.gz, *.mps.bz2 -&gt; <span class="tt">ReadMpsLinearProgramOrDie</span> *.pb, *.textproto, *.json, *.json.gz -&gt; <span class="tt">ReadMPModelProtoFileOrDie</span> otherwise CHECK-fails. </p>
 
 <p class="definition">Definition at line <a class="el" href="quadratic__program__io_8cc_source.html#l00052">52</a> of file <a class="el" href="quadratic__program__io_8cc_source.html">quadratic_program_io.cc</a>.</p>

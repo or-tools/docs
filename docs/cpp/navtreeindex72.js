@@ -1,5 +1,11 @@
 var NAVTREEINDEX72 =
 {
+"classoperations__research_1_1math__opt_1_1Model.html#a250489c00340b559438b12182102bc34":[3,0,8,8,138,127],
+"classoperations__research_1_1math__opt_1_1Model.html#a250489c00340b559438b12182102bc34":[4,0,4,7,138,127],
+"classoperations__research_1_1math__opt_1_1Model.html#a2584830d8bc91de24387c9e1dce489ed":[3,0,8,8,138,23],
+"classoperations__research_1_1math__opt_1_1Model.html#a2584830d8bc91de24387c9e1dce489ed":[4,0,4,7,138,23],
+"classoperations__research_1_1math__opt_1_1Model.html#a28cec397bcea11c4117bb18bf14cc0b9":[3,0,8,8,138,108],
+"classoperations__research_1_1math__opt_1_1Model.html#a28cec397bcea11c4117bb18bf14cc0b9":[4,0,4,7,138,108],
 "classoperations__research_1_1math__opt_1_1Model.html#a29bd8e5e8b2b6c3199c2d8d27f83ec73":[3,0,8,8,138,64],
 "classoperations__research_1_1math__opt_1_1Model.html#a29bd8e5e8b2b6c3199c2d8d27f83ec73":[4,0,4,7,138,64],
 "classoperations__research_1_1math__opt_1_1Model.html#a2a2f1711c9808878c6ea3c9cf2eb9757":[3,0,8,8,138,24],
@@ -243,11 +249,5 @@ var NAVTREEINDEX72 =
 "classoperations__research_1_1math__opt_1_1Model.html#ae6739dceda1b1d198660e8d78f2094fa":[3,0,8,8,138,111],
 "classoperations__research_1_1math__opt_1_1Model.html#ae6739dceda1b1d198660e8d78f2094fa":[4,0,4,7,138,111],
 "classoperations__research_1_1math__opt_1_1Model.html#ae90b7b09ffa01eb9da0f088c1ad707cf":[3,0,8,8,138,69],
-"classoperations__research_1_1math__opt_1_1Model.html#ae90b7b09ffa01eb9da0f088c1ad707cf":[4,0,4,7,138,69],
-"classoperations__research_1_1math__opt_1_1Model.html#ae98b995c999efff98630cdce87f3e57c":[3,0,8,8,138,159],
-"classoperations__research_1_1math__opt_1_1Model.html#ae98b995c999efff98630cdce87f3e57c":[4,0,4,7,138,159],
-"classoperations__research_1_1math__opt_1_1Model.html#aeaa280954cca28aef823260198299222":[3,0,8,8,138,3],
-"classoperations__research_1_1math__opt_1_1Model.html#aeaa280954cca28aef823260198299222":[4,0,4,7,138,3],
-"classoperations__research_1_1math__opt_1_1Model.html#aebdab762f9915d598b6a8a601d2ba09c":[3,0,8,8,138,103],
-"classoperations__research_1_1math__opt_1_1Model.html#aebdab762f9915d598b6a8a601d2ba09c":[4,0,4,7,138,103]
+"classoperations__research_1_1math__opt_1_1Model.html#ae90b7b09ffa01eb9da0f088c1ad707cf":[4,0,4,7,138,69]
 };

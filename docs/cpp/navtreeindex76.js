@@ -1,5 +1,11 @@
 var NAVTREEINDEX76 =
 {
+"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aff7ff9b61bd01ddca9e123f2a0c934bb":[3,0,8,8,202,6],
+"classoperations__research_1_1math__opt_1_1Sos2Constraint.html#aff7ff9b61bd01ddca9e123f2a0c934bb":[4,0,4,7,202,6],
+"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html":[3,0,8,8,203],
+"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html":[4,0,4,7,203],
+"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a08fdc7b4e313a5765bbac692f274551c":[3,0,8,8,203,0],
+"classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a08fdc7b4e313a5765bbac692f274551c":[4,0,4,7,203,0],
 "classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a1f7cb5ee3a26f7d4267a2a7b22c17f4c":[3,0,8,8,203,6],
 "classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a1f7cb5ee3a26f7d4267a2a7b22c17f4c":[4,0,4,7,203,6],
 "classoperations__research_1_1math__opt_1_1SparseCoefficientMap.html#a29bf2ba698e9f67c27fc1a3678c11d47":[3,0,8,8,203,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX76 =
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a12e295aeb3c9fff53116da7d4f89d805":[3,0,8,8,234,9],
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a12e295aeb3c9fff53116da7d4f89d805":[4,0,4,7,234,9],
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a21f252dc29b71ef371c428324685268f":[3,0,8,8,234,20],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a21f252dc29b71ef371c428324685268f":[4,0,4,7,234,20],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a3d98f3835ecb6eb6343c97866107dc66":[3,0,8,8,234,8],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a3d98f3835ecb6eb6343c97866107dc66":[4,0,4,7,234,8],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4555058b950f57a74e2503433ea02b30":[3,0,8,8,234,16],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4555058b950f57a74e2503433ea02b30":[4,0,4,7,234,16],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4ffdee7db8ade6d6ebf8f5cbc2968ff6":[3,0,8,8,234,11],
-"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4ffdee7db8ade6d6ebf8f5cbc2968ff6":[4,0,4,7,234,11]
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a21f252dc29b71ef371c428324685268f":[4,0,4,7,234,20]
 };

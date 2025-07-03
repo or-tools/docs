@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -162,7 +162,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Updates the underlying solver with latest model changes and runs the computation.</p>
 <p>Same as <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a82f10910447377d18d040d3c1a40ead4">Solve()</a> but compute the infeasible subsystem. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000921">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000922">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#ae584904080c16a484b633f9f8e3136a9">operations_research::math_opt::IncrementalSolver</a>.</p>
 
@@ -194,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#ac1ca3ce7e00f79b683b2632a76c81d1f">ComputeInfeasibleSubsystem()</a> but does not update the underlying solver with the latest changes to the model.</p>
 <p>This is an advanced API, most users should use <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#ac1ca3ce7e00f79b683b2632a76c81d1f">ComputeInfeasibleSubsystem()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000924">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000925">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a859ce27f658d994eba4ae03747e9a61a">operations_research::math_opt::IncrementalSolver</a>.</p>
 
@@ -280,7 +280,7 @@ Static Public Member Functions</h2></td></tr>
 <li>The result is generally accessible after mutating this, but some care is needed if variables or linear constraints are added or deleted.</li>
 </ul>
 <p>See <a class="el" href="callback_8h.html">callback.h</a> for documentation on arguments.callback and arguments.callback_registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000920">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000921">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a7acc343168813a3aededd590892599a8">operations_research::math_opt::IncrementalSolver</a>.</p>
 
@@ -343,7 +343,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a82f10910447377d18d040d3c1a40ead4">Solve()</a> but does not update the underlying solver with the latest changes to the model.</p>
 <p>This is an advanced API, most users should use <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a82f10910447377d18d040d3c1a40ead4">Solve()</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000923">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000924">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a274609a49df3de6de171ca62a47c34d7">operations_research::math_opt::IncrementalSolver</a>.</p>
 
@@ -377,7 +377,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This is an advanced API, most users should use <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a82f10910447377d18d040d3c1a40ead4">Solve()</a> above that does the update and before calling the solver. Calling this function is only useful for users that want to access to update data or users that need to use <a class="el" href="namespaceoperations__research_1_1math__opt.html#a23972a12b0adf4bd068b93ba6d3145b6">SolveWithoutUpdate()</a> (which should not be common).</p>
 <p>The returned value indicates if the update was possible or if the solver had to be recreated from scratch (which may happen when the solver does not support this specific update or any update at all). It also contains the attempted update data.</p>
 <p>A status error will be returned if the underlying solver has an internal error. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000922">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000923">Todo</a></b></dt><dd>: b/260337466 - Add permanent errors and concurrency protection. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html#a7e3d39e71529fe7568d6ac736d136d64">operations_research::math_opt::IncrementalSolver</a>.</p>
 

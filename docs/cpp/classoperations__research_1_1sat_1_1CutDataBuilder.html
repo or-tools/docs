@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <p>These function allow to merges entries corresponding to the same variable and complementation. That is (X - lb) and (ub - X) are NOT merged and kept as separate terms. Note that we currently only merge Booleans since this is the only case we need.</p>
 <p>Return num_merges.</p>
 <p>We only deal with coeff * Bool or coeff * (1 - Bool)</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001617">Todo</a></b></dt><dd>(user): Because of merges, we might have entry with a coefficient of zero than are not useful. Remove them? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001618">Todo</a></b></dt><dd>(user): Because of merges, we might have entry with a coefficient of zero than are not useful. Remove them? </dd></dl>
 <p>Fill the maps.</p>
 <p>Loop over the cut now. Note that we loop with indices as we might add new terms in the middle of the loop.</p>
 <p>We found a match, try to merge the map entry into the cut. </p><dl class="section note"><dt>Note</dt><dd>we don't waste time erasing this entry from the map since we should have no duplicates in the original cut.</dd></dl>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns false if we encounter an integer overflow. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001618">Todo</a></b></dt><dd>(user): Divide by gcd first to avoid possible overflow in the conversion? it is however unlikely given that our coeffs should be small. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001619">Todo</a></b></dt><dd>(user): Divide by gcd first to avoid possible overflow in the conversion? it is however unlikely given that our coeffs should be small. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00353">353</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 

@@ -83,8 +83,6 @@ var namespaceutil =
     [ "PathHasCycle", "namespaceutil.html#a34114d206959f75a472b167c806da2cb", null ],
     [ "PermissionDeniedErrorBuilder", "namespaceutil.html#ab85d86fd35e985c0fb4c4a200d72adda", null ],
     [ "Permute", "namespaceutil.html#a8c227a057c1ce9d46b1185abf77ad91e", null ],
-    [ "Permute", "namespaceutil.html#ac497881c4166bc694adc4bee62746118", null ],
-    [ "PermuteWithExplicitElementType", "namespaceutil.html#a6c08971b79823b898dceb552c91f3d0c", null ],
     [ "RemapGraph", "namespaceutil.html#a88c65bcf51a7c679ad0159e09ecfb3fc", null ],
     [ "RemoveCyclesFromPath", "namespaceutil.html#a06fa201576c927d92657e090fa86bfdb", null ],
     [ "RemoveSelfArcsAndDuplicateArcs", "namespaceutil.html#a8a06031908a024a50dbdddc394a22490", null ],

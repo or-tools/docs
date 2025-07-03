@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4197ed700ec0d8e28bf803823ebb5cff" id="r_a4197ed700ec0d8e28bf803823ebb5cff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4197ed700ec0d8e28bf803823ebb5cff">WatchAllLinearExpressions2</a> (int id)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002169">Todo</a></b></dt><dd>(user): Merge with <a class="el" href="classoperations__research_1_1sat_1_1BinaryRelationRepository.html">BinaryRelationRepository</a>. Note that this one provides different indexing though, so it could be kept separate. The <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression2.html">LinearExpression2</a> data structure is also slightly more efficient. </dd></dl>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002170">Todo</a></b></dt><dd>(user): Merge with <a class="el" href="classoperations__research_1_1sat_1_1BinaryRelationRepository.html">BinaryRelationRepository</a>. Note that this one provides different indexing though, so it could be kept separate. The <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression2.html">LinearExpression2</a> data structure is also slightly more efficient. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00591">591</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo</a></b></dt><dd>(user): If the trivial bound is better, its explanation is different... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002166">Todo</a></b></dt><dd>(user): If the trivial bound is better, its explanation is different... </dd></dl>
 <p>Starts by simple bounds.</p>
 <p>Add explanation if it is a trivial bound.</p>
 <p>None of the bound above are enough, try the affine one. Note that gcd * expr &lt;= ub, is the same as asking why expr &lt;= FloorRatio(ub, gcd).</p>
@@ -294,7 +294,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This mainly wraps <a class="el" href="classoperations__research_1_1sat_1_1BestBinaryRelationBounds.html">BestBinaryRelationBounds</a>, but in addition it checks the current LevelZero variable bounds to detect trivially true or false relation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002164">Todo</a></b></dt><dd>(user): Also push them to a global shared repository after remapping IntegerVariable to proto indices. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo</a></b></dt><dd>(user): Also push them to a global shared repository after remapping IntegerVariable to proto indices. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01614">1614</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 

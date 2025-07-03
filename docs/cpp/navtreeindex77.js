@@ -1,5 +1,11 @@
 var NAVTREEINDEX77 =
 {
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a3d98f3835ecb6eb6343c97866107dc66":[3,0,8,8,234,8],
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a3d98f3835ecb6eb6343c97866107dc66":[4,0,4,7,234,8],
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4555058b950f57a74e2503433ea02b30":[3,0,8,8,234,16],
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4555058b950f57a74e2503433ea02b30":[4,0,4,7,234,16],
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4ffdee7db8ade6d6ebf8f5cbc2968ff6":[3,0,8,8,234,11],
+"classoperations__research_1_1math__opt_1_1VariableStorage.html#a4ffdee7db8ade6d6ebf8f5cbc2968ff6":[4,0,4,7,234,11],
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a583b4bd201ad27e315b6efa7b0d136b9":[3,0,8,8,234,3],
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a583b4bd201ad27e315b6efa7b0d136b9":[4,0,4,7,234,3],
 "classoperations__research_1_1math__opt_1_1VariableStorage.html#a6a3c3636413ed81c95a94b5b5064ff0f":[3,0,8,8,234,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX77 =
 "classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#aa843ff3a664ecbaa032dfdb4f9eef62b":[3,0,8,8,1,4,3],
 "classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#aa843ff3a664ecbaa032dfdb4f9eef62b":[4,0,4,7,1,4,3],
 "classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#acb300c40d34b61e39c5f7c4aef0e1d99":[3,0,8,8,1,4,1],
-"classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#acb300c40d34b61e39c5f7c4aef0e1d99":[4,0,4,7,1,4,1],
-"classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#ae9c1cd4852e2b39a2bd085777b7abd3e":[3,0,8,8,1,4,2],
-"classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#ae9c1cd4852e2b39a2bd085777b7abd3e":[4,0,4,7,1,4,2],
-"classoperations__research_1_1math__opt_1_1detail_1_1SparseElementStorage.html":[3,0,8,8,1,6],
-"classoperations__research_1_1math__opt_1_1detail_1_1SparseElementStorage.html":[4,0,4,7,1,6],
-"classoperations__research_1_1math__opt_1_1detail_1_1SparseElementStorage.html#a10d089e9a598933d95500c6016590c0f":[3,0,8,8,1,6,1],
-"classoperations__research_1_1math__opt_1_1detail_1_1SparseElementStorage.html#a10d089e9a598933d95500c6016590c0f":[4,0,4,7,1,6,1]
+"classoperations__research_1_1math__opt_1_1detail_1_1SlicingSupport.html#acb300c40d34b61e39c5f7c4aef0e1d99":[4,0,4,7,1,4,1]
 };

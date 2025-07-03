@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -136,7 +136,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ValueType&gt;<br />
 class operations_research::sat::SharedSolutionRepository&lt; ValueType &gt;</div><p>Thread-safe. Keeps a set of n unique best solution found so far.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002476">Todo</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002478">Todo</a></b></dt><dd>(user): Maybe add some criteria to only keep solution with an objective really close to the best solution. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00061">61</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -422,7 +422,7 @@ template&lt;typename ValueType&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a random solution biased towards good solutions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002479">Todo</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002481">Todo</a></b></dt><dd>(user): Experiments on the best distribution. </dd></dl>
 <p>As long as we have solution with the best objective that haven't been explored too much, we select one uniformly. Otherwise, we select a solution from the pool uniformly.</p>
 <p>Note(user): Because of the increase of num_selected, this is dependent on the order of call. It should be fine for "determinism" because we do generate the task of a batch always in the same order.</p>
 <p>Select all the best solution with a low enough selection count.</p>
@@ -521,7 +521,7 @@ template&lt;typename ValueType&gt; </div>
 <p>Updates the current pool of solution with the one recently added. Note that we use a stable ordering of solutions, so the final pool will be independent on the order of the calls to AddSolution() provided that the set of added solutions is the same.</p>
 <p>Works in O(num_solutions_to_keep_). </p>
 <p>We use a stable sort to keep the num_selected count for the already existing solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002480">Todo</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002482">Todo</a></b></dt><dd>(user): Introduce a notion of orthogonality to diversify the pool? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="synchronization_8h_source.html#l00905">905</a> of file <a class="el" href="synchronization_8h_source.html">synchronization.h</a>.</p>
 

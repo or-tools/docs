@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -174,8 +174,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001816">Todo</a></b></dt><dd>(user): We could go even further than just the GCD, and do more arithmetic to tighten the target bounds. See for instance a problem like ej.mps.gz that we don't solve easily, but has just 3 variables! the goal is to minimize X, given 31013 X - 41014 Y - 51015 Z = -31013 (all &gt;=0, Y and Z bounded with high values). I know some MIP solvers have a basic linear diophantine equation support. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001817">Todo</a></b></dt><dd>(user): Once the GCD is not 1, we could at any level make sure the objective is of the correct form. For now, this only happen in a few miplib problem that we close quickly, so I didn't add the extra code yet. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001817">Todo</a></b></dt><dd>(user): We could go even further than just the GCD, and do more arithmetic to tighten the target bounds. See for instance a problem like ej.mps.gz that we don't solve easily, but has just 3 variables! the goal is to minimize X, given 31013 X - 41014 Y - 51015 Z = -31013 (all &gt;=0, Y and Z bounded with high values). I know some MIP solvers have a basic linear diophantine equation support. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001818">Todo</a></b></dt><dd>(user): Once the GCD is not 1, we could at any level make sure the objective is of the correct form. For now, this only happen in a few miplib problem that we close quickly, so I didn't add the extra code yet. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

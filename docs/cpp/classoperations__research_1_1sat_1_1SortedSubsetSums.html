@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <p>Computes all the possible subset sums in [0, maximum_sum]. Returns them sorted. All elements must be non-negative.</p>
 <p>If abort_if_maximum_reached is true, we might not return all possible subset sums as we stop the exploration as soon as a subset sum is equal to maximum_sum. When this happen, we guarantee that the last element returned will be maximum_sum though.</p>
 <p>Worst case complexity is in O(2^num_elements) if maximum_sum is large or O(maximum_sum * num_elements) if that is lower.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002515">Todo</a></b></dt><dd>(user): We could optimize even further the case of a small maximum_sum. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002517">Todo</a></b></dt><dd>(user): We could optimize even further the case of a small maximum_sum. </dd></dl>
 <p>Optimization: If all the sums in [0, maximum_sum] are already reachable we can abort early since no new reachable sum wil be discovered.</p>
 <p>Early abort when asked if we already reached maximum_sum.</p>
 <p>We merge sort sums_ and sums_ + e into new_sums_.</p>

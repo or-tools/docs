@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -232,7 +232,7 @@ Integer Linear Programs", 2023. </p>
 <p>These are candidate for relaxation. The score will be filled later. Active variable not kept in candidate will be added to other_variables.</p>
 <p>Our extra relaxation constraint will be: sums of distance to the respective bound smaller than a constant that depends on the difficulty.</p>
 <p>For the "easy" part of the extra constraint, we either look only at the binary variables. Or we extend that to all variables at their bound.</p>
-<p>We copy the model early to have access to reduced domains. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001231">Todo</a></b></dt><dd>(user): that might not be the most efficient if we abort just below. </dd></dl>
+<p>We copy the model early to have access to reduced domains. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001232">Todo</a></b></dt><dd>(user): that might not be the most efficient if we abort just below. </dd></dl>
 <p>Loop over active variables.</p>
 <p>With this option, we will create a bunch of Boolean variable and add the constraints : "bool==0 =&gt; var == value_in_base_solution".</p>
 <p>Add it to the distance constraint.</p>
@@ -241,22 +241,22 @@ Integer Linear Programs", 2023. </p>
 <p>Parameters to enable solving the LP only.</p>
 <p>Parameters to attempt to speed up solve.</p>
 <p>Parameters to limit time spent in the solve. The max number of iterations is relaxed from the default since we rely more on deterministic time.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001232">Todo</a></b></dt><dd>(user): This is a lot longer than a normal LNS, so it might cause issue with the current round-robbin selection based on number of calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001233">Todo</a></b></dt><dd>(user): This is a lot longer than a normal LNS, so it might cause issue with the current round-robbin selection based on number of calls. </dd></dl>
 <p>Tricky: we want the inner_objective_lower_bound in the response to be in term of the current problem, not the user facing one.</p>
 <p>Dump?</p>
 <p>Solve.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001233">Todo</a></b></dt><dd>(user): Shall we pass the objective upper bound so we have more chance to fix variable via reduced cost fixing.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001234">Todo</a></b></dt><dd>(user): Does the current solution can provide a warm-start for the LP? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001234">Todo</a></b></dt><dd>(user): Shall we pass the objective upper bound so we have more chance to fix variable via reduced cost fixing.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001235">Todo</a></b></dt><dd>(user): Does the current solution can provide a warm-start for the LP? </dd></dl>
 <p>Update dtime.</p>
 <p>Analyze the status of this first "solve".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001235">Todo</a></b></dt><dd>(user): If we run into this case, it also means that every other LNS that tries to more variable than here will never be able to improve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001236">Todo</a></b></dt><dd>(user): If we run into this case, it also means that every other LNS that tries to more variable than here will never be able to improve. </dd></dl>
 <p>In this case, we cannot improve on the base solution. We could try to find a different solution for diversity, but we do have other neighborhood for that. Lets abort early.</p>
 <p>Compute differences between LP solution and initial solution, with a small random noise for tie breaking.</p>
 <p>We likely didn't solve the LP at all, so lets not use this neighborhood.</p>
 <p>Take the target_size variables with largest differences.</p>
 <p>We will also relax all "other variables". We assume their values are likely tied to the other ones.</p>
 <p>Lets the name reflect the type.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001236">Todo</a></b></dt><dd>(user): Unfortunately like this we have a common difficulty for all variant, we should probably fix that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001237">Todo</a></b></dt><dd>(user): Unfortunately like this we have a common difficulty for all variant, we should probably fix that. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a4946d872c633ca65464ae8bc9aa30aa4">operations_research::sat::NeighborhoodGenerator</a>.</p>
 

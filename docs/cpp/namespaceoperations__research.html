@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -241,7 +241,6 @@ Classes</h2></td></tr>
 <tr class="memitem:DynamicPermutation" id="r_DynamicPermutation"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1DynamicPermutation.html">DynamicPermutation</a></td></tr>
 <tr class="memitem:ElementDegreeSolutionGenerator" id="r_ElementDegreeSolutionGenerator"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ElementDegreeSolutionGenerator.html">ElementDegreeSolutionGenerator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The consistency level is maintained up to kFreeAndUncovered.  <a href="classoperations__research_1_1ElementDegreeSolutionGenerator.html#details">More...</a><br /></td></tr>
-<tr class="memitem:ElementGetter" id="r_ElementGetter"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ElementGetter.html">ElementGetter</a></td></tr>
 <tr class="memitem:ElementIterator" id="r_ElementIterator"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ElementIterator.html">ElementIterator</a></td></tr>
 <tr class="memitem:EnabledScopedTimeDistributionUpdater" id="r_EnabledScopedTimeDistributionUpdater"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EnabledScopedTimeDistributionUpdater.html">EnabledScopedTimeDistributionUpdater</a></td></tr>
 <tr class="memitem:EnabledScopedTimeStats" id="r_EnabledScopedTimeStats"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1EnabledScopedTimeStats.html">EnabledScopedTimeStats</a></td></tr>
@@ -1185,8 +1184,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4b0c5e54244de6740d3bc14e5fdb3ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a linear constraint or variable basis status (GLP_BS,...).  <br /></td></tr>
 <tr class="memitem:aece68bd0ab9af7003f2bebdffb2c2dea" id="r_aece68bd0ab9af7003f2bebdffb2c2dea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aece68bd0ab9af7003f2bebdffb2c2dea">ReturnCodeString</a> (const int rc)</td></tr>
 <tr class="memitem:a8e932b0a0a4151072bb84dc1a67a6d88" id="r_a8e932b0a0a4151072bb84dc1a67a6d88"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e932b0a0a4151072bb84dc1a67a6d88">TruncateAndQuoteGLPKName</a> (const std::string_view original_name)</td></tr>
-<tr class="memitem:af94e999e6f803fa039fde7529067f29c" id="r_af94e999e6f803fa039fde7529067f29c"><td class="memTemplParams" colspan="2">template&lt;typename DistanceType&gt; </td></tr>
-<tr class="memitem:af94e999e6f803fa039fde7529067f29c template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; DistanceType, std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94e999e6f803fa039fde7529067f29c">SimpleOneToOneShortestPath</a> (int source, int destination, absl::Span&lt; const int &gt; tails, absl::Span&lt; const int &gt; heads, absl::Span&lt; const DistanceType &gt; lengths, DistanceType limit=std::numeric_limits&lt; DistanceType &gt;::max())</td></tr>
+<tr class="memitem:aa65c91205765186852e0ca9a0b35245a" id="r_aa65c91205765186852e0ca9a0b35245a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a>, typename DistanceType&gt; </td></tr>
+<tr class="memitem:aa65c91205765186852e0ca9a0b35245a template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; DistanceType, std::vector&lt; <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa65c91205765186852e0ca9a0b35245a">SimpleOneToOneShortestPath</a> (<a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> source, <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> destination, absl::Span&lt; const <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; tails, absl::Span&lt; const <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; heads, absl::Span&lt; const DistanceType &gt; lengths, DistanceType limit=std::numeric_limits&lt; DistanceType &gt;::max())</td></tr>
 <tr class="memitem:acc1ef62538cd0faf409f9900fd6e2ae8" id="r_acc1ef62538cd0faf409f9900fd6e2ae8"><td class="memTemplParams" colspan="2">template&lt;typename WeightFunctionType, typename GraphType&gt; </td></tr>
 <tr class="memitem:acc1ef62538cd0faf409f9900fd6e2ae8 template"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::vector&lt; std::pair&lt; typename GraphType::NodeIndex, typename GraphType::NodeIndex &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1ef62538cd0faf409f9900fd6e2ae8">ComputeMinimumWeightMatching</a> (const GraphType &amp;graph, const WeightFunctionType &amp;weight)</td></tr>
 <tr class="memdesc:acc1ef62538cd0faf409f9900fd6e2ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a minimum weight perfect matching on an undirected graph.  <br /></td></tr>
@@ -2226,10 +2225,10 @@ undirected graph", CACM 16 (9): 575-577, 1973. <a href="http://dl.acm.org/citati
 Problems", Algorithmica 11(4): 353-359 (1994). and J. Cheriyan and K. Mehlhorn, "An analysis of the highest-level selection rule
 in the preflow-push max-flow algorithm", Information processing letters, 69(5):239-242 (1999). <a href="http://www.math.uwaterloo.ca/~jcheriya/PS_files/me3.0.ps">http://www.math.uwaterloo.ca/~jcheriya/PS_files/me3.0.ps</a></p>
 <p>...that choosing the active node with the highest level yields a complexity of O(n^2 * sqrt(m)).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000639">Todo</a></b></dt><dd>(user): implement the above active node choice rule.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo</a></b></dt><dd>(user): implement the above active node choice rule.</dd></dl>
 <p>This has been validated experimentally in: R.K. Ahuja, M. Kodialam, A.K. Mishra, and J.B. Orlin, "Computational
 Investigations of Maximum Flow Algorithms", EJOR 97:509-542(1997). <a href="http://jorlin.scripts.mit.edu/docs/publications/58-comput%20investigations%20of.pdf">http://jorlin.scripts.mit.edu/docs/publications/58-comput%20investigations%20of.pdf</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000640">Todo</a></b></dt><dd>(user): an alternative would be to evaluate: A.V. Goldberg, "The Partial Augment-Relabel Algorithm for the Maximum Flow Problem.” In Proceedings of Algorithms ESA, LNCS 5193:466-477, Springer 2008. <a href="http://www.springerlink.com/index/5535k2j1mt646338.pdf">http://www.springerlink.com/index/5535k2j1mt646338.pdf</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000641">Todo</a></b></dt><dd>(user): an alternative would be to evaluate: A.V. Goldberg, "The Partial Augment-Relabel Algorithm for the Maximum Flow Problem.” In Proceedings of Algorithms ESA, LNCS 5193:466-477, Springer 2008. <a href="http://www.springerlink.com/index/5535k2j1mt646338.pdf">http://www.springerlink.com/index/5535k2j1mt646338.pdf</a></dd></dl>
 <p>An interesting general reference on network flows is: R. K. Ahuja, T. L. Magnanti, J. B. Orlin, "Network Flows: Theory, Algorithms,
 and Applications," Prentice Hall, 1993, ISBN: 978-0136175490, <a href="http://www.amazon.com/dp/013617549X">http://www.amazon.com/dp/013617549X</a></p>
 <p>Keywords: Push-relabel, max-flow, network, graph, Goldberg, Tarjan, Dinic, Dinitz.</p>
@@ -2244,7 +2243,7 @@ and Applications," Prentice Hall, 1993, ISBN: 978-0136175490, <a href="http://ww
 <p>The advantage of the Held and Karp formulation is that it enables:</p><ul>
 <li>to build the dynamic programming lattice layer by layer starting from the subsets with cardinality 1, and increasing the cardinality.</li>
 <li>to traverse the dynamic programming lattice using sequential memory accesses, making the algorithm cache-friendly, and faster, despite the large amount of computation needed to get the position when f(S, j) is stored.</li>
-<li><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000662">Todo</a></b></dt><dd>(user): implement pruning procedures on top of the Held-Karp algorithm.</dd></dl>
+<li><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000663">Todo</a></b></dt><dd>(user): implement pruning procedures on top of the Held-Karp algorithm.</dd></dl>
 </li>
 </ul>
 <p>The set S can be represented by an integer where bit i corresponds to element i in the set. In the following S denotes the integer corresponding to set S.</p>
@@ -2253,7 +2252,7 @@ and Applications," Prentice Hall, 1993, ISBN: 978-0136175490, <a href="http://ww
 <p>Keywords: Traveling Salesman, Hamiltonian Path, Dynamic Programming, Held, Karp.</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Algorithms to compute k-shortest paths. Currently, only Yen's algorithm is implemented.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000677">Todo</a></b></dt><dd>(user): implement Lawler's modification: <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.18.7.401">https://pubsonline.informs.org/doi/abs/10.1287/mnsc.18.7.401</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000678">Todo</a></b></dt><dd>(user): implement Lawler's modification: <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.18.7.401">https://pubsonline.informs.org/doi/abs/10.1287/mnsc.18.7.401</a></dd></dl>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Algo.  </th><th class="markdownTableHeadNone">Neg. weights  </th><th class="markdownTableHeadNone">Neg.-weight loops  </th><th class="markdownTableHeadNone"><a class="el" href="#acf9cb12e488ad2ace33c313f2f2cc220" title="Type of graph to use.">Graph</a> type  </th><th class="markdownTableHeadNone">Loopless paths  </th></tr>
@@ -2296,7 +2295,7 @@ Algorithm," Journal of Algorithms, (1997) 22:1-29 <a href="http://citeseerx.ist.
 <p>A.V. Goldberg and M. Kharitonov, "On Implementing Scaling Push-Relabel
 Algorithms for the Minimum-Cost Flow Problem", Network flows and matching: First DIMACS implementation challenge, DIMACS Series in Discrete Mathematics and Theoretical Computer Science, (1993) 12:157-198. <a href="ftp://dimacs.rutgers.edu/pub/netflow/submit/papers/Goldberg-mincost/scalmin.ps">ftp://dimacs.rutgers.edu/pub/netflow/submit/papers/Goldberg-mincost/scalmin.ps</a> and in: ﻿U. Bunnagel, B. Korte, and J. Vygen. “Efficient implementation of the Goldberg-Tarjan minimum-cost flow algorithm.” Optimization Methods and Software (1998) vol. 10, no. 2:157-174. <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.84.9897">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.84.9897</a></p>
 <p>We have tried as much as possible in this implementation to keep the notations and namings of the papers cited above, except for 'demand' or 'balance' which have been replaced by 'supply', with the according sign changes to better accommodate with the API of the rest of our tools. A demand is denoted by a negative supply.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000695">Todo</a></b></dt><dd>(user): See whether the following can bring any improvements on real-life problems. R.K. Ahuja, A.V. Goldberg, J.B. Orlin, and R.E. Tarjan, "Finding minimum-cost
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000696">Todo</a></b></dt><dd>(user): See whether the following can bring any improvements on real-life problems. R.K. Ahuja, A.V. Goldberg, J.B. Orlin, and R.E. Tarjan, "Finding minimum-cost
 flows by double scaling," Mathematical Programming, (1992) 53:243-266. <a href="http://www.springerlink.com/index/gu7404218u6kt166.pdf">http://www.springerlink.com/index/gu7404218u6kt166.pdf</a></dd></dl>
 <p>An interesting general reference on network flows is: R. K. Ahuja, T. L. Magnanti, J. B. Orlin, "Network Flows: Theory, Algorithms,
 and Applications," Prentice Hall, 1993, ISBN: 978-0136175490, <a href="http://www.amazon.com/dp/013617549X">http://www.amazon.com/dp/013617549X</a></p>
@@ -2309,7 +2308,7 @@ and Applications," Prentice Hall, 1993, ISBN: 978-0136175490, <a href="http://ww
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Implementation of the Blossom V min-cost perfect matching algorithm. The main source for the algo is the paper: "Blossom V: A new implementation
 of a minimum cost perfect matching algorithm", Vladimir Kolmogorov.</p>
 <p>The Algorithm is a primal-dual algorithm. It always maintains a dual-feasible solution. We recall some notations here, but see the paper for more details as it is well written.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000718">Todo</a></b></dt><dd>(user): This is a work in progress. The algo is not fully implemented yet. The initial version is closer to Blossom IV since we update the dual values for all trees at once with the same delta. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000719">Todo</a></b></dt><dd>(user): This is a work in progress. The algo is not fully implemented yet. The initial version is closer to Blossom IV since we update the dual values for all trees at once with the same delta. </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Find paths and compute path distances between nodes on a rooted tree.</p>
 <p>A tree is a connected undirected graph with no cycles. A rooted tree is a directed graph derived from a tree, where a node is designated as the root, and then all edges are directed towards the root.</p>
@@ -2329,10 +2328,10 @@ of a minimum cost perfect matching algorithm", Vladimir Kolmogorov.</p>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Additional nonlinear constraints not supported directly by SCIP.</p>
 <p>The primary purpose of this file is to support the nonlinear constraints of <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> proto API.</p>
 <p>WARNING(rander): as these constraints are not natively supported in SCIP, they will generally not be a single SCIP_CONS* created, but will typically result in multiple SCIP_CONS* and SCIP_VAR* being created. Direct access to these intermediate variables and constraints is currently not provided.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000743">Todo</a></b></dt><dd>(user): either implement with SCIP constraint handlers or use a solver independent implementation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000744">Todo</a></b></dt><dd>(user): either implement with SCIP constraint handlers or use a solver independent implementation. </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Interface to dedicated knapsack solvers covering multi-dimensional 0-1 knapsacks. Current solvers handle only integer coefficients so a scaling phase is performed before solving the problem. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000777">Todo</a></b></dt><dd>(user): handle timeouts, compute row and column statuses. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000783">Todo</a></b></dt><dd>(user): post c++ 14, instead use std::pair&lt;MPSolver::OptimizationProblemType, const absl::string_view&gt; once pair gets a constexpr constructor. </dd></dl>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Interface to dedicated knapsack solvers covering multi-dimensional 0-1 knapsacks. Current solvers handle only integer coefficients so a scaling phase is performed before solving the problem. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000778">Todo</a></b></dt><dd>(user): handle timeouts, compute row and column statuses. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000784">Todo</a></b></dt><dd>(user): post c++ 14, instead use std::pair&lt;MPSolver::OptimizationProblemType, const absl::string_view&gt; once pair gets a constexpr constructor. </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file provides a simplified C++ API for using callbacks with SCIP and <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>. It can be used directly by users, although in most cases, the mp_callback.h should be sufficient (in fact, SCIP's mp_callback.h implementation is built on top of this).</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -2418,7 +2417,7 @@ of a minimum cost perfect matching algorithm", Vladimir Kolmogorov.</p>
 <p>using <a class="el" href="structoperations__research_1_1math__opt_1_1CallbackData.html">operations_research::math_opt::CallbackData</a>; using <a class="el" href="structoperations__research_1_1math__opt_1_1CallbackRegistration.html">operations_research::math_opt::CallbackRegistration</a>; using <a class="el" href="structoperations__research_1_1math__opt_1_1CallbackResult.html" title="The value returned by the Callback function.">operations_research::math_opt::CallbackResult</a>; using <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">operations_research::math_opt::Model</a>; using ::operations_research::math_opt::SolveResult; using <a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">operations_research::math_opt::Solve</a>; using <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">operations_research::math_opt::Variable</a>; using <a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">operations_research::math_opt::VariableMap</a>;</p>
 <p><a class="el" href="classModel.html">Model</a> model; <a class="el" href="structVariable.html">Variable</a> x = model.AddBinaryVariable(); model.Maximize(x); CallbackRegistration cb_reg; cb_reg.events = { operations_research::math_opt::CALLBACK_EVENT_MIP_SOLUTION}; std::vector&lt;VariableMap&lt;double&gt;&gt; solutions; auto cb = [&amp;solutions](const CallbackData&amp; cb_data) { ///&lt; </p><dl class="section note"><dt>Note</dt><dd>this assumes the callback is always called from the same thread. ///&lt; Gurobi always does this, multi-threaded SCIP does not. solutions.push_back(<em>cb_data.solution); return CallbackResult(); }; absl::StatusOr&lt;SolveResult&gt; result = Solve( model, operations_research::math_opt::SOLVER_TYPE_GUROBI, /*parameters=</em>&zwj;/{}, /*model_parameters=*&zwj;/{}, cb_reb, cb);</dd></dl>
 <p>At the termination of the example, solutions will have {{x, 1.0}}, and possibly {{x, 0.0}} as well.</p>
-<p>If the callback argument to Solve() is not null, it will be invoked on the events specified by the callback_registration argument (and when the callback is null, callback_registration must not request any events or will CHECK fail). Some solvers do not support callbacks or certain events, in this case the callback is ignored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000910">Todo</a></b></dt><dd>(b/180617976): change this behavior.</dd></dl>
+<p>If the callback argument to Solve() is not null, it will be invoked on the events specified by the callback_registration argument (and when the callback is null, callback_registration must not request any events or will CHECK fail). Some solvers do not support callbacks or certain events, in this case the callback is ignored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000911">Todo</a></b></dt><dd>(b/180617976): change this behavior.</dd></dl>
 <p>Some solvers may call callback from multiple threads (SCIP will, Gurobi will not). You should either solve with one thread (see solver_parameters.threads), write a threadsafe callback, or consult the documentation of your underlying solver.</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. IWYU pragma: private, include "ortools/math_opt/cpp/math_opt.h" IWYU pragma: friend "ortools/math_opt/cpp/.*"</p>
@@ -2574,7 +2573,7 @@ code usually will only refer to those types.
 <li>lp_algorithm (IpParameterTest) test is just a no-crash test without supporting iteration counts in SolveStats.</li>
 <li>solution_limit (IpParameterTest) requires a hint.</li>
 </ul>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000946">Todo</a></b></dt><dd><p class="startdd">(b/180024054): add tests for:</p><ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000947">Todo</a></b></dt><dd><p class="startdd">(b/180024054): add tests for:</p><ul>
 <li>threads</li>
 <li>heuristics</li>
 <li>scaling</li>
@@ -2584,7 +2583,7 @@ code usually will only refer to those types.
 <p class="enddd">(b/272268188): test the interaction between cutoff and primal + dual infeasibility. </p>
 </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000951">Todo</a></b></dt><dd>(b/180024054): the following parameters are not tested:<ul>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000952">Todo</a></b></dt><dd>(b/180024054): the following parameters are not tested:<ul>
 <li>time_limit</li>
 <li>threads</li>
 <li>scaling</li>
@@ -2595,7 +2594,7 @@ code usually will only refer to those types.
 </ul>
 <dl class="section note"><dt>Note</dt><dd>cuts and heuristics do not apply for LP. enable_output is tested in <a class="el" href="generic__tests_8h.html">generic_tests.h</a>.</dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000955">Todo</a></b></dt><dd><p class="startdd">(user): These tests are incomplete in a few ways; see <a class="el" href="mip__tests_8cc.html">mip_tests.cc</a> </p>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000956">Todo</a></b></dt><dd><p class="startdd">(user): These tests are incomplete in a few ways; see <a class="el" href="mip__tests_8cc.html">mip_tests.cc</a> </p>
 <p class="enddd">(user): Expand tests so they check primal, dual and/or primal-dual infeasible cases as appropriate. </p>
 </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -2620,9 +2619,9 @@ code usually will only refer to those types.
 <p>For an optimization problem, our algorithm solves a sequence of decision problem using this file as an entry point. Note that some heuristics here still use the objective if there is one in order to orient the search towards good feasible solution though.</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file contains the entry point for our presolve/inprocessing code.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002352">Todo</a></b></dt><dd>(user): for now it is mainly presolve, but the idea is to call these function during the search so they should be as incremental as possible. That is avoid doing work that is not useful because nothing changed or exploring parts that were not done during the last round. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002353">Todo</a></b></dt><dd>(user): for now it is mainly presolve, but the idea is to call these function during the search so they should be as incremental as possible. That is avoid doing work that is not useful because nothing changed or exploring parts that were not done during the last round. </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file implements a SAT solver. see <a href="http://en.wikipedia.org/wiki/Boolean_satisfiability_problem">http://en.wikipedia.org/wiki/Boolean_satisfiability_problem</a> for more detail. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002398">Todo</a></b></dt><dd>(user): Expand. </dd></dl>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file implements a SAT solver. see <a href="http://en.wikipedia.org/wiki/Boolean_satisfiability_problem">http://en.wikipedia.org/wiki/Boolean_satisfiability_problem</a> for more detail. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002399">Todo</a></b></dt><dd>(user): Expand. </dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Implementation of a pure SAT presolver. This roughly follows the paper:</p>
 <p>"Effective Preprocessing in SAT through Variable and Clause Elimination", Niklas Een and Armin Biere, published in the SAT 2005 proceedings.</p>
@@ -2644,7 +2643,7 @@ code usually will only refer to those types.
 <li>its columns are such that M(i, j) = 1 iff the i-th element of E is present in S_j.</li>
 </ul>
 <p>We also use m to denote <span class="tt">E</span>, the number of elements, and n to denote <span class="tt">S</span>, the number of subsets. Finally, NNZ denotes the numbers of non-zeros, i.e. the sum of the cardinalities of all the subsets.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002593">Todo</a></b></dt><dd>(user): Add flags to:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002595">Todo</a></b></dt><dd>(user): Add flags to:<ul>
 <li>Choose problems by name or by size: filter_name, max_elements, max_subsets.</li>
 <li>Exclude problems by name: exclude_name.</li>
 <li>Choose which solution generators to run.</li>
@@ -2709,7 +2708,7 @@ code usually will only refer to those types.
 <p>For example, on ARM, only 4 instructions are needed, two of which are additions that can be executed in parallel.</p>
 <p>On x86_64, we're keeping the code with inline assembly for GCC as GCC does manage to compile the code with built-ins properly. On x86_64, the product of two 64-bit registers is a 128-bit integer stored in two 64-bit registers. It's the carry flag that is set when the result exceeds 64 bits, not the overflow flag. Since the built-in uses the overflow flag, we have to resort on the assembly-based version of the code.</p>
 <p>Sadly, MSVC does not support the built-ins nor does it support inline assembly. We have to rely on the generic, C++ only version of the code which is much slower.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002626">Todo</a></b></dt><dd><p class="startdd">(user): make this implementation the default everywhere. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002628">Todo</a></b></dt><dd><p class="startdd">(user): make this implementation the default everywhere. </p>
 <p class="enddd">(user): investigate the code generated by MSVC. </p>
 </dd></dl>
 <p>HACK(user): We spare significant time if we use an initializer here, because InlineVector&lt;1&gt; is able to recognize the fast path or "exactly one element". I was unable to obtain the same performance with any other recipe, I always had at least 1 more cycle. See BM_SingleIntervalDomainConstructor. Since the constructor takes very few cycles (most likely less than 10), that's quite significant.</p>
@@ -4124,7 +4123,7 @@ template&lt;class Iterator&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002594">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002596">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a26dca35934f962b75e29a1838197cc1caba2b45bdc11e2a4a6e86aab2ac693cbb" name="a26dca35934f962b75e29a1838197cc1caba2b45bdc11e2a4a6e86aab2ac693cbb"></a>EMPTY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a26dca35934f962b75e29a1838197cc1caec1a4d133535e7e70f7ff148ae65665e" name="a26dca35934f962b75e29a1838197cc1caec1a4d133535e7e70f7ff148ae65665e"></a>ORLIB&#160;</td><td class="fielddoc"></td></tr>
@@ -4814,7 +4813,7 @@ template&lt;typename ConstraintData&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>A note on overflow treatment. kint64min and kint64max are treated as infinity. Thus if the computation overflows, the result is always kint64m(ax/in).</p>
-<p>Note(user): this is actually wrong: when computing A-B, if A is kint64max and B is finite, then A-B won't be kint64max: overflows aren't sticky. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002627">Todo</a></b></dt><dd>(user): consider making some operations overflow-sticky, some others not, but make an explicit choice throughout. </dd></dl>
+<p>Note(user): this is actually wrong: when computing A-B, if A is kint64max and B is finite, then A-B won't be kint64max: overflows aren't sticky. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002629">Todo</a></b></dt><dd>(user): consider making some operations overflow-sticky, some others not, but make an explicit choice throughout. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="saturated__arithmetic_8h_source.html#l00122">122</a> of file <a class="el" href="saturated__arithmetic_8h_source.html">saturated_arithmetic.h</a>.</p>
 
@@ -5079,12 +5078,12 @@ template&lt;size_t alignment_bytes, typename Value&gt; </div>
 <li>INFEASIBLE_OR_UNBOUNDED if the presolve couldn't distinguish between these two statuses.</li>
 <li>ABNORMAL if an error occurred. </li>
 </ul>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000810">Todo</a></b></dt><dd>(user): General constraints are currently not supported. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000811">Todo</a></b></dt><dd>(user): General constraints are currently not supported. </dd></dl>
 <p>We need to copy the hint because LinearProgramToMPModelProto() loose it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000811">Todo</a></b></dt><dd>(user): Remove this back and forth conversion. We could convert the LinearProgram directly to a CpModelProto, or we could have a custom implementation of these presolve steps. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000812">Todo</a></b></dt><dd>(user): Remove this back and forth conversion. We could convert the LinearProgram directly to a CpModelProto, or we could have a custom implementation of these presolve steps. </dd></dl>
 <p>These presolve might change the problem size.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000812">Todo</a></b></dt><dd>(user): transform the hint instead of disabling presolve. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000813">Todo</a></b></dt><dd>(user): Usually it is good to run the ImpliedFreePreprocessor before this one. However this seems to cause problem on atm20-100.mps. Moreover, for the conversion, it is better to have tight bounds even if the bound propagator is supposed to undo what this presolve would have done. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000813">Todo</a></b></dt><dd>(user): transform the hint instead of disabling presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000814">Todo</a></b></dt><dd>(user): Usually it is good to run the ImpliedFreePreprocessor before this one. However this seems to cause problem on atm20-100.mps. Moreover, for the conversion, it is better to have tight bounds even if the bound propagator is supposed to undo what this presolve would have done. </dd></dl>
 <p>Finally, we make sure all domains contain zero.</p>
 <p>Restore the hint, note that none of the presolve steps we run here change the number of variables in the model.</p>
 
@@ -6099,7 +6098,7 @@ template&lt;class Point&gt; </div>
 
 <p>Bit operators used to manipulates bitsets. </p>
 <p>--&mdash; Bitset operators --&mdash; Bitset: array of uint32_t/uint64_t words Returns the bit number in the word computed by BitOffsetXX, corresponding to the bit at position pos in the bitset. </p><dl class="section note"><dt>Note</dt><dd>'&amp; 63' is faster than '% 64' </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002608">Todo</a></b></dt><dd>(user): rename BitPos and BitOffset to something more understandable. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002610">Todo</a></b></dt><dd>(user): rename BitPos and BitOffset to something more understandable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bitset_8h_source.html#l00333">333</a> of file <a class="el" href="bitset_8h_source.html">bitset.h</a>.</p>
 
@@ -6577,7 +6576,7 @@ template&lt;typename <a class="el" href="#acf9cb12e488ad2ace33c313f2f2cc220">Gra
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Implementation of Kruskal's mininumum spanning tree algorithm (c.f. <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm">https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</a>). Returns the index of the arcs appearing in the tree; will return a forest if the graph is disconnected. Nodes without any arcs will be ignored. Each arc of the graph is interpreted as an undirected arc. Complexity of the algorithm is O(E * log(E)) where E is the number of arcs in the graph. Memory usage is O(E * log(E)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000699">Todo</a></b></dt><dd>(user): Add a global Minimum Spanning Tree API automatically switching between Prim and Kruskal depending on problem size. </dd></dl>
+<p>Implementation of Kruskal's mininumum spanning tree algorithm (c.f. <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm">https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</a>). Returns the index of the arcs appearing in the tree; will return a forest if the graph is disconnected. Nodes without any arcs will be ignored. Each arc of the graph is interpreted as an undirected arc. Complexity of the algorithm is O(E * log(E)) where E is the number of arcs in the graph. Memory usage is O(E * log(E)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000700">Todo</a></b></dt><dd>(user): Add a global Minimum Spanning Tree API automatically switching between Prim and Kruskal depending on problem size. </dd></dl>
 <p>Version taking sorted graph arcs. Allows somewhat incremental recomputation of minimum spanning trees as most of the processing time is spent sorting arcs. Usage: ListGraph&lt;int, int&gt; graph(...); std::vector&lt;int&gt; sorted_arcs = ...; std::vector&lt;int&gt; mst = BuildKruskalMinimumSpanningTreeFromSortedArcs(
      graph, sorted_arcs); </p>
 
@@ -6979,7 +6978,7 @@ template&lt;typename <a class="el" href="#acf9cb12e488ad2ace33c313f2f2cc220">Gra
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02094">2094</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02095">2095</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -7218,7 +7217,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 <p>The generic algorithm computes a bound on the number of bits necessary to store the result. For this it uses the position of the most significant bits of each of the arguments. If the result needs at least 64 bits, then return a capped value. If the result needs at most 63 bits, then return the product. Otherwise, the result may use 63 or 64 bits: compute the product as a uint64_t, and cap it if necessary. </p>
 <p>Let MSB(x) denote the most significant bit of x. We have: MSB(x) + MSB(y) &lt;= MSB(x * y) &lt;= MSB(x) + MSB(y) + 1</p>
-<p>Catch a == 0 or b == 0 now, as MostSignificantBitPosition64(0) == 0. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002628">Todo</a></b></dt><dd>(user): avoid this by writing function Log2(a) with Log2(0) == -1. </dd></dl>
+<p>Catch a == 0 or b == 0 now, as MostSignificantBitPosition64(0) == 0. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002630">Todo</a></b></dt><dd>(user): avoid this by writing function Log2(a) with Log2(0) == -1. </dd></dl>
 <p>The corner case is when msb_sum == 62, i.e. at least 63 bits will be needed to store the product. The following product will never overflow on uint64_t, since msb_sum == 62.</p>
 <p>The overflow cases are captured by one of the following conditions: (cap &gt;= 0 &amp;&amp; u_prod &gt;= static_cast&lt;uint64_t&gt;(kint64max) or (cap &lt; 0 &amp;&amp; u_prod &gt;= static_cast&lt;uint64_t&gt;(kint64min)). These can be optimized as follows (and if the condition is false, it is safe to compute x * y.</p>
 
@@ -7369,7 +7368,7 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002629">Todo</a></b></dt><dd>(user): Use <a class="el" href="classoperations__research_1_1MathUtil.html#accab22ea7fbbe01e20d5416e4b67414a">MathUtil::CeilOfRatio</a> / FloorOfRatio instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002631">Todo</a></b></dt><dd>(user): Use <a class="el" href="classoperations__research_1_1MathUtil.html#accab22ea7fbbe01e20d5416e4b67414a">MathUtil::CeilOfRatio</a> / FloorOfRatio instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00106">106</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -7540,8 +7539,8 @@ template&lt;class GraphType&gt; </div>
 <p>Same as above, but clears the subset indices in focus. </p>
 <p>This is the vector we will return.</p>
 <p>Collect the sets which have at least one element whose coverage &gt; 1, even if those sets are not removable.</p>
-<p>Now intersect with focus: sampled_subsets = focus ⋂ impacted_subsets. NOTE(user): this might take too long. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002564">Todo</a></b></dt><dd>(user):find another algorithm if necessary. </dd></dl>
-<p>Actually <em>sample</em> sampled_subset. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002565">Todo</a></b></dt><dd>(user): find another algorithm if necessary. </dd></dl>
+<p>Now intersect with focus: sampled_subsets = focus ⋂ impacted_subsets. NOTE(user): this might take too long. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002566">Todo</a></b></dt><dd>(user):find another algorithm if necessary. </dd></dl>
+<p>Actually <em>sample</em> sampled_subset. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002567">Todo</a></b></dt><dd>(user): find another algorithm if necessary. </dd></dl>
 <p>Testing has shown that sorting sampled_subsets is not necessary. Now, un-select the subset in sampled_subsets.</p>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__heuristics_8cc_source.html#l00870">870</a> of file <a class="el" href="set__cover__heuristics_8cc_source.html">set_cover_heuristics.cc</a>.</p>
@@ -8079,7 +8078,7 @@ template&lt;typename WeightFunctionType, typename GraphType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Computes a minimum weight perfect matching on an undirected graph using a Mixed Integer Programming model. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000628">Todo</a></b></dt><dd>(user): Handle infeasible cases if this algorithm is used outside of Christofides. </dd></dl>
+<p>Computes a minimum weight perfect matching on an undirected graph using a Mixed Integer Programming model. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000629">Todo</a></b></dt><dd>(user): Handle infeasible cases if this algorithm is used outside of Christofides. </dd></dl>
 <p>The model is composed of Boolean decision variables to select matching arcs and constraints ensuring that each node appears in exactly one selected arc. The objective is to minimize the sum of the weights of selected arcs. It is assumed the graph is symmetrical.</p>
 <p>Creating arc-selection Boolean variable.</p>
 <p>Creating matching constraint: for all node i, sum(j) arc(i,j) + sum(j) arc(j,i) = 1</p>
@@ -8123,7 +8122,7 @@ template&lt;class GraphType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Computes shortest paths from node <span class="tt">source</span> to nodes in <span class="tt">destinations</span> using a binary heap-based Dijkstra algorithm. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000727">Todo</a></b></dt><dd>(user): Investigate alternate implementation which wouldn't use <a class="el" href="classAdjustablePriorityQueue.html">AdjustablePriorityQueue</a>. </dd></dl>
+<p>Computes shortest paths from node <span class="tt">source</span> to nodes in <span class="tt">destinations</span> using a binary heap-based Dijkstra algorithm. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000728">Todo</a></b></dt><dd>(user): Investigate alternate implementation which wouldn't use <a class="el" href="classAdjustablePriorityQueue.html">AdjustablePriorityQueue</a>. </dd></dl>
 <p>Marking destination node. This is an optimization stopping the search when all destinations have been reached.</p>
 <p>In this implementation the distance of a node to itself isn't necessarily 0. So we push successors of source in the queue instead of the source directly which will avoid marking the source.</p>
 
@@ -8440,7 +8439,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>See <a href="http://lpsolve.sourceforge.net/5.5/DIMACS_mcf.htm">http://lpsolve.sourceforge.net/5.5/DIMACS_mcf.htm</a> for the dimacs file format of a min cost flow problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000731">Todo</a></b></dt><dd>(user): This currently only works for min cost flow problem. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000732">Todo</a></b></dt><dd>(user): This currently only works for min cost flow problem. </dd></dl>
 <p>We need to compute the num_nodes from the nodes appearing in the arcs.</p>
 <p>Problem size and type.</p>
 <p>Nodes.</p>
@@ -8496,7 +8495,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Some SolveWithProto() returns a StatusOr&lt;MPModelResponse&gt;, this utility just convert bad absl::StatusOr to a proper error in MPModelResponse.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000805">Todo</a></b></dt><dd>(user): All SolveWithProto() should just fill the appropriate response instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000806">Todo</a></b></dt><dd>(user): All SolveWithProto() should just fill the appropriate response instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__solver_2proto__solver_2proto__utils_8h_source.html#l00037">37</a> of file <a class="el" href="linear__solver_2proto__solver_2proto__utils_8h_source.html">proto_utils.h</a>.</p>
 
@@ -9429,7 +9428,7 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Route plan displayer. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001070">Todo</a></b></dt><dd>(user): Move the display code to the routing library. </dd></dl>
+<p>Route plan displayer. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001071">Todo</a></b></dt><dd>(user): Move the display code to the routing library. </dd></dl>
 
 </div>
 </div>
@@ -10263,7 +10262,7 @@ template&lt;typename P&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000797">Todo</a></b></dt><dd>(user): Add a general FindFeasibilityErrorInSolution() and factor out the common code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000798">Todo</a></b></dt><dd>(user): Add a general FindFeasibilityErrorInSolution() and factor out the common code. </dd></dl>
 <p>Returns an empty string if the solution hint given in the model is a feasible solution. Otherwise, returns a description of the first reason for infeasibility.</p>
 <p>This function can be useful for debugging/checking that the given solution hint is feasible when it is expected to be the case. The feasibility is checked up to the given tolerance using the ::operations_research::IsLowerWithinTolerance() function. </p>
 <p>First, we validate the solution hint.</p>
@@ -10467,7 +10466,7 @@ template&lt;typename P&gt; </div>
 <li>It only uses factors of the form 2^n (i.e. ldexp(1.0, n)) for simplicity.</li>
 <li>The error will be zero in many practical instances. For example, if x contains only integers with low magnitude; or if x contains doubles whose exponents cover a small range.</li>
 <li><p class="startli">It chooses the factor as high as possible under the given constraints, as a result the numbers produced may be large. To balance this, we recommend to divide the scaled integers by their gcd() which will result in no loss of precision and will help in many practical cases.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002613">Todo</a></b></dt><dd>(user): incorporate the gcd computation here? The issue is that I am not sure if I just do factor /= gcd that round(x * factor) will be the same. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002615">Todo</a></b></dt><dd>(user): incorporate the gcd computation here? The issue is that I am not sure if I just do factor /= gcd that round(x * factor) will be the same. </dd></dl>
 </li>
 </ul>
 
@@ -10849,7 +10848,7 @@ template&lt;typename P&gt; </div>
 <p>If you need to change the solver parameters, please use the <a class="el" href="#a862a18f76f03c0dfff9db436a3b53f28">EncodeParametersAsString()</a> function to set the solver_specific_parameters field.</p>
 <p>The optional interrupt_solve can be used to interrupt the solve early. It must only be set to true, never reset to false. It is also used internally by the solver that will set it to true for its own internal logic. As a consequence the caller should ignore the stored value and should not use the same atomic for different concurrent calls.</p>
 <p>The optional logging_callback will be called when the GLOP parameter log_search_progress is set to true. Passing a callback will disable the default logging to INFO. Note though that by default the GLOP parameter log_to_stdout is true so even with a callback, the logs will appear on stdout too unless log_to_stdout is set to false. The enable_internal_solver_output in the request will act as the GLOP parameter log_search_progress. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000802">Todo</a></b></dt><dd>(user): We do not support all the parameters here. In particular the logs before the solver is called will not be appended to the response. Fix that, and remove code duplication for the logger config. One way should be to not touch/configure anything if the logger is already created while calling SolveCpModel() and call a common config function from here or from inside Solve()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000803">Todo</a></b></dt><dd>(user): We do not support all the parameters here. In particular the logs before the solver is called will not be appended to the response. Fix that, and remove code duplication for the logger config. One way should be to not touch/configure anything if the logger is already created while calling SolveCpModel() and call a common config function from here or from inside Solve()? </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> it now so that it can be overwritten by the solver specific parameters.</p>
 <p>See <a class="el" href="#a862a18f76f03c0dfff9db436a3b53f28">EncodeParametersAsString()</a> documentation.</p>
 <p><a class="el" href="classModel.html">Model</a> validation and delta handling.</p>
@@ -10917,7 +10916,7 @@ template&lt;typename P&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Note(user): <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> does not have the equivalent of INFEASIBLE_OR_UNBOUNDED however UNBOUNDED is almost never relevant in applications, so we decided to report this status as INFEASIBLE since it should almost always be the case. Historically, we where reporting ABNORMAL, but that was more confusing than helpful.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000763">Todo</a></b></dt><dd>(user): We could argue that it is infeasible to find the optimal of an unbounded problem. So it might just be simpler to completely get rid of the MpSolver::UNBOUNDED status that seems to never be used programmatically. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000764">Todo</a></b></dt><dd>(user): We could argue that it is infeasible to find the optimal of an unbounded problem. So it might just be simpler to completely get rid of the MpSolver::UNBOUNDED status that seems to never be used programmatically. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="glop__utils_8cc_source.html#l00018">18</a> of file <a class="el" href="glop__utils_8cc_source.html">glop_utils.cc</a>.</p>
 
@@ -11175,7 +11174,7 @@ template&lt;class <a class="el" href="#acf9cb12e488ad2ace33c313f2f2cc220">Graph<
       </table>
 </div><div class="memdoc">
 <p>Adds the constraint resultant = maximum(terms). Supports unbounded variables in terms. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000742">Todo</a></b></dt><dd>(user): it may be better to write this in terms of the disjuntive constraint, we need to support disjunctions in <a class="el" href="gscip_8h.html">gscip.h</a> to do this.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000743">Todo</a></b></dt><dd>(user): it may be better to write this in terms of the disjuntive constraint, we need to support disjunctions in <a class="el" href="gscip_8h.html">gscip.h</a> to do this.</dd></dl>
 <p>z_i in {0,1}, indicates if y = x_i</p>
 <p>x_i &lt;= y z_i =&gt; y &lt;= x_i \sum_i z_i == 1</p>
 <p>x_i &lt;= y</p>
@@ -11940,7 +11939,7 @@ template&lt;class T&gt; </div>
 <p>Hints.</p>
 <p><a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> names.</p>
 <p>Logging.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000804">Todo</a></b></dt><dd>(user): report feasible status. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000805">Todo</a></b></dt><dd>(user): report feasible status. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="highs__proto__solver_8cc_source.html#l00048">48</a> of file <a class="el" href="highs__proto__solver_8cc_source.html">highs_proto_solver.cc</a>.</p>
 
@@ -17269,7 +17268,7 @@ template&lt;bool swap_first&gt; </div>
 
 <p>Transform <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> basis status to XPRESS status. </p>
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01263">1263</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01264">1264</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -17368,7 +17367,7 @@ template&lt;typename GraphType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Implementations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000635">Todo</a></b></dt><dd>(b/332475804): If <span class="tt">ArcPathTo</span> and/or <span class="tt">NodePathTo</span> functions become bottlenecks: (1) have the class preallocate a buffer of size <span class="tt">num_nodes</span> (2) assign into an index rather than with push_back (3) return by absl::Span (or return a copy) with known size. </dd></dl>
+<p>Implementations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000636">Todo</a></b></dt><dd>(b/332475804): If <span class="tt">ArcPathTo</span> and/or <span class="tt">NodePathTo</span> functions become bottlenecks: (1) have the class preallocate a buffer of size <span class="tt">num_nodes</span> (2) assign into an index rather than with push_back (3) return by absl::Span (or return a copy) with known size. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00268">268</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
 
@@ -18088,7 +18087,7 @@ template&lt;class DistanceType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02170">2170</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02171">2171</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -18235,7 +18234,7 @@ template&lt;class P&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001048">Todo</a></b></dt><dd>(user): Move naming code to parser. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001049">Todo</a></b></dt><dd>(user): Move naming code to parser. </dd></dl>
 <p>Build optimization model.</p>
 
 <p class="definition">Definition at line <a class="el" href="vector__bin__packing__main_8cc_source.html#l00043">43</a> of file <a class="el" href="vector__bin__packing__main_8cc_source.html">vector_bin_packing_main.cc</a>.</p>
@@ -18256,7 +18255,7 @@ template&lt;class P&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002595">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002597">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__solve_8cc_source.html#l00168">168</a> of file <a class="el" href="set__cover__solve_8cc_source.html">set_cover_solve.cc</a>.</p>
 
@@ -19049,7 +19048,7 @@ template&lt;class Point, class Value&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Computes a rational approximation numerator/denominator for value x using a continued fraction algorithm. The absolute difference between the output fraction and the input "x" will not exceed "precision".</p>
-<p>Computes a rational approximation numerator/denominator for value x using a continued fraction algorithm. The absolute difference between the output fraction and the input "x" will not exceed "precision". </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002621">Todo</a></b></dt><dd>(user): make a parameterized template with integer and floating-point type parameters. </dd></dl>
+<p>Computes a rational approximation numerator/denominator for value x using a continued fraction algorithm. The absolute difference between the output fraction and the input "x" will not exceed "precision". </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002623">Todo</a></b></dt><dd>(user): make a parameterized template with integer and floating-point type parameters. </dd></dl>
 <p>All computations are made on long doubles to guarantee the maximum precision for the approximations. This way, the approximations when Fractional is float or double are as accurate as possible.</p>
 <p>If there was an overflow, we prefer returning a not-so-good approximation rather than something that is completely wrong.</p>
 
@@ -19225,7 +19224,7 @@ Itemset Mining Implementations". The file is given column-by-column, with each c
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002596">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002598">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__solve_8cc_source.html#l00189">189</a> of file <a class="el" href="set__cover__solve_8cc_source.html">set_cover_solve.cc</a>.</p>
 
@@ -19292,7 +19291,7 @@ template&lt;typename Proto&gt; </div>
 </div><div class="memdoc">
 
 <p>This is a row-based format where the elements are 1-indexed. </p>
-<p>Readers for set covering problems at <a href="http://people.brunel.ac.uk/~mastjjb/jeb/orlib/scpinfo.html">http://people.brunel.ac.uk/~mastjjb/jeb/orlib/scpinfo.html</a> All the instances have either the Beasley or the rail format. There is currently NO error handling, as the files are in a limited number. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002592">Todo</a></b></dt><dd>(user): add proper error handling. </dd></dl>
+<p>Readers for set covering problems at <a href="http://people.brunel.ac.uk/~mastjjb/jeb/orlib/scpinfo.html">http://people.brunel.ac.uk/~mastjjb/jeb/orlib/scpinfo.html</a> All the instances have either the Beasley or the rail format. There is currently NO error handling, as the files are in a limited number. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002594">Todo</a></b></dt><dd>(user): add proper error handling. </dd></dl>
 <p>Also, note that the indices in the files, when mentioned, start from 1, while <a class="el" href="classoperations__research_1_1SetCoverModel.html" title="Main class for describing a weighted set-covering problem.">SetCoverModel</a> starts from 0, The translation is done at read time. Reads a rail set cover problem create by Beasley and returns a <a class="el" href="classoperations__research_1_1SetCoverModel.html" title="Main class for describing a weighted set-covering problem.">SetCoverModel</a>. The format of all of these 80 data files is: number of rows (m), number of columns (n) for each column j, (j=1,...,n): the cost of the column c(j) for each row i (i=1,...,m): the number of columns which cover row i followed by a list of the columns which cover row i The columns and rows are 1-indexed with this file format. The translation to 0-indexing is done at read time. </p>
 <p>Correct the 1-indexing.</p>
 
@@ -19348,7 +19347,7 @@ template&lt;typename Proto&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002619">Todo</a></b></dt><dd>(user): Unit test cases when the function dies, or return (and test) a status instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002621">Todo</a></b></dt><dd>(user): Unit test cases when the function dies, or return (and test) a status instead. </dd></dl>
 <p>Reads a QAP problem from file in a format used in QAPLIB. See anjos.mgi.polymtl.ca/qaplib/ for more context. The format is "n W D", where n is the number of factories/locations, and W and D are weight and distance matrices, respectively. Both W and D are square matrices of size N x N. Each entry of the matrices must parse as double (we CHECK if it does). Multiple spaces, or '<br  />
 ' are disregarded. For example:</p>
 <p>2</p>
@@ -19448,7 +19447,7 @@ template&lt;typename Proto&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002597">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002599">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__solve_8cc_source.html#l00207">207</a> of file <a class="el" href="set__cover__solve_8cc_source.html">set_cover_solve.cc</a>.</p>
 
@@ -19908,11 +19907,11 @@ template&lt;typename <a class="el" href="#acf9cb12e488ad2ace33c313f2f2cc220">Gra
 <p>If any violated lazy constraint is found: returns kLazyConstraintAdded, else if any violated cutting plane is found: returns kCuttingPlaneAdded, else: returns kDidNotFind </p>
 <p>Two code paths, one for cuts, one for lazy constraints. Cuts first:</p>
 <p>NOTE(user): the coefficients don't come out sorted. I don't think this matters.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000817">Todo</a></b></dt><dd>(user): when infeasible is true, it better to have the scip return status be cutoff instead of cutting plane added (e.g. see cs/scip/src/scip/cons_knapsack.c). However, as we use SCIPaddRow(), it isn't clear this will even happen. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000818">Todo</a></b></dt><dd>(user): when infeasible is true, it better to have the scip return status be cutoff instead of cutting plane added (e.g. see cs/scip/src/scip/cons_knapsack.c). However, as we use SCIPaddRow(), it isn't clear this will even happen. </dd></dl>
 <p>NOTE(user): if we have already found a violated lazy constraint, we want to return kLazyConstraintAdded, not kCuttingPlaneAdded, see function contract.</p>
 <p>Lazy constraint path:</p>
 <p>NOTE(user): the coefficients don't come out sorted. I don't think this matters.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000818">Todo</a></b></dt><dd>(user): Maybe it is better to expose more of these options, potentially through user_suggested_constraint. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000819">Todo</a></b></dt><dd>(user): Maybe it is better to expose more of these options, potentially through user_suggested_constraint. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scip__callback_8cc_source.html#l00118">118</a> of file <a class="el" href="scip__callback_8cc_source.html">scip_callback.cc</a>.</p>
 
@@ -20080,7 +20079,7 @@ template&lt;class Proto&gt; </div>
 <p>The optional interrupt_solve can be used to interrupt the solve early. It must only be set to true, never reset to false. It is also used internally by the solver that will set it to true for its own internal logic. As a consequence the caller should ignore the stored value and should not use the same atomic for different concurrent calls.</p>
 <p>The optional logging_callback will be called when the SAT parameter log_search_progress is set to true. Passing a callback will disable the default logging to INFO. Note though that by default the SAT parameter log_to_stdout is true so even with a callback, the logs will appear on stdout too unless log_to_stdout is set to false. The enable_internal_solver_output in the request will act as the SAT parameter log_search_progress.</p>
 <p>The optional solution_callback will be called on each intermediate solution found by the solver. The solver may call solution_callback from multiple threads, but it will ensure that at most one thread executes solution_callback at a time. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000806">Todo</a></b></dt><dd>(user): We do not support all the parameters here. In particular the logs before the solver is called will not be appended to the response. Fix that, and remove code duplication for the logger config. One way should be to not touch/configure anything if the logger is already created while calling SolveCpModel() and call a common config function from here or from inside Solve()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000807">Todo</a></b></dt><dd>(user): We do not support all the parameters here. In particular the logs before the solver is called will not be appended to the response. Fix that, and remove code duplication for the logger config. One way should be to not touch/configure anything if the logger is already created while calling SolveCpModel() and call a common config function from here or from inside Solve()? </dd></dl>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> it now so that it can be overwritten by the solver specific parameters.</p>
 <p>See EncodeSatParametersAsString() documentation.</p>
 <p>Validate parameters.</p>
@@ -20095,7 +20094,7 @@ template&lt;class Proto&gt; </div>
 <p>Coefficients really close to zero can cause issues. We remove them right away according to our parameters.</p>
 <p>Note(user): the LP presolvers API is a bit weird and keep a reference to the given GlopParameters, so we need to make sure it outlive them.</p>
 <p>Continue with the solve.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000807">Todo</a></b></dt><dd>(user): We put the INFEASIBLE_OR_UNBOUNBED case here since there is no return status that exactly matches it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000808">Todo</a></b></dt><dd>(user): We put the INFEASIBLE_OR_UNBOUNBED case here since there is no return status that exactly matches it. </dd></dl>
 <p>This is needed for our benchmark scripts.</p>
 <p>We need to do that before the automatic detection of integers.</p>
 <p>Abort if one only want to solve pure-IP model and we don't have one.</p>
@@ -20106,9 +20105,9 @@ template&lt;class Proto&gt; </div>
 <p>Postsolve the bound shift and scaling.</p>
 <p>Solve.</p>
 <p>Convert the response.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000808">Todo</a></b></dt><dd>(user): Implement the row and column status. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000809">Todo</a></b></dt><dd>(user): Implement the row and column status. </dd></dl>
 <p>Copy and postsolve any additional solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000809">Todo</a></b></dt><dd>(user): Remove the postsolve hack of copying to a response. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000810">Todo</a></b></dt><dd>(user): Remove the postsolve hack of copying to a response. </dd></dl>
 <p>If the scaling factor is unset/zero, it is assumed to be one.</p>
 
 <p class="definition">Definition at line <a class="el" href="sat__proto__solver_8cc_source.html#l00160">160</a> of file <a class="el" href="sat__proto__solver_8cc_source.html">sat_proto_solver.cc</a>.</p>
@@ -20337,7 +20336,7 @@ template&lt;class Proto&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000834">Todo</a></b></dt><dd>detect xpress version </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000835">Todo</a></b></dt><dd>detect xpress version </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l00184">184</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
@@ -20453,33 +20452,33 @@ comment\n\nThreads=1\nPresolve  2,SolutionLimit=100" This function will process 
 
 </div>
 </div>
-<a id="af94e999e6f803fa039fde7529067f29c" name="af94e999e6f803fa039fde7529067f29c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af94e999e6f803fa039fde7529067f29c">&#9670;&#160;</a></span>SimpleOneToOneShortestPath()</h2>
+<a id="aa65c91205765186852e0ca9a0b35245a" name="aa65c91205765186852e0ca9a0b35245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65c91205765186852e0ca9a0b35245a">&#9670;&#160;</a></span>SimpleOneToOneShortestPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename DistanceType&gt; </div>
+template&lt;typename <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a>, typename DistanceType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; DistanceType, std::vector&lt; int &gt; &gt; operations_research::SimpleOneToOneShortestPath </td>
+          <td class="memname">std::pair&lt; DistanceType, std::vector&lt; <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt; &gt; operations_research::SimpleOneToOneShortestPath </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>destination</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>destination</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">absl::Span&lt; const int &gt;</td>          <td class="paramname"><span class="paramname"><em>tails</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>tails</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">absl::Span&lt; const int &gt;</td>          <td class="paramname"><span class="paramname"><em>heads</em></span>, </td>
+          <td class="paramtype">absl::Span&lt; const <a class="el" href="#a6601a0fc2256be2920bf368a2d9cc9a6">NodeIndex</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>heads</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -20509,7 +20508,7 @@ template&lt;typename DistanceType&gt; </div>
 <p>No path exists, or shortest_distance &gt;= limit.</p>
 <p>A path exist, returns it.</p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00635">635</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00672">672</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
@@ -20786,7 +20785,7 @@ template&lt;typename GraphType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000826">Todo</a></b></dt><dd>(b/311704821): this function should not delegate to <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>, also true for the functions below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000827">Todo</a></b></dt><dd>(b/311704821): this function should not delegate to <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>, also true for the functions below. </dd></dl>
 <p>Solves the model encoded by a MPModelRequest protocol buffer and returns the solution encoded as a MPSolutionResponse.</p>
 <p><a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy&lt;&gt;</a> accept both 'const MPModelRequest&amp;' and 'MPModelRequest&amp;&amp;' prefer to call this with the std::move() version if you no longer need the request. It will allows to reclaim the request memory as soon as it is converted to one of the solver internal data representation.</p>
 <p>If interrupter is non-null, one can call interrupter-&gt;Interrupt() to stop the solver earlier. Interruption is only supported if <a class="el" href="#a4b14cff3b9d73cf88e8ecc647e0abe2a">SolverTypeSupportsInterruption()</a> returns true for the requested solver. Passing a non-null pointer with any other solver type immediately returns an MPSOLVER_INCOMPATIBLE_OPTIONS error. </p>
@@ -20922,9 +20921,9 @@ template&lt;class Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000841">Todo</a></b></dt><dd>useless ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000842">Todo</a></b></dt><dd>useless ? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02099">2099</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02100">2100</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -20947,7 +20946,7 @@ template&lt;class Container&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02107">2107</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02108">2108</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -22072,7 +22071,7 @@ template&lt;class GraphType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002598">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002600">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__solve_8cc_source.html#l00221">221</a> of file <a class="el" href="set__cover__solve_8cc_source.html">set_cover_solve.cc</a>.</p>
 
@@ -22342,7 +22341,7 @@ template&lt;typename Proto&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002599">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002601">Todo</a></b></dt><dd>(user): Move this set_cover_reader </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="set__cover__solve_8cc_source.html#l00243">243</a> of file <a class="el" href="set__cover__solve_8cc_source.html">set_cover_solve.cc</a>.</p>
 
@@ -22363,7 +22362,7 @@ template&lt;typename Proto&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01710">1710</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01711">1711</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -22409,7 +22408,7 @@ template&lt;typename Proto&gt; </div>
 <p>This is the call-back called by XPRESS when it finds a new MIP solution NOTE(user): This function must have this exact API, because we are passing it to XPRESS as a callback. </p>
 <p>nothing to do</p>
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02219">2219</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l02220">2220</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -22485,7 +22484,7 @@ template&lt;typename Proto&gt; </div>
 <p>Transform XPRESS basis status to <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> basis status. </p>
 <p>Transform a XPRESS basis status to an <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> basis status. </p>
 
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01246">1246</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l01247">1247</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
 
 </div>
 </div>
@@ -22527,12 +22526,12 @@ template&lt;class GraphType&gt; </div>
 <p>Computes up to k shortest paths from the node <span class="tt">source</span> to the node <span class="tt">destination</span> in the given directed <span class="tt">graph</span>. The paths are guaranteed not to have loops.</p>
 <p>Hypotheses on input (which are not checked at runtime):</p><ul>
 <li>No multigraphs (more than one edge or a pair of nodes). The behavior is undefined otherwise.</li>
-<li>The <span class="tt">arc_lengths</span> are supposed to be nonnegative. The behavior is undefined otherwise. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000678">Todo</a></b></dt><dd>(user): relax to "no negative-weight cycles" (no Dijkstra).</dd></dl>
+<li>The <span class="tt">arc_lengths</span> are supposed to be nonnegative. The behavior is undefined otherwise. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000679">Todo</a></b></dt><dd>(user): relax to "no negative-weight cycles" (no Dijkstra).</dd></dl>
 </li>
 </ul>
 <p>This function uses Yen's algorithm, which guarantees to find the first k shortest paths in O(k n (m + n log n)) for n nodes and m edges. This algorithm is an implementation of the idea of detours.</p>
 <p>Yen, Jin Y. "Finding the k Shortest Loopless Paths in a Network". Management Science. 17 (11): 712–716, 1971. <a href="https://doi.org/10.1287%2Fmnsc.17.11.712">https://doi.org/10.1287%2Fmnsc.17.11.712</a></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000680">Todo</a></b></dt><dd>(user): Yen's algorithm can work with negative weights, but Dijkstra cannot.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000681">Todo</a></b></dt><dd>(user): Yen's algorithm can work with negative weights, but Dijkstra cannot.</dd></dl>
 <p>Yen, Jin Y. "Finding the k Shortest Loopless Paths in a Network". Management Science. 17 (11): 712–716, 1971. <a href="https://doi.org/10.1287%2Fmnsc.17.11.712">https://doi.org/10.1287%2Fmnsc.17.11.712</a></p>
 <p>Yen's notations:</p><ul>
 <li><a class="el" href="namespaceoperations__research_1_1Source.html">Source</a> node: (1).</li>
@@ -22556,7 +22555,7 @@ template&lt;class GraphType&gt; </div>
 <p>Generate variant paths.</p>
 <p>One path has already been generated (the shortest one). Only k-1 more paths need to be generated.</p>
 <p>Generate variant paths from the last shortest path.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000681">Todo</a></b></dt><dd>(user): think about adding parallelism for this loop to improve running times. This is not a priority as long as the algorithm is faster than the one in <span class="tt"><a class="el" href="shortest__paths_8h.html">shortest_paths.h</a></span>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000682">Todo</a></b></dt><dd>(user): think about adding parallelism for this loop to improve running times. This is not a priority as long as the algorithm is faster than the one in <span class="tt"><a class="el" href="shortest__paths_8h.html">shortest_paths.h</a></span>. </dd></dl>
 <p>Consider the part of the last shortest path up to and excluding the spur node. If spur_node_position == 0, this span only contains the source node.</p>
 <p>Simplify the graph to have different paths using infinite lengths: copy the weights, set some of them to infinity. There is no need to restore the graph to its previous state in this case.</p>
 <p>This trick is used in the original article (it's old-fashioned), but not in Wikipedia's pseudocode (it prefers mutating the graph, which is harder to do without copying the whole graph structure). Copying the whole graph might be quite expensive, especially as it is not useful for long (computing one shortest path).</p>
@@ -22570,7 +22569,7 @@ template&lt;class GraphType&gt; </div>
 <p>Ensure the assembled path is loopless, i.e. no node is repeated.</p>
 <p>Ensure the new path is not one of the previously known ones. This operation is required, as there are two sources of paths from the source to the destination:</p><ul>
 <li><span class="tt">paths</span>, the list of paths that is output by the function: there is no possible duplicate due to <span class="tt">arc_lengths_for_detour</span>, where edges that might generate a duplicate path are forbidden.</li>
-<li><span class="tt">variant_path_queue</span>, the list of potential paths, ordered by their cost, with no impact on <span class="tt">arc_lengths_for_detour</span>. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000682">Todo</a></b></dt><dd>(user): would it be faster to fingerprint the paths and filter by fingerprints? Due to the probability of error with fingerprints, still use this slow-but-exact code, but after filtering. </dd></dl>
+<li><span class="tt">variant_path_queue</span>, the list of potential paths, ordered by their cost, with no impact on <span class="tt">arc_lengths_for_detour</span>. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000683">Todo</a></b></dt><dd>(user): would it be faster to fingerprint the paths and filter by fingerprints? Due to the probability of error with fingerprints, still use this slow-but-exact code, but after filtering. </dd></dl>
 </li>
 </ul>
 <p>Add the shortest spur path ever found that has not yet been added. This can be a spur path that has just been generated or a previous one, if this iteration found no shorter one.</p>

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -415,7 +415,7 @@ $(function(){initNavTree('proto__converter_8cc_source.html','',''); });
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> MPGeneralConstraintProto&amp; general_constraint :</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>       model.general_constraint()) {</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keyword">const</span> std::string&amp; in_name = general_constraint.name();</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    absl::string_view in_name = general_constraint.name();</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">switch</span> (general_constraint.general_constraint_case()) {</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>      <span class="keywordflow">case</span> MPGeneralConstraintProto::kQuadraticConstraint: {</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        (*output.mutable_quadratic_constraints())</div>

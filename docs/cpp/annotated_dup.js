@@ -210,6 +210,9 @@ var annotated_dup =
       [ "internal", "namespaceoperations__research_1_1internal.html", [
         [ "AlignedBlock", "structoperations__research_1_1internal_1_1AlignedBlock.html", "structoperations__research_1_1internal_1_1AlignedBlock" ],
         [ "AllocatorWithAlignment", "structoperations__research_1_1internal_1_1AllocatorWithAlignment.html", "structoperations__research_1_1internal_1_1AllocatorWithAlignment" ],
+        [ "ElementGetter", "classoperations__research_1_1internal_1_1ElementGetter.html", "classoperations__research_1_1internal_1_1ElementGetter" ],
+        [ "is_strong_int", "structoperations__research_1_1internal_1_1is__strong__int.html", null ],
+        [ "is_strong_int<::util_intops::StrongInt< Tag, Native, Validator > >", "structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html", null ],
         [ "PathContainerImpl", "classoperations__research_1_1internal_1_1PathContainerImpl.html", null ],
         [ "PathWithPriority", "classoperations__research_1_1internal_1_1PathWithPriority.html", "classoperations__research_1_1internal_1_1PathWithPriority" ],
         [ "ReleaseSCIPMessageHandler", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler.html", "structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler" ],
@@ -995,7 +998,6 @@ var annotated_dup =
       [ "DynamicPartition", "classoperations__research_1_1DynamicPartition.html", "classoperations__research_1_1DynamicPartition" ],
       [ "DynamicPermutation", "classoperations__research_1_1DynamicPermutation.html", "classoperations__research_1_1DynamicPermutation" ],
       [ "ElementDegreeSolutionGenerator", "classoperations__research_1_1ElementDegreeSolutionGenerator.html", "classoperations__research_1_1ElementDegreeSolutionGenerator" ],
-      [ "ElementGetter", "classoperations__research_1_1ElementGetter.html", "classoperations__research_1_1ElementGetter" ],
       [ "ElementIterator", "classoperations__research_1_1ElementIterator.html", "classoperations__research_1_1ElementIterator" ],
       [ "EnabledScopedTimeDistributionUpdater", "classoperations__research_1_1EnabledScopedTimeDistributionUpdater.html", "classoperations__research_1_1EnabledScopedTimeDistributionUpdater" ],
       [ "EnabledScopedTimeStats", "classoperations__research_1_1EnabledScopedTimeStats.html", "classoperations__research_1_1EnabledScopedTimeStats" ],

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -267,11 +267,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Experimental. Find violated inequality of the form l1 * l2 &lt;= l3. And set-up data structure to query this efficiently.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001748">Todo</a></b></dt><dd>(user): limit work if too many ternary. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001749">Todo</a></b></dt><dd>(user): Maybe we shouldn't reconstruct this every time, but it is hard in case of multiple lps to make sure we don't use variables not in the lp otherwise. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001749">Todo</a></b></dt><dd>(user): limit work if too many ternary. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001750">Todo</a></b></dt><dd>(user): Maybe we shouldn't reconstruct this every time, but it is hard in case of multiple lps to make sure we don't use variables not in the lp otherwise. </dd></dl>
 <p>If we transform a linear constraint to sum positive_coeff * bool &lt;= rhs. We will list all interesting multiplicative candidate for each variable.</p>
 <p>If we have l1 + l2 + l3 &gt;= 1, then for all (i, j) pair we have !li * !lj &lt;= lk. We are looking for violation like this.</p>
-<p>Clear. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001750">Todo</a></b></dt><dd>(user): Just switch to memclear() when dense. </dd></dl>
+<p>Clear. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001751">Todo</a></b></dt><dd>(user): Just switch to memclear() when dense. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="implied__bounds_8cc_source.html#l00801">801</a> of file <a class="el" href="implied__bounds_8cc_source.html">implied_bounds.cc</a>.</p>
 
@@ -295,7 +295,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001759">Todo</a></b></dt><dd>(user): Implement! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001760">Todo</a></b></dt><dd>(user): Implement! </dd></dl>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001746">Todo</a></b></dt><dd>(user): As product are discovered, we could remove entries from our hash maps! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001747">Todo</a></b></dt><dd>(user): As product are discovered, we could remove entries from our hash maps! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="implied__bounds_8cc_source.html#l00580">580</a> of file <a class="el" href="implied__bounds_8cc_source.html">implied_bounds.cc</a>.</p>
 
@@ -375,9 +375,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>We also detect product of Boolean with IntegerVariable. After presolve, a product P = l * X should be encoded with: l =&gt; P = X not(l) =&gt; P = 0</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001758">Todo</a></b></dt><dd>(user): Generalize to a * X + b = l * (Y + c) since these are also easy to linearize if we see l * Y. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001759">Todo</a></b></dt><dd>(user): Generalize to a * X + b = l * (Y + c) since these are also easy to linearize if we see l * Y. </dd></dl>
 <p>We process both possibilities (product = x or product = y).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001747">Todo</a></b></dt><dd>(user): Linear scan can be bad if b =&gt; X = many other variables. Hopefully this will not be common. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001748">Todo</a></b></dt><dd>(user): Linear scan can be bad if b =&gt; X = many other variables. Hopefully this will not be common. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="implied__bounds_8cc_source.html#l00712">712</a> of file <a class="el" href="implied__bounds_8cc_source.html">implied_bounds.cc</a>.</p>
 
@@ -533,7 +533,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns an expression that is always lower or equal to the product a * b. This use the exact <a class="el" href="#a3a17220935c42077613be222734fef7a">LinearizeProduct()</a> if <a class="el" href="#a6b07e0e3ed497813a2bc942e7b45520f">ProductIsLinearizable()</a> otherwise it uses the simple McCormick lower bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001760">Todo</a></b></dt><dd>(user): Implement! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001761">Todo</a></b></dt><dd>(user): Implement! </dd></dl>
 
 </div>
 </div>

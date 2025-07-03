@@ -1,5 +1,11 @@
 var NAVTREEINDEX84 =
 {
+"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a8d5a5e9f809d97c6dc3cbc5d948f4a51":[3,0,8,13,25,1],
+"classoperations__research_1_1sat_1_1BoundedVariableElimination.html#a8d5a5e9f809d97c6dc3cbc5d948f4a51":[4,0,4,12,25,1],
+"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html":[3,0,8,13,29],
+"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html":[4,0,4,12,29],
+"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a3da1cf349d7c5b9ddec2e042b38f040b":[3,0,8,13,29,4],
+"classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a3da1cf349d7c5b9ddec2e042b38f040b":[4,0,4,12,29,4],
 "classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a4ec506d9731387928df262a070796f04":[3,0,8,13,29,5],
 "classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a4ec506d9731387928df262a070796f04":[4,0,4,12,29,5],
 "classoperations__research_1_1sat_1_1CanonicalBooleanLinearProblem.html#a5d6c0dd574b52144889a16e41ff868ba":[3,0,8,13,29,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX84 =
 "classoperations__research_1_1sat_1_1CompiledConstraint.html#a8d7e017a2978c7af59e8798784a61734":[3,0,8,13,44,3],
 "classoperations__research_1_1sat_1_1CompiledConstraint.html#a8d7e017a2978c7af59e8798784a61734":[4,0,4,12,44,3],
 "classoperations__research_1_1sat_1_1CompiledConstraint.html#ad46bccb0d0887a3ecea91e15acbfc9b6":[3,0,8,13,44,0],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#ad46bccb0d0887a3ecea91e15acbfc9b6":[4,0,4,12,44,0],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#ad7db9c952f371ccb624930572f815dce":[3,0,8,13,44,7],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#ad7db9c952f371ccb624930572f815dce":[4,0,4,12,44,7],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#adca0484026ae1350680ace759c967936":[3,0,8,13,44,1],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#adca0484026ae1350680ace759c967936":[4,0,4,12,44,1],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#aef3191eee725c38acb8a630d126298a6":[3,0,8,13,44,8],
-"classoperations__research_1_1sat_1_1CompiledConstraint.html#aef3191eee725c38acb8a630d126298a6":[4,0,4,12,44,8]
+"classoperations__research_1_1sat_1_1CompiledConstraint.html#ad46bccb0d0887a3ecea91e15acbfc9b6":[4,0,4,12,44,0]
 };

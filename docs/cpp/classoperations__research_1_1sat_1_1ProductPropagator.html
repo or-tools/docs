@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -238,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <p>In the most common case, we use better reasons even though the code below would propagate the same.</p>
 <p>This was done by CanonicalizeCases().</p>
 <p>Lets propagate on p_ first, the max/min is given by one of: max_a * max_b, max_a * min_b, min_a * max_b, min_a * min_b. This is true, because any product x * y, depending on the sign, is dominated by one of these.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001820">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001821">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
 <p>Lets propagate on a and b.</p>
 <p>We need a bit more propagation to avoid bad cases below.</p>
 <p>p = a * b, what is the min/max of a?</p>

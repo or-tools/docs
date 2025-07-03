@@ -1,5 +1,11 @@
 var NAVTREEINDEX88 =
 {
+"classoperations__research_1_1sat_1_1DratChecker.html#a55c57313424c25d42eaac07d2d3bab1f":[3,0,8,13,96,8],
+"classoperations__research_1_1sat_1_1DratChecker.html#a55c57313424c25d42eaac07d2d3bab1f":[4,0,4,12,96,8],
+"classoperations__research_1_1sat_1_1DratChecker.html#a63220253f70d760b8cd8755a0bfacbce":[3,0,8,13,96,5],
+"classoperations__research_1_1sat_1_1DratChecker.html#a63220253f70d760b8cd8755a0bfacbce":[4,0,4,12,96,5],
+"classoperations__research_1_1sat_1_1DratChecker.html#a7f89217ef9eedf8d5fa8dcc9a0a323fb":[3,0,8,13,96,7],
+"classoperations__research_1_1sat_1_1DratChecker.html#a7f89217ef9eedf8d5fa8dcc9a0a323fb":[4,0,4,12,96,7],
 "classoperations__research_1_1sat_1_1DratChecker.html#a9918f4b0af67d963e869b64f53ba4051":[3,0,8,13,96,2],
 "classoperations__research_1_1sat_1_1DratChecker.html#a9918f4b0af67d963e869b64f53ba4051":[4,0,4,12,96,2],
 "classoperations__research_1_1sat_1_1DratChecker.html#aab5c71c5d07b84e2cfb729d5e09f7a64":[3,0,8,13,96,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX88 =
 "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a48368e7e74b9df8139ba65c41cbdc3f8":[3,0,8,13,110,2],
 "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a48368e7e74b9df8139ba65c41cbdc3f8":[4,0,4,12,110,2],
 "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a725e842a3e99ad37420c694fd69b5b2a":[3,0,8,13,110,0],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#a725e842a3e99ad37420c694fd69b5b2a":[4,0,4,12,110,0],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#a99cf59213a78dc5761d3d671609bffa0":[3,0,8,13,110,4],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#a99cf59213a78dc5761d3d671609bffa0":[4,0,4,12,110,4],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#aa42c288cfc2884903e595f7a3ec1526c":[3,0,8,13,110,7],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#aa42c288cfc2884903e595f7a3ec1526c":[4,0,4,12,110,7],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#aba2e2e298e64ffa39c849b9cd33878c6":[3,0,8,13,110,6],
-"classoperations__research_1_1sat_1_1FixedCapacityVector.html#aba2e2e298e64ffa39c849b9cd33878c6":[4,0,4,12,110,6]
+"classoperations__research_1_1sat_1_1FixedCapacityVector.html#a725e842a3e99ad37420c694fd69b5b2a":[4,0,4,12,110,0]
 };

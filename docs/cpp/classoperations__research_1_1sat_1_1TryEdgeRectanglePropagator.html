@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -276,8 +276,8 @@ Protected Attributes</h2></td></tr>
 boxes" that would still forbid every possible placement. To do that, we build a vector with, for each placement position, the list boxes that conflict when placing the box at that position. Then we solve (approximately) a set cover problem to find the smallest set of boxes that will still makes all positions conflicting.</p>
 <p>We need to rerun the main propagator loop logic, but this time keeping track of which boxes conflicted for each position.</p>
 <p>potential_y_positions is sorted, so we can stop here.</p>
-<p>Now gather the data per box to make easier to use the set cover solver API. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001079">Todo</a></b></dt><dd>(user): skip the boxes that are fixed at level zero. They do not contribute to the size of the explanation (so we shouldn't minimize their number) and make the SetCover problem harder to solve. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001080">Todo</a></b></dt><dd>(user): We now know for each box the list of placements that it contributes to the conflict. We could use this information to relax the bounds of this box on the explanation of the propagation. For example, for a box that always overlaps at least five units to the right when it does, we could call AddStartMinReason(x_min - 4) instead of AddStartMinReason(x_min). </dd></dl>
+<p>Now gather the data per box to make easier to use the set cover solver API. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001080">Todo</a></b></dt><dd>(user): skip the boxes that are fixed at level zero. They do not contribute to the size of the explanation (so we shouldn't minimize their number) and make the SetCover problem harder to solve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001081">Todo</a></b></dt><dd>(user): We now know for each box the list of placements that it contributes to the conflict. We could use this information to relax the bounds of this box on the explanation of the propagation. For example, for a box that always overlaps at least five units to the right when it does, we could call AddStartMinReason(x_min - 4) instead of AddStartMinReason(x_min). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="2d__try__edge__propagator_8cc_source.html#l00258">258</a> of file <a class="el" href="2d__try__edge__propagator_8cc_source.html">2d_try_edge_propagator.cc</a>.</p>
 

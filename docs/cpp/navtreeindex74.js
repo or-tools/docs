@@ -1,5 +1,11 @@
 var NAVTREEINDEX74 =
 {
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#ac301567ac38d52517e851e13b9778406":[3,0,8,8,144,25],
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#ac301567ac38d52517e851e13b9778406":[4,0,4,7,144,25],
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#ac93115b457e153a6f5cc731487eb1411":[3,0,8,8,144,22],
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#ac93115b457e153a6f5cc731487eb1411":[4,0,4,7,144,22],
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#aca373b151e3d25d5110f80e53a64a4c9":[3,0,8,8,144,61],
+"classoperations__research_1_1math__opt_1_1ModelStorageV2.html#aca373b151e3d25d5110f80e53a64a4c9":[4,0,4,7,144,61],
 "classoperations__research_1_1math__opt_1_1ModelStorageV2.html#acc2f1b73578fc511ede4f4a6ed5ae7d5":[3,0,8,8,144,80],
 "classoperations__research_1_1math__opt_1_1ModelStorageV2.html#acc2f1b73578fc511ede4f4a6ed5ae7d5":[4,0,4,7,144,80],
 "classoperations__research_1_1math__opt_1_1ModelStorageV2.html#ace65c88ae416f2e29e1d353e54a19945":[3,0,8,8,144,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX74 =
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a516b060af2b18a0e14d6da866484412a":[3,0,8,8,172,6],
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a516b060af2b18a0e14d6da866484412a":[4,0,4,7,172,6],
 "classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a5f0572768a34c4cfb3806d6eced2a11e":[3,0,8,8,172,7],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a5f0572768a34c4cfb3806d6eced2a11e":[4,0,4,7,172,7],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6426c3fb5f862deadff7649e960c72d2":[3,0,8,8,172,25],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6426c3fb5f862deadff7649e960c72d2":[4,0,4,7,172,25],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6731a8b26d00c9229be2843aa3db295a":[3,0,8,8,172,31],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a6731a8b26d00c9229be2843aa3db295a":[4,0,4,7,172,31],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a69c14fa43a7e78a659bf2d5420df16c7":[3,0,8,8,172,12],
-"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a69c14fa43a7e78a659bf2d5420df16c7":[4,0,4,7,172,12]
+"classoperations__research_1_1math__opt_1_1QuadraticExpression.html#a5f0572768a34c4cfb3806d6eced2a11e":[4,0,4,7,172,7]
 };

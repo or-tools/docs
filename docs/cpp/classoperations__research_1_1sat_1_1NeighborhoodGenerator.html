@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -589,10 +589,10 @@ Protected Attributes</h2></td></tr>
 <p>It seems to make more sense to compare the new objective to the base solution objective, not the best one. However this causes issue in the logic below because on some problems the neighborhood can always lead to a better "new objective" if the base solution wasn't the best one.</p>
 <p>This might not be a final solution, but it does work ok for now.</p>
 <p>Confusing: this one is however comparing to the base solution objective.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001225">Todo</a></b></dt><dd>(user): Weight more recent data. degrade the current average to forget old learnings. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001226">Todo</a></b></dt><dd>(user): Weight more recent data. degrade the current average to forget old learnings. </dd></dl>
 <p>Update the difficulty.</p>
 <p>Bump the time limit if we saw no better solution in the last few calls. This means that as the search progress, we likely spend more and more time trying to solve individual neighborhood.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001226">Todo</a></b></dt><dd>(user): experiment with resetting the time limit if a solution is found. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001227">Todo</a></b></dt><dd>(user): experiment with resetting the time limit if a solution is found. </dd></dl>
 <p>We do not want the limit to go to high. Intuitively, the goal is to try out a lot of neighborhoods, not just spend a lot of time on a few.</p>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__lns_8cc_source.html#l01250">1250</a> of file <a class="el" href="cp__model__lns_8cc_source.html">cp_model_lns.cc</a>.</p>

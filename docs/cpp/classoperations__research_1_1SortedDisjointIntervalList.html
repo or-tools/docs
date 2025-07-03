@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a sorted list of disjoint, closed intervals. When an interval is inserted, all intervals that overlap it or are adjacent to it are merged into one. I.e. [0,14] and [15,30] will be merged to [0,30].</p>
-<p>Iterators returned by this class are invalidated by non-const operations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002636">Todo</a></b></dt><dd>(user): Templatize the class on the type of the bounds. </dd></dl>
+<p>Iterators returned by this class are invalidated by non-const operations. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002638">Todo</a></b></dt><dd>(user): Templatize the class on the type of the bounds. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00563">563</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
@@ -248,7 +248,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a <a class="el" href="classoperations__research_1_1SortedDisjointIntervalList.html">SortedDisjointIntervalList</a> and fills it with intervals [starts[i]..ends[i]]. All intervals must be consistent (starts[i] &lt;= ends[i]). There are two version, one for int64_t and one for int. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002637">Todo</a></b></dt><dd>(user): Explain why we favored this API to the more natural input std::vector&lt;ClosedInterval&gt; or std::vector&lt;std::pair&lt;int, int&gt;&gt;. </dd></dl>
+<p>Creates a <a class="el" href="classoperations__research_1_1SortedDisjointIntervalList.html">SortedDisjointIntervalList</a> and fills it with intervals [starts[i]..ends[i]]. All intervals must be consistent (starts[i] &lt;= ends[i]). There are two version, one for int64_t and one for int. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002639">Todo</a></b></dt><dd>(user): Explain why we favored this API to the more natural input std::vector&lt;ClosedInterval&gt; or std::vector&lt;std::pair&lt;int, int&gt;&gt;. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00822">822</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -480,7 +480,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns an iterator to the inserted interval (possibly merged with others).</p>
 <p>If start &gt; end, it does LOG(DFATAL) and returns <a class="el" href="#ac3b1f858ae81b06879054a1e6c982835">end()</a> (no interval added). </p>
 <p>start &gt; end could mean an empty interval, but we prefer to LOG(DFATAL) anyway. Really, the user should never give us that.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002633">Todo</a></b></dt><dd>(user): tune the algorithm below if it proves to be a bottleneck. For example, one could try to avoid an insertion if it's not needed (when the interval merges with a single existing interval or is fully contained by one). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002635">Todo</a></b></dt><dd>(user): tune the algorithm below if it proves to be a bottleneck. For example, one could try to avoid an insertion if it's not needed (when the interval merges with a single existing interval or is fully contained by one). </dd></dl>
 <p>Iterate over the previous iterators whose end is after (or almost at) our start. After this, "it1" will point to the first interval that needs to be merged with the current interval (possibly pointing to the current interval itself, if no "earlier" interval should be merged).</p>
 <p>Ditto, on the other side: "it2" will point to the interval <em>after</em> the last one that should be merged with the current interval.</p>
 <p>[it1..it2) is the range (inclusive on it1, exclusive on it2) of intervals that should be merged together. We'll set it3 = it2-1 and erase [it1..it3) and set *it3 to the merged interval.</p>
@@ -508,7 +508,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002634">Todo</a></b></dt><dd>(user): treat kint32min and kint32max as their kint64 variants. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002636">Todo</a></b></dt><dd>(user): treat kint32min and kint32max as their kint64 variants. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00977">977</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 

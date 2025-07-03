@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -197,12 +197,12 @@ $(function(){initNavTree('graph__io_8h_source.html','',''); });
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    } <span class="keywordflow">else</span> {  <span class="comment">// PRINT_GRAPH_ADJACENCY_LISTS[_SORTED]</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      adj.clear();</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="classutil_1_1BaseGraph.html#a68014ae932b1c5f50d7365cecae209fd">Graph::ArcIndex</a> arc : <a class="code hl_namespace" href="namespaceutil_1_1graph.html">graph</a>.OutgoingArcs(node)) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        adj.push_back(<a class="code hl_namespace" href="namespaceutil_1_1graph.html">graph</a>.Head(arc));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        adj.push_back(<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(<a class="code hl_namespace" href="namespaceutil_1_1graph.html">graph</a>.Head(arc)));</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">if</span> (format == <a class="code hl_enumvalue" href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696a454bb1ede69e280a1e4959acb82748ef">PRINT_GRAPH_ADJACENCY_LISTS_SORTED</a>) {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        std::sort(adj.begin(), adj.end());</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">if</span> (node != 0) out += <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">if</span> (node != <span class="keyword">typename</span> <a class="code hl_typedef" href="classutil_1_1BaseGraph.html#af79cd652ad4b1e7142c1acbec35b01a6">Graph::NodeIndex</a>(0)) out += <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      absl::StrAppend(&amp;out, <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(node), <span class="stringliteral">&quot;: &quot;</span>,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                      absl::StrJoin(adj, <span class="stringliteral">&quot; &quot;</span>));</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
@@ -291,7 +291,7 @@ $(function(){initNavTree('graph__io_8h_source.html','',''); });
 <div class="ttc" id="anamespaceutil_html_ae705e1342dacc10a13fb3f11f91d0696aaed5759e3b6e3a8592c9a21e0048b565"><div class="ttname"><a href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696aaed5759e3b6e3a8592c9a21e0048b565">util::PRINT_GRAPH_ADJACENCY_LISTS</a></div><div class="ttdeci">@ PRINT_GRAPH_ADJACENCY_LISTS</div><div class="ttdef"><b>Definition</b> <a href="#l00047">graph_io.h:47</a></div></div>
 <div class="ttc" id="anamespaceutil_html_ae705e1342dacc10a13fb3f11f91d0696acac9245da1bf36d1d9382dc579e1a4fd"><div class="ttname"><a href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696acac9245da1bf36d1d9382dc579e1a4fd">util::PRINT_GRAPH_ARCS</a></div><div class="ttdeci">@ PRINT_GRAPH_ARCS</div><div class="ttdoc">One arc per line, eg. &quot;3-&gt;1&quot;.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">graph_io.h:43</a></div></div>
 <div class="ttc" id="anamespaceutil_html_ae705e1342dacc10a13fb3f11f91d0696aed2f19e9eb3369c6a16ecdb356afead8"><div class="ttname"><a href="namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696aed2f19e9eb3369c6a16ecdb356afead8">util::PRINT_GRAPH_DOT</a></div><div class="ttdeci">@ PRINT_GRAPH_DOT</div><div class="ttdoc">Dot format, can be visualized with Graphviz.</div><div class="ttdef"><b>Definition</b> <a href="#l00053">graph_io.h:53</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02063">graph.h:2063</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02049">graph.h:2049</a></div></div>
 <div class="ttc" id="anamespaceutil_html_affed79554a202aaa8bda5b5e98c3a6b2"><div class="ttname"><a href="namespaceutil.html#affed79554a202aaa8bda5b5e98c3a6b2">util::GraphToString</a></div><div class="ttdeci">std::string GraphToString(const Graph &amp;graph, GraphToStringFormat format)</div><div class="ttdoc">Implementations of the templated methods.</div><div class="ttdef"><b>Definition</b> <a href="#l00078">graph_io.h:78</a></div></div>
 <div class="ttc" id="anumbers_8h_html"><div class="ttname"><a href="numbers_8h.html">numbers.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

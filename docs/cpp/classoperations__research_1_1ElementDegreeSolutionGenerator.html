@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -313,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1ElementDegreeSolutionGenerator.html" title="The consistency level is maintained up to kFreeAndUncovered.">ElementDegreeSolutionGenerator</a>. There is no need to use a priority queue here, as the ratios are computed on-demand. Also elements are sorted based on degree once and for all and moved past when the elements become already covered. </p>
 <p>Create the list of all the indices in the problem.</p>
 <p>No need to cover an element that is already covered.</p>
-<p>Compare R = costs[subset] / num_free_elements with B = best_subset_cost / best_subset_num_free_elts. If R &lt; B, we choose subset. If the ratios are the same, we choose the subset with the most free elements. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002559">Todo</a></b></dt><dd>(user): What about adding a tolerance for equality, which could further favor larger columns? </dd></dl>
+<p>Compare R = costs[subset] / num_free_elements with B = best_subset_cost / best_subset_num_free_elts. If R &lt; B, we choose subset. If the ratios are the same, we choose the subset with the most free elements. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002561">Todo</a></b></dt><dd>(user): What about adding a tolerance for equality, which could further favor larger columns? </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1BoolVectorBasedSolutionGenerator.html#a03a5cc8cfa8f9c0982ff0da35d132d35">operations_research::BoolVectorBasedSolutionGenerator</a>.</p>
 

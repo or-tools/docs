@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -717,7 +717,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Redefine the active items. The new sub-model will ignore all columns not in focus and (optionally) the rows for which row_flags is not true. It does not overwrite the current fixing.</p>
 <dl class="section note"><dt>Note</dt><dd>Assumes that columns_focus covers all rows for which rows_flags is true (i.e.: non-covered rows should be set to false to rows_flags). This property get exploited to keep the rows in the same ordering of the original model using "cleanish" code. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002601">Todo</a></b></dt><dd>(c4v4): change model in-place to avoid reallocations. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002603">Todo</a></b></dt><dd>(c4v4): change model in-place to avoid reallocations. </dd></dl>
 <p>Now we can fill the new core model</p>
 <p><a class="el" href="classoperations__research_1_1SetCoverModel.html" title="Main class for describing a weighted set-covering problem.">SetCoverModel</a> lacks a way to remove columns</p>
 <p>Handle empty columns</p>

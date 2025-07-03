@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -103,6 +103,9 @@ $(function(){initNavTree('namespaceoperations__research_1_1internal.html','','')
 Classes</h2></td></tr>
 <tr class="memitem:AlignedBlock" id="r_AlignedBlock"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a></td></tr>
 <tr class="memitem:AllocatorWithAlignment" id="r_AllocatorWithAlignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1AllocatorWithAlignment.html">AllocatorWithAlignment</a></td></tr>
+<tr class="memitem:ElementGetter" id="r_ElementGetter"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1internal_1_1ElementGetter.html">ElementGetter</a></td></tr>
+<tr class="memitem:is_5Fstrong_5Fint" id="r_is_5Fstrong_5Fint"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1is__strong__int.html">is_strong_int</a></td></tr>
+<tr class="memitem:is_5Fstrong_5Fint_3C_3A_3Autil_5Fintops_3A_3AStrongInt_3C_20Tag_2C_20Native_2C_20Validator_20_3E_20_3E" id="r_is_5Fstrong_5Fint_3C_3A_3Autil_5Fintops_3A_3AStrongInt_3C_20Tag_2C_20Native_2C_20Validator_20_3E_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html">is_strong_int&lt;::util_intops::StrongInt&lt; Tag, Native, Validator &gt; &gt;</a></td></tr>
 <tr class="memitem:PathContainerImpl" id="r_PathContainerImpl"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1internal_1_1PathContainerImpl.html">PathContainerImpl</a></td></tr>
 <tr class="memitem:PathWithPriority" id="r_PathWithPriority"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1internal_1_1PathWithPriority.html">PathWithPriority</a></td></tr>
 <tr class="memitem:ReleaseSCIPMessageHandler" id="r_ReleaseSCIPMessageHandler"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1ReleaseSCIPMessageHandler.html">ReleaseSCIPMessageHandler</a></td></tr>
@@ -120,6 +123,8 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aa7930aa4689479c09dbc61f1ec4f4626" id="r_aa7930aa4689479c09dbc61f1ec4f4626"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:aa7930aa4689479c09dbc61f1ec4f4626 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7930aa4689479c09dbc61f1ec4f4626">to_uint</a> = typename <a class="el" href="structoperations__research_1_1internal_1_1ToUInt.html">ToUInt</a>&lt;T&gt;::type</td></tr>
+<tr class="memitem:a0af9c6de04b858727a278d36a2eb5597" id="r_a0af9c6de04b858727a278d36a2eb5597"><td class="memTemplParams" colspan="2">template&lt;typename IndexType, typename ValueType&gt; </td></tr>
+<tr class="memitem:a0af9c6de04b858727a278d36a2eb5597 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af9c6de04b858727a278d36a2eb5597">IndexedVector</a></td></tr>
 <tr class="memitem:af00491471902054c58b10873703119a1" id="r_af00491471902054c58b10873703119a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af00491471902054c58b10873703119a1">MessageHandlerPtr</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
@@ -198,7 +203,7 @@ Variables</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo</a></b></dt><dd>(user): Support the user providing already-allocated memory buffers for the radix counts and/or for the temporary vector&lt;T&gt; copy. </dd></dl>
 <hr  />
 <p> The rest of this .h is the implementation of the above templates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000679">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000680">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
 <p>Template implementations</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
@@ -209,10 +214,33 @@ Variables</h2></td></tr>
 <li>it handles the cases of signed and unsigned integers automatically,</li>
 <li>bounds on the keys are optional, or they can be computed automatically,</li>
 <li>based on those bounds, the number of passes is automatically computed,</li>
-<li>a payload is associated to each key, and it is sorted in the same way as the keys. This payload can be a vector of integers or a vector of pointers to larger objects. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo002566">Todo</a></b></dt><dd>(user): Make it an independent library.</dd></dl>
+<li>a payload is associated to each key, and it is sorted in the same way as the keys. This payload can be a vector of integers or a vector of pointers to larger objects. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo002568">Todo</a></b></dt><dd>(user): Make it an independent library.</dd></dl>
 </li>
 </ul>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="a0af9c6de04b858727a278d36a2eb5597" name="a0af9c6de04b858727a278d36a2eb5597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af9c6de04b858727a278d36a2eb5597">&#9670;&#160;</a></span>IndexedVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IndexType, typename ValueType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0af9c6de04b858727a278d36a2eb5597">operations_research::internal::IndexedVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">    std::conditional_t&lt;is_strong_int&lt;IndexType&gt;::value,</div>
+<div class="line">                       <a class="code hl_class" href="classutil__intops_1_1StrongVector.html">::util_intops::StrongVector&lt;IndexType, ValueType&gt;</a>,</div>
+<div class="line">                       std::vector&lt;ValueType&gt;&gt;</div>
+<div class="ttc" id="aclassutil__intops_1_1StrongVector_html"><div class="ttname"><a href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a></div><div class="ttdef"><b>Definition</b> <a href="strong__vector_8h_source.html#l00075">strong_vector.h:75</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00078">78</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+
+</div>
+</div>
 <a id="af00491471902054c58b10873703119a1" name="af00491471902054c58b10873703119a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af00491471902054c58b10873703119a1">&#9670;&#160;</a></span>MessageHandlerPtr</h2>
 
@@ -663,7 +691,7 @@ template&lt;class GraphType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Determines the shortest path from the given source and destination, returns a tuple with the path (as a vector of node indices) and its cost. </p>
-<p>There are shortest paths in this graph, just not from the source to this destination. This case only happens when some arcs have an infinite length (i.e. larger than <span class="tt">kMaxDistance</span>): <span class="tt"><a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html#a64d47fb522e095cf23053dbecad28c9d">BoundedDijkstraWrapper::NodePathTo</a></span> fails to return a path, even empty.</p>
+<p>There are shortest paths in this graph, just not from the source to this destination. This case only happens when some arcs have an infinite length (i.e. larger than <span class="tt">kMaxDistance</span>): <span class="tt"><a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html#a6a24bb5095fe3b49abc0954cbfe00996">BoundedDijkstraWrapper::NodePathTo</a></span> fails to return a path, even empty.</p>
 
 <p class="definition">Definition at line <a class="el" href="k__shortest__paths_8h_source.html#l00168">168</a> of file <a class="el" href="k__shortest__paths_8h_source.html">k_shortest_paths.h</a>.</p>
 

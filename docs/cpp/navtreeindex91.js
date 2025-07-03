@@ -1,5 +1,11 @@
 var NAVTREEINDEX91 =
 {
+"classoperations__research_1_1sat_1_1IntegerTrail.html#ac2cfaa9b1848cc1edbdb5c50e7d42188":[3,0,8,13,132,19],
+"classoperations__research_1_1sat_1_1IntegerTrail.html#ac2cfaa9b1848cc1edbdb5c50e7d42188":[4,0,4,12,132,19],
+"classoperations__research_1_1sat_1_1IntegerTrail.html#ac7b90291347a80b54c35232033f35d4f":[3,0,8,13,132,28],
+"classoperations__research_1_1sat_1_1IntegerTrail.html#ac7b90291347a80b54c35232033f35d4f":[4,0,4,12,132,28],
+"classoperations__research_1_1sat_1_1IntegerTrail.html#acb1e43a55688b0002d08e82778295a47":[3,0,8,13,132,42],
+"classoperations__research_1_1sat_1_1IntegerTrail.html#acb1e43a55688b0002d08e82778295a47":[4,0,4,12,132,42],
 "classoperations__research_1_1sat_1_1IntegerTrail.html#acba132505b7638ffe247d0a7a495b0d1":[3,0,8,13,132,39],
 "classoperations__research_1_1sat_1_1IntegerTrail.html#acba132505b7638ffe247d0a7a495b0d1":[4,0,4,12,132,39],
 "classoperations__research_1_1sat_1_1IntegerTrail.html#ad3738bb49556079e3f031e4f9abff18d":[3,0,8,13,132,37],
@@ -243,11 +249,5 @@ var NAVTREEINDEX91 =
 "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a42364a248af8f1f81b89bf607243f28a":[3,0,8,13,146,3],
 "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a42364a248af8f1f81b89bf607243f28a":[4,0,4,12,146,3],
 "classoperations__research_1_1sat_1_1LinearConstraintManager.html#a4d918dc658a55a1c970357379eb08e41":[3,0,8,13,146,16],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a4d918dc658a55a1c970357379eb08e41":[4,0,4,12,146,16],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a50bdff56799c24c48d0f24f3abb71c45":[3,0,8,13,146,17],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a50bdff56799c24c48d0f24f3abb71c45":[4,0,4,12,146,17],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a58d67a2af8288f0ba574bdf1dc9c2f6f":[3,0,8,13,146,12],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a58d67a2af8288f0ba574bdf1dc9c2f6f":[4,0,4,12,146,12],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a6296c55b2e83781c54696a25960c7d38":[3,0,8,13,146,11],
-"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a6296c55b2e83781c54696a25960c7d38":[4,0,4,12,146,11]
+"classoperations__research_1_1sat_1_1LinearConstraintManager.html#a4d918dc658a55a1c970357379eb08e41":[4,0,4,12,146,16]
 };

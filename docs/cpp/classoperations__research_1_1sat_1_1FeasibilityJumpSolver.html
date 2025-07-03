@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -145,7 +145,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements and heuristic similar to the one described in the paper: "Feasibility Jump: an LP-free Lagrangian MIP heuristic", Bjørnar Luteberget, Giorgio Sartor, 2023, Mathematical Programming Computation.</p>
 <p>This is basically a Guided local search (GLS) with a nice algo to know what value an integer variable should move to (its jump value). For binary, it can only be swapped, so the situation is easier.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001734">Todo</a></b></dt><dd>(user): If we have more than one of these solver, we might want to share the evaluator memory between them. Right now we basically keep a copy of the model and its transpose for each <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html">FeasibilityJumpSolver</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001735">Todo</a></b></dt><dd>(user): If we have more than one of these solver, we might want to share the evaluator memory between them. Right now we basically keep a copy of the model and its transpose for each <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html">FeasibilityJumpSolver</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00467">467</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -278,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a task to run. The task_id is just an ever increasing counter that correspond to the number of total calls to <a class="el" href="#adc255845d619b5cf9077d19faecb8762">GenerateTask()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002461">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002463">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
 <p>This is only called by the main thread. </p>
 <p>We delay initialization to the first task as it might be a bit slow to scan the whole model, so we want to do this part in parallel.</p>
 <p>Load the next state to work on.</p>
@@ -286,7 +286,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is not used once we have a solution, and setting it to false allow to fix the logs.</p>
 <p>Choose a base solution for this neighborhood.</p>
 <p>Register this solution before we reset the search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001725">Todo</a></b></dt><dd>(user): Tune the improvement constant, maybe use luby. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001726">Todo</a></b></dt><dd>(user): Tune the improvement constant, maybe use luby. </dd></dl>
 <p>Between chunk, we synchronize bounds.</p>
 <p>Update the variable domains with the last information.</p>
 <p>Checks the current solution is compatible with updated domains.</p>
@@ -296,7 +296,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks for infeasibility induced by the non supported constraints.</p>
 <p>If we pushed a new solution, we use it as a new "base" so that we will have a smaller delta on the next solution we find.</p>
 <p>Update dtime. Since we execute only one task at the time, this is safe.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001726">Todo</a></b></dt><dd>(user): Find better names. DeterministicTime() is maintained by this class while <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is the one saved in the <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html">SubSolver</a> base class). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001727">Todo</a></b></dt><dd>(user): Find better names. DeterministicTime() is maintained by this class while <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is the one saved in the <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html">SubSolver</a> base class). </dd></dl>
 <p>Because <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is computed with a sum of difference, it might be slighlty different than DeterministicTime() and we don't want to go backward, even by 1e-18.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a68765bc7ed07ce93ffeddbe61ad40d65">operations_research::sat::SubSolver</a>.</p>

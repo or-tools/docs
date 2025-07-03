@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -202,7 +202,7 @@ template&lt;typename CostType, typename ArcIndex = int64_t, typename <a class="e
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the matching algorithm to use. A minimum weight perfect matching (MINIMUM_WEIGHT_MATCHING) guarantees the 3/2 upper bound to the optimal solution. A minimal weight perfect matching (MINIMAL_WEIGHT_MATCHING) finds a locally minimal weight matching which does not offer any bound guarantee but, as of 1/2017, is orders of magnitude faster than the minimum matching. By default, MINIMAL_WEIGHT_MATCHING is selected. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000631">Todo</a></b></dt><dd>(user): Change the default when minimum matching gets faster. </dd></dl>
+<p>Sets the matching algorithm to use. A minimum weight perfect matching (MINIMUM_WEIGHT_MATCHING) guarantees the 3/2 upper bound to the optimal solution. A minimal weight perfect matching (MINIMAL_WEIGHT_MATCHING) finds a locally minimal weight matching which does not offer any bound guarantee but, as of 1/2017, is orders of magnitude faster than the minimum matching. By default, MINIMAL_WEIGHT_MATCHING is selected. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000632">Todo</a></b></dt><dd>(user): Change the default when minimum matching gets faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="christofides_8h_source.html#l00073">73</a> of file <a class="el" href="christofides_8h_source.html">christofides.h</a>.</p>
 
@@ -227,8 +227,8 @@ template&lt;typename CostType, typename ArcIndex, typename <a class="el" href="n
 <p>Runs the Christofides algorithm. Returns true if a solution was found, false otherwise. </p>
 <p>Compute Minimum Spanning Tree.</p>
 <p>Detect odd degree nodes.</p>
-<p>Find minimum-weight perfect matching on odd-degree-node complete graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000629">Todo</a></b></dt><dd>(user): Make this code available as an independent algorithm. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000630">Todo</a></b></dt><dd>(user): <a class="el" href="namespaceoperations__research.html#acb5c7a4ad74bfad377c54998b6446534" title="Basic non-strict type for cost. The speed penalty for using double is ~2%.">Cost</a> caching was added and can gain up to 20% but increases memory usage; see if we can avoid caching. </dd></dl>
+<p>Find minimum-weight perfect matching on odd-degree-node complete graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000630">Todo</a></b></dt><dd>(user): Make this code available as an independent algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000631">Todo</a></b></dt><dd>(user): <a class="el" href="namespaceoperations__research.html#acb5c7a4ad74bfad377c54998b6446534" title="Basic non-strict type for cost. The speed penalty for using double is ~2%.">Cost</a> caching was added and can gain up to 20% but increases memory usage; see if we can avoid caching. </dd></dl>
 <p>Build Eulerian path on minimum spanning tree + closing edges from matching and extract a solution to the Traveling Salesman from the path by skipping duplicate nodes.</p>
 
 <p class="definition">Definition at line <a class="el" href="christofides_8h_source.html#l00266">266</a> of file <a class="el" href="christofides_8h_source.html">christofides.h</a>.</p>

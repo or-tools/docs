@@ -1,5 +1,11 @@
 var NAVTREEINDEX81 =
 {
+"classoperations__research_1_1pdlp_1_1SolverLogger.html#af635d93e952c7f780db553fbdbb9ce8a":[3,0,8,11,18,7],
+"classoperations__research_1_1pdlp_1_1SolverLogger.html#af635d93e952c7f780db553fbdbb9ce8a":[4,0,4,10,18,7],
+"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html":[3,0,8,11,0,0],
+"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html":[4,0,4,10,0,0],
+"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a5e4bff0b418944d3bbe1d074c32df10d":[3,0,8,11,0,0,5],
+"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a5e4bff0b418944d3bbe1d074c32df10d":[4,0,4,10,0,0,5],
 "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a6d05a4661bb519fb8e4d33a6901a3829":[3,0,8,11,0,0,2],
 "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a6d05a4661bb519fb8e4d33a6901a3829":[4,0,4,10,0,0,2],
 "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a77eca484eda944e4313932e4b433e956":[3,0,8,11,0,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX81 =
 "classoperations__research_1_1routing_1_1RoutingSolution.html#a58b43a20a733600dcbea650dc968b6c6":[3,0,8,12,9,12],
 "classoperations__research_1_1routing_1_1RoutingSolution.html#a58b43a20a733600dcbea650dc968b6c6":[4,0,4,11,9,12],
 "classoperations__research_1_1routing_1_1RoutingSolution.html#a7ced4df694ae6006776902d02f3fffa4":[3,0,8,12,9,8],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a7ced4df694ae6006776902d02f3fffa4":[4,0,4,11,9,8],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a7e125f47e9f6864cb8c42141f035d3c5":[3,0,8,12,9,7],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a7e125f47e9f6864cb8c42141f035d3c5":[4,0,4,11,9,7],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a8d6a8df117ce2be035987776037d605e":[3,0,8,12,9,3],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a8d6a8df117ce2be035987776037d605e":[4,0,4,11,9,3],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a90099a82247b7dc2f63aa5c9707ecbe5":[3,0,8,12,9,5],
-"classoperations__research_1_1routing_1_1RoutingSolution.html#a90099a82247b7dc2f63aa5c9707ecbe5":[4,0,4,11,9,5]
+"classoperations__research_1_1routing_1_1RoutingSolution.html#a7ced4df694ae6006776902d02f3fffa4":[4,0,4,11,9,8]
 };

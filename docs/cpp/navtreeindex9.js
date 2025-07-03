@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"classoperations__research_1_1ChangeValue.html":[3,0,8,64],
+"classoperations__research_1_1ChangeValue.html":[4,0,4,60],
+"classoperations__research_1_1ChangeValue.html#a70285841877125a42f6e09c3de6d9ae2":[3,0,8,64,1],
+"classoperations__research_1_1ChangeValue.html#a70285841877125a42f6e09c3de6d9ae2":[4,0,4,60,1],
+"classoperations__research_1_1ChangeValue.html#a769e949f830e8112be35bafe2d6f7479":[3,0,8,64,3],
+"classoperations__research_1_1ChangeValue.html#a769e949f830e8112be35bafe2d6f7479":[4,0,4,60,3],
 "classoperations__research_1_1ChangeValue.html#a7bcd4a197ade8555b9c1c1dcb731d5c3":[3,0,8,64,2],
 "classoperations__research_1_1ChangeValue.html#a7bcd4a197ade8555b9c1c1dcb731d5c3":[4,0,4,60,2],
 "classoperations__research_1_1ChangeValue.html#abe683422f672a5f8a9356fc63e3d21b6":[3,0,8,64,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html":[3,0,8,79],
 "classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html":[4,0,4,75],
 "classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#a4c3574f4eb87db2634eb12880b81cd09":[3,0,8,79,1],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#a4c3574f4eb87db2634eb12880b81cd09":[4,0,4,75,1],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#a738b8f448b4b9e497fd58fee1a76b279":[3,0,8,79,2],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#a738b8f448b4b9e497fd58fee1a76b279":[4,0,4,75,2],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#aa399e838e2e18b51319963780fdfb6ee":[3,0,8,79,4],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#aa399e838e2e18b51319963780fdfb6ee":[4,0,4,75,4],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#abf9b759b381e70e9e67699a2c99e2ea3":[3,0,8,79,3],
-"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#abf9b759b381e70e9e67699a2c99e2ea3":[4,0,4,75,3]
+"classoperations__research_1_1ConstrainedShortestPathsOnDagWrapper.html#a4c3574f4eb87db2634eb12880b81cd09":[4,0,4,75,1]
 };

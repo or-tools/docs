@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores all the precedences relation of the form "a*x + b*y &lt;= ub" that we could extract from the linear constraint of the model. These are stored in a directed graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002166">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002167">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
 <p class="interdd">(user): Support non-DAG like graph. </p>
 <p class="enddd">(user): Support variable offset that can be updated as search progress. </p>
 </dd></dl>
@@ -194,8 +194,8 @@ Public Member Functions</h2></td></tr>
 <p>Add a relation lb &lt;= expr &lt;= ub. If expr is not a proper linear2 expression (e.g. 0*x + y, y + y, y - y) it will be ignored. Returns true if it was added and is considered "new". </p>
 <p>This class handles only binary relationships, let something else handle the case where there is actually a single variable.</p>
 <p>Add to root_relations_.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002132">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
-<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002133">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002133">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
+<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002134">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00056">56</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
@@ -274,16 +274,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The current code requires the internal data to be processed once all relations are loaded.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002177">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002178">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
 <p>We will construct a graph with the current relation from all_relations_. And use this to compute the "closure".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002134">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002135">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if we only have &gt;= 0 ones, if we do have a cycle, we could make sure all variales are the same, and otherwise, we have a DAG or a conflict.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002135">Todo</a></b></dt><dd>(user): Support non-1 coefficients. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002136">Todo</a></b></dt><dd>(user): Support non-1 coefficients. </dd></dl>
 <p>We have two arcs.</p>
 <p>Is it a DAG? Get a topological order of the DAG formed by all the arcs that are present.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002136">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002137">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
-<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002138">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002137">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002138">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
+<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00246">246</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
@@ -338,18 +338,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a set of relations var &gt;= max_i(vars[index[i]] + offsets[i]).</p>
-<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002173">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
+<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002174">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
 <p>For more efficiency, this method ignores all linear2 expressions with any coefficient different from 1.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002174">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002175">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002176">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002175">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002176">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002177">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
 <p>Compute all precedences. We loop over the node in topological order, and we maintain for all variable we encounter, the list of "to_consider" variables that are before.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
-<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002140">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002140">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
+<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002141">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
 <p>No need to create an empty entry in this case.</p>
 <p>Small filtering heuristic: if we have (before) &lt; tail, and tail &lt; head, we really do not need to list (before, tail) &lt; head. We only need that if the list of variable before head contains some variable that are not already before tail.</p>
 <p>Extract the output for tail_var. Because of the topological ordering, the data for tail_var is already final now.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002141">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002142">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00360">360</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 

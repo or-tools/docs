@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -205,13 +205,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Each linear programming constraint works on a fixed set of variables. We expect the set of variable to be sorted in increasing order.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001932">Todo</a></b></dt><dd>(user): make SatParameters singleton too, otherwise changing them after a constraint was added will have no effect on this class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001933">Todo</a></b></dt><dd>(user): make SatParameters singleton too, otherwise changing them after a constraint was added will have no effect on this class. </dd></dl>
 <p>Tweak the default parameters to make the solve incremental.</p>
 <dl class="section warning"><dt>Warning</dt><dd>SetRandom() must be called after SetParameters().</dd></dl>
 <p>Register our local rev int repository.</p>
 <p>Register <a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html" title="Simple class to add statistics by name and print them at the end.">SharedStatistics</a> with the cut helpers.</p>
 <p>Initialize the IntegerVariable -&gt; ColIndex mapping.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001933">Todo</a></b></dt><dd>(user): We shouldn't need to add variable from the orbit here in the presence of symmetry. However they can still appear in cut, so it is a bit tricky and require some refactoring to be tried. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001934">Todo</a></b></dt><dd>(user): We shouldn't need to add variable from the orbit here in the presence of symmetry. However they can still appear in cut, so it is a bit tricky and require some refactoring to be tried. </dd></dl>
 <p>Complete the extended variables with the orbit afterwards.</p>
 <p>We use the "extended" vector for lp_solution_/lp_reduced_cost_.</p>
 
@@ -555,9 +555,9 @@ template&lt;bool check_overflow&gt; </div>
 <p>We only propagate if we use less that 100 times the number of current integer literal enqueued.</p>
 <p>At level zero, if there is still a chance to add cuts or lazy constraints, we re-run the LP.</p>
 <p>Check whether the change breaks the current LP solution. If it does, call <a class="el" href="#a7ff29ebe58aca89b537dc833cc1c45de" title="PropagatorInterface API.">Propagate()</a> on the current LP.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001947">Todo</a></b></dt><dd>(user): The saved lp solution is still valid given the current variable bounds, so the LP optimal didn't change. However we might still want to add new cuts or new lazy constraints?</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001948">Todo</a></b></dt><dd>(user): Propagate the last optimal_constraint? Note that we need to be careful since the reversible int in <a class="el" href="namespaceoperations__research_1_1sat.html#aeee23a6099757399dc02f68671fdb1d8">IntegerSumLE</a> are not registered. However, because we delete "optimalconstraints" on backtrack, we might not care.</dd></dl>
-<p>Remark: Note that if we do the sequence SetBasis() / <a class="el" href="#a7ff29ebe58aca89b537dc833cc1c45de" title="PropagatorInterface API.">Propagate()</a> / GetAndSaveBasis() and we are in the case where the solution is still optimal, we should get the basis from when the lp solution was set which should be what we want. Even if we set garbage during SetBasis() it should be ignored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001949">Todo</a></b></dt><dd>(user): We might still have problem at level zero. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001948">Todo</a></b></dt><dd>(user): The saved lp solution is still valid given the current variable bounds, so the LP optimal didn't change. However we might still want to add new cuts or new lazy constraints?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001949">Todo</a></b></dt><dd>(user): Propagate the last optimal_constraint? Note that we need to be careful since the reversible int in <a class="el" href="namespaceoperations__research_1_1sat.html#aeee23a6099757399dc02f68671fdb1d8">IntegerSumLE</a> are not registered. However, because we delete "optimalconstraints" on backtrack, we might not care.</dd></dl>
+<p>Remark: Note that if we do the sequence SetBasis() / <a class="el" href="#a7ff29ebe58aca89b537dc833cc1c45de" title="PropagatorInterface API.">Propagate()</a> / GetAndSaveBasis() and we are in the case where the solution is still optimal, we should get the basis from when the lp solution was set which should be what we want. Even if we set garbage during SetBasis() it should be ignored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001950">Todo</a></b></dt><dd>(user): We might still have problem at level zero. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">operations_research::sat::PropagatorInterface</a>.</p>
 
@@ -973,7 +973,7 @@ template&lt;bool check_overflow&gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html" title="Base class for CP like propagators.">PropagatorInterface</a> API. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001978">Todo</a></b></dt><dd>(user): It seems the time we loose by not stopping early might be worth it because we end up with a better explanation at optimality. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001979">Todo</a></b></dt><dd>(user): It seems the time we loose by not stopping early might be worth it because we end up with a better explanation at optimality. </dd></dl>
 <p>We put a limit on the dual objective since there is no point increasing it past our current objective upper-bound (we will already fail as soon as we pass it). Note that this limit is properly transformed using the objective scaling factor and offset stored in lp_data_.</p>
 <dl class="section note"><dt>Note</dt><dd>we use a bigger epsilon here to be sure that if we abort because of this, we will report a conflict.</dd></dl>
 <p>Put an iteration limit on the work we do in the simplex for this call. Note that because we are "incremental", even if we don't solve it this time we will make progress towards a solve in the lower node of the tree search.</p>
@@ -983,7 +983,7 @@ template&lt;bool check_overflow&gt; </div>
 <p>We wait for the first batch of problem constraints to be added before we begin to generate cuts. Note that we rely on num_solves_ since on some problems there is no other constraints than the cuts.</p>
 <p>This must be called first.</p>
 <p>The "generic" cuts are currently part of this class as they are using data from the current LP.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001979">Todo</a></b></dt><dd>(user): Refactor so that they are just normal cut generators? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001980">Todo</a></b></dt><dd>(user): Refactor so that they are just normal cut generators? </dd></dl>
 <p>Try to add cuts.</p>
 <p>If we didn't add any new constraint, we delay the next <a class="el" href="namespaceoperations__research_1_1sat.html#a09d851f944ab4f305c3d9f8df99b7bf8" title="Solves the given CpModelProto and returns an instance of CpSolverResponse.">Solve()</a> since likely the optimal didn't change.</p>
 
@@ -1070,11 +1070,11 @@ template&lt;bool check_overflow&gt; </div>
 <p><a class="el" href="classoperations__research_1_1ReversibleInterface.html">ReversibleInterface</a> API. </p>
 <p>Get rid of all optimal constraint each time we go back to level zero.</p>
 <p>Special case for level zero, we "reload" any previously known optimal solution from that level.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001942">Todo</a></b></dt><dd>(user): Keep all optimal solution in the current branch? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001943">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001944">Todo</a></b></dt><dd>(user): Still try to add cuts/constraints though! </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001945">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001946">Todo</a></b></dt><dd>(user): Reload the basis? This might cause issue with the basis saving/loading code in lb_tree_search. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001943">Todo</a></b></dt><dd>(user): Keep all optimal solution in the current branch? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001944">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001945">Todo</a></b></dt><dd>(user): Still try to add cuts/constraints though! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001946">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001947">Todo</a></b></dt><dd>(user): Reload the basis? This might cause issue with the basis saving/loading code in lb_tree_search. </dd></dl>
 <p>Add the fixed variables. They might have been skipped when we did the linear relaxation of the model, but cut generators expect all variables to have an LP value.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1ReversibleInterface.html#ae25ce6ee33b736226102678c3a14b1dd">operations_research::ReversibleInterface</a>.</p>

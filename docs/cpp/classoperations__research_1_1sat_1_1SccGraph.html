@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -247,7 +247,7 @@ Public Attributes</h2></td></tr>
 <p>If the first node is not settled, then we do explore the at_most_one constraint again. In "Mixed-Integer-Programming:
 Analyzing 12 years of progress", Tobias Achterberg and Roland Wunderling explains that an at most one need to be looped over at most twice. I am not sure exactly how that works, so for now we are not fully linear, but on actual instances, we only rarely run into this case.</p>
 <dl class="section note"><dt>Note</dt><dd>we change the previous node to explore at most one since the current node will be settled before the old ones.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001139">Todo</a></b></dt><dd>(user): avoid looping more than twice on the same at most one constraints? Note that the second time we loop we have x =&gt; y =&gt; not(x), so we can already detect that x must be false which we detect below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001140">Todo</a></b></dt><dd>(user): avoid looping more than twice on the same at most one constraints? Note that the second time we loop we have x =&gt; y =&gt; not(x), so we can already detect that x must be false which we detect below. </dd></dl>
 <p>The first node is already settled and so are all its child. Only not(first_node) might still need exploring.</p>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l01201">1201</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>

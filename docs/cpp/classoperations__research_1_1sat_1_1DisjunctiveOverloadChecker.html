@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -185,9 +185,9 @@ Public Member Functions</h2></td></tr>
 <p>Nothing to do with overload checking, but almost free to do that here.</p>
 <p>We have a detectable precedence that must cause a push.</p>
 <p>Remarks: If we added all precedence literals + linear relation, this propagation would have been done by the linear propagator, but if we didn't add such relations yet, it is beneficial to detect that here!</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001694">Todo</a></b></dt><dd>(user): Actually, we just infered a "not last" so we could check for relevant_size &gt; 2 potential propagation?</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001695">Todo</a></b></dt><dd>(user): Can we detect and propagate all such relations easily and do a pass before this maybe? On a related note, because this propagator is not instantiated in both direction, we might miss some easy propag. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001696">Todo</a></b></dt><dd>(user): Shall we keep propagating? we know the prefix didn't change, so we could be faster here. On another hand, it might be better to propagate all the linear constraints before returning here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001695">Todo</a></b></dt><dd>(user): Actually, we just infered a "not last" so we could check for relevant_size &gt; 2 potential propagation?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001696">Todo</a></b></dt><dd>(user): Can we detect and propagate all such relations easily and do a pass before this maybe? On a related note, because this propagator is not instantiated in both direction, we might miss some easy propag. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001697">Todo</a></b></dt><dd>(user): Shall we keep propagating? we know the prefix didn't change, so we could be faster here. On another hand, it might be better to propagate all the linear constraints before returning here. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>we need to do that AFTER the block above.</dd></dl>
 <p>Extend window.</p>
 <p>Process current window. We don't need to process the end of the window (after relevant_size) because these interval can be greedily assembled in a feasible solution.</p>

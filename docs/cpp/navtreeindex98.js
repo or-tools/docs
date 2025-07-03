@@ -1,5 +1,11 @@
 var NAVTREEINDEX98 =
 {
+"classoperations__research_1_1sat_1_1ProtoTrail.html#ac0529ba22608d94a77500dbe5953099a":[3,0,8,13,221,10],
+"classoperations__research_1_1sat_1_1ProtoTrail.html#ac0529ba22608d94a77500dbe5953099a":[4,0,4,12,221,10],
+"classoperations__research_1_1sat_1_1ProtoTrail.html#acb182542c70b463aa3f0d5fe1fc5b071":[3,0,8,13,221,11],
+"classoperations__research_1_1sat_1_1ProtoTrail.html#acb182542c70b463aa3f0d5fe1fc5b071":[4,0,4,12,221,11],
+"classoperations__research_1_1sat_1_1ProtoTrail.html#acc7f61eee88019052eb46f95152121f3":[3,0,8,13,221,7],
+"classoperations__research_1_1sat_1_1ProtoTrail.html#acc7f61eee88019052eb46f95152121f3":[4,0,4,12,221,7],
 "classoperations__research_1_1sat_1_1ProtoTrail.html#ad4ac7c65b83362202d452f77a9ad11f1":[3,0,8,13,221,15],
 "classoperations__research_1_1sat_1_1ProtoTrail.html#ad4ac7c65b83362202d452f77a9ad11f1":[4,0,4,12,221,15],
 "classoperations__research_1_1sat_1_1ProtoTrail.html#afad8b1dce5058de4cfe9ca143e30cbb2":[3,0,8,13,221,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX98 =
 "classoperations__research_1_1sat_1_1SatCnfReader.html#a7204ae988476e54276f640d163519e66":[3,0,8,13,253,5],
 "classoperations__research_1_1sat_1_1SatCnfReader.html#a7204ae988476e54276f640d163519e66":[4,0,4,12,253,5],
 "classoperations__research_1_1sat_1_1SatCnfReader.html#a83a522df9d9ef05cf7361c049bb8958b":[3,0,8,13,253,0],
-"classoperations__research_1_1sat_1_1SatCnfReader.html#a83a522df9d9ef05cf7361c049bb8958b":[4,0,4,12,253,0],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html":[3,0,8,13,254],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html":[4,0,4,12,254],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a05ff0c7ea3c2c9e3a2682381e75be021":[3,0,8,13,254,13],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a05ff0c7ea3c2c9e3a2682381e75be021":[4,0,4,12,254,13],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a0f5e8234151b6409b1bf416ccaf36701":[3,0,8,13,254,4],
-"classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a0f5e8234151b6409b1bf416ccaf36701":[4,0,4,12,254,4]
+"classoperations__research_1_1sat_1_1SatCnfReader.html#a83a522df9d9ef05cf7361c049bb8958b":[4,0,4,12,253,0]
 };

@@ -1,5 +1,17 @@
 var NAVTREEINDEX138 =
 {
+"stl__logging_8h.html#a4b31e314ef6be3dcfd2935ab0d01d3de":[5,0,0,1,64,1],
+"stl__logging_8h.html#a5e919f38e03be7bf929f6217c66af984":[5,0,0,1,64,3],
+"stl__logging_8h.html#a682a8f845c69fb4338ae7da571464daf":[5,0,0,1,64,4],
+"stl__logging_8h.html#a75af345e6244f42937858aae7bbf6676":[5,0,0,1,64,2],
+"stl__logging_8h.html#aff2c9aeb85a64708d00f8d36cb2aac95":[5,0,0,1,64,0],
+"stl__logging_8h_source.html":[5,0,0,1,64],
+"stl__util_8h.html":[5,0,0,1,65],
+"stl__util_8h_source.html":[5,0,0,1,65],
+"stream_8h.html":[5,0,0,14,9,1],
+"stream_8h_source.html":[5,0,0,14,9,1],
+"streamable__solver__init__arguments_8cc.html":[5,0,0,14,2,44],
+"streamable__solver__init__arguments_8cc_source.html":[5,0,0,14,2,44],
 "streamable__solver__init__arguments_8h.html":[5,0,0,14,2,45],
 "streamable__solver__init__arguments_8h_source.html":[5,0,0,14,2,45],
 "string__array_8h.html":[5,0,0,23,56],
@@ -237,17 +249,5 @@ var NAVTREEINDEX138 =
 "structgtl_1_1LogMultiline.html":[4,0,2,9],
 "structgtl_1_1LogMultiline.html#a952699e49ad8863eafcefe326e44e72a":[3,0,6,10,0],
 "structgtl_1_1LogMultiline.html#a952699e49ad8863eafcefe326e44e72a":[4,0,2,9,0],
-"structgtl_1_1LogMultilineUpTo100.html":[3,0,6,11],
-"structgtl_1_1LogMultilineUpTo100.html":[4,0,2,10],
-"structgtl_1_1LogMultilineUpTo100.html#a85c8adad2dcd2a3711be3745828b7354":[3,0,6,11,0],
-"structgtl_1_1LogMultilineUpTo100.html#a85c8adad2dcd2a3711be3745828b7354":[4,0,2,10,0],
-"structgtl_1_1LogShort.html":[3,0,6,13],
-"structgtl_1_1LogShort.html":[4,0,2,12],
-"structgtl_1_1LogShort.html#aedf432a54c469a00bdea7ec68e4bda64":[3,0,6,13,0],
-"structgtl_1_1LogShort.html#aedf432a54c469a00bdea7ec68e4bda64":[4,0,2,12,0],
-"structgtl_1_1LogShortUpTo100.html":[3,0,6,14],
-"structgtl_1_1LogShortUpTo100.html":[4,0,2,13],
-"structgtl_1_1LogShortUpTo100.html#ac6dc4ebcbf8b9b5d4d3dc90b1a7ebf68":[3,0,6,14,0],
-"structgtl_1_1LogShortUpTo100.html#ac6dc4ebcbf8b9b5d4d3dc90b1a7ebf68":[4,0,2,13,0],
-"structgtl_1_1internal_1_1LogBase.html":[3,0,6,1,1]
+"structgtl_1_1LogMultilineUpTo100.html":[3,0,6,11]
 };

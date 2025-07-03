@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a4a69191fcbfff1f230d453fd5bf08826":[1,0,0,12,0,3],
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#aa76e62b6dd2056e11de456b49772aaca":[1,0,0,12,0,4],
 "namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#aaa72ef0810db78110b8e10e1a6caffe4":[1,0,0,12,0,5],
 "namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#abba13e98b8f0ca25eb1fd5915c42c313":[1,0,0,12,0,0],
 "namespaceortools_1_1scheduling_1_1jobshop__scheduling__pb2.html":[1,0,0,12,1],

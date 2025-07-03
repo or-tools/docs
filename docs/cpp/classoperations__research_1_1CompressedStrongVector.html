@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename EntryIndex, typename Index&gt;<br />
 class operations_research::CompressedStrongVector&lt; EntryIndex, Index &gt;</div><p>A compressed vector of strong indices (e.g. SubsetIndex, ElementIndex), with EntryIndex indicating the position in the vector (e.g. RowEntryIndex or ColumnEntryIndex). The vector is compressed in a variable-length encoding, where each element is encoded as a delta from the previous element. The vector is stored in a byte stream, which is addressed byte-by-byte, which is necessary to store variable-length integers. The variable-length encoding is little-endian base128 (LEB128) as used by protobufs. Since we only use non-negative integers, there is no need to encode the sign bit (so non-zigzag encoding or similar techniques).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002552">Todo</a></b></dt><dd>(user): There is a lot of room for optimization in this class.<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002554">Todo</a></b></dt><dd>(user): There is a lot of room for optimization in this class.<ul>
 <li>Use a bit-twiddling approach to encode and decode integers.</li>
 <li>Use another simpler variable encoding (base on vu128) using a single 64-bit word and limited to storing 8 bytes with 7 bits per byte. A 64-bit word would contain 8*7 = 56 bits. This is enough for an index in an array with 2^56 = 7.2e16 elements, and more that the address space of current (2025) machines.</li>
 <li>Access memory by 64-bit words instead of bytes.</li>
@@ -246,7 +246,7 @@ template&lt;typename EntryIndex, typename Index&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes the compressed vector from a strong vector. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002553">Todo</a></b></dt><dd>(user): try to guess the size of the compressed vector and pre-allocate it. Experience shows it consumes between 1 and 2 bytes per Index on average. </dd></dl>
+<p>Initializes the compressed vector from a strong vector. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002555">Todo</a></b></dt><dd>(user): try to guess the size of the compressed vector and pre-allocate it. Experience shows it consumes between 1 and 2 bytes per Index on average. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="base__types_8h_source.html#l00115">115</a> of file <a class="el" href="base__types_8h_source.html">base_types.h</a>.</p>
 

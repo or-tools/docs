@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"namespaceortools_1_1math__opt_1_1python_1_1statistics.html":[1,0,0,8,9,27],
+"namespaceortools_1_1math__opt_1_1python_1_1statistics.html#a53cc7bf597a039c066cd7d80dbbc480f":[1,0,0,8,9,27,4],
 "namespaceortools_1_1math__opt_1_1python_1_1statistics.html#ab9d1acbbb100da36621417682ff558f9":[1,0,0,8,9,27,2],
 "namespaceortools_1_1math__opt_1_1python_1_1statistics.html#af77a5cfa728fb4505090ca0c43763eb8":[1,0,0,8,9,27,3],
 "namespaceortools_1_1math__opt_1_1python_1_1testing.html":[1,0,0,8,9,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "namespaceortools_1_1scheduling.html":[1,0,0,12],
 "namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html":[1,0,0,12,0],
 "namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a0ea70bb6f5fcd8b54064bbb12c9a27f0":[1,0,0,12,0,2],
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a29d9bb9dc5b8fd3a685469ec5d318694":[1,0,0,12,0,1],
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a4a69191fcbfff1f230d453fd5bf08826":[1,0,0,12,0,3],
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#aa76e62b6dd2056e11de456b49772aaca":[1,0,0,12,0,4]
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a29d9bb9dc5b8fd3a685469ec5d318694":[1,0,0,12,0,1]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX68 =
 {
+"classoperations__research_1_1math__opt_1_1CallbackTest.html":[3,0,8,8,31],
+"classoperations__research_1_1math__opt_1_1CallbackTest.html":[4,0,4,7,31],
+"classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html":[3,0,8,8,35],
+"classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html":[4,0,4,7,35],
+"classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html#a13c9c1fa11a4aa41e415a9d7bc16428c":[3,0,8,8,35,1],
+"classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html#a13c9c1fa11a4aa41e415a9d7bc16428c":[4,0,4,7,35,1],
 "classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html#a288fdb6323cb15d1df43e25ad5ee1508":[3,0,8,8,35,3],
 "classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html#a288fdb6323cb15d1df43e25ad5ee1508":[4,0,4,7,35,3],
 "classoperations__research_1_1math__opt_1_1ConcurrentCallsGuard.html#a6077df4c53e08928e219204863244d2b":[3,0,8,8,35,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX68 =
 "classoperations__research_1_1math__opt_1_1Elemental.html#aeaaf52ea229f7f91966ca5496e546b85":[3,0,8,8,45,36],
 "classoperations__research_1_1math__opt_1_1Elemental.html#aeaaf52ea229f7f91966ca5496e546b85":[4,0,4,7,45,36],
 "classoperations__research_1_1math__opt_1_1Elemental.html#af19d34ad99ead33fc61c9ded7b8aef2e":[3,0,8,8,45,23],
-"classoperations__research_1_1math__opt_1_1Elemental.html#af19d34ad99ead33fc61c9ded7b8aef2e":[4,0,4,7,45,23],
-"classoperations__research_1_1math__opt_1_1Elemental.html#af6f8c5cd9fc93518d3c0b5043fa4c709":[3,0,8,8,45,8],
-"classoperations__research_1_1math__opt_1_1Elemental.html#af6f8c5cd9fc93518d3c0b5043fa4c709":[4,0,4,7,45,8],
-"classoperations__research_1_1math__opt_1_1Elemental.html#af86cdc41387b5fb9bfd8afaf7d786964":[3,0,8,8,45,28],
-"classoperations__research_1_1math__opt_1_1Elemental.html#af86cdc41387b5fb9bfd8afaf7d786964":[4,0,4,7,45,28],
-"classoperations__research_1_1math__opt_1_1Elemental.html#afa2228f2cc92f18ea7d5fb23b8bb19c6":[3,0,8,8,45,38],
-"classoperations__research_1_1math__opt_1_1Elemental.html#afa2228f2cc92f18ea7d5fb23b8bb19c6":[4,0,4,7,45,38]
+"classoperations__research_1_1math__opt_1_1Elemental.html#af19d34ad99ead33fc61c9ded7b8aef2e":[4,0,4,7,45,23]
 };

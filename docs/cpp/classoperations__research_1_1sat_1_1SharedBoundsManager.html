@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>because there can be more than one optimal solution on an independent subproblem, it is important to do that in a locked fashion, and reject future incompatible fixing.</dd>
 <dd>
 this do not work with symmetries. And for now we don't call it when this is the case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002474">Todo</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002476">Todo</a></b></dt><dd>(user): Because we look at the non-synchronized and up to date bounds, this break determinism if two solution for the same subpart comes at the same time. </dd></dl>
 <p>This function shouldn't be called if we has symmetry.</p>
 <p>Abort if incompatible. Note that we only check the position that we are about to fix. This should be enough. Otherwise we might never accept any solution because the base LNS solution was not the same in some of the variables that we fixed here.</p>
 <p>Fix the variables.</p>

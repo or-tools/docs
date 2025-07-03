@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -100,54 +100,120 @@ $(function(){initNavTree('classoperations__research_1_1BoundedDijkstraWrapper.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0180f80309bfa8c0d33f809268f6dcab" id="r_a0180f80309bfa8c0d33f809268f6dcab"><td class="memItemLeft" align="right" valign="top">typedef GraphType::NodeIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0180f80309bfa8c0d33f809268f6dcab">node_type</a></td></tr>
+<tr class="memitem:a662dd27a77d4ce320293758fbba9ca28" id="r_a662dd27a77d4ce320293758fbba9ca28"><td class="memItemLeft" align="right" valign="top">typedef GraphType::NodeIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td></tr>
+<tr class="memitem:a0756ecac7678f5af5752e21735e43aec" id="r_a0756ecac7678f5af5752e21735e43aec"><td class="memItemLeft" align="right" valign="top">typedef GraphType::ArcIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a></td></tr>
 <tr class="memitem:ac4e8032a82d25ca2f775e9a093e1a395" id="r_ac4e8032a82d25ca2f775e9a093e1a395"><td class="memItemLeft" align="right" valign="top">typedef DistanceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4e8032a82d25ca2f775e9a093e1a395">distance_type</a></td></tr>
+<tr class="memitem:ac52d672f2a594d44804202365f164bf2" id="r_ac52d672f2a594d44804202365f164bf2"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ac52d672f2a594d44804202365f164bf2 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a> = <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">internal::IndexedVector</a>&lt;<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, T&gt;</td></tr>
+<tr class="memdesc:ac52d672f2a594d44804202365f164bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of T, indexed by NodeIndex/ArcIndex.  <br /></td></tr>
+<tr class="memitem:abed6c9ed1ad24fccf9b873e177addac9" id="r_abed6c9ed1ad24fccf9b873e177addac9"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:abed6c9ed1ad24fccf9b873e177addac9 template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abed6c9ed1ad24fccf9b873e177addac9">ByArc</a> = <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">internal::IndexedVector</a>&lt;<a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a>, T&gt;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a376d86404f9ed75669df838e59dc8945" id="r_a376d86404f9ed75669df838e59dc8945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a376d86404f9ed75669df838e59dc8945">BoundedDijkstraWrapper</a> (const GraphType *<a class="el" href="#a3db535b7924528ce92885567c7858220">graph</a>, const std::vector&lt; DistanceType &gt; *<a class="el" href="#ab98664bd6f8d0a912c845ee9f25692cf">arc_lengths</a>)</td></tr>
+<tr class="memitem:a96ff6153223cea339754601e4b1fc001" id="r_a96ff6153223cea339754601e4b1fc001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ff6153223cea339754601e4b1fc001">BoundedDijkstraWrapper</a> (const GraphType *<a class="el" href="#a3db535b7924528ce92885567c7858220">graph</a>, const <a class="el" href="#abed6c9ed1ad24fccf9b873e177addac9">ByArc</a>&lt; DistanceType &gt; *<a class="el" href="#a0357175e3d794b1eb500081ad30037d1">arc_lengths</a>)</td></tr>
 <tr class="memitem:a0989e02e7da79436f19eaaf6036c7001" id="r_a0989e02e7da79436f19eaaf6036c7001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0989e02e7da79436f19eaaf6036c7001">BoundedDijkstraWrapper</a> (const GraphType *<a class="el" href="#a3db535b7924528ce92885567c7858220">graph</a>, ArcLengthFunctor arc_length_functor)</td></tr>
 <tr class="memdesc:a0989e02e7da79436f19eaaf6036c7001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant that takes a custom arc length functor and copies it locally.  <br /></td></tr>
-<tr class="memitem:add19ad7166691de2ebbe3b6c967b3605" id="r_add19ad7166691de2ebbe3b6c967b3605"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add19ad7166691de2ebbe3b6c967b3605">RunBoundedDijkstra</a> (int source_node, DistanceType distance_limit)</td></tr>
-<tr class="memitem:a9dd371746bd7c68ce94854ea7c56721d" id="r_a9dd371746bd7c68ce94854ea7c56721d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dd371746bd7c68ce94854ea7c56721d">OneToOneShortestPath</a> (int from, int <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>, DistanceType distance_limit)</td></tr>
-<tr class="memitem:a08d233509ac0e46014f6e9e276124d61" id="r_a08d233509ac0e46014f6e9e276124d61"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08d233509ac0e46014f6e9e276124d61">RunBoundedDijkstraFromMultipleSources</a> (const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, DistanceType distance_limit)</td></tr>
-<tr class="memitem:ab03ddf07ec4dfa2c9decd0f5da6dbbe2" id="r_ab03ddf07ec4dfa2c9decd0f5da6dbbe2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab03ddf07ec4dfa2c9decd0f5da6dbbe2">RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations</a> (const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;destinations_with_distance_offsets, int num_destinations_to_reach, DistanceType distance_limit)</td></tr>
-<tr class="memitem:a1954cafbcfb6980fa3353c308e1c64c1" id="r_a1954cafbcfb6980fa3353c308e1c64c1"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1954cafbcfb6980fa3353c308e1c64c1">RunBoundedDijkstraWithSettledNodeCallback</a> (const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, std::function&lt; void(<a class="el" href="#a0180f80309bfa8c0d33f809268f6dcab">node_type</a> settled_node, DistanceType settled_distance, DistanceType *distance_limit)&gt; settled_node_callback, DistanceType distance_limit)</td></tr>
-<tr class="memitem:a01349557321e4c4d41066a7ca6ccd280" id="r_a01349557321e4c4d41066a7ca6ccd280"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01349557321e4c4d41066a7ca6ccd280">IsReachable</a> (int node) const</td></tr>
-<tr class="memdesc:a01349557321e4c4d41066a7ca6ccd280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <span class="tt">node</span> was reached by the last Run*() call.  <br /></td></tr>
-<tr class="memitem:a0d7ce5732e1573cc99c178b8e994c00a" id="r_a0d7ce5732e1573cc99c178b8e994c00a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7ce5732e1573cc99c178b8e994c00a">reached_nodes</a> () const</td></tr>
-<tr class="memdesc:a0d7ce5732e1573cc99c178b8e994c00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the reached nodes form the previous Run*() call.  <br /></td></tr>
-<tr class="memitem:a872df4a15773696a0ebf63d90d04fcc7" id="r_a872df4a15773696a0ebf63d90d04fcc7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; DistanceType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a872df4a15773696a0ebf63d90d04fcc7">distances</a> () const</td></tr>
-<tr class="memdesc:a872df4a15773696a0ebf63d90d04fcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance of the nodes from their source.  <br /></td></tr>
-<tr class="memitem:a73d4a301fb9bab7f45382c0a0e58edfe" id="r_a73d4a301fb9bab7f45382c0a0e58edfe"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73d4a301fb9bab7f45382c0a0e58edfe">parents</a> () const</td></tr>
-<tr class="memitem:a24ea25a402b78f9e90e1bda5a53e2468" id="r_a24ea25a402b78f9e90e1bda5a53e2468"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24ea25a402b78f9e90e1bda5a53e2468">arc_from_source</a> () const</td></tr>
-<tr class="memitem:a0ba6fe71330cee9cb444b8bfc8e06eec" id="r_a0ba6fe71330cee9cb444b8bfc8e06eec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba6fe71330cee9cb444b8bfc8e06eec">ArcPathTo</a> (int node) const</td></tr>
-<tr class="memitem:afc44ebd5c13e440ff1c11e67453ba620" id="r_afc44ebd5c13e440ff1c11e67453ba620"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc44ebd5c13e440ff1c11e67453ba620">ArcPathToNode</a> (int node) const</td></tr>
-<tr class="memitem:a64d47fb522e095cf23053dbecad28c9d" id="r_a64d47fb522e095cf23053dbecad28c9d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64d47fb522e095cf23053dbecad28c9d">NodePathTo</a> (int node) const</td></tr>
-<tr class="memitem:aa84cddb09ea75b0022bfef47eff0f0ae" id="r_aa84cddb09ea75b0022bfef47eff0f0ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa84cddb09ea75b0022bfef47eff0f0ae">SourceOfShortestPathToNode</a> (int node) const</td></tr>
-<tr class="memitem:af0c46fd45c88351bf254d21cd6e23265" id="r_af0c46fd45c88351bf254d21cd6e23265"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c46fd45c88351bf254d21cd6e23265">GetSourceIndex</a> (int node) const</td></tr>
-<tr class="memitem:ad4cb7f47e6664226746ab3e55cf01f21" id="r_ad4cb7f47e6664226746ab3e55cf01f21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4cb7f47e6664226746ab3e55cf01f21">GetDestinationIndex</a> (int node) const</td></tr>
+<tr class="memitem:a73d9f8a187d02426399f13458106ed43" id="r_a73d9f8a187d02426399f13458106ed43"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73d9f8a187d02426399f13458106ed43">RunBoundedDijkstra</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> source_node, DistanceType distance_limit)</td></tr>
+<tr class="memitem:a9306bf25dc1cbd3a4a7a556bf21cd854" id="r_a9306bf25dc1cbd3a4a7a556bf21cd854"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9306bf25dc1cbd3a4a7a556bf21cd854">OneToOneShortestPath</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> from, <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> <a class="el" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a>, DistanceType distance_limit)</td></tr>
+<tr class="memitem:ad4f75b216e94f5c9748f702dd4085861" id="r_ad4f75b216e94f5c9748f702dd4085861"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f75b216e94f5c9748f702dd4085861">RunBoundedDijkstraFromMultipleSources</a> (const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, DistanceType distance_limit)</td></tr>
+<tr class="memitem:a85b4b8c52b0b704aeeb3fde7049802d7" id="r_a85b4b8c52b0b704aeeb3fde7049802d7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b4b8c52b0b704aeeb3fde7049802d7">RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations</a> (const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;destinations_with_distance_offsets, int num_destinations_to_reach, DistanceType distance_limit)</td></tr>
+<tr class="memitem:afc6a0557b98c3d795af40d127d7a9490" id="r_afc6a0557b98c3d795af40d127d7a9490"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6a0557b98c3d795af40d127d7a9490">RunBoundedDijkstraWithSettledNodeCallback</a> (const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;sources_with_distance_offsets, std::function&lt; void(<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> settled_node, DistanceType settled_distance, DistanceType *distance_limit)&gt; settled_node_callback, DistanceType distance_limit)</td></tr>
+<tr class="memitem:a57a585b755d1404d04f75221abec728d" id="r_a57a585b755d1404d04f75221abec728d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57a585b755d1404d04f75221abec728d">IsReachable</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memdesc:a57a585b755d1404d04f75221abec728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <span class="tt">node</span> was reached by the last Run*() call.  <br /></td></tr>
+<tr class="memitem:a9ade8c7c72289e4c4f4e3cb9aa4c9ea7" id="r_a9ade8c7c72289e4c4f4e3cb9aa4c9ea7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ade8c7c72289e4c4f4e3cb9aa4c9ea7">reached_nodes</a> () const</td></tr>
+<tr class="memdesc:a9ade8c7c72289e4c4f4e3cb9aa4c9ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the reached nodes form the previous Run*() call.  <br /></td></tr>
+<tr class="memitem:a750a1e12e78899808763b968af506ef3" id="r_a750a1e12e78899808763b968af506ef3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; DistanceType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750a1e12e78899808763b968af506ef3">distances</a> () const</td></tr>
+<tr class="memdesc:a750a1e12e78899808763b968af506ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance of the nodes from their source.  <br /></td></tr>
+<tr class="memitem:ae10ac3523b56fe9bd6f3cd550949a586" id="r_ae10ac3523b56fe9bd6f3cd550949a586"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae10ac3523b56fe9bd6f3cd550949a586">parents</a> () const</td></tr>
+<tr class="memitem:a5552eca239e21de052e92bca734baea8" id="r_a5552eca239e21de052e92bca734baea8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5552eca239e21de052e92bca734baea8">arc_from_source</a> () const</td></tr>
+<tr class="memitem:a6b6114c459c522cae1b63f24522e12e5" id="r_a6b6114c459c522cae1b63f24522e12e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b6114c459c522cae1b63f24522e12e5">ArcPathTo</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memitem:a1c4af0f056a79e929bc9bd3e5904c006" id="r_a1c4af0f056a79e929bc9bd3e5904c006"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c4af0f056a79e929bc9bd3e5904c006">ArcPathToNode</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memitem:a6a24bb5095fe3b49abc0954cbfe00996" id="r_a6a24bb5095fe3b49abc0954cbfe00996"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a24bb5095fe3b49abc0954cbfe00996">NodePathTo</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memitem:a5db9ae7b52a5205a9c4ee2a612cb3146" id="r_a5db9ae7b52a5205a9c4ee2a612cb3146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db9ae7b52a5205a9c4ee2a612cb3146">SourceOfShortestPathToNode</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memitem:afacbfdb55080ec6f3d95d5122f01fdfb" id="r_afacbfdb55080ec6f3d95d5122f01fdfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afacbfdb55080ec6f3d95d5122f01fdfb">GetSourceIndex</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
+<tr class="memitem:a5958f03c1931ca08eb93e6b54198c1e0" id="r_a5958f03c1931ca08eb93e6b54198c1e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5958f03c1931ca08eb93e6b54198c1e0">GetDestinationIndex</a> (<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> node) const</td></tr>
 <tr class="memitem:a3db535b7924528ce92885567c7858220" id="r_a3db535b7924528ce92885567c7858220"><td class="memItemLeft" align="right" valign="top">const GraphType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3db535b7924528ce92885567c7858220">graph</a> () const</td></tr>
 <tr class="memdesc:a3db535b7924528ce92885567c7858220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trivial accessors to the underlying graph and arc lengths.  <br /></td></tr>
-<tr class="memitem:ab98664bd6f8d0a912c845ee9f25692cf" id="r_ab98664bd6f8d0a912c845ee9f25692cf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; DistanceType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98664bd6f8d0a912c845ee9f25692cf">arc_lengths</a> () const</td></tr>
-<tr class="memitem:a019552375431be179f936545e6066541" id="r_a019552375431be179f936545e6066541"><td class="memItemLeft" align="right" valign="top">DistanceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a019552375431be179f936545e6066541">GetArcLength</a> (int arc) const</td></tr>
+<tr class="memitem:a0357175e3d794b1eb500081ad30037d1" id="r_a0357175e3d794b1eb500081ad30037d1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#abed6c9ed1ad24fccf9b873e177addac9">ByArc</a>&lt; DistanceType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0357175e3d794b1eb500081ad30037d1">arc_lengths</a> () const</td></tr>
+<tr class="memitem:ab4ecb0a9910d9c793ef10f42bb4fee02" id="r_ab4ecb0a9910d9c793ef10f42bb4fee02"><td class="memItemLeft" align="right" valign="top">DistanceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ecb0a9910d9c793ef10f42bb4fee02">GetArcLength</a> (<a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> arc) const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt;<br />
 class operations_research::BoundedDijkstraWrapper&lt; GraphType, DistanceType, ArcLengthFunctor &gt;</div><p>A wrapper that holds the memory needed to run many bounded shortest path computations on the given graph. The graph must implement the interface described in <a class="el" href="graph_8h.html">graph.h</a> (without the need for reverse arcs).</p>
 <p>We use the length and distance formalism here, but the arc lengths can represent any numeric physical quantity. A shortest path will just be a path minimizing this quantity. Arc length MUST be non-negative though. The code should work with both signed and unsigned integer, or floating point DistanceType.</p>
 <p>If one do not use source/destination distance offset, this class is integer-overflow safe, and one can safely use distance_limit = std::numeric_limits&lt;int64_t&gt;::max() for instance. Any arcs with a distance &gt;= distance_limit will then be the same as a non-existent arc.</p>
 <p>With source/destination offsets, the potential integer overflow situation is trickier: one need to make sure that the range (distance_limit - source_offset) do not overflow in case of negative source_offset. And also that (distance_limit + destination_offset) do not overflow. Note that with negative source_offset, arc with a length greater than the distance_limit can still be considered! </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00096">96</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00119">119</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="a0756ecac7678f5af5752e21735e43aec" name="a0756ecac7678f5af5752e21735e43aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0756ecac7678f5af5752e21735e43aec">&#9670;&#160;</a></span>ArcIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GraphType::ArcIndex <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ArcIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00122">122</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+
+</div>
+</div>
+<a id="abed6c9ed1ad24fccf9b873e177addac9" name="abed6c9ed1ad24fccf9b873e177addac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed6c9ed1ad24fccf9b873e177addac9">&#9670;&#160;</a></span>ByArc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ByArc = <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">internal::IndexedVector</a>&lt;<a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a>, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00129">129</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+
+</div>
+</div>
+<a id="ac52d672f2a594d44804202365f164bf2" name="ac52d672f2a594d44804202365f164bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52d672f2a594d44804202365f164bf2">&#9670;&#160;</a></span>ByNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ByNode = <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">internal::IndexedVector</a>&lt;<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of T, indexed by NodeIndex/ArcIndex. </p>
+
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00127">127</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+
+</div>
+</div>
 <a id="ac4e8032a82d25ca2f775e9a093e1a395" name="ac4e8032a82d25ca2f775e9a093e1a395"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4e8032a82d25ca2f775e9a093e1a395">&#9670;&#160;</a></span>distance_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef DistanceType <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::distance_type</td>
@@ -155,31 +221,31 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00099">99</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00123">123</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a0180f80309bfa8c0d33f809268f6dcab" name="a0180f80309bfa8c0d33f809268f6dcab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0180f80309bfa8c0d33f809268f6dcab">&#9670;&#160;</a></span>node_type</h2>
+<a id="a662dd27a77d4ce320293758fbba9ca28" name="a662dd27a77d4ce320293758fbba9ca28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662dd27a77d4ce320293758fbba9ca28">&#9670;&#160;</a></span>NodeIndex</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GraphType::NodeIndex <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::node_type</td>
+          <td class="memname">typedef GraphType::NodeIndex <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::NodeIndex</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00098">98</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00121">121</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a376d86404f9ed75669df838e59dc8945" name="a376d86404f9ed75669df838e59dc8945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a376d86404f9ed75669df838e59dc8945">&#9670;&#160;</a></span>BoundedDijkstraWrapper() <span class="overload">[1/2]</span></h2>
+<a id="a96ff6153223cea339754601e4b1fc001" name="a96ff6153223cea339754601e4b1fc001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ff6153223cea339754601e4b1fc001">&#9670;&#160;</a></span>BoundedDijkstraWrapper() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,15 +260,15 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; DistanceType &gt; *</td>          <td class="paramname"><span class="paramname"><em>arc_lengths</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="#abed6c9ed1ad24fccf9b873e177addac9">ByArc</a>&lt; DistanceType &gt; *</td>          <td class="paramname"><span class="paramname"><em>arc_lengths</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>IMPORTANT: Both arguments must outlive the class. The arc lengths cannot be negative and the vector must be of the correct size (both preconditions are CHECKed).</p>
-<p>SUBTLE: The client can modify the graph and the arc length between calls to <a class="el" href="#add19ad7166691de2ebbe3b6c967b3605">RunBoundedDijkstra()</a>. That's fine. Doing so will obviously invalidate the reader API of the last Dijkstra run, which could return junk, or crash.</p>
+<p>SUBTLE: The client can modify the graph and the arc length between calls to <a class="el" href="#a73d9f8a187d02426399f13458106ed43">RunBoundedDijkstra()</a>. That's fine. Doing so will obviously invalidate the reader API of the last Dijkstra run, which could return junk, or crash.</p>
 <p>Implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00317">317</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00351">351</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
@@ -229,24 +295,24 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 
 <p>Variant that takes a custom arc length functor and copies it locally. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00331">331</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00365">365</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a24ea25a402b78f9e90e1bda5a53e2468" name="a24ea25a402b78f9e90e1bda5a53e2468"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24ea25a402b78f9e90e1bda5a53e2468">&#9670;&#160;</a></span>arc_from_source()</h2>
+<a id="a5552eca239e21de052e92bca734baea8" name="a5552eca239e21de052e92bca734baea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552eca239e21de052e92bca734baea8">&#9670;&#160;</a></span>arc_from_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::arc_from_source </td>
+          <td class="memname">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::arc_from_source </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -258,25 +324,25 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The arc reaching a given node in the path from their source. <a class="el" href="#a24ea25a402b78f9e90e1bda5a53e2468">arc_from_source()</a>[x] is undefined (i.e. junk) when <a class="el" href="#a73d4a301fb9bab7f45382c0a0e58edfe">parents()</a>[x] == x. </p>
+<p>The arc reaching a given node in the path from their source. <a class="el" href="#a5552eca239e21de052e92bca734baea8">arc_from_source()</a>[x] is undefined (i.e. junk) when <a class="el" href="#ae10ac3523b56fe9bd6f3cd550949a586">parents()</a>[x] == x. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00210">210</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00242">242</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="ab98664bd6f8d0a912c845ee9f25692cf" name="ab98664bd6f8d0a912c845ee9f25692cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab98664bd6f8d0a912c845ee9f25692cf">&#9670;&#160;</a></span>arc_lengths()</h2>
+<a id="a0357175e3d794b1eb500081ad30037d1" name="a0357175e3d794b1eb500081ad30037d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0357175e3d794b1eb500081ad30037d1">&#9670;&#160;</a></span>arc_lengths()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; DistanceType &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::arc_lengths </td>
+          <td class="memname">const <a class="el" href="#abed6c9ed1ad24fccf9b873e177addac9">ByArc</a>&lt; DistanceType &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::arc_lengths </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -289,12 +355,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00247">247</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00281">281</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a0ba6fe71330cee9cb444b8bfc8e06eec" name="a0ba6fe71330cee9cb444b8bfc8e06eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ba6fe71330cee9cb444b8bfc8e06eec">&#9670;&#160;</a></span>ArcPathTo()</h2>
+<a id="a6b6114c459c522cae1b63f24522e12e5" name="a6b6114c459c522cae1b63f24522e12e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6114c459c522cae1b63f24522e12e5">&#9670;&#160;</a></span>ArcPathTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,34 +368,34 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ArcPathTo </td>
+          <td class="memname">std::vector&lt; typename GraphType::ArcIndex &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ArcPathTo </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the list of all the arcs in the shortest path from the node's source to the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00569">569</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00605">605</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="afc44ebd5c13e440ff1c11e67453ba620" name="afc44ebd5c13e440ff1c11e67453ba620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc44ebd5c13e440ff1c11e67453ba620">&#9670;&#160;</a></span>ArcPathToNode()</h2>
+<a id="a1c4af0f056a79e929bc9bd3e5904c006" name="a1c4af0f056a79e929bc9bd3e5904c006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4af0f056a79e929bc9bd3e5904c006">&#9670;&#160;</a></span>ArcPathToNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ArcPathToNode </td>
+          <td class="memname">std::vector&lt; <a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a> &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::ArcPathToNode </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -340,23 +406,23 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00217">217</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00249">249</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a872df4a15773696a0ebf63d90d04fcc7" name="a872df4a15773696a0ebf63d90d04fcc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a872df4a15773696a0ebf63d90d04fcc7">&#9670;&#160;</a></span>distances()</h2>
+<a id="a750a1e12e78899808763b968af506ef3" name="a750a1e12e78899808763b968af506ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750a1e12e78899808763b968af506ef3">&#9670;&#160;</a></span>distances()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; DistanceType &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::distances </td>
+          <td class="memname">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; DistanceType &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::distances </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -373,17 +439,17 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 <p>The following vectors are all indexed by graph node indices.</p>
 <p>IMPORTANT: after each Run*() function, only the positions of the reached nodes are updated, the others will contain junk. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00197">197</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00229">229</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a019552375431be179f936545e6066541" name="a019552375431be179f936545e6066541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019552375431be179f936545e6066541">&#9670;&#160;</a></span>GetArcLength()</h2>
+<a id="ab4ecb0a9910d9c793ef10f42bb4fee02" name="ab4ecb0a9910d9c793ef10f42bb4fee02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ecb0a9910d9c793ef10f42bb4fee02">&#9670;&#160;</a></span>GetArcLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -391,7 +457,7 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
         <tr>
           <td class="memname">DistanceType <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::GetArcLength </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>arc</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a0756ecac7678f5af5752e21735e43aec">ArcIndex</a></td>          <td class="paramname"><span class="paramname"><em>arc</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -402,12 +468,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00251">251</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00285">285</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="ad4cb7f47e6664226746ab3e55cf01f21" name="ad4cb7f47e6664226746ab3e55cf01f21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4cb7f47e6664226746ab3e55cf01f21">&#9670;&#160;</a></span>GetDestinationIndex()</h2>
+<a id="a5958f03c1931ca08eb93e6b54198c1e0" name="a5958f03c1931ca08eb93e6b54198c1e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5958f03c1931ca08eb93e6b54198c1e0">&#9670;&#160;</a></span>GetDestinationIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,18 +483,18 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         <tr>
           <td class="memname">int <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::GetDestinationIndex </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00621">621</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00658">658</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="af0c46fd45c88351bf254d21cd6e23265" name="af0c46fd45c88351bf254d21cd6e23265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c46fd45c88351bf254d21cd6e23265">&#9670;&#160;</a></span>GetSourceIndex()</h2>
+<a id="afacbfdb55080ec6f3d95d5122f01fdfb" name="afacbfdb55080ec6f3d95d5122f01fdfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacbfdb55080ec6f3d95d5122f01fdfb">&#9670;&#160;</a></span>GetSourceIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,16 +504,16 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         <tr>
           <td class="memname">int <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::GetSourceIndex </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Original Source/Destination index extraction, after a call to the multi-source and/or multi-destination variants: Retrieves the original index of the source or destination node in the source/destination lists given in the method calls. Eg. if you called RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations(srcs, dsts), then srcs[GetSourceIndex(node)] = (node, ...), for all "node" that appear in "srcs". Ditto for dsts and <a class="el" href="#ad4cb7f47e6664226746ab3e55cf01f21">GetDestinationIndex()</a>.</p>
+<p>Original Source/Destination index extraction, after a call to the multi-source and/or multi-destination variants: Retrieves the original index of the source or destination node in the source/destination lists given in the method calls. Eg. if you called RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations(srcs, dsts), then srcs[GetSourceIndex(node)] = (node, ...), for all "node" that appear in "srcs". Ditto for dsts and <a class="el" href="#a5958f03c1931ca08eb93e6b54198c1e0">GetDestinationIndex()</a>.</p>
 <p>If the node was listed several times as a source (or destinations), it'll pick the listing with the smallest distance offset. If the node is not a source (or destination), this returns junk: you can't rely on the value.</p>
 <p>These methods are invalidated by the next RunBoundedDijkstra*() call. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00613">613</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00650">650</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +523,7 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -478,17 +544,17 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 
 <p>Trivial accessors to the underlying graph and arc lengths. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00246">246</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00280">280</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a01349557321e4c4d41066a7ca6ccd280" name="a01349557321e4c4d41066a7ca6ccd280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01349557321e4c4d41066a7ca6ccd280">&#9670;&#160;</a></span>IsReachable()</h2>
+<a id="a57a585b755d1404d04f75221abec728d" name="a57a585b755d1404d04f75221abec728d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57a585b755d1404d04f75221abec728d">&#9670;&#160;</a></span>IsReachable()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -496,7 +562,7 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
         <tr>
           <td class="memname">bool <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::IsReachable </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -509,12 +575,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 
 <p>Returns true if <span class="tt">node</span> was reached by the last Run*() call. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00186">186</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00218">218</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a64d47fb522e095cf23053dbecad28c9d" name="a64d47fb522e095cf23053dbecad28c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64d47fb522e095cf23053dbecad28c9d">&#9670;&#160;</a></span>NodePathTo()</h2>
+<a id="a6a24bb5095fe3b49abc0954cbfe00996" name="a6a24bb5095fe3b49abc0954cbfe00996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a24bb5095fe3b49abc0954cbfe00996">&#9670;&#160;</a></span>NodePathTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,21 +588,21 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::NodePathTo </td>
+          <td class="memname">std::vector&lt; typename GraphType::NodeIndex &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::NodePathTo </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the list of all the nodes in the shortest path from the node's source to the node. This always start by the node's source, and end by the given node. In the case that source == node, returns {node}. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00587">587</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00623">623</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a9dd371746bd7c68ce94854ea7c56721d" name="a9dd371746bd7c68ce94854ea7c56721d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd371746bd7c68ce94854ea7c56721d">&#9670;&#160;</a></span>OneToOneShortestPath()</h2>
+<a id="a9306bf25dc1cbd3a4a7a556bf21cd854" name="a9306bf25dc1cbd3a4a7a556bf21cd854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9306bf25dc1cbd3a4a7a556bf21cd854">&#9670;&#160;</a></span>OneToOneShortestPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,12 +612,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         <tr>
           <td class="memname">bool <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::OneToOneShortestPath </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -561,26 +627,26 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
       </table>
 </div><div class="memdoc">
 <p>Finds the shortest path between two nodes, subject to the distance limit. Returns true iff it exists and its length is &lt; distance_limit.</p>
-<p>If this returns true, you can get the path distance with <a class="el" href="#a872df4a15773696a0ebf63d90d04fcc7" title="The distance of the nodes from their source.">distances()</a>[to] and the path with ArcPathTo(to) or NodePathTo(to). </p>
+<p>If this returns true, you can get the path distance with <a class="el" href="#a750a1e12e78899808763b968af506ef3" title="The distance of the nodes from their source.">distances()</a>[to] and the path with ArcPathTo(to) or NodePathTo(to). </p>
 <p>Stop the search, by setting the distance limit to 0.</p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00442">442</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00476">476</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a73d4a301fb9bab7f45382c0a0e58edfe" name="a73d4a301fb9bab7f45382c0a0e58edfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73d4a301fb9bab7f45382c0a0e58edfe">&#9670;&#160;</a></span>parents()</h2>
+<a id="ae10ac3523b56fe9bd6f3cd550949a586" name="ae10ac3523b56fe9bd6f3cd550949a586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10ac3523b56fe9bd6f3cd550949a586">&#9670;&#160;</a></span>parents()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::parents </td>
+          <td class="memname">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::parents </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -594,23 +660,23 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 </div><div class="memdoc">
 <p>The parent of the nodes in the shortest path from their source. When a node doesn't have any parent (it has to be a source), its parent is itself. </p><dl class="section note"><dt>Note</dt><dd>a path will never contain the same node twice, even if some arcs have a length of zero. Note also that some sources may have parents, because of the initial distances. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00206">206</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00238">238</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a0d7ce5732e1573cc99c178b8e994c00a" name="a0d7ce5732e1573cc99c178b8e994c00a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7ce5732e1573cc99c178b8e994c00a">&#9670;&#160;</a></span>reached_nodes()</h2>
+<a id="a9ade8c7c72289e4c4f4e3cb9aa4c9ea7" name="a9ade8c7c72289e4c4f4e3cb9aa4c9ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ade8c7c72289e4c4f4e3cb9aa4c9ea7">&#9670;&#160;</a></span>reached_nodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::reached_nodes </td>
+          <td class="memname">const <a class="el" href="#ac52d672f2a594d44804202365f164bf2">ByNode</a>&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::reached_nodes </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -625,25 +691,25 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 
 <p>Returns all the reached nodes form the previous Run*() call. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00189">189</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00221">221</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="add19ad7166691de2ebbe3b6c967b3605" name="add19ad7166691de2ebbe3b6c967b3605"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add19ad7166691de2ebbe3b6c967b3605">&#9670;&#160;</a></span>RunBoundedDijkstra()</h2>
+<a id="a73d9f8a187d02426399f13458106ed43" name="a73d9f8a187d02426399f13458106ed43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d9f8a187d02426399f13458106ed43">&#9670;&#160;</a></span>RunBoundedDijkstra()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = ElementGetter&lt;DistanceType&gt;&gt; </div>
+template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = internal::ElementGetter&lt;              DistanceType, typename GraphType::ArcIndex&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstra </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstra </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>source_node</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>source_node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -657,14 +723,14 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The typical Dijkstra, from a single source with distance zero, to all nodes of the graph within the distance limit (exclusive). The first element of the returned vector will always be the source_node with a distance of zero. See <a class="el" href="#a08d233509ac0e46014f6e9e276124d61">RunBoundedDijkstraFromMultipleSources()</a> for more information. </p>
+<p>The typical Dijkstra, from a single source with distance zero, to all nodes of the graph within the distance limit (exclusive). The first element of the returned vector will always be the source_node with a distance of zero. See <a class="el" href="#ad4f75b216e94f5c9748f702dd4085861">RunBoundedDijkstraFromMultipleSources()</a> for more information. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00119">119</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00149">149</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a08d233509ac0e46014f6e9e276124d61" name="a08d233509ac0e46014f6e9e276124d61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08d233509ac0e46014f6e9e276124d61">&#9670;&#160;</a></span>RunBoundedDijkstraFromMultipleSources()</h2>
+<a id="ad4f75b216e94f5c9748f702dd4085861" name="ad4f75b216e94f5c9748f702dd4085861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f75b216e94f5c9748f702dd4085861">&#9670;&#160;</a></span>RunBoundedDijkstraFromMultipleSources()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,9 +738,9 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor = Elemen
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraFromMultipleSources </td>
+          <td class="memname">const std::vector&lt; typename GraphType::NodeIndex &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraFromMultipleSources </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -685,12 +751,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 </div><div class="memdoc">
 <p>Returns the list of all the nodes which are under the given distance limit (exclusive) from at least one of the given source nodes (which also have an initial distance offset, to be added to the distance). The nodes are sorted by increasing distance. By "distance", we mean the length of the shortest path from any source plus the source's distance offset, where the length of a path is the sum of the length of its arcs </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00347">347</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00381">381</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="ab03ddf07ec4dfa2c9decd0f5da6dbbe2" name="ab03ddf07ec4dfa2c9decd0f5da6dbbe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03ddf07ec4dfa2c9decd0f5da6dbbe2">&#9670;&#160;</a></span>RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations()</h2>
+<a id="a85b4b8c52b0b704aeeb3fde7049802d7" name="a85b4b8c52b0b704aeeb3fde7049802d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b4b8c52b0b704aeeb3fde7049802d7">&#9670;&#160;</a></span>RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -698,14 +764,14 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations </td>
+          <td class="memname">std::vector&lt; typename GraphType::NodeIndex &gt; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraFromMultipleSourcesToMultipleDestinations </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>destinations_with_distance_offsets</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>destinations_with_distance_offsets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -719,23 +785,23 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Like <a class="el" href="#a08d233509ac0e46014f6e9e276124d61">RunBoundedDijkstraFromMultipleSources()</a>, but this one stops as soon as it has determined the shortest path from any of the sources to the closest "num_destinations_to_reach" destinations, and returns those destinations, sorted by overall distance (also counting the destination offsets).</p>
+<p>Like <a class="el" href="#ad4f75b216e94f5c9748f702dd4085861">RunBoundedDijkstraFromMultipleSources()</a>, but this one stops as soon as it has determined the shortest path from any of the sources to the closest "num_destinations_to_reach" destinations, and returns those destinations, sorted by overall distance (also counting the destination offsets).</p>
 <p>If num_destinations_to_reach is non-positive, returns the empty vector, if it is greater than the number of distinct destination nodes, it has no effect (it's safe to do so).</p>
 <p>If the limit is reached before, the returned vector may have smaller size, in particular it may be empty if none of the destinations was reachable.</p>
 <p>Both the sources and the destinations have a "distance offset", which is added to the path length to determine the distance between them.</p>
 <p>The rest of the reader API below is available; with the caveat that you should only try to access the nodes that have been reached by the search. That's true for the returned node index (if not -1) and its ancestors.</p>
-<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="#a872df4a15773696a0ebf63d90d04fcc7" title="The distance of the nodes from their source.">distances()</a> will take the source offsets into account, but not the destination offsets. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the <a class="el" href="#a750a1e12e78899808763b968af506ef3" title="The distance of the nodes from their source.">distances()</a> will take the source offsets into account, but not the destination offsets. </dd></dl>
 <p>Initialize the destinations. We'll adapt the distance limit according to the minimal destination distance offset. This is an optional optimization, to reduce the search space.</p>
 <p>Skip useless repetitions.</p>
 <p>Clean up, sparsely, for the next call.</p>
 <p>Return the closest "num_destinations_to_reach" reached destinations, sorted by distance.</p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00358">358</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00392">392</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="a1954cafbcfb6980fa3353c308e1c64c1" name="a1954cafbcfb6980fa3353c308e1c64c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1954cafbcfb6980fa3353c308e1c64c1">&#9670;&#160;</a></span>RunBoundedDijkstraWithSettledNodeCallback()</h2>
+<a id="afc6a0557b98c3d795af40d127d7a9490" name="afc6a0557b98c3d795af40d127d7a9490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6a0557b98c3d795af40d127d7a9490">&#9670;&#160;</a></span>RunBoundedDijkstraWithSettledNodeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -743,14 +809,14 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; int &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraWithSettledNodeCallback </td>
+          <td class="memname">const std::vector&lt; typename GraphType::NodeIndex &gt; &amp; <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::RunBoundedDijkstraWithSettledNodeCallback </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::pair&lt; int, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a>, DistanceType &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sources_with_distance_offsets</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="#a0180f80309bfa8c0d33f809268f6dcab">node_type</a> settled_node, DistanceType settled_distance, DistanceType *distance_limit)&gt;</td>          <td class="paramname"><span class="paramname"><em>settled_node_callback</em></span>, </td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a> settled_node, DistanceType settled_distance, DistanceType *distance_limit)&gt;</td>          <td class="paramname"><span class="paramname"><em>settled_node_callback</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -759,7 +825,7 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Like <a class="el" href="#a08d233509ac0e46014f6e9e276124d61">RunBoundedDijkstraFromMultipleSources()</a>, but will call a user-provided callback "settled_node_callback" when settling each node ('settling' a node happens at most once per node, when popping it from the Dijkstra queue, meaning that the node has been fully 'processed'). This callback may modify the distance limit dynamically, thus affecting the stopping criterion. </p>
+<p>Like <a class="el" href="#ad4f75b216e94f5c9748f702dd4085861">RunBoundedDijkstraFromMultipleSources()</a>, but will call a user-provided callback "settled_node_callback" when settling each node ('settling' a node happens at most once per node, when popping it from the Dijkstra queue, meaning that the node has been fully 'processed'). This callback may modify the distance limit dynamically, thus affecting the stopping criterion. </p>
 <p>Sparse clear is_reached_ from the last call.</p>
 <p>Initialize sources.</p>
 <p>Sources with an initial distance ≥ limit are <em>not</em> reached.</p>
@@ -771,12 +837,12 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 <p>Visit the neighbors.</p>
 <p>Overflow-safe check of top.distance + arc_length &gt;= distance_limit. This works since we know top.distance &lt; distance_limit, as long as we don't have negative top.distance (which might happen with negative source offset). Note that for floating point, it is not exactly the same as (top_distance + arc_length &lt; distance_limit) though.</p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00462">462</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00497">497</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
-<a id="aa84cddb09ea75b0022bfef47eff0f0ae" name="aa84cddb09ea75b0022bfef47eff0f0ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa84cddb09ea75b0022bfef47eff0f0ae">&#9670;&#160;</a></span>SourceOfShortestPathToNode()</h2>
+<a id="a5db9ae7b52a5205a9c4ee2a612cb3146" name="a5db9ae7b52a5205a9c4ee2a612cb3146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db9ae7b52a5205a9c4ee2a612cb3146">&#9670;&#160;</a></span>SourceOfShortestPathToNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,16 +850,16 @@ template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </di
 template&lt;class GraphType, class DistanceType, class ArcLengthFunctor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::SourceOfShortestPathToNode </td>
+          <td class="memname">GraphType::NodeIndex <a class="el" href="classoperations__research_1_1BoundedDijkstraWrapper.html">operations_research::BoundedDijkstraWrapper</a>&lt; GraphType, DistanceType, ArcLengthFunctor &gt;::SourceOfShortestPathToNode </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a662dd27a77d4ce320293758fbba9ca28">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the node's source. This is especially useful when running Dijkstras from multiple sources. </p>
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00604">604</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00642">642</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>

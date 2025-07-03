@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Evaluation container for the local search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001164">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001165">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
 <p>Note(user): This class do not handle ALL constraint yet. So it is not because there is no violation here that the solution will be feasible. It is important to check feasibility once this is used. Note that in practice, we can be lucky, and feasible on a subset of hard constraint is enough. </p>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00309">309</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
@@ -310,7 +310,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001165">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001166">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00430">430</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
@@ -968,7 +968,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes the delta in weighted violation if solution[var] += delta. We need a temporary mutable solution to evaluate the violation of generic constraints. If linear_only is true, only the linear violation will be used. </p>
 <p>We change the mutable solution here, and restore it after the evaluation.</p>
-<p>We assume linear time delta computation in number of variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001162">Todo</a></b></dt><dd>(user): refine on a per constraint basis. </dd></dl>
+<p>We assume linear time delta computation in number of variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001163">Todo</a></b></dt><dd>(user): refine on a per constraint basis. </dd></dl>
 <p>Restore.</p>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l02014">2014</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>

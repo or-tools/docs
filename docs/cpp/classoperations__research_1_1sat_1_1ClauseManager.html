@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -462,7 +462,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Reclaims the memory of the lazily removed clauses (their size was set to zero) and remove them from <a class="el" href="#ace6b5c3dd23b027805de98172f066972">AllClausesInCreationOrder()</a> this work in O(num_clauses()).</p>
 <p>We also update to_minimize_index_/to_probe_index_ correctly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001109">Todo</a></b></dt><dd>(user): If more indices are needed, generalize the code to a vector of indices. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001110">Todo</a></b></dt><dd>(user): If more indices are needed, generalize the code to a vector of indices. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00482">482</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -483,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Detaches the given clause right away.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001141">Todo</a></b></dt><dd>(user): It might be better to have a "slower" mode in PropagateOnFalse() that deal with detached clauses in the watcher list and is activated until the next <a class="el" href="#a0529203f55fe834c92bb36d04f35a7cf">CleanUpWatchers()</a> calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001142">Todo</a></b></dt><dd>(user): It might be better to have a "slower" mode in PropagateOnFalse() that deal with detached clauses in the watcher list and is activated until the next <a class="el" href="#a0529203f55fe834c92bb36d04f35a7cf">CleanUpWatchers()</a> calls. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00325">325</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -555,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This can return nullptr if new_clause was of size one or two as these are treated differently. Note that none of the variable should be fixed in the given new clause. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): We should return false... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001109">Todo</a></b></dt><dd>(user): We should return false... </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00439">439</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -577,7 +577,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This one do not need the clause to be detached. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001106">Todo</a></b></dt><dd>(user): remove the test when the DRAT issue with fixed literal is resolved. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): remove the test when the DRAT issue with fixed literal is resolved. </dd></dl>
 <p>Even when all clauses are detached, we can propagate the implication graph and we do that right away.</p>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00363">363</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
@@ -600,7 +600,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>These must only be called between [Detach/Attach]AllClauses() calls. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): We could do something slower if the clauses are attached like we do for <a class="el" href="#adfefdc7699f1642297d785b3042e4c44">InprocessingRewriteClause()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): We could do something slower if the clauses are attached like we do for <a class="el" href="#adfefdc7699f1642297d785b3042e4c44">InprocessingRewriteClause()</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00382">382</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 

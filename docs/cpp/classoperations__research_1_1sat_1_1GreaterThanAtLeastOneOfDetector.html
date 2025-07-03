@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Detects if at least one of a subset of linear of size 2 or 1, touching the same variable, must be true. When this is the case we add a new propagator to propagate that fact.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002170">Todo</a></b></dt><dd>(user): Shall we do that on the main thread before the workers are spawned? note that the probing version need the model to be loaded though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002171">Todo</a></b></dt><dd>(user): Shall we do that on the main thread before the workers are spawned? note that the probing version need the model to be loaded though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00692">692</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -156,10 +156,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Advanced usage. To be called once all the constraints have been added to the model. This will detect GreaterThanAtLeastOneOfConstraint(). Returns the number of added constraint.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002182">Todo</a></b></dt><dd>(user): This can be quite slow, add some kind of deterministic limit so that we can use it all the time. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002183">Todo</a></b></dt><dd>(user): This can be quite slow, add some kind of deterministic limit so that we can use it all the time. </dd></dl>
 <p>We have two possible approaches. For now, we prefer the first one except if there is too many clauses in the problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002162">Todo</a></b></dt><dd>(user): Do more extensive experiment. Remove the second approach as it is more time consuming? or identify when it make sense. Note that the first approach also allows to use "incomplete" at least one between arcs. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002163">Todo</a></b></dt><dd>(user): This does not take into account clause of size 2 since they are stored in the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> instead. Some ideas specific to size 2:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002163">Todo</a></b></dt><dd>(user): Do more extensive experiment. Remove the second approach as it is more time consuming? or identify when it make sense. Note that the first approach also allows to use "incomplete" at least one between arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002164">Todo</a></b></dt><dd>(user): This does not take into account clause of size 2 since they are stored in the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a> instead. Some ideas specific to size 2:<ul>
 <li>There can be a lot of such clauses, but it might be nice to consider them. we need to experiments.</li>
 <li>The automatic clause detection might be a better approach and it could be combined with probing. </li>
 </ul>

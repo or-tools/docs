@@ -1,5 +1,11 @@
 var NAVTREEINDEX102 =
 {
+"classoperations__research_1_1sat_1_1SharedSolutionRepository.html#af0a24e84af2d22663286d72add786cc9":[3,0,8,13,278,13],
+"classoperations__research_1_1sat_1_1SharedSolutionRepository.html#af0a24e84af2d22663286d72add786cc9":[4,0,4,12,278,13],
+"classoperations__research_1_1sat_1_1SharedSolutionRepository.html#aff5f17efefde3550b7c8a7d71a653390":[3,0,8,13,278,7],
+"classoperations__research_1_1sat_1_1SharedSolutionRepository.html#aff5f17efefde3550b7c8a7d71a653390":[4,0,4,12,278,7],
+"classoperations__research_1_1sat_1_1SharedStatTables.html":[3,0,8,13,280],
+"classoperations__research_1_1sat_1_1SharedStatTables.html":[4,0,4,12,280],
 "classoperations__research_1_1sat_1_1SharedStatTables.html#a2141366bd6939e56cf674de57291f803":[3,0,8,13,280,6],
 "classoperations__research_1_1sat_1_1SharedStatTables.html#a2141366bd6939e56cf674de57291f803":[4,0,4,12,280,6],
 "classoperations__research_1_1sat_1_1SharedStatTables.html#a64cccc426c588ad4e21cd8724d5ff211":[3,0,8,13,280,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX102 =
 "classoperations__research_1_1sat_1_1SubsetsDetector.html#a5b2288130f28f1e08c82a69f7be19ddf":[3,0,8,13,290,4],
 "classoperations__research_1_1sat_1_1SubsetsDetector.html#a5b2288130f28f1e08c82a69f7be19ddf":[4,0,4,12,290,4],
 "classoperations__research_1_1sat_1_1SubsetsDetector.html#a673a8dadabfe6f2efb64c5cf52a839e6":[3,0,8,13,290,3],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a673a8dadabfe6f2efb64c5cf52a839e6":[4,0,4,12,290,3],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a698111a0f2330bc04c438152fe955579":[3,0,8,13,290,0],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a698111a0f2330bc04c438152fe955579":[4,0,4,12,290,0],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a6de9b1ab2073bfdbb304be861c5167dc":[3,0,8,13,290,5],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a6de9b1ab2073bfdbb304be861c5167dc":[4,0,4,12,290,5],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a83747db26c5d482a332696f31bccae73":[3,0,8,13,290,8],
-"classoperations__research_1_1sat_1_1SubsetsDetector.html#a83747db26c5d482a332696f31bccae73":[4,0,4,12,290,8]
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a673a8dadabfe6f2efb64c5cf52a839e6":[4,0,4,12,290,3]
 };

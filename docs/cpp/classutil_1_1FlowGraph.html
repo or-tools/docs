@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -176,7 +176,7 @@ class util::FlowGraph&lt; NodeIndexType, ArcIndexType &gt;</div><p><a class="el"
 <p>For max-flow or min-cost-flow we need a directed graph where each arc from tail to head has a "reverse" arc from head to tail. In practice many input graphs already have such reverse arc and it can make a big difference just to reuse them.</p>
 <p>This is similar to <a class="el" href="classutil_1_1ReverseArcStaticGraph.html">ReverseArcStaticGraph</a> but handle reverse arcs in a different way. Instead of always creating a NEW reverse arc for each arc of the input graph, this will detect if a reverse arc was already present in the input, and do not create a new one when this is the case. In the best case, this can gain a factor 2 in the final graph size, note however that the graph construction is slighlty slower because of this detection.</p>
 <p>A side effect of reusing reverse arc is also that we cannot anymore clearly separate the original arcs from the newly created one. So the algorithm needs to be able to handle that.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000637">Todo</a></b></dt><dd>(user): Currently only max-flow handles this graph, but not min-cost-flow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000638">Todo</a></b></dt><dd>(user): Currently only max-flow handles this graph, but not min-cost-flow. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="flow__graph_8h_source.html#l00052">52</a> of file <a class="el" href="flow__graph_8h_source.html">flow_graph.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -358,7 +358,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
 <p>It seems better to put all the reverse first instead of last in the adjacency list, so lets do that here. Note that we need to fix the permutation returned to the user in this case.</p>
 <p>With this, we should have almost exactly the same behavior as ReverseArcStaticGraph().</p>
 <p>Do we sort each OutgoingArcs(node) by head ? Or is it better to keep all new reverse arc before or after ?</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000638">Todo</a></b></dt><dd>(user): For now we only support sorting, or all new reverse after and keep the original arc order. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000639">Todo</a></b></dt><dd>(user): For now we only support sorting, or all new reverse after and keep the original arc order. </dd></dl>
 <p>Create the final heads_.</p>
 <p>No longer needed.</p>
 <p>We now create reverse_, this needs the permutation on both sides.</p>

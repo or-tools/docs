@@ -1,5 +1,11 @@
 var NAVTREEINDEX69 =
 {
+"classoperations__research_1_1math__opt_1_1Elemental.html#af6f8c5cd9fc93518d3c0b5043fa4c709":[3,0,8,8,45,8],
+"classoperations__research_1_1math__opt_1_1Elemental.html#af6f8c5cd9fc93518d3c0b5043fa4c709":[4,0,4,7,45,8],
+"classoperations__research_1_1math__opt_1_1Elemental.html#af86cdc41387b5fb9bfd8afaf7d786964":[3,0,8,8,45,28],
+"classoperations__research_1_1math__opt_1_1Elemental.html#af86cdc41387b5fb9bfd8afaf7d786964":[4,0,4,7,45,28],
+"classoperations__research_1_1math__opt_1_1Elemental.html#afa2228f2cc92f18ea7d5fb23b8bb19c6":[3,0,8,8,45,38],
+"classoperations__research_1_1math__opt_1_1Elemental.html#afa2228f2cc92f18ea7d5fb23b8bb19c6":[4,0,4,7,45,38],
 "classoperations__research_1_1math__opt_1_1ElementalDifference.html":[3,0,8,8,46],
 "classoperations__research_1_1math__opt_1_1ElementalDifference.html":[4,0,4,7,46],
 "classoperations__research_1_1math__opt_1_1ElementalDifference.html#a0596328f9c7271750081689b9b3cbca4":[3,0,8,8,46,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX69 =
 "classoperations__research_1_1math__opt_1_1Gurobi.html#ac9d253fe8a62dfbb89b490daa32683a6":[3,0,8,8,71,14],
 "classoperations__research_1_1math__opt_1_1Gurobi.html#ac9d253fe8a62dfbb89b490daa32683a6":[4,0,4,7,71,14],
 "classoperations__research_1_1math__opt_1_1Gurobi.html#acd14c3dd8750e07e52d847521317ea17":[3,0,8,8,71,21],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#acd14c3dd8750e07e52d847521317ea17":[4,0,4,7,71,21],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#ae0fdfdafe9c9dcb97550db2d7fe05e4b":[3,0,8,8,71,58],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#ae0fdfdafe9c9dcb97550db2d7fe05e4b":[4,0,4,7,71,58],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#ae781aa8e8784e12f4cba5b98b54bf5ba":[3,0,8,8,71,35],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#ae781aa8e8784e12f4cba5b98b54bf5ba":[4,0,4,7,71,35],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#aec366062fe4758ac4a2f4dce6537534d":[3,0,8,8,71,49],
-"classoperations__research_1_1math__opt_1_1Gurobi.html#aec366062fe4758ac4a2f4dce6537534d":[4,0,4,7,71,49]
+"classoperations__research_1_1math__opt_1_1Gurobi.html#acd14c3dd8750e07e52d847521317ea17":[4,0,4,7,71,21]
 };

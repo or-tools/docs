@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -157,8 +157,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The decision level at which this assignment was made. This starts at 0 and increases each time the solver takes a search decision.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002282">Todo</a></b></dt><dd>(user): We may be able to get rid of that for faster enqueues. Most of the code only need to know if this is 0 or the highest level, and for the LBD computation, the literal of the conflict are already ordered by level, so we could do it fairly efficiently.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002283">Todo</a></b></dt><dd>(user): We currently don't support more than 2^28 decision levels. That should be enough for most practical problem, but we should fail properly if this limit is reached. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002283">Todo</a></b></dt><dd>(user): We may be able to get rid of that for faster enqueues. Most of the code only need to know if this is 0 or the highest level, and for the LBD computation, the literal of the conflict are already ordered by level, so we could do it fairly efficiently.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002284">Todo</a></b></dt><dd>(user): We currently don't support more than 2^28 decision levels. That should be enough for most practical problem, but we should fail properly if this limit is reached. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__base_8h_source.html#l00254">254</a> of file <a class="el" href="sat__base_8h_source.html">sat_base.h</a>.</p>
 

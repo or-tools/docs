@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -411,8 +411,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a2bb9946ef12e8eb9326b095cb99ef6c9" title="SatPropagator interface.">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a2bb9946ef12e8eb9326b095cb99ef6c9" title="SatPropagator interface.">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002287">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <p>Simply revert the status change.</p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5f04df27e81298743cf658683344b0a0">operations_research::sat::SatPropagator</a>.</p>

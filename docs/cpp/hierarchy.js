@@ -530,7 +530,7 @@ var hierarchy =
     [ "operations_research::math_opt::ElementDiff", "classoperations__research_1_1math__opt_1_1ElementDiff.html", null ],
     [ "operations_research::math_opt::ElementalDifference::ElementDifference", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1ElementDifference.html", null ],
     [ "operations_research::sat::ElementEncodings", "classoperations__research_1_1sat_1_1ElementEncodings.html", null ],
-    [ "operations_research::ElementGetter< T >", "classoperations__research_1_1ElementGetter.html", null ],
+    [ "operations_research::internal::ElementGetter< T, ArcIndex >", "classoperations__research_1_1internal_1_1ElementGetter.html", null ],
     [ "operations_research::math_opt::ElementId< element_type >", "classoperations__research_1_1math__opt_1_1ElementId.html", null ],
     [ "operations_research::math_opt::ElementIdsConstView< element_type, Container >", "classoperations__research_1_1math__opt_1_1ElementIdsConstView.html", null ],
     [ "operations_research::math_opt::ElementIdsVector< element_type >", "classoperations__research_1_1math__opt_1_1ElementIdsVector.html", null ],
@@ -583,10 +583,12 @@ var hierarchy =
     [ "std::false_type", null, [
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1hasher_01_4_01_4.html", null ],
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher >, absl::void_t< typename T::reverse_iterator > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1has874eac94230b485ac83db5fd43f88c46.html", null ],
+      [ "operations_research::internal::is_strong_int<::util_intops::StrongInt< Tag, Native, Validator > >", "structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html", null ],
       [ "operations_research::math_opt::is_attr_key< AttrKey< n, Symmetry > >", "structoperations__research_1_1math__opt_1_1is__attr__key_3_01AttrKey_3_01n_00_01Symmetry_01_4_01_4.html", null ],
       [ "operations_research::math_opt::is_element_id< ElementId< element_type > >", "structoperations__research_1_1math__opt_1_1is__element__id_3_01ElementId_3_01element__type_01_4_01_4.html", null ],
       [ "gtl::stl_util_internal::Unordered< typename, typename, typename >", "structgtl_1_1stl__util__internal_1_1Unordered.html", null ],
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher >, absl::void_t< typename T::reverse_iterator > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1has874eac94230b485ac83db5fd43f88c46.html", null ],
+      [ "operations_research::internal::is_strong_int< T >", "structoperations__research_1_1internal_1_1is__strong__int.html", null ],
       [ "operations_research::math_opt::is_attr_key< T >", "structoperations__research_1_1math__opt_1_1is__attr__key.html", null ],
       [ "operations_research::math_opt::is_element_id< T >", "structoperations__research_1_1math__opt_1_1is__element__id.html", null ]
     ] ],
@@ -1678,6 +1680,7 @@ var hierarchy =
     [ "gtl::stl_util_internal::TransparentLess", "structgtl_1_1stl__util__internal_1_1TransparentLess.html", null ],
     [ "std::true_type", null, [
       [ "gtl::stl_util_internal::Unordered< T, absl::void_t< typename T::hasher > >", "structgtl_1_1stl__util__internal_1_1Unordered_3_01T_00_01absl_1_1void__t_3_01typename_01T_1_1hasher_01_4_01_4.html", null ],
+      [ "operations_research::internal::is_strong_int<::util_intops::StrongInt< Tag, Native, Validator > >", "structoperations__research_1_1internal_1_1is__strong__int_3_1_1util__intops_1_1StrongInt_3_01Tag43d6bd25a788ade58d62bc43de112044.html", null ],
       [ "operations_research::math_opt::is_attr_key< AttrKey< n, Symmetry > >", "structoperations__research_1_1math__opt_1_1is__attr__key_3_01AttrKey_3_01n_00_01Symmetry_01_4_01_4.html", null ],
       [ "operations_research::math_opt::is_element_id< ElementId< element_type > >", "structoperations__research_1_1math__opt_1_1is__element__id_3_01ElementId_3_01element__type_01_4_01_4.html", null ]
     ] ],

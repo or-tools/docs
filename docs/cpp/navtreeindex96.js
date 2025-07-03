@@ -1,5 +1,11 @@
 var NAVTREEINDEX96 =
 {
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7dcc4d51adc2f15f2b3d7e4997f27cf0":[3,0,8,13,208,0],
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7dcc4d51adc2f15f2b3d7e4997f27cf0":[4,0,4,12,208,0],
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7fc6614f053e30f750021e6443be583e":[3,0,8,13,208,2],
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a7fc6614f053e30f750021e6443be583e":[4,0,4,12,208,2],
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a8a6f0703229d398872151ea36365e9f2":[3,0,8,13,208,9],
+"classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a8a6f0703229d398872151ea36365e9f2":[4,0,4,12,208,9],
 "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a95a45bf660b0969c5ff74be3a7da556d":[3,0,8,13,208,10],
 "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#a95a45bf660b0969c5ff74be3a7da556d":[4,0,4,12,208,10],
 "classoperations__research_1_1sat_1_1PrecedencesPropagator.html#adeceaf061f206ced732c073c7f425e98":[3,0,8,13,208,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX96 =
 "classoperations__research_1_1sat_1_1PresolveContext.html#ac44f2bf6c587fef730b061c92edfb8e0":[3,0,8,13,209,4],
 "classoperations__research_1_1sat_1_1PresolveContext.html#ac44f2bf6c587fef730b061c92edfb8e0":[4,0,4,12,209,4],
 "classoperations__research_1_1sat_1_1PresolveContext.html#ac461a0ca5f496b70b12578939a12855e":[3,0,8,13,209,130],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac461a0ca5f496b70b12578939a12855e":[4,0,4,12,209,130],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac5377b5320ad26e469e680b7d3bab02b":[3,0,8,13,209,53],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac5377b5320ad26e469e680b7d3bab02b":[4,0,4,12,209,53],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b":[3,0,8,13,209,118],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b":[4,0,4,12,209,118],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac6febea0946bc7a03f0b5efc3e2b0322":[3,0,8,13,209,85],
-"classoperations__research_1_1sat_1_1PresolveContext.html#ac6febea0946bc7a03f0b5efc3e2b0322":[4,0,4,12,209,85]
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac461a0ca5f496b70b12578939a12855e":[4,0,4,12,209,130]
 };

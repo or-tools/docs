@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Given that the "tasks" are part of a cumulative constraint, this adds a constraint that propagate the fact that: var &gt;= max(end of subtasks) + offset.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001616">Todo</a></b></dt><dd>(user): I am not sure this is the best way, but it does at least push the level zero bound on the large cumulative instances. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001617">Todo</a></b></dt><dd>(user): I am not sure this is the best way, but it does at least push the level zero bound on the large cumulative instances. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cumulative__energy_8h_source.html#l00091">91</a> of file <a class="el" href="cumulative__energy_8h_source.html">cumulative_energy.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -202,7 +202,7 @@ Public Member Functions</h2></td></tr>
 <p>Skip tasks not relevant for this propagator.</p>
 <p>We prefer higher time in case of ties since that should reduce the explanation size.</p>
 <dl class="section note"><dt>Note</dt><dd>if the energy is zero, we don't push anything. Other propagator will make sure that the end_min is greater than the end_min of any of the task considered here. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001614">Todo</a></b></dt><dd>(user): actually, we will push using the last task, and the reason will be non-optimal, fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001615">Todo</a></b></dt><dd>(user): actually, we will push using the last task, and the reason will be non-optimal, fix. </dd></dl>
 <p>Compute the reason. It is just the reason for the energy after time.</p>
 <p>Propagate.</p>
 

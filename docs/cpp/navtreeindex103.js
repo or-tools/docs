@@ -1,5 +1,11 @@
 var NAVTREEINDEX103 =
 {
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a698111a0f2330bc04c438152fe955579":[3,0,8,13,290,0],
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a698111a0f2330bc04c438152fe955579":[4,0,4,12,290,0],
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a6de9b1ab2073bfdbb304be861c5167dc":[3,0,8,13,290,5],
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a6de9b1ab2073bfdbb304be861c5167dc":[4,0,4,12,290,5],
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a83747db26c5d482a332696f31bccae73":[3,0,8,13,290,8],
+"classoperations__research_1_1sat_1_1SubsetsDetector.html#a83747db26c5d482a332696f31bccae73":[4,0,4,12,290,8],
 "classoperations__research_1_1sat_1_1SubsetsDetector.html#ad62a50259ba8052d8f6c691328a4aef4":[3,0,8,13,290,2],
 "classoperations__research_1_1sat_1_1SubsetsDetector.html#ad62a50259ba8052d8f6c691328a4aef4":[4,0,4,12,290,2],
 "classoperations__research_1_1sat_1_1SubsolverNameFilter.html":[3,0,8,13,292],
@@ -243,11 +249,5 @@ var NAVTREEINDEX103 =
 "classoperations__research_1_1sat_1_1UniqueClauseStream.html#a112ce75c6f59cf061079d7f6f0c28bac":[3,0,8,13,306,4],
 "classoperations__research_1_1sat_1_1UniqueClauseStream.html#a112ce75c6f59cf061079d7f6f0c28bac":[4,0,4,12,306,4],
 "classoperations__research_1_1sat_1_1UniqueClauseStream.html#a40c9ca5a0f54259395f0356b0eec541a":[3,0,8,13,306,5],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a40c9ca5a0f54259395f0356b0eec541a":[4,0,4,12,306,5],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a455c6ed37044c7dca432e35dc12ddccc":[3,0,8,13,306,16],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a455c6ed37044c7dca432e35dc12ddccc":[4,0,4,12,306,16],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a4dd8bb005f601e9cf9ccdb36446e3252":[3,0,8,13,306,6],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a4dd8bb005f601e9cf9ccdb36446e3252":[4,0,4,12,306,6],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a5215240a63d95d2733fd6d64fcd95553":[3,0,8,13,306,1],
-"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a5215240a63d95d2733fd6d64fcd95553":[4,0,4,12,306,1]
+"classoperations__research_1_1sat_1_1UniqueClauseStream.html#a40c9ca5a0f54259395f0356b0eec541a":[4,0,4,12,306,5]
 };

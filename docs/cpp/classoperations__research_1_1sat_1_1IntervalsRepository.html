@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -516,12 +516,12 @@ Public Member Functions</h2></td></tr>
 <p>task_b is before task_a ?</p>
 <p>Abort if the relation is already known.</p>
 <p>Create a new literal.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001876">Todo</a></b></dt><dd>(user): If there are no enforcement and we already have at one of:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001877">Todo</a></b></dt><dd>(user): If there are no enforcement and we already have at one of:<ul>
 <li>s &lt;=&gt; a.end &lt;= b.start</li>
 <li>t &lt;=&gt; b.end &lt;= a.start We could use (s, not(s)) or (not(t), t) and make sure s = not(t) if both exists.</li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001877">Todo</a></b></dt><dd>(user): Otherwise, an alternative solution is to create s and t (can be one more Boolean though), and have enforcement =&gt; s + t == 1. The later might not even be needed though, since interval equation should already enforce it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001878">Todo</a></b></dt><dd>(user): Otherwise, an alternative solution is to create s and t (can be one more Boolean though), and have enforcement =&gt; s + t == 1. The later might not even be needed though, since interval equation should already enforce it. </dd></dl>
 <p>Also insert it in precedences.</p>
 <p>The calls to <a class="el" href="namespaceoperations__research_1_1sat.html#a7e70b48ffc73d9b4346b4415c3b799b6">AddConditionalAffinePrecedence()</a> might have fixed some of the enforcement literals. Remove them if we are at level zero.</p>
 <p>Force the value of boolean_var in case the precedence is not active. This avoids duplicate solutions when enumerating all possible solutions.</p>
@@ -550,7 +550,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> corresponding to the given variables. </p><dl class="section note"><dt>Note</dt><dd>the order of interval in the helper will be the same.</dd></dl>
 <p>It is possible to indicate that this correspond to a disjunctive constraint by setting the Boolean to true. This is used by our scheduling heuristic based on precedences.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001878">Todo</a></b></dt><dd>(user): Ideally we should sort the vector of variables, but right now we cannot since we often use this with a parallel vector of demands. So this "sorting" should happen in the presolver so we can share as much as possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001879">Todo</a></b></dt><dd>(user): Ideally we should sort the vector of variables, but right now we cannot since we often use this with a parallel vector of demands. So this "sorting" should happen in the presolver so we can share as much as possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00258">258</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 

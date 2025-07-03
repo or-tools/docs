@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -685,7 +685,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000856">Todo</a></b></dt><dd>(user): For some <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> types, it may not gain much (or even nothing if we are in infinite precision) to use this sum. A solution is to templatize this class and specialize it to a normal sum for the <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> type we want so in this case the PreciseXXX() functions below will become equivalent to their normal version. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000857">Todo</a></b></dt><dd>(user): For some <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> types, it may not gain much (or even nothing if we are in infinite precision) to use this sum. A solution is to templatize this class and specialize it to a normal sum for the <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> type we want so in this case the PreciseXXX() functions below will become equivalent to their normal version. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00037">37</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
 
@@ -1083,7 +1083,7 @@ Variables</h2></td></tr>
 <p>Implementation class. Please use the 2 functions above.</p>
 <p>Reads a linear program in the mps format.</p>
 <p>All Parse() methods clear the previously parsed instance and store the result in the given Data class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000864">Todo</a></b></dt><dd>(user): Remove the MPSReader class. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000865">Todo</a></b></dt><dd>(user): Remove the MPSReader class. </dd></dl>
 <p>Parses instance from a file.</p>
 <p>Loads instance from string. Useful with MapReduce. Automatically detects the file's format (free or fixed).</p>
 
@@ -1181,7 +1181,7 @@ template&lt;typename IndexType, typename ITIVectorType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Applies the permutation perm to the vector b. Overwrites result to store the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000872">Todo</a></b></dt><dd>(user): Try to restrict this method to using the same integer type in the permutation and for the vector indices, i.e. IndexType == ITIVectorType::IndexType. Some client code will need to be refactored. </dd></dl>
+<p>Applies the permutation perm to the vector b. Overwrites result to store the result. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000873">Todo</a></b></dt><dd>(user): Try to restrict this method to using the same integer type in the permutation and for the vector indices, i.e. IndexType == ITIVectorType::IndexType. Some client code will need to be refactored. </dd></dl>
 <p>Empty size means identity.</p>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2permutation_8h_source.html#l00218">218</a> of file <a class="el" href="lp__data_2permutation_8h_source.html">permutation.h</a>.</p>
@@ -1249,7 +1249,7 @@ template&lt;typename IndexType, typename ITIVectorType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true iff the two given matrices have exactly the same first num_rows entries on the first num_cols columns. The two given matrices must be ordered by rows (this is DCHECKed, but only for the first one at this point). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000861">Todo</a></b></dt><dd>(user): Also DCHECK() that matrix_b is ordered by rows. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000862">Todo</a></b></dt><dd>(user): Also DCHECK() that matrix_b is ordered by rows. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="matrix__utils_8cc_source.html#l00198">198</a> of file <a class="el" href="matrix__utils_8cc_source.html">matrix_utils.cc</a>.</p>
 
@@ -1510,7 +1510,7 @@ template&lt;typename IndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the fraction of non-zero entries of the given row.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000858">Todo</a></b></dt><dd>(user): Take a Scattered row/col instead. This is only used to report stats, but we should still have a sparse version to do it faster. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000859">Todo</a></b></dt><dd>(user): Take a Scattered row/col instead. This is only used to report stats, but we should still have a sparse version to do it faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8cc_source.html#l00176">176</a> of file <a class="el" href="lp__data_2lp__utils_8cc_source.html">lp_utils.cc</a>.</p>
 
@@ -1571,7 +1571,7 @@ template&lt;typename IndexType&gt; </div>
 <p>Compute the fingerprint of each columns and sort them.</p>
 <p>Find a representative of each proportional columns class. This only compares columns with a close-enough fingerprint.</p>
 <dl class="section note"><dt>Note</dt><dd>we use the same tolerance for the fingerprints. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000860">Todo</a></b></dt><dd>(user): Derive precise bounds on what this tolerance should be so that no proportional columns are missed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000861">Todo</a></b></dt><dd>(user): Derive precise bounds on what this tolerance should be so that no proportional columns are missed. </dd></dl>
 <p>Sort the mapping so that the representative of each class is the smallest column. To achieve this, the current representative is used as a pointer to the new one, a bit like in an union find algorithm.</p>
 
 <p class="definition">Definition at line <a class="el" href="matrix__utils_8cc_source.html#l00123">123</a> of file <a class="el" href="matrix__utils_8cc_source.html">matrix_utils.cc</a>.</p>
@@ -2044,7 +2044,7 @@ template&lt;typename Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000886">Todo</a></b></dt><dd>(user): Consider using kInvalidRow for this? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000887">Todo</a></b></dt><dd>(user): Consider using kInvalidRow for this? </dd></dl>
 
 </div>
 </div>
@@ -2142,8 +2142,8 @@ template&lt;typename Container&gt; </div>
 </div><div class="memdoc">
 
 <p>Converts a MPModelProto to a <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000873">Todo</a></b></dt><dd>(user): clean up loops to use natural range iteration. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000874">Todo</a></b></dt><dd>(user): implement strong proto validation in the linear solver server and re-use it here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000874">Todo</a></b></dt><dd>(user): clean up loops to use natural range iteration. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000875">Todo</a></b></dt><dd>(user): implement strong proto validation in the linear solver server and re-use it here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2proto__utils_8cc_source.html#l00058">58</a> of file <a class="el" href="lp__data_2proto__utils_8cc_source.html">proto_utils.cc</a>.</p>
 
@@ -2791,7 +2791,7 @@ template&lt;class DenseRowOrColumn&gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>This version is heavily used in the pricing. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000857">Todo</a></b></dt><dd>(user): Optimize this more (SSE or unroll with two sums). Another option is to skip the u[col] that are 0.0 rather than fetching the coeff and doing a <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> multiplication. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000858">Todo</a></b></dt><dd>(user): Optimize this more (SSE or unroll with two sums). Another option is to skip the u[col] that are 0.0 rather than fetching the coeff and doing a <a class="el" href="#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> multiplication. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00087">87</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
 

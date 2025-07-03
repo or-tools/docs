@@ -1,5 +1,11 @@
 var NAVTREEINDEX90 =
 {
+"classoperations__research_1_1sat_1_1IntVar.html#a23d836e740ab297549905c5fa8539ba5":[3,0,8,13,136,7],
+"classoperations__research_1_1sat_1_1IntVar.html#a23d836e740ab297549905c5fa8539ba5":[4,0,4,12,136,7],
+"classoperations__research_1_1sat_1_1IntVar.html#a2fdcfe89481f7f3e4cce763459764d78":[3,0,8,13,136,1],
+"classoperations__research_1_1sat_1_1IntVar.html#a2fdcfe89481f7f3e4cce763459764d78":[4,0,4,12,136,1],
+"classoperations__research_1_1sat_1_1IntVar.html#a306d73a4e44fafbd2bcbc3f4d06a0757":[3,0,8,13,136,13],
+"classoperations__research_1_1sat_1_1IntVar.html#a306d73a4e44fafbd2bcbc3f4d06a0757":[4,0,4,12,136,13],
 "classoperations__research_1_1sat_1_1IntVar.html#a7678a938bf60a5c17fb47cf58995db0c":[3,0,8,13,136,15],
 "classoperations__research_1_1sat_1_1IntVar.html#a7678a938bf60a5c17fb47cf58995db0c":[4,0,4,12,136,15],
 "classoperations__research_1_1sat_1_1IntVar.html#a824aadc0688ab57929ae744b1f1a7a26":[3,0,8,13,136,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX90 =
 "classoperations__research_1_1sat_1_1IntegerTrail.html#ab8c7324f4682ebd510a35917832db076":[3,0,8,13,132,40],
 "classoperations__research_1_1sat_1_1IntegerTrail.html#ab8c7324f4682ebd510a35917832db076":[4,0,4,12,132,40],
 "classoperations__research_1_1sat_1_1IntegerTrail.html#ac1fb45f018e2314a5d367335536e503c":[3,0,8,13,132,47],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#ac1fb45f018e2314a5d367335536e503c":[4,0,4,12,132,47],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#ac2cfaa9b1848cc1edbdb5c50e7d42188":[3,0,8,13,132,19],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#ac2cfaa9b1848cc1edbdb5c50e7d42188":[4,0,4,12,132,19],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#ac7b90291347a80b54c35232033f35d4f":[3,0,8,13,132,28],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#ac7b90291347a80b54c35232033f35d4f":[4,0,4,12,132,28],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#acb1e43a55688b0002d08e82778295a47":[3,0,8,13,132,42],
-"classoperations__research_1_1sat_1_1IntegerTrail.html#acb1e43a55688b0002d08e82778295a47":[4,0,4,12,132,42]
+"classoperations__research_1_1sat_1_1IntegerTrail.html#ac1fb45f018e2314a5d367335536e503c":[4,0,4,12,132,47]
 };

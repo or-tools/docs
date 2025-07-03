@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -310,7 +310,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoperations__research_1_1LazySteepestSearch.html">LazySteepestSearch</a>. </p>
 <p>First part of the trick: Since the heuristic is greedy, it only considers subsets that are selected and in_focus.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002562">Todo</a></b></dt><dd>(user): use RadixSort with doubles and payloads. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002564">Todo</a></b></dt><dd>(user): use RadixSort with doubles and payloads. </dd></dl>
 <p>Second part of the trick: ComputeIsRedundant is expensive, but it is going to be called only once per subset in the solution. Once this has been done, there is no need to update any priority queue, nor to use a stronger level of consistency than kCostAndCoverage. In the non-lazy version, the redundancy of a subset may be updated many times and the priority queue must be updated accordingly, including just for removing the subset that was just considered, A possible optimization would be to sort the elements by coverage and run ComputeIsRedundant with the new element order. This would make the subsets which cover only one element easier to prove non-redundant.</p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1BoolVectorBasedSolutionGenerator.html#a03a5cc8cfa8f9c0982ff0da35d132d35">operations_research::BoolVectorBasedSolutionGenerator</a>.</p>

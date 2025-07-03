@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -222,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a task to run. The task_id is just an ever increasing counter that correspond to the number of total calls to <a class="el" href="#ae17a592e3035030d324cb0310cb93143">GenerateTask()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002461">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002463">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
 <p>This is only called by the main thread. </p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a68765bc7ed07ce93ffeddbe61ad40d65">operations_research::sat::SubSolver</a>.</p>
@@ -257,7 +257,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Note(user): The intended implementation for determinism is that tasks update asynchronously (and so non-deterministically) global "shared" classes, but this global state is incorporated by the Subsolver only when <a class="el" href="#a7885d03789e15398197965ce723c3d59">Synchronize()</a> is called.</p>
 <p>This is only called by the main thread in Subsolver creation order. </p>
 <p>We are just waiting for the inner code to check the time limit or to return nicely.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002432">Todo</a></b></dt><dd>(user): Also stop if we have enough newly fixed / improved root level bounds so that we think it is worth represolving and restarting. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002434">Todo</a></b></dt><dd>(user): Also stop if we have enough newly fixed / improved root level bounds so that we think it is worth represolving and restarting. </dd></dl>
 <p>The current objective lower bound has been improved, restarting.</p>
 <p>A solution has been found that is better than the current target objective upper bound. Restarting to use a smaller delta.</p>
 <p>If the range has been reduced enough to warrant a delta of 1, while the current search uses a delta &gt; 1. Restarting to switch to the delta of 1.</p>

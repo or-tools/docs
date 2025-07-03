@@ -76,11 +76,11 @@ var NAVTREEINDEX =
 "classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticBase.html#adacbcad50b16cd58c4c3e5ce40199691",
 "classortools_1_1sat_1_1colab_1_1visualization_1_1ColorManager.html#a33861545d2a887bcfccd67f406cbeabc",
 "classortools_1_1sat_1_1python_1_1cp__model_1_1CpModel.html#aa8ed6891b26ea983fe95e1f8e6fffd4b",
-"classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a23d7f709ea8f6e4ec21a7e46094c772d",
-"graph_2python_2____init_____8py.html",
-"namespaceortools_1_1gscip_1_1gscip__pb2.html#af16bb19ec161d4574afb7dae92b71c70",
-"namespaceortools_1_1math__opt_1_1python_1_1statistics.html#ab9d1acbbb100da36621417682ff558f9",
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#aaa72ef0810db78110b8e10e1a6caffe4"
+"classortools_1_1sat_1_1python_1_1cp__model_1_1IntVar.html#a13144be6d3046b4a21cae128d10d2cd4",
+"graph_2____init_____8py.html",
+"namespaceortools_1_1gscip_1_1gscip__pb2.html#ab305f4a4b40143530e51de204d846b30",
+"namespaceortools_1_1math__opt_1_1python_1_1statistics.html",
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a4a69191fcbfff1f230d453fd5bf08826"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

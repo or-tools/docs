@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -279,8 +279,8 @@ Public Member Functions</h2></td></tr>
 <p>Try lower bounded direction for implied bound. This kind should always be beneficial if it exists:</p>
 <p>Because X = bound_diff * B + S We can replace coeff * X by the expression before applying f: = f(coeff * bound_diff) * B + f(coeff) * [X - bound_diff * B] = f(coeff) * X + (f(coeff * bound_diff) - f(coeff) * bound_diff] * B So we can "lift" B into the cut with a non-negative coefficient.</p>
 <dl class="section note"><dt>Note</dt><dd>this lifting is really the same as if we used that implied bound before since in f(coeff * bound_diff) * B + f(coeff) * S, if we replace S by its value [X - bound_diff * B] we get the same result.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001657">Todo</a></b></dt><dd>(user): Ignore if bound_diff == 1 ? But we can still merge B with another entry if it exists, so it can still be good in this case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001658">Todo</a></b></dt><dd>(user): Only do it if coeff_b &gt; 0 ? But again we could still merge B with an existing Boolean for a better cut even if coeff_b == 0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001658">Todo</a></b></dt><dd>(user): Ignore if bound_diff == 1 ? But we can still merge B with another entry if it exists, so it can still be good in this case.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo</a></b></dt><dd>(user): Only do it if coeff_b &gt; 0 ? But again we could still merge B with an existing Boolean for a better cut even if coeff_b == 0. </dd></dl>
 <p>We have X/-X = info.diff * Boolean + slack.</p>
 <p>Create slack. The expression is term.exp - bound_diff * bool_term The variable shouldn't be the same.</p>
 
@@ -433,8 +433,8 @@ Public Member Functions</h2></td></tr>
 <p>Test if it is better to use this "bad" side.</p>
 <p>Use the implied bound on (-X) if it is beneficial to do so. Like complementing, this is not always good.</p>
 <p>We have comp(X) = diff - X = diff * B + S X = diff * (1 - B) - S. So if we applies f, we will get: f(coeff * diff) * (1 - B) + f(-coeff) * S and substituing S = diff * (1 - B) - X, we get:</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo</a></b></dt><dd>(user): Note that while the violation might be higher, if the slack becomes large this will result in a less powerfull cut. Shall we do that? It is a bit the same problematic with complementing.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001660">Todo</a></b></dt><dd>(user): If the slack is close to zero, then this transformation will always increase the violation. So we could potentially do it in Before our divisor selection heuristic. But the norm of the final cut will increase too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001660">Todo</a></b></dt><dd>(user): Note that while the violation might be higher, if the slack becomes large this will result in a less powerfull cut. Shall we do that? It is a bit the same problematic with complementing.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001661">Todo</a></b></dt><dd>(user): If the slack is close to zero, then this transformation will always increase the violation. So we could potentially do it in Before our divisor selection heuristic. But the norm of the final cut will increase too. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>because the slack is of the opposite sign, we might loose more, so we prefer to be a bit defensive.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l02212">2212</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>

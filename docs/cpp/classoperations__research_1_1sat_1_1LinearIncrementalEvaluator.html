@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -557,7 +557,7 @@ Public Member Functions</h2></td></tr>
 <p>Compute the total size. </p><dl class="section note"><dt>Note</dt><dd>at this point the constraint indices are not "encoded" yet.</dd></dl>
 <p>Compactify for faster <a class="el" href="#a201fdc143b0a225b578f5a5d123ef53a">WeightedViolationDelta()</a>.</p>
 <p>We do not need var_entries_ or literal_entries_ anymore.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001160">Todo</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001161">Todo</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
 <p>Initialize the SpanData. Transform tmp_row_sizes_ to starts in the row_var_buffer_. Transform tmp_row_num_linear_entries_ to starts in the row_coeff_buffer_.</p>
 <p>Copy data.</p>
 
@@ -619,7 +619,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The violation for each constraint is a piecewise linear function. This computes and aggregates all the breakpoints for the given variable and its domain.</p>
 <dl class="section note"><dt>Note</dt><dd>if the domain contains less than two values, we return an empty vector. This function is not meant to be used for such domains. </dd></dl>
-<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001159">Todo</a></b></dt><dd>(user): Deal with holes? </dd></dl>
+<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001160">Todo</a></b></dt><dd>(user): Deal with holes? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00734">734</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
@@ -653,7 +653,7 @@ Public Member Functions</h2></td></tr>
 <p>Tricky: Here we reuse last_affected_variables_ to reset var_to_score_change. And in particular we need to list all variable whose score changed here. Not just the one for which we have a decrease. </p>
 <p>Update enforcement part. Because we only update weight of currently infeasible constraint, all change are 0 -&gt; 1 transition and change by the same amount, which is the current distance.</p>
 <p>Update linear part.</p>
-<p>Computing general <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> distance is slow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001154">Todo</a></b></dt><dd>(user): optimize even more for one sided constraints. Note(user): I tried to factor the two usage of this, but it is slower. </dd></dl>
+<p>Computing general <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> distance is slow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001155">Todo</a></b></dt><dd>(user): optimize even more for one sided constraints. Note(user): I tried to factor the two usage of this, but it is slower. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00255">255</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
@@ -840,7 +840,7 @@ the code assumes that a column has no duplicates ct indices. </dd></dl>
 </div><div class="memdoc">
 <p>Computes how much the weighted violation will change if var was changed from its old value by += delta.</p>
 <p>Most of the time is spent in this function.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001158">Todo</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001159">Todo</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
 <p class="enddd">(user): Maybe we can compute an absolute value instead of removing old_distance. </p>
 </dd></dl>
 <p>Since delta != 0, we are sure this is an enforced -&gt; unenforced change.</p>

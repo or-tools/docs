@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -345,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This is used by the <a class="el" href="namespaceoperations__research_1_1sat.html#a0ecdc69e06c5414f4e20a755b94f70f7">GreaterThanAtLeastOneOf()</a> lazy reason.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001803">Todo</a></b></dt><dd>(user): This might better lives together with the propagation code, but it does need access to data about the reason/conflict being currently computed. Also for speed we do need all the code here in on block. Given than we have just a few "lazy integer reason", we might not really want a generic code in any case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001804">Todo</a></b></dt><dd>(user): This might better lives together with the propagation code, but it does need access to data about the reason/conflict being currently computed. Also for speed we do need all the code here in on block. Given than we have just a few "lazy integer reason", we might not really want a generic code in any case. </dd></dl>
 <p>On large routing problems, we can spend a lot of time in this loop. We check the time limit every 5 processed expressions.</p>
 <p>Skip if we already have an explanation for expr &gt;= target_min. Note that we already do that while processing the returned indices, so this mainly save a FindLowestTrailIndexThatExplainBound() call per skipped indices, which can still be costly.</p>
 <p>We need to find the index that explain the bound. </p><dl class="section note"><dt>Note</dt><dd>this will skip if the condition is true at level zero.</dd></dl>
@@ -466,7 +466,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Inspects the trail and output all the non-level zero bounds from the base index (one per variables) to the output. The algo is sparse if there is only a few propagations on the trail.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001781">Todo</a></b></dt><dd>(user): Implement a dense version if there is more trail entries than variables! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001782">Todo</a></b></dt><dd>(user): Implement a dense version if there is more trail entries than variables! </dd></dl>
 <p>In order to push the best bound for each variable, we loop backward.</p>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02064">2064</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
@@ -544,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
 <p>We can't push anything in this case.</p>
 <p>We record it for this propagation phase (until the next untrail) as this is relatively fast and heuristics can exploit this.</p>
 <dl class="section note"><dt>Note</dt><dd>currently we only use <a class="el" href="#a07f3c5bf9ad7390cb25efb3f6a0de3b3">ConditionalEnqueue()</a> in scheduling propagator, and these propagator are quite slow so this is not visible.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001774">Todo</a></b></dt><dd>(user): We could even keep the reason and maybe do some reasoning using at_least_one constraint on a set of the Boolean used here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001775">Todo</a></b></dt><dd>(user): We could even keep the reason and maybe do some reasoning using at_least_one constraint on a set of the Boolean used here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l01262">1262</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -726,7 +726,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>IMPORTANT: Notice the inversed sign in the literal reason. This is a bit confusing but internally SAT use this direction for efficiency.</p>
 <p>Note(user): Duplicates Literal/IntegerLiteral are supported because we call STLSortAndRemoveDuplicates() in <a class="el" href="#ac1fb45f018e2314a5d367335536e503c">MergeReasonInto()</a>, but maybe they shouldn't for efficiency reason.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001801">Todo</a></b></dt><dd>(user): If the given bound is equal to the current bound, maybe the new reason is better? how to decide and what to do in this case? to think about it. Currently we simply don't do anything. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001802">Todo</a></b></dt><dd>(user): If the given bound is equal to the current bound, maybe the new reason is better? how to decide and what to do in this case? to think about it. Currently we simply don't do anything. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00609">609</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
@@ -805,7 +805,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#ad5b56d63f8471e66f6a23c28660d1d1a">Enqueue()</a>, but takes an extra argument which if smaller than integer_trail_.size() is interpreted as the trail index of an old <a class="el" href="#ad5b56d63f8471e66f6a23c28660d1d1a">Enqueue()</a> that had the same reason as this one. Note that the given Span must still be valid as they are used in case of conflict.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001802">Todo</a></b></dt><dd>(user): This currently cannot refer to a trail_index with a lazy reason. Fix or at least check that this is the case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001803">Todo</a></b></dt><dd>(user): This currently cannot refer to a trail_index with a lazy reason. Fix or at least check that this is the case. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l00648">648</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 
@@ -1809,7 +1809,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> interface. These functions make sure the current bounds information is in sync with the current solver literal trail. Any class/propagator using this class must make sure it is synced to the correct state before calling any of its functions. </p>
 <p>Make sure that our internal "integer_search_levels_" size matches the sat decision levels. At the level zero, integer_search_levels_ should be empty.</p>
 <p>This is required because when loading a model it is possible that we add (literal &lt;-&gt; integer literal) associations for literals that have already been propagated here. This often happens when the presolve is off and many variables are fixed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001772">Todo</a></b></dt><dd>(user): refactor the interaction <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> &lt;-&gt; <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> so that we can just push right away such literal. Unfortunately, this is is a big chunk of work. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001773">Todo</a></b></dt><dd>(user): refactor the interaction <a class="el" href="classoperations__research_1_1sat_1_1IntegerTrail.html">IntegerTrail</a> &lt;-&gt; <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> so that we can just push right away such literal. Unfortunately, this is is a big chunk of work. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>we do not call Enqueue here but directly the update domain function so that we do not abort even if the level zero bounds were up to date.</dd></dl>
 <p>Process all the "associated" literals and <a class="el" href="#ad5b56d63f8471e66f6a23c28660d1d1a">Enqueue()</a> the corresponding bounds.</p>
 <p>The reason is simply the associated literal.</p>
@@ -1851,7 +1851,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001780">Todo</a></b></dt><dd>(user): If this is called many time on the same variables, it could be made faster by using some caching mechanism. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001781">Todo</a></b></dt><dd>(user): If this is called many time on the same variables, it could be made faster by using some caching mechanism. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a11b358d3d2536ee257858d6131c0aff1">operations_research::sat::SatPropagator</a>.</p>
 
@@ -2033,10 +2033,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Preconditions:</p><ul>
 <li>coeffs must be of same size as reason, and all entry must be positive.</li>
 <li><p class="startli">*reason must initially contains the trivial initial reason, that is the current lower-bound of each variables.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001798">Todo</a></b></dt><dd>(user): Requiring all initial literal to be at their current bound is not really clean. Maybe we can change the API to only take IntegerVariable and produce the reason directly.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001799">Todo</a></b></dt><dd>(user): change API so that this work is performed during the conflict analysis where we can be smarter in how we relax the reason. Note however that this function is mainly used when we have a conflict, so this is not really high priority.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001800">Todo</a></b></dt><dd>(user): Test that the code work in the presence of integer overflow. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001773">Todo</a></b></dt><dd>(user): Get rid of this function and only keep the trail index one? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001799">Todo</a></b></dt><dd>(user): Requiring all initial literal to be at their current bound is not really clean. Maybe we can change the API to only take IntegerVariable and produce the reason directly.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001800">Todo</a></b></dt><dd>(user): change API so that this work is performed during the conflict analysis where we can be smarter in how we relax the reason. Note however that this function is mainly used when we have a conflict, so this is not really high priority.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001801">Todo</a></b></dt><dd>(user): Test that the code work in the presence of integer overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001774">Todo</a></b></dt><dd>(user): Get rid of this function and only keep the trail index one? </dd></dl>
 </li>
 </ul>
 
@@ -2248,8 +2248,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#ae3ea8da78f7a6ec038887174bbad6ceb">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#ae3ea8da78f7a6ec038887174bbad6ceb">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002287">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if a conflict was detected before <a class="el" href="#ae3ea8da78f7a6ec038887174bbad6ceb">Propagate()</a> of this class was even called, it is possible that there is nothing to backtrack.</dd></dl>
 <p>Resize lazy reason.</p>
 <p>Clear reason.</p>
@@ -2280,7 +2280,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Takes the intersection with the current initial variable domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001797">Todo</a></b></dt><dd>(user): There is some memory inefficiency if this is called many time because of the underlying data structure we use. In practice, when used with a presolve, this is not often used, so that is fine though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001798">Todo</a></b></dt><dd>(user): There is some memory inefficiency if this is called many time because of the underlying data structure we use. In practice, when used with a presolve, this is not often used, so that is fine though. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>we don't support optional variable here. Or at least if you set the domain of an optional variable to zero, the problem will be declared unsat. </dd></dl>
 <p>Update directly the level zero bounds.</p>
 <p>Do not forget to update the watchers.</p>

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -238,7 +238,7 @@ Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a 
 </div><div class="memdoc">
 <p>Given a constraint on the "original" model variables, try to construct a symmetric version of it using the orbit sum variables. This might fail if we encounter integer overflow. Returns true on success. On failure, the original constraints will not be usable.</p>
 <p>Preconditions: All IntegerVariable must be positive. And the constraint lb/ub must be tight and not +/- int64_t max.</p>
-<p>What we do here is basically equivalent to adding all the possible permutations (under the problem symmetry group) of the constraint together. When we do that all variables in the same orbit will have the same coefficient ( </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001910">Todo</a></b></dt><dd>(user): think how to prove this properly and especially that the scaling is in 1/orbit_size) and will each appear once. We then substitute each sum by the sum over the orbit, and divide coefficient by their gcd.</dd></dl>
+<p>What we do here is basically equivalent to adding all the possible permutations (under the problem symmetry group) of the constraint together. When we do that all variables in the same orbit will have the same coefficient ( </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001911">Todo</a></b></dt><dd>(user): think how to prove this properly and especially that the scaling is in 1/orbit_size) and will each appear once. We then substitute each sum by the sum over the orbit, and divide coefficient by their gcd.</dd></dl>
 <p>Any solution of the original LP can be transformed to a solution of the folded LP with the same objective. So the folded LP will give us a tight and valid objective lower bound but with a lot less variables! This is an adaptation of "LP folding" to use in a MIP context. Introducing the orbit sum allow to propagates and add cuts as these sum are still integer for us.</p>
 <p>The only issue is regarding scaling of the constraints. Basically each orbit sum variable will appear with a factor 1/orbit_size in the original constraint.</p>
 <p>We will remap &amp; scale the constraint. If not possible, we will drop it for now. </p>
@@ -247,9 +247,9 @@ Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a 
 <p>Update the scaling factor.</p>
 <p>No symmetric variables.</p>
 <p>We need to multiply each term by scaling_factor / orbit_size.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001911">Todo</a></b></dt><dd>(user): Now that we know the actual coefficient we could scale less. Maybe the coefficient of an orbit_var is already divisible by orbit_size. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001912">Todo</a></b></dt><dd>(user): Now that we know the actual coefficient we could scale less. Maybe the coefficient of an orbit_var is already divisible by orbit_size. </dd></dl>
 <p>Dividing by gcd can help.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001912">Todo</a></b></dt><dd>(user): In some cases, this constraint will propagate/fix directly the orbit sum variables, we might want to propagate this in the cp world? This migth also remove bad scaling. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001913">Todo</a></b></dt><dd>(user): In some cases, this constraint will propagate/fix directly the orbit sum variables, we might want to propagate this in the cp world? This migth also remove bad scaling. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00106">106</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
 

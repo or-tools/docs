@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -209,10 +209,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Inner function used by <a class="el" href="#ac2d4796c1f43982c5c9f31174be82908">GetDecision()</a>. It will create a new associated literal if needed. </p>
 <p>Convert integer decision to literal one if needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001862">Todo</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currently hard to do so. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001863">Todo</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentioned in a</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001864">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001865">Todo</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001863">Todo</a></b></dt><dd>(user): Ideally it would be cool to delay the creation even more until we have a conflict with these decisions, but it is currently hard to do so. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001864">Todo</a></b></dt><dd>(user): It would be nicer if this can never happen. For now, it does because of the Propagate() not reaching the fixed point as mentioned in a</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001865">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001866">Todo</a></b></dt><dd>above. As a work-around, we display a message but do not crash and recall the decision heuristic. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01396">1396</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
 
@@ -264,7 +264,7 @@ Public Member Functions</h2></td></tr>
 <p>This function continues from the current state of the solver and loop until all variables are instantiated (i.e. the next decision is kNoLiteralIndex) or a search limit is reached. It uses the heuristic from the <a class="el" href="structoperations__research_1_1sat_1_1SearchHeuristics.html">SearchHeuristics</a> class in the model to decide when to restart and what next decision to take.</p>
 <p>Each time a restart happen, this increment the policy index modulo the number of heuristics to act as a portfolio search. </p>
 <dl class="section note"><dt>Note</dt><dd>it is important to do the level-zero propagation if it wasn't already done because EnqueueDecisionAndBackjumpOnConflict() assumes that the solver is in a "propagated" state.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001867">Todo</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001868">Todo</a></b></dt><dd>(user): We have the issue that at level zero. calling the propagation loop more than once can propagate more! This is because we call the LP again and again on each level zero propagation. This is causing some CHECKs() to fail in multithread (rarely) because when we associate new literals to integer ones, Propagate() is indirectly called. Not sure yet how to fix. </dd></dl>
 <p>Main search loop.</p>
 <p>If needed, restart and switch decision_policy.</p>
 <dl class="section note"><dt>Note</dt><dd>to properly count the num_times, we do not want to move this function, but actually call that copy.</dd></dl>
@@ -273,8 +273,8 @@ Public Member Functions</h2></td></tr>
 <p>Save the current polarity of all Booleans in the solution. It will be followed for the next SAT decisions. This is known to be a good policy for optimization problem. Note that for decision problem we don't care since we are just done as soon as a solution is found.</p>
 <p>This idea is kind of "well known", see for instance the "LinSBPS" submission to the maxSAT 2018 competition by Emir Demirovic and Peter Stuckey where they show it is a good idea and provide more references.</p>
 <p>In multi-thread, we really only want to save the LP relaxation for thread with high linearization level to avoid to pollute the repository with sub-par lp solutions.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001868">Todo</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001869">Todo</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001869">Todo</a></b></dt><dd>(user): Experiment more around dynamically changing the threshold for storing LP solutions in the pool. Alternatively expose this as parameter so this can be tuned later.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001870">Todo</a></b></dt><dd>(user): Avoid adding the same solution many time if the LP didn't change. Avoid adding solution that are too deep in the tree (most variable fixed). Also use a callback rather than having this here, we don't want this file to depend on <a class="el" href="cp__model_8proto.html">cp_model.proto</a>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>We can actually record LP solutions more frequently. However this process is time consuming and workers waste a lot of time doing this. To avoid this we don't record solutions after each decision.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer__search_8cc_source.html#l01484">1484</a> of file <a class="el" href="integer__search_8cc_source.html">integer_search.cc</a>.</p>
@@ -297,7 +297,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Tries to take the current decision, this might backjump. Returns false if the model is UNSAT. </p>
 <dl class="section note"><dt>Note</dt><dd>kUnsatTrailIndex might also mean ASSUMPTIONS_UNSAT.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001866">Todo</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001867">Todo</a></b></dt><dd>(user): on some problems, this function can be quite long. Expand so that we can check the time limit at each step? </dd></dl>
 <p>Update the implied bounds each time we enqueue a literal at level zero. This is "almost free", so we might as well do it.</p>
 <p>Update the pseudo costs.</p>
 

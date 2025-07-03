@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"namespaceortools_1_1gscip_1_1gscip__pb2.html#ab305f4a4b40143530e51de204d846b30":[1,0,0,5,0,2],
+"namespaceortools_1_1gscip_1_1gscip__pb2.html#adf06c7da89637604c580ff30aa52a58b":[1,0,0,5,0,1],
 "namespaceortools_1_1gscip_1_1gscip__pb2.html#af16bb19ec161d4574afb7dae92b71c70":[1,0,0,5,0,0],
 "namespaceortools_1_1gscip_1_1gscip__pb2.html#afa0bdaa0565f2d964244e38fefebc324":[1,0,0,5,0,4],
 "namespaceortools_1_1init.html":[1,0,0,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#a97dbb46a1615da9c5c26709f703b4489":[1,0,0,8,9,26,9],
 "namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#adcdc9c32f0f2ccce5ba552d9ab0a551a":[1,0,0,8,9,26,1],
 "namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#aed848b70f55c23e045103c1f5980bc00":[1,0,0,8,9,26,5],
-"namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#aef0f37cbbe90da78b12064c6a8e2c16c":[1,0,0,8,9,26,8],
-"namespaceortools_1_1math__opt_1_1python_1_1statistics.html":[1,0,0,8,9,27],
-"namespaceortools_1_1math__opt_1_1python_1_1statistics.html#a53cc7bf597a039c066cd7d80dbbc480f":[1,0,0,8,9,27,4]
+"namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#aef0f37cbbe90da78b12064c6a8e2c16c":[1,0,0,8,9,26,8]
 };

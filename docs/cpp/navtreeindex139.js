@@ -1,5 +1,17 @@
 var NAVTREEINDEX139 =
 {
+"structgtl_1_1LogMultilineUpTo100.html":[4,0,2,10],
+"structgtl_1_1LogMultilineUpTo100.html#a85c8adad2dcd2a3711be3745828b7354":[3,0,6,11,0],
+"structgtl_1_1LogMultilineUpTo100.html#a85c8adad2dcd2a3711be3745828b7354":[4,0,2,10,0],
+"structgtl_1_1LogShort.html":[3,0,6,13],
+"structgtl_1_1LogShort.html":[4,0,2,12],
+"structgtl_1_1LogShort.html#aedf432a54c469a00bdea7ec68e4bda64":[3,0,6,13,0],
+"structgtl_1_1LogShort.html#aedf432a54c469a00bdea7ec68e4bda64":[4,0,2,12,0],
+"structgtl_1_1LogShortUpTo100.html":[3,0,6,14],
+"structgtl_1_1LogShortUpTo100.html":[4,0,2,13],
+"structgtl_1_1LogShortUpTo100.html#ac6dc4ebcbf8b9b5d4d3dc90b1a7ebf68":[3,0,6,14,0],
+"structgtl_1_1LogShortUpTo100.html#ac6dc4ebcbf8b9b5d4d3dc90b1a7ebf68":[4,0,2,13,0],
+"structgtl_1_1internal_1_1LogBase.html":[3,0,6,1,1],
 "structgtl_1_1internal_1_1LogBase.html":[4,0,2,1,1],
 "structgtl_1_1internal_1_1LogBase.html#a0b420a23c6b34270f7bf3958b4f1055e":[3,0,6,1,1,0],
 "structgtl_1_1internal_1_1LogBase.html#a0b420a23c6b34270f7bf3958b4f1055e":[4,0,2,1,1,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX139 =
 "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html":[4,0,4,62,2],
 "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#a21fcf06ea64ede7f6a8ab37c00008f20":[3,0,8,66,2,1],
 "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#a21fcf06ea64ede7f6a8ab37c00008f20":[4,0,4,62,2,1],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#abcdbc039f195fdcee7a1d48ee8cc469d":[3,0,8,66,2,2],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#abcdbc039f195fdcee7a1d48ee8cc469d":[4,0,4,62,2,2],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#aff3cfa8d95ab15829fc7310e0f39c2d3":[3,0,8,66,2,0],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#aff3cfa8d95ab15829fc7310e0f39c2d3":[4,0,4,62,2,0],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html":[3,0,8,66,3],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html":[4,0,4,62,3],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ab1e9c6097ef9e4277f794e46803224b8":[3,0,8,66,3,2],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ab1e9c6097ef9e4277f794e46803224b8":[4,0,4,62,3,2],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ac80078e8931a5e18b0b7b3837432d4c2":[3,0,8,66,3,0],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ac80078e8931a5e18b0b7b3837432d4c2":[4,0,4,62,3,0],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ae556928e81893570f0b115a3ec00321d":[3,0,8,66,3,1],
-"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html#ae556928e81893570f0b115a3ec00321d":[4,0,4,62,3,1],
-"structoperations__research_1_1ClosedInterval.html":[3,0,8,69]
+"structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html#abcdbc039f195fdcee7a1d48ee8cc469d":[3,0,8,66,2,2]
 };

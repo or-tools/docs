@@ -1,5 +1,11 @@
 var NAVTREEINDEX80 =
 {
+"classoperations__research_1_1mb_1_1Variable.html#a5dfafc003777bc6c6902d919a60894a9":[3,0,8,9,12,15],
+"classoperations__research_1_1mb_1_1Variable.html#a5dfafc003777bc6c6902d919a60894a9":[4,0,4,8,12,15],
+"classoperations__research_1_1mb_1_1Variable.html#a61d50806ca5e0022cfecbcf27598fc83":[3,0,8,9,12,20],
+"classoperations__research_1_1mb_1_1Variable.html#a61d50806ca5e0022cfecbcf27598fc83":[4,0,4,8,12,20],
+"classoperations__research_1_1mb_1_1Variable.html#a6c2bfef72ad2d32bc302c255b8139333":[3,0,8,9,12,10],
+"classoperations__research_1_1mb_1_1Variable.html#a6c2bfef72ad2d32bc302c255b8139333":[4,0,4,8,12,10],
 "classoperations__research_1_1mb_1_1Variable.html#a72eab3944fdc33ce20a9ae53026776a4":[3,0,8,9,12,9],
 "classoperations__research_1_1mb_1_1Variable.html#a72eab3944fdc33ce20a9ae53026776a4":[4,0,4,8,12,9],
 "classoperations__research_1_1mb_1_1Variable.html#a7632cb4b028788eed894511fbdc3a795":[3,0,8,9,12,22],
@@ -243,11 +249,5 @@ var NAVTREEINDEX80 =
 "classoperations__research_1_1pdlp_1_1SolverLogger.html#adce0688a9d1bf20b531d0f3e1f4e908f":[3,0,8,11,18,2],
 "classoperations__research_1_1pdlp_1_1SolverLogger.html#adce0688a9d1bf20b531d0f3e1f4e908f":[4,0,4,10,18,2],
 "classoperations__research_1_1pdlp_1_1SolverLogger.html#af3efc52c397e35c88d9968e573ce3095":[3,0,8,11,18,8],
-"classoperations__research_1_1pdlp_1_1SolverLogger.html#af3efc52c397e35c88d9968e573ce3095":[4,0,4,10,18,8],
-"classoperations__research_1_1pdlp_1_1SolverLogger.html#af635d93e952c7f780db553fbdbb9ce8a":[3,0,8,11,18,7],
-"classoperations__research_1_1pdlp_1_1SolverLogger.html#af635d93e952c7f780db553fbdbb9ce8a":[4,0,4,10,18,7],
-"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html":[3,0,8,11,0,0],
-"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html":[4,0,4,10,0,0],
-"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a5e4bff0b418944d3bbe1d074c32df10d":[3,0,8,11,0,0,5],
-"classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html#a5e4bff0b418944d3bbe1d074c32df10d":[4,0,4,10,0,0,5]
+"classoperations__research_1_1pdlp_1_1SolverLogger.html#af3efc52c397e35c88d9968e573ce3095":[4,0,4,10,18,8]
 };

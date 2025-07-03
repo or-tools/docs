@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -304,7 +304,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01143">1143</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01129">1129</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
 <p><a class="el" href="classutil_1_1BaseGraph.html">BaseGraph</a> implementation -------------------------------------------------&mdash;. </p>
 <p>Allows nice range-based for loop: for (const <a class="el" href="#af79cd652ad4b1e7142c1acbec35b01a6">NodeIndex</a> node : graph.AllNodes()) { ... } for (const <a class="el" href="#a68014ae932b1c5f50d7365cecae209fd">ArcIndex</a> arc : graph.AllForwardArcs()) { ... } </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01136">1136</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01122">1122</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -350,9 +350,9 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
 </div><div class="memdoc">
 
 <p>Capacity reserved for future arcs, always &gt;= num_arcs_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000655">Todo</a></b></dt><dd>(user): Same questions as the ones in <a class="el" href="#a37bfc797d615a301e75e2212de0dd11b" title="Capacity reserved for future nodes, always &gt;= num_nodes_.">node_capacity()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000656">Todo</a></b></dt><dd>(user): Same questions as the ones in <a class="el" href="#a37bfc797d615a301e75e2212de0dd11b" title="Capacity reserved for future nodes, always &gt;= num_nodes_.">node_capacity()</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01160">1160</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01146">1146</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
 <p>Restore in (*start)[i] the index of the first arc with tail &gt;= i.</p>
 <p>Permutes the head into their final position in head. We do not need the tails anymore at this point.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01200">1200</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01186">1186</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
 <p>Functions commented when defined because they are implementation details. </p>
 <p>Computes the cumulative sum of the entry in v. We only use it with in/out degree distribution, hence the Check() at the end. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01180">1180</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01166">1166</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -454,9 +454,9 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="#a1e69188fcfb16d515686584fed636944">FreezeCapacities()</a> makes any future attempt to change the graph capacities crash in DEBUG mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000656">Todo</a></b></dt><dd>(user): Only define this in debug mode at the cost of having a lot of ifndef NDEBUG all over the place? remove the function completely ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000657">Todo</a></b></dt><dd>(user): Only define this in debug mode at the cost of having a lot of ifndef NDEBUG all over the place? remove the function completely ? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01168">1168</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01154">1154</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -539,9 +539,9 @@ template&lt;typename NodeIndexType, typename ArcIndexType, bool HasNegativeRever
 </div><div class="memdoc">
 
 <p>Capacity reserved for future nodes, always &gt;= num_nodes_. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000654">Todo</a></b></dt><dd>(user): Is it needed? remove completely? return the real capacities at the cost of having a different implementation for each graphs? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000655">Todo</a></b></dt><dd>(user): Is it needed? remove completely? return the real capacities at the cost of having a different implementation for each graphs? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01151">1151</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01137">1137</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>

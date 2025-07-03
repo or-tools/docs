@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002456">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot just use absl::Span&lt;Literal&gt; for instance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002458">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot just use absl::Span&lt;Literal&gt; for instance. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00087">87</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
@@ -312,7 +312,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tells the postsolver that the given literal must be true in any solution. We currently check that the variable is not already fixed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002455">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002457">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00066">66</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 

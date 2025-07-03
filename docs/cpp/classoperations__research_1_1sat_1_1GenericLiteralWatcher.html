@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -168,7 +168,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows registering Propagator that will be called if a watched <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> or LbVar changes.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001789">Todo</a></b></dt><dd>(user): Move this to its own file. Add unit tests! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001790">Todo</a></b></dt><dd>(user): Move this to its own file. Add unit tests! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8h_source.html#l01104">1104</a> of file <a class="el" href="integer_8h_source.html">integer.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -194,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001782">Todo</a></b></dt><dd>(user): This propagator currently needs to be last because it is the only one enforcing that a fix-point is reached on the integer variables. Figure out a better interaction between the sat propagation loop and this one. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001783">Todo</a></b></dt><dd>(user): This propagator currently needs to be last because it is the only one enforcing that a fix-point is reached on the integer variables. Figure out a better interaction between the sat propagation loop and this one. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02080">2080</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -450,17 +450,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Increase the deterministic time depending on some basic fact about our propagation.</p>
 <dl class="section note"><dt>Note</dt><dd>the priority may be set to -1 inside the loop in order to restart at zero.</dd></dl>
 <p>We test the time limit from time to time. This is in order to return in case of slow propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001783">Todo</a></b></dt><dd>(user): The queue will not be emptied, but I am not sure the solver will be left in an usable state. Fix if it become needed to resume the solve from the last time it was interrupted. In particular, we might want to call UpdateCallingNeeds()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001784">Todo</a></b></dt><dd>(user): The queue will not be emptied, but I am not sure the solver will be left in an usable state. Fix if it become needed to resume the solve from the last time it was interrupted. In particular, we might want to call UpdateCallingNeeds()? </dd></dl>
 <p>Before we propagate, make sure any reversible structure are up to date. </p><dl class="section note"><dt>Note</dt><dd>we never do anything expensive more than once per level.</dd></dl>
 <p>This is needed to detect if the propagator propagated anything or not.</p>
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> fields that might be accessed from within <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001784">Todo</a></b></dt><dd>(user): Maybe just provide one function Propagate(watch_indices) ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001785">Todo</a></b></dt><dd>(user): Maybe just provide one function Propagate(watch_indices) ? </dd></dl>
 <p>Update the propagation queue. At this point, the propagator has been removed from the queue but in_queue_ is still true.</p>
 <p>If the propagator is assumed to be idempotent, then we set in_queue_ to false after UpdateCallingNeeds() so this later function will never add it back.</p>
 <p>Otherwise, we set in_queue_ to false first so that UpdateCallingNeeds() may add it back if the propagator modified any of its watched variables.</p>
 <p>If the propagator pushed a literal, we exit in order to rerun all SAT only propagators first. Note that since a literal was pushed we are guaranteed to be called again, and we will resume from priority 0.</p>
 <p>Important: for now we need to re-run the clauses propagator each time we push a new literal because some propagator like the arc consistent all diff relies on this.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001785">Todo</a></b></dt><dd>(user): However, on some problem, it seems to work better to not do that. One possible reason is that the reason of a "natural" propagation might be better than one we learned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001786">Todo</a></b></dt><dd>(user): However, on some problem, it seems to work better to not do that. One possible reason is that the reason of a "natural" propagation might be better than one we learned. </dd></dl>
 <p>If the propagator pushed an integer bound, we revert to priority = 0.</p>
 <p>We wait until we reach the fix point before calling the callback.</p>
 
@@ -487,7 +487,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Registers a propagator and returns its unique ids. </p>
 <p>Call this propagator at least once the next time <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001786">Todo</a></b></dt><dd>(user): This initial propagation does not respect any later priority settings. Fix this. Maybe we should force users to pass the priority at registration. For now I didn't want to change the interface because there are plans to implement a kind of "dynamic" priority, and if it works we may want to get rid of this altogether. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001787">Todo</a></b></dt><dd>(user): This initial propagation does not respect any later priority settings. Fix this. Maybe we should force users to pass the priority at registration. For now I didn't want to change the interface because there are plans to implement a kind of "dynamic" priority, and if it works we may want to get rid of this altogether. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="integer_8cc_source.html#l02326">2326</a> of file <a class="el" href="integer_8cc_source.html">integer.cc</a>.</p>
 
@@ -704,8 +704,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002287">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <p>Nothing to do since we found a conflict before <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> was called.</p>
 <p>The assumption is not always true if we are currently aborting.</p>
 <dl class="section note"><dt>Note</dt><dd>we can do that after the test above: If none of the propagator where called, there are still technically "in dive" if we didn't backtrack past their last <a class="el" href="#a23370d30fab5bc955f314d3ced9add4a">Propagate()</a> call.</dd></dl>

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -188,11 +188,11 @@ Public Member Functions</h2></td></tr>
 <p>It returns false iff the model is proven infeasible.</p>
 <p>It does not clear the constraints part of the working model of the context.</p>
 <p>Note(user): If first_copy is true, we will reorder the scheduling constraint so that they only use reference to previously defined intervals. This allow to be more efficient later in a few preprocessing steps.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001176">Todo</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001177">Todo</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001177">Todo</a></b></dt><dd>(user): Merge with the phase 1 of the presolve code.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001178">Todo</a></b></dt><dd>(user): It seems easy to forget to update this if any new constraint contains an interval or if we add a field to an existing constraint. Find a way to remind contributor to not forget this. </dd></dl>
 <p>If first_copy is true, we reorder the scheduling constraint to be sure they refer to interval before them.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001178">Todo</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001179">Todo</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001179">Todo</a></b></dt><dd>(user): if ignore_names is false, we should make sure the name are properly copied by all these functions. Or we should never copy name and have a separate if (!ignore_name) copy the name... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001180">Todo</a></b></dt><dd>(user): find a better way than copy then clear_name()? </dd></dl>
 <p>This should be empty if first_copy is false.</p>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__copy_8cc_source.html#l00072">72</a> of file <a class="el" href="cp__model__copy_8cc_source.html">cp_model_copy.cc</a>.</p>

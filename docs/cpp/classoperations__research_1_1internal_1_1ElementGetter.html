@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Google OR-Tools: operations_research::ElementGetter&lt; T &gt; Class Template Reference</title>
+<title>Google OR-Tools: operations_research::internal::ElementGetter&lt; T, ArcIndex &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -66,7 +66,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('classoperations__research_1_1ElementGetter.html','','classoperations__research_1_1ElementGetter-members'); });
+$(function(){initNavTree('classoperations__research_1_1internal_1_1ElementGetter.html','','classoperations__research_1_1internal_1_1ElementGetter-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -92,7 +92,7 @@ $(function(){initNavTree('classoperations__research_1_1ElementGetter.html','','c
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">operations_research::ElementGetter&lt; T &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">operations_research::internal::ElementGetter&lt; T, ArcIndex &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -100,29 +100,29 @@ $(function(){initNavTree('classoperations__research_1_1ElementGetter.html','','c
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aea9c87e11331ea63e5f576dce2c539c6" id="r_aea9c87e11331ea63e5f576dce2c539c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9c87e11331ea63e5f576dce2c539c6">ElementGetter</a> (const std::vector&lt; T &gt; &amp;c)</td></tr>
-<tr class="memitem:a3a2b0f65131e296935990aab8bd89f2e" id="r_a3a2b0f65131e296935990aab8bd89f2e"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a2b0f65131e296935990aab8bd89f2e">operator()</a> (int index) const</td></tr>
+<tr class="memitem:aee6683c48e7003067d9ac1151b5f2c16" id="r_aee6683c48e7003067d9ac1151b5f2c16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee6683c48e7003067d9ac1151b5f2c16">ElementGetter</a> (const <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">IndexedVector</a>&lt; ArcIndex, T &gt; &amp;c)</td></tr>
+<tr class="memitem:ae20e9de00370abf7aeb8de9f15de8e31" id="r_ae20e9de00370abf7aeb8de9f15de8e31"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae20e9de00370abf7aeb8de9f15de8e31">operator()</a> (ArcIndex index) const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class operations_research::ElementGetter&lt; T &gt;</div>
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00064">64</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T, typename ArcIndex&gt;<br />
+class operations_research::internal::ElementGetter&lt; T, ArcIndex &gt;</div>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00084">84</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aea9c87e11331ea63e5f576dce2c539c6" name="aea9c87e11331ea63e5f576dce2c539c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea9c87e11331ea63e5f576dce2c539c6">&#9670;&#160;</a></span>ElementGetter()</h2>
+<a id="aee6683c48e7003067d9ac1151b5f2c16" name="aee6683c48e7003067d9ac1151b5f2c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6683c48e7003067d9ac1151b5f2c16">&#9670;&#160;</a></span>ElementGetter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T, typename ArcIndex&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoperations__research_1_1ElementGetter.html">operations_research::ElementGetter</a>&lt; T &gt;::ElementGetter </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1internal_1_1ElementGetter.html">operations_research::internal::ElementGetter</a>&lt; T, ArcIndex &gt;::ElementGetter </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespaceoperations__research_1_1internal.html#a0af9c6de04b858727a278d36a2eb5597">IndexedVector</a>&lt; ArcIndex, T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -133,26 +133,26 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00066">66</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00086">86</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a3a2b0f65131e296935990aab8bd89f2e" name="a3a2b0f65131e296935990aab8bd89f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2b0f65131e296935990aab8bd89f2e">&#9670;&#160;</a></span>operator()()</h2>
+<a id="ae20e9de00370abf7aeb8de9f15de8e31" name="ae20e9de00370abf7aeb8de9f15de8e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20e9de00370abf7aeb8de9f15de8e31">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T, typename ArcIndex&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const T &amp; <a class="el" href="classoperations__research_1_1ElementGetter.html">operations_research::ElementGetter</a>&lt; T &gt;::operator() </td>
+          <td class="memname">const T &amp; <a class="el" href="classoperations__research_1_1internal_1_1ElementGetter.html">operations_research::internal::ElementGetter</a>&lt; T, ArcIndex &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td class="paramtype">ArcIndex</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -163,7 +163,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00067">67</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bounded__dijkstra_8h_source.html#l00087">87</a> of file <a class="el" href="bounded__dijkstra_8h_source.html">bounded_dijkstra.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ template&lt;class T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="namespaceoperations__research.html">operations_research</a></li><li class="navelem"><a href="classoperations__research_1_1ElementGetter.html">ElementGetter</a></li>
+    <li class="navelem"><a href="namespaceoperations__research.html">operations_research</a></li><li class="navelem"><a href="namespaceoperations__research_1_1internal.html">internal</a></li><li class="navelem"><a href="classoperations__research_1_1internal_1_1ElementGetter.html">ElementGetter</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

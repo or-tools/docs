@@ -1,5 +1,11 @@
 var NAVTREEINDEX97 =
 {
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac5377b5320ad26e469e680b7d3bab02b":[3,0,8,13,209,53],
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac5377b5320ad26e469e680b7d3bab02b":[4,0,4,12,209,53],
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b":[3,0,8,13,209,118],
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac58a2f700fb28455324dd0268a9d510b":[4,0,4,12,209,118],
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac6febea0946bc7a03f0b5efc3e2b0322":[3,0,8,13,209,85],
+"classoperations__research_1_1sat_1_1PresolveContext.html#ac6febea0946bc7a03f0b5efc3e2b0322":[4,0,4,12,209,85],
 "classoperations__research_1_1sat_1_1PresolveContext.html#ac995d5af22b14671e9e6ac5f7fa67fa6":[3,0,8,13,209,9],
 "classoperations__research_1_1sat_1_1PresolveContext.html#ac995d5af22b14671e9e6ac5f7fa67fa6":[4,0,4,12,209,9],
 "classoperations__research_1_1sat_1_1PresolveContext.html#ace44b7515ea8289bbc7878a9f90f94e3":[3,0,8,13,209,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX97 =
 "classoperations__research_1_1sat_1_1ProtoTrail.html#abe8e954d6ad30eaa0d2797279fc2a3db":[3,0,8,13,221,9],
 "classoperations__research_1_1sat_1_1ProtoTrail.html#abe8e954d6ad30eaa0d2797279fc2a3db":[4,0,4,12,221,9],
 "classoperations__research_1_1sat_1_1ProtoTrail.html#abfc3fbff47a8f3bb08edaa1c9138b6a1":[3,0,8,13,221,1],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#abfc3fbff47a8f3bb08edaa1c9138b6a1":[4,0,4,12,221,1],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#ac0529ba22608d94a77500dbe5953099a":[3,0,8,13,221,10],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#ac0529ba22608d94a77500dbe5953099a":[4,0,4,12,221,10],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#acb182542c70b463aa3f0d5fe1fc5b071":[3,0,8,13,221,11],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#acb182542c70b463aa3f0d5fe1fc5b071":[4,0,4,12,221,11],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#acc7f61eee88019052eb46f95152121f3":[3,0,8,13,221,7],
-"classoperations__research_1_1sat_1_1ProtoTrail.html#acc7f61eee88019052eb46f95152121f3":[4,0,4,12,221,7]
+"classoperations__research_1_1sat_1_1ProtoTrail.html#abfc3fbff47a8f3bb08edaa1c9138b6a1":[4,0,4,12,221,1]
 };

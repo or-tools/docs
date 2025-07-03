@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -221,7 +221,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>When called, this must fill the two vectors so that literals contains any <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> part of the reason and dependencies contains the trail index of any <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a> that is also part of the reason.</p>
 <p>Remark: integer_literal[trail_index] might not exist or has nothing to do with what was propagated.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001796">Todo</a></b></dt><dd>(user): {id, propagation_slack, var_to_explain, trail_index} is just a generic "payload" and we should probably rename it as such so that each implementation can store different things. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001797">Todo</a></b></dt><dd>(user): {id, propagation_slack, var_to_explain, trail_index} is just a generic "payload" and we should probably rename it as such so that each implementation can store different things. </dd></dl>
 
 <p>Implemented in <a class="el" href="classoperations__research_1_1sat_1_1GreaterThanAtLeastOneOfPropagator.html#a11ee2dab5b47a3c04564b44d74c55ed3">operations_research::sat::GreaterThanAtLeastOneOfPropagator</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintPropagator.html#ade7b4fac9787b05c8e639a663b313589">operations_research::sat::LinearConstraintPropagator&lt; use_int128 &gt;</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintPropagator.html#ade7b4fac9787b05c8e639a663b313589">operations_research::sat::LinearConstraintPropagator&lt; false &gt;</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintPropagator.html#ade7b4fac9787b05c8e639a663b313589">operations_research::sat::LinearConstraintPropagator&lt; true &gt;</a>, <a class="el" href="classoperations__research_1_1sat_1_1LinearPropagator.html#abd1700dfb73c734248609055d534231e">operations_research::sat::LinearPropagator</a>, and <a class="el" href="classoperations__research_1_1sat_1_1LinMinPropagator.html#ad2b843c4429acb6e783a569c1c6474cb">operations_research::sat::LinMinPropagator</a>.</p>
 

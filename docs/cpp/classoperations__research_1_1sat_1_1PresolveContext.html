@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -399,7 +399,7 @@ Public Attributes</h2></td></tr>
 
 <p>b =&gt; (x ∈ domain). </p>
 <p>b =&gt; x in [lb, ub]. </p>
-<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
+<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002185">Todo</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00161">161</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -662,7 +662,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>We replace each entry by its affine representative. </p><dl class="section note"><dt>Note</dt><dd>the non-deterministic loop is fine, but because we iterate one the map while modifying it, it is safer to do a copy rather than to try to handle that in one pass.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
 <p>We need to sort the entries to be deterministic.</p>
 <p>This is the new domain. </p><dl class="section note"><dt>Note</dt><dd>the domain never include the offset.</dd></dl>
 <p>Depending on the use case, we cannot do that.</p>
@@ -715,7 +715,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A "canonical domain" always have a <a class="el" href="#ad5c777be53b24b90df4e7be5969d95fa">MinOf()</a> equal to zero. If needed we introduce a new variable with such canonical domain and add the relation X = Y + offset.</p>
 <p>This is useful in some corner case to avoid overflow.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00995">995</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -940,7 +940,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if our current constraints &lt;-&gt; variables graph is ok. This is meant to be used in DEBUG mode only.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002186">Todo</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002187">Todo</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
 <p>We do not care in these cases.</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00796">796</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
@@ -1613,7 +1613,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>Inserts the given literal to encode var == value. If an encoding already exists, it adds the two implications between the previous encoding and the new encoding.</p>
 <p>Important: This does not update the constraint&lt;-&gt;variable graph, so <a class="el" href="#a9b3712d2df9a0fb81962a7d9a528d699">ConstraintVariableGraphIsUpToDate()</a> will be false until <a class="el" href="#ac58a2f700fb28455324dd0268a9d510b" title="Calls UpdateConstraintVariableUsage() on all newly created constraints.">UpdateNewConstraintsVariableUsage()</a> is called.</p>
 <p>Returns false if the model become UNSAT.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(var).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002206">Todo</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(var).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01652">1652</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -1820,7 +1820,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if we have literal &lt;=&gt; var = value for all values of var.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002206">Todo</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002207">Todo</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01720">1720</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2209,7 +2209,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Creates a new integer variable with the given domain and definition. By default this also creates the linking constraint new_var = definition. Its hint value is set to the value of the definition. Returns -1 if we couldn't create the definition due to overflow. </p>
-<p>Create new linear constraint new_var = definition. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002183">Todo</a></b></dt><dd>(user): When we encounter overflow (rare), we still create a variable. </dd></dl>
+<p>Create new linear constraint new_var = definition. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo</a></b></dt><dd>(user): When we encounter overflow (rare), we still create a variable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00082">82</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2318,7 +2318,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>This function always return false. It is just a way to make a little bit more sure that we abort right away when infeasibility is detected. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002202">Todo</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00299">299</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
@@ -2592,7 +2592,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>We do some small canonicalization here</p>
 <p>We might relax this in <a class="el" href="#a0e57a4d478e6619ec142e1c0e3da51a3">CanonicalizeObjective()</a> when we will compute the possible objective domain from the domains of the variables.</p>
 <p>This is an upper bound of the higher magnitude that can be reach by summing an objective partial sum. Because of the model validation, this shouldn't overflow, and we make sure it stays this way.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002192">Todo</a></b></dt><dd>(user): There should be no negative reference here ! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo</a></b></dt><dd>(user): There should be no negative reference here ! </dd></dl>
 <p>We remove fixed terms as we read the objective. This can help a lot on LNS problems with a large proportions of fixed terms.</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01834">1834</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
@@ -2770,7 +2770,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>This is a bit hacky. Clear some fields. See call site.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo</a></b></dt><dd>(user): The ModelCopier should probably not depend on the full context it only need to read/write domains and call <a class="el" href="#ab43f7366b32b2ac40cc0f7f668040c49">UpdateRuleStats()</a>, so we might want to split that part out so that we can just initialize the full context later. Alternatively, we could just move more complex part of the context out, like the graph, the encoding, the affine representative, and so on to individual and easier to manage classes. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo</a></b></dt><dd>(user): The ModelCopier should probably not depend on the full context it only need to read/write domains and call <a class="el" href="#ab43f7366b32b2ac40cc0f7f668040c49">UpdateRuleStats()</a>, so we might want to split that part out so that we can just initialize the full context later. Alternatively, we could just move more complex part of the context out, like the graph, the encoding, the affine representative, and so on to individual and easier to manage classes. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01343">1343</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2836,12 +2836,12 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 </div><div class="memdoc">
 <p>We can always add a multiple of sum X - 1 == 0 to the objective. However, depending on which multiple we choose, this might break our overflow preconditions on the objective. So we return false and do nothing if this happens. </p>
 <p>We have to be careful because shifting cost like this might increase the min/max possible activity of the sum.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002195">Todo</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
 <p>The value will be zero if it wasn't present.</p>
 <p>Term = coeff * (1 - X) = coeff - coeff * X; So -coeff -&gt; -coeff -shift And Term = coeff + shift - shift - (coeff + shift) * X = (coeff + shift) * (1 - X) - shift;</p>
 <dl class="section note"><dt>Note</dt><dd>the domain never include the offset, so we need to update it.</dd></dl>
 <p>When we shift the cost using an exactly one, our objective implied bounds might be more or less precise. If the objective domain is not constraining (and thus just constraining the upper bound), we relax it to make sure its stay "non constraining".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002195">Todo</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002196">Todo</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02224">2224</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2988,7 +2988,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <dl class="section note"><dt>Note</dt><dd>this should always add a relation, even though it might need to create a new representative for both var_x and var_y in some cases. Like if x = 3z and y = 5t are already added, if we add x = 2y, we have 3z = 10t and can only resolve this by creating a new variable r such that z = 10r and t = 3r.</dd></dl>
 <p>All involved variables will be marked to appear in the special kAffineRelationConstraint. This will allow to identify when a variable is no longer needed (only appear there and is not a representative). </p>
 <p>Sets var_y's value to the solution of "var_x's value - coeff * var_y's value = offset".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002187">Todo</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to var_x or var_y and this causes issues. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002188">Todo</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to var_x or var_y and this causes issues. </dd></dl>
 <p>If both are already in the same class, we need to make sure the relations are compatible.</p>
 <p>x = rx.coeff * rep + rx.offset; y = ry.coeff * rep + ry.offset; And x == coeff * ry.coeff * rep + (coeff * ry.offset + offset).</p>
 <p>So we get the relation a * rep == b with a and b defined here:</p>
@@ -2999,11 +2999,11 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>Canonicalize from (a * rep_x + b * rep_y = o) to (x = c * y + o).</p>
 <p>Lets propagate domains first.</p>
 <p>To avoid corner cases where replacing x by y in a linear expression can cause overflow, we might want to canonicalize y first to avoid cases like x = c * [large_value, ...] - large_value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002188">Todo</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002189">Todo</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
 <p>Both these function recursively call <a class="el" href="#a21f9fb012d35d444b8d3438157f5c9c3">StoreAffineRelation()</a> but shouldn't be able to cascade (CHECKED).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002189">Todo</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002190">Todo</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
 <p>Lets propagate again the new relation. We might as well do it as early as possible and not all call site do it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002190">Todo</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002191">Todo</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
 <p>These maps should only contains representative, so only need to remap either x or y.</p>
 <p>The domain didn't change, but this notification allows to re-process any constraint containing these variables. Note that we do not need to retrigger a propagation of the constraint containing a variable whose representative didn't change.</p>
 
@@ -3222,7 +3222,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Stores a description of a rule that was just applied to have a summary of what the presolve did at the end. </p>
-<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002185">Todo</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
+<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002186">Todo</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00622">622</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 

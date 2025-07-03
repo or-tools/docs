@@ -24,7 +24,5 @@ var graph_8h =
     [ "util::DEFINE_RANGE_BASED_ARC_ITERATION", "namespaceutil.html#ad08398f12eb94e794d43a1045faf7e60", null ],
     [ "util::DEFINE_RANGE_BASED_ARC_ITERATION", "namespaceutil.html#a62d5cbf5cffa2a95ccd65c153548d111", null ],
     [ "util::internal::IsSigned", "namespaceutil_1_1internal.html#ab30de0eb8be10034da79f59907ed55f6", null ],
-    [ "util::Permute", "namespaceutil.html#a8c227a057c1ce9d46b1185abf77ad91e", null ],
-    [ "util::Permute", "namespaceutil.html#ac497881c4166bc694adc4bee62746118", null ],
-    [ "util::PermuteWithExplicitElementType", "namespaceutil.html#a6c08971b79823b898dceb552c91f3d0c", null ]
+    [ "util::Permute", "namespaceutil.html#a8c227a057c1ce9d46b1185abf77ad91e", null ]
 ];

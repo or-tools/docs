@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -1037,7 +1037,7 @@ currently the class is waiting for the callback to finish before accepting any n
 
 <p>Updates the inner objective bounds. </p>
 <p>The problem is already solved!</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002472">Todo</a></b></dt><dd>(user): A thread might not be notified right away that the new bounds that it is pushing make the problem infeasible. Fix that. For now we just abort early here to avoid logging the "#Done" message multiple times. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002474">Todo</a></b></dt><dd>(user): A thread might not be notified right away that the new bounds that it is pushing make the problem infeasible. Fix that. For now we just abort early here to avoid logging the "#Done" message multiple times. </dd></dl>
 <p>When the improving problem is infeasible, it is possible to report arbitrary high inner_objective_lower_bound_. We make sure it never cross the current best solution, so that we always report globally valid lower bound.</p>
 
 <p class="definition">Definition at line <a class="el" href="synchronization_8cc_source.html#l00286">286</a> of file <a class="el" href="synchronization_8cc_source.html">synchronization.cc</a>.</p>

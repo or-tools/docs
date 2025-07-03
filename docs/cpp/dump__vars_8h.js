@@ -34,5 +34,6 @@ var dump__vars_8h =
     [ "operations_research::base::internal_dump_vars::make_dump_vars", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a2a50d8fbac3b4ec14bed81cf60f063fd", null ],
     [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a4d936a9395957e5383dc8a26ee7c47ef", null ],
     [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#a1ebb40dff0c0a17819aca629d1ceebd9", null ],
-    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#aca4accb327b8ce8294c9e0e716f82354", null ]
+    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#aca4accb327b8ce8294c9e0e716f82354", null ],
+    [ "operations_research::base::internal_dump_vars::operator<<", "namespaceoperations__research_1_1base_1_1internal__dump__vars.html#aa0a7dde260eeb4ecedd2831f52ee7f56", null ]
 ];

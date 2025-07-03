@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orLogo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.13</span>
+   <div id="projectname">Google OR-Tools<span id="projectnumber">&#160;v9.14</span>
    </div>
    <div id="projectbrief">a fast and portable software suite for combinatorial optimization</div>
   </td>
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5dd4351a03b6ae6e7e7977bd469c9268" id="r_a5dd4351a03b6ae6e7e7977bd469c9268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd4351a03b6ae6e7e7977bd469c9268">SetTargetPhase</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &gt; phase)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> acts as an intermediate datastructure that can be synced with the shared tree and the local <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> as appropriate. It's intended that you sync a <a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> with the tree on restart or when a subtree is closed, and with the local trail after propagation. Specifically it stores objective lower bounds, and literals that have been branched on and later proven to be implied by the prior decisions (i.e. they can be enqueued at this level). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002545">Todo</a></b></dt><dd>(user): It'd be good to store an earlier level at which implications may be propagated. </dd></dl>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> acts as an intermediate datastructure that can be synced with the shared tree and the local <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> as appropriate. It's intended that you sync a <a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> with the tree on restart or when a subtree is closed, and with the local trail after propagation. Specifically it stores objective lower bounds, and literals that have been branched on and later proven to be implied by the prior decisions (i.e. they can be enqueued at this level). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002547">Todo</a></b></dt><dd>(user): It'd be good to store an earlier level at which implications may be propagated. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00104">104</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
