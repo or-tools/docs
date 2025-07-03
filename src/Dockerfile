@@ -43,7 +43,7 @@ WORKDIR /root
 # use SRC_GIT_SHA1 to modify the command
 # i.e. avoid docker reusing the cache when new commit is pushed
 ARG ORTOOLS_GIT_BRANCH
-ENV ORTOOLS_GIT_BRANCH=${ORTOOLS_GIT_BRANCH:-v9.13}
+ENV ORTOOLS_GIT_BRANCH=${ORTOOLS_GIT_BRANCH:-v9.14}
 RUN git clone -b "${ORTOOLS_GIT_BRANCH}" --single-branch --depth=1 https://github.com/google/or-tools
 WORKDIR /root/or-tools
 
