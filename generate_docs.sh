@@ -141,6 +141,7 @@ function main() {
   # log all cmd
   set -x
 
+  set -x
   # shellcheck disable=SC2155
   declare -r ROOT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
   declare -r OUTPUT_DIR="${ROOT_DIR}/docs"
